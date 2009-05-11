@@ -116,7 +116,7 @@ LOCAL_SRC_FILES := \
 	security-manager.c	\
 	security-manager.h	\
 	console-io.h	\
-	console-io.c \
+	console-unix.c \
 	assembly.c	\
 	coree.c \
 	coree.h \
@@ -206,7 +206,7 @@ LOCAL_SRC_FILES := mini.c method-to-ir.c \
 	mini-generic-sharing.c regalloc2.c simd-intrinsics.c \
 	unwind.h unwind.c mini-posix.c \
 	mini-arm.c exceptions-arm.c tramp-arm.c image-writer.c \
-	dwarfwriter.c 
+	dwarfwriter.c mini-gc.c
 MONO_SRC_FILES += $(addprefix $d/,$(LOCAL_SRC_FILES))
 
 LOCAL_PATH := $(BASE_PATH)
