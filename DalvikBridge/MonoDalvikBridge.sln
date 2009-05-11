@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDalvikBridge", "DalvikBridge\MonoDalvikBridge.csproj", "{DD5E7A11-81E3-4888-A43F-7E363858F752}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGLES", "C:\Users\koush\Documents\Visual Studio 2008\Projects\OpenGL\OpenGL\OpenGLES\OpenGLES.csproj", "{EF70FB24-4CF9-4C2D-87AB-418FD0F75A5C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://koushik-tfs:8080/
+		SccProjectUniqueName0 = C:\\Users\\koush\\Documents\\Visual\u0020Studio\u00202008\\Projects\\OpenGL\\OpenGL\\OpenGLES\\OpenGLES.csproj
+		SccProjectName0 = $/OpenGL/OpenGL/OpenGLES
+		SccAuxPath0 = http://koushik-tfs:8080
+		SccLocalPath0 = C:\\Users\\koush\\Documents\\Visual\u0020Studio\u00202008\\Projects\\OpenGL\\OpenGL\\OpenGLES
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD5E7A11-81E3-4888-A43F-7E363858F752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD5E7A11-81E3-4888-A43F-7E363858F752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD5E7A11-81E3-4888-A43F-7E363858F752}.Debug|x64.ActiveCfg = Debug|x64
+		{DD5E7A11-81E3-4888-A43F-7E363858F752}.Debug|x64.Build.0 = Debug|x64
+		{DD5E7A11-81E3-4888-A43F-7E363858F752}.Debug|x86.ActiveCfg = Debug|x86
+		{DD5E7A11-81E3-4888-A43F-7E363858F752}.Debug|x86.Build.0 = Debug|x86
+		{DD5E7A11-81E3-4888-A43F-7E363858F752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD5E7A11-81E3-4888-A43F-7E363858F752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD5E7A11-81E3-4888-A43F-7E363858F752}.Release|x64.ActiveCfg = Release|x64
+		{DD5E7A11-81E3-4888-A43F-7E363858F752}.Release|x64.Build.0 = Release|x64
+		{DD5E7A11-81E3-4888-A43F-7E363858F752}.Release|x86.ActiveCfg = Release|x86
+		{DD5E7A11-81E3-4888-A43F-7E363858F752}.Release|x86.Build.0 = Release|x86
+		{EF70FB24-4CF9-4C2D-87AB-418FD0F75A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF70FB24-4CF9-4C2D-87AB-418FD0F75A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF70FB24-4CF9-4C2D-87AB-418FD0F75A5C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EF70FB24-4CF9-4C2D-87AB-418FD0F75A5C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EF70FB24-4CF9-4C2D-87AB-418FD0F75A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF70FB24-4CF9-4C2D-87AB-418FD0F75A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF70FB24-4CF9-4C2D-87AB-418FD0F75A5C}.Release|x64.ActiveCfg = Release|Any CPU
+		{EF70FB24-4CF9-4C2D-87AB-418FD0F75A5C}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

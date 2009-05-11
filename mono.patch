@@ -1,0 +1,259 @@
+Index: libgc/os_dep.c
+===================================================================
+--- libgc/os_dep.c	(revision 129288)
++++ libgc/os_dep.c	(working copy)
+@@ -336,13 +336,6 @@
+   {
+     extern ptr_t GC_find_limit();
+ 
+-	if (GC_no_dls)
+-		/* 
+-		 * Not needed, avoids the SIGSEGV caused by GC_find_limit which
+-		 * complicates debugging.
+-		 */
+-		return;
+-
+ #   ifdef LINUX
+       /* Try the easy approaches first:	*/
+       if ((ptr_t)__data_start != 0) {
+Index: eglib/src/glib.h
+===================================================================
+--- eglib/src/glib.h	(revision 129288)
++++ eglib/src/glib.h	(working copy)
+@@ -494,7 +494,9 @@
+ 	G_LOG_LEVEL_MASK              = ~(G_LOG_FLAG_RECURSION | G_LOG_FLAG_FATAL)
+ } GLogLevelFlags;
+ 
+-void           g_print                (const gchar *format, ...);
++//void           g_print                (const gchar *format, ...);
++#define LOG_TAG "Mono"
++#define g_print LOGI
+ GLogLevelFlags g_log_set_always_fatal (GLogLevelFlags fatal_mask);
+ GLogLevelFlags g_log_set_fatal_mask   (const gchar *log_domain, GLogLevelFlags fatal_mask);
+ void           g_logv                 (const gchar *log_domain, GLogLevelFlags log_level, const gchar *format, va_list args);
+Index: mono/io-layer/collection.c
+===================================================================
+--- mono/io-layer/collection.c	(revision 129288)
++++ mono/io-layer/collection.c	(working copy)
+@@ -45,12 +45,7 @@
+ 
+ 	pthread_exit (NULL);
+ 
+-#ifndef __GNUC__
+-	/* Even though we tell gcc that this function doesn't return,
+-	 * other compilers won't see that.
+-	 */
+ 	return(NULL);
+-#endif
+ }
+ 
+ void _wapi_collection_init (void)
+Index: mono/io-layer/shared.c
+===================================================================
+--- mono/io-layer/shared.c	(revision 129288)
++++ mono/io-layer/shared.c	(working copy)
+@@ -19,7 +19,11 @@
+ #include <errno.h>
+ #include <string.h>
+ #include <sys/ipc.h>
++#ifdef HAVE_SYS_SEM
+ #include <sys/sem.h>
++#else
++#define DISABLE_SHARED_HANDLES
++#endif
+ 
+ #ifdef HAVE_SYS_UTSNAME_H
+ #include <sys/utsname.h>
+@@ -357,6 +361,7 @@
+ 	return(shm_seg);
+ }
+ 
++#ifdef HAVE_SYS_SEM
+ static void shm_semaphores_init (void)
+ {
+ 	key_t key;
+@@ -512,6 +517,7 @@
+ 	else
+ 		munmap (tmp_shared, sizeof(struct _WapiHandleSharedLayout));
+ }
++#endif
+ 
+ static mono_mutex_t noshm_sems[_WAPI_SHARED_SEM_COUNT];
+ 
+@@ -524,6 +530,7 @@
+ 	}
+ }
+ 
++#ifdef HAVE_SYS_SEM
+ static void shm_semaphores_remove (void)
+ {
+ 	int thr_ret;
+@@ -564,12 +571,14 @@
+ 		_wapi_shm_sem_unlock (_WAPI_SHARED_SEM_PROCESS_COUNT_LOCK);
+ 	}
+ }
++#endif
+ 
+ static void noshm_semaphores_remove (void)
+ {
+ 	/* No need to do anything */
+ }
+ 
++#ifdef HAVE_SYS_SEM
+ static int shm_sem_lock (int sem)
+ {
+ 	struct sembuf ops;
+@@ -615,6 +624,7 @@
+ 	
+ 	return(ret);
+ }
++#endif
+ 
+ static int noshm_sem_lock (int sem)
+ {
+@@ -629,6 +639,7 @@
+ 	return(ret);
+ }
+ 
++#ifdef HAVE_SYS_SEM
+ static int shm_sem_trylock (int sem)
+ {
+ 	struct sembuf ops;
+@@ -679,6 +690,7 @@
+ 	
+ 	return(ret);
+ }
++#endif
+ 
+ static int noshm_sem_trylock (int sem)
+ {
+@@ -693,6 +705,7 @@
+ 	return(ret);
+ }
+ 
++#ifdef HAVE_SYS_SEM
+ static int shm_sem_unlock (int sem)
+ {
+ 	struct sembuf ops;
+@@ -739,6 +752,7 @@
+ 
+ 	return(ret);
+ }
++#endif
+ 
+ static int noshm_sem_unlock (int sem)
+ {
+@@ -755,45 +769,65 @@
+ 
+ void _wapi_shm_semaphores_init (void)
+ {
++#ifndef HAVE_SYS_SEM
++	noshm_semaphores_init ();
++#else
+ 	if (check_disabled ()) {
+ 		noshm_semaphores_init ();
+ 	} else {
+ 		shm_semaphores_init ();
+ 	}
++#endif
+ }
+ 
+ void _wapi_shm_semaphores_remove (void)
+ {
++#ifndef HAVE_SYS_SEM
++	noshm_semaphores_remove ();
++#else
+ 	if (_wapi_shm_disabled) {
+ 		noshm_semaphores_remove ();
+ 	} else {
+ 		shm_semaphores_remove ();
+ 	}
++#endif
+ }
+ 
+ int _wapi_shm_sem_lock (int sem)
+ {
++#ifndef HAVE_SYS_SEM
++	return(noshm_sem_lock (sem));
++#else
+ 	if (_wapi_shm_disabled) {
+ 		return(noshm_sem_lock (sem));
+ 	} else {
+ 		return(shm_sem_lock (sem));
+ 	}
++#endif
+ }
+ 
+ int _wapi_shm_sem_trylock (int sem)
+ {
++#ifndef HAVE_SYS_SEM
++	return(noshm_sem_trylock (sem));
++#else
+ 	if (_wapi_shm_disabled) {
+ 		return(noshm_sem_trylock (sem));
+ 	} else {
+ 		return(shm_sem_trylock (sem));
+ 	}
++#endif
+ }
+ 
+ int _wapi_shm_sem_unlock (int sem)
+ {
++#ifndef HAVE_SYS_SEM
++	return(noshm_sem_unlock (sem));
++#else
+ 	if (_wapi_shm_disabled) {
+ 		return(noshm_sem_unlock (sem));
+ 	} else {
+ 		return(shm_sem_unlock (sem));
+ 	}
++#endif
+ }
+Index: mono/mini/mini.c
+===================================================================
+--- mono/mini/mini.c	(revision 129288)
++++ mono/mini/mini.c	(working copy)
+@@ -4456,6 +4456,8 @@
+ 	domain->runtime_info = NULL;
+ }
+ 
++void register_icalls ();
++
+ MonoDomain *
+ mini_init (const char *filename, const char *runtime_version)
+ {
+@@ -4582,6 +4584,7 @@
+ 	mono_add_internal_call ("Mono.Runtime::mono_runtime_install_handlers", 
+ 				mono_runtime_install_handlers);
+ 
++	register_icalls ();
+ 
+ 	create_helper_signature ();
+ 
+Index: mono/mini/mini-arm.c
+===================================================================
+--- mono/mini/mini-arm.c	(revision 129288)
++++ mono/mini/mini-arm.c	(working copy)
+@@ -604,7 +604,7 @@
+ 		"svc     0x00000000\n"
+ 		:
+ 		:	"r" (code), "r" (code + size), "r" (syscall)
+-		:	"r0", "r1", "r7"
++		:	"r0", "r1", "r7", "r2"
+ 		);
+ #else
+ 	__asm __volatile ("mov r0, %0\n"
+Index: mono/mini/dwarfwriter.c
+===================================================================
+--- mono/mini/dwarfwriter.c	(revision 129288)
++++ mono/mini/dwarfwriter.c	(working copy)
+@@ -1116,7 +1116,8 @@
+ 
+ 	/* Compute the native->IL offset mapping */
+ 
+-#ifndef EGLIB_MAJOR
++#ifndef _EGLIB_MAJOR
++#error barf
+ 	ln_array = g_array_sized_new (FALSE, FALSE, sizeof (MonoDebugLineNumberEntry), 
+ 								  debug_info->num_line_numbers);
+ 	g_array_append_vals (ln_array, debug_info->line_numbers, debug_info->num_line_numbers);
