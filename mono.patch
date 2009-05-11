@@ -32,22 +32,18 @@ index 83b166c..8089352 100644
        /* Try the easy approaches first:	*/
        if ((ptr_t)__data_start != 0) {
 diff --git a/mono/io-layer/collection.c b/mono/io-layer/collection.c
-index 2da5505..569563a 100644
+index 2da5505..93e5995 100644
 --- a/mono/io-layer/collection.c
 +++ b/mono/io-layer/collection.c
-@@ -45,12 +45,7 @@ static gpointer collection_thread (gpointer unused G_GNUC_UNUSED)
+@@ -45,7 +45,7 @@ static gpointer collection_thread (gpointer unused G_GNUC_UNUSED)
  
  	pthread_exit (NULL);
  
 -#ifndef __GNUC__
--	/* Even though we tell gcc that this function doesn't return,
--	 * other compilers won't see that.
--	 */
- 	return(NULL);
--#endif
- }
- 
- void _wapi_collection_init (void)
++#if !defined(__GNUC__) || defined(PLATFORM_ANDROID)
+ 	/* Even though we tell gcc that this function doesn't return,
+ 	 * other compilers won't see that.
+ 	 */
 diff --git a/mono/io-layer/shared.c b/mono/io-layer/shared.c
 index 5f71ac4..7260ca7 100644
 --- a/mono/io-layer/shared.c
