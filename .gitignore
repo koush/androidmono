@@ -1,2 +1,4 @@
-./MonoActivity/bin
-./MonoActivity/gen
+bin
+gen
+obj
+*.suo
