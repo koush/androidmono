@@ -7,12 +7,22 @@ public final class MonoObject
 	{
 		myObjectId = objectId;
 	}
+	
+	public int getObjectId()
+	{
+		return myObjectId;
+	}
 
 	static String myMonoJavaBridgeName = MonoBridge.createAssemblyQualifiedName("MonoJavaBridge", "MonoJavaBridge.JavaRuntime");
 	
 	public void invoke(String methodName, Object... args) throws Exception
 	{
 		MonoBridge.invoke(null, myObjectId, false, void.class, methodName, args, null);
+	}	
+	
+	public void invoke(Class returnType, String methodName, Object[] args, byte[] runtimeTypes) throws Exception
+	{
+		MonoBridge.invoke(null, myObjectId, false, returnType, methodName, args, runtimeTypes);
 	}
 	
 	@Override

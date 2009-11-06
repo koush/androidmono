@@ -280,7 +280,7 @@ LOCAL_C_INCLUDES += \
 
 LOCAL_PRELINK_MODULE := false
 LOCAL_SHARED_LIBRARIES += libmono libdl libc libm 
-include $(BUILD_EXECUTABLE)
+# include $(BUILD_EXECUTABLE)
 
 DIRS := $(BASE_PATH)/AndroidStatic.mk 
 	

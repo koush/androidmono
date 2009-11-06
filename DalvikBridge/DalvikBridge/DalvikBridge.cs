@@ -178,13 +178,18 @@ namespace MonoDalvikBridge
         {
             if (method.Name != methodName)
             {
-                DebugLog("Method name does not match {0} vs {1}", methodName, method.Name);
+                //DebugLog("Method name does not match {0} vs {1}", methodName, method.Name);
                 return false;
             }
             ParameterInfo[] parameterInfos = method.GetParameters();
             if (parameterInfos.Length != parameterTypes.Length)
             {
-                DebugLog("Parameter count does not match {0} vs {1}", parameterTypes.Length, parameterInfos.Length);
+                //DebugLog("Parameter count does not match {0} vs {1}", parameterTypes.Length, parameterInfos.Length);
+                return false;
+            }
+            if (method.IsGenericMethod)
+            {
+                //DebugLog("Ignoring generic method.");
                 return false;
             }
             bool match = true;
@@ -195,7 +200,8 @@ namespace MonoDalvikBridge
                 // check for multiple matches later (ambiguous matches)
                 if (parameterTypes[i] == null)
                     continue;
-                if (parameterTypes[i] != parameterInfo.ParameterType)
+                // watch for null values (no parameterType) and value type arguments.
+                if ((parameterTypes[i] == null && parameterInfo.ParameterType.IsValueType) || !parameterInfo.ParameterType.IsAssignableFrom(parameterTypes[i]))
                 {
                     DebugLog("Parameter type {2} does not match {0} vs {1}", parameterTypes[i], parameterInfo.ParameterType, i);
                     match = false;
@@ -280,6 +286,9 @@ namespace MonoDalvikBridge
                     }
                     else
                     {
+                        // if a MonoObject is passed, we can't do an explicit search due to inheritance.
+                        if (runtimeType == RuntimeType.MonoObject || runtimeType == RuntimeType.String)
+                            clueless = true;
                         realTypes[i] = parameter.GetType();
                     }
                 }
@@ -319,7 +328,7 @@ namespace MonoDalvikBridge
                         {
                             // grab whatever we can that matches the name
                             methodInfo = type.GetMethod(methodName);
-                            if (methodInfo == null || methodInfo.ReturnType != realReturnType)
+                            if (methodInfo == null || (realReturnType != null && !realReturnType.IsAssignableFrom(methodInfo.ReturnType)))
                                 throw new MissingMethodException("Unable to find desired method");
                             methodBase = methodInfo;
                             // need to confirm this, as no parameter type checking was done
@@ -350,7 +359,7 @@ namespace MonoDalvikBridge
                                 if (!isConstructor)
                                 {
                                     MethodInfo methodInfoCandidate = methodCandidate as MethodInfo;
-                                    if (methodInfoCandidate.ReturnType != realReturnType)
+                                    if (!realReturnType.IsAssignableFrom(methodInfoCandidate.ReturnType))
                                     {
                                         DebugLog("Return type does not match {0} vs {1}", returnType, methodInfoCandidate.ReturnType);
                                         continue;

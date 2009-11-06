@@ -5,22 +5,24 @@ using System.Threading;
 using System.Runtime.InteropServices;
 using System.IO;
 using System.Net;
-using OpenGLES;
+//using OpenGLES;
 
 namespace MonoDalvikBridge
 {
     class Program
     {
+        /*
         static EGLDisplay myDisplay;
         static EGLSurface mySurface;
         static EGLContext myContext;
+        */
 
         static void Main(string[] args)
         {
             DalvikBridge.Initialize();
             DalvikBridge.DebugLog("Mono has initialized.");
 
-
+            /*
             myDisplay = egl.GetDisplay(EGLNativeDisplayType.Default);
 
             int major, minor;
@@ -47,7 +49,7 @@ namespace MonoDalvikBridge
             myContext = egl.CreateContext(myDisplay, config, EGLContext.None, null);
 
             egl.MakeCurrent(myDisplay, mySurface, mySurface, myContext);
-            
+            */
             
             //try
             //{
@@ -67,10 +69,11 @@ namespace MonoDalvikBridge
             //    DalvikBridge.DebugLog("ex caught");
             //    DalvikBridge.DebugLog("error: {0}{1}", e.Message == null ? "null while downloading" : e.Message, e.GetType());
             //}
+
+
             // suspend this thread forever. remoting happens on other threads.
             // not a clean way to do it, as there is always a 
-            // inactive thread. but i don't want to try to make mono do something
-            // it was not designed to do.
+            // inactive thread. but i don't want to try to try to embed mono yet.
             Thread.Sleep(Timeout.Infinite);
         }
     }

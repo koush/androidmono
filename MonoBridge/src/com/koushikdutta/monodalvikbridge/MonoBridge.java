@@ -3,12 +3,14 @@ package com.koushikdutta.monodalvikbridge;
 import java.io.IOException;
 import java.io.InvalidClassException;
 import java.io.UnsupportedEncodingException;
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.security.InvalidParameterException;
 import java.util.Hashtable;
 import java.util.Map;
+import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.ReentrantLock;
 
 import android.util.Log;
@@ -137,22 +139,22 @@ class ByteBufferOutputStream
 
 public final class MonoBridge
 {
-	static final byte Default = 0;
-	static final byte Char = 1;
-	static final byte Byte = 2;
-	static final byte Int16 = 3;
-	static final byte UInt16 = 4;
-	static final byte Int32 = 5;
-	static final byte UInt32 = 6;
-	static final byte Int64 = 7;
-	static final byte UInt64 = 8;
-	static final byte Single = 9;
-	static final byte Double = 10;
-	static final byte Boolean = 11;
-	static final byte String = 12;
-	static final byte MonoObject = 13;
-	static final byte JavaObject = 14;
-	static final byte Void = 15;
+	public static final byte Default = 0;
+	public static final byte Char = 1;
+	public static final byte Byte = 2;
+	public static final byte Int16 = 3;
+	public static final byte UInt16 = 4;
+	public static final byte Int32 = 5;
+	public static final byte UInt32 = 6;
+	public static final byte Int64 = 7;
+	public static final byte UInt64 = 8;
+	public static final byte Single = 9;
+	public static final byte Double = 10;
+	public static final byte Boolean = 11;
+	public static final byte String = 12;
+	public static final byte MonoObject = 13;
+	public static final byte JavaObject = 14;
+	public static final byte Void = 15;
 
 	static Hashtable<Class, Byte> myConversions = new Hashtable<Class, Byte>();
 	static Hashtable<Byte, Class> myUnconversions = new Hashtable<Byte, Class>();
@@ -194,22 +196,14 @@ public final class MonoBridge
 		return ret;
 	}
 	
-	static ReentrantLock mInitializeLock = new ReentrantLock();
 	static Object mSignal = new Object();
+	static Semaphore mInitializeLock = new Semaphore(0);
 	static boolean mInitialized = false;
 
 	static
 	{
 		DebugLog("Initializing DalvikBridge");
 		System.load("/data/data/com.koushikdutta.mono/libmono.so");
-		new Thread(new Runnable()
-		{
-			public void run()
-			{
-				initializeRuntime();
-				mInitialized = true;
-			}	
-		}).start();
 		
 		myConversions.put(Character.class, Char);
         myConversions.put(Byte.class, Byte);
@@ -252,6 +246,21 @@ public final class MonoBridge
         myUnconvertHandlers[String] = new DeserializeHandler() { public Object Convert() { return deserializeString(); } };
         myUnconvertHandlers[MonoObject] = new DeserializeHandler() { public Object Convert() { int id = myReader.get().getInt(); if (id <= 0) return null; return new MonoObject(id); } };
         myUnconvertHandlers[JavaObject] = new DeserializeHandler() { public Object Convert() {  int id = myReader.get().getInt(); if (id <= 0) return null; return myMonoReferences.get(id); } };
+        
+		new Thread(new Runnable()
+		{
+			public void run()
+			{
+				initializeRuntime();
+			}	
+		}).start();
+		/*
+		try {
+			mInitializeLock.acquire();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		*/
 	}
 	
 	static native void getInvokeBuffer(byte[] buffer,  int returnBufferLength);
@@ -268,18 +277,19 @@ public final class MonoBridge
     {
         if (!method.getName().equals(methodName))
         {
-            DebugLog("Method name does not match %s vs %s", methodName, method.getName());
+            //DebugLog("Method name does not match %s vs %s", methodName, method.getName());
             return false;
         }
-        if (!returnType.equals(method.getReturnType()))
+        // if it is void, don't bother with the method return check
+        if (!returnType.equals(method.getReturnType()) && !returnType.equals(void.class))
         {
-            DebugLog("Return type does not match %s vs %s", returnType, method.getReturnType());
+            //DebugLog("Return type does not match %s vs %s", returnType, method.getReturnType());
             return false;
         }
         Class[] parameterInfos = method.getParameterTypes();
         if (parameterInfos.length != parameterTypes.length)
         {
-            DebugLog("Parameter count does not match %d vs %d", parameterTypes.length, parameterInfos.length);
+            //DebugLog("Parameter count does not match %d vs %d", parameterTypes.length, parameterInfos.length);
             return false;
         }
         boolean match = true;
@@ -362,6 +372,9 @@ public final class MonoBridge
 	            }
 	            else
 	            {
+	            	// on non value types, we are always searching for ambiguous match because of inheritance.
+	            	if (runtimeType == JavaObject || runtimeType == String)
+	            		clueless = true;
 	                realTypes[i] = parameter.getClass();
 	            }
 	        }
@@ -380,7 +393,7 @@ public final class MonoBridge
             Method method;
             if (!clueless)
             {
-                DebugLog("Searching for explicit method signature");
+                DebugLog("Searching for explicit method signature");                
                 method = type.getMethod(methodName, realTypes);
             }
             else
@@ -414,7 +427,7 @@ public final class MonoBridge
 			ByteBufferOutputStream outStream =myWriter.get(); 
 			outStream.rewind();
 			outStream.writeBoolean(true);
-			if (method.getReturnType().equals(void.class))
+			if (returnType == Void)
 			{
 				setReturnBuffer(outStream.toByteArray(), outStream.size());
 				return;

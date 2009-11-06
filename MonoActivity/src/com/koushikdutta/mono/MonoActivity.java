@@ -186,15 +186,24 @@ public class MonoActivity extends Activity
 				//String ret = (String)MonoBridge.invoke("MonoDalvikBridge.DalvikBridge, MonoDalvikBridge", String.class, "Echo", "hello");
 				//Log.i(LOGTAG, String.format("MonoActivity %s", ret == null ? "null" : ret));
 				
-				MonoObject one = MonoBridge.newMonoObject("MonoDalvikBridge.TestObject, MonoDalvikBridge");
-				MonoObject two = MonoBridge.newMonoObject("MonoDalvikBridge.TestObject, MonoDalvikBridge", "Test");
+				//MonoObject one = MonoBridge.newMonoObject("MonoDalvikBridge.TestObject, MonoDalvikBridge");
+				//MonoObject two = MonoBridge.newMonoObject("MonoDalvikBridge.TestObject, MonoDalvikBridge", "Test");
 				
-				one.invoke("Foo");
-				two.invoke("Foo");
+				//one.invoke("Foo");
+				//two.invoke("Foo");
+				
+				MonoObject args = MonoBridge.newMonoObject("System.Object[]", 1); 
+				byte[] runtimeTypes = new byte[2];
+				runtimeTypes[0] = MonoBridge.String;
+				runtimeTypes[1] = MonoBridge.Int32;
+				MonoObject javaClass = (MonoObject)MonoBridge.invoke("System.String", MonoObject.class, "Intern", new Object[] { "com.koushikdutta.monodalvikbridge.MonoBridge" });
+				MonoObject javaMethod = (MonoObject)MonoBridge.invoke("System.String", MonoObject.class, "Intern", new Object[] { "echo" });
+				args.invoke(void.class, "SetValue", new Object[] { "boof", 0 }, runtimeTypes);
+				MonoBridge.invoke("MonoDalvikBridge.DalvikBridge, MonoDalvikBridge", "Invoke", javaClass, javaMethod, args);
 			}
 			catch (Exception e)
 			{
-				String msg = e.getMessage();
+				e.printStackTrace();
 			}
 		}
 		return super.onMenuItemSelected(featureId, item);

@@ -1,8 +1,8 @@
 diff --git a/eglib/src/glib.h b/eglib/src/glib.h
-index 619a071..cee8530 100644
+index dbd915a..82b593b 100644
 --- a/eglib/src/glib.h
 +++ b/eglib/src/glib.h
-@@ -494,7 +494,9 @@ typedef enum {
+@@ -496,7 +496,9 @@ typedef enum {
  	G_LOG_LEVEL_MASK              = ~(G_LOG_FLAG_RECURSION | G_LOG_FLAG_FATAL)
  } GLogLevelFlags;
  
@@ -14,7 +14,7 @@ index 619a071..cee8530 100644
  GLogLevelFlags g_log_set_fatal_mask   (const gchar *log_domain, GLogLevelFlags fatal_mask);
  void           g_logv                 (const gchar *log_domain, GLogLevelFlags log_level, const gchar *format, va_list args);
 diff --git a/libgc/os_dep.c b/libgc/os_dep.c
-index 83b166c..8089352 100644
+index 7e4e567..158c3a4 100644
 --- a/libgc/os_dep.c
 +++ b/libgc/os_dep.c
 @@ -336,13 +336,6 @@ char *GC_parse_map_entry(char *buf_ptr, word *start, word *end,
@@ -31,24 +31,28 @@ index 83b166c..8089352 100644
  #   ifdef LINUX
        /* Try the easy approaches first:	*/
        if ((ptr_t)__data_start != 0) {
-diff --git a/mono/io-layer/collection.c b/mono/io-layer/collection.c
-index 2da5505..93e5995 100644
---- a/mono/io-layer/collection.c
-+++ b/mono/io-layer/collection.c
-@@ -45,7 +45,7 @@ static gpointer collection_thread (gpointer unused G_GNUC_UNUSED)
+diff --git a/mono/mini/debugger-agent.c b/mono/mini/debugger-agent.c
+index 6936d2e..bcaeec9 100644
+--- a/mono/mini/debugger-agent.c
++++ b/mono/mini/debugger-agent.c
+@@ -36,6 +36,12 @@
+ #include <pthread.h>
+ #endif
  
- 	pthread_exit (NULL);
- 
--#ifndef __GNUC__
-+#if !defined(__GNUC__) || defined(PLATFORM_ANDROID)
- 	/* Even though we tell gcc that this function doesn't return,
- 	 * other compilers won't see that.
- 	 */
++#ifdef PLATFORM_ANDROID
++#include <linux/in.h>
++#include <linux/tcp.h>
++#include <sys/endian.h>
++#endif
++
+ #include <mono/metadata/mono-debug.h>
+ #include <mono/metadata/mono-debug-debugger.h>
+ #include <mono/metadata/debug-mono-symfile.h>
 diff --git a/mono/mini/mini-arm.c b/mono/mini/mini-arm.c
-index fd5f7b5..085969d 100644
+index dd28d10..b3117a7 100644
 --- a/mono/mini/mini-arm.c
 +++ b/mono/mini/mini-arm.c
-@@ -653,7 +653,7 @@ mono_arch_flush_icache (guint8 *code, gint size)
+@@ -685,7 +685,7 @@ mono_arch_flush_icache (guint8 *code, gint size)
  		"svc     0x00000000\n"
  		:
  		:	"r" (code), "r" (code + size), "r" (syscall)
@@ -57,11 +61,23 @@ index fd5f7b5..085969d 100644
  		);
  #else
  	__asm __volatile ("mov r0, %0\n"
+diff --git a/mono/mini/mini-posix.c b/mono/mini/mini-posix.c
+index b9839cb..2613309 100644
+--- a/mono/mini/mini-posix.c
++++ b/mono/mini/mini-posix.c
+@@ -568,6 +568,7 @@ mono_runtime_syscall_fork ()
+ 	return (pid_t) syscall (SYS_fork);
+ #else
+ 	g_assert_not_reached ();
++	return;
+ #endif
+ }
+ 
 diff --git a/mono/mini/mini.c b/mono/mini/mini.c
-index 2e84625..763c2c4 100644
+index fc824b3..e54a9e2 100644
 --- a/mono/mini/mini.c
 +++ b/mono/mini/mini.c
-@@ -4687,6 +4687,8 @@ mini_free_jit_domain_info (MonoDomain *domain)
+@@ -5002,6 +5002,8 @@ mini_free_jit_domain_info (MonoDomain *domain)
  	domain->runtime_info = NULL;
  }
  
@@ -70,7 +86,7 @@ index 2e84625..763c2c4 100644
  MonoDomain *
  mini_init (const char *filename, const char *runtime_version)
  {
-@@ -4826,6 +4828,7 @@ mini_init (const char *filename, const char *runtime_version)
+@@ -5178,6 +5180,7 @@ mini_init (const char *filename, const char *runtime_version)
  	mono_add_internal_call ("Mono.Runtime::mono_runtime_install_handlers", 
  				mono_runtime_install_handlers);
  
