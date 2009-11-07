@@ -196,10 +196,10 @@ public class MonoActivity extends Activity
 				byte[] runtimeTypes = new byte[2];
 				runtimeTypes[0] = MonoBridge.String;
 				runtimeTypes[1] = MonoBridge.Int32;
-				MonoObject javaClass = (MonoObject)MonoBridge.invoke("System.String", MonoObject.class, "Intern", new Object[] { "com.koushikdutta.monodalvikbridge.MonoBridge" });
-				MonoObject javaMethod = (MonoObject)MonoBridge.invoke("System.String", MonoObject.class, "Intern", new Object[] { "echo" });
+				//MonoObject javaClass = (MonoObject)MonoBridge.invoke("System.String", MonoObject.class, "Intern", new Object[] { "com.koushikdutta.monodalvikbridge.MonoBridge" });
+				//MonoObject javaMethod = (MonoObject)MonoBridge.invoke("System.String", MonoObject.class, "Intern", new Object[] { "echo" });
 				args.invoke(void.class, "SetValue", new Object[] { "boof", 0 }, runtimeTypes);
-				MonoBridge.invoke("MonoDalvikBridge.DalvikBridge, MonoDalvikBridge", "Invoke", javaClass, javaMethod, args);
+				MonoBridge.invoke("MonoDalvikBridge.DalvikBridge, MonoDalvikBridge", "Invoke", "com.koushikdutta.monodalvikbridge.MonoBridge", "echo", args);
 			}
 			catch (Exception e)
 			{
