@@ -14,6 +14,7 @@ const char arm_cpu_desc [] = {
 	"\x0" "ii\x0" "\xc" "\x0" ""	/* setlret */
 	"ii\x0" "\x0" "\x3c" "\x0" ""	/* localloc */
 	"\x0" "b\x0" "\x0" "\x4" "\x0" ""	/* checkthis */
+	"\x0" "\x0" "\x0" "\x0" "\x26" "\x0" ""	/* seq_point */
 	"\x0" "\x0" "\x0" "\x0" "\x14" "c"	/* voidcall */
 	"\x0" "i\x0" "\x0" "\x8" "c"	/* voidcall_reg */
 	"\x0" "b\x0" "\x0" "\xc" "c"	/* voidcall_membase */
@@ -32,6 +33,7 @@ const char arm_cpu_desc [] = {
 	"\x0" "\x0" "\x0" "\x0" "\x14" "c"	/* vcall2 */
 	"\x0" "i\x0" "\x0" "\x8" "c"	/* vcall2_reg */
 	"\x0" "b\x0" "\x0" "\xc" "c"	/* vcall2_membase */
+	"\x0" "ii\x0" "\x80" "c"	/* dyn_call */
 	"i\x0" "\x0" "\x0" "\x10" "\x0" ""	/* iconst */
 	"f\x0" "\x0" "\x0" "\x14" "\x0" ""	/* r4const */
 	"f\x0" "\x0" "\x0" "\x14" "\x0" ""	/* r8const */
@@ -78,10 +80,6 @@ const char arm_cpu_desc [] = {
 	"ii\x0" "\x0" "\xc" "\x0" ""	/* add_imm */
 	"ii\x0" "\x0" "\xc" "\x0" ""	/* sub_imm */
 	"ii\x0" "\x0" "\xc" "\x0" ""	/* mul_imm */
-	"iii\x0" "\x14" "\x0" ""	/* div_imm */
-	"iii\x0" "\xc" "\x0" ""	/* div_un_imm */
-	"iii\x0" "\x1c" "\x0" ""	/* rem_imm */
-	"iii\x0" "\x10" "\x0" ""	/* rem_un_imm */
 	"ii\x0" "\x0" "\xc" "\x0" ""	/* and_imm */
 	"ii\x0" "\x0" "\xc" "\x0" ""	/* or_imm */
 	"ii\x0" "\x0" "\xc" "\x0" ""	/* xor_imm */
@@ -124,7 +122,6 @@ const char arm_cpu_desc [] = {
 	"\x0" "\x0" "\x0" "\x0" "\x8" "\x0" ""	/* cond_exc_ino */
 	"\x0" "\x0" "\x0" "\x0" "\xc" "\x0" ""	/* cond_exc_ic */
 	"\x0" "\x0" "\x0" "\x0" "\x8" "\x0" ""	/* cond_exc_inc */
-	"iii\x0" "\x1e" "\x0" ""	/* long_conv_to_ovf_i */
 	"iii\x0" "\x24" "\x0" ""	/* long_conv_to_ovf_i4_2 */
 	"iii\x0" "\x4" "\x0" ""	/* int_add */
 	"iii\x0" "\x4" "\x0" ""	/* int_sub */
@@ -285,146 +282,147 @@ const guint16 arm_cpu_desc_idx [] = {
 	66,	/* localloc */
 	0,	/* localloc_imm */
 	72,	/* checkthis */
-	78,	/* voidcall */
+	78,	/* seq_point */
+	84,	/* voidcall */
 	0,	/* voidcallvirt */
-	84,	/* voidcall_reg */
-	90,	/* voidcall_membase */
-	96,	/* call */
-	102,	/* call_reg */
-	108,	/* call_membase */
+	90,	/* voidcall_reg */
+	96,	/* voidcall_membase */
+	102,	/* call */
+	108,	/* call_reg */
+	114,	/* call_membase */
 	0,	/* callvirt */
-	114,	/* fcall */
+	120,	/* fcall */
 	0,	/* fcallvirt */
-	120,	/* fcall_reg */
-	126,	/* fcall_membase */
-	132,	/* lcall */
+	126,	/* fcall_reg */
+	132,	/* fcall_membase */
+	138,	/* lcall */
 	0,	/* lcallvirt */
-	138,	/* lcall_reg */
-	144,	/* lcall_membase */
-	150,	/* vcall */
+	144,	/* lcall_reg */
+	150,	/* lcall_membase */
+	156,	/* vcall */
 	0,	/* vcallvirt */
-	156,	/* vcall_reg */
-	162,	/* vcall_membase */
-	168,	/* vcall2 */
-	174,	/* vcall2_reg */
-	180,	/* vcall2_membase */
-	186,	/* iconst */
+	162,	/* vcall_reg */
+	168,	/* vcall_membase */
+	174,	/* vcall2 */
+	180,	/* vcall2_reg */
+	186,	/* vcall2_membase */
+	192,	/* dyn_call */
+	198,	/* iconst */
 	0,	/* i8const */
-	192,	/* r4const */
-	198,	/* r8const */
+	204,	/* r4const */
+	210,	/* r8const */
 	0,	/* regvar */
 	0,	/* regoffset */
 	0,	/* vtarg_addr */
-	204,	/* label */
-	210,	/* switch */
-	216,	/* throw */
-	222,	/* rethrow */
-	228,	/* store_membase_reg */
-	234,	/* storei1_membase_reg */
-	240,	/* storei2_membase_reg */
-	246,	/* storei4_membase_reg */
-	252,	/* storei8_membase_reg */
-	258,	/* storer4_membase_reg */
-	264,	/* storer8_membase_reg */
-	270,	/* store_membase_imm */
-	276,	/* storei1_membase_imm */
-	282,	/* storei2_membase_imm */
-	288,	/* storei4_membase_imm */
-	294,	/* storei8_membase_imm */
+	216,	/* label */
+	222,	/* switch */
+	228,	/* throw */
+	234,	/* rethrow */
+	240,	/* store_membase_reg */
+	246,	/* storei1_membase_reg */
+	252,	/* storei2_membase_reg */
+	258,	/* storei4_membase_reg */
+	264,	/* storei8_membase_reg */
+	270,	/* storer4_membase_reg */
+	276,	/* storer8_membase_reg */
+	282,	/* store_membase_imm */
+	288,	/* storei1_membase_imm */
+	294,	/* storei2_membase_imm */
+	300,	/* storei4_membase_imm */
+	306,	/* storei8_membase_imm */
 	0,	/* storex_membase */
 	0,	/* storev_membase */
-	300,	/* load_membase */
-	306,	/* loadi1_membase */
-	312,	/* loadu1_membase */
-	318,	/* loadi2_membase */
-	324,	/* loadu2_membase */
-	330,	/* loadi4_membase */
-	336,	/* loadu4_membase */
-	342,	/* loadi8_membase */
-	348,	/* loadr4_membase */
-	354,	/* loadr8_membase */
+	312,	/* load_membase */
+	318,	/* loadi1_membase */
+	324,	/* loadu1_membase */
+	330,	/* loadi2_membase */
+	336,	/* loadu2_membase */
+	342,	/* loadi4_membase */
+	348,	/* loadu4_membase */
+	354,	/* loadi8_membase */
+	360,	/* loadr4_membase */
+	366,	/* loadr8_membase */
 	0,	/* loadx_membase */
 	0,	/* loadv_membase */
-	360,	/* load_memindex */
-	366,	/* loadi1_memindex */
-	372,	/* loadu1_memindex */
-	378,	/* loadi2_memindex */
-	384,	/* loadu2_memindex */
-	390,	/* loadi4_memindex */
-	396,	/* loadu4_memindex */
+	372,	/* load_memindex */
+	378,	/* loadi1_memindex */
+	384,	/* loadu1_memindex */
+	390,	/* loadi2_memindex */
+	396,	/* loadu2_memindex */
+	402,	/* loadi4_memindex */
+	408,	/* loadu4_memindex */
 	0,	/* loadi8_memindex */
 	0,	/* loadr4_memindex */
 	0,	/* loadr8_memindex */
-	402,	/* store_memindex */
-	408,	/* storei1_memindex */
-	414,	/* storei2_memindex */
-	420,	/* storei4_memindex */
+	414,	/* store_memindex */
+	420,	/* storei1_memindex */
+	426,	/* storei2_memindex */
+	432,	/* storei4_memindex */
 	0,	/* storei8_memindex */
 	0,	/* storer4_memindex */
 	0,	/* storer8_memindex */
-	0,	/* loadr8_spill_membase */
 	0,	/* load_mem */
 	0,	/* loadu1_mem */
 	0,	/* loadu2_mem */
 	0,	/* loadi4_mem */
-	426,	/* loadu4_mem */
+	438,	/* loadu4_mem */
 	0,	/* loadi8_mem */
 	0,	/* store_mem_imm */
-	432,	/* move */
+	444,	/* move */
 	0,	/* lmove */
-	438,	/* fmove */
+	450,	/* fmove */
 	0,	/* vmove */
 	0,	/* vzero */
-	444,	/* add_imm */
-	450,	/* sub_imm */
-	456,	/* mul_imm */
-	462,	/* div_imm */
-	468,	/* div_un_imm */
-	474,	/* rem_imm */
-	480,	/* rem_un_imm */
-	486,	/* and_imm */
-	492,	/* or_imm */
-	498,	/* xor_imm */
-	504,	/* shl_imm */
-	510,	/* shr_imm */
-	516,	/* shr_un_imm */
-	522,	/* br */
-	528,	/* jmp */
+	456,	/* add_imm */
+	462,	/* sub_imm */
+	468,	/* mul_imm */
+	0,	/* div_imm */
+	0,	/* div_un_imm */
+	0,	/* rem_imm */
+	0,	/* rem_un_imm */
+	474,	/* and_imm */
+	480,	/* or_imm */
+	486,	/* xor_imm */
+	492,	/* shl_imm */
+	498,	/* shr_imm */
+	504,	/* shr_un_imm */
+	510,	/* br */
+	516,	/* jmp */
 	0,	/* tailcall */
-	534,	/* break */
-	540,	/* ceq */
-	546,	/* cgt */
-	552,	/* cgt.un */
-	558,	/* clt */
-	564,	/* clt.un */
-	570,	/* cond_exc_eq */
-	576,	/* cond_exc_ge */
-	582,	/* cond_exc_gt */
-	588,	/* cond_exc_le */
-	594,	/* cond_exc_lt */
-	600,	/* cond_exc_ne_un */
-	606,	/* cond_exc_ge_un */
-	612,	/* cond_exc_gt_un */
-	618,	/* cond_exc_le_un */
-	624,	/* cond_exc_lt_un */
-	630,	/* cond_exc_ov */
-	636,	/* cond_exc_no */
-	642,	/* cond_exc_c */
-	648,	/* cond_exc_nc */
-	654,	/* cond_exc_ieq */
-	660,	/* cond_exc_ige */
-	666,	/* cond_exc_igt */
-	672,	/* cond_exc_ile */
-	678,	/* cond_exc_ilt */
-	684,	/* cond_exc_ine_un */
-	690,	/* cond_exc_ige_un */
-	696,	/* cond_exc_igt_un */
-	702,	/* cond_exc_ile_un */
-	708,	/* cond_exc_ilt_un */
-	714,	/* cond_exc_iov */
-	720,	/* cond_exc_ino */
-	726,	/* cond_exc_ic */
-	732,	/* cond_exc_inc */
+	522,	/* break */
+	528,	/* ceq */
+	534,	/* cgt */
+	540,	/* cgt.un */
+	546,	/* clt */
+	552,	/* clt.un */
+	558,	/* cond_exc_eq */
+	564,	/* cond_exc_ge */
+	570,	/* cond_exc_gt */
+	576,	/* cond_exc_le */
+	582,	/* cond_exc_lt */
+	588,	/* cond_exc_ne_un */
+	594,	/* cond_exc_ge_un */
+	600,	/* cond_exc_gt_un */
+	606,	/* cond_exc_le_un */
+	612,	/* cond_exc_lt_un */
+	618,	/* cond_exc_ov */
+	624,	/* cond_exc_no */
+	630,	/* cond_exc_c */
+	636,	/* cond_exc_nc */
+	642,	/* cond_exc_ieq */
+	648,	/* cond_exc_ige */
+	654,	/* cond_exc_igt */
+	660,	/* cond_exc_ile */
+	666,	/* cond_exc_ilt */
+	672,	/* cond_exc_ine_un */
+	678,	/* cond_exc_ige_un */
+	684,	/* cond_exc_igt_un */
+	690,	/* cond_exc_ile_un */
+	696,	/* cond_exc_ilt_un */
+	702,	/* cond_exc_iov */
+	708,	/* cond_exc_ino */
+	714,	/* cond_exc_ic */
+	720,	/* cond_exc_inc */
 	0,	/* long_add */
 	0,	/* long_sub */
 	0,	/* long_mul */
@@ -451,7 +449,7 @@ const guint16 arm_cpu_desc_idx [] = {
 	0,	/* long_conv_to_u2 */
 	0,	/* long_conv_to_u1 */
 	0,	/* long_conv_to_i */
-	738,	/* long_conv_to_ovf_i */
+	0,	/* long_conv_to_ovf_i */
 	0,	/* long_conv_to_ovf_u */
 	0,	/* long_add_ovf */
 	0,	/* long_add_ovf_un */
@@ -510,43 +508,43 @@ const guint16 arm_cpu_desc_idx [] = {
 	0,	/* long_conv_to_r8_2 */
 	0,	/* long_conv_to_r4_2 */
 	0,	/* long_conv_to_r_un_2 */
-	744,	/* long_conv_to_ovf_i4_2 */
-	750,	/* int_add */
-	756,	/* int_sub */
-	762,	/* int_mul */
-	768,	/* int_div */
-	774,	/* int_div_un */
-	780,	/* int_rem */
-	786,	/* int_rem_un */
-	792,	/* int_and */
-	798,	/* int_or */
-	804,	/* int_xor */
-	810,	/* int_shl */
-	816,	/* int_shr */
-	822,	/* int_shr_un */
-	828,	/* int_neg */
-	834,	/* int_not */
-	840,	/* int_conv_to_i1 */
-	846,	/* int_conv_to_i2 */
-	852,	/* int_conv_to_i4 */
+	726,	/* long_conv_to_ovf_i4_2 */
+	732,	/* int_add */
+	738,	/* int_sub */
+	744,	/* int_mul */
+	750,	/* int_div */
+	756,	/* int_div_un */
+	762,	/* int_rem */
+	768,	/* int_rem_un */
+	774,	/* int_and */
+	780,	/* int_or */
+	786,	/* int_xor */
+	792,	/* int_shl */
+	798,	/* int_shr */
+	804,	/* int_shr_un */
+	810,	/* int_neg */
+	816,	/* int_not */
+	822,	/* int_conv_to_i1 */
+	828,	/* int_conv_to_i2 */
+	834,	/* int_conv_to_i4 */
 	0,	/* int_conv_to_i8 */
-	858,	/* int_conv_to_r4 */
-	864,	/* int_conv_to_r8 */
-	870,	/* int_conv_to_u4 */
+	840,	/* int_conv_to_r4 */
+	846,	/* int_conv_to_r8 */
+	852,	/* int_conv_to_u4 */
 	0,	/* int_conv_to_u8 */
-	876,	/* int_conv_to_r_un */
+	858,	/* int_conv_to_r_un */
 	0,	/* int_conv_to_u */
-	882,	/* int_conv_to_u2 */
-	888,	/* int_conv_to_u1 */
+	864,	/* int_conv_to_u2 */
+	870,	/* int_conv_to_u1 */
 	0,	/* int_conv_to_i */
 	0,	/* int_conv_to_ovf_i */
 	0,	/* int_conv_to_ovf_u */
-	894,	/* int_add_ovf */
-	900,	/* int_add_ovf_un */
-	906,	/* int_mul_ovf */
-	912,	/* int_mul_ovf_un */
-	918,	/* int_sub_ovf */
-	924,	/* int_sub_ovf_un */
+	876,	/* int_add_ovf */
+	882,	/* int_add_ovf_un */
+	888,	/* int_mul_ovf */
+	894,	/* int_mul_ovf_un */
+	900,	/* int_sub_ovf */
+	906,	/* int_sub_ovf_un */
 	0,	/* int_conv_to_ovf_i1_un */
 	0,	/* int_conv_to_ovf_i2_un */
 	0,	/* int_conv_to_ovf_i4_un */
@@ -565,70 +563,70 @@ const guint16 arm_cpu_desc_idx [] = {
 	0,	/* int_conv_to_ovf_u4 */
 	0,	/* int_conv_to_ovf_i8 */
 	0,	/* int_conv_to_ovf_u8 */
-	930,	/* int_adc */
-	936,	/* int_adc_imm */
-	942,	/* int_sbb */
-	948,	/* int_sbb_imm */
-	954,	/* int_addcc */
-	960,	/* int_subcc */
-	966,	/* int_add_imm */
-	972,	/* int_sub_imm */
-	978,	/* int_mul_imm */
-	984,	/* int_div_imm */
-	990,	/* int_div_un_imm */
-	996,	/* int_rem_imm */
-	1002,	/* int_rem_un_imm */
-	1008,	/* int_and_imm */
-	1014,	/* int_or_imm */
-	1020,	/* int_xor_imm */
-	1026,	/* int_shl_imm */
-	1032,	/* int_shr_imm */
-	1038,	/* int_shr_un_imm */
-	1044,	/* int_ceq */
-	1050,	/* int_cgt */
-	1056,	/* int_cgt_un */
-	1062,	/* int_clt */
-	1068,	/* int_clt_un */
-	1074,	/* int_beq */
-	1080,	/* int_bge */
-	1086,	/* int_bgt */
-	1092,	/* int_ble */
-	1098,	/* int_blt */
-	1104,	/* int_bne_un */
-	1110,	/* int_bge_un */
-	1116,	/* int_bgt_un */
-	1122,	/* int_ble_un */
-	1128,	/* int_blt_un */
-	1134,	/* float_beq */
-	1140,	/* float_bge */
-	1146,	/* float_bgt */
-	1152,	/* float_ble */
-	1158,	/* float_blt */
-	1164,	/* float_bne_un */
-	1170,	/* float_bge_un */
-	1176,	/* float_bgt_un */
-	1182,	/* float_ble_un */
-	1188,	/* float_blt_un */
-	1194,	/* float_add */
-	1200,	/* float_sub */
-	1206,	/* float_mul */
-	1212,	/* float_div */
-	1218,	/* float_div_un */
-	1224,	/* float_rem */
-	1230,	/* float_rem_un */
-	1236,	/* float_neg */
-	1242,	/* float_not */
-	1248,	/* float_conv_to_i1 */
-	1254,	/* float_conv_to_i2 */
-	1260,	/* float_conv_to_i4 */
-	1266,	/* float_conv_to_i8 */
-	1272,	/* float_conv_to_r4 */
+	912,	/* int_adc */
+	918,	/* int_adc_imm */
+	924,	/* int_sbb */
+	930,	/* int_sbb_imm */
+	936,	/* int_addcc */
+	942,	/* int_subcc */
+	948,	/* int_add_imm */
+	954,	/* int_sub_imm */
+	960,	/* int_mul_imm */
+	966,	/* int_div_imm */
+	972,	/* int_div_un_imm */
+	978,	/* int_rem_imm */
+	984,	/* int_rem_un_imm */
+	990,	/* int_and_imm */
+	996,	/* int_or_imm */
+	1002,	/* int_xor_imm */
+	1008,	/* int_shl_imm */
+	1014,	/* int_shr_imm */
+	1020,	/* int_shr_un_imm */
+	1026,	/* int_ceq */
+	1032,	/* int_cgt */
+	1038,	/* int_cgt_un */
+	1044,	/* int_clt */
+	1050,	/* int_clt_un */
+	1056,	/* int_beq */
+	1062,	/* int_bge */
+	1068,	/* int_bgt */
+	1074,	/* int_ble */
+	1080,	/* int_blt */
+	1086,	/* int_bne_un */
+	1092,	/* int_bge_un */
+	1098,	/* int_bgt_un */
+	1104,	/* int_ble_un */
+	1110,	/* int_blt_un */
+	1116,	/* float_beq */
+	1122,	/* float_bge */
+	1128,	/* float_bgt */
+	1134,	/* float_ble */
+	1140,	/* float_blt */
+	1146,	/* float_bne_un */
+	1152,	/* float_bge_un */
+	1158,	/* float_bgt_un */
+	1164,	/* float_ble_un */
+	1170,	/* float_blt_un */
+	1176,	/* float_add */
+	1182,	/* float_sub */
+	1188,	/* float_mul */
+	1194,	/* float_div */
+	1200,	/* float_div_un */
+	1206,	/* float_rem */
+	1212,	/* float_rem_un */
+	1218,	/* float_neg */
+	1224,	/* float_not */
+	1230,	/* float_conv_to_i1 */
+	1236,	/* float_conv_to_i2 */
+	1242,	/* float_conv_to_i4 */
+	1248,	/* float_conv_to_i8 */
+	1254,	/* float_conv_to_r4 */
 	0,	/* float_conv_to_r8 */
-	1278,	/* float_conv_to_u4 */
-	1284,	/* float_conv_to_u8 */
-	1290,	/* float_conv_to_u2 */
-	1296,	/* float_conv_to_u1 */
-	1302,	/* float_conv_to_i */
+	1260,	/* float_conv_to_u4 */
+	1266,	/* float_conv_to_u8 */
+	1272,	/* float_conv_to_u2 */
+	1278,	/* float_conv_to_u1 */
+	1284,	/* float_conv_to_i */
 	0,	/* float_conv_to_ovf_i */
 	0,	/* float_conv_to_ovd_u */
 	0,	/* float_add_ovf */
@@ -655,30 +653,30 @@ const guint16 arm_cpu_desc_idx [] = {
 	0,	/* float_conv_to_ovf_u4 */
 	0,	/* float_conv_to_ovf_i8 */
 	0,	/* float_conv_to_ovf_u8 */
-	1308,	/* float_ceq */
-	1314,	/* float_cgt */
-	1320,	/* float_cgt_un */
-	1326,	/* float_clt */
-	1332,	/* float_clt_un */
+	1290,	/* float_ceq */
+	1296,	/* float_cgt */
+	1302,	/* float_cgt_un */
+	1308,	/* float_clt */
+	1314,	/* float_clt_un */
 	0,	/* float_ceq_membase */
 	0,	/* float_cgt_membase */
 	0,	/* float_cgt_un_membase */
 	0,	/* float_clt_membase */
 	0,	/* float_clt_un_membase */
-	1338,	/* float_conv_to_u */
-	1344,	/* ckfinite */
+	1320,	/* float_conv_to_u */
+	1326,	/* ckfinite */
 	0,	/* float_getlow32 */
 	0,	/* float_gethigh32 */
 	0,	/* jump_table */
-	1350,	/* aot_const */
+	1332,	/* aot_const */
 	0,	/* patch_info */
 	0,	/* got_entry */
-	1356,	/* call_handler */
-	1362,	/* start_handler */
-	1368,	/* endfilter */
-	1374,	/* endfinally */
-	1380,	/* bigmul */
-	1386,	/* bigmul_un */
+	1338,	/* call_handler */
+	1344,	/* start_handler */
+	1350,	/* endfilter */
+	1356,	/* endfinally */
+	1362,	/* bigmul */
+	1368,	/* bigmul_un */
 	0,	/* int_min_un */
 	0,	/* int_max_un */
 	0,	/* long_min_un */
@@ -689,15 +687,15 @@ const guint16 arm_cpu_desc_idx [] = {
 	0,	/* int_max */
 	0,	/* long_min */
 	0,	/* long_max */
-	1392,	/* adc */
-	1398,	/* adc_imm */
-	1404,	/* sbb */
-	1410,	/* sbb_imm */
-	1416,	/* addcc */
-	1422,	/* addcc_imm */
-	1428,	/* subcc */
-	1434,	/* subcc_imm */
-	1440,	/* br_reg */
+	1374,	/* adc */
+	1380,	/* adc_imm */
+	1386,	/* sbb */
+	1392,	/* sbb_imm */
+	1398,	/* addcc */
+	1404,	/* addcc_imm */
+	1410,	/* subcc */
+	1416,	/* subcc_imm */
+	1422,	/* br_reg */
 	0,	/* sext_i1 */
 	0,	/* sext_i2 */
 	0,	/* sext_i4 */
@@ -706,16 +704,16 @@ const guint16 arm_cpu_desc_idx [] = {
 	0,	/* zext_i4 */
 	0,	/* cne */
 	0,	/* trunc_i4 */
-	1446,	/* add_ovf_carry */
-	1452,	/* sub_ovf_carry */
-	1458,	/* add_ovf_un_carry */
-	1464,	/* sub_ovf_un_carry */
+	1428,	/* add_ovf_carry */
+	1434,	/* sub_ovf_carry */
+	1440,	/* add_ovf_un_carry */
+	1446,	/* sub_ovf_un_carry */
 	0,	/* sin */
 	0,	/* cos */
 	0,	/* abs */
 	0,	/* tan */
 	0,	/* atan */
-	1470,	/* sqrt */
+	1452,	/* sqrt */
 	0,	/* round */
 	0,	/* strlen */
 	0,	/* newarr */
@@ -726,12 +724,12 @@ const guint16 arm_cpu_desc_idx [] = {
 	0,	/* memset */
 	0,	/* save_lmf */
 	0,	/* restore_lmf */
-	1476,	/* tls_get */
+	1458,	/* tls_get */
 	0,	/* load_gotaddr */
-	1482,	/* dummy_use */
-	1488,	/* dummy_store */
-	1494,	/* not_reached */
-	1500,	/* not_null */
+	1464,	/* dummy_use */
+	1470,	/* dummy_store */
+	1476,	/* not_reached */
+	1482,	/* not_null */
 	0,	/* xmove */
 	0,	/* xzero */
 	0,	/* xphi */
@@ -745,7 +743,7 @@ const guint16 arm_cpu_desc_idx [] = {
 	0,	/* atomic_add_imm_i8 */
 	0,	/* atomic_add_imm_new_i8 */
 	0,	/* atomic_exchange_i8 */
-	1506,	/* memory_barrier */
+	1488,	/* memory_barrier */
 	0,	/* atomic_cas_i4 */
 	0,	/* atomic_cas_i8 */
 	0,	/* cmov_ieq */
@@ -770,7 +768,7 @@ const guint16 arm_cpu_desc_idx [] = {
 	0,	/* cmov_llt_un */
 	0,	/* liverange_start */
 	0,	/* liverange_end */
-	1512,	/* arm_rsbs_imm */
-	1518,	/* arm_rsc_imm */
+	1494,	/* arm_rsbs_imm */
+	1500,	/* arm_rsc_imm */
 };
 

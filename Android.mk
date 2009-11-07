@@ -38,7 +38,7 @@ LOCAL_SRC_FILES := mono-ehash.c mono-md5.c \
 	mono-stdlib.c mono-property-hash.h mono-property-hash.c \
 	mono-value-hash.h mono-value-hash.c freebsd-elf_common.h \
 	freebsd-elf32.h freebsd-elf64.h freebsd-dwarf.h dtrace.h \
-	mono-filemap.c
+	mono-filemap.c mono-networkinterfaces.c mono-error.c
 MONO_SRC_FILES += $(addprefix $d/,$(LOCAL_SRC_FILES))
 
 
@@ -165,11 +165,11 @@ LOCAL_SRC_FILES := access.h atomic.c atomic.h collection.c \
 	processes.h process-private.h security.c security.h \
 	semaphores.c semaphores.h semaphore-private.h shared.c \
 	shared.h sockets.c sockets.h socket-private.h \
-	socket-wrappers.h status.h system.c system.h threads.c \
+	socket-wrappers.h status.h system.c system.h wthreads.c \
 	threads.h thread-private.h timefuncs.c timefuncs.h \
 	timefuncs-private.h types.h uglify.h versioninfo.c \
-	versioninfo.h wait.c wait.h wapi_glob.h wapi_glob.c
-MONO_SRC_FILES += $(addprefix $d/,$(LOCAL_SRC_FILES))
+	versioninfo.h wait.c wait.h wapi_glob.h wapi_glob.c locking.c posix.c
+MONO_SRC_FILES += $(addprefix $d/,$(LOCAL_SRC_FILES)) 
 
 
 # Build libgc
@@ -206,7 +206,7 @@ LOCAL_SRC_FILES := mini.c method-to-ir.c \
 	mini-generic-sharing.c regalloc2.c simd-intrinsics.c \
 	unwind.h unwind.c mini-posix.c \
 	mini-arm.c exceptions-arm.c tramp-arm.c image-writer.c \
-	dwarfwriter.c mini-gc.c
+	dwarfwriter.c mini-gc.c debugger-agent.c
 MONO_SRC_FILES += $(addprefix $d/,$(LOCAL_SRC_FILES))
 
 LOCAL_PATH := $(BASE_PATH)
@@ -280,7 +280,7 @@ LOCAL_C_INCLUDES += \
 
 LOCAL_PRELINK_MODULE := false
 LOCAL_SHARED_LIBRARIES += libmono libdl libc libm 
-include $(BUILD_EXECUTABLE)
+# include $(BUILD_EXECUTABLE)
 
 DIRS := $(BASE_PATH)/AndroidStatic.mk 
 	
