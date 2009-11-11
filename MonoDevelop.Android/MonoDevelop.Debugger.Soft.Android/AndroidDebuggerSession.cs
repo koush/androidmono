@@ -92,7 +92,7 @@ namespace MonoDevelop.Debugger.Soft.Android
 			System.Diagnostics.Process.Start(adbPath, adbPushArgs).WaitForExit();
 
 			string outputFile = Path.GetFileName(cmd.OutputAssembly);
-			string adbShellArgs = String.Format ("shell 'MONO_PATH=/data/data/com.koushikdutta.mono HOME=/data/local/bin /data/data/com.koushikdutta.mono/mono --debugger-agent=transport=dt_socket,address={0}:{1} /data/local/bin/{2} | /data/data/com.koushikdutta.mono/fwdstdin {0} {3}'", debuggerStartInfo.Address, debuggerStartInfo.DebugPort, outputFile, debuggerStartInfo.OutputPort);
+			string adbShellArgs = String.Format ("shell 'HOME=/data/local/bin /data/data/com.koushikdutta.mono/mono --debugger-agent=transport=dt_socket,address={0}:{1} /data/local/bin/{2} | /data/data/com.koushikdutta.mono/fwdstdin {0} {3}'", debuggerStartInfo.Address, debuggerStartInfo.DebugPort, outputFile, debuggerStartInfo.OutputPort);
 			Console.WriteLine(adbShellArgs);
 			var psi = new ProcessStartInfo () {
 				FileName = adbPath,

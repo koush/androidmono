@@ -35,7 +35,7 @@ namespace MonoDevelop.Android
 			Process.Start(adbPath, adbPushArgs).WaitForExit();
 			
 			string outputFile = Path.GetFileName(cmd.OutputAssembly);
-			string adbShellArgs = String.Format ("shell 'MONO_PATH=/data/data/com.koushikdutta.mono HOME=/data/local/bin /data/data/com.koushikdutta.mono/mono /data/local/bin/{0}'", outputFile);
+			string adbShellArgs = String.Format ("shell 'HOME=/data/local/bin /data/data/com.koushikdutta.mono/mono /data/local/bin/{0}'", outputFile);
 			Console.WriteLine(adbShellArgs);
 			
 			var psi = new ProcessStartInfo (adbPath, adbShellArgs) {
