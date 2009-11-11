@@ -615,7 +615,12 @@ public final class MonoBridge
 	{
 		return java.lang.String.format("%s, %s", fullyQualifiedName, assemblyName);
 	}
+	
+	public static void Initialize()
+	{
 		
+	}
+	
 	static void removeJavaReference(long objectId)
 	{
 		myMonoReferences.remove(objectId);

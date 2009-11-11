@@ -4,3 +4,6 @@ obj
 *.suo
 *.pidb
 *.userprefs
+MonoDevelop.Android/build
+MonoDevelop.Android/config.log
+MonoDevelop.Android/config.make
