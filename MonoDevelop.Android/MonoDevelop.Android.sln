@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDevelop.Android", "MonoDevelop.Android\MonoDevelop.Android.csproj", "{2167E4AC-0D87-432C-AC4D-46DBC32D0CA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDevelop.Debugger.Soft.Android", "MonoDevelop.Debugger.Soft.Android\MonoDevelop.Debugger.Soft.Android.csproj", "{A4F2188A-47FE-45A3-A302-ABD2C67EC35A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{2167E4AC-0D87-432C-AC4D-46DBC32D0CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2167E4AC-0D87-432C-AC4D-46DBC32D0CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2167E4AC-0D87-432C-AC4D-46DBC32D0CA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4F2188A-47FE-45A3-A302-ABD2C67EC35A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4F2188A-47FE-45A3-A302-ABD2C67EC35A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4F2188A-47FE-45A3-A302-ABD2C67EC35A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4F2188A-47FE-45A3-A302-ABD2C67EC35A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = MonoDevelop.Android\MonoDevelop.Android.csproj
