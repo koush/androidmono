@@ -3,19 +3,15 @@ package com.koushikdutta.monodalvikbridge;
 import java.io.IOException;
 import java.io.InvalidClassException;
 import java.io.UnsupportedEncodingException;
-import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.security.InvalidParameterException;
 import java.util.Hashtable;
 import java.util.Map;
-import java.util.concurrent.Semaphore;
-import java.util.concurrent.locks.ReentrantLock;
 
+import android.os.Handler;
 import android.util.Log;
-
-import com.koushikdutta.monodalvikbridge.MonoObject;
 
 class ByteBufferOutputStream
 {
@@ -158,6 +154,7 @@ public final class MonoBridge
 
 	static Hashtable<Class, Byte> myConversions = new Hashtable<Class, Byte>();
 	static Hashtable<Byte, Class> myUnconversions = new Hashtable<Byte, Class>();
+	static Handler mHandler = new Handler();
 		
     static ThreadLocal<ByteBufferOutputStream> myWriter = new ThreadLocal<ByteBufferOutputStream>()
     {
@@ -197,7 +194,6 @@ public final class MonoBridge
 	}
 	
 	static Object mSignal = new Object();
-	static Semaphore mInitializeLock = new Semaphore(0);
 	static boolean mInitialized = false;
 
 	static
@@ -251,16 +247,15 @@ public final class MonoBridge
 		{
 			public void run()
 			{
+				DebugLog("Calling initializeRuntime");
 				initializeRuntime();
 			}	
 		}).start();
-		/*
-		try {
-			mInitializeLock.acquire();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		*/
+	}
+	
+	public static boolean isInitialized()
+	{
+		return mInitialized;
 	}
 	
 	static native void getInvokeBuffer(byte[] buffer,  int returnBufferLength);
@@ -620,12 +615,7 @@ public final class MonoBridge
 	{
 		return java.lang.String.format("%s, %s", fullyQualifiedName, assemblyName);
 	}
-	
-	public static void Initialize()
-	{
 		
-	}
-	
 	static void removeJavaReference(long objectId)
 	{
 		myMonoReferences.remove(objectId);

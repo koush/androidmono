@@ -12,7 +12,7 @@
 
 jmethodID g_handleInvoke;
 jclass g_MonoBridgeClass;
-JNIEnv* g_Env;
+JavaVM* g_JavaVM;
 
 extern "C" void register_icalls();
 extern "C" int         mono_main                      (int argc, char* argv[]);
@@ -26,7 +26,6 @@ extern "C" void ves_icall_DalvikBridge_SetMonoHooks(EnsureMarshalBufferLengthFn 
 	LOGI("Setting Mono hooks. %p %p\n", g_EnsureMarshalBufferLength, g_HandleInvoke);
 }
 
-JNIEnv* g_JunkEnv;
 // If objectId is 0, it implies it is a static method, and fullyQualifiedName must be provided
 // If objectId is not 0, it is a non-static method, and fullyQualifiedName must be NULL
 extern "C" void ves_icall_DalvikBridge_InvokeInternal(char *buffer)
@@ -34,7 +33,10 @@ extern "C" void ves_icall_DalvikBridge_InvokeInternal(char *buffer)
 	LOGI("Invoking Java method.\n");
 	int bufferLength = *(int *)buffer;
 	LOGI("Invoke buffer length: %d\n", bufferLength);
-	g_Env->CallStaticVoidMethod(g_MonoBridgeClass, g_handleInvoke, bufferLength);
+  JNIEnv* env;
+  if (g_JavaVM->GetEnv((void**) &env, JNI_VERSION_1_4) == JNI_OK) {
+  	env->CallStaticVoidMethod(g_MonoBridgeClass, g_handleInvoke, bufferLength);
+  }
 }
 
 
@@ -54,6 +56,7 @@ static JNINativeMethod sMethods[] = {
 JNIEXPORT void JNICALL Java_com_koushikdutta_monodalvikbridge_MonoBridge_initializeRuntime
   (JNIEnv *env, jclass clazz)
 {
+  LOGI("initializeRuntime");
 	g_handleInvoke = env->GetStaticMethodID(clazz, "handleInvoke", "(I)V");
 	g_MonoBridgeClass = clazz;
 
@@ -77,9 +80,6 @@ JNIEXPORT void JNICALL Java_com_koushikdutta_monodalvikbridge_MonoBridge_initial
 JNIEXPORT jbyteArray JNICALL Java_com_koushikdutta_monodalvikbridge_MonoBridge_invokeInternal
   (JNIEnv *env, jclass clazz, jbyteArray buffer, jint bufferLength)
 {
-	g_JunkEnv = env;
-	LOGI("Setting junk env\n");
-
 	LOGI("Invoking Mono method. %p\n", g_EnsureMarshalBufferLength);
 	int fullBufferLength = bufferLength + sizeof(int);
 	char *marshalBuffer = g_EnsureMarshalBufferLength(fullBufferLength);
@@ -133,13 +133,15 @@ JNIEXPORT void JNICALL Java_com_koushikdutta_monodalvikbridge_MonoBridge_setRetu
 extern "C" jint JNI_OnLoad(JavaVM* vm, void* reserved)
 {
 	LOGI("Initializing JNI/PInvoke layer.\n");
-    jint result = -1;
+	
+  g_JavaVM = vm;
+  JNIEnv* env;
+  if (g_JavaVM->GetEnv((void**) &env, JNI_VERSION_1_4) != JNI_OK) {
+    return -1;
+  }
 
-    if (vm->GetEnv((void**) &g_Env, JNI_VERSION_1_4) != JNI_OK) {
-        return result;
-    }
+	LOGI("Registering native methods.\n");
+	jniRegisterNativeMethods(env, "com/koushikdutta/monodalvikbridge/MonoBridge", sMethods, 4);
 
-	jniRegisterNativeMethods(g_Env, "com/koushikdutta/monodalvikbridge/MonoBridge", sMethods, 4);
-
-    return JNI_VERSION_1_4;
+  return JNI_VERSION_1_4;
 }

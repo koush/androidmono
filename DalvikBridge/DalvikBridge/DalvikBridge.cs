@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Runtime.InteropServices;
@@ -103,7 +103,7 @@ namespace MonoDalvikBridge
         static string DeserializeString()
         {
             int length = myReader.ReadInt32();
-            DebugLog("Deserializing String of Length: {0}", length);
+            //DebugLog("Deserializing String of Length: {0}", length);
             if (length < 0)
                 return null;
             return new string(myReader.ReadChars(length));
@@ -172,7 +172,7 @@ namespace MonoDalvikBridge
             // Mono objects are contained in the reference table, so let's return that reference
             myDeserializeHandlers[(byte)RuntimeType.MonoObject] = () => { int id = myReader.ReadInt32(); if (id == 0) return null; return myJavaReferences[id]; };
             myDeserializeHandlers[(byte)RuntimeType.JavaObject] = () => { int id = myReader.ReadInt32(); if (id == 0) return null; return new DalvikObject(id); };
-        }
+		}
 
         static bool MatchesSignatureBase(string methodName, Type[] parameterTypes, MethodBase method)
         {
@@ -583,11 +583,11 @@ namespace MonoDalvikBridge
         {
             if (runtimeType == RuntimeType.Default)
             {
-                DebugLog("Deserializing {0}: null", runtimeType);
+                //DebugLog("Deserializing {0}: null", runtimeType);
                 return null;
             }
             object ret = myDeserializeHandlers[(byte)runtimeType]();
-            DebugLog("Deserializing {0}: {1}", runtimeType, (object)ret != null ? (object)ret : "null");
+            //DebugLog("Deserializing {0}: {1}", runtimeType, (object)ret != null ? (object)ret : "null");
             return ret;
         }
 
@@ -604,7 +604,7 @@ namespace MonoDalvikBridge
 
         static void SerializeObject(object o, RuntimeType objectType)
         {
-            DebugLog("Serializing {0}: {1}", objectType, o != null ? o : "null");
+            //DebugLog("Serializing {0}: {1}", objectType, o != null ? o : "null");
             // Unknown types are nulls with no explicit type associated
             // they may be either java objects, strings, or mono objects...
             // We won't know until it reaches the java end for resolution.

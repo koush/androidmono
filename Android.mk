@@ -250,7 +250,7 @@ include $(BUILD_SHARED_LIBRARY)
 # Build mono
 include $(CLEAR_VARS)
 LOCAL_MODULE := mono
-d := /mono/mono/mini/
+d := /PlatformPatches/
 LOCAL_PATH := $(BASE_PATH)/$d
 intermediates := $(base_intermediates)/out
 
@@ -279,8 +279,8 @@ LOCAL_C_INCLUDES += \
 	$(BASE_PATH)/mono/libgc/include/ 
 
 LOCAL_PRELINK_MODULE := false
-LOCAL_SHARED_LIBRARIES += libmono libdl libc libm 
-# include $(BUILD_EXECUTABLE)
+LOCAL_SHARED_LIBRARIES += libdl libc libm 
+include $(BUILD_EXECUTABLE)
 
 DIRS := $(BASE_PATH)/AndroidStatic.mk 
 	

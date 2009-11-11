@@ -177,7 +177,7 @@ public class MonoActivity extends Activity
 	{
 		if (item == mTestItem)
 		{
-			MonoBridge.Initialize();
+			MonoBridge.Initialize(null);
 		}
 		else if (item == mInvokeItem)
 		{
