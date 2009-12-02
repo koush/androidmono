@@ -12,7 +12,7 @@ then
 fi
 
 MONO_SVN_BASE=svn://anonsvn.mono-project.com/source/branches/mono-2-6
-MONO_SVN_REVISION=147278
+MONO_SVN_REVISION=147505
 
 echo
 echo =====CHECKING OUT MONO AND MCS=====
