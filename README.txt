@@ -15,7 +15,8 @@ cd external
 git clone git@github.com:koush/androidmono.git
 
 # Use the get-mono.sh script to check out the proper revision of mono from svn and 
-# apply any necessary patches. This step may take a while.
+# apply any necessary patches. This step may take a while because it builds mono
+# and mcs so the assemblies are available for packaging in the APK.
 cd androidmono
 ./get-mono.sh
 
