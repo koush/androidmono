@@ -1,3 +1,4 @@
+pushd $(dirname $0)
 echo =====CLEARING OLD MONO BITS=====
 
 if [ -d mono ]
@@ -38,3 +39,4 @@ echo
 echo =====APPLYING ANDROID PATCHES=====
 patch -p0 -i ../mono.patch
 
+popd

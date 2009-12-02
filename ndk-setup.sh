@@ -16,7 +16,7 @@ then
     exit 1
 fi
 
-ANDROIDMONO_ROOT=$(dirname $0)
+ANDROIDMONO_ROOT=$(pwd)/$(dirname $0)
 rm -f $1/apps/androidmono
 rm -f $1/sources/androidmono
 ln -s $ANDROIDMONO_ROOT $1/apps/androidmono

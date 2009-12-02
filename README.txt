@@ -1,37 +1,33 @@
 ---- setup ----
 
-# This README assumes that your android source directory is located at ~/mydroid.
+# This README assumes that your Android NDK directory is located at ~/src/android-ndk.
 # Adjust any instructions as necessary.
 
-# Go to your Android repository and set up your environment.
-# Cupcake, Donut, Eclair are currently supported. Release 1.0 probably won't work.
-cd ~/mydroid
-. build/envsetup.sh
-lunch 1
-
-# Now get the androidmono repository which contains the build scripts and patches 
+# Get the androidmono repository which contains the build scripts and patches 
 # necessary to build mono.
-cd external
 git clone git@github.com:koush/androidmono.git
 
 # Use the get-mono.sh script to check out the proper revision of mono from svn and 
 # apply any necessary patches. This step may take a while because it builds mono
 # and mcs so the assemblies are available for packaging in the APK.
+cd ~/src
 cd androidmono
 ./get-mono.sh
 
+# Set up the NDK to be aware of the androidmono project
+./ndk-setup ~/src/android-ndk
+
 ---- building the mono binaries ----
 
-# Go back to your Android repository and make. Currently this only builds the mono
-# binaries, and not the APK. The APK must be build through Eclipse. This will be
-# fixed later.
-cd ~/mydroid
-make
+# Go to your Android NDK directory and make.
+cd ~/src/android-ndk
+make APP=androidmono                        # this builds libmono.so
+MONO_EXECUTABLE=true make APP=androidmono   # this builds the mono binary 
 
 ---- building the mono APK ----
 
 From Eclipse, create a new Android project. Choose open existing, and browse to the
-directory: ~/mydroid/external/androidmono/MonoActivity and continue.
+directory: ~/src/androidmono/MonoActivity and continue.
 
 Run the project, and you will see an Activity that starts and extracts the mono binaries 
 to your device/emulator.
