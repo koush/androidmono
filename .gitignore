@@ -7,3 +7,5 @@ obj
 MonoDevelop.Android/build
 MonoDevelop.Android/config.log
 MonoDevelop.Android/config.make
+hostbuild
+mono

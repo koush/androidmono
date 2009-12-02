@@ -291,6 +291,7 @@ include $(BUILD_SHARED_LIBRARY)
 endif
 
 include $(CLEAR_VARS)
+LOCAL_PATH := $(BASE_PATH)
 LOCAL_MODULE := fwdstdin
 LOCAL_SRC_FILES := fwdstdin/main.c
 LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -ldl -lm -lc
