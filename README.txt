@@ -21,7 +21,9 @@ cd androidmono
 ./get-mono.sh
 
 ---- building the mono binaries ----
-# Go back to your Android repository and make.
+# Go back to your Android repository and make. Currently this only builds the mono
+# binaries, and not the APK. The APK must be build through Eclipse. This will be
+# fixed later.
 
 cd ~/mydroid
 make
