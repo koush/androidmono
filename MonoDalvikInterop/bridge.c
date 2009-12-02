@@ -18,7 +18,7 @@
 #include "mono/mini/mini.h"
 #include <string.h>
 #include <errno.h>
-#include <cutils/log.h>
+#include <android/log.h>
 
 #include "bridge.h"
 
@@ -48,7 +48,7 @@ void ves_icall_DalvikBridge_Log(int priority, MonoString* tag, MonoString *s)
 	gpointer str = mono_string_to_utf8(s);
 	gpointer strTag = mono_string_to_utf8(tag);
 	//LOGI(strTag, str);
-	android_writeLog(priority, strTag, str);
+	__android_log_write(priority, strTag, str);
 	g_free(strTag);
 	g_free(str);
 }

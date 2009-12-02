@@ -1,8 +1,50 @@
 BASE_PATH := $(call my-dir)
+
+
+ifeq ($(MONO_EXECUTABLE),true)
+
+# Build mono
+include $(CLEAR_VARS)
+LOCAL_MODULE := mono
+d := /PlatformPatches/
+LOCAL_PATH := $(BASE_PATH)/$d
+intermediates := $(base_intermediates)/out
+
+LOCAL_SRC_FILES := main.c
+
+# Disable all warnings
+# Must have no optimizations or floating point messes up...?
+LOCAL_CFLAGS += -O0 -w
+# Force ARM
+LOCAL_ARM_MODE := arm
+# Eglib stuff
+LOCAL_CFLAGS += -DHAVE_PWD_H -DHAVE_UNISTD_H
+# Libgc stuff
+LOCAL_CFLAGS +=	-DGC_LINUX_THREADS=1 -D_REENTRANT=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSILENT=1 -DNO_SIGNALS=1 -DNO_EXECUTE_PERMISSION=1 -DJAVA_FINALIZATION=1 -DGC_GCJ_SUPPORT=1 -DATOMIC_UNCOLLECTABLE=1 -D_IN_LIBGC=1  -DGC_LINUX_THREADS -D_GNU_SOURCE -D_REENTRANT -DUSE_MMAP -DUSE_MUNMAP -D_FILE_OFFSET_BITS=64 -DNO_UNALIGNED_ACCESS
+# Mono specific defines
+LOCAL_CFLAGS += -DGC_GCJ_SUPPORT=1 -DHAVE_CONFIG_H -DARM_FPU_NONE -DPLATFORM_ANDROID -DMONO_ASSEMBLIES=\"/data/data/com.koushikdutta.mono/assets/lib/\" -DMONO_BINDIR=\"/data/data/com.koushikdutta.mono/assets/bin/\" -DMONO_CFG_DIR=\"/data/data/com.koushikdutta.mono/assets/bin/\"
+# libc holes
+LOCAL_CFLAGS += -DS_IWRITE=0200
+
+LOCAL_CFLAGS += \
+	-I $(BASE_PATH)/PlatformPatches/ \
+	-I $(BASE_PATH)/mono/ \
+	-I $(BASE_PATH)/mono/mono/ \
+	-I $(BASE_PATH)/mono/eglib/src/ \
+	-I $(BASE_PATH)/mono/mono/mini/ \
+	-I $(BASE_PATH)/mono/libgc/include/ \
+	-I $(JNI_H_INCLUDE) 
+
+LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -llog -ldl -lm -lc
+
+include $(BUILD_EXECUTABLE)
+
+else
+
+
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := libmono
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE := mono
 
 base_intermediates := $(call local-intermediates-dir)
 
@@ -223,16 +265,16 @@ LOCAL_CFLAGS +=	-DGC_LINUX_THREADS=1 -D_REENTRANT=1 -DSTDC_HEADERS=1 -DHAVE_SYS_
 # Mono specific defines
 LOCAL_CFLAGS += -DGC_GCJ_SUPPORT=1 -DHAVE_CONFIG_H -DARM_FPU_VFP -DPLATFORM_ANDROID -DMONO_ASSEMBLIES=\"/data/data/com.koushikdutta.mono/assets/lib/\" -DMONO_BINDIR=\"/data/data/com.koushikdutta.mono/assets/bin/\" -DMONO_CFG_DIR=\"/data/data/com.koushikdutta.mono/assets/bin/\"
 # libc holes
-LOCAL_CFLAGS += -DS_IWRITE=0200
+LOCAL_CFLAGS += -DS_IWRITE=0200 -D__linux__
 
-LOCAL_C_INCLUDES += \
-	$(BASE_PATH)/PlatformPatches/ \
-	$(BASE_PATH)/mono/ \
-	$(BASE_PATH)/mono/mono/ \
-	$(BASE_PATH)/mono/eglib/src/ \
-	$(BASE_PATH)/mono/mono/mini/ \
-	$(BASE_PATH)/mono/libgc/include/ \
-	$(JNI_H_INCLUDE) 
+LOCAL_CFLAGS += \
+	-I $(BASE_PATH)/PlatformPatches/ \
+	-I $(BASE_PATH)/mono/ \
+	-I $(BASE_PATH)/mono/mono/ \
+	-I $(BASE_PATH)/mono/eglib/src/ \
+	-I $(BASE_PATH)/mono/mono/mini/ \
+	-I $(BASE_PATH)/mono/libgc/include/ \
+	-I $(JNI_H_INCLUDE) 
 
 LOCAL_SRC_FILES := $(MONO_SRC_FILES)
 
@@ -242,46 +284,14 @@ LOCAL_SRC_FILES += PlatformPatches/missing.c
 LOCAL_SRC_FILES += MonoDalvikInterop/com_koushikdutta_monodalvikbridge_MonoBridge.cpp MonoDalvikInterop/bridge.c
 
 
-LOCAL_SHARED_LIBRARIES += libdl libc libm libdvm libnativehelper liblog
-LOCAL_PRELINK_MODULE := false
+LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -llog -ldl -lm -lc
+# LOCAL_PRELINK_MODULE := false
 include $(BUILD_SHARED_LIBRARY)
 
+endif
 
-# Build mono
 include $(CLEAR_VARS)
-LOCAL_MODULE := mono
-d := /PlatformPatches/
-LOCAL_PATH := $(BASE_PATH)/$d
-intermediates := $(base_intermediates)/out
-
-LOCAL_SRC_FILES := main.c
-
-# Disable all warnings
-# Must have no optimizations or floating point messes up...?
-LOCAL_CFLAGS += -O0 -w
-# Force ARM
-LOCAL_ARM_MODE := arm
-# Eglib stuff
-LOCAL_CFLAGS += -DHAVE_PWD_H -DHAVE_UNISTD_H
-# Libgc stuff
-LOCAL_CFLAGS +=	-DGC_LINUX_THREADS=1 -D_REENTRANT=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DSILENT=1 -DNO_SIGNALS=1 -DNO_EXECUTE_PERMISSION=1 -DJAVA_FINALIZATION=1 -DGC_GCJ_SUPPORT=1 -DATOMIC_UNCOLLECTABLE=1 -D_IN_LIBGC=1  -DGC_LINUX_THREADS -D_GNU_SOURCE -D_REENTRANT -DUSE_MMAP -DUSE_MUNMAP -D_FILE_OFFSET_BITS=64 -DNO_UNALIGNED_ACCESS
-# Mono specific defines
-LOCAL_CFLAGS += -DGC_GCJ_SUPPORT=1 -DHAVE_CONFIG_H -DARM_FPU_NONE -DPLATFORM_ANDROID -DMONO_ASSEMBLIES=\"/data/data/com.koushikdutta.mono/assets/lib/\" -DMONO_BINDIR=\"/data/data/com.koushikdutta.mono/assets/bin/\" -DMONO_CFG_DIR=\"/data/data/com.koushikdutta.mono/assets/bin/\"
-# libc holes
-LOCAL_CFLAGS += -DS_IWRITE=0200
-
-LOCAL_C_INCLUDES += \
-	$(BASE_PATH)/PlatformPatches/ \
-	$(BASE_PATH)/mono/ \
-	$(BASE_PATH)/mono/mono/ \
-	$(BASE_PATH)/mono/eglib/src/ \
-	$(BASE_PATH)/mono/mono/mini/ \
-	$(BASE_PATH)/mono/libgc/include/ 
-
-LOCAL_PRELINK_MODULE := false
-LOCAL_SHARED_LIBRARIES += libdl libc libm 
+LOCAL_MODULE := fwdstdin
+LOCAL_SRC_FILES := fwdstdin/main.c
+LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -ldl -lm -lc
 include $(BUILD_EXECUTABLE)
-
-DIRS := $(BASE_PATH)/AndroidStatic.mk 
-	
-include $(DIRS)

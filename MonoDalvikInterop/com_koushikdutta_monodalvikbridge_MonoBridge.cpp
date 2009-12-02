@@ -2,13 +2,44 @@
 #include <JNIHelp.h>
 #include <stdint.h>
 #include "com_koushikdutta_monodalvikbridge_MonoBridge.h"
-#include "utils/Log.h"
+//#include "utils/Log.h"
 #include <unistd.h>
 #include <glib.h>
+#include <android/log.h>
 
 #include "bridge.h"
 
 #define LOG_TAG "MonoDalvikInterop"
+
+
+/*
+ * Log macro that allows you to specify a number for the priority.
+ */
+#ifndef LOG_PRI
+#define LOG_PRI(priority, tag, ...) \
+    __android_log_print(priority, tag, __VA_ARGS__)
+#endif
+
+/*
+ * Basic log message macro.
+ *
+ * Example:
+ *  LOG(LOG_WARN, NULL, "Failed with error %d", errno);
+ *
+ * The second argument may be NULL or "" to indicate the "global" tag.
+ */
+#ifndef LOG
+#define LOG(priority, tag, ...) \
+    LOG_PRI(ANDROID_##priority, tag, __VA_ARGS__)
+#endif
+
+
+/*
+ * Simplified macro to send an info log message using the current LOG_TAG.
+ */
+#ifndef LOGI
+#define LOGI(...) ((void)LOG(LOG_INFO, LOG_TAG, __VA_ARGS__))
+#endif
 
 jmethodID g_handleInvoke;
 jclass g_MonoBridgeClass;
@@ -134,14 +165,14 @@ extern "C" jint JNI_OnLoad(JavaVM* vm, void* reserved)
 {
 	LOGI("Initializing JNI/PInvoke layer.\n");
 	
-  g_JavaVM = vm;
-  JNIEnv* env;
-  if (g_JavaVM->GetEnv((void**) &env, JNI_VERSION_1_4) != JNI_OK) {
-    return -1;
-  }
+	g_JavaVM = vm;
+	JNIEnv* env;
+	if (g_JavaVM->GetEnv((void**) &env, JNI_VERSION_1_4) != JNI_OK) {
+		return -1;
+	}
 
 	LOGI("Registering native methods.\n");
-	jniRegisterNativeMethods(env, "com/koushikdutta/monodalvikbridge/MonoBridge", sMethods, 4);
+	//jniRegisterNativeMethods(env, "com/koushikdutta/monodalvikbridge/MonoBridge", sMethods, 4);
 
   return JNI_VERSION_1_4;
 }
