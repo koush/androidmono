@@ -1,5 +1,12 @@
 MONO_SVN_BASE=svn://anonsvn.mono-project.com/source/branches/mono-2-6
-MONO_SVN_REVISION=147526
+echo =====CHECKING OUT MONO FROM $MONO_SVN_BASE=====
+if [ -z $USE_LATEST_MONO ]
+then
+    MONO_SVN_REVISION="-r 147526"
+    echo =====USING SUPPORTED REVISION OF MONO: $MONO_SVN_REVISION=====
+else
+    echo =====USING LATEST REVISION OF MONO! THIS MAY NOT BE STABLE!=====
+fi
 
 pushd $(dirname $0)
 
@@ -20,23 +27,23 @@ then
     echo =====If you get errors, you may want to delete mono and hostbuild to force a clean build=====
     pushd mono
     MONO_SKIP_PATCH=true
-    svn up -r $MONO_SVN_REVISION
+    svn up $MONO_SVN_REVISION
     popd
     check-result 'Error while updating ./mono'
     pushd hostbuild/mono
-    svn up -r $MONO_SVN_REVISION
+    svn up $MONO_SVN_REVISION
     popd
     check-result 'Error while updating ./hostbuild/mono'
     pushd hostbuild/mcs
-    svn up -r $MONO_SVN_REVISION
+    svn up $MONO_SVN_REVISION
     popd
     check-result 'Error while updating ./hostbuild/mcs'
 else
-    svn co -r $MONO_SVN_REVISION $MONO_SVN_BASE/mono
+    svn co $MONO_SVN_REVISION $MONO_SVN_BASE/mono
     mkdir -p hostbuild
     cp -r mono hostbuild/mono
     pushd hostbuild
-    svn co -r $MONO_SVN_REVISION $MONO_SVN_BASE/mcs
+    svn co $MONO_SVN_REVISION $MONO_SVN_BASE/mcs
     popd
 fi
 
