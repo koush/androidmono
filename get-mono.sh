@@ -8,7 +8,7 @@ else
     echo =====USING LATEST REVISION OF MONO! THIS MAY NOT BE STABLE!=====
 fi
 
-pushd $(dirname $0)
+pushd $(dirname $0)/jni
 
 function check-result
 {
@@ -30,19 +30,19 @@ then
     svn up $MONO_SVN_REVISION
     popd
     check-result 'Error while updating ./mono'
-    pushd hostbuild/mono
+    pushd ../hostbuild/mono
     svn up $MONO_SVN_REVISION
     popd
     check-result 'Error while updating ./hostbuild/mono'
-    pushd hostbuild/mcs
+    pushd ../hostbuild/mcs
     svn up $MONO_SVN_REVISION
     popd
     check-result 'Error while updating ./hostbuild/mcs'
 else
     svn co $MONO_SVN_REVISION $MONO_SVN_BASE/mono
-    mkdir -p hostbuild
-    cp -r mono hostbuild/mono
-    pushd hostbuild
+    mkdir -p ../hostbuild
+    cp -r mono ../hostbuild/mono
+    pushd ../hostbuild
     svn co $MONO_SVN_REVISION $MONO_SVN_BASE/mcs
     popd
 fi
@@ -50,13 +50,13 @@ fi
 echo
 echo =====COMPILING MONO CLASS LIBRARIES FOR MCS BUILD=====
 sleep 2
-pushd hostbuild/mono/eglib
+pushd ../hostbuild/mono/eglib
 if [ ! -f configure ]
 then
     ./autogen.sh
 fi
 popd
-pushd hostbuild/mono
+pushd ../hostbuild/mono
 if [ ! -f configure ]
 then
     ./autogen.sh --with-glib=embedded --with-moonlight=no

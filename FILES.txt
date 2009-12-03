@@ -1,0 +1,53 @@
+---- project structure ----
+
+
+-- sources --
+
+DalvikBridge
+    Contains the C# source that handles interop with Dalvik.
+
+MonoBridge
+    Contains the Java source that handles interop with Mono.
+
+MonoActivity
+    The activity that contains and extracts mono, libmono.so, and .NET assemblies.
+
+MonoTest
+    A simple Android application that tests Mono/Dalvik interop.
+
+MonoDevelop.Android
+    Experimental: A MonoDevelop plugin for building Android applications.
+
+aot
+    Experimental - Performs AOT of the Mono assemblies for Android.
+
+jni
+    Contains all the code that is to be built by the NDK.
+
+jni/MonoDalvikInterop
+    JNI Interop layer to connect Mono and Dalvik by embedding Mono.
+    
+jni/PlatformPatches
+    All the Android headers and configs necessary to compile Mono.
+    
+jni/fwdstdin
+    Forwards all input from stdin to a ipaddress/port. This is used by
+    the MonoDevelop.Android plugin for reading console output.
+
+
+-- mono directories --
+
+jni/mono
+    The checkout of mono to be build for Android. This directory is generated and
+    managed by get-mono.sh.
+
+hostbuild
+    Contains the checkout of mono and mcs to build the assemblies for a host build
+    that will be packaged in the APK. This directory is generated and managed by
+    get-mono.sh.
+
+
+-- output directories --
+
+libs
+    This is where mono and libmono.so get placed when built by the NDK.

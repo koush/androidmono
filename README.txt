@@ -2,8 +2,8 @@
 
 # This README assumes that your Android NDK directory is located at ~/src/android-ndk.
 # Adjust any instructions as necessary.
-# The Android NDK can be found at:
-# http://developer.android.com/sdk/ndk/1.5_r1/index.html
+# The current supported Android NDK is 1.6 r1, and can be found at:
+# http://developer.android.com/sdk/ndk/1.6_r1/index.html
 
 # Get the androidmono repository which contains the build scripts and patches 
 # necessary to build mono.
@@ -48,6 +48,4 @@ export HOME=/data/local
 # Yahoo! Homepage.
 ./mono test.exe
 
-
-
-Good luck!
+    
