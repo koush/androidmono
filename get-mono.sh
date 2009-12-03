@@ -64,13 +64,13 @@ fi
 make
 popd
 
-pushd mono
-echo
-echo =====APPLYING ANDROID PATCHES FOR ARM BUILD=====
 if [ -z $MONO_SKIP_PATCH ]
 then
+    pushd mono
+    echo
+    echo =====APPLYING ANDROID PATCHES FOR ARM BUILD=====
     patch -p0 -i ../mono.patch
+    popd
 fi
-popd
 
 echo "=====Done! Don't forget Rebuild the ARM build using the Android NDK now!====="
