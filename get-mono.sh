@@ -24,7 +24,7 @@ svn co -r $MONO_SVN_REVISION $MONO_SVN_BASE/mcs
 
 pushd mono/eglib
 echo
-echo =====COMPILING MONO CLASS LIBRARIES=====
+echo =====COMPILING MONO CLASS LIBRARIES FOR HOST BUILD=====
 sleep 2
 ./autogen.sh
 popd
@@ -36,7 +36,7 @@ popd
 
 cd mono
 echo
-echo =====APPLYING ANDROID PATCHES=====
+echo =====APPLYING ANDROID PATCHES FOR TARGET BUILD=====
 patch -p0 -i ../mono.patch
 
 popd
