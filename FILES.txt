@@ -22,7 +22,9 @@ aot
     Experimental - Performs AOT of the Mono assemblies for Android.
 
 jni
-    Contains all the code that is to be built by the NDK.
+    Contains all the code that is to be built by the NDK. The jni
+    directory name is named such due to directory structure/naming requirements of 
+    Android NDK 1.6 (and probably beyond).
 
 jni/MonoDalvikInterop
     JNI Interop layer to connect Mono and Dalvik by embedding Mono.
