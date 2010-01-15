@@ -1,0 +1,3 @@
+[submodule "jni/MonoJavaInterop"]
+	path = jni/MonoJavaInterop
+	url = git@home.koushikdutta.com:MonoJavaInterop.git
