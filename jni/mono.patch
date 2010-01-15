@@ -1,6 +1,6 @@
 Index: eglib/src/goutput.c
 ===================================================================
---- eglib/src/goutput.c	(revision 147505)
+--- eglib/src/goutput.c	(revision 149256)
 +++ eglib/src/goutput.c	(working copy)
 @@ -28,6 +28,10 @@
  #include <stdlib.h>
@@ -24,24 +24,3 @@ Index: eglib/src/goutput.c
  }
  
  GLogLevelFlags
-Index: mono/mini/mini.c
-===================================================================
---- mono/mini/mini.c	(revision 147505)
-+++ mono/mini/mini.c	(working copy)
-@@ -5007,6 +5007,8 @@
- 	domain->runtime_info = NULL;
- }
- 
-+void register_icalls ();
-+
- MonoDomain *
- mini_init (const char *filename, const char *runtime_version)
- {
-@@ -5183,6 +5185,7 @@
- 	mono_add_internal_call ("Mono.Runtime::mono_runtime_install_handlers", 
- 				mono_runtime_install_handlers);
- 
-+	register_icalls ();
- 
- 	create_helper_signature ();
- 

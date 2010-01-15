@@ -280,9 +280,6 @@ LOCAL_SRC_FILES := $(MONO_SRC_FILES)
 
 # missing functions..
 LOCAL_SRC_FILES += PlatformPatches/missing.c
-# JNI
-LOCAL_SRC_FILES += MonoDalvikInterop/com_koushikdutta_monodalvikbridge_MonoBridge.cpp MonoDalvikInterop/bridge.c
-
 
 LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -llog -ldl -lm -lc
 # LOCAL_PRELINK_MODULE := false
