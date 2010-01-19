@@ -56,12 +56,19 @@ then
     ./autogen.sh
 fi
 popd
+
+mkdir -p ../hostbuild/install
+pushd ../hostbuild/install
+INSTALL_PREFIX=$(pwd)
+echo INSTALL_PREFIX=$INSTALL_PREFIX
+popd
+
 pushd ../hostbuild/mono
 if [ ! -f configure ]
 then
-    ./autogen.sh --with-glib=embedded --with-moonlight=no
+    ./autogen.sh --with-glib=embedded --with-moonlight=no --prefix=$INSTALL_PREFIX
 fi
-make
+make && make install
 popd
 
 if [ -z $MONO_SKIP_PATCH ]
