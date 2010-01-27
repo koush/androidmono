@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Method;
 import java.util.Enumeration;
 import java.util.Vector;
 import java.util.zip.ZipEntry;
@@ -13,8 +14,6 @@ import java.util.zip.ZipFile;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.TextView;
 
 public class MonoActivity extends Activity
@@ -33,7 +32,7 @@ public class MonoActivity extends Activity
 		Log.v(LOGTAG, string);
 		mStatus.setText(mStatus.getText() + "\n" + string);
 	}
-
+	
 	public void copyStreams(InputStream is, FileOutputStream fos)
 	{
 		BufferedOutputStream os = null;
@@ -72,6 +71,7 @@ public class MonoActivity extends Activity
 	@Override
 	public void onCreate(Bundle savedInstanceState)
 	{
+
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		
