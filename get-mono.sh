@@ -10,7 +10,7 @@ fi
 
 pushd $(dirname $0)/jni
 
-function check-result
+function checkresult
 {
     RESULT=`echo $?`
     if [ "$RESULT" != 0 ]; then
@@ -29,15 +29,15 @@ then
     MONO_SKIP_PATCH=true
     svn up $MONO_SVN_REVISION
     popd
-    check-result 'Error while updating ./mono'
+    checkresult 'Error while updating ./mono'
     pushd ../hostbuild/mono
     svn up $MONO_SVN_REVISION
     popd
-    check-result 'Error while updating ./hostbuild/mono'
+    checkresult 'Error while updating ./hostbuild/mono'
     pushd ../hostbuild/mcs
     svn up $MONO_SVN_REVISION
     popd
-    check-result 'Error while updating ./hostbuild/mcs'
+    checkresult 'Error while updating ./hostbuild/mcs'
 else
     svn co $MONO_SVN_REVISION $MONO_SVN_BASE/mono
     mkdir -p ../hostbuild
