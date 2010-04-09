@@ -1,3 +1,0 @@
-[submodule "jni/MonoJavaBridge"]
-	path = jni/MonoJavaBridge
-	url = git@home.koushikdutta.com:MonoJavaBridge.git
