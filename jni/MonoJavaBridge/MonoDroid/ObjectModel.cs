@@ -1,0 +1,401 @@
+using System;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System.Xml.Serialization;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace MonoDroid
+{
+	public class TypeList : SerializableDictionary<string, Type>
+	{
+		protected override string GetKey (Type value)
+		{
+			return value.Name;
+		}
+	}
+	
+	public class ObjectModel
+	{
+		/*
+		private ObjectModel()
+		{
+			myTypes.Add(new Type() { Name = "void", IsSystemType = true });
+			myTypes.Add(new Type() { Name = "int", IsSystemType = true });
+			myTypes.Add(new Type() { Name = "long", IsSystemType = true });
+			myTypes.Add(new Type() { Name = "short", IsSystemType = true });
+			myTypes.Add(new Type() { Name = "char", IsSystemType = true });
+			myTypes.Add(new Type() { Name = "byte", IsSystemType = true });
+			myTypes.Add(new Type() { Name = "float", IsSystemType = true });
+			myTypes.Add(new Type() { Name = "double", IsSystemType = true });
+			//myTypes.Add(new Type() { Name = "void", IsSystemType = true });
+		}
+		*/
+		
+		public static ObjectModel Load(string filename)
+		{
+			XmlSerializer ser = new XmlSerializer(typeof(ObjectModel));
+			ObjectModel types = (ObjectModel)ser.Deserialize(new System.IO.FileStream(filename, System.IO.FileMode.Open));
+			return types;
+		}
+		
+		public void AppendModel(string filename)
+		{
+			var other = ObjectModel.Load(filename);
+			foreach(var type in other.Types)
+			{
+				Types.Add(type);
+			}
+		}
+		
+		TypeList myTypes = new TypeList();
+    		[System.Xml.Serialization.XmlElementAttribute("Type", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]	
+		public TypeList Types	
+		{
+			get
+			{
+				return myTypes;
+			}
+		}
+		
+		public void FinalizeModel()
+		{
+			// clear out cached info
+			foreach (var type in myTypes)
+			{
+				type.Types.Clear();
+			}
+			
+			// relink names to types
+			foreach (var type in myTypes)
+			{
+				if (type.IsSystemType)
+					continue;
+				if (type.Parent != null)
+					type.ParentType = FindType(type.Parent);
+				int nestingClass = type.Name.LastIndexOf('.');
+				if (nestingClass != -1)
+				{
+					string nestingClassName = type.Name.Substring(0, nestingClass);
+					Type nesting;
+					if (myTypes.Dictionary.TryGetValue(nestingClassName, out nesting))
+					{
+						nesting.Types.Add(type);
+						type.NestingClass = nesting;
+					}
+				}
+				
+				type.InterfaceTypes.Clear();
+				type.InterfaceTypes.AddRange(from itype in type.Interfaces select FindType(itype));
+				
+				foreach (var method in type.Methods)
+				{
+					method.Type = type;
+					/*
+					if (!method.IsConstructor)
+						method.ReturnType = FindType(method.Return);
+					method.ParameterTypes.Clear();
+					method.ParameterTypes.AddRange(from p in method.Parameters select FindType(p));
+					if (method.Override != null)
+					{
+						Type otype = method.OverrideType = FindType(method.Override);
+						//Console.WriteLine("{0} {1} {2} {3}", type, method, otype, method.IsSynthetic);
+						//method.OverrideMethod = (from omethod in otype.Methods where omethod.Matches(method) select omethod).First();
+						//Console.WriteLine("{0}", method.OverrideMethod);
+					}	
+					if (method.PropertyType != null)
+						continue;
+					if (!method.Name.StartsWith("get"))
+						continue;
+					string setterName = "set" + method.Name.Substring(3);
+					var matchedSetter = (from setter in type.Methods where setter.Name == setterName && setter.Parameters.Count == 1 && setter.Return == "void" && setter.Parameters[0] == method.Return select setter).FirstOrDefault();
+					if (matchedSetter != null)
+						matchedSetter.PropertyType = method.PropertyType = PropertyType.ReadWrite;
+					else
+						method.PropertyType = PropertyType.ReadOnly;
+					*/
+				}
+			}
+		}
+		
+		public Type FindType(string name)
+		{
+			Type ret = null;
+			myTypes.Dictionary.TryGetValue(name, out ret);
+			return ret;
+		}
+	}
+	
+	public class Accessible
+	{
+		public string Name
+		{
+			get;set;
+		}
+		
+		public bool Abstract 
+		{
+			get;set;
+		}
+		
+		public bool IsSealed
+		{
+			get;set;
+		}
+		
+		public string Scope
+		{
+			get;set;
+		}
+		
+		public bool IsSynthetic
+		{
+			get;set;
+		}
+		
+		public override string ToString ()
+		{
+			return string.Format("{0}{1}{2}{3}", Scope, Abstract ? " abstract" : string.Empty, IsSealed ? " sealed" : string.Empty, " " + Name);
+		}
+	}
+	
+	public class Type : Accessible
+	{
+		public Boolean IsNew
+		{
+			get;set;
+		}
+		
+		public bool IsSystemType
+		{
+			get;set;
+		}
+		
+		public string Namespace
+		{
+			get
+			{
+				var root = this;
+				while (root.NestingClass != null)
+					root = root.NestingClass;
+				return root.Name.Substring(0, root.Name.Length - root.SimpleName.Length - 1);
+			}
+		}
+		
+		public string Qualifier
+		{
+			get
+			{
+				int index = Name.LastIndexOf('.');
+				if (index == -1)
+					return string.Empty;
+				return Name.Substring(0, index);
+			}
+		}
+		
+		public string SimpleName
+		{
+			get
+			{
+				int last = Name.LastIndexOf('.');
+				if (last == -1)
+					return Name;
+				return Name.Substring(last + 1);
+			}
+		}
+		
+		public Type()
+		{
+		}
+
+		public bool IsInterface
+		{
+			get;set;
+		}
+		
+		public bool IsEnum
+		{
+			get;set;
+		}
+		
+		public String Parent
+		{
+			get;set;
+		}
+		
+		public Type ParentType
+		{
+			get;set;
+		}
+		
+		List<string> myInterfaces = new List<string>();
+		[System.Xml.Serialization.XmlArrayItemAttribute("Interface", typeof(string), Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+		public List<string> Interfaces
+		{
+			get
+			{
+				return myInterfaces;
+			}
+		}
+				
+		List<Type> myTypes = new List<Type>();
+		public List<Type> Types
+		{
+			get
+			{
+				return myTypes;
+			}
+		}
+		
+		List<Type> myInterfaceTypes = new List<Type>();
+		public List<Type> InterfaceTypes
+		{
+			get
+			{
+				return myInterfaceTypes;
+			}
+		}
+		
+		public bool IsInnerClass
+		{
+			get;set;
+		}
+		
+		public Type NestingClass
+		{
+			get;set;
+		}
+		
+		List<Method> myMethods = new List<Method>();
+		[System.Xml.Serialization.XmlArrayItemAttribute("Method", typeof(Method), Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+		public List<Method> Methods	
+		{
+			get
+			{
+				return myMethods;
+			}
+		}
+		
+		public override string ToString ()
+		{
+			return string.Format("{0}{1}{2}{3}", Scope, IsInterface ? " interface" : Abstract ? " abstract" : string.Empty, IsSealed ? " sealed" : string.Empty, " " + Name);
+		}
+	}
+
+	public enum PropertyType
+	{
+		ReadOnly,
+		ReadWrite
+	}
+	
+	public class Method : Accessible
+	{
+		public bool IsNew
+		{
+			get;set;
+		}
+		
+		public bool Matches(Method other)
+		{
+			if (other.Return != Return)
+				return false;
+			if (other.Name != Name)
+				return false;
+			if (other.Parameters.Count != Parameters.Count)
+				return false;
+			for (int i = 0; i < Parameters.Count; i++)
+			{
+				if (other.Parameters[i] != Parameters[i])
+					return false;
+			}
+			return true;
+		}
+			    
+		public bool IsOverride
+		{
+			get;set;
+		}
+		
+		public string Override
+		{
+			get;set;
+		}
+		
+		public Type OverrideType
+		{
+			get;set;
+		}
+			
+		public Method OverrideMethod
+		{
+			get;set;
+		}
+		
+		public PropertyType? PropertyType
+		{
+			get;set;
+		}
+		
+		public Type Type
+		{
+			get;	set;
+		}
+		
+		public bool Static
+		{
+			get;set;
+		}
+		
+		public bool IsConstructor
+		{
+			get;set;
+		}
+		
+		public string Return
+		{
+			get;set;
+		}
+		
+		public Type ReturnType
+		{
+			get;set;
+		}
+		
+		List<string> myParameters = new List<string>();
+		[System.Xml.Serialization.XmlArrayItemAttribute("Parameter", typeof(string), Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+		public List<string> Parameters	
+		{
+			get
+			{
+				return myParameters;
+			}
+		}
+					
+		List<Type> myParameterTypes = new List<Type>();
+		public List<Type> ParameterTypes
+		{
+			get
+			{
+				return myParameterTypes;
+			}
+		}
+		
+		public override string ToString ()
+		{
+			StringBuilder builder = new StringBuilder();
+			builder.Append('(');
+			bool first = true;
+			foreach(var param in Parameters)
+			{
+				if (!first)
+					builder.Append(", ");
+				builder.Append(param);
+				first = false;
+			}
+			builder.Append(')');
+			return string.Format("{0}{1}{2}{3}{4}{5}{6}", Scope, Static ? " static" : string.Empty, Abstract ? " abstract" : string.Empty, IsSealed ? " sealed" : string.Empty, Return != null ? " " + Return : string.Empty, " " + Name, builder.ToString());
+		}
+
+	}
+}

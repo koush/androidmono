@@ -1,0 +1,10 @@
+bin/*
+obj/*
+JavaBridge/MonoJavaBridge.pidb
+MonoDroid/MonoDroid.pidb
+android/android.pidb
+bin
+obj
+dump.txt
+androidsdk.xml
+android/net/
