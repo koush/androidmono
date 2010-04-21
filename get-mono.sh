@@ -2,7 +2,7 @@ MONO_SVN_BASE=svn://anonsvn.mono-project.com/source/branches/mono-2-6
 echo =====CHECKING OUT MONO FROM $MONO_SVN_BASE=====
 if [ -z $USE_LATEST_MONO ]
 then
-    MONO_SVN_REVISION="-r 148520"
+    MONO_SVN_REVISION="-r 155825"
     echo =====USING SUPPORTED REVISION OF MONO: $MONO_SVN_REVISION=====
 else
     echo =====USING LATEST REVISION OF MONO! THIS MAY NOT BE STABLE!=====

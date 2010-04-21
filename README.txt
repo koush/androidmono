@@ -2,8 +2,8 @@
 
 # This README assumes that your Android NDK directory is located at ~/src/android-ndk.
 # Adjust any instructions as necessary.
-# The current supported Android NDK is 1.6 r1, and can be found at:
-# http://developer.android.com/sdk/ndk/1.6_r1/index.html
+# The current supported Android NDK is Android NDK r3, and can be found at:
+# http://developer.android.com/sdk/ndk/index.html
 
 # Get the androidmono repository which contains the build scripts and patches 
 # necessary to build mono.
@@ -23,8 +23,7 @@ cd androidmono
 
 # Go to your Android NDK directory and make.
 cd ~/src/android-ndk
-make APP=androidmono                        # this builds libmono.so
-MONO_EXECUTABLE=true make APP=androidmono   # this builds the mono binary 
+make APP=androidmono
 
 ---- building the mono APK ----
 

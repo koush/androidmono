@@ -131,7 +131,7 @@ public class MonoActivity extends Activity
 					String curPath = outputFile.getAbsolutePath();
 					do
 					{
-						mRuntime.exec("/system/bin/chmod 755 " + curPath);
+						mRuntime.exec("chmod 755 " + curPath);
 						curPath = new File(curPath).getParent();
 					}
 					while (!curPath.equals(mAppRoot));

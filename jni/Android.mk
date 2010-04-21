@@ -1,11 +1,8 @@
 BASE_PATH := $(call my-dir)
 
-
-ifeq ($(MONO_EXECUTABLE),true)
-
 # Build mono
 include $(CLEAR_VARS)
-LOCAL_MODULE := mono
+LOCAL_MODULE := monodriver
 d := /PlatformPatches/
 LOCAL_PATH := $(BASE_PATH)/$d
 intermediates := $(base_intermediates)/out
@@ -38,8 +35,6 @@ LOCAL_CFLAGS += \
 LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -llog -ldl -lm -lc
 
 include $(BUILD_EXECUTABLE)
-
-else
 
 
 include $(CLEAR_VARS)
@@ -80,7 +75,8 @@ LOCAL_SRC_FILES := mono-ehash.c mono-md5.c \
 	mono-stdlib.c mono-property-hash.h mono-property-hash.c \
 	mono-value-hash.h mono-value-hash.c freebsd-elf_common.h \
 	freebsd-elf32.h freebsd-elf64.h freebsd-dwarf.h dtrace.h \
-	mono-filemap.c mono-networkinterfaces.c mono-error.c
+	mono-filemap.c mono-networkinterfaces.c mono-error.c \
+	mono-semaphore.c
 MONO_SRC_FILES += $(addprefix $d/,$(LOCAL_SRC_FILES))
 
 
@@ -187,7 +183,8 @@ LOCAL_SRC_FILES := \
 	generic-sharing.c	\
 	mempool-internals.h \
 	cominterop.c \
-	metadata-verify.c
+	metadata-verify.c \
+	mono-basic-block.c
 MONO_SRC_FILES += $(addprefix $d/,$(LOCAL_SRC_FILES))
 
 
@@ -284,5 +281,3 @@ LOCAL_SRC_FILES += PlatformPatches/missing.c
 LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -llog -ldl -lm -lc
 # LOCAL_PRELINK_MODULE := false
 include $(BUILD_SHARED_LIBRARY)
-
-endif

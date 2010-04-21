@@ -196,6 +196,9 @@
 /* Define to 1 if you have the <alloca.h> header file. */
 #define HAVE_ALLOCA_H 1
 
+/* Define to 1 if you have the <asm/sigcontext.h> header file. */
+#define HAVE_ASM_SIGCONTEXT_H 1
+
 /* Supports C99 array initialization */
 #define HAVE_ARRAY_ELEM_INIT 1
 
