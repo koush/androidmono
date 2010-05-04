@@ -57,15 +57,24 @@ namespace MonoDroid
 			}
 			foreach(var method in type.Methods)
 			{
+				if (type.Signatures.Contains(method.ToSignatureString()))
+				    continue;
+				type.Signatures.Add(method.ToSignatureString());
 				myIndent++;
 				EmitMethod(method);
+				myIndent--;
+			}
+			foreach(var field in type.Fields)
+			{
+				myIndent++;
+				EmitField(field);
 				myIndent--;
 			}
 			EndType();
 			myIndent--;
 		}
 		
-		int myIndent = 0;
+		protected int myIndent = 0;
 		bool myIsNewLine = true;
 		protected void Write(string format, params object[] args)
 		{
@@ -114,6 +123,7 @@ namespace MonoDroid
 		}
 		
 		protected abstract void EmitMethod(Method method);
+		protected abstract void EmitField(Field field);
 		
 		protected abstract string GetFilePath(Type type);
 		protected void WriteDelimited<T>(ICollection<T> coll, Func<T, int, string> func, string delimiter)

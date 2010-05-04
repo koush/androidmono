@@ -12,6 +12,9 @@ namespace MonoDroid
 		}
 		
 		static readonly string[] myKeywords = new string[] {
+			"in",
+			"out",
+			"checked",
 			"params",
 			"lock",
 			"ref",
@@ -79,16 +82,21 @@ namespace MonoDroid
 					method.Name = EscapeName(method.Name);
 					for (int i = 0; i < method.Parameters.Count; i++)
 					{
-						method.Parameters[i] = EscapeName(method.Parameters[i], false);
+						method.Parameters[i] = ConvertType(EscapeName(method.Parameters[i], false));
 					}
 					if (method.Return != null)
-						method.Return = EscapeName(method.Return, false);
+						method.Return = ConvertType(EscapeName(method.Return, false));
 				}
 				if (type.Parent != null)
 					type.Parent = EscapeName(type.Parent);
 				for (int i = 0; i < type.Interfaces.Count; i++)
 				{
 					type.Interfaces[i] = EscapeName(type.Interfaces[i]);
+				}
+				for (int i = 0; i < type.Fields.Count; i++)
+				{
+					type.Fields[i].Name = EscapeName(type.Fields[i].Name);
+					type.Fields[i].Type = ConvertType(EscapeName(type.Fields[i].Type, false));
 				}
 			}
 		}
@@ -148,11 +156,84 @@ namespace MonoDroid
 			WriteLine();
 			WriteLine("{");
 		}
+		
+		private string ConvertType(String type)
+		{
+			if (type == "java.lang.String")
+				return "string";
+			if (type == "java.lang.CharSequence")
+				return "string";
+			return type;
+		}
 
+		protected override void EmitField (Field field)
+		{
+			if (field.Scope == "protected")
+				return;
+			
+			bool hasValue = !string.IsNullOrEmpty(field.Value);
+			
+			Write(field.Scope);
+			if (field.Static)
+				Write("static");
+			Write(field.Type);
+			Write(field.Name, false);
+			WriteLine();
+			WriteLine("{");
+			myIndent++;
+			WriteLine("get");
+			WriteLine("{");
+			if (hasValue)
+			{
+				myIndent++;
+				string val = field.Value;
+				val = val.Replace("\\" , "\\\\").Replace("\"", "\\\"").Replace("\n", "\\n");
+				
+				if (ConvertType(field.Type) == "string")
+				{
+					Write("return \"{0}\"", false, val);
+				}
+				else if (ConvertType(field.Type) == "char")
+				{
+					val = val.Replace("'", "\\'");
+					Write("return '{0}'", false, val);
+				}
+				else
+				{
+					Write("return {0}", false, field.Value);
+				}
+				
+				if (field.Type == "long")
+					Write("L", false);
+				else if (field.Type == "float")
+					Write("f", false);
+				WriteLine(";");
+				myIndent--;
+			}
+			else
+			{
+				myIndent++;
+				WriteLine("return default({0});", field.Type);
+				myIndent--;
+			}
+			WriteLine("}");
+			if (!field.IsReadOnly)
+			{
+				WriteLine("set");
+				WriteLine("{");
+				WriteLine("}");
+			}
+			myIndent--;
+			WriteLine("}");
+		}
+		
 		protected override void EmitMethod (Method method)
 		{
 			if (method.IsSynthetic)
 				return;
+			
+			//if (method.PropertyType != null && method.Name.StartsWith("set"))
+			//	return;
 			
 			if (!method.Type.IsInterface)
 			{
@@ -184,10 +265,24 @@ namespace MonoDroid
 				Write("new");
 			if (method.Return != null)
 				Write(method.Return);
-			Write(method.Name, false);
-			Write("(", false);
-			WriteDelimited(method.Parameters, (v, i) => string.Format("{0} arg{1}", v, i), ",");
-			WriteLine(");");
+			//if (method.PropertyType == null)
+			if (true)
+			{
+				Write(method.Name, false);
+				Write("(", false);
+				WriteDelimited(method.Parameters, (v, i) => string.Format("{0} arg{1}", v, i), ",");
+				WriteLine(");");
+			}
+			else
+			{
+				WriteLine(method.Name.Substring(3), false);
+				WriteLine("{");
+				if (method.PropertyType == PropertyType.ReadOnly)
+					WriteLine("get;");
+				else
+					WriteLine("get; set;");
+				WriteLine("}");
+			}
 		}
 	}
 }

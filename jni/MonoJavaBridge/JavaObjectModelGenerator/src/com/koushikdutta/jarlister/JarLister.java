@@ -2,8 +2,8 @@ package com.koushikdutta.jarlister;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.lang.reflect.Member;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
@@ -17,18 +17,6 @@ import org.xml.sax.SAXException;
 
 import com.sun.org.apache.xml.internal.serialize.OutputFormat;
 import com.sun.org.apache.xml.internal.serialize.XMLSerializer;
-import com.sun.tools.example.debug.bdi.MethodNotFoundException;
-import com.sun.xml.internal.txw2.output.XmlSerializer;
-
-interface Bar
-{
-	void moo();
-}
-
-abstract class Foo implements Bar
-{
-	
-}
 
 public class JarLister {
 	
@@ -147,7 +135,7 @@ public class JarLister {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String androidSdk = "/Users/koush/src/android-sdk/platforms/android-2.1/android.jar";
+		String androidSdk = "/Users/koush/src/android-sdk/platforms/android-7/android.jar";
 		//String androidSdk = "/Users/koush/eclair/out/target/common/obj/JAVA_LIBRARIES/core_intermediates/classes.jar";
 		try {
 			JarInputStream input = new JarInputStream(new FileInputStream(androidSdk));
@@ -574,6 +562,32 @@ public class JarLister {
 				}
 				
 				wr.endElement("Methods");
+				
+				if (clazz.getDeclaredFields().length > 0 && !clazz.isPrimitive() && !clazz.isInterface() && !clazz.getName().equals("java.lang.Character") && !clazz.getName().equals("java.text.CharacterIterator") && !clazz.getName().equals("java.lang.Float") && !clazz.getName().equals("java.lang.Byte") && !clazz.getName().equals("java.lang.Double"))
+				{
+					wr.startElement("Fields", null);
+					for (Field field: clazz.getDeclaredFields())
+					{
+						if (Modifier.isPrivate(field.getModifiers()))
+							continue;
+						if (!Modifier.isPublic(field.getModifiers()) && !Modifier.isProtected(field.getModifiers()))
+							continue;
+						wr.startElement("Field", null);
+						dataElement(wr, "Name", field.getName());
+						dataElement(wr, "Type", cleanClassName(field.getType()));
+						dataElement(wr, "Static", Modifier.isStatic(field.getModifiers()));
+						dataElement(wr, "IsReadOnly", Modifier.isFinal(field.getModifiers()));
+						dataElement(wr, "Scope", Modifier.isPublic(field.getModifiers()) ? "public" : "protected");
+						if (Modifier.isStatic(field.getModifiers()) && Modifier.isFinal(field.getModifiers()) && (field.getType().isPrimitive() || field.getType().getName().equals("java.lang.String")))
+						{
+							field.setAccessible(true);
+							dataElement(wr, "Value", field.get(null));
+						}
+						wr.endElement("Field");
+					}
+					wr.endElement("Fields");
+				}
+				
 				if (superclass != null)
 				{
 					String superclassName = cleanClassName(superclass);
@@ -584,6 +598,40 @@ public class JarLister {
 					dataElement(wr, "Parent", superclassName);
 				}
 				wr.endElement("Type");
+				
+				// In Java, interfaces can have readonly/static fields. However, .NET doesn't support this.
+				// Fix this, by creating a <Interface>Constants class.
+				if (clazz.isInterface() && clazz.getDeclaredFields().length > 0)
+				{
+					wr.startElement("Type", null);
+					dataElement(wr, "IsSealed", true);
+					dataElement(wr, "Scope", "public");
+					dataElement(wr, "Name", cleanClassName(clazz) + "Constants");
+					wr.startElement("Fields", null);
+					for (Field field: clazz.getDeclaredFields())
+					{
+						if (Modifier.isPrivate(field.getModifiers()))
+							continue;
+						if (!Modifier.isPublic(field.getModifiers()) && !Modifier.isProtected(field.getModifiers()))
+							continue;
+						if (clazz.getName().equals("java.lang.Character") || clazz.getName().equals("java.text.CharacterIterator"))
+							continue;
+						wr.startElement("Field", null);
+						dataElement(wr, "Name", field.getName());
+						dataElement(wr, "Type", cleanClassName(field.getType()));
+						dataElement(wr, "Static", Modifier.isStatic(field.getModifiers()));
+						dataElement(wr, "IsReadOnly", Modifier.isFinal(field.getModifiers()));
+						dataElement(wr, "Scope", Modifier.isPublic(field.getModifiers()) ? "public" : "protected");
+						if (Modifier.isStatic(field.getModifiers()) && Modifier.isFinal(field.getModifiers()) && (field.getType().isPrimitive() || field.getType().getName().equals("java.lang.String")))
+						{
+							field.setAccessible(true);
+							dataElement(wr, "Value", field.get(null));
+						}
+						wr.endElement("Field");
+					}
+					wr.endElement("Fields");
+					wr.endElement("Type");
+				}
 				
 				// see comments above regarding abstract class scope change shim
 				if (abstractScopeChanged.size() > 0)

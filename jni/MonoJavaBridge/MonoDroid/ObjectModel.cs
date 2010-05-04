@@ -36,7 +36,7 @@ namespace MonoDroid
 		public static ObjectModel Load(string filename)
 		{
 			XmlSerializer ser = new XmlSerializer(typeof(ObjectModel));
-			ObjectModel types = (ObjectModel)ser.Deserialize(new System.IO.FileStream(filename, System.IO.FileMode.Open));
+			ObjectModel types = (ObjectModel)ser.Deserialize(new System.IO.FileStream(filename, System.IO.FileMode.Open, System.IO.FileAccess.Read, System.IO.FileShare.Read));
 			return types;
 		}
 		
@@ -103,18 +103,26 @@ namespace MonoDroid
 						//Console.WriteLine("{0} {1} {2} {3}", type, method, otype, method.IsSynthetic);
 						//method.OverrideMethod = (from omethod in otype.Methods where omethod.Matches(method) select omethod).First();
 						//Console.WriteLine("{0}", method.OverrideMethod);
-					}	
+					}
+					*/
+					if (method.Parameters.Count != 0)
+						continue;
 					if (method.PropertyType != null)
 						continue;
-					if (!method.Name.StartsWith("get"))
+					if (!method.Name.StartsWith("get") || method.Name == "get")
 						continue;
 					string setterName = "set" + method.Name.Substring(3);
 					var matchedSetter = (from setter in type.Methods where setter.Name == setterName && setter.Parameters.Count == 1 && setter.Return == "void" && setter.Parameters[0] == method.Return select setter).FirstOrDefault();
 					if (matchedSetter != null)
+					{
 						matchedSetter.PropertyType = method.PropertyType = PropertyType.ReadWrite;
+						matchedSetter.OtherPropertyAccessor = method;
+						method.OtherPropertyAccessor = matchedSetter;
+					}
 					else
+					{
 						method.PropertyType = PropertyType.ReadOnly;
-					*/
+					}
 				}
 			}
 		}
@@ -133,18 +141,26 @@ namespace MonoDroid
 		{
 			get;set;
 		}
-		
-		public bool Abstract 
+
+		public string Scope
 		{
 			get;set;
 		}
-		
+
+		public override string ToString ()
+		{
+			return string.Format("{0}{1}", Scope, " " + Name);
+		}
+	}
+	
+	public class Overridable : Accessible
+	{
 		public bool IsSealed
 		{
 			get;set;
 		}
-		
-		public string Scope
+				
+		public bool Abstract 
 		{
 			get;set;
 		}
@@ -153,15 +169,52 @@ namespace MonoDroid
 		{
 			get;set;
 		}
-		
+
 		public override string ToString ()
 		{
 			return string.Format("{0}{1}{2}{3}", Scope, Abstract ? " abstract" : string.Empty, IsSealed ? " sealed" : string.Empty, " " + Name);
 		}
 	}
 	
-	public class Type : Accessible
+	public class Field : Accessible
 	{
+		public string Type
+		{
+			get;set;
+		}
+		
+		public bool IsReadOnly
+		{
+			get;set;
+		}
+		
+		public string Value
+		{
+			get;set;
+		}
+
+		public bool Static
+		{
+			get;set;
+		}
+
+		public override string ToString ()
+		{
+			return string.Format("{0}{1}{2}{3}{4}", Scope, Static ? " static" : string.Empty, IsReadOnly ? " readonly" : string.Empty, " " + Name, Value != null ? " = " + Value : string.Empty);
+		}
+	}
+	
+	public class Type : Overridable
+	{
+		HashSet<string> mySignatures = new HashSet<string>();
+		public HashSet<string> Signatures
+		{
+			get
+			{
+				return mySignatures;
+			}
+		}
+		
 		public Boolean IsNew
 		{
 			get;set;
@@ -277,6 +330,16 @@ namespace MonoDroid
 			}
 		}
 		
+		List<Field> myFields = new List<Field>();
+		[System.Xml.Serialization.XmlArrayItemAttribute("Field", typeof(Field), Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+		public List<Field> Fields	
+		{
+			get
+			{
+				return myFields;
+			}
+		}
+		
 		public override string ToString ()
 		{
 			return string.Format("{0}{1}{2}{3}", Scope, IsInterface ? " interface" : Abstract ? " abstract" : string.Empty, IsSealed ? " sealed" : string.Empty, " " + Name);
@@ -289,7 +352,7 @@ namespace MonoDroid
 		ReadWrite
 	}
 	
-	public class Method : Accessible
+	public class Method : Overridable
 	{
 		public bool IsNew
 		{
@@ -333,6 +396,11 @@ namespace MonoDroid
 		}
 		
 		public PropertyType? PropertyType
+		{
+			get;set;
+		}
+		
+		public Method OtherPropertyAccessor
 		{
 			get;set;
 		}
@@ -381,6 +449,22 @@ namespace MonoDroid
 			}
 		}
 		
+		public string ToSignatureString ()
+		{
+			StringBuilder builder = new StringBuilder();
+			builder.Append('(');
+			bool first = true;
+			foreach(var param in Parameters)
+			{
+				if (!first)
+					builder.Append(", ");
+				builder.Append(param);
+				first = false;
+			}
+			builder.Append(')');
+			return string.Format("{0}{1}{2}{3}{4}{5}", Scope, Static ? " static" : string.Empty, Abstract ? " abstract" : string.Empty, IsSealed ? " sealed" : string.Empty, " " + Name, builder.ToString());
+		}
+
 		public override string ToString ()
 		{
 			StringBuilder builder = new StringBuilder();
