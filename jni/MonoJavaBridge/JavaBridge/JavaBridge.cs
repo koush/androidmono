@@ -4,11 +4,15 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 
+using net.sf.jni4net;
+using net.sf.jni4net.jni;
+using net.sf.jni4net.utils;
+
 namespace MonoJavaBridge
 {
 	public class JavaBridge
 	{
-		static IntPtr myVM;
+		static JavaVM myVM;
 		static JavaBridge()
 		{
 		}
@@ -16,7 +20,24 @@ namespace MonoJavaBridge
 		static void Initialize(IntPtr vm)
 		{
 			Console.WriteLine("Mono initialized.");
-			myVM = vm;
+			myVM = new JavaVM(vm);
+			Bridge.Setup.BindStatic = false;
+			Bridge.Setup.BindCLRTypes = false;
+			JNIEnv env;
+			JNIResult res = myVM.GetEnv(out env, JNI.JNI_VERSION_1_4);
+			Console.WriteLine(res);
+			
+			Registry.Initialize();
+			Console.WriteLine(java.lang.Class._class.FullName);
+			
+			Registry.RegisterType(typeof(java.lang.reflect.Method), true, env);
+			                      
+			var clazz = java.lang.Class._class;
+			Console.WriteLine(clazz.getCanonicalName());
+			foreach(var m in java.lang.Class._class.getDeclaredMethods())
+			{
+				Console.WriteLine(m.getName());
+			}
 		}
 
 		[MethodImpl(MethodImplOptions.InternalCall)]

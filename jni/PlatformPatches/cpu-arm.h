@@ -245,7 +245,7 @@ const char arm_cpu_desc [] = {
 	"iii\x0" "\x10" "\x0" ""	/* sub_ovf_un_carry */
 	"ff\x0" "\x0" "\x4" "\x0" ""	/* sqrt */
 	"i\x0" "\x0" "\x0" "\x8" "\x0" ""	/* tls_get */
-	"\x0" "\x0" "\x0" "\x0" "\x0" "\x0" ""	/* dummy_use */
+	"\x0" "i\x0" "\x0" "\x0" "\x0" ""	/* dummy_use */
 	"\x0" "\x0" "\x0" "\x0" "\x0" "\x0" ""	/* dummy_store */
 	"\x0" "\x0" "\x0" "\x0" "\x0" "\x0" ""	/* not_reached */
 	"\x0" "i\x0" "\x0" "\x0" "\x0" ""	/* not_null */
