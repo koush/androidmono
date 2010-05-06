@@ -320,9 +320,9 @@ namespace MonoDroid
 			get;set;
 		}
 		
-		List<Method> myMethods = new List<Method>();
+		Methods myMethods = new Methods();
 		[System.Xml.Serialization.XmlArrayItemAttribute("Method", typeof(Method), Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-		public List<Method> Methods	
+		public Methods Methods	
 		{
 			get
 			{
@@ -350,6 +350,14 @@ namespace MonoDroid
 	{
 		ReadOnly,
 		ReadWrite
+	}
+	
+	public class Methods : SerializableDictionary<string, Method>
+	{
+		protected override string GetKey (Method value)
+		{
+			return value.ToSignatureString();
+		}
 	}
 	
 	public class Method : Overridable
@@ -462,7 +470,7 @@ namespace MonoDroid
 				first = false;
 			}
 			builder.Append(')');
-			return string.Format("{0}{1}{2}{3}{4}{5}", Scope, Static ? " static" : string.Empty, Abstract ? " abstract" : string.Empty, IsSealed ? " sealed" : string.Empty, " " + Name, builder.ToString());
+			return string.Format("{0}{1}", Name, builder.ToString());
 		}
 
 		public override string ToString ()

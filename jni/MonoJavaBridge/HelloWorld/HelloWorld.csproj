@@ -40,6 +40,10 @@
       <Project>{4C491434-C5BB-41B9-B8E6-433EBE16EC4A}</Project>
       <Name>android</Name>
     </ProjectReference>
+    <ProjectReference Include="..\jni4net.n\jni4net.n.androidmono.csproj">
+      <Project>{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}</Project>
+      <Name>jni4net.n.androidmono</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

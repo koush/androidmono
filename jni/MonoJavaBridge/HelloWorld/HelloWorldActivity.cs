@@ -13,7 +13,7 @@ namespace com.koushikdutta.helloworld
 			base.onCreate (arg0);
 			
 			TextView tv = new TextView(this);
-			tv.setText("Hello");
+			tv.setText((java.lang.String)"Hello");
 			
 			setContentView(tv);
 		}

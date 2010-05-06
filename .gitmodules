@@ -1,0 +1,3 @@
+[submodule "jni/MonoJavaBridge/jni4net.n"]
+	path = jni/MonoJavaBridge/jni4net.n
+	url = git://github.com/koush/jni4net.n.git

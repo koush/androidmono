@@ -9,7 +9,6 @@ public class BridgeTest extends Test {
 	{
 		MonoBridge.prelink(BridgeTest.class);
 	}
-	public native void foo();
 	
 	/**
 	 * @param args

@@ -50,27 +50,29 @@ namespace MonoDroid
 			if (type.IsSystemType)
 				return;
 			myIndent++;
-			BeginType(type);
-			foreach(var subType in type.Types)
+			if (BeginType(type))
 			{
-				GenerateType(subType);
+				foreach(var subType in type.Types)
+				{
+					GenerateType(subType);
+				}
+				foreach(var method in type.Methods)
+				{
+					if (type.Signatures.Contains(method.ToSignatureString()))
+					    continue;
+					type.Signatures.Add(method.ToSignatureString());
+					myIndent++;
+					EmitMethod(method);
+					myIndent--;
+				}
+				foreach(var field in type.Fields)
+				{
+					myIndent++;
+					EmitField(field);
+					myIndent--;
+				}
+				EndType();
 			}
-			foreach(var method in type.Methods)
-			{
-				if (type.Signatures.Contains(method.ToSignatureString()))
-				    continue;
-				type.Signatures.Add(method.ToSignatureString());
-				myIndent++;
-				EmitMethod(method);
-				myIndent--;
-			}
-			foreach(var field in type.Fields)
-			{
-				myIndent++;
-				EmitField(field);
-				myIndent--;
-			}
-			EndType();
 			myIndent--;
 		}
 		
@@ -116,7 +118,7 @@ namespace MonoDroid
 			WriteLine("}");
 		}
 		
-		protected abstract void BeginType(Type type);
+		protected abstract bool BeginType(Type type);
 		protected virtual void EndType()
 		{
 			WriteLine("}");

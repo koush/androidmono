@@ -8,8 +8,16 @@ using net.sf.jni4net;
 using net.sf.jni4net.jni;
 using net.sf.jni4net.utils;
 
+namespace com.koushikdutta.monojavabridge.test
+{
+	public class BridgeTest
+	{
+	}
+}
+
 namespace MonoJavaBridge
 {
+
 	public class JavaBridge
 	{
 		static JavaVM myVM;
@@ -21,23 +29,20 @@ namespace MonoJavaBridge
 		{
 			Console.WriteLine("Mono initialized.");
 			myVM = new JavaVM(vm);
-			Bridge.Setup.BindStatic = false;
-			Bridge.Setup.BindCLRTypes = false;
-			JNIEnv env;
-			JNIResult res = myVM.GetEnv(out env, JNI.JNI_VERSION_1_4);
-			Console.WriteLine(res);
-			
-			Registry.Initialize();
-			Console.WriteLine(java.lang.Class._class.FullName);
+			var env = Bridge.SetJVM(myVM);
 			
 			Registry.RegisterType(typeof(java.lang.reflect.Method), true, env);
-			                      
-			var clazz = java.lang.Class._class;
-			Console.WriteLine(clazz.getCanonicalName());
-			foreach(var m in java.lang.Class._class.getDeclaredMethods())
-			{
-				Console.WriteLine(m.getName());
-			}
+			var clazz = env.FindClass("com/koushikdutta/monojavabridge/test/BridgeTest");
+			var method = clazz.getMethod("foo", null);
+			method.invoke(null, null);
+			string thing = method.getName();
+			Bridge.Setup.VeryVerbose = true;
+			Bridge.Setup.Verbose = true;
+			Registry.RegisterType(typeof(com.koushikdutta.monojavabridge.test.BridgeTest), true, env);
+			Bridge.Setup.VeryVerbose = false;
+			Bridge.Setup.Verbose = false;
+
+			java.lang.Class._class.getDeclaredMethods();
 		}
 
 		[MethodImpl(MethodImplOptions.InternalCall)]

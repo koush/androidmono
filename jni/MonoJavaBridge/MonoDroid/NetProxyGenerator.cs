@@ -1,11 +1,15 @@
 
 using System;
 using System.IO;
+using System.Reflection;
+using System.Collections.Generic;
 
 namespace MonoDroid
 {
 	public class NetProxyGenerator : CodeGenerator
 	{
+		static Dictionary<string, System.Type> myJniTypes = new Dictionary<string, System.Type>();
+		
 		public NetProxyGenerator (DirectoryInfo workingDirectory)
 			: base(workingDirectory)
 		{
@@ -104,6 +108,12 @@ namespace MonoDroid
 		
 		static NetProxyGenerator()
 		{
+			Assembly jniAssembly = typeof(net.sf.jni4net.Bridge).Assembly;
+			foreach (var type in jniAssembly.GetTypes())
+			{
+				myJniTypes.Add(type.FullName, type);
+			}			
+
 			for (int i = 0; i < myKeywords.Length; i++)
 			{
 				string keyword = myKeywords[i];
@@ -128,8 +138,11 @@ namespace MonoDroid
 			return Path.Combine(type.Namespace.Replace('.', Path.DirectorySeparatorChar), type.SimpleName + ".cs");
 		}		
 		
-		protected override void BeginType (Type type)
+		protected override bool BeginType (Type type)
 		{
+			if (myJniTypes.ContainsKey(type.Name))
+				return false;
+			
 			Write(type.Scope);
 			if (type.IsNew)
 				Write("new");
@@ -155,14 +168,17 @@ namespace MonoDroid
 			WriteDelimited(type.InterfaceTypes, (v, i) => type.Qualifier.StartsWith(v.Qualifier) ? v.SimpleName : v.Name, ",");
 			WriteLine();
 			WriteLine("{");
+			return true;
 		}
 		
 		private string ConvertType(String type)
 		{
+			/*
 			if (type == "java.lang.String")
 				return "string";
 			if (type == "java.lang.CharSequence")
 				return "string";
+			*/
 			return type;
 		}
 
@@ -189,7 +205,7 @@ namespace MonoDroid
 				string val = field.Value;
 				val = val.Replace("\\" , "\\\\").Replace("\"", "\\\"").Replace("\n", "\\n");
 				
-				if (ConvertType(field.Type) == "string")
+				if (ConvertType(field.Type) == "java.lang.String")
 				{
 					Write("return \"{0}\"", false, val);
 				}
@@ -231,6 +247,32 @@ namespace MonoDroid
 		{
 			if (method.IsSynthetic)
 				return;
+			
+			if (method.IsOverride && !method.IsConstructor && !method.Abstract && !method.Static)
+			{
+				Type parent = method.Type.ParentType;
+				string sig = method.ToSignatureString();
+				while (parent != null)
+				{
+					if (myJniTypes.ContainsKey(parent.Name) && parent.Methods.Dictionary.ContainsKey(sig))
+					{
+						//Console.WriteLine("Skipping {0} in {1}", method, method.Type);
+						//Console.WriteLine("Found {0}", parent);
+						var jniType = myJniTypes[parent.Name];
+						
+						// see if the method exists to override
+						try
+						{
+							if (jniType.GetMethod(method.Name) == null)
+								return;
+						}
+						catch (AmbiguousMatchException)
+						{
+						}
+					}
+					parent = parent.ParentType;
+				}
+			}
 			
 			//if (method.PropertyType != null && method.Name.StartsWith("set"))
 			//	return;

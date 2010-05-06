@@ -5,12 +5,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoJavaBridge", "JavaBridg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDroid", "MonoDroid\MonoDroid.csproj", "{A3900426-8A60-473D-A454-3B5C124946D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jni4net.n.androidmono", "jni4net.n\jni4net.n.androidmono.csproj", "{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A3900426-8A60-473D-A454-3B5C124946D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A3900426-8A60-473D-A454-3B5C124946D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3900426-8A60-473D-A454-3B5C124946D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
