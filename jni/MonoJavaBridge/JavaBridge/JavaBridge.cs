@@ -35,7 +35,6 @@ namespace MonoJavaBridge
 			var clazz = env.FindClass("com/koushikdutta/monojavabridge/test/BridgeTest");
 			var method = clazz.getMethod("foo", null);
 			method.invoke(null, null);
-			string thing = method.getName();
 			Bridge.Setup.VeryVerbose = true;
 			Bridge.Setup.Verbose = true;
 			Registry.RegisterType(typeof(com.koushikdutta.monojavabridge.test.BridgeTest), true, env);
@@ -50,6 +49,11 @@ namespace MonoJavaBridge
 		
 		[MethodImpl(MethodImplOptions.InternalCall)]
 		extern static IntPtr mono_object_to_pointer(Object o);
+		
+		public static void Prelink(Type type)
+		{
+			Console.WriteLine("Prelinking: {0}", type);
+		}
 		
 		public static void Prelink(IntPtr className)
 		{

@@ -89,7 +89,13 @@ namespace MonoDroid
 						method.Parameters[i] = ConvertType(EscapeName(method.Parameters[i], false));
 					}
 					if (method.Return != null)
+					{
 						method.Return = ConvertType(EscapeName(method.Return, false));
+					}
+					// jni4net exposes java.util.List.listIterator with a return type of Iterator, and not ListIterator...
+					// massage this so it works.
+					if ((type.Name == "java.util.AbstractList" || type.Name == "java.util.concurrent.CopyOnWriteArrayList") && method.Name == "listIterator")
+						method.Return = "java.util.Iterator";
 				}
 				if (type.Parent != null)
 					type.Parent = EscapeName(type.Parent);
@@ -168,6 +174,19 @@ namespace MonoDroid
 			WriteDelimited(type.InterfaceTypes, (v, i) => type.Qualifier.StartsWith(v.Qualifier) ? v.SimpleName : v.Name, ",");
 			WriteLine();
 			WriteLine("{");
+			
+			if (!type.IsInterface)
+			{
+				myIndent++;
+				WriteLine("static {0}()", type.SimpleName);
+				WriteLine("{");
+				myIndent++;
+				WriteLine("MonoJavaBridge.JavaBridge.Prelink(typeof({0}));", type.Name);
+				myIndent--;
+				WriteLine("}");
+				myIndent--;
+			}
+
 			return true;
 		}
 		
