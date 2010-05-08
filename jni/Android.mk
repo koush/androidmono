@@ -278,6 +278,9 @@ LOCAL_SRC_FILES := $(MONO_SRC_FILES)
 # missing functions..
 LOCAL_SRC_FILES += PlatformPatches/missing.c
 
+# jni4net
+LOCAL_SRC_FILES += MonoJavaBridge/MonoJavaInterop/MonoJavaInterop.c
+
 LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -llog -ldl -lm -lc
 # LOCAL_PRELINK_MODULE := false
 include $(BUILD_SHARED_LIBRARY)

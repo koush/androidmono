@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.koushikdutta.rommanager.license"
+      package="com.koushikdutta.helloworld"
       android:versionCode="105"
       android:versionName="1.0.5">
-    <application android:icon="@drawable/icon" android:label="@string/app_name">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name=".HelloWorldApplication">
 		<activity android:name=".HelloWorldActivity" android:label="@string/app_name" android:configChanges="orientation|keyboardHidden|keyboard">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />

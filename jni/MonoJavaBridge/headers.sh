@@ -1,3 +1,3 @@
 pushd MonoBridge/bin
-javah -d ../../MonoJavaInterop/ com.koushikdutta.monojavabridge.MonoBridge
+javah -o ../../MonoJavaInterop/com_koushikdutta_monojavabridge_MonoBridge.h com.koushikdutta.monojavabridge.MonoBridge
 popd

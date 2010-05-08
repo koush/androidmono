@@ -15,6 +15,14 @@ extern "C" {
 JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_prelink
   (JNIEnv *, jclass, jstring);
 
+/*
+ * Class:     com_koushikdutta_monojavabridge_MonoBridge
+ * Method:    loadAssembly
+ * Signature: (Ljava/lang/String;)V
+ */
+JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_loadAssembly
+  (JNIEnv *, jclass, jstring);
+
 #ifdef __cplusplus
 }
 #endif

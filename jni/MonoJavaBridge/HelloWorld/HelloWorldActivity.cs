@@ -6,7 +6,7 @@ using android.os;
 
 namespace com.koushikdutta.helloworld
 {
-	public class HelloWorld : Activity
+	public class HelloWorldActivity : Activity
 	{
 		protected override void onCreate (Bundle arg0)
 		{

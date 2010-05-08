@@ -8,6 +8,11 @@ using net.sf.jni4net;
 using net.sf.jni4net.jni;
 using net.sf.jni4net.utils;
 
+using System.IO;
+using System.Text;
+
+using System.Collections.Generic;
+
 namespace com.koushikdutta.monojavabridge.test
 {
 	public class BridgeTest
@@ -17,32 +22,78 @@ namespace com.koushikdutta.monojavabridge.test
 
 namespace MonoJavaBridge
 {
+	public class LogWriter : TextWriter
+	{
+		public override Encoding Encoding {
+			get {
+				return Encoding.ASCII;
+			}
+		}
 
+		StringBuilder buffer = new StringBuilder();
+		public override void Write (char value)
+		{
+			if (value == '\n')
+			{
+				JavaBridge.Log(buffer.ToString());
+				buffer = new StringBuilder();
+			}
+			else
+			{
+				buffer.Append(value);
+			}
+		}
+	}
+	
 	public class JavaBridge
 	{
+		public static void Log(string format, params object[] args)
+		{
+			string s = String.Format(format, args);
+			IntPtr p = Marshal.StringToHGlobalAnsi(s);
+			log(p);
+			Marshal.FreeHGlobal(p);
+		}
+		
 		static JavaVM myVM;
 		static JavaBridge()
 		{
 		}
 		
+		static JNIEnv GetEnv() 
+		{
+			return JNIEnv.GetEnvForVm(myVM);
+		}
+		
 		static void Initialize(IntPtr vm)
 		{
-			Console.WriteLine("Mono initialized.");
+			Log("Setting logwriter");
+			Console.SetOut(new LogWriter());
+			Console.WriteLine("Testing logwriter");
+				
+			Log("Mono initialized.");
+				
 			myVM = new JavaVM(vm);
-			var env = Bridge.SetJVM(myVM);
-			
+			Log("Setting JVM");
+			Bridge.SetJVM(myVM);
+			var env = JNIEnv.GetEnvForVm(myVM);
+			Registry.Initialize();
 			Registry.RegisterType(typeof(java.lang.reflect.Method), true, env);
-			var clazz = env.FindClass("com/koushikdutta/monojavabridge/test/BridgeTest");
-			var method = clazz.getMethod("foo", null);
-			method.invoke(null, null);
-			Bridge.Setup.VeryVerbose = true;
-			Bridge.Setup.Verbose = true;
-			Registry.RegisterType(typeof(com.koushikdutta.monojavabridge.test.BridgeTest), true, env);
-			Bridge.Setup.VeryVerbose = false;
-			Bridge.Setup.Verbose = false;
-
-			java.lang.Class._class.getDeclaredMethods();
 		}
+		
+		static List<string> myAssemblies = new List<string>();
+
+		static void LoadAssembly(IntPtr assemblyNamePtr)
+		{
+			String assemblyName = GetEnv().ConvertToString(assemblyNamePtr);
+			Console.WriteLine("Loading Assembly: {0}", assemblyName);
+			var assembly = Assembly.LoadFile(assemblyName);
+			if (assembly != null)
+				myAssemblies.Add(assembly.FullName);
+		}
+
+		[MethodImpl(MethodImplOptions.InternalCall)]
+		extern static void log(IntPtr p);
 
 		[MethodImpl(MethodImplOptions.InternalCall)]
 		extern static object mono_pointer_to_object(IntPtr ptr);
@@ -52,12 +103,49 @@ namespace MonoJavaBridge
 		
 		public static void Prelink(Type type)
 		{
-			Console.WriteLine("Prelinking: {0}", type);
+			Log("Prelinking: {0}", type);
 		}
-		
+
 		public static void Prelink(IntPtr className)
 		{
-			Console.WriteLine("Prelinking!");
+			JNIEnv env = JNIEnv.GetEnvForVm(myVM);
+			string classNameString = env.ConvertToString(className);
+			Log("Linking: {0}", classNameString);
+			var clazz = env.FindClass(classNameString.Replace('.', '/'));
+			Type type = null;
+			foreach (string assembly in myAssemblies)
+			{
+				type = Type.GetType(classNameString + "," + assembly);
+				if (type != null)
+					break;
+			}
+			if (clazz == null)
+				Console.WriteLine("Could not find java class.");
+			else
+				Console.WriteLine("Found java class: {0}", clazz);
+			if (type == null)
+				Console.WriteLine("Could not find clr type.");
+			else
+				Console.WriteLine("Found clr type: {0}", type);
+			
+			//env.RegisterNatives(clazz, JNINativeMethod
+			
+			//env.RegisterNatives(
+			
+			//Log("Finding foo");
+			//var method = clazz.getMethod("foo", null);
+			//Log("Invoking foo");
+			//method.invoke(null, null);
+
+			//Log("Getting declared methods");
+			//java.lang.Class._class.getDeclaredMethods();
+
+			/*
+			JniLocalHandle handle = new JniLocalHandle();
+			handle.handle = className;
+			
+			*/
+			//Log("Prelinking!");
 		}
 	}
 }
