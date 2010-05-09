@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -9,6 +9,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>MonoJavaBridge</RootNamespace>
     <AssemblyName>MonoJavaBridge</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,10 +45,9 @@
       <Project>{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}</Project>
       <Name>jni4net.n.androidmono</Name>
     </ProjectReference>
+    <ProjectReference Include="..\android\android.csproj">
+      <Project>{4C491434-C5BB-41B9-B8E6-433EBE16EC4A}</Project>
+      <Name>android</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ProjectExtensions>
-    <MonoDevelop>
-      <Properties InternalTargetFrameworkVersion="3.5" />
-    </MonoDevelop>
-  </ProjectExtensions>
 </Project>

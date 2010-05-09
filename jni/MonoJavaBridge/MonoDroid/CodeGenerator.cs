@@ -71,7 +71,7 @@ namespace MonoDroid
 					EmitField(field);
 					myIndent--;
 				}
-				EndType();
+				EndType(type);
 			}
 			myIndent--;
 		}
@@ -119,7 +119,7 @@ namespace MonoDroid
 		}
 		
 		protected abstract bool BeginType(Type type);
-		protected virtual void EndType()
+		protected virtual void EndType(Type type)
 		{
 			WriteLine("}");
 		}

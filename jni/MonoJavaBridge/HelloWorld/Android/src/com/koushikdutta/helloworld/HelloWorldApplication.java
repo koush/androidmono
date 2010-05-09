@@ -12,6 +12,7 @@ import com.koushikdutta.monojavabridge.MonoBridge;
 import com.koushikdutta.utilities.AssetExtractor;
 
 import android.app.Application;
+import android.util.Log;
 
 public class HelloWorldApplication extends Application {
 	@Override

@@ -92,11 +92,11 @@ namespace MonoDroid
 				foreach (var method in type.Methods)
 				{
 					method.Type = type;
-					/*
 					if (!method.IsConstructor)
 						method.ReturnType = FindType(method.Return);
 					method.ParameterTypes.Clear();
 					method.ParameterTypes.AddRange(from p in method.Parameters select FindType(p));
+                    /*
 					if (method.Override != null)
 					{
 						Type otype = method.OverrideType = FindType(method.Override);
@@ -105,6 +105,7 @@ namespace MonoDroid
 						//Console.WriteLine("{0}", method.OverrideMethod);
 					}
 					*/
+                    /*
 					if (method.Parameters.Count != 0)
 						continue;
 					if (method.PropertyType != null)
@@ -123,6 +124,7 @@ namespace MonoDroid
 					{
 						method.PropertyType = PropertyType.ReadOnly;
 					}
+                    */               
 				}
 			}
 		}

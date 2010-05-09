@@ -76,6 +76,7 @@ namespace MonoJavaBridge
 			myVM = new JavaVM(vm);
 			Log("Setting JVM");
 			Bridge.SetJVM(myVM);
+            Bridge.Setup.VeryVerbose = Bridge.Setup.Verbose = true;
 			var env = JNIEnv.GetEnvForVm(myVM);
 			Registry.Initialize();
 			Registry.RegisterType(typeof(java.lang.reflect.Method), true, env);
@@ -127,6 +128,9 @@ namespace MonoJavaBridge
 				Console.WriteLine("Could not find clr type.");
 			else
 				Console.WriteLine("Found clr type: {0}", type);
+            
+            android.util.Log.i("HelloMono", "Hello from Mono Interop!");
+            //int i = android.widget.LinearLayout.VERTICAL;
 			
 			//env.RegisterNatives(clazz, JNINativeMethod
 			
