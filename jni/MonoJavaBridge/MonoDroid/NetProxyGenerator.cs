@@ -374,7 +374,7 @@ namespace MonoDroid
         public static string GetMethodStatement(Method method)
         {
             if (method.IsConstructor)
-                return string.Empty;
+                return "@__env.NewObject({1});";
 
             var type = method.ReturnType;
             var typeName = method.Return;
@@ -506,18 +506,15 @@ namespace MonoDroid
             string methodId = null;
             if (!method.Type.IsInterface)
             {
-                if (method.Scope != "internal")
-                {
-                    string signature = GetMethodSignature(method);
-                    if (method.Name.LastIndexOf('.') == -1)
-                        methodId = method.Name;
-                    else
-                        methodId = method.Name.Substring(method.Name.LastIndexOf('.') + 1);
-                    methodId = string.Format("_{0}{1}", methodId.Replace("@",""), myMemberCounter++);
-                    string initJni = string.Format("global::{0}.{1} = @__env.Get{4}MethodID(global::{0}.staticClass, \"{2}\", \"{3}\");", method.Type.Name, methodId, method.Name, signature, method.Static ? "Static" : string.Empty);
-                    myInitJni.Add(initJni);
-                    WriteLine("internal static global::net.sf.jni4net.jni.MethodId {0};", methodId);
-                }
+                string signature = GetMethodSignature(method);
+                if (method.Name.LastIndexOf('.') == -1)
+                    methodId = method.Name;
+                else
+                    methodId = method.Name.Substring(method.Name.LastIndexOf('.') + 1);
+                methodId = string.Format("_{0}{1}", methodId.Replace("@",""), myMemberCounter++);
+                string initJni = string.Format("global::{0}.{1} = @__env.Get{4}MethodID(global::{0}.staticClass, \"{2}\", \"{3}\");", method.Type.Name, methodId, method.IsConstructor ? "<init>" : method.Name, signature, method.Static ? "Static" : string.Empty);
+                myInitJni.Add(initJni);
+                WriteLine("internal static global::net.sf.jni4net.jni.MethodId {0};", methodId);
                 
                 //WriteLine("[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.InternalCall)]");
                 Write(method.Scope);
@@ -568,14 +565,14 @@ namespace MonoDroid
                     WriteLine("{");
                     myIndent++;
                     // TODO: Remove this if statement when object initializeation is properly supported.
-                    if (!method.IsConstructor && !method.Return.EndsWith("[]"))
+                    if (method.Return == null || !method.Return.EndsWith("[]"))
                         WriteLine("global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;");
                     var statement = GetMethodStatement(method);
                     StringBuilder parBuilder = new StringBuilder();
-                    if (!method.Static)
-                        parBuilder.Append("this, ");
-                    else
+                    if (method.Static || method.IsConstructor)
                         parBuilder.AppendFormat("{0}.staticClass, ", method.Type.Name);
+                    else
+                        parBuilder.Append("this, ");
                     parBuilder.Append(methodId);
                     for (int i = 0; i < method.Parameters.Count; i++)
                     {

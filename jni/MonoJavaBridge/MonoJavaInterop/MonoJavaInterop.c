@@ -2,6 +2,7 @@
          #include <mono/metadata/metadata.h>
 #include <mono/metadata/debug-helpers.h>
 #include <mono/metadata/class-internals.h>
+#include <mono/metadata/mono-debug.h>
 
 #ifdef PLATFORM_ANDROID
 #include <android/log.h>
@@ -84,6 +85,8 @@ jint JNI_OnLoad(JavaVM* vm, void* reserved)
 #endif
 	g_JavaVM = vm;
 	MonoDomain *domain;
+
+	mono_debug_init (MONO_DEBUG_FORMAT_MONO);
  
 #ifdef PLATFORM_ANDROID
     LOGI("mono_jit_init...");

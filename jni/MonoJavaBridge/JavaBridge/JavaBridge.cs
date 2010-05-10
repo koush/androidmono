@@ -130,6 +130,8 @@ namespace MonoJavaBridge
 				Console.WriteLine("Found clr type: {0}", type);
             
             android.util.Log.i("HelloMono", "Hello from Mono Interop!");
+            var biggy = new java.math.BigInteger("123");
+            android.util.Log.i("HelloMono", biggy.toString());
             //int i = android.widget.LinearLayout.VERTICAL;
 			
 			//env.RegisterNatives(clazz, JNINativeMethod
