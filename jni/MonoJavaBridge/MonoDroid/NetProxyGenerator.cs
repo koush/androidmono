@@ -77,8 +77,10 @@ namespace MonoDroid
             return name;
         }
         
+        ObjectModel myModel;
         protected override void Prepare (ObjectModel model)
         {
+            myModel = model;
             foreach (var type in model.Types)
             {
                 type.Name = EscapeName(type.Name);
@@ -164,6 +166,8 @@ namespace MonoDroid
                 Write("abstract");
             if (type.IsSealed)
                 Write("sealed");
+            if (type.Static)
+                Write("static");
             if (type.IsInterface)
                 Write("interface {0}", type.SimpleName);
             else
@@ -183,7 +187,7 @@ namespace MonoDroid
             WriteLine();
             WriteLine("{");
             
-            if (!type.IsInterface)
+            if (!type.IsInterface && !type.Static)
             {
                 myIndent++;
                 WriteLine("internal {0}static global::java.lang.Class staticClass;", type.Parent == null || myJniTypes.ContainsKey(type.Parent) ? "" : "new ");
@@ -193,6 +197,11 @@ namespace MonoDroid
                 WriteLine("global::net.sf.jni4net.utils.Registry.RegisterType(typeof({0}), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);", type.Name);
                 myIndent--;
                 WriteLine("}");
+                
+                WriteLine("{1} {0}(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)", type.SimpleName, type.IsSealed ? "internal" : "protected");
+                WriteLine("{");
+                WriteLine("}");
+                
                 myIndent--;
             }
 
@@ -201,7 +210,7 @@ namespace MonoDroid
         
         protected override void EndType (Type type)
         {
-            if (type.IsInterface)
+            if (type.IsInterface || type.Static)
             {
                 base.EndType(type);
                 return;
@@ -340,40 +349,126 @@ namespace MonoDroid
             switch (low)
             {
                 case "bool":
-                case "boolean":
-                case "system.boolean":
                     return array + "Z";
                 case "int":
-                case "int32":
-                case "system.int32":
                     return array + "I";
                 case "double":
-                case "system.double":
                     return array + "D";
                 case "float":
-                case "single":
-                case "system.single":
                     return array + "F";
                 case "short":
-                case "int16":
-                case "system.int16":
                     return array + "S";
                 case "long":
-                case "int64":
-                case "system.int64":
                     return array + "J";
                 case "char":
-                case "system.char":
                     return array + "C";
                 case "byte":
-                case "system.byte":
                     return array + "B";
                 case "void":
-                case "system.void":
                     return array + "V";
                 default:
                     return array + "L" + typeName.Substring(0, low.Length).Replace('.', '/') + ";";
             }
+        }
+        
+        public static string GetMethodStatement(Method method)
+        {
+            if (method.IsConstructor)
+                return string.Empty;
+
+            var type = method.ReturnType;
+            var typeName = method.Return;
+            
+            if (typeName == "void")
+                return "@__env.CallVoidMethod({1});";
+            
+            switch (typeName)
+            {
+                case "bool":
+                    return "return @__env.Call{0}BooleanMethod({1});";
+                case "int":
+                    return "return @__env.Call{0}IntMethod({1});";
+                case "double":
+                    return "return @__env.Call{0}DoubleMethod({1});";
+                case "float":
+                    return "return @__env.Call{0}FloatMethod({1});";
+                case "short":
+                    return "return @__env.Call{0}ShortMethod({1});";
+                case "long":
+                    return "return @__env.Call{0}LongMethod({1});";
+                case "char":
+                    return "return @__env.Call{0}CharMethod({1});";
+                case "byte":
+                    return "return @__env.Call{0}ByteMethod({1});";
+            }
+            
+            StringBuilder ret = new StringBuilder();
+            if (typeName.EndsWith("[]"))
+            {
+                ret.Append("return null;//");
+            }
+            else
+            {
+                if (typeName == "java.lang.Object" || (type != null && type.IsInterface))
+                {
+                    ret.AppendFormat("return global::net.sf.jni4net.utils.Convertor.FullJ2C<{0}>", typeName);
+                }
+                else
+                {
+                    ret.AppendFormat("return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<{0}>", typeName);
+                }
+            }
+            
+            ret.Append("(@__env, @__env.Call{0}ObjectMethodPtr({1}));");
+            
+            return ret.ToString();
+            
+            //string ret  String.Format("return global::net.sf.jni4net.utils.Convertor.{0}<{1}, {2}>", converter);
+            
+            return null;
+        }
+        
+        public string GetParameterStatement(Type parameterType, string parameter)
+        {
+            switch (parameter)
+            {
+                case "bool":
+                case "int":
+                case "double":
+                case "float":
+                case "short":
+                case "long":
+                case "char":
+                case "byte":
+                    return "ParPrimC2J({0})";
+                case "bool[]":
+                case "int[]":
+                case "double[]":
+                case "float[]":
+                case "short[]":
+                case "long[]":
+                case "char[]":
+                case "byte[]":
+                    return "ParArrayPrimC2J(@__env, {0})";
+            }
+            
+            if (parameter.EndsWith("[][]"))
+            {
+                return "ParArrayStrongCp2J(@__env, {0})";
+            }
+            
+            if (parameter.EndsWith("[]"))
+            {
+                var stripParameter = parameter.Substring(0, parameter.Length - "[]".Length);
+                string element = stripParameter.Replace("@", "");
+                if (element == "java.lang.Object" || myModel.FindType(element).IsInterface)
+                    return string.Format("ParArrayFullC2J<{0}, {1}>", parameter, stripParameter) + "(@__env, {0})";
+                return "ParArrayStrongCp2J(@__env, {0})";
+            }
+            
+            if (parameter == "java.lang.Object" || parameterType.IsInterface)
+                return "ParFullC2J(@__env, {0})";
+            return "ParStrongCp2J({0})";
         }
 
         protected override void EmitMethod (Method method)
@@ -408,13 +503,12 @@ namespace MonoDroid
             //if (method.PropertyType != null && method.Name.StartsWith("set"))
             //    return;
             
-            
+            string methodId = null;
             if (!method.Type.IsInterface)
             {
                 if (method.Scope != "internal")
                 {
                     string signature = GetMethodSignature(method);
-                    string methodId = null;
                     if (method.Name.LastIndexOf('.') == -1)
                         methodId = method.Name;
                     else
@@ -425,7 +519,7 @@ namespace MonoDroid
                     WriteLine("internal static global::net.sf.jni4net.jni.MethodId {0};", methodId);
                 }
                 
-                WriteLine("[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.InternalCall)]");
+                //WriteLine("[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.InternalCall)]");
                 Write(method.Scope);
                 if (method.Abstract)
                     Write("abstract");
@@ -446,7 +540,7 @@ namespace MonoDroid
                         else if (!method.Type.IsSealed && method.Scope != string.Empty)
                             Write("virtual");
                     }
-                    Write("extern");
+                    //Write("extern");
                 }
             }
             // TODO: Reflect on the jni4net type, and see if the method exists or not.
@@ -461,7 +555,40 @@ namespace MonoDroid
                 Write(method.Name, false);
                 Write("(", false);
                 WriteDelimited(method.Parameters, (v, i) => string.Format("{0} arg{1}", v, i), ",");
-                WriteLine(");");
+                if (method.Type.IsInterface || method.Abstract || method.Scope == "internal")
+                {
+                    WriteLine(");");
+                }
+                else
+                {
+                    Write(")");
+                    if (method.IsConstructor)
+                        Write(" : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv)");
+                    WriteLine();
+                    WriteLine("{");
+                    myIndent++;
+                    // TODO: Remove this if statement when object initializeation is properly supported.
+                    if (!method.IsConstructor && !method.Return.EndsWith("[]"))
+                        WriteLine("global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;");
+                    var statement = GetMethodStatement(method);
+                    StringBuilder parBuilder = new StringBuilder();
+                    if (!method.Static)
+                        parBuilder.Append("this, ");
+                    else
+                        parBuilder.AppendFormat("{0}.staticClass, ", method.Type.Name);
+                    parBuilder.Append(methodId);
+                    for (int i = 0; i < method.Parameters.Count; i++)
+                    {
+                        parBuilder.Append(", ");
+                        var parType = method.ParameterTypes[i];
+                        var par = method.Parameters[i];
+                        parBuilder.Append("global::net.sf.jni4net.utils.Convertor.");
+                        parBuilder.Append(string.Format(GetParameterStatement(parType, par), "arg" + i));
+                    }
+                    WriteLine(statement, method.Static ? "Static" : string.Empty, parBuilder);
+                    myIndent--;
+                    WriteLine("}");
+                }
             }
             else
             {

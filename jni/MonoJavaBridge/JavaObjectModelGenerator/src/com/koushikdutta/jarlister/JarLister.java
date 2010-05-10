@@ -550,6 +550,10 @@ public class JarLister {
 				// add empty internal constructors for everything.
 				// this fixes problems with classes not calling the base class constructors with 
 				// arguments when there are no empty constructor versions.
+				/*
+				 *
+				// This is not needed anymore because I am using jni4net env constructor:
+				// className(net.sf.jni4net.jni.JNIEnv env)
 				if (!hasEmptyConstructor && !clazz.isInterface())
 				{
 					wr.startElement("Method", null);
@@ -560,6 +564,7 @@ public class JarLister {
 					dataElement(wr, "Name", cname);
 					wr.endElement("Method");
 				}
+				*/
 				
 				wr.endElement("Methods");
 				
@@ -604,7 +609,7 @@ public class JarLister {
 				if (clazz.isInterface() && clazz.getDeclaredFields().length > 0)
 				{
 					wr.startElement("Type", null);
-					dataElement(wr, "IsSealed", true);
+					dataElement(wr, "Static", true);
 					dataElement(wr, "Scope", "public");
 					dataElement(wr, "Name", cleanClassName(clazz) + "Constants");
 					wr.startElement("Fields", null);

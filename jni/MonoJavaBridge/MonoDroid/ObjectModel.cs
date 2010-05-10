@@ -148,6 +148,11 @@ namespace MonoDroid
 		{
 			get;set;
 		}
+                
+        public bool Static
+        {
+            get;set;
+        }
 
 		public override string ToString ()
 		{
@@ -191,11 +196,6 @@ namespace MonoDroid
 		}
 		
 		public string Value
-		{
-			get;set;
-		}
-
-		public bool Static
 		{
 			get;set;
 		}
@@ -418,11 +418,6 @@ namespace MonoDroid
 		public Type Type
 		{
 			get;	set;
-		}
-		
-		public bool Static
-		{
-			get;set;
 		}
 		
 		public bool IsConstructor
