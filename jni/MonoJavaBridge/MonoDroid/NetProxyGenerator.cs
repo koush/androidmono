@@ -574,6 +574,8 @@ namespace MonoDroid
                     else
                         parBuilder.Append("this, ");
                     parBuilder.Append(methodId);
+                    if (method.IsConstructor)
+                        parBuilder.Append(", this");
                     for (int i = 0; i < method.Parameters.Count; i++)
                     {
                         parBuilder.Append(", ");
