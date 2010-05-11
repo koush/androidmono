@@ -198,6 +198,21 @@ namespace MonoDroid
                 myIndent--;
                 WriteLine("}");
                 
+                if (!type.Abstract)        
+                {
+                    WriteLine("private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper", myJniTypes.ContainsKey(type.Parent) ? string.Empty : "new ");
+                    WriteLine("{");
+                    myIndent++;
+                    WriteLine("public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env)");
+                    WriteLine("{");
+                    myIndent++;
+                    WriteLine("return new global::{0}(@__env);", type.Name);
+                    myIndent--;
+                    WriteLine("}");
+                    myIndent--;
+                    WriteLine("}");
+                }
+                
                 WriteLine("{1} {0}(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)", type.SimpleName, type.IsSealed ? "internal" : "protected");
                 WriteLine("{");
                 WriteLine("}");

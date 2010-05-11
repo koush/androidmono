@@ -115,7 +115,7 @@ namespace MonoJavaBridge
             }
             return null;
         }
-
+        
 		public static void Link(IntPtr classHandle, IntPtr methodNameHandle, IntPtr methodSignatureHandle)
 		{
 			JNIEnv env = JNIEnv.GetEnvForVm(myVM);
@@ -135,6 +135,8 @@ namespace MonoJavaBridge
 
             android.util.Log.i("HelloMono", "Hello from Mono Interop!");
             var biggy = new java.math.BigInteger("123");
+            var thingy = biggy.clearBit(0);
+            Console.WriteLine(biggy.GetType());
             android.util.Log.i("HelloMono", biggy.toString());
             
             //int i = android.widget.LinearLayout.VERTICAL;
