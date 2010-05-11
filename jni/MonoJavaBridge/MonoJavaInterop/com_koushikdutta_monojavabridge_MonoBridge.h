@@ -9,11 +9,11 @@ extern "C" {
 #endif
 /*
  * Class:     com_koushikdutta_monojavabridge_MonoBridge
- * Method:    prelink
- * Signature: (Ljava/lang/String;)V
+ * Method:    link
+ * Signature: (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
  */
-JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_prelink
-  (JNIEnv *, jclass, jstring);
+JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_link
+  (JNIEnv *, jclass, jclass, jstring, jstring);
 
 /*
  * Class:     com_koushikdutta_monojavabridge_MonoBridge

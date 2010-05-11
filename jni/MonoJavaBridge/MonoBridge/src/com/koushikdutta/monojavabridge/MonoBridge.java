@@ -22,12 +22,6 @@ public class MonoBridge {
 		}
 	}
 
-	public static void prelink(Class clazz)
-	{
-		System.out.println(String.format("Current Thread ID: %d", Thread.currentThread().getId()));
-		prelink(clazz.getCanonicalName());
-	}
-	
 	public static Class getPrimitiveClass(String className)
 	{
 		if (className.equals("boolean"))
@@ -70,6 +64,7 @@ public class MonoBridge {
 		return null;
 	}
 	
-	static native void prelink(String className);
+	@SuppressWarnings("unchecked")
+	public static native void link(Class clazz, String methodName, String methodSignature);
 	public static native void loadAssembly(String assemblyName);
 }

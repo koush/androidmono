@@ -80,6 +80,9 @@ namespace MonoJavaBridge
 			var env = JNIEnv.GetEnvForVm(myVM);
 			Registry.Initialize();
 			Registry.RegisterType(typeof(java.lang.reflect.Method), true, env);
+            
+            // add the jni4net assembly
+            myAssemblies.Add(typeof(java.lang.Object).Assembly.FullName);
 		}
 		
 		static List<string> myAssemblies = new List<string>();
@@ -101,37 +104,39 @@ namespace MonoJavaBridge
 		
 		[MethodImpl(MethodImplOptions.InternalCall)]
 		extern static IntPtr mono_object_to_pointer(Object o);
-		
-		public static void Prelink(Type type)
-		{
-			Log("Prelinking: {0}", type);
-		}
+        
+        public static Type FindType(string typeName)
+        {
+            foreach (string assembly in myAssemblies)
+            {
+                var type = Type.GetType(typeName + "," + assembly);
+                if (type != null)
+                    return type;
+            }
+            return null;
+        }
 
-		public static void Prelink(IntPtr className)
+		public static void Link(IntPtr classHandle, IntPtr methodNameHandle, IntPtr methodSignatureHandle)
 		{
 			JNIEnv env = JNIEnv.GetEnvForVm(myVM);
-			string classNameString = env.ConvertToString(className);
-			Log("Linking: {0}", classNameString);
-			var clazz = env.FindClass(classNameString.Replace('.', '/'));
-			Type type = null;
-			foreach (string assembly in myAssemblies)
-			{
-				type = Type.GetType(classNameString + "," + assembly);
-				if (type != null)
-					break;
-			}
-			if (clazz == null)
-				Console.WriteLine("Could not find java class.");
-			else
-				Console.WriteLine("Found java class: {0}", clazz);
-			if (type == null)
-				Console.WriteLine("Could not find clr type.");
-			else
-				Console.WriteLine("Found clr type: {0}", type);
             
+            var clazz = net.sf.jni4net.utils.Convertor.StrongJ2CpClass(env, classHandle);
+            var methodName = env.ConvertToString(methodNameHandle);
+            var methodSig = env.ConvertToString(methodSignatureHandle);
+            Console.WriteLine("Linking java class method: {0}.{1}", clazz, methodName);
+            Type type = FindType(clazz.getCanonicalName());
+            if (type == null)
+            {
+                Console.WriteLine("Could not find clr type.");
+                return;
+            }
+
+            Console.WriteLine("Found clr type: {0}", type);
+
             android.util.Log.i("HelloMono", "Hello from Mono Interop!");
             var biggy = new java.math.BigInteger("123");
             android.util.Log.i("HelloMono", biggy.toString());
+            
             //int i = android.widget.LinearLayout.VERTICAL;
 			
 			//env.RegisterNatives(clazz, JNINativeMethod

@@ -38,7 +38,7 @@
 MonoDomain *g_Domain;
 MonoAssembly *g_Assembly;
 MonoImage *g_Image;
-MonoMethod *g_Prelink;
+MonoMethod *g_Link;
 MonoMethod *g_LoadAssembly;
 JavaVM *g_JavaVM;
 
@@ -62,16 +62,18 @@ void logcat_print(char* p)
     LOGI(p);
 }
 
-JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_prelink
-  (JNIEnv *env, jclass clazz, jstring className)
+JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_link
+    (JNIEnv *env, jclass clazz, jclass cls, jstring methodName, jstring methodSignature)
 {
-    void *args[1];
-    args[0] = &className;
-    mono_runtime_invoke(g_Prelink, NULL, args, NULL);
+    void *args[3];
+    args[0] = &cls;
+    args[1] = &methodName;
+    args[2] = &methodSignature;
+    mono_runtime_invoke(g_Link, NULL, args, NULL);
 }
 
 JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_loadAssembly
-  (JNIEnv *env, jclass clazz, jstring assembly)
+    (JNIEnv *env, jclass clazz, jstring assembly)
 {
     void *args[1];
     args[0] = &assembly;
@@ -116,8 +118,8 @@ jint JNI_OnLoad(JavaVM* vm, void* reserved)
     args[0] = &g_JavaVM;
     mono_runtime_invoke(method, NULL, args, NULL);
 
-    desc = mono_method_desc_new ("MonoJavaBridge.JavaBridge:Prelink(intptr)", 1);
-    g_Prelink = mono_method_desc_search_in_image (desc, image);
+    desc = mono_method_desc_new ("MonoJavaBridge.JavaBridge:Link(intptr,intptr,intptr)", 1);
+    g_Link = mono_method_desc_search_in_image (desc, image);
     mono_method_desc_free(desc);
 
     desc = mono_method_desc_new ("MonoJavaBridge.JavaBridge:LoadAssembly(intptr)", 1);

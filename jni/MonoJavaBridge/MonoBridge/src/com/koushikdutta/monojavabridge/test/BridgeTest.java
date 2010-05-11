@@ -7,7 +7,7 @@ public class BridgeTest extends Test {
 	
 	static 
 	{
-		MonoBridge.prelink(BridgeTest.class);
+		//MonoBridge.prelink(BridgeTest.class);
 	}
 	
 	/**

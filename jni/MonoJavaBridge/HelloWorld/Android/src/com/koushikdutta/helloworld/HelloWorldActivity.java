@@ -9,7 +9,7 @@ public class HelloWorldActivity extends Activity
 {
 	static
 	{
-		MonoBridge.prelink(HelloWorldActivity.class);
+		MonoBridge.link(HelloWorldActivity.class, "onCreate", "(Landroid/os/Bundle;)V");
 	}
 	
 	@Override
