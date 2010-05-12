@@ -60,6 +60,7 @@ namespace MonoJavaBridge
         static List<Type> myActions = new List<Type>();
         static List<Type> myFuncs = new List<Type>();
         static MethodInfo myStrongJ2CpUntyped = null;//typeof(net.sf.jni4net.utils.Convertor).GetMethod("StrongJ2CpUntyped");
+        static MethodInfo myStrongJ2CpTyped = null;//typeof(net.sf.jni4net.utils.Convertor).GetMethod("StrongJ2CpUntyped");
         static MethodInfo myCLRHandleToObject = null;//typeof(JavaBridge).GetMethod("CLRHandleToObject");
         static MethodInfo myExpressionLambda = null;//typeof(Expression).GetMethod("Lambda");
         
@@ -69,6 +70,7 @@ namespace MonoJavaBridge
             Console.WriteLine("Mono initialized.");
 
             myStrongJ2CpUntyped = typeof(net.sf.jni4net.utils.Convertor).GetMethod("StrongJ2CpUntyped");
+            myStrongJ2CpTyped = typeof(net.sf.jni4net.utils.Convertor).GetMethod("StrongJ2CpTyped");
             myCLRHandleToObject = typeof(JavaBridge).GetMethod("CLRHandleToObject");
             myExpressionLambda = typeof(Expression).GetMethod("Lambda", new Type[] { typeof(Expression), typeof(ParameterExpression[]) });
 
@@ -175,7 +177,6 @@ namespace MonoJavaBridge
 
         static Expression MarshalArgument(Type argumentType, ParameterExpression parameter)
         {
-            Console.WriteLine("I'm converting an object...");
             return Expression.Convert(Expression.Call(myStrongJ2CpUntyped, parameter), argumentType);
         }
         
@@ -187,7 +188,8 @@ namespace MonoJavaBridge
         
         static Expression MarshalCLRHandle(ParameterExpression obj, Type type)
         {
-            return Expression.Convert(Expression.Call(myCLRHandleToObject, obj), type);
+            MethodInfo strongJ2CpTyped = myStrongJ2CpTyped.MakeGenericMethod(type);
+            return Expression.Call(strongJ2CpTyped, obj);
         }
         
         static Type GetJNITypeForClrType(Type type)
@@ -260,7 +262,7 @@ namespace MonoJavaBridge
             var clazz = net.sf.jni4net.utils.Convertor.StrongJ2CpClass(env, classHandle);
             var methodName = env.ConvertToString(methodNameHandle);
             var methodSig = env.ConvertToString(methodSignatureHandle);
-            var methodPars = env.ConvertToString(methodParametersHandle);
+            var methodPars = methodParametersHandle == IntPtr.Zero ? null : env.ConvertToString(methodParametersHandle);
             Console.WriteLine("Linking java class method: {0}.{1}", clazz, methodName);
             Type type = FindType(clazz.getCanonicalName());
             if (type == null)
@@ -270,6 +272,8 @@ namespace MonoJavaBridge
             }
             
             Console.WriteLine("Found clr type: {0}", type);
+            Bridge.Setup.VeryVerbose = true;
+            Registry.RegisterType(type, true, env);
             
             android.util.Log.i("HelloMono", "Hello from Mono Interop!");
             var biggy = new java.math.BigInteger("123");
@@ -277,18 +281,22 @@ namespace MonoJavaBridge
             Console.WriteLine(biggy.GetType());
             android.util.Log.i("HelloMono", biggy.toString());
             
-            var parameterTypeStrings = methodPars.Split(',');
-            var parameterTypes = new Type[parameterTypeStrings.Length];
-            for (int i = 0; i < parameterTypeStrings.Length; i++)
+            Type[] parameterTypes = null;
+            if (methodPars != null)
             {
-                parameterTypes[i] = FindType(parameterTypeStrings[i]);
-                if (parameterTypes[i] == null)
-                    Console.WriteLine("Could not find {0}", parameterTypeStrings[i]);
-                else 
-                    Console.WriteLine("Found type {0}", parameterTypes[i]);
+                var parameterTypeStrings = methodPars.Split(',');
+                parameterTypes = new Type[parameterTypeStrings.Length];
+                for (int i = 0; i < parameterTypeStrings.Length; i++)
+                {
+                    parameterTypes[i] = FindType(parameterTypeStrings[i]);
+                    if (parameterTypes[i] == null)
+                        Console.WriteLine("Could not find {0}", parameterTypeStrings[i]);
+                    else 
+                        Console.WriteLine("Found type {0}", parameterTypes[i]);
+                }
             }
             
-            var method = type.GetMethod(methodName, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.DeclaredOnly | BindingFlags.Instance, null, parameterTypes, null);
+            var method = type.GetMethod(methodName, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.DeclaredOnly | BindingFlags.Instance, null, parameterTypes ?? new Type[] {}, null);
             Console.WriteLine("Linking Method: {0} to {1}", method, methodSig);
             var del = MakeWrapper(method);
             myLinks.Add(del);

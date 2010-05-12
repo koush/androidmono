@@ -192,6 +192,7 @@ public class JarLister {
 				dataElement(wr, "IsInterface", clazz.isInterface());
 				dataElement(wr, "IsEnum", clazz.isEnum());
 				dataElement(wr, "Name", neutralClassName);
+				dataElement(wr, "NativeName", clazz.getName());
 				
 				Class enclosingClass = clazz.getEnclosingClass();
 				if (enclosingClass != null)
