@@ -9,9 +9,15 @@ public class HelloWorldActivity extends Activity
 {
 	static
 	{
-		MonoBridge.link(HelloWorldActivity.class, "onCreate", "(Landroid/os/Bundle;)V");
+		MonoBridge.link(HelloWorldActivity.class, "onCreate", "(Landroid/os/Bundle;)V", "android.os.Bundle");
 	}
 	
 	@Override
 	protected native void onCreate(Bundle savedInstanceState);
+	
+	public HelloWorldActivity()
+	{
+		super();
+	}
 }
+ 

@@ -10,8 +10,9 @@ namespace com.koushikdutta.helloworld
 	{
 		protected override void onCreate (Bundle arg0)
 		{
+            Console.WriteLine("oh yeah, I'm here.");
 			base.onCreate (arg0);
-			
+		
 			TextView tv = new TextView(this);
 			tv.setText((java.lang.String)"Hello");
 			

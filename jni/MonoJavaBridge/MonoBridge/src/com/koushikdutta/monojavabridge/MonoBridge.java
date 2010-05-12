@@ -65,6 +65,6 @@ public class MonoBridge {
 	}
 	
 	@SuppressWarnings("unchecked")
-	public static native void link(Class clazz, String methodName, String methodSignature);
+	public static native void link(Class clazz, String methodName, String methodSignature, String methodParameters);
 	public static native void loadAssembly(String assemblyName);
 }

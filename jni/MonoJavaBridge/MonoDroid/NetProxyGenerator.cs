@@ -198,7 +198,7 @@ namespace MonoDroid
                 myIndent--;
                 WriteLine("}");
                 
-                if (!type.Abstract)        
+                if (!type.Abstract)
                 {
                     WriteLine("private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper", myJniTypes.ContainsKey(type.Parent) ? string.Empty : "new ");
                     WriteLine("{");
@@ -212,7 +212,7 @@ namespace MonoDroid
                     myIndent--;
                     WriteLine("}");
                 }
-                
+
                 WriteLine("{1} {0}(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)", type.SimpleName, type.IsSealed ? "internal" : "protected");
                 WriteLine("{");
                 WriteLine("}");

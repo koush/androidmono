@@ -63,12 +63,13 @@ void logcat_print(char* p)
 }
 
 JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_link
-    (JNIEnv *env, jclass clazz, jclass cls, jstring methodName, jstring methodSignature)
+    (JNIEnv *env, jclass clazz, jclass cls, jstring methodName, jstring methodSignature, jstring methodParameters)
 {
-    void *args[3];
+    void *args[4];
     args[0] = &cls;
     args[1] = &methodName;
     args[2] = &methodSignature;
+    args[3] = &methodParameters;
     mono_runtime_invoke(g_Link, NULL, args, NULL);
 }
 
@@ -118,7 +119,7 @@ jint JNI_OnLoad(JavaVM* vm, void* reserved)
     args[0] = &g_JavaVM;
     mono_runtime_invoke(method, NULL, args, NULL);
 
-    desc = mono_method_desc_new ("MonoJavaBridge.JavaBridge:Link(intptr,intptr,intptr)", 1);
+    desc = mono_method_desc_new ("MonoJavaBridge.JavaBridge:Link(intptr,intptr,intptr,intptr)", 1);
     g_Link = mono_method_desc_search_in_image (desc, image);
     mono_method_desc_free(desc);
 
