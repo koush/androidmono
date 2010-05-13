@@ -4,6 +4,9 @@ using System.IO;
 using System.Reflection;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
+using System.Linq.Expressions;
+
 
 namespace MonoDroid
 {
@@ -77,10 +80,54 @@ namespace MonoDroid
             return name;
         }
         
+        public Type FindType(string typeName)
+        {
+            if (typeName == null)
+                return null;
+            typeName = typeName.TrimEnd(']', '[');
+            return myModel.FindType(typeName);
+        }
+        
+        public void AddAllTypes(ObjectModel model, HashSet<Type> hash, Type type)
+        {
+            if (type == null)
+                return;
+            if (hash.Contains(type))
+                return;
+            
+            hash.Add(type);
+            
+            AddAllTypes(model, hash, type.ParentType);
+            foreach (var iface in type.InterfaceTypes)
+            {
+                AddAllTypes(model, hash, iface);
+            }
+
+            foreach (var field in type.Fields)
+            {
+                AddAllTypes(model, hash, FindType(field.Type));
+            }
+            
+            foreach (var method in type.Methods)
+            {
+                AddAllTypes(model, hash, method.ReturnType ?? FindType(method.Return));
+                foreach (var par in method.Parameters)
+                    AddAllTypes(model, hash, FindType(par));
+            }
+        }
+        
         ObjectModel myModel;
+        HashSet<Type> myTypesOfInterest = new HashSet<Type>();
         protected override void Prepare (ObjectModel model)
         {
             myModel = model;
+
+            var androidTypes = from type in myModel.Types where type.Name.StartsWith("android.") && !type.Name.StartsWith("android.test.") select type;
+            foreach (var type in androidTypes)
+            {
+                AddAllTypes(myModel, myTypesOfInterest, type);
+            }
+            
             foreach (var type in model.Types)
             {
                 type.Name = EscapeName(type.Name);
@@ -151,7 +198,7 @@ namespace MonoDroid
         {
             myInitJni.Clear();
             
-            if (myJniTypes.ContainsKey(type.Name))
+            if (myJniTypes.ContainsKey(type.Name) || !myTypesOfInterest.Contains(type))
                 return false;
             
             if (type.IsInterface)
@@ -227,6 +274,7 @@ namespace MonoDroid
         {
             if (type.IsInterface || type.Static)
             {
+                myInitJni.Clear();
                 base.EndType(type);
                 return;
             }
@@ -242,6 +290,7 @@ namespace MonoDroid
             myIndent--;
             WriteLine("}");
             myIndent--;
+            myInitJni.Clear();
             base.EndType(type);
         }
 
@@ -352,6 +401,8 @@ namespace MonoDroid
             if (type != null)
                 typeName = GetJavaName(type);
             
+            typeName = typeName.Replace('_', '$');
+            
             string low = typeName.ToLowerInvariant();
             int arr = low.LastIndexOf("[");
             string array = "";
@@ -395,7 +446,7 @@ namespace MonoDroid
             var typeName = method.Return;
             
             if (typeName == "void")
-                return "@__env.CallVoidMethod({1});";
+                return "@__env.Call{0}VoidMethod({1});";
             
             switch (typeName)
             {
@@ -456,6 +507,8 @@ namespace MonoDroid
                 case "char":
                 case "byte":
                     return "ParPrimC2J({0})";
+                //case "java.lang.CharSequence":
+                //    return "ParPrimC2J((java.lang.String){0})";
                 case "bool[]":
                 case "int[]":
                 case "double[]":
@@ -566,6 +619,7 @@ namespace MonoDroid
             {
                 Write(method.Name, false);
                 Write("(", false);
+                //WriteDelimited(method.Parameters, (v, i) => string.Format("{0} arg{1}", v == "java.lang.CharSequence" && !method.Abstract && !method.Type.IsInterface && ! method.Name.Contains('.') ? "string" : v, i), ",");
                 WriteDelimited(method.Parameters, (v, i) => string.Format("{0} arg{1}", v, i), ",");
                 if (method.Type.IsInterface || method.Abstract || method.Scope == "internal")
                 {
@@ -599,7 +653,21 @@ namespace MonoDroid
                         parBuilder.Append("global::net.sf.jni4net.utils.Convertor.");
                         parBuilder.Append(string.Format(GetParameterStatement(parType, par), "arg" + i));
                     }
-                    WriteLine(statement, method.Static ? "Static" : string.Empty, parBuilder);
+                    if (method.Static || method.IsConstructor)
+                    {
+                        WriteLine(statement, method.Static ? "Static" : string.Empty, parBuilder);
+                    }
+                    else
+                    {
+                        WriteLine("if (GetType() == typeof({0}))", method.Type.Name);
+                        myIndent++;
+                        WriteLine(statement, string.Empty, parBuilder);
+                        myIndent--;
+                        WriteLine("else");
+                        myIndent++;
+                        WriteLine(statement, "NonVirtual", string.Format(parBuilder.ToString().Replace("this, ", "this, {0}.staticClass, "), method.Type.Name));
+                        myIndent--;
+                    }
                     myIndent--;
                     WriteLine("}");
                 }

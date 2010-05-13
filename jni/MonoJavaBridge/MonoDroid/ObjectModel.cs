@@ -88,6 +88,9 @@ namespace MonoDroid
 				
 				type.InterfaceTypes.Clear();
 				type.InterfaceTypes.AddRange(from itype in type.Interfaces select FindType(itype));
+                
+                foreach (var field in type.Fields)
+                    field.FieldType = FindType(field.Type);
 				
 				foreach (var method in type.Methods)
 				{
@@ -185,6 +188,11 @@ namespace MonoDroid
 	
 	public class Field : Accessible
 	{
+        public Type FieldType
+        {
+            get;set;
+        }
+        
 		public string Type
 		{
 			get;set;
@@ -208,6 +216,11 @@ namespace MonoDroid
 	
 	public class Type : Overridable
 	{
+        public string NativeName
+        {
+            get;set;
+        }
+        
 		HashSet<string> mySignatures = new HashSet<string>();
 		public HashSet<string> Signatures
 		{

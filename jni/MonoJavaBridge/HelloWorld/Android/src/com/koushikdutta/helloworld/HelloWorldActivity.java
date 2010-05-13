@@ -24,3 +24,4 @@ public class HelloWorldActivity extends Activity
 		//_init();
 	}
 }
+

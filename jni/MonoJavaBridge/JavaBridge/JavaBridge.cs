@@ -273,7 +273,7 @@ namespace MonoJavaBridge
             
             Console.WriteLine("Found clr type: {0}", type);
             Bridge.Setup.VeryVerbose = true;
-            Registry.RegisterType(type, true, env);
+            //Registry.RegisterType(type, true, env);
             
             android.util.Log.i("HelloMono", "Hello from Mono Interop!");
             var biggy = new java.math.BigInteger("123");
