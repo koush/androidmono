@@ -31,14 +31,14 @@ namespace com.koushikdutta.helloworld
             tv.setTextColor(unchecked((int)0xFF00FFFF));
             layout.addView(tv);
 
-            b = new Button(this);
-            b.setText((java.lang.String)"wtf");
-            layout.addView(b);
-            b.setOnClickListener(this);
+            button = new Button(this);
+            button.setText((java.lang.String)"wtf");
+            layout.addView(button);
+            button.setOnClickListener(this);
             /* 
              * Normally in Java, you'd handle the onClickListener with an inner class.
              * In C# there is no inner class construct.
-            b.setOnClickListener(new OnClickListener()
+            button.setOnClickListener(new OnClickListener()
             {
                 @Override
                 public void onClick()
