@@ -1,0 +1,3 @@
+namespace junit.framework 
+{ 
+} 

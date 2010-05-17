@@ -6,7 +6,20 @@ using android.os;
 
 namespace com.koushikdutta.helloworld
 {
-	public class HelloWorldActivity : Activity
+    public class onClickListener : java.lang.Object, android.view.View.OnClickListener
+    {
+        #region OnClickListener implementation
+        void android.view.View.OnClickListener.onClick (android.view.View arg0)
+        {
+            onClick(arg0);
+        }
+        #endregion
+        public delegate void onClickHandler (android.view.View arg0);
+        
+        public onClickHandler onClick;
+    }
+    
+	public class HelloWorldActivity : Activity, android.view.View.OnClickListener
 	{
         #region Gross Boilerplate
         protected HelloWorldActivity(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
@@ -40,7 +53,40 @@ namespace com.koushikdutta.helloworld
             tv.setText((java.lang.String)"this even works.");
             layout.addView(tv);
 			
+            int i = 0;
+            b = new Button(this);
+            b.setText((java.lang.String)"wtf");
+            layout.addView(b);
+            b.setOnClickListener(new onClickListener()
+            {
+                onClick = (v) => 
+                {
+                    Console.WriteLine("Hello");
+                }
+            }
+            );
+            
+            /* 
+             * Normally in Java, you'd handle the onClickListener with an inner class.
+             * In C# there is no inner class construct.
+            b.setOnClickListener(new OnClickListener()
+            {
+                @Override
+                public void onClick()
+                {
+                }
+            });
+            */
 			setContentView(layout);
 		}
-	}
+        
+        Button b;
+        
+        #region OnClickListener implementation
+        public void onClick (android.view.View arg0)
+        {
+            b.setText((java.lang.String)System.Environment.TickCount.ToString());
+        }
+        #endregion
+    }
 }

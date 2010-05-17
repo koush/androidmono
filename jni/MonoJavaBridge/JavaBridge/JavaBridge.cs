@@ -81,8 +81,8 @@ namespace MonoJavaBridge
         
 		static JavaBridge()
 		{
-            Console.SetOut(myInstance);
-            Console.SetError(myInstance);
+            Console.SetOut(LogWriter.Instance);
+            Console.SetError(LogWriter.Instance);
             Console.WriteLine("Mono initialized.");
 
             myStrongJ2CpUntyped = typeof(net.sf.jni4net.utils.Convertor).GetMethod("StrongJ2CpUntyped");
@@ -274,13 +274,7 @@ namespace MonoJavaBridge
             for (int i = 0; i < clrParameters.Length; i++)
             {
                 marshaledParameterExpressions[i] = MarshalArgument(clrParameters[i], parameterExpressions[i]);
-                Console.WriteLine("Marshalled parameter: {0}", marshaledParameterExpressions[i]);
             }
-            
-            Console.WriteLine("Count {0}", fullParameterList.Count);
-            foreach (var p in fullParameterList)
-                Console.WriteLine(p);
-
             
             var methodExpression = Expression.Call(MarshalCLRHandle(obj, method.DeclaringType), method, marshaledParameterExpressions);
             Console.WriteLine("Method Expression: {0}", methodExpression);

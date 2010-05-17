@@ -508,7 +508,7 @@ namespace MonoDroid
                 case "byte":
                     return "ParPrimC2J({0})";
                 //case "java.lang.CharSequence":
-                //    return "ParPrimC2J((java.lang.String){0})";
+                //    return "ParStrongCp2J((java.lang.String){0})";
                 case "bool[]":
                 case "int[]":
                 case "double[]":
@@ -619,7 +619,7 @@ namespace MonoDroid
             {
                 Write(method.Name, false);
                 Write("(", false);
-                //WriteDelimited(method.Parameters, (v, i) => string.Format("{0} arg{1}", v == "java.lang.CharSequence" && !method.Abstract && !method.Type.IsInterface && ! method.Name.Contains('.') ? "string" : v, i), ",");
+                //WriteDelimited(method.Parameters, (v, i) => string.Format("{0} arg{1}", v == "java.lang.CharSequence" && !method.Name.Contains('.') ? "string" : v, i), ",");
                 WriteDelimited(method.Parameters, (v, i) => string.Format("{0} arg{1}", v, i), ",");
                 if (method.Type.IsInterface || method.Abstract || method.Scope == "internal")
                 {
