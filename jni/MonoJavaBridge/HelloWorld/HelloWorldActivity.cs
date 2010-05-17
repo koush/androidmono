@@ -1,4 +1,3 @@
-
 using System;
 using android.app;
 using android.widget;
@@ -6,19 +5,6 @@ using android.os;
 
 namespace com.koushikdutta.helloworld
 {
-    public class onClickListener : java.lang.Object, android.view.View.OnClickListener
-    {
-        #region OnClickListener implementation
-        void android.view.View.OnClickListener.onClick (android.view.View arg0)
-        {
-            onClick(arg0);
-        }
-        #endregion
-        public delegate void onClickHandler (android.view.View arg0);
-        
-        public onClickHandler onClick;
-    }
-    
 	public class HelloWorldActivity : Activity, android.view.View.OnClickListener
 	{
         #region Gross Boilerplate
@@ -26,9 +12,9 @@ namespace com.koushikdutta.helloworld
         { 
         } 
         #endregion
+        Button button;
 		protected override void onCreate (Bundle arg0)
 		{
-            Console.WriteLine("oh yeah, I'm here.");
 			base.onCreate (arg0);
 		
             LinearLayout layout = new LinearLayout(this);
@@ -40,32 +26,15 @@ namespace com.koushikdutta.helloworld
             layout.addView(tv);
             
             tv = new TextView(this);
-            tv.setText((java.lang.String)"I");
+            tv.setText((java.lang.String)"World!");
             tv.setTextSize(15);
             tv.setTextColor(unchecked((int)0xFF00FFFF));
             layout.addView(tv);
-            
-            tv = new TextView(this);
-            tv.setText((java.lang.String)"am shocked");
-            layout.addView(tv);
-            
-            tv = new TextView(this);
-            tv.setText((java.lang.String)"this even works.");
-            layout.addView(tv);
-			
-            int i = 0;
+
             b = new Button(this);
             b.setText((java.lang.String)"wtf");
             layout.addView(b);
-            b.setOnClickListener(new onClickListener()
-            {
-                onClick = (v) => 
-                {
-                    Console.WriteLine("Hello");
-                }
-            }
-            );
-            
+            b.setOnClickListener(this);
             /* 
              * Normally in Java, you'd handle the onClickListener with an inner class.
              * In C# there is no inner class construct.
@@ -77,15 +46,14 @@ namespace com.koushikdutta.helloworld
                 }
             });
             */
+            
 			setContentView(layout);
 		}
-        
-        Button b;
         
         #region OnClickListener implementation
         public void onClick (android.view.View arg0)
         {
-            b.setText((java.lang.String)System.Environment.TickCount.ToString());
+            button.setText((java.lang.String)System.Environment.TickCount.ToString());
         }
         #endregion
     }
