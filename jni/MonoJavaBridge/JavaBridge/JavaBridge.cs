@@ -46,6 +46,19 @@ namespace MonoJavaBridge
 				buffer.Append(value);
 			}
 		}
+        
+        private LogWriter()
+        {
+        }
+        
+        static LogWriter myInstance = new LogWriter();
+        public static LogWriter Instance
+        {
+            get
+            {
+                return myInstance;
+            }
+        }
 	}
 	
 	public class JavaBridge
@@ -68,7 +81,8 @@ namespace MonoJavaBridge
         
 		static JavaBridge()
 		{
-            Console.SetOut(new LogWriter());
+            Console.SetOut(myInstance);
+            Console.SetError(myInstance);
             Console.WriteLine("Mono initialized.");
 
             myStrongJ2CpUntyped = typeof(net.sf.jni4net.utils.Convertor).GetMethod("StrongJ2CpUntyped");
