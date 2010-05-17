@@ -14,6 +14,8 @@ using System.Text;
 
 using System.Collections.Generic;
 
+using Class = java.lang.Class;
+
 namespace com.koushikdutta.monojavabridge.test
 {
 	public class BridgeTest
@@ -118,6 +120,11 @@ namespace MonoJavaBridge
             
             // add the jni4net assembly
             myAssemblies.Add(typeof(java.lang.Object).Assembly.FullName);
+            
+            
+            myMonoProxyClass = env.FindClass("com/koushikdutta/monojavabridge/MonoProxy");
+            mySetGCHandle = env.GetMethodID(myMonoProxyClass, "setGCHandle", "(J)V"); 
+            myGetGCHandle = env.GetMethodID(myMonoProxyClass, "getGCHandle", "()J"); 
 		}
 		
 		static List<string> myAssemblies = new List<string>();
@@ -180,16 +187,33 @@ namespace MonoJavaBridge
             return Expression.Convert(Expression.Call(myStrongJ2CpUntyped, parameter), argumentType);
         }
         
-        public static object CLRHandleToObject(IntPtr obj)
+        static Class myMonoProxyClass;
+        static MethodId myGetGCHandle;
+        static MethodId mySetGCHandle;
+        public static TRes CLRHandleToObject<TRes>(IntPtr obj)
         {
-            Console.WriteLine("I'm converting a handle...");
-            return net.sf.jni4net.utils.Convertor.StrongJ2CpUntyped(obj);
+            var env = JNIEnv.ThreadEnv;
+            long handleLong  = env.CallLongMethod(obj, myGetGCHandle);
+            TRes ret;
+            if (handleLong != 0)
+            {
+                ret = (TRes)GCHandle.FromIntPtr((IntPtr)handleLong).Target;
+            }
+            else
+            {
+                ret = net.sf.jni4net.utils.Convertor.StrongJ2CpTyped<TRes>(obj);
+                var handle = GCHandle.Alloc(ret, GCHandleType.WeakTrackResurrection);
+                env.CallVoidMethod(obj, mySetGCHandle, Convertor.ParPrimC2J((long)GCHandle.ToIntPtr(handle)));
+            }
+            return ret;
         }
         
         static Expression MarshalCLRHandle(ParameterExpression obj, Type type)
         {
-            MethodInfo strongJ2CpTyped = myStrongJ2CpTyped.MakeGenericMethod(type);
-            return Expression.Call(strongJ2CpTyped, obj);
+            MethodInfo clrHandleToObject = myCLRHandleToObject.MakeGenericMethod(type);
+            return Expression.Call(clrHandleToObject, obj);
+            //MethodInfo strongJ2CpTyped = myStrongJ2CpTyped.MakeGenericMethod(type);
+            //return Expression.Call(strongJ2CpTyped, obj);
         }
         
         static Type GetJNITypeForClrType(Type type)
@@ -272,14 +296,6 @@ namespace MonoJavaBridge
             }
             
             Console.WriteLine("Found clr type: {0}", type);
-            Bridge.Setup.VeryVerbose = true;
-            //Registry.RegisterType(type, true, env);
-            
-            android.util.Log.i("HelloMono", "Hello from Mono Interop!");
-            var biggy = new java.math.BigInteger("123");
-            biggy.clearBit(0);
-            Console.WriteLine(biggy.GetType());
-            android.util.Log.i("HelloMono", biggy.toString());
             
             Type[] parameterTypes = null;
             if (methodPars != null)

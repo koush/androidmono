@@ -284,3 +284,13 @@ LOCAL_SRC_FILES += MonoJavaBridge/MonoJavaInterop/MonoJavaInterop.c
 LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -llog -ldl -lm -lc
 # LOCAL_PRELINK_MODULE := false
 include $(BUILD_SHARED_LIBRARY)
+
+
+
+include $(CLEAR_VARS)
+LOCAL_ARM_MODE := arm
+LOCAL_PATH := $(BASE_PATH)/aot
+LOCAL_SRC_FILES := mscorlib.dll.S
+LOCAL_MODULE := mscorlib.dll
+LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -llog -ldl -lm -lc
+include $(BUILD_SHARED_LIBRARY)
