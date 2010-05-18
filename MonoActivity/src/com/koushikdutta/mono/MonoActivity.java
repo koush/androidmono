@@ -36,5 +36,6 @@ public class MonoActivity extends Activity
 		findViewById(R.id.LinearLayout).setVerticalScrollBarEnabled(true);
 		
 		AssetExtractor.extractAssets(this, true);
+		mStatus.setText("All Files extracted!");
 	}
 }

@@ -17,7 +17,7 @@ cd androidmono
 ./get-mono.sh
 
 # Set up the NDK to be aware of the androidmono project
-./ndk-setup ~/src/android-ndk
+./ndk-setup.sh ~/src/android-ndk
 
 ---- building the mono binaries ----
 
@@ -38,10 +38,6 @@ to your device/emulator.
 # start up and adb shell and navigate to the proper directory.
 adb shell
 cd /data/data/com.koushikdutta.mono
-
-# export the HOME variable, because adb does not. Mono will throw assertions upon exit 
-# otherwise.
-export HOME=/data/local
 
 # run the test.exe program which prints Hello World and retrieves and prints the
 # Yahoo! Homepage.
