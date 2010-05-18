@@ -12,7 +12,7 @@ namespace MonoDroid
 	{
 		public static void Main (string[] args)
 		{
-			var types = ObjectModel.Load("androidsdk.xml");
+			var types = ObjectModel.Load("../androidsdk.xml");
 			NetProxyGenerator net = new NetProxyGenerator(Directory.CreateDirectory("net"));
 			net.Generate(types);
 			Console.WriteLine("Done!");

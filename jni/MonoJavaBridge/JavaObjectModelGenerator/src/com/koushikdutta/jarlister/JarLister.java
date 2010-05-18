@@ -162,7 +162,7 @@ public class JarLister {
 				    new URL[] { new URL("file://" + androidSdk) },
 				    ClassLoader.getSystemClassLoader()
 				);
-			FileOutputStream fos = new FileOutputStream("androidsdk.xml");
+			FileOutputStream fos = new FileOutputStream("../androidsdk.xml");
 			OutputFormat of = new OutputFormat();
 			of.setIndenting(true);
 			XMLSerializer wr = new XMLSerializer(fos, of);

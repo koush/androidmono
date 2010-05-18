@@ -19,11 +19,14 @@ cd androidmono
 # Set up the NDK to be aware of the androidmono project
 ./ndk-setup.sh ~/src/android-ndk
 
----- building the mono binaries ----
+---- building the mono binaries and jni bindings ----
 
-# Go to your Android NDK directory and make.
-cd ~/src/android-ndk
-make APP=androidmono
+# In your .bash_profile (or just remember to export it), put:
+export ANDROID_NDK=~/src/android-ndk
+
+# restart your shell and build
+cd ~/src/androidmono/jni/MonoJavaBridge
+./build.sh
 
 ---- building the mono APK ----
 
@@ -43,4 +46,28 @@ cd /data/data/com.koushikdutta.mono
 # Yahoo! Homepage.
 ./mono test.exe
 
-    
+---- rebuilding and using the JNI bindings (pre alpha, heavy development) ----
+
+1) Regenerating the androidsdk.xml from the android.jar in the SDK.
+The androidsdk.xml file is part of the repository now, and should generally not need
+to be regenerated. But if you want to tweak the XML at all, it can be done as follows.
+Import the jni/MonoJavaBridge/JavaObjectModelGenerator project into Eclipse as a standard
+Java application. Run the project. When it completes, the androidsdk.xml will be 
+created and placed in jni/MonoJavaBridge.
+
+2) Regenerating the android.dll source files.
+The android.dll sources are part of the repository now, and should generally not need to
+be regenerated unless you change the code generator. Instructions to regenerate are below.
+Open the MonoJavaBridge workspace. Run MonoDroid. The android project source files will be 
+regenerated.
+
+3) Testing the HelloWorldActivity application.
+
+# This builds the C# application. You can also open it in MonoDevelop and build it.
+cd jni/MonoJavaBridge/HelloWorld/
+xbuild
+
+# This builds the Android Eclipse application that wraps the C# application. You can
+# also use Eclipse to build/run this.
+cd Android
+ant install
