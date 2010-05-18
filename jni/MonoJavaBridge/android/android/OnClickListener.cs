@@ -20,7 +20,6 @@ namespace com.koushikdutta.monojavabridge.android
         public OnClickListener()
             : base(JNIEnv.ThreadEnv)
         {
-            Console.WriteLine("Foo bar moo goo");
             var env = JNIEnv.ThreadEnv; 
             env.NewObject(staticClass, constructor, this);
             MonoJavaBridge.JavaBridge.Attach(this, this);

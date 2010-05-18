@@ -32,9 +32,6 @@ namespace com.koushikdutta.helloworld
             tv.setTextColor(unchecked((int)0xFF00FFFF));
             layout.addView(tv);
 
-            Console.WriteLine("adding button");
-            net.sf.jni4net.Bridge.Setup.VeryVerbose = true;
-            //var good = new com.koushikdutta.monojavabridge.android.OnClickListener();
             button = new Button(this);
             button.setText((java.lang.String)"wtf");
             layout.addView(button);
