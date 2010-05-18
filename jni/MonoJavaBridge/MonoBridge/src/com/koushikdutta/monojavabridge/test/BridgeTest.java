@@ -1,6 +1,5 @@
 package com.koushikdutta.monojavabridge.test;
 
-import com.koushikdutta.monojavabridge.MonoBridge;
 
 
 public class BridgeTest extends Test {

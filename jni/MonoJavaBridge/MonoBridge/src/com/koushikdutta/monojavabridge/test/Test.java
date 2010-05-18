@@ -1,6 +1,5 @@
 package com.koushikdutta.monojavabridge.test;
 
-import java.lang.reflect.Method;
 
 public class Test {
 	public static final int THING = 0;

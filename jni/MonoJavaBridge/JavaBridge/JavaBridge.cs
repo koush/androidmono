@@ -61,7 +61,7 @@ namespace MonoJavaBridge
         }
 	}
 	
-	public class JavaBridge
+	public static class JavaBridge
 	{
 		public static void Log(string format, params object[] args)
 		{
@@ -330,5 +330,13 @@ namespace MonoJavaBridge
             Console.WriteLine("Registration complete");
 		}
         static List<Delegate> myLinks = new List<Delegate>();
+        
+        public static void Attach(java.lang.Object o, IJvmProxy obj)
+        {
+            Console.WriteLine("attaching {0}", o);
+            var env = JNIEnv.ThreadEnv;
+            var handle = GCHandle.Alloc(o, GCHandleType.WeakTrackResurrection);
+            env.CallVoidMethod(obj, mySetGCHandle, Convertor.ParPrimC2J((long)GCHandle.ToIntPtr(handle)));
+        }
 	}
 }

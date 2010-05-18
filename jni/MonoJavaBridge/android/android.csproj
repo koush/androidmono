@@ -2191,6 +2191,8 @@
     <Compile Include="net\org\xmlpull\v1\XmlPullParserException.cs" />
     <Compile Include="net\org\xmlpull\v1\XmlPullParserFactory.cs" />
     <Compile Include="net\org\xmlpull\v1\XmlSerializer.cs" />
+    <Compile Include="android\OnClickListener.cs" />
+    <Compile Include="android\OnLongClickListener.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -2221,10 +2223,17 @@
       <Project>{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}</Project>
       <Name>jni4net.n.androidmono</Name>
     </ProjectReference>
+    <ProjectReference Include="..\JavaBridge\MonoJavaBridge.csproj">
+      <Project>{AEDFC761-C0ED-4A82-824F-60C6299A9086}</Project>
+      <Name>MonoJavaBridge</Name>
+    </ProjectReference>
   </ItemGroup>
   <ProjectExtensions>
     <MonoDevelop>
       <Properties InternalTargetFrameworkVersion="3.5" />
     </MonoDevelop>
   </ProjectExtensions>
+  <ItemGroup>
+    <Folder Include="android\" />
+  </ItemGroup>
 </Project>
