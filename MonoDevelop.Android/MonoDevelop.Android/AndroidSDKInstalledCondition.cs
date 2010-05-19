@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using MonoDevelop.Core.Assemblies;
 using MonoDevelop.Core;
 using Mono.Addins;
-using MonoDevelop.Core.Gui;
 
 
 namespace MonoDevelop.Android
@@ -17,7 +16,7 @@ namespace MonoDevelop.Android
 		{
 			get
 			{
-			return Directory.Exists(ANDROID_SDK);	
+			  return Directory.Exists(ANDROID_SDK);	
 			}
 		}
 		

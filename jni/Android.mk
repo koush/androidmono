@@ -285,7 +285,12 @@ LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -llog -ldl -lm -lc
 # LOCAL_PRELINK_MODULE := false
 include $(BUILD_SHARED_LIBRARY)
 
-
+include $(CLEAR_VARS)
+LOCAL_PATH := $(BASE_PATH)
+LOCAL_MODULE := fwdstdin
+LOCAL_SRC_FILES := fwdstdin/main.c
+LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -ldl -lm -lc
+include $(BUILD_EXECUTABLE)
 
 include $(CLEAR_VARS)
 LOCAL_ARM_MODE := arm

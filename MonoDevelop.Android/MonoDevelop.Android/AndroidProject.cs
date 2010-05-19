@@ -23,13 +23,17 @@ namespace MonoDevelop.Android
 		{
 		}
 		
+		public override string ProjectType {
+			get { return "Android"; }
+		}
+		
 		public AndroidProject (string languageName, ProjectCreateInformation info, XmlElement projectOptions)
 			: base (languageName, info, projectOptions)
 		{
 		}
 
 		
-		protected override ExecutionCommand CreateExecutionCommand (DotNetProjectConfiguration configuration)
+		protected override ExecutionCommand CreateExecutionCommand (ConfigurationSelector configSel, DotNetProjectConfiguration configuration)
 		{
 			return new AndroidExecutionCommand (TargetRuntime, TargetFramework, configuration.CompiledOutputName.FileName, configuration.OutputDirectory,
 			                                   configuration.DebugMode);

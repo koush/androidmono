@@ -33,27 +33,9 @@
     <Reference Include="System" />
     <Reference Include="MonoDevelop.Core, Version=2.0.0.0, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
-      <Package>monodevelop</Package>
-    </Reference>
-    <Reference Include="MonoDevelop.Core.Gui, Version=2.0.0.0, Culture=neutral">
-      <SpecificVersion>False</SpecificVersion>
-      <Package>monodevelop</Package>
     </Reference>
     <Reference Include="MonoDevelop.Ide, Version=2.0.0.0, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
-      <Package>monodevelop</Package>
-    </Reference>
-    <Reference Include="MonoDevelop.Projects, Version=2.0.0.0, Culture=neutral">
-      <SpecificVersion>False</SpecificVersion>
-      <Package>monodevelop</Package>
-    </Reference>
-    <Reference Include="MonoDevelop.Projects.Gui, Version=2.0.0.0, Culture=neutral">
-      <SpecificVersion>False</SpecificVersion>
-      <Package>monodevelop</Package>
-    </Reference>
-    <Reference Include="MonoDevelop.Components, Version=2.0.0.0, Culture=neutral">
-      <SpecificVersion>False</SpecificVersion>
-      <Package>monodevelop</Package>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Core">
@@ -61,7 +43,6 @@
     </Reference>
     <Reference Include="MonoDevelop.DesignerSupport, Version=2.0.0.0, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
-      <Package>monodevelop-core-addins</Package>
     </Reference>
     <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
       <SpecificVersion>False</SpecificVersion>
@@ -76,6 +57,9 @@
     <Reference Include="pango-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <Reference Include="Mono.Addins, Version=0.4.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+    <Reference Include="MonoDevelop.AspNet, Version=2.2.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
@@ -86,6 +70,7 @@
     <Compile Include="AndroidProjectConfiguration.cs" />
     <Compile Include="AndroidExecutionCommand.cs" />
     <Compile Include="AndroidExecutionHandler.cs" />
+    <Compile Include="AndroidFrameworkBackend.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -97,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Icons\32x32\phone-android-project-overlay.png">
       <LogicalName>android-project-overlay.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="framework_Android.xml">
+      <LogicalName>framework_Android.xml</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

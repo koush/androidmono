@@ -7,5 +7,5 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyProduct("MonoDevelop")]
 [assembly: AssemblyTitle("Mono Android Development")]
 [assembly: AssemblyDescription("Support for Android")]
-[assembly: AssemblyVersion("2.2")]
+[assembly: AssemblyVersion("2.4")]
 [assembly: AssemblyCopyright("MIT X11")]

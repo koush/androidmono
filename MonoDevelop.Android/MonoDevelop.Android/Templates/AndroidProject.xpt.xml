@@ -5,9 +5,9 @@
 	<!-- Template Header -->
 	<TemplateConfiguration>
 		<_Name>Android Project</_Name>
-		<_Category>C#/Android</_Category>
+		<_Category>Android</_Category>
 		<Icon>md-project-android</Icon>
-		<LanguageName>C#</LanguageName>
+		<LanguageName>*</LanguageName>
 		<_Description>Creates a Mono project for Android.</_Description>
 	</TemplateConfiguration>
 	
@@ -22,6 +22,7 @@
 		</Options>
 		
 		<Project name = "${ProjectName}" directory = "." type = "Android">
+		  <Options />
 			<References>
 				<Reference type="Gac" refto="System" />
 			</References>

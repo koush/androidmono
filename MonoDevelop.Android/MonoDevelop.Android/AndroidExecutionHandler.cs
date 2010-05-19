@@ -8,8 +8,6 @@ using System.IO;
 using System.Threading;
 using System.Text;
 using System.Diagnostics;
-using MonoDevelop.Core.Gui.Dialogs;
-using MonoDevelop.Ide.Gui;
 
 namespace MonoDevelop.Android
 {
@@ -47,18 +45,7 @@ namespace MonoDevelop.Android
 			};
 			
 			var androidProcess = Runtime.ProcessService.StartProcess (psi, console.Out, console.Error, null);
-			androidProcess.Exited += delegate {
-				string err;
-				if (androidProcess.ExitCode != 0) {
-					Gtk.Application.Invoke (delegate {
-						using (var errorDialog = new ErrorDialog (IdeApp.Workbench.RootWindow)) {
-							errorDialog.Message = "Android Mono encountered an error running the application";
-							errorDialog.Run ();	
-						}
-					});
-				}
-			};
-			
+
 			return new AndroidProcess (androidProcess);
 			
 		}

@@ -1,0 +1,8 @@
+<TargetFramework id="Android" _name="Mono for Android" clrVersion="Clr_2_1" SubsetOfFramework="3.5">
+<Assemblies>
+  <Assembly name="mscorlib" version="2.0.5.0" publicKeyToken="7cec85d7bea7798e" />
+  <Assembly name="System" version="2.0.5.0" publicKeyToken="7cec85d7bea7798e" />
+  <Assembly name="System.Core" version="2.0.5.0" publicKeyToken="7cec85d7bea7798e" />
+  <Assembly name="System.Xml" version="2.0.5.0" publicKeyToken="7cec85d7bea7798e" />
+</Assemblies>
+</TargetFramework>
