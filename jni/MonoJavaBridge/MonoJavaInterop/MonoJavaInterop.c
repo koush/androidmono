@@ -83,6 +83,7 @@ JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_loadAssem
 
 jint JNI_OnLoad(JavaVM* vm, void* reserved)
 {
+    setenv("MONO_PATH", "/data/data/com.koushikdutta.mono/", 0);
 #ifdef PLATFORM_ANDROID
     LOGI("JNI_OnLoad...");
 #endif
