@@ -140,7 +140,7 @@
 /* #undef DISABLE_ATTACH */
 
 /* Disable COM support */
-/* #undef DISABLE_COM */
+#define DISABLE_COM 1
 
 /* Disable runtime debugging support */
 /* #undef DISABLE_DEBUG */
@@ -792,4 +792,4 @@
 /* #undef USE_MONO_MUTEX */
 
 /* Version number of package */
-#define VERSION "2.6"
+#define VERSION "2.6.5"
