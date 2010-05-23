@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<Template originator="Koushik Dutta"
+          created="2009/06/08">
+    
+    <!-- Template Header -->
+    <TemplateConfiguration>
+        <_Name>Android Application Project</_Name>
+        <_Category>Android</_Category>
+        <Icon>md-project-android</Icon>
+        <LanguageName>*</LanguageName>
+        <_Description>Creates a Mono project for Android.</_Description>
+    </TemplateConfiguration>
+    
+    <!-- Actions -->
+    <Actions>
+    </Actions>
+    
+    <!-- Template Content -->
+    <Combine name = "${ProjectName}" directory = ".">
+        <Options>
+            <StartupProject>${ProjectName}</StartupProject>
+        </Options>
+        
+        <Project name = "${ProjectName}" directory = "." type = "Android">
+            <Options />
+            <References>
+                <Reference type="Gac" refto="System" />
+                <Reference type="Gac" refto="System.Xml" />
+                <Reference type="Gac" refto="System.Core" />
+                <Reference type="Gac" refto="android, Version=0.0.0.0, Culture=neutral" />
+            </References>
+            <Files>
+                <Directory name="Android" >
+                    <Directory name="res" >
+                        <Directory name="drawable" />
+                        <Directory name="layout" />
+                        <Directory name="values" />
+                        <Directory name="xml" />
+                    </Directory>
+                    <Directory name="assets" />
+                </Directory>
+                <File name="Android/res/values/strings.xml">
+<![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">${ProjectName}</string>
+</resources>]]>
+                </File>
+                <File name="Android/AndroidManifest.xml">
+<![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="${ProjectName}"
+      android:versionCode="1"
+      android:versionName="1">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".MainActivity" android:label="@string/app_name" android:configChanges="orientation|keyboardHidden|keyboard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-sdk android:minSdkVersion="7" />
+</manifest> 
+]]>
+                </File>
+                <File name="MainActivity.cs">
+<![CDATA[using System;
+using java.lang;
+using android.app;
+
+namespace ${Namespace}
+{
+    public class MainActivity : Activity
+    {
+        public static void Main (string[] args)
+        {
+            Console.WriteLine("Starting the application via Activity Manager (am). This process will exit.");
+        }
+    }
+}   
+]]>
+                </File>
+            </Files>
+        </Project>
+    </Combine>
+</Template>

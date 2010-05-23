@@ -23,7 +23,7 @@ namespace MonoDevelop.Android
 		public IProcessAsyncOperation Execute (ExecutionCommand command, IConsole console)
 		{
 			AndroidExecutionCommand cmd = (AndroidExecutionCommand) command;
-			
+            
 			if (!AndroidSDKInstalledCondition.IsInstalled)
 				throw new InvalidOperationException("Android SDK is not installed! Please set your ANDROID_SDK environment variable, or symlink it at /Developer/android-sdk.");
 			
@@ -33,7 +33,7 @@ namespace MonoDevelop.Android
 			Process.Start(adbPath, adbPushArgs).WaitForExit();
 			
 			string outputFile = Path.GetFileName(cmd.OutputAssembly);
-			string adbShellArgs = String.Format ("shell 'HOME=/data/local/bin /data/data/com.koushikdutta.mono/mono /data/local/bin/{0}'", outputFile);
+			string adbShellArgs = String.Format ("shell '/data/data/com.koushikdutta.mono/mono /data/local/bin/{0}'", outputFile);
 			Console.WriteLine(adbShellArgs);
 			
 			var psi = new ProcessStartInfo (adbPath, adbShellArgs) {

@@ -20,7 +20,37 @@ namespace MonoDevelop.Android
 		{
 		}
 		
-		
+        protected override BuildResult Build (IProgressMonitor monitor, SolutionEntityItem item, ConfigurationSelector configuration)
+        {
+            //monitor.BeginTask("Generating Java files.", 0);
+            
+            var proj = item as AndroidProject;
+            if (proj != null)
+            {
+                var conf = proj.GetConfiguration(configuration) as AndroidProjectConfiguration;        
+                if (conf != null)
+                    Console.WriteLine(conf.CompiledOutputName);
+            }
+                
+             //
+            //Console.WriteLine("Output assembly: {0}", conf.OutputAssembly);
+            
+            //monitor.EndTask();
+            return base.Build (monitor, item, configuration);
+        }
+        
+        protected override BuildResult Compile (IProgressMonitor monitor, SolutionEntityItem item, BuildData buildData)
+        {
+            Console.WriteLine("Compiling APK.");
+            return base.Compile (monitor, item, buildData);
+        }
+        
+        protected override void Clean (IProgressMonitor monitor, SolutionEntityItem item, ConfigurationSelector configuration)
+        {
+            Console.WriteLine("Cleaning APK.");
+            base.Clean (monitor, item, configuration);
+        }
+
 		public static System.Net.IPAddress DebuggerIP
 		{
 			get

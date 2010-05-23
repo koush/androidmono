@@ -25,5 +25,9 @@ namespace MonoDevelop.Android
 		public AndroidProjectConfiguration ()
 		{
 		}
-	}
+        
+        public AndroidProjectConfiguration (string name) : base (name)
+        {
+        }
+    }
 }

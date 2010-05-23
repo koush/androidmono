@@ -20,8 +20,10 @@
 
 	<Extension path = "/MonoDevelop/Ide/ProjectTemplates">
 		<Condition id="AndroidSDKInstalled">
-			<ProjectTemplate id       = "AndroidProject"
-			                 resource = "AndroidProject.xpt.xml" />
+            <ProjectTemplate id       = "AndroidConsoleProject"
+                             resource = "AndroidConsoleProject.xpt.xml" />
+            <ProjectTemplate id       = "AndroidApplicationProject"
+                             resource = "AndroidApplicationProject.xpt.xml" />
 		</Condition>
 	</Extension>
 
@@ -49,8 +51,14 @@
 			<DataType class = "MonoDevelop.Android.AndroidProjectConfiguration" />
 		</Condition>
 	</Extension>
-	
-	<Extension path = "/MonoDevelop/Core/Frameworks">
+
+    <Extension path = "/MonoDevelop/ProjectModel/ProjectServiceExtensions">
+        <Condition id="AndroidSDKInstalled">
+            <Class class = "MonoDevelop.Android.AndroidBuildExtension" insertafter="MidStep" />
+        </Condition>
+    </Extension>
+
+    	<Extension path = "/MonoDevelop/Core/Frameworks">
 		<Framework id="Android" resource="framework_Android.xml">
 			<Backend class="MonoDevelop.Android.AndroidFrameworkBackend" />
 		</Framework>

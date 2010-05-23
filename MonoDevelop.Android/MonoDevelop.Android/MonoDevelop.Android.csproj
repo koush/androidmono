@@ -33,9 +33,11 @@
     <Reference Include="System" />
     <Reference Include="MonoDevelop.Core, Version=2.0.0.0, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
+      <Package>monodevelop</Package>
     </Reference>
     <Reference Include="MonoDevelop.Ide, Version=2.0.0.0, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
+      <Package>monodevelop</Package>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Core">
@@ -43,6 +45,7 @@
     </Reference>
     <Reference Include="MonoDevelop.DesignerSupport, Version=2.0.0.0, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
+      <Package>monodevelop-core-addins</Package>
     </Reference>
     <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
       <SpecificVersion>False</SpecificVersion>
@@ -59,6 +62,7 @@
     <Reference Include="Mono.Addins, Version=0.4.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
     <Reference Include="MonoDevelop.AspNet, Version=2.2.0.0, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
+      <Package>monodevelop-core-addins</Package>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -77,19 +81,26 @@
     <EmbeddedResource Include="MonoDevelop.Android.addin.xml">
       <LogicalName>MonoDevelop.Android.addin.xml</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="Templates\AndroidProject.xpt.xml">
-      <LogicalName>AndroidProject.xpt.xml</LogicalName>
-    </EmbeddedResource>
     <EmbeddedResource Include="Icons\32x32\phone-android-project-overlay.png">
       <LogicalName>android-project-overlay.png</LogicalName>
     </EmbeddedResource>
     <EmbeddedResource Include="framework_Android.xml">
       <LogicalName>framework_Android.xml</LogicalName>
     </EmbeddedResource>
+    <EmbeddedResource Include="Templates\AndroidConsoleProject.xpt.xml">
+      <LogicalName>AndroidConsoleProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\AndroidApplicationProject.xpt.xml">
+      <LogicalName>AndroidApplicationProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\48x48\icon.png">
+      <LogicalName>icon.png</LogicalName>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Templates\" />
     <Folder Include="Icons\" />
     <Folder Include="Icons\32x32\" />
+    <Folder Include="Icons\48x48\" />
   </ItemGroup>
 </Project>
