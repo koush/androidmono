@@ -39,6 +39,7 @@ namespace com.koushikdutta.helloworld
             {
                 OnClick = (v) =>
                 {
+                    Console.WriteLine(toString());
                     button.setText((java.lang.String)System.Environment.TickCount.ToString());
                 }
             });

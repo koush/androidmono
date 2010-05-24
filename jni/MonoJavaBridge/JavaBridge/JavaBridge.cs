@@ -74,10 +74,9 @@ namespace MonoJavaBridge
 		static JavaVM myVM;
         static List<Type> myActions = new List<Type>();
         static List<Type> myFuncs = new List<Type>();
-        static MethodInfo myStrongJ2CpUntyped = null;//typeof(net.sf.jni4net.utils.Convertor).GetMethod("StrongJ2CpUntyped");
-        static MethodInfo myStrongJ2CpTyped = null;//typeof(net.sf.jni4net.utils.Convertor).GetMethod("StrongJ2CpUntyped");
-        static MethodInfo myCLRHandleToObject = null;//typeof(JavaBridge).GetMethod("CLRHandleToObject");
-        static MethodInfo myExpressionLambda = null;//typeof(Expression).GetMethod("Lambda");
+        static MethodInfo myStrongJ2CpUntyped = null;
+        static MethodInfo myCLRHandleToObject = null;
+        static MethodInfo myExpressionLambda = null;
         
 		static JavaBridge()
 		{
@@ -86,7 +85,6 @@ namespace MonoJavaBridge
             Console.WriteLine("Mono initialized.");
 
             myStrongJ2CpUntyped = typeof(net.sf.jni4net.utils.Convertor).GetMethod("StrongJ2CpUntyped");
-            myStrongJ2CpTyped = typeof(net.sf.jni4net.utils.Convertor).GetMethod("StrongJ2CpTyped");
             myCLRHandleToObject = typeof(JavaBridge).GetMethod("CLRHandleToObject");
             myExpressionLambda = typeof(Expression).GetMethod("Lambda", new Type[] { typeof(Expression), typeof(ParameterExpression[]) });
 
@@ -226,8 +224,6 @@ namespace MonoJavaBridge
         {
             MethodInfo clrHandleToObject = myCLRHandleToObject.MakeGenericMethod(type);
             return Expression.Call(clrHandleToObject, obj);
-            //MethodInfo strongJ2CpTyped = myStrongJ2CpTyped.MakeGenericMethod(type);
-            //return Expression.Call(strongJ2CpTyped, obj);
         }
         
         static Type GetJNITypeForClrType(Type type)
