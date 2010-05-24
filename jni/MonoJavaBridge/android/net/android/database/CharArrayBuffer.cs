@@ -18,19 +18,19 @@ namespace android.database
 		internal CharArrayBuffer(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _CharArrayBuffer2056; 
+		internal static global::net.sf.jni4net.jni.MethodId _CharArrayBuffer2161; 
 		public CharArrayBuffer(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.database.CharArrayBuffer.staticClass, _CharArrayBuffer2056, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			@__env.NewObject(android.database.CharArrayBuffer.staticClass, _CharArrayBuffer2161, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _CharArrayBuffer2057; 
+		internal static global::net.sf.jni4net.jni.MethodId _CharArrayBuffer2162; 
 		public CharArrayBuffer(char[] arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.database.CharArrayBuffer.staticClass, _CharArrayBuffer2057, this, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+			@__env.NewObject(android.database.CharArrayBuffer.staticClass, _CharArrayBuffer2162, this, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _data2058; 
+		internal static global::net.sf.jni4net.jni.FieldId _data2163; 
 		public char[] data
 		{ 
 			get 
@@ -41,7 +41,7 @@ namespace android.database
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _sizeCopied2059; 
+		internal static global::net.sf.jni4net.jni.FieldId _sizeCopied2164; 
 		public int sizeCopied
 		{ 
 			get 
@@ -55,8 +55,8 @@ namespace android.database
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.database.CharArrayBuffer.staticClass = @__class; 
-			global::android.database.CharArrayBuffer._CharArrayBuffer2056 = @__env.GetMethodID(global::android.database.CharArrayBuffer.staticClass, "<init>", "(I)V"); 
-			global::android.database.CharArrayBuffer._CharArrayBuffer2057 = @__env.GetMethodID(global::android.database.CharArrayBuffer.staticClass, "<init>", "([C)V"); 
+			global::android.database.CharArrayBuffer._CharArrayBuffer2161 = @__env.GetMethodID(global::android.database.CharArrayBuffer.staticClass, "<init>", "(I)V"); 
+			global::android.database.CharArrayBuffer._CharArrayBuffer2162 = @__env.GetMethodID(global::android.database.CharArrayBuffer.staticClass, "<init>", "([C)V"); 
 		} 
 	} 
 } 

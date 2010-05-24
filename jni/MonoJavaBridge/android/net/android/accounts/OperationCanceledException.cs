@@ -18,37 +18,37 @@ namespace android.accounts
 		protected OperationCanceledException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _OperationCanceledException116; 
+		internal static global::net.sf.jni4net.jni.MethodId _OperationCanceledException123; 
 		public OperationCanceledException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.accounts.OperationCanceledException.staticClass, _OperationCanceledException116, this); 
+			@__env.NewObject(android.accounts.OperationCanceledException.staticClass, _OperationCanceledException123, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _OperationCanceledException117; 
+		internal static global::net.sf.jni4net.jni.MethodId _OperationCanceledException124; 
 		public OperationCanceledException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.accounts.OperationCanceledException.staticClass, _OperationCanceledException117, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.accounts.OperationCanceledException.staticClass, _OperationCanceledException124, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _OperationCanceledException118; 
+		internal static global::net.sf.jni4net.jni.MethodId _OperationCanceledException125; 
 		public OperationCanceledException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.accounts.OperationCanceledException.staticClass, _OperationCanceledException118, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(android.accounts.OperationCanceledException.staticClass, _OperationCanceledException125, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _OperationCanceledException119; 
+		internal static global::net.sf.jni4net.jni.MethodId _OperationCanceledException126; 
 		public OperationCanceledException(java.lang.Throwable arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.accounts.OperationCanceledException.staticClass, _OperationCanceledException119, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.accounts.OperationCanceledException.staticClass, _OperationCanceledException126, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.accounts.OperationCanceledException.staticClass = @__class; 
-			global::android.accounts.OperationCanceledException._OperationCanceledException116 = @__env.GetMethodID(global::android.accounts.OperationCanceledException.staticClass, "<init>", "()V"); 
-			global::android.accounts.OperationCanceledException._OperationCanceledException117 = @__env.GetMethodID(global::android.accounts.OperationCanceledException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
-			global::android.accounts.OperationCanceledException._OperationCanceledException118 = @__env.GetMethodID(global::android.accounts.OperationCanceledException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V"); 
-			global::android.accounts.OperationCanceledException._OperationCanceledException119 = @__env.GetMethodID(global::android.accounts.OperationCanceledException.staticClass, "<init>", "(Ljava/lang/Throwable;)V"); 
+			global::android.accounts.OperationCanceledException._OperationCanceledException123 = @__env.GetMethodID(global::android.accounts.OperationCanceledException.staticClass, "<init>", "()V"); 
+			global::android.accounts.OperationCanceledException._OperationCanceledException124 = @__env.GetMethodID(global::android.accounts.OperationCanceledException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::android.accounts.OperationCanceledException._OperationCanceledException125 = @__env.GetMethodID(global::android.accounts.OperationCanceledException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V"); 
+			global::android.accounts.OperationCanceledException._OperationCanceledException126 = @__env.GetMethodID(global::android.accounts.OperationCanceledException.staticClass, "<init>", "(Ljava/lang/Throwable;)V"); 
 		} 
 	} 
 } 

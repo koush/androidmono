@@ -18,34 +18,34 @@ namespace android.text
 		protected TextPaint(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _set6623; 
+		internal static global::net.sf.jni4net.jni.MethodId _set6972; 
 		public virtual void set(android.text.TextPaint arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.TextPaint)) 
-				@__env.CallVoidMethod(this, _set6623, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _set6972, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.text.TextPaint.staticClass, _set6623, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.text.TextPaint.staticClass, _set6972, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _TextPaint6624; 
+		internal static global::net.sf.jni4net.jni.MethodId _TextPaint6973; 
 		public TextPaint()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.TextPaint.staticClass, _TextPaint6624, this); 
+			@__env.NewObject(android.text.TextPaint.staticClass, _TextPaint6973, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _TextPaint6625; 
+		internal static global::net.sf.jni4net.jni.MethodId _TextPaint6974; 
 		public TextPaint(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.TextPaint.staticClass, _TextPaint6625, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			@__env.NewObject(android.text.TextPaint.staticClass, _TextPaint6974, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _TextPaint6626; 
+		internal static global::net.sf.jni4net.jni.MethodId _TextPaint6975; 
 		public TextPaint(android.graphics.Paint arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.TextPaint.staticClass, _TextPaint6626, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.text.TextPaint.staticClass, _TextPaint6975, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _bgColor6627; 
+		internal static global::net.sf.jni4net.jni.FieldId _bgColor6976; 
 		public int bgColor
 		{ 
 			get 
@@ -56,7 +56,7 @@ namespace android.text
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _baselineShift6628; 
+		internal static global::net.sf.jni4net.jni.FieldId _baselineShift6977; 
 		public int baselineShift
 		{ 
 			get 
@@ -67,7 +67,7 @@ namespace android.text
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _linkColor6629; 
+		internal static global::net.sf.jni4net.jni.FieldId _linkColor6978; 
 		public int linkColor
 		{ 
 			get 
@@ -78,7 +78,7 @@ namespace android.text
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _drawableState6630; 
+		internal static global::net.sf.jni4net.jni.FieldId _drawableState6979; 
 		public int[] drawableState
 		{ 
 			get 
@@ -89,7 +89,7 @@ namespace android.text
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _density6631; 
+		internal static global::net.sf.jni4net.jni.FieldId _density6980; 
 		public float density
 		{ 
 			get 
@@ -103,10 +103,10 @@ namespace android.text
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.text.TextPaint.staticClass = @__class; 
-			global::android.text.TextPaint._set6623 = @__env.GetMethodID(global::android.text.TextPaint.staticClass, "set", "(Landroid/text/TextPaint;)V"); 
-			global::android.text.TextPaint._TextPaint6624 = @__env.GetMethodID(global::android.text.TextPaint.staticClass, "<init>", "()V"); 
-			global::android.text.TextPaint._TextPaint6625 = @__env.GetMethodID(global::android.text.TextPaint.staticClass, "<init>", "(I)V"); 
-			global::android.text.TextPaint._TextPaint6626 = @__env.GetMethodID(global::android.text.TextPaint.staticClass, "<init>", "(Landroid/graphics/Paint;)V"); 
+			global::android.text.TextPaint._set6972 = @__env.GetMethodID(global::android.text.TextPaint.staticClass, "set", "(Landroid/text/TextPaint;)V"); 
+			global::android.text.TextPaint._TextPaint6973 = @__env.GetMethodID(global::android.text.TextPaint.staticClass, "<init>", "()V"); 
+			global::android.text.TextPaint._TextPaint6974 = @__env.GetMethodID(global::android.text.TextPaint.staticClass, "<init>", "(I)V"); 
+			global::android.text.TextPaint._TextPaint6975 = @__env.GetMethodID(global::android.text.TextPaint.staticClass, "<init>", "(Landroid/graphics/Paint;)V"); 
 		} 
 	} 
 } 

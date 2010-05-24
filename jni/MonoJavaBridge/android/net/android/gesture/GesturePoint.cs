@@ -18,13 +18,13 @@ namespace android.gesture
 		protected GesturePoint(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _GesturePoint2464; 
+		internal static global::net.sf.jni4net.jni.MethodId _GesturePoint2664; 
 		public GesturePoint(float arg0, float arg1, long arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.gesture.GesturePoint.staticClass, _GesturePoint2464, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.gesture.GesturePoint.staticClass, _GesturePoint2664, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _x2465; 
+		internal static global::net.sf.jni4net.jni.FieldId _x2665; 
 		public float x
 		{ 
 			get 
@@ -32,7 +32,7 @@ namespace android.gesture
 				return default(float); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _y2466; 
+		internal static global::net.sf.jni4net.jni.FieldId _y2666; 
 		public float y
 		{ 
 			get 
@@ -40,7 +40,7 @@ namespace android.gesture
 				return default(float); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _timestamp2467; 
+		internal static global::net.sf.jni4net.jni.FieldId _timestamp2667; 
 		public long timestamp
 		{ 
 			get 
@@ -51,7 +51,7 @@ namespace android.gesture
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.gesture.GesturePoint.staticClass = @__class; 
-			global::android.gesture.GesturePoint._GesturePoint2464 = @__env.GetMethodID(global::android.gesture.GesturePoint.staticClass, "<init>", "(FFJ)V"); 
+			global::android.gesture.GesturePoint._GesturePoint2664 = @__env.GetMethodID(global::android.gesture.GesturePoint.staticClass, "<init>", "(FFJ)V"); 
 		} 
 	} 
 } 

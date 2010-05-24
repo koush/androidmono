@@ -11,377 +11,377 @@ namespace java.util
 		protected Calendar(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _add11851; 
+		internal static global::net.sf.jni4net.jni.MethodId _add12759; 
 		public abstract void add(int arg0, int arg1); 
-		internal static global::net.sf.jni4net.jni.MethodId _get11852; 
+		internal static global::net.sf.jni4net.jni.MethodId _get12760; 
 		public virtual int get(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return @__env.CallIntMethod(this, _get11852, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, _get12760, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _get11852, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _get12760, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode11853; 
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode12761; 
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return @__env.CallIntMethod(this, _hashCode11853); 
+				return @__env.CallIntMethod(this, _hashCode12761); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _hashCode11853); 
+				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _hashCode12761); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _clone11854; 
+		internal static global::net.sf.jni4net.jni.MethodId _clone12762; 
 		public virtual java.lang.Object clone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _clone11854)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _clone12762)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Calendar.staticClass, _clone11854)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Calendar.staticClass, _clone12762)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _equals11855; 
+		internal static global::net.sf.jni4net.jni.MethodId _equals12763; 
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return @__env.CallBooleanMethod(this, _equals11855, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, _equals12763, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.util.Calendar.staticClass, _equals11855, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.util.Calendar.staticClass, _equals12763, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo11856; 
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo12764; 
 		public virtual int compareTo(java.util.Calendar arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return @__env.CallIntMethod(this, _compareTo11856, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallIntMethod(this, _compareTo12764, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _compareTo11856, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _compareTo12764, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo11857; 
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo12765; 
 		public virtual int compareTo(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return @__env.CallIntMethod(this, _compareTo11857, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallIntMethod(this, _compareTo12765, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _compareTo11857, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _compareTo12765, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _clear11858; 
+		internal static global::net.sf.jni4net.jni.MethodId _clear12766; 
 		public virtual void clear(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				@__env.CallVoidMethod(this, _clear11858, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _clear12766, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _clear11858, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _clear12766, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _clear11859; 
+		internal static global::net.sf.jni4net.jni.MethodId _clear12767; 
 		public virtual void clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				@__env.CallVoidMethod(this, _clear11859); 
+				@__env.CallVoidMethod(this, _clear12767); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _clear11859); 
+				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _clear12767); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toString11860; 
+		internal static global::net.sf.jni4net.jni.MethodId _toString12768; 
 		public override java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString11860)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString12768)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Calendar.staticClass, _toString11860)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Calendar.staticClass, _toString12768)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance11861; 
+		internal static global::net.sf.jni4net.jni.MethodId _getInstance12769; 
 		public static java.util.Calendar getInstance(java.util.Locale arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallStaticObjectMethodPtr(java.util.Calendar.staticClass, _getInstance11861, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallStaticObjectMethodPtr(java.util.Calendar.staticClass, _getInstance12769, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance11862; 
+		internal static global::net.sf.jni4net.jni.MethodId _getInstance12770; 
 		public static java.util.Calendar getInstance(java.util.TimeZone arg0, java.util.Locale arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallStaticObjectMethodPtr(java.util.Calendar.staticClass, _getInstance11862, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallStaticObjectMethodPtr(java.util.Calendar.staticClass, _getInstance12770, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance11863; 
+		internal static global::net.sf.jni4net.jni.MethodId _getInstance12771; 
 		public static java.util.Calendar getInstance() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallStaticObjectMethodPtr(java.util.Calendar.staticClass, _getInstance11863)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallStaticObjectMethodPtr(java.util.Calendar.staticClass, _getInstance12771)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance11864; 
+		internal static global::net.sf.jni4net.jni.MethodId _getInstance12772; 
 		public static java.util.Calendar getInstance(java.util.TimeZone arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallStaticObjectMethodPtr(java.util.Calendar.staticClass, _getInstance11864, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallStaticObjectMethodPtr(java.util.Calendar.staticClass, _getInstance12772, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _set11865; 
+		internal static global::net.sf.jni4net.jni.MethodId _set12773; 
 		public virtual void set(int arg0, int arg1, int arg2, int arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				@__env.CallVoidMethod(this, _set11865, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
+				@__env.CallVoidMethod(this, _set12773, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _set11865, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
+				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _set12773, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _set11866; 
+		internal static global::net.sf.jni4net.jni.MethodId _set12774; 
 		public virtual void set(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				@__env.CallVoidMethod(this, _set11866, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _set12774, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _set11866, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _set12774, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _set11867; 
+		internal static global::net.sf.jni4net.jni.MethodId _set12775; 
 		public virtual void set(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				@__env.CallVoidMethod(this, _set11867, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, _set12775, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _set11867, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _set12775, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _set11868; 
+		internal static global::net.sf.jni4net.jni.MethodId _set12776; 
 		public virtual void set(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				@__env.CallVoidMethod(this, _set11868, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
+				@__env.CallVoidMethod(this, _set12776, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _set11868, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
+				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _set12776, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isSet11869; 
+		internal static global::net.sf.jni4net.jni.MethodId _isSet12777; 
 		public virtual bool isSet(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return @__env.CallBooleanMethod(this, _isSet11869, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _isSet12777, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.util.Calendar.staticClass, _isSet11869, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.util.Calendar.staticClass, _isSet12777, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _after11870; 
+		internal static global::net.sf.jni4net.jni.MethodId _after12778; 
 		public virtual bool after(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return @__env.CallBooleanMethod(this, _after11870, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, _after12778, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.util.Calendar.staticClass, _after11870, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.util.Calendar.staticClass, _after12778, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _before11871; 
+		internal static global::net.sf.jni4net.jni.MethodId _before12779; 
 		public virtual bool before(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return @__env.CallBooleanMethod(this, _before11871, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, _before12779, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.util.Calendar.staticClass, _before11871, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.util.Calendar.staticClass, _before12779, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _complete11872; 
+		internal static global::net.sf.jni4net.jni.MethodId _complete12780; 
 		protected virtual void complete() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				@__env.CallVoidMethod(this, _complete11872); 
+				@__env.CallVoidMethod(this, _complete12780); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _complete11872); 
+				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _complete12780); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getAvailableLocales11873; 
+		internal static global::net.sf.jni4net.jni.MethodId _getAvailableLocales12781; 
 		public static java.util.Locale[] getAvailableLocales() 
 		{ 
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.util.Calendar.staticClass, _getAvailableLocales11873)); 
+			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.util.Calendar.staticClass, _getAvailableLocales12781)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDisplayName11874; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDisplayName12782; 
 		public virtual java.lang.String getDisplayName(int arg0, int arg1, java.util.Locale arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getDisplayName11874, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getDisplayName12782, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Calendar.staticClass, _getDisplayName11874, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Calendar.staticClass, _getDisplayName12782, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setTime11875; 
+		internal static global::net.sf.jni4net.jni.MethodId _setTime12783; 
 		public virtual void setTime(java.util.Date arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				@__env.CallVoidMethod(this, _setTime11875, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _setTime12783, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _setTime11875, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _setTime12783, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getTime11876; 
+		internal static global::net.sf.jni4net.jni.MethodId _getTime12784; 
 		public virtual java.util.Date getTime() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Date>(@__env, @__env.CallObjectMethodPtr(this, _getTime11876)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Date>(@__env, @__env.CallObjectMethodPtr(this, _getTime12784)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Date>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Calendar.staticClass, _getTime11876)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Date>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Calendar.staticClass, _getTime12784)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getTimeZone11877; 
+		internal static global::net.sf.jni4net.jni.MethodId _getTimeZone12785; 
 		public virtual java.util.TimeZone getTimeZone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.TimeZone>(@__env, @__env.CallObjectMethodPtr(this, _getTimeZone11877)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.TimeZone>(@__env, @__env.CallObjectMethodPtr(this, _getTimeZone12785)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.TimeZone>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Calendar.staticClass, _getTimeZone11877)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.TimeZone>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Calendar.staticClass, _getTimeZone12785)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setTimeZone11878; 
+		internal static global::net.sf.jni4net.jni.MethodId _setTimeZone12786; 
 		public virtual void setTimeZone(java.util.TimeZone arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				@__env.CallVoidMethod(this, _setTimeZone11878, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _setTimeZone12786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _setTimeZone11878, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _setTimeZone12786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getTimeInMillis11879; 
+		internal static global::net.sf.jni4net.jni.MethodId _getTimeInMillis12787; 
 		public virtual long getTimeInMillis() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return @__env.CallLongMethod(this, _getTimeInMillis11879); 
+				return @__env.CallLongMethod(this, _getTimeInMillis12787); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, java.util.Calendar.staticClass, _getTimeInMillis11879); 
+				return @__env.CallNonVirtualLongMethod(this, java.util.Calendar.staticClass, _getTimeInMillis12787); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _computeTime11880; 
+		internal static global::net.sf.jni4net.jni.MethodId _computeTime12788; 
 		protected abstract void computeTime(); 
-		internal static global::net.sf.jni4net.jni.MethodId _computeFields11881; 
+		internal static global::net.sf.jni4net.jni.MethodId _computeFields12789; 
 		protected abstract void computeFields(); 
-		internal static global::net.sf.jni4net.jni.MethodId _setTimeInMillis11882; 
+		internal static global::net.sf.jni4net.jni.MethodId _setTimeInMillis12790; 
 		public virtual void setTimeInMillis(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				@__env.CallVoidMethod(this, _setTimeInMillis11882, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setTimeInMillis12790, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _setTimeInMillis11882, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _setTimeInMillis12790, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _internalGet11883; 
+		internal static global::net.sf.jni4net.jni.MethodId _internalGet12791; 
 		protected virtual int internalGet(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return @__env.CallIntMethod(this, _internalGet11883, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, _internalGet12791, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _internalGet11883, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _internalGet12791, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDisplayNames11884; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDisplayNames12792; 
 		public virtual java.util.Map getDisplayNames(int arg0, int arg1, java.util.Locale arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallObjectMethodPtr(this, _getDisplayNames11884, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallObjectMethodPtr(this, _getDisplayNames12792, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Calendar.staticClass, _getDisplayNames11884, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Calendar.staticClass, _getDisplayNames12792, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _roll11885; 
+		internal static global::net.sf.jni4net.jni.MethodId _roll12793; 
 		public virtual void roll(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				@__env.CallVoidMethod(this, _roll11885, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _roll12793, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _roll11885, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _roll12793, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _roll11886; 
+		internal static global::net.sf.jni4net.jni.MethodId _roll12794; 
 		public abstract void roll(int arg0, bool arg1); 
-		internal static global::net.sf.jni4net.jni.MethodId _setLenient11887; 
+		internal static global::net.sf.jni4net.jni.MethodId _setLenient12795; 
 		public virtual void setLenient(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				@__env.CallVoidMethod(this, _setLenient11887, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setLenient12795, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _setLenient11887, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _setLenient12795, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isLenient11888; 
+		internal static global::net.sf.jni4net.jni.MethodId _isLenient12796; 
 		public virtual bool isLenient() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return @__env.CallBooleanMethod(this, _isLenient11888); 
+				return @__env.CallBooleanMethod(this, _isLenient12796); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.util.Calendar.staticClass, _isLenient11888); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.util.Calendar.staticClass, _isLenient12796); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setFirstDayOfWeek11889; 
+		internal static global::net.sf.jni4net.jni.MethodId _setFirstDayOfWeek12797; 
 		public virtual void setFirstDayOfWeek(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				@__env.CallVoidMethod(this, _setFirstDayOfWeek11889, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setFirstDayOfWeek12797, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _setFirstDayOfWeek11889, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _setFirstDayOfWeek12797, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getFirstDayOfWeek11890; 
+		internal static global::net.sf.jni4net.jni.MethodId _getFirstDayOfWeek12798; 
 		public virtual int getFirstDayOfWeek() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return @__env.CallIntMethod(this, _getFirstDayOfWeek11890); 
+				return @__env.CallIntMethod(this, _getFirstDayOfWeek12798); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _getFirstDayOfWeek11890); 
+				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _getFirstDayOfWeek12798); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setMinimalDaysInFirstWeek11891; 
+		internal static global::net.sf.jni4net.jni.MethodId _setMinimalDaysInFirstWeek12799; 
 		public virtual void setMinimalDaysInFirstWeek(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				@__env.CallVoidMethod(this, _setMinimalDaysInFirstWeek11891, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setMinimalDaysInFirstWeek12799, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _setMinimalDaysInFirstWeek11891, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.util.Calendar.staticClass, _setMinimalDaysInFirstWeek12799, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getMinimalDaysInFirstWeek11892; 
+		internal static global::net.sf.jni4net.jni.MethodId _getMinimalDaysInFirstWeek12800; 
 		public virtual int getMinimalDaysInFirstWeek() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return @__env.CallIntMethod(this, _getMinimalDaysInFirstWeek11892); 
+				return @__env.CallIntMethod(this, _getMinimalDaysInFirstWeek12800); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _getMinimalDaysInFirstWeek11892); 
+				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _getMinimalDaysInFirstWeek12800); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getMinimum11893; 
+		internal static global::net.sf.jni4net.jni.MethodId _getMinimum12801; 
 		public abstract int getMinimum(int arg0); 
-		internal static global::net.sf.jni4net.jni.MethodId _getMaximum11894; 
+		internal static global::net.sf.jni4net.jni.MethodId _getMaximum12802; 
 		public abstract int getMaximum(int arg0); 
-		internal static global::net.sf.jni4net.jni.MethodId _getGreatestMinimum11895; 
+		internal static global::net.sf.jni4net.jni.MethodId _getGreatestMinimum12803; 
 		public abstract int getGreatestMinimum(int arg0); 
-		internal static global::net.sf.jni4net.jni.MethodId _getLeastMaximum11896; 
+		internal static global::net.sf.jni4net.jni.MethodId _getLeastMaximum12804; 
 		public abstract int getLeastMaximum(int arg0); 
-		internal static global::net.sf.jni4net.jni.MethodId _getActualMinimum11897; 
+		internal static global::net.sf.jni4net.jni.MethodId _getActualMinimum12805; 
 		public virtual int getActualMinimum(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return @__env.CallIntMethod(this, _getActualMinimum11897, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, _getActualMinimum12805, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _getActualMinimum11897, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _getActualMinimum12805, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getActualMaximum11898; 
+		internal static global::net.sf.jni4net.jni.MethodId _getActualMaximum12806; 
 		public virtual int getActualMaximum(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Calendar)) 
-				return @__env.CallIntMethod(this, _getActualMaximum11898, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, _getActualMaximum12806, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _getActualMaximum11898, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, java.util.Calendar.staticClass, _getActualMaximum12806, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Calendar11899; 
+		internal static global::net.sf.jni4net.jni.MethodId _Calendar12807; 
 		protected Calendar(java.util.TimeZone arg0, java.util.Locale arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.util.Calendar.staticClass, _Calendar11899, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(java.util.Calendar.staticClass, _Calendar12807, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Calendar11900; 
+		internal static global::net.sf.jni4net.jni.MethodId _Calendar12808; 
 		protected Calendar()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.util.Calendar.staticClass, _Calendar11900, this); 
+			@__env.NewObject(java.util.Calendar.staticClass, _Calendar12808, this); 
 		} 
 		public static int ERA
 		{ 
@@ -694,56 +694,56 @@ namespace java.util
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::java.util.Calendar.staticClass = @__class; 
-			global::java.util.Calendar._add11851 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "add", "(II)V"); 
-			global::java.util.Calendar._get11852 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "get", "(I)I"); 
-			global::java.util.Calendar._hashCode11853 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "hashCode", "()I"); 
-			global::java.util.Calendar._clone11854 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "clone", "()Ljava/lang/Object;"); 
-			global::java.util.Calendar._equals11855 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "equals", "(Ljava/lang/Object;)Z"); 
-			global::java.util.Calendar._compareTo11856 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "compareTo", "(Ljava/util/Calendar;)I"); 
-			global::java.util.Calendar._compareTo11857 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "compareTo", "(Ljava/lang/Object;)I"); 
-			global::java.util.Calendar._clear11858 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "clear", "(I)V"); 
-			global::java.util.Calendar._clear11859 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "clear", "()V"); 
-			global::java.util.Calendar._toString11860 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "toString", "()Ljava/lang/String;"); 
-			global::java.util.Calendar._getInstance11861 = @__env.GetStaticMethodID(global::java.util.Calendar.staticClass, "getInstance", "(Ljava/util/Locale;)Ljava/util/Calendar;"); 
-			global::java.util.Calendar._getInstance11862 = @__env.GetStaticMethodID(global::java.util.Calendar.staticClass, "getInstance", "(Ljava/util/TimeZone;Ljava/util/Locale;)Ljava/util/Calendar;"); 
-			global::java.util.Calendar._getInstance11863 = @__env.GetStaticMethodID(global::java.util.Calendar.staticClass, "getInstance", "()Ljava/util/Calendar;"); 
-			global::java.util.Calendar._getInstance11864 = @__env.GetStaticMethodID(global::java.util.Calendar.staticClass, "getInstance", "(Ljava/util/TimeZone;)Ljava/util/Calendar;"); 
-			global::java.util.Calendar._set11865 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "set", "(IIIII)V"); 
-			global::java.util.Calendar._set11866 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "set", "(II)V"); 
-			global::java.util.Calendar._set11867 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "set", "(III)V"); 
-			global::java.util.Calendar._set11868 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "set", "(IIIIII)V"); 
-			global::java.util.Calendar._isSet11869 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "isSet", "(I)Z"); 
-			global::java.util.Calendar._after11870 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "after", "(Ljava/lang/Object;)Z"); 
-			global::java.util.Calendar._before11871 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "before", "(Ljava/lang/Object;)Z"); 
-			global::java.util.Calendar._complete11872 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "complete", "()V"); 
-			global::java.util.Calendar._getAvailableLocales11873 = @__env.GetStaticMethodID(global::java.util.Calendar.staticClass, "getAvailableLocales", "()[Ljava/util/Locale;"); 
-			global::java.util.Calendar._getDisplayName11874 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getDisplayName", "(IILjava/util/Locale;)Ljava/lang/String;"); 
-			global::java.util.Calendar._setTime11875 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setTime", "(Ljava/util/Date;)V"); 
-			global::java.util.Calendar._getTime11876 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getTime", "()Ljava/util/Date;"); 
-			global::java.util.Calendar._getTimeZone11877 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getTimeZone", "()Ljava/util/TimeZone;"); 
-			global::java.util.Calendar._setTimeZone11878 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setTimeZone", "(Ljava/util/TimeZone;)V"); 
-			global::java.util.Calendar._getTimeInMillis11879 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getTimeInMillis", "()J"); 
-			global::java.util.Calendar._computeTime11880 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "computeTime", "()V"); 
-			global::java.util.Calendar._computeFields11881 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "computeFields", "()V"); 
-			global::java.util.Calendar._setTimeInMillis11882 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setTimeInMillis", "(J)V"); 
-			global::java.util.Calendar._internalGet11883 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "internalGet", "(I)I"); 
-			global::java.util.Calendar._getDisplayNames11884 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getDisplayNames", "(IILjava/util/Locale;)Ljava/util/Map;"); 
-			global::java.util.Calendar._roll11885 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "roll", "(II)V"); 
-			global::java.util.Calendar._roll11886 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "roll", "(IZ)V"); 
-			global::java.util.Calendar._setLenient11887 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setLenient", "(Z)V"); 
-			global::java.util.Calendar._isLenient11888 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "isLenient", "()Z"); 
-			global::java.util.Calendar._setFirstDayOfWeek11889 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setFirstDayOfWeek", "(I)V"); 
-			global::java.util.Calendar._getFirstDayOfWeek11890 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getFirstDayOfWeek", "()I"); 
-			global::java.util.Calendar._setMinimalDaysInFirstWeek11891 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setMinimalDaysInFirstWeek", "(I)V"); 
-			global::java.util.Calendar._getMinimalDaysInFirstWeek11892 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getMinimalDaysInFirstWeek", "()I"); 
-			global::java.util.Calendar._getMinimum11893 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getMinimum", "(I)I"); 
-			global::java.util.Calendar._getMaximum11894 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getMaximum", "(I)I"); 
-			global::java.util.Calendar._getGreatestMinimum11895 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getGreatestMinimum", "(I)I"); 
-			global::java.util.Calendar._getLeastMaximum11896 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getLeastMaximum", "(I)I"); 
-			global::java.util.Calendar._getActualMinimum11897 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getActualMinimum", "(I)I"); 
-			global::java.util.Calendar._getActualMaximum11898 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getActualMaximum", "(I)I"); 
-			global::java.util.Calendar._Calendar11899 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "<init>", "(Ljava/util/TimeZone;Ljava/util/Locale;)V"); 
-			global::java.util.Calendar._Calendar11900 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "<init>", "()V"); 
+			global::java.util.Calendar._add12759 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "add", "(II)V"); 
+			global::java.util.Calendar._get12760 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "get", "(I)I"); 
+			global::java.util.Calendar._hashCode12761 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "hashCode", "()I"); 
+			global::java.util.Calendar._clone12762 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "clone", "()Ljava/lang/Object;"); 
+			global::java.util.Calendar._equals12763 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "equals", "(Ljava/lang/Object;)Z"); 
+			global::java.util.Calendar._compareTo12764 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "compareTo", "(Ljava/util/Calendar;)I"); 
+			global::java.util.Calendar._compareTo12765 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "compareTo", "(Ljava/lang/Object;)I"); 
+			global::java.util.Calendar._clear12766 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "clear", "(I)V"); 
+			global::java.util.Calendar._clear12767 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "clear", "()V"); 
+			global::java.util.Calendar._toString12768 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "toString", "()Ljava/lang/String;"); 
+			global::java.util.Calendar._getInstance12769 = @__env.GetStaticMethodID(global::java.util.Calendar.staticClass, "getInstance", "(Ljava/util/Locale;)Ljava/util/Calendar;"); 
+			global::java.util.Calendar._getInstance12770 = @__env.GetStaticMethodID(global::java.util.Calendar.staticClass, "getInstance", "(Ljava/util/TimeZone;Ljava/util/Locale;)Ljava/util/Calendar;"); 
+			global::java.util.Calendar._getInstance12771 = @__env.GetStaticMethodID(global::java.util.Calendar.staticClass, "getInstance", "()Ljava/util/Calendar;"); 
+			global::java.util.Calendar._getInstance12772 = @__env.GetStaticMethodID(global::java.util.Calendar.staticClass, "getInstance", "(Ljava/util/TimeZone;)Ljava/util/Calendar;"); 
+			global::java.util.Calendar._set12773 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "set", "(IIIII)V"); 
+			global::java.util.Calendar._set12774 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "set", "(II)V"); 
+			global::java.util.Calendar._set12775 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "set", "(III)V"); 
+			global::java.util.Calendar._set12776 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "set", "(IIIIII)V"); 
+			global::java.util.Calendar._isSet12777 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "isSet", "(I)Z"); 
+			global::java.util.Calendar._after12778 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "after", "(Ljava/lang/Object;)Z"); 
+			global::java.util.Calendar._before12779 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "before", "(Ljava/lang/Object;)Z"); 
+			global::java.util.Calendar._complete12780 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "complete", "()V"); 
+			global::java.util.Calendar._getAvailableLocales12781 = @__env.GetStaticMethodID(global::java.util.Calendar.staticClass, "getAvailableLocales", "()[Ljava/util/Locale;"); 
+			global::java.util.Calendar._getDisplayName12782 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getDisplayName", "(IILjava/util/Locale;)Ljava/lang/String;"); 
+			global::java.util.Calendar._setTime12783 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setTime", "(Ljava/util/Date;)V"); 
+			global::java.util.Calendar._getTime12784 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getTime", "()Ljava/util/Date;"); 
+			global::java.util.Calendar._getTimeZone12785 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getTimeZone", "()Ljava/util/TimeZone;"); 
+			global::java.util.Calendar._setTimeZone12786 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setTimeZone", "(Ljava/util/TimeZone;)V"); 
+			global::java.util.Calendar._getTimeInMillis12787 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getTimeInMillis", "()J"); 
+			global::java.util.Calendar._computeTime12788 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "computeTime", "()V"); 
+			global::java.util.Calendar._computeFields12789 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "computeFields", "()V"); 
+			global::java.util.Calendar._setTimeInMillis12790 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setTimeInMillis", "(J)V"); 
+			global::java.util.Calendar._internalGet12791 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "internalGet", "(I)I"); 
+			global::java.util.Calendar._getDisplayNames12792 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getDisplayNames", "(IILjava/util/Locale;)Ljava/util/Map;"); 
+			global::java.util.Calendar._roll12793 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "roll", "(II)V"); 
+			global::java.util.Calendar._roll12794 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "roll", "(IZ)V"); 
+			global::java.util.Calendar._setLenient12795 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setLenient", "(Z)V"); 
+			global::java.util.Calendar._isLenient12796 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "isLenient", "()Z"); 
+			global::java.util.Calendar._setFirstDayOfWeek12797 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setFirstDayOfWeek", "(I)V"); 
+			global::java.util.Calendar._getFirstDayOfWeek12798 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getFirstDayOfWeek", "()I"); 
+			global::java.util.Calendar._setMinimalDaysInFirstWeek12799 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "setMinimalDaysInFirstWeek", "(I)V"); 
+			global::java.util.Calendar._getMinimalDaysInFirstWeek12800 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getMinimalDaysInFirstWeek", "()I"); 
+			global::java.util.Calendar._getMinimum12801 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getMinimum", "(I)I"); 
+			global::java.util.Calendar._getMaximum12802 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getMaximum", "(I)I"); 
+			global::java.util.Calendar._getGreatestMinimum12803 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getGreatestMinimum", "(I)I"); 
+			global::java.util.Calendar._getLeastMaximum12804 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getLeastMaximum", "(I)I"); 
+			global::java.util.Calendar._getActualMinimum12805 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getActualMinimum", "(I)I"); 
+			global::java.util.Calendar._getActualMaximum12806 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "getActualMaximum", "(I)I"); 
+			global::java.util.Calendar._Calendar12807 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "<init>", "(Ljava/util/TimeZone;Ljava/util/Locale;)V"); 
+			global::java.util.Calendar._Calendar12808 = @__env.GetMethodID(global::java.util.Calendar.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

@@ -18,56 +18,56 @@ namespace android.webkit
 		internal PluginData(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getInputStream8636; 
+		internal static global::net.sf.jni4net.jni.MethodId _getInputStream9321; 
 		public java.io.InputStream getInputStream() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.PluginData)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallObjectMethodPtr(this, _getInputStream8636)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallObjectMethodPtr(this, _getInputStream9321)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.PluginData.staticClass, _getInputStream8636)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.PluginData.staticClass, _getInputStream9321)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getContentLength8637; 
+		internal static global::net.sf.jni4net.jni.MethodId _getContentLength9322; 
 		public long getContentLength() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.PluginData)) 
-				return @__env.CallLongMethod(this, _getContentLength8637); 
+				return @__env.CallLongMethod(this, _getContentLength9322); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, android.webkit.PluginData.staticClass, _getContentLength8637); 
+				return @__env.CallNonVirtualLongMethod(this, android.webkit.PluginData.staticClass, _getContentLength9322); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getHeaders8638; 
+		internal static global::net.sf.jni4net.jni.MethodId _getHeaders9323; 
 		public java.util.Map getHeaders() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.PluginData)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallObjectMethodPtr(this, _getHeaders8638)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallObjectMethodPtr(this, _getHeaders9323)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.PluginData.staticClass, _getHeaders8638)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.PluginData.staticClass, _getHeaders9323)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getStatusCode8639; 
+		internal static global::net.sf.jni4net.jni.MethodId _getStatusCode9324; 
 		public int getStatusCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.PluginData)) 
-				return @__env.CallIntMethod(this, _getStatusCode8639); 
+				return @__env.CallIntMethod(this, _getStatusCode9324); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.webkit.PluginData.staticClass, _getStatusCode8639); 
+				return @__env.CallNonVirtualIntMethod(this, android.webkit.PluginData.staticClass, _getStatusCode9324); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PluginData8640; 
+		internal static global::net.sf.jni4net.jni.MethodId _PluginData9325; 
 		public PluginData(java.io.InputStream arg0, long arg1, java.util.Map arg2, int arg3)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.webkit.PluginData.staticClass, _PluginData8640, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+			@__env.NewObject(android.webkit.PluginData.staticClass, _PluginData9325, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.webkit.PluginData.staticClass = @__class; 
-			global::android.webkit.PluginData._getInputStream8636 = @__env.GetMethodID(global::android.webkit.PluginData.staticClass, "getInputStream", "()Ljava/io/InputStream;"); 
-			global::android.webkit.PluginData._getContentLength8637 = @__env.GetMethodID(global::android.webkit.PluginData.staticClass, "getContentLength", "()J"); 
-			global::android.webkit.PluginData._getHeaders8638 = @__env.GetMethodID(global::android.webkit.PluginData.staticClass, "getHeaders", "()Ljava/util/Map;"); 
-			global::android.webkit.PluginData._getStatusCode8639 = @__env.GetMethodID(global::android.webkit.PluginData.staticClass, "getStatusCode", "()I"); 
-			global::android.webkit.PluginData._PluginData8640 = @__env.GetMethodID(global::android.webkit.PluginData.staticClass, "<init>", "(Ljava/io/InputStream;JLjava/util/Map;I)V"); 
+			global::android.webkit.PluginData._getInputStream9321 = @__env.GetMethodID(global::android.webkit.PluginData.staticClass, "getInputStream", "()Ljava/io/InputStream;"); 
+			global::android.webkit.PluginData._getContentLength9322 = @__env.GetMethodID(global::android.webkit.PluginData.staticClass, "getContentLength", "()J"); 
+			global::android.webkit.PluginData._getHeaders9323 = @__env.GetMethodID(global::android.webkit.PluginData.staticClass, "getHeaders", "()Ljava/util/Map;"); 
+			global::android.webkit.PluginData._getStatusCode9324 = @__env.GetMethodID(global::android.webkit.PluginData.staticClass, "getStatusCode", "()I"); 
+			global::android.webkit.PluginData._PluginData9325 = @__env.GetMethodID(global::android.webkit.PluginData.staticClass, "<init>", "(Ljava/io/InputStream;JLjava/util/Map;I)V"); 
 		} 
 	} 
 } 

@@ -18,73 +18,73 @@ namespace android.appwidget
 		protected AppWidgetManager(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance821; 
+		internal static global::net.sf.jni4net.jni.MethodId _getInstance834; 
 		public static android.appwidget.AppWidgetManager getInstance(android.content.Context arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.appwidget.AppWidgetManager>(@__env, @__env.CallStaticObjectMethodPtr(android.appwidget.AppWidgetManager.staticClass, _getInstance821, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.appwidget.AppWidgetManager>(@__env, @__env.CallStaticObjectMethodPtr(android.appwidget.AppWidgetManager.staticClass, _getInstance834, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getAppWidgetInfo822; 
+		internal static global::net.sf.jni4net.jni.MethodId _getAppWidgetInfo835; 
 		public virtual android.appwidget.AppWidgetProviderInfo getAppWidgetInfo(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.appwidget.AppWidgetManager)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.appwidget.AppWidgetProviderInfo>(@__env, @__env.CallObjectMethodPtr(this, _getAppWidgetInfo822, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.appwidget.AppWidgetProviderInfo>(@__env, @__env.CallObjectMethodPtr(this, _getAppWidgetInfo835, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.appwidget.AppWidgetProviderInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.appwidget.AppWidgetManager.staticClass, _getAppWidgetInfo822, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.appwidget.AppWidgetProviderInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.appwidget.AppWidgetManager.staticClass, _getAppWidgetInfo835, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _updateAppWidget823; 
+		internal static global::net.sf.jni4net.jni.MethodId _updateAppWidget836; 
 		public virtual void updateAppWidget(android.content.ComponentName arg0, android.widget.RemoteViews arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.appwidget.AppWidgetManager)) 
-				@__env.CallVoidMethod(this, _updateAppWidget823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, _updateAppWidget836, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.appwidget.AppWidgetManager.staticClass, _updateAppWidget823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.appwidget.AppWidgetManager.staticClass, _updateAppWidget836, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _updateAppWidget824; 
+		internal static global::net.sf.jni4net.jni.MethodId _updateAppWidget837; 
 		public virtual void updateAppWidget(int[] arg0, android.widget.RemoteViews arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.appwidget.AppWidgetManager)) 
-				@__env.CallVoidMethod(this, _updateAppWidget824, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, _updateAppWidget837, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.appwidget.AppWidgetManager.staticClass, _updateAppWidget824, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.appwidget.AppWidgetManager.staticClass, _updateAppWidget837, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _updateAppWidget825; 
+		internal static global::net.sf.jni4net.jni.MethodId _updateAppWidget838; 
 		public virtual void updateAppWidget(int arg0, android.widget.RemoteViews arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.appwidget.AppWidgetManager)) 
-				@__env.CallVoidMethod(this, _updateAppWidget825, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, _updateAppWidget838, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.appwidget.AppWidgetManager.staticClass, _updateAppWidget825, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.appwidget.AppWidgetManager.staticClass, _updateAppWidget838, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getInstalledProviders826; 
+		internal static global::net.sf.jni4net.jni.MethodId _getInstalledProviders839; 
 		public virtual java.util.List getInstalledProviders() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.appwidget.AppWidgetManager)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getInstalledProviders826)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getInstalledProviders839)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.appwidget.AppWidgetManager.staticClass, _getInstalledProviders826)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.appwidget.AppWidgetManager.staticClass, _getInstalledProviders839)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _bindAppWidgetId827; 
+		internal static global::net.sf.jni4net.jni.MethodId _bindAppWidgetId840; 
 		public virtual void bindAppWidgetId(int arg0, android.content.ComponentName arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.appwidget.AppWidgetManager)) 
-				@__env.CallVoidMethod(this, _bindAppWidgetId827, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, _bindAppWidgetId840, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.appwidget.AppWidgetManager.staticClass, _bindAppWidgetId827, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.appwidget.AppWidgetManager.staticClass, _bindAppWidgetId840, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getAppWidgetIds828; 
+		internal static global::net.sf.jni4net.jni.MethodId _getAppWidgetIds841; 
 		public virtual int[] getAppWidgetIds(android.content.ComponentName arg0) 
 		{ 
 			if (GetType() == typeof(android.appwidget.AppWidgetManager)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getAppWidgetIds828, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getAppWidgetIds841, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.appwidget.AppWidgetManager.staticClass, _getAppWidgetIds828, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.appwidget.AppWidgetManager.staticClass, _getAppWidgetIds841, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		public static java.lang.String ACTION_APPWIDGET_PICK
 		{ 
@@ -173,14 +173,14 @@ namespace android.appwidget
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.appwidget.AppWidgetManager.staticClass = @__class; 
-			global::android.appwidget.AppWidgetManager._getInstance821 = @__env.GetStaticMethodID(global::android.appwidget.AppWidgetManager.staticClass, "getInstance", "(Landroid/content/Context;)Landroid/appwidget/AppWidgetManager;"); 
-			global::android.appwidget.AppWidgetManager._getAppWidgetInfo822 = @__env.GetMethodID(global::android.appwidget.AppWidgetManager.staticClass, "getAppWidgetInfo", "(I)Landroid/appwidget/AppWidgetProviderInfo;"); 
-			global::android.appwidget.AppWidgetManager._updateAppWidget823 = @__env.GetMethodID(global::android.appwidget.AppWidgetManager.staticClass, "updateAppWidget", "(Landroid/content/ComponentName;Landroid/widget/RemoteViews;)V"); 
-			global::android.appwidget.AppWidgetManager._updateAppWidget824 = @__env.GetMethodID(global::android.appwidget.AppWidgetManager.staticClass, "updateAppWidget", "([ILandroid/widget/RemoteViews;)V"); 
-			global::android.appwidget.AppWidgetManager._updateAppWidget825 = @__env.GetMethodID(global::android.appwidget.AppWidgetManager.staticClass, "updateAppWidget", "(ILandroid/widget/RemoteViews;)V"); 
-			global::android.appwidget.AppWidgetManager._getInstalledProviders826 = @__env.GetMethodID(global::android.appwidget.AppWidgetManager.staticClass, "getInstalledProviders", "()Ljava/util/List;"); 
-			global::android.appwidget.AppWidgetManager._bindAppWidgetId827 = @__env.GetMethodID(global::android.appwidget.AppWidgetManager.staticClass, "bindAppWidgetId", "(ILandroid/content/ComponentName;)V"); 
-			global::android.appwidget.AppWidgetManager._getAppWidgetIds828 = @__env.GetMethodID(global::android.appwidget.AppWidgetManager.staticClass, "getAppWidgetIds", "(Landroid/content/ComponentName;)[I"); 
+			global::android.appwidget.AppWidgetManager._getInstance834 = @__env.GetStaticMethodID(global::android.appwidget.AppWidgetManager.staticClass, "getInstance", "(Landroid/content/Context;)Landroid/appwidget/AppWidgetManager;"); 
+			global::android.appwidget.AppWidgetManager._getAppWidgetInfo835 = @__env.GetMethodID(global::android.appwidget.AppWidgetManager.staticClass, "getAppWidgetInfo", "(I)Landroid/appwidget/AppWidgetProviderInfo;"); 
+			global::android.appwidget.AppWidgetManager._updateAppWidget836 = @__env.GetMethodID(global::android.appwidget.AppWidgetManager.staticClass, "updateAppWidget", "(Landroid/content/ComponentName;Landroid/widget/RemoteViews;)V"); 
+			global::android.appwidget.AppWidgetManager._updateAppWidget837 = @__env.GetMethodID(global::android.appwidget.AppWidgetManager.staticClass, "updateAppWidget", "([ILandroid/widget/RemoteViews;)V"); 
+			global::android.appwidget.AppWidgetManager._updateAppWidget838 = @__env.GetMethodID(global::android.appwidget.AppWidgetManager.staticClass, "updateAppWidget", "(ILandroid/widget/RemoteViews;)V"); 
+			global::android.appwidget.AppWidgetManager._getInstalledProviders839 = @__env.GetMethodID(global::android.appwidget.AppWidgetManager.staticClass, "getInstalledProviders", "()Ljava/util/List;"); 
+			global::android.appwidget.AppWidgetManager._bindAppWidgetId840 = @__env.GetMethodID(global::android.appwidget.AppWidgetManager.staticClass, "bindAppWidgetId", "(ILandroid/content/ComponentName;)V"); 
+			global::android.appwidget.AppWidgetManager._getAppWidgetIds841 = @__env.GetMethodID(global::android.appwidget.AppWidgetManager.staticClass, "getAppWidgetIds", "(Landroid/content/ComponentName;)[I"); 
 		} 
 	} 
 } 

@@ -18,30 +18,30 @@ namespace android.widget
 		protected CheckBox(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _CheckBox9270; 
+		internal static global::net.sf.jni4net.jni.MethodId _CheckBox9983; 
 		public CheckBox(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.CheckBox.staticClass, _CheckBox9270, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.widget.CheckBox.staticClass, _CheckBox9983, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _CheckBox9271; 
+		internal static global::net.sf.jni4net.jni.MethodId _CheckBox9984; 
 		public CheckBox(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.CheckBox.staticClass, _CheckBox9271, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.widget.CheckBox.staticClass, _CheckBox9984, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _CheckBox9272; 
+		internal static global::net.sf.jni4net.jni.MethodId _CheckBox9985; 
 		public CheckBox(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.CheckBox.staticClass, _CheckBox9272, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.widget.CheckBox.staticClass, _CheckBox9985, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.widget.CheckBox.staticClass = @__class; 
-			global::android.widget.CheckBox._CheckBox9270 = @__env.GetMethodID(global::android.widget.CheckBox.staticClass, "<init>", "(Landroid/content/Context;)V"); 
-			global::android.widget.CheckBox._CheckBox9271 = @__env.GetMethodID(global::android.widget.CheckBox.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
-			global::android.widget.CheckBox._CheckBox9272 = @__env.GetMethodID(global::android.widget.CheckBox.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
+			global::android.widget.CheckBox._CheckBox9983 = @__env.GetMethodID(global::android.widget.CheckBox.staticClass, "<init>", "(Landroid/content/Context;)V"); 
+			global::android.widget.CheckBox._CheckBox9984 = @__env.GetMethodID(global::android.widget.CheckBox.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
+			global::android.widget.CheckBox._CheckBox9985 = @__env.GetMethodID(global::android.widget.CheckBox.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
 		} 
 	} 
 } 

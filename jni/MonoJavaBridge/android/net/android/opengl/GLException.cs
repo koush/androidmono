@@ -18,23 +18,23 @@ namespace android.opengl
 		protected GLException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _GLException5015; 
+		internal static global::net.sf.jni4net.jni.MethodId _GLException5264; 
 		public GLException(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.opengl.GLException.staticClass, _GLException5015, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			@__env.NewObject(android.opengl.GLException.staticClass, _GLException5264, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _GLException5016; 
+		internal static global::net.sf.jni4net.jni.MethodId _GLException5265; 
 		public GLException(int arg0, java.lang.String arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.opengl.GLException.staticClass, _GLException5016, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(android.opengl.GLException.staticClass, _GLException5265, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.opengl.GLException.staticClass = @__class; 
-			global::android.opengl.GLException._GLException5015 = @__env.GetMethodID(global::android.opengl.GLException.staticClass, "<init>", "(I)V"); 
-			global::android.opengl.GLException._GLException5016 = @__env.GetMethodID(global::android.opengl.GLException.staticClass, "<init>", "(ILjava/lang/String;)V"); 
+			global::android.opengl.GLException._GLException5264 = @__env.GetMethodID(global::android.opengl.GLException.staticClass, "<init>", "(I)V"); 
+			global::android.opengl.GLException._GLException5265 = @__env.GetMethodID(global::android.opengl.GLException.staticClass, "<init>", "(ILjava/lang/String;)V"); 
 		} 
 	} 
 } 

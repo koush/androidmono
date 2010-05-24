@@ -18,158 +18,158 @@ namespace android.media
 		protected RingtoneManager(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isDefault4324; 
+		internal static global::net.sf.jni4net.jni.MethodId _isDefault4572; 
 		public static bool isDefault(android.net.Uri arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.media.RingtoneManager.staticClass, _isDefault4324, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			return @__env.CallStaticBooleanMethod(android.media.RingtoneManager.staticClass, _isDefault4572, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setType4325; 
+		internal static global::net.sf.jni4net.jni.MethodId _setType4573; 
 		public virtual void setType(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.RingtoneManager)) 
-				@__env.CallVoidMethod(this, _setType4325, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setType4573, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.RingtoneManager.staticClass, _setType4325, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.media.RingtoneManager.staticClass, _setType4573, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _inferStreamType4326; 
+		internal static global::net.sf.jni4net.jni.MethodId _inferStreamType4574; 
 		public virtual int inferStreamType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.RingtoneManager)) 
-				return @__env.CallIntMethod(this, _inferStreamType4326); 
+				return @__env.CallIntMethod(this, _inferStreamType4574); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.RingtoneManager.staticClass, _inferStreamType4326); 
+				return @__env.CallNonVirtualIntMethod(this, android.media.RingtoneManager.staticClass, _inferStreamType4574); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setStopPreviousRingtone4327; 
+		internal static global::net.sf.jni4net.jni.MethodId _setStopPreviousRingtone4575; 
 		public virtual void setStopPreviousRingtone(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.RingtoneManager)) 
-				@__env.CallVoidMethod(this, _setStopPreviousRingtone4327, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setStopPreviousRingtone4575, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.RingtoneManager.staticClass, _setStopPreviousRingtone4327, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.media.RingtoneManager.staticClass, _setStopPreviousRingtone4575, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _stopPreviousRingtone4328; 
+		internal static global::net.sf.jni4net.jni.MethodId _stopPreviousRingtone4576; 
 		public virtual void stopPreviousRingtone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.RingtoneManager)) 
-				@__env.CallVoidMethod(this, _stopPreviousRingtone4328); 
+				@__env.CallVoidMethod(this, _stopPreviousRingtone4576); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.RingtoneManager.staticClass, _stopPreviousRingtone4328); 
+				@__env.CallNonVirtualVoidMethod(this, android.media.RingtoneManager.staticClass, _stopPreviousRingtone4576); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getStopPreviousRingtone4329; 
+		internal static global::net.sf.jni4net.jni.MethodId _getStopPreviousRingtone4577; 
 		public virtual bool getStopPreviousRingtone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.RingtoneManager)) 
-				return @__env.CallBooleanMethod(this, _getStopPreviousRingtone4329); 
+				return @__env.CallBooleanMethod(this, _getStopPreviousRingtone4577); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.media.RingtoneManager.staticClass, _getStopPreviousRingtone4329); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.media.RingtoneManager.staticClass, _getStopPreviousRingtone4577); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getIncludeDrm4330; 
+		internal static global::net.sf.jni4net.jni.MethodId _getIncludeDrm4578; 
 		public virtual bool getIncludeDrm() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.RingtoneManager)) 
-				return @__env.CallBooleanMethod(this, _getIncludeDrm4330); 
+				return @__env.CallBooleanMethod(this, _getIncludeDrm4578); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.media.RingtoneManager.staticClass, _getIncludeDrm4330); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.media.RingtoneManager.staticClass, _getIncludeDrm4578); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setIncludeDrm4331; 
+		internal static global::net.sf.jni4net.jni.MethodId _setIncludeDrm4579; 
 		public virtual void setIncludeDrm(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.RingtoneManager)) 
-				@__env.CallVoidMethod(this, _setIncludeDrm4331, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setIncludeDrm4579, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.RingtoneManager.staticClass, _setIncludeDrm4331, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.media.RingtoneManager.staticClass, _setIncludeDrm4579, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getCursor4332; 
+		internal static global::net.sf.jni4net.jni.MethodId _getCursor4580; 
 		public virtual android.database.Cursor getCursor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.RingtoneManager)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallObjectMethodPtr(this, _getCursor4332)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallObjectMethodPtr(this, _getCursor4580)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.media.RingtoneManager.staticClass, _getCursor4332)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.media.RingtoneManager.staticClass, _getCursor4580)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getRingtone4333; 
+		internal static global::net.sf.jni4net.jni.MethodId _getRingtone4581; 
 		public virtual android.media.Ringtone getRingtone(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.RingtoneManager)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.media.Ringtone>(@__env, @__env.CallObjectMethodPtr(this, _getRingtone4333, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.media.Ringtone>(@__env, @__env.CallObjectMethodPtr(this, _getRingtone4581, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.media.Ringtone>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.media.RingtoneManager.staticClass, _getRingtone4333, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.media.Ringtone>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.media.RingtoneManager.staticClass, _getRingtone4581, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getRingtone4334; 
+		internal static global::net.sf.jni4net.jni.MethodId _getRingtone4582; 
 		public static android.media.Ringtone getRingtone(android.content.Context arg0, android.net.Uri arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.media.Ringtone>(@__env, @__env.CallStaticObjectMethodPtr(android.media.RingtoneManager.staticClass, _getRingtone4334, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.media.Ringtone>(@__env, @__env.CallStaticObjectMethodPtr(android.media.RingtoneManager.staticClass, _getRingtone4582, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getRingtoneUri4335; 
+		internal static global::net.sf.jni4net.jni.MethodId _getRingtoneUri4583; 
 		public virtual android.net.Uri getRingtoneUri(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.RingtoneManager)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallObjectMethodPtr(this, _getRingtoneUri4335, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallObjectMethodPtr(this, _getRingtoneUri4583, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.media.RingtoneManager.staticClass, _getRingtoneUri4335, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.media.RingtoneManager.staticClass, _getRingtoneUri4583, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getRingtonePosition4336; 
+		internal static global::net.sf.jni4net.jni.MethodId _getRingtonePosition4584; 
 		public virtual int getRingtonePosition(android.net.Uri arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.RingtoneManager)) 
-				return @__env.CallIntMethod(this, _getRingtonePosition4336, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallIntMethod(this, _getRingtonePosition4584, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.RingtoneManager.staticClass, _getRingtonePosition4336, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, android.media.RingtoneManager.staticClass, _getRingtonePosition4584, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getValidRingtoneUri4337; 
+		internal static global::net.sf.jni4net.jni.MethodId _getValidRingtoneUri4585; 
 		public static android.net.Uri getValidRingtoneUri(android.content.Context arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.media.RingtoneManager.staticClass, _getValidRingtoneUri4337, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.media.RingtoneManager.staticClass, _getValidRingtoneUri4585, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getActualDefaultRingtoneUri4338; 
+		internal static global::net.sf.jni4net.jni.MethodId _getActualDefaultRingtoneUri4586; 
 		public static android.net.Uri getActualDefaultRingtoneUri(android.content.Context arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.media.RingtoneManager.staticClass, _getActualDefaultRingtoneUri4338, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.media.RingtoneManager.staticClass, _getActualDefaultRingtoneUri4586, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setActualDefaultRingtoneUri4339; 
+		internal static global::net.sf.jni4net.jni.MethodId _setActualDefaultRingtoneUri4587; 
 		public static void setActualDefaultRingtoneUri(android.content.Context arg0, int arg1, android.net.Uri arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.media.RingtoneManager.staticClass, _setActualDefaultRingtoneUri4339, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+			@__env.CallStaticVoidMethod(android.media.RingtoneManager.staticClass, _setActualDefaultRingtoneUri4587, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDefaultType4340; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDefaultType4588; 
 		public static int getDefaultType(android.net.Uri arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.media.RingtoneManager.staticClass, _getDefaultType4340, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			return @__env.CallStaticIntMethod(android.media.RingtoneManager.staticClass, _getDefaultType4588, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDefaultUri4341; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDefaultUri4589; 
 		public static android.net.Uri getDefaultUri(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.media.RingtoneManager.staticClass, _getDefaultUri4341, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.media.RingtoneManager.staticClass, _getDefaultUri4589, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _RingtoneManager4342; 
+		internal static global::net.sf.jni4net.jni.MethodId _RingtoneManager4590; 
 		public RingtoneManager(android.app.Activity arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.media.RingtoneManager.staticClass, _RingtoneManager4342, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.media.RingtoneManager.staticClass, _RingtoneManager4590, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _RingtoneManager4343; 
+		internal static global::net.sf.jni4net.jni.MethodId _RingtoneManager4591; 
 		public RingtoneManager(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.media.RingtoneManager.staticClass, _RingtoneManager4343, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.media.RingtoneManager.staticClass, _RingtoneManager4591, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		public static int TYPE_RINGTONE
 		{ 
@@ -286,26 +286,26 @@ namespace android.media
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.media.RingtoneManager.staticClass = @__class; 
-			global::android.media.RingtoneManager._isDefault4324 = @__env.GetStaticMethodID(global::android.media.RingtoneManager.staticClass, "isDefault", "(Landroid/net/Uri;)Z"); 
-			global::android.media.RingtoneManager._setType4325 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "setType", "(I)V"); 
-			global::android.media.RingtoneManager._inferStreamType4326 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "inferStreamType", "()I"); 
-			global::android.media.RingtoneManager._setStopPreviousRingtone4327 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "setStopPreviousRingtone", "(Z)V"); 
-			global::android.media.RingtoneManager._stopPreviousRingtone4328 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "stopPreviousRingtone", "()V"); 
-			global::android.media.RingtoneManager._getStopPreviousRingtone4329 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "getStopPreviousRingtone", "()Z"); 
-			global::android.media.RingtoneManager._getIncludeDrm4330 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "getIncludeDrm", "()Z"); 
-			global::android.media.RingtoneManager._setIncludeDrm4331 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "setIncludeDrm", "(Z)V"); 
-			global::android.media.RingtoneManager._getCursor4332 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "getCursor", "()Landroid/database/Cursor;"); 
-			global::android.media.RingtoneManager._getRingtone4333 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "getRingtone", "(I)Landroid/media/Ringtone;"); 
-			global::android.media.RingtoneManager._getRingtone4334 = @__env.GetStaticMethodID(global::android.media.RingtoneManager.staticClass, "getRingtone", "(Landroid/content/Context;Landroid/net/Uri;)Landroid/media/Ringtone;"); 
-			global::android.media.RingtoneManager._getRingtoneUri4335 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "getRingtoneUri", "(I)Landroid/net/Uri;"); 
-			global::android.media.RingtoneManager._getRingtonePosition4336 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "getRingtonePosition", "(Landroid/net/Uri;)I"); 
-			global::android.media.RingtoneManager._getValidRingtoneUri4337 = @__env.GetStaticMethodID(global::android.media.RingtoneManager.staticClass, "getValidRingtoneUri", "(Landroid/content/Context;)Landroid/net/Uri;"); 
-			global::android.media.RingtoneManager._getActualDefaultRingtoneUri4338 = @__env.GetStaticMethodID(global::android.media.RingtoneManager.staticClass, "getActualDefaultRingtoneUri", "(Landroid/content/Context;I)Landroid/net/Uri;"); 
-			global::android.media.RingtoneManager._setActualDefaultRingtoneUri4339 = @__env.GetStaticMethodID(global::android.media.RingtoneManager.staticClass, "setActualDefaultRingtoneUri", "(Landroid/content/Context;ILandroid/net/Uri;)V"); 
-			global::android.media.RingtoneManager._getDefaultType4340 = @__env.GetStaticMethodID(global::android.media.RingtoneManager.staticClass, "getDefaultType", "(Landroid/net/Uri;)I"); 
-			global::android.media.RingtoneManager._getDefaultUri4341 = @__env.GetStaticMethodID(global::android.media.RingtoneManager.staticClass, "getDefaultUri", "(I)Landroid/net/Uri;"); 
-			global::android.media.RingtoneManager._RingtoneManager4342 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "<init>", "(Landroid/app/Activity;)V"); 
-			global::android.media.RingtoneManager._RingtoneManager4343 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "<init>", "(Landroid/content/Context;)V"); 
+			global::android.media.RingtoneManager._isDefault4572 = @__env.GetStaticMethodID(global::android.media.RingtoneManager.staticClass, "isDefault", "(Landroid/net/Uri;)Z"); 
+			global::android.media.RingtoneManager._setType4573 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "setType", "(I)V"); 
+			global::android.media.RingtoneManager._inferStreamType4574 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "inferStreamType", "()I"); 
+			global::android.media.RingtoneManager._setStopPreviousRingtone4575 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "setStopPreviousRingtone", "(Z)V"); 
+			global::android.media.RingtoneManager._stopPreviousRingtone4576 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "stopPreviousRingtone", "()V"); 
+			global::android.media.RingtoneManager._getStopPreviousRingtone4577 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "getStopPreviousRingtone", "()Z"); 
+			global::android.media.RingtoneManager._getIncludeDrm4578 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "getIncludeDrm", "()Z"); 
+			global::android.media.RingtoneManager._setIncludeDrm4579 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "setIncludeDrm", "(Z)V"); 
+			global::android.media.RingtoneManager._getCursor4580 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "getCursor", "()Landroid/database/Cursor;"); 
+			global::android.media.RingtoneManager._getRingtone4581 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "getRingtone", "(I)Landroid/media/Ringtone;"); 
+			global::android.media.RingtoneManager._getRingtone4582 = @__env.GetStaticMethodID(global::android.media.RingtoneManager.staticClass, "getRingtone", "(Landroid/content/Context;Landroid/net/Uri;)Landroid/media/Ringtone;"); 
+			global::android.media.RingtoneManager._getRingtoneUri4583 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "getRingtoneUri", "(I)Landroid/net/Uri;"); 
+			global::android.media.RingtoneManager._getRingtonePosition4584 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "getRingtonePosition", "(Landroid/net/Uri;)I"); 
+			global::android.media.RingtoneManager._getValidRingtoneUri4585 = @__env.GetStaticMethodID(global::android.media.RingtoneManager.staticClass, "getValidRingtoneUri", "(Landroid/content/Context;)Landroid/net/Uri;"); 
+			global::android.media.RingtoneManager._getActualDefaultRingtoneUri4586 = @__env.GetStaticMethodID(global::android.media.RingtoneManager.staticClass, "getActualDefaultRingtoneUri", "(Landroid/content/Context;I)Landroid/net/Uri;"); 
+			global::android.media.RingtoneManager._setActualDefaultRingtoneUri4587 = @__env.GetStaticMethodID(global::android.media.RingtoneManager.staticClass, "setActualDefaultRingtoneUri", "(Landroid/content/Context;ILandroid/net/Uri;)V"); 
+			global::android.media.RingtoneManager._getDefaultType4588 = @__env.GetStaticMethodID(global::android.media.RingtoneManager.staticClass, "getDefaultType", "(Landroid/net/Uri;)I"); 
+			global::android.media.RingtoneManager._getDefaultUri4589 = @__env.GetStaticMethodID(global::android.media.RingtoneManager.staticClass, "getDefaultUri", "(I)Landroid/net/Uri;"); 
+			global::android.media.RingtoneManager._RingtoneManager4590 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "<init>", "(Landroid/app/Activity;)V"); 
+			global::android.media.RingtoneManager._RingtoneManager4591 = @__env.GetMethodID(global::android.media.RingtoneManager.staticClass, "<init>", "(Landroid/content/Context;)V"); 
 		} 
 	} 
 } 

@@ -18,83 +18,83 @@ namespace android.os
 		protected Process(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getElapsedCpuTime5564; 
+		internal static global::net.sf.jni4net.jni.MethodId _getElapsedCpuTime5838; 
 		public static long getElapsedCpuTime() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticLongMethod(android.os.Process.staticClass, _getElapsedCpuTime5564); 
+			return @__env.CallStaticLongMethod(android.os.Process.staticClass, _getElapsedCpuTime5838); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _myPid5565; 
+		internal static global::net.sf.jni4net.jni.MethodId _myPid5839; 
 		public static int myPid() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Process.staticClass, _myPid5565); 
+			return @__env.CallStaticIntMethod(android.os.Process.staticClass, _myPid5839); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _myTid5566; 
+		internal static global::net.sf.jni4net.jni.MethodId _myTid5840; 
 		public static int myTid() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Process.staticClass, _myTid5566); 
+			return @__env.CallStaticIntMethod(android.os.Process.staticClass, _myTid5840); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _myUid5567; 
+		internal static global::net.sf.jni4net.jni.MethodId _myUid5841; 
 		public static int myUid() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Process.staticClass, _myUid5567); 
+			return @__env.CallStaticIntMethod(android.os.Process.staticClass, _myUid5841); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getUidForName5568; 
+		internal static global::net.sf.jni4net.jni.MethodId _getUidForName5842; 
 		public static int getUidForName(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Process.staticClass, _getUidForName5568, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			return @__env.CallStaticIntMethod(android.os.Process.staticClass, _getUidForName5842, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getGidForName5569; 
+		internal static global::net.sf.jni4net.jni.MethodId _getGidForName5843; 
 		public static int getGidForName(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Process.staticClass, _getGidForName5569, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			return @__env.CallStaticIntMethod(android.os.Process.staticClass, _getGidForName5843, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setThreadPriority5570; 
+		internal static global::net.sf.jni4net.jni.MethodId _setThreadPriority5844; 
 		public static void setThreadPriority(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Process.staticClass, _setThreadPriority5570, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.CallStaticVoidMethod(android.os.Process.staticClass, _setThreadPriority5844, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setThreadPriority5571; 
+		internal static global::net.sf.jni4net.jni.MethodId _setThreadPriority5845; 
 		public static void setThreadPriority(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Process.staticClass, _setThreadPriority5571, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			@__env.CallStaticVoidMethod(android.os.Process.staticClass, _setThreadPriority5845, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getThreadPriority5572; 
+		internal static global::net.sf.jni4net.jni.MethodId _getThreadPriority5846; 
 		public static int getThreadPriority(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Process.staticClass, _getThreadPriority5572, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			return @__env.CallStaticIntMethod(android.os.Process.staticClass, _getThreadPriority5846, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _supportsProcesses5573; 
+		internal static global::net.sf.jni4net.jni.MethodId _supportsProcesses5847; 
 		public static bool supportsProcesses() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.os.Process.staticClass, _supportsProcesses5573); 
+			return @__env.CallStaticBooleanMethod(android.os.Process.staticClass, _supportsProcesses5847); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _killProcess5574; 
+		internal static global::net.sf.jni4net.jni.MethodId _killProcess5848; 
 		public static void killProcess(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Process.staticClass, _killProcess5574, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			@__env.CallStaticVoidMethod(android.os.Process.staticClass, _killProcess5848, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _sendSignal5575; 
+		internal static global::net.sf.jni4net.jni.MethodId _sendSignal5849; 
 		public static void sendSignal(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Process.staticClass, _sendSignal5575, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.CallStaticVoidMethod(android.os.Process.staticClass, _sendSignal5849, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Process5576; 
+		internal static global::net.sf.jni4net.jni.MethodId _Process5850; 
 		public Process()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.os.Process.staticClass, _Process5576, this); 
+			@__env.NewObject(android.os.Process.staticClass, _Process5850, this); 
 		} 
 		public static int SYSTEM_UID
 		{ 
@@ -225,19 +225,19 @@ namespace android.os
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.os.Process.staticClass = @__class; 
-			global::android.os.Process._getElapsedCpuTime5564 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "getElapsedCpuTime", "()J"); 
-			global::android.os.Process._myPid5565 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "myPid", "()I"); 
-			global::android.os.Process._myTid5566 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "myTid", "()I"); 
-			global::android.os.Process._myUid5567 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "myUid", "()I"); 
-			global::android.os.Process._getUidForName5568 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "getUidForName", "(Ljava/lang/String;)I"); 
-			global::android.os.Process._getGidForName5569 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "getGidForName", "(Ljava/lang/String;)I"); 
-			global::android.os.Process._setThreadPriority5570 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "setThreadPriority", "(II)V"); 
-			global::android.os.Process._setThreadPriority5571 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "setThreadPriority", "(I)V"); 
-			global::android.os.Process._getThreadPriority5572 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "getThreadPriority", "(I)I"); 
-			global::android.os.Process._supportsProcesses5573 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "supportsProcesses", "()Z"); 
-			global::android.os.Process._killProcess5574 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "killProcess", "(I)V"); 
-			global::android.os.Process._sendSignal5575 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "sendSignal", "(II)V"); 
-			global::android.os.Process._Process5576 = @__env.GetMethodID(global::android.os.Process.staticClass, "<init>", "()V"); 
+			global::android.os.Process._getElapsedCpuTime5838 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "getElapsedCpuTime", "()J"); 
+			global::android.os.Process._myPid5839 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "myPid", "()I"); 
+			global::android.os.Process._myTid5840 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "myTid", "()I"); 
+			global::android.os.Process._myUid5841 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "myUid", "()I"); 
+			global::android.os.Process._getUidForName5842 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "getUidForName", "(Ljava/lang/String;)I"); 
+			global::android.os.Process._getGidForName5843 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "getGidForName", "(Ljava/lang/String;)I"); 
+			global::android.os.Process._setThreadPriority5844 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "setThreadPriority", "(II)V"); 
+			global::android.os.Process._setThreadPriority5845 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "setThreadPriority", "(I)V"); 
+			global::android.os.Process._getThreadPriority5846 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "getThreadPriority", "(I)I"); 
+			global::android.os.Process._supportsProcesses5847 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "supportsProcesses", "()Z"); 
+			global::android.os.Process._killProcess5848 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "killProcess", "(I)V"); 
+			global::android.os.Process._sendSignal5849 = @__env.GetStaticMethodID(global::android.os.Process.staticClass, "sendSignal", "(II)V"); 
+			global::android.os.Process._Process5850 = @__env.GetMethodID(global::android.os.Process.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

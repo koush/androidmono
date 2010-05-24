@@ -18,83 +18,83 @@ namespace android.text.style
 		protected TypefaceSpan(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel7074; 
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel7452; 
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.style.TypefaceSpan)) 
-				@__env.CallVoidMethod(this, _writeToParcel7074, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _writeToParcel7452, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.text.style.TypefaceSpan.staticClass, _writeToParcel7074, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.text.style.TypefaceSpan.staticClass, _writeToParcel7452, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents7075; 
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents7453; 
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.style.TypefaceSpan)) 
-				return @__env.CallIntMethod(this, _describeContents7075); 
+				return @__env.CallIntMethod(this, _describeContents7453); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.style.TypefaceSpan.staticClass, _describeContents7075); 
+				return @__env.CallNonVirtualIntMethod(this, android.text.style.TypefaceSpan.staticClass, _describeContents7453); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getSpanTypeId7076; 
+		internal static global::net.sf.jni4net.jni.MethodId _getSpanTypeId7454; 
 		public virtual int getSpanTypeId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.style.TypefaceSpan)) 
-				return @__env.CallIntMethod(this, _getSpanTypeId7076); 
+				return @__env.CallIntMethod(this, _getSpanTypeId7454); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.style.TypefaceSpan.staticClass, _getSpanTypeId7076); 
+				return @__env.CallNonVirtualIntMethod(this, android.text.style.TypefaceSpan.staticClass, _getSpanTypeId7454); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _updateDrawState7077; 
+		internal static global::net.sf.jni4net.jni.MethodId _updateDrawState7455; 
 		public override void updateDrawState(android.text.TextPaint arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.style.TypefaceSpan)) 
-				@__env.CallVoidMethod(this, _updateDrawState7077, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _updateDrawState7455, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.text.style.TypefaceSpan.staticClass, _updateDrawState7077, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.text.style.TypefaceSpan.staticClass, _updateDrawState7455, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _updateMeasureState7078; 
+		internal static global::net.sf.jni4net.jni.MethodId _updateMeasureState7456; 
 		public override void updateMeasureState(android.text.TextPaint arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.style.TypefaceSpan)) 
-				@__env.CallVoidMethod(this, _updateMeasureState7078, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _updateMeasureState7456, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.text.style.TypefaceSpan.staticClass, _updateMeasureState7078, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.text.style.TypefaceSpan.staticClass, _updateMeasureState7456, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getFamily7079; 
+		internal static global::net.sf.jni4net.jni.MethodId _getFamily7457; 
 		public virtual java.lang.String getFamily() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.style.TypefaceSpan)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getFamily7079)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getFamily7457)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.style.TypefaceSpan.staticClass, _getFamily7079)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.style.TypefaceSpan.staticClass, _getFamily7457)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _TypefaceSpan7080; 
+		internal static global::net.sf.jni4net.jni.MethodId _TypefaceSpan7458; 
 		public TypefaceSpan(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.TypefaceSpan.staticClass, _TypefaceSpan7080, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.text.style.TypefaceSpan.staticClass, _TypefaceSpan7458, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _TypefaceSpan7081; 
+		internal static global::net.sf.jni4net.jni.MethodId _TypefaceSpan7459; 
 		public TypefaceSpan(android.os.Parcel arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.TypefaceSpan.staticClass, _TypefaceSpan7081, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.text.style.TypefaceSpan.staticClass, _TypefaceSpan7459, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.text.style.TypefaceSpan.staticClass = @__class; 
-			global::android.text.style.TypefaceSpan._writeToParcel7074 = @__env.GetMethodID(global::android.text.style.TypefaceSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
-			global::android.text.style.TypefaceSpan._describeContents7075 = @__env.GetMethodID(global::android.text.style.TypefaceSpan.staticClass, "describeContents", "()I"); 
-			global::android.text.style.TypefaceSpan._getSpanTypeId7076 = @__env.GetMethodID(global::android.text.style.TypefaceSpan.staticClass, "getSpanTypeId", "()I"); 
-			global::android.text.style.TypefaceSpan._updateDrawState7077 = @__env.GetMethodID(global::android.text.style.TypefaceSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V"); 
-			global::android.text.style.TypefaceSpan._updateMeasureState7078 = @__env.GetMethodID(global::android.text.style.TypefaceSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V"); 
-			global::android.text.style.TypefaceSpan._getFamily7079 = @__env.GetMethodID(global::android.text.style.TypefaceSpan.staticClass, "getFamily", "()Ljava/lang/String;"); 
-			global::android.text.style.TypefaceSpan._TypefaceSpan7080 = @__env.GetMethodID(global::android.text.style.TypefaceSpan.staticClass, "<init>", "(Ljava/lang/String;)V"); 
-			global::android.text.style.TypefaceSpan._TypefaceSpan7081 = @__env.GetMethodID(global::android.text.style.TypefaceSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V"); 
+			global::android.text.style.TypefaceSpan._writeToParcel7452 = @__env.GetMethodID(global::android.text.style.TypefaceSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
+			global::android.text.style.TypefaceSpan._describeContents7453 = @__env.GetMethodID(global::android.text.style.TypefaceSpan.staticClass, "describeContents", "()I"); 
+			global::android.text.style.TypefaceSpan._getSpanTypeId7454 = @__env.GetMethodID(global::android.text.style.TypefaceSpan.staticClass, "getSpanTypeId", "()I"); 
+			global::android.text.style.TypefaceSpan._updateDrawState7455 = @__env.GetMethodID(global::android.text.style.TypefaceSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V"); 
+			global::android.text.style.TypefaceSpan._updateMeasureState7456 = @__env.GetMethodID(global::android.text.style.TypefaceSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V"); 
+			global::android.text.style.TypefaceSpan._getFamily7457 = @__env.GetMethodID(global::android.text.style.TypefaceSpan.staticClass, "getFamily", "()Ljava/lang/String;"); 
+			global::android.text.style.TypefaceSpan._TypefaceSpan7458 = @__env.GetMethodID(global::android.text.style.TypefaceSpan.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::android.text.style.TypefaceSpan._TypefaceSpan7459 = @__env.GetMethodID(global::android.text.style.TypefaceSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V"); 
 		} 
 	} 
 } 

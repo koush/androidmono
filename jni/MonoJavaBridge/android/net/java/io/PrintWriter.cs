@@ -18,425 +18,425 @@ namespace java.io
 		protected PrintWriter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _println10588; 
+		internal static global::net.sf.jni4net.jni.MethodId _println11411; 
 		public virtual void println(char arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _println10588, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _println11411, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println10588, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println11411, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _println10589; 
+		internal static global::net.sf.jni4net.jni.MethodId _println11412; 
 		public virtual void println() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _println10589); 
+				@__env.CallVoidMethod(this, _println11412); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println10589); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println11412); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _println10590; 
+		internal static global::net.sf.jni4net.jni.MethodId _println11413; 
 		public virtual void println(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _println10590, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _println11413, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println10590, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println11413, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _println10591; 
+		internal static global::net.sf.jni4net.jni.MethodId _println11414; 
 		public virtual void println(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _println10591, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _println11414, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println10591, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println11414, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _println10592; 
+		internal static global::net.sf.jni4net.jni.MethodId _println11415; 
 		public virtual void println(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _println10592, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _println11415, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println10592, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println11415, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _println10593; 
+		internal static global::net.sf.jni4net.jni.MethodId _println11416; 
 		public virtual void println(char[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _println10593, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _println11416, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println10593, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println11416, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _println10594; 
+		internal static global::net.sf.jni4net.jni.MethodId _println11417; 
 		public virtual void println(double arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _println10594, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _println11417, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println10594, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println11417, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _println10595; 
+		internal static global::net.sf.jni4net.jni.MethodId _println11418; 
 		public virtual void println(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _println10595, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _println11418, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println10595, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println11418, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _println10596; 
+		internal static global::net.sf.jni4net.jni.MethodId _println11419; 
 		public virtual void println(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _println10596, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _println11419, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println10596, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println11419, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _println10597; 
+		internal static global::net.sf.jni4net.jni.MethodId _println11420; 
 		public virtual void println(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _println10597, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _println11420, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println10597, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _println11420, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _append10598; 
+		internal static global::net.sf.jni4net.jni.MethodId _append11421; 
 		public virtual new java.io.PrintWriter append(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, _append10598, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, _append11421, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.io.PrintWriter.staticClass, _append10598, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.io.PrintWriter.staticClass, _append11421, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _append10599; 
+		internal static global::net.sf.jni4net.jni.MethodId _append11422; 
 		public virtual new java.io.PrintWriter append(java.lang.CharSequence arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, _append10599, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, _append11422, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.io.PrintWriter.staticClass, _append10599, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.io.PrintWriter.staticClass, _append11422, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _append10600; 
+		internal static global::net.sf.jni4net.jni.MethodId _append11423; 
 		public virtual new java.io.PrintWriter append(char arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, _append10600, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, _append11423, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.io.PrintWriter.staticClass, _append10600, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.io.PrintWriter.staticClass, _append11423, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _format10601; 
+		internal static global::net.sf.jni4net.jni.MethodId _format11424; 
 		public virtual java.io.PrintWriter format(java.util.Locale arg0, java.lang.String arg1, java.lang.Object[] arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, _format10601, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, _format11424, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg2))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.io.PrintWriter.staticClass, _format10601, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.io.PrintWriter.staticClass, _format11424, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _format10602; 
+		internal static global::net.sf.jni4net.jni.MethodId _format11425; 
 		public virtual java.io.PrintWriter format(java.lang.String arg0, java.lang.Object[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, _format10602, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, _format11425, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.io.PrintWriter.staticClass, _format10602, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.io.PrintWriter.staticClass, _format11425, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _write10603; 
+		internal static global::net.sf.jni4net.jni.MethodId _write11426; 
 		public override void write(char[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _write10603, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _write11426, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _write10603, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _write11426, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _write10604; 
+		internal static global::net.sf.jni4net.jni.MethodId _write11427; 
 		public override void write(char[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _write10604, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, _write11427, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _write10604, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _write11427, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _write10605; 
+		internal static global::net.sf.jni4net.jni.MethodId _write11428; 
 		public override void write(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _write10605, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _write11428, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _write10605, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _write11428, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _write10606; 
+		internal static global::net.sf.jni4net.jni.MethodId _write11429; 
 		public override void write(java.lang.String arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _write10606, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, _write11429, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _write10606, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _write11429, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _write10607; 
+		internal static global::net.sf.jni4net.jni.MethodId _write11430; 
 		public override void write(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _write10607, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _write11430, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _write10607, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _write11430, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _print10608; 
+		internal static global::net.sf.jni4net.jni.MethodId _print11431; 
 		public virtual void print(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _print10608, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _print11431, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print10608, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print11431, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _print10609; 
+		internal static global::net.sf.jni4net.jni.MethodId _print11432; 
 		public virtual void print(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _print10609, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _print11432, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print10609, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print11432, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _print10610; 
+		internal static global::net.sf.jni4net.jni.MethodId _print11433; 
 		public virtual void print(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _print10610, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _print11433, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print10610, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print11433, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _print10611; 
+		internal static global::net.sf.jni4net.jni.MethodId _print11434; 
 		public virtual void print(char arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _print10611, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _print11434, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print10611, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print11434, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _print10612; 
+		internal static global::net.sf.jni4net.jni.MethodId _print11435; 
 		public virtual void print(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _print10612, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _print11435, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print10612, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print11435, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _print10613; 
+		internal static global::net.sf.jni4net.jni.MethodId _print11436; 
 		public virtual void print(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _print10613, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _print11436, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print10613, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print11436, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _print10614; 
+		internal static global::net.sf.jni4net.jni.MethodId _print11437; 
 		public virtual void print(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _print10614, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _print11437, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print10614, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print11437, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _print10615; 
+		internal static global::net.sf.jni4net.jni.MethodId _print11438; 
 		public virtual void print(double arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _print10615, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _print11438, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print10615, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print11438, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _print10616; 
+		internal static global::net.sf.jni4net.jni.MethodId _print11439; 
 		public virtual void print(char[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _print10616, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _print11439, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print10616, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _print11439, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _flush10617; 
+		internal static global::net.sf.jni4net.jni.MethodId _flush11440; 
 		public override void flush() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _flush10617); 
+				@__env.CallVoidMethod(this, _flush11440); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _flush10617); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _flush11440); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _close10618; 
+		internal static global::net.sf.jni4net.jni.MethodId _close11441; 
 		public override void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _close10618); 
+				@__env.CallVoidMethod(this, _close11441); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _close10618); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _close11441); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _checkError10619; 
+		internal static global::net.sf.jni4net.jni.MethodId _checkError11442; 
 		public virtual bool checkError() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				return @__env.CallBooleanMethod(this, _checkError10619); 
+				return @__env.CallBooleanMethod(this, _checkError11442); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.io.PrintWriter.staticClass, _checkError10619); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.io.PrintWriter.staticClass, _checkError11442); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setError10620; 
+		internal static global::net.sf.jni4net.jni.MethodId _setError11443; 
 		protected virtual void setError() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _setError10620); 
+				@__env.CallVoidMethod(this, _setError11443); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _setError10620); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _setError11443); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _clearError10621; 
+		internal static global::net.sf.jni4net.jni.MethodId _clearError11444; 
 		protected virtual void clearError() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				@__env.CallVoidMethod(this, _clearError10621); 
+				@__env.CallVoidMethod(this, _clearError11444); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _clearError10621); 
+				@__env.CallNonVirtualVoidMethod(this, java.io.PrintWriter.staticClass, _clearError11444); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _printf10622; 
+		internal static global::net.sf.jni4net.jni.MethodId _printf11445; 
 		public virtual java.io.PrintWriter printf(java.lang.String arg0, java.lang.Object[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, _printf10622, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, _printf11445, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.io.PrintWriter.staticClass, _printf10622, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.io.PrintWriter.staticClass, _printf11445, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _printf10623; 
+		internal static global::net.sf.jni4net.jni.MethodId _printf11446; 
 		public virtual java.io.PrintWriter printf(java.util.Locale arg0, java.lang.String arg1, java.lang.Object[] arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.PrintWriter)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, _printf10623, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, _printf11446, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg2))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.io.PrintWriter.staticClass, _printf10623, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.io.PrintWriter.staticClass, _printf11446, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PrintWriter10624; 
+		internal static global::net.sf.jni4net.jni.MethodId _PrintWriter11447; 
 		public PrintWriter(java.io.Writer arg0, bool arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.io.PrintWriter.staticClass, _PrintWriter10624, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(java.io.PrintWriter.staticClass, _PrintWriter11447, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PrintWriter10625; 
+		internal static global::net.sf.jni4net.jni.MethodId _PrintWriter11448; 
 		public PrintWriter(java.io.OutputStream arg0, bool arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.io.PrintWriter.staticClass, _PrintWriter10625, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(java.io.PrintWriter.staticClass, _PrintWriter11448, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PrintWriter10626; 
+		internal static global::net.sf.jni4net.jni.MethodId _PrintWriter11449; 
 		public PrintWriter(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.io.PrintWriter.staticClass, _PrintWriter10626, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(java.io.PrintWriter.staticClass, _PrintWriter11449, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PrintWriter10627; 
+		internal static global::net.sf.jni4net.jni.MethodId _PrintWriter11450; 
 		public PrintWriter(java.lang.String arg0, java.lang.String arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.io.PrintWriter.staticClass, _PrintWriter10627, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(java.io.PrintWriter.staticClass, _PrintWriter11450, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PrintWriter10628; 
+		internal static global::net.sf.jni4net.jni.MethodId _PrintWriter11451; 
 		public PrintWriter(java.io.File arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.io.PrintWriter.staticClass, _PrintWriter10628, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(java.io.PrintWriter.staticClass, _PrintWriter11451, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PrintWriter10629; 
+		internal static global::net.sf.jni4net.jni.MethodId _PrintWriter11452; 
 		public PrintWriter(java.io.File arg0, java.lang.String arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.io.PrintWriter.staticClass, _PrintWriter10629, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(java.io.PrintWriter.staticClass, _PrintWriter11452, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PrintWriter10630; 
+		internal static global::net.sf.jni4net.jni.MethodId _PrintWriter11453; 
 		public PrintWriter(java.io.Writer arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.io.PrintWriter.staticClass, _PrintWriter10630, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(java.io.PrintWriter.staticClass, _PrintWriter11453, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PrintWriter10631; 
+		internal static global::net.sf.jni4net.jni.MethodId _PrintWriter11454; 
 		public PrintWriter(java.io.OutputStream arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.io.PrintWriter.staticClass, _PrintWriter10631, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(java.io.PrintWriter.staticClass, _PrintWriter11454, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::java.io.PrintWriter.staticClass = @__class; 
-			global::java.io.PrintWriter._println10588 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "(C)V"); 
-			global::java.io.PrintWriter._println10589 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "()V"); 
-			global::java.io.PrintWriter._println10590 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "(Z)V"); 
-			global::java.io.PrintWriter._println10591 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "(Ljava/lang/Object;)V"); 
-			global::java.io.PrintWriter._println10592 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "(Ljava/lang/String;)V"); 
-			global::java.io.PrintWriter._println10593 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "([C)V"); 
-			global::java.io.PrintWriter._println10594 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "(D)V"); 
-			global::java.io.PrintWriter._println10595 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "(F)V"); 
-			global::java.io.PrintWriter._println10596 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "(J)V"); 
-			global::java.io.PrintWriter._println10597 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "(I)V"); 
-			global::java.io.PrintWriter._append10598 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "append", "(Ljava/lang/CharSequence;)Ljava/io/PrintWriter;"); 
-			global::java.io.PrintWriter._append10599 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "append", "(Ljava/lang/CharSequence;II)Ljava/io/PrintWriter;"); 
-			global::java.io.PrintWriter._append10600 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "append", "(C)Ljava/io/PrintWriter;"); 
-			global::java.io.PrintWriter._format10601 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;"); 
-			global::java.io.PrintWriter._format10602 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;"); 
-			global::java.io.PrintWriter._write10603 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "write", "([C)V"); 
-			global::java.io.PrintWriter._write10604 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "write", "([CII)V"); 
-			global::java.io.PrintWriter._write10605 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "write", "(I)V"); 
-			global::java.io.PrintWriter._write10606 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "write", "(Ljava/lang/String;II)V"); 
-			global::java.io.PrintWriter._write10607 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "write", "(Ljava/lang/String;)V"); 
-			global::java.io.PrintWriter._print10608 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "(Ljava/lang/String;)V"); 
-			global::java.io.PrintWriter._print10609 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "(Ljava/lang/Object;)V"); 
-			global::java.io.PrintWriter._print10610 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "(Z)V"); 
-			global::java.io.PrintWriter._print10611 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "(C)V"); 
-			global::java.io.PrintWriter._print10612 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "(I)V"); 
-			global::java.io.PrintWriter._print10613 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "(J)V"); 
-			global::java.io.PrintWriter._print10614 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "(F)V"); 
-			global::java.io.PrintWriter._print10615 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "(D)V"); 
-			global::java.io.PrintWriter._print10616 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "([C)V"); 
-			global::java.io.PrintWriter._flush10617 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "flush", "()V"); 
-			global::java.io.PrintWriter._close10618 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "close", "()V"); 
-			global::java.io.PrintWriter._checkError10619 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "checkError", "()Z"); 
-			global::java.io.PrintWriter._setError10620 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "setError", "()V"); 
-			global::java.io.PrintWriter._clearError10621 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "clearError", "()V"); 
-			global::java.io.PrintWriter._printf10622 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;"); 
-			global::java.io.PrintWriter._printf10623 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "printf", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;"); 
-			global::java.io.PrintWriter._PrintWriter10624 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/io/Writer;Z)V"); 
-			global::java.io.PrintWriter._PrintWriter10625 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/io/OutputStream;Z)V"); 
-			global::java.io.PrintWriter._PrintWriter10626 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/lang/String;)V"); 
-			global::java.io.PrintWriter._PrintWriter10627 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V"); 
-			global::java.io.PrintWriter._PrintWriter10628 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/io/File;)V"); 
-			global::java.io.PrintWriter._PrintWriter10629 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/io/File;Ljava/lang/String;)V"); 
-			global::java.io.PrintWriter._PrintWriter10630 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/io/Writer;)V"); 
-			global::java.io.PrintWriter._PrintWriter10631 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/io/OutputStream;)V"); 
+			global::java.io.PrintWriter._println11411 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "(C)V"); 
+			global::java.io.PrintWriter._println11412 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "()V"); 
+			global::java.io.PrintWriter._println11413 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "(Z)V"); 
+			global::java.io.PrintWriter._println11414 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "(Ljava/lang/Object;)V"); 
+			global::java.io.PrintWriter._println11415 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "(Ljava/lang/String;)V"); 
+			global::java.io.PrintWriter._println11416 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "([C)V"); 
+			global::java.io.PrintWriter._println11417 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "(D)V"); 
+			global::java.io.PrintWriter._println11418 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "(F)V"); 
+			global::java.io.PrintWriter._println11419 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "(J)V"); 
+			global::java.io.PrintWriter._println11420 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "println", "(I)V"); 
+			global::java.io.PrintWriter._append11421 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "append", "(Ljava/lang/CharSequence;)Ljava/io/PrintWriter;"); 
+			global::java.io.PrintWriter._append11422 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "append", "(Ljava/lang/CharSequence;II)Ljava/io/PrintWriter;"); 
+			global::java.io.PrintWriter._append11423 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "append", "(C)Ljava/io/PrintWriter;"); 
+			global::java.io.PrintWriter._format11424 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;"); 
+			global::java.io.PrintWriter._format11425 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;"); 
+			global::java.io.PrintWriter._write11426 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "write", "([C)V"); 
+			global::java.io.PrintWriter._write11427 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "write", "([CII)V"); 
+			global::java.io.PrintWriter._write11428 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "write", "(I)V"); 
+			global::java.io.PrintWriter._write11429 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "write", "(Ljava/lang/String;II)V"); 
+			global::java.io.PrintWriter._write11430 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "write", "(Ljava/lang/String;)V"); 
+			global::java.io.PrintWriter._print11431 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "(Ljava/lang/String;)V"); 
+			global::java.io.PrintWriter._print11432 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "(Ljava/lang/Object;)V"); 
+			global::java.io.PrintWriter._print11433 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "(Z)V"); 
+			global::java.io.PrintWriter._print11434 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "(C)V"); 
+			global::java.io.PrintWriter._print11435 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "(I)V"); 
+			global::java.io.PrintWriter._print11436 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "(J)V"); 
+			global::java.io.PrintWriter._print11437 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "(F)V"); 
+			global::java.io.PrintWriter._print11438 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "(D)V"); 
+			global::java.io.PrintWriter._print11439 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "print", "([C)V"); 
+			global::java.io.PrintWriter._flush11440 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "flush", "()V"); 
+			global::java.io.PrintWriter._close11441 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "close", "()V"); 
+			global::java.io.PrintWriter._checkError11442 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "checkError", "()Z"); 
+			global::java.io.PrintWriter._setError11443 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "setError", "()V"); 
+			global::java.io.PrintWriter._clearError11444 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "clearError", "()V"); 
+			global::java.io.PrintWriter._printf11445 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;"); 
+			global::java.io.PrintWriter._printf11446 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "printf", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;"); 
+			global::java.io.PrintWriter._PrintWriter11447 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/io/Writer;Z)V"); 
+			global::java.io.PrintWriter._PrintWriter11448 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/io/OutputStream;Z)V"); 
+			global::java.io.PrintWriter._PrintWriter11449 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::java.io.PrintWriter._PrintWriter11450 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V"); 
+			global::java.io.PrintWriter._PrintWriter11451 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/io/File;)V"); 
+			global::java.io.PrintWriter._PrintWriter11452 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/io/File;Ljava/lang/String;)V"); 
+			global::java.io.PrintWriter._PrintWriter11453 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/io/Writer;)V"); 
+			global::java.io.PrintWriter._PrintWriter11454 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/io/OutputStream;)V"); 
 		} 
 	} 
 } 

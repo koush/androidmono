@@ -18,227 +18,227 @@ namespace android.text.format
 		protected Time(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _clear6715; 
+		internal static global::net.sf.jni4net.jni.MethodId _clear7070; 
 		public virtual void clear(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				@__env.CallVoidMethod(this, _clear6715, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _clear7070, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.text.format.Time.staticClass, _clear6715, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.text.format.Time.staticClass, _clear7070, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toString6716; 
+		internal static global::net.sf.jni4net.jni.MethodId _toString7071; 
 		public override java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString6716)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString7071)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.format.Time.staticClass, _toString6716)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.format.Time.staticClass, _toString7071)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _format6717; 
+		internal static global::net.sf.jni4net.jni.MethodId _format7072; 
 		public virtual java.lang.String format(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _format6717, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _format7072, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.format.Time.staticClass, _format6717, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.format.Time.staticClass, _format7072, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _compare6718; 
+		internal static global::net.sf.jni4net.jni.MethodId _compare7073; 
 		public static int compare(android.text.format.Time arg0, android.text.format.Time arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.text.format.Time.staticClass, _compare6718, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			return @__env.CallStaticIntMethod(android.text.format.Time.staticClass, _compare7073, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _set6719; 
+		internal static global::net.sf.jni4net.jni.MethodId _set7074; 
 		public virtual void set(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				@__env.CallVoidMethod(this, _set6719, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _set7074, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.text.format.Time.staticClass, _set6719, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.text.format.Time.staticClass, _set7074, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _set6720; 
+		internal static global::net.sf.jni4net.jni.MethodId _set7075; 
 		public virtual void set(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				@__env.CallVoidMethod(this, _set6720, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
+				@__env.CallVoidMethod(this, _set7075, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.text.format.Time.staticClass, _set6720, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
+				@__env.CallNonVirtualVoidMethod(this, android.text.format.Time.staticClass, _set7075, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _set6721; 
+		internal static global::net.sf.jni4net.jni.MethodId _set7076; 
 		public virtual void set(android.text.format.Time arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				@__env.CallVoidMethod(this, _set6721, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _set7076, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.text.format.Time.staticClass, _set6721, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.text.format.Time.staticClass, _set7076, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _set6722; 
+		internal static global::net.sf.jni4net.jni.MethodId _set7077; 
 		public virtual void set(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				@__env.CallVoidMethod(this, _set6722, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, _set7077, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.text.format.Time.staticClass, _set6722, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, android.text.format.Time.staticClass, _set7077, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _normalize6723; 
+		internal static global::net.sf.jni4net.jni.MethodId _normalize7078; 
 		public virtual long normalize(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				return @__env.CallLongMethod(this, _normalize6723, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallLongMethod(this, _normalize7078, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, android.text.format.Time.staticClass, _normalize6723, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualLongMethod(this, android.text.format.Time.staticClass, _normalize7078, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _after6724; 
+		internal static global::net.sf.jni4net.jni.MethodId _after7079; 
 		public virtual bool after(android.text.format.Time arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				return @__env.CallBooleanMethod(this, _after6724, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _after7079, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.text.format.Time.staticClass, _after6724, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.text.format.Time.staticClass, _after7079, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _before6725; 
+		internal static global::net.sf.jni4net.jni.MethodId _before7080; 
 		public virtual bool before(android.text.format.Time arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				return @__env.CallBooleanMethod(this, _before6725, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _before7080, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.text.format.Time.staticClass, _before6725, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.text.format.Time.staticClass, _before7080, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _parse6726; 
+		internal static global::net.sf.jni4net.jni.MethodId _parse7081; 
 		public virtual bool parse(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				return @__env.CallBooleanMethod(this, _parse6726, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _parse7081, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.text.format.Time.staticClass, _parse6726, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.text.format.Time.staticClass, _parse7081, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toMillis6727; 
+		internal static global::net.sf.jni4net.jni.MethodId _toMillis7082; 
 		public virtual long toMillis(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				return @__env.CallLongMethod(this, _toMillis6727, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallLongMethod(this, _toMillis7082, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, android.text.format.Time.staticClass, _toMillis6727, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualLongMethod(this, android.text.format.Time.staticClass, _toMillis7082, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getActualMaximum6728; 
+		internal static global::net.sf.jni4net.jni.MethodId _getActualMaximum7083; 
 		public virtual int getActualMaximum(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				return @__env.CallIntMethod(this, _getActualMaximum6728, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, _getActualMaximum7083, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.format.Time.staticClass, _getActualMaximum6728, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, android.text.format.Time.staticClass, _getActualMaximum7083, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _switchTimezone6729; 
+		internal static global::net.sf.jni4net.jni.MethodId _switchTimezone7084; 
 		public virtual void switchTimezone(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				@__env.CallVoidMethod(this, _switchTimezone6729, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _switchTimezone7084, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.text.format.Time.staticClass, _switchTimezone6729, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.text.format.Time.staticClass, _switchTimezone7084, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _parse33396730; 
+		internal static global::net.sf.jni4net.jni.MethodId _parse33397085; 
 		public virtual bool parse3339(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				return @__env.CallBooleanMethod(this, _parse33396730, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _parse33397085, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.text.format.Time.staticClass, _parse33396730, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.text.format.Time.staticClass, _parse33397085, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getCurrentTimezone6731; 
+		internal static global::net.sf.jni4net.jni.MethodId _getCurrentTimezone7086; 
 		public static java.lang.String getCurrentTimezone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.Time.staticClass, _getCurrentTimezone6731)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.Time.staticClass, _getCurrentTimezone7086)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setToNow6732; 
+		internal static global::net.sf.jni4net.jni.MethodId _setToNow7087; 
 		public virtual void setToNow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				@__env.CallVoidMethod(this, _setToNow6732); 
+				@__env.CallVoidMethod(this, _setToNow7087); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.text.format.Time.staticClass, _setToNow6732); 
+				@__env.CallNonVirtualVoidMethod(this, android.text.format.Time.staticClass, _setToNow7087); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _format24456733; 
+		internal static global::net.sf.jni4net.jni.MethodId _format24457088; 
 		public virtual java.lang.String format2445() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _format24456733)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _format24457088)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.format.Time.staticClass, _format24456733)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.format.Time.staticClass, _format24457088)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getWeekNumber6734; 
+		internal static global::net.sf.jni4net.jni.MethodId _getWeekNumber7089; 
 		public virtual int getWeekNumber() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				return @__env.CallIntMethod(this, _getWeekNumber6734); 
+				return @__env.CallIntMethod(this, _getWeekNumber7089); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.format.Time.staticClass, _getWeekNumber6734); 
+				return @__env.CallNonVirtualIntMethod(this, android.text.format.Time.staticClass, _getWeekNumber7089); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _format33396735; 
+		internal static global::net.sf.jni4net.jni.MethodId _format33397090; 
 		public virtual java.lang.String format3339(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _format33396735, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _format33397090, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.format.Time.staticClass, _format33396735, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.format.Time.staticClass, _format33397090, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isEpoch6736; 
+		internal static global::net.sf.jni4net.jni.MethodId _isEpoch7091; 
 		public static bool isEpoch(android.text.format.Time arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.text.format.Time.staticClass, _isEpoch6736, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			return @__env.CallStaticBooleanMethod(android.text.format.Time.staticClass, _isEpoch7091, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getJulianDay6737; 
+		internal static global::net.sf.jni4net.jni.MethodId _getJulianDay7092; 
 		public static int getJulianDay(long arg0, long arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.text.format.Time.staticClass, _getJulianDay6737, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			return @__env.CallStaticIntMethod(android.text.format.Time.staticClass, _getJulianDay7092, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setJulianDay6738; 
+		internal static global::net.sf.jni4net.jni.MethodId _setJulianDay7093; 
 		public virtual long setJulianDay(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.format.Time)) 
-				return @__env.CallLongMethod(this, _setJulianDay6738, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallLongMethod(this, _setJulianDay7093, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, android.text.format.Time.staticClass, _setJulianDay6738, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualLongMethod(this, android.text.format.Time.staticClass, _setJulianDay7093, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Time6739; 
+		internal static global::net.sf.jni4net.jni.MethodId _Time7094; 
 		public Time(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.format.Time.staticClass, _Time6739, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.text.format.Time.staticClass, _Time7094, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Time6740; 
+		internal static global::net.sf.jni4net.jni.MethodId _Time7095; 
 		public Time()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.format.Time.staticClass, _Time6740, this); 
+			@__env.NewObject(android.text.format.Time.staticClass, _Time7095, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Time6741; 
+		internal static global::net.sf.jni4net.jni.MethodId _Time7096; 
 		public Time(android.text.format.Time arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.format.Time.staticClass, _Time6741, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.text.format.Time.staticClass, _Time7096, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		public static java.lang.String TIMEZONE_UTC
 		{ 
@@ -254,7 +254,7 @@ namespace android.text.format
 				return 2440588; 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _allDay6742; 
+		internal static global::net.sf.jni4net.jni.FieldId _allDay7097; 
 		public bool allDay
 		{ 
 			get 
@@ -265,7 +265,7 @@ namespace android.text.format
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _second6743; 
+		internal static global::net.sf.jni4net.jni.FieldId _second7098; 
 		public int second
 		{ 
 			get 
@@ -276,7 +276,7 @@ namespace android.text.format
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _minute6744; 
+		internal static global::net.sf.jni4net.jni.FieldId _minute7099; 
 		public int minute
 		{ 
 			get 
@@ -287,7 +287,7 @@ namespace android.text.format
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _hour6745; 
+		internal static global::net.sf.jni4net.jni.FieldId _hour7100; 
 		public int hour
 		{ 
 			get 
@@ -298,7 +298,7 @@ namespace android.text.format
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _monthDay6746; 
+		internal static global::net.sf.jni4net.jni.FieldId _monthDay7101; 
 		public int monthDay
 		{ 
 			get 
@@ -309,7 +309,7 @@ namespace android.text.format
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _month6747; 
+		internal static global::net.sf.jni4net.jni.FieldId _month7102; 
 		public int month
 		{ 
 			get 
@@ -320,7 +320,7 @@ namespace android.text.format
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _year6748; 
+		internal static global::net.sf.jni4net.jni.FieldId _year7103; 
 		public int year
 		{ 
 			get 
@@ -331,7 +331,7 @@ namespace android.text.format
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _weekDay6749; 
+		internal static global::net.sf.jni4net.jni.FieldId _weekDay7104; 
 		public int weekDay
 		{ 
 			get 
@@ -342,7 +342,7 @@ namespace android.text.format
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _yearDay6750; 
+		internal static global::net.sf.jni4net.jni.FieldId _yearDay7105; 
 		public int yearDay
 		{ 
 			get 
@@ -353,7 +353,7 @@ namespace android.text.format
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _isDst6751; 
+		internal static global::net.sf.jni4net.jni.FieldId _isDst7106; 
 		public int isDst
 		{ 
 			get 
@@ -364,7 +364,7 @@ namespace android.text.format
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _gmtoff6752; 
+		internal static global::net.sf.jni4net.jni.FieldId _gmtoff7107; 
 		public long gmtoff
 		{ 
 			get 
@@ -375,7 +375,7 @@ namespace android.text.format
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _timezone6753; 
+		internal static global::net.sf.jni4net.jni.FieldId _timezone7108; 
 		public java.lang.String timezone
 		{ 
 			get 
@@ -501,33 +501,33 @@ namespace android.text.format
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.text.format.Time.staticClass = @__class; 
-			global::android.text.format.Time._clear6715 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "clear", "(Ljava/lang/String;)V"); 
-			global::android.text.format.Time._toString6716 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "toString", "()Ljava/lang/String;"); 
-			global::android.text.format.Time._format6717 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "format", "(Ljava/lang/String;)Ljava/lang/String;"); 
-			global::android.text.format.Time._compare6718 = @__env.GetStaticMethodID(global::android.text.format.Time.staticClass, "compare", "(Landroid/text/format/Time;Landroid/text/format/Time;)I"); 
-			global::android.text.format.Time._set6719 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "set", "(J)V"); 
-			global::android.text.format.Time._set6720 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "set", "(IIIIII)V"); 
-			global::android.text.format.Time._set6721 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "set", "(Landroid/text/format/Time;)V"); 
-			global::android.text.format.Time._set6722 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "set", "(III)V"); 
-			global::android.text.format.Time._normalize6723 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "normalize", "(Z)J"); 
-			global::android.text.format.Time._after6724 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "after", "(Landroid/text/format/Time;)Z"); 
-			global::android.text.format.Time._before6725 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "before", "(Landroid/text/format/Time;)Z"); 
-			global::android.text.format.Time._parse6726 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "parse", "(Ljava/lang/String;)Z"); 
-			global::android.text.format.Time._toMillis6727 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "toMillis", "(Z)J"); 
-			global::android.text.format.Time._getActualMaximum6728 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "getActualMaximum", "(I)I"); 
-			global::android.text.format.Time._switchTimezone6729 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "switchTimezone", "(Ljava/lang/String;)V"); 
-			global::android.text.format.Time._parse33396730 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "parse3339", "(Ljava/lang/String;)Z"); 
-			global::android.text.format.Time._getCurrentTimezone6731 = @__env.GetStaticMethodID(global::android.text.format.Time.staticClass, "getCurrentTimezone", "()Ljava/lang/String;"); 
-			global::android.text.format.Time._setToNow6732 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "setToNow", "()V"); 
-			global::android.text.format.Time._format24456733 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "format2445", "()Ljava/lang/String;"); 
-			global::android.text.format.Time._getWeekNumber6734 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "getWeekNumber", "()I"); 
-			global::android.text.format.Time._format33396735 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "format3339", "(Z)Ljava/lang/String;"); 
-			global::android.text.format.Time._isEpoch6736 = @__env.GetStaticMethodID(global::android.text.format.Time.staticClass, "isEpoch", "(Landroid/text/format/Time;)Z"); 
-			global::android.text.format.Time._getJulianDay6737 = @__env.GetStaticMethodID(global::android.text.format.Time.staticClass, "getJulianDay", "(JJ)I"); 
-			global::android.text.format.Time._setJulianDay6738 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "setJulianDay", "(I)J"); 
-			global::android.text.format.Time._Time6739 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "<init>", "(Ljava/lang/String;)V"); 
-			global::android.text.format.Time._Time6740 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "<init>", "()V"); 
-			global::android.text.format.Time._Time6741 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "<init>", "(Landroid/text/format/Time;)V"); 
+			global::android.text.format.Time._clear7070 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "clear", "(Ljava/lang/String;)V"); 
+			global::android.text.format.Time._toString7071 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "toString", "()Ljava/lang/String;"); 
+			global::android.text.format.Time._format7072 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "format", "(Ljava/lang/String;)Ljava/lang/String;"); 
+			global::android.text.format.Time._compare7073 = @__env.GetStaticMethodID(global::android.text.format.Time.staticClass, "compare", "(Landroid/text/format/Time;Landroid/text/format/Time;)I"); 
+			global::android.text.format.Time._set7074 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "set", "(J)V"); 
+			global::android.text.format.Time._set7075 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "set", "(IIIIII)V"); 
+			global::android.text.format.Time._set7076 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "set", "(Landroid/text/format/Time;)V"); 
+			global::android.text.format.Time._set7077 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "set", "(III)V"); 
+			global::android.text.format.Time._normalize7078 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "normalize", "(Z)J"); 
+			global::android.text.format.Time._after7079 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "after", "(Landroid/text/format/Time;)Z"); 
+			global::android.text.format.Time._before7080 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "before", "(Landroid/text/format/Time;)Z"); 
+			global::android.text.format.Time._parse7081 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "parse", "(Ljava/lang/String;)Z"); 
+			global::android.text.format.Time._toMillis7082 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "toMillis", "(Z)J"); 
+			global::android.text.format.Time._getActualMaximum7083 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "getActualMaximum", "(I)I"); 
+			global::android.text.format.Time._switchTimezone7084 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "switchTimezone", "(Ljava/lang/String;)V"); 
+			global::android.text.format.Time._parse33397085 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "parse3339", "(Ljava/lang/String;)Z"); 
+			global::android.text.format.Time._getCurrentTimezone7086 = @__env.GetStaticMethodID(global::android.text.format.Time.staticClass, "getCurrentTimezone", "()Ljava/lang/String;"); 
+			global::android.text.format.Time._setToNow7087 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "setToNow", "()V"); 
+			global::android.text.format.Time._format24457088 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "format2445", "()Ljava/lang/String;"); 
+			global::android.text.format.Time._getWeekNumber7089 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "getWeekNumber", "()I"); 
+			global::android.text.format.Time._format33397090 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "format3339", "(Z)Ljava/lang/String;"); 
+			global::android.text.format.Time._isEpoch7091 = @__env.GetStaticMethodID(global::android.text.format.Time.staticClass, "isEpoch", "(Landroid/text/format/Time;)Z"); 
+			global::android.text.format.Time._getJulianDay7092 = @__env.GetStaticMethodID(global::android.text.format.Time.staticClass, "getJulianDay", "(JJ)I"); 
+			global::android.text.format.Time._setJulianDay7093 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "setJulianDay", "(I)J"); 
+			global::android.text.format.Time._Time7094 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::android.text.format.Time._Time7095 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "<init>", "()V"); 
+			global::android.text.format.Time._Time7096 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "<init>", "(Landroid/text/format/Time;)V"); 
 		} 
 	} 
 } 

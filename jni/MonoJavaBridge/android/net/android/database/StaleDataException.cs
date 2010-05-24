@@ -18,23 +18,23 @@ namespace android.database
 		protected StaleDataException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _StaleDataException2248; 
+		internal static global::net.sf.jni4net.jni.MethodId _StaleDataException2432; 
 		public StaleDataException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.database.StaleDataException.staticClass, _StaleDataException2248, this); 
+			@__env.NewObject(android.database.StaleDataException.staticClass, _StaleDataException2432, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _StaleDataException2249; 
+		internal static global::net.sf.jni4net.jni.MethodId _StaleDataException2433; 
 		public StaleDataException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.database.StaleDataException.staticClass, _StaleDataException2249, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.database.StaleDataException.staticClass, _StaleDataException2433, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.database.StaleDataException.staticClass = @__class; 
-			global::android.database.StaleDataException._StaleDataException2248 = @__env.GetMethodID(global::android.database.StaleDataException.staticClass, "<init>", "()V"); 
-			global::android.database.StaleDataException._StaleDataException2249 = @__env.GetMethodID(global::android.database.StaleDataException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::android.database.StaleDataException._StaleDataException2432 = @__env.GetMethodID(global::android.database.StaleDataException.staticClass, "<init>", "()V"); 
+			global::android.database.StaleDataException._StaleDataException2433 = @__env.GetMethodID(global::android.database.StaleDataException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
 		} 
 	} 
 } 

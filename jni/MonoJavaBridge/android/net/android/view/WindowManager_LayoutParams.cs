@@ -18,118 +18,118 @@ namespace android.view
 		protected WindowManager_LayoutParams(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toString8116; 
+		internal static global::net.sf.jni4net.jni.MethodId _toString8748; 
 		public override java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.WindowManager_LayoutParams)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString8116)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString8748)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.WindowManager_LayoutParams.staticClass, _toString8116)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.WindowManager_LayoutParams.staticClass, _toString8748)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _debug8117; 
+		internal static global::net.sf.jni4net.jni.MethodId _debug8749; 
 		public virtual java.lang.String debug(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.WindowManager_LayoutParams)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _debug8117, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _debug8749, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.WindowManager_LayoutParams.staticClass, _debug8117, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.WindowManager_LayoutParams.staticClass, _debug8749, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel8118; 
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel8750; 
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.WindowManager_LayoutParams)) 
-				@__env.CallVoidMethod(this, _writeToParcel8118, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _writeToParcel8750, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.WindowManager_LayoutParams.staticClass, _writeToParcel8118, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.view.WindowManager_LayoutParams.staticClass, _writeToParcel8750, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents8119; 
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents8751; 
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.WindowManager_LayoutParams)) 
-				return @__env.CallIntMethod(this, _describeContents8119); 
+				return @__env.CallIntMethod(this, _describeContents8751); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.view.WindowManager_LayoutParams.staticClass, _describeContents8119); 
+				return @__env.CallNonVirtualIntMethod(this, android.view.WindowManager_LayoutParams.staticClass, _describeContents8751); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setTitle8120; 
+		internal static global::net.sf.jni4net.jni.MethodId _setTitle8752; 
 		public virtual void setTitle(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.WindowManager_LayoutParams)) 
-				@__env.CallVoidMethod(this, _setTitle8120, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _setTitle8752, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.WindowManager_LayoutParams.staticClass, _setTitle8120, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.view.WindowManager_LayoutParams.staticClass, _setTitle8752, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getTitle8121; 
+		internal static global::net.sf.jni4net.jni.MethodId _getTitle8753; 
 		public virtual java.lang.CharSequence getTitle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.WindowManager_LayoutParams)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getTitle8121)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getTitle8753)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.WindowManager_LayoutParams.staticClass, _getTitle8121)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.WindowManager_LayoutParams.staticClass, _getTitle8753)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _mayUseInputMethod8122; 
+		internal static global::net.sf.jni4net.jni.MethodId _mayUseInputMethod8754; 
 		public static bool mayUseInputMethod(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.view.WindowManager_LayoutParams.staticClass, _mayUseInputMethod8122, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			return @__env.CallStaticBooleanMethod(android.view.WindowManager_LayoutParams.staticClass, _mayUseInputMethod8754, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _copyFrom8123; 
+		internal static global::net.sf.jni4net.jni.MethodId _copyFrom8755; 
 		public virtual int copyFrom(android.view.WindowManager_LayoutParams arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.WindowManager_LayoutParams)) 
-				return @__env.CallIntMethod(this, _copyFrom8123, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallIntMethod(this, _copyFrom8755, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.view.WindowManager_LayoutParams.staticClass, _copyFrom8123, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, android.view.WindowManager_LayoutParams.staticClass, _copyFrom8755, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _WindowManager_LayoutParams8124; 
+		internal static global::net.sf.jni4net.jni.MethodId _WindowManager_LayoutParams8756; 
 		public WindowManager_LayoutParams(int arg0, int arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, _WindowManager_LayoutParams8124, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, _WindowManager_LayoutParams8756, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _WindowManager_LayoutParams8125; 
+		internal static global::net.sf.jni4net.jni.MethodId _WindowManager_LayoutParams8757; 
 		public WindowManager_LayoutParams(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, _WindowManager_LayoutParams8125, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			@__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, _WindowManager_LayoutParams8757, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _WindowManager_LayoutParams8126; 
+		internal static global::net.sf.jni4net.jni.MethodId _WindowManager_LayoutParams8758; 
 		public WindowManager_LayoutParams(int arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, _WindowManager_LayoutParams8126, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, _WindowManager_LayoutParams8758, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _WindowManager_LayoutParams8127; 
+		internal static global::net.sf.jni4net.jni.MethodId _WindowManager_LayoutParams8759; 
 		public WindowManager_LayoutParams()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, _WindowManager_LayoutParams8127, this); 
+			@__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, _WindowManager_LayoutParams8759, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _WindowManager_LayoutParams8128; 
+		internal static global::net.sf.jni4net.jni.MethodId _WindowManager_LayoutParams8760; 
 		public WindowManager_LayoutParams(int arg0, int arg1, int arg2, int arg3, int arg4)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, _WindowManager_LayoutParams8128, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
+			@__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, _WindowManager_LayoutParams8760, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _WindowManager_LayoutParams8129; 
+		internal static global::net.sf.jni4net.jni.MethodId _WindowManager_LayoutParams8761; 
 		public WindowManager_LayoutParams(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, _WindowManager_LayoutParams8129, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6)); 
+			@__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, _WindowManager_LayoutParams8761, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _WindowManager_LayoutParams8130; 
+		internal static global::net.sf.jni4net.jni.MethodId _WindowManager_LayoutParams8762; 
 		public WindowManager_LayoutParams(android.os.Parcel arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, _WindowManager_LayoutParams8130, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.view.WindowManager_LayoutParams.staticClass, _WindowManager_LayoutParams8762, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _x8131; 
+		internal static global::net.sf.jni4net.jni.FieldId _x8763; 
 		public int x
 		{ 
 			get 
@@ -140,7 +140,7 @@ namespace android.view
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _y8132; 
+		internal static global::net.sf.jni4net.jni.FieldId _y8764; 
 		public int y
 		{ 
 			get 
@@ -151,7 +151,7 @@ namespace android.view
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _horizontalWeight8133; 
+		internal static global::net.sf.jni4net.jni.FieldId _horizontalWeight8765; 
 		public float horizontalWeight
 		{ 
 			get 
@@ -162,7 +162,7 @@ namespace android.view
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _verticalWeight8134; 
+		internal static global::net.sf.jni4net.jni.FieldId _verticalWeight8766; 
 		public float verticalWeight
 		{ 
 			get 
@@ -173,7 +173,7 @@ namespace android.view
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _type8135; 
+		internal static global::net.sf.jni4net.jni.FieldId _type8767; 
 		public int type
 		{ 
 			get 
@@ -380,7 +380,7 @@ namespace android.view
 				return 2999; 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _memoryType8136; 
+		internal static global::net.sf.jni4net.jni.FieldId _memoryType8768; 
 		public int memoryType
 		{ 
 			get 
@@ -419,7 +419,7 @@ namespace android.view
 				return 3; 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _flags8137; 
+		internal static global::net.sf.jni4net.jni.FieldId _flags8769; 
 		public int flags
 		{ 
 			get 
@@ -668,7 +668,7 @@ namespace android.view
 				return 256; 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _softInputMode8138; 
+		internal static global::net.sf.jni4net.jni.FieldId _softInputMode8770; 
 		public int softInputMode
 		{ 
 			get 
@@ -679,7 +679,7 @@ namespace android.view
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _gravity8139; 
+		internal static global::net.sf.jni4net.jni.FieldId _gravity8771; 
 		public int gravity
 		{ 
 			get 
@@ -690,7 +690,7 @@ namespace android.view
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _horizontalMargin8140; 
+		internal static global::net.sf.jni4net.jni.FieldId _horizontalMargin8772; 
 		public float horizontalMargin
 		{ 
 			get 
@@ -701,7 +701,7 @@ namespace android.view
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _verticalMargin8141; 
+		internal static global::net.sf.jni4net.jni.FieldId _verticalMargin8773; 
 		public float verticalMargin
 		{ 
 			get 
@@ -712,7 +712,7 @@ namespace android.view
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _format8142; 
+		internal static global::net.sf.jni4net.jni.FieldId _format8774; 
 		public int format
 		{ 
 			get 
@@ -723,7 +723,7 @@ namespace android.view
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _windowAnimations8143; 
+		internal static global::net.sf.jni4net.jni.FieldId _windowAnimations8775; 
 		public int windowAnimations
 		{ 
 			get 
@@ -734,7 +734,7 @@ namespace android.view
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _alpha8144; 
+		internal static global::net.sf.jni4net.jni.FieldId _alpha8776; 
 		public float alpha
 		{ 
 			get 
@@ -745,7 +745,7 @@ namespace android.view
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _dimAmount8145; 
+		internal static global::net.sf.jni4net.jni.FieldId _dimAmount8777; 
 		public float dimAmount
 		{ 
 			get 
@@ -756,7 +756,7 @@ namespace android.view
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _screenBrightness8146; 
+		internal static global::net.sf.jni4net.jni.FieldId _screenBrightness8778; 
 		public float screenBrightness
 		{ 
 			get 
@@ -767,7 +767,7 @@ namespace android.view
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _token8147; 
+		internal static global::net.sf.jni4net.jni.FieldId _token8779; 
 		public android.os.IBinder token
 		{ 
 			get 
@@ -778,7 +778,7 @@ namespace android.view
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _packageName8148; 
+		internal static global::net.sf.jni4net.jni.FieldId _packageName8780; 
 		public java.lang.String packageName
 		{ 
 			get 
@@ -789,7 +789,7 @@ namespace android.view
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _screenOrientation8149; 
+		internal static global::net.sf.jni4net.jni.FieldId _screenOrientation8781; 
 		public int screenOrientation
 		{ 
 			get 
@@ -800,7 +800,7 @@ namespace android.view
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR8150; 
+		internal static global::net.sf.jni4net.jni.FieldId _CREATOR8782; 
 		public static android.os.Parcelable_Creator CREATOR
 		{ 
 			get 
@@ -895,21 +895,21 @@ namespace android.view
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.view.WindowManager_LayoutParams.staticClass = @__class; 
-			global::android.view.WindowManager_LayoutParams._toString8116 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "toString", "()Ljava/lang/String;"); 
-			global::android.view.WindowManager_LayoutParams._debug8117 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "debug", "(Ljava/lang/String;)Ljava/lang/String;"); 
-			global::android.view.WindowManager_LayoutParams._writeToParcel8118 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
-			global::android.view.WindowManager_LayoutParams._describeContents8119 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "describeContents", "()I"); 
-			global::android.view.WindowManager_LayoutParams._setTitle8120 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "setTitle", "(Ljava/lang/CharSequence;)V"); 
-			global::android.view.WindowManager_LayoutParams._getTitle8121 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "getTitle", "()Ljava/lang/CharSequence;"); 
-			global::android.view.WindowManager_LayoutParams._mayUseInputMethod8122 = @__env.GetStaticMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "mayUseInputMethod", "(I)Z"); 
-			global::android.view.WindowManager_LayoutParams._copyFrom8123 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "copyFrom", "(Landroid/view/WindowManager$LayoutParams;)I"); 
-			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8124 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(III)V"); 
-			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8125 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(I)V"); 
-			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8126 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(II)V"); 
-			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8127 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "()V"); 
-			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8128 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(IIIII)V"); 
-			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8129 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(IIIIIII)V"); 
-			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8130 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(Landroid/os/Parcel;)V"); 
+			global::android.view.WindowManager_LayoutParams._toString8748 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "toString", "()Ljava/lang/String;"); 
+			global::android.view.WindowManager_LayoutParams._debug8749 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "debug", "(Ljava/lang/String;)Ljava/lang/String;"); 
+			global::android.view.WindowManager_LayoutParams._writeToParcel8750 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
+			global::android.view.WindowManager_LayoutParams._describeContents8751 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "describeContents", "()I"); 
+			global::android.view.WindowManager_LayoutParams._setTitle8752 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "setTitle", "(Ljava/lang/CharSequence;)V"); 
+			global::android.view.WindowManager_LayoutParams._getTitle8753 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "getTitle", "()Ljava/lang/CharSequence;"); 
+			global::android.view.WindowManager_LayoutParams._mayUseInputMethod8754 = @__env.GetStaticMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "mayUseInputMethod", "(I)Z"); 
+			global::android.view.WindowManager_LayoutParams._copyFrom8755 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "copyFrom", "(Landroid/view/WindowManager$LayoutParams;)I"); 
+			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8756 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(III)V"); 
+			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8757 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(I)V"); 
+			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8758 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(II)V"); 
+			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8759 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "()V"); 
+			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8760 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(IIIII)V"); 
+			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8761 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(IIIIIII)V"); 
+			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8762 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(Landroid/os/Parcel;)V"); 
 		} 
 	} 
 } 

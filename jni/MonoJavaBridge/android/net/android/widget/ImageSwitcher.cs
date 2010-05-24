@@ -18,53 +18,53 @@ namespace android.widget
 		protected ImageSwitcher(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setImageResource9607; 
+		internal static global::net.sf.jni4net.jni.MethodId _setImageResource10351; 
 		public virtual void setImageResource(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ImageSwitcher)) 
-				@__env.CallVoidMethod(this, _setImageResource9607, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setImageResource10351, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ImageSwitcher.staticClass, _setImageResource9607, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ImageSwitcher.staticClass, _setImageResource10351, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setImageURI9608; 
+		internal static global::net.sf.jni4net.jni.MethodId _setImageURI10352; 
 		public virtual void setImageURI(android.net.Uri arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ImageSwitcher)) 
-				@__env.CallVoidMethod(this, _setImageURI9608, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _setImageURI10352, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ImageSwitcher.staticClass, _setImageURI9608, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ImageSwitcher.staticClass, _setImageURI10352, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setImageDrawable9609; 
+		internal static global::net.sf.jni4net.jni.MethodId _setImageDrawable10353; 
 		public virtual void setImageDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ImageSwitcher)) 
-				@__env.CallVoidMethod(this, _setImageDrawable9609, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _setImageDrawable10353, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ImageSwitcher.staticClass, _setImageDrawable9609, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ImageSwitcher.staticClass, _setImageDrawable10353, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ImageSwitcher9610; 
+		internal static global::net.sf.jni4net.jni.MethodId _ImageSwitcher10354; 
 		public ImageSwitcher(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.ImageSwitcher.staticClass, _ImageSwitcher9610, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.widget.ImageSwitcher.staticClass, _ImageSwitcher10354, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ImageSwitcher9611; 
+		internal static global::net.sf.jni4net.jni.MethodId _ImageSwitcher10355; 
 		public ImageSwitcher(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.ImageSwitcher.staticClass, _ImageSwitcher9611, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.widget.ImageSwitcher.staticClass, _ImageSwitcher10355, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.widget.ImageSwitcher.staticClass = @__class; 
-			global::android.widget.ImageSwitcher._setImageResource9607 = @__env.GetMethodID(global::android.widget.ImageSwitcher.staticClass, "setImageResource", "(I)V"); 
-			global::android.widget.ImageSwitcher._setImageURI9608 = @__env.GetMethodID(global::android.widget.ImageSwitcher.staticClass, "setImageURI", "(Landroid/net/Uri;)V"); 
-			global::android.widget.ImageSwitcher._setImageDrawable9609 = @__env.GetMethodID(global::android.widget.ImageSwitcher.staticClass, "setImageDrawable", "(Landroid/graphics/drawable/Drawable;)V"); 
-			global::android.widget.ImageSwitcher._ImageSwitcher9610 = @__env.GetMethodID(global::android.widget.ImageSwitcher.staticClass, "<init>", "(Landroid/content/Context;)V"); 
-			global::android.widget.ImageSwitcher._ImageSwitcher9611 = @__env.GetMethodID(global::android.widget.ImageSwitcher.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
+			global::android.widget.ImageSwitcher._setImageResource10351 = @__env.GetMethodID(global::android.widget.ImageSwitcher.staticClass, "setImageResource", "(I)V"); 
+			global::android.widget.ImageSwitcher._setImageURI10352 = @__env.GetMethodID(global::android.widget.ImageSwitcher.staticClass, "setImageURI", "(Landroid/net/Uri;)V"); 
+			global::android.widget.ImageSwitcher._setImageDrawable10353 = @__env.GetMethodID(global::android.widget.ImageSwitcher.staticClass, "setImageDrawable", "(Landroid/graphics/drawable/Drawable;)V"); 
+			global::android.widget.ImageSwitcher._ImageSwitcher10354 = @__env.GetMethodID(global::android.widget.ImageSwitcher.staticClass, "<init>", "(Landroid/content/Context;)V"); 
+			global::android.widget.ImageSwitcher._ImageSwitcher10355 = @__env.GetMethodID(global::android.widget.ImageSwitcher.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
 		} 
 	} 
 } 

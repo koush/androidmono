@@ -18,7 +18,7 @@ namespace android.net
 		protected ParseException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _response4475; 
+		internal static global::net.sf.jni4net.jni.FieldId _response4723; 
 		public java.lang.String response
 		{ 
 			get 

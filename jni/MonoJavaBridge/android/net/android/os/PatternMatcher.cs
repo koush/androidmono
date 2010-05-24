@@ -18,71 +18,71 @@ namespace android.os
 		protected PatternMatcher(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toString5545; 
+		internal static global::net.sf.jni4net.jni.MethodId _toString5819; 
 		public override java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.PatternMatcher)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString5545)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString5819)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.PatternMatcher.staticClass, _toString5545)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.PatternMatcher.staticClass, _toString5819)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getType5546; 
+		internal static global::net.sf.jni4net.jni.MethodId _getType5820; 
 		public virtual int getType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.PatternMatcher)) 
-				return @__env.CallIntMethod(this, _getType5546); 
+				return @__env.CallIntMethod(this, _getType5820); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.os.PatternMatcher.staticClass, _getType5546); 
+				return @__env.CallNonVirtualIntMethod(this, android.os.PatternMatcher.staticClass, _getType5820); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getPath5547; 
+		internal static global::net.sf.jni4net.jni.MethodId _getPath5821; 
 		public virtual java.lang.String getPath() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.PatternMatcher)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getPath5547)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getPath5821)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.PatternMatcher.staticClass, _getPath5547)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.PatternMatcher.staticClass, _getPath5821)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _match5548; 
+		internal static global::net.sf.jni4net.jni.MethodId _match5822; 
 		public virtual bool match(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.PatternMatcher)) 
-				return @__env.CallBooleanMethod(this, _match5548, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _match5822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.os.PatternMatcher.staticClass, _match5548, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.os.PatternMatcher.staticClass, _match5822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel5549; 
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel5823; 
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.PatternMatcher)) 
-				@__env.CallVoidMethod(this, _writeToParcel5549, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _writeToParcel5823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.PatternMatcher.staticClass, _writeToParcel5549, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.os.PatternMatcher.staticClass, _writeToParcel5823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents5550; 
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents5824; 
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.PatternMatcher)) 
-				return @__env.CallIntMethod(this, _describeContents5550); 
+				return @__env.CallIntMethod(this, _describeContents5824); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.os.PatternMatcher.staticClass, _describeContents5550); 
+				return @__env.CallNonVirtualIntMethod(this, android.os.PatternMatcher.staticClass, _describeContents5824); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PatternMatcher5551; 
+		internal static global::net.sf.jni4net.jni.MethodId _PatternMatcher5825; 
 		public PatternMatcher(java.lang.String arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.os.PatternMatcher.staticClass, _PatternMatcher5551, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(android.os.PatternMatcher.staticClass, _PatternMatcher5825, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PatternMatcher5552; 
+		internal static global::net.sf.jni4net.jni.MethodId _PatternMatcher5826; 
 		public PatternMatcher(android.os.Parcel arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.os.PatternMatcher.staticClass, _PatternMatcher5552, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.os.PatternMatcher.staticClass, _PatternMatcher5826, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		public static int PATTERN_LITERAL
 		{ 
@@ -105,7 +105,7 @@ namespace android.os
 				return 2; 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR5553; 
+		internal static global::net.sf.jni4net.jni.FieldId _CREATOR5827; 
 		public static android.os.Parcelable_Creator CREATOR
 		{ 
 			get 
@@ -116,14 +116,14 @@ namespace android.os
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.os.PatternMatcher.staticClass = @__class; 
-			global::android.os.PatternMatcher._toString5545 = @__env.GetMethodID(global::android.os.PatternMatcher.staticClass, "toString", "()Ljava/lang/String;"); 
-			global::android.os.PatternMatcher._getType5546 = @__env.GetMethodID(global::android.os.PatternMatcher.staticClass, "getType", "()I"); 
-			global::android.os.PatternMatcher._getPath5547 = @__env.GetMethodID(global::android.os.PatternMatcher.staticClass, "getPath", "()Ljava/lang/String;"); 
-			global::android.os.PatternMatcher._match5548 = @__env.GetMethodID(global::android.os.PatternMatcher.staticClass, "match", "(Ljava/lang/String;)Z"); 
-			global::android.os.PatternMatcher._writeToParcel5549 = @__env.GetMethodID(global::android.os.PatternMatcher.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
-			global::android.os.PatternMatcher._describeContents5550 = @__env.GetMethodID(global::android.os.PatternMatcher.staticClass, "describeContents", "()I"); 
-			global::android.os.PatternMatcher._PatternMatcher5551 = @__env.GetMethodID(global::android.os.PatternMatcher.staticClass, "<init>", "(Ljava/lang/String;I)V"); 
-			global::android.os.PatternMatcher._PatternMatcher5552 = @__env.GetMethodID(global::android.os.PatternMatcher.staticClass, "<init>", "(Landroid/os/Parcel;)V"); 
+			global::android.os.PatternMatcher._toString5819 = @__env.GetMethodID(global::android.os.PatternMatcher.staticClass, "toString", "()Ljava/lang/String;"); 
+			global::android.os.PatternMatcher._getType5820 = @__env.GetMethodID(global::android.os.PatternMatcher.staticClass, "getType", "()I"); 
+			global::android.os.PatternMatcher._getPath5821 = @__env.GetMethodID(global::android.os.PatternMatcher.staticClass, "getPath", "()Ljava/lang/String;"); 
+			global::android.os.PatternMatcher._match5822 = @__env.GetMethodID(global::android.os.PatternMatcher.staticClass, "match", "(Ljava/lang/String;)Z"); 
+			global::android.os.PatternMatcher._writeToParcel5823 = @__env.GetMethodID(global::android.os.PatternMatcher.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
+			global::android.os.PatternMatcher._describeContents5824 = @__env.GetMethodID(global::android.os.PatternMatcher.staticClass, "describeContents", "()I"); 
+			global::android.os.PatternMatcher._PatternMatcher5825 = @__env.GetMethodID(global::android.os.PatternMatcher.staticClass, "<init>", "(Ljava/lang/String;I)V"); 
+			global::android.os.PatternMatcher._PatternMatcher5826 = @__env.GetMethodID(global::android.os.PatternMatcher.staticClass, "<init>", "(Landroid/os/Parcel;)V"); 
 		} 
 	} 
 } 

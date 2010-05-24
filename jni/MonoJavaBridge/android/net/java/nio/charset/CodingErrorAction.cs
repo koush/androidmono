@@ -18,16 +18,16 @@ namespace java.nio.charset
 		protected CodingErrorAction(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toString11553; 
+		internal static global::net.sf.jni4net.jni.MethodId _toString12417; 
 		public override java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CodingErrorAction)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString11553)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString12417)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.charset.CodingErrorAction.staticClass, _toString11553)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.charset.CodingErrorAction.staticClass, _toString12417)); 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _IGNORE11554; 
+		internal static global::net.sf.jni4net.jni.FieldId _IGNORE12418; 
 		public static java.nio.charset.CodingErrorAction IGNORE
 		{ 
 			get 
@@ -35,7 +35,7 @@ namespace java.nio.charset
 				return default(java.nio.charset.CodingErrorAction); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _REPLACE11555; 
+		internal static global::net.sf.jni4net.jni.FieldId _REPLACE12419; 
 		public static java.nio.charset.CodingErrorAction REPLACE
 		{ 
 			get 
@@ -43,7 +43,7 @@ namespace java.nio.charset
 				return default(java.nio.charset.CodingErrorAction); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _REPORT11556; 
+		internal static global::net.sf.jni4net.jni.FieldId _REPORT12420; 
 		public static java.nio.charset.CodingErrorAction REPORT
 		{ 
 			get 
@@ -54,7 +54,7 @@ namespace java.nio.charset
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::java.nio.charset.CodingErrorAction.staticClass = @__class; 
-			global::java.nio.charset.CodingErrorAction._toString11553 = @__env.GetMethodID(global::java.nio.charset.CodingErrorAction.staticClass, "toString", "()Ljava/lang/String;"); 
+			global::java.nio.charset.CodingErrorAction._toString12417 = @__env.GetMethodID(global::java.nio.charset.CodingErrorAction.staticClass, "toString", "()Ljava/lang/String;"); 
 		} 
 	} 
 } 

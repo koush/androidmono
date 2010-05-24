@@ -18,24 +18,24 @@ namespace java.math
 		internal RoundingMode(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _valueOf10822; 
+		internal static global::net.sf.jni4net.jni.MethodId _valueOf11647; 
 		public static java.math.RoundingMode valueOf(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.RoundingMode>(@__env, @__env.CallStaticObjectMethodPtr(java.math.RoundingMode.staticClass, _valueOf10822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.RoundingMode>(@__env, @__env.CallStaticObjectMethodPtr(java.math.RoundingMode.staticClass, _valueOf11647, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _valueOf10823; 
+		internal static global::net.sf.jni4net.jni.MethodId _valueOf11648; 
 		public static java.math.RoundingMode valueOf(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.RoundingMode>(@__env, @__env.CallStaticObjectMethodPtr(java.math.RoundingMode.staticClass, _valueOf10823, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.RoundingMode>(@__env, @__env.CallStaticObjectMethodPtr(java.math.RoundingMode.staticClass, _valueOf11648, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _values10824; 
+		internal static global::net.sf.jni4net.jni.MethodId _values11649; 
 		public static java.math.RoundingMode[] values() 
 		{ 
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.math.RoundingMode.staticClass, _values10824)); 
+			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.math.RoundingMode.staticClass, _values11649)); 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _UP10825; 
+		internal static global::net.sf.jni4net.jni.FieldId _UP11650; 
 		public static java.math.RoundingMode UP
 		{ 
 			get 
@@ -43,7 +43,7 @@ namespace java.math
 				return default(java.math.RoundingMode); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _DOWN10826; 
+		internal static global::net.sf.jni4net.jni.FieldId _DOWN11651; 
 		public static java.math.RoundingMode DOWN
 		{ 
 			get 
@@ -51,7 +51,7 @@ namespace java.math
 				return default(java.math.RoundingMode); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _CEILING10827; 
+		internal static global::net.sf.jni4net.jni.FieldId _CEILING11652; 
 		public static java.math.RoundingMode CEILING
 		{ 
 			get 
@@ -59,7 +59,7 @@ namespace java.math
 				return default(java.math.RoundingMode); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _FLOOR10828; 
+		internal static global::net.sf.jni4net.jni.FieldId _FLOOR11653; 
 		public static java.math.RoundingMode FLOOR
 		{ 
 			get 
@@ -67,7 +67,7 @@ namespace java.math
 				return default(java.math.RoundingMode); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _HALF_UP10829; 
+		internal static global::net.sf.jni4net.jni.FieldId _HALF_UP11654; 
 		public static java.math.RoundingMode HALF_UP
 		{ 
 			get 
@@ -75,7 +75,7 @@ namespace java.math
 				return default(java.math.RoundingMode); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _HALF_DOWN10830; 
+		internal static global::net.sf.jni4net.jni.FieldId _HALF_DOWN11655; 
 		public static java.math.RoundingMode HALF_DOWN
 		{ 
 			get 
@@ -83,7 +83,7 @@ namespace java.math
 				return default(java.math.RoundingMode); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _HALF_EVEN10831; 
+		internal static global::net.sf.jni4net.jni.FieldId _HALF_EVEN11656; 
 		public static java.math.RoundingMode HALF_EVEN
 		{ 
 			get 
@@ -91,7 +91,7 @@ namespace java.math
 				return default(java.math.RoundingMode); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _UNNECESSARY10832; 
+		internal static global::net.sf.jni4net.jni.FieldId _UNNECESSARY11657; 
 		public static java.math.RoundingMode UNNECESSARY
 		{ 
 			get 
@@ -102,9 +102,9 @@ namespace java.math
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::java.math.RoundingMode.staticClass = @__class; 
-			global::java.math.RoundingMode._valueOf10822 = @__env.GetStaticMethodID(global::java.math.RoundingMode.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/math/RoundingMode;"); 
-			global::java.math.RoundingMode._valueOf10823 = @__env.GetStaticMethodID(global::java.math.RoundingMode.staticClass, "valueOf", "(I)Ljava/math/RoundingMode;"); 
-			global::java.math.RoundingMode._values10824 = @__env.GetStaticMethodID(global::java.math.RoundingMode.staticClass, "values", "()[Ljava/math/RoundingMode;"); 
+			global::java.math.RoundingMode._valueOf11647 = @__env.GetStaticMethodID(global::java.math.RoundingMode.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/math/RoundingMode;"); 
+			global::java.math.RoundingMode._valueOf11648 = @__env.GetStaticMethodID(global::java.math.RoundingMode.staticClass, "valueOf", "(I)Ljava/math/RoundingMode;"); 
+			global::java.math.RoundingMode._values11649 = @__env.GetStaticMethodID(global::java.math.RoundingMode.staticClass, "values", "()[Ljava/math/RoundingMode;"); 
 		} 
 	} 
 } 

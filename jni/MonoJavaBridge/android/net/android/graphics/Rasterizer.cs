@@ -18,16 +18,16 @@ namespace android.graphics
 		protected Rasterizer(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Rasterizer3081; 
+		internal static global::net.sf.jni4net.jni.MethodId _Rasterizer3281; 
 		public Rasterizer()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.Rasterizer.staticClass, _Rasterizer3081, this); 
+			@__env.NewObject(android.graphics.Rasterizer.staticClass, _Rasterizer3281, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.graphics.Rasterizer.staticClass = @__class; 
-			global::android.graphics.Rasterizer._Rasterizer3081 = @__env.GetMethodID(global::android.graphics.Rasterizer.staticClass, "<init>", "()V"); 
+			global::android.graphics.Rasterizer._Rasterizer3281 = @__env.GetMethodID(global::android.graphics.Rasterizer.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

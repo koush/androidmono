@@ -23,130 +23,172 @@ namespace android.widget
 		{ 
 			void onChronometerTick(android.widget.Chronometer arg0); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _start9286; 
+
+		public partial class OnChronometerTickListener_ 
+		{ 
+			public static global::java.lang.Class _class 
+			{ 
+				get { return __OnChronometerTickListener.staticClass; } 
+			} 
+		} 
+
+		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
+		public sealed class __OnChronometerTickListener : java.lang.Object, OnChronometerTickListener
+		{ 
+			internal static global::java.lang.Class staticClass; 
+			static __OnChronometerTickListener() 
+			{ 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.Chronometer.__OnChronometerTickListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			} 
+			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
+			{ 
+				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env) 
+				{ 
+					return new global::android.widget.Chronometer.__OnChronometerTickListener(@__env); 
+				} 
+			} 
+			internal __OnChronometerTickListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
+			{ 
+			} 
+			internal static global::net.sf.jni4net.jni.MethodId _onChronometerTick10002; 
+			 void android.widget.Chronometer.OnChronometerTickListener.onChronometerTick(android.widget.Chronometer arg0) 
+			{ 
+				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
+				if (GetType() == typeof(android.widget.Chronometer.__OnChronometerTickListener)) 
+					@__env.CallVoidMethod(this, _onChronometerTick10002, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				else 
+					@__env.CallNonVirtualVoidMethod(this, android.widget.Chronometer.__OnChronometerTickListener.staticClass, _onChronometerTick10002, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			} 
+			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
+			{ 
+				global::android.widget.Chronometer.__OnChronometerTickListener.staticClass = @__class; 
+				global::android.widget.Chronometer.__OnChronometerTickListener._onChronometerTick10002 = @__env.GetMethodID(global::android.widget.Chronometer.__OnChronometerTickListener.staticClass, "android.widget.Chronometer.OnChronometerTickListener.onChronometerTick", "(Landroid/widget/Chronometer;)V"); 
+			} 
+		} 
+		internal static global::net.sf.jni4net.jni.MethodId _start10003; 
 		public virtual void start() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.Chronometer)) 
-				@__env.CallVoidMethod(this, _start9286); 
+				@__env.CallVoidMethod(this, _start10003); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.Chronometer.staticClass, _start9286); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.Chronometer.staticClass, _start10003); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _stop9287; 
+		internal static global::net.sf.jni4net.jni.MethodId _stop10004; 
 		public virtual void stop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.Chronometer)) 
-				@__env.CallVoidMethod(this, _stop9287); 
+				@__env.CallVoidMethod(this, _stop10004); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.Chronometer.staticClass, _stop9287); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.Chronometer.staticClass, _stop10004); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getFormat9288; 
+		internal static global::net.sf.jni4net.jni.MethodId _getFormat10005; 
 		public virtual java.lang.String getFormat() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.Chronometer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getFormat9288)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getFormat10005)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.Chronometer.staticClass, _getFormat9288)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.Chronometer.staticClass, _getFormat10005)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onDetachedFromWindow9289; 
+		internal static global::net.sf.jni4net.jni.MethodId _onDetachedFromWindow10006; 
 		protected override void onDetachedFromWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.Chronometer)) 
-				@__env.CallVoidMethod(this, _onDetachedFromWindow9289); 
+				@__env.CallVoidMethod(this, _onDetachedFromWindow10006); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.Chronometer.staticClass, _onDetachedFromWindow9289); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.Chronometer.staticClass, _onDetachedFromWindow10006); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setFormat9290; 
+		internal static global::net.sf.jni4net.jni.MethodId _setFormat10007; 
 		public virtual void setFormat(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.Chronometer)) 
-				@__env.CallVoidMethod(this, _setFormat9290, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _setFormat10007, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.Chronometer.staticClass, _setFormat9290, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.Chronometer.staticClass, _setFormat10007, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onWindowVisibilityChanged9291; 
+		internal static global::net.sf.jni4net.jni.MethodId _onWindowVisibilityChanged10008; 
 		protected override void onWindowVisibilityChanged(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.Chronometer)) 
-				@__env.CallVoidMethod(this, _onWindowVisibilityChanged9291, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _onWindowVisibilityChanged10008, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.Chronometer.staticClass, _onWindowVisibilityChanged9291, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.Chronometer.staticClass, _onWindowVisibilityChanged10008, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setBase9292; 
+		internal static global::net.sf.jni4net.jni.MethodId _setBase10009; 
 		public virtual void setBase(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.Chronometer)) 
-				@__env.CallVoidMethod(this, _setBase9292, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setBase10009, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.Chronometer.staticClass, _setBase9292, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.Chronometer.staticClass, _setBase10009, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getBase9293; 
+		internal static global::net.sf.jni4net.jni.MethodId _getBase10010; 
 		public virtual long getBase() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.Chronometer)) 
-				return @__env.CallLongMethod(this, _getBase9293); 
+				return @__env.CallLongMethod(this, _getBase10010); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, android.widget.Chronometer.staticClass, _getBase9293); 
+				return @__env.CallNonVirtualLongMethod(this, android.widget.Chronometer.staticClass, _getBase10010); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setOnChronometerTickListener9294; 
+		internal static global::net.sf.jni4net.jni.MethodId _setOnChronometerTickListener10011; 
 		public virtual void setOnChronometerTickListener(android.widget.Chronometer.OnChronometerTickListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.Chronometer)) 
-				@__env.CallVoidMethod(this, _setOnChronometerTickListener9294, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _setOnChronometerTickListener10011, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.Chronometer.staticClass, _setOnChronometerTickListener9294, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.Chronometer.staticClass, _setOnChronometerTickListener10011, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getOnChronometerTickListener9295; 
+		internal static global::net.sf.jni4net.jni.MethodId _getOnChronometerTickListener10012; 
 		public virtual android.widget.Chronometer.OnChronometerTickListener getOnChronometerTickListener() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.Chronometer)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.Chronometer.OnChronometerTickListener>(@__env, @__env.CallObjectMethodPtr(this, _getOnChronometerTickListener9295)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.Chronometer.OnChronometerTickListener>(@__env, @__env.CallObjectMethodPtr(this, _getOnChronometerTickListener10012)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.Chronometer.OnChronometerTickListener>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.Chronometer.staticClass, _getOnChronometerTickListener9295)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.Chronometer.OnChronometerTickListener>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.Chronometer.staticClass, _getOnChronometerTickListener10012)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Chronometer9296; 
+		internal static global::net.sf.jni4net.jni.MethodId _Chronometer10013; 
 		public Chronometer(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.Chronometer.staticClass, _Chronometer9296, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.widget.Chronometer.staticClass, _Chronometer10013, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Chronometer9297; 
+		internal static global::net.sf.jni4net.jni.MethodId _Chronometer10014; 
 		public Chronometer(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.Chronometer.staticClass, _Chronometer9297, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.widget.Chronometer.staticClass, _Chronometer10014, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Chronometer9298; 
+		internal static global::net.sf.jni4net.jni.MethodId _Chronometer10015; 
 		public Chronometer(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.Chronometer.staticClass, _Chronometer9298, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.widget.Chronometer.staticClass, _Chronometer10015, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.widget.Chronometer.staticClass = @__class; 
-			global::android.widget.Chronometer._start9286 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "start", "()V"); 
-			global::android.widget.Chronometer._stop9287 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "stop", "()V"); 
-			global::android.widget.Chronometer._getFormat9288 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "getFormat", "()Ljava/lang/String;"); 
-			global::android.widget.Chronometer._onDetachedFromWindow9289 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "onDetachedFromWindow", "()V"); 
-			global::android.widget.Chronometer._setFormat9290 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "setFormat", "(Ljava/lang/String;)V"); 
-			global::android.widget.Chronometer._onWindowVisibilityChanged9291 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "onWindowVisibilityChanged", "(I)V"); 
-			global::android.widget.Chronometer._setBase9292 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "setBase", "(J)V"); 
-			global::android.widget.Chronometer._getBase9293 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "getBase", "()J"); 
-			global::android.widget.Chronometer._setOnChronometerTickListener9294 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "setOnChronometerTickListener", "(Landroid/widget/Chronometer$OnChronometerTickListener;)V"); 
-			global::android.widget.Chronometer._getOnChronometerTickListener9295 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "getOnChronometerTickListener", "()Landroid/widget/Chronometer$OnChronometerTickListener;"); 
-			global::android.widget.Chronometer._Chronometer9296 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "<init>", "(Landroid/content/Context;)V"); 
-			global::android.widget.Chronometer._Chronometer9297 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
-			global::android.widget.Chronometer._Chronometer9298 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
+			global::android.widget.Chronometer._start10003 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "start", "()V"); 
+			global::android.widget.Chronometer._stop10004 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "stop", "()V"); 
+			global::android.widget.Chronometer._getFormat10005 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "getFormat", "()Ljava/lang/String;"); 
+			global::android.widget.Chronometer._onDetachedFromWindow10006 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "onDetachedFromWindow", "()V"); 
+			global::android.widget.Chronometer._setFormat10007 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "setFormat", "(Ljava/lang/String;)V"); 
+			global::android.widget.Chronometer._onWindowVisibilityChanged10008 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "onWindowVisibilityChanged", "(I)V"); 
+			global::android.widget.Chronometer._setBase10009 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "setBase", "(J)V"); 
+			global::android.widget.Chronometer._getBase10010 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "getBase", "()J"); 
+			global::android.widget.Chronometer._setOnChronometerTickListener10011 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "setOnChronometerTickListener", "(Landroid/widget/Chronometer$OnChronometerTickListener;)V"); 
+			global::android.widget.Chronometer._getOnChronometerTickListener10012 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "getOnChronometerTickListener", "()Landroid/widget/Chronometer$OnChronometerTickListener;"); 
+			global::android.widget.Chronometer._Chronometer10013 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "<init>", "(Landroid/content/Context;)V"); 
+			global::android.widget.Chronometer._Chronometer10014 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
+			global::android.widget.Chronometer._Chronometer10015 = @__env.GetMethodID(global::android.widget.Chronometer.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
 		} 
 	} 
 } 

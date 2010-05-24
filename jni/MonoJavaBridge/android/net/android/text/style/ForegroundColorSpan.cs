@@ -18,73 +18,73 @@ namespace android.text.style
 		protected ForegroundColorSpan(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel6957; 
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel7328; 
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.style.ForegroundColorSpan)) 
-				@__env.CallVoidMethod(this, _writeToParcel6957, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _writeToParcel7328, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.text.style.ForegroundColorSpan.staticClass, _writeToParcel6957, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.text.style.ForegroundColorSpan.staticClass, _writeToParcel7328, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents6958; 
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents7329; 
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.style.ForegroundColorSpan)) 
-				return @__env.CallIntMethod(this, _describeContents6958); 
+				return @__env.CallIntMethod(this, _describeContents7329); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.style.ForegroundColorSpan.staticClass, _describeContents6958); 
+				return @__env.CallNonVirtualIntMethod(this, android.text.style.ForegroundColorSpan.staticClass, _describeContents7329); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getSpanTypeId6959; 
+		internal static global::net.sf.jni4net.jni.MethodId _getSpanTypeId7330; 
 		public virtual int getSpanTypeId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.style.ForegroundColorSpan)) 
-				return @__env.CallIntMethod(this, _getSpanTypeId6959); 
+				return @__env.CallIntMethod(this, _getSpanTypeId7330); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.style.ForegroundColorSpan.staticClass, _getSpanTypeId6959); 
+				return @__env.CallNonVirtualIntMethod(this, android.text.style.ForegroundColorSpan.staticClass, _getSpanTypeId7330); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _updateDrawState6960; 
+		internal static global::net.sf.jni4net.jni.MethodId _updateDrawState7331; 
 		public override void updateDrawState(android.text.TextPaint arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.style.ForegroundColorSpan)) 
-				@__env.CallVoidMethod(this, _updateDrawState6960, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _updateDrawState7331, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.text.style.ForegroundColorSpan.staticClass, _updateDrawState6960, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.text.style.ForegroundColorSpan.staticClass, _updateDrawState7331, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getForegroundColor6961; 
+		internal static global::net.sf.jni4net.jni.MethodId _getForegroundColor7332; 
 		public virtual int getForegroundColor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.style.ForegroundColorSpan)) 
-				return @__env.CallIntMethod(this, _getForegroundColor6961); 
+				return @__env.CallIntMethod(this, _getForegroundColor7332); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.style.ForegroundColorSpan.staticClass, _getForegroundColor6961); 
+				return @__env.CallNonVirtualIntMethod(this, android.text.style.ForegroundColorSpan.staticClass, _getForegroundColor7332); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ForegroundColorSpan6962; 
+		internal static global::net.sf.jni4net.jni.MethodId _ForegroundColorSpan7333; 
 		public ForegroundColorSpan(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.ForegroundColorSpan.staticClass, _ForegroundColorSpan6962, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			@__env.NewObject(android.text.style.ForegroundColorSpan.staticClass, _ForegroundColorSpan7333, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ForegroundColorSpan6963; 
+		internal static global::net.sf.jni4net.jni.MethodId _ForegroundColorSpan7334; 
 		public ForegroundColorSpan(android.os.Parcel arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.ForegroundColorSpan.staticClass, _ForegroundColorSpan6963, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.text.style.ForegroundColorSpan.staticClass, _ForegroundColorSpan7334, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.text.style.ForegroundColorSpan.staticClass = @__class; 
-			global::android.text.style.ForegroundColorSpan._writeToParcel6957 = @__env.GetMethodID(global::android.text.style.ForegroundColorSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
-			global::android.text.style.ForegroundColorSpan._describeContents6958 = @__env.GetMethodID(global::android.text.style.ForegroundColorSpan.staticClass, "describeContents", "()I"); 
-			global::android.text.style.ForegroundColorSpan._getSpanTypeId6959 = @__env.GetMethodID(global::android.text.style.ForegroundColorSpan.staticClass, "getSpanTypeId", "()I"); 
-			global::android.text.style.ForegroundColorSpan._updateDrawState6960 = @__env.GetMethodID(global::android.text.style.ForegroundColorSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V"); 
-			global::android.text.style.ForegroundColorSpan._getForegroundColor6961 = @__env.GetMethodID(global::android.text.style.ForegroundColorSpan.staticClass, "getForegroundColor", "()I"); 
-			global::android.text.style.ForegroundColorSpan._ForegroundColorSpan6962 = @__env.GetMethodID(global::android.text.style.ForegroundColorSpan.staticClass, "<init>", "(I)V"); 
-			global::android.text.style.ForegroundColorSpan._ForegroundColorSpan6963 = @__env.GetMethodID(global::android.text.style.ForegroundColorSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V"); 
+			global::android.text.style.ForegroundColorSpan._writeToParcel7328 = @__env.GetMethodID(global::android.text.style.ForegroundColorSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
+			global::android.text.style.ForegroundColorSpan._describeContents7329 = @__env.GetMethodID(global::android.text.style.ForegroundColorSpan.staticClass, "describeContents", "()I"); 
+			global::android.text.style.ForegroundColorSpan._getSpanTypeId7330 = @__env.GetMethodID(global::android.text.style.ForegroundColorSpan.staticClass, "getSpanTypeId", "()I"); 
+			global::android.text.style.ForegroundColorSpan._updateDrawState7331 = @__env.GetMethodID(global::android.text.style.ForegroundColorSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V"); 
+			global::android.text.style.ForegroundColorSpan._getForegroundColor7332 = @__env.GetMethodID(global::android.text.style.ForegroundColorSpan.staticClass, "getForegroundColor", "()I"); 
+			global::android.text.style.ForegroundColorSpan._ForegroundColorSpan7333 = @__env.GetMethodID(global::android.text.style.ForegroundColorSpan.staticClass, "<init>", "(I)V"); 
+			global::android.text.style.ForegroundColorSpan._ForegroundColorSpan7334 = @__env.GetMethodID(global::android.text.style.ForegroundColorSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V"); 
 		} 
 	} 
 } 

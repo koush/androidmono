@@ -18,23 +18,23 @@ namespace android.view
 		protected SurfaceHolder_BadSurfaceTypeException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _SurfaceHolder_BadSurfaceTypeException7516; 
+		internal static global::net.sf.jni4net.jni.MethodId _SurfaceHolder_BadSurfaceTypeException8052; 
 		public SurfaceHolder_BadSurfaceTypeException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.SurfaceHolder_BadSurfaceTypeException.staticClass, _SurfaceHolder_BadSurfaceTypeException7516, this); 
+			@__env.NewObject(android.view.SurfaceHolder_BadSurfaceTypeException.staticClass, _SurfaceHolder_BadSurfaceTypeException8052, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _SurfaceHolder_BadSurfaceTypeException7517; 
+		internal static global::net.sf.jni4net.jni.MethodId _SurfaceHolder_BadSurfaceTypeException8053; 
 		public SurfaceHolder_BadSurfaceTypeException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.SurfaceHolder_BadSurfaceTypeException.staticClass, _SurfaceHolder_BadSurfaceTypeException7517, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.view.SurfaceHolder_BadSurfaceTypeException.staticClass, _SurfaceHolder_BadSurfaceTypeException8053, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.view.SurfaceHolder_BadSurfaceTypeException.staticClass = @__class; 
-			global::android.view.SurfaceHolder_BadSurfaceTypeException._SurfaceHolder_BadSurfaceTypeException7516 = @__env.GetMethodID(global::android.view.SurfaceHolder_BadSurfaceTypeException.staticClass, "<init>", "()V"); 
-			global::android.view.SurfaceHolder_BadSurfaceTypeException._SurfaceHolder_BadSurfaceTypeException7517 = @__env.GetMethodID(global::android.view.SurfaceHolder_BadSurfaceTypeException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::android.view.SurfaceHolder_BadSurfaceTypeException._SurfaceHolder_BadSurfaceTypeException8052 = @__env.GetMethodID(global::android.view.SurfaceHolder_BadSurfaceTypeException.staticClass, "<init>", "()V"); 
+			global::android.view.SurfaceHolder_BadSurfaceTypeException._SurfaceHolder_BadSurfaceTypeException8053 = @__env.GetMethodID(global::android.view.SurfaceHolder_BadSurfaceTypeException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
 		} 
 	} 
 } 

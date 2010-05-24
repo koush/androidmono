@@ -18,11 +18,11 @@ namespace android.util
 		internal Config(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Config7129; 
+		internal static global::net.sf.jni4net.jni.MethodId _Config7531; 
 		public Config()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.util.Config.staticClass, _Config7129, this); 
+			@__env.NewObject(android.util.Config.staticClass, _Config7531, this); 
 		} 
 		public static bool DEBUG
 		{ 
@@ -62,7 +62,7 @@ namespace android.util
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.util.Config.staticClass = @__class; 
-			global::android.util.Config._Config7129 = @__env.GetMethodID(global::android.util.Config.staticClass, "<init>", "()V"); 
+			global::android.util.Config._Config7531 = @__env.GetMethodID(global::android.util.Config.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

@@ -18,36 +18,36 @@ namespace android.media
 		protected AsyncPlayer(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _stop4128; 
+		internal static global::net.sf.jni4net.jni.MethodId _stop4357; 
 		public virtual void stop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AsyncPlayer)) 
-				@__env.CallVoidMethod(this, _stop4128); 
+				@__env.CallVoidMethod(this, _stop4357); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AsyncPlayer.staticClass, _stop4128); 
+				@__env.CallNonVirtualVoidMethod(this, android.media.AsyncPlayer.staticClass, _stop4357); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _play4129; 
+		internal static global::net.sf.jni4net.jni.MethodId _play4358; 
 		public virtual void play(android.content.Context arg0, android.net.Uri arg1, bool arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AsyncPlayer)) 
-				@__env.CallVoidMethod(this, _play4129, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallVoidMethod(this, _play4358, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AsyncPlayer.staticClass, _play4129, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, android.media.AsyncPlayer.staticClass, _play4358, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _AsyncPlayer4130; 
+		internal static global::net.sf.jni4net.jni.MethodId _AsyncPlayer4359; 
 		public AsyncPlayer(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.media.AsyncPlayer.staticClass, _AsyncPlayer4130, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.media.AsyncPlayer.staticClass, _AsyncPlayer4359, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.media.AsyncPlayer.staticClass = @__class; 
-			global::android.media.AsyncPlayer._stop4128 = @__env.GetMethodID(global::android.media.AsyncPlayer.staticClass, "stop", "()V"); 
-			global::android.media.AsyncPlayer._play4129 = @__env.GetMethodID(global::android.media.AsyncPlayer.staticClass, "play", "(Landroid/content/Context;Landroid/net/Uri;ZI)V"); 
-			global::android.media.AsyncPlayer._AsyncPlayer4130 = @__env.GetMethodID(global::android.media.AsyncPlayer.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::android.media.AsyncPlayer._stop4357 = @__env.GetMethodID(global::android.media.AsyncPlayer.staticClass, "stop", "()V"); 
+			global::android.media.AsyncPlayer._play4358 = @__env.GetMethodID(global::android.media.AsyncPlayer.staticClass, "play", "(Landroid/content/Context;Landroid/net/Uri;ZI)V"); 
+			global::android.media.AsyncPlayer._AsyncPlayer4359 = @__env.GetMethodID(global::android.media.AsyncPlayer.staticClass, "<init>", "(Ljava/lang/String;)V"); 
 		} 
 	} 
 } 

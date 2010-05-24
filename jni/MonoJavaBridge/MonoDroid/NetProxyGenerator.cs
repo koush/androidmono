@@ -270,12 +270,75 @@ namespace MonoDroid
             return true;
         }
         
+        void AddAllInterfaces(Type interfaceType, HashSet<Type> interfaces)
+        {
+            if (!interfaces.Contains(interfaceType))
+                interfaces.Add(interfaceType);
+            foreach (var i in interfaceType.InterfaceTypes)
+            {
+                AddAllInterfaces(i, interfaces);
+            }
+        }
+        
+        void GenerateInterfaceStubs(Type interfaceType)
+        {
+            WriteLine();
+            WriteLine("public partial class {0}_", interfaceType.SimpleName);
+            WriteLine("{");
+            myIndent++;
+            WriteLine("public static global::java.lang.Class _class");
+            WriteLine("{");
+            myIndent++;
+            WriteLine("get {{ return __{0}.staticClass; }}", interfaceType.SimpleName);
+            myIndent--;
+            WriteLine("}");
+            myIndent--;
+            WriteLine("}");
+            
+            WriteLine();
+            
+            Type wrapperType = new Type();
+            wrapperType.Name = interfaceType.Name.Insert(interfaceType.Name.LastIndexOf('.') + 1, "__");
+            wrapperType.Scope = interfaceType.Scope;
+            wrapperType.IsSealed = true;
+            wrapperType.Parent = "java.lang.Object";
+            wrapperType.ParentType = myModel.FindType("java.lang.Object");
+            wrapperType.Interfaces.Add(interfaceType.Name);
+            wrapperType.InterfaceTypes.Add(interfaceType);
+            
+            var h = new HashSet<Type>();
+            AddAllInterfaces(interfaceType, h);
+            foreach (var i in h)
+            {
+                foreach (var m in i.Methods)
+                {
+                    var mc = new Method();
+                    mc.Type = wrapperType;
+                    mc.Name = i.Name + "." + m.Name;
+                    //mc.Scope = "public";
+                    mc.Parameters.AddRange(m.Parameters);
+                    mc.ParameterTypes.AddRange(m.ParameterTypes);
+                    mc.Return = m.Return;
+                    mc.ReturnType = m.ReturnType;
+                    if (!wrapperType.Methods.Contains(mc))
+                        wrapperType.Methods.Add(mc);
+                }
+            }
+            
+            myTypesOfInterest.Add(wrapperType);
+            myIndent--;
+            GenerateType(wrapperType);
+            myIndent++;
+        }
+        
         protected override void EndType (Type type)
         {
             if (type.IsInterface || type.Static)
             {
                 myInitJni.Clear();
                 base.EndType(type);
+                if (type.IsInterface)
+                    GenerateInterfaceStubs(type);
                 return;
             }
             myIndent++;

@@ -18,119 +18,119 @@ namespace android.net.wifi
 		protected WifiInfo(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toString4648; 
+		internal static global::net.sf.jni4net.jni.MethodId _toString4897; 
 		public override java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.wifi.WifiInfo)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString4648)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString4897)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.wifi.WifiInfo.staticClass, _toString4648)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.wifi.WifiInfo.staticClass, _toString4897)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel4649; 
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel4898; 
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.wifi.WifiInfo)) 
-				@__env.CallVoidMethod(this, _writeToParcel4649, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _writeToParcel4898, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.net.wifi.WifiInfo.staticClass, _writeToParcel4649, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.net.wifi.WifiInfo.staticClass, _writeToParcel4898, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents4650; 
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents4899; 
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.wifi.WifiInfo)) 
-				return @__env.CallIntMethod(this, _describeContents4650); 
+				return @__env.CallIntMethod(this, _describeContents4899); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.net.wifi.WifiInfo.staticClass, _describeContents4650); 
+				return @__env.CallNonVirtualIntMethod(this, android.net.wifi.WifiInfo.staticClass, _describeContents4899); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getSSID4651; 
+		internal static global::net.sf.jni4net.jni.MethodId _getSSID4900; 
 		public virtual java.lang.String getSSID() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.wifi.WifiInfo)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getSSID4651)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getSSID4900)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.wifi.WifiInfo.staticClass, _getSSID4651)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.wifi.WifiInfo.staticClass, _getSSID4900)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getBSSID4652; 
+		internal static global::net.sf.jni4net.jni.MethodId _getBSSID4901; 
 		public virtual java.lang.String getBSSID() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.wifi.WifiInfo)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getBSSID4652)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getBSSID4901)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.wifi.WifiInfo.staticClass, _getBSSID4652)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.wifi.WifiInfo.staticClass, _getBSSID4901)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getRssi4653; 
+		internal static global::net.sf.jni4net.jni.MethodId _getRssi4902; 
 		public virtual int getRssi() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.wifi.WifiInfo)) 
-				return @__env.CallIntMethod(this, _getRssi4653); 
+				return @__env.CallIntMethod(this, _getRssi4902); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.net.wifi.WifiInfo.staticClass, _getRssi4653); 
+				return @__env.CallNonVirtualIntMethod(this, android.net.wifi.WifiInfo.staticClass, _getRssi4902); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getLinkSpeed4654; 
+		internal static global::net.sf.jni4net.jni.MethodId _getLinkSpeed4903; 
 		public virtual int getLinkSpeed() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.wifi.WifiInfo)) 
-				return @__env.CallIntMethod(this, _getLinkSpeed4654); 
+				return @__env.CallIntMethod(this, _getLinkSpeed4903); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.net.wifi.WifiInfo.staticClass, _getLinkSpeed4654); 
+				return @__env.CallNonVirtualIntMethod(this, android.net.wifi.WifiInfo.staticClass, _getLinkSpeed4903); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getMacAddress4655; 
+		internal static global::net.sf.jni4net.jni.MethodId _getMacAddress4904; 
 		public virtual java.lang.String getMacAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.wifi.WifiInfo)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getMacAddress4655)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getMacAddress4904)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.wifi.WifiInfo.staticClass, _getMacAddress4655)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.wifi.WifiInfo.staticClass, _getMacAddress4904)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getNetworkId4656; 
+		internal static global::net.sf.jni4net.jni.MethodId _getNetworkId4905; 
 		public virtual int getNetworkId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.wifi.WifiInfo)) 
-				return @__env.CallIntMethod(this, _getNetworkId4656); 
+				return @__env.CallIntMethod(this, _getNetworkId4905); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.net.wifi.WifiInfo.staticClass, _getNetworkId4656); 
+				return @__env.CallNonVirtualIntMethod(this, android.net.wifi.WifiInfo.staticClass, _getNetworkId4905); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getSupplicantState4657; 
+		internal static global::net.sf.jni4net.jni.MethodId _getSupplicantState4906; 
 		public virtual android.net.wifi.SupplicantState getSupplicantState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.wifi.WifiInfo)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.wifi.SupplicantState>(@__env, @__env.CallObjectMethodPtr(this, _getSupplicantState4657)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.wifi.SupplicantState>(@__env, @__env.CallObjectMethodPtr(this, _getSupplicantState4906)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.wifi.SupplicantState>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.wifi.WifiInfo.staticClass, _getSupplicantState4657)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.wifi.SupplicantState>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.wifi.WifiInfo.staticClass, _getSupplicantState4906)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getIpAddress4658; 
+		internal static global::net.sf.jni4net.jni.MethodId _getIpAddress4907; 
 		public virtual int getIpAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.wifi.WifiInfo)) 
-				return @__env.CallIntMethod(this, _getIpAddress4658); 
+				return @__env.CallIntMethod(this, _getIpAddress4907); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.net.wifi.WifiInfo.staticClass, _getIpAddress4658); 
+				return @__env.CallNonVirtualIntMethod(this, android.net.wifi.WifiInfo.staticClass, _getIpAddress4907); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getHiddenSSID4659; 
+		internal static global::net.sf.jni4net.jni.MethodId _getHiddenSSID4908; 
 		public virtual bool getHiddenSSID() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.wifi.WifiInfo)) 
-				return @__env.CallBooleanMethod(this, _getHiddenSSID4659); 
+				return @__env.CallBooleanMethod(this, _getHiddenSSID4908); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.net.wifi.WifiInfo.staticClass, _getHiddenSSID4659); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.net.wifi.WifiInfo.staticClass, _getHiddenSSID4908); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDetailedStateOf4660; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDetailedStateOf4909; 
 		public static android.net.NetworkInfo.DetailedState getDetailedStateOf(android.net.wifi.SupplicantState arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo.DetailedState>(@__env, @__env.CallStaticObjectMethodPtr(android.net.wifi.WifiInfo.staticClass, _getDetailedStateOf4660, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo.DetailedState>(@__env, @__env.CallStaticObjectMethodPtr(android.net.wifi.WifiInfo.staticClass, _getDetailedStateOf4909, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		public static java.lang.String LINK_SPEED_UNITS
 		{ 
@@ -142,19 +142,19 @@ namespace android.net.wifi
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.net.wifi.WifiInfo.staticClass = @__class; 
-			global::android.net.wifi.WifiInfo._toString4648 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "toString", "()Ljava/lang/String;"); 
-			global::android.net.wifi.WifiInfo._writeToParcel4649 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
-			global::android.net.wifi.WifiInfo._describeContents4650 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "describeContents", "()I"); 
-			global::android.net.wifi.WifiInfo._getSSID4651 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getSSID", "()Ljava/lang/String;"); 
-			global::android.net.wifi.WifiInfo._getBSSID4652 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getBSSID", "()Ljava/lang/String;"); 
-			global::android.net.wifi.WifiInfo._getRssi4653 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getRssi", "()I"); 
-			global::android.net.wifi.WifiInfo._getLinkSpeed4654 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getLinkSpeed", "()I"); 
-			global::android.net.wifi.WifiInfo._getMacAddress4655 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getMacAddress", "()Ljava/lang/String;"); 
-			global::android.net.wifi.WifiInfo._getNetworkId4656 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getNetworkId", "()I"); 
-			global::android.net.wifi.WifiInfo._getSupplicantState4657 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getSupplicantState", "()Landroid/net/wifi/SupplicantState;"); 
-			global::android.net.wifi.WifiInfo._getIpAddress4658 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getIpAddress", "()I"); 
-			global::android.net.wifi.WifiInfo._getHiddenSSID4659 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getHiddenSSID", "()Z"); 
-			global::android.net.wifi.WifiInfo._getDetailedStateOf4660 = @__env.GetStaticMethodID(global::android.net.wifi.WifiInfo.staticClass, "getDetailedStateOf", "(Landroid/net/wifi/SupplicantState;)Landroid/net/NetworkInfo$DetailedState;"); 
+			global::android.net.wifi.WifiInfo._toString4897 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "toString", "()Ljava/lang/String;"); 
+			global::android.net.wifi.WifiInfo._writeToParcel4898 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
+			global::android.net.wifi.WifiInfo._describeContents4899 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "describeContents", "()I"); 
+			global::android.net.wifi.WifiInfo._getSSID4900 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getSSID", "()Ljava/lang/String;"); 
+			global::android.net.wifi.WifiInfo._getBSSID4901 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getBSSID", "()Ljava/lang/String;"); 
+			global::android.net.wifi.WifiInfo._getRssi4902 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getRssi", "()I"); 
+			global::android.net.wifi.WifiInfo._getLinkSpeed4903 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getLinkSpeed", "()I"); 
+			global::android.net.wifi.WifiInfo._getMacAddress4904 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getMacAddress", "()Ljava/lang/String;"); 
+			global::android.net.wifi.WifiInfo._getNetworkId4905 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getNetworkId", "()I"); 
+			global::android.net.wifi.WifiInfo._getSupplicantState4906 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getSupplicantState", "()Landroid/net/wifi/SupplicantState;"); 
+			global::android.net.wifi.WifiInfo._getIpAddress4907 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getIpAddress", "()I"); 
+			global::android.net.wifi.WifiInfo._getHiddenSSID4908 = @__env.GetMethodID(global::android.net.wifi.WifiInfo.staticClass, "getHiddenSSID", "()Z"); 
+			global::android.net.wifi.WifiInfo._getDetailedStateOf4909 = @__env.GetStaticMethodID(global::android.net.wifi.WifiInfo.staticClass, "getDetailedStateOf", "(Landroid/net/wifi/SupplicantState;)Landroid/net/NetworkInfo$DetailedState;"); 
 		} 
 	} 
 } 

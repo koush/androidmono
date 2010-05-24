@@ -36,18 +36,18 @@ namespace android.graphics
 			internal Style(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf3003; 
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf3203; 
 			public static android.graphics.PathDashPathEffect.Style valueOf(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.PathDashPathEffect.Style>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.PathDashPathEffect.Style.staticClass, _valueOf3003, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.PathDashPathEffect.Style>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.PathDashPathEffect.Style.staticClass, _valueOf3203, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _values3004; 
+			internal static global::net.sf.jni4net.jni.MethodId _values3204; 
 			public static android.graphics.PathDashPathEffect.Style[] values() 
 			{ 
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.PathDashPathEffect.Style.staticClass, _values3004)); 
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.PathDashPathEffect.Style.staticClass, _values3204)); 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _MORPH3005; 
+			internal static global::net.sf.jni4net.jni.FieldId _MORPH3205; 
 			public static android.graphics.PathDashPathEffect.Style MORPH
 			{ 
 				get 
@@ -55,7 +55,7 @@ namespace android.graphics
 					return default(android.graphics.PathDashPathEffect.Style); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _ROTATE3006; 
+			internal static global::net.sf.jni4net.jni.FieldId _ROTATE3206; 
 			public static android.graphics.PathDashPathEffect.Style ROTATE
 			{ 
 				get 
@@ -63,7 +63,7 @@ namespace android.graphics
 					return default(android.graphics.PathDashPathEffect.Style); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _TRANSLATE3007; 
+			internal static global::net.sf.jni4net.jni.FieldId _TRANSLATE3207; 
 			public static android.graphics.PathDashPathEffect.Style TRANSLATE
 			{ 
 				get 
@@ -74,20 +74,20 @@ namespace android.graphics
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.graphics.PathDashPathEffect.Style.staticClass = @__class; 
-				global::android.graphics.PathDashPathEffect.Style._valueOf3003 = @__env.GetStaticMethodID(global::android.graphics.PathDashPathEffect.Style.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/PathDashPathEffect$Style;"); 
-				global::android.graphics.PathDashPathEffect.Style._values3004 = @__env.GetStaticMethodID(global::android.graphics.PathDashPathEffect.Style.staticClass, "values", "()[Landroid/graphics/PathDashPathEffect/Style;"); 
+				global::android.graphics.PathDashPathEffect.Style._valueOf3203 = @__env.GetStaticMethodID(global::android.graphics.PathDashPathEffect.Style.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/PathDashPathEffect$Style;"); 
+				global::android.graphics.PathDashPathEffect.Style._values3204 = @__env.GetStaticMethodID(global::android.graphics.PathDashPathEffect.Style.staticClass, "values", "()[Landroid/graphics/PathDashPathEffect/Style;"); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PathDashPathEffect3008; 
+		internal static global::net.sf.jni4net.jni.MethodId _PathDashPathEffect3208; 
 		public PathDashPathEffect(android.graphics.Path arg0, float arg1, float arg2, android.graphics.PathDashPathEffect.Style arg3)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.PathDashPathEffect.staticClass, _PathDashPathEffect3008, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+			@__env.NewObject(android.graphics.PathDashPathEffect.staticClass, _PathDashPathEffect3208, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.graphics.PathDashPathEffect.staticClass = @__class; 
-			global::android.graphics.PathDashPathEffect._PathDashPathEffect3008 = @__env.GetMethodID(global::android.graphics.PathDashPathEffect.staticClass, "<init>", "(Landroid/graphics/Path;FFLandroid/graphics/PathDashPathEffect$Style;)V"); 
+			global::android.graphics.PathDashPathEffect._PathDashPathEffect3208 = @__env.GetMethodID(global::android.graphics.PathDashPathEffect.staticClass, "<init>", "(Landroid/graphics/Path;FFLandroid/graphics/PathDashPathEffect$Style;)V"); 
 		} 
 	} 
 } 

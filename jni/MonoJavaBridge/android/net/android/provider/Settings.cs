@@ -36,23 +36,23 @@ namespace android.provider
 			protected NameValueTable(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _putString6039; 
+			internal static global::net.sf.jni4net.jni.MethodId _putString6318; 
 			protected static bool putString(android.content.ContentResolver arg0, android.net.Uri arg1, java.lang.String arg2, java.lang.String arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.NameValueTable.staticClass, _putString6039, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.NameValueTable.staticClass, _putString6318, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getUriFor6040; 
+			internal static global::net.sf.jni4net.jni.MethodId _getUriFor6319; 
 			public static android.net.Uri getUriFor(android.net.Uri arg0, java.lang.String arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Settings.NameValueTable.staticClass, _getUriFor6040, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Settings.NameValueTable.staticClass, _getUriFor6319, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _NameValueTable6041; 
+			internal static global::net.sf.jni4net.jni.MethodId _NameValueTable6320; 
 			public NameValueTable()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.provider.Settings.NameValueTable.staticClass, _NameValueTable6041, this); 
+				@__env.NewObject(android.provider.Settings.NameValueTable.staticClass, _NameValueTable6320, this); 
 			} 
 			public static java.lang.String NAME
 			{ 
@@ -71,9 +71,9 @@ namespace android.provider
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.provider.Settings.NameValueTable.staticClass = @__class; 
-				global::android.provider.Settings.NameValueTable._putString6039 = @__env.GetStaticMethodID(global::android.provider.Settings.NameValueTable.staticClass, "putString", "(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)Z"); 
-				global::android.provider.Settings.NameValueTable._getUriFor6040 = @__env.GetStaticMethodID(global::android.provider.Settings.NameValueTable.staticClass, "getUriFor", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;"); 
-				global::android.provider.Settings.NameValueTable._NameValueTable6041 = @__env.GetMethodID(global::android.provider.Settings.NameValueTable.staticClass, "<init>", "()V"); 
+				global::android.provider.Settings.NameValueTable._putString6318 = @__env.GetStaticMethodID(global::android.provider.Settings.NameValueTable.staticClass, "putString", "(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)Z"); 
+				global::android.provider.Settings.NameValueTable._getUriFor6319 = @__env.GetStaticMethodID(global::android.provider.Settings.NameValueTable.staticClass, "getUriFor", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;"); 
+				global::android.provider.Settings.NameValueTable._NameValueTable6320 = @__env.GetMethodID(global::android.provider.Settings.NameValueTable.staticClass, "<init>", "()V"); 
 			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
@@ -94,83 +94,83 @@ namespace android.provider
 			internal Secure(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getInt6042; 
+			internal static global::net.sf.jni4net.jni.MethodId _getInt6321; 
 			public static int getInt(android.content.ContentResolver arg0, java.lang.String arg1, int arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticIntMethod(android.provider.Settings.Secure.staticClass, _getInt6042, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallStaticIntMethod(android.provider.Settings.Secure.staticClass, _getInt6321, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getInt6043; 
+			internal static global::net.sf.jni4net.jni.MethodId _getInt6322; 
 			public static int getInt(android.content.ContentResolver arg0, java.lang.String arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticIntMethod(android.provider.Settings.Secure.staticClass, _getInt6043, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallStaticIntMethod(android.provider.Settings.Secure.staticClass, _getInt6322, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _putInt6044; 
+			internal static global::net.sf.jni4net.jni.MethodId _putInt6323; 
 			public static bool putInt(android.content.ContentResolver arg0, java.lang.String arg1, int arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, _putInt6044, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, _putInt6323, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getLong6045; 
+			internal static global::net.sf.jni4net.jni.MethodId _getLong6324; 
 			public static long getLong(android.content.ContentResolver arg0, java.lang.String arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticLongMethod(android.provider.Settings.Secure.staticClass, _getLong6045, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallStaticLongMethod(android.provider.Settings.Secure.staticClass, _getLong6324, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getLong6046; 
+			internal static global::net.sf.jni4net.jni.MethodId _getLong6325; 
 			public static long getLong(android.content.ContentResolver arg0, java.lang.String arg1, long arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticLongMethod(android.provider.Settings.Secure.staticClass, _getLong6046, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallStaticLongMethod(android.provider.Settings.Secure.staticClass, _getLong6325, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _putLong6047; 
+			internal static global::net.sf.jni4net.jni.MethodId _putLong6326; 
 			public static bool putLong(android.content.ContentResolver arg0, java.lang.String arg1, long arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, _putLong6047, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, _putLong6326, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getFloat6048; 
+			internal static global::net.sf.jni4net.jni.MethodId _getFloat6327; 
 			public static float getFloat(android.content.ContentResolver arg0, java.lang.String arg1, float arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticFloatMethod(android.provider.Settings.Secure.staticClass, _getFloat6048, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallStaticFloatMethod(android.provider.Settings.Secure.staticClass, _getFloat6327, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getFloat6049; 
+			internal static global::net.sf.jni4net.jni.MethodId _getFloat6328; 
 			public static float getFloat(android.content.ContentResolver arg0, java.lang.String arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticFloatMethod(android.provider.Settings.Secure.staticClass, _getFloat6049, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallStaticFloatMethod(android.provider.Settings.Secure.staticClass, _getFloat6328, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _putFloat6050; 
+			internal static global::net.sf.jni4net.jni.MethodId _putFloat6329; 
 			public static bool putFloat(android.content.ContentResolver arg0, java.lang.String arg1, float arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, _putFloat6050, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, _putFloat6329, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getString6051; 
+			internal static global::net.sf.jni4net.jni.MethodId _getString6330; 
 			public static java.lang.String getString(android.content.ContentResolver arg0, java.lang.String arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Settings.Secure.staticClass, _getString6051, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Settings.Secure.staticClass, _getString6330, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _putString6052; 
+			internal static global::net.sf.jni4net.jni.MethodId _putString6331; 
 			public static bool putString(android.content.ContentResolver arg0, java.lang.String arg1, java.lang.String arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, _putString6052, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.Secure.staticClass, _putString6331, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getUriFor6053; 
+			internal static global::net.sf.jni4net.jni.MethodId _getUriFor6332; 
 			public static android.net.Uri getUriFor(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Settings.Secure.staticClass, _getUriFor6053, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Settings.Secure.staticClass, _getUriFor6332, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _Secure6054; 
+			internal static global::net.sf.jni4net.jni.MethodId _Secure6333; 
 			public Secure()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.provider.Settings.Secure.staticClass, _Secure6054, this); 
+				@__env.NewObject(android.provider.Settings.Secure.staticClass, _Secure6333, this); 
 			} 
 			public static java.lang.String SYS_PROP_SETTING_VERSION
 			{ 
@@ -179,7 +179,7 @@ namespace android.provider
 					return "sys.settings_secure_version"; 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6055; 
+			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6334; 
 			public static android.net.Uri CONTENT_URI
 			{ 
 				get 
@@ -519,19 +519,19 @@ namespace android.provider
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.provider.Settings.Secure.staticClass = @__class; 
-				global::android.provider.Settings.Secure._getInt6042 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)I"); 
-				global::android.provider.Settings.Secure._getInt6043 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;)I"); 
-				global::android.provider.Settings.Secure._putInt6044 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "putInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)Z"); 
-				global::android.provider.Settings.Secure._getLong6045 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;)J"); 
-				global::android.provider.Settings.Secure._getLong6046 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)J"); 
-				global::android.provider.Settings.Secure._putLong6047 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "putLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)Z"); 
-				global::android.provider.Settings.Secure._getFloat6048 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)F"); 
-				global::android.provider.Settings.Secure._getFloat6049 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;)F"); 
-				global::android.provider.Settings.Secure._putFloat6050 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "putFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)Z"); 
-				global::android.provider.Settings.Secure._getString6051 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getString", "(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;"); 
-				global::android.provider.Settings.Secure._putString6052 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "putString", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z"); 
-				global::android.provider.Settings.Secure._getUriFor6053 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getUriFor", "(Ljava/lang/String;)Landroid/net/Uri;"); 
-				global::android.provider.Settings.Secure._Secure6054 = @__env.GetMethodID(global::android.provider.Settings.Secure.staticClass, "<init>", "()V"); 
+				global::android.provider.Settings.Secure._getInt6321 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)I"); 
+				global::android.provider.Settings.Secure._getInt6322 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;)I"); 
+				global::android.provider.Settings.Secure._putInt6323 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "putInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)Z"); 
+				global::android.provider.Settings.Secure._getLong6324 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;)J"); 
+				global::android.provider.Settings.Secure._getLong6325 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)J"); 
+				global::android.provider.Settings.Secure._putLong6326 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "putLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)Z"); 
+				global::android.provider.Settings.Secure._getFloat6327 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)F"); 
+				global::android.provider.Settings.Secure._getFloat6328 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;)F"); 
+				global::android.provider.Settings.Secure._putFloat6329 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "putFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)Z"); 
+				global::android.provider.Settings.Secure._getString6330 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getString", "(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;"); 
+				global::android.provider.Settings.Secure._putString6331 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "putString", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z"); 
+				global::android.provider.Settings.Secure._getUriFor6332 = @__env.GetStaticMethodID(global::android.provider.Settings.Secure.staticClass, "getUriFor", "(Ljava/lang/String;)Landroid/net/Uri;"); 
+				global::android.provider.Settings.Secure._Secure6333 = @__env.GetMethodID(global::android.provider.Settings.Secure.staticClass, "<init>", "()V"); 
 			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
@@ -552,16 +552,16 @@ namespace android.provider
 			protected SettingNotFoundException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _SettingNotFoundException6056; 
+			internal static global::net.sf.jni4net.jni.MethodId _SettingNotFoundException6335; 
 			public SettingNotFoundException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.provider.Settings.SettingNotFoundException.staticClass, _SettingNotFoundException6056, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.NewObject(android.provider.Settings.SettingNotFoundException.staticClass, _SettingNotFoundException6335, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.provider.Settings.SettingNotFoundException.staticClass = @__class; 
-				global::android.provider.Settings.SettingNotFoundException._SettingNotFoundException6056 = @__env.GetMethodID(global::android.provider.Settings.SettingNotFoundException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+				global::android.provider.Settings.SettingNotFoundException._SettingNotFoundException6335 = @__env.GetMethodID(global::android.provider.Settings.SettingNotFoundException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
 			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
@@ -582,107 +582,107 @@ namespace android.provider
 			internal System(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getInt6057; 
+			internal static global::net.sf.jni4net.jni.MethodId _getInt6336; 
 			public static int getInt(android.content.ContentResolver arg0, java.lang.String arg1, int arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticIntMethod(android.provider.Settings.System.staticClass, _getInt6057, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallStaticIntMethod(android.provider.Settings.System.staticClass, _getInt6336, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getInt6058; 
+			internal static global::net.sf.jni4net.jni.MethodId _getInt6337; 
 			public static int getInt(android.content.ContentResolver arg0, java.lang.String arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticIntMethod(android.provider.Settings.System.staticClass, _getInt6058, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallStaticIntMethod(android.provider.Settings.System.staticClass, _getInt6337, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _putInt6059; 
+			internal static global::net.sf.jni4net.jni.MethodId _putInt6338; 
 			public static bool putInt(android.content.ContentResolver arg0, java.lang.String arg1, int arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, _putInt6059, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, _putInt6338, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getLong6060; 
+			internal static global::net.sf.jni4net.jni.MethodId _getLong6339; 
 			public static long getLong(android.content.ContentResolver arg0, java.lang.String arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticLongMethod(android.provider.Settings.System.staticClass, _getLong6060, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallStaticLongMethod(android.provider.Settings.System.staticClass, _getLong6339, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getLong6061; 
+			internal static global::net.sf.jni4net.jni.MethodId _getLong6340; 
 			public static long getLong(android.content.ContentResolver arg0, java.lang.String arg1, long arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticLongMethod(android.provider.Settings.System.staticClass, _getLong6061, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallStaticLongMethod(android.provider.Settings.System.staticClass, _getLong6340, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _putLong6062; 
+			internal static global::net.sf.jni4net.jni.MethodId _putLong6341; 
 			public static bool putLong(android.content.ContentResolver arg0, java.lang.String arg1, long arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, _putLong6062, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, _putLong6341, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getFloat6063; 
+			internal static global::net.sf.jni4net.jni.MethodId _getFloat6342; 
 			public static float getFloat(android.content.ContentResolver arg0, java.lang.String arg1, float arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticFloatMethod(android.provider.Settings.System.staticClass, _getFloat6063, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallStaticFloatMethod(android.provider.Settings.System.staticClass, _getFloat6342, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getFloat6064; 
+			internal static global::net.sf.jni4net.jni.MethodId _getFloat6343; 
 			public static float getFloat(android.content.ContentResolver arg0, java.lang.String arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticFloatMethod(android.provider.Settings.System.staticClass, _getFloat6064, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallStaticFloatMethod(android.provider.Settings.System.staticClass, _getFloat6343, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _putFloat6065; 
+			internal static global::net.sf.jni4net.jni.MethodId _putFloat6344; 
 			public static bool putFloat(android.content.ContentResolver arg0, java.lang.String arg1, float arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, _putFloat6065, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, _putFloat6344, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getString6066; 
+			internal static global::net.sf.jni4net.jni.MethodId _getString6345; 
 			public static java.lang.String getString(android.content.ContentResolver arg0, java.lang.String arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Settings.System.staticClass, _getString6066, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Settings.System.staticClass, _getString6345, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getConfiguration6067; 
+			internal static global::net.sf.jni4net.jni.MethodId _getConfiguration6346; 
 			public static void getConfiguration(android.content.ContentResolver arg0, android.content.res.Configuration arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.CallStaticVoidMethod(android.provider.Settings.System.staticClass, _getConfiguration6067, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallStaticVoidMethod(android.provider.Settings.System.staticClass, _getConfiguration6346, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _putString6068; 
+			internal static global::net.sf.jni4net.jni.MethodId _putString6347; 
 			public static bool putString(android.content.ContentResolver arg0, java.lang.String arg1, java.lang.String arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, _putString6068, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, _putString6347, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getUriFor6069; 
+			internal static global::net.sf.jni4net.jni.MethodId _getUriFor6348; 
 			public static android.net.Uri getUriFor(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Settings.System.staticClass, _getUriFor6069, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Settings.System.staticClass, _getUriFor6348, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _putConfiguration6070; 
+			internal static global::net.sf.jni4net.jni.MethodId _putConfiguration6349; 
 			public static bool putConfiguration(android.content.ContentResolver arg0, android.content.res.Configuration arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, _putConfiguration6070, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, _putConfiguration6349, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getShowGTalkServiceStatus6071; 
+			internal static global::net.sf.jni4net.jni.MethodId _getShowGTalkServiceStatus6350; 
 			public static bool getShowGTalkServiceStatus(android.content.ContentResolver arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, _getShowGTalkServiceStatus6071, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallStaticBooleanMethod(android.provider.Settings.System.staticClass, _getShowGTalkServiceStatus6350, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _setShowGTalkServiceStatus6072; 
+			internal static global::net.sf.jni4net.jni.MethodId _setShowGTalkServiceStatus6351; 
 			public static void setShowGTalkServiceStatus(android.content.ContentResolver arg0, bool arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.CallStaticVoidMethod(android.provider.Settings.System.staticClass, _setShowGTalkServiceStatus6072, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallStaticVoidMethod(android.provider.Settings.System.staticClass, _setShowGTalkServiceStatus6351, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _System6073; 
+			internal static global::net.sf.jni4net.jni.MethodId _System6352; 
 			public System()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.provider.Settings.System.staticClass, _System6073, this); 
+				@__env.NewObject(android.provider.Settings.System.staticClass, _System6352, this); 
 			} 
 			public static java.lang.String SYS_PROP_SETTING_VERSION
 			{ 
@@ -691,7 +691,7 @@ namespace android.provider
 					return "sys.settings_system_version"; 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6074; 
+			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6353; 
 			public static android.net.Uri CONTENT_URI
 			{ 
 				get 
@@ -986,7 +986,7 @@ namespace android.provider
 					return "volume_notification"; 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _VOLUME_SETTINGS6075; 
+			internal static global::net.sf.jni4net.jni.FieldId _VOLUME_SETTINGS6354; 
 			public static java.lang.String[] VOLUME_SETTINGS
 			{ 
 				get 
@@ -1008,7 +1008,7 @@ namespace android.provider
 					return "ringtone"; 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _DEFAULT_RINGTONE_URI6076; 
+			internal static global::net.sf.jni4net.jni.FieldId _DEFAULT_RINGTONE_URI6355; 
 			public static android.net.Uri DEFAULT_RINGTONE_URI
 			{ 
 				get 
@@ -1023,7 +1023,7 @@ namespace android.provider
 					return "notification_sound"; 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _DEFAULT_NOTIFICATION_URI6077; 
+			internal static global::net.sf.jni4net.jni.FieldId _DEFAULT_NOTIFICATION_URI6356; 
 			public static android.net.Uri DEFAULT_NOTIFICATION_URI
 			{ 
 				get 
@@ -1038,7 +1038,7 @@ namespace android.provider
 					return "alarm_alert"; 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _DEFAULT_ALARM_ALERT_URI6078; 
+			internal static global::net.sf.jni4net.jni.FieldId _DEFAULT_ALARM_ALERT_URI6357; 
 			public static android.net.Uri DEFAULT_ALARM_ALERT_URI
 			{ 
 				get 
@@ -1399,30 +1399,30 @@ namespace android.provider
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.provider.Settings.System.staticClass = @__class; 
-				global::android.provider.Settings.System._getInt6057 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)I"); 
-				global::android.provider.Settings.System._getInt6058 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;)I"); 
-				global::android.provider.Settings.System._putInt6059 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "putInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)Z"); 
-				global::android.provider.Settings.System._getLong6060 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;)J"); 
-				global::android.provider.Settings.System._getLong6061 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)J"); 
-				global::android.provider.Settings.System._putLong6062 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "putLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)Z"); 
-				global::android.provider.Settings.System._getFloat6063 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)F"); 
-				global::android.provider.Settings.System._getFloat6064 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;)F"); 
-				global::android.provider.Settings.System._putFloat6065 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "putFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)Z"); 
-				global::android.provider.Settings.System._getString6066 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getString", "(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;"); 
-				global::android.provider.Settings.System._getConfiguration6067 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getConfiguration", "(Landroid/content/ContentResolver;Landroid/content/res/Configuration;)V"); 
-				global::android.provider.Settings.System._putString6068 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "putString", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z"); 
-				global::android.provider.Settings.System._getUriFor6069 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getUriFor", "(Ljava/lang/String;)Landroid/net/Uri;"); 
-				global::android.provider.Settings.System._putConfiguration6070 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "putConfiguration", "(Landroid/content/ContentResolver;Landroid/content/res/Configuration;)Z"); 
-				global::android.provider.Settings.System._getShowGTalkServiceStatus6071 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getShowGTalkServiceStatus", "(Landroid/content/ContentResolver;)Z"); 
-				global::android.provider.Settings.System._setShowGTalkServiceStatus6072 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "setShowGTalkServiceStatus", "(Landroid/content/ContentResolver;Z)V"); 
-				global::android.provider.Settings.System._System6073 = @__env.GetMethodID(global::android.provider.Settings.System.staticClass, "<init>", "()V"); 
+				global::android.provider.Settings.System._getInt6336 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)I"); 
+				global::android.provider.Settings.System._getInt6337 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getInt", "(Landroid/content/ContentResolver;Ljava/lang/String;)I"); 
+				global::android.provider.Settings.System._putInt6338 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "putInt", "(Landroid/content/ContentResolver;Ljava/lang/String;I)Z"); 
+				global::android.provider.Settings.System._getLong6339 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;)J"); 
+				global::android.provider.Settings.System._getLong6340 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)J"); 
+				global::android.provider.Settings.System._putLong6341 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "putLong", "(Landroid/content/ContentResolver;Ljava/lang/String;J)Z"); 
+				global::android.provider.Settings.System._getFloat6342 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)F"); 
+				global::android.provider.Settings.System._getFloat6343 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;)F"); 
+				global::android.provider.Settings.System._putFloat6344 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "putFloat", "(Landroid/content/ContentResolver;Ljava/lang/String;F)Z"); 
+				global::android.provider.Settings.System._getString6345 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getString", "(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;"); 
+				global::android.provider.Settings.System._getConfiguration6346 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getConfiguration", "(Landroid/content/ContentResolver;Landroid/content/res/Configuration;)V"); 
+				global::android.provider.Settings.System._putString6347 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "putString", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z"); 
+				global::android.provider.Settings.System._getUriFor6348 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getUriFor", "(Ljava/lang/String;)Landroid/net/Uri;"); 
+				global::android.provider.Settings.System._putConfiguration6349 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "putConfiguration", "(Landroid/content/ContentResolver;Landroid/content/res/Configuration;)Z"); 
+				global::android.provider.Settings.System._getShowGTalkServiceStatus6350 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "getShowGTalkServiceStatus", "(Landroid/content/ContentResolver;)Z"); 
+				global::android.provider.Settings.System._setShowGTalkServiceStatus6351 = @__env.GetStaticMethodID(global::android.provider.Settings.System.staticClass, "setShowGTalkServiceStatus", "(Landroid/content/ContentResolver;Z)V"); 
+				global::android.provider.Settings.System._System6352 = @__env.GetMethodID(global::android.provider.Settings.System.staticClass, "<init>", "()V"); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Settings6079; 
+		internal static global::net.sf.jni4net.jni.MethodId _Settings6358; 
 		public Settings()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.provider.Settings.staticClass, _Settings6079, this); 
+			@__env.NewObject(android.provider.Settings.staticClass, _Settings6358, this); 
 		} 
 		public static java.lang.String ACTION_SETTINGS
 		{ 
@@ -1616,7 +1616,7 @@ namespace android.provider
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.provider.Settings.staticClass = @__class; 
-			global::android.provider.Settings._Settings6079 = @__env.GetMethodID(global::android.provider.Settings.staticClass, "<init>", "()V"); 
+			global::android.provider.Settings._Settings6358 = @__env.GetMethodID(global::android.provider.Settings.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

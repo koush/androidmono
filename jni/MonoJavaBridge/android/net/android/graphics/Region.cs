@@ -36,18 +36,18 @@ namespace android.graphics
 			internal Op(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf3162; 
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf3362; 
 			public static android.graphics.Region.Op valueOf(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Region.Op>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Region.Op.staticClass, _valueOf3162, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Region.Op>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Region.Op.staticClass, _valueOf3362, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _values3163; 
+			internal static global::net.sf.jni4net.jni.MethodId _values3363; 
 			public static android.graphics.Region.Op[] values() 
 			{ 
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Region.Op.staticClass, _values3163)); 
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Region.Op.staticClass, _values3363)); 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _DIFFERENCE3164; 
+			internal static global::net.sf.jni4net.jni.FieldId _DIFFERENCE3364; 
 			public static android.graphics.Region.Op DIFFERENCE
 			{ 
 				get 
@@ -55,7 +55,7 @@ namespace android.graphics
 					return default(android.graphics.Region.Op); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _INTERSECT3165; 
+			internal static global::net.sf.jni4net.jni.FieldId _INTERSECT3365; 
 			public static android.graphics.Region.Op INTERSECT
 			{ 
 				get 
@@ -63,7 +63,7 @@ namespace android.graphics
 					return default(android.graphics.Region.Op); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _REPLACE3166; 
+			internal static global::net.sf.jni4net.jni.FieldId _REPLACE3366; 
 			public static android.graphics.Region.Op REPLACE
 			{ 
 				get 
@@ -71,7 +71,7 @@ namespace android.graphics
 					return default(android.graphics.Region.Op); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _REVERSE_DIFFERENCE3167; 
+			internal static global::net.sf.jni4net.jni.FieldId _REVERSE_DIFFERENCE3367; 
 			public static android.graphics.Region.Op REVERSE_DIFFERENCE
 			{ 
 				get 
@@ -79,7 +79,7 @@ namespace android.graphics
 					return default(android.graphics.Region.Op); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _UNION3168; 
+			internal static global::net.sf.jni4net.jni.FieldId _UNION3368; 
 			public static android.graphics.Region.Op UNION
 			{ 
 				get 
@@ -87,7 +87,7 @@ namespace android.graphics
 					return default(android.graphics.Region.Op); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _XOR3169; 
+			internal static global::net.sf.jni4net.jni.FieldId _XOR3369; 
 			public static android.graphics.Region.Op XOR
 			{ 
 				get 
@@ -98,296 +98,296 @@ namespace android.graphics
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.graphics.Region.Op.staticClass = @__class; 
-				global::android.graphics.Region.Op._valueOf3162 = @__env.GetStaticMethodID(global::android.graphics.Region.Op.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Region$Op;"); 
-				global::android.graphics.Region.Op._values3163 = @__env.GetStaticMethodID(global::android.graphics.Region.Op.staticClass, "values", "()[Landroid/graphics/Region/Op;"); 
+				global::android.graphics.Region.Op._valueOf3362 = @__env.GetStaticMethodID(global::android.graphics.Region.Op.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Region$Op;"); 
+				global::android.graphics.Region.Op._values3363 = @__env.GetStaticMethodID(global::android.graphics.Region.Op.staticClass, "values", "()[Landroid/graphics/Region/Op;"); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _equals3170; 
+		internal static global::net.sf.jni4net.jni.MethodId _equals3370; 
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _equals3170, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, _equals3370, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _equals3170, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _equals3370, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isEmpty3171; 
+		internal static global::net.sf.jni4net.jni.MethodId _isEmpty3371; 
 		public virtual bool isEmpty() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _isEmpty3171); 
+				return @__env.CallBooleanMethod(this, _isEmpty3371); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _isEmpty3171); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _isEmpty3371); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _contains3172; 
+		internal static global::net.sf.jni4net.jni.MethodId _contains3372; 
 		public virtual bool contains(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _contains3172, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallBooleanMethod(this, _contains3372, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _contains3172, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _contains3372, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _set3173; 
+		internal static global::net.sf.jni4net.jni.MethodId _set3373; 
 		public virtual bool set(android.graphics.Region arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _set3173, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _set3373, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _set3173, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _set3373, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _set3174; 
+		internal static global::net.sf.jni4net.jni.MethodId _set3374; 
 		public virtual bool set(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _set3174, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				return @__env.CallBooleanMethod(this, _set3374, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _set3174, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _set3374, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _set3175; 
+		internal static global::net.sf.jni4net.jni.MethodId _set3375; 
 		public virtual bool set(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _set3175, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _set3375, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _set3175, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _set3375, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _union3176; 
+		internal static global::net.sf.jni4net.jni.MethodId _union3376; 
 		public virtual bool union(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _union3176, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _union3376, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _union3176, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _union3376, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel3177; 
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel3377; 
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				@__env.CallVoidMethod(this, _writeToParcel3177, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _writeToParcel3377, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.Region.staticClass, _writeToParcel3177, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.Region.staticClass, _writeToParcel3377, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents3178; 
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents3378; 
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallIntMethod(this, _describeContents3178); 
+				return @__env.CallIntMethod(this, _describeContents3378); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.graphics.Region.staticClass, _describeContents3178); 
+				return @__env.CallNonVirtualIntMethod(this, android.graphics.Region.staticClass, _describeContents3378); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getBounds3179; 
+		internal static global::net.sf.jni4net.jni.MethodId _getBounds3379; 
 		public virtual android.graphics.Rect getBounds() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallObjectMethodPtr(this, _getBounds3179)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallObjectMethodPtr(this, _getBounds3379)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.Region.staticClass, _getBounds3179)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.Region.staticClass, _getBounds3379)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getBounds3180; 
+		internal static global::net.sf.jni4net.jni.MethodId _getBounds3380; 
 		public virtual bool getBounds(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _getBounds3180, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _getBounds3380, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _getBounds3180, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _getBounds3380, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _translate3181; 
+		internal static global::net.sf.jni4net.jni.MethodId _translate3381; 
 		public virtual void translate(int arg0, int arg1, android.graphics.Region arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				@__env.CallVoidMethod(this, _translate3181, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallVoidMethod(this, _translate3381, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.Region.staticClass, _translate3181, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.Region.staticClass, _translate3381, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _translate3182; 
+		internal static global::net.sf.jni4net.jni.MethodId _translate3382; 
 		public virtual void translate(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				@__env.CallVoidMethod(this, _translate3182, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _translate3382, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.Region.staticClass, _translate3182, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.Region.staticClass, _translate3382, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _op3183; 
+		internal static global::net.sf.jni4net.jni.MethodId _op3383; 
 		public virtual bool op(android.graphics.Rect arg0, android.graphics.Region arg1, android.graphics.Region.Op arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _op3183, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				return @__env.CallBooleanMethod(this, _op3383, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _op3183, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _op3383, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _op3184; 
+		internal static global::net.sf.jni4net.jni.MethodId _op3384; 
 		public virtual bool op(int arg0, int arg1, int arg2, int arg3, android.graphics.Region.Op arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _op3184, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)); 
+				return @__env.CallBooleanMethod(this, _op3384, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _op3184, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _op3384, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _op3185; 
+		internal static global::net.sf.jni4net.jni.MethodId _op3385; 
 		public virtual bool op(android.graphics.Rect arg0, android.graphics.Region.Op arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _op3185, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallBooleanMethod(this, _op3385, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _op3185, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _op3385, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _op3186; 
+		internal static global::net.sf.jni4net.jni.MethodId _op3386; 
 		public virtual bool op(android.graphics.Region arg0, android.graphics.Region arg1, android.graphics.Region.Op arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _op3186, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				return @__env.CallBooleanMethod(this, _op3386, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _op3186, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _op3386, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _op3187; 
+		internal static global::net.sf.jni4net.jni.MethodId _op3387; 
 		public virtual bool op(android.graphics.Region arg0, android.graphics.Region.Op arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _op3187, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallBooleanMethod(this, _op3387, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _op3187, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _op3387, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _quickReject3188; 
+		internal static global::net.sf.jni4net.jni.MethodId _quickReject3388; 
 		public virtual bool quickReject(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _quickReject3188, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				return @__env.CallBooleanMethod(this, _quickReject3388, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _quickReject3188, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _quickReject3388, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _quickReject3189; 
+		internal static global::net.sf.jni4net.jni.MethodId _quickReject3389; 
 		public virtual bool quickReject(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _quickReject3189, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _quickReject3389, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _quickReject3189, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _quickReject3389, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _quickReject3190; 
+		internal static global::net.sf.jni4net.jni.MethodId _quickReject3390; 
 		public virtual bool quickReject(android.graphics.Region arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _quickReject3190, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _quickReject3390, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _quickReject3190, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _quickReject3390, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setEmpty3191; 
+		internal static global::net.sf.jni4net.jni.MethodId _setEmpty3391; 
 		public virtual void setEmpty() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				@__env.CallVoidMethod(this, _setEmpty3191); 
+				@__env.CallVoidMethod(this, _setEmpty3391); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.Region.staticClass, _setEmpty3191); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.Region.staticClass, _setEmpty3391); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setPath3192; 
+		internal static global::net.sf.jni4net.jni.MethodId _setPath3392; 
 		public virtual bool setPath(android.graphics.Path arg0, android.graphics.Region arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _setPath3192, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallBooleanMethod(this, _setPath3392, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _setPath3192, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _setPath3392, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isRect3193; 
+		internal static global::net.sf.jni4net.jni.MethodId _isRect3393; 
 		public virtual bool isRect() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _isRect3193); 
+				return @__env.CallBooleanMethod(this, _isRect3393); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _isRect3193); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _isRect3393); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isComplex3194; 
+		internal static global::net.sf.jni4net.jni.MethodId _isComplex3394; 
 		public virtual bool isComplex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _isComplex3194); 
+				return @__env.CallBooleanMethod(this, _isComplex3394); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _isComplex3194); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _isComplex3394); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getBoundaryPath3195; 
+		internal static global::net.sf.jni4net.jni.MethodId _getBoundaryPath3395; 
 		public virtual android.graphics.Path getBoundaryPath() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Path>(@__env, @__env.CallObjectMethodPtr(this, _getBoundaryPath3195)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Path>(@__env, @__env.CallObjectMethodPtr(this, _getBoundaryPath3395)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Path>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.Region.staticClass, _getBoundaryPath3195)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Path>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.Region.staticClass, _getBoundaryPath3395)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getBoundaryPath3196; 
+		internal static global::net.sf.jni4net.jni.MethodId _getBoundaryPath3396; 
 		public virtual bool getBoundaryPath(android.graphics.Path arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _getBoundaryPath3196, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _getBoundaryPath3396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _getBoundaryPath3196, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _getBoundaryPath3396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _quickContains3197; 
+		internal static global::net.sf.jni4net.jni.MethodId _quickContains3397; 
 		public virtual bool quickContains(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _quickContains3197, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				return @__env.CallBooleanMethod(this, _quickContains3397, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _quickContains3197, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _quickContains3397, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _quickContains3198; 
+		internal static global::net.sf.jni4net.jni.MethodId _quickContains3398; 
 		public virtual bool quickContains(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Region)) 
-				return @__env.CallBooleanMethod(this, _quickContains3198, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _quickContains3398, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _quickContains3198, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Region.staticClass, _quickContains3398, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Region3199; 
+		internal static global::net.sf.jni4net.jni.MethodId _Region3399; 
 		public Region()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.Region.staticClass, _Region3199, this); 
+			@__env.NewObject(android.graphics.Region.staticClass, _Region3399, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Region3200; 
+		internal static global::net.sf.jni4net.jni.MethodId _Region3400; 
 		public Region(android.graphics.Region arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.Region.staticClass, _Region3200, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.graphics.Region.staticClass, _Region3400, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Region3201; 
+		internal static global::net.sf.jni4net.jni.MethodId _Region3401; 
 		public Region(android.graphics.Rect arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.Region.staticClass, _Region3201, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.graphics.Region.staticClass, _Region3401, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Region3202; 
+		internal static global::net.sf.jni4net.jni.MethodId _Region3402; 
 		public Region(int arg0, int arg1, int arg2, int arg3)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.Region.staticClass, _Region3202, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+			@__env.NewObject(android.graphics.Region.staticClass, _Region3402, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR3203; 
+		internal static global::net.sf.jni4net.jni.FieldId _CREATOR3403; 
 		public static android.os.Parcelable_Creator CREATOR
 		{ 
 			get 
@@ -398,39 +398,39 @@ namespace android.graphics
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.graphics.Region.staticClass = @__class; 
-			global::android.graphics.Region._equals3170 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "equals", "(Ljava/lang/Object;)Z"); 
-			global::android.graphics.Region._isEmpty3171 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "isEmpty", "()Z"); 
-			global::android.graphics.Region._contains3172 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "contains", "(II)Z"); 
-			global::android.graphics.Region._set3173 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "set", "(Landroid/graphics/Region;)Z"); 
-			global::android.graphics.Region._set3174 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "set", "(IIII)Z"); 
-			global::android.graphics.Region._set3175 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "set", "(Landroid/graphics/Rect;)Z"); 
-			global::android.graphics.Region._union3176 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "union", "(Landroid/graphics/Rect;)Z"); 
-			global::android.graphics.Region._writeToParcel3177 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
-			global::android.graphics.Region._describeContents3178 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "describeContents", "()I"); 
-			global::android.graphics.Region._getBounds3179 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "getBounds", "()Landroid/graphics/Rect;"); 
-			global::android.graphics.Region._getBounds3180 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "getBounds", "(Landroid/graphics/Rect;)Z"); 
-			global::android.graphics.Region._translate3181 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "translate", "(IILandroid/graphics/Region;)V"); 
-			global::android.graphics.Region._translate3182 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "translate", "(II)V"); 
-			global::android.graphics.Region._op3183 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "op", "(Landroid/graphics/Rect;Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z"); 
-			global::android.graphics.Region._op3184 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "op", "(IIIILandroid/graphics/Region$Op;)Z"); 
-			global::android.graphics.Region._op3185 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "op", "(Landroid/graphics/Rect;Landroid/graphics/Region$Op;)Z"); 
-			global::android.graphics.Region._op3186 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "op", "(Landroid/graphics/Region;Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z"); 
-			global::android.graphics.Region._op3187 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "op", "(Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z"); 
-			global::android.graphics.Region._quickReject3188 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "quickReject", "(IIII)Z"); 
-			global::android.graphics.Region._quickReject3189 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "quickReject", "(Landroid/graphics/Rect;)Z"); 
-			global::android.graphics.Region._quickReject3190 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "quickReject", "(Landroid/graphics/Region;)Z"); 
-			global::android.graphics.Region._setEmpty3191 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "setEmpty", "()V"); 
-			global::android.graphics.Region._setPath3192 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "setPath", "(Landroid/graphics/Path;Landroid/graphics/Region;)Z"); 
-			global::android.graphics.Region._isRect3193 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "isRect", "()Z"); 
-			global::android.graphics.Region._isComplex3194 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "isComplex", "()Z"); 
-			global::android.graphics.Region._getBoundaryPath3195 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "getBoundaryPath", "()Landroid/graphics/Path;"); 
-			global::android.graphics.Region._getBoundaryPath3196 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "getBoundaryPath", "(Landroid/graphics/Path;)Z"); 
-			global::android.graphics.Region._quickContains3197 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "quickContains", "(IIII)Z"); 
-			global::android.graphics.Region._quickContains3198 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "quickContains", "(Landroid/graphics/Rect;)Z"); 
-			global::android.graphics.Region._Region3199 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "<init>", "()V"); 
-			global::android.graphics.Region._Region3200 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "<init>", "(Landroid/graphics/Region;)V"); 
-			global::android.graphics.Region._Region3201 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "<init>", "(Landroid/graphics/Rect;)V"); 
-			global::android.graphics.Region._Region3202 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "<init>", "(IIII)V"); 
+			global::android.graphics.Region._equals3370 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "equals", "(Ljava/lang/Object;)Z"); 
+			global::android.graphics.Region._isEmpty3371 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "isEmpty", "()Z"); 
+			global::android.graphics.Region._contains3372 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "contains", "(II)Z"); 
+			global::android.graphics.Region._set3373 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "set", "(Landroid/graphics/Region;)Z"); 
+			global::android.graphics.Region._set3374 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "set", "(IIII)Z"); 
+			global::android.graphics.Region._set3375 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "set", "(Landroid/graphics/Rect;)Z"); 
+			global::android.graphics.Region._union3376 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "union", "(Landroid/graphics/Rect;)Z"); 
+			global::android.graphics.Region._writeToParcel3377 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
+			global::android.graphics.Region._describeContents3378 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "describeContents", "()I"); 
+			global::android.graphics.Region._getBounds3379 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "getBounds", "()Landroid/graphics/Rect;"); 
+			global::android.graphics.Region._getBounds3380 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "getBounds", "(Landroid/graphics/Rect;)Z"); 
+			global::android.graphics.Region._translate3381 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "translate", "(IILandroid/graphics/Region;)V"); 
+			global::android.graphics.Region._translate3382 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "translate", "(II)V"); 
+			global::android.graphics.Region._op3383 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "op", "(Landroid/graphics/Rect;Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z"); 
+			global::android.graphics.Region._op3384 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "op", "(IIIILandroid/graphics/Region$Op;)Z"); 
+			global::android.graphics.Region._op3385 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "op", "(Landroid/graphics/Rect;Landroid/graphics/Region$Op;)Z"); 
+			global::android.graphics.Region._op3386 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "op", "(Landroid/graphics/Region;Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z"); 
+			global::android.graphics.Region._op3387 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "op", "(Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z"); 
+			global::android.graphics.Region._quickReject3388 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "quickReject", "(IIII)Z"); 
+			global::android.graphics.Region._quickReject3389 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "quickReject", "(Landroid/graphics/Rect;)Z"); 
+			global::android.graphics.Region._quickReject3390 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "quickReject", "(Landroid/graphics/Region;)Z"); 
+			global::android.graphics.Region._setEmpty3391 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "setEmpty", "()V"); 
+			global::android.graphics.Region._setPath3392 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "setPath", "(Landroid/graphics/Path;Landroid/graphics/Region;)Z"); 
+			global::android.graphics.Region._isRect3393 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "isRect", "()Z"); 
+			global::android.graphics.Region._isComplex3394 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "isComplex", "()Z"); 
+			global::android.graphics.Region._getBoundaryPath3395 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "getBoundaryPath", "()Landroid/graphics/Path;"); 
+			global::android.graphics.Region._getBoundaryPath3396 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "getBoundaryPath", "(Landroid/graphics/Path;)Z"); 
+			global::android.graphics.Region._quickContains3397 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "quickContains", "(IIII)Z"); 
+			global::android.graphics.Region._quickContains3398 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "quickContains", "(Landroid/graphics/Rect;)Z"); 
+			global::android.graphics.Region._Region3399 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "<init>", "()V"); 
+			global::android.graphics.Region._Region3400 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "<init>", "(Landroid/graphics/Region;)V"); 
+			global::android.graphics.Region._Region3401 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "<init>", "(Landroid/graphics/Rect;)V"); 
+			global::android.graphics.Region._Region3402 = @__env.GetMethodID(global::android.graphics.Region.staticClass, "<init>", "(IIII)V"); 
 		} 
 	} 
 } 

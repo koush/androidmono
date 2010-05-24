@@ -36,38 +36,38 @@ namespace android.provider
 			internal ContactMethods(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getDisplayLabel5875; 
+			internal static global::net.sf.jni4net.jni.MethodId _getDisplayLabel6154; 
 			public static java.lang.CharSequence getDisplayLabel(android.content.Context arg0, int arg1, int arg2, java.lang.CharSequence arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.ContactMethods.staticClass, _getDisplayLabel5875, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.ContactMethods.staticClass, _getDisplayLabel6154, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _encodePredefinedImProtocol5876; 
+			internal static global::net.sf.jni4net.jni.MethodId _encodePredefinedImProtocol6155; 
 			public static java.lang.String encodePredefinedImProtocol(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.ContactMethods.staticClass, _encodePredefinedImProtocol5876, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.ContactMethods.staticClass, _encodePredefinedImProtocol6155, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _encodeCustomImProtocol5877; 
+			internal static global::net.sf.jni4net.jni.MethodId _encodeCustomImProtocol6156; 
 			public static java.lang.String encodeCustomImProtocol(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.ContactMethods.staticClass, _encodeCustomImProtocol5877, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.ContactMethods.staticClass, _encodeCustomImProtocol6156, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _decodeImProtocol5878; 
+			internal static global::net.sf.jni4net.jni.MethodId _decodeImProtocol6157; 
 			public static java.lang.Object decodeImProtocol(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.ContactMethods.staticClass, _decodeImProtocol5878, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.ContactMethods.staticClass, _decodeImProtocol6157, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _addPostalLocation5879; 
+			internal static global::net.sf.jni4net.jni.MethodId _addPostalLocation6158; 
 			public void addPostalLocation(android.content.Context arg0, long arg1, double arg2, double arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.provider.Contacts.ContactMethods)) 
-					@__env.CallVoidMethod(this, _addPostalLocation5879, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+					@__env.CallVoidMethod(this, _addPostalLocation6158, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.provider.Contacts.ContactMethods.staticClass, _addPostalLocation5879, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+					@__env.CallNonVirtualVoidMethod(this, android.provider.Contacts.ContactMethods.staticClass, _addPostalLocation6158, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			} 
 			public static java.lang.String POSTAL_LOCATION_LATITUDE
 			{ 
@@ -139,7 +139,7 @@ namespace android.provider
 					return 7; 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI5880; 
+			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6159; 
 			public static android.net.Uri CONTENT_URI
 			{ 
 				get 
@@ -147,7 +147,7 @@ namespace android.provider
 					return default(android.net.Uri); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_EMAIL_URI5881; 
+			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_EMAIL_URI6160; 
 			public static android.net.Uri CONTENT_EMAIL_URI
 			{ 
 				get 
@@ -214,16 +214,48 @@ namespace android.provider
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.provider.Contacts.ContactMethods.staticClass = @__class; 
-				global::android.provider.Contacts.ContactMethods._getDisplayLabel5875 = @__env.GetStaticMethodID(global::android.provider.Contacts.ContactMethods.staticClass, "getDisplayLabel", "(Landroid/content/Context;IILjava/lang/CharSequence;)Ljava/lang/CharSequence;"); 
-				global::android.provider.Contacts.ContactMethods._encodePredefinedImProtocol5876 = @__env.GetStaticMethodID(global::android.provider.Contacts.ContactMethods.staticClass, "encodePredefinedImProtocol", "(I)Ljava/lang/String;"); 
-				global::android.provider.Contacts.ContactMethods._encodeCustomImProtocol5877 = @__env.GetStaticMethodID(global::android.provider.Contacts.ContactMethods.staticClass, "encodeCustomImProtocol", "(Ljava/lang/String;)Ljava/lang/String;"); 
-				global::android.provider.Contacts.ContactMethods._decodeImProtocol5878 = @__env.GetStaticMethodID(global::android.provider.Contacts.ContactMethods.staticClass, "decodeImProtocol", "(Ljava/lang/String;)Ljava/lang/Object;"); 
-				global::android.provider.Contacts.ContactMethods._addPostalLocation5879 = @__env.GetMethodID(global::android.provider.Contacts.ContactMethods.staticClass, "addPostalLocation", "(Landroid/content/Context;JDD)V"); 
+				global::android.provider.Contacts.ContactMethods._getDisplayLabel6154 = @__env.GetStaticMethodID(global::android.provider.Contacts.ContactMethods.staticClass, "getDisplayLabel", "(Landroid/content/Context;IILjava/lang/CharSequence;)Ljava/lang/CharSequence;"); 
+				global::android.provider.Contacts.ContactMethods._encodePredefinedImProtocol6155 = @__env.GetStaticMethodID(global::android.provider.Contacts.ContactMethods.staticClass, "encodePredefinedImProtocol", "(I)Ljava/lang/String;"); 
+				global::android.provider.Contacts.ContactMethods._encodeCustomImProtocol6156 = @__env.GetStaticMethodID(global::android.provider.Contacts.ContactMethods.staticClass, "encodeCustomImProtocol", "(Ljava/lang/String;)Ljava/lang/String;"); 
+				global::android.provider.Contacts.ContactMethods._decodeImProtocol6157 = @__env.GetStaticMethodID(global::android.provider.Contacts.ContactMethods.staticClass, "decodeImProtocol", "(Ljava/lang/String;)Ljava/lang/Object;"); 
+				global::android.provider.Contacts.ContactMethods._addPostalLocation6158 = @__env.GetMethodID(global::android.provider.Contacts.ContactMethods.staticClass, "addPostalLocation", "(Landroid/content/Context;JDD)V"); 
 			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 		public interface ContactMethodsColumns 
 		{ 
+		} 
+
+		public partial class ContactMethodsColumns_ 
+		{ 
+			public static global::java.lang.Class _class 
+			{ 
+				get { return __ContactMethodsColumns.staticClass; } 
+			} 
+		} 
+
+		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
+		public sealed class __ContactMethodsColumns : java.lang.Object, ContactMethodsColumns
+		{ 
+			internal static global::java.lang.Class staticClass; 
+			static __ContactMethodsColumns() 
+			{ 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.provider.Contacts.__ContactMethodsColumns), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			} 
+			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
+			{ 
+				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env) 
+				{ 
+					return new global::android.provider.Contacts.__ContactMethodsColumns(@__env); 
+				} 
+			} 
+			internal __ContactMethodsColumns(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
+			{ 
+			} 
+			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
+			{ 
+				global::android.provider.Contacts.__ContactMethodsColumns.staticClass = @__class; 
+			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
 		public static class ContactMethodsColumnsConstants 
@@ -317,7 +349,7 @@ namespace android.provider
 			internal Extensions(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI5882; 
+			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6161; 
 			public static android.net.Uri CONTENT_URI
 			{ 
 				get 
@@ -362,6 +394,38 @@ namespace android.provider
 		public interface ExtensionsColumns 
 		{ 
 		} 
+
+		public partial class ExtensionsColumns_ 
+		{ 
+			public static global::java.lang.Class _class 
+			{ 
+				get { return __ExtensionsColumns.staticClass; } 
+			} 
+		} 
+
+		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
+		public sealed class __ExtensionsColumns : java.lang.Object, ExtensionsColumns
+		{ 
+			internal static global::java.lang.Class staticClass; 
+			static __ExtensionsColumns() 
+			{ 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.provider.Contacts.__ExtensionsColumns), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			} 
+			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
+			{ 
+				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env) 
+				{ 
+					return new global::android.provider.Contacts.__ExtensionsColumns(@__env); 
+				} 
+			} 
+			internal __ExtensionsColumns(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
+			{ 
+			} 
+			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
+			{ 
+				global::android.provider.Contacts.__ExtensionsColumns.staticClass = @__class; 
+			} 
+		} 
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
 		public static class ExtensionsColumnsConstants 
 		{ 
@@ -398,7 +462,7 @@ namespace android.provider
 			internal GroupMembership(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI5883; 
+			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6162; 
 			public static android.net.Uri CONTENT_URI
 			{ 
 				get 
@@ -406,7 +470,7 @@ namespace android.provider
 					return default(android.net.Uri); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _RAW_CONTENT_URI5884; 
+			internal static global::net.sf.jni4net.jni.FieldId _RAW_CONTENT_URI6163; 
 			public static android.net.Uri RAW_CONTENT_URI
 			{ 
 				get 
@@ -500,7 +564,7 @@ namespace android.provider
 			internal Groups(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI5885; 
+			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6164; 
 			public static android.net.Uri CONTENT_URI
 			{ 
 				get 
@@ -508,7 +572,7 @@ namespace android.provider
 					return default(android.net.Uri); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _DELETED_CONTENT_URI5886; 
+			internal static global::net.sf.jni4net.jni.FieldId _DELETED_CONTENT_URI6165; 
 			public static android.net.Uri DELETED_CONTENT_URI
 			{ 
 				get 
@@ -559,6 +623,38 @@ namespace android.provider
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 		public interface GroupsColumns 
 		{ 
+		} 
+
+		public partial class GroupsColumns_ 
+		{ 
+			public static global::java.lang.Class _class 
+			{ 
+				get { return __GroupsColumns.staticClass; } 
+			} 
+		} 
+
+		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
+		public sealed class __GroupsColumns : java.lang.Object, GroupsColumns
+		{ 
+			internal static global::java.lang.Class staticClass; 
+			static __GroupsColumns() 
+			{ 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.provider.Contacts.__GroupsColumns), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			} 
+			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
+			{ 
+				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env) 
+				{ 
+					return new global::android.provider.Contacts.__GroupsColumns(@__env); 
+				} 
+			} 
+			internal __GroupsColumns(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
+			{ 
+			} 
+			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
+			{ 
+				global::android.provider.Contacts.__GroupsColumns.staticClass = @__class; 
+			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
 		public static class GroupsColumnsConstants 
@@ -628,11 +724,11 @@ namespace android.provider
 				internal Insert(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 				{ 
 				} 
-				internal static global::net.sf.jni4net.jni.MethodId _Insert5887; 
+				internal static global::net.sf.jni4net.jni.MethodId _Insert6166; 
 				public Insert()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 				{ 
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-					@__env.NewObject(android.provider.Contacts.Intents.Insert.staticClass, _Insert5887, this); 
+					@__env.NewObject(android.provider.Contacts.Intents.Insert.staticClass, _Insert6166, this); 
 				} 
 				public static java.lang.String ACTION
 				{ 
@@ -826,7 +922,7 @@ namespace android.provider
 				private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 				{ 
 					global::android.provider.Contacts.Intents.Insert.staticClass = @__class; 
-					global::android.provider.Contacts.Intents.Insert._Insert5887 = @__env.GetMethodID(global::android.provider.Contacts.Intents.Insert.staticClass, "<init>", "()V"); 
+					global::android.provider.Contacts.Intents.Insert._Insert6166 = @__env.GetMethodID(global::android.provider.Contacts.Intents.Insert.staticClass, "<init>", "()V"); 
 				} 
 			} 
 			[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
@@ -847,11 +943,11 @@ namespace android.provider
 				internal UI(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 				{ 
 				} 
-				internal static global::net.sf.jni4net.jni.MethodId _UI5888; 
+				internal static global::net.sf.jni4net.jni.MethodId _UI6167; 
 				public UI()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 				{ 
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-					@__env.NewObject(android.provider.Contacts.Intents.UI.staticClass, _UI5888, this); 
+					@__env.NewObject(android.provider.Contacts.Intents.UI.staticClass, _UI6167, this); 
 				} 
 				public static java.lang.String LIST_DEFAULT
 				{ 
@@ -933,14 +1029,14 @@ namespace android.provider
 				private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 				{ 
 					global::android.provider.Contacts.Intents.UI.staticClass = @__class; 
-					global::android.provider.Contacts.Intents.UI._UI5888 = @__env.GetMethodID(global::android.provider.Contacts.Intents.UI.staticClass, "<init>", "()V"); 
+					global::android.provider.Contacts.Intents.UI._UI6167 = @__env.GetMethodID(global::android.provider.Contacts.Intents.UI.staticClass, "<init>", "()V"); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _Intents5889; 
+			internal static global::net.sf.jni4net.jni.MethodId _Intents6168; 
 			public Intents()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.provider.Contacts.Intents.staticClass, _Intents5889, this); 
+				@__env.NewObject(android.provider.Contacts.Intents.staticClass, _Intents6168, this); 
 			} 
 			public static java.lang.String SEARCH_SUGGESTION_CLICKED
 			{ 
@@ -994,12 +1090,44 @@ namespace android.provider
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.provider.Contacts.Intents.staticClass = @__class; 
-				global::android.provider.Contacts.Intents._Intents5889 = @__env.GetMethodID(global::android.provider.Contacts.Intents.staticClass, "<init>", "()V"); 
+				global::android.provider.Contacts.Intents._Intents6168 = @__env.GetMethodID(global::android.provider.Contacts.Intents.staticClass, "<init>", "()V"); 
 			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 		public interface OrganizationColumns 
 		{ 
+		} 
+
+		public partial class OrganizationColumns_ 
+		{ 
+			public static global::java.lang.Class _class 
+			{ 
+				get { return __OrganizationColumns.staticClass; } 
+			} 
+		} 
+
+		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
+		public sealed class __OrganizationColumns : java.lang.Object, OrganizationColumns
+		{ 
+			internal static global::java.lang.Class staticClass; 
+			static __OrganizationColumns() 
+			{ 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.provider.Contacts.__OrganizationColumns), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			} 
+			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
+			{ 
+				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env) 
+				{ 
+					return new global::android.provider.Contacts.__OrganizationColumns(@__env); 
+				} 
+			} 
+			internal __OrganizationColumns(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
+			{ 
+			} 
+			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
+			{ 
+				global::android.provider.Contacts.__OrganizationColumns.staticClass = @__class; 
+			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
 		public static class OrganizationColumnsConstants 
@@ -1086,13 +1214,13 @@ namespace android.provider
 			internal Organizations(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getDisplayLabel5890; 
+			internal static global::net.sf.jni4net.jni.MethodId _getDisplayLabel6169; 
 			public static java.lang.CharSequence getDisplayLabel(android.content.Context arg0, int arg1, java.lang.CharSequence arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.Organizations.staticClass, _getDisplayLabel5890, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.Organizations.staticClass, _getDisplayLabel6169, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI5891; 
+			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6170; 
 			public static android.net.Uri CONTENT_URI
 			{ 
 				get 
@@ -1117,7 +1245,7 @@ namespace android.provider
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.provider.Contacts.Organizations.staticClass = @__class; 
-				global::android.provider.Contacts.Organizations._getDisplayLabel5890 = @__env.GetStaticMethodID(global::android.provider.Contacts.Organizations.staticClass, "getDisplayLabel", "(Landroid/content/Context;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;"); 
+				global::android.provider.Contacts.Organizations._getDisplayLabel6169 = @__env.GetStaticMethodID(global::android.provider.Contacts.Organizations.staticClass, "getDisplayLabel", "(Landroid/content/Context;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;"); 
 			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
@@ -1256,61 +1384,61 @@ namespace android.provider
 					global::android.provider.Contacts.People.Phones.staticClass = @__class; 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _markAsContacted5892; 
+			internal static global::net.sf.jni4net.jni.MethodId _markAsContacted6171; 
 			public static void markAsContacted(android.content.ContentResolver arg0, long arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.CallStaticVoidMethod(android.provider.Contacts.People.staticClass, _markAsContacted5892, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallStaticVoidMethod(android.provider.Contacts.People.staticClass, _markAsContacted6171, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _addToMyContactsGroup5893; 
+			internal static global::net.sf.jni4net.jni.MethodId _addToMyContactsGroup6172; 
 			public static android.net.Uri addToMyContactsGroup(android.content.ContentResolver arg0, long arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.People.staticClass, _addToMyContactsGroup5893, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.People.staticClass, _addToMyContactsGroup6172, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _addToGroup5894; 
+			internal static global::net.sf.jni4net.jni.MethodId _addToGroup6173; 
 			public static android.net.Uri addToGroup(android.content.ContentResolver arg0, long arg1, java.lang.String arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.People.staticClass, _addToGroup5894, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.People.staticClass, _addToGroup6173, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _addToGroup5895; 
+			internal static global::net.sf.jni4net.jni.MethodId _addToGroup6174; 
 			public static android.net.Uri addToGroup(android.content.ContentResolver arg0, long arg1, long arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.People.staticClass, _addToGroup5895, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.People.staticClass, _addToGroup6174, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _createPersonInMyContactsGroup5896; 
+			internal static global::net.sf.jni4net.jni.MethodId _createPersonInMyContactsGroup6175; 
 			public static android.net.Uri createPersonInMyContactsGroup(android.content.ContentResolver arg0, android.content.ContentValues arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.People.staticClass, _createPersonInMyContactsGroup5896, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.People.staticClass, _createPersonInMyContactsGroup6175, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _queryGroups5897; 
+			internal static global::net.sf.jni4net.jni.MethodId _queryGroups6176; 
 			public static android.database.Cursor queryGroups(android.content.ContentResolver arg0, long arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.People.staticClass, _queryGroups5897, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.People.staticClass, _queryGroups6176, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _setPhotoData5898; 
+			internal static global::net.sf.jni4net.jni.MethodId _setPhotoData6177; 
 			public static void setPhotoData(android.content.ContentResolver arg0, android.net.Uri arg1, byte[] arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.CallStaticVoidMethod(android.provider.Contacts.People.staticClass, _setPhotoData5898, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2)); 
+				@__env.CallStaticVoidMethod(android.provider.Contacts.People.staticClass, _setPhotoData6177, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _openContactPhotoInputStream5899; 
+			internal static global::net.sf.jni4net.jni.MethodId _openContactPhotoInputStream6178; 
 			public static java.io.InputStream openContactPhotoInputStream(android.content.ContentResolver arg0, android.net.Uri arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.People.staticClass, _openContactPhotoInputStream5899, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.People.staticClass, _openContactPhotoInputStream6178, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _loadContactPhoto5900; 
+			internal static global::net.sf.jni4net.jni.MethodId _loadContactPhoto6179; 
 			public static android.graphics.Bitmap loadContactPhoto(android.content.Context arg0, android.net.Uri arg1, int arg2, android.graphics.BitmapFactory.Options arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.People.staticClass, _loadContactPhoto5900, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.People.staticClass, _loadContactPhoto6179, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3))); 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI5901; 
+			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6180; 
 			public static android.net.Uri CONTENT_URI
 			{ 
 				get 
@@ -1318,7 +1446,7 @@ namespace android.provider
 					return default(android.net.Uri); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_FILTER_URI5902; 
+			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_FILTER_URI6181; 
 			public static android.net.Uri CONTENT_FILTER_URI
 			{ 
 				get 
@@ -1326,7 +1454,7 @@ namespace android.provider
 					return default(android.net.Uri); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _DELETED_CONTENT_URI5903; 
+			internal static global::net.sf.jni4net.jni.FieldId _DELETED_CONTENT_URI6182; 
 			public static android.net.Uri DELETED_CONTENT_URI
 			{ 
 				get 
@@ -1379,20 +1507,52 @@ namespace android.provider
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.provider.Contacts.People.staticClass = @__class; 
-				global::android.provider.Contacts.People._markAsContacted5892 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "markAsContacted", "(Landroid/content/ContentResolver;J)V"); 
-				global::android.provider.Contacts.People._addToMyContactsGroup5893 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "addToMyContactsGroup", "(Landroid/content/ContentResolver;J)Landroid/net/Uri;"); 
-				global::android.provider.Contacts.People._addToGroup5894 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "addToGroup", "(Landroid/content/ContentResolver;JLjava/lang/String;)Landroid/net/Uri;"); 
-				global::android.provider.Contacts.People._addToGroup5895 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "addToGroup", "(Landroid/content/ContentResolver;JJ)Landroid/net/Uri;"); 
-				global::android.provider.Contacts.People._createPersonInMyContactsGroup5896 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "createPersonInMyContactsGroup", "(Landroid/content/ContentResolver;Landroid/content/ContentValues;)Landroid/net/Uri;"); 
-				global::android.provider.Contacts.People._queryGroups5897 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "queryGroups", "(Landroid/content/ContentResolver;J)Landroid/database/Cursor;"); 
-				global::android.provider.Contacts.People._setPhotoData5898 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "setPhotoData", "(Landroid/content/ContentResolver;Landroid/net/Uri;[B)V"); 
-				global::android.provider.Contacts.People._openContactPhotoInputStream5899 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "openContactPhotoInputStream", "(Landroid/content/ContentResolver;Landroid/net/Uri;)Ljava/io/InputStream;"); 
-				global::android.provider.Contacts.People._loadContactPhoto5900 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "loadContactPhoto", "(Landroid/content/Context;Landroid/net/Uri;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;"); 
+				global::android.provider.Contacts.People._markAsContacted6171 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "markAsContacted", "(Landroid/content/ContentResolver;J)V"); 
+				global::android.provider.Contacts.People._addToMyContactsGroup6172 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "addToMyContactsGroup", "(Landroid/content/ContentResolver;J)Landroid/net/Uri;"); 
+				global::android.provider.Contacts.People._addToGroup6173 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "addToGroup", "(Landroid/content/ContentResolver;JLjava/lang/String;)Landroid/net/Uri;"); 
+				global::android.provider.Contacts.People._addToGroup6174 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "addToGroup", "(Landroid/content/ContentResolver;JJ)Landroid/net/Uri;"); 
+				global::android.provider.Contacts.People._createPersonInMyContactsGroup6175 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "createPersonInMyContactsGroup", "(Landroid/content/ContentResolver;Landroid/content/ContentValues;)Landroid/net/Uri;"); 
+				global::android.provider.Contacts.People._queryGroups6176 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "queryGroups", "(Landroid/content/ContentResolver;J)Landroid/database/Cursor;"); 
+				global::android.provider.Contacts.People._setPhotoData6177 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "setPhotoData", "(Landroid/content/ContentResolver;Landroid/net/Uri;[B)V"); 
+				global::android.provider.Contacts.People._openContactPhotoInputStream6178 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "openContactPhotoInputStream", "(Landroid/content/ContentResolver;Landroid/net/Uri;)Ljava/io/InputStream;"); 
+				global::android.provider.Contacts.People._loadContactPhoto6179 = @__env.GetStaticMethodID(global::android.provider.Contacts.People.staticClass, "loadContactPhoto", "(Landroid/content/Context;Landroid/net/Uri;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;"); 
 			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 		public interface PeopleColumns 
 		{ 
+		} 
+
+		public partial class PeopleColumns_ 
+		{ 
+			public static global::java.lang.Class _class 
+			{ 
+				get { return __PeopleColumns.staticClass; } 
+			} 
+		} 
+
+		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
+		public sealed class __PeopleColumns : java.lang.Object, PeopleColumns
+		{ 
+			internal static global::java.lang.Class staticClass; 
+			static __PeopleColumns() 
+			{ 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.provider.Contacts.__PeopleColumns), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			} 
+			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
+			{ 
+				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env) 
+				{ 
+					return new global::android.provider.Contacts.__PeopleColumns(@__env); 
+				} 
+			} 
+			internal __PeopleColumns(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
+			{ 
+			} 
+			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
+			{ 
+				global::android.provider.Contacts.__PeopleColumns.staticClass = @__class; 
+			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
 		public static class PeopleColumnsConstants 
@@ -1486,19 +1646,19 @@ namespace android.provider
 			internal Phones(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getDisplayLabel5904; 
+			internal static global::net.sf.jni4net.jni.MethodId _getDisplayLabel6183; 
 			public static java.lang.CharSequence getDisplayLabel(android.content.Context arg0, int arg1, java.lang.CharSequence arg2, java.lang.CharSequence[] arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.Phones.staticClass, _getDisplayLabel5904, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.CharSequence[], java.lang.CharSequence>(@__env, arg3))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.Phones.staticClass, _getDisplayLabel6183, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.CharSequence[], java.lang.CharSequence>(@__env, arg3))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getDisplayLabel5905; 
+			internal static global::net.sf.jni4net.jni.MethodId _getDisplayLabel6184; 
 			public static java.lang.CharSequence getDisplayLabel(android.content.Context arg0, int arg1, java.lang.CharSequence arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.Phones.staticClass, _getDisplayLabel5905, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.Phones.staticClass, _getDisplayLabel6184, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI5906; 
+			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6185; 
 			public static android.net.Uri CONTENT_URI
 			{ 
 				get 
@@ -1506,7 +1666,7 @@ namespace android.provider
 					return default(android.net.Uri); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_FILTER_URL5907; 
+			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_FILTER_URL6186; 
 			public static android.net.Uri CONTENT_FILTER_URL
 			{ 
 				get 
@@ -1545,13 +1705,45 @@ namespace android.provider
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.provider.Contacts.Phones.staticClass = @__class; 
-				global::android.provider.Contacts.Phones._getDisplayLabel5904 = @__env.GetStaticMethodID(global::android.provider.Contacts.Phones.staticClass, "getDisplayLabel", "(Landroid/content/Context;ILjava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;"); 
-				global::android.provider.Contacts.Phones._getDisplayLabel5905 = @__env.GetStaticMethodID(global::android.provider.Contacts.Phones.staticClass, "getDisplayLabel", "(Landroid/content/Context;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;"); 
+				global::android.provider.Contacts.Phones._getDisplayLabel6183 = @__env.GetStaticMethodID(global::android.provider.Contacts.Phones.staticClass, "getDisplayLabel", "(Landroid/content/Context;ILjava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;"); 
+				global::android.provider.Contacts.Phones._getDisplayLabel6184 = @__env.GetStaticMethodID(global::android.provider.Contacts.Phones.staticClass, "getDisplayLabel", "(Landroid/content/Context;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;"); 
 			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 		public interface PhonesColumns 
 		{ 
+		} 
+
+		public partial class PhonesColumns_ 
+		{ 
+			public static global::java.lang.Class _class 
+			{ 
+				get { return __PhonesColumns.staticClass; } 
+			} 
+		} 
+
+		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
+		public sealed class __PhonesColumns : java.lang.Object, PhonesColumns
+		{ 
+			internal static global::java.lang.Class staticClass; 
+			static __PhonesColumns() 
+			{ 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.provider.Contacts.__PhonesColumns), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			} 
+			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
+			{ 
+				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env) 
+				{ 
+					return new global::android.provider.Contacts.__PhonesColumns(@__env); 
+				} 
+			} 
+			internal __PhonesColumns(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
+			{ 
+			} 
+			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
+			{ 
+				global::android.provider.Contacts.__PhonesColumns.staticClass = @__class; 
+			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
 		public static class PhonesColumnsConstants 
@@ -1666,7 +1858,7 @@ namespace android.provider
 			internal Photos(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI5908; 
+			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6187; 
 			public static android.net.Uri CONTENT_URI
 			{ 
 				get 
@@ -1696,6 +1888,38 @@ namespace android.provider
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 		public interface PhotosColumns 
 		{ 
+		} 
+
+		public partial class PhotosColumns_ 
+		{ 
+			public static global::java.lang.Class _class 
+			{ 
+				get { return __PhotosColumns.staticClass; } 
+			} 
+		} 
+
+		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
+		public sealed class __PhotosColumns : java.lang.Object, PhotosColumns
+		{ 
+			internal static global::java.lang.Class staticClass; 
+			static __PhotosColumns() 
+			{ 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.provider.Contacts.__PhotosColumns), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			} 
+			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
+			{ 
+				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env) 
+				{ 
+					return new global::android.provider.Contacts.__PhotosColumns(@__env); 
+				} 
+			} 
+			internal __PhotosColumns(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
+			{ 
+			} 
+			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
+			{ 
+				global::android.provider.Contacts.__PhotosColumns.staticClass = @__class; 
+			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
 		public static class PhotosColumnsConstants 
@@ -1747,6 +1971,38 @@ namespace android.provider
 		public interface PresenceColumns 
 		{ 
 		} 
+
+		public partial class PresenceColumns_ 
+		{ 
+			public static global::java.lang.Class _class 
+			{ 
+				get { return __PresenceColumns.staticClass; } 
+			} 
+		} 
+
+		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
+		public sealed class __PresenceColumns : java.lang.Object, PresenceColumns
+		{ 
+			internal static global::java.lang.Class staticClass; 
+			static __PresenceColumns() 
+			{ 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.provider.Contacts.__PresenceColumns), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			} 
+			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
+			{ 
+				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env) 
+				{ 
+					return new global::android.provider.Contacts.__PresenceColumns(@__env); 
+				} 
+			} 
+			internal __PresenceColumns(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
+			{ 
+			} 
+			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
+			{ 
+				global::android.provider.Contacts.__PresenceColumns.staticClass = @__class; 
+			} 
+		} 
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
 		public static class PresenceColumnsConstants 
 		{ 
@@ -1790,19 +2046,19 @@ namespace android.provider
 			internal Settings(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _getSetting5909; 
+			internal static global::net.sf.jni4net.jni.MethodId _getSetting6188; 
 			public static java.lang.String getSetting(android.content.ContentResolver arg0, java.lang.String arg1, java.lang.String arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.Settings.staticClass, _getSetting5909, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Contacts.Settings.staticClass, _getSetting6188, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _setSetting5910; 
+			internal static global::net.sf.jni4net.jni.MethodId _setSetting6189; 
 			public static void setSetting(android.content.ContentResolver arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.CallStaticVoidMethod(android.provider.Contacts.Settings.staticClass, _setSetting5910, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+				@__env.CallStaticVoidMethod(android.provider.Contacts.Settings.staticClass, _setSetting6189, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI5911; 
+			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6190; 
 			public static android.net.Uri CONTENT_URI
 			{ 
 				get 
@@ -1834,13 +2090,45 @@ namespace android.provider
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.provider.Contacts.Settings.staticClass = @__class; 
-				global::android.provider.Contacts.Settings._getSetting5909 = @__env.GetStaticMethodID(global::android.provider.Contacts.Settings.staticClass, "getSetting", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"); 
-				global::android.provider.Contacts.Settings._setSetting5910 = @__env.GetStaticMethodID(global::android.provider.Contacts.Settings.staticClass, "setSetting", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"); 
+				global::android.provider.Contacts.Settings._getSetting6188 = @__env.GetStaticMethodID(global::android.provider.Contacts.Settings.staticClass, "getSetting", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"); 
+				global::android.provider.Contacts.Settings._setSetting6189 = @__env.GetStaticMethodID(global::android.provider.Contacts.Settings.staticClass, "setSetting", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"); 
 			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 		public interface SettingsColumns 
 		{ 
+		} 
+
+		public partial class SettingsColumns_ 
+		{ 
+			public static global::java.lang.Class _class 
+			{ 
+				get { return __SettingsColumns.staticClass; } 
+			} 
+		} 
+
+		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
+		public sealed class __SettingsColumns : java.lang.Object, SettingsColumns
+		{ 
+			internal static global::java.lang.Class staticClass; 
+			static __SettingsColumns() 
+			{ 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.provider.Contacts.__SettingsColumns), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			} 
+			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
+			{ 
+				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env) 
+				{ 
+					return new global::android.provider.Contacts.__SettingsColumns(@__env); 
+				} 
+			} 
+			internal __SettingsColumns(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
+			{ 
+			} 
+			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
+			{ 
+				global::android.provider.Contacts.__SettingsColumns.staticClass = @__class; 
+			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
 		public static class SettingsColumnsConstants 
@@ -1881,7 +2169,7 @@ namespace android.provider
 				return "contacts"; 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI5912; 
+		internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6191; 
 		public static android.net.Uri CONTENT_URI
 		{ 
 			get 

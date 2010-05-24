@@ -18,52 +18,52 @@ namespace android.content.pm
 		protected PackageStats(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toString1727; 
+		internal static global::net.sf.jni4net.jni.MethodId _toString1772; 
 		public override java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.pm.PackageStats)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString1727)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString1772)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.pm.PackageStats.staticClass, _toString1727)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.pm.PackageStats.staticClass, _toString1772)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel1728; 
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel1773; 
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.pm.PackageStats)) 
-				@__env.CallVoidMethod(this, _writeToParcel1728, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _writeToParcel1773, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.pm.PackageStats.staticClass, _writeToParcel1728, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.content.pm.PackageStats.staticClass, _writeToParcel1773, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents1729; 
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents1774; 
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.pm.PackageStats)) 
-				return @__env.CallIntMethod(this, _describeContents1729); 
+				return @__env.CallIntMethod(this, _describeContents1774); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.pm.PackageStats.staticClass, _describeContents1729); 
+				return @__env.CallNonVirtualIntMethod(this, android.content.pm.PackageStats.staticClass, _describeContents1774); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PackageStats1730; 
+		internal static global::net.sf.jni4net.jni.MethodId _PackageStats1775; 
 		public PackageStats(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.content.pm.PackageStats.staticClass, _PackageStats1730, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.content.pm.PackageStats.staticClass, _PackageStats1775, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PackageStats1731; 
+		internal static global::net.sf.jni4net.jni.MethodId _PackageStats1776; 
 		public PackageStats(android.os.Parcel arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.content.pm.PackageStats.staticClass, _PackageStats1731, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.content.pm.PackageStats.staticClass, _PackageStats1776, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PackageStats1732; 
+		internal static global::net.sf.jni4net.jni.MethodId _PackageStats1777; 
 		public PackageStats(android.content.pm.PackageStats arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.content.pm.PackageStats.staticClass, _PackageStats1732, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.content.pm.PackageStats.staticClass, _PackageStats1777, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _packageName1733; 
+		internal static global::net.sf.jni4net.jni.FieldId _packageName1778; 
 		public java.lang.String packageName
 		{ 
 			get 
@@ -74,7 +74,7 @@ namespace android.content.pm
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _codeSize1734; 
+		internal static global::net.sf.jni4net.jni.FieldId _codeSize1779; 
 		public long codeSize
 		{ 
 			get 
@@ -85,7 +85,7 @@ namespace android.content.pm
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _dataSize1735; 
+		internal static global::net.sf.jni4net.jni.FieldId _dataSize1780; 
 		public long dataSize
 		{ 
 			get 
@@ -96,7 +96,7 @@ namespace android.content.pm
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _cacheSize1736; 
+		internal static global::net.sf.jni4net.jni.FieldId _cacheSize1781; 
 		public long cacheSize
 		{ 
 			get 
@@ -107,7 +107,7 @@ namespace android.content.pm
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR1737; 
+		internal static global::net.sf.jni4net.jni.FieldId _CREATOR1782; 
 		public static android.os.Parcelable_Creator CREATOR
 		{ 
 			get 
@@ -118,12 +118,12 @@ namespace android.content.pm
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.content.pm.PackageStats.staticClass = @__class; 
-			global::android.content.pm.PackageStats._toString1727 = @__env.GetMethodID(global::android.content.pm.PackageStats.staticClass, "toString", "()Ljava/lang/String;"); 
-			global::android.content.pm.PackageStats._writeToParcel1728 = @__env.GetMethodID(global::android.content.pm.PackageStats.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
-			global::android.content.pm.PackageStats._describeContents1729 = @__env.GetMethodID(global::android.content.pm.PackageStats.staticClass, "describeContents", "()I"); 
-			global::android.content.pm.PackageStats._PackageStats1730 = @__env.GetMethodID(global::android.content.pm.PackageStats.staticClass, "<init>", "(Ljava/lang/String;)V"); 
-			global::android.content.pm.PackageStats._PackageStats1731 = @__env.GetMethodID(global::android.content.pm.PackageStats.staticClass, "<init>", "(Landroid/os/Parcel;)V"); 
-			global::android.content.pm.PackageStats._PackageStats1732 = @__env.GetMethodID(global::android.content.pm.PackageStats.staticClass, "<init>", "(Landroid/content/pm/PackageStats;)V"); 
+			global::android.content.pm.PackageStats._toString1772 = @__env.GetMethodID(global::android.content.pm.PackageStats.staticClass, "toString", "()Ljava/lang/String;"); 
+			global::android.content.pm.PackageStats._writeToParcel1773 = @__env.GetMethodID(global::android.content.pm.PackageStats.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
+			global::android.content.pm.PackageStats._describeContents1774 = @__env.GetMethodID(global::android.content.pm.PackageStats.staticClass, "describeContents", "()I"); 
+			global::android.content.pm.PackageStats._PackageStats1775 = @__env.GetMethodID(global::android.content.pm.PackageStats.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::android.content.pm.PackageStats._PackageStats1776 = @__env.GetMethodID(global::android.content.pm.PackageStats.staticClass, "<init>", "(Landroid/os/Parcel;)V"); 
+			global::android.content.pm.PackageStats._PackageStats1777 = @__env.GetMethodID(global::android.content.pm.PackageStats.staticClass, "<init>", "(Landroid/content/pm/PackageStats;)V"); 
 		} 
 	} 
 } 

@@ -18,23 +18,23 @@ namespace android.database.sqlite
 		protected SQLiteDatabaseCorruptException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _SQLiteDatabaseCorruptException2320; 
+		internal static global::net.sf.jni4net.jni.MethodId _SQLiteDatabaseCorruptException2510; 
 		public SQLiteDatabaseCorruptException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.database.sqlite.SQLiteDatabaseCorruptException.staticClass, _SQLiteDatabaseCorruptException2320, this); 
+			@__env.NewObject(android.database.sqlite.SQLiteDatabaseCorruptException.staticClass, _SQLiteDatabaseCorruptException2510, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _SQLiteDatabaseCorruptException2321; 
+		internal static global::net.sf.jni4net.jni.MethodId _SQLiteDatabaseCorruptException2511; 
 		public SQLiteDatabaseCorruptException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.database.sqlite.SQLiteDatabaseCorruptException.staticClass, _SQLiteDatabaseCorruptException2321, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.database.sqlite.SQLiteDatabaseCorruptException.staticClass, _SQLiteDatabaseCorruptException2511, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.database.sqlite.SQLiteDatabaseCorruptException.staticClass = @__class; 
-			global::android.database.sqlite.SQLiteDatabaseCorruptException._SQLiteDatabaseCorruptException2320 = @__env.GetMethodID(global::android.database.sqlite.SQLiteDatabaseCorruptException.staticClass, "<init>", "()V"); 
-			global::android.database.sqlite.SQLiteDatabaseCorruptException._SQLiteDatabaseCorruptException2321 = @__env.GetMethodID(global::android.database.sqlite.SQLiteDatabaseCorruptException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::android.database.sqlite.SQLiteDatabaseCorruptException._SQLiteDatabaseCorruptException2510 = @__env.GetMethodID(global::android.database.sqlite.SQLiteDatabaseCorruptException.staticClass, "<init>", "()V"); 
+			global::android.database.sqlite.SQLiteDatabaseCorruptException._SQLiteDatabaseCorruptException2511 = @__env.GetMethodID(global::android.database.sqlite.SQLiteDatabaseCorruptException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
 		} 
 	} 
 } 

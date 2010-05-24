@@ -18,16 +18,16 @@ namespace android.graphics
 		protected DashPathEffect(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _DashPathEffect2732; 
+		internal static global::net.sf.jni4net.jni.MethodId _DashPathEffect2932; 
 		public DashPathEffect(float[] arg0, float arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.DashPathEffect.staticClass, _DashPathEffect2732, this, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(android.graphics.DashPathEffect.staticClass, _DashPathEffect2932, this, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.graphics.DashPathEffect.staticClass = @__class; 
-			global::android.graphics.DashPathEffect._DashPathEffect2732 = @__env.GetMethodID(global::android.graphics.DashPathEffect.staticClass, "<init>", "([FF)V"); 
+			global::android.graphics.DashPathEffect._DashPathEffect2932 = @__env.GetMethodID(global::android.graphics.DashPathEffect.staticClass, "<init>", "([FF)V"); 
 		} 
 	} 
 } 

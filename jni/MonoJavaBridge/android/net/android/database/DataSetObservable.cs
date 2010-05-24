@@ -18,36 +18,36 @@ namespace android.database
 		protected DataSetObservable(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _notifyChanged2151; 
+		internal static global::net.sf.jni4net.jni.MethodId _notifyChanged2335; 
 		public virtual void notifyChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.database.DataSetObservable)) 
-				@__env.CallVoidMethod(this, _notifyChanged2151); 
+				@__env.CallVoidMethod(this, _notifyChanged2335); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.database.DataSetObservable.staticClass, _notifyChanged2151); 
+				@__env.CallNonVirtualVoidMethod(this, android.database.DataSetObservable.staticClass, _notifyChanged2335); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _notifyInvalidated2152; 
+		internal static global::net.sf.jni4net.jni.MethodId _notifyInvalidated2336; 
 		public virtual void notifyInvalidated() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.database.DataSetObservable)) 
-				@__env.CallVoidMethod(this, _notifyInvalidated2152); 
+				@__env.CallVoidMethod(this, _notifyInvalidated2336); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.database.DataSetObservable.staticClass, _notifyInvalidated2152); 
+				@__env.CallNonVirtualVoidMethod(this, android.database.DataSetObservable.staticClass, _notifyInvalidated2336); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _DataSetObservable2153; 
+		internal static global::net.sf.jni4net.jni.MethodId _DataSetObservable2337; 
 		public DataSetObservable()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.database.DataSetObservable.staticClass, _DataSetObservable2153, this); 
+			@__env.NewObject(android.database.DataSetObservable.staticClass, _DataSetObservable2337, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.database.DataSetObservable.staticClass = @__class; 
-			global::android.database.DataSetObservable._notifyChanged2151 = @__env.GetMethodID(global::android.database.DataSetObservable.staticClass, "notifyChanged", "()V"); 
-			global::android.database.DataSetObservable._notifyInvalidated2152 = @__env.GetMethodID(global::android.database.DataSetObservable.staticClass, "notifyInvalidated", "()V"); 
-			global::android.database.DataSetObservable._DataSetObservable2153 = @__env.GetMethodID(global::android.database.DataSetObservable.staticClass, "<init>", "()V"); 
+			global::android.database.DataSetObservable._notifyChanged2335 = @__env.GetMethodID(global::android.database.DataSetObservable.staticClass, "notifyChanged", "()V"); 
+			global::android.database.DataSetObservable._notifyInvalidated2336 = @__env.GetMethodID(global::android.database.DataSetObservable.staticClass, "notifyInvalidated", "()V"); 
+			global::android.database.DataSetObservable._DataSetObservable2337 = @__env.GetMethodID(global::android.database.DataSetObservable.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

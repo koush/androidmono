@@ -16,169 +16,211 @@ namespace android.widget
 		{ 
 			void onCheckedChanged(android.widget.CompoundButton arg0, bool arg1); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toggle9299; 
+
+		public partial class OnCheckedChangeListener_ 
+		{ 
+			public static global::java.lang.Class _class 
+			{ 
+				get { return __OnCheckedChangeListener.staticClass; } 
+			} 
+		} 
+
+		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
+		public sealed class __OnCheckedChangeListener : java.lang.Object, OnCheckedChangeListener
+		{ 
+			internal static global::java.lang.Class staticClass; 
+			static __OnCheckedChangeListener() 
+			{ 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.CompoundButton.__OnCheckedChangeListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			} 
+			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
+			{ 
+				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env) 
+				{ 
+					return new global::android.widget.CompoundButton.__OnCheckedChangeListener(@__env); 
+				} 
+			} 
+			internal __OnCheckedChangeListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
+			{ 
+			} 
+			internal static global::net.sf.jni4net.jni.MethodId _onCheckedChanged10016; 
+			 void android.widget.CompoundButton.OnCheckedChangeListener.onCheckedChanged(android.widget.CompoundButton arg0, bool arg1) 
+			{ 
+				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
+				if (GetType() == typeof(android.widget.CompoundButton.__OnCheckedChangeListener)) 
+					@__env.CallVoidMethod(this, _onCheckedChanged10016, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				else 
+					@__env.CallNonVirtualVoidMethod(this, android.widget.CompoundButton.__OnCheckedChangeListener.staticClass, _onCheckedChanged10016, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			} 
+			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
+			{ 
+				global::android.widget.CompoundButton.__OnCheckedChangeListener.staticClass = @__class; 
+				global::android.widget.CompoundButton.__OnCheckedChangeListener._onCheckedChanged10016 = @__env.GetMethodID(global::android.widget.CompoundButton.__OnCheckedChangeListener.staticClass, "android.widget.CompoundButton.OnCheckedChangeListener.onCheckedChanged", "(Landroid/widget/CompoundButton;Z)V"); 
+			} 
+		} 
+		internal static global::net.sf.jni4net.jni.MethodId _toggle10017; 
 		public virtual void toggle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.CompoundButton)) 
-				@__env.CallVoidMethod(this, _toggle9299); 
+				@__env.CallVoidMethod(this, _toggle10017); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.CompoundButton.staticClass, _toggle9299); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.CompoundButton.staticClass, _toggle10017); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isChecked9300; 
+		internal static global::net.sf.jni4net.jni.MethodId _isChecked10018; 
 		public virtual bool isChecked() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.CompoundButton)) 
-				return @__env.CallBooleanMethod(this, _isChecked9300); 
+				return @__env.CallBooleanMethod(this, _isChecked10018); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.CompoundButton.staticClass, _isChecked9300); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.widget.CompoundButton.staticClass, _isChecked10018); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setChecked9301; 
+		internal static global::net.sf.jni4net.jni.MethodId _setChecked10019; 
 		public virtual void setChecked(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.CompoundButton)) 
-				@__env.CallVoidMethod(this, _setChecked9301, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setChecked10019, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.CompoundButton.staticClass, _setChecked9301, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.CompoundButton.staticClass, _setChecked10019, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onRestoreInstanceState9302; 
+		internal static global::net.sf.jni4net.jni.MethodId _onRestoreInstanceState10020; 
 		public override void onRestoreInstanceState(android.os.Parcelable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.CompoundButton)) 
-				@__env.CallVoidMethod(this, _onRestoreInstanceState9302, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _onRestoreInstanceState10020, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.CompoundButton.staticClass, _onRestoreInstanceState9302, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.CompoundButton.staticClass, _onRestoreInstanceState10020, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onSaveInstanceState9303; 
+		internal static global::net.sf.jni4net.jni.MethodId _onSaveInstanceState10021; 
 		public override android.os.Parcelable onSaveInstanceState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.CompoundButton)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, _onSaveInstanceState9303)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, _onSaveInstanceState10021)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.CompoundButton.staticClass, _onSaveInstanceState9303)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.CompoundButton.staticClass, _onSaveInstanceState10021)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _dispatchPopulateAccessibilityEvent9304; 
+		internal static global::net.sf.jni4net.jni.MethodId _dispatchPopulateAccessibilityEvent10022; 
 		public override bool dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.CompoundButton)) 
-				return @__env.CallBooleanMethod(this, _dispatchPopulateAccessibilityEvent9304, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _dispatchPopulateAccessibilityEvent10022, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.CompoundButton.staticClass, _dispatchPopulateAccessibilityEvent9304, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.widget.CompoundButton.staticClass, _dispatchPopulateAccessibilityEvent10022, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _performClick9305; 
+		internal static global::net.sf.jni4net.jni.MethodId _performClick10023; 
 		public override bool performClick() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.CompoundButton)) 
-				return @__env.CallBooleanMethod(this, _performClick9305); 
+				return @__env.CallBooleanMethod(this, _performClick10023); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.CompoundButton.staticClass, _performClick9305); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.widget.CompoundButton.staticClass, _performClick10023); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onDraw9306; 
+		internal static global::net.sf.jni4net.jni.MethodId _onDraw10024; 
 		protected override void onDraw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.CompoundButton)) 
-				@__env.CallVoidMethod(this, _onDraw9306, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _onDraw10024, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.CompoundButton.staticClass, _onDraw9306, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.CompoundButton.staticClass, _onDraw10024, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _verifyDrawable9307; 
+		internal static global::net.sf.jni4net.jni.MethodId _verifyDrawable10025; 
 		protected override bool verifyDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.CompoundButton)) 
-				return @__env.CallBooleanMethod(this, _verifyDrawable9307, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _verifyDrawable10025, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.CompoundButton.staticClass, _verifyDrawable9307, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.widget.CompoundButton.staticClass, _verifyDrawable10025, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _drawableStateChanged9308; 
+		internal static global::net.sf.jni4net.jni.MethodId _drawableStateChanged10026; 
 		protected override void drawableStateChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.CompoundButton)) 
-				@__env.CallVoidMethod(this, _drawableStateChanged9308); 
+				@__env.CallVoidMethod(this, _drawableStateChanged10026); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.CompoundButton.staticClass, _drawableStateChanged9308); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.CompoundButton.staticClass, _drawableStateChanged10026); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onCreateDrawableState9309; 
+		internal static global::net.sf.jni4net.jni.MethodId _onCreateDrawableState10027; 
 		protected override int[] onCreateDrawableState(int arg0) 
 		{ 
 			if (GetType() == typeof(android.widget.CompoundButton)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _onCreateDrawableState9309, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, _onCreateDrawableState10027, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.CompoundButton.staticClass, _onCreateDrawableState9309, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.CompoundButton.staticClass, _onCreateDrawableState10027, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setOnCheckedChangeListener9310; 
+		internal static global::net.sf.jni4net.jni.MethodId _setOnCheckedChangeListener10028; 
 		public virtual void setOnCheckedChangeListener(android.widget.CompoundButton.OnCheckedChangeListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.CompoundButton)) 
-				@__env.CallVoidMethod(this, _setOnCheckedChangeListener9310, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _setOnCheckedChangeListener10028, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.CompoundButton.staticClass, _setOnCheckedChangeListener9310, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.CompoundButton.staticClass, _setOnCheckedChangeListener10028, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setButtonDrawable9311; 
+		internal static global::net.sf.jni4net.jni.MethodId _setButtonDrawable10029; 
 		public virtual void setButtonDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.CompoundButton)) 
-				@__env.CallVoidMethod(this, _setButtonDrawable9311, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _setButtonDrawable10029, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.CompoundButton.staticClass, _setButtonDrawable9311, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.CompoundButton.staticClass, _setButtonDrawable10029, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setButtonDrawable9312; 
+		internal static global::net.sf.jni4net.jni.MethodId _setButtonDrawable10030; 
 		public virtual void setButtonDrawable(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.CompoundButton)) 
-				@__env.CallVoidMethod(this, _setButtonDrawable9312, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setButtonDrawable10030, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.CompoundButton.staticClass, _setButtonDrawable9312, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.CompoundButton.staticClass, _setButtonDrawable10030, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _CompoundButton9313; 
+		internal static global::net.sf.jni4net.jni.MethodId _CompoundButton10031; 
 		public CompoundButton(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.CompoundButton.staticClass, _CompoundButton9313, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.widget.CompoundButton.staticClass, _CompoundButton10031, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _CompoundButton9314; 
+		internal static global::net.sf.jni4net.jni.MethodId _CompoundButton10032; 
 		public CompoundButton(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.CompoundButton.staticClass, _CompoundButton9314, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.widget.CompoundButton.staticClass, _CompoundButton10032, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _CompoundButton9315; 
+		internal static global::net.sf.jni4net.jni.MethodId _CompoundButton10033; 
 		public CompoundButton(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.CompoundButton.staticClass, _CompoundButton9315, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.widget.CompoundButton.staticClass, _CompoundButton10033, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.widget.CompoundButton.staticClass = @__class; 
-			global::android.widget.CompoundButton._toggle9299 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "toggle", "()V"); 
-			global::android.widget.CompoundButton._isChecked9300 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "isChecked", "()Z"); 
-			global::android.widget.CompoundButton._setChecked9301 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "setChecked", "(Z)V"); 
-			global::android.widget.CompoundButton._onRestoreInstanceState9302 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "onRestoreInstanceState", "(Landroid/os/Parcelable;)V"); 
-			global::android.widget.CompoundButton._onSaveInstanceState9303 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "onSaveInstanceState", "()Landroid/os/Parcelable;"); 
-			global::android.widget.CompoundButton._dispatchPopulateAccessibilityEvent9304 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "dispatchPopulateAccessibilityEvent", "(Landroid/view/accessibility/AccessibilityEvent;)Z"); 
-			global::android.widget.CompoundButton._performClick9305 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "performClick", "()Z"); 
-			global::android.widget.CompoundButton._onDraw9306 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V"); 
-			global::android.widget.CompoundButton._verifyDrawable9307 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "verifyDrawable", "(Landroid/graphics/drawable/Drawable;)Z"); 
-			global::android.widget.CompoundButton._drawableStateChanged9308 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "drawableStateChanged", "()V"); 
-			global::android.widget.CompoundButton._onCreateDrawableState9309 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "onCreateDrawableState", "(I)[I"); 
-			global::android.widget.CompoundButton._setOnCheckedChangeListener9310 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "setOnCheckedChangeListener", "(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V"); 
-			global::android.widget.CompoundButton._setButtonDrawable9311 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "setButtonDrawable", "(Landroid/graphics/drawable/Drawable;)V"); 
-			global::android.widget.CompoundButton._setButtonDrawable9312 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "setButtonDrawable", "(I)V"); 
-			global::android.widget.CompoundButton._CompoundButton9313 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
-			global::android.widget.CompoundButton._CompoundButton9314 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
-			global::android.widget.CompoundButton._CompoundButton9315 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "<init>", "(Landroid/content/Context;)V"); 
+			global::android.widget.CompoundButton._toggle10017 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "toggle", "()V"); 
+			global::android.widget.CompoundButton._isChecked10018 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "isChecked", "()Z"); 
+			global::android.widget.CompoundButton._setChecked10019 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "setChecked", "(Z)V"); 
+			global::android.widget.CompoundButton._onRestoreInstanceState10020 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "onRestoreInstanceState", "(Landroid/os/Parcelable;)V"); 
+			global::android.widget.CompoundButton._onSaveInstanceState10021 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "onSaveInstanceState", "()Landroid/os/Parcelable;"); 
+			global::android.widget.CompoundButton._dispatchPopulateAccessibilityEvent10022 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "dispatchPopulateAccessibilityEvent", "(Landroid/view/accessibility/AccessibilityEvent;)Z"); 
+			global::android.widget.CompoundButton._performClick10023 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "performClick", "()Z"); 
+			global::android.widget.CompoundButton._onDraw10024 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V"); 
+			global::android.widget.CompoundButton._verifyDrawable10025 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "verifyDrawable", "(Landroid/graphics/drawable/Drawable;)Z"); 
+			global::android.widget.CompoundButton._drawableStateChanged10026 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "drawableStateChanged", "()V"); 
+			global::android.widget.CompoundButton._onCreateDrawableState10027 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "onCreateDrawableState", "(I)[I"); 
+			global::android.widget.CompoundButton._setOnCheckedChangeListener10028 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "setOnCheckedChangeListener", "(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V"); 
+			global::android.widget.CompoundButton._setButtonDrawable10029 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "setButtonDrawable", "(Landroid/graphics/drawable/Drawable;)V"); 
+			global::android.widget.CompoundButton._setButtonDrawable10030 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "setButtonDrawable", "(I)V"); 
+			global::android.widget.CompoundButton._CompoundButton10031 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
+			global::android.widget.CompoundButton._CompoundButton10032 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
+			global::android.widget.CompoundButton._CompoundButton10033 = @__env.GetMethodID(global::android.widget.CompoundButton.staticClass, "<init>", "(Landroid/content/Context;)V"); 
 		} 
 	} 
 } 

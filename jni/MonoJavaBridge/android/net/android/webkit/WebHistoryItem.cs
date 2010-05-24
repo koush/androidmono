@@ -18,69 +18,69 @@ namespace android.webkit
 		protected WebHistoryItem(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _clone8702; 
+		internal static global::net.sf.jni4net.jni.MethodId _clone9393; 
 		protected virtual android.webkit.WebHistoryItem clone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebHistoryItem)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebHistoryItem>(@__env, @__env.CallObjectMethodPtr(this, _clone8702)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebHistoryItem>(@__env, @__env.CallObjectMethodPtr(this, _clone9393)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebHistoryItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.WebHistoryItem.staticClass, _clone8702)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebHistoryItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.WebHistoryItem.staticClass, _clone9393)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getId8703; 
+		internal static global::net.sf.jni4net.jni.MethodId _getId9394; 
 		public virtual int getId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebHistoryItem)) 
-				return @__env.CallIntMethod(this, _getId8703); 
+				return @__env.CallIntMethod(this, _getId9394); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.webkit.WebHistoryItem.staticClass, _getId8703); 
+				return @__env.CallNonVirtualIntMethod(this, android.webkit.WebHistoryItem.staticClass, _getId9394); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getTitle8704; 
+		internal static global::net.sf.jni4net.jni.MethodId _getTitle9395; 
 		public virtual java.lang.String getTitle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebHistoryItem)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getTitle8704)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getTitle9395)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.WebHistoryItem.staticClass, _getTitle8704)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.WebHistoryItem.staticClass, _getTitle9395)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getUrl8705; 
+		internal static global::net.sf.jni4net.jni.MethodId _getUrl9396; 
 		public virtual java.lang.String getUrl() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebHistoryItem)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getUrl8705)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getUrl9396)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.WebHistoryItem.staticClass, _getUrl8705)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.WebHistoryItem.staticClass, _getUrl9396)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getOriginalUrl8706; 
+		internal static global::net.sf.jni4net.jni.MethodId _getOriginalUrl9397; 
 		public virtual java.lang.String getOriginalUrl() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebHistoryItem)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getOriginalUrl8706)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getOriginalUrl9397)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.WebHistoryItem.staticClass, _getOriginalUrl8706)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.WebHistoryItem.staticClass, _getOriginalUrl9397)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getFavicon8707; 
+		internal static global::net.sf.jni4net.jni.MethodId _getFavicon9398; 
 		public virtual android.graphics.Bitmap getFavicon() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebHistoryItem)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallObjectMethodPtr(this, _getFavicon8707)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallObjectMethodPtr(this, _getFavicon9398)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.WebHistoryItem.staticClass, _getFavicon8707)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.WebHistoryItem.staticClass, _getFavicon9398)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.webkit.WebHistoryItem.staticClass = @__class; 
-			global::android.webkit.WebHistoryItem._clone8702 = @__env.GetMethodID(global::android.webkit.WebHistoryItem.staticClass, "clone", "()Landroid/webkit/WebHistoryItem;"); 
-			global::android.webkit.WebHistoryItem._getId8703 = @__env.GetMethodID(global::android.webkit.WebHistoryItem.staticClass, "getId", "()I"); 
-			global::android.webkit.WebHistoryItem._getTitle8704 = @__env.GetMethodID(global::android.webkit.WebHistoryItem.staticClass, "getTitle", "()Ljava/lang/String;"); 
-			global::android.webkit.WebHistoryItem._getUrl8705 = @__env.GetMethodID(global::android.webkit.WebHistoryItem.staticClass, "getUrl", "()Ljava/lang/String;"); 
-			global::android.webkit.WebHistoryItem._getOriginalUrl8706 = @__env.GetMethodID(global::android.webkit.WebHistoryItem.staticClass, "getOriginalUrl", "()Ljava/lang/String;"); 
-			global::android.webkit.WebHistoryItem._getFavicon8707 = @__env.GetMethodID(global::android.webkit.WebHistoryItem.staticClass, "getFavicon", "()Landroid/graphics/Bitmap;"); 
+			global::android.webkit.WebHistoryItem._clone9393 = @__env.GetMethodID(global::android.webkit.WebHistoryItem.staticClass, "clone", "()Landroid/webkit/WebHistoryItem;"); 
+			global::android.webkit.WebHistoryItem._getId9394 = @__env.GetMethodID(global::android.webkit.WebHistoryItem.staticClass, "getId", "()I"); 
+			global::android.webkit.WebHistoryItem._getTitle9395 = @__env.GetMethodID(global::android.webkit.WebHistoryItem.staticClass, "getTitle", "()Ljava/lang/String;"); 
+			global::android.webkit.WebHistoryItem._getUrl9396 = @__env.GetMethodID(global::android.webkit.WebHistoryItem.staticClass, "getUrl", "()Ljava/lang/String;"); 
+			global::android.webkit.WebHistoryItem._getOriginalUrl9397 = @__env.GetMethodID(global::android.webkit.WebHistoryItem.staticClass, "getOriginalUrl", "()Ljava/lang/String;"); 
+			global::android.webkit.WebHistoryItem._getFavicon9398 = @__env.GetMethodID(global::android.webkit.WebHistoryItem.staticClass, "getFavicon", "()Landroid/graphics/Bitmap;"); 
 		} 
 	} 
 } 

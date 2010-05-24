@@ -18,80 +18,80 @@ namespace android.widget
 		protected AnalogClock(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onAttachedToWindow9145; 
+		internal static global::net.sf.jni4net.jni.MethodId _onAttachedToWindow9856; 
 		protected override void onAttachedToWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AnalogClock)) 
-				@__env.CallVoidMethod(this, _onAttachedToWindow9145); 
+				@__env.CallVoidMethod(this, _onAttachedToWindow9856); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AnalogClock.staticClass, _onAttachedToWindow9145); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.AnalogClock.staticClass, _onAttachedToWindow9856); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onDetachedFromWindow9146; 
+		internal static global::net.sf.jni4net.jni.MethodId _onDetachedFromWindow9857; 
 		protected override void onDetachedFromWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AnalogClock)) 
-				@__env.CallVoidMethod(this, _onDetachedFromWindow9146); 
+				@__env.CallVoidMethod(this, _onDetachedFromWindow9857); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AnalogClock.staticClass, _onDetachedFromWindow9146); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.AnalogClock.staticClass, _onDetachedFromWindow9857); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onSizeChanged9147; 
+		internal static global::net.sf.jni4net.jni.MethodId _onSizeChanged9858; 
 		protected override void onSizeChanged(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AnalogClock)) 
-				@__env.CallVoidMethod(this, _onSizeChanged9147, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallVoidMethod(this, _onSizeChanged9858, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AnalogClock.staticClass, _onSizeChanged9147, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.AnalogClock.staticClass, _onSizeChanged9858, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onDraw9148; 
+		internal static global::net.sf.jni4net.jni.MethodId _onDraw9859; 
 		protected override void onDraw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AnalogClock)) 
-				@__env.CallVoidMethod(this, _onDraw9148, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _onDraw9859, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AnalogClock.staticClass, _onDraw9148, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.AnalogClock.staticClass, _onDraw9859, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onMeasure9149; 
+		internal static global::net.sf.jni4net.jni.MethodId _onMeasure9860; 
 		protected override void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AnalogClock)) 
-				@__env.CallVoidMethod(this, _onMeasure9149, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _onMeasure9860, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AnalogClock.staticClass, _onMeasure9149, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.AnalogClock.staticClass, _onMeasure9860, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _AnalogClock9150; 
+		internal static global::net.sf.jni4net.jni.MethodId _AnalogClock9861; 
 		public AnalogClock(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.AnalogClock.staticClass, _AnalogClock9150, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.widget.AnalogClock.staticClass, _AnalogClock9861, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _AnalogClock9151; 
+		internal static global::net.sf.jni4net.jni.MethodId _AnalogClock9862; 
 		public AnalogClock(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.AnalogClock.staticClass, _AnalogClock9151, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.widget.AnalogClock.staticClass, _AnalogClock9862, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _AnalogClock9152; 
+		internal static global::net.sf.jni4net.jni.MethodId _AnalogClock9863; 
 		public AnalogClock(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.AnalogClock.staticClass, _AnalogClock9152, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.widget.AnalogClock.staticClass, _AnalogClock9863, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.widget.AnalogClock.staticClass = @__class; 
-			global::android.widget.AnalogClock._onAttachedToWindow9145 = @__env.GetMethodID(global::android.widget.AnalogClock.staticClass, "onAttachedToWindow", "()V"); 
-			global::android.widget.AnalogClock._onDetachedFromWindow9146 = @__env.GetMethodID(global::android.widget.AnalogClock.staticClass, "onDetachedFromWindow", "()V"); 
-			global::android.widget.AnalogClock._onSizeChanged9147 = @__env.GetMethodID(global::android.widget.AnalogClock.staticClass, "onSizeChanged", "(IIII)V"); 
-			global::android.widget.AnalogClock._onDraw9148 = @__env.GetMethodID(global::android.widget.AnalogClock.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V"); 
-			global::android.widget.AnalogClock._onMeasure9149 = @__env.GetMethodID(global::android.widget.AnalogClock.staticClass, "onMeasure", "(II)V"); 
-			global::android.widget.AnalogClock._AnalogClock9150 = @__env.GetMethodID(global::android.widget.AnalogClock.staticClass, "<init>", "(Landroid/content/Context;)V"); 
-			global::android.widget.AnalogClock._AnalogClock9151 = @__env.GetMethodID(global::android.widget.AnalogClock.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
-			global::android.widget.AnalogClock._AnalogClock9152 = @__env.GetMethodID(global::android.widget.AnalogClock.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
+			global::android.widget.AnalogClock._onAttachedToWindow9856 = @__env.GetMethodID(global::android.widget.AnalogClock.staticClass, "onAttachedToWindow", "()V"); 
+			global::android.widget.AnalogClock._onDetachedFromWindow9857 = @__env.GetMethodID(global::android.widget.AnalogClock.staticClass, "onDetachedFromWindow", "()V"); 
+			global::android.widget.AnalogClock._onSizeChanged9858 = @__env.GetMethodID(global::android.widget.AnalogClock.staticClass, "onSizeChanged", "(IIII)V"); 
+			global::android.widget.AnalogClock._onDraw9859 = @__env.GetMethodID(global::android.widget.AnalogClock.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V"); 
+			global::android.widget.AnalogClock._onMeasure9860 = @__env.GetMethodID(global::android.widget.AnalogClock.staticClass, "onMeasure", "(II)V"); 
+			global::android.widget.AnalogClock._AnalogClock9861 = @__env.GetMethodID(global::android.widget.AnalogClock.staticClass, "<init>", "(Landroid/content/Context;)V"); 
+			global::android.widget.AnalogClock._AnalogClock9862 = @__env.GetMethodID(global::android.widget.AnalogClock.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
+			global::android.widget.AnalogClock._AnalogClock9863 = @__env.GetMethodID(global::android.widget.AnalogClock.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
 		} 
 	} 
 } 

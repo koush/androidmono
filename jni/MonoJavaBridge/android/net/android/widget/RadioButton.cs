@@ -18,40 +18,40 @@ namespace android.widget
 		protected RadioButton(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toggle9853; 
+		internal static global::net.sf.jni4net.jni.MethodId _toggle10623; 
 		public override void toggle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.RadioButton)) 
-				@__env.CallVoidMethod(this, _toggle9853); 
+				@__env.CallVoidMethod(this, _toggle10623); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.RadioButton.staticClass, _toggle9853); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.RadioButton.staticClass, _toggle10623); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _RadioButton9854; 
+		internal static global::net.sf.jni4net.jni.MethodId _RadioButton10624; 
 		public RadioButton(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.RadioButton.staticClass, _RadioButton9854, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.widget.RadioButton.staticClass, _RadioButton10624, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _RadioButton9855; 
+		internal static global::net.sf.jni4net.jni.MethodId _RadioButton10625; 
 		public RadioButton(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.RadioButton.staticClass, _RadioButton9855, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.widget.RadioButton.staticClass, _RadioButton10625, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _RadioButton9856; 
+		internal static global::net.sf.jni4net.jni.MethodId _RadioButton10626; 
 		public RadioButton(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.RadioButton.staticClass, _RadioButton9856, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.widget.RadioButton.staticClass, _RadioButton10626, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.widget.RadioButton.staticClass = @__class; 
-			global::android.widget.RadioButton._toggle9853 = @__env.GetMethodID(global::android.widget.RadioButton.staticClass, "toggle", "()V"); 
-			global::android.widget.RadioButton._RadioButton9854 = @__env.GetMethodID(global::android.widget.RadioButton.staticClass, "<init>", "(Landroid/content/Context;)V"); 
-			global::android.widget.RadioButton._RadioButton9855 = @__env.GetMethodID(global::android.widget.RadioButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
-			global::android.widget.RadioButton._RadioButton9856 = @__env.GetMethodID(global::android.widget.RadioButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
+			global::android.widget.RadioButton._toggle10623 = @__env.GetMethodID(global::android.widget.RadioButton.staticClass, "toggle", "()V"); 
+			global::android.widget.RadioButton._RadioButton10624 = @__env.GetMethodID(global::android.widget.RadioButton.staticClass, "<init>", "(Landroid/content/Context;)V"); 
+			global::android.widget.RadioButton._RadioButton10625 = @__env.GetMethodID(global::android.widget.RadioButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
+			global::android.widget.RadioButton._RadioButton10626 = @__env.GetMethodID(global::android.widget.RadioButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
 		} 
 	} 
 } 

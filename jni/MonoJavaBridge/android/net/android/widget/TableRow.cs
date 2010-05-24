@@ -36,58 +36,58 @@ namespace android.widget
 			protected LayoutParams(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _setBaseAttributes10186; 
+			internal static global::net.sf.jni4net.jni.MethodId _setBaseAttributes10989; 
 			protected override void setBaseAttributes(android.content.res.TypedArray arg0, int arg1, int arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.widget.TableRow.LayoutParams)) 
-					@__env.CallVoidMethod(this, _setBaseAttributes10186, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+					@__env.CallVoidMethod(this, _setBaseAttributes10989, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.widget.TableRow.LayoutParams.staticClass, _setBaseAttributes10186, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+					@__env.CallNonVirtualVoidMethod(this, android.widget.TableRow.LayoutParams.staticClass, _setBaseAttributes10989, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams10187; 
+			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams10990; 
 			public LayoutParams(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.widget.TableRow.LayoutParams.staticClass, _LayoutParams10187, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.NewObject(android.widget.TableRow.LayoutParams.staticClass, _LayoutParams10990, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams10188; 
+			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams10991; 
 			public LayoutParams(int arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.widget.TableRow.LayoutParams.staticClass, _LayoutParams10188, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.NewObject(android.widget.TableRow.LayoutParams.staticClass, _LayoutParams10991, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams10189; 
+			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams10992; 
 			public LayoutParams(int arg0, int arg1, float arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.widget.TableRow.LayoutParams.staticClass, _LayoutParams10189, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.NewObject(android.widget.TableRow.LayoutParams.staticClass, _LayoutParams10992, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams10190; 
+			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams10993; 
 			public LayoutParams()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.widget.TableRow.LayoutParams.staticClass, _LayoutParams10190, this); 
+				@__env.NewObject(android.widget.TableRow.LayoutParams.staticClass, _LayoutParams10993, this); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams10191; 
+			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams10994; 
 			public LayoutParams(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.widget.TableRow.LayoutParams.staticClass, _LayoutParams10191, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.NewObject(android.widget.TableRow.LayoutParams.staticClass, _LayoutParams10994, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams10192; 
+			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams10995; 
 			public LayoutParams(android.view.ViewGroup.LayoutParams arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.widget.TableRow.LayoutParams.staticClass, _LayoutParams10192, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.NewObject(android.widget.TableRow.LayoutParams.staticClass, _LayoutParams10995, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams10193; 
+			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams10996; 
 			public LayoutParams(android.view.ViewGroup.MarginLayoutParams arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.widget.TableRow.LayoutParams.staticClass, _LayoutParams10193, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.NewObject(android.widget.TableRow.LayoutParams.staticClass, _LayoutParams10996, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _column10194; 
+			internal static global::net.sf.jni4net.jni.FieldId _column10997; 
 			public int column
 			{ 
 				get 
@@ -98,7 +98,7 @@ namespace android.widget
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _span10195; 
+			internal static global::net.sf.jni4net.jni.FieldId _span10998; 
 			public int span
 			{ 
 				get 
@@ -112,123 +112,123 @@ namespace android.widget
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.widget.TableRow.LayoutParams.staticClass = @__class; 
-				global::android.widget.TableRow.LayoutParams._setBaseAttributes10186 = @__env.GetMethodID(global::android.widget.TableRow.LayoutParams.staticClass, "setBaseAttributes", "(Landroid/content/res/TypedArray;II)V"); 
-				global::android.widget.TableRow.LayoutParams._LayoutParams10187 = @__env.GetMethodID(global::android.widget.TableRow.LayoutParams.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
-				global::android.widget.TableRow.LayoutParams._LayoutParams10188 = @__env.GetMethodID(global::android.widget.TableRow.LayoutParams.staticClass, "<init>", "(II)V"); 
-				global::android.widget.TableRow.LayoutParams._LayoutParams10189 = @__env.GetMethodID(global::android.widget.TableRow.LayoutParams.staticClass, "<init>", "(IIF)V"); 
-				global::android.widget.TableRow.LayoutParams._LayoutParams10190 = @__env.GetMethodID(global::android.widget.TableRow.LayoutParams.staticClass, "<init>", "()V"); 
-				global::android.widget.TableRow.LayoutParams._LayoutParams10191 = @__env.GetMethodID(global::android.widget.TableRow.LayoutParams.staticClass, "<init>", "(I)V"); 
-				global::android.widget.TableRow.LayoutParams._LayoutParams10192 = @__env.GetMethodID(global::android.widget.TableRow.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$LayoutParams;)V"); 
-				global::android.widget.TableRow.LayoutParams._LayoutParams10193 = @__env.GetMethodID(global::android.widget.TableRow.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$MarginLayoutParams;)V"); 
+				global::android.widget.TableRow.LayoutParams._setBaseAttributes10989 = @__env.GetMethodID(global::android.widget.TableRow.LayoutParams.staticClass, "setBaseAttributes", "(Landroid/content/res/TypedArray;II)V"); 
+				global::android.widget.TableRow.LayoutParams._LayoutParams10990 = @__env.GetMethodID(global::android.widget.TableRow.LayoutParams.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
+				global::android.widget.TableRow.LayoutParams._LayoutParams10991 = @__env.GetMethodID(global::android.widget.TableRow.LayoutParams.staticClass, "<init>", "(II)V"); 
+				global::android.widget.TableRow.LayoutParams._LayoutParams10992 = @__env.GetMethodID(global::android.widget.TableRow.LayoutParams.staticClass, "<init>", "(IIF)V"); 
+				global::android.widget.TableRow.LayoutParams._LayoutParams10993 = @__env.GetMethodID(global::android.widget.TableRow.LayoutParams.staticClass, "<init>", "()V"); 
+				global::android.widget.TableRow.LayoutParams._LayoutParams10994 = @__env.GetMethodID(global::android.widget.TableRow.LayoutParams.staticClass, "<init>", "(I)V"); 
+				global::android.widget.TableRow.LayoutParams._LayoutParams10995 = @__env.GetMethodID(global::android.widget.TableRow.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$LayoutParams;)V"); 
+				global::android.widget.TableRow.LayoutParams._LayoutParams10996 = @__env.GetMethodID(global::android.widget.TableRow.LayoutParams.staticClass, "<init>", "(Landroid/view/ViewGroup$MarginLayoutParams;)V"); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onLayout10196; 
+		internal static global::net.sf.jni4net.jni.MethodId _onLayout10999; 
 		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TableRow)) 
-				@__env.CallVoidMethod(this, _onLayout10196, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
+				@__env.CallVoidMethod(this, _onLayout10999, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.TableRow.staticClass, _onLayout10196, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.TableRow.staticClass, _onLayout10999, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onMeasure10197; 
+		internal static global::net.sf.jni4net.jni.MethodId _onMeasure11000; 
 		protected override void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TableRow)) 
-				@__env.CallVoidMethod(this, _onMeasure10197, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _onMeasure11000, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.TableRow.staticClass, _onMeasure10197, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.TableRow.staticClass, _onMeasure11000, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _checkLayoutParams10198; 
+		internal static global::net.sf.jni4net.jni.MethodId _checkLayoutParams11001; 
 		protected override bool checkLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TableRow)) 
-				return @__env.CallBooleanMethod(this, _checkLayoutParams10198, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _checkLayoutParams11001, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.TableRow.staticClass, _checkLayoutParams10198, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.widget.TableRow.staticClass, _checkLayoutParams11001, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setOnHierarchyChangeListener10199; 
+		internal static global::net.sf.jni4net.jni.MethodId _setOnHierarchyChangeListener11002; 
 		public override void setOnHierarchyChangeListener(android.view.ViewGroup.OnHierarchyChangeListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TableRow)) 
-				@__env.CallVoidMethod(this, _setOnHierarchyChangeListener10199, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _setOnHierarchyChangeListener11002, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.TableRow.staticClass, _setOnHierarchyChangeListener10199, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.TableRow.staticClass, _setOnHierarchyChangeListener11002, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _generateLayoutParams10200; 
+		internal static global::net.sf.jni4net.jni.MethodId _generateLayoutParams11003; 
 		public virtual new android.widget.TableRow.LayoutParams generateLayoutParams(android.util.AttributeSet arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TableRow)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TableRow.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, _generateLayoutParams10200, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TableRow.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, _generateLayoutParams11003, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TableRow.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TableRow.staticClass, _generateLayoutParams10200, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TableRow.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TableRow.staticClass, _generateLayoutParams11003, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _generateLayoutParams10201; 
+		internal static global::net.sf.jni4net.jni.MethodId _generateLayoutParams11004; 
 		protected override android.widget.LinearLayout.LayoutParams generateLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TableRow)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, _generateLayoutParams10201, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, _generateLayoutParams11004, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TableRow.staticClass, _generateLayoutParams10201, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TableRow.staticClass, _generateLayoutParams11004, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _generateDefaultLayoutParams10202; 
+		internal static global::net.sf.jni4net.jni.MethodId _generateDefaultLayoutParams11005; 
 		protected override android.widget.LinearLayout.LayoutParams generateDefaultLayoutParams() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TableRow)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, _generateDefaultLayoutParams10202)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, _generateDefaultLayoutParams11005)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TableRow.staticClass, _generateDefaultLayoutParams10202)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TableRow.staticClass, _generateDefaultLayoutParams11005)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getVirtualChildAt10203; 
+		internal static global::net.sf.jni4net.jni.MethodId _getVirtualChildAt11006; 
 		public virtual android.view.View getVirtualChildAt(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TableRow)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, _getVirtualChildAt10203, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, _getVirtualChildAt11006, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TableRow.staticClass, _getVirtualChildAt10203, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TableRow.staticClass, _getVirtualChildAt11006, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getVirtualChildCount10204; 
+		internal static global::net.sf.jni4net.jni.MethodId _getVirtualChildCount11007; 
 		public virtual int getVirtualChildCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TableRow)) 
-				return @__env.CallIntMethod(this, _getVirtualChildCount10204); 
+				return @__env.CallIntMethod(this, _getVirtualChildCount11007); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.TableRow.staticClass, _getVirtualChildCount10204); 
+				return @__env.CallNonVirtualIntMethod(this, android.widget.TableRow.staticClass, _getVirtualChildCount11007); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _TableRow10205; 
+		internal static global::net.sf.jni4net.jni.MethodId _TableRow11008; 
 		public TableRow(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.TableRow.staticClass, _TableRow10205, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.widget.TableRow.staticClass, _TableRow11008, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _TableRow10206; 
+		internal static global::net.sf.jni4net.jni.MethodId _TableRow11009; 
 		public TableRow(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.TableRow.staticClass, _TableRow10206, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.widget.TableRow.staticClass, _TableRow11009, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.widget.TableRow.staticClass = @__class; 
-			global::android.widget.TableRow._onLayout10196 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "onLayout", "(ZIIII)V"); 
-			global::android.widget.TableRow._onMeasure10197 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "onMeasure", "(II)V"); 
-			global::android.widget.TableRow._checkLayoutParams10198 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "checkLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Z"); 
-			global::android.widget.TableRow._setOnHierarchyChangeListener10199 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "setOnHierarchyChangeListener", "(Landroid/view/ViewGroup$OnHierarchyChangeListener;)V"); 
-			global::android.widget.TableRow._generateLayoutParams10200 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "generateLayoutParams", "(Landroid/util/AttributeSet;)Landroid/widget/TableRow$LayoutParams;"); 
-			global::android.widget.TableRow._generateLayoutParams10201 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "generateLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Landroid/widget/LinearLayout$LayoutParams;"); 
-			global::android.widget.TableRow._generateDefaultLayoutParams10202 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "generateDefaultLayoutParams", "()Landroid/widget/LinearLayout$LayoutParams;"); 
-			global::android.widget.TableRow._getVirtualChildAt10203 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "getVirtualChildAt", "(I)Landroid/view/View;"); 
-			global::android.widget.TableRow._getVirtualChildCount10204 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "getVirtualChildCount", "()I"); 
-			global::android.widget.TableRow._TableRow10205 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
-			global::android.widget.TableRow._TableRow10206 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "<init>", "(Landroid/content/Context;)V"); 
+			global::android.widget.TableRow._onLayout10999 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "onLayout", "(ZIIII)V"); 
+			global::android.widget.TableRow._onMeasure11000 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "onMeasure", "(II)V"); 
+			global::android.widget.TableRow._checkLayoutParams11001 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "checkLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Z"); 
+			global::android.widget.TableRow._setOnHierarchyChangeListener11002 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "setOnHierarchyChangeListener", "(Landroid/view/ViewGroup$OnHierarchyChangeListener;)V"); 
+			global::android.widget.TableRow._generateLayoutParams11003 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "generateLayoutParams", "(Landroid/util/AttributeSet;)Landroid/widget/TableRow$LayoutParams;"); 
+			global::android.widget.TableRow._generateLayoutParams11004 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "generateLayoutParams", "(Landroid/view/ViewGroup$LayoutParams;)Landroid/widget/LinearLayout$LayoutParams;"); 
+			global::android.widget.TableRow._generateDefaultLayoutParams11005 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "generateDefaultLayoutParams", "()Landroid/widget/LinearLayout$LayoutParams;"); 
+			global::android.widget.TableRow._getVirtualChildAt11006 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "getVirtualChildAt", "(I)Landroid/view/View;"); 
+			global::android.widget.TableRow._getVirtualChildCount11007 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "getVirtualChildCount", "()I"); 
+			global::android.widget.TableRow._TableRow11008 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
+			global::android.widget.TableRow._TableRow11009 = @__env.GetMethodID(global::android.widget.TableRow.staticClass, "<init>", "(Landroid/content/Context;)V"); 
 		} 
 	} 
 } 

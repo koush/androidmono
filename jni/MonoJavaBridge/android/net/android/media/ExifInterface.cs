@@ -18,73 +18,73 @@ namespace android.media
 		protected ExifInterface(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getAttribute4221; 
+		internal static global::net.sf.jni4net.jni.MethodId _getAttribute4454; 
 		public virtual java.lang.String getAttribute(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.ExifInterface)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getAttribute4221, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getAttribute4454, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.media.ExifInterface.staticClass, _getAttribute4221, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.media.ExifInterface.staticClass, _getAttribute4454, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeInt4222; 
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeInt4455; 
 		public virtual int getAttributeInt(java.lang.String arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.ExifInterface)) 
-				return @__env.CallIntMethod(this, _getAttributeInt4222, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallIntMethod(this, _getAttributeInt4455, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.ExifInterface.staticClass, _getAttributeInt4222, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualIntMethod(this, android.media.ExifInterface.staticClass, _getAttributeInt4455, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setAttribute4223; 
+		internal static global::net.sf.jni4net.jni.MethodId _setAttribute4456; 
 		public virtual void setAttribute(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.ExifInterface)) 
-				@__env.CallVoidMethod(this, _setAttribute4223, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, _setAttribute4456, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.ExifInterface.staticClass, _setAttribute4223, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.media.ExifInterface.staticClass, _setAttribute4456, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _saveAttributes4224; 
+		internal static global::net.sf.jni4net.jni.MethodId _saveAttributes4457; 
 		public virtual void saveAttributes() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.ExifInterface)) 
-				@__env.CallVoidMethod(this, _saveAttributes4224); 
+				@__env.CallVoidMethod(this, _saveAttributes4457); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.ExifInterface.staticClass, _saveAttributes4224); 
+				@__env.CallNonVirtualVoidMethod(this, android.media.ExifInterface.staticClass, _saveAttributes4457); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _hasThumbnail4225; 
+		internal static global::net.sf.jni4net.jni.MethodId _hasThumbnail4458; 
 		public virtual bool hasThumbnail() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.ExifInterface)) 
-				return @__env.CallBooleanMethod(this, _hasThumbnail4225); 
+				return @__env.CallBooleanMethod(this, _hasThumbnail4458); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.media.ExifInterface.staticClass, _hasThumbnail4225); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.media.ExifInterface.staticClass, _hasThumbnail4458); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getThumbnail4226; 
+		internal static global::net.sf.jni4net.jni.MethodId _getThumbnail4459; 
 		public virtual byte[] getThumbnail() 
 		{ 
 			if (GetType() == typeof(android.media.ExifInterface)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getThumbnail4226)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getThumbnail4459)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.media.ExifInterface.staticClass, _getThumbnail4226)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.media.ExifInterface.staticClass, _getThumbnail4459)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getLatLong4227; 
+		internal static global::net.sf.jni4net.jni.MethodId _getLatLong4460; 
 		public virtual bool getLatLong(float[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.ExifInterface)) 
-				return @__env.CallBooleanMethod(this, _getLatLong4227, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, _getLatLong4460, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.media.ExifInterface.staticClass, _getLatLong4227, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.media.ExifInterface.staticClass, _getLatLong4460, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ExifInterface4228; 
+		internal static global::net.sf.jni4net.jni.MethodId _ExifInterface4461; 
 		public ExifInterface(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.media.ExifInterface.staticClass, _ExifInterface4228, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.media.ExifInterface.staticClass, _ExifInterface4461, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		public static java.lang.String TAG_ORIENTATION
 		{ 
@@ -250,14 +250,14 @@ namespace android.media
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.media.ExifInterface.staticClass = @__class; 
-			global::android.media.ExifInterface._getAttribute4221 = @__env.GetMethodID(global::android.media.ExifInterface.staticClass, "getAttribute", "(Ljava/lang/String;)Ljava/lang/String;"); 
-			global::android.media.ExifInterface._getAttributeInt4222 = @__env.GetMethodID(global::android.media.ExifInterface.staticClass, "getAttributeInt", "(Ljava/lang/String;I)I"); 
-			global::android.media.ExifInterface._setAttribute4223 = @__env.GetMethodID(global::android.media.ExifInterface.staticClass, "setAttribute", "(Ljava/lang/String;Ljava/lang/String;)V"); 
-			global::android.media.ExifInterface._saveAttributes4224 = @__env.GetMethodID(global::android.media.ExifInterface.staticClass, "saveAttributes", "()V"); 
-			global::android.media.ExifInterface._hasThumbnail4225 = @__env.GetMethodID(global::android.media.ExifInterface.staticClass, "hasThumbnail", "()Z"); 
-			global::android.media.ExifInterface._getThumbnail4226 = @__env.GetMethodID(global::android.media.ExifInterface.staticClass, "getThumbnail", "()[B"); 
-			global::android.media.ExifInterface._getLatLong4227 = @__env.GetMethodID(global::android.media.ExifInterface.staticClass, "getLatLong", "([F)Z"); 
-			global::android.media.ExifInterface._ExifInterface4228 = @__env.GetMethodID(global::android.media.ExifInterface.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::android.media.ExifInterface._getAttribute4454 = @__env.GetMethodID(global::android.media.ExifInterface.staticClass, "getAttribute", "(Ljava/lang/String;)Ljava/lang/String;"); 
+			global::android.media.ExifInterface._getAttributeInt4455 = @__env.GetMethodID(global::android.media.ExifInterface.staticClass, "getAttributeInt", "(Ljava/lang/String;I)I"); 
+			global::android.media.ExifInterface._setAttribute4456 = @__env.GetMethodID(global::android.media.ExifInterface.staticClass, "setAttribute", "(Ljava/lang/String;Ljava/lang/String;)V"); 
+			global::android.media.ExifInterface._saveAttributes4457 = @__env.GetMethodID(global::android.media.ExifInterface.staticClass, "saveAttributes", "()V"); 
+			global::android.media.ExifInterface._hasThumbnail4458 = @__env.GetMethodID(global::android.media.ExifInterface.staticClass, "hasThumbnail", "()Z"); 
+			global::android.media.ExifInterface._getThumbnail4459 = @__env.GetMethodID(global::android.media.ExifInterface.staticClass, "getThumbnail", "()[B"); 
+			global::android.media.ExifInterface._getLatLong4460 = @__env.GetMethodID(global::android.media.ExifInterface.staticClass, "getLatLong", "([F)Z"); 
+			global::android.media.ExifInterface._ExifInterface4461 = @__env.GetMethodID(global::android.media.ExifInterface.staticClass, "<init>", "(Ljava/lang/String;)V"); 
 		} 
 	} 
 } 

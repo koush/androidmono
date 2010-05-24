@@ -18,106 +18,106 @@ namespace android.app
 		protected ListActivity(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onRestoreInstanceState626; 
+		internal static global::net.sf.jni4net.jni.MethodId _onRestoreInstanceState635; 
 		protected override void onRestoreInstanceState(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				@__env.CallVoidMethod(this, _onRestoreInstanceState626, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _onRestoreInstanceState635, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ListActivity.staticClass, _onRestoreInstanceState626, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.app.ListActivity.staticClass, _onRestoreInstanceState635, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onContentChanged627; 
+		internal static global::net.sf.jni4net.jni.MethodId _onContentChanged636; 
 		public override void onContentChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				@__env.CallVoidMethod(this, _onContentChanged627); 
+				@__env.CallVoidMethod(this, _onContentChanged636); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ListActivity.staticClass, _onContentChanged627); 
+				@__env.CallNonVirtualVoidMethod(this, android.app.ListActivity.staticClass, _onContentChanged636); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getListView628; 
+		internal static global::net.sf.jni4net.jni.MethodId _getListView637; 
 		public virtual android.widget.ListView getListView() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.ListView>(@__env, @__env.CallObjectMethodPtr(this, _getListView628)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.ListView>(@__env, @__env.CallObjectMethodPtr(this, _getListView637)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.ListView>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.ListActivity.staticClass, _getListView628)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.ListView>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.ListActivity.staticClass, _getListView637)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getSelectedItemPosition629; 
+		internal static global::net.sf.jni4net.jni.MethodId _getSelectedItemPosition638; 
 		public virtual int getSelectedItemPosition() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				return @__env.CallIntMethod(this, _getSelectedItemPosition629); 
+				return @__env.CallIntMethod(this, _getSelectedItemPosition638); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.app.ListActivity.staticClass, _getSelectedItemPosition629); 
+				return @__env.CallNonVirtualIntMethod(this, android.app.ListActivity.staticClass, _getSelectedItemPosition638); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getSelectedItemId630; 
+		internal static global::net.sf.jni4net.jni.MethodId _getSelectedItemId639; 
 		public virtual long getSelectedItemId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				return @__env.CallLongMethod(this, _getSelectedItemId630); 
+				return @__env.CallLongMethod(this, _getSelectedItemId639); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, android.app.ListActivity.staticClass, _getSelectedItemId630); 
+				return @__env.CallNonVirtualLongMethod(this, android.app.ListActivity.staticClass, _getSelectedItemId639); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setSelection631; 
+		internal static global::net.sf.jni4net.jni.MethodId _setSelection640; 
 		public virtual void setSelection(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				@__env.CallVoidMethod(this, _setSelection631, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setSelection640, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ListActivity.staticClass, _setSelection631, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.app.ListActivity.staticClass, _setSelection640, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setListAdapter632; 
+		internal static global::net.sf.jni4net.jni.MethodId _setListAdapter641; 
 		public virtual void setListAdapter(android.widget.ListAdapter arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				@__env.CallVoidMethod(this, _setListAdapter632, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _setListAdapter641, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ListActivity.staticClass, _setListAdapter632, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.app.ListActivity.staticClass, _setListAdapter641, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onListItemClick633; 
+		internal static global::net.sf.jni4net.jni.MethodId _onListItemClick642; 
 		protected virtual void onListItemClick(android.widget.ListView arg0, android.view.View arg1, int arg2, long arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				@__env.CallVoidMethod(this, _onListItemClick633, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallVoidMethod(this, _onListItemClick642, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ListActivity.staticClass, _onListItemClick633, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, android.app.ListActivity.staticClass, _onListItemClick642, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getListAdapter634; 
+		internal static global::net.sf.jni4net.jni.MethodId _getListAdapter643; 
 		public virtual android.widget.ListAdapter getListAdapter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.ListAdapter>(@__env, @__env.CallObjectMethodPtr(this, _getListAdapter634)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.ListAdapter>(@__env, @__env.CallObjectMethodPtr(this, _getListAdapter643)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.ListAdapter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.ListActivity.staticClass, _getListAdapter634)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.ListAdapter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.ListActivity.staticClass, _getListAdapter643)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ListActivity635; 
+		internal static global::net.sf.jni4net.jni.MethodId _ListActivity644; 
 		public ListActivity()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.app.ListActivity.staticClass, _ListActivity635, this); 
+			@__env.NewObject(android.app.ListActivity.staticClass, _ListActivity644, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.app.ListActivity.staticClass = @__class; 
-			global::android.app.ListActivity._onRestoreInstanceState626 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "onRestoreInstanceState", "(Landroid/os/Bundle;)V"); 
-			global::android.app.ListActivity._onContentChanged627 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "onContentChanged", "()V"); 
-			global::android.app.ListActivity._getListView628 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "getListView", "()Landroid/widget/ListView;"); 
-			global::android.app.ListActivity._getSelectedItemPosition629 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "getSelectedItemPosition", "()I"); 
-			global::android.app.ListActivity._getSelectedItemId630 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "getSelectedItemId", "()J"); 
-			global::android.app.ListActivity._setSelection631 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "setSelection", "(I)V"); 
-			global::android.app.ListActivity._setListAdapter632 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "setListAdapter", "(Landroid/widget/ListAdapter;)V"); 
-			global::android.app.ListActivity._onListItemClick633 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "onListItemClick", "(Landroid/widget/ListView;Landroid/view/View;IJ)V"); 
-			global::android.app.ListActivity._getListAdapter634 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "getListAdapter", "()Landroid/widget/ListAdapter;"); 
-			global::android.app.ListActivity._ListActivity635 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "<init>", "()V"); 
+			global::android.app.ListActivity._onRestoreInstanceState635 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "onRestoreInstanceState", "(Landroid/os/Bundle;)V"); 
+			global::android.app.ListActivity._onContentChanged636 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "onContentChanged", "()V"); 
+			global::android.app.ListActivity._getListView637 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "getListView", "()Landroid/widget/ListView;"); 
+			global::android.app.ListActivity._getSelectedItemPosition638 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "getSelectedItemPosition", "()I"); 
+			global::android.app.ListActivity._getSelectedItemId639 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "getSelectedItemId", "()J"); 
+			global::android.app.ListActivity._setSelection640 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "setSelection", "(I)V"); 
+			global::android.app.ListActivity._setListAdapter641 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "setListAdapter", "(Landroid/widget/ListAdapter;)V"); 
+			global::android.app.ListActivity._onListItemClick642 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "onListItemClick", "(Landroid/widget/ListView;Landroid/view/View;IJ)V"); 
+			global::android.app.ListActivity._getListAdapter643 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "getListAdapter", "()Landroid/widget/ListAdapter;"); 
+			global::android.app.ListActivity._ListActivity644 = @__env.GetMethodID(global::android.app.ListActivity.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

@@ -36,18 +36,18 @@ namespace java.net
 			internal Type(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf10954; 
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf11782; 
 			public static java.net.Proxy.Type valueOf(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Proxy.Type>(@__env, @__env.CallStaticObjectMethodPtr(java.net.Proxy.Type.staticClass, _valueOf10954, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Proxy.Type>(@__env, @__env.CallStaticObjectMethodPtr(java.net.Proxy.Type.staticClass, _valueOf11782, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _values10955; 
+			internal static global::net.sf.jni4net.jni.MethodId _values11783; 
 			public static java.net.Proxy.Type[] values() 
 			{ 
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.net.Proxy.Type.staticClass, _values10955)); 
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.net.Proxy.Type.staticClass, _values11783)); 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _DIRECT10956; 
+			internal static global::net.sf.jni4net.jni.FieldId _DIRECT11784; 
 			public static java.net.Proxy.Type DIRECT
 			{ 
 				get 
@@ -55,7 +55,7 @@ namespace java.net
 					return default(java.net.Proxy.Type); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _HTTP10957; 
+			internal static global::net.sf.jni4net.jni.FieldId _HTTP11785; 
 			public static java.net.Proxy.Type HTTP
 			{ 
 				get 
@@ -63,7 +63,7 @@ namespace java.net
 					return default(java.net.Proxy.Type); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _SOCKS10958; 
+			internal static global::net.sf.jni4net.jni.FieldId _SOCKS11786; 
 			public static java.net.Proxy.Type SOCKS
 			{ 
 				get 
@@ -74,62 +74,62 @@ namespace java.net
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::java.net.Proxy.Type.staticClass = @__class; 
-				global::java.net.Proxy.Type._valueOf10954 = @__env.GetStaticMethodID(global::java.net.Proxy.Type.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/net/Proxy$Type;"); 
-				global::java.net.Proxy.Type._values10955 = @__env.GetStaticMethodID(global::java.net.Proxy.Type.staticClass, "values", "()[Ljava/net/Proxy/Type;"); 
+				global::java.net.Proxy.Type._valueOf11782 = @__env.GetStaticMethodID(global::java.net.Proxy.Type.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/net/Proxy$Type;"); 
+				global::java.net.Proxy.Type._values11783 = @__env.GetStaticMethodID(global::java.net.Proxy.Type.staticClass, "values", "()[Ljava/net/Proxy/Type;"); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _type10959; 
+		internal static global::net.sf.jni4net.jni.MethodId _type11787; 
 		public virtual java.net.Proxy.Type type() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.Proxy)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Proxy.Type>(@__env, @__env.CallObjectMethodPtr(this, _type10959)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Proxy.Type>(@__env, @__env.CallObjectMethodPtr(this, _type11787)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Proxy.Type>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.Proxy.staticClass, _type10959)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Proxy.Type>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.Proxy.staticClass, _type11787)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode10960; 
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode11788; 
 		public sealed override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.Proxy)) 
-				return @__env.CallIntMethod(this, _hashCode10960); 
+				return @__env.CallIntMethod(this, _hashCode11788); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.net.Proxy.staticClass, _hashCode10960); 
+				return @__env.CallNonVirtualIntMethod(this, java.net.Proxy.staticClass, _hashCode11788); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _equals10961; 
+		internal static global::net.sf.jni4net.jni.MethodId _equals11789; 
 		public sealed override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.Proxy)) 
-				return @__env.CallBooleanMethod(this, _equals10961, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, _equals11789, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.Proxy.staticClass, _equals10961, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.net.Proxy.staticClass, _equals11789, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toString10962; 
+		internal static global::net.sf.jni4net.jni.MethodId _toString11790; 
 		public override java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.Proxy)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString10962)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString11790)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.Proxy.staticClass, _toString10962)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.Proxy.staticClass, _toString11790)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _address10963; 
+		internal static global::net.sf.jni4net.jni.MethodId _address11791; 
 		public virtual java.net.SocketAddress address() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.Proxy)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallObjectMethodPtr(this, _address10963)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallObjectMethodPtr(this, _address11791)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.Proxy.staticClass, _address10963)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.Proxy.staticClass, _address11791)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Proxy10964; 
+		internal static global::net.sf.jni4net.jni.MethodId _Proxy11792; 
 		public Proxy(java.net.Proxy.Type arg0, java.net.SocketAddress arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.net.Proxy.staticClass, _Proxy10964, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(java.net.Proxy.staticClass, _Proxy11792, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _NO_PROXY10965; 
+		internal static global::net.sf.jni4net.jni.FieldId _NO_PROXY11793; 
 		public static java.net.Proxy NO_PROXY
 		{ 
 			get 
@@ -140,12 +140,12 @@ namespace java.net
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::java.net.Proxy.staticClass = @__class; 
-			global::java.net.Proxy._type10959 = @__env.GetMethodID(global::java.net.Proxy.staticClass, "type", "()Ljava/net/Proxy$Type;"); 
-			global::java.net.Proxy._hashCode10960 = @__env.GetMethodID(global::java.net.Proxy.staticClass, "hashCode", "()I"); 
-			global::java.net.Proxy._equals10961 = @__env.GetMethodID(global::java.net.Proxy.staticClass, "equals", "(Ljava/lang/Object;)Z"); 
-			global::java.net.Proxy._toString10962 = @__env.GetMethodID(global::java.net.Proxy.staticClass, "toString", "()Ljava/lang/String;"); 
-			global::java.net.Proxy._address10963 = @__env.GetMethodID(global::java.net.Proxy.staticClass, "address", "()Ljava/net/SocketAddress;"); 
-			global::java.net.Proxy._Proxy10964 = @__env.GetMethodID(global::java.net.Proxy.staticClass, "<init>", "(Ljava/net/Proxy$Type;Ljava/net/SocketAddress;)V"); 
+			global::java.net.Proxy._type11787 = @__env.GetMethodID(global::java.net.Proxy.staticClass, "type", "()Ljava/net/Proxy$Type;"); 
+			global::java.net.Proxy._hashCode11788 = @__env.GetMethodID(global::java.net.Proxy.staticClass, "hashCode", "()I"); 
+			global::java.net.Proxy._equals11789 = @__env.GetMethodID(global::java.net.Proxy.staticClass, "equals", "(Ljava/lang/Object;)Z"); 
+			global::java.net.Proxy._toString11790 = @__env.GetMethodID(global::java.net.Proxy.staticClass, "toString", "()Ljava/lang/String;"); 
+			global::java.net.Proxy._address11791 = @__env.GetMethodID(global::java.net.Proxy.staticClass, "address", "()Ljava/net/SocketAddress;"); 
+			global::java.net.Proxy._Proxy11792 = @__env.GetMethodID(global::java.net.Proxy.staticClass, "<init>", "(Ljava/net/Proxy$Type;Ljava/net/SocketAddress;)V"); 
 		} 
 	} 
 } 

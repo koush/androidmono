@@ -36,13 +36,13 @@ namespace android.provider
 			protected Calls(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _Calls5870; 
+			internal static global::net.sf.jni4net.jni.MethodId _Calls6149; 
 			public Calls()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.provider.CallLog.Calls.staticClass, _Calls5870, this); 
+				@__env.NewObject(android.provider.CallLog.Calls.staticClass, _Calls6149, this); 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI5871; 
+			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6150; 
 			public static android.net.Uri CONTENT_URI
 			{ 
 				get 
@@ -50,7 +50,7 @@ namespace android.provider
 					return default(android.net.Uri); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_FILTER_URI5872; 
+			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_FILTER_URI6151; 
 			public static android.net.Uri CONTENT_FILTER_URI
 			{ 
 				get 
@@ -159,14 +159,14 @@ namespace android.provider
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.provider.CallLog.Calls.staticClass = @__class; 
-				global::android.provider.CallLog.Calls._Calls5870 = @__env.GetMethodID(global::android.provider.CallLog.Calls.staticClass, "<init>", "()V"); 
+				global::android.provider.CallLog.Calls._Calls6149 = @__env.GetMethodID(global::android.provider.CallLog.Calls.staticClass, "<init>", "()V"); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _CallLog5873; 
+		internal static global::net.sf.jni4net.jni.MethodId _CallLog6152; 
 		public CallLog()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.provider.CallLog.staticClass, _CallLog5873, this); 
+			@__env.NewObject(android.provider.CallLog.staticClass, _CallLog6152, this); 
 		} 
 		public static java.lang.String AUTHORITY
 		{ 
@@ -175,7 +175,7 @@ namespace android.provider
 				return "call_log"; 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI5874; 
+		internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6153; 
 		public static android.net.Uri CONTENT_URI
 		{ 
 			get 
@@ -186,7 +186,7 @@ namespace android.provider
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.provider.CallLog.staticClass = @__class; 
-			global::android.provider.CallLog._CallLog5873 = @__env.GetMethodID(global::android.provider.CallLog.staticClass, "<init>", "()V"); 
+			global::android.provider.CallLog._CallLog6152 = @__env.GetMethodID(global::android.provider.CallLog.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

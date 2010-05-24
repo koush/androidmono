@@ -18,16 +18,16 @@ namespace android.os
 		protected DeadObjectException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _DeadObjectException5227; 
+		internal static global::net.sf.jni4net.jni.MethodId _DeadObjectException5485; 
 		public DeadObjectException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.os.DeadObjectException.staticClass, _DeadObjectException5227, this); 
+			@__env.NewObject(android.os.DeadObjectException.staticClass, _DeadObjectException5485, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.os.DeadObjectException.staticClass = @__class; 
-			global::android.os.DeadObjectException._DeadObjectException5227 = @__env.GetMethodID(global::android.os.DeadObjectException.staticClass, "<init>", "()V"); 
+			global::android.os.DeadObjectException._DeadObjectException5485 = @__env.GetMethodID(global::android.os.DeadObjectException.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

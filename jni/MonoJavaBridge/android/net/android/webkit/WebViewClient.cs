@@ -18,119 +18,119 @@ namespace android.webkit
 		protected WebViewClient(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onPageStarted8941; 
+		internal static global::net.sf.jni4net.jni.MethodId _onPageStarted9635; 
 		public virtual void onPageStarted(android.webkit.WebView arg0, java.lang.String arg1, android.graphics.Bitmap arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewClient)) 
-				@__env.CallVoidMethod(this, _onPageStarted8941, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallVoidMethod(this, _onPageStarted9635, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onPageStarted8941, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onPageStarted9635, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onPageFinished8942; 
+		internal static global::net.sf.jni4net.jni.MethodId _onPageFinished9636; 
 		public virtual void onPageFinished(android.webkit.WebView arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewClient)) 
-				@__env.CallVoidMethod(this, _onPageFinished8942, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, _onPageFinished9636, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onPageFinished8942, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onPageFinished9636, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onTooManyRedirects8943; 
+		internal static global::net.sf.jni4net.jni.MethodId _onTooManyRedirects9637; 
 		public virtual void onTooManyRedirects(android.webkit.WebView arg0, android.os.Message arg1, android.os.Message arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewClient)) 
-				@__env.CallVoidMethod(this, _onTooManyRedirects8943, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallVoidMethod(this, _onTooManyRedirects9637, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onTooManyRedirects8943, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onTooManyRedirects9637, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onReceivedError8944; 
+		internal static global::net.sf.jni4net.jni.MethodId _onReceivedError9638; 
 		public virtual void onReceivedError(android.webkit.WebView arg0, int arg1, java.lang.String arg2, java.lang.String arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewClient)) 
-				@__env.CallVoidMethod(this, _onReceivedError8944, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+				@__env.CallVoidMethod(this, _onReceivedError9638, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onReceivedError8944, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onReceivedError9638, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onFormResubmission8945; 
+		internal static global::net.sf.jni4net.jni.MethodId _onFormResubmission9639; 
 		public virtual void onFormResubmission(android.webkit.WebView arg0, android.os.Message arg1, android.os.Message arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewClient)) 
-				@__env.CallVoidMethod(this, _onFormResubmission8945, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallVoidMethod(this, _onFormResubmission9639, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onFormResubmission8945, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onFormResubmission9639, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _shouldOverrideUrlLoading8946; 
+		internal static global::net.sf.jni4net.jni.MethodId _shouldOverrideUrlLoading9640; 
 		public virtual bool shouldOverrideUrlLoading(android.webkit.WebView arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewClient)) 
-				return @__env.CallBooleanMethod(this, _shouldOverrideUrlLoading8946, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallBooleanMethod(this, _shouldOverrideUrlLoading9640, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.webkit.WebViewClient.staticClass, _shouldOverrideUrlLoading8946, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.webkit.WebViewClient.staticClass, _shouldOverrideUrlLoading9640, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onReceivedHttpAuthRequest8947; 
+		internal static global::net.sf.jni4net.jni.MethodId _onReceivedHttpAuthRequest9641; 
 		public virtual void onReceivedHttpAuthRequest(android.webkit.WebView arg0, android.webkit.HttpAuthHandler arg1, java.lang.String arg2, java.lang.String arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewClient)) 
-				@__env.CallVoidMethod(this, _onReceivedHttpAuthRequest8947, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+				@__env.CallVoidMethod(this, _onReceivedHttpAuthRequest9641, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onReceivedHttpAuthRequest8947, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onReceivedHttpAuthRequest9641, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _doUpdateVisitedHistory8948; 
+		internal static global::net.sf.jni4net.jni.MethodId _doUpdateVisitedHistory9642; 
 		public virtual void doUpdateVisitedHistory(android.webkit.WebView arg0, java.lang.String arg1, bool arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewClient)) 
-				@__env.CallVoidMethod(this, _doUpdateVisitedHistory8948, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, _doUpdateVisitedHistory9642, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _doUpdateVisitedHistory8948, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _doUpdateVisitedHistory9642, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onLoadResource8949; 
+		internal static global::net.sf.jni4net.jni.MethodId _onLoadResource9643; 
 		public virtual void onLoadResource(android.webkit.WebView arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewClient)) 
-				@__env.CallVoidMethod(this, _onLoadResource8949, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, _onLoadResource9643, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onLoadResource8949, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onLoadResource9643, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onUnhandledKeyEvent8950; 
+		internal static global::net.sf.jni4net.jni.MethodId _onUnhandledKeyEvent9644; 
 		public virtual void onUnhandledKeyEvent(android.webkit.WebView arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewClient)) 
-				@__env.CallVoidMethod(this, _onUnhandledKeyEvent8950, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, _onUnhandledKeyEvent9644, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onUnhandledKeyEvent8950, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onUnhandledKeyEvent9644, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onScaleChanged8951; 
+		internal static global::net.sf.jni4net.jni.MethodId _onScaleChanged9645; 
 		public virtual void onScaleChanged(android.webkit.WebView arg0, float arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewClient)) 
-				@__env.CallVoidMethod(this, _onScaleChanged8951, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, _onScaleChanged9645, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onScaleChanged8951, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewClient.staticClass, _onScaleChanged9645, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _shouldOverrideKeyEvent8952; 
+		internal static global::net.sf.jni4net.jni.MethodId _shouldOverrideKeyEvent9646; 
 		public virtual bool shouldOverrideKeyEvent(android.webkit.WebView arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewClient)) 
-				return @__env.CallBooleanMethod(this, _shouldOverrideKeyEvent8952, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallBooleanMethod(this, _shouldOverrideKeyEvent9646, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.webkit.WebViewClient.staticClass, _shouldOverrideKeyEvent8952, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.webkit.WebViewClient.staticClass, _shouldOverrideKeyEvent9646, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _WebViewClient8953; 
+		internal static global::net.sf.jni4net.jni.MethodId _WebViewClient9647; 
 		public WebViewClient()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.webkit.WebViewClient.staticClass, _WebViewClient8953, this); 
+			@__env.NewObject(android.webkit.WebViewClient.staticClass, _WebViewClient9647, this); 
 		} 
 		public static int ERROR_UNKNOWN
 		{ 
@@ -240,19 +240,19 @@ namespace android.webkit
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.webkit.WebViewClient.staticClass = @__class; 
-			global::android.webkit.WebViewClient._onPageStarted8941 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onPageStarted", "(Landroid/webkit/WebView;Ljava/lang/String;Landroid/graphics/Bitmap;)V"); 
-			global::android.webkit.WebViewClient._onPageFinished8942 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onPageFinished", "(Landroid/webkit/WebView;Ljava/lang/String;)V"); 
-			global::android.webkit.WebViewClient._onTooManyRedirects8943 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onTooManyRedirects", "(Landroid/webkit/WebView;Landroid/os/Message;Landroid/os/Message;)V"); 
-			global::android.webkit.WebViewClient._onReceivedError8944 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onReceivedError", "(Landroid/webkit/WebView;ILjava/lang/String;Ljava/lang/String;)V"); 
-			global::android.webkit.WebViewClient._onFormResubmission8945 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onFormResubmission", "(Landroid/webkit/WebView;Landroid/os/Message;Landroid/os/Message;)V"); 
-			global::android.webkit.WebViewClient._shouldOverrideUrlLoading8946 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "shouldOverrideUrlLoading", "(Landroid/webkit/WebView;Ljava/lang/String;)Z"); 
-			global::android.webkit.WebViewClient._onReceivedHttpAuthRequest8947 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onReceivedHttpAuthRequest", "(Landroid/webkit/WebView;Landroid/webkit/HttpAuthHandler;Ljava/lang/String;Ljava/lang/String;)V"); 
-			global::android.webkit.WebViewClient._doUpdateVisitedHistory8948 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "doUpdateVisitedHistory", "(Landroid/webkit/WebView;Ljava/lang/String;Z)V"); 
-			global::android.webkit.WebViewClient._onLoadResource8949 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onLoadResource", "(Landroid/webkit/WebView;Ljava/lang/String;)V"); 
-			global::android.webkit.WebViewClient._onUnhandledKeyEvent8950 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onUnhandledKeyEvent", "(Landroid/webkit/WebView;Landroid/view/KeyEvent;)V"); 
-			global::android.webkit.WebViewClient._onScaleChanged8951 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onScaleChanged", "(Landroid/webkit/WebView;FF)V"); 
-			global::android.webkit.WebViewClient._shouldOverrideKeyEvent8952 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "shouldOverrideKeyEvent", "(Landroid/webkit/WebView;Landroid/view/KeyEvent;)Z"); 
-			global::android.webkit.WebViewClient._WebViewClient8953 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "<init>", "()V"); 
+			global::android.webkit.WebViewClient._onPageStarted9635 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onPageStarted", "(Landroid/webkit/WebView;Ljava/lang/String;Landroid/graphics/Bitmap;)V"); 
+			global::android.webkit.WebViewClient._onPageFinished9636 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onPageFinished", "(Landroid/webkit/WebView;Ljava/lang/String;)V"); 
+			global::android.webkit.WebViewClient._onTooManyRedirects9637 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onTooManyRedirects", "(Landroid/webkit/WebView;Landroid/os/Message;Landroid/os/Message;)V"); 
+			global::android.webkit.WebViewClient._onReceivedError9638 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onReceivedError", "(Landroid/webkit/WebView;ILjava/lang/String;Ljava/lang/String;)V"); 
+			global::android.webkit.WebViewClient._onFormResubmission9639 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onFormResubmission", "(Landroid/webkit/WebView;Landroid/os/Message;Landroid/os/Message;)V"); 
+			global::android.webkit.WebViewClient._shouldOverrideUrlLoading9640 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "shouldOverrideUrlLoading", "(Landroid/webkit/WebView;Ljava/lang/String;)Z"); 
+			global::android.webkit.WebViewClient._onReceivedHttpAuthRequest9641 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onReceivedHttpAuthRequest", "(Landroid/webkit/WebView;Landroid/webkit/HttpAuthHandler;Ljava/lang/String;Ljava/lang/String;)V"); 
+			global::android.webkit.WebViewClient._doUpdateVisitedHistory9642 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "doUpdateVisitedHistory", "(Landroid/webkit/WebView;Ljava/lang/String;Z)V"); 
+			global::android.webkit.WebViewClient._onLoadResource9643 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onLoadResource", "(Landroid/webkit/WebView;Ljava/lang/String;)V"); 
+			global::android.webkit.WebViewClient._onUnhandledKeyEvent9644 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onUnhandledKeyEvent", "(Landroid/webkit/WebView;Landroid/view/KeyEvent;)V"); 
+			global::android.webkit.WebViewClient._onScaleChanged9645 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "onScaleChanged", "(Landroid/webkit/WebView;FF)V"); 
+			global::android.webkit.WebViewClient._shouldOverrideKeyEvent9646 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "shouldOverrideKeyEvent", "(Landroid/webkit/WebView;Landroid/view/KeyEvent;)Z"); 
+			global::android.webkit.WebViewClient._WebViewClient9647 = @__env.GetMethodID(global::android.webkit.WebViewClient.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

@@ -18,81 +18,81 @@ namespace java.util.regex
 		internal Pattern(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toString12138; 
+		internal static global::net.sf.jni4net.jni.MethodId _toString13091; 
 		public sealed override java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.regex.Pattern)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString12138)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString13091)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.regex.Pattern.staticClass, _toString12138)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.regex.Pattern.staticClass, _toString13091)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _matches12139; 
+		internal static global::net.sf.jni4net.jni.MethodId _matches13092; 
 		public static bool matches(java.lang.String arg0, java.lang.CharSequence arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(java.util.regex.Pattern.staticClass, _matches12139, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			return @__env.CallStaticBooleanMethod(java.util.regex.Pattern.staticClass, _matches13092, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _split12140; 
+		internal static global::net.sf.jni4net.jni.MethodId _split13093; 
 		public java.lang.String[] split(java.lang.CharSequence arg0, int arg1) 
 		{ 
 			if (GetType() == typeof(java.util.regex.Pattern)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _split12140, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, _split13093, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.regex.Pattern.staticClass, _split12140, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.regex.Pattern.staticClass, _split13093, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _split12141; 
+		internal static global::net.sf.jni4net.jni.MethodId _split13094; 
 		public java.lang.String[] split(java.lang.CharSequence arg0) 
 		{ 
 			if (GetType() == typeof(java.util.regex.Pattern)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _split12141, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, _split13094, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.regex.Pattern.staticClass, _split12141, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.regex.Pattern.staticClass, _split13094, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _compile12142; 
+		internal static global::net.sf.jni4net.jni.MethodId _compile13095; 
 		public static java.util.regex.Pattern compile(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Pattern>(@__env, @__env.CallStaticObjectMethodPtr(java.util.regex.Pattern.staticClass, _compile12142, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Pattern>(@__env, @__env.CallStaticObjectMethodPtr(java.util.regex.Pattern.staticClass, _compile13095, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _compile12143; 
+		internal static global::net.sf.jni4net.jni.MethodId _compile13096; 
 		public static java.util.regex.Pattern compile(java.lang.String arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Pattern>(@__env, @__env.CallStaticObjectMethodPtr(java.util.regex.Pattern.staticClass, _compile12143, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Pattern>(@__env, @__env.CallStaticObjectMethodPtr(java.util.regex.Pattern.staticClass, _compile13096, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _matcher12144; 
+		internal static global::net.sf.jni4net.jni.MethodId _matcher13097; 
 		public java.util.regex.Matcher matcher(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.regex.Pattern)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallObjectMethodPtr(this, _matcher12144, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallObjectMethodPtr(this, _matcher13097, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.regex.Pattern.staticClass, _matcher12144, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.regex.Pattern.staticClass, _matcher13097, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _quote12145; 
+		internal static global::net.sf.jni4net.jni.MethodId _quote13098; 
 		public static java.lang.String quote(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(java.util.regex.Pattern.staticClass, _quote12145, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(java.util.regex.Pattern.staticClass, _quote13098, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _pattern12146; 
+		internal static global::net.sf.jni4net.jni.MethodId _pattern13099; 
 		public java.lang.String pattern() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.regex.Pattern)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _pattern12146)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _pattern13099)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.regex.Pattern.staticClass, _pattern12146)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.regex.Pattern.staticClass, _pattern13099)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _flags12147; 
+		internal static global::net.sf.jni4net.jni.MethodId _flags13100; 
 		public int flags() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.regex.Pattern)) 
-				return @__env.CallIntMethod(this, _flags12147); 
+				return @__env.CallIntMethod(this, _flags13100); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.util.regex.Pattern.staticClass, _flags12147); 
+				return @__env.CallNonVirtualIntMethod(this, java.util.regex.Pattern.staticClass, _flags13100); 
 		} 
 		public static int UNIX_LINES
 		{ 
@@ -153,16 +153,16 @@ namespace java.util.regex
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::java.util.regex.Pattern.staticClass = @__class; 
-			global::java.util.regex.Pattern._toString12138 = @__env.GetMethodID(global::java.util.regex.Pattern.staticClass, "toString", "()Ljava/lang/String;"); 
-			global::java.util.regex.Pattern._matches12139 = @__env.GetStaticMethodID(global::java.util.regex.Pattern.staticClass, "matches", "(Ljava/lang/String;Ljava/lang/CharSequence;)Z"); 
-			global::java.util.regex.Pattern._split12140 = @__env.GetMethodID(global::java.util.regex.Pattern.staticClass, "split", "(Ljava/lang/CharSequence;I)[Ljava/lang/String;"); 
-			global::java.util.regex.Pattern._split12141 = @__env.GetMethodID(global::java.util.regex.Pattern.staticClass, "split", "(Ljava/lang/CharSequence;)[Ljava/lang/String;"); 
-			global::java.util.regex.Pattern._compile12142 = @__env.GetStaticMethodID(global::java.util.regex.Pattern.staticClass, "compile", "(Ljava/lang/String;)Ljava/util/regex/Pattern;"); 
-			global::java.util.regex.Pattern._compile12143 = @__env.GetStaticMethodID(global::java.util.regex.Pattern.staticClass, "compile", "(Ljava/lang/String;I)Ljava/util/regex/Pattern;"); 
-			global::java.util.regex.Pattern._matcher12144 = @__env.GetMethodID(global::java.util.regex.Pattern.staticClass, "matcher", "(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;"); 
-			global::java.util.regex.Pattern._quote12145 = @__env.GetStaticMethodID(global::java.util.regex.Pattern.staticClass, "quote", "(Ljava/lang/String;)Ljava/lang/String;"); 
-			global::java.util.regex.Pattern._pattern12146 = @__env.GetMethodID(global::java.util.regex.Pattern.staticClass, "pattern", "()Ljava/lang/String;"); 
-			global::java.util.regex.Pattern._flags12147 = @__env.GetMethodID(global::java.util.regex.Pattern.staticClass, "flags", "()I"); 
+			global::java.util.regex.Pattern._toString13091 = @__env.GetMethodID(global::java.util.regex.Pattern.staticClass, "toString", "()Ljava/lang/String;"); 
+			global::java.util.regex.Pattern._matches13092 = @__env.GetStaticMethodID(global::java.util.regex.Pattern.staticClass, "matches", "(Ljava/lang/String;Ljava/lang/CharSequence;)Z"); 
+			global::java.util.regex.Pattern._split13093 = @__env.GetMethodID(global::java.util.regex.Pattern.staticClass, "split", "(Ljava/lang/CharSequence;I)[Ljava/lang/String;"); 
+			global::java.util.regex.Pattern._split13094 = @__env.GetMethodID(global::java.util.regex.Pattern.staticClass, "split", "(Ljava/lang/CharSequence;)[Ljava/lang/String;"); 
+			global::java.util.regex.Pattern._compile13095 = @__env.GetStaticMethodID(global::java.util.regex.Pattern.staticClass, "compile", "(Ljava/lang/String;)Ljava/util/regex/Pattern;"); 
+			global::java.util.regex.Pattern._compile13096 = @__env.GetStaticMethodID(global::java.util.regex.Pattern.staticClass, "compile", "(Ljava/lang/String;I)Ljava/util/regex/Pattern;"); 
+			global::java.util.regex.Pattern._matcher13097 = @__env.GetMethodID(global::java.util.regex.Pattern.staticClass, "matcher", "(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;"); 
+			global::java.util.regex.Pattern._quote13098 = @__env.GetStaticMethodID(global::java.util.regex.Pattern.staticClass, "quote", "(Ljava/lang/String;)Ljava/lang/String;"); 
+			global::java.util.regex.Pattern._pattern13099 = @__env.GetMethodID(global::java.util.regex.Pattern.staticClass, "pattern", "()Ljava/lang/String;"); 
+			global::java.util.regex.Pattern._flags13100 = @__env.GetMethodID(global::java.util.regex.Pattern.staticClass, "flags", "()I"); 
 		} 
 	} 
 } 

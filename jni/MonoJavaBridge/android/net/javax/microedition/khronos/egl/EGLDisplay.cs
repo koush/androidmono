@@ -11,16 +11,16 @@ namespace javax.microedition.khronos.egl
 		protected EGLDisplay(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _EGLDisplay12152; 
+		internal static global::net.sf.jni4net.jni.MethodId _EGLDisplay13129; 
 		public EGLDisplay()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(javax.microedition.khronos.egl.EGLDisplay.staticClass, _EGLDisplay12152, this); 
+			@__env.NewObject(javax.microedition.khronos.egl.EGLDisplay.staticClass, _EGLDisplay13129, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::javax.microedition.khronos.egl.EGLDisplay.staticClass = @__class; 
-			global::javax.microedition.khronos.egl.EGLDisplay._EGLDisplay12152 = @__env.GetMethodID(global::javax.microedition.khronos.egl.EGLDisplay.staticClass, "<init>", "()V"); 
+			global::javax.microedition.khronos.egl.EGLDisplay._EGLDisplay13129 = @__env.GetMethodID(global::javax.microedition.khronos.egl.EGLDisplay.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

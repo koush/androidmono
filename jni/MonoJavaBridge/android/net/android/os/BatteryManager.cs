@@ -18,11 +18,11 @@ namespace android.os
 		protected BatteryManager(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _BatteryManager5093; 
+		internal static global::net.sf.jni4net.jni.MethodId _BatteryManager5351; 
 		public BatteryManager()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.os.BatteryManager.staticClass, _BatteryManager5093, this); 
+			@__env.NewObject(android.os.BatteryManager.staticClass, _BatteryManager5351, this); 
 		} 
 		public static java.lang.String EXTRA_STATUS
 		{ 
@@ -188,7 +188,7 @@ namespace android.os
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.os.BatteryManager.staticClass = @__class; 
-			global::android.os.BatteryManager._BatteryManager5093 = @__env.GetMethodID(global::android.os.BatteryManager.staticClass, "<init>", "()V"); 
+			global::android.os.BatteryManager._BatteryManager5351 = @__env.GetMethodID(global::android.os.BatteryManager.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

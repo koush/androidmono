@@ -18,23 +18,23 @@ namespace android.content
 		protected ActivityNotFoundException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ActivityNotFoundException900; 
+		internal static global::net.sf.jni4net.jni.MethodId _ActivityNotFoundException913; 
 		public ActivityNotFoundException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.content.ActivityNotFoundException.staticClass, _ActivityNotFoundException900, this); 
+			@__env.NewObject(android.content.ActivityNotFoundException.staticClass, _ActivityNotFoundException913, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ActivityNotFoundException901; 
+		internal static global::net.sf.jni4net.jni.MethodId _ActivityNotFoundException914; 
 		public ActivityNotFoundException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.content.ActivityNotFoundException.staticClass, _ActivityNotFoundException901, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.content.ActivityNotFoundException.staticClass, _ActivityNotFoundException914, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.content.ActivityNotFoundException.staticClass = @__class; 
-			global::android.content.ActivityNotFoundException._ActivityNotFoundException900 = @__env.GetMethodID(global::android.content.ActivityNotFoundException.staticClass, "<init>", "()V"); 
-			global::android.content.ActivityNotFoundException._ActivityNotFoundException901 = @__env.GetMethodID(global::android.content.ActivityNotFoundException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::android.content.ActivityNotFoundException._ActivityNotFoundException913 = @__env.GetMethodID(global::android.content.ActivityNotFoundException.staticClass, "<init>", "()V"); 
+			global::android.content.ActivityNotFoundException._ActivityNotFoundException914 = @__env.GetMethodID(global::android.content.ActivityNotFoundException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
 		} 
 	} 
 } 

@@ -18,20 +18,20 @@ namespace android.view
 		protected TouchDelegate(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onTouchEvent7534; 
+		internal static global::net.sf.jni4net.jni.MethodId _onTouchEvent8086; 
 		public virtual bool onTouchEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.TouchDelegate)) 
-				return @__env.CallBooleanMethod(this, _onTouchEvent7534, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _onTouchEvent8086, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.view.TouchDelegate.staticClass, _onTouchEvent7534, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.view.TouchDelegate.staticClass, _onTouchEvent8086, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _TouchDelegate7535; 
+		internal static global::net.sf.jni4net.jni.MethodId _TouchDelegate8087; 
 		public TouchDelegate(android.graphics.Rect arg0, android.view.View arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.TouchDelegate.staticClass, _TouchDelegate7535, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(android.view.TouchDelegate.staticClass, _TouchDelegate8087, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		public static int ABOVE
 		{ 
@@ -64,8 +64,8 @@ namespace android.view
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.view.TouchDelegate.staticClass = @__class; 
-			global::android.view.TouchDelegate._onTouchEvent7534 = @__env.GetMethodID(global::android.view.TouchDelegate.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z"); 
-			global::android.view.TouchDelegate._TouchDelegate7535 = @__env.GetMethodID(global::android.view.TouchDelegate.staticClass, "<init>", "(Landroid/graphics/Rect;Landroid/view/View;)V"); 
+			global::android.view.TouchDelegate._onTouchEvent8086 = @__env.GetMethodID(global::android.view.TouchDelegate.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z"); 
+			global::android.view.TouchDelegate._TouchDelegate8087 = @__env.GetMethodID(global::android.view.TouchDelegate.staticClass, "<init>", "(Landroid/graphics/Rect;Landroid/view/View;)V"); 
 		} 
 	} 
 } 

@@ -18,16 +18,16 @@ namespace android.graphics
 		protected MaskFilter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _MaskFilter2758; 
+		internal static global::net.sf.jni4net.jni.MethodId _MaskFilter2958; 
 		public MaskFilter()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.MaskFilter.staticClass, _MaskFilter2758, this); 
+			@__env.NewObject(android.graphics.MaskFilter.staticClass, _MaskFilter2958, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.graphics.MaskFilter.staticClass = @__class; 
-			global::android.graphics.MaskFilter._MaskFilter2758 = @__env.GetMethodID(global::android.graphics.MaskFilter.staticClass, "<init>", "()V"); 
+			global::android.graphics.MaskFilter._MaskFilter2958 = @__env.GetMethodID(global::android.graphics.MaskFilter.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

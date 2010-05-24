@@ -18,56 +18,56 @@ namespace android.app
 		protected Application(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onCreate422; 
+		internal static global::net.sf.jni4net.jni.MethodId _onCreate429; 
 		public virtual void onCreate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.Application)) 
-				@__env.CallVoidMethod(this, _onCreate422); 
+				@__env.CallVoidMethod(this, _onCreate429); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.Application.staticClass, _onCreate422); 
+				@__env.CallNonVirtualVoidMethod(this, android.app.Application.staticClass, _onCreate429); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onConfigurationChanged423; 
+		internal static global::net.sf.jni4net.jni.MethodId _onConfigurationChanged430; 
 		public virtual void onConfigurationChanged(android.content.res.Configuration arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.Application)) 
-				@__env.CallVoidMethod(this, _onConfigurationChanged423, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _onConfigurationChanged430, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.Application.staticClass, _onConfigurationChanged423, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.app.Application.staticClass, _onConfigurationChanged430, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onLowMemory424; 
+		internal static global::net.sf.jni4net.jni.MethodId _onLowMemory431; 
 		public virtual void onLowMemory() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.Application)) 
-				@__env.CallVoidMethod(this, _onLowMemory424); 
+				@__env.CallVoidMethod(this, _onLowMemory431); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.Application.staticClass, _onLowMemory424); 
+				@__env.CallNonVirtualVoidMethod(this, android.app.Application.staticClass, _onLowMemory431); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onTerminate425; 
+		internal static global::net.sf.jni4net.jni.MethodId _onTerminate432; 
 		public virtual void onTerminate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.Application)) 
-				@__env.CallVoidMethod(this, _onTerminate425); 
+				@__env.CallVoidMethod(this, _onTerminate432); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.Application.staticClass, _onTerminate425); 
+				@__env.CallNonVirtualVoidMethod(this, android.app.Application.staticClass, _onTerminate432); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _Application426; 
+		internal static global::net.sf.jni4net.jni.MethodId _Application433; 
 		public Application()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.app.Application.staticClass, _Application426, this); 
+			@__env.NewObject(android.app.Application.staticClass, _Application433, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.app.Application.staticClass = @__class; 
-			global::android.app.Application._onCreate422 = @__env.GetMethodID(global::android.app.Application.staticClass, "onCreate", "()V"); 
-			global::android.app.Application._onConfigurationChanged423 = @__env.GetMethodID(global::android.app.Application.staticClass, "onConfigurationChanged", "(Landroid/content/res/Configuration;)V"); 
-			global::android.app.Application._onLowMemory424 = @__env.GetMethodID(global::android.app.Application.staticClass, "onLowMemory", "()V"); 
-			global::android.app.Application._onTerminate425 = @__env.GetMethodID(global::android.app.Application.staticClass, "onTerminate", "()V"); 
-			global::android.app.Application._Application426 = @__env.GetMethodID(global::android.app.Application.staticClass, "<init>", "()V"); 
+			global::android.app.Application._onCreate429 = @__env.GetMethodID(global::android.app.Application.staticClass, "onCreate", "()V"); 
+			global::android.app.Application._onConfigurationChanged430 = @__env.GetMethodID(global::android.app.Application.staticClass, "onConfigurationChanged", "(Landroid/content/res/Configuration;)V"); 
+			global::android.app.Application._onLowMemory431 = @__env.GetMethodID(global::android.app.Application.staticClass, "onLowMemory", "()V"); 
+			global::android.app.Application._onTerminate432 = @__env.GetMethodID(global::android.app.Application.staticClass, "onTerminate", "()V"); 
+			global::android.app.Application._Application433 = @__env.GetMethodID(global::android.app.Application.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

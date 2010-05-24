@@ -18,37 +18,37 @@ namespace java.io
 		protected IOException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _IOException10584; 
+		internal static global::net.sf.jni4net.jni.MethodId _IOException11407; 
 		public IOException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.io.IOException.staticClass, _IOException10584, this); 
+			@__env.NewObject(java.io.IOException.staticClass, _IOException11407, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _IOException10585; 
+		internal static global::net.sf.jni4net.jni.MethodId _IOException11408; 
 		public IOException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.io.IOException.staticClass, _IOException10585, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(java.io.IOException.staticClass, _IOException11408, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _IOException10586; 
+		internal static global::net.sf.jni4net.jni.MethodId _IOException11409; 
 		public IOException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.io.IOException.staticClass, _IOException10586, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(java.io.IOException.staticClass, _IOException11409, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _IOException10587; 
+		internal static global::net.sf.jni4net.jni.MethodId _IOException11410; 
 		public IOException(java.lang.Throwable arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.io.IOException.staticClass, _IOException10587, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(java.io.IOException.staticClass, _IOException11410, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::java.io.IOException.staticClass = @__class; 
-			global::java.io.IOException._IOException10584 = @__env.GetMethodID(global::java.io.IOException.staticClass, "<init>", "()V"); 
-			global::java.io.IOException._IOException10585 = @__env.GetMethodID(global::java.io.IOException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
-			global::java.io.IOException._IOException10586 = @__env.GetMethodID(global::java.io.IOException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V"); 
-			global::java.io.IOException._IOException10587 = @__env.GetMethodID(global::java.io.IOException.staticClass, "<init>", "(Ljava/lang/Throwable;)V"); 
+			global::java.io.IOException._IOException11407 = @__env.GetMethodID(global::java.io.IOException.staticClass, "<init>", "()V"); 
+			global::java.io.IOException._IOException11408 = @__env.GetMethodID(global::java.io.IOException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::java.io.IOException._IOException11409 = @__env.GetMethodID(global::java.io.IOException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V"); 
+			global::java.io.IOException._IOException11410 = @__env.GetMethodID(global::java.io.IOException.staticClass, "<init>", "(Ljava/lang/Throwable;)V"); 
 		} 
 	} 
 } 

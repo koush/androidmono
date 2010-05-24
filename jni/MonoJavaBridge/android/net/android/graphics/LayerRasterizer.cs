@@ -18,36 +18,36 @@ namespace android.graphics
 		protected LayerRasterizer(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _addLayer2752; 
+		internal static global::net.sf.jni4net.jni.MethodId _addLayer2952; 
 		public virtual void addLayer(android.graphics.Paint arg0, float arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.LayerRasterizer)) 
-				@__env.CallVoidMethod(this, _addLayer2752, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, _addLayer2952, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.LayerRasterizer.staticClass, _addLayer2752, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.LayerRasterizer.staticClass, _addLayer2952, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _addLayer2753; 
+		internal static global::net.sf.jni4net.jni.MethodId _addLayer2953; 
 		public virtual void addLayer(android.graphics.Paint arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.LayerRasterizer)) 
-				@__env.CallVoidMethod(this, _addLayer2753, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _addLayer2953, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.LayerRasterizer.staticClass, _addLayer2753, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.LayerRasterizer.staticClass, _addLayer2953, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _LayerRasterizer2754; 
+		internal static global::net.sf.jni4net.jni.MethodId _LayerRasterizer2954; 
 		public LayerRasterizer()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.LayerRasterizer.staticClass, _LayerRasterizer2754, this); 
+			@__env.NewObject(android.graphics.LayerRasterizer.staticClass, _LayerRasterizer2954, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.graphics.LayerRasterizer.staticClass = @__class; 
-			global::android.graphics.LayerRasterizer._addLayer2752 = @__env.GetMethodID(global::android.graphics.LayerRasterizer.staticClass, "addLayer", "(Landroid/graphics/Paint;FF)V"); 
-			global::android.graphics.LayerRasterizer._addLayer2753 = @__env.GetMethodID(global::android.graphics.LayerRasterizer.staticClass, "addLayer", "(Landroid/graphics/Paint;)V"); 
-			global::android.graphics.LayerRasterizer._LayerRasterizer2754 = @__env.GetMethodID(global::android.graphics.LayerRasterizer.staticClass, "<init>", "()V"); 
+			global::android.graphics.LayerRasterizer._addLayer2952 = @__env.GetMethodID(global::android.graphics.LayerRasterizer.staticClass, "addLayer", "(Landroid/graphics/Paint;FF)V"); 
+			global::android.graphics.LayerRasterizer._addLayer2953 = @__env.GetMethodID(global::android.graphics.LayerRasterizer.staticClass, "addLayer", "(Landroid/graphics/Paint;)V"); 
+			global::android.graphics.LayerRasterizer._LayerRasterizer2954 = @__env.GetMethodID(global::android.graphics.LayerRasterizer.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

@@ -18,61 +18,61 @@ namespace android.content
 		protected OperationApplicationException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getNumSuccessfulYieldPoints1452; 
+		internal static global::net.sf.jni4net.jni.MethodId _getNumSuccessfulYieldPoints1475; 
 		public virtual int getNumSuccessfulYieldPoints() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.OperationApplicationException)) 
-				return @__env.CallIntMethod(this, _getNumSuccessfulYieldPoints1452); 
+				return @__env.CallIntMethod(this, _getNumSuccessfulYieldPoints1475); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.OperationApplicationException.staticClass, _getNumSuccessfulYieldPoints1452); 
+				return @__env.CallNonVirtualIntMethod(this, android.content.OperationApplicationException.staticClass, _getNumSuccessfulYieldPoints1475); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1453; 
+		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1476; 
 		public OperationApplicationException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.content.OperationApplicationException.staticClass, _OperationApplicationException1453, this); 
+			@__env.NewObject(android.content.OperationApplicationException.staticClass, _OperationApplicationException1476, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1454; 
+		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1477; 
 		public OperationApplicationException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.content.OperationApplicationException.staticClass, _OperationApplicationException1454, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.content.OperationApplicationException.staticClass, _OperationApplicationException1477, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1455; 
+		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1478; 
 		public OperationApplicationException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.content.OperationApplicationException.staticClass, _OperationApplicationException1455, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(android.content.OperationApplicationException.staticClass, _OperationApplicationException1478, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1456; 
+		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1479; 
 		public OperationApplicationException(java.lang.Throwable arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.content.OperationApplicationException.staticClass, _OperationApplicationException1456, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.content.OperationApplicationException.staticClass, _OperationApplicationException1479, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1457; 
+		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1480; 
 		public OperationApplicationException(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.content.OperationApplicationException.staticClass, _OperationApplicationException1457, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			@__env.NewObject(android.content.OperationApplicationException.staticClass, _OperationApplicationException1480, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1458; 
+		internal static global::net.sf.jni4net.jni.MethodId _OperationApplicationException1481; 
 		public OperationApplicationException(java.lang.String arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.content.OperationApplicationException.staticClass, _OperationApplicationException1458, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(android.content.OperationApplicationException.staticClass, _OperationApplicationException1481, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.content.OperationApplicationException.staticClass = @__class; 
-			global::android.content.OperationApplicationException._getNumSuccessfulYieldPoints1452 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "getNumSuccessfulYieldPoints", "()I"); 
-			global::android.content.OperationApplicationException._OperationApplicationException1453 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "()V"); 
-			global::android.content.OperationApplicationException._OperationApplicationException1454 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
-			global::android.content.OperationApplicationException._OperationApplicationException1455 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V"); 
-			global::android.content.OperationApplicationException._OperationApplicationException1456 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/Throwable;)V"); 
-			global::android.content.OperationApplicationException._OperationApplicationException1457 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "(I)V"); 
-			global::android.content.OperationApplicationException._OperationApplicationException1458 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;I)V"); 
+			global::android.content.OperationApplicationException._getNumSuccessfulYieldPoints1475 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "getNumSuccessfulYieldPoints", "()I"); 
+			global::android.content.OperationApplicationException._OperationApplicationException1476 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "()V"); 
+			global::android.content.OperationApplicationException._OperationApplicationException1477 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::android.content.OperationApplicationException._OperationApplicationException1478 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V"); 
+			global::android.content.OperationApplicationException._OperationApplicationException1479 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/Throwable;)V"); 
+			global::android.content.OperationApplicationException._OperationApplicationException1480 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "(I)V"); 
+			global::android.content.OperationApplicationException._OperationApplicationException1481 = @__env.GetMethodID(global::android.content.OperationApplicationException.staticClass, "<init>", "(Ljava/lang/String;I)V"); 
 		} 
 	} 
 } 

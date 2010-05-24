@@ -18,139 +18,139 @@ namespace android.telephony
 		protected SignalStrength(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode6235; 
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode6523; 
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.telephony.SignalStrength)) 
-				return @__env.CallIntMethod(this, _hashCode6235); 
+				return @__env.CallIntMethod(this, _hashCode6523); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _hashCode6235); 
+				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _hashCode6523); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _equals6236; 
+		internal static global::net.sf.jni4net.jni.MethodId _equals6524; 
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.telephony.SignalStrength)) 
-				return @__env.CallBooleanMethod(this, _equals6236, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, _equals6524, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.telephony.SignalStrength.staticClass, _equals6236, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.telephony.SignalStrength.staticClass, _equals6524, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toString6237; 
+		internal static global::net.sf.jni4net.jni.MethodId _toString6525; 
 		public override java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.telephony.SignalStrength)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString6237)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString6525)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.telephony.SignalStrength.staticClass, _toString6237)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.telephony.SignalStrength.staticClass, _toString6525)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel6238; 
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel6526; 
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.telephony.SignalStrength)) 
-				@__env.CallVoidMethod(this, _writeToParcel6238, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _writeToParcel6526, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.telephony.SignalStrength.staticClass, _writeToParcel6238, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.telephony.SignalStrength.staticClass, _writeToParcel6526, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents6239; 
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents6527; 
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.telephony.SignalStrength)) 
-				return @__env.CallIntMethod(this, _describeContents6239); 
+				return @__env.CallIntMethod(this, _describeContents6527); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _describeContents6239); 
+				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _describeContents6527); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getGsmSignalStrength6240; 
+		internal static global::net.sf.jni4net.jni.MethodId _getGsmSignalStrength6528; 
 		public virtual int getGsmSignalStrength() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.telephony.SignalStrength)) 
-				return @__env.CallIntMethod(this, _getGsmSignalStrength6240); 
+				return @__env.CallIntMethod(this, _getGsmSignalStrength6528); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _getGsmSignalStrength6240); 
+				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _getGsmSignalStrength6528); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getGsmBitErrorRate6241; 
+		internal static global::net.sf.jni4net.jni.MethodId _getGsmBitErrorRate6529; 
 		public virtual int getGsmBitErrorRate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.telephony.SignalStrength)) 
-				return @__env.CallIntMethod(this, _getGsmBitErrorRate6241); 
+				return @__env.CallIntMethod(this, _getGsmBitErrorRate6529); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _getGsmBitErrorRate6241); 
+				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _getGsmBitErrorRate6529); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getCdmaDbm6242; 
+		internal static global::net.sf.jni4net.jni.MethodId _getCdmaDbm6530; 
 		public virtual int getCdmaDbm() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.telephony.SignalStrength)) 
-				return @__env.CallIntMethod(this, _getCdmaDbm6242); 
+				return @__env.CallIntMethod(this, _getCdmaDbm6530); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _getCdmaDbm6242); 
+				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _getCdmaDbm6530); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getCdmaEcio6243; 
+		internal static global::net.sf.jni4net.jni.MethodId _getCdmaEcio6531; 
 		public virtual int getCdmaEcio() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.telephony.SignalStrength)) 
-				return @__env.CallIntMethod(this, _getCdmaEcio6243); 
+				return @__env.CallIntMethod(this, _getCdmaEcio6531); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _getCdmaEcio6243); 
+				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _getCdmaEcio6531); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getEvdoDbm6244; 
+		internal static global::net.sf.jni4net.jni.MethodId _getEvdoDbm6532; 
 		public virtual int getEvdoDbm() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.telephony.SignalStrength)) 
-				return @__env.CallIntMethod(this, _getEvdoDbm6244); 
+				return @__env.CallIntMethod(this, _getEvdoDbm6532); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _getEvdoDbm6244); 
+				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _getEvdoDbm6532); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getEvdoEcio6245; 
+		internal static global::net.sf.jni4net.jni.MethodId _getEvdoEcio6533; 
 		public virtual int getEvdoEcio() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.telephony.SignalStrength)) 
-				return @__env.CallIntMethod(this, _getEvdoEcio6245); 
+				return @__env.CallIntMethod(this, _getEvdoEcio6533); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _getEvdoEcio6245); 
+				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _getEvdoEcio6533); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getEvdoSnr6246; 
+		internal static global::net.sf.jni4net.jni.MethodId _getEvdoSnr6534; 
 		public virtual int getEvdoSnr() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.telephony.SignalStrength)) 
-				return @__env.CallIntMethod(this, _getEvdoSnr6246); 
+				return @__env.CallIntMethod(this, _getEvdoSnr6534); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _getEvdoSnr6246); 
+				return @__env.CallNonVirtualIntMethod(this, android.telephony.SignalStrength.staticClass, _getEvdoSnr6534); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isGsm6247; 
+		internal static global::net.sf.jni4net.jni.MethodId _isGsm6535; 
 		public virtual bool isGsm() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.telephony.SignalStrength)) 
-				return @__env.CallBooleanMethod(this, _isGsm6247); 
+				return @__env.CallBooleanMethod(this, _isGsm6535); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.telephony.SignalStrength.staticClass, _isGsm6247); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.telephony.SignalStrength.staticClass, _isGsm6535); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.telephony.SignalStrength.staticClass = @__class; 
-			global::android.telephony.SignalStrength._hashCode6235 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "hashCode", "()I"); 
-			global::android.telephony.SignalStrength._equals6236 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "equals", "(Ljava/lang/Object;)Z"); 
-			global::android.telephony.SignalStrength._toString6237 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "toString", "()Ljava/lang/String;"); 
-			global::android.telephony.SignalStrength._writeToParcel6238 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
-			global::android.telephony.SignalStrength._describeContents6239 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "describeContents", "()I"); 
-			global::android.telephony.SignalStrength._getGsmSignalStrength6240 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "getGsmSignalStrength", "()I"); 
-			global::android.telephony.SignalStrength._getGsmBitErrorRate6241 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "getGsmBitErrorRate", "()I"); 
-			global::android.telephony.SignalStrength._getCdmaDbm6242 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "getCdmaDbm", "()I"); 
-			global::android.telephony.SignalStrength._getCdmaEcio6243 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "getCdmaEcio", "()I"); 
-			global::android.telephony.SignalStrength._getEvdoDbm6244 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "getEvdoDbm", "()I"); 
-			global::android.telephony.SignalStrength._getEvdoEcio6245 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "getEvdoEcio", "()I"); 
-			global::android.telephony.SignalStrength._getEvdoSnr6246 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "getEvdoSnr", "()I"); 
-			global::android.telephony.SignalStrength._isGsm6247 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "isGsm", "()Z"); 
+			global::android.telephony.SignalStrength._hashCode6523 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "hashCode", "()I"); 
+			global::android.telephony.SignalStrength._equals6524 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "equals", "(Ljava/lang/Object;)Z"); 
+			global::android.telephony.SignalStrength._toString6525 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "toString", "()Ljava/lang/String;"); 
+			global::android.telephony.SignalStrength._writeToParcel6526 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
+			global::android.telephony.SignalStrength._describeContents6527 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "describeContents", "()I"); 
+			global::android.telephony.SignalStrength._getGsmSignalStrength6528 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "getGsmSignalStrength", "()I"); 
+			global::android.telephony.SignalStrength._getGsmBitErrorRate6529 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "getGsmBitErrorRate", "()I"); 
+			global::android.telephony.SignalStrength._getCdmaDbm6530 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "getCdmaDbm", "()I"); 
+			global::android.telephony.SignalStrength._getCdmaEcio6531 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "getCdmaEcio", "()I"); 
+			global::android.telephony.SignalStrength._getEvdoDbm6532 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "getEvdoDbm", "()I"); 
+			global::android.telephony.SignalStrength._getEvdoEcio6533 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "getEvdoEcio", "()I"); 
+			global::android.telephony.SignalStrength._getEvdoSnr6534 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "getEvdoSnr", "()I"); 
+			global::android.telephony.SignalStrength._isGsm6535 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "isGsm", "()Z"); 
 		} 
 	} 
 } 

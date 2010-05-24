@@ -18,107 +18,107 @@ namespace android.text.format
 		protected DateUtils(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDayOfWeekString6692; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDayOfWeekString7047; 
 		public static java.lang.String getDayOfWeekString(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getDayOfWeekString6692, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getDayOfWeekString7047, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getAMPMString6693; 
+		internal static global::net.sf.jni4net.jni.MethodId _getAMPMString7048; 
 		public static java.lang.String getAMPMString(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getAMPMString6693, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getAMPMString7048, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getMonthString6694; 
+		internal static global::net.sf.jni4net.jni.MethodId _getMonthString7049; 
 		public static java.lang.String getMonthString(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getMonthString6694, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getMonthString7049, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getRelativeTimeSpanString6695; 
+		internal static global::net.sf.jni4net.jni.MethodId _getRelativeTimeSpanString7050; 
 		public static java.lang.CharSequence getRelativeTimeSpanString(long arg0, long arg1, long arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getRelativeTimeSpanString6695, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getRelativeTimeSpanString7050, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getRelativeTimeSpanString6696; 
+		internal static global::net.sf.jni4net.jni.MethodId _getRelativeTimeSpanString7051; 
 		public static java.lang.CharSequence getRelativeTimeSpanString(long arg0, long arg1, long arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getRelativeTimeSpanString6696, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getRelativeTimeSpanString7051, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getRelativeTimeSpanString6697; 
+		internal static global::net.sf.jni4net.jni.MethodId _getRelativeTimeSpanString7052; 
 		public static java.lang.CharSequence getRelativeTimeSpanString(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getRelativeTimeSpanString6697, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getRelativeTimeSpanString7052, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getRelativeTimeSpanString6698; 
+		internal static global::net.sf.jni4net.jni.MethodId _getRelativeTimeSpanString7053; 
 		public static java.lang.CharSequence getRelativeTimeSpanString(android.content.Context arg0, long arg1, bool arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getRelativeTimeSpanString6698, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getRelativeTimeSpanString7053, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getRelativeTimeSpanString6699; 
+		internal static global::net.sf.jni4net.jni.MethodId _getRelativeTimeSpanString7054; 
 		public static java.lang.CharSequence getRelativeTimeSpanString(android.content.Context arg0, long arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getRelativeTimeSpanString6699, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getRelativeTimeSpanString7054, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getRelativeDateTimeString6700; 
+		internal static global::net.sf.jni4net.jni.MethodId _getRelativeDateTimeString7055; 
 		public static java.lang.CharSequence getRelativeDateTimeString(android.content.Context arg0, long arg1, long arg2, long arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getRelativeDateTimeString6700, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4))); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _getRelativeDateTimeString7055, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _formatElapsedTime6701; 
+		internal static global::net.sf.jni4net.jni.MethodId _formatElapsedTime7056; 
 		public static java.lang.String formatElapsedTime(java.lang.StringBuilder arg0, long arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _formatElapsedTime6701, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _formatElapsedTime7056, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _formatElapsedTime6702; 
+		internal static global::net.sf.jni4net.jni.MethodId _formatElapsedTime7057; 
 		public static java.lang.String formatElapsedTime(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _formatElapsedTime6702, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _formatElapsedTime7057, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _formatSameDayTime6703; 
+		internal static global::net.sf.jni4net.jni.MethodId _formatSameDayTime7058; 
 		public static java.lang.CharSequence formatSameDayTime(long arg0, long arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _formatSameDayTime6703, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _formatSameDayTime7058, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isToday6704; 
+		internal static global::net.sf.jni4net.jni.MethodId _isToday7059; 
 		public static bool isToday(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.text.format.DateUtils.staticClass, _isToday6704, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			return @__env.CallStaticBooleanMethod(android.text.format.DateUtils.staticClass, _isToday7059, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _formatDateRange6705; 
+		internal static global::net.sf.jni4net.jni.MethodId _formatDateRange7060; 
 		public static java.util.Formatter formatDateRange(android.content.Context arg0, java.util.Formatter arg1, long arg2, long arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Formatter>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _formatDateRange6705, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Formatter>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _formatDateRange7060, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _formatDateRange6706; 
+		internal static global::net.sf.jni4net.jni.MethodId _formatDateRange7061; 
 		public static java.lang.String formatDateRange(android.content.Context arg0, long arg1, long arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _formatDateRange6706, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _formatDateRange7061, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _formatDateTime6707; 
+		internal static global::net.sf.jni4net.jni.MethodId _formatDateTime7062; 
 		public static java.lang.String formatDateTime(android.content.Context arg0, long arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _formatDateTime6707, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.format.DateUtils.staticClass, _formatDateTime7062, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _DateUtils6708; 
+		internal static global::net.sf.jni4net.jni.MethodId _DateUtils7063; 
 		public DateUtils()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.format.DateUtils.staticClass, _DateUtils6708, this); 
+			@__env.NewObject(android.text.format.DateUtils.staticClass, _DateUtils7063, this); 
 		} 
 		public static long SECOND_IN_MILLIS
 		{ 
@@ -379,7 +379,7 @@ namespace android.text.format
 				return "%a"; 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _sameYearTable6709; 
+		internal static global::net.sf.jni4net.jni.FieldId _sameYearTable7064; 
 		public static int[] sameYearTable
 		{ 
 			get 
@@ -387,7 +387,7 @@ namespace android.text.format
 				return default(int[]); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _sameMonthTable6710; 
+		internal static global::net.sf.jni4net.jni.FieldId _sameMonthTable7065; 
 		public static int[] sameMonthTable
 		{ 
 			get 
@@ -433,23 +433,23 @@ namespace android.text.format
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.text.format.DateUtils.staticClass = @__class; 
-			global::android.text.format.DateUtils._getDayOfWeekString6692 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getDayOfWeekString", "(II)Ljava/lang/String;"); 
-			global::android.text.format.DateUtils._getAMPMString6693 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getAMPMString", "(I)Ljava/lang/String;"); 
-			global::android.text.format.DateUtils._getMonthString6694 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getMonthString", "(II)Ljava/lang/String;"); 
-			global::android.text.format.DateUtils._getRelativeTimeSpanString6695 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getRelativeTimeSpanString", "(JJJ)Ljava/lang/CharSequence;"); 
-			global::android.text.format.DateUtils._getRelativeTimeSpanString6696 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getRelativeTimeSpanString", "(JJJI)Ljava/lang/CharSequence;"); 
-			global::android.text.format.DateUtils._getRelativeTimeSpanString6697 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getRelativeTimeSpanString", "(J)Ljava/lang/CharSequence;"); 
-			global::android.text.format.DateUtils._getRelativeTimeSpanString6698 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getRelativeTimeSpanString", "(Landroid/content/Context;JZ)Ljava/lang/CharSequence;"); 
-			global::android.text.format.DateUtils._getRelativeTimeSpanString6699 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getRelativeTimeSpanString", "(Landroid/content/Context;J)Ljava/lang/CharSequence;"); 
-			global::android.text.format.DateUtils._getRelativeDateTimeString6700 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getRelativeDateTimeString", "(Landroid/content/Context;JJJI)Ljava/lang/CharSequence;"); 
-			global::android.text.format.DateUtils._formatElapsedTime6701 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "formatElapsedTime", "(Ljava/lang/StringBuilder;J)Ljava/lang/String;"); 
-			global::android.text.format.DateUtils._formatElapsedTime6702 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "formatElapsedTime", "(J)Ljava/lang/String;"); 
-			global::android.text.format.DateUtils._formatSameDayTime6703 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "formatSameDayTime", "(JJII)Ljava/lang/CharSequence;"); 
-			global::android.text.format.DateUtils._isToday6704 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "isToday", "(J)Z"); 
-			global::android.text.format.DateUtils._formatDateRange6705 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "formatDateRange", "(Landroid/content/Context;Ljava/util/Formatter;JJI)Ljava/util/Formatter;"); 
-			global::android.text.format.DateUtils._formatDateRange6706 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "formatDateRange", "(Landroid/content/Context;JJI)Ljava/lang/String;"); 
-			global::android.text.format.DateUtils._formatDateTime6707 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "formatDateTime", "(Landroid/content/Context;JI)Ljava/lang/String;"); 
-			global::android.text.format.DateUtils._DateUtils6708 = @__env.GetMethodID(global::android.text.format.DateUtils.staticClass, "<init>", "()V"); 
+			global::android.text.format.DateUtils._getDayOfWeekString7047 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getDayOfWeekString", "(II)Ljava/lang/String;"); 
+			global::android.text.format.DateUtils._getAMPMString7048 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getAMPMString", "(I)Ljava/lang/String;"); 
+			global::android.text.format.DateUtils._getMonthString7049 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getMonthString", "(II)Ljava/lang/String;"); 
+			global::android.text.format.DateUtils._getRelativeTimeSpanString7050 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getRelativeTimeSpanString", "(JJJ)Ljava/lang/CharSequence;"); 
+			global::android.text.format.DateUtils._getRelativeTimeSpanString7051 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getRelativeTimeSpanString", "(JJJI)Ljava/lang/CharSequence;"); 
+			global::android.text.format.DateUtils._getRelativeTimeSpanString7052 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getRelativeTimeSpanString", "(J)Ljava/lang/CharSequence;"); 
+			global::android.text.format.DateUtils._getRelativeTimeSpanString7053 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getRelativeTimeSpanString", "(Landroid/content/Context;JZ)Ljava/lang/CharSequence;"); 
+			global::android.text.format.DateUtils._getRelativeTimeSpanString7054 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getRelativeTimeSpanString", "(Landroid/content/Context;J)Ljava/lang/CharSequence;"); 
+			global::android.text.format.DateUtils._getRelativeDateTimeString7055 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "getRelativeDateTimeString", "(Landroid/content/Context;JJJI)Ljava/lang/CharSequence;"); 
+			global::android.text.format.DateUtils._formatElapsedTime7056 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "formatElapsedTime", "(Ljava/lang/StringBuilder;J)Ljava/lang/String;"); 
+			global::android.text.format.DateUtils._formatElapsedTime7057 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "formatElapsedTime", "(J)Ljava/lang/String;"); 
+			global::android.text.format.DateUtils._formatSameDayTime7058 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "formatSameDayTime", "(JJII)Ljava/lang/CharSequence;"); 
+			global::android.text.format.DateUtils._isToday7059 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "isToday", "(J)Z"); 
+			global::android.text.format.DateUtils._formatDateRange7060 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "formatDateRange", "(Landroid/content/Context;Ljava/util/Formatter;JJI)Ljava/util/Formatter;"); 
+			global::android.text.format.DateUtils._formatDateRange7061 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "formatDateRange", "(Landroid/content/Context;JJI)Ljava/lang/String;"); 
+			global::android.text.format.DateUtils._formatDateTime7062 = @__env.GetStaticMethodID(global::android.text.format.DateUtils.staticClass, "formatDateTime", "(Landroid/content/Context;JI)Ljava/lang/String;"); 
+			global::android.text.format.DateUtils._DateUtils7063 = @__env.GetMethodID(global::android.text.format.DateUtils.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

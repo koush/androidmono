@@ -18,23 +18,23 @@ namespace android.graphics
 		protected LinearGradient(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _LinearGradient2756; 
+		internal static global::net.sf.jni4net.jni.MethodId _LinearGradient2956; 
 		public LinearGradient(float arg0, float arg1, float arg2, float arg3, int[] arg4, float[] arg5, android.graphics.Shader.TileMode arg6)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.LinearGradient.staticClass, _LinearGradient2756, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg4), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6)); 
+			@__env.NewObject(android.graphics.LinearGradient.staticClass, _LinearGradient2956, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg4), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _LinearGradient2757; 
+		internal static global::net.sf.jni4net.jni.MethodId _LinearGradient2957; 
 		public LinearGradient(float arg0, float arg1, float arg2, float arg3, int arg4, int arg5, android.graphics.Shader.TileMode arg6)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.LinearGradient.staticClass, _LinearGradient2757, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6)); 
+			@__env.NewObject(android.graphics.LinearGradient.staticClass, _LinearGradient2957, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.graphics.LinearGradient.staticClass = @__class; 
-			global::android.graphics.LinearGradient._LinearGradient2756 = @__env.GetMethodID(global::android.graphics.LinearGradient.staticClass, "<init>", "(FFFF[I[FLandroid/graphics/Shader$TileMode;)V"); 
-			global::android.graphics.LinearGradient._LinearGradient2757 = @__env.GetMethodID(global::android.graphics.LinearGradient.staticClass, "<init>", "(FFFFIILandroid/graphics/Shader$TileMode;)V"); 
+			global::android.graphics.LinearGradient._LinearGradient2956 = @__env.GetMethodID(global::android.graphics.LinearGradient.staticClass, "<init>", "(FFFF[I[FLandroid/graphics/Shader$TileMode;)V"); 
+			global::android.graphics.LinearGradient._LinearGradient2957 = @__env.GetMethodID(global::android.graphics.LinearGradient.staticClass, "<init>", "(FFFFIILandroid/graphics/Shader$TileMode;)V"); 
 		} 
 	} 
 } 

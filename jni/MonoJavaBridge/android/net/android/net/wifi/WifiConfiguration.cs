@@ -64,7 +64,7 @@ namespace android.net.wifi
 					return "auth_alg"; 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _strings4624; 
+			internal static global::net.sf.jni4net.jni.FieldId _strings4873; 
 			public static java.lang.String[] strings
 			{ 
 				get 
@@ -130,7 +130,7 @@ namespace android.net.wifi
 					return "group"; 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _strings4625; 
+			internal static global::net.sf.jni4net.jni.FieldId _strings4874; 
 			public static java.lang.String[] strings
 			{ 
 				get 
@@ -196,7 +196,7 @@ namespace android.net.wifi
 					return "key_mgmt"; 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _strings4626; 
+			internal static global::net.sf.jni4net.jni.FieldId _strings4875; 
 			public static java.lang.String[] strings
 			{ 
 				get 
@@ -255,7 +255,7 @@ namespace android.net.wifi
 					return "pairwise"; 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _strings4627; 
+			internal static global::net.sf.jni4net.jni.FieldId _strings4876; 
 			public static java.lang.String[] strings
 			{ 
 				get 
@@ -307,7 +307,7 @@ namespace android.net.wifi
 					return "proto"; 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _strings4628; 
+			internal static global::net.sf.jni4net.jni.FieldId _strings4877; 
 			public static java.lang.String[] strings
 			{ 
 				get 
@@ -359,7 +359,7 @@ namespace android.net.wifi
 					return 2; 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _strings4629; 
+			internal static global::net.sf.jni4net.jni.FieldId _strings4878; 
 			public static java.lang.String[] strings
 			{ 
 				get 
@@ -372,40 +372,40 @@ namespace android.net.wifi
 				global::android.net.wifi.WifiConfiguration.Status.staticClass = @__class; 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toString4630; 
+		internal static global::net.sf.jni4net.jni.MethodId _toString4879; 
 		public override java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.wifi.WifiConfiguration)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString4630)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString4879)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.wifi.WifiConfiguration.staticClass, _toString4630)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.wifi.WifiConfiguration.staticClass, _toString4879)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel4631; 
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel4880; 
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.wifi.WifiConfiguration)) 
-				@__env.CallVoidMethod(this, _writeToParcel4631, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _writeToParcel4880, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.net.wifi.WifiConfiguration.staticClass, _writeToParcel4631, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.net.wifi.WifiConfiguration.staticClass, _writeToParcel4880, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents4632; 
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents4881; 
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.wifi.WifiConfiguration)) 
-				return @__env.CallIntMethod(this, _describeContents4632); 
+				return @__env.CallIntMethod(this, _describeContents4881); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.net.wifi.WifiConfiguration.staticClass, _describeContents4632); 
+				return @__env.CallNonVirtualIntMethod(this, android.net.wifi.WifiConfiguration.staticClass, _describeContents4881); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _WifiConfiguration4633; 
+		internal static global::net.sf.jni4net.jni.MethodId _WifiConfiguration4882; 
 		public WifiConfiguration()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.net.wifi.WifiConfiguration.staticClass, _WifiConfiguration4633, this); 
+			@__env.NewObject(android.net.wifi.WifiConfiguration.staticClass, _WifiConfiguration4882, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _networkId4634; 
+		internal static global::net.sf.jni4net.jni.FieldId _networkId4883; 
 		public int networkId
 		{ 
 			get 
@@ -416,7 +416,7 @@ namespace android.net.wifi
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _status4635; 
+		internal static global::net.sf.jni4net.jni.FieldId _status4884; 
 		public int status
 		{ 
 			get 
@@ -427,7 +427,7 @@ namespace android.net.wifi
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _SSID4636; 
+		internal static global::net.sf.jni4net.jni.FieldId _SSID4885; 
 		public java.lang.String SSID
 		{ 
 			get 
@@ -438,7 +438,7 @@ namespace android.net.wifi
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _BSSID4637; 
+		internal static global::net.sf.jni4net.jni.FieldId _BSSID4886; 
 		public java.lang.String BSSID
 		{ 
 			get 
@@ -449,7 +449,7 @@ namespace android.net.wifi
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _preSharedKey4638; 
+		internal static global::net.sf.jni4net.jni.FieldId _preSharedKey4887; 
 		public java.lang.String preSharedKey
 		{ 
 			get 
@@ -460,7 +460,7 @@ namespace android.net.wifi
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _wepKeys4639; 
+		internal static global::net.sf.jni4net.jni.FieldId _wepKeys4888; 
 		public java.lang.String[] wepKeys
 		{ 
 			get 
@@ -471,7 +471,7 @@ namespace android.net.wifi
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _wepTxKeyIndex4640; 
+		internal static global::net.sf.jni4net.jni.FieldId _wepTxKeyIndex4889; 
 		public int wepTxKeyIndex
 		{ 
 			get 
@@ -482,7 +482,7 @@ namespace android.net.wifi
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _priority4641; 
+		internal static global::net.sf.jni4net.jni.FieldId _priority4890; 
 		public int priority
 		{ 
 			get 
@@ -493,7 +493,7 @@ namespace android.net.wifi
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _hiddenSSID4642; 
+		internal static global::net.sf.jni4net.jni.FieldId _hiddenSSID4891; 
 		public bool hiddenSSID
 		{ 
 			get 
@@ -504,7 +504,7 @@ namespace android.net.wifi
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _allowedKeyManagement4643; 
+		internal static global::net.sf.jni4net.jni.FieldId _allowedKeyManagement4892; 
 		public java.util.BitSet allowedKeyManagement
 		{ 
 			get 
@@ -515,7 +515,7 @@ namespace android.net.wifi
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _allowedProtocols4644; 
+		internal static global::net.sf.jni4net.jni.FieldId _allowedProtocols4893; 
 		public java.util.BitSet allowedProtocols
 		{ 
 			get 
@@ -526,7 +526,7 @@ namespace android.net.wifi
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _allowedAuthAlgorithms4645; 
+		internal static global::net.sf.jni4net.jni.FieldId _allowedAuthAlgorithms4894; 
 		public java.util.BitSet allowedAuthAlgorithms
 		{ 
 			get 
@@ -537,7 +537,7 @@ namespace android.net.wifi
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _allowedPairwiseCiphers4646; 
+		internal static global::net.sf.jni4net.jni.FieldId _allowedPairwiseCiphers4895; 
 		public java.util.BitSet allowedPairwiseCiphers
 		{ 
 			get 
@@ -548,7 +548,7 @@ namespace android.net.wifi
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _allowedGroupCiphers4647; 
+		internal static global::net.sf.jni4net.jni.FieldId _allowedGroupCiphers4896; 
 		public java.util.BitSet allowedGroupCiphers
 		{ 
 			get 
@@ -562,10 +562,10 @@ namespace android.net.wifi
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.net.wifi.WifiConfiguration.staticClass = @__class; 
-			global::android.net.wifi.WifiConfiguration._toString4630 = @__env.GetMethodID(global::android.net.wifi.WifiConfiguration.staticClass, "toString", "()Ljava/lang/String;"); 
-			global::android.net.wifi.WifiConfiguration._writeToParcel4631 = @__env.GetMethodID(global::android.net.wifi.WifiConfiguration.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
-			global::android.net.wifi.WifiConfiguration._describeContents4632 = @__env.GetMethodID(global::android.net.wifi.WifiConfiguration.staticClass, "describeContents", "()I"); 
-			global::android.net.wifi.WifiConfiguration._WifiConfiguration4633 = @__env.GetMethodID(global::android.net.wifi.WifiConfiguration.staticClass, "<init>", "()V"); 
+			global::android.net.wifi.WifiConfiguration._toString4879 = @__env.GetMethodID(global::android.net.wifi.WifiConfiguration.staticClass, "toString", "()Ljava/lang/String;"); 
+			global::android.net.wifi.WifiConfiguration._writeToParcel4880 = @__env.GetMethodID(global::android.net.wifi.WifiConfiguration.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
+			global::android.net.wifi.WifiConfiguration._describeContents4881 = @__env.GetMethodID(global::android.net.wifi.WifiConfiguration.staticClass, "describeContents", "()I"); 
+			global::android.net.wifi.WifiConfiguration._WifiConfiguration4882 = @__env.GetMethodID(global::android.net.wifi.WifiConfiguration.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

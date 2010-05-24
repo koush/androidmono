@@ -36,20 +36,20 @@ namespace android.net
 			protected IllegalCharacterValueSanitizer(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _sanitize4548; 
+			internal static global::net.sf.jni4net.jni.MethodId _sanitize4796; 
 			public virtual java.lang.String sanitize(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _sanitize4548, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _sanitize4796, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer.staticClass, _sanitize4548, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer.staticClass, _sanitize4796, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _IllegalCharacterValueSanitizer4549; 
+			internal static global::net.sf.jni4net.jni.MethodId _IllegalCharacterValueSanitizer4797; 
 			public IllegalCharacterValueSanitizer(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer.staticClass, _IllegalCharacterValueSanitizer4549, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.NewObject(android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer.staticClass, _IllegalCharacterValueSanitizer4797, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			public static int SPACE_OK
 			{ 
@@ -208,8 +208,8 @@ namespace android.net
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer.staticClass = @__class; 
-				global::android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer._sanitize4548 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer.staticClass, "sanitize", "(Ljava/lang/String;)Ljava/lang/String;"); 
-				global::android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer._IllegalCharacterValueSanitizer4549 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer.staticClass, "<init>", "(I)V"); 
+				global::android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer._sanitize4796 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer.staticClass, "sanitize", "(Ljava/lang/String;)Ljava/lang/String;"); 
+				global::android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer._IllegalCharacterValueSanitizer4797 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer.staticClass, "<init>", "(I)V"); 
 			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
@@ -230,13 +230,13 @@ namespace android.net
 			protected ParameterValuePair(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _ParameterValuePair4550; 
+			internal static global::net.sf.jni4net.jni.MethodId _ParameterValuePair4798; 
 			public ParameterValuePair(android.net.UrlQuerySanitizer arg0, java.lang.String arg1, java.lang.String arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.net.UrlQuerySanitizer.ParameterValuePair.staticClass, _ParameterValuePair4550, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.NewObject(android.net.UrlQuerySanitizer.ParameterValuePair.staticClass, _ParameterValuePair4798, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _mParameter4551; 
+			internal static global::net.sf.jni4net.jni.FieldId _mParameter4799; 
 			public java.lang.String mParameter
 			{ 
 				get 
@@ -247,7 +247,7 @@ namespace android.net
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _mValue4552; 
+			internal static global::net.sf.jni4net.jni.FieldId _mValue4800; 
 			public java.lang.String mValue
 			{ 
 				get 
@@ -261,7 +261,7 @@ namespace android.net
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.net.UrlQuerySanitizer.ParameterValuePair.staticClass = @__class; 
-				global::android.net.UrlQuerySanitizer.ParameterValuePair._ParameterValuePair4550 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.ParameterValuePair.staticClass, "<init>", "(Landroid/net/UrlQuerySanitizer;Ljava/lang/String;Ljava/lang/String;)V"); 
+				global::android.net.UrlQuerySanitizer.ParameterValuePair._ParameterValuePair4798 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.ParameterValuePair.staticClass, "<init>", "(Landroid/net/UrlQuerySanitizer;Ljava/lang/String;Ljava/lang/String;)V"); 
 			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
@@ -269,306 +269,348 @@ namespace android.net
 		{ 
 			java.lang.String sanitize(java.lang.String arg0); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _clear4553; 
+
+		public partial class ValueSanitizer_ 
+		{ 
+			public static global::java.lang.Class _class 
+			{ 
+				get { return __ValueSanitizer.staticClass; } 
+			} 
+		} 
+
+		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
+		public sealed class __ValueSanitizer : java.lang.Object, ValueSanitizer
+		{ 
+			internal static global::java.lang.Class staticClass; 
+			static __ValueSanitizer() 
+			{ 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.net.UrlQuerySanitizer.__ValueSanitizer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			} 
+			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
+			{ 
+				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env) 
+				{ 
+					return new global::android.net.UrlQuerySanitizer.__ValueSanitizer(@__env); 
+				} 
+			} 
+			internal __ValueSanitizer(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
+			{ 
+			} 
+			internal static global::net.sf.jni4net.jni.MethodId _sanitize4801; 
+			 java.lang.String android.net.UrlQuerySanitizer.ValueSanitizer.sanitize(java.lang.String arg0) 
+			{ 
+				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
+				if (GetType() == typeof(android.net.UrlQuerySanitizer.__ValueSanitizer)) 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _sanitize4801, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				else 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.UrlQuerySanitizer.__ValueSanitizer.staticClass, _sanitize4801, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			} 
+			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
+			{ 
+				global::android.net.UrlQuerySanitizer.__ValueSanitizer.staticClass = @__class; 
+				global::android.net.UrlQuerySanitizer.__ValueSanitizer._sanitize4801 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.__ValueSanitizer.staticClass, "android.net.UrlQuerySanitizer.ValueSanitizer.sanitize", "(Ljava/lang/String;)Ljava/lang/String;"); 
+			} 
+		} 
+		internal static global::net.sf.jni4net.jni.MethodId _clear4802; 
 		protected virtual void clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				@__env.CallVoidMethod(this, _clear4553); 
+				@__env.CallVoidMethod(this, _clear4802); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _clear4553); 
+				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _clear4802); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getValue4554; 
+		internal static global::net.sf.jni4net.jni.MethodId _getValue4803; 
 		public virtual java.lang.String getValue(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getValue4554, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getValue4803, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.UrlQuerySanitizer.staticClass, _getValue4554, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.UrlQuerySanitizer.staticClass, _getValue4803, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _unescape4555; 
+		internal static global::net.sf.jni4net.jni.MethodId _unescape4804; 
 		public virtual java.lang.String unescape(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _unescape4555, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _unescape4804, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.UrlQuerySanitizer.staticClass, _unescape4555, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.UrlQuerySanitizer.staticClass, _unescape4804, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isHexDigit4556; 
+		internal static global::net.sf.jni4net.jni.MethodId _isHexDigit4805; 
 		protected virtual bool isHexDigit(char arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				return @__env.CallBooleanMethod(this, _isHexDigit4556, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _isHexDigit4805, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.net.UrlQuerySanitizer.staticClass, _isHexDigit4556, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.net.UrlQuerySanitizer.staticClass, _isHexDigit4805, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getUnregisteredParameterValueSanitizer4557; 
+		internal static global::net.sf.jni4net.jni.MethodId _getUnregisteredParameterValueSanitizer4806; 
 		public virtual android.net.UrlQuerySanitizer.ValueSanitizer getUnregisteredParameterValueSanitizer() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallObjectMethodPtr(this, _getUnregisteredParameterValueSanitizer4557)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallObjectMethodPtr(this, _getUnregisteredParameterValueSanitizer4806)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.UrlQuerySanitizer.staticClass, _getUnregisteredParameterValueSanitizer4557)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.UrlQuerySanitizer.staticClass, _getUnregisteredParameterValueSanitizer4806)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setUnregisteredParameterValueSanitizer4558; 
+		internal static global::net.sf.jni4net.jni.MethodId _setUnregisteredParameterValueSanitizer4807; 
 		public virtual void setUnregisteredParameterValueSanitizer(android.net.UrlQuerySanitizer.ValueSanitizer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				@__env.CallVoidMethod(this, _setUnregisteredParameterValueSanitizer4558, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _setUnregisteredParameterValueSanitizer4807, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _setUnregisteredParameterValueSanitizer4558, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _setUnregisteredParameterValueSanitizer4807, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getAllIllegal4559; 
+		internal static global::net.sf.jni4net.jni.MethodId _getAllIllegal4808; 
 		public static android.net.UrlQuerySanitizer.ValueSanitizer getAllIllegal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getAllIllegal4559)); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getAllIllegal4808)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getAllButNulLegal4560; 
+		internal static global::net.sf.jni4net.jni.MethodId _getAllButNulLegal4809; 
 		public static android.net.UrlQuerySanitizer.ValueSanitizer getAllButNulLegal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getAllButNulLegal4560)); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getAllButNulLegal4809)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getAllButWhitespaceLegal4561; 
+		internal static global::net.sf.jni4net.jni.MethodId _getAllButWhitespaceLegal4810; 
 		public static android.net.UrlQuerySanitizer.ValueSanitizer getAllButWhitespaceLegal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getAllButWhitespaceLegal4561)); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getAllButWhitespaceLegal4810)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getUrlLegal4562; 
+		internal static global::net.sf.jni4net.jni.MethodId _getUrlLegal4811; 
 		public static android.net.UrlQuerySanitizer.ValueSanitizer getUrlLegal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getUrlLegal4562)); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getUrlLegal4811)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getUrlAndSpaceLegal4563; 
+		internal static global::net.sf.jni4net.jni.MethodId _getUrlAndSpaceLegal4812; 
 		public static android.net.UrlQuerySanitizer.ValueSanitizer getUrlAndSpaceLegal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getUrlAndSpaceLegal4563)); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getUrlAndSpaceLegal4812)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getAmpLegal4564; 
+		internal static global::net.sf.jni4net.jni.MethodId _getAmpLegal4813; 
 		public static android.net.UrlQuerySanitizer.ValueSanitizer getAmpLegal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getAmpLegal4564)); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getAmpLegal4813)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getAmpAndSpaceLegal4565; 
+		internal static global::net.sf.jni4net.jni.MethodId _getAmpAndSpaceLegal4814; 
 		public static android.net.UrlQuerySanitizer.ValueSanitizer getAmpAndSpaceLegal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getAmpAndSpaceLegal4565)); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getAmpAndSpaceLegal4814)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getSpaceLegal4566; 
+		internal static global::net.sf.jni4net.jni.MethodId _getSpaceLegal4815; 
 		public static android.net.UrlQuerySanitizer.ValueSanitizer getSpaceLegal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getSpaceLegal4566)); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getSpaceLegal4815)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getAllButNulAndAngleBracketsLegal4567; 
+		internal static global::net.sf.jni4net.jni.MethodId _getAllButNulAndAngleBracketsLegal4816; 
 		public static android.net.UrlQuerySanitizer.ValueSanitizer getAllButNulAndAngleBracketsLegal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getAllButNulAndAngleBracketsLegal4567)); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallStaticObjectMethodPtr(android.net.UrlQuerySanitizer.staticClass, _getAllButNulAndAngleBracketsLegal4816)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _parseUrl4568; 
+		internal static global::net.sf.jni4net.jni.MethodId _parseUrl4817; 
 		public virtual void parseUrl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				@__env.CallVoidMethod(this, _parseUrl4568, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _parseUrl4817, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _parseUrl4568, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _parseUrl4817, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _parseQuery4569; 
+		internal static global::net.sf.jni4net.jni.MethodId _parseQuery4818; 
 		public virtual void parseQuery(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				@__env.CallVoidMethod(this, _parseQuery4569, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _parseQuery4818, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _parseQuery4569, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _parseQuery4818, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getParameterSet4570; 
+		internal static global::net.sf.jni4net.jni.MethodId _getParameterSet4819; 
 		public virtual java.util.Set getParameterSet() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, _getParameterSet4570)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, _getParameterSet4819)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.UrlQuerySanitizer.staticClass, _getParameterSet4570)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.UrlQuerySanitizer.staticClass, _getParameterSet4819)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getParameterList4571; 
+		internal static global::net.sf.jni4net.jni.MethodId _getParameterList4820; 
 		public virtual java.util.List getParameterList() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getParameterList4571)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getParameterList4820)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.UrlQuerySanitizer.staticClass, _getParameterList4571)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.UrlQuerySanitizer.staticClass, _getParameterList4820)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _hasParameter4572; 
+		internal static global::net.sf.jni4net.jni.MethodId _hasParameter4821; 
 		public virtual bool hasParameter(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				return @__env.CallBooleanMethod(this, _hasParameter4572, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _hasParameter4821, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.net.UrlQuerySanitizer.staticClass, _hasParameter4572, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.net.UrlQuerySanitizer.staticClass, _hasParameter4821, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _registerParameter4573; 
+		internal static global::net.sf.jni4net.jni.MethodId _registerParameter4822; 
 		public virtual void registerParameter(java.lang.String arg0, android.net.UrlQuerySanitizer.ValueSanitizer arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				@__env.CallVoidMethod(this, _registerParameter4573, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallVoidMethod(this, _registerParameter4822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _registerParameter4573, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _registerParameter4822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _registerParameters4574; 
+		internal static global::net.sf.jni4net.jni.MethodId _registerParameters4823; 
 		public virtual void registerParameters(java.lang.String[] arg0, android.net.UrlQuerySanitizer.ValueSanitizer arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				@__env.CallVoidMethod(this, _registerParameters4574, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallVoidMethod(this, _registerParameters4823, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _registerParameters4574, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _registerParameters4823, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setAllowUnregisteredParamaters4575; 
+		internal static global::net.sf.jni4net.jni.MethodId _setAllowUnregisteredParamaters4824; 
 		public virtual void setAllowUnregisteredParamaters(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				@__env.CallVoidMethod(this, _setAllowUnregisteredParamaters4575, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setAllowUnregisteredParamaters4824, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _setAllowUnregisteredParamaters4575, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _setAllowUnregisteredParamaters4824, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getAllowUnregisteredParamaters4576; 
+		internal static global::net.sf.jni4net.jni.MethodId _getAllowUnregisteredParamaters4825; 
 		public virtual bool getAllowUnregisteredParamaters() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				return @__env.CallBooleanMethod(this, _getAllowUnregisteredParamaters4576); 
+				return @__env.CallBooleanMethod(this, _getAllowUnregisteredParamaters4825); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.net.UrlQuerySanitizer.staticClass, _getAllowUnregisteredParamaters4576); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.net.UrlQuerySanitizer.staticClass, _getAllowUnregisteredParamaters4825); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setPreferFirstRepeatedParameter4577; 
+		internal static global::net.sf.jni4net.jni.MethodId _setPreferFirstRepeatedParameter4826; 
 		public virtual void setPreferFirstRepeatedParameter(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				@__env.CallVoidMethod(this, _setPreferFirstRepeatedParameter4577, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setPreferFirstRepeatedParameter4826, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _setPreferFirstRepeatedParameter4577, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _setPreferFirstRepeatedParameter4826, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getPreferFirstRepeatedParameter4578; 
+		internal static global::net.sf.jni4net.jni.MethodId _getPreferFirstRepeatedParameter4827; 
 		public virtual bool getPreferFirstRepeatedParameter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				return @__env.CallBooleanMethod(this, _getPreferFirstRepeatedParameter4578); 
+				return @__env.CallBooleanMethod(this, _getPreferFirstRepeatedParameter4827); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.net.UrlQuerySanitizer.staticClass, _getPreferFirstRepeatedParameter4578); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.net.UrlQuerySanitizer.staticClass, _getPreferFirstRepeatedParameter4827); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _parseEntry4579; 
+		internal static global::net.sf.jni4net.jni.MethodId _parseEntry4828; 
 		protected virtual void parseEntry(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				@__env.CallVoidMethod(this, _parseEntry4579, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, _parseEntry4828, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _parseEntry4579, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _parseEntry4828, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _addSanitizedEntry4580; 
+		internal static global::net.sf.jni4net.jni.MethodId _addSanitizedEntry4829; 
 		protected virtual void addSanitizedEntry(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				@__env.CallVoidMethod(this, _addSanitizedEntry4580, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, _addSanitizedEntry4829, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _addSanitizedEntry4580, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.net.UrlQuerySanitizer.staticClass, _addSanitizedEntry4829, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getValueSanitizer4581; 
+		internal static global::net.sf.jni4net.jni.MethodId _getValueSanitizer4830; 
 		public virtual android.net.UrlQuerySanitizer.ValueSanitizer getValueSanitizer(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallObjectMethodPtr(this, _getValueSanitizer4581, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallObjectMethodPtr(this, _getValueSanitizer4830, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.UrlQuerySanitizer.staticClass, _getValueSanitizer4581, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.UrlQuerySanitizer.staticClass, _getValueSanitizer4830, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getEffectiveValueSanitizer4582; 
+		internal static global::net.sf.jni4net.jni.MethodId _getEffectiveValueSanitizer4831; 
 		public virtual android.net.UrlQuerySanitizer.ValueSanitizer getEffectiveValueSanitizer(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallObjectMethodPtr(this, _getEffectiveValueSanitizer4582, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallObjectMethodPtr(this, _getEffectiveValueSanitizer4831, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.UrlQuerySanitizer.staticClass, _getEffectiveValueSanitizer4582, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.net.UrlQuerySanitizer.ValueSanitizer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.UrlQuerySanitizer.staticClass, _getEffectiveValueSanitizer4831, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _decodeHexDigit4583; 
+		internal static global::net.sf.jni4net.jni.MethodId _decodeHexDigit4832; 
 		protected virtual int decodeHexDigit(char arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.UrlQuerySanitizer)) 
-				return @__env.CallIntMethod(this, _decodeHexDigit4583, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, _decodeHexDigit4832, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.net.UrlQuerySanitizer.staticClass, _decodeHexDigit4583, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, android.net.UrlQuerySanitizer.staticClass, _decodeHexDigit4832, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _UrlQuerySanitizer4584; 
+		internal static global::net.sf.jni4net.jni.MethodId _UrlQuerySanitizer4833; 
 		public UrlQuerySanitizer()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.net.UrlQuerySanitizer.staticClass, _UrlQuerySanitizer4584, this); 
+			@__env.NewObject(android.net.UrlQuerySanitizer.staticClass, _UrlQuerySanitizer4833, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _UrlQuerySanitizer4585; 
+		internal static global::net.sf.jni4net.jni.MethodId _UrlQuerySanitizer4834; 
 		public UrlQuerySanitizer(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.net.UrlQuerySanitizer.staticClass, _UrlQuerySanitizer4585, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.net.UrlQuerySanitizer.staticClass, _UrlQuerySanitizer4834, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.net.UrlQuerySanitizer.staticClass = @__class; 
-			global::android.net.UrlQuerySanitizer._clear4553 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "clear", "()V"); 
-			global::android.net.UrlQuerySanitizer._getValue4554 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getValue", "(Ljava/lang/String;)Ljava/lang/String;"); 
-			global::android.net.UrlQuerySanitizer._unescape4555 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "unescape", "(Ljava/lang/String;)Ljava/lang/String;"); 
-			global::android.net.UrlQuerySanitizer._isHexDigit4556 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "isHexDigit", "(C)Z"); 
-			global::android.net.UrlQuerySanitizer._getUnregisteredParameterValueSanitizer4557 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getUnregisteredParameterValueSanitizer", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
-			global::android.net.UrlQuerySanitizer._setUnregisteredParameterValueSanitizer4558 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "setUnregisteredParameterValueSanitizer", "(Landroid/net/UrlQuerySanitizer$ValueSanitizer;)V"); 
-			global::android.net.UrlQuerySanitizer._getAllIllegal4559 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getAllIllegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
-			global::android.net.UrlQuerySanitizer._getAllButNulLegal4560 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getAllButNulLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
-			global::android.net.UrlQuerySanitizer._getAllButWhitespaceLegal4561 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getAllButWhitespaceLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
-			global::android.net.UrlQuerySanitizer._getUrlLegal4562 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getUrlLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
-			global::android.net.UrlQuerySanitizer._getUrlAndSpaceLegal4563 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getUrlAndSpaceLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
-			global::android.net.UrlQuerySanitizer._getAmpLegal4564 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getAmpLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
-			global::android.net.UrlQuerySanitizer._getAmpAndSpaceLegal4565 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getAmpAndSpaceLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
-			global::android.net.UrlQuerySanitizer._getSpaceLegal4566 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getSpaceLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
-			global::android.net.UrlQuerySanitizer._getAllButNulAndAngleBracketsLegal4567 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getAllButNulAndAngleBracketsLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
-			global::android.net.UrlQuerySanitizer._parseUrl4568 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "parseUrl", "(Ljava/lang/String;)V"); 
-			global::android.net.UrlQuerySanitizer._parseQuery4569 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "parseQuery", "(Ljava/lang/String;)V"); 
-			global::android.net.UrlQuerySanitizer._getParameterSet4570 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getParameterSet", "()Ljava/util/Set;"); 
-			global::android.net.UrlQuerySanitizer._getParameterList4571 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getParameterList", "()Ljava/util/List;"); 
-			global::android.net.UrlQuerySanitizer._hasParameter4572 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "hasParameter", "(Ljava/lang/String;)Z"); 
-			global::android.net.UrlQuerySanitizer._registerParameter4573 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "registerParameter", "(Ljava/lang/String;Landroid/net/UrlQuerySanitizer$ValueSanitizer;)V"); 
-			global::android.net.UrlQuerySanitizer._registerParameters4574 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "registerParameters", "([Ljava/lang/String;Landroid/net/UrlQuerySanitizer$ValueSanitizer;)V"); 
-			global::android.net.UrlQuerySanitizer._setAllowUnregisteredParamaters4575 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "setAllowUnregisteredParamaters", "(Z)V"); 
-			global::android.net.UrlQuerySanitizer._getAllowUnregisteredParamaters4576 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getAllowUnregisteredParamaters", "()Z"); 
-			global::android.net.UrlQuerySanitizer._setPreferFirstRepeatedParameter4577 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "setPreferFirstRepeatedParameter", "(Z)V"); 
-			global::android.net.UrlQuerySanitizer._getPreferFirstRepeatedParameter4578 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getPreferFirstRepeatedParameter", "()Z"); 
-			global::android.net.UrlQuerySanitizer._parseEntry4579 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "parseEntry", "(Ljava/lang/String;Ljava/lang/String;)V"); 
-			global::android.net.UrlQuerySanitizer._addSanitizedEntry4580 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "addSanitizedEntry", "(Ljava/lang/String;Ljava/lang/String;)V"); 
-			global::android.net.UrlQuerySanitizer._getValueSanitizer4581 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getValueSanitizer", "(Ljava/lang/String;)Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
-			global::android.net.UrlQuerySanitizer._getEffectiveValueSanitizer4582 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getEffectiveValueSanitizer", "(Ljava/lang/String;)Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
-			global::android.net.UrlQuerySanitizer._decodeHexDigit4583 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "decodeHexDigit", "(C)I"); 
-			global::android.net.UrlQuerySanitizer._UrlQuerySanitizer4584 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "<init>", "()V"); 
-			global::android.net.UrlQuerySanitizer._UrlQuerySanitizer4585 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::android.net.UrlQuerySanitizer._clear4802 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "clear", "()V"); 
+			global::android.net.UrlQuerySanitizer._getValue4803 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getValue", "(Ljava/lang/String;)Ljava/lang/String;"); 
+			global::android.net.UrlQuerySanitizer._unescape4804 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "unescape", "(Ljava/lang/String;)Ljava/lang/String;"); 
+			global::android.net.UrlQuerySanitizer._isHexDigit4805 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "isHexDigit", "(C)Z"); 
+			global::android.net.UrlQuerySanitizer._getUnregisteredParameterValueSanitizer4806 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getUnregisteredParameterValueSanitizer", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
+			global::android.net.UrlQuerySanitizer._setUnregisteredParameterValueSanitizer4807 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "setUnregisteredParameterValueSanitizer", "(Landroid/net/UrlQuerySanitizer$ValueSanitizer;)V"); 
+			global::android.net.UrlQuerySanitizer._getAllIllegal4808 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getAllIllegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
+			global::android.net.UrlQuerySanitizer._getAllButNulLegal4809 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getAllButNulLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
+			global::android.net.UrlQuerySanitizer._getAllButWhitespaceLegal4810 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getAllButWhitespaceLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
+			global::android.net.UrlQuerySanitizer._getUrlLegal4811 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getUrlLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
+			global::android.net.UrlQuerySanitizer._getUrlAndSpaceLegal4812 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getUrlAndSpaceLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
+			global::android.net.UrlQuerySanitizer._getAmpLegal4813 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getAmpLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
+			global::android.net.UrlQuerySanitizer._getAmpAndSpaceLegal4814 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getAmpAndSpaceLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
+			global::android.net.UrlQuerySanitizer._getSpaceLegal4815 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getSpaceLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
+			global::android.net.UrlQuerySanitizer._getAllButNulAndAngleBracketsLegal4816 = @__env.GetStaticMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getAllButNulAndAngleBracketsLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
+			global::android.net.UrlQuerySanitizer._parseUrl4817 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "parseUrl", "(Ljava/lang/String;)V"); 
+			global::android.net.UrlQuerySanitizer._parseQuery4818 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "parseQuery", "(Ljava/lang/String;)V"); 
+			global::android.net.UrlQuerySanitizer._getParameterSet4819 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getParameterSet", "()Ljava/util/Set;"); 
+			global::android.net.UrlQuerySanitizer._getParameterList4820 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getParameterList", "()Ljava/util/List;"); 
+			global::android.net.UrlQuerySanitizer._hasParameter4821 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "hasParameter", "(Ljava/lang/String;)Z"); 
+			global::android.net.UrlQuerySanitizer._registerParameter4822 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "registerParameter", "(Ljava/lang/String;Landroid/net/UrlQuerySanitizer$ValueSanitizer;)V"); 
+			global::android.net.UrlQuerySanitizer._registerParameters4823 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "registerParameters", "([Ljava/lang/String;Landroid/net/UrlQuerySanitizer$ValueSanitizer;)V"); 
+			global::android.net.UrlQuerySanitizer._setAllowUnregisteredParamaters4824 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "setAllowUnregisteredParamaters", "(Z)V"); 
+			global::android.net.UrlQuerySanitizer._getAllowUnregisteredParamaters4825 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getAllowUnregisteredParamaters", "()Z"); 
+			global::android.net.UrlQuerySanitizer._setPreferFirstRepeatedParameter4826 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "setPreferFirstRepeatedParameter", "(Z)V"); 
+			global::android.net.UrlQuerySanitizer._getPreferFirstRepeatedParameter4827 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getPreferFirstRepeatedParameter", "()Z"); 
+			global::android.net.UrlQuerySanitizer._parseEntry4828 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "parseEntry", "(Ljava/lang/String;Ljava/lang/String;)V"); 
+			global::android.net.UrlQuerySanitizer._addSanitizedEntry4829 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "addSanitizedEntry", "(Ljava/lang/String;Ljava/lang/String;)V"); 
+			global::android.net.UrlQuerySanitizer._getValueSanitizer4830 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getValueSanitizer", "(Ljava/lang/String;)Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
+			global::android.net.UrlQuerySanitizer._getEffectiveValueSanitizer4831 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "getEffectiveValueSanitizer", "(Ljava/lang/String;)Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); 
+			global::android.net.UrlQuerySanitizer._decodeHexDigit4832 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "decodeHexDigit", "(C)I"); 
+			global::android.net.UrlQuerySanitizer._UrlQuerySanitizer4833 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "<init>", "()V"); 
+			global::android.net.UrlQuerySanitizer._UrlQuerySanitizer4834 = @__env.GetMethodID(global::android.net.UrlQuerySanitizer.staticClass, "<init>", "(Ljava/lang/String;)V"); 
 		} 
 	} 
 } 

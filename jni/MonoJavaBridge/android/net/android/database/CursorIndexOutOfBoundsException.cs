@@ -18,23 +18,23 @@ namespace android.database
 		protected CursorIndexOutOfBoundsException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _CursorIndexOutOfBoundsException2068; 
+		internal static global::net.sf.jni4net.jni.MethodId _CursorIndexOutOfBoundsException2252; 
 		public CursorIndexOutOfBoundsException(int arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.database.CursorIndexOutOfBoundsException.staticClass, _CursorIndexOutOfBoundsException2068, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(android.database.CursorIndexOutOfBoundsException.staticClass, _CursorIndexOutOfBoundsException2252, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _CursorIndexOutOfBoundsException2069; 
+		internal static global::net.sf.jni4net.jni.MethodId _CursorIndexOutOfBoundsException2253; 
 		public CursorIndexOutOfBoundsException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.database.CursorIndexOutOfBoundsException.staticClass, _CursorIndexOutOfBoundsException2069, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.database.CursorIndexOutOfBoundsException.staticClass, _CursorIndexOutOfBoundsException2253, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.database.CursorIndexOutOfBoundsException.staticClass = @__class; 
-			global::android.database.CursorIndexOutOfBoundsException._CursorIndexOutOfBoundsException2068 = @__env.GetMethodID(global::android.database.CursorIndexOutOfBoundsException.staticClass, "<init>", "(II)V"); 
-			global::android.database.CursorIndexOutOfBoundsException._CursorIndexOutOfBoundsException2069 = @__env.GetMethodID(global::android.database.CursorIndexOutOfBoundsException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::android.database.CursorIndexOutOfBoundsException._CursorIndexOutOfBoundsException2252 = @__env.GetMethodID(global::android.database.CursorIndexOutOfBoundsException.staticClass, "<init>", "(II)V"); 
+			global::android.database.CursorIndexOutOfBoundsException._CursorIndexOutOfBoundsException2253 = @__env.GetMethodID(global::android.database.CursorIndexOutOfBoundsException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
 		} 
 	} 
 } 

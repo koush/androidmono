@@ -18,16 +18,16 @@ namespace android.os
 		protected RemoteException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _RemoteException5588; 
+		internal static global::net.sf.jni4net.jni.MethodId _RemoteException5862; 
 		public RemoteException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.os.RemoteException.staticClass, _RemoteException5588, this); 
+			@__env.NewObject(android.os.RemoteException.staticClass, _RemoteException5862, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.os.RemoteException.staticClass = @__class; 
-			global::android.os.RemoteException._RemoteException5588 = @__env.GetMethodID(global::android.os.RemoteException.staticClass, "<init>", "()V"); 
+			global::android.os.RemoteException._RemoteException5862 = @__env.GetMethodID(global::android.os.RemoteException.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

@@ -18,127 +18,127 @@ namespace android.webkit
 		internal URLUtil(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _decode8650; 
+		internal static global::net.sf.jni4net.jni.MethodId _decode9337; 
 		public static byte[] decode(byte[] arg0) 
 		{ 
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.URLUtil.staticClass, _decode8650, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.URLUtil.staticClass, _decode9337, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _guessUrl8651; 
+		internal static global::net.sf.jni4net.jni.MethodId _guessUrl9338; 
 		public static java.lang.String guessUrl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.URLUtil.staticClass, _guessUrl8651, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.URLUtil.staticClass, _guessUrl9338, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _composeSearchUrl8652; 
+		internal static global::net.sf.jni4net.jni.MethodId _composeSearchUrl9339; 
 		public static java.lang.String composeSearchUrl(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.URLUtil.staticClass, _composeSearchUrl8652, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.URLUtil.staticClass, _composeSearchUrl9339, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isAssetUrl8653; 
+		internal static global::net.sf.jni4net.jni.MethodId _isAssetUrl9340; 
 		public static bool isAssetUrl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isAssetUrl8653, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isAssetUrl9340, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isCookielessProxyUrl8654; 
+		internal static global::net.sf.jni4net.jni.MethodId _isCookielessProxyUrl9341; 
 		public static bool isCookielessProxyUrl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isCookielessProxyUrl8654, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isCookielessProxyUrl9341, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isFileUrl8655; 
+		internal static global::net.sf.jni4net.jni.MethodId _isFileUrl9342; 
 		public static bool isFileUrl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isFileUrl8655, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isFileUrl9342, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isAboutUrl8656; 
+		internal static global::net.sf.jni4net.jni.MethodId _isAboutUrl9343; 
 		public static bool isAboutUrl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isAboutUrl8656, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isAboutUrl9343, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isDataUrl8657; 
+		internal static global::net.sf.jni4net.jni.MethodId _isDataUrl9344; 
 		public static bool isDataUrl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isDataUrl8657, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isDataUrl9344, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isJavaScriptUrl8658; 
+		internal static global::net.sf.jni4net.jni.MethodId _isJavaScriptUrl9345; 
 		public static bool isJavaScriptUrl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isJavaScriptUrl8658, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isJavaScriptUrl9345, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isHttpUrl8659; 
+		internal static global::net.sf.jni4net.jni.MethodId _isHttpUrl9346; 
 		public static bool isHttpUrl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isHttpUrl8659, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isHttpUrl9346, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isHttpsUrl8660; 
+		internal static global::net.sf.jni4net.jni.MethodId _isHttpsUrl9347; 
 		public static bool isHttpsUrl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isHttpsUrl8660, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isHttpsUrl9347, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isNetworkUrl8661; 
+		internal static global::net.sf.jni4net.jni.MethodId _isNetworkUrl9348; 
 		public static bool isNetworkUrl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isNetworkUrl8661, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isNetworkUrl9348, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isContentUrl8662; 
+		internal static global::net.sf.jni4net.jni.MethodId _isContentUrl9349; 
 		public static bool isContentUrl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isContentUrl8662, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isContentUrl9349, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isValidUrl8663; 
+		internal static global::net.sf.jni4net.jni.MethodId _isValidUrl9350; 
 		public static bool isValidUrl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isValidUrl8663, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			return @__env.CallStaticBooleanMethod(android.webkit.URLUtil.staticClass, _isValidUrl9350, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _stripAnchor8664; 
+		internal static global::net.sf.jni4net.jni.MethodId _stripAnchor9351; 
 		public static java.lang.String stripAnchor(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.URLUtil.staticClass, _stripAnchor8664, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.URLUtil.staticClass, _stripAnchor9351, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _guessFileName8665; 
+		internal static global::net.sf.jni4net.jni.MethodId _guessFileName9352; 
 		public static java.lang.String guessFileName(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.URLUtil.staticClass, _guessFileName8665, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.URLUtil.staticClass, _guessFileName9352, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _URLUtil8666; 
+		internal static global::net.sf.jni4net.jni.MethodId _URLUtil9353; 
 		public URLUtil()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.webkit.URLUtil.staticClass, _URLUtil8666, this); 
+			@__env.NewObject(android.webkit.URLUtil.staticClass, _URLUtil9353, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.webkit.URLUtil.staticClass = @__class; 
-			global::android.webkit.URLUtil._decode8650 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "decode", "([B)[B"); 
-			global::android.webkit.URLUtil._guessUrl8651 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "guessUrl", "(Ljava/lang/String;)Ljava/lang/String;"); 
-			global::android.webkit.URLUtil._composeSearchUrl8652 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "composeSearchUrl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"); 
-			global::android.webkit.URLUtil._isAssetUrl8653 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isAssetUrl", "(Ljava/lang/String;)Z"); 
-			global::android.webkit.URLUtil._isCookielessProxyUrl8654 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isCookielessProxyUrl", "(Ljava/lang/String;)Z"); 
-			global::android.webkit.URLUtil._isFileUrl8655 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isFileUrl", "(Ljava/lang/String;)Z"); 
-			global::android.webkit.URLUtil._isAboutUrl8656 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isAboutUrl", "(Ljava/lang/String;)Z"); 
-			global::android.webkit.URLUtil._isDataUrl8657 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isDataUrl", "(Ljava/lang/String;)Z"); 
-			global::android.webkit.URLUtil._isJavaScriptUrl8658 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isJavaScriptUrl", "(Ljava/lang/String;)Z"); 
-			global::android.webkit.URLUtil._isHttpUrl8659 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isHttpUrl", "(Ljava/lang/String;)Z"); 
-			global::android.webkit.URLUtil._isHttpsUrl8660 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isHttpsUrl", "(Ljava/lang/String;)Z"); 
-			global::android.webkit.URLUtil._isNetworkUrl8661 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isNetworkUrl", "(Ljava/lang/String;)Z"); 
-			global::android.webkit.URLUtil._isContentUrl8662 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isContentUrl", "(Ljava/lang/String;)Z"); 
-			global::android.webkit.URLUtil._isValidUrl8663 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isValidUrl", "(Ljava/lang/String;)Z"); 
-			global::android.webkit.URLUtil._stripAnchor8664 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "stripAnchor", "(Ljava/lang/String;)Ljava/lang/String;"); 
-			global::android.webkit.URLUtil._guessFileName8665 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "guessFileName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"); 
-			global::android.webkit.URLUtil._URLUtil8666 = @__env.GetMethodID(global::android.webkit.URLUtil.staticClass, "<init>", "()V"); 
+			global::android.webkit.URLUtil._decode9337 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "decode", "([B)[B"); 
+			global::android.webkit.URLUtil._guessUrl9338 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "guessUrl", "(Ljava/lang/String;)Ljava/lang/String;"); 
+			global::android.webkit.URLUtil._composeSearchUrl9339 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "composeSearchUrl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"); 
+			global::android.webkit.URLUtil._isAssetUrl9340 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isAssetUrl", "(Ljava/lang/String;)Z"); 
+			global::android.webkit.URLUtil._isCookielessProxyUrl9341 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isCookielessProxyUrl", "(Ljava/lang/String;)Z"); 
+			global::android.webkit.URLUtil._isFileUrl9342 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isFileUrl", "(Ljava/lang/String;)Z"); 
+			global::android.webkit.URLUtil._isAboutUrl9343 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isAboutUrl", "(Ljava/lang/String;)Z"); 
+			global::android.webkit.URLUtil._isDataUrl9344 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isDataUrl", "(Ljava/lang/String;)Z"); 
+			global::android.webkit.URLUtil._isJavaScriptUrl9345 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isJavaScriptUrl", "(Ljava/lang/String;)Z"); 
+			global::android.webkit.URLUtil._isHttpUrl9346 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isHttpUrl", "(Ljava/lang/String;)Z"); 
+			global::android.webkit.URLUtil._isHttpsUrl9347 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isHttpsUrl", "(Ljava/lang/String;)Z"); 
+			global::android.webkit.URLUtil._isNetworkUrl9348 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isNetworkUrl", "(Ljava/lang/String;)Z"); 
+			global::android.webkit.URLUtil._isContentUrl9349 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isContentUrl", "(Ljava/lang/String;)Z"); 
+			global::android.webkit.URLUtil._isValidUrl9350 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "isValidUrl", "(Ljava/lang/String;)Z"); 
+			global::android.webkit.URLUtil._stripAnchor9351 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "stripAnchor", "(Ljava/lang/String;)Ljava/lang/String;"); 
+			global::android.webkit.URLUtil._guessFileName9352 = @__env.GetStaticMethodID(global::android.webkit.URLUtil.staticClass, "guessFileName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"); 
+			global::android.webkit.URLUtil._URLUtil9353 = @__env.GetMethodID(global::android.webkit.URLUtil.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

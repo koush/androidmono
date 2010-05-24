@@ -18,127 +18,127 @@ namespace android.hardware
 		protected SensorManager(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getOrientation3730; 
+		internal static global::net.sf.jni4net.jni.MethodId _getOrientation3945; 
 		public static float[] getOrientation(float[] arg0, float[] arg1) 
 		{ 
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.hardware.SensorManager.staticClass, _getOrientation3730, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
+			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.hardware.SensorManager.staticClass, _getOrientation3945, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getInclination3731; 
+		internal static global::net.sf.jni4net.jni.MethodId _getInclination3946; 
 		public static float getInclination(float[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticFloatMethod(android.hardware.SensorManager.staticClass, _getInclination3731, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+			return @__env.CallStaticFloatMethod(android.hardware.SensorManager.staticClass, _getInclination3946, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getSensors3732; 
+		internal static global::net.sf.jni4net.jni.MethodId _getSensors3947; 
 		public virtual int getSensors() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.SensorManager)) 
-				return @__env.CallIntMethod(this, _getSensors3732); 
+				return @__env.CallIntMethod(this, _getSensors3947); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.hardware.SensorManager.staticClass, _getSensors3732); 
+				return @__env.CallNonVirtualIntMethod(this, android.hardware.SensorManager.staticClass, _getSensors3947); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getSensorList3733; 
+		internal static global::net.sf.jni4net.jni.MethodId _getSensorList3948; 
 		public virtual java.util.List getSensorList(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.SensorManager)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getSensorList3733, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getSensorList3948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.SensorManager.staticClass, _getSensorList3733, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.SensorManager.staticClass, _getSensorList3948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDefaultSensor3734; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDefaultSensor3949; 
 		public virtual android.hardware.Sensor getDefaultSensor(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.SensorManager)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Sensor>(@__env, @__env.CallObjectMethodPtr(this, _getDefaultSensor3734, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Sensor>(@__env, @__env.CallObjectMethodPtr(this, _getDefaultSensor3949, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Sensor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.SensorManager.staticClass, _getDefaultSensor3734, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Sensor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.SensorManager.staticClass, _getDefaultSensor3949, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _registerListener3735; 
+		internal static global::net.sf.jni4net.jni.MethodId _registerListener3950; 
 		public virtual bool registerListener(android.hardware.SensorEventListener arg0, android.hardware.Sensor arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.SensorManager)) 
-				return @__env.CallBooleanMethod(this, _registerListener3735, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallBooleanMethod(this, _registerListener3950, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.hardware.SensorManager.staticClass, _registerListener3735, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.hardware.SensorManager.staticClass, _registerListener3950, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _registerListener3736; 
+		internal static global::net.sf.jni4net.jni.MethodId _registerListener3951; 
 		public virtual bool registerListener(android.hardware.SensorListener arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.SensorManager)) 
-				return @__env.CallBooleanMethod(this, _registerListener3736, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallBooleanMethod(this, _registerListener3951, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.hardware.SensorManager.staticClass, _registerListener3736, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.hardware.SensorManager.staticClass, _registerListener3951, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _registerListener3737; 
+		internal static global::net.sf.jni4net.jni.MethodId _registerListener3952; 
 		public virtual bool registerListener(android.hardware.SensorEventListener arg0, android.hardware.Sensor arg1, int arg2, android.os.Handler arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.SensorManager)) 
-				return @__env.CallBooleanMethod(this, _registerListener3737, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+				return @__env.CallBooleanMethod(this, _registerListener3952, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.hardware.SensorManager.staticClass, _registerListener3737, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.hardware.SensorManager.staticClass, _registerListener3952, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _registerListener3738; 
+		internal static global::net.sf.jni4net.jni.MethodId _registerListener3953; 
 		public virtual bool registerListener(android.hardware.SensorListener arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.SensorManager)) 
-				return @__env.CallBooleanMethod(this, _registerListener3738, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallBooleanMethod(this, _registerListener3953, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.hardware.SensorManager.staticClass, _registerListener3738, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.hardware.SensorManager.staticClass, _registerListener3953, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _unregisterListener3739; 
+		internal static global::net.sf.jni4net.jni.MethodId _unregisterListener3954; 
 		public virtual void unregisterListener(android.hardware.SensorListener arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.SensorManager)) 
-				@__env.CallVoidMethod(this, _unregisterListener3739, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _unregisterListener3954, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.SensorManager.staticClass, _unregisterListener3739, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.hardware.SensorManager.staticClass, _unregisterListener3954, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _unregisterListener3740; 
+		internal static global::net.sf.jni4net.jni.MethodId _unregisterListener3955; 
 		public virtual void unregisterListener(android.hardware.SensorListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.SensorManager)) 
-				@__env.CallVoidMethod(this, _unregisterListener3740, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _unregisterListener3955, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.SensorManager.staticClass, _unregisterListener3740, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.hardware.SensorManager.staticClass, _unregisterListener3955, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _unregisterListener3741; 
+		internal static global::net.sf.jni4net.jni.MethodId _unregisterListener3956; 
 		public virtual void unregisterListener(android.hardware.SensorEventListener arg0, android.hardware.Sensor arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.SensorManager)) 
-				@__env.CallVoidMethod(this, _unregisterListener3741, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, _unregisterListener3956, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.SensorManager.staticClass, _unregisterListener3741, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.hardware.SensorManager.staticClass, _unregisterListener3956, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _unregisterListener3742; 
+		internal static global::net.sf.jni4net.jni.MethodId _unregisterListener3957; 
 		public virtual void unregisterListener(android.hardware.SensorEventListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.SensorManager)) 
-				@__env.CallVoidMethod(this, _unregisterListener3742, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _unregisterListener3957, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.SensorManager.staticClass, _unregisterListener3742, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.hardware.SensorManager.staticClass, _unregisterListener3957, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getRotationMatrix3743; 
+		internal static global::net.sf.jni4net.jni.MethodId _getRotationMatrix3958; 
 		public static bool getRotationMatrix(float[] arg0, float[] arg1, float[] arg2, float[] arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.hardware.SensorManager.staticClass, _getRotationMatrix3743, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3)); 
+			return @__env.CallStaticBooleanMethod(android.hardware.SensorManager.staticClass, _getRotationMatrix3958, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _remapCoordinateSystem3744; 
+		internal static global::net.sf.jni4net.jni.MethodId _remapCoordinateSystem3959; 
 		public static bool remapCoordinateSystem(float[] arg0, int arg1, int arg2, float[] arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.hardware.SensorManager.staticClass, _remapCoordinateSystem3744, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3)); 
+			return @__env.CallStaticBooleanMethod(android.hardware.SensorManager.staticClass, _remapCoordinateSystem3959, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3)); 
 		} 
 		public static int SENSOR_ORIENTATION
 		{ 
@@ -535,21 +535,21 @@ namespace android.hardware
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.hardware.SensorManager.staticClass = @__class; 
-			global::android.hardware.SensorManager._getOrientation3730 = @__env.GetStaticMethodID(global::android.hardware.SensorManager.staticClass, "getOrientation", "([F[F)[F"); 
-			global::android.hardware.SensorManager._getInclination3731 = @__env.GetStaticMethodID(global::android.hardware.SensorManager.staticClass, "getInclination", "([F)F"); 
-			global::android.hardware.SensorManager._getSensors3732 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "getSensors", "()I"); 
-			global::android.hardware.SensorManager._getSensorList3733 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "getSensorList", "(I)Ljava/util/List;"); 
-			global::android.hardware.SensorManager._getDefaultSensor3734 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "getDefaultSensor", "(I)Landroid/hardware/Sensor;"); 
-			global::android.hardware.SensorManager._registerListener3735 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "registerListener", "(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z"); 
-			global::android.hardware.SensorManager._registerListener3736 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "registerListener", "(Landroid/hardware/SensorListener;II)Z"); 
-			global::android.hardware.SensorManager._registerListener3737 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "registerListener", "(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;ILandroid/os/Handler;)Z"); 
-			global::android.hardware.SensorManager._registerListener3738 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "registerListener", "(Landroid/hardware/SensorListener;I)Z"); 
-			global::android.hardware.SensorManager._unregisterListener3739 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "unregisterListener", "(Landroid/hardware/SensorListener;I)V"); 
-			global::android.hardware.SensorManager._unregisterListener3740 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "unregisterListener", "(Landroid/hardware/SensorListener;)V"); 
-			global::android.hardware.SensorManager._unregisterListener3741 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "unregisterListener", "(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;)V"); 
-			global::android.hardware.SensorManager._unregisterListener3742 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "unregisterListener", "(Landroid/hardware/SensorEventListener;)V"); 
-			global::android.hardware.SensorManager._getRotationMatrix3743 = @__env.GetStaticMethodID(global::android.hardware.SensorManager.staticClass, "getRotationMatrix", "([F[F[F[F)Z"); 
-			global::android.hardware.SensorManager._remapCoordinateSystem3744 = @__env.GetStaticMethodID(global::android.hardware.SensorManager.staticClass, "remapCoordinateSystem", "([FII[F)Z"); 
+			global::android.hardware.SensorManager._getOrientation3945 = @__env.GetStaticMethodID(global::android.hardware.SensorManager.staticClass, "getOrientation", "([F[F)[F"); 
+			global::android.hardware.SensorManager._getInclination3946 = @__env.GetStaticMethodID(global::android.hardware.SensorManager.staticClass, "getInclination", "([F)F"); 
+			global::android.hardware.SensorManager._getSensors3947 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "getSensors", "()I"); 
+			global::android.hardware.SensorManager._getSensorList3948 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "getSensorList", "(I)Ljava/util/List;"); 
+			global::android.hardware.SensorManager._getDefaultSensor3949 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "getDefaultSensor", "(I)Landroid/hardware/Sensor;"); 
+			global::android.hardware.SensorManager._registerListener3950 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "registerListener", "(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z"); 
+			global::android.hardware.SensorManager._registerListener3951 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "registerListener", "(Landroid/hardware/SensorListener;II)Z"); 
+			global::android.hardware.SensorManager._registerListener3952 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "registerListener", "(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;ILandroid/os/Handler;)Z"); 
+			global::android.hardware.SensorManager._registerListener3953 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "registerListener", "(Landroid/hardware/SensorListener;I)Z"); 
+			global::android.hardware.SensorManager._unregisterListener3954 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "unregisterListener", "(Landroid/hardware/SensorListener;I)V"); 
+			global::android.hardware.SensorManager._unregisterListener3955 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "unregisterListener", "(Landroid/hardware/SensorListener;)V"); 
+			global::android.hardware.SensorManager._unregisterListener3956 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "unregisterListener", "(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;)V"); 
+			global::android.hardware.SensorManager._unregisterListener3957 = @__env.GetMethodID(global::android.hardware.SensorManager.staticClass, "unregisterListener", "(Landroid/hardware/SensorEventListener;)V"); 
+			global::android.hardware.SensorManager._getRotationMatrix3958 = @__env.GetStaticMethodID(global::android.hardware.SensorManager.staticClass, "getRotationMatrix", "([F[F[F[F)Z"); 
+			global::android.hardware.SensorManager._remapCoordinateSystem3959 = @__env.GetStaticMethodID(global::android.hardware.SensorManager.staticClass, "remapCoordinateSystem", "([FII[F)Z"); 
 		} 
 	} 
 } 

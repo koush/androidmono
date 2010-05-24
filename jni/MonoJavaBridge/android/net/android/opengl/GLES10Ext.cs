@@ -18,30 +18,30 @@ namespace android.opengl
 		protected GLES10Ext(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _glQueryMatrixxOES4821; 
+		internal static global::net.sf.jni4net.jni.MethodId _glQueryMatrixxOES5070; 
 		public static int glQueryMatrixxOES(int[] arg0, int arg1, int[] arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.opengl.GLES10Ext.staticClass, _glQueryMatrixxOES4821, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+			return @__env.CallStaticIntMethod(android.opengl.GLES10Ext.staticClass, _glQueryMatrixxOES5070, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _glQueryMatrixxOES4822; 
+		internal static global::net.sf.jni4net.jni.MethodId _glQueryMatrixxOES5071; 
 		public static int glQueryMatrixxOES(java.nio.IntBuffer arg0, java.nio.IntBuffer arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.opengl.GLES10Ext.staticClass, _glQueryMatrixxOES4822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			return @__env.CallStaticIntMethod(android.opengl.GLES10Ext.staticClass, _glQueryMatrixxOES5071, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _GLES10Ext4823; 
+		internal static global::net.sf.jni4net.jni.MethodId _GLES10Ext5072; 
 		public GLES10Ext()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.opengl.GLES10Ext.staticClass, _GLES10Ext4823, this); 
+			@__env.NewObject(android.opengl.GLES10Ext.staticClass, _GLES10Ext5072, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.opengl.GLES10Ext.staticClass = @__class; 
-			global::android.opengl.GLES10Ext._glQueryMatrixxOES4821 = @__env.GetStaticMethodID(global::android.opengl.GLES10Ext.staticClass, "glQueryMatrixxOES", "([II[II)I"); 
-			global::android.opengl.GLES10Ext._glQueryMatrixxOES4822 = @__env.GetStaticMethodID(global::android.opengl.GLES10Ext.staticClass, "glQueryMatrixxOES", "(Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;)I"); 
-			global::android.opengl.GLES10Ext._GLES10Ext4823 = @__env.GetMethodID(global::android.opengl.GLES10Ext.staticClass, "<init>", "()V"); 
+			global::android.opengl.GLES10Ext._glQueryMatrixxOES5070 = @__env.GetStaticMethodID(global::android.opengl.GLES10Ext.staticClass, "glQueryMatrixxOES", "([II[II)I"); 
+			global::android.opengl.GLES10Ext._glQueryMatrixxOES5071 = @__env.GetStaticMethodID(global::android.opengl.GLES10Ext.staticClass, "glQueryMatrixxOES", "(Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;)I"); 
+			global::android.opengl.GLES10Ext._GLES10Ext5072 = @__env.GetMethodID(global::android.opengl.GLES10Ext.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

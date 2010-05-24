@@ -18,16 +18,16 @@ namespace android.graphics
 		protected PathEffect(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PathEffect3009; 
+		internal static global::net.sf.jni4net.jni.MethodId _PathEffect3209; 
 		public PathEffect()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.PathEffect.staticClass, _PathEffect3009, this); 
+			@__env.NewObject(android.graphics.PathEffect.staticClass, _PathEffect3209, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.graphics.PathEffect.staticClass = @__class; 
-			global::android.graphics.PathEffect._PathEffect3009 = @__env.GetMethodID(global::android.graphics.PathEffect.staticClass, "<init>", "()V"); 
+			global::android.graphics.PathEffect._PathEffect3209 = @__env.GetMethodID(global::android.graphics.PathEffect.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

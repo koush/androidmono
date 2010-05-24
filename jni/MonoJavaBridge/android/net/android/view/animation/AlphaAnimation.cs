@@ -18,53 +18,53 @@ namespace android.view.animation
 		protected AlphaAnimation(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _willChangeTransformationMatrix8203; 
+		internal static global::net.sf.jni4net.jni.MethodId _willChangeTransformationMatrix8842; 
 		public override bool willChangeTransformationMatrix() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.animation.AlphaAnimation)) 
-				return @__env.CallBooleanMethod(this, _willChangeTransformationMatrix8203); 
+				return @__env.CallBooleanMethod(this, _willChangeTransformationMatrix8842); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.view.animation.AlphaAnimation.staticClass, _willChangeTransformationMatrix8203); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.view.animation.AlphaAnimation.staticClass, _willChangeTransformationMatrix8842); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _willChangeBounds8204; 
+		internal static global::net.sf.jni4net.jni.MethodId _willChangeBounds8843; 
 		public override bool willChangeBounds() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.animation.AlphaAnimation)) 
-				return @__env.CallBooleanMethod(this, _willChangeBounds8204); 
+				return @__env.CallBooleanMethod(this, _willChangeBounds8843); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.view.animation.AlphaAnimation.staticClass, _willChangeBounds8204); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.view.animation.AlphaAnimation.staticClass, _willChangeBounds8843); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _applyTransformation8205; 
+		internal static global::net.sf.jni4net.jni.MethodId _applyTransformation8844; 
 		protected override void applyTransformation(float arg0, android.view.animation.Transformation arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.animation.AlphaAnimation)) 
-				@__env.CallVoidMethod(this, _applyTransformation8205, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, _applyTransformation8844, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.animation.AlphaAnimation.staticClass, _applyTransformation8205, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.view.animation.AlphaAnimation.staticClass, _applyTransformation8844, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _AlphaAnimation8206; 
+		internal static global::net.sf.jni4net.jni.MethodId _AlphaAnimation8845; 
 		public AlphaAnimation(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.animation.AlphaAnimation.staticClass, _AlphaAnimation8206, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.view.animation.AlphaAnimation.staticClass, _AlphaAnimation8845, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _AlphaAnimation8207; 
+		internal static global::net.sf.jni4net.jni.MethodId _AlphaAnimation8846; 
 		public AlphaAnimation(float arg0, float arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.animation.AlphaAnimation.staticClass, _AlphaAnimation8207, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(android.view.animation.AlphaAnimation.staticClass, _AlphaAnimation8846, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.view.animation.AlphaAnimation.staticClass = @__class; 
-			global::android.view.animation.AlphaAnimation._willChangeTransformationMatrix8203 = @__env.GetMethodID(global::android.view.animation.AlphaAnimation.staticClass, "willChangeTransformationMatrix", "()Z"); 
-			global::android.view.animation.AlphaAnimation._willChangeBounds8204 = @__env.GetMethodID(global::android.view.animation.AlphaAnimation.staticClass, "willChangeBounds", "()Z"); 
-			global::android.view.animation.AlphaAnimation._applyTransformation8205 = @__env.GetMethodID(global::android.view.animation.AlphaAnimation.staticClass, "applyTransformation", "(FLandroid/view/animation/Transformation;)V"); 
-			global::android.view.animation.AlphaAnimation._AlphaAnimation8206 = @__env.GetMethodID(global::android.view.animation.AlphaAnimation.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
-			global::android.view.animation.AlphaAnimation._AlphaAnimation8207 = @__env.GetMethodID(global::android.view.animation.AlphaAnimation.staticClass, "<init>", "(FF)V"); 
+			global::android.view.animation.AlphaAnimation._willChangeTransformationMatrix8842 = @__env.GetMethodID(global::android.view.animation.AlphaAnimation.staticClass, "willChangeTransformationMatrix", "()Z"); 
+			global::android.view.animation.AlphaAnimation._willChangeBounds8843 = @__env.GetMethodID(global::android.view.animation.AlphaAnimation.staticClass, "willChangeBounds", "()Z"); 
+			global::android.view.animation.AlphaAnimation._applyTransformation8844 = @__env.GetMethodID(global::android.view.animation.AlphaAnimation.staticClass, "applyTransformation", "(FLandroid/view/animation/Transformation;)V"); 
+			global::android.view.animation.AlphaAnimation._AlphaAnimation8845 = @__env.GetMethodID(global::android.view.animation.AlphaAnimation.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
+			global::android.view.animation.AlphaAnimation._AlphaAnimation8846 = @__env.GetMethodID(global::android.view.animation.AlphaAnimation.staticClass, "<init>", "(FF)V"); 
 		} 
 	} 
 } 

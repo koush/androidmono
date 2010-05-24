@@ -11,87 +11,87 @@ namespace java.nio.channels
 		protected SocketChannel(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _write11419; 
+		internal static global::net.sf.jni4net.jni.MethodId _write12279; 
 		public virtual long write(java.nio.ByteBuffer[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.SocketChannel)) 
-				return @__env.CallLongMethod(this, _write11419, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				return @__env.CallLongMethod(this, _write12279, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, java.nio.channels.SocketChannel.staticClass, _write11419, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				return @__env.CallNonVirtualLongMethod(this, java.nio.channels.SocketChannel.staticClass, _write12279, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _write11420; 
+		internal static global::net.sf.jni4net.jni.MethodId _write12280; 
 		public abstract int write(java.nio.ByteBuffer arg0); 
-		internal static global::net.sf.jni4net.jni.MethodId _write11421; 
+		internal static global::net.sf.jni4net.jni.MethodId _write12281; 
 		public abstract long write(java.nio.ByteBuffer[] arg0, int arg1, int arg2); 
-		internal static global::net.sf.jni4net.jni.MethodId _read11422; 
+		internal static global::net.sf.jni4net.jni.MethodId _read12282; 
 		public abstract long read(java.nio.ByteBuffer[] arg0, int arg1, int arg2); 
-		internal static global::net.sf.jni4net.jni.MethodId _read11423; 
+		internal static global::net.sf.jni4net.jni.MethodId _read12283; 
 		public virtual long read(java.nio.ByteBuffer[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.SocketChannel)) 
-				return @__env.CallLongMethod(this, _read11423, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				return @__env.CallLongMethod(this, _read12283, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, java.nio.channels.SocketChannel.staticClass, _read11423, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				return @__env.CallNonVirtualLongMethod(this, java.nio.channels.SocketChannel.staticClass, _read12283, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _read11424; 
+		internal static global::net.sf.jni4net.jni.MethodId _read12284; 
 		public abstract int read(java.nio.ByteBuffer arg0); 
-		internal static global::net.sf.jni4net.jni.MethodId _open11425; 
+		internal static global::net.sf.jni4net.jni.MethodId _open12285; 
 		public static java.nio.channels.SocketChannel open(java.net.SocketAddress arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SocketChannel>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.channels.SocketChannel.staticClass, _open11425, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SocketChannel>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.channels.SocketChannel.staticClass, _open12285, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _open11426; 
+		internal static global::net.sf.jni4net.jni.MethodId _open12286; 
 		public static java.nio.channels.SocketChannel open() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SocketChannel>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.channels.SocketChannel.staticClass, _open11426)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SocketChannel>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.channels.SocketChannel.staticClass, _open12286)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _connect11427; 
+		internal static global::net.sf.jni4net.jni.MethodId _connect12287; 
 		public abstract bool connect(java.net.SocketAddress arg0); 
-		internal static global::net.sf.jni4net.jni.MethodId _socket11428; 
+		internal static global::net.sf.jni4net.jni.MethodId _socket12288; 
 		public abstract java.net.Socket socket(); 
-		internal static global::net.sf.jni4net.jni.MethodId _isConnected11429; 
+		internal static global::net.sf.jni4net.jni.MethodId _isConnected12289; 
 		public abstract bool isConnected(); 
-		internal static global::net.sf.jni4net.jni.MethodId _validOps11430; 
+		internal static global::net.sf.jni4net.jni.MethodId _validOps12290; 
 		public sealed override int validOps() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.SocketChannel)) 
-				return @__env.CallIntMethod(this, _validOps11430); 
+				return @__env.CallIntMethod(this, _validOps12290); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.nio.channels.SocketChannel.staticClass, _validOps11430); 
+				return @__env.CallNonVirtualIntMethod(this, java.nio.channels.SocketChannel.staticClass, _validOps12290); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isConnectionPending11431; 
+		internal static global::net.sf.jni4net.jni.MethodId _isConnectionPending12291; 
 		public abstract bool isConnectionPending(); 
-		internal static global::net.sf.jni4net.jni.MethodId _finishConnect11432; 
+		internal static global::net.sf.jni4net.jni.MethodId _finishConnect12292; 
 		public abstract bool finishConnect(); 
-		internal static global::net.sf.jni4net.jni.MethodId _SocketChannel11433; 
+		internal static global::net.sf.jni4net.jni.MethodId _SocketChannel12293; 
 		protected SocketChannel(java.nio.channels.spi.SelectorProvider arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.nio.channels.SocketChannel.staticClass, _SocketChannel11433, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(java.nio.channels.SocketChannel.staticClass, _SocketChannel12293, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::java.nio.channels.SocketChannel.staticClass = @__class; 
-			global::java.nio.channels.SocketChannel._write11419 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "write", "([Ljava/nio/ByteBuffer;)J"); 
-			global::java.nio.channels.SocketChannel._write11420 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "write", "(Ljava/nio/ByteBuffer;)I"); 
-			global::java.nio.channels.SocketChannel._write11421 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "write", "([Ljava/nio/ByteBuffer;II)J"); 
-			global::java.nio.channels.SocketChannel._read11422 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "read", "([Ljava/nio/ByteBuffer;II)J"); 
-			global::java.nio.channels.SocketChannel._read11423 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "read", "([Ljava/nio/ByteBuffer;)J"); 
-			global::java.nio.channels.SocketChannel._read11424 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "read", "(Ljava/nio/ByteBuffer;)I"); 
-			global::java.nio.channels.SocketChannel._open11425 = @__env.GetStaticMethodID(global::java.nio.channels.SocketChannel.staticClass, "open", "(Ljava/net/SocketAddress;)Ljava/nio/channels/SocketChannel;"); 
-			global::java.nio.channels.SocketChannel._open11426 = @__env.GetStaticMethodID(global::java.nio.channels.SocketChannel.staticClass, "open", "()Ljava/nio/channels/SocketChannel;"); 
-			global::java.nio.channels.SocketChannel._connect11427 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "connect", "(Ljava/net/SocketAddress;)Z"); 
-			global::java.nio.channels.SocketChannel._socket11428 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "socket", "()Ljava/net/Socket;"); 
-			global::java.nio.channels.SocketChannel._isConnected11429 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "isConnected", "()Z"); 
-			global::java.nio.channels.SocketChannel._validOps11430 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "validOps", "()I"); 
-			global::java.nio.channels.SocketChannel._isConnectionPending11431 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "isConnectionPending", "()Z"); 
-			global::java.nio.channels.SocketChannel._finishConnect11432 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "finishConnect", "()Z"); 
-			global::java.nio.channels.SocketChannel._SocketChannel11433 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "<init>", "(Ljava/nio/channels/spi/SelectorProvider;)V"); 
+			global::java.nio.channels.SocketChannel._write12279 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "write", "([Ljava/nio/ByteBuffer;)J"); 
+			global::java.nio.channels.SocketChannel._write12280 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "write", "(Ljava/nio/ByteBuffer;)I"); 
+			global::java.nio.channels.SocketChannel._write12281 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "write", "([Ljava/nio/ByteBuffer;II)J"); 
+			global::java.nio.channels.SocketChannel._read12282 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "read", "([Ljava/nio/ByteBuffer;II)J"); 
+			global::java.nio.channels.SocketChannel._read12283 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "read", "([Ljava/nio/ByteBuffer;)J"); 
+			global::java.nio.channels.SocketChannel._read12284 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "read", "(Ljava/nio/ByteBuffer;)I"); 
+			global::java.nio.channels.SocketChannel._open12285 = @__env.GetStaticMethodID(global::java.nio.channels.SocketChannel.staticClass, "open", "(Ljava/net/SocketAddress;)Ljava/nio/channels/SocketChannel;"); 
+			global::java.nio.channels.SocketChannel._open12286 = @__env.GetStaticMethodID(global::java.nio.channels.SocketChannel.staticClass, "open", "()Ljava/nio/channels/SocketChannel;"); 
+			global::java.nio.channels.SocketChannel._connect12287 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "connect", "(Ljava/net/SocketAddress;)Z"); 
+			global::java.nio.channels.SocketChannel._socket12288 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "socket", "()Ljava/net/Socket;"); 
+			global::java.nio.channels.SocketChannel._isConnected12289 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "isConnected", "()Z"); 
+			global::java.nio.channels.SocketChannel._validOps12290 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "validOps", "()I"); 
+			global::java.nio.channels.SocketChannel._isConnectionPending12291 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "isConnectionPending", "()Z"); 
+			global::java.nio.channels.SocketChannel._finishConnect12292 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "finishConnect", "()Z"); 
+			global::java.nio.channels.SocketChannel._SocketChannel12293 = @__env.GetMethodID(global::java.nio.channels.SocketChannel.staticClass, "<init>", "(Ljava/nio/channels/spi/SelectorProvider;)V"); 
 		} 
 	} 
 } 

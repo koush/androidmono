@@ -18,26 +18,26 @@ namespace android.app
 		protected AliasActivity(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onCreate420; 
+		internal static global::net.sf.jni4net.jni.MethodId _onCreate427; 
 		protected override void onCreate(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.AliasActivity)) 
-				@__env.CallVoidMethod(this, _onCreate420, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _onCreate427, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.AliasActivity.staticClass, _onCreate420, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.app.AliasActivity.staticClass, _onCreate427, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _AliasActivity421; 
+		internal static global::net.sf.jni4net.jni.MethodId _AliasActivity428; 
 		public AliasActivity()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.app.AliasActivity.staticClass, _AliasActivity421, this); 
+			@__env.NewObject(android.app.AliasActivity.staticClass, _AliasActivity428, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.app.AliasActivity.staticClass = @__class; 
-			global::android.app.AliasActivity._onCreate420 = @__env.GetMethodID(global::android.app.AliasActivity.staticClass, "onCreate", "(Landroid/os/Bundle;)V"); 
-			global::android.app.AliasActivity._AliasActivity421 = @__env.GetMethodID(global::android.app.AliasActivity.staticClass, "<init>", "()V"); 
+			global::android.app.AliasActivity._onCreate427 = @__env.GetMethodID(global::android.app.AliasActivity.staticClass, "onCreate", "(Landroid/os/Bundle;)V"); 
+			global::android.app.AliasActivity._AliasActivity428 = @__env.GetMethodID(global::android.app.AliasActivity.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

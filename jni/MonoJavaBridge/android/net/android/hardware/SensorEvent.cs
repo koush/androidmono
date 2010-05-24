@@ -18,7 +18,7 @@ namespace android.hardware
 		protected SensorEvent(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _values3726; 
+		internal static global::net.sf.jni4net.jni.FieldId _values3937; 
 		public float[] values
 		{ 
 			get 
@@ -26,7 +26,7 @@ namespace android.hardware
 				return default(float[]); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _sensor3727; 
+		internal static global::net.sf.jni4net.jni.FieldId _sensor3938; 
 		public android.hardware.Sensor sensor
 		{ 
 			get 
@@ -37,7 +37,7 @@ namespace android.hardware
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _accuracy3728; 
+		internal static global::net.sf.jni4net.jni.FieldId _accuracy3939; 
 		public int accuracy
 		{ 
 			get 
@@ -48,7 +48,7 @@ namespace android.hardware
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _timestamp3729; 
+		internal static global::net.sf.jni4net.jni.FieldId _timestamp3940; 
 		public long timestamp
 		{ 
 			get 

@@ -18,46 +18,46 @@ namespace android.telephony
 		protected PhoneNumberFormattingTextWatcher(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onTextChanged6167; 
+		internal static global::net.sf.jni4net.jni.MethodId _onTextChanged6455; 
 		public virtual void onTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.telephony.PhoneNumberFormattingTextWatcher)) 
-				@__env.CallVoidMethod(this, _onTextChanged6167, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallVoidMethod(this, _onTextChanged6455, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.telephony.PhoneNumberFormattingTextWatcher.staticClass, _onTextChanged6167, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, android.telephony.PhoneNumberFormattingTextWatcher.staticClass, _onTextChanged6455, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _beforeTextChanged6168; 
+		internal static global::net.sf.jni4net.jni.MethodId _beforeTextChanged6456; 
 		public virtual void beforeTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.telephony.PhoneNumberFormattingTextWatcher)) 
-				@__env.CallVoidMethod(this, _beforeTextChanged6168, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallVoidMethod(this, _beforeTextChanged6456, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.telephony.PhoneNumberFormattingTextWatcher.staticClass, _beforeTextChanged6168, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, android.telephony.PhoneNumberFormattingTextWatcher.staticClass, _beforeTextChanged6456, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _afterTextChanged6169; 
+		internal static global::net.sf.jni4net.jni.MethodId _afterTextChanged6457; 
 		public virtual void afterTextChanged(android.text.Editable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.telephony.PhoneNumberFormattingTextWatcher)) 
-				@__env.CallVoidMethod(this, _afterTextChanged6169, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _afterTextChanged6457, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.telephony.PhoneNumberFormattingTextWatcher.staticClass, _afterTextChanged6169, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.telephony.PhoneNumberFormattingTextWatcher.staticClass, _afterTextChanged6457, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PhoneNumberFormattingTextWatcher6170; 
+		internal static global::net.sf.jni4net.jni.MethodId _PhoneNumberFormattingTextWatcher6458; 
 		public PhoneNumberFormattingTextWatcher()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.telephony.PhoneNumberFormattingTextWatcher.staticClass, _PhoneNumberFormattingTextWatcher6170, this); 
+			@__env.NewObject(android.telephony.PhoneNumberFormattingTextWatcher.staticClass, _PhoneNumberFormattingTextWatcher6458, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass = @__class; 
-			global::android.telephony.PhoneNumberFormattingTextWatcher._onTextChanged6167 = @__env.GetMethodID(global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, "onTextChanged", "(Ljava/lang/CharSequence;III)V"); 
-			global::android.telephony.PhoneNumberFormattingTextWatcher._beforeTextChanged6168 = @__env.GetMethodID(global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, "beforeTextChanged", "(Ljava/lang/CharSequence;III)V"); 
-			global::android.telephony.PhoneNumberFormattingTextWatcher._afterTextChanged6169 = @__env.GetMethodID(global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, "afterTextChanged", "(Landroid/text/Editable;)V"); 
-			global::android.telephony.PhoneNumberFormattingTextWatcher._PhoneNumberFormattingTextWatcher6170 = @__env.GetMethodID(global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, "<init>", "()V"); 
+			global::android.telephony.PhoneNumberFormattingTextWatcher._onTextChanged6455 = @__env.GetMethodID(global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, "onTextChanged", "(Ljava/lang/CharSequence;III)V"); 
+			global::android.telephony.PhoneNumberFormattingTextWatcher._beforeTextChanged6456 = @__env.GetMethodID(global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, "beforeTextChanged", "(Ljava/lang/CharSequence;III)V"); 
+			global::android.telephony.PhoneNumberFormattingTextWatcher._afterTextChanged6457 = @__env.GetMethodID(global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, "afterTextChanged", "(Landroid/text/Editable;)V"); 
+			global::android.telephony.PhoneNumberFormattingTextWatcher._PhoneNumberFormattingTextWatcher6458 = @__env.GetMethodID(global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

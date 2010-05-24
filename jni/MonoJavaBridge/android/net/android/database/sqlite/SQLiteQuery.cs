@@ -18,69 +18,69 @@ namespace android.database.sqlite
 		protected SQLiteQuery(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toString2357; 
+		internal static global::net.sf.jni4net.jni.MethodId _toString2547; 
 		public override java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.database.sqlite.SQLiteQuery)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString2357)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString2547)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.database.sqlite.SQLiteQuery.staticClass, _toString2357)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.database.sqlite.SQLiteQuery.staticClass, _toString2547)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _close2358; 
+		internal static global::net.sf.jni4net.jni.MethodId _close2548; 
 		public override void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.database.sqlite.SQLiteQuery)) 
-				@__env.CallVoidMethod(this, _close2358); 
+				@__env.CallVoidMethod(this, _close2548); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.database.sqlite.SQLiteQuery.staticClass, _close2358); 
+				@__env.CallNonVirtualVoidMethod(this, android.database.sqlite.SQLiteQuery.staticClass, _close2548); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _bindNull2359; 
+		internal static global::net.sf.jni4net.jni.MethodId _bindNull2549; 
 		public override void bindNull(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.database.sqlite.SQLiteQuery)) 
-				@__env.CallVoidMethod(this, _bindNull2359, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _bindNull2549, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.database.sqlite.SQLiteQuery.staticClass, _bindNull2359, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.database.sqlite.SQLiteQuery.staticClass, _bindNull2549, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _bindLong2360; 
+		internal static global::net.sf.jni4net.jni.MethodId _bindLong2550; 
 		public override void bindLong(int arg0, long arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.database.sqlite.SQLiteQuery)) 
-				@__env.CallVoidMethod(this, _bindLong2360, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _bindLong2550, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.database.sqlite.SQLiteQuery.staticClass, _bindLong2360, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.database.sqlite.SQLiteQuery.staticClass, _bindLong2550, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _bindDouble2361; 
+		internal static global::net.sf.jni4net.jni.MethodId _bindDouble2551; 
 		public override void bindDouble(int arg0, double arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.database.sqlite.SQLiteQuery)) 
-				@__env.CallVoidMethod(this, _bindDouble2361, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _bindDouble2551, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.database.sqlite.SQLiteQuery.staticClass, _bindDouble2361, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.database.sqlite.SQLiteQuery.staticClass, _bindDouble2551, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _bindString2362; 
+		internal static global::net.sf.jni4net.jni.MethodId _bindString2552; 
 		public override void bindString(int arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.database.sqlite.SQLiteQuery)) 
-				@__env.CallVoidMethod(this, _bindString2362, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, _bindString2552, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.database.sqlite.SQLiteQuery.staticClass, _bindString2362, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.database.sqlite.SQLiteQuery.staticClass, _bindString2552, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.database.sqlite.SQLiteQuery.staticClass = @__class; 
-			global::android.database.sqlite.SQLiteQuery._toString2357 = @__env.GetMethodID(global::android.database.sqlite.SQLiteQuery.staticClass, "toString", "()Ljava/lang/String;"); 
-			global::android.database.sqlite.SQLiteQuery._close2358 = @__env.GetMethodID(global::android.database.sqlite.SQLiteQuery.staticClass, "close", "()V"); 
-			global::android.database.sqlite.SQLiteQuery._bindNull2359 = @__env.GetMethodID(global::android.database.sqlite.SQLiteQuery.staticClass, "bindNull", "(I)V"); 
-			global::android.database.sqlite.SQLiteQuery._bindLong2360 = @__env.GetMethodID(global::android.database.sqlite.SQLiteQuery.staticClass, "bindLong", "(IJ)V"); 
-			global::android.database.sqlite.SQLiteQuery._bindDouble2361 = @__env.GetMethodID(global::android.database.sqlite.SQLiteQuery.staticClass, "bindDouble", "(ID)V"); 
-			global::android.database.sqlite.SQLiteQuery._bindString2362 = @__env.GetMethodID(global::android.database.sqlite.SQLiteQuery.staticClass, "bindString", "(ILjava/lang/String;)V"); 
+			global::android.database.sqlite.SQLiteQuery._toString2547 = @__env.GetMethodID(global::android.database.sqlite.SQLiteQuery.staticClass, "toString", "()Ljava/lang/String;"); 
+			global::android.database.sqlite.SQLiteQuery._close2548 = @__env.GetMethodID(global::android.database.sqlite.SQLiteQuery.staticClass, "close", "()V"); 
+			global::android.database.sqlite.SQLiteQuery._bindNull2549 = @__env.GetMethodID(global::android.database.sqlite.SQLiteQuery.staticClass, "bindNull", "(I)V"); 
+			global::android.database.sqlite.SQLiteQuery._bindLong2550 = @__env.GetMethodID(global::android.database.sqlite.SQLiteQuery.staticClass, "bindLong", "(IJ)V"); 
+			global::android.database.sqlite.SQLiteQuery._bindDouble2551 = @__env.GetMethodID(global::android.database.sqlite.SQLiteQuery.staticClass, "bindDouble", "(ID)V"); 
+			global::android.database.sqlite.SQLiteQuery._bindString2552 = @__env.GetMethodID(global::android.database.sqlite.SQLiteQuery.staticClass, "bindString", "(ILjava/lang/String;)V"); 
 		} 
 	} 
 } 

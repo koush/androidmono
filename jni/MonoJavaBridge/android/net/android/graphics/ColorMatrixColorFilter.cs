@@ -18,23 +18,23 @@ namespace android.graphics
 		protected ColorMatrixColorFilter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ColorMatrixColorFilter2726; 
+		internal static global::net.sf.jni4net.jni.MethodId _ColorMatrixColorFilter2926; 
 		public ColorMatrixColorFilter(android.graphics.ColorMatrix arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.ColorMatrixColorFilter.staticClass, _ColorMatrixColorFilter2726, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.graphics.ColorMatrixColorFilter.staticClass, _ColorMatrixColorFilter2926, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ColorMatrixColorFilter2727; 
+		internal static global::net.sf.jni4net.jni.MethodId _ColorMatrixColorFilter2927; 
 		public ColorMatrixColorFilter(float[] arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.ColorMatrixColorFilter.staticClass, _ColorMatrixColorFilter2727, this, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+			@__env.NewObject(android.graphics.ColorMatrixColorFilter.staticClass, _ColorMatrixColorFilter2927, this, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.graphics.ColorMatrixColorFilter.staticClass = @__class; 
-			global::android.graphics.ColorMatrixColorFilter._ColorMatrixColorFilter2726 = @__env.GetMethodID(global::android.graphics.ColorMatrixColorFilter.staticClass, "<init>", "(Landroid/graphics/ColorMatrix;)V"); 
-			global::android.graphics.ColorMatrixColorFilter._ColorMatrixColorFilter2727 = @__env.GetMethodID(global::android.graphics.ColorMatrixColorFilter.staticClass, "<init>", "([F)V"); 
+			global::android.graphics.ColorMatrixColorFilter._ColorMatrixColorFilter2926 = @__env.GetMethodID(global::android.graphics.ColorMatrixColorFilter.staticClass, "<init>", "(Landroid/graphics/ColorMatrix;)V"); 
+			global::android.graphics.ColorMatrixColorFilter._ColorMatrixColorFilter2927 = @__env.GetMethodID(global::android.graphics.ColorMatrixColorFilter.staticClass, "<init>", "([F)V"); 
 		} 
 	} 
 } 

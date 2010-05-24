@@ -18,216 +18,216 @@ namespace android.graphics.drawable
 		protected ScaleDrawable(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _inflate3553; 
+		internal static global::net.sf.jni4net.jni.MethodId _inflate3759; 
 		public override void inflate(android.content.res.Resources arg0, org.xmlpull.v1.XmlPullParser arg1, android.util.AttributeSet arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				@__env.CallVoidMethod(this, _inflate3553, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
+				@__env.CallVoidMethod(this, _inflate3759, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _inflate3553, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _inflate3759, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDrawable3554; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDrawable3760; 
 		public virtual android.graphics.drawable.Drawable getDrawable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, _getDrawable3554)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, _getDrawable3760)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.drawable.ScaleDrawable.staticClass, _getDrawable3554)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.drawable.ScaleDrawable.staticClass, _getDrawable3760)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _draw3555; 
+		internal static global::net.sf.jni4net.jni.MethodId _draw3761; 
 		public override void draw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				@__env.CallVoidMethod(this, _draw3555, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _draw3761, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _draw3555, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _draw3761, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getChangingConfigurations3556; 
+		internal static global::net.sf.jni4net.jni.MethodId _getChangingConfigurations3762; 
 		public override int getChangingConfigurations() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				return @__env.CallIntMethod(this, _getChangingConfigurations3556); 
+				return @__env.CallIntMethod(this, _getChangingConfigurations3762); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _getChangingConfigurations3556); 
+				return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _getChangingConfigurations3762); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setAlpha3557; 
+		internal static global::net.sf.jni4net.jni.MethodId _setAlpha3763; 
 		public override void setAlpha(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				@__env.CallVoidMethod(this, _setAlpha3557, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setAlpha3763, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _setAlpha3557, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _setAlpha3763, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setColorFilter3558; 
+		internal static global::net.sf.jni4net.jni.MethodId _setColorFilter3764; 
 		public override void setColorFilter(android.graphics.ColorFilter arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				@__env.CallVoidMethod(this, _setColorFilter3558, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _setColorFilter3764, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _setColorFilter3558, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _setColorFilter3764, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isStateful3559; 
+		internal static global::net.sf.jni4net.jni.MethodId _isStateful3765; 
 		public override bool isStateful() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				return @__env.CallBooleanMethod(this, _isStateful3559); 
+				return @__env.CallBooleanMethod(this, _isStateful3765); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _isStateful3559); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _isStateful3765); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setVisible3560; 
+		internal static global::net.sf.jni4net.jni.MethodId _setVisible3766; 
 		public override bool setVisible(bool arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				return @__env.CallBooleanMethod(this, _setVisible3560, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallBooleanMethod(this, _setVisible3766, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _setVisible3560, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _setVisible3766, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getOpacity3561; 
+		internal static global::net.sf.jni4net.jni.MethodId _getOpacity3767; 
 		public override int getOpacity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				return @__env.CallIntMethod(this, _getOpacity3561); 
+				return @__env.CallIntMethod(this, _getOpacity3767); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _getOpacity3561); 
+				return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _getOpacity3767); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onStateChange3562; 
+		internal static global::net.sf.jni4net.jni.MethodId _onStateChange3768; 
 		protected override bool onStateChange(int[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				return @__env.CallBooleanMethod(this, _onStateChange3562, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, _onStateChange3768, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _onStateChange3562, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _onStateChange3768, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onLevelChange3563; 
+		internal static global::net.sf.jni4net.jni.MethodId _onLevelChange3769; 
 		protected override bool onLevelChange(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				return @__env.CallBooleanMethod(this, _onLevelChange3563, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _onLevelChange3769, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _onLevelChange3563, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _onLevelChange3769, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onBoundsChange3564; 
+		internal static global::net.sf.jni4net.jni.MethodId _onBoundsChange3770; 
 		protected override void onBoundsChange(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				@__env.CallVoidMethod(this, _onBoundsChange3564, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _onBoundsChange3770, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _onBoundsChange3564, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _onBoundsChange3770, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getIntrinsicWidth3565; 
+		internal static global::net.sf.jni4net.jni.MethodId _getIntrinsicWidth3771; 
 		public override int getIntrinsicWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				return @__env.CallIntMethod(this, _getIntrinsicWidth3565); 
+				return @__env.CallIntMethod(this, _getIntrinsicWidth3771); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _getIntrinsicWidth3565); 
+				return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _getIntrinsicWidth3771); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getIntrinsicHeight3566; 
+		internal static global::net.sf.jni4net.jni.MethodId _getIntrinsicHeight3772; 
 		public override int getIntrinsicHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				return @__env.CallIntMethod(this, _getIntrinsicHeight3566); 
+				return @__env.CallIntMethod(this, _getIntrinsicHeight3772); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _getIntrinsicHeight3566); 
+				return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _getIntrinsicHeight3772); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getPadding3567; 
+		internal static global::net.sf.jni4net.jni.MethodId _getPadding3773; 
 		public override bool getPadding(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				return @__env.CallBooleanMethod(this, _getPadding3567, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _getPadding3773, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _getPadding3567, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _getPadding3773, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _mutate3568; 
+		internal static global::net.sf.jni4net.jni.MethodId _mutate3774; 
 		public override android.graphics.drawable.Drawable mutate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, _mutate3568)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, _mutate3774)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.drawable.ScaleDrawable.staticClass, _mutate3568)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.drawable.ScaleDrawable.staticClass, _mutate3774)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getConstantState3569; 
+		internal static global::net.sf.jni4net.jni.MethodId _getConstantState3775; 
 		public override android.graphics.drawable.Drawable.ConstantState getConstantState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallObjectMethodPtr(this, _getConstantState3569)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallObjectMethodPtr(this, _getConstantState3775)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.drawable.ScaleDrawable.staticClass, _getConstantState3569)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.drawable.ScaleDrawable.staticClass, _getConstantState3775)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _invalidateDrawable3570; 
+		internal static global::net.sf.jni4net.jni.MethodId _invalidateDrawable3776; 
 		public virtual void invalidateDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				@__env.CallVoidMethod(this, _invalidateDrawable3570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _invalidateDrawable3776, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _invalidateDrawable3570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _invalidateDrawable3776, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _scheduleDrawable3571; 
+		internal static global::net.sf.jni4net.jni.MethodId _scheduleDrawable3777; 
 		public virtual void scheduleDrawable(android.graphics.drawable.Drawable arg0, java.lang.Runnable arg1, long arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				@__env.CallVoidMethod(this, _scheduleDrawable3571, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, _scheduleDrawable3777, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _scheduleDrawable3571, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _scheduleDrawable3777, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _unscheduleDrawable3572; 
+		internal static global::net.sf.jni4net.jni.MethodId _unscheduleDrawable3778; 
 		public virtual void unscheduleDrawable(android.graphics.drawable.Drawable arg0, java.lang.Runnable arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.ScaleDrawable)) 
-				@__env.CallVoidMethod(this, _unscheduleDrawable3572, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallVoidMethod(this, _unscheduleDrawable3778, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _unscheduleDrawable3572, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.ScaleDrawable.staticClass, _unscheduleDrawable3778, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ScaleDrawable3573; 
+		internal static global::net.sf.jni4net.jni.MethodId _ScaleDrawable3779; 
 		public ScaleDrawable(android.graphics.drawable.Drawable arg0, int arg1, float arg2, float arg3)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.drawable.ScaleDrawable.staticClass, _ScaleDrawable3573, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+			@__env.NewObject(android.graphics.drawable.ScaleDrawable.staticClass, _ScaleDrawable3779, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.graphics.drawable.ScaleDrawable.staticClass = @__class; 
-			global::android.graphics.drawable.ScaleDrawable._inflate3553 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "inflate", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V"); 
-			global::android.graphics.drawable.ScaleDrawable._getDrawable3554 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "getDrawable", "()Landroid/graphics/drawable/Drawable;"); 
-			global::android.graphics.drawable.ScaleDrawable._draw3555 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "draw", "(Landroid/graphics/Canvas;)V"); 
-			global::android.graphics.drawable.ScaleDrawable._getChangingConfigurations3556 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "getChangingConfigurations", "()I"); 
-			global::android.graphics.drawable.ScaleDrawable._setAlpha3557 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "setAlpha", "(I)V"); 
-			global::android.graphics.drawable.ScaleDrawable._setColorFilter3558 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "setColorFilter", "(Landroid/graphics/ColorFilter;)V"); 
-			global::android.graphics.drawable.ScaleDrawable._isStateful3559 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "isStateful", "()Z"); 
-			global::android.graphics.drawable.ScaleDrawable._setVisible3560 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "setVisible", "(ZZ)Z"); 
-			global::android.graphics.drawable.ScaleDrawable._getOpacity3561 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "getOpacity", "()I"); 
-			global::android.graphics.drawable.ScaleDrawable._onStateChange3562 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "onStateChange", "([I)Z"); 
-			global::android.graphics.drawable.ScaleDrawable._onLevelChange3563 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "onLevelChange", "(I)Z"); 
-			global::android.graphics.drawable.ScaleDrawable._onBoundsChange3564 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "onBoundsChange", "(Landroid/graphics/Rect;)V"); 
-			global::android.graphics.drawable.ScaleDrawable._getIntrinsicWidth3565 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "getIntrinsicWidth", "()I"); 
-			global::android.graphics.drawable.ScaleDrawable._getIntrinsicHeight3566 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "getIntrinsicHeight", "()I"); 
-			global::android.graphics.drawable.ScaleDrawable._getPadding3567 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "getPadding", "(Landroid/graphics/Rect;)Z"); 
-			global::android.graphics.drawable.ScaleDrawable._mutate3568 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "mutate", "()Landroid/graphics/drawable/Drawable;"); 
-			global::android.graphics.drawable.ScaleDrawable._getConstantState3569 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "getConstantState", "()Landroid/graphics/drawable/Drawable$ConstantState;"); 
-			global::android.graphics.drawable.ScaleDrawable._invalidateDrawable3570 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "invalidateDrawable", "(Landroid/graphics/drawable/Drawable;)V"); 
-			global::android.graphics.drawable.ScaleDrawable._scheduleDrawable3571 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "scheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V"); 
-			global::android.graphics.drawable.ScaleDrawable._unscheduleDrawable3572 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "unscheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V"); 
-			global::android.graphics.drawable.ScaleDrawable._ScaleDrawable3573 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "<init>", "(Landroid/graphics/drawable/Drawable;IFF)V"); 
+			global::android.graphics.drawable.ScaleDrawable._inflate3759 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "inflate", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V"); 
+			global::android.graphics.drawable.ScaleDrawable._getDrawable3760 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "getDrawable", "()Landroid/graphics/drawable/Drawable;"); 
+			global::android.graphics.drawable.ScaleDrawable._draw3761 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "draw", "(Landroid/graphics/Canvas;)V"); 
+			global::android.graphics.drawable.ScaleDrawable._getChangingConfigurations3762 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "getChangingConfigurations", "()I"); 
+			global::android.graphics.drawable.ScaleDrawable._setAlpha3763 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "setAlpha", "(I)V"); 
+			global::android.graphics.drawable.ScaleDrawable._setColorFilter3764 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "setColorFilter", "(Landroid/graphics/ColorFilter;)V"); 
+			global::android.graphics.drawable.ScaleDrawable._isStateful3765 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "isStateful", "()Z"); 
+			global::android.graphics.drawable.ScaleDrawable._setVisible3766 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "setVisible", "(ZZ)Z"); 
+			global::android.graphics.drawable.ScaleDrawable._getOpacity3767 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "getOpacity", "()I"); 
+			global::android.graphics.drawable.ScaleDrawable._onStateChange3768 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "onStateChange", "([I)Z"); 
+			global::android.graphics.drawable.ScaleDrawable._onLevelChange3769 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "onLevelChange", "(I)Z"); 
+			global::android.graphics.drawable.ScaleDrawable._onBoundsChange3770 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "onBoundsChange", "(Landroid/graphics/Rect;)V"); 
+			global::android.graphics.drawable.ScaleDrawable._getIntrinsicWidth3771 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "getIntrinsicWidth", "()I"); 
+			global::android.graphics.drawable.ScaleDrawable._getIntrinsicHeight3772 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "getIntrinsicHeight", "()I"); 
+			global::android.graphics.drawable.ScaleDrawable._getPadding3773 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "getPadding", "(Landroid/graphics/Rect;)Z"); 
+			global::android.graphics.drawable.ScaleDrawable._mutate3774 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "mutate", "()Landroid/graphics/drawable/Drawable;"); 
+			global::android.graphics.drawable.ScaleDrawable._getConstantState3775 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "getConstantState", "()Landroid/graphics/drawable/Drawable$ConstantState;"); 
+			global::android.graphics.drawable.ScaleDrawable._invalidateDrawable3776 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "invalidateDrawable", "(Landroid/graphics/drawable/Drawable;)V"); 
+			global::android.graphics.drawable.ScaleDrawable._scheduleDrawable3777 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "scheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V"); 
+			global::android.graphics.drawable.ScaleDrawable._unscheduleDrawable3778 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "unscheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V"); 
+			global::android.graphics.drawable.ScaleDrawable._ScaleDrawable3779 = @__env.GetMethodID(global::android.graphics.drawable.ScaleDrawable.staticClass, "<init>", "(Landroid/graphics/drawable/Drawable;IFF)V"); 
 		} 
 	} 
 } 

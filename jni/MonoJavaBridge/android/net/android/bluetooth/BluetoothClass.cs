@@ -54,11 +54,11 @@ namespace android.bluetooth
 				protected Major(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 				{ 
 				} 
-				internal static global::net.sf.jni4net.jni.MethodId _Major865; 
+				internal static global::net.sf.jni4net.jni.MethodId _Major878; 
 				public Major()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 				{ 
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-					@__env.NewObject(android.bluetooth.BluetoothClass.Device.Major.staticClass, _Major865, this); 
+					@__env.NewObject(android.bluetooth.BluetoothClass.Device.Major.staticClass, _Major878, this); 
 				} 
 				public static int MISC
 				{ 
@@ -140,14 +140,14 @@ namespace android.bluetooth
 				private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 				{ 
 					global::android.bluetooth.BluetoothClass.Device.Major.staticClass = @__class; 
-					global::android.bluetooth.BluetoothClass.Device.Major._Major865 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.Device.Major.staticClass, "<init>", "()V"); 
+					global::android.bluetooth.BluetoothClass.Device.Major._Major878 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.Device.Major.staticClass, "<init>", "()V"); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _Device866; 
+			internal static global::net.sf.jni4net.jni.MethodId _Device879; 
 			public Device()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.bluetooth.BluetoothClass.Device.staticClass, _Device866, this); 
+				@__env.NewObject(android.bluetooth.BluetoothClass.Device.staticClass, _Device879, this); 
 			} 
 			public static int COMPUTER_UNCATEGORIZED
 			{ 
@@ -502,7 +502,7 @@ namespace android.bluetooth
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.bluetooth.BluetoothClass.Device.staticClass = @__class; 
-				global::android.bluetooth.BluetoothClass.Device._Device866 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.Device.staticClass, "<init>", "()V"); 
+				global::android.bluetooth.BluetoothClass.Device._Device879 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.Device.staticClass, "<init>", "()V"); 
 			} 
 		} 
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
@@ -523,11 +523,11 @@ namespace android.bluetooth
 			internal Service(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _Service867; 
+			internal static global::net.sf.jni4net.jni.MethodId _Service880; 
 			public Service()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.bluetooth.BluetoothClass.Service.staticClass, _Service867, this); 
+				@__env.NewObject(android.bluetooth.BluetoothClass.Service.staticClass, _Service880, this); 
 			} 
 			public static int LIMITED_DISCOVERABILITY
 			{ 
@@ -595,82 +595,82 @@ namespace android.bluetooth
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.bluetooth.BluetoothClass.Service.staticClass = @__class; 
-				global::android.bluetooth.BluetoothClass.Service._Service867 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.Service.staticClass, "<init>", "()V"); 
+				global::android.bluetooth.BluetoothClass.Service._Service880 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.Service.staticClass, "<init>", "()V"); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode868; 
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode881; 
 		public sealed override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.bluetooth.BluetoothClass)) 
-				return @__env.CallIntMethod(this, _hashCode868); 
+				return @__env.CallIntMethod(this, _hashCode881); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.bluetooth.BluetoothClass.staticClass, _hashCode868); 
+				return @__env.CallNonVirtualIntMethod(this, android.bluetooth.BluetoothClass.staticClass, _hashCode881); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _equals869; 
+		internal static global::net.sf.jni4net.jni.MethodId _equals882; 
 		public sealed override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.bluetooth.BluetoothClass)) 
-				return @__env.CallBooleanMethod(this, _equals869, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, _equals882, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.bluetooth.BluetoothClass.staticClass, _equals869, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.bluetooth.BluetoothClass.staticClass, _equals882, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toString870; 
+		internal static global::net.sf.jni4net.jni.MethodId _toString883; 
 		public sealed override java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.bluetooth.BluetoothClass)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString870)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString883)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.bluetooth.BluetoothClass.staticClass, _toString870)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.bluetooth.BluetoothClass.staticClass, _toString883)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel871; 
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel884; 
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.bluetooth.BluetoothClass)) 
-				@__env.CallVoidMethod(this, _writeToParcel871, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _writeToParcel884, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.bluetooth.BluetoothClass.staticClass, _writeToParcel871, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.bluetooth.BluetoothClass.staticClass, _writeToParcel884, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents872; 
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents885; 
 		public int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.bluetooth.BluetoothClass)) 
-				return @__env.CallIntMethod(this, _describeContents872); 
+				return @__env.CallIntMethod(this, _describeContents885); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.bluetooth.BluetoothClass.staticClass, _describeContents872); 
+				return @__env.CallNonVirtualIntMethod(this, android.bluetooth.BluetoothClass.staticClass, _describeContents885); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _hasService873; 
+		internal static global::net.sf.jni4net.jni.MethodId _hasService886; 
 		public bool hasService(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.bluetooth.BluetoothClass)) 
-				return @__env.CallBooleanMethod(this, _hasService873, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _hasService886, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.bluetooth.BluetoothClass.staticClass, _hasService873, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.bluetooth.BluetoothClass.staticClass, _hasService886, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getMajorDeviceClass874; 
+		internal static global::net.sf.jni4net.jni.MethodId _getMajorDeviceClass887; 
 		public int getMajorDeviceClass() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.bluetooth.BluetoothClass)) 
-				return @__env.CallIntMethod(this, _getMajorDeviceClass874); 
+				return @__env.CallIntMethod(this, _getMajorDeviceClass887); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.bluetooth.BluetoothClass.staticClass, _getMajorDeviceClass874); 
+				return @__env.CallNonVirtualIntMethod(this, android.bluetooth.BluetoothClass.staticClass, _getMajorDeviceClass887); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDeviceClass875; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDeviceClass888; 
 		public int getDeviceClass() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.bluetooth.BluetoothClass)) 
-				return @__env.CallIntMethod(this, _getDeviceClass875); 
+				return @__env.CallIntMethod(this, _getDeviceClass888); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.bluetooth.BluetoothClass.staticClass, _getDeviceClass875); 
+				return @__env.CallNonVirtualIntMethod(this, android.bluetooth.BluetoothClass.staticClass, _getDeviceClass888); 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR876; 
+		internal static global::net.sf.jni4net.jni.FieldId _CREATOR889; 
 		public static android.os.Parcelable_Creator CREATOR
 		{ 
 			get 
@@ -681,14 +681,14 @@ namespace android.bluetooth
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.bluetooth.BluetoothClass.staticClass = @__class; 
-			global::android.bluetooth.BluetoothClass._hashCode868 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.staticClass, "hashCode", "()I"); 
-			global::android.bluetooth.BluetoothClass._equals869 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.staticClass, "equals", "(Ljava/lang/Object;)Z"); 
-			global::android.bluetooth.BluetoothClass._toString870 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.staticClass, "toString", "()Ljava/lang/String;"); 
-			global::android.bluetooth.BluetoothClass._writeToParcel871 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
-			global::android.bluetooth.BluetoothClass._describeContents872 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.staticClass, "describeContents", "()I"); 
-			global::android.bluetooth.BluetoothClass._hasService873 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.staticClass, "hasService", "(I)Z"); 
-			global::android.bluetooth.BluetoothClass._getMajorDeviceClass874 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.staticClass, "getMajorDeviceClass", "()I"); 
-			global::android.bluetooth.BluetoothClass._getDeviceClass875 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.staticClass, "getDeviceClass", "()I"); 
+			global::android.bluetooth.BluetoothClass._hashCode881 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.staticClass, "hashCode", "()I"); 
+			global::android.bluetooth.BluetoothClass._equals882 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.staticClass, "equals", "(Ljava/lang/Object;)Z"); 
+			global::android.bluetooth.BluetoothClass._toString883 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.staticClass, "toString", "()Ljava/lang/String;"); 
+			global::android.bluetooth.BluetoothClass._writeToParcel884 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V"); 
+			global::android.bluetooth.BluetoothClass._describeContents885 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.staticClass, "describeContents", "()I"); 
+			global::android.bluetooth.BluetoothClass._hasService886 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.staticClass, "hasService", "(I)Z"); 
+			global::android.bluetooth.BluetoothClass._getMajorDeviceClass887 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.staticClass, "getMajorDeviceClass", "()I"); 
+			global::android.bluetooth.BluetoothClass._getDeviceClass888 = @__env.GetMethodID(global::android.bluetooth.BluetoothClass.staticClass, "getDeviceClass", "()I"); 
 		} 
 	} 
 } 

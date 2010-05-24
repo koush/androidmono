@@ -11,79 +11,79 @@ namespace java.nio.channels
 		protected SelectionKey(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _channel11389; 
+		internal static global::net.sf.jni4net.jni.MethodId _channel12249; 
 		public abstract java.nio.channels.SelectableChannel channel(); 
-		internal static global::net.sf.jni4net.jni.MethodId _isValid11390; 
+		internal static global::net.sf.jni4net.jni.MethodId _isValid12250; 
 		public abstract bool isValid(); 
-		internal static global::net.sf.jni4net.jni.MethodId _cancel11391; 
+		internal static global::net.sf.jni4net.jni.MethodId _cancel12251; 
 		public abstract void cancel(); 
-		internal static global::net.sf.jni4net.jni.MethodId _selector11392; 
+		internal static global::net.sf.jni4net.jni.MethodId _selector12252; 
 		public abstract java.nio.channels.Selector selector(); 
-		internal static global::net.sf.jni4net.jni.MethodId _interestOps11393; 
+		internal static global::net.sf.jni4net.jni.MethodId _interestOps12253; 
 		public abstract int interestOps(); 
-		internal static global::net.sf.jni4net.jni.MethodId _interestOps11394; 
+		internal static global::net.sf.jni4net.jni.MethodId _interestOps12254; 
 		public abstract java.nio.channels.SelectionKey interestOps(int arg0); 
-		internal static global::net.sf.jni4net.jni.MethodId _attach11395; 
+		internal static global::net.sf.jni4net.jni.MethodId _attach12255; 
 		public virtual java.lang.Object attach(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.SelectionKey)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _attach11395, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _attach12255, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.SelectionKey.staticClass, _attach11395, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.SelectionKey.staticClass, _attach12255, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _attachment11396; 
+		internal static global::net.sf.jni4net.jni.MethodId _attachment12256; 
 		public virtual java.lang.Object attachment() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.SelectionKey)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _attachment11396)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _attachment12256)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.SelectionKey.staticClass, _attachment11396)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.SelectionKey.staticClass, _attachment12256)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _readyOps11397; 
+		internal static global::net.sf.jni4net.jni.MethodId _readyOps12257; 
 		public abstract int readyOps(); 
-		internal static global::net.sf.jni4net.jni.MethodId _isReadable11398; 
+		internal static global::net.sf.jni4net.jni.MethodId _isReadable12258; 
 		public virtual bool isReadable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.SelectionKey)) 
-				return @__env.CallBooleanMethod(this, _isReadable11398); 
+				return @__env.CallBooleanMethod(this, _isReadable12258); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.nio.channels.SelectionKey.staticClass, _isReadable11398); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.nio.channels.SelectionKey.staticClass, _isReadable12258); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isWritable11399; 
+		internal static global::net.sf.jni4net.jni.MethodId _isWritable12259; 
 		public virtual bool isWritable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.SelectionKey)) 
-				return @__env.CallBooleanMethod(this, _isWritable11399); 
+				return @__env.CallBooleanMethod(this, _isWritable12259); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.nio.channels.SelectionKey.staticClass, _isWritable11399); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.nio.channels.SelectionKey.staticClass, _isWritable12259); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isConnectable11400; 
+		internal static global::net.sf.jni4net.jni.MethodId _isConnectable12260; 
 		public virtual bool isConnectable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.SelectionKey)) 
-				return @__env.CallBooleanMethod(this, _isConnectable11400); 
+				return @__env.CallBooleanMethod(this, _isConnectable12260); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.nio.channels.SelectionKey.staticClass, _isConnectable11400); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.nio.channels.SelectionKey.staticClass, _isConnectable12260); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isAcceptable11401; 
+		internal static global::net.sf.jni4net.jni.MethodId _isAcceptable12261; 
 		public virtual bool isAcceptable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.SelectionKey)) 
-				return @__env.CallBooleanMethod(this, _isAcceptable11401); 
+				return @__env.CallBooleanMethod(this, _isAcceptable12261); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.nio.channels.SelectionKey.staticClass, _isAcceptable11401); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.nio.channels.SelectionKey.staticClass, _isAcceptable12261); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _SelectionKey11402; 
+		internal static global::net.sf.jni4net.jni.MethodId _SelectionKey12262; 
 		protected SelectionKey()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.nio.channels.SelectionKey.staticClass, _SelectionKey11402, this); 
+			@__env.NewObject(java.nio.channels.SelectionKey.staticClass, _SelectionKey12262, this); 
 		} 
 		public static int OP_READ
 		{ 
@@ -116,20 +116,20 @@ namespace java.nio.channels
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::java.nio.channels.SelectionKey.staticClass = @__class; 
-			global::java.nio.channels.SelectionKey._channel11389 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "channel", "()Ljava/nio/channels/SelectableChannel;"); 
-			global::java.nio.channels.SelectionKey._isValid11390 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "isValid", "()Z"); 
-			global::java.nio.channels.SelectionKey._cancel11391 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "cancel", "()V"); 
-			global::java.nio.channels.SelectionKey._selector11392 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "selector", "()Ljava/nio/channels/Selector;"); 
-			global::java.nio.channels.SelectionKey._interestOps11393 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "interestOps", "()I"); 
-			global::java.nio.channels.SelectionKey._interestOps11394 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "interestOps", "(I)Ljava/nio/channels/SelectionKey;"); 
-			global::java.nio.channels.SelectionKey._attach11395 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "attach", "(Ljava/lang/Object;)Ljava/lang/Object;"); 
-			global::java.nio.channels.SelectionKey._attachment11396 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "attachment", "()Ljava/lang/Object;"); 
-			global::java.nio.channels.SelectionKey._readyOps11397 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "readyOps", "()I"); 
-			global::java.nio.channels.SelectionKey._isReadable11398 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "isReadable", "()Z"); 
-			global::java.nio.channels.SelectionKey._isWritable11399 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "isWritable", "()Z"); 
-			global::java.nio.channels.SelectionKey._isConnectable11400 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "isConnectable", "()Z"); 
-			global::java.nio.channels.SelectionKey._isAcceptable11401 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "isAcceptable", "()Z"); 
-			global::java.nio.channels.SelectionKey._SelectionKey11402 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "<init>", "()V"); 
+			global::java.nio.channels.SelectionKey._channel12249 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "channel", "()Ljava/nio/channels/SelectableChannel;"); 
+			global::java.nio.channels.SelectionKey._isValid12250 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "isValid", "()Z"); 
+			global::java.nio.channels.SelectionKey._cancel12251 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "cancel", "()V"); 
+			global::java.nio.channels.SelectionKey._selector12252 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "selector", "()Ljava/nio/channels/Selector;"); 
+			global::java.nio.channels.SelectionKey._interestOps12253 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "interestOps", "()I"); 
+			global::java.nio.channels.SelectionKey._interestOps12254 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "interestOps", "(I)Ljava/nio/channels/SelectionKey;"); 
+			global::java.nio.channels.SelectionKey._attach12255 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "attach", "(Ljava/lang/Object;)Ljava/lang/Object;"); 
+			global::java.nio.channels.SelectionKey._attachment12256 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "attachment", "()Ljava/lang/Object;"); 
+			global::java.nio.channels.SelectionKey._readyOps12257 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "readyOps", "()I"); 
+			global::java.nio.channels.SelectionKey._isReadable12258 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "isReadable", "()Z"); 
+			global::java.nio.channels.SelectionKey._isWritable12259 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "isWritable", "()Z"); 
+			global::java.nio.channels.SelectionKey._isConnectable12260 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "isConnectable", "()Z"); 
+			global::java.nio.channels.SelectionKey._isAcceptable12261 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "isAcceptable", "()Z"); 
+			global::java.nio.channels.SelectionKey._SelectionKey12262 = @__env.GetMethodID(global::java.nio.channels.SelectionKey.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

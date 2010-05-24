@@ -18,300 +18,300 @@ namespace android.widget
 		protected ProgressBar(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onRestoreInstanceState9814; 
+		internal static global::net.sf.jni4net.jni.MethodId _onRestoreInstanceState10584; 
 		public virtual new void onRestoreInstanceState(android.os.Parcelable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _onRestoreInstanceState9814, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _onRestoreInstanceState10584, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _onRestoreInstanceState9814, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _onRestoreInstanceState10584, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onSaveInstanceState9815; 
+		internal static global::net.sf.jni4net.jni.MethodId _onSaveInstanceState10585; 
 		public virtual new android.os.Parcelable onSaveInstanceState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, _onSaveInstanceState9815)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, _onSaveInstanceState10585)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.ProgressBar.staticClass, _onSaveInstanceState9815)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.ProgressBar.staticClass, _onSaveInstanceState10585)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setProgress9816; 
+		internal static global::net.sf.jni4net.jni.MethodId _setProgress10586; 
 		public virtual void setProgress(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _setProgress9816, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setProgress10586, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setProgress9816, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setProgress10586, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setSecondaryProgress9817; 
+		internal static global::net.sf.jni4net.jni.MethodId _setSecondaryProgress10587; 
 		public virtual void setSecondaryProgress(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _setSecondaryProgress9817, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setSecondaryProgress10587, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setSecondaryProgress9817, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setSecondaryProgress10587, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setVisibility9818; 
+		internal static global::net.sf.jni4net.jni.MethodId _setVisibility10588; 
 		public override void setVisibility(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _setVisibility9818, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setVisibility10588, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setVisibility9818, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setVisibility10588, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onSizeChanged9819; 
+		internal static global::net.sf.jni4net.jni.MethodId _onSizeChanged10589; 
 		protected override void onSizeChanged(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _onSizeChanged9819, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallVoidMethod(this, _onSizeChanged10589, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _onSizeChanged9819, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _onSizeChanged10589, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _postInvalidate9820; 
+		internal static global::net.sf.jni4net.jni.MethodId _postInvalidate10590; 
 		public override void postInvalidate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _postInvalidate9820); 
+				@__env.CallVoidMethod(this, _postInvalidate10590); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _postInvalidate9820); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _postInvalidate10590); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onDraw9821; 
+		internal static global::net.sf.jni4net.jni.MethodId _onDraw10591; 
 		protected override void onDraw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _onDraw9821, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _onDraw10591, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _onDraw9821, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _onDraw10591, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _invalidateDrawable9822; 
+		internal static global::net.sf.jni4net.jni.MethodId _invalidateDrawable10592; 
 		public override void invalidateDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _invalidateDrawable9822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _invalidateDrawable10592, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _invalidateDrawable9822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _invalidateDrawable10592, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _verifyDrawable9823; 
+		internal static global::net.sf.jni4net.jni.MethodId _verifyDrawable10593; 
 		protected override bool verifyDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				return @__env.CallBooleanMethod(this, _verifyDrawable9823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _verifyDrawable10593, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.ProgressBar.staticClass, _verifyDrawable9823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.widget.ProgressBar.staticClass, _verifyDrawable10593, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _drawableStateChanged9824; 
+		internal static global::net.sf.jni4net.jni.MethodId _drawableStateChanged10594; 
 		protected override void drawableStateChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _drawableStateChanged9824); 
+				@__env.CallVoidMethod(this, _drawableStateChanged10594); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _drawableStateChanged9824); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _drawableStateChanged10594); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onMeasure9825; 
+		internal static global::net.sf.jni4net.jni.MethodId _onMeasure10595; 
 		protected override void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _onMeasure9825, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _onMeasure10595, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _onMeasure9825, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _onMeasure10595, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getProgress9826; 
+		internal static global::net.sf.jni4net.jni.MethodId _getProgress10596; 
 		public virtual int getProgress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				return @__env.CallIntMethod(this, _getProgress9826); 
+				return @__env.CallIntMethod(this, _getProgress10596); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.ProgressBar.staticClass, _getProgress9826); 
+				return @__env.CallNonVirtualIntMethod(this, android.widget.ProgressBar.staticClass, _getProgress10596); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getSecondaryProgress9827; 
+		internal static global::net.sf.jni4net.jni.MethodId _getSecondaryProgress10597; 
 		public virtual int getSecondaryProgress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				return @__env.CallIntMethod(this, _getSecondaryProgress9827); 
+				return @__env.CallIntMethod(this, _getSecondaryProgress10597); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.ProgressBar.staticClass, _getSecondaryProgress9827); 
+				return @__env.CallNonVirtualIntMethod(this, android.widget.ProgressBar.staticClass, _getSecondaryProgress10597); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getMax9828; 
+		internal static global::net.sf.jni4net.jni.MethodId _getMax10598; 
 		public virtual int getMax() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				return @__env.CallIntMethod(this, _getMax9828); 
+				return @__env.CallIntMethod(this, _getMax10598); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.ProgressBar.staticClass, _getMax9828); 
+				return @__env.CallNonVirtualIntMethod(this, android.widget.ProgressBar.staticClass, _getMax10598); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setMax9829; 
+		internal static global::net.sf.jni4net.jni.MethodId _setMax10599; 
 		public virtual void setMax(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _setMax9829, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setMax10599, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setMax9829, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setMax10599, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _incrementProgressBy9830; 
+		internal static global::net.sf.jni4net.jni.MethodId _incrementProgressBy10600; 
 		public virtual void incrementProgressBy(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _incrementProgressBy9830, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _incrementProgressBy10600, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _incrementProgressBy9830, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _incrementProgressBy10600, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _incrementSecondaryProgressBy9831; 
+		internal static global::net.sf.jni4net.jni.MethodId _incrementSecondaryProgressBy10601; 
 		public virtual void incrementSecondaryProgressBy(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _incrementSecondaryProgressBy9831, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _incrementSecondaryProgressBy10601, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _incrementSecondaryProgressBy9831, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _incrementSecondaryProgressBy10601, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setProgressDrawable9832; 
+		internal static global::net.sf.jni4net.jni.MethodId _setProgressDrawable10602; 
 		public virtual void setProgressDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _setProgressDrawable9832, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _setProgressDrawable10602, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setProgressDrawable9832, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setProgressDrawable10602, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setIndeterminateDrawable9833; 
+		internal static global::net.sf.jni4net.jni.MethodId _setIndeterminateDrawable10603; 
 		public virtual void setIndeterminateDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _setIndeterminateDrawable9833, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _setIndeterminateDrawable10603, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setIndeterminateDrawable9833, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setIndeterminateDrawable10603, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setIndeterminate9834; 
+		internal static global::net.sf.jni4net.jni.MethodId _setIndeterminate10604; 
 		public virtual void setIndeterminate(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _setIndeterminate9834, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setIndeterminate10604, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setIndeterminate9834, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setIndeterminate10604, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isIndeterminate9835; 
+		internal static global::net.sf.jni4net.jni.MethodId _isIndeterminate10605; 
 		public virtual bool isIndeterminate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				return @__env.CallBooleanMethod(this, _isIndeterminate9835); 
+				return @__env.CallBooleanMethod(this, _isIndeterminate10605); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.ProgressBar.staticClass, _isIndeterminate9835); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.widget.ProgressBar.staticClass, _isIndeterminate10605); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setInterpolator9836; 
+		internal static global::net.sf.jni4net.jni.MethodId _setInterpolator10606; 
 		public virtual void setInterpolator(android.view.animation.Interpolator arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _setInterpolator9836, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _setInterpolator10606, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setInterpolator9836, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setInterpolator10606, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setInterpolator9837; 
+		internal static global::net.sf.jni4net.jni.MethodId _setInterpolator10607; 
 		public virtual void setInterpolator(android.content.Context arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				@__env.CallVoidMethod(this, _setInterpolator9837, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _setInterpolator10607, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setInterpolator9837, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ProgressBar.staticClass, _setInterpolator10607, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getInterpolator9838; 
+		internal static global::net.sf.jni4net.jni.MethodId _getInterpolator10608; 
 		public virtual android.view.animation.Interpolator getInterpolator() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.animation.Interpolator>(@__env, @__env.CallObjectMethodPtr(this, _getInterpolator9838)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.animation.Interpolator>(@__env, @__env.CallObjectMethodPtr(this, _getInterpolator10608)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.animation.Interpolator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.ProgressBar.staticClass, _getInterpolator9838)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.animation.Interpolator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.ProgressBar.staticClass, _getInterpolator10608)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getIndeterminateDrawable9839; 
+		internal static global::net.sf.jni4net.jni.MethodId _getIndeterminateDrawable10609; 
 		public virtual android.graphics.drawable.Drawable getIndeterminateDrawable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, _getIndeterminateDrawable9839)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, _getIndeterminateDrawable10609)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.ProgressBar.staticClass, _getIndeterminateDrawable9839)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.ProgressBar.staticClass, _getIndeterminateDrawable10609)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getProgressDrawable9840; 
+		internal static global::net.sf.jni4net.jni.MethodId _getProgressDrawable10610; 
 		public virtual android.graphics.drawable.Drawable getProgressDrawable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ProgressBar)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, _getProgressDrawable9840)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, _getProgressDrawable10610)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.ProgressBar.staticClass, _getProgressDrawable9840)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.ProgressBar.staticClass, _getProgressDrawable10610)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ProgressBar9841; 
+		internal static global::net.sf.jni4net.jni.MethodId _ProgressBar10611; 
 		public ProgressBar(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.ProgressBar.staticClass, _ProgressBar9841, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.widget.ProgressBar.staticClass, _ProgressBar10611, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ProgressBar9842; 
+		internal static global::net.sf.jni4net.jni.MethodId _ProgressBar10612; 
 		public ProgressBar(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.ProgressBar.staticClass, _ProgressBar9842, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.widget.ProgressBar.staticClass, _ProgressBar10612, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ProgressBar9843; 
+		internal static global::net.sf.jni4net.jni.MethodId _ProgressBar10613; 
 		public ProgressBar(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.ProgressBar.staticClass, _ProgressBar9843, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.widget.ProgressBar.staticClass, _ProgressBar10613, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.widget.ProgressBar.staticClass = @__class; 
-			global::android.widget.ProgressBar._onRestoreInstanceState9814 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "onRestoreInstanceState", "(Landroid/os/Parcelable;)V"); 
-			global::android.widget.ProgressBar._onSaveInstanceState9815 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "onSaveInstanceState", "()Landroid/os/Parcelable;"); 
-			global::android.widget.ProgressBar._setProgress9816 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setProgress", "(I)V"); 
-			global::android.widget.ProgressBar._setSecondaryProgress9817 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setSecondaryProgress", "(I)V"); 
-			global::android.widget.ProgressBar._setVisibility9818 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setVisibility", "(I)V"); 
-			global::android.widget.ProgressBar._onSizeChanged9819 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "onSizeChanged", "(IIII)V"); 
-			global::android.widget.ProgressBar._postInvalidate9820 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "postInvalidate", "()V"); 
-			global::android.widget.ProgressBar._onDraw9821 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V"); 
-			global::android.widget.ProgressBar._invalidateDrawable9822 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "invalidateDrawable", "(Landroid/graphics/drawable/Drawable;)V"); 
-			global::android.widget.ProgressBar._verifyDrawable9823 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "verifyDrawable", "(Landroid/graphics/drawable/Drawable;)Z"); 
-			global::android.widget.ProgressBar._drawableStateChanged9824 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "drawableStateChanged", "()V"); 
-			global::android.widget.ProgressBar._onMeasure9825 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "onMeasure", "(II)V"); 
-			global::android.widget.ProgressBar._getProgress9826 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "getProgress", "()I"); 
-			global::android.widget.ProgressBar._getSecondaryProgress9827 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "getSecondaryProgress", "()I"); 
-			global::android.widget.ProgressBar._getMax9828 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "getMax", "()I"); 
-			global::android.widget.ProgressBar._setMax9829 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setMax", "(I)V"); 
-			global::android.widget.ProgressBar._incrementProgressBy9830 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "incrementProgressBy", "(I)V"); 
-			global::android.widget.ProgressBar._incrementSecondaryProgressBy9831 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "incrementSecondaryProgressBy", "(I)V"); 
-			global::android.widget.ProgressBar._setProgressDrawable9832 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setProgressDrawable", "(Landroid/graphics/drawable/Drawable;)V"); 
-			global::android.widget.ProgressBar._setIndeterminateDrawable9833 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setIndeterminateDrawable", "(Landroid/graphics/drawable/Drawable;)V"); 
-			global::android.widget.ProgressBar._setIndeterminate9834 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setIndeterminate", "(Z)V"); 
-			global::android.widget.ProgressBar._isIndeterminate9835 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "isIndeterminate", "()Z"); 
-			global::android.widget.ProgressBar._setInterpolator9836 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setInterpolator", "(Landroid/view/animation/Interpolator;)V"); 
-			global::android.widget.ProgressBar._setInterpolator9837 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setInterpolator", "(Landroid/content/Context;I)V"); 
-			global::android.widget.ProgressBar._getInterpolator9838 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "getInterpolator", "()Landroid/view/animation/Interpolator;"); 
-			global::android.widget.ProgressBar._getIndeterminateDrawable9839 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "getIndeterminateDrawable", "()Landroid/graphics/drawable/Drawable;"); 
-			global::android.widget.ProgressBar._getProgressDrawable9840 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "getProgressDrawable", "()Landroid/graphics/drawable/Drawable;"); 
-			global::android.widget.ProgressBar._ProgressBar9841 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "<init>", "(Landroid/content/Context;)V"); 
-			global::android.widget.ProgressBar._ProgressBar9842 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
-			global::android.widget.ProgressBar._ProgressBar9843 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
+			global::android.widget.ProgressBar._onRestoreInstanceState10584 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "onRestoreInstanceState", "(Landroid/os/Parcelable;)V"); 
+			global::android.widget.ProgressBar._onSaveInstanceState10585 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "onSaveInstanceState", "()Landroid/os/Parcelable;"); 
+			global::android.widget.ProgressBar._setProgress10586 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setProgress", "(I)V"); 
+			global::android.widget.ProgressBar._setSecondaryProgress10587 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setSecondaryProgress", "(I)V"); 
+			global::android.widget.ProgressBar._setVisibility10588 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setVisibility", "(I)V"); 
+			global::android.widget.ProgressBar._onSizeChanged10589 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "onSizeChanged", "(IIII)V"); 
+			global::android.widget.ProgressBar._postInvalidate10590 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "postInvalidate", "()V"); 
+			global::android.widget.ProgressBar._onDraw10591 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V"); 
+			global::android.widget.ProgressBar._invalidateDrawable10592 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "invalidateDrawable", "(Landroid/graphics/drawable/Drawable;)V"); 
+			global::android.widget.ProgressBar._verifyDrawable10593 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "verifyDrawable", "(Landroid/graphics/drawable/Drawable;)Z"); 
+			global::android.widget.ProgressBar._drawableStateChanged10594 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "drawableStateChanged", "()V"); 
+			global::android.widget.ProgressBar._onMeasure10595 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "onMeasure", "(II)V"); 
+			global::android.widget.ProgressBar._getProgress10596 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "getProgress", "()I"); 
+			global::android.widget.ProgressBar._getSecondaryProgress10597 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "getSecondaryProgress", "()I"); 
+			global::android.widget.ProgressBar._getMax10598 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "getMax", "()I"); 
+			global::android.widget.ProgressBar._setMax10599 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setMax", "(I)V"); 
+			global::android.widget.ProgressBar._incrementProgressBy10600 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "incrementProgressBy", "(I)V"); 
+			global::android.widget.ProgressBar._incrementSecondaryProgressBy10601 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "incrementSecondaryProgressBy", "(I)V"); 
+			global::android.widget.ProgressBar._setProgressDrawable10602 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setProgressDrawable", "(Landroid/graphics/drawable/Drawable;)V"); 
+			global::android.widget.ProgressBar._setIndeterminateDrawable10603 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setIndeterminateDrawable", "(Landroid/graphics/drawable/Drawable;)V"); 
+			global::android.widget.ProgressBar._setIndeterminate10604 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setIndeterminate", "(Z)V"); 
+			global::android.widget.ProgressBar._isIndeterminate10605 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "isIndeterminate", "()Z"); 
+			global::android.widget.ProgressBar._setInterpolator10606 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setInterpolator", "(Landroid/view/animation/Interpolator;)V"); 
+			global::android.widget.ProgressBar._setInterpolator10607 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "setInterpolator", "(Landroid/content/Context;I)V"); 
+			global::android.widget.ProgressBar._getInterpolator10608 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "getInterpolator", "()Landroid/view/animation/Interpolator;"); 
+			global::android.widget.ProgressBar._getIndeterminateDrawable10609 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "getIndeterminateDrawable", "()Landroid/graphics/drawable/Drawable;"); 
+			global::android.widget.ProgressBar._getProgressDrawable10610 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "getProgressDrawable", "()Landroid/graphics/drawable/Drawable;"); 
+			global::android.widget.ProgressBar._ProgressBar10611 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "<init>", "(Landroid/content/Context;)V"); 
+			global::android.widget.ProgressBar._ProgressBar10612 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
+			global::android.widget.ProgressBar._ProgressBar10613 = @__env.GetMethodID(global::android.widget.ProgressBar.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
 		} 
 	} 
 } 

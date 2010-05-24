@@ -30,303 +30,415 @@ namespace android.inputmethodservice
 			void swipeDown(); 
 			void swipeUp(); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _closing3942; 
+
+		public partial class OnKeyboardActionListener_ 
+		{ 
+			public static global::java.lang.Class _class 
+			{ 
+				get { return __OnKeyboardActionListener.staticClass; } 
+			} 
+		} 
+
+		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
+		public sealed class __OnKeyboardActionListener : java.lang.Object, OnKeyboardActionListener
+		{ 
+			internal static global::java.lang.Class staticClass; 
+			static __OnKeyboardActionListener() 
+			{ 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.inputmethodservice.KeyboardView.__OnKeyboardActionListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			} 
+			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
+			{ 
+				public global::net.sf.jni4net.jni.IJvmProxy CreateProxy(global::net.sf.jni4net.jni.JNIEnv @__env) 
+				{ 
+					return new global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener(@__env); 
+				} 
+			} 
+			internal __OnKeyboardActionListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
+			{ 
+			} 
+			internal static global::net.sf.jni4net.jni.MethodId _onKey4157; 
+			 void android.inputmethodservice.KeyboardView.OnKeyboardActionListener.onKey(int arg0, int[] arg1) 
+			{ 
+				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
+				if (GetType() == typeof(android.inputmethodservice.KeyboardView.__OnKeyboardActionListener)) 
+					@__env.CallVoidMethod(this, _onKey4157, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)); 
+				else 
+					@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.__OnKeyboardActionListener.staticClass, _onKey4157, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)); 
+			} 
+			internal static global::net.sf.jni4net.jni.MethodId _onPress4158; 
+			 void android.inputmethodservice.KeyboardView.OnKeyboardActionListener.onPress(int arg0) 
+			{ 
+				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
+				if (GetType() == typeof(android.inputmethodservice.KeyboardView.__OnKeyboardActionListener)) 
+					@__env.CallVoidMethod(this, _onPress4158, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				else 
+					@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.__OnKeyboardActionListener.staticClass, _onPress4158, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			} 
+			internal static global::net.sf.jni4net.jni.MethodId _onRelease4159; 
+			 void android.inputmethodservice.KeyboardView.OnKeyboardActionListener.onRelease(int arg0) 
+			{ 
+				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
+				if (GetType() == typeof(android.inputmethodservice.KeyboardView.__OnKeyboardActionListener)) 
+					@__env.CallVoidMethod(this, _onRelease4159, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				else 
+					@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.__OnKeyboardActionListener.staticClass, _onRelease4159, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			} 
+			internal static global::net.sf.jni4net.jni.MethodId _onText4160; 
+			 void android.inputmethodservice.KeyboardView.OnKeyboardActionListener.onText(java.lang.CharSequence arg0) 
+			{ 
+				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
+				if (GetType() == typeof(android.inputmethodservice.KeyboardView.__OnKeyboardActionListener)) 
+					@__env.CallVoidMethod(this, _onText4160, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				else 
+					@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.__OnKeyboardActionListener.staticClass, _onText4160, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+			} 
+			internal static global::net.sf.jni4net.jni.MethodId _swipeLeft4161; 
+			 void android.inputmethodservice.KeyboardView.OnKeyboardActionListener.swipeLeft() 
+			{ 
+				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
+				if (GetType() == typeof(android.inputmethodservice.KeyboardView.__OnKeyboardActionListener)) 
+					@__env.CallVoidMethod(this, _swipeLeft4161); 
+				else 
+					@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.__OnKeyboardActionListener.staticClass, _swipeLeft4161); 
+			} 
+			internal static global::net.sf.jni4net.jni.MethodId _swipeRight4162; 
+			 void android.inputmethodservice.KeyboardView.OnKeyboardActionListener.swipeRight() 
+			{ 
+				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
+				if (GetType() == typeof(android.inputmethodservice.KeyboardView.__OnKeyboardActionListener)) 
+					@__env.CallVoidMethod(this, _swipeRight4162); 
+				else 
+					@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.__OnKeyboardActionListener.staticClass, _swipeRight4162); 
+			} 
+			internal static global::net.sf.jni4net.jni.MethodId _swipeDown4163; 
+			 void android.inputmethodservice.KeyboardView.OnKeyboardActionListener.swipeDown() 
+			{ 
+				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
+				if (GetType() == typeof(android.inputmethodservice.KeyboardView.__OnKeyboardActionListener)) 
+					@__env.CallVoidMethod(this, _swipeDown4163); 
+				else 
+					@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.__OnKeyboardActionListener.staticClass, _swipeDown4163); 
+			} 
+			internal static global::net.sf.jni4net.jni.MethodId _swipeUp4164; 
+			 void android.inputmethodservice.KeyboardView.OnKeyboardActionListener.swipeUp() 
+			{ 
+				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
+				if (GetType() == typeof(android.inputmethodservice.KeyboardView.__OnKeyboardActionListener)) 
+					@__env.CallVoidMethod(this, _swipeUp4164); 
+				else 
+					@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.__OnKeyboardActionListener.staticClass, _swipeUp4164); 
+			} 
+			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
+			{ 
+				global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener.staticClass = @__class; 
+				global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener._onKey4157 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener.staticClass, "android.inputmethodservice.KeyboardView.OnKeyboardActionListener.onKey", "(I[I)V"); 
+				global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener._onPress4158 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener.staticClass, "android.inputmethodservice.KeyboardView.OnKeyboardActionListener.onPress", "(I)V"); 
+				global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener._onRelease4159 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener.staticClass, "android.inputmethodservice.KeyboardView.OnKeyboardActionListener.onRelease", "(I)V"); 
+				global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener._onText4160 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener.staticClass, "android.inputmethodservice.KeyboardView.OnKeyboardActionListener.onText", "(Ljava/lang/CharSequence;)V"); 
+				global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener._swipeLeft4161 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener.staticClass, "android.inputmethodservice.KeyboardView.OnKeyboardActionListener.swipeLeft", "()V"); 
+				global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener._swipeRight4162 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener.staticClass, "android.inputmethodservice.KeyboardView.OnKeyboardActionListener.swipeRight", "()V"); 
+				global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener._swipeDown4163 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener.staticClass, "android.inputmethodservice.KeyboardView.OnKeyboardActionListener.swipeDown", "()V"); 
+				global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener._swipeUp4164 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.__OnKeyboardActionListener.staticClass, "android.inputmethodservice.KeyboardView.OnKeyboardActionListener.swipeUp", "()V"); 
+			} 
+		} 
+		internal static global::net.sf.jni4net.jni.MethodId _closing4165; 
 		public virtual void closing() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _closing3942); 
+				@__env.CallVoidMethod(this, _closing4165); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _closing3942); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _closing4165); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onClick3943; 
+		internal static global::net.sf.jni4net.jni.MethodId _onClick4166; 
 		public virtual void onClick(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _onClick3943, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _onClick4166, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _onClick3943, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _onClick4166, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onTouchEvent3944; 
+		internal static global::net.sf.jni4net.jni.MethodId _onTouchEvent4167; 
 		public override bool onTouchEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				return @__env.CallBooleanMethod(this, _onTouchEvent3944, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _onTouchEvent4167, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.KeyboardView.staticClass, _onTouchEvent3944, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.KeyboardView.staticClass, _onTouchEvent4167, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onDetachedFromWindow3945; 
+		internal static global::net.sf.jni4net.jni.MethodId _onDetachedFromWindow4168; 
 		public virtual new void onDetachedFromWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _onDetachedFromWindow3945); 
+				@__env.CallVoidMethod(this, _onDetachedFromWindow4168); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _onDetachedFromWindow3945); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _onDetachedFromWindow4168); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onSizeChanged3946; 
+		internal static global::net.sf.jni4net.jni.MethodId _onSizeChanged4169; 
 		public virtual new void onSizeChanged(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _onSizeChanged3946, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallVoidMethod(this, _onSizeChanged4169, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _onSizeChanged3946, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _onSizeChanged4169, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onDraw3947; 
+		internal static global::net.sf.jni4net.jni.MethodId _onDraw4170; 
 		public virtual new void onDraw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _onDraw3947, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _onDraw4170, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _onDraw3947, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _onDraw4170, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onMeasure3948; 
+		internal static global::net.sf.jni4net.jni.MethodId _onMeasure4171; 
 		public virtual new void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _onMeasure3948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _onMeasure4171, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _onMeasure3948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _onMeasure4171, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setShifted3949; 
+		internal static global::net.sf.jni4net.jni.MethodId _setShifted4172; 
 		public virtual bool setShifted(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				return @__env.CallBooleanMethod(this, _setShifted3949, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _setShifted4172, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.KeyboardView.staticClass, _setShifted3949, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.KeyboardView.staticClass, _setShifted4172, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isShifted3950; 
+		internal static global::net.sf.jni4net.jni.MethodId _isShifted4173; 
 		public virtual bool isShifted() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				return @__env.CallBooleanMethod(this, _isShifted3950); 
+				return @__env.CallBooleanMethod(this, _isShifted4173); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.KeyboardView.staticClass, _isShifted3950); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.KeyboardView.staticClass, _isShifted4173); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _swipeLeft3951; 
+		internal static global::net.sf.jni4net.jni.MethodId _swipeLeft4174; 
 		protected virtual void swipeLeft() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _swipeLeft3951); 
+				@__env.CallVoidMethod(this, _swipeLeft4174); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _swipeLeft3951); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _swipeLeft4174); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _swipeRight3952; 
+		internal static global::net.sf.jni4net.jni.MethodId _swipeRight4175; 
 		protected virtual void swipeRight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _swipeRight3952); 
+				@__env.CallVoidMethod(this, _swipeRight4175); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _swipeRight3952); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _swipeRight4175); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _swipeDown3953; 
+		internal static global::net.sf.jni4net.jni.MethodId _swipeDown4176; 
 		protected virtual void swipeDown() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _swipeDown3953); 
+				@__env.CallVoidMethod(this, _swipeDown4176); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _swipeDown3953); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _swipeDown4176); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _swipeUp3954; 
+		internal static global::net.sf.jni4net.jni.MethodId _swipeUp4177; 
 		protected virtual void swipeUp() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _swipeUp3954); 
+				@__env.CallVoidMethod(this, _swipeUp4177); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _swipeUp3954); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _swipeUp4177); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setOnKeyboardActionListener3955; 
+		internal static global::net.sf.jni4net.jni.MethodId _setOnKeyboardActionListener4178; 
 		public virtual void setOnKeyboardActionListener(android.inputmethodservice.KeyboardView.OnKeyboardActionListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _setOnKeyboardActionListener3955, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _setOnKeyboardActionListener4178, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _setOnKeyboardActionListener3955, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _setOnKeyboardActionListener4178, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getOnKeyboardActionListener3956; 
+		internal static global::net.sf.jni4net.jni.MethodId _getOnKeyboardActionListener4179; 
 		protected virtual android.inputmethodservice.KeyboardView.OnKeyboardActionListener getOnKeyboardActionListener() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.inputmethodservice.KeyboardView.OnKeyboardActionListener>(@__env, @__env.CallObjectMethodPtr(this, _getOnKeyboardActionListener3956)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.inputmethodservice.KeyboardView.OnKeyboardActionListener>(@__env, @__env.CallObjectMethodPtr(this, _getOnKeyboardActionListener4179)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.inputmethodservice.KeyboardView.OnKeyboardActionListener>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.inputmethodservice.KeyboardView.staticClass, _getOnKeyboardActionListener3956)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.inputmethodservice.KeyboardView.OnKeyboardActionListener>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.inputmethodservice.KeyboardView.staticClass, _getOnKeyboardActionListener4179)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setKeyboard3957; 
+		internal static global::net.sf.jni4net.jni.MethodId _setKeyboard4180; 
 		public virtual void setKeyboard(android.inputmethodservice.Keyboard arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _setKeyboard3957, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _setKeyboard4180, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _setKeyboard3957, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _setKeyboard4180, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getKeyboard3958; 
+		internal static global::net.sf.jni4net.jni.MethodId _getKeyboard4181; 
 		public virtual android.inputmethodservice.Keyboard getKeyboard() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.inputmethodservice.Keyboard>(@__env, @__env.CallObjectMethodPtr(this, _getKeyboard3958)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.inputmethodservice.Keyboard>(@__env, @__env.CallObjectMethodPtr(this, _getKeyboard4181)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.inputmethodservice.Keyboard>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.inputmethodservice.KeyboardView.staticClass, _getKeyboard3958)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.inputmethodservice.Keyboard>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.inputmethodservice.KeyboardView.staticClass, _getKeyboard4181)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setPreviewEnabled3959; 
+		internal static global::net.sf.jni4net.jni.MethodId _setPreviewEnabled4182; 
 		public virtual void setPreviewEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _setPreviewEnabled3959, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setPreviewEnabled4182, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _setPreviewEnabled3959, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _setPreviewEnabled4182, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isPreviewEnabled3960; 
+		internal static global::net.sf.jni4net.jni.MethodId _isPreviewEnabled4183; 
 		public virtual bool isPreviewEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				return @__env.CallBooleanMethod(this, _isPreviewEnabled3960); 
+				return @__env.CallBooleanMethod(this, _isPreviewEnabled4183); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.KeyboardView.staticClass, _isPreviewEnabled3960); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.KeyboardView.staticClass, _isPreviewEnabled4183); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setVerticalCorrection3961; 
+		internal static global::net.sf.jni4net.jni.MethodId _setVerticalCorrection4184; 
 		public virtual void setVerticalCorrection(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _setVerticalCorrection3961, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setVerticalCorrection4184, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _setVerticalCorrection3961, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _setVerticalCorrection4184, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setPopupParent3962; 
+		internal static global::net.sf.jni4net.jni.MethodId _setPopupParent4185; 
 		public virtual void setPopupParent(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _setPopupParent3962, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _setPopupParent4185, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _setPopupParent3962, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _setPopupParent4185, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setPopupOffset3963; 
+		internal static global::net.sf.jni4net.jni.MethodId _setPopupOffset4186; 
 		public virtual void setPopupOffset(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _setPopupOffset3963, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _setPopupOffset4186, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _setPopupOffset3963, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _setPopupOffset4186, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setProximityCorrectionEnabled3964; 
+		internal static global::net.sf.jni4net.jni.MethodId _setProximityCorrectionEnabled4187; 
 		public virtual void setProximityCorrectionEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _setProximityCorrectionEnabled3964, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setProximityCorrectionEnabled4187, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _setProximityCorrectionEnabled3964, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _setProximityCorrectionEnabled4187, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isProximityCorrectionEnabled3965; 
+		internal static global::net.sf.jni4net.jni.MethodId _isProximityCorrectionEnabled4188; 
 		public virtual bool isProximityCorrectionEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				return @__env.CallBooleanMethod(this, _isProximityCorrectionEnabled3965); 
+				return @__env.CallBooleanMethod(this, _isProximityCorrectionEnabled4188); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.KeyboardView.staticClass, _isProximityCorrectionEnabled3965); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.KeyboardView.staticClass, _isProximityCorrectionEnabled4188); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _invalidateAllKeys3966; 
+		internal static global::net.sf.jni4net.jni.MethodId _invalidateAllKeys4189; 
 		public virtual void invalidateAllKeys() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _invalidateAllKeys3966); 
+				@__env.CallVoidMethod(this, _invalidateAllKeys4189); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _invalidateAllKeys3966); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _invalidateAllKeys4189); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _invalidateKey3967; 
+		internal static global::net.sf.jni4net.jni.MethodId _invalidateKey4190; 
 		public virtual void invalidateKey(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				@__env.CallVoidMethod(this, _invalidateKey3967, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _invalidateKey4190, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _invalidateKey3967, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.KeyboardView.staticClass, _invalidateKey4190, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onLongPress3968; 
+		internal static global::net.sf.jni4net.jni.MethodId _onLongPress4191; 
 		protected virtual bool onLongPress(android.inputmethodservice.Keyboard.Key arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				return @__env.CallBooleanMethod(this, _onLongPress3968, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _onLongPress4191, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.KeyboardView.staticClass, _onLongPress3968, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.KeyboardView.staticClass, _onLongPress4191, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _handleBack3969; 
+		internal static global::net.sf.jni4net.jni.MethodId _handleBack4192; 
 		public virtual bool handleBack() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.KeyboardView)) 
-				return @__env.CallBooleanMethod(this, _handleBack3969); 
+				return @__env.CallBooleanMethod(this, _handleBack4192); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.KeyboardView.staticClass, _handleBack3969); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.KeyboardView.staticClass, _handleBack4192); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _KeyboardView3970; 
+		internal static global::net.sf.jni4net.jni.MethodId _KeyboardView4193; 
 		public KeyboardView(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.inputmethodservice.KeyboardView.staticClass, _KeyboardView3970, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.inputmethodservice.KeyboardView.staticClass, _KeyboardView4193, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _KeyboardView3971; 
+		internal static global::net.sf.jni4net.jni.MethodId _KeyboardView4194; 
 		public KeyboardView(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.inputmethodservice.KeyboardView.staticClass, _KeyboardView3971, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.inputmethodservice.KeyboardView.staticClass, _KeyboardView4194, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.inputmethodservice.KeyboardView.staticClass = @__class; 
-			global::android.inputmethodservice.KeyboardView._closing3942 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "closing", "()V"); 
-			global::android.inputmethodservice.KeyboardView._onClick3943 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "onClick", "(Landroid/view/View;)V"); 
-			global::android.inputmethodservice.KeyboardView._onTouchEvent3944 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z"); 
-			global::android.inputmethodservice.KeyboardView._onDetachedFromWindow3945 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "onDetachedFromWindow", "()V"); 
-			global::android.inputmethodservice.KeyboardView._onSizeChanged3946 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "onSizeChanged", "(IIII)V"); 
-			global::android.inputmethodservice.KeyboardView._onDraw3947 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V"); 
-			global::android.inputmethodservice.KeyboardView._onMeasure3948 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "onMeasure", "(II)V"); 
-			global::android.inputmethodservice.KeyboardView._setShifted3949 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "setShifted", "(Z)Z"); 
-			global::android.inputmethodservice.KeyboardView._isShifted3950 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "isShifted", "()Z"); 
-			global::android.inputmethodservice.KeyboardView._swipeLeft3951 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "swipeLeft", "()V"); 
-			global::android.inputmethodservice.KeyboardView._swipeRight3952 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "swipeRight", "()V"); 
-			global::android.inputmethodservice.KeyboardView._swipeDown3953 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "swipeDown", "()V"); 
-			global::android.inputmethodservice.KeyboardView._swipeUp3954 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "swipeUp", "()V"); 
-			global::android.inputmethodservice.KeyboardView._setOnKeyboardActionListener3955 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "setOnKeyboardActionListener", "(Landroid/inputmethodservice/KeyboardView$OnKeyboardActionListener;)V"); 
-			global::android.inputmethodservice.KeyboardView._getOnKeyboardActionListener3956 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "getOnKeyboardActionListener", "()Landroid/inputmethodservice/KeyboardView$OnKeyboardActionListener;"); 
-			global::android.inputmethodservice.KeyboardView._setKeyboard3957 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "setKeyboard", "(Landroid/inputmethodservice/Keyboard;)V"); 
-			global::android.inputmethodservice.KeyboardView._getKeyboard3958 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "getKeyboard", "()Landroid/inputmethodservice/Keyboard;"); 
-			global::android.inputmethodservice.KeyboardView._setPreviewEnabled3959 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "setPreviewEnabled", "(Z)V"); 
-			global::android.inputmethodservice.KeyboardView._isPreviewEnabled3960 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "isPreviewEnabled", "()Z"); 
-			global::android.inputmethodservice.KeyboardView._setVerticalCorrection3961 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "setVerticalCorrection", "(I)V"); 
-			global::android.inputmethodservice.KeyboardView._setPopupParent3962 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "setPopupParent", "(Landroid/view/View;)V"); 
-			global::android.inputmethodservice.KeyboardView._setPopupOffset3963 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "setPopupOffset", "(II)V"); 
-			global::android.inputmethodservice.KeyboardView._setProximityCorrectionEnabled3964 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "setProximityCorrectionEnabled", "(Z)V"); 
-			global::android.inputmethodservice.KeyboardView._isProximityCorrectionEnabled3965 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "isProximityCorrectionEnabled", "()Z"); 
-			global::android.inputmethodservice.KeyboardView._invalidateAllKeys3966 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "invalidateAllKeys", "()V"); 
-			global::android.inputmethodservice.KeyboardView._invalidateKey3967 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "invalidateKey", "(I)V"); 
-			global::android.inputmethodservice.KeyboardView._onLongPress3968 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "onLongPress", "(Landroid/inputmethodservice/Keyboard$Key;)Z"); 
-			global::android.inputmethodservice.KeyboardView._handleBack3969 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "handleBack", "()Z"); 
-			global::android.inputmethodservice.KeyboardView._KeyboardView3970 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
-			global::android.inputmethodservice.KeyboardView._KeyboardView3971 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
+			global::android.inputmethodservice.KeyboardView._closing4165 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "closing", "()V"); 
+			global::android.inputmethodservice.KeyboardView._onClick4166 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "onClick", "(Landroid/view/View;)V"); 
+			global::android.inputmethodservice.KeyboardView._onTouchEvent4167 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z"); 
+			global::android.inputmethodservice.KeyboardView._onDetachedFromWindow4168 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "onDetachedFromWindow", "()V"); 
+			global::android.inputmethodservice.KeyboardView._onSizeChanged4169 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "onSizeChanged", "(IIII)V"); 
+			global::android.inputmethodservice.KeyboardView._onDraw4170 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "onDraw", "(Landroid/graphics/Canvas;)V"); 
+			global::android.inputmethodservice.KeyboardView._onMeasure4171 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "onMeasure", "(II)V"); 
+			global::android.inputmethodservice.KeyboardView._setShifted4172 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "setShifted", "(Z)Z"); 
+			global::android.inputmethodservice.KeyboardView._isShifted4173 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "isShifted", "()Z"); 
+			global::android.inputmethodservice.KeyboardView._swipeLeft4174 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "swipeLeft", "()V"); 
+			global::android.inputmethodservice.KeyboardView._swipeRight4175 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "swipeRight", "()V"); 
+			global::android.inputmethodservice.KeyboardView._swipeDown4176 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "swipeDown", "()V"); 
+			global::android.inputmethodservice.KeyboardView._swipeUp4177 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "swipeUp", "()V"); 
+			global::android.inputmethodservice.KeyboardView._setOnKeyboardActionListener4178 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "setOnKeyboardActionListener", "(Landroid/inputmethodservice/KeyboardView$OnKeyboardActionListener;)V"); 
+			global::android.inputmethodservice.KeyboardView._getOnKeyboardActionListener4179 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "getOnKeyboardActionListener", "()Landroid/inputmethodservice/KeyboardView$OnKeyboardActionListener;"); 
+			global::android.inputmethodservice.KeyboardView._setKeyboard4180 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "setKeyboard", "(Landroid/inputmethodservice/Keyboard;)V"); 
+			global::android.inputmethodservice.KeyboardView._getKeyboard4181 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "getKeyboard", "()Landroid/inputmethodservice/Keyboard;"); 
+			global::android.inputmethodservice.KeyboardView._setPreviewEnabled4182 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "setPreviewEnabled", "(Z)V"); 
+			global::android.inputmethodservice.KeyboardView._isPreviewEnabled4183 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "isPreviewEnabled", "()Z"); 
+			global::android.inputmethodservice.KeyboardView._setVerticalCorrection4184 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "setVerticalCorrection", "(I)V"); 
+			global::android.inputmethodservice.KeyboardView._setPopupParent4185 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "setPopupParent", "(Landroid/view/View;)V"); 
+			global::android.inputmethodservice.KeyboardView._setPopupOffset4186 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "setPopupOffset", "(II)V"); 
+			global::android.inputmethodservice.KeyboardView._setProximityCorrectionEnabled4187 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "setProximityCorrectionEnabled", "(Z)V"); 
+			global::android.inputmethodservice.KeyboardView._isProximityCorrectionEnabled4188 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "isProximityCorrectionEnabled", "()Z"); 
+			global::android.inputmethodservice.KeyboardView._invalidateAllKeys4189 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "invalidateAllKeys", "()V"); 
+			global::android.inputmethodservice.KeyboardView._invalidateKey4190 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "invalidateKey", "(I)V"); 
+			global::android.inputmethodservice.KeyboardView._onLongPress4191 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "onLongPress", "(Landroid/inputmethodservice/Keyboard$Key;)Z"); 
+			global::android.inputmethodservice.KeyboardView._handleBack4192 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "handleBack", "()Z"); 
+			global::android.inputmethodservice.KeyboardView._KeyboardView4193 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
+			global::android.inputmethodservice.KeyboardView._KeyboardView4194 = @__env.GetMethodID(global::android.inputmethodservice.KeyboardView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
 		} 
 	} 
 } 

@@ -18,23 +18,23 @@ namespace android.database.sqlite
 		protected SQLiteException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _SQLiteException2326; 
+		internal static global::net.sf.jni4net.jni.MethodId _SQLiteException2516; 
 		public SQLiteException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.database.sqlite.SQLiteException.staticClass, _SQLiteException2326, this); 
+			@__env.NewObject(android.database.sqlite.SQLiteException.staticClass, _SQLiteException2516, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _SQLiteException2327; 
+		internal static global::net.sf.jni4net.jni.MethodId _SQLiteException2517; 
 		public SQLiteException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.database.sqlite.SQLiteException.staticClass, _SQLiteException2327, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.database.sqlite.SQLiteException.staticClass, _SQLiteException2517, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.database.sqlite.SQLiteException.staticClass = @__class; 
-			global::android.database.sqlite.SQLiteException._SQLiteException2326 = @__env.GetMethodID(global::android.database.sqlite.SQLiteException.staticClass, "<init>", "()V"); 
-			global::android.database.sqlite.SQLiteException._SQLiteException2327 = @__env.GetMethodID(global::android.database.sqlite.SQLiteException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::android.database.sqlite.SQLiteException._SQLiteException2516 = @__env.GetMethodID(global::android.database.sqlite.SQLiteException.staticClass, "<init>", "()V"); 
+			global::android.database.sqlite.SQLiteException._SQLiteException2517 = @__env.GetMethodID(global::android.database.sqlite.SQLiteException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
 		} 
 	} 
 } 

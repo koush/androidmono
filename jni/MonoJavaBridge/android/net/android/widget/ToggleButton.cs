@@ -18,110 +18,110 @@ namespace android.widget
 		protected ToggleButton(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setChecked10442; 
+		internal static global::net.sf.jni4net.jni.MethodId _setChecked11247; 
 		public override void setChecked(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ToggleButton)) 
-				@__env.CallVoidMethod(this, _setChecked10442, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setChecked11247, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ToggleButton.staticClass, _setChecked10442, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ToggleButton.staticClass, _setChecked11247, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setBackgroundDrawable10443; 
+		internal static global::net.sf.jni4net.jni.MethodId _setBackgroundDrawable11248; 
 		public override void setBackgroundDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ToggleButton)) 
-				@__env.CallVoidMethod(this, _setBackgroundDrawable10443, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _setBackgroundDrawable11248, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ToggleButton.staticClass, _setBackgroundDrawable10443, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ToggleButton.staticClass, _setBackgroundDrawable11248, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onFinishInflate10444; 
+		internal static global::net.sf.jni4net.jni.MethodId _onFinishInflate11249; 
 		protected override void onFinishInflate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ToggleButton)) 
-				@__env.CallVoidMethod(this, _onFinishInflate10444); 
+				@__env.CallVoidMethod(this, _onFinishInflate11249); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ToggleButton.staticClass, _onFinishInflate10444); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ToggleButton.staticClass, _onFinishInflate11249); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _drawableStateChanged10445; 
+		internal static global::net.sf.jni4net.jni.MethodId _drawableStateChanged11250; 
 		protected override void drawableStateChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ToggleButton)) 
-				@__env.CallVoidMethod(this, _drawableStateChanged10445); 
+				@__env.CallVoidMethod(this, _drawableStateChanged11250); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ToggleButton.staticClass, _drawableStateChanged10445); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ToggleButton.staticClass, _drawableStateChanged11250); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getTextOn10446; 
+		internal static global::net.sf.jni4net.jni.MethodId _getTextOn11251; 
 		public virtual java.lang.CharSequence getTextOn() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ToggleButton)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getTextOn10446)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getTextOn11251)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.ToggleButton.staticClass, _getTextOn10446)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.ToggleButton.staticClass, _getTextOn11251)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setTextOn10447; 
+		internal static global::net.sf.jni4net.jni.MethodId _setTextOn11252; 
 		public virtual void setTextOn(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ToggleButton)) 
-				@__env.CallVoidMethod(this, _setTextOn10447, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _setTextOn11252, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ToggleButton.staticClass, _setTextOn10447, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ToggleButton.staticClass, _setTextOn11252, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getTextOff10448; 
+		internal static global::net.sf.jni4net.jni.MethodId _getTextOff11253; 
 		public virtual java.lang.CharSequence getTextOff() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ToggleButton)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getTextOff10448)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getTextOff11253)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.ToggleButton.staticClass, _getTextOff10448)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.ToggleButton.staticClass, _getTextOff11253)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setTextOff10449; 
+		internal static global::net.sf.jni4net.jni.MethodId _setTextOff11254; 
 		public virtual void setTextOff(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ToggleButton)) 
-				@__env.CallVoidMethod(this, _setTextOff10449, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _setTextOff11254, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ToggleButton.staticClass, _setTextOff10449, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.ToggleButton.staticClass, _setTextOff11254, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ToggleButton10450; 
+		internal static global::net.sf.jni4net.jni.MethodId _ToggleButton11255; 
 		public ToggleButton(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.ToggleButton.staticClass, _ToggleButton10450, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.widget.ToggleButton.staticClass, _ToggleButton11255, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ToggleButton10451; 
+		internal static global::net.sf.jni4net.jni.MethodId _ToggleButton11256; 
 		public ToggleButton(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.ToggleButton.staticClass, _ToggleButton10451, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.widget.ToggleButton.staticClass, _ToggleButton11256, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ToggleButton10452; 
+		internal static global::net.sf.jni4net.jni.MethodId _ToggleButton11257; 
 		public ToggleButton(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.ToggleButton.staticClass, _ToggleButton10452, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.widget.ToggleButton.staticClass, _ToggleButton11257, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.widget.ToggleButton.staticClass = @__class; 
-			global::android.widget.ToggleButton._setChecked10442 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "setChecked", "(Z)V"); 
-			global::android.widget.ToggleButton._setBackgroundDrawable10443 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "setBackgroundDrawable", "(Landroid/graphics/drawable/Drawable;)V"); 
-			global::android.widget.ToggleButton._onFinishInflate10444 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "onFinishInflate", "()V"); 
-			global::android.widget.ToggleButton._drawableStateChanged10445 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "drawableStateChanged", "()V"); 
-			global::android.widget.ToggleButton._getTextOn10446 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "getTextOn", "()Ljava/lang/CharSequence;"); 
-			global::android.widget.ToggleButton._setTextOn10447 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "setTextOn", "(Ljava/lang/CharSequence;)V"); 
-			global::android.widget.ToggleButton._getTextOff10448 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "getTextOff", "()Ljava/lang/CharSequence;"); 
-			global::android.widget.ToggleButton._setTextOff10449 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "setTextOff", "(Ljava/lang/CharSequence;)V"); 
-			global::android.widget.ToggleButton._ToggleButton10450 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
-			global::android.widget.ToggleButton._ToggleButton10451 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;)V"); 
-			global::android.widget.ToggleButton._ToggleButton10452 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
+			global::android.widget.ToggleButton._setChecked11247 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "setChecked", "(Z)V"); 
+			global::android.widget.ToggleButton._setBackgroundDrawable11248 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "setBackgroundDrawable", "(Landroid/graphics/drawable/Drawable;)V"); 
+			global::android.widget.ToggleButton._onFinishInflate11249 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "onFinishInflate", "()V"); 
+			global::android.widget.ToggleButton._drawableStateChanged11250 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "drawableStateChanged", "()V"); 
+			global::android.widget.ToggleButton._getTextOn11251 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "getTextOn", "()Ljava/lang/CharSequence;"); 
+			global::android.widget.ToggleButton._setTextOn11252 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "setTextOn", "(Ljava/lang/CharSequence;)V"); 
+			global::android.widget.ToggleButton._getTextOff11253 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "getTextOff", "()Ljava/lang/CharSequence;"); 
+			global::android.widget.ToggleButton._setTextOff11254 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "setTextOff", "(Ljava/lang/CharSequence;)V"); 
+			global::android.widget.ToggleButton._ToggleButton11255 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
+			global::android.widget.ToggleButton._ToggleButton11256 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;)V"); 
+			global::android.widget.ToggleButton._ToggleButton11257 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
 		} 
 	} 
 } 

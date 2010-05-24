@@ -18,63 +18,63 @@ namespace android.net
 		protected LocalServerSocket(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _close4389; 
+		internal static global::net.sf.jni4net.jni.MethodId _close4637; 
 		public virtual void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.LocalServerSocket)) 
-				@__env.CallVoidMethod(this, _close4389); 
+				@__env.CallVoidMethod(this, _close4637); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.net.LocalServerSocket.staticClass, _close4389); 
+				@__env.CallNonVirtualVoidMethod(this, android.net.LocalServerSocket.staticClass, _close4637); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _accept4390; 
+		internal static global::net.sf.jni4net.jni.MethodId _accept4638; 
 		public virtual android.net.LocalSocket accept() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.LocalServerSocket)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocket>(@__env, @__env.CallObjectMethodPtr(this, _accept4390)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocket>(@__env, @__env.CallObjectMethodPtr(this, _accept4638)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.LocalServerSocket.staticClass, _accept4390)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.LocalServerSocket.staticClass, _accept4638)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getFileDescriptor4391; 
+		internal static global::net.sf.jni4net.jni.MethodId _getFileDescriptor4639; 
 		public virtual java.io.FileDescriptor getFileDescriptor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.LocalServerSocket)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, _getFileDescriptor4391)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, _getFileDescriptor4639)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.LocalServerSocket.staticClass, _getFileDescriptor4391)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.LocalServerSocket.staticClass, _getFileDescriptor4639)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getLocalSocketAddress4392; 
+		internal static global::net.sf.jni4net.jni.MethodId _getLocalSocketAddress4640; 
 		public virtual android.net.LocalSocketAddress getLocalSocketAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.LocalServerSocket)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocketAddress>(@__env, @__env.CallObjectMethodPtr(this, _getLocalSocketAddress4392)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocketAddress>(@__env, @__env.CallObjectMethodPtr(this, _getLocalSocketAddress4640)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocketAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.LocalServerSocket.staticClass, _getLocalSocketAddress4392)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocketAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.LocalServerSocket.staticClass, _getLocalSocketAddress4640)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _LocalServerSocket4393; 
+		internal static global::net.sf.jni4net.jni.MethodId _LocalServerSocket4641; 
 		public LocalServerSocket(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.net.LocalServerSocket.staticClass, _LocalServerSocket4393, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.net.LocalServerSocket.staticClass, _LocalServerSocket4641, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _LocalServerSocket4394; 
+		internal static global::net.sf.jni4net.jni.MethodId _LocalServerSocket4642; 
 		public LocalServerSocket(java.io.FileDescriptor arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.net.LocalServerSocket.staticClass, _LocalServerSocket4394, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.net.LocalServerSocket.staticClass, _LocalServerSocket4642, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.net.LocalServerSocket.staticClass = @__class; 
-			global::android.net.LocalServerSocket._close4389 = @__env.GetMethodID(global::android.net.LocalServerSocket.staticClass, "close", "()V"); 
-			global::android.net.LocalServerSocket._accept4390 = @__env.GetMethodID(global::android.net.LocalServerSocket.staticClass, "accept", "()Landroid/net/LocalSocket;"); 
-			global::android.net.LocalServerSocket._getFileDescriptor4391 = @__env.GetMethodID(global::android.net.LocalServerSocket.staticClass, "getFileDescriptor", "()Ljava/io/FileDescriptor;"); 
-			global::android.net.LocalServerSocket._getLocalSocketAddress4392 = @__env.GetMethodID(global::android.net.LocalServerSocket.staticClass, "getLocalSocketAddress", "()Landroid/net/LocalSocketAddress;"); 
-			global::android.net.LocalServerSocket._LocalServerSocket4393 = @__env.GetMethodID(global::android.net.LocalServerSocket.staticClass, "<init>", "(Ljava/lang/String;)V"); 
-			global::android.net.LocalServerSocket._LocalServerSocket4394 = @__env.GetMethodID(global::android.net.LocalServerSocket.staticClass, "<init>", "(Ljava/io/FileDescriptor;)V"); 
+			global::android.net.LocalServerSocket._close4637 = @__env.GetMethodID(global::android.net.LocalServerSocket.staticClass, "close", "()V"); 
+			global::android.net.LocalServerSocket._accept4638 = @__env.GetMethodID(global::android.net.LocalServerSocket.staticClass, "accept", "()Landroid/net/LocalSocket;"); 
+			global::android.net.LocalServerSocket._getFileDescriptor4639 = @__env.GetMethodID(global::android.net.LocalServerSocket.staticClass, "getFileDescriptor", "()Ljava/io/FileDescriptor;"); 
+			global::android.net.LocalServerSocket._getLocalSocketAddress4640 = @__env.GetMethodID(global::android.net.LocalServerSocket.staticClass, "getLocalSocketAddress", "()Landroid/net/LocalSocketAddress;"); 
+			global::android.net.LocalServerSocket._LocalServerSocket4641 = @__env.GetMethodID(global::android.net.LocalServerSocket.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::android.net.LocalServerSocket._LocalServerSocket4642 = @__env.GetMethodID(global::android.net.LocalServerSocket.staticClass, "<init>", "(Ljava/io/FileDescriptor;)V"); 
 		} 
 	} 
 } 

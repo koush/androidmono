@@ -18,42 +18,42 @@ namespace android.util
 		protected StateSet(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _dump7237; 
+		internal static global::net.sf.jni4net.jni.MethodId _dump7640; 
 		public static java.lang.String dump(int[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.util.StateSet.staticClass, _dump7237, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.util.StateSet.staticClass, _dump7640, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isWildCard7238; 
+		internal static global::net.sf.jni4net.jni.MethodId _isWildCard7641; 
 		public static bool isWildCard(int[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.util.StateSet.staticClass, _isWildCard7238, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+			return @__env.CallStaticBooleanMethod(android.util.StateSet.staticClass, _isWildCard7641, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _stateSetMatches7239; 
+		internal static global::net.sf.jni4net.jni.MethodId _stateSetMatches7642; 
 		public static bool stateSetMatches(int[] arg0, int[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.util.StateSet.staticClass, _stateSetMatches7239, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)); 
+			return @__env.CallStaticBooleanMethod(android.util.StateSet.staticClass, _stateSetMatches7642, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _stateSetMatches7240; 
+		internal static global::net.sf.jni4net.jni.MethodId _stateSetMatches7643; 
 		public static bool stateSetMatches(int[] arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.util.StateSet.staticClass, _stateSetMatches7240, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			return @__env.CallStaticBooleanMethod(android.util.StateSet.staticClass, _stateSetMatches7643, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _trimStateSet7241; 
+		internal static global::net.sf.jni4net.jni.MethodId _trimStateSet7644; 
 		public static int[] trimStateSet(int[] arg0, int arg1) 
 		{ 
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.util.StateSet.staticClass, _trimStateSet7241, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+			return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.util.StateSet.staticClass, _trimStateSet7644, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _StateSet7242; 
+		internal static global::net.sf.jni4net.jni.MethodId _StateSet7645; 
 		public StateSet()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.util.StateSet.staticClass, _StateSet7242, this); 
+			@__env.NewObject(android.util.StateSet.staticClass, _StateSet7645, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _WILD_CARD7243; 
+		internal static global::net.sf.jni4net.jni.FieldId _WILD_CARD7646; 
 		public static int[] WILD_CARD
 		{ 
 			get 
@@ -64,12 +64,12 @@ namespace android.util
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.util.StateSet.staticClass = @__class; 
-			global::android.util.StateSet._dump7237 = @__env.GetStaticMethodID(global::android.util.StateSet.staticClass, "dump", "([I)Ljava/lang/String;"); 
-			global::android.util.StateSet._isWildCard7238 = @__env.GetStaticMethodID(global::android.util.StateSet.staticClass, "isWildCard", "([I)Z"); 
-			global::android.util.StateSet._stateSetMatches7239 = @__env.GetStaticMethodID(global::android.util.StateSet.staticClass, "stateSetMatches", "([I[I)Z"); 
-			global::android.util.StateSet._stateSetMatches7240 = @__env.GetStaticMethodID(global::android.util.StateSet.staticClass, "stateSetMatches", "([II)Z"); 
-			global::android.util.StateSet._trimStateSet7241 = @__env.GetStaticMethodID(global::android.util.StateSet.staticClass, "trimStateSet", "([II)[I"); 
-			global::android.util.StateSet._StateSet7242 = @__env.GetMethodID(global::android.util.StateSet.staticClass, "<init>", "()V"); 
+			global::android.util.StateSet._dump7640 = @__env.GetStaticMethodID(global::android.util.StateSet.staticClass, "dump", "([I)Ljava/lang/String;"); 
+			global::android.util.StateSet._isWildCard7641 = @__env.GetStaticMethodID(global::android.util.StateSet.staticClass, "isWildCard", "([I)Z"); 
+			global::android.util.StateSet._stateSetMatches7642 = @__env.GetStaticMethodID(global::android.util.StateSet.staticClass, "stateSetMatches", "([I[I)Z"); 
+			global::android.util.StateSet._stateSetMatches7643 = @__env.GetStaticMethodID(global::android.util.StateSet.staticClass, "stateSetMatches", "([II)Z"); 
+			global::android.util.StateSet._trimStateSet7644 = @__env.GetStaticMethodID(global::android.util.StateSet.staticClass, "trimStateSet", "([II)[I"); 
+			global::android.util.StateSet._StateSet7645 = @__env.GetMethodID(global::android.util.StateSet.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

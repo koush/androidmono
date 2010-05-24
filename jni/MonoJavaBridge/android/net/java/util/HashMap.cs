@@ -18,167 +18,167 @@ namespace java.util
 		protected HashMap(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _get11964; 
+		internal static global::net.sf.jni4net.jni.MethodId _get12874; 
 		public override java.lang.Object get(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.HashMap)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _get11964, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _get12874, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.HashMap.staticClass, _get11964, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.HashMap.staticClass, _get12874, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _put11965; 
+		internal static global::net.sf.jni4net.jni.MethodId _put12875; 
 		public override java.lang.Object put(java.lang.Object arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.HashMap)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _put11965, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _put12875, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.HashMap.staticClass, _put11965, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.HashMap.staticClass, _put12875, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _clone11966; 
+		internal static global::net.sf.jni4net.jni.MethodId _clone12876; 
 		public virtual new java.lang.Object clone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.HashMap)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _clone11966)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _clone12876)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.HashMap.staticClass, _clone11966)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.HashMap.staticClass, _clone12876)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _clear11967; 
+		internal static global::net.sf.jni4net.jni.MethodId _clear12877; 
 		public override void clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.HashMap)) 
-				@__env.CallVoidMethod(this, _clear11967); 
+				@__env.CallVoidMethod(this, _clear12877); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.HashMap.staticClass, _clear11967); 
+				@__env.CallNonVirtualVoidMethod(this, java.util.HashMap.staticClass, _clear12877); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isEmpty11968; 
+		internal static global::net.sf.jni4net.jni.MethodId _isEmpty12878; 
 		public override bool isEmpty() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.HashMap)) 
-				return @__env.CallBooleanMethod(this, _isEmpty11968); 
+				return @__env.CallBooleanMethod(this, _isEmpty12878); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.util.HashMap.staticClass, _isEmpty11968); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.util.HashMap.staticClass, _isEmpty12878); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _values11969; 
+		internal static global::net.sf.jni4net.jni.MethodId _values12879; 
 		public override java.util.Collection values() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.HashMap)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallObjectMethodPtr(this, _values11969)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallObjectMethodPtr(this, _values12879)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.HashMap.staticClass, _values11969)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.HashMap.staticClass, _values12879)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _size11970; 
+		internal static global::net.sf.jni4net.jni.MethodId _size12880; 
 		public override int size() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.HashMap)) 
-				return @__env.CallIntMethod(this, _size11970); 
+				return @__env.CallIntMethod(this, _size12880); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.util.HashMap.staticClass, _size11970); 
+				return @__env.CallNonVirtualIntMethod(this, java.util.HashMap.staticClass, _size12880); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _entrySet11971; 
+		internal static global::net.sf.jni4net.jni.MethodId _entrySet12881; 
 		public override java.util.Set entrySet() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.HashMap)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, _entrySet11971)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, _entrySet12881)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.HashMap.staticClass, _entrySet11971)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.HashMap.staticClass, _entrySet12881)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _putAll11972; 
+		internal static global::net.sf.jni4net.jni.MethodId _putAll12882; 
 		public override void putAll(java.util.Map arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.HashMap)) 
-				@__env.CallVoidMethod(this, _putAll11972, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _putAll12882, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.HashMap.staticClass, _putAll11972, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.util.HashMap.staticClass, _putAll12882, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _remove11973; 
+		internal static global::net.sf.jni4net.jni.MethodId _remove12883; 
 		public override java.lang.Object remove(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.HashMap)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _remove11973, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _remove12883, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.HashMap.staticClass, _remove11973, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.HashMap.staticClass, _remove12883, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _keySet11974; 
+		internal static global::net.sf.jni4net.jni.MethodId _keySet12884; 
 		public override java.util.Set keySet() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.HashMap)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, _keySet11974)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, _keySet12884)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.HashMap.staticClass, _keySet11974)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.HashMap.staticClass, _keySet12884)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _containsValue11975; 
+		internal static global::net.sf.jni4net.jni.MethodId _containsValue12885; 
 		public override bool containsValue(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.HashMap)) 
-				return @__env.CallBooleanMethod(this, _containsValue11975, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, _containsValue12885, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.util.HashMap.staticClass, _containsValue11975, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.util.HashMap.staticClass, _containsValue12885, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _containsKey11976; 
+		internal static global::net.sf.jni4net.jni.MethodId _containsKey12886; 
 		public override bool containsKey(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.HashMap)) 
-				return @__env.CallBooleanMethod(this, _containsKey11976, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, _containsKey12886, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.util.HashMap.staticClass, _containsKey11976, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.util.HashMap.staticClass, _containsKey12886, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _HashMap11977; 
+		internal static global::net.sf.jni4net.jni.MethodId _HashMap12887; 
 		public HashMap(java.util.Map arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.util.HashMap.staticClass, _HashMap11977, this, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+			@__env.NewObject(java.util.HashMap.staticClass, _HashMap12887, this, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _HashMap11978; 
+		internal static global::net.sf.jni4net.jni.MethodId _HashMap12888; 
 		public HashMap(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.util.HashMap.staticClass, _HashMap11978, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			@__env.NewObject(java.util.HashMap.staticClass, _HashMap12888, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _HashMap11979; 
+		internal static global::net.sf.jni4net.jni.MethodId _HashMap12889; 
 		public HashMap()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.util.HashMap.staticClass, _HashMap11979, this); 
+			@__env.NewObject(java.util.HashMap.staticClass, _HashMap12889, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _HashMap11980; 
+		internal static global::net.sf.jni4net.jni.MethodId _HashMap12890; 
 		public HashMap(int arg0, float arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.util.HashMap.staticClass, _HashMap11980, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(java.util.HashMap.staticClass, _HashMap12890, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::java.util.HashMap.staticClass = @__class; 
-			global::java.util.HashMap._get11964 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "get", "(Ljava/lang/Object;)Ljava/lang/Object;"); 
-			global::java.util.HashMap._put11965 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"); 
-			global::java.util.HashMap._clone11966 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "clone", "()Ljava/lang/Object;"); 
-			global::java.util.HashMap._clear11967 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "clear", "()V"); 
-			global::java.util.HashMap._isEmpty11968 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "isEmpty", "()Z"); 
-			global::java.util.HashMap._values11969 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "values", "()Ljava/util/Collection;"); 
-			global::java.util.HashMap._size11970 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "size", "()I"); 
-			global::java.util.HashMap._entrySet11971 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "entrySet", "()Ljava/util/Set;"); 
-			global::java.util.HashMap._putAll11972 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "putAll", "(Ljava/util/Map;)V"); 
-			global::java.util.HashMap._remove11973 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "remove", "(Ljava/lang/Object;)Ljava/lang/Object;"); 
-			global::java.util.HashMap._keySet11974 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "keySet", "()Ljava/util/Set;"); 
-			global::java.util.HashMap._containsValue11975 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "containsValue", "(Ljava/lang/Object;)Z"); 
-			global::java.util.HashMap._containsKey11976 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "containsKey", "(Ljava/lang/Object;)Z"); 
-			global::java.util.HashMap._HashMap11977 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "<init>", "(Ljava/util/Map;)V"); 
-			global::java.util.HashMap._HashMap11978 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "<init>", "(I)V"); 
-			global::java.util.HashMap._HashMap11979 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "<init>", "()V"); 
-			global::java.util.HashMap._HashMap11980 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "<init>", "(IF)V"); 
+			global::java.util.HashMap._get12874 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "get", "(Ljava/lang/Object;)Ljava/lang/Object;"); 
+			global::java.util.HashMap._put12875 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"); 
+			global::java.util.HashMap._clone12876 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "clone", "()Ljava/lang/Object;"); 
+			global::java.util.HashMap._clear12877 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "clear", "()V"); 
+			global::java.util.HashMap._isEmpty12878 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "isEmpty", "()Z"); 
+			global::java.util.HashMap._values12879 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "values", "()Ljava/util/Collection;"); 
+			global::java.util.HashMap._size12880 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "size", "()I"); 
+			global::java.util.HashMap._entrySet12881 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "entrySet", "()Ljava/util/Set;"); 
+			global::java.util.HashMap._putAll12882 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "putAll", "(Ljava/util/Map;)V"); 
+			global::java.util.HashMap._remove12883 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "remove", "(Ljava/lang/Object;)Ljava/lang/Object;"); 
+			global::java.util.HashMap._keySet12884 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "keySet", "()Ljava/util/Set;"); 
+			global::java.util.HashMap._containsValue12885 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "containsValue", "(Ljava/lang/Object;)Z"); 
+			global::java.util.HashMap._containsKey12886 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "containsKey", "(Ljava/lang/Object;)Z"); 
+			global::java.util.HashMap._HashMap12887 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "<init>", "(Ljava/util/Map;)V"); 
+			global::java.util.HashMap._HashMap12888 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "<init>", "(I)V"); 
+			global::java.util.HashMap._HashMap12889 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "<init>", "()V"); 
+			global::java.util.HashMap._HashMap12890 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "<init>", "(IF)V"); 
 		} 
 	} 
 } 

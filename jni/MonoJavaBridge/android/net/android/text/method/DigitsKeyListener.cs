@@ -18,73 +18,73 @@ namespace android.text.method
 		protected DigitsKeyListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance6789; 
+		internal static global::net.sf.jni4net.jni.MethodId _getInstance7144; 
 		public static android.text.method.DigitsKeyListener getInstance(bool arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.method.DigitsKeyListener>(@__env, @__env.CallStaticObjectMethodPtr(android.text.method.DigitsKeyListener.staticClass, _getInstance6789, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.method.DigitsKeyListener>(@__env, @__env.CallStaticObjectMethodPtr(android.text.method.DigitsKeyListener.staticClass, _getInstance7144, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance6790; 
+		internal static global::net.sf.jni4net.jni.MethodId _getInstance7145; 
 		public static android.text.method.DigitsKeyListener getInstance() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.method.DigitsKeyListener>(@__env, @__env.CallStaticObjectMethodPtr(android.text.method.DigitsKeyListener.staticClass, _getInstance6790)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.method.DigitsKeyListener>(@__env, @__env.CallStaticObjectMethodPtr(android.text.method.DigitsKeyListener.staticClass, _getInstance7145)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance6791; 
+		internal static global::net.sf.jni4net.jni.MethodId _getInstance7146; 
 		public static android.text.method.DigitsKeyListener getInstance(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.method.DigitsKeyListener>(@__env, @__env.CallStaticObjectMethodPtr(android.text.method.DigitsKeyListener.staticClass, _getInstance6791, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.method.DigitsKeyListener>(@__env, @__env.CallStaticObjectMethodPtr(android.text.method.DigitsKeyListener.staticClass, _getInstance7146, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _filter6792; 
+		internal static global::net.sf.jni4net.jni.MethodId _filter7147; 
 		public override java.lang.CharSequence filter(java.lang.CharSequence arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.method.DigitsKeyListener)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _filter6792, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _filter7147, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.method.DigitsKeyListener.staticClass, _filter6792, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.method.DigitsKeyListener.staticClass, _filter7147, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getInputType6793; 
+		internal static global::net.sf.jni4net.jni.MethodId _getInputType7148; 
 		public override int getInputType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.method.DigitsKeyListener)) 
-				return @__env.CallIntMethod(this, _getInputType6793); 
+				return @__env.CallIntMethod(this, _getInputType7148); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.method.DigitsKeyListener.staticClass, _getInputType6793); 
+				return @__env.CallNonVirtualIntMethod(this, android.text.method.DigitsKeyListener.staticClass, _getInputType7148); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getAcceptedChars6794; 
+		internal static global::net.sf.jni4net.jni.MethodId _getAcceptedChars7149; 
 		protected override char[] getAcceptedChars() 
 		{ 
 			if (GetType() == typeof(android.text.method.DigitsKeyListener)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getAcceptedChars6794)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getAcceptedChars7149)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.method.DigitsKeyListener.staticClass, _getAcceptedChars6794)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.method.DigitsKeyListener.staticClass, _getAcceptedChars7149)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _DigitsKeyListener6795; 
+		internal static global::net.sf.jni4net.jni.MethodId _DigitsKeyListener7150; 
 		public DigitsKeyListener()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.method.DigitsKeyListener.staticClass, _DigitsKeyListener6795, this); 
+			@__env.NewObject(android.text.method.DigitsKeyListener.staticClass, _DigitsKeyListener7150, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _DigitsKeyListener6796; 
+		internal static global::net.sf.jni4net.jni.MethodId _DigitsKeyListener7151; 
 		public DigitsKeyListener(bool arg0, bool arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.method.DigitsKeyListener.staticClass, _DigitsKeyListener6796, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(android.text.method.DigitsKeyListener.staticClass, _DigitsKeyListener7151, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.text.method.DigitsKeyListener.staticClass = @__class; 
-			global::android.text.method.DigitsKeyListener._getInstance6789 = @__env.GetStaticMethodID(global::android.text.method.DigitsKeyListener.staticClass, "getInstance", "(ZZ)Landroid/text/method/DigitsKeyListener;"); 
-			global::android.text.method.DigitsKeyListener._getInstance6790 = @__env.GetStaticMethodID(global::android.text.method.DigitsKeyListener.staticClass, "getInstance", "()Landroid/text/method/DigitsKeyListener;"); 
-			global::android.text.method.DigitsKeyListener._getInstance6791 = @__env.GetStaticMethodID(global::android.text.method.DigitsKeyListener.staticClass, "getInstance", "(Ljava/lang/String;)Landroid/text/method/DigitsKeyListener;"); 
-			global::android.text.method.DigitsKeyListener._filter6792 = @__env.GetMethodID(global::android.text.method.DigitsKeyListener.staticClass, "filter", "(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;"); 
-			global::android.text.method.DigitsKeyListener._getInputType6793 = @__env.GetMethodID(global::android.text.method.DigitsKeyListener.staticClass, "getInputType", "()I"); 
-			global::android.text.method.DigitsKeyListener._getAcceptedChars6794 = @__env.GetMethodID(global::android.text.method.DigitsKeyListener.staticClass, "getAcceptedChars", "()[C"); 
-			global::android.text.method.DigitsKeyListener._DigitsKeyListener6795 = @__env.GetMethodID(global::android.text.method.DigitsKeyListener.staticClass, "<init>", "()V"); 
-			global::android.text.method.DigitsKeyListener._DigitsKeyListener6796 = @__env.GetMethodID(global::android.text.method.DigitsKeyListener.staticClass, "<init>", "(ZZ)V"); 
+			global::android.text.method.DigitsKeyListener._getInstance7144 = @__env.GetStaticMethodID(global::android.text.method.DigitsKeyListener.staticClass, "getInstance", "(ZZ)Landroid/text/method/DigitsKeyListener;"); 
+			global::android.text.method.DigitsKeyListener._getInstance7145 = @__env.GetStaticMethodID(global::android.text.method.DigitsKeyListener.staticClass, "getInstance", "()Landroid/text/method/DigitsKeyListener;"); 
+			global::android.text.method.DigitsKeyListener._getInstance7146 = @__env.GetStaticMethodID(global::android.text.method.DigitsKeyListener.staticClass, "getInstance", "(Ljava/lang/String;)Landroid/text/method/DigitsKeyListener;"); 
+			global::android.text.method.DigitsKeyListener._filter7147 = @__env.GetMethodID(global::android.text.method.DigitsKeyListener.staticClass, "filter", "(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;"); 
+			global::android.text.method.DigitsKeyListener._getInputType7148 = @__env.GetMethodID(global::android.text.method.DigitsKeyListener.staticClass, "getInputType", "()I"); 
+			global::android.text.method.DigitsKeyListener._getAcceptedChars7149 = @__env.GetMethodID(global::android.text.method.DigitsKeyListener.staticClass, "getAcceptedChars", "()[C"); 
+			global::android.text.method.DigitsKeyListener._DigitsKeyListener7150 = @__env.GetMethodID(global::android.text.method.DigitsKeyListener.staticClass, "<init>", "()V"); 
+			global::android.text.method.DigitsKeyListener._DigitsKeyListener7151 = @__env.GetMethodID(global::android.text.method.DigitsKeyListener.staticClass, "<init>", "(ZZ)V"); 
 		} 
 	} 
 } 

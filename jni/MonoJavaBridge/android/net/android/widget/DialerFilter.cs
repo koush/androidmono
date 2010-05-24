@@ -18,170 +18,170 @@ namespace android.widget
 		protected DialerFilter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _append9378; 
+		internal static global::net.sf.jni4net.jni.MethodId _append10097; 
 		public virtual void append(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.DialerFilter)) 
-				@__env.CallVoidMethod(this, _append9378, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _append10097, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _append9378, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _append10097, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setMode9379; 
+		internal static global::net.sf.jni4net.jni.MethodId _setMode10098; 
 		public virtual void setMode(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.DialerFilter)) 
-				@__env.CallVoidMethod(this, _setMode9379, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setMode10098, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _setMode9379, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _setMode10098, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getMode9380; 
+		internal static global::net.sf.jni4net.jni.MethodId _getMode10099; 
 		public virtual int getMode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.DialerFilter)) 
-				return @__env.CallIntMethod(this, _getMode9380); 
+				return @__env.CallIntMethod(this, _getMode10099); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.DialerFilter.staticClass, _getMode9380); 
+				return @__env.CallNonVirtualIntMethod(this, android.widget.DialerFilter.staticClass, _getMode10099); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onKeyDown9381; 
+		internal static global::net.sf.jni4net.jni.MethodId _onKeyDown10100; 
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.DialerFilter)) 
-				return @__env.CallBooleanMethod(this, _onKeyDown9381, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallBooleanMethod(this, _onKeyDown10100, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.DialerFilter.staticClass, _onKeyDown9381, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.widget.DialerFilter.staticClass, _onKeyDown10100, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onKeyUp9382; 
+		internal static global::net.sf.jni4net.jni.MethodId _onKeyUp10101; 
 		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.DialerFilter)) 
-				return @__env.CallBooleanMethod(this, _onKeyUp9382, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallBooleanMethod(this, _onKeyUp10101, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.DialerFilter.staticClass, _onKeyUp9382, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.widget.DialerFilter.staticClass, _onKeyUp10101, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onFocusChanged9383; 
+		internal static global::net.sf.jni4net.jni.MethodId _onFocusChanged10102; 
 		protected override void onFocusChanged(bool arg0, int arg1, android.graphics.Rect arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.DialerFilter)) 
-				@__env.CallVoidMethod(this, _onFocusChanged9383, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallVoidMethod(this, _onFocusChanged10102, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _onFocusChanged9383, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _onFocusChanged10102, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onFinishInflate9384; 
+		internal static global::net.sf.jni4net.jni.MethodId _onFinishInflate10103; 
 		protected override void onFinishInflate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.DialerFilter)) 
-				@__env.CallVoidMethod(this, _onFinishInflate9384); 
+				@__env.CallVoidMethod(this, _onFinishInflate10103); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _onFinishInflate9384); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _onFinishInflate10103); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isQwertyKeyboard9385; 
+		internal static global::net.sf.jni4net.jni.MethodId _isQwertyKeyboard10104; 
 		public virtual bool isQwertyKeyboard() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.DialerFilter)) 
-				return @__env.CallBooleanMethod(this, _isQwertyKeyboard9385); 
+				return @__env.CallBooleanMethod(this, _isQwertyKeyboard10104); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.DialerFilter.staticClass, _isQwertyKeyboard9385); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.widget.DialerFilter.staticClass, _isQwertyKeyboard10104); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getLetters9386; 
+		internal static global::net.sf.jni4net.jni.MethodId _getLetters10105; 
 		public virtual java.lang.CharSequence getLetters() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.DialerFilter)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getLetters9386)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getLetters10105)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.DialerFilter.staticClass, _getLetters9386)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.DialerFilter.staticClass, _getLetters10105)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDigits9387; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDigits10106; 
 		public virtual java.lang.CharSequence getDigits() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.DialerFilter)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getDigits9387)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getDigits10106)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.DialerFilter.staticClass, _getDigits9387)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.DialerFilter.staticClass, _getDigits10106)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getFilterText9388; 
+		internal static global::net.sf.jni4net.jni.MethodId _getFilterText10107; 
 		public virtual java.lang.CharSequence getFilterText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.DialerFilter)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getFilterText9388)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getFilterText10107)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.DialerFilter.staticClass, _getFilterText9388)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.DialerFilter.staticClass, _getFilterText10107)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _clearText9389; 
+		internal static global::net.sf.jni4net.jni.MethodId _clearText10108; 
 		public virtual void clearText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.DialerFilter)) 
-				@__env.CallVoidMethod(this, _clearText9389); 
+				@__env.CallVoidMethod(this, _clearText10108); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _clearText9389); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _clearText10108); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setLettersWatcher9390; 
+		internal static global::net.sf.jni4net.jni.MethodId _setLettersWatcher10109; 
 		public virtual void setLettersWatcher(android.text.TextWatcher arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.DialerFilter)) 
-				@__env.CallVoidMethod(this, _setLettersWatcher9390, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _setLettersWatcher10109, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _setLettersWatcher9390, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _setLettersWatcher10109, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setDigitsWatcher9391; 
+		internal static global::net.sf.jni4net.jni.MethodId _setDigitsWatcher10110; 
 		public virtual void setDigitsWatcher(android.text.TextWatcher arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.DialerFilter)) 
-				@__env.CallVoidMethod(this, _setDigitsWatcher9391, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _setDigitsWatcher10110, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _setDigitsWatcher9391, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _setDigitsWatcher10110, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setFilterWatcher9392; 
+		internal static global::net.sf.jni4net.jni.MethodId _setFilterWatcher10111; 
 		public virtual void setFilterWatcher(android.text.TextWatcher arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.DialerFilter)) 
-				@__env.CallVoidMethod(this, _setFilterWatcher9392, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _setFilterWatcher10111, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _setFilterWatcher9392, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _setFilterWatcher10111, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _removeFilterWatcher9393; 
+		internal static global::net.sf.jni4net.jni.MethodId _removeFilterWatcher10112; 
 		public virtual void removeFilterWatcher(android.text.TextWatcher arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.DialerFilter)) 
-				@__env.CallVoidMethod(this, _removeFilterWatcher9393, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _removeFilterWatcher10112, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _removeFilterWatcher9393, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _removeFilterWatcher10112, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onModeChange9394; 
+		internal static global::net.sf.jni4net.jni.MethodId _onModeChange10113; 
 		protected virtual void onModeChange(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.DialerFilter)) 
-				@__env.CallVoidMethod(this, _onModeChange9394, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _onModeChange10113, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _onModeChange9394, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.widget.DialerFilter.staticClass, _onModeChange10113, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _DialerFilter9395; 
+		internal static global::net.sf.jni4net.jni.MethodId _DialerFilter10114; 
 		public DialerFilter(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.DialerFilter.staticClass, _DialerFilter9395, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.widget.DialerFilter.staticClass, _DialerFilter10114, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _DialerFilter9396; 
+		internal static global::net.sf.jni4net.jni.MethodId _DialerFilter10115; 
 		public DialerFilter(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.DialerFilter.staticClass, _DialerFilter9396, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.widget.DialerFilter.staticClass, _DialerFilter10115, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
 		public static int DIGITS_AND_LETTERS
 		{ 
@@ -221,25 +221,25 @@ namespace android.widget
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.widget.DialerFilter.staticClass = @__class; 
-			global::android.widget.DialerFilter._append9378 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "append", "(Ljava/lang/String;)V"); 
-			global::android.widget.DialerFilter._setMode9379 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "setMode", "(I)V"); 
-			global::android.widget.DialerFilter._getMode9380 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "getMode", "()I"); 
-			global::android.widget.DialerFilter._onKeyDown9381 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "onKeyDown", "(ILandroid/view/KeyEvent;)Z"); 
-			global::android.widget.DialerFilter._onKeyUp9382 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "onKeyUp", "(ILandroid/view/KeyEvent;)Z"); 
-			global::android.widget.DialerFilter._onFocusChanged9383 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "onFocusChanged", "(ZILandroid/graphics/Rect;)V"); 
-			global::android.widget.DialerFilter._onFinishInflate9384 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "onFinishInflate", "()V"); 
-			global::android.widget.DialerFilter._isQwertyKeyboard9385 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "isQwertyKeyboard", "()Z"); 
-			global::android.widget.DialerFilter._getLetters9386 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "getLetters", "()Ljava/lang/CharSequence;"); 
-			global::android.widget.DialerFilter._getDigits9387 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "getDigits", "()Ljava/lang/CharSequence;"); 
-			global::android.widget.DialerFilter._getFilterText9388 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "getFilterText", "()Ljava/lang/CharSequence;"); 
-			global::android.widget.DialerFilter._clearText9389 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "clearText", "()V"); 
-			global::android.widget.DialerFilter._setLettersWatcher9390 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "setLettersWatcher", "(Landroid/text/TextWatcher;)V"); 
-			global::android.widget.DialerFilter._setDigitsWatcher9391 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "setDigitsWatcher", "(Landroid/text/TextWatcher;)V"); 
-			global::android.widget.DialerFilter._setFilterWatcher9392 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "setFilterWatcher", "(Landroid/text/TextWatcher;)V"); 
-			global::android.widget.DialerFilter._removeFilterWatcher9393 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "removeFilterWatcher", "(Landroid/text/TextWatcher;)V"); 
-			global::android.widget.DialerFilter._onModeChange9394 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "onModeChange", "(II)V"); 
-			global::android.widget.DialerFilter._DialerFilter9395 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "<init>", "(Landroid/content/Context;)V"); 
-			global::android.widget.DialerFilter._DialerFilter9396 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
+			global::android.widget.DialerFilter._append10097 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "append", "(Ljava/lang/String;)V"); 
+			global::android.widget.DialerFilter._setMode10098 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "setMode", "(I)V"); 
+			global::android.widget.DialerFilter._getMode10099 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "getMode", "()I"); 
+			global::android.widget.DialerFilter._onKeyDown10100 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "onKeyDown", "(ILandroid/view/KeyEvent;)Z"); 
+			global::android.widget.DialerFilter._onKeyUp10101 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "onKeyUp", "(ILandroid/view/KeyEvent;)Z"); 
+			global::android.widget.DialerFilter._onFocusChanged10102 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "onFocusChanged", "(ZILandroid/graphics/Rect;)V"); 
+			global::android.widget.DialerFilter._onFinishInflate10103 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "onFinishInflate", "()V"); 
+			global::android.widget.DialerFilter._isQwertyKeyboard10104 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "isQwertyKeyboard", "()Z"); 
+			global::android.widget.DialerFilter._getLetters10105 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "getLetters", "()Ljava/lang/CharSequence;"); 
+			global::android.widget.DialerFilter._getDigits10106 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "getDigits", "()Ljava/lang/CharSequence;"); 
+			global::android.widget.DialerFilter._getFilterText10107 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "getFilterText", "()Ljava/lang/CharSequence;"); 
+			global::android.widget.DialerFilter._clearText10108 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "clearText", "()V"); 
+			global::android.widget.DialerFilter._setLettersWatcher10109 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "setLettersWatcher", "(Landroid/text/TextWatcher;)V"); 
+			global::android.widget.DialerFilter._setDigitsWatcher10110 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "setDigitsWatcher", "(Landroid/text/TextWatcher;)V"); 
+			global::android.widget.DialerFilter._setFilterWatcher10111 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "setFilterWatcher", "(Landroid/text/TextWatcher;)V"); 
+			global::android.widget.DialerFilter._removeFilterWatcher10112 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "removeFilterWatcher", "(Landroid/text/TextWatcher;)V"); 
+			global::android.widget.DialerFilter._onModeChange10113 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "onModeChange", "(II)V"); 
+			global::android.widget.DialerFilter._DialerFilter10114 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "<init>", "(Landroid/content/Context;)V"); 
+			global::android.widget.DialerFilter._DialerFilter10115 = @__env.GetMethodID(global::android.widget.DialerFilter.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
 		} 
 	} 
 } 

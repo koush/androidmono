@@ -18,29 +18,29 @@ namespace android.content
 		protected SyncContext(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onFinished1482; 
+		internal static global::net.sf.jni4net.jni.MethodId _onFinished1526; 
 		public virtual void onFinished(android.content.SyncResult arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.SyncContext)) 
-				@__env.CallVoidMethod(this, _onFinished1482, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _onFinished1526, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.SyncContext.staticClass, _onFinished1482, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.content.SyncContext.staticClass, _onFinished1526, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getSyncContextBinder1483; 
+		internal static global::net.sf.jni4net.jni.MethodId _getSyncContextBinder1527; 
 		public virtual android.os.IBinder getSyncContextBinder() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.SyncContext)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, _getSyncContextBinder1483)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, _getSyncContextBinder1527)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.SyncContext.staticClass, _getSyncContextBinder1483)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.SyncContext.staticClass, _getSyncContextBinder1527)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.content.SyncContext.staticClass = @__class; 
-			global::android.content.SyncContext._onFinished1482 = @__env.GetMethodID(global::android.content.SyncContext.staticClass, "onFinished", "(Landroid/content/SyncResult;)V"); 
-			global::android.content.SyncContext._getSyncContextBinder1483 = @__env.GetMethodID(global::android.content.SyncContext.staticClass, "getSyncContextBinder", "()Landroid/os/IBinder;"); 
+			global::android.content.SyncContext._onFinished1526 = @__env.GetMethodID(global::android.content.SyncContext.staticClass, "onFinished", "(Landroid/content/SyncResult;)V"); 
+			global::android.content.SyncContext._getSyncContextBinder1527 = @__env.GetMethodID(global::android.content.SyncContext.staticClass, "getSyncContextBinder", "()Landroid/os/IBinder;"); 
 		} 
 	} 
 } 

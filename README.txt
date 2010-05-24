@@ -2,7 +2,7 @@
 
 # This README assumes that your Android NDK directory is located at ~/src/android-ndk.
 # Adjust any instructions as necessary.
-# The current supported Android NDK is Android NDK r3, and can be found at:
+# The current supported Android NDK is Android NDK r4, and can be found at:
 # http://developer.android.com/sdk/ndk/index.html
 
 # Get the androidmono repository which contains the build scripts and patches 
@@ -16,25 +16,16 @@ git clone git://github.com/koush/androidmono.git
 cd androidmono
 ./get-mono.sh
 
-# Set up the NDK to be aware of the androidmono project
-./ndk-setup.sh ~/src/android-ndk
-
 ---- building the mono binaries and jni bindings ----
 
-# In your .bash_profile (or just remember to export it), put:
-export ANDROID_NDK=~/src/android-ndk
-
-# restart your shell and build
+# This will call ndk-build in the MonoActivity directory and build the android.dll
 cd ~/src/androidmono/jni/MonoJavaBridge
 ./build.sh
 
----- building the mono APK ----
+---- building and installing the mono APK ----
 
-From Eclipse, create a new Android project. Choose open existing, and browse to the
-directory: ~/src/androidmono/MonoActivity and continue.
-
-Run the project, and you will see an Activity that starts and extracts the mono binaries 
-to your device/emulator.
+cd ~/src/androidmono/MonoActivity
+ant install
 
 ---- running mono from the command line ----
 

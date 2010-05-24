@@ -18,143 +18,143 @@ namespace android.util
 		protected SparseIntArray(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _get7223; 
+		internal static global::net.sf.jni4net.jni.MethodId _get7626; 
 		public virtual int get(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.SparseIntArray)) 
-				return @__env.CallIntMethod(this, _get7223, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, _get7626, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.util.SparseIntArray.staticClass, _get7223, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, android.util.SparseIntArray.staticClass, _get7626, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _get7224; 
+		internal static global::net.sf.jni4net.jni.MethodId _get7627; 
 		public virtual int get(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.SparseIntArray)) 
-				return @__env.CallIntMethod(this, _get7224, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallIntMethod(this, _get7627, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.util.SparseIntArray.staticClass, _get7224, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualIntMethod(this, android.util.SparseIntArray.staticClass, _get7627, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _put7225; 
+		internal static global::net.sf.jni4net.jni.MethodId _put7628; 
 		public virtual void put(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.SparseIntArray)) 
-				@__env.CallVoidMethod(this, _put7225, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _put7628, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.util.SparseIntArray.staticClass, _put7225, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.util.SparseIntArray.staticClass, _put7628, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _clear7226; 
+		internal static global::net.sf.jni4net.jni.MethodId _clear7629; 
 		public virtual void clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.SparseIntArray)) 
-				@__env.CallVoidMethod(this, _clear7226); 
+				@__env.CallVoidMethod(this, _clear7629); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.util.SparseIntArray.staticClass, _clear7226); 
+				@__env.CallNonVirtualVoidMethod(this, android.util.SparseIntArray.staticClass, _clear7629); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _append7227; 
+		internal static global::net.sf.jni4net.jni.MethodId _append7630; 
 		public virtual void append(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.SparseIntArray)) 
-				@__env.CallVoidMethod(this, _append7227, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _append7630, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.util.SparseIntArray.staticClass, _append7227, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.util.SparseIntArray.staticClass, _append7630, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _size7228; 
+		internal static global::net.sf.jni4net.jni.MethodId _size7631; 
 		public virtual int size() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.SparseIntArray)) 
-				return @__env.CallIntMethod(this, _size7228); 
+				return @__env.CallIntMethod(this, _size7631); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.util.SparseIntArray.staticClass, _size7228); 
+				return @__env.CallNonVirtualIntMethod(this, android.util.SparseIntArray.staticClass, _size7631); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _delete7229; 
+		internal static global::net.sf.jni4net.jni.MethodId _delete7632; 
 		public virtual void delete(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.SparseIntArray)) 
-				@__env.CallVoidMethod(this, _delete7229, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _delete7632, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.util.SparseIntArray.staticClass, _delete7229, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.util.SparseIntArray.staticClass, _delete7632, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _keyAt7230; 
+		internal static global::net.sf.jni4net.jni.MethodId _keyAt7633; 
 		public virtual int keyAt(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.SparseIntArray)) 
-				return @__env.CallIntMethod(this, _keyAt7230, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, _keyAt7633, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.util.SparseIntArray.staticClass, _keyAt7230, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, android.util.SparseIntArray.staticClass, _keyAt7633, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _valueAt7231; 
+		internal static global::net.sf.jni4net.jni.MethodId _valueAt7634; 
 		public virtual int valueAt(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.SparseIntArray)) 
-				return @__env.CallIntMethod(this, _valueAt7231, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, _valueAt7634, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.util.SparseIntArray.staticClass, _valueAt7231, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, android.util.SparseIntArray.staticClass, _valueAt7634, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _indexOfKey7232; 
+		internal static global::net.sf.jni4net.jni.MethodId _indexOfKey7635; 
 		public virtual int indexOfKey(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.SparseIntArray)) 
-				return @__env.CallIntMethod(this, _indexOfKey7232, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, _indexOfKey7635, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.util.SparseIntArray.staticClass, _indexOfKey7232, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, android.util.SparseIntArray.staticClass, _indexOfKey7635, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _indexOfValue7233; 
+		internal static global::net.sf.jni4net.jni.MethodId _indexOfValue7636; 
 		public virtual int indexOfValue(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.SparseIntArray)) 
-				return @__env.CallIntMethod(this, _indexOfValue7233, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, _indexOfValue7636, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.util.SparseIntArray.staticClass, _indexOfValue7233, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, android.util.SparseIntArray.staticClass, _indexOfValue7636, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _removeAt7234; 
+		internal static global::net.sf.jni4net.jni.MethodId _removeAt7637; 
 		public virtual void removeAt(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.SparseIntArray)) 
-				@__env.CallVoidMethod(this, _removeAt7234, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _removeAt7637, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.util.SparseIntArray.staticClass, _removeAt7234, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.util.SparseIntArray.staticClass, _removeAt7637, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _SparseIntArray7235; 
+		internal static global::net.sf.jni4net.jni.MethodId _SparseIntArray7638; 
 		public SparseIntArray(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.util.SparseIntArray.staticClass, _SparseIntArray7235, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			@__env.NewObject(android.util.SparseIntArray.staticClass, _SparseIntArray7638, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _SparseIntArray7236; 
+		internal static global::net.sf.jni4net.jni.MethodId _SparseIntArray7639; 
 		public SparseIntArray()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.util.SparseIntArray.staticClass, _SparseIntArray7236, this); 
+			@__env.NewObject(android.util.SparseIntArray.staticClass, _SparseIntArray7639, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.util.SparseIntArray.staticClass = @__class; 
-			global::android.util.SparseIntArray._get7223 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "get", "(I)I"); 
-			global::android.util.SparseIntArray._get7224 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "get", "(II)I"); 
-			global::android.util.SparseIntArray._put7225 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "put", "(II)V"); 
-			global::android.util.SparseIntArray._clear7226 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "clear", "()V"); 
-			global::android.util.SparseIntArray._append7227 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "append", "(II)V"); 
-			global::android.util.SparseIntArray._size7228 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "size", "()I"); 
-			global::android.util.SparseIntArray._delete7229 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "delete", "(I)V"); 
-			global::android.util.SparseIntArray._keyAt7230 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "keyAt", "(I)I"); 
-			global::android.util.SparseIntArray._valueAt7231 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "valueAt", "(I)I"); 
-			global::android.util.SparseIntArray._indexOfKey7232 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "indexOfKey", "(I)I"); 
-			global::android.util.SparseIntArray._indexOfValue7233 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "indexOfValue", "(I)I"); 
-			global::android.util.SparseIntArray._removeAt7234 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "removeAt", "(I)V"); 
-			global::android.util.SparseIntArray._SparseIntArray7235 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "<init>", "(I)V"); 
-			global::android.util.SparseIntArray._SparseIntArray7236 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "<init>", "()V"); 
+			global::android.util.SparseIntArray._get7626 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "get", "(I)I"); 
+			global::android.util.SparseIntArray._get7627 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "get", "(II)I"); 
+			global::android.util.SparseIntArray._put7628 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "put", "(II)V"); 
+			global::android.util.SparseIntArray._clear7629 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "clear", "()V"); 
+			global::android.util.SparseIntArray._append7630 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "append", "(II)V"); 
+			global::android.util.SparseIntArray._size7631 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "size", "()I"); 
+			global::android.util.SparseIntArray._delete7632 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "delete", "(I)V"); 
+			global::android.util.SparseIntArray._keyAt7633 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "keyAt", "(I)I"); 
+			global::android.util.SparseIntArray._valueAt7634 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "valueAt", "(I)I"); 
+			global::android.util.SparseIntArray._indexOfKey7635 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "indexOfKey", "(I)I"); 
+			global::android.util.SparseIntArray._indexOfValue7636 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "indexOfValue", "(I)I"); 
+			global::android.util.SparseIntArray._removeAt7637 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "removeAt", "(I)V"); 
+			global::android.util.SparseIntArray._SparseIntArray7638 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "<init>", "(I)V"); 
+			global::android.util.SparseIntArray._SparseIntArray7639 = @__env.GetMethodID(global::android.util.SparseIntArray.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

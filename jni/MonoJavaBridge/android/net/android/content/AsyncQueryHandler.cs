@@ -29,7 +29,7 @@ namespace android.content
 			internal WorkerArgs(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _uri902; 
+			internal static global::net.sf.jni4net.jni.FieldId _uri915; 
 			public android.net.Uri uri
 			{ 
 				get 
@@ -40,7 +40,7 @@ namespace android.content
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _handler903; 
+			internal static global::net.sf.jni4net.jni.FieldId _handler916; 
 			public android.os.Handler handler
 			{ 
 				get 
@@ -51,7 +51,7 @@ namespace android.content
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _projection904; 
+			internal static global::net.sf.jni4net.jni.FieldId _projection917; 
 			public java.lang.String[] projection
 			{ 
 				get 
@@ -62,7 +62,7 @@ namespace android.content
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _selection905; 
+			internal static global::net.sf.jni4net.jni.FieldId _selection918; 
 			public java.lang.String selection
 			{ 
 				get 
@@ -73,7 +73,7 @@ namespace android.content
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _selectionArgs906; 
+			internal static global::net.sf.jni4net.jni.FieldId _selectionArgs919; 
 			public java.lang.String[] selectionArgs
 			{ 
 				get 
@@ -84,7 +84,7 @@ namespace android.content
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _orderBy907; 
+			internal static global::net.sf.jni4net.jni.FieldId _orderBy920; 
 			public java.lang.String orderBy
 			{ 
 				get 
@@ -95,7 +95,7 @@ namespace android.content
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _result908; 
+			internal static global::net.sf.jni4net.jni.FieldId _result921; 
 			public java.lang.Object result
 			{ 
 				get 
@@ -106,7 +106,7 @@ namespace android.content
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _cookie909; 
+			internal static global::net.sf.jni4net.jni.FieldId _cookie922; 
 			public java.lang.Object cookie
 			{ 
 				get 
@@ -117,7 +117,7 @@ namespace android.content
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _values910; 
+			internal static global::net.sf.jni4net.jni.FieldId _values923; 
 			public android.content.ContentValues values
 			{ 
 				get 
@@ -151,148 +151,148 @@ namespace android.content
 			protected WorkerHandler(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _handleMessage911; 
+			internal static global::net.sf.jni4net.jni.MethodId _handleMessage924; 
 			public override void handleMessage(android.os.Message arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.content.AsyncQueryHandler.WorkerHandler)) 
-					@__env.CallVoidMethod(this, _handleMessage911, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, _handleMessage924, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.WorkerHandler.staticClass, _handleMessage911, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.WorkerHandler.staticClass, _handleMessage924, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _WorkerHandler912; 
+			internal static global::net.sf.jni4net.jni.MethodId _WorkerHandler925; 
 			public WorkerHandler(android.content.AsyncQueryHandler arg0, android.os.Looper arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.content.AsyncQueryHandler.WorkerHandler.staticClass, _WorkerHandler912, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.NewObject(android.content.AsyncQueryHandler.WorkerHandler.staticClass, _WorkerHandler925, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.content.AsyncQueryHandler.WorkerHandler.staticClass = @__class; 
-				global::android.content.AsyncQueryHandler.WorkerHandler._handleMessage911 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.WorkerHandler.staticClass, "handleMessage", "(Landroid/os/Message;)V"); 
-				global::android.content.AsyncQueryHandler.WorkerHandler._WorkerHandler912 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.WorkerHandler.staticClass, "<init>", "(Landroid/content/AsyncQueryHandler;Landroid/os/Looper;)V"); 
+				global::android.content.AsyncQueryHandler.WorkerHandler._handleMessage924 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.WorkerHandler.staticClass, "handleMessage", "(Landroid/os/Message;)V"); 
+				global::android.content.AsyncQueryHandler.WorkerHandler._WorkerHandler925 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.WorkerHandler.staticClass, "<init>", "(Landroid/content/AsyncQueryHandler;Landroid/os/Looper;)V"); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _handleMessage913; 
+		internal static global::net.sf.jni4net.jni.MethodId _handleMessage926; 
 		public override void handleMessage(android.os.Message arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.AsyncQueryHandler)) 
-				@__env.CallVoidMethod(this, _handleMessage913, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _handleMessage926, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _handleMessage913, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _handleMessage926, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _createHandler914; 
+		internal static global::net.sf.jni4net.jni.MethodId _createHandler927; 
 		protected virtual android.os.Handler createHandler(android.os.Looper arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.AsyncQueryHandler)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Handler>(@__env, @__env.CallObjectMethodPtr(this, _createHandler914, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Handler>(@__env, @__env.CallObjectMethodPtr(this, _createHandler927, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Handler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.AsyncQueryHandler.staticClass, _createHandler914, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Handler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.AsyncQueryHandler.staticClass, _createHandler927, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _startQuery915; 
+		internal static global::net.sf.jni4net.jni.MethodId _startQuery928; 
 		public virtual void startQuery(int arg0, java.lang.Object arg1, android.net.Uri arg2, java.lang.String[] arg3, java.lang.String arg4, java.lang.String[] arg5, java.lang.String arg6) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.AsyncQueryHandler)) 
-				@__env.CallVoidMethod(this, _startQuery915, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6)); 
+				@__env.CallVoidMethod(this, _startQuery928, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _startQuery915, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6)); 
+				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _startQuery928, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _cancelOperation916; 
+		internal static global::net.sf.jni4net.jni.MethodId _cancelOperation929; 
 		public virtual void cancelOperation(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.AsyncQueryHandler)) 
-				@__env.CallVoidMethod(this, _cancelOperation916, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _cancelOperation929, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _cancelOperation916, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _cancelOperation929, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _startInsert917; 
+		internal static global::net.sf.jni4net.jni.MethodId _startInsert930; 
 		public virtual void startInsert(int arg0, java.lang.Object arg1, android.net.Uri arg2, android.content.ContentValues arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.AsyncQueryHandler)) 
-				@__env.CallVoidMethod(this, _startInsert917, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+				@__env.CallVoidMethod(this, _startInsert930, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _startInsert917, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _startInsert930, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _startUpdate918; 
+		internal static global::net.sf.jni4net.jni.MethodId _startUpdate931; 
 		public virtual void startUpdate(int arg0, java.lang.Object arg1, android.net.Uri arg2, android.content.ContentValues arg3, java.lang.String arg4, java.lang.String[] arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.AsyncQueryHandler)) 
-				@__env.CallVoidMethod(this, _startUpdate918, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg5)); 
+				@__env.CallVoidMethod(this, _startUpdate931, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg5)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _startUpdate918, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg5)); 
+				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _startUpdate931, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg5)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _startDelete919; 
+		internal static global::net.sf.jni4net.jni.MethodId _startDelete932; 
 		public virtual void startDelete(int arg0, java.lang.Object arg1, android.net.Uri arg2, java.lang.String arg3, java.lang.String[] arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.AsyncQueryHandler)) 
-				@__env.CallVoidMethod(this, _startDelete919, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg4)); 
+				@__env.CallVoidMethod(this, _startDelete932, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg4)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _startDelete919, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg4)); 
+				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _startDelete932, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg4)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onQueryComplete920; 
+		internal static global::net.sf.jni4net.jni.MethodId _onQueryComplete933; 
 		protected virtual void onQueryComplete(int arg0, java.lang.Object arg1, android.database.Cursor arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.AsyncQueryHandler)) 
-				@__env.CallVoidMethod(this, _onQueryComplete920, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
+				@__env.CallVoidMethod(this, _onQueryComplete933, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _onQueryComplete920, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _onQueryComplete933, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onInsertComplete921; 
+		internal static global::net.sf.jni4net.jni.MethodId _onInsertComplete934; 
 		protected virtual void onInsertComplete(int arg0, java.lang.Object arg1, android.net.Uri arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.AsyncQueryHandler)) 
-				@__env.CallVoidMethod(this, _onInsertComplete921, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallVoidMethod(this, _onInsertComplete934, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _onInsertComplete921, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _onInsertComplete934, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onUpdateComplete922; 
+		internal static global::net.sf.jni4net.jni.MethodId _onUpdateComplete935; 
 		protected virtual void onUpdateComplete(int arg0, java.lang.Object arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.AsyncQueryHandler)) 
-				@__env.CallVoidMethod(this, _onUpdateComplete922, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, _onUpdateComplete935, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _onUpdateComplete922, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _onUpdateComplete935, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onDeleteComplete923; 
+		internal static global::net.sf.jni4net.jni.MethodId _onDeleteComplete936; 
 		protected virtual void onDeleteComplete(int arg0, java.lang.Object arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.AsyncQueryHandler)) 
-				@__env.CallVoidMethod(this, _onDeleteComplete923, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, _onDeleteComplete936, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _onDeleteComplete923, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, android.content.AsyncQueryHandler.staticClass, _onDeleteComplete936, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _AsyncQueryHandler924; 
+		internal static global::net.sf.jni4net.jni.MethodId _AsyncQueryHandler937; 
 		public AsyncQueryHandler(android.content.ContentResolver arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.content.AsyncQueryHandler.staticClass, _AsyncQueryHandler924, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.content.AsyncQueryHandler.staticClass, _AsyncQueryHandler937, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.content.AsyncQueryHandler.staticClass = @__class; 
-			global::android.content.AsyncQueryHandler._handleMessage913 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "handleMessage", "(Landroid/os/Message;)V"); 
-			global::android.content.AsyncQueryHandler._createHandler914 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "createHandler", "(Landroid/os/Looper;)Landroid/os/Handler;"); 
-			global::android.content.AsyncQueryHandler._startQuery915 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "startQuery", "(ILjava/lang/Object;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V"); 
-			global::android.content.AsyncQueryHandler._cancelOperation916 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "cancelOperation", "(I)V"); 
-			global::android.content.AsyncQueryHandler._startInsert917 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "startInsert", "(ILjava/lang/Object;Landroid/net/Uri;Landroid/content/ContentValues;)V"); 
-			global::android.content.AsyncQueryHandler._startUpdate918 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "startUpdate", "(ILjava/lang/Object;Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)V"); 
-			global::android.content.AsyncQueryHandler._startDelete919 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "startDelete", "(ILjava/lang/Object;Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)V"); 
-			global::android.content.AsyncQueryHandler._onQueryComplete920 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "onQueryComplete", "(ILjava/lang/Object;Landroid/database/Cursor;)V"); 
-			global::android.content.AsyncQueryHandler._onInsertComplete921 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "onInsertComplete", "(ILjava/lang/Object;Landroid/net/Uri;)V"); 
-			global::android.content.AsyncQueryHandler._onUpdateComplete922 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "onUpdateComplete", "(ILjava/lang/Object;I)V"); 
-			global::android.content.AsyncQueryHandler._onDeleteComplete923 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "onDeleteComplete", "(ILjava/lang/Object;I)V"); 
-			global::android.content.AsyncQueryHandler._AsyncQueryHandler924 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "<init>", "(Landroid/content/ContentResolver;)V"); 
+			global::android.content.AsyncQueryHandler._handleMessage926 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "handleMessage", "(Landroid/os/Message;)V"); 
+			global::android.content.AsyncQueryHandler._createHandler927 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "createHandler", "(Landroid/os/Looper;)Landroid/os/Handler;"); 
+			global::android.content.AsyncQueryHandler._startQuery928 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "startQuery", "(ILjava/lang/Object;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V"); 
+			global::android.content.AsyncQueryHandler._cancelOperation929 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "cancelOperation", "(I)V"); 
+			global::android.content.AsyncQueryHandler._startInsert930 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "startInsert", "(ILjava/lang/Object;Landroid/net/Uri;Landroid/content/ContentValues;)V"); 
+			global::android.content.AsyncQueryHandler._startUpdate931 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "startUpdate", "(ILjava/lang/Object;Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)V"); 
+			global::android.content.AsyncQueryHandler._startDelete932 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "startDelete", "(ILjava/lang/Object;Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)V"); 
+			global::android.content.AsyncQueryHandler._onQueryComplete933 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "onQueryComplete", "(ILjava/lang/Object;Landroid/database/Cursor;)V"); 
+			global::android.content.AsyncQueryHandler._onInsertComplete934 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "onInsertComplete", "(ILjava/lang/Object;Landroid/net/Uri;)V"); 
+			global::android.content.AsyncQueryHandler._onUpdateComplete935 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "onUpdateComplete", "(ILjava/lang/Object;I)V"); 
+			global::android.content.AsyncQueryHandler._onDeleteComplete936 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "onDeleteComplete", "(ILjava/lang/Object;I)V"); 
+			global::android.content.AsyncQueryHandler._AsyncQueryHandler937 = @__env.GetMethodID(global::android.content.AsyncQueryHandler.staticClass, "<init>", "(Landroid/content/ContentResolver;)V"); 
 		} 
 	} 
 } 

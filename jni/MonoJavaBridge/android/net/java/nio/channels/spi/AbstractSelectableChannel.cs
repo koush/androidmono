@@ -11,102 +11,102 @@ namespace java.nio.channels.spi
 		protected AbstractSelectableChannel(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _register11440; 
+		internal static global::net.sf.jni4net.jni.MethodId _register12304; 
 		public sealed override java.nio.channels.SelectionKey register(java.nio.channels.Selector arg0, int arg1, java.lang.Object arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.spi.AbstractSelectableChannel)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SelectionKey>(@__env, @__env.CallObjectMethodPtr(this, _register11440, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SelectionKey>(@__env, @__env.CallObjectMethodPtr(this, _register12304, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SelectionKey>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.spi.AbstractSelectableChannel.staticClass, _register11440, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SelectionKey>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.spi.AbstractSelectableChannel.staticClass, _register12304, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _provider11441; 
+		internal static global::net.sf.jni4net.jni.MethodId _provider12305; 
 		public sealed override java.nio.channels.spi.SelectorProvider provider() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.spi.AbstractSelectableChannel)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.spi.SelectorProvider>(@__env, @__env.CallObjectMethodPtr(this, _provider11441)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.spi.SelectorProvider>(@__env, @__env.CallObjectMethodPtr(this, _provider12305)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.spi.SelectorProvider>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.spi.AbstractSelectableChannel.staticClass, _provider11441)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.spi.SelectorProvider>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.spi.AbstractSelectableChannel.staticClass, _provider12305)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isRegistered11442; 
+		internal static global::net.sf.jni4net.jni.MethodId _isRegistered12306; 
 		public sealed override bool isRegistered() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.spi.AbstractSelectableChannel)) 
-				return @__env.CallBooleanMethod(this, _isRegistered11442); 
+				return @__env.CallBooleanMethod(this, _isRegistered12306); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.nio.channels.spi.AbstractSelectableChannel.staticClass, _isRegistered11442); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.nio.channels.spi.AbstractSelectableChannel.staticClass, _isRegistered12306); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isBlocking11443; 
+		internal static global::net.sf.jni4net.jni.MethodId _isBlocking12307; 
 		public sealed override bool isBlocking() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.spi.AbstractSelectableChannel)) 
-				return @__env.CallBooleanMethod(this, _isBlocking11443); 
+				return @__env.CallBooleanMethod(this, _isBlocking12307); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.nio.channels.spi.AbstractSelectableChannel.staticClass, _isBlocking11443); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.nio.channels.spi.AbstractSelectableChannel.staticClass, _isBlocking12307); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _implCloseChannel11444; 
+		internal static global::net.sf.jni4net.jni.MethodId _implCloseChannel12308; 
 		protected sealed override void implCloseChannel() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.spi.AbstractSelectableChannel)) 
-				@__env.CallVoidMethod(this, _implCloseChannel11444); 
+				@__env.CallVoidMethod(this, _implCloseChannel12308); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.nio.channels.spi.AbstractSelectableChannel.staticClass, _implCloseChannel11444); 
+				@__env.CallNonVirtualVoidMethod(this, java.nio.channels.spi.AbstractSelectableChannel.staticClass, _implCloseChannel12308); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _keyFor11445; 
+		internal static global::net.sf.jni4net.jni.MethodId _keyFor12309; 
 		public sealed override java.nio.channels.SelectionKey keyFor(java.nio.channels.Selector arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.spi.AbstractSelectableChannel)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SelectionKey>(@__env, @__env.CallObjectMethodPtr(this, _keyFor11445, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SelectionKey>(@__env, @__env.CallObjectMethodPtr(this, _keyFor12309, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SelectionKey>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.spi.AbstractSelectableChannel.staticClass, _keyFor11445, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SelectionKey>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.spi.AbstractSelectableChannel.staticClass, _keyFor12309, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _implCloseSelectableChannel11446; 
+		internal static global::net.sf.jni4net.jni.MethodId _implCloseSelectableChannel12310; 
 		protected abstract void implCloseSelectableChannel(); 
-		internal static global::net.sf.jni4net.jni.MethodId _blockingLock11447; 
+		internal static global::net.sf.jni4net.jni.MethodId _blockingLock12311; 
 		public sealed override java.lang.Object blockingLock() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.spi.AbstractSelectableChannel)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _blockingLock11447)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _blockingLock12311)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.spi.AbstractSelectableChannel.staticClass, _blockingLock11447)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.spi.AbstractSelectableChannel.staticClass, _blockingLock12311)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _configureBlocking11448; 
+		internal static global::net.sf.jni4net.jni.MethodId _configureBlocking12312; 
 		public sealed override java.nio.channels.SelectableChannel configureBlocking(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.spi.AbstractSelectableChannel)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SelectableChannel>(@__env, @__env.CallObjectMethodPtr(this, _configureBlocking11448, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SelectableChannel>(@__env, @__env.CallObjectMethodPtr(this, _configureBlocking12312, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SelectableChannel>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.spi.AbstractSelectableChannel.staticClass, _configureBlocking11448, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SelectableChannel>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.spi.AbstractSelectableChannel.staticClass, _configureBlocking12312, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _implConfigureBlocking11449; 
+		internal static global::net.sf.jni4net.jni.MethodId _implConfigureBlocking12313; 
 		protected abstract void implConfigureBlocking(bool arg0); 
-		internal static global::net.sf.jni4net.jni.MethodId _AbstractSelectableChannel11450; 
+		internal static global::net.sf.jni4net.jni.MethodId _AbstractSelectableChannel12314; 
 		protected AbstractSelectableChannel(java.nio.channels.spi.SelectorProvider arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.nio.channels.spi.AbstractSelectableChannel.staticClass, _AbstractSelectableChannel11450, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(java.nio.channels.spi.AbstractSelectableChannel.staticClass, _AbstractSelectableChannel12314, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::java.nio.channels.spi.AbstractSelectableChannel.staticClass = @__class; 
-			global::java.nio.channels.spi.AbstractSelectableChannel._register11440 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "register", "(Ljava/nio/channels/Selector;ILjava/lang/Object;)Ljava/nio/channels/SelectionKey;"); 
-			global::java.nio.channels.spi.AbstractSelectableChannel._provider11441 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "provider", "()Ljava/nio/channels/spi/SelectorProvider;"); 
-			global::java.nio.channels.spi.AbstractSelectableChannel._isRegistered11442 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "isRegistered", "()Z"); 
-			global::java.nio.channels.spi.AbstractSelectableChannel._isBlocking11443 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "isBlocking", "()Z"); 
-			global::java.nio.channels.spi.AbstractSelectableChannel._implCloseChannel11444 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "implCloseChannel", "()V"); 
-			global::java.nio.channels.spi.AbstractSelectableChannel._keyFor11445 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "keyFor", "(Ljava/nio/channels/Selector;)Ljava/nio/channels/SelectionKey;"); 
-			global::java.nio.channels.spi.AbstractSelectableChannel._implCloseSelectableChannel11446 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "implCloseSelectableChannel", "()V"); 
-			global::java.nio.channels.spi.AbstractSelectableChannel._blockingLock11447 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "blockingLock", "()Ljava/lang/Object;"); 
-			global::java.nio.channels.spi.AbstractSelectableChannel._configureBlocking11448 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "configureBlocking", "(Z)Ljava/nio/channels/SelectableChannel;"); 
-			global::java.nio.channels.spi.AbstractSelectableChannel._implConfigureBlocking11449 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "implConfigureBlocking", "(Z)V"); 
-			global::java.nio.channels.spi.AbstractSelectableChannel._AbstractSelectableChannel11450 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "<init>", "(Ljava/nio/channels/spi/SelectorProvider;)V"); 
+			global::java.nio.channels.spi.AbstractSelectableChannel._register12304 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "register", "(Ljava/nio/channels/Selector;ILjava/lang/Object;)Ljava/nio/channels/SelectionKey;"); 
+			global::java.nio.channels.spi.AbstractSelectableChannel._provider12305 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "provider", "()Ljava/nio/channels/spi/SelectorProvider;"); 
+			global::java.nio.channels.spi.AbstractSelectableChannel._isRegistered12306 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "isRegistered", "()Z"); 
+			global::java.nio.channels.spi.AbstractSelectableChannel._isBlocking12307 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "isBlocking", "()Z"); 
+			global::java.nio.channels.spi.AbstractSelectableChannel._implCloseChannel12308 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "implCloseChannel", "()V"); 
+			global::java.nio.channels.spi.AbstractSelectableChannel._keyFor12309 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "keyFor", "(Ljava/nio/channels/Selector;)Ljava/nio/channels/SelectionKey;"); 
+			global::java.nio.channels.spi.AbstractSelectableChannel._implCloseSelectableChannel12310 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "implCloseSelectableChannel", "()V"); 
+			global::java.nio.channels.spi.AbstractSelectableChannel._blockingLock12311 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "blockingLock", "()Ljava/lang/Object;"); 
+			global::java.nio.channels.spi.AbstractSelectableChannel._configureBlocking12312 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "configureBlocking", "(Z)Ljava/nio/channels/SelectableChannel;"); 
+			global::java.nio.channels.spi.AbstractSelectableChannel._implConfigureBlocking12313 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "implConfigureBlocking", "(Z)V"); 
+			global::java.nio.channels.spi.AbstractSelectableChannel._AbstractSelectableChannel12314 = @__env.GetMethodID(global::java.nio.channels.spi.AbstractSelectableChannel.staticClass, "<init>", "(Ljava/nio/channels/spi/SelectorProvider;)V"); 
 		} 
 	} 
 } 

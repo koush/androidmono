@@ -18,149 +18,149 @@ namespace android.graphics
 		protected ColorMatrix(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getArray2711; 
+		internal static global::net.sf.jni4net.jni.MethodId _getArray2911; 
 		public virtual float[] getArray() 
 		{ 
 			if (GetType() == typeof(android.graphics.ColorMatrix)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getArray2711)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getArray2911)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.ColorMatrix.staticClass, _getArray2711)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.ColorMatrix.staticClass, _getArray2911)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _set2712; 
+		internal static global::net.sf.jni4net.jni.MethodId _set2912; 
 		public virtual void set(android.graphics.ColorMatrix arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.ColorMatrix)) 
-				@__env.CallVoidMethod(this, _set2712, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _set2912, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _set2712, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _set2912, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _set2713; 
+		internal static global::net.sf.jni4net.jni.MethodId _set2913; 
 		public virtual void set(float[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.ColorMatrix)) 
-				@__env.CallVoidMethod(this, _set2713, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, _set2913, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _set2713, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _set2913, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _reset2714; 
+		internal static global::net.sf.jni4net.jni.MethodId _reset2914; 
 		public virtual void reset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.ColorMatrix)) 
-				@__env.CallVoidMethod(this, _reset2714); 
+				@__env.CallVoidMethod(this, _reset2914); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _reset2714); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _reset2914); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setScale2715; 
+		internal static global::net.sf.jni4net.jni.MethodId _setScale2915; 
 		public virtual void setScale(float arg0, float arg1, float arg2, float arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.ColorMatrix)) 
-				@__env.CallVoidMethod(this, _setScale2715, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallVoidMethod(this, _setScale2915, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _setScale2715, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _setScale2915, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setRotate2716; 
+		internal static global::net.sf.jni4net.jni.MethodId _setRotate2916; 
 		public virtual void setRotate(int arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.ColorMatrix)) 
-				@__env.CallVoidMethod(this, _setRotate2716, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, _setRotate2916, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _setRotate2716, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _setRotate2916, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setConcat2717; 
+		internal static global::net.sf.jni4net.jni.MethodId _setConcat2917; 
 		public virtual void setConcat(android.graphics.ColorMatrix arg0, android.graphics.ColorMatrix arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.ColorMatrix)) 
-				@__env.CallVoidMethod(this, _setConcat2717, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, _setConcat2917, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _setConcat2717, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _setConcat2917, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _preConcat2718; 
+		internal static global::net.sf.jni4net.jni.MethodId _preConcat2918; 
 		public virtual void preConcat(android.graphics.ColorMatrix arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.ColorMatrix)) 
-				@__env.CallVoidMethod(this, _preConcat2718, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _preConcat2918, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _preConcat2718, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _preConcat2918, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _postConcat2719; 
+		internal static global::net.sf.jni4net.jni.MethodId _postConcat2919; 
 		public virtual void postConcat(android.graphics.ColorMatrix arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.ColorMatrix)) 
-				@__env.CallVoidMethod(this, _postConcat2719, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _postConcat2919, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _postConcat2719, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _postConcat2919, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setSaturation2720; 
+		internal static global::net.sf.jni4net.jni.MethodId _setSaturation2920; 
 		public virtual void setSaturation(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.ColorMatrix)) 
-				@__env.CallVoidMethod(this, _setSaturation2720, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setSaturation2920, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _setSaturation2720, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _setSaturation2920, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setRGB2YUV2721; 
+		internal static global::net.sf.jni4net.jni.MethodId _setRGB2YUV2921; 
 		public virtual void setRGB2YUV() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.ColorMatrix)) 
-				@__env.CallVoidMethod(this, _setRGB2YUV2721); 
+				@__env.CallVoidMethod(this, _setRGB2YUV2921); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _setRGB2YUV2721); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _setRGB2YUV2921); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setYUV2RGB2722; 
+		internal static global::net.sf.jni4net.jni.MethodId _setYUV2RGB2922; 
 		public virtual void setYUV2RGB() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.ColorMatrix)) 
-				@__env.CallVoidMethod(this, _setYUV2RGB2722); 
+				@__env.CallVoidMethod(this, _setYUV2RGB2922); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _setYUV2RGB2722); 
+				@__env.CallNonVirtualVoidMethod(this, android.graphics.ColorMatrix.staticClass, _setYUV2RGB2922); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ColorMatrix2723; 
+		internal static global::net.sf.jni4net.jni.MethodId _ColorMatrix2923; 
 		public ColorMatrix()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.ColorMatrix.staticClass, _ColorMatrix2723, this); 
+			@__env.NewObject(android.graphics.ColorMatrix.staticClass, _ColorMatrix2923, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ColorMatrix2724; 
+		internal static global::net.sf.jni4net.jni.MethodId _ColorMatrix2924; 
 		public ColorMatrix(float[] arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.ColorMatrix.staticClass, _ColorMatrix2724, this, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+			@__env.NewObject(android.graphics.ColorMatrix.staticClass, _ColorMatrix2924, this, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ColorMatrix2725; 
+		internal static global::net.sf.jni4net.jni.MethodId _ColorMatrix2925; 
 		public ColorMatrix(android.graphics.ColorMatrix arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.ColorMatrix.staticClass, _ColorMatrix2725, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.graphics.ColorMatrix.staticClass, _ColorMatrix2925, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.graphics.ColorMatrix.staticClass = @__class; 
-			global::android.graphics.ColorMatrix._getArray2711 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "getArray", "()[F"); 
-			global::android.graphics.ColorMatrix._set2712 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "set", "(Landroid/graphics/ColorMatrix;)V"); 
-			global::android.graphics.ColorMatrix._set2713 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "set", "([F)V"); 
-			global::android.graphics.ColorMatrix._reset2714 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "reset", "()V"); 
-			global::android.graphics.ColorMatrix._setScale2715 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "setScale", "(FFFF)V"); 
-			global::android.graphics.ColorMatrix._setRotate2716 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "setRotate", "(IF)V"); 
-			global::android.graphics.ColorMatrix._setConcat2717 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "setConcat", "(Landroid/graphics/ColorMatrix;Landroid/graphics/ColorMatrix;)V"); 
-			global::android.graphics.ColorMatrix._preConcat2718 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "preConcat", "(Landroid/graphics/ColorMatrix;)V"); 
-			global::android.graphics.ColorMatrix._postConcat2719 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "postConcat", "(Landroid/graphics/ColorMatrix;)V"); 
-			global::android.graphics.ColorMatrix._setSaturation2720 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "setSaturation", "(F)V"); 
-			global::android.graphics.ColorMatrix._setRGB2YUV2721 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "setRGB2YUV", "()V"); 
-			global::android.graphics.ColorMatrix._setYUV2RGB2722 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "setYUV2RGB", "()V"); 
-			global::android.graphics.ColorMatrix._ColorMatrix2723 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "<init>", "()V"); 
-			global::android.graphics.ColorMatrix._ColorMatrix2724 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "<init>", "([F)V"); 
-			global::android.graphics.ColorMatrix._ColorMatrix2725 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "<init>", "(Landroid/graphics/ColorMatrix;)V"); 
+			global::android.graphics.ColorMatrix._getArray2911 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "getArray", "()[F"); 
+			global::android.graphics.ColorMatrix._set2912 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "set", "(Landroid/graphics/ColorMatrix;)V"); 
+			global::android.graphics.ColorMatrix._set2913 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "set", "([F)V"); 
+			global::android.graphics.ColorMatrix._reset2914 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "reset", "()V"); 
+			global::android.graphics.ColorMatrix._setScale2915 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "setScale", "(FFFF)V"); 
+			global::android.graphics.ColorMatrix._setRotate2916 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "setRotate", "(IF)V"); 
+			global::android.graphics.ColorMatrix._setConcat2917 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "setConcat", "(Landroid/graphics/ColorMatrix;Landroid/graphics/ColorMatrix;)V"); 
+			global::android.graphics.ColorMatrix._preConcat2918 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "preConcat", "(Landroid/graphics/ColorMatrix;)V"); 
+			global::android.graphics.ColorMatrix._postConcat2919 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "postConcat", "(Landroid/graphics/ColorMatrix;)V"); 
+			global::android.graphics.ColorMatrix._setSaturation2920 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "setSaturation", "(F)V"); 
+			global::android.graphics.ColorMatrix._setRGB2YUV2921 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "setRGB2YUV", "()V"); 
+			global::android.graphics.ColorMatrix._setYUV2RGB2922 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "setYUV2RGB", "()V"); 
+			global::android.graphics.ColorMatrix._ColorMatrix2923 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "<init>", "()V"); 
+			global::android.graphics.ColorMatrix._ColorMatrix2924 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "<init>", "([F)V"); 
+			global::android.graphics.ColorMatrix._ColorMatrix2925 = @__env.GetMethodID(global::android.graphics.ColorMatrix.staticClass, "<init>", "(Landroid/graphics/ColorMatrix;)V"); 
 		} 
 	} 
 } 

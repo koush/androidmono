@@ -18,50 +18,50 @@ namespace android.preference
 		protected PreferenceCategory(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isEnabled5794; 
+		internal static global::net.sf.jni4net.jni.MethodId _isEnabled6070; 
 		public override bool isEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceCategory)) 
-				return @__env.CallBooleanMethod(this, _isEnabled5794); 
+				return @__env.CallBooleanMethod(this, _isEnabled6070); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.preference.PreferenceCategory.staticClass, _isEnabled5794); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.preference.PreferenceCategory.staticClass, _isEnabled6070); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onPrepareAddPreference5795; 
+		internal static global::net.sf.jni4net.jni.MethodId _onPrepareAddPreference6071; 
 		protected override bool onPrepareAddPreference(android.preference.Preference arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceCategory)) 
-				return @__env.CallBooleanMethod(this, _onPrepareAddPreference5795, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, _onPrepareAddPreference6071, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.preference.PreferenceCategory.staticClass, _onPrepareAddPreference5795, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, android.preference.PreferenceCategory.staticClass, _onPrepareAddPreference6071, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PreferenceCategory5796; 
+		internal static global::net.sf.jni4net.jni.MethodId _PreferenceCategory6072; 
 		public PreferenceCategory(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.preference.PreferenceCategory.staticClass, _PreferenceCategory5796, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.preference.PreferenceCategory.staticClass, _PreferenceCategory6072, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PreferenceCategory5797; 
+		internal static global::net.sf.jni4net.jni.MethodId _PreferenceCategory6073; 
 		public PreferenceCategory(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.preference.PreferenceCategory.staticClass, _PreferenceCategory5797, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.preference.PreferenceCategory.staticClass, _PreferenceCategory6073, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _PreferenceCategory5798; 
+		internal static global::net.sf.jni4net.jni.MethodId _PreferenceCategory6074; 
 		public PreferenceCategory(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.preference.PreferenceCategory.staticClass, _PreferenceCategory5798, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.preference.PreferenceCategory.staticClass, _PreferenceCategory6074, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.preference.PreferenceCategory.staticClass = @__class; 
-			global::android.preference.PreferenceCategory._isEnabled5794 = @__env.GetMethodID(global::android.preference.PreferenceCategory.staticClass, "isEnabled", "()Z"); 
-			global::android.preference.PreferenceCategory._onPrepareAddPreference5795 = @__env.GetMethodID(global::android.preference.PreferenceCategory.staticClass, "onPrepareAddPreference", "(Landroid/preference/Preference;)Z"); 
-			global::android.preference.PreferenceCategory._PreferenceCategory5796 = @__env.GetMethodID(global::android.preference.PreferenceCategory.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
-			global::android.preference.PreferenceCategory._PreferenceCategory5797 = @__env.GetMethodID(global::android.preference.PreferenceCategory.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
-			global::android.preference.PreferenceCategory._PreferenceCategory5798 = @__env.GetMethodID(global::android.preference.PreferenceCategory.staticClass, "<init>", "(Landroid/content/Context;)V"); 
+			global::android.preference.PreferenceCategory._isEnabled6070 = @__env.GetMethodID(global::android.preference.PreferenceCategory.staticClass, "isEnabled", "()Z"); 
+			global::android.preference.PreferenceCategory._onPrepareAddPreference6071 = @__env.GetMethodID(global::android.preference.PreferenceCategory.staticClass, "onPrepareAddPreference", "(Landroid/preference/Preference;)Z"); 
+			global::android.preference.PreferenceCategory._PreferenceCategory6072 = @__env.GetMethodID(global::android.preference.PreferenceCategory.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
+			global::android.preference.PreferenceCategory._PreferenceCategory6073 = @__env.GetMethodID(global::android.preference.PreferenceCategory.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
+			global::android.preference.PreferenceCategory._PreferenceCategory6074 = @__env.GetMethodID(global::android.preference.PreferenceCategory.staticClass, "<init>", "(Landroid/content/Context;)V"); 
 		} 
 	} 
 } 

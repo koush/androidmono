@@ -45,7 +45,7 @@ namespace MonoDroid
 			}
 		}
 				
-		void GenerateType(Type type)
+		public void GenerateType(Type type)
 		{
 			if (type.IsSystemType)
 				return;

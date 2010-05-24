@@ -18,86 +18,86 @@ namespace java.text
 		protected ParsePosition(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode11744; 
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode12652; 
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.ParsePosition)) 
-				return @__env.CallIntMethod(this, _hashCode11744); 
+				return @__env.CallIntMethod(this, _hashCode12652); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.text.ParsePosition.staticClass, _hashCode11744); 
+				return @__env.CallNonVirtualIntMethod(this, java.text.ParsePosition.staticClass, _hashCode12652); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _equals11745; 
+		internal static global::net.sf.jni4net.jni.MethodId _equals12653; 
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.ParsePosition)) 
-				return @__env.CallBooleanMethod(this, _equals11745, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, _equals12653, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.text.ParsePosition.staticClass, _equals11745, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.text.ParsePosition.staticClass, _equals12653, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toString11746; 
+		internal static global::net.sf.jni4net.jni.MethodId _toString12654; 
 		public override java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.ParsePosition)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString11746)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString12654)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.ParsePosition.staticClass, _toString11746)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.ParsePosition.staticClass, _toString12654)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getIndex11747; 
+		internal static global::net.sf.jni4net.jni.MethodId _getIndex12655; 
 		public virtual int getIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.ParsePosition)) 
-				return @__env.CallIntMethod(this, _getIndex11747); 
+				return @__env.CallIntMethod(this, _getIndex12655); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.text.ParsePosition.staticClass, _getIndex11747); 
+				return @__env.CallNonVirtualIntMethod(this, java.text.ParsePosition.staticClass, _getIndex12655); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setIndex11748; 
+		internal static global::net.sf.jni4net.jni.MethodId _setIndex12656; 
 		public virtual void setIndex(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.ParsePosition)) 
-				@__env.CallVoidMethod(this, _setIndex11748, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setIndex12656, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.text.ParsePosition.staticClass, _setIndex11748, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.text.ParsePosition.staticClass, _setIndex12656, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setErrorIndex11749; 
+		internal static global::net.sf.jni4net.jni.MethodId _setErrorIndex12657; 
 		public virtual void setErrorIndex(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.ParsePosition)) 
-				@__env.CallVoidMethod(this, _setErrorIndex11749, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setErrorIndex12657, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.text.ParsePosition.staticClass, _setErrorIndex11749, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.text.ParsePosition.staticClass, _setErrorIndex12657, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getErrorIndex11750; 
+		internal static global::net.sf.jni4net.jni.MethodId _getErrorIndex12658; 
 		public virtual int getErrorIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.ParsePosition)) 
-				return @__env.CallIntMethod(this, _getErrorIndex11750); 
+				return @__env.CallIntMethod(this, _getErrorIndex12658); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.text.ParsePosition.staticClass, _getErrorIndex11750); 
+				return @__env.CallNonVirtualIntMethod(this, java.text.ParsePosition.staticClass, _getErrorIndex12658); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ParsePosition11751; 
+		internal static global::net.sf.jni4net.jni.MethodId _ParsePosition12659; 
 		public ParsePosition(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.text.ParsePosition.staticClass, _ParsePosition11751, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			@__env.NewObject(java.text.ParsePosition.staticClass, _ParsePosition12659, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::java.text.ParsePosition.staticClass = @__class; 
-			global::java.text.ParsePosition._hashCode11744 = @__env.GetMethodID(global::java.text.ParsePosition.staticClass, "hashCode", "()I"); 
-			global::java.text.ParsePosition._equals11745 = @__env.GetMethodID(global::java.text.ParsePosition.staticClass, "equals", "(Ljava/lang/Object;)Z"); 
-			global::java.text.ParsePosition._toString11746 = @__env.GetMethodID(global::java.text.ParsePosition.staticClass, "toString", "()Ljava/lang/String;"); 
-			global::java.text.ParsePosition._getIndex11747 = @__env.GetMethodID(global::java.text.ParsePosition.staticClass, "getIndex", "()I"); 
-			global::java.text.ParsePosition._setIndex11748 = @__env.GetMethodID(global::java.text.ParsePosition.staticClass, "setIndex", "(I)V"); 
-			global::java.text.ParsePosition._setErrorIndex11749 = @__env.GetMethodID(global::java.text.ParsePosition.staticClass, "setErrorIndex", "(I)V"); 
-			global::java.text.ParsePosition._getErrorIndex11750 = @__env.GetMethodID(global::java.text.ParsePosition.staticClass, "getErrorIndex", "()I"); 
-			global::java.text.ParsePosition._ParsePosition11751 = @__env.GetMethodID(global::java.text.ParsePosition.staticClass, "<init>", "(I)V"); 
+			global::java.text.ParsePosition._hashCode12652 = @__env.GetMethodID(global::java.text.ParsePosition.staticClass, "hashCode", "()I"); 
+			global::java.text.ParsePosition._equals12653 = @__env.GetMethodID(global::java.text.ParsePosition.staticClass, "equals", "(Ljava/lang/Object;)Z"); 
+			global::java.text.ParsePosition._toString12654 = @__env.GetMethodID(global::java.text.ParsePosition.staticClass, "toString", "()Ljava/lang/String;"); 
+			global::java.text.ParsePosition._getIndex12655 = @__env.GetMethodID(global::java.text.ParsePosition.staticClass, "getIndex", "()I"); 
+			global::java.text.ParsePosition._setIndex12656 = @__env.GetMethodID(global::java.text.ParsePosition.staticClass, "setIndex", "(I)V"); 
+			global::java.text.ParsePosition._setErrorIndex12657 = @__env.GetMethodID(global::java.text.ParsePosition.staticClass, "setErrorIndex", "(I)V"); 
+			global::java.text.ParsePosition._getErrorIndex12658 = @__env.GetMethodID(global::java.text.ParsePosition.staticClass, "getErrorIndex", "()I"); 
+			global::java.text.ParsePosition._ParsePosition12659 = @__env.GetMethodID(global::java.text.ParsePosition.staticClass, "<init>", "(I)V"); 
 		} 
 	} 
 } 

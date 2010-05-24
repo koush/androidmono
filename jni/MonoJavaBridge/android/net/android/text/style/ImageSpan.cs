@@ -18,113 +18,113 @@ namespace android.text.style
 		protected ImageSpan(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDrawable6969; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDrawable7340; 
 		public override android.graphics.drawable.Drawable getDrawable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.style.ImageSpan)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, _getDrawable6969)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, _getDrawable7340)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.style.ImageSpan.staticClass, _getDrawable6969)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.style.ImageSpan.staticClass, _getDrawable7340)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getSource6970; 
+		internal static global::net.sf.jni4net.jni.MethodId _getSource7341; 
 		public virtual java.lang.String getSource() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.style.ImageSpan)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getSource6970)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getSource7341)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.style.ImageSpan.staticClass, _getSource6970)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.style.ImageSpan.staticClass, _getSource7341)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan6971; 
+		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan7342; 
 		public ImageSpan(android.graphics.Bitmap arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan6971, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan7342, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan6972; 
+		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan7343; 
 		public ImageSpan(android.graphics.Bitmap arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan6972, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan7343, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan6973; 
+		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan7344; 
 		public ImageSpan(android.content.Context arg0, android.graphics.Bitmap arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan6973, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan7344, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan6974; 
+		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan7345; 
 		public ImageSpan(android.content.Context arg0, android.graphics.Bitmap arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan6974, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan7345, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan6975; 
+		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan7346; 
 		public ImageSpan(android.graphics.drawable.Drawable arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan6975, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan7346, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan6976; 
+		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan7347; 
 		public ImageSpan(android.graphics.drawable.Drawable arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan6976, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan7347, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan6977; 
+		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan7348; 
 		public ImageSpan(android.graphics.drawable.Drawable arg0, java.lang.String arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan6977, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan7348, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan6978; 
+		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan7349; 
 		public ImageSpan(android.graphics.drawable.Drawable arg0, java.lang.String arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan6978, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan7349, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan6979; 
+		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan7350; 
 		public ImageSpan(android.content.Context arg0, android.net.Uri arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan6979, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan7350, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan6980; 
+		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan7351; 
 		public ImageSpan(android.content.Context arg0, android.net.Uri arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan6980, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan7351, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan6981; 
+		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan7352; 
 		public ImageSpan(android.content.Context arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan6981, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan7352, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan6982; 
+		internal static global::net.sf.jni4net.jni.MethodId _ImageSpan7353; 
 		public ImageSpan(android.content.Context arg0, int arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan6982, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.text.style.ImageSpan.staticClass, _ImageSpan7353, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.text.style.ImageSpan.staticClass = @__class; 
-			global::android.text.style.ImageSpan._getDrawable6969 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "getDrawable", "()Landroid/graphics/drawable/Drawable;"); 
-			global::android.text.style.ImageSpan._getSource6970 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "getSource", "()Ljava/lang/String;"); 
-			global::android.text.style.ImageSpan._ImageSpan6971 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/graphics/Bitmap;)V"); 
-			global::android.text.style.ImageSpan._ImageSpan6972 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/graphics/Bitmap;I)V"); 
-			global::android.text.style.ImageSpan._ImageSpan6973 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/content/Context;Landroid/graphics/Bitmap;)V"); 
-			global::android.text.style.ImageSpan._ImageSpan6974 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/content/Context;Landroid/graphics/Bitmap;I)V"); 
-			global::android.text.style.ImageSpan._ImageSpan6975 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/graphics/drawable/Drawable;)V"); 
-			global::android.text.style.ImageSpan._ImageSpan6976 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/graphics/drawable/Drawable;I)V"); 
-			global::android.text.style.ImageSpan._ImageSpan6977 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/graphics/drawable/Drawable;Ljava/lang/String;)V"); 
-			global::android.text.style.ImageSpan._ImageSpan6978 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/graphics/drawable/Drawable;Ljava/lang/String;I)V"); 
-			global::android.text.style.ImageSpan._ImageSpan6979 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/content/Context;Landroid/net/Uri;)V"); 
-			global::android.text.style.ImageSpan._ImageSpan6980 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/content/Context;Landroid/net/Uri;I)V"); 
-			global::android.text.style.ImageSpan._ImageSpan6981 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/content/Context;I)V"); 
-			global::android.text.style.ImageSpan._ImageSpan6982 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/content/Context;II)V"); 
+			global::android.text.style.ImageSpan._getDrawable7340 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "getDrawable", "()Landroid/graphics/drawable/Drawable;"); 
+			global::android.text.style.ImageSpan._getSource7341 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "getSource", "()Ljava/lang/String;"); 
+			global::android.text.style.ImageSpan._ImageSpan7342 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/graphics/Bitmap;)V"); 
+			global::android.text.style.ImageSpan._ImageSpan7343 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/graphics/Bitmap;I)V"); 
+			global::android.text.style.ImageSpan._ImageSpan7344 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/content/Context;Landroid/graphics/Bitmap;)V"); 
+			global::android.text.style.ImageSpan._ImageSpan7345 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/content/Context;Landroid/graphics/Bitmap;I)V"); 
+			global::android.text.style.ImageSpan._ImageSpan7346 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/graphics/drawable/Drawable;)V"); 
+			global::android.text.style.ImageSpan._ImageSpan7347 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/graphics/drawable/Drawable;I)V"); 
+			global::android.text.style.ImageSpan._ImageSpan7348 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/graphics/drawable/Drawable;Ljava/lang/String;)V"); 
+			global::android.text.style.ImageSpan._ImageSpan7349 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/graphics/drawable/Drawable;Ljava/lang/String;I)V"); 
+			global::android.text.style.ImageSpan._ImageSpan7350 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/content/Context;Landroid/net/Uri;)V"); 
+			global::android.text.style.ImageSpan._ImageSpan7351 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/content/Context;Landroid/net/Uri;I)V"); 
+			global::android.text.style.ImageSpan._ImageSpan7352 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/content/Context;I)V"); 
+			global::android.text.style.ImageSpan._ImageSpan7353 = @__env.GetMethodID(global::android.text.style.ImageSpan.staticClass, "<init>", "(Landroid/content/Context;II)V"); 
 		} 
 	} 
 } 

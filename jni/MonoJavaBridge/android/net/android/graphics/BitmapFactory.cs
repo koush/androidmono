@@ -36,22 +36,22 @@ namespace android.graphics
 			protected Options(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _requestCancelDecode2555; 
+			internal static global::net.sf.jni4net.jni.MethodId _requestCancelDecode2755; 
 			public virtual void requestCancelDecode() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.graphics.BitmapFactory.Options)) 
-					@__env.CallVoidMethod(this, _requestCancelDecode2555); 
+					@__env.CallVoidMethod(this, _requestCancelDecode2755); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.graphics.BitmapFactory.Options.staticClass, _requestCancelDecode2555); 
+					@__env.CallNonVirtualVoidMethod(this, android.graphics.BitmapFactory.Options.staticClass, _requestCancelDecode2755); 
 			} 
-			internal static global::net.sf.jni4net.jni.MethodId _Options2556; 
+			internal static global::net.sf.jni4net.jni.MethodId _Options2756; 
 			public Options()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.graphics.BitmapFactory.Options.staticClass, _Options2556, this); 
+				@__env.NewObject(android.graphics.BitmapFactory.Options.staticClass, _Options2756, this); 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _inJustDecodeBounds2557; 
+			internal static global::net.sf.jni4net.jni.FieldId _inJustDecodeBounds2757; 
 			public bool inJustDecodeBounds
 			{ 
 				get 
@@ -62,7 +62,7 @@ namespace android.graphics
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _inSampleSize2558; 
+			internal static global::net.sf.jni4net.jni.FieldId _inSampleSize2758; 
 			public int inSampleSize
 			{ 
 				get 
@@ -73,7 +73,7 @@ namespace android.graphics
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _inPreferredConfig2559; 
+			internal static global::net.sf.jni4net.jni.FieldId _inPreferredConfig2759; 
 			public android.graphics.Bitmap.Config inPreferredConfig
 			{ 
 				get 
@@ -84,7 +84,7 @@ namespace android.graphics
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _inDither2560; 
+			internal static global::net.sf.jni4net.jni.FieldId _inDither2760; 
 			public bool inDither
 			{ 
 				get 
@@ -95,7 +95,7 @@ namespace android.graphics
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _inDensity2561; 
+			internal static global::net.sf.jni4net.jni.FieldId _inDensity2761; 
 			public int inDensity
 			{ 
 				get 
@@ -106,7 +106,7 @@ namespace android.graphics
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _inTargetDensity2562; 
+			internal static global::net.sf.jni4net.jni.FieldId _inTargetDensity2762; 
 			public int inTargetDensity
 			{ 
 				get 
@@ -117,7 +117,7 @@ namespace android.graphics
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _inScreenDensity2563; 
+			internal static global::net.sf.jni4net.jni.FieldId _inScreenDensity2763; 
 			public int inScreenDensity
 			{ 
 				get 
@@ -128,7 +128,7 @@ namespace android.graphics
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _inScaled2564; 
+			internal static global::net.sf.jni4net.jni.FieldId _inScaled2764; 
 			public bool inScaled
 			{ 
 				get 
@@ -139,7 +139,7 @@ namespace android.graphics
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _inPurgeable2565; 
+			internal static global::net.sf.jni4net.jni.FieldId _inPurgeable2765; 
 			public bool inPurgeable
 			{ 
 				get 
@@ -150,7 +150,7 @@ namespace android.graphics
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _inInputShareable2566; 
+			internal static global::net.sf.jni4net.jni.FieldId _inInputShareable2766; 
 			public bool inInputShareable
 			{ 
 				get 
@@ -161,7 +161,7 @@ namespace android.graphics
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _outWidth2567; 
+			internal static global::net.sf.jni4net.jni.FieldId _outWidth2767; 
 			public int outWidth
 			{ 
 				get 
@@ -172,7 +172,7 @@ namespace android.graphics
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _outHeight2568; 
+			internal static global::net.sf.jni4net.jni.FieldId _outHeight2768; 
 			public int outHeight
 			{ 
 				get 
@@ -183,7 +183,7 @@ namespace android.graphics
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _outMimeType2569; 
+			internal static global::net.sf.jni4net.jni.FieldId _outMimeType2769; 
 			public java.lang.String outMimeType
 			{ 
 				get 
@@ -194,7 +194,7 @@ namespace android.graphics
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _inTempStorage2570; 
+			internal static global::net.sf.jni4net.jni.FieldId _inTempStorage2770; 
 			public byte[] inTempStorage
 			{ 
 				get 
@@ -205,7 +205,7 @@ namespace android.graphics
 				{ 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _mCancel2571; 
+			internal static global::net.sf.jni4net.jni.FieldId _mCancel2771; 
 			public bool mCancel
 			{ 
 				get 
@@ -219,97 +219,97 @@ namespace android.graphics
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
 				global::android.graphics.BitmapFactory.Options.staticClass = @__class; 
-				global::android.graphics.BitmapFactory.Options._requestCancelDecode2555 = @__env.GetMethodID(global::android.graphics.BitmapFactory.Options.staticClass, "requestCancelDecode", "()V"); 
-				global::android.graphics.BitmapFactory.Options._Options2556 = @__env.GetMethodID(global::android.graphics.BitmapFactory.Options.staticClass, "<init>", "()V"); 
+				global::android.graphics.BitmapFactory.Options._requestCancelDecode2755 = @__env.GetMethodID(global::android.graphics.BitmapFactory.Options.staticClass, "requestCancelDecode", "()V"); 
+				global::android.graphics.BitmapFactory.Options._Options2756 = @__env.GetMethodID(global::android.graphics.BitmapFactory.Options.staticClass, "<init>", "()V"); 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _decodeStream2572; 
+		internal static global::net.sf.jni4net.jni.MethodId _decodeStream2772; 
 		public static android.graphics.Bitmap decodeStream(java.io.InputStream arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeStream2572, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeStream2772, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _decodeStream2573; 
+		internal static global::net.sf.jni4net.jni.MethodId _decodeStream2773; 
 		public static android.graphics.Bitmap decodeStream(java.io.InputStream arg0, android.graphics.Rect arg1, android.graphics.BitmapFactory.Options arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeStream2573, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeStream2773, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _decodeByteArray2574; 
+		internal static global::net.sf.jni4net.jni.MethodId _decodeByteArray2774; 
 		public static android.graphics.Bitmap decodeByteArray(byte[] arg0, int arg1, int arg2, android.graphics.BitmapFactory.Options arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeByteArray2574, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeByteArray2774, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _decodeByteArray2575; 
+		internal static global::net.sf.jni4net.jni.MethodId _decodeByteArray2775; 
 		public static android.graphics.Bitmap decodeByteArray(byte[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeByteArray2575, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeByteArray2775, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _decodeFile2576; 
+		internal static global::net.sf.jni4net.jni.MethodId _decodeFile2776; 
 		public static android.graphics.Bitmap decodeFile(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeFile2576, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeFile2776, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _decodeFile2577; 
+		internal static global::net.sf.jni4net.jni.MethodId _decodeFile2777; 
 		public static android.graphics.Bitmap decodeFile(java.lang.String arg0, android.graphics.BitmapFactory.Options arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeFile2577, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeFile2777, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _decodeResourceStream2578; 
+		internal static global::net.sf.jni4net.jni.MethodId _decodeResourceStream2778; 
 		public static android.graphics.Bitmap decodeResourceStream(android.content.res.Resources arg0, android.util.TypedValue arg1, java.io.InputStream arg2, android.graphics.Rect arg3, android.graphics.BitmapFactory.Options arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeResourceStream2578, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeResourceStream2778, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _decodeResource2579; 
+		internal static global::net.sf.jni4net.jni.MethodId _decodeResource2779; 
 		public static android.graphics.Bitmap decodeResource(android.content.res.Resources arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeResource2579, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeResource2779, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _decodeResource2580; 
+		internal static global::net.sf.jni4net.jni.MethodId _decodeResource2780; 
 		public static android.graphics.Bitmap decodeResource(android.content.res.Resources arg0, int arg1, android.graphics.BitmapFactory.Options arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeResource2580, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeResource2780, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _decodeFileDescriptor2581; 
+		internal static global::net.sf.jni4net.jni.MethodId _decodeFileDescriptor2781; 
 		public static android.graphics.Bitmap decodeFileDescriptor(java.io.FileDescriptor arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeFileDescriptor2581, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeFileDescriptor2781, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _decodeFileDescriptor2582; 
+		internal static global::net.sf.jni4net.jni.MethodId _decodeFileDescriptor2782; 
 		public static android.graphics.Bitmap decodeFileDescriptor(java.io.FileDescriptor arg0, android.graphics.Rect arg1, android.graphics.BitmapFactory.Options arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeFileDescriptor2582, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BitmapFactory.staticClass, _decodeFileDescriptor2782, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _BitmapFactory2583; 
+		internal static global::net.sf.jni4net.jni.MethodId _BitmapFactory2783; 
 		public BitmapFactory()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.BitmapFactory.staticClass, _BitmapFactory2583, this); 
+			@__env.NewObject(android.graphics.BitmapFactory.staticClass, _BitmapFactory2783, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.graphics.BitmapFactory.staticClass = @__class; 
-			global::android.graphics.BitmapFactory._decodeStream2572 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeStream", "(Ljava/io/InputStream;)Landroid/graphics/Bitmap;"); 
-			global::android.graphics.BitmapFactory._decodeStream2573 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeStream", "(Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;"); 
-			global::android.graphics.BitmapFactory._decodeByteArray2574 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeByteArray", "([BIILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;"); 
-			global::android.graphics.BitmapFactory._decodeByteArray2575 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeByteArray", "([BII)Landroid/graphics/Bitmap;"); 
-			global::android.graphics.BitmapFactory._decodeFile2576 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeFile", "(Ljava/lang/String;)Landroid/graphics/Bitmap;"); 
-			global::android.graphics.BitmapFactory._decodeFile2577 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeFile", "(Ljava/lang/String;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;"); 
-			global::android.graphics.BitmapFactory._decodeResourceStream2578 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeResourceStream", "(Landroid/content/res/Resources;Landroid/util/TypedValue;Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;"); 
-			global::android.graphics.BitmapFactory._decodeResource2579 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeResource", "(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;"); 
-			global::android.graphics.BitmapFactory._decodeResource2580 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeResource", "(Landroid/content/res/Resources;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;"); 
-			global::android.graphics.BitmapFactory._decodeFileDescriptor2581 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeFileDescriptor", "(Ljava/io/FileDescriptor;)Landroid/graphics/Bitmap;"); 
-			global::android.graphics.BitmapFactory._decodeFileDescriptor2582 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeFileDescriptor", "(Ljava/io/FileDescriptor;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;"); 
-			global::android.graphics.BitmapFactory._BitmapFactory2583 = @__env.GetMethodID(global::android.graphics.BitmapFactory.staticClass, "<init>", "()V"); 
+			global::android.graphics.BitmapFactory._decodeStream2772 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeStream", "(Ljava/io/InputStream;)Landroid/graphics/Bitmap;"); 
+			global::android.graphics.BitmapFactory._decodeStream2773 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeStream", "(Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;"); 
+			global::android.graphics.BitmapFactory._decodeByteArray2774 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeByteArray", "([BIILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;"); 
+			global::android.graphics.BitmapFactory._decodeByteArray2775 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeByteArray", "([BII)Landroid/graphics/Bitmap;"); 
+			global::android.graphics.BitmapFactory._decodeFile2776 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeFile", "(Ljava/lang/String;)Landroid/graphics/Bitmap;"); 
+			global::android.graphics.BitmapFactory._decodeFile2777 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeFile", "(Ljava/lang/String;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;"); 
+			global::android.graphics.BitmapFactory._decodeResourceStream2778 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeResourceStream", "(Landroid/content/res/Resources;Landroid/util/TypedValue;Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;"); 
+			global::android.graphics.BitmapFactory._decodeResource2779 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeResource", "(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;"); 
+			global::android.graphics.BitmapFactory._decodeResource2780 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeResource", "(Landroid/content/res/Resources;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;"); 
+			global::android.graphics.BitmapFactory._decodeFileDescriptor2781 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeFileDescriptor", "(Ljava/io/FileDescriptor;)Landroid/graphics/Bitmap;"); 
+			global::android.graphics.BitmapFactory._decodeFileDescriptor2782 = @__env.GetStaticMethodID(global::android.graphics.BitmapFactory.staticClass, "decodeFileDescriptor", "(Ljava/io/FileDescriptor;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;"); 
+			global::android.graphics.BitmapFactory._BitmapFactory2783 = @__env.GetMethodID(global::android.graphics.BitmapFactory.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

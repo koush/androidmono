@@ -18,50 +18,50 @@ namespace android.app
 		protected AlarmManager(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _set358; 
+		internal static global::net.sf.jni4net.jni.MethodId _set365; 
 		public virtual void set(int arg0, long arg1, android.app.PendingIntent arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.AlarmManager)) 
-				@__env.CallVoidMethod(this, _set358, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallVoidMethod(this, _set365, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.AlarmManager.staticClass, _set358, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, android.app.AlarmManager.staticClass, _set365, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setTimeZone359; 
+		internal static global::net.sf.jni4net.jni.MethodId _setTimeZone366; 
 		public virtual void setTimeZone(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.AlarmManager)) 
-				@__env.CallVoidMethod(this, _setTimeZone359, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _setTimeZone366, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.AlarmManager.staticClass, _setTimeZone359, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.app.AlarmManager.staticClass, _setTimeZone366, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _cancel360; 
+		internal static global::net.sf.jni4net.jni.MethodId _cancel367; 
 		public virtual void cancel(android.app.PendingIntent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.AlarmManager)) 
-				@__env.CallVoidMethod(this, _cancel360, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _cancel367, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.AlarmManager.staticClass, _cancel360, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.app.AlarmManager.staticClass, _cancel367, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setRepeating361; 
+		internal static global::net.sf.jni4net.jni.MethodId _setRepeating368; 
 		public virtual void setRepeating(int arg0, long arg1, long arg2, android.app.PendingIntent arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.AlarmManager)) 
-				@__env.CallVoidMethod(this, _setRepeating361, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+				@__env.CallVoidMethod(this, _setRepeating368, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.AlarmManager.staticClass, _setRepeating361, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, android.app.AlarmManager.staticClass, _setRepeating368, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setInexactRepeating362; 
+		internal static global::net.sf.jni4net.jni.MethodId _setInexactRepeating369; 
 		public virtual void setInexactRepeating(int arg0, long arg1, long arg2, android.app.PendingIntent arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.AlarmManager)) 
-				@__env.CallVoidMethod(this, _setInexactRepeating362, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+				@__env.CallVoidMethod(this, _setInexactRepeating369, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.AlarmManager.staticClass, _setInexactRepeating362, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, android.app.AlarmManager.staticClass, _setInexactRepeating369, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 		} 
 		public static int RTC_WAKEUP
 		{ 
@@ -129,11 +129,11 @@ namespace android.app
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.app.AlarmManager.staticClass = @__class; 
-			global::android.app.AlarmManager._set358 = @__env.GetMethodID(global::android.app.AlarmManager.staticClass, "set", "(IJLandroid/app/PendingIntent;)V"); 
-			global::android.app.AlarmManager._setTimeZone359 = @__env.GetMethodID(global::android.app.AlarmManager.staticClass, "setTimeZone", "(Ljava/lang/String;)V"); 
-			global::android.app.AlarmManager._cancel360 = @__env.GetMethodID(global::android.app.AlarmManager.staticClass, "cancel", "(Landroid/app/PendingIntent;)V"); 
-			global::android.app.AlarmManager._setRepeating361 = @__env.GetMethodID(global::android.app.AlarmManager.staticClass, "setRepeating", "(IJJLandroid/app/PendingIntent;)V"); 
-			global::android.app.AlarmManager._setInexactRepeating362 = @__env.GetMethodID(global::android.app.AlarmManager.staticClass, "setInexactRepeating", "(IJJLandroid/app/PendingIntent;)V"); 
+			global::android.app.AlarmManager._set365 = @__env.GetMethodID(global::android.app.AlarmManager.staticClass, "set", "(IJLandroid/app/PendingIntent;)V"); 
+			global::android.app.AlarmManager._setTimeZone366 = @__env.GetMethodID(global::android.app.AlarmManager.staticClass, "setTimeZone", "(Ljava/lang/String;)V"); 
+			global::android.app.AlarmManager._cancel367 = @__env.GetMethodID(global::android.app.AlarmManager.staticClass, "cancel", "(Landroid/app/PendingIntent;)V"); 
+			global::android.app.AlarmManager._setRepeating368 = @__env.GetMethodID(global::android.app.AlarmManager.staticClass, "setRepeating", "(IJJLandroid/app/PendingIntent;)V"); 
+			global::android.app.AlarmManager._setInexactRepeating369 = @__env.GetMethodID(global::android.app.AlarmManager.staticClass, "setInexactRepeating", "(IJJLandroid/app/PendingIntent;)V"); 
 		} 
 	} 
 } 

@@ -18,77 +18,77 @@ namespace org.xml.sax
 		protected SAXException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getCause12191; 
+		internal static global::net.sf.jni4net.jni.MethodId _getCause13324; 
 		public override java.lang.Throwable getCause() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(org.xml.sax.SAXException)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Throwable>(@__env, @__env.CallObjectMethodPtr(this, _getCause12191)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Throwable>(@__env, @__env.CallObjectMethodPtr(this, _getCause13324)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Throwable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, org.xml.sax.SAXException.staticClass, _getCause12191)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Throwable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, org.xml.sax.SAXException.staticClass, _getCause13324)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toString12192; 
+		internal static global::net.sf.jni4net.jni.MethodId _toString13325; 
 		public override java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(org.xml.sax.SAXException)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString12192)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString13325)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, org.xml.sax.SAXException.staticClass, _toString12192)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, org.xml.sax.SAXException.staticClass, _toString13325)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getMessage12193; 
+		internal static global::net.sf.jni4net.jni.MethodId _getMessage13326; 
 		public override java.lang.String getMessage() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(org.xml.sax.SAXException)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getMessage12193)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getMessage13326)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, org.xml.sax.SAXException.staticClass, _getMessage12193)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, org.xml.sax.SAXException.staticClass, _getMessage13326)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getException12194; 
+		internal static global::net.sf.jni4net.jni.MethodId _getException13327; 
 		public virtual java.lang.Exception getException() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(org.xml.sax.SAXException)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Exception>(@__env, @__env.CallObjectMethodPtr(this, _getException12194)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Exception>(@__env, @__env.CallObjectMethodPtr(this, _getException13327)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Exception>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, org.xml.sax.SAXException.staticClass, _getException12194)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Exception>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, org.xml.sax.SAXException.staticClass, _getException13327)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _SAXException12195; 
+		internal static global::net.sf.jni4net.jni.MethodId _SAXException13328; 
 		public SAXException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(org.xml.sax.SAXException.staticClass, _SAXException12195, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(org.xml.sax.SAXException.staticClass, _SAXException13328, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _SAXException12196; 
+		internal static global::net.sf.jni4net.jni.MethodId _SAXException13329; 
 		public SAXException(java.lang.Exception arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(org.xml.sax.SAXException.staticClass, _SAXException12196, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(org.xml.sax.SAXException.staticClass, _SAXException13329, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _SAXException12197; 
+		internal static global::net.sf.jni4net.jni.MethodId _SAXException13330; 
 		public SAXException(java.lang.String arg0, java.lang.Exception arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(org.xml.sax.SAXException.staticClass, _SAXException12197, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(org.xml.sax.SAXException.staticClass, _SAXException13330, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _SAXException12198; 
+		internal static global::net.sf.jni4net.jni.MethodId _SAXException13331; 
 		public SAXException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(org.xml.sax.SAXException.staticClass, _SAXException12198, this); 
+			@__env.NewObject(org.xml.sax.SAXException.staticClass, _SAXException13331, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::org.xml.sax.SAXException.staticClass = @__class; 
-			global::org.xml.sax.SAXException._getCause12191 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "getCause", "()Ljava/lang/Throwable;"); 
-			global::org.xml.sax.SAXException._toString12192 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "toString", "()Ljava/lang/String;"); 
-			global::org.xml.sax.SAXException._getMessage12193 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "getMessage", "()Ljava/lang/String;"); 
-			global::org.xml.sax.SAXException._getException12194 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "getException", "()Ljava/lang/Exception;"); 
-			global::org.xml.sax.SAXException._SAXException12195 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
-			global::org.xml.sax.SAXException._SAXException12196 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/Exception;)V"); 
-			global::org.xml.sax.SAXException._SAXException12197 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V"); 
-			global::org.xml.sax.SAXException._SAXException12198 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "<init>", "()V"); 
+			global::org.xml.sax.SAXException._getCause13324 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "getCause", "()Ljava/lang/Throwable;"); 
+			global::org.xml.sax.SAXException._toString13325 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "toString", "()Ljava/lang/String;"); 
+			global::org.xml.sax.SAXException._getMessage13326 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "getMessage", "()Ljava/lang/String;"); 
+			global::org.xml.sax.SAXException._getException13327 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "getException", "()Ljava/lang/Exception;"); 
+			global::org.xml.sax.SAXException._SAXException13328 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/String;)V"); 
+			global::org.xml.sax.SAXException._SAXException13329 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/Exception;)V"); 
+			global::org.xml.sax.SAXException._SAXException13330 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Exception;)V"); 
+			global::org.xml.sax.SAXException._SAXException13331 = @__env.GetMethodID(global::org.xml.sax.SAXException.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

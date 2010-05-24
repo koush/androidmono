@@ -18,113 +18,113 @@ namespace android.util
 		protected TypedValue(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getFloat7254; 
+		internal static global::net.sf.jni4net.jni.MethodId _getFloat7657; 
 		public virtual float getFloat() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.TypedValue)) 
-				return @__env.CallFloatMethod(this, _getFloat7254); 
+				return @__env.CallFloatMethod(this, _getFloat7657); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.util.TypedValue.staticClass, _getFloat7254); 
+				return @__env.CallNonVirtualFloatMethod(this, android.util.TypedValue.staticClass, _getFloat7657); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toString7255; 
+		internal static global::net.sf.jni4net.jni.MethodId _toString7658; 
 		public override java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.TypedValue)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString7255)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString7658)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.util.TypedValue.staticClass, _toString7255)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.util.TypedValue.staticClass, _toString7658)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDimension7256; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDimension7659; 
 		public virtual float getDimension(android.util.DisplayMetrics arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.TypedValue)) 
-				return @__env.CallFloatMethod(this, _getDimension7256, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallFloatMethod(this, _getDimension7659, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.util.TypedValue.staticClass, _getDimension7256, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualFloatMethod(this, android.util.TypedValue.staticClass, _getDimension7659, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getFraction7257; 
+		internal static global::net.sf.jni4net.jni.MethodId _getFraction7660; 
 		public virtual float getFraction(float arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.TypedValue)) 
-				return @__env.CallFloatMethod(this, _getFraction7257, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallFloatMethod(this, _getFraction7660, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.util.TypedValue.staticClass, _getFraction7257, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualFloatMethod(this, android.util.TypedValue.staticClass, _getFraction7660, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setTo7258; 
+		internal static global::net.sf.jni4net.jni.MethodId _setTo7661; 
 		public virtual void setTo(android.util.TypedValue arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.TypedValue)) 
-				@__env.CallVoidMethod(this, _setTo7258, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _setTo7661, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.util.TypedValue.staticClass, _setTo7258, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.util.TypedValue.staticClass, _setTo7661, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _complexToFloat7259; 
+		internal static global::net.sf.jni4net.jni.MethodId _complexToFloat7662; 
 		public static float complexToFloat(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, _complexToFloat7259, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, _complexToFloat7662, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _complexToDimension7260; 
+		internal static global::net.sf.jni4net.jni.MethodId _complexToDimension7663; 
 		public static float complexToDimension(int arg0, android.util.DisplayMetrics arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, _complexToDimension7260, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, _complexToDimension7663, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _complexToDimensionPixelOffset7261; 
+		internal static global::net.sf.jni4net.jni.MethodId _complexToDimensionPixelOffset7664; 
 		public static int complexToDimensionPixelOffset(int arg0, android.util.DisplayMetrics arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.util.TypedValue.staticClass, _complexToDimensionPixelOffset7261, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			return @__env.CallStaticIntMethod(android.util.TypedValue.staticClass, _complexToDimensionPixelOffset7664, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _complexToDimensionPixelSize7262; 
+		internal static global::net.sf.jni4net.jni.MethodId _complexToDimensionPixelSize7665; 
 		public static int complexToDimensionPixelSize(int arg0, android.util.DisplayMetrics arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.util.TypedValue.staticClass, _complexToDimensionPixelSize7262, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			return @__env.CallStaticIntMethod(android.util.TypedValue.staticClass, _complexToDimensionPixelSize7665, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _complexToDimensionNoisy7263; 
+		internal static global::net.sf.jni4net.jni.MethodId _complexToDimensionNoisy7666; 
 		public static float complexToDimensionNoisy(int arg0, android.util.DisplayMetrics arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, _complexToDimensionNoisy7263, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, _complexToDimensionNoisy7666, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _applyDimension7264; 
+		internal static global::net.sf.jni4net.jni.MethodId _applyDimension7667; 
 		public static float applyDimension(int arg0, float arg1, android.util.DisplayMetrics arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, _applyDimension7264, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, _applyDimension7667, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _complexToFraction7265; 
+		internal static global::net.sf.jni4net.jni.MethodId _complexToFraction7668; 
 		public static float complexToFraction(int arg0, float arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, _complexToFraction7265, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			return @__env.CallStaticFloatMethod(android.util.TypedValue.staticClass, _complexToFraction7668, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _coerceToString7266; 
+		internal static global::net.sf.jni4net.jni.MethodId _coerceToString7669; 
 		public virtual java.lang.CharSequence coerceToString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.TypedValue)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _coerceToString7266)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _coerceToString7669)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.util.TypedValue.staticClass, _coerceToString7266)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.util.TypedValue.staticClass, _coerceToString7669)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _coerceToString7267; 
+		internal static global::net.sf.jni4net.jni.MethodId _coerceToString7670; 
 		public static java.lang.String coerceToString(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.util.TypedValue.staticClass, _coerceToString7267, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.util.TypedValue.staticClass, _coerceToString7670, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _TypedValue7268; 
+		internal static global::net.sf.jni4net.jni.MethodId _TypedValue7671; 
 		public TypedValue()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.util.TypedValue.staticClass, _TypedValue7268, this); 
+			@__env.NewObject(android.util.TypedValue.staticClass, _TypedValue7671, this); 
 		} 
 		public static int TYPE_NULL
 		{ 
@@ -392,7 +392,7 @@ namespace android.util
 				return 65535; 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _type7269; 
+		internal static global::net.sf.jni4net.jni.FieldId _type7672; 
 		public int type
 		{ 
 			get 
@@ -403,7 +403,7 @@ namespace android.util
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _string7270; 
+		internal static global::net.sf.jni4net.jni.FieldId _string7673; 
 		public java.lang.CharSequence @string
 		{ 
 			get 
@@ -414,7 +414,7 @@ namespace android.util
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _data7271; 
+		internal static global::net.sf.jni4net.jni.FieldId _data7674; 
 		public int data
 		{ 
 			get 
@@ -425,7 +425,7 @@ namespace android.util
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _assetCookie7272; 
+		internal static global::net.sf.jni4net.jni.FieldId _assetCookie7675; 
 		public int assetCookie
 		{ 
 			get 
@@ -436,7 +436,7 @@ namespace android.util
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _resourceId7273; 
+		internal static global::net.sf.jni4net.jni.FieldId _resourceId7676; 
 		public int resourceId
 		{ 
 			get 
@@ -447,7 +447,7 @@ namespace android.util
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _changingConfigurations7274; 
+		internal static global::net.sf.jni4net.jni.FieldId _changingConfigurations7677; 
 		public int changingConfigurations
 		{ 
 			get 
@@ -458,7 +458,7 @@ namespace android.util
 			{ 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.FieldId _density7275; 
+		internal static global::net.sf.jni4net.jni.FieldId _density7678; 
 		public int density
 		{ 
 			get 
@@ -472,21 +472,21 @@ namespace android.util
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.util.TypedValue.staticClass = @__class; 
-			global::android.util.TypedValue._getFloat7254 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "getFloat", "()F"); 
-			global::android.util.TypedValue._toString7255 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "toString", "()Ljava/lang/String;"); 
-			global::android.util.TypedValue._getDimension7256 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "getDimension", "(Landroid/util/DisplayMetrics;)F"); 
-			global::android.util.TypedValue._getFraction7257 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "getFraction", "(FF)F"); 
-			global::android.util.TypedValue._setTo7258 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "setTo", "(Landroid/util/TypedValue;)V"); 
-			global::android.util.TypedValue._complexToFloat7259 = @__env.GetStaticMethodID(global::android.util.TypedValue.staticClass, "complexToFloat", "(I)F"); 
-			global::android.util.TypedValue._complexToDimension7260 = @__env.GetStaticMethodID(global::android.util.TypedValue.staticClass, "complexToDimension", "(ILandroid/util/DisplayMetrics;)F"); 
-			global::android.util.TypedValue._complexToDimensionPixelOffset7261 = @__env.GetStaticMethodID(global::android.util.TypedValue.staticClass, "complexToDimensionPixelOffset", "(ILandroid/util/DisplayMetrics;)I"); 
-			global::android.util.TypedValue._complexToDimensionPixelSize7262 = @__env.GetStaticMethodID(global::android.util.TypedValue.staticClass, "complexToDimensionPixelSize", "(ILandroid/util/DisplayMetrics;)I"); 
-			global::android.util.TypedValue._complexToDimensionNoisy7263 = @__env.GetStaticMethodID(global::android.util.TypedValue.staticClass, "complexToDimensionNoisy", "(ILandroid/util/DisplayMetrics;)F"); 
-			global::android.util.TypedValue._applyDimension7264 = @__env.GetStaticMethodID(global::android.util.TypedValue.staticClass, "applyDimension", "(IFLandroid/util/DisplayMetrics;)F"); 
-			global::android.util.TypedValue._complexToFraction7265 = @__env.GetStaticMethodID(global::android.util.TypedValue.staticClass, "complexToFraction", "(IFF)F"); 
-			global::android.util.TypedValue._coerceToString7266 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "coerceToString", "()Ljava/lang/CharSequence;"); 
-			global::android.util.TypedValue._coerceToString7267 = @__env.GetStaticMethodID(global::android.util.TypedValue.staticClass, "coerceToString", "(II)Ljava/lang/String;"); 
-			global::android.util.TypedValue._TypedValue7268 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "<init>", "()V"); 
+			global::android.util.TypedValue._getFloat7657 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "getFloat", "()F"); 
+			global::android.util.TypedValue._toString7658 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "toString", "()Ljava/lang/String;"); 
+			global::android.util.TypedValue._getDimension7659 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "getDimension", "(Landroid/util/DisplayMetrics;)F"); 
+			global::android.util.TypedValue._getFraction7660 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "getFraction", "(FF)F"); 
+			global::android.util.TypedValue._setTo7661 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "setTo", "(Landroid/util/TypedValue;)V"); 
+			global::android.util.TypedValue._complexToFloat7662 = @__env.GetStaticMethodID(global::android.util.TypedValue.staticClass, "complexToFloat", "(I)F"); 
+			global::android.util.TypedValue._complexToDimension7663 = @__env.GetStaticMethodID(global::android.util.TypedValue.staticClass, "complexToDimension", "(ILandroid/util/DisplayMetrics;)F"); 
+			global::android.util.TypedValue._complexToDimensionPixelOffset7664 = @__env.GetStaticMethodID(global::android.util.TypedValue.staticClass, "complexToDimensionPixelOffset", "(ILandroid/util/DisplayMetrics;)I"); 
+			global::android.util.TypedValue._complexToDimensionPixelSize7665 = @__env.GetStaticMethodID(global::android.util.TypedValue.staticClass, "complexToDimensionPixelSize", "(ILandroid/util/DisplayMetrics;)I"); 
+			global::android.util.TypedValue._complexToDimensionNoisy7666 = @__env.GetStaticMethodID(global::android.util.TypedValue.staticClass, "complexToDimensionNoisy", "(ILandroid/util/DisplayMetrics;)F"); 
+			global::android.util.TypedValue._applyDimension7667 = @__env.GetStaticMethodID(global::android.util.TypedValue.staticClass, "applyDimension", "(IFLandroid/util/DisplayMetrics;)F"); 
+			global::android.util.TypedValue._complexToFraction7668 = @__env.GetStaticMethodID(global::android.util.TypedValue.staticClass, "complexToFraction", "(IFF)F"); 
+			global::android.util.TypedValue._coerceToString7669 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "coerceToString", "()Ljava/lang/CharSequence;"); 
+			global::android.util.TypedValue._coerceToString7670 = @__env.GetStaticMethodID(global::android.util.TypedValue.staticClass, "coerceToString", "(II)Ljava/lang/String;"); 
+			global::android.util.TypedValue._TypedValue7671 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

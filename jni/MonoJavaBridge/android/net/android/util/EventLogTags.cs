@@ -36,7 +36,7 @@ namespace android.util
 			protected Description(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _mTag7143; 
+			internal static global::net.sf.jni4net.jni.FieldId _mTag7545; 
 			public int mTag
 			{ 
 				get 
@@ -44,7 +44,7 @@ namespace android.util
 					return default(int); 
 				} 
 			} 
-			internal static global::net.sf.jni4net.jni.FieldId _mName7144; 
+			internal static global::net.sf.jni4net.jni.FieldId _mName7546; 
 			public java.lang.String mName
 			{ 
 				get 
@@ -57,43 +57,43 @@ namespace android.util
 				global::android.util.EventLogTags.Description.staticClass = @__class; 
 			} 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _get7145; 
+		internal static global::net.sf.jni4net.jni.MethodId _get7547; 
 		public virtual android.util.EventLogTags.Description get(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.EventLogTags)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.EventLogTags.Description>(@__env, @__env.CallObjectMethodPtr(this, _get7145, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.EventLogTags.Description>(@__env, @__env.CallObjectMethodPtr(this, _get7547, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.EventLogTags.Description>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.util.EventLogTags.staticClass, _get7145, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.EventLogTags.Description>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.util.EventLogTags.staticClass, _get7547, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _get7146; 
+		internal static global::net.sf.jni4net.jni.MethodId _get7548; 
 		public virtual android.util.EventLogTags.Description get(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.EventLogTags)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.EventLogTags.Description>(@__env, @__env.CallObjectMethodPtr(this, _get7146, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.EventLogTags.Description>(@__env, @__env.CallObjectMethodPtr(this, _get7548, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.EventLogTags.Description>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.util.EventLogTags.staticClass, _get7146, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.EventLogTags.Description>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.util.EventLogTags.staticClass, _get7548, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _EventLogTags7147; 
+		internal static global::net.sf.jni4net.jni.MethodId _EventLogTags7549; 
 		public EventLogTags()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.util.EventLogTags.staticClass, _EventLogTags7147, this); 
+			@__env.NewObject(android.util.EventLogTags.staticClass, _EventLogTags7549, this); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _EventLogTags7148; 
+		internal static global::net.sf.jni4net.jni.MethodId _EventLogTags7550; 
 		public EventLogTags(java.io.BufferedReader arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.util.EventLogTags.staticClass, _EventLogTags7148, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.util.EventLogTags.staticClass, _EventLogTags7550, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.util.EventLogTags.staticClass = @__class; 
-			global::android.util.EventLogTags._get7145 = @__env.GetMethodID(global::android.util.EventLogTags.staticClass, "get", "(Ljava/lang/String;)Landroid/util/EventLogTags$Description;"); 
-			global::android.util.EventLogTags._get7146 = @__env.GetMethodID(global::android.util.EventLogTags.staticClass, "get", "(I)Landroid/util/EventLogTags$Description;"); 
-			global::android.util.EventLogTags._EventLogTags7147 = @__env.GetMethodID(global::android.util.EventLogTags.staticClass, "<init>", "()V"); 
-			global::android.util.EventLogTags._EventLogTags7148 = @__env.GetMethodID(global::android.util.EventLogTags.staticClass, "<init>", "(Ljava/io/BufferedReader;)V"); 
+			global::android.util.EventLogTags._get7547 = @__env.GetMethodID(global::android.util.EventLogTags.staticClass, "get", "(Ljava/lang/String;)Landroid/util/EventLogTags$Description;"); 
+			global::android.util.EventLogTags._get7548 = @__env.GetMethodID(global::android.util.EventLogTags.staticClass, "get", "(I)Landroid/util/EventLogTags$Description;"); 
+			global::android.util.EventLogTags._EventLogTags7549 = @__env.GetMethodID(global::android.util.EventLogTags.staticClass, "<init>", "()V"); 
+			global::android.util.EventLogTags._EventLogTags7550 = @__env.GetMethodID(global::android.util.EventLogTags.staticClass, "<init>", "(Ljava/io/BufferedReader;)V"); 
 		} 
 	} 
 } 

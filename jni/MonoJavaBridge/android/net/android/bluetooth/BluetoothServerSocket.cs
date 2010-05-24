@@ -18,39 +18,39 @@ namespace android.bluetooth
 		internal BluetoothServerSocket(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _close888; 
+		internal static global::net.sf.jni4net.jni.MethodId _close901; 
 		public void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.bluetooth.BluetoothServerSocket)) 
-				@__env.CallVoidMethod(this, _close888); 
+				@__env.CallVoidMethod(this, _close901); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.bluetooth.BluetoothServerSocket.staticClass, _close888); 
+				@__env.CallNonVirtualVoidMethod(this, android.bluetooth.BluetoothServerSocket.staticClass, _close901); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _accept889; 
+		internal static global::net.sf.jni4net.jni.MethodId _accept902; 
 		public android.bluetooth.BluetoothSocket accept() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.bluetooth.BluetoothServerSocket)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.bluetooth.BluetoothSocket>(@__env, @__env.CallObjectMethodPtr(this, _accept889)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.bluetooth.BluetoothSocket>(@__env, @__env.CallObjectMethodPtr(this, _accept902)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.bluetooth.BluetoothSocket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.bluetooth.BluetoothServerSocket.staticClass, _accept889)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.bluetooth.BluetoothSocket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.bluetooth.BluetoothServerSocket.staticClass, _accept902)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _accept890; 
+		internal static global::net.sf.jni4net.jni.MethodId _accept903; 
 		public android.bluetooth.BluetoothSocket accept(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.bluetooth.BluetoothServerSocket)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.bluetooth.BluetoothSocket>(@__env, @__env.CallObjectMethodPtr(this, _accept890, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.bluetooth.BluetoothSocket>(@__env, @__env.CallObjectMethodPtr(this, _accept903, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.bluetooth.BluetoothSocket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.bluetooth.BluetoothServerSocket.staticClass, _accept890, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.bluetooth.BluetoothSocket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.bluetooth.BluetoothServerSocket.staticClass, _accept903, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.bluetooth.BluetoothServerSocket.staticClass = @__class; 
-			global::android.bluetooth.BluetoothServerSocket._close888 = @__env.GetMethodID(global::android.bluetooth.BluetoothServerSocket.staticClass, "close", "()V"); 
-			global::android.bluetooth.BluetoothServerSocket._accept889 = @__env.GetMethodID(global::android.bluetooth.BluetoothServerSocket.staticClass, "accept", "()Landroid/bluetooth/BluetoothSocket;"); 
-			global::android.bluetooth.BluetoothServerSocket._accept890 = @__env.GetMethodID(global::android.bluetooth.BluetoothServerSocket.staticClass, "accept", "(I)Landroid/bluetooth/BluetoothSocket;"); 
+			global::android.bluetooth.BluetoothServerSocket._close901 = @__env.GetMethodID(global::android.bluetooth.BluetoothServerSocket.staticClass, "close", "()V"); 
+			global::android.bluetooth.BluetoothServerSocket._accept902 = @__env.GetMethodID(global::android.bluetooth.BluetoothServerSocket.staticClass, "accept", "()Landroid/bluetooth/BluetoothSocket;"); 
+			global::android.bluetooth.BluetoothServerSocket._accept903 = @__env.GetMethodID(global::android.bluetooth.BluetoothServerSocket.staticClass, "accept", "(I)Landroid/bluetooth/BluetoothSocket;"); 
 		} 
 	} 
 } 

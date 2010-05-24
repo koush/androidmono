@@ -11,29 +11,29 @@ namespace android.text.style
 		protected ClickableSpan(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _onClick6943; 
+		internal static global::net.sf.jni4net.jni.MethodId _onClick7314; 
 		public abstract void onClick(android.view.View arg0); 
-		internal static global::net.sf.jni4net.jni.MethodId _updateDrawState6944; 
+		internal static global::net.sf.jni4net.jni.MethodId _updateDrawState7315; 
 		public override void updateDrawState(android.text.TextPaint arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.style.ClickableSpan)) 
-				@__env.CallVoidMethod(this, _updateDrawState6944, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _updateDrawState7315, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.text.style.ClickableSpan.staticClass, _updateDrawState6944, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, android.text.style.ClickableSpan.staticClass, _updateDrawState7315, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _ClickableSpan6945; 
+		internal static global::net.sf.jni4net.jni.MethodId _ClickableSpan7316; 
 		public ClickableSpan()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.ClickableSpan.staticClass, _ClickableSpan6945, this); 
+			@__env.NewObject(android.text.style.ClickableSpan.staticClass, _ClickableSpan7316, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::android.text.style.ClickableSpan.staticClass = @__class; 
-			global::android.text.style.ClickableSpan._onClick6943 = @__env.GetMethodID(global::android.text.style.ClickableSpan.staticClass, "onClick", "(Landroid/view/View;)V"); 
-			global::android.text.style.ClickableSpan._updateDrawState6944 = @__env.GetMethodID(global::android.text.style.ClickableSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V"); 
-			global::android.text.style.ClickableSpan._ClickableSpan6945 = @__env.GetMethodID(global::android.text.style.ClickableSpan.staticClass, "<init>", "()V"); 
+			global::android.text.style.ClickableSpan._onClick7314 = @__env.GetMethodID(global::android.text.style.ClickableSpan.staticClass, "onClick", "(Landroid/view/View;)V"); 
+			global::android.text.style.ClickableSpan._updateDrawState7315 = @__env.GetMethodID(global::android.text.style.ClickableSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V"); 
+			global::android.text.style.ClickableSpan._ClickableSpan7316 = @__env.GetMethodID(global::android.text.style.ClickableSpan.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

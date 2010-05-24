@@ -11,206 +11,206 @@ namespace java.text
 		protected DateFormat(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode11658; 
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode12566; 
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.DateFormat)) 
-				return @__env.CallIntMethod(this, _hashCode11658); 
+				return @__env.CallIntMethod(this, _hashCode12566); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.text.DateFormat.staticClass, _hashCode11658); 
+				return @__env.CallNonVirtualIntMethod(this, java.text.DateFormat.staticClass, _hashCode12566); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _equals11659; 
+		internal static global::net.sf.jni4net.jni.MethodId _equals12567; 
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.DateFormat)) 
-				return @__env.CallBooleanMethod(this, _equals11659, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, _equals12567, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.text.DateFormat.staticClass, _equals11659, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.text.DateFormat.staticClass, _equals12567, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _format11660; 
+		internal static global::net.sf.jni4net.jni.MethodId _format12568; 
 		public sealed override java.lang.StringBuffer format(java.lang.Object arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.DateFormat)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.StringBuffer>(@__env, @__env.CallObjectMethodPtr(this, _format11660, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.StringBuffer>(@__env, @__env.CallObjectMethodPtr(this, _format12568, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.StringBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.DateFormat.staticClass, _format11660, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.StringBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.DateFormat.staticClass, _format12568, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _format11661; 
+		internal static global::net.sf.jni4net.jni.MethodId _format12569; 
 		public abstract java.lang.StringBuffer format(java.util.Date arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2); 
-		internal static global::net.sf.jni4net.jni.MethodId _format11662; 
+		internal static global::net.sf.jni4net.jni.MethodId _format12570; 
 		public virtual java.lang.String format(java.util.Date arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.DateFormat)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _format11662, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _format12570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.DateFormat.staticClass, _format11662, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.DateFormat.staticClass, _format12570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getInstance11663; 
+		internal static global::net.sf.jni4net.jni.MethodId _getInstance12571; 
 		public static java.text.DateFormat getInstance() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getInstance11663)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getInstance12571)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _parse11664; 
+		internal static global::net.sf.jni4net.jni.MethodId _parse12572; 
 		public virtual java.util.Date parse(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.DateFormat)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Date>(@__env, @__env.CallObjectMethodPtr(this, _parse11664, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Date>(@__env, @__env.CallObjectMethodPtr(this, _parse12572, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Date>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.DateFormat.staticClass, _parse11664, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Date>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.DateFormat.staticClass, _parse12572, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _parse11665; 
+		internal static global::net.sf.jni4net.jni.MethodId _parse12573; 
 		public abstract java.util.Date parse(java.lang.String arg0, java.text.ParsePosition arg1); 
-		internal static global::net.sf.jni4net.jni.MethodId _getAvailableLocales11666; 
+		internal static global::net.sf.jni4net.jni.MethodId _getAvailableLocales12574; 
 		public static java.util.Locale[] getAvailableLocales() 
 		{ 
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getAvailableLocales11666)); 
+			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getAvailableLocales12574)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getTimeZone11667; 
+		internal static global::net.sf.jni4net.jni.MethodId _getTimeZone12575; 
 		public virtual java.util.TimeZone getTimeZone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.DateFormat)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.TimeZone>(@__env, @__env.CallObjectMethodPtr(this, _getTimeZone11667)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.TimeZone>(@__env, @__env.CallObjectMethodPtr(this, _getTimeZone12575)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.TimeZone>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.DateFormat.staticClass, _getTimeZone11667)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.TimeZone>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.DateFormat.staticClass, _getTimeZone12575)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setTimeZone11668; 
+		internal static global::net.sf.jni4net.jni.MethodId _setTimeZone12576; 
 		public virtual void setTimeZone(java.util.TimeZone arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.DateFormat)) 
-				@__env.CallVoidMethod(this, _setTimeZone11668, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _setTimeZone12576, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.text.DateFormat.staticClass, _setTimeZone11668, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.text.DateFormat.staticClass, _setTimeZone12576, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDateTimeInstance11669; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDateTimeInstance12577; 
 		public static java.text.DateFormat getDateTimeInstance(int arg0, int arg1, java.util.Locale arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getDateTimeInstance11669, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getDateTimeInstance12577, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDateTimeInstance11670; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDateTimeInstance12578; 
 		public static java.text.DateFormat getDateTimeInstance(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getDateTimeInstance11670, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getDateTimeInstance12578, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDateTimeInstance11671; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDateTimeInstance12579; 
 		public static java.text.DateFormat getDateTimeInstance() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getDateTimeInstance11671)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getDateTimeInstance12579)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setLenient11672; 
+		internal static global::net.sf.jni4net.jni.MethodId _setLenient12580; 
 		public virtual void setLenient(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.DateFormat)) 
-				@__env.CallVoidMethod(this, _setLenient11672, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, _setLenient12580, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.text.DateFormat.staticClass, _setLenient11672, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.text.DateFormat.staticClass, _setLenient12580, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isLenient11673; 
+		internal static global::net.sf.jni4net.jni.MethodId _isLenient12581; 
 		public virtual bool isLenient() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.DateFormat)) 
-				return @__env.CallBooleanMethod(this, _isLenient11673); 
+				return @__env.CallBooleanMethod(this, _isLenient12581); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.text.DateFormat.staticClass, _isLenient11673); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.text.DateFormat.staticClass, _isLenient12581); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _parseObject11674; 
+		internal static global::net.sf.jni4net.jni.MethodId _parseObject12582; 
 		public override java.lang.Object parseObject(java.lang.String arg0, java.text.ParsePosition arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.DateFormat)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _parseObject11674, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _parseObject12582, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.DateFormat.staticClass, _parseObject11674, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.DateFormat.staticClass, _parseObject12582, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getTimeInstance11675; 
+		internal static global::net.sf.jni4net.jni.MethodId _getTimeInstance12583; 
 		public static java.text.DateFormat getTimeInstance(int arg0, java.util.Locale arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getTimeInstance11675, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getTimeInstance12583, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getTimeInstance11676; 
+		internal static global::net.sf.jni4net.jni.MethodId _getTimeInstance12584; 
 		public static java.text.DateFormat getTimeInstance(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getTimeInstance11676, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getTimeInstance12584, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getTimeInstance11677; 
+		internal static global::net.sf.jni4net.jni.MethodId _getTimeInstance12585; 
 		public static java.text.DateFormat getTimeInstance() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getTimeInstance11677)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getTimeInstance12585)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDateInstance11678; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDateInstance12586; 
 		public static java.text.DateFormat getDateInstance() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getDateInstance11678)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getDateInstance12586)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDateInstance11679; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDateInstance12587; 
 		public static java.text.DateFormat getDateInstance(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getDateInstance11679, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getDateInstance12587, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getDateInstance11680; 
+		internal static global::net.sf.jni4net.jni.MethodId _getDateInstance12588; 
 		public static java.text.DateFormat getDateInstance(int arg0, java.util.Locale arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getDateInstance11680, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.DateFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.DateFormat.staticClass, _getDateInstance12588, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setCalendar11681; 
+		internal static global::net.sf.jni4net.jni.MethodId _setCalendar12589; 
 		public virtual void setCalendar(java.util.Calendar arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.DateFormat)) 
-				@__env.CallVoidMethod(this, _setCalendar11681, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _setCalendar12589, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.text.DateFormat.staticClass, _setCalendar11681, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.text.DateFormat.staticClass, _setCalendar12589, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getCalendar11682; 
+		internal static global::net.sf.jni4net.jni.MethodId _getCalendar12590; 
 		public virtual java.util.Calendar getCalendar() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.DateFormat)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallObjectMethodPtr(this, _getCalendar11682)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallObjectMethodPtr(this, _getCalendar12590)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.DateFormat.staticClass, _getCalendar11682)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.DateFormat.staticClass, _getCalendar12590)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _setNumberFormat11683; 
+		internal static global::net.sf.jni4net.jni.MethodId _setNumberFormat12591; 
 		public virtual void setNumberFormat(java.text.NumberFormat arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.DateFormat)) 
-				@__env.CallVoidMethod(this, _setNumberFormat11683, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, _setNumberFormat12591, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.text.DateFormat.staticClass, _setNumberFormat11683, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, java.text.DateFormat.staticClass, _setNumberFormat12591, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _getNumberFormat11684; 
+		internal static global::net.sf.jni4net.jni.MethodId _getNumberFormat12592; 
 		public virtual java.text.NumberFormat getNumberFormat() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.DateFormat)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallObjectMethodPtr(this, _getNumberFormat11684)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallObjectMethodPtr(this, _getNumberFormat12592)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.DateFormat.staticClass, _getNumberFormat11684)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.DateFormat.staticClass, _getNumberFormat12592)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _DateFormat11685; 
+		internal static global::net.sf.jni4net.jni.MethodId _DateFormat12593; 
 		protected DateFormat()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.text.DateFormat.staticClass, _DateFormat11685, this); 
+			@__env.NewObject(java.text.DateFormat.staticClass, _DateFormat12593, this); 
 		} 
 		public static int ERA_FIELD
 		{ 
@@ -376,34 +376,34 @@ namespace java.text
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::java.text.DateFormat.staticClass = @__class; 
-			global::java.text.DateFormat._hashCode11658 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "hashCode", "()I"); 
-			global::java.text.DateFormat._equals11659 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "equals", "(Ljava/lang/Object;)Z"); 
-			global::java.text.DateFormat._format11660 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "format", "(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;"); 
-			global::java.text.DateFormat._format11661 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "format", "(Ljava/util/Date;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;"); 
-			global::java.text.DateFormat._format11662 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "format", "(Ljava/util/Date;)Ljava/lang/String;"); 
-			global::java.text.DateFormat._getInstance11663 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getInstance", "()Ljava/text/DateFormat;"); 
-			global::java.text.DateFormat._parse11664 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "parse", "(Ljava/lang/String;)Ljava/util/Date;"); 
-			global::java.text.DateFormat._parse11665 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/util/Date;"); 
-			global::java.text.DateFormat._getAvailableLocales11666 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getAvailableLocales", "()[Ljava/util/Locale;"); 
-			global::java.text.DateFormat._getTimeZone11667 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "getTimeZone", "()Ljava/util/TimeZone;"); 
-			global::java.text.DateFormat._setTimeZone11668 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "setTimeZone", "(Ljava/util/TimeZone;)V"); 
-			global::java.text.DateFormat._getDateTimeInstance11669 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getDateTimeInstance", "(IILjava/util/Locale;)Ljava/text/DateFormat;"); 
-			global::java.text.DateFormat._getDateTimeInstance11670 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getDateTimeInstance", "(II)Ljava/text/DateFormat;"); 
-			global::java.text.DateFormat._getDateTimeInstance11671 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getDateTimeInstance", "()Ljava/text/DateFormat;"); 
-			global::java.text.DateFormat._setLenient11672 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "setLenient", "(Z)V"); 
-			global::java.text.DateFormat._isLenient11673 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "isLenient", "()Z"); 
-			global::java.text.DateFormat._parseObject11674 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "parseObject", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Object;"); 
-			global::java.text.DateFormat._getTimeInstance11675 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getTimeInstance", "(ILjava/util/Locale;)Ljava/text/DateFormat;"); 
-			global::java.text.DateFormat._getTimeInstance11676 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getTimeInstance", "(I)Ljava/text/DateFormat;"); 
-			global::java.text.DateFormat._getTimeInstance11677 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getTimeInstance", "()Ljava/text/DateFormat;"); 
-			global::java.text.DateFormat._getDateInstance11678 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getDateInstance", "()Ljava/text/DateFormat;"); 
-			global::java.text.DateFormat._getDateInstance11679 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getDateInstance", "(I)Ljava/text/DateFormat;"); 
-			global::java.text.DateFormat._getDateInstance11680 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getDateInstance", "(ILjava/util/Locale;)Ljava/text/DateFormat;"); 
-			global::java.text.DateFormat._setCalendar11681 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "setCalendar", "(Ljava/util/Calendar;)V"); 
-			global::java.text.DateFormat._getCalendar11682 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "getCalendar", "()Ljava/util/Calendar;"); 
-			global::java.text.DateFormat._setNumberFormat11683 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "setNumberFormat", "(Ljava/text/NumberFormat;)V"); 
-			global::java.text.DateFormat._getNumberFormat11684 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "getNumberFormat", "()Ljava/text/NumberFormat;"); 
-			global::java.text.DateFormat._DateFormat11685 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "<init>", "()V"); 
+			global::java.text.DateFormat._hashCode12566 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "hashCode", "()I"); 
+			global::java.text.DateFormat._equals12567 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "equals", "(Ljava/lang/Object;)Z"); 
+			global::java.text.DateFormat._format12568 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "format", "(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;"); 
+			global::java.text.DateFormat._format12569 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "format", "(Ljava/util/Date;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;"); 
+			global::java.text.DateFormat._format12570 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "format", "(Ljava/util/Date;)Ljava/lang/String;"); 
+			global::java.text.DateFormat._getInstance12571 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getInstance", "()Ljava/text/DateFormat;"); 
+			global::java.text.DateFormat._parse12572 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "parse", "(Ljava/lang/String;)Ljava/util/Date;"); 
+			global::java.text.DateFormat._parse12573 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/util/Date;"); 
+			global::java.text.DateFormat._getAvailableLocales12574 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getAvailableLocales", "()[Ljava/util/Locale;"); 
+			global::java.text.DateFormat._getTimeZone12575 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "getTimeZone", "()Ljava/util/TimeZone;"); 
+			global::java.text.DateFormat._setTimeZone12576 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "setTimeZone", "(Ljava/util/TimeZone;)V"); 
+			global::java.text.DateFormat._getDateTimeInstance12577 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getDateTimeInstance", "(IILjava/util/Locale;)Ljava/text/DateFormat;"); 
+			global::java.text.DateFormat._getDateTimeInstance12578 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getDateTimeInstance", "(II)Ljava/text/DateFormat;"); 
+			global::java.text.DateFormat._getDateTimeInstance12579 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getDateTimeInstance", "()Ljava/text/DateFormat;"); 
+			global::java.text.DateFormat._setLenient12580 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "setLenient", "(Z)V"); 
+			global::java.text.DateFormat._isLenient12581 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "isLenient", "()Z"); 
+			global::java.text.DateFormat._parseObject12582 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "parseObject", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Object;"); 
+			global::java.text.DateFormat._getTimeInstance12583 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getTimeInstance", "(ILjava/util/Locale;)Ljava/text/DateFormat;"); 
+			global::java.text.DateFormat._getTimeInstance12584 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getTimeInstance", "(I)Ljava/text/DateFormat;"); 
+			global::java.text.DateFormat._getTimeInstance12585 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getTimeInstance", "()Ljava/text/DateFormat;"); 
+			global::java.text.DateFormat._getDateInstance12586 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getDateInstance", "()Ljava/text/DateFormat;"); 
+			global::java.text.DateFormat._getDateInstance12587 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getDateInstance", "(I)Ljava/text/DateFormat;"); 
+			global::java.text.DateFormat._getDateInstance12588 = @__env.GetStaticMethodID(global::java.text.DateFormat.staticClass, "getDateInstance", "(ILjava/util/Locale;)Ljava/text/DateFormat;"); 
+			global::java.text.DateFormat._setCalendar12589 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "setCalendar", "(Ljava/util/Calendar;)V"); 
+			global::java.text.DateFormat._getCalendar12590 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "getCalendar", "()Ljava/util/Calendar;"); 
+			global::java.text.DateFormat._setNumberFormat12591 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "setNumberFormat", "(Ljava/text/NumberFormat;)V"); 
+			global::java.text.DateFormat._getNumberFormat12592 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "getNumberFormat", "()Ljava/text/NumberFormat;"); 
+			global::java.text.DateFormat._DateFormat12593 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "<init>", "()V"); 
 		} 
 	} 
 } 

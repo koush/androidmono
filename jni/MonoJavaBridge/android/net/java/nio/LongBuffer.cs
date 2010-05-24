@@ -11,160 +11,160 @@ namespace java.nio
 		protected LongBuffer(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _get11267; 
+		internal static global::net.sf.jni4net.jni.MethodId _get12099; 
 		public abstract long get(); 
-		internal static global::net.sf.jni4net.jni.MethodId _get11268; 
+		internal static global::net.sf.jni4net.jni.MethodId _get12100; 
 		public virtual java.nio.LongBuffer get(long[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.LongBuffer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallObjectMethodPtr(this, _get11268, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallObjectMethodPtr(this, _get12100, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.LongBuffer.staticClass, _get11268, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.LongBuffer.staticClass, _get12100, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _get11269; 
+		internal static global::net.sf.jni4net.jni.MethodId _get12101; 
 		public virtual java.nio.LongBuffer get(long[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.LongBuffer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallObjectMethodPtr(this, _get11269, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallObjectMethodPtr(this, _get12101, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.LongBuffer.staticClass, _get11269, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.LongBuffer.staticClass, _get12101, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _get11270; 
+		internal static global::net.sf.jni4net.jni.MethodId _get12102; 
 		public abstract long get(int arg0); 
-		internal static global::net.sf.jni4net.jni.MethodId _put11271; 
+		internal static global::net.sf.jni4net.jni.MethodId _put12103; 
 		public virtual java.nio.LongBuffer put(java.nio.LongBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.LongBuffer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallObjectMethodPtr(this, _put11271, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallObjectMethodPtr(this, _put12103, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.LongBuffer.staticClass, _put11271, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.LongBuffer.staticClass, _put12103, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _put11272; 
+		internal static global::net.sf.jni4net.jni.MethodId _put12104; 
 		public abstract java.nio.LongBuffer put(long arg0); 
-		internal static global::net.sf.jni4net.jni.MethodId _put11273; 
+		internal static global::net.sf.jni4net.jni.MethodId _put12105; 
 		public abstract java.nio.LongBuffer put(int arg0, long arg1); 
-		internal static global::net.sf.jni4net.jni.MethodId _put11274; 
+		internal static global::net.sf.jni4net.jni.MethodId _put12106; 
 		public virtual java.nio.LongBuffer put(long[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.LongBuffer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallObjectMethodPtr(this, _put11274, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallObjectMethodPtr(this, _put12106, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.LongBuffer.staticClass, _put11274, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.LongBuffer.staticClass, _put12106, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _put11275; 
+		internal static global::net.sf.jni4net.jni.MethodId _put12107; 
 		public virtual java.nio.LongBuffer put(long[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.LongBuffer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallObjectMethodPtr(this, _put11275, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallObjectMethodPtr(this, _put12107, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.LongBuffer.staticClass, _put11275, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.LongBuffer.staticClass, _put12107, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode11276; 
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode12108; 
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.LongBuffer)) 
-				return @__env.CallIntMethod(this, _hashCode11276); 
+				return @__env.CallIntMethod(this, _hashCode12108); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.nio.LongBuffer.staticClass, _hashCode11276); 
+				return @__env.CallNonVirtualIntMethod(this, java.nio.LongBuffer.staticClass, _hashCode12108); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _equals11277; 
+		internal static global::net.sf.jni4net.jni.MethodId _equals12109; 
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.LongBuffer)) 
-				return @__env.CallBooleanMethod(this, _equals11277, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, _equals12109, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.nio.LongBuffer.staticClass, _equals11277, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, java.nio.LongBuffer.staticClass, _equals12109, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo11278; 
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo12110; 
 		public virtual int compareTo(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.LongBuffer)) 
-				return @__env.CallIntMethod(this, _compareTo11278, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallIntMethod(this, _compareTo12110, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.nio.LongBuffer.staticClass, _compareTo11278, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, java.nio.LongBuffer.staticClass, _compareTo12110, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo11279; 
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo12111; 
 		public virtual int compareTo(java.nio.LongBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.LongBuffer)) 
-				return @__env.CallIntMethod(this, _compareTo11279, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallIntMethod(this, _compareTo12111, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.nio.LongBuffer.staticClass, _compareTo11279, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, java.nio.LongBuffer.staticClass, _compareTo12111, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _toString11280; 
+		internal static global::net.sf.jni4net.jni.MethodId _toString12112; 
 		public override java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.LongBuffer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString11280)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString12112)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.LongBuffer.staticClass, _toString11280)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.LongBuffer.staticClass, _toString12112)); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _isDirect11281; 
+		internal static global::net.sf.jni4net.jni.MethodId _isDirect12113; 
 		public abstract bool isDirect(); 
-		internal static global::net.sf.jni4net.jni.MethodId _wrap11282; 
+		internal static global::net.sf.jni4net.jni.MethodId _wrap12114; 
 		public static java.nio.LongBuffer wrap(long[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.LongBuffer.staticClass, _wrap11282, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.LongBuffer.staticClass, _wrap12114, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _wrap11283; 
+		internal static global::net.sf.jni4net.jni.MethodId _wrap12115; 
 		public static java.nio.LongBuffer wrap(long[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.LongBuffer.staticClass, _wrap11283, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.LongBuffer.staticClass, _wrap12115, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _allocate11284; 
+		internal static global::net.sf.jni4net.jni.MethodId _allocate12116; 
 		public static java.nio.LongBuffer allocate(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.LongBuffer.staticClass, _allocate11284, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.LongBuffer>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.LongBuffer.staticClass, _allocate12116, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
-		internal static global::net.sf.jni4net.jni.MethodId _duplicate11285; 
+		internal static global::net.sf.jni4net.jni.MethodId _duplicate12117; 
 		public abstract java.nio.LongBuffer duplicate(); 
-		internal static global::net.sf.jni4net.jni.MethodId _slice11286; 
+		internal static global::net.sf.jni4net.jni.MethodId _slice12118; 
 		public abstract java.nio.LongBuffer slice(); 
-		internal static global::net.sf.jni4net.jni.MethodId _asReadOnlyBuffer11287; 
+		internal static global::net.sf.jni4net.jni.MethodId _asReadOnlyBuffer12119; 
 		public abstract java.nio.LongBuffer asReadOnlyBuffer(); 
-		internal static global::net.sf.jni4net.jni.MethodId _compact11288; 
+		internal static global::net.sf.jni4net.jni.MethodId _compact12120; 
 		public abstract java.nio.LongBuffer compact(); 
-		internal static global::net.sf.jni4net.jni.MethodId _order11289; 
+		internal static global::net.sf.jni4net.jni.MethodId _order12121; 
 		public abstract java.nio.ByteOrder order(); 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::java.nio.LongBuffer.staticClass = @__class; 
-			global::java.nio.LongBuffer._get11267 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "get", "()J"); 
-			global::java.nio.LongBuffer._get11268 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "get", "([J)Ljava/nio/LongBuffer;"); 
-			global::java.nio.LongBuffer._get11269 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "get", "([JII)Ljava/nio/LongBuffer;"); 
-			global::java.nio.LongBuffer._get11270 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "get", "(I)J"); 
-			global::java.nio.LongBuffer._put11271 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "put", "(Ljava/nio/LongBuffer;)Ljava/nio/LongBuffer;"); 
-			global::java.nio.LongBuffer._put11272 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "put", "(J)Ljava/nio/LongBuffer;"); 
-			global::java.nio.LongBuffer._put11273 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "put", "(IJ)Ljava/nio/LongBuffer;"); 
-			global::java.nio.LongBuffer._put11274 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "put", "([JII)Ljava/nio/LongBuffer;"); 
-			global::java.nio.LongBuffer._put11275 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "put", "([J)Ljava/nio/LongBuffer;"); 
-			global::java.nio.LongBuffer._hashCode11276 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "hashCode", "()I"); 
-			global::java.nio.LongBuffer._equals11277 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "equals", "(Ljava/lang/Object;)Z"); 
-			global::java.nio.LongBuffer._compareTo11278 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "compareTo", "(Ljava/lang/Object;)I"); 
-			global::java.nio.LongBuffer._compareTo11279 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "compareTo", "(Ljava/nio/LongBuffer;)I"); 
-			global::java.nio.LongBuffer._toString11280 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "toString", "()Ljava/lang/String;"); 
-			global::java.nio.LongBuffer._isDirect11281 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "isDirect", "()Z"); 
-			global::java.nio.LongBuffer._wrap11282 = @__env.GetStaticMethodID(global::java.nio.LongBuffer.staticClass, "wrap", "([JII)Ljava/nio/LongBuffer;"); 
-			global::java.nio.LongBuffer._wrap11283 = @__env.GetStaticMethodID(global::java.nio.LongBuffer.staticClass, "wrap", "([J)Ljava/nio/LongBuffer;"); 
-			global::java.nio.LongBuffer._allocate11284 = @__env.GetStaticMethodID(global::java.nio.LongBuffer.staticClass, "allocate", "(I)Ljava/nio/LongBuffer;"); 
-			global::java.nio.LongBuffer._duplicate11285 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "duplicate", "()Ljava/nio/LongBuffer;"); 
-			global::java.nio.LongBuffer._slice11286 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "slice", "()Ljava/nio/LongBuffer;"); 
-			global::java.nio.LongBuffer._asReadOnlyBuffer11287 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "asReadOnlyBuffer", "()Ljava/nio/LongBuffer;"); 
-			global::java.nio.LongBuffer._compact11288 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "compact", "()Ljava/nio/LongBuffer;"); 
-			global::java.nio.LongBuffer._order11289 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "order", "()Ljava/nio/ByteOrder;"); 
+			global::java.nio.LongBuffer._get12099 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "get", "()J"); 
+			global::java.nio.LongBuffer._get12100 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "get", "([J)Ljava/nio/LongBuffer;"); 
+			global::java.nio.LongBuffer._get12101 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "get", "([JII)Ljava/nio/LongBuffer;"); 
+			global::java.nio.LongBuffer._get12102 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "get", "(I)J"); 
+			global::java.nio.LongBuffer._put12103 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "put", "(Ljava/nio/LongBuffer;)Ljava/nio/LongBuffer;"); 
+			global::java.nio.LongBuffer._put12104 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "put", "(J)Ljava/nio/LongBuffer;"); 
+			global::java.nio.LongBuffer._put12105 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "put", "(IJ)Ljava/nio/LongBuffer;"); 
+			global::java.nio.LongBuffer._put12106 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "put", "([JII)Ljava/nio/LongBuffer;"); 
+			global::java.nio.LongBuffer._put12107 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "put", "([J)Ljava/nio/LongBuffer;"); 
+			global::java.nio.LongBuffer._hashCode12108 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "hashCode", "()I"); 
+			global::java.nio.LongBuffer._equals12109 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "equals", "(Ljava/lang/Object;)Z"); 
+			global::java.nio.LongBuffer._compareTo12110 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "compareTo", "(Ljava/lang/Object;)I"); 
+			global::java.nio.LongBuffer._compareTo12111 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "compareTo", "(Ljava/nio/LongBuffer;)I"); 
+			global::java.nio.LongBuffer._toString12112 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "toString", "()Ljava/lang/String;"); 
+			global::java.nio.LongBuffer._isDirect12113 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "isDirect", "()Z"); 
+			global::java.nio.LongBuffer._wrap12114 = @__env.GetStaticMethodID(global::java.nio.LongBuffer.staticClass, "wrap", "([JII)Ljava/nio/LongBuffer;"); 
+			global::java.nio.LongBuffer._wrap12115 = @__env.GetStaticMethodID(global::java.nio.LongBuffer.staticClass, "wrap", "([J)Ljava/nio/LongBuffer;"); 
+			global::java.nio.LongBuffer._allocate12116 = @__env.GetStaticMethodID(global::java.nio.LongBuffer.staticClass, "allocate", "(I)Ljava/nio/LongBuffer;"); 
+			global::java.nio.LongBuffer._duplicate12117 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "duplicate", "()Ljava/nio/LongBuffer;"); 
+			global::java.nio.LongBuffer._slice12118 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "slice", "()Ljava/nio/LongBuffer;"); 
+			global::java.nio.LongBuffer._asReadOnlyBuffer12119 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "asReadOnlyBuffer", "()Ljava/nio/LongBuffer;"); 
+			global::java.nio.LongBuffer._compact12120 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "compact", "()Ljava/nio/LongBuffer;"); 
+			global::java.nio.LongBuffer._order12121 = @__env.GetMethodID(global::java.nio.LongBuffer.staticClass, "order", "()Ljava/nio/ByteOrder;"); 
 		} 
 	} 
 } 
