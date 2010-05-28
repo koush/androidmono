@@ -6,7 +6,7 @@ namespace android.os
 		internal static global::java.lang.Class staticClass; 
 		static ParcelFileDescriptor() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.ParcelFileDescriptor), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.ParcelFileDescriptor), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -24,7 +24,7 @@ namespace android.os
 			internal static global::java.lang.Class staticClass; 
 			static AutoCloseInputStream() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.ParcelFileDescriptor.AutoCloseInputStream), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.ParcelFileDescriptor.AutoCloseInputStream), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -41,15 +41,15 @@ namespace android.os
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.os.ParcelFileDescriptor.AutoCloseInputStream)) 
-					@__env.CallVoidMethod(this, _close5790); 
+					@__env.CallVoidMethod(this, global::android.os.ParcelFileDescriptor.AutoCloseInputStream._close5790); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.os.ParcelFileDescriptor.AutoCloseInputStream.staticClass, _close5790); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.os.ParcelFileDescriptor.AutoCloseInputStream.staticClass, global::android.os.ParcelFileDescriptor.AutoCloseInputStream._close5790); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _AutoCloseInputStream5791; 
 			public AutoCloseInputStream(android.os.ParcelFileDescriptor arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.os.ParcelFileDescriptor.AutoCloseInputStream.staticClass, _AutoCloseInputStream5791, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.NewObject(android.os.ParcelFileDescriptor.AutoCloseInputStream.staticClass, global::android.os.ParcelFileDescriptor.AutoCloseInputStream._AutoCloseInputStream5791, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -64,7 +64,7 @@ namespace android.os
 			internal new static global::java.lang.Class staticClass; 
 			static AutoCloseOutputStream() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.ParcelFileDescriptor.AutoCloseOutputStream), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.ParcelFileDescriptor.AutoCloseOutputStream), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -81,15 +81,15 @@ namespace android.os
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.os.ParcelFileDescriptor.AutoCloseOutputStream)) 
-					@__env.CallVoidMethod(this, _close5792); 
+					@__env.CallVoidMethod(this, global::android.os.ParcelFileDescriptor.AutoCloseOutputStream._close5792); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.os.ParcelFileDescriptor.AutoCloseOutputStream.staticClass, _close5792); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.os.ParcelFileDescriptor.AutoCloseOutputStream.staticClass, global::android.os.ParcelFileDescriptor.AutoCloseOutputStream._close5792); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _AutoCloseOutputStream5793; 
 			public AutoCloseOutputStream(android.os.ParcelFileDescriptor arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.os.ParcelFileDescriptor.AutoCloseOutputStream.staticClass, _AutoCloseOutputStream5793, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.NewObject(android.os.ParcelFileDescriptor.AutoCloseOutputStream.staticClass, global::android.os.ParcelFileDescriptor.AutoCloseOutputStream._AutoCloseOutputStream5793, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -99,76 +99,76 @@ namespace android.os
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString5794; 
-		public override java.lang.String toString() 
+		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.ParcelFileDescriptor)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString5794)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.ParcelFileDescriptor._toString5794)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.ParcelFileDescriptor.staticClass, _toString5794)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._toString5794)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _close5795; 
 		public virtual void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.ParcelFileDescriptor)) 
-				@__env.CallVoidMethod(this, _close5795); 
+				@__env.CallVoidMethod(this, global::android.os.ParcelFileDescriptor._close5795); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.ParcelFileDescriptor.staticClass, _close5795); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._close5795); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _open5796; 
-		public static android.os.ParcelFileDescriptor open(java.io.File arg0, int arg1) 
+		public static global::android.os.ParcelFileDescriptor open(java.io.File arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.ParcelFileDescriptor>(@__env, @__env.CallStaticObjectMethodPtr(android.os.ParcelFileDescriptor.staticClass, _open5796, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.ParcelFileDescriptor>(@__env, @__env.CallStaticObjectMethodPtr(android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._open5796, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel5797; 
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.ParcelFileDescriptor)) 
-				@__env.CallVoidMethod(this, _writeToParcel5797, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.os.ParcelFileDescriptor._writeToParcel5797, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.ParcelFileDescriptor.staticClass, _writeToParcel5797, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._writeToParcel5797, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _describeContents5798; 
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.ParcelFileDescriptor)) 
-				return @__env.CallIntMethod(this, _describeContents5798); 
+				return @__env.CallIntMethod(this, global::android.os.ParcelFileDescriptor._describeContents5798); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.os.ParcelFileDescriptor.staticClass, _describeContents5798); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._describeContents5798); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _fromSocket5799; 
-		public static android.os.ParcelFileDescriptor fromSocket(java.net.Socket arg0) 
+		public static global::android.os.ParcelFileDescriptor fromSocket(java.net.Socket arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.ParcelFileDescriptor>(@__env, @__env.CallStaticObjectMethodPtr(android.os.ParcelFileDescriptor.staticClass, _fromSocket5799, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.ParcelFileDescriptor>(@__env, @__env.CallStaticObjectMethodPtr(android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._fromSocket5799, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getFileDescriptor5800; 
-		public virtual java.io.FileDescriptor getFileDescriptor() 
+		public virtual global::java.io.FileDescriptor getFileDescriptor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.ParcelFileDescriptor)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, _getFileDescriptor5800)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.ParcelFileDescriptor._getFileDescriptor5800)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.ParcelFileDescriptor.staticClass, _getFileDescriptor5800)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._getFileDescriptor5800)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getStatSize5801; 
 		public virtual long getStatSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.ParcelFileDescriptor)) 
-				return @__env.CallLongMethod(this, _getStatSize5801); 
+				return @__env.CallLongMethod(this, global::android.os.ParcelFileDescriptor._getStatSize5801); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, android.os.ParcelFileDescriptor.staticClass, _getStatSize5801); 
+				return @__env.CallNonVirtualLongMethod(this, global::android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._getStatSize5801); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ParcelFileDescriptor5802; 
 		public ParcelFileDescriptor(android.os.ParcelFileDescriptor arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.os.ParcelFileDescriptor.staticClass, _ParcelFileDescriptor5802, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._ParcelFileDescriptor5802, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		public static int MODE_WORLD_READABLE
 		{ 
@@ -227,11 +227,11 @@ namespace android.os
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _CREATOR5803; 
-		public static android.os.Parcelable_Creator CREATOR
+		public static global::android.os.Parcelable_Creator CREATOR
 		{ 
 			get 
 			{ 
-				return default(android.os.Parcelable_Creator); 
+				return default(global::android.os.Parcelable_Creator); 
 			} 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 

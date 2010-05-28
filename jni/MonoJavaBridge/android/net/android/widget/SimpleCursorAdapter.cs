@@ -6,7 +6,7 @@ namespace android.widget
 		internal new static global::java.lang.Class staticClass; 
 		static SimpleCursorAdapter() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.SimpleCursorAdapter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.SimpleCursorAdapter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -21,7 +21,7 @@ namespace android.widget
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 		public interface CursorToStringConverter 
 		{ 
-			java.lang.CharSequence convertToString(android.database.Cursor arg0); 
+			global::java.lang.CharSequence convertToString(android.database.Cursor arg0); 
 		} 
 
 		public partial class CursorToStringConverter_ 
@@ -38,7 +38,7 @@ namespace android.widget
 			internal static global::java.lang.Class staticClass; 
 			static __CursorToStringConverter() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.SimpleCursorAdapter.__CursorToStringConverter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.SimpleCursorAdapter.__CursorToStringConverter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -51,13 +51,13 @@ namespace android.widget
 			{ 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _convertToString10820; 
-			 java.lang.CharSequence android.widget.SimpleCursorAdapter.CursorToStringConverter.convertToString(android.database.Cursor arg0) 
+			 global::java.lang.CharSequence android.widget.SimpleCursorAdapter.CursorToStringConverter.convertToString(android.database.Cursor arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.widget.SimpleCursorAdapter.__CursorToStringConverter)) 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _convertToString10820, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SimpleCursorAdapter.__CursorToStringConverter._convertToString10820, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.SimpleCursorAdapter.__CursorToStringConverter.staticClass, _convertToString10820, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SimpleCursorAdapter.__CursorToStringConverter.staticClass, global::android.widget.SimpleCursorAdapter.__CursorToStringConverter._convertToString10820, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -85,7 +85,7 @@ namespace android.widget
 			internal static global::java.lang.Class staticClass; 
 			static __ViewBinder() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.SimpleCursorAdapter.__ViewBinder), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.SimpleCursorAdapter.__ViewBinder), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -102,9 +102,9 @@ namespace android.widget
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.widget.SimpleCursorAdapter.__ViewBinder)) 
-					return @__env.CallBooleanMethod(this, _setViewValue10821, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+					return @__env.CallBooleanMethod(this, global::android.widget.SimpleCursorAdapter.__ViewBinder._setViewValue10821, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.widget.SimpleCursorAdapter.__ViewBinder.staticClass, _setViewValue10821, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.SimpleCursorAdapter.__ViewBinder.staticClass, global::android.widget.SimpleCursorAdapter.__ViewBinder._setViewValue10821, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -113,136 +113,136 @@ namespace android.widget
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _newView10822; 
-		public override android.view.View newView(android.content.Context arg0, android.database.Cursor arg1, android.view.ViewGroup arg2) 
+		public override global::android.view.View newView(android.content.Context arg0, android.database.Cursor arg1, android.view.ViewGroup arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.SimpleCursorAdapter)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, _newView10822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SimpleCursorAdapter._newView10822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.SimpleCursorAdapter.staticClass, _newView10822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SimpleCursorAdapter.staticClass, global::android.widget.SimpleCursorAdapter._newView10822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _newDropDownView10823; 
-		public override android.view.View newDropDownView(android.content.Context arg0, android.database.Cursor arg1, android.view.ViewGroup arg2) 
+		public override global::android.view.View newDropDownView(android.content.Context arg0, android.database.Cursor arg1, android.view.ViewGroup arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.SimpleCursorAdapter)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, _newDropDownView10823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SimpleCursorAdapter._newDropDownView10823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.SimpleCursorAdapter.staticClass, _newDropDownView10823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SimpleCursorAdapter.staticClass, global::android.widget.SimpleCursorAdapter._newDropDownView10823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _bindView10824; 
 		public override void bindView(android.view.View arg0, android.content.Context arg1, android.database.Cursor arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.SimpleCursorAdapter)) 
-				@__env.CallVoidMethod(this, _bindView10824, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
+				@__env.CallVoidMethod(this, global::android.widget.SimpleCursorAdapter._bindView10824, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.SimpleCursorAdapter.staticClass, _bindView10824, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleCursorAdapter.staticClass, global::android.widget.SimpleCursorAdapter._bindView10824, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _changeCursor10825; 
 		public override void changeCursor(android.database.Cursor arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.SimpleCursorAdapter)) 
-				@__env.CallVoidMethod(this, _changeCursor10825, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.SimpleCursorAdapter._changeCursor10825, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.SimpleCursorAdapter.staticClass, _changeCursor10825, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleCursorAdapter.staticClass, global::android.widget.SimpleCursorAdapter._changeCursor10825, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _convertToString10826; 
-		public override java.lang.CharSequence convertToString(android.database.Cursor arg0) 
+		public override global::java.lang.CharSequence convertToString(android.database.Cursor arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.SimpleCursorAdapter)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _convertToString10826, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SimpleCursorAdapter._convertToString10826, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.SimpleCursorAdapter.staticClass, _convertToString10826, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SimpleCursorAdapter.staticClass, global::android.widget.SimpleCursorAdapter._convertToString10826, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getViewBinder10827; 
-		public virtual android.widget.SimpleCursorAdapter.ViewBinder getViewBinder() 
+		public virtual global::android.widget.SimpleCursorAdapter.ViewBinder getViewBinder() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.SimpleCursorAdapter)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.SimpleCursorAdapter.ViewBinder>(@__env, @__env.CallObjectMethodPtr(this, _getViewBinder10827)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.SimpleCursorAdapter.ViewBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SimpleCursorAdapter._getViewBinder10827)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.SimpleCursorAdapter.ViewBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.SimpleCursorAdapter.staticClass, _getViewBinder10827)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.SimpleCursorAdapter.ViewBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SimpleCursorAdapter.staticClass, global::android.widget.SimpleCursorAdapter._getViewBinder10827)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setViewBinder10828; 
 		public virtual void setViewBinder(android.widget.SimpleCursorAdapter.ViewBinder arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.SimpleCursorAdapter)) 
-				@__env.CallVoidMethod(this, _setViewBinder10828, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.SimpleCursorAdapter._setViewBinder10828, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.SimpleCursorAdapter.staticClass, _setViewBinder10828, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleCursorAdapter.staticClass, global::android.widget.SimpleCursorAdapter._setViewBinder10828, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setViewImage10829; 
 		public virtual void setViewImage(android.widget.ImageView arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.SimpleCursorAdapter)) 
-				@__env.CallVoidMethod(this, _setViewImage10829, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.widget.SimpleCursorAdapter._setViewImage10829, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.SimpleCursorAdapter.staticClass, _setViewImage10829, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleCursorAdapter.staticClass, global::android.widget.SimpleCursorAdapter._setViewImage10829, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setViewText10830; 
 		public virtual void setViewText(android.widget.TextView arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.SimpleCursorAdapter)) 
-				@__env.CallVoidMethod(this, _setViewText10830, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.widget.SimpleCursorAdapter._setViewText10830, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.SimpleCursorAdapter.staticClass, _setViewText10830, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleCursorAdapter.staticClass, global::android.widget.SimpleCursorAdapter._setViewText10830, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getStringConversionColumn10831; 
 		public virtual int getStringConversionColumn() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.SimpleCursorAdapter)) 
-				return @__env.CallIntMethod(this, _getStringConversionColumn10831); 
+				return @__env.CallIntMethod(this, global::android.widget.SimpleCursorAdapter._getStringConversionColumn10831); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.SimpleCursorAdapter.staticClass, _getStringConversionColumn10831); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.SimpleCursorAdapter.staticClass, global::android.widget.SimpleCursorAdapter._getStringConversionColumn10831); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setStringConversionColumn10832; 
 		public virtual void setStringConversionColumn(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.SimpleCursorAdapter)) 
-				@__env.CallVoidMethod(this, _setStringConversionColumn10832, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.SimpleCursorAdapter._setStringConversionColumn10832, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.SimpleCursorAdapter.staticClass, _setStringConversionColumn10832, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleCursorAdapter.staticClass, global::android.widget.SimpleCursorAdapter._setStringConversionColumn10832, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCursorToStringConverter10833; 
-		public virtual android.widget.SimpleCursorAdapter.CursorToStringConverter getCursorToStringConverter() 
+		public virtual global::android.widget.SimpleCursorAdapter.CursorToStringConverter getCursorToStringConverter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.SimpleCursorAdapter)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.SimpleCursorAdapter.CursorToStringConverter>(@__env, @__env.CallObjectMethodPtr(this, _getCursorToStringConverter10833)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.SimpleCursorAdapter.CursorToStringConverter>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SimpleCursorAdapter._getCursorToStringConverter10833)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.SimpleCursorAdapter.CursorToStringConverter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.SimpleCursorAdapter.staticClass, _getCursorToStringConverter10833)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.SimpleCursorAdapter.CursorToStringConverter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SimpleCursorAdapter.staticClass, global::android.widget.SimpleCursorAdapter._getCursorToStringConverter10833)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setCursorToStringConverter10834; 
 		public virtual void setCursorToStringConverter(android.widget.SimpleCursorAdapter.CursorToStringConverter arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.SimpleCursorAdapter)) 
-				@__env.CallVoidMethod(this, _setCursorToStringConverter10834, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.SimpleCursorAdapter._setCursorToStringConverter10834, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.SimpleCursorAdapter.staticClass, _setCursorToStringConverter10834, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleCursorAdapter.staticClass, global::android.widget.SimpleCursorAdapter._setCursorToStringConverter10834, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _changeCursorAndColumns10835; 
 		public virtual void changeCursorAndColumns(android.database.Cursor arg0, java.lang.String[] arg1, int[] arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.SimpleCursorAdapter)) 
-				@__env.CallVoidMethod(this, _changeCursorAndColumns10835, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2)); 
+				@__env.CallVoidMethod(this, global::android.widget.SimpleCursorAdapter._changeCursorAndColumns10835, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.SimpleCursorAdapter.staticClass, _changeCursorAndColumns10835, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleCursorAdapter.staticClass, global::android.widget.SimpleCursorAdapter._changeCursorAndColumns10835, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _SimpleCursorAdapter10836; 
 		public SimpleCursorAdapter(android.content.Context arg0, int arg1, android.database.Cursor arg2, java.lang.String[] arg3, int[] arg4)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.SimpleCursorAdapter.staticClass, _SimpleCursorAdapter10836, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg4)); 
+			@__env.NewObject(android.widget.SimpleCursorAdapter.staticClass, global::android.widget.SimpleCursorAdapter._SimpleCursorAdapter10836, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg4)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

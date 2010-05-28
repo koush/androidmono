@@ -6,7 +6,7 @@ namespace java.text
 		internal static global::java.lang.Class staticClass; 
 		static AttributedCharacterIterator_Attribute() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.text.AttributedCharacterIterator_Attribute), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.text.AttributedCharacterIterator_Attribute), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,74 +23,74 @@ namespace java.text
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.AttributedCharacterIterator_Attribute)) 
-				return @__env.CallIntMethod(this, _hashCode12528); 
+				return @__env.CallIntMethod(this, global::java.text.AttributedCharacterIterator_Attribute._hashCode12528); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.text.AttributedCharacterIterator_Attribute.staticClass, _hashCode12528); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.text.AttributedCharacterIterator_Attribute.staticClass, global::java.text.AttributedCharacterIterator_Attribute._hashCode12528); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _equals12529; 
 		public sealed override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.AttributedCharacterIterator_Attribute)) 
-				return @__env.CallBooleanMethod(this, _equals12529, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, global::java.text.AttributedCharacterIterator_Attribute._equals12529, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.text.AttributedCharacterIterator_Attribute.staticClass, _equals12529, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.text.AttributedCharacterIterator_Attribute.staticClass, global::java.text.AttributedCharacterIterator_Attribute._equals12529, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString12530; 
-		public override java.lang.String toString() 
+		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.AttributedCharacterIterator_Attribute)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString12530)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.AttributedCharacterIterator_Attribute._toString12530)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.AttributedCharacterIterator_Attribute.staticClass, _toString12530)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.AttributedCharacterIterator_Attribute.staticClass, global::java.text.AttributedCharacterIterator_Attribute._toString12530)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getName12531; 
-		protected virtual java.lang.String getName() 
+		protected virtual global::java.lang.String getName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.AttributedCharacterIterator_Attribute)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getName12531)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.AttributedCharacterIterator_Attribute._getName12531)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.AttributedCharacterIterator_Attribute.staticClass, _getName12531)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.AttributedCharacterIterator_Attribute.staticClass, global::java.text.AttributedCharacterIterator_Attribute._getName12531)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readResolve12532; 
-		protected virtual java.lang.Object readResolve() 
+		protected virtual global::java.lang.Object readResolve() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.AttributedCharacterIterator_Attribute)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _readResolve12532)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.AttributedCharacterIterator_Attribute._readResolve12532)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.AttributedCharacterIterator_Attribute.staticClass, _readResolve12532)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.AttributedCharacterIterator_Attribute.staticClass, global::java.text.AttributedCharacterIterator_Attribute._readResolve12532)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _AttributedCharacterIterator_Attribute12533; 
 		protected AttributedCharacterIterator_Attribute(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.text.AttributedCharacterIterator_Attribute.staticClass, _AttributedCharacterIterator_Attribute12533, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(java.text.AttributedCharacterIterator_Attribute.staticClass, global::java.text.AttributedCharacterIterator_Attribute._AttributedCharacterIterator_Attribute12533, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _LANGUAGE12534; 
-		public static java.text.AttributedCharacterIterator_Attribute LANGUAGE
+		public static global::java.text.AttributedCharacterIterator_Attribute LANGUAGE
 		{ 
 			get 
 			{ 
-				return default(java.text.AttributedCharacterIterator_Attribute); 
+				return default(global::java.text.AttributedCharacterIterator_Attribute); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _READING12535; 
-		public static java.text.AttributedCharacterIterator_Attribute READING
+		public static global::java.text.AttributedCharacterIterator_Attribute READING
 		{ 
 			get 
 			{ 
-				return default(java.text.AttributedCharacterIterator_Attribute); 
+				return default(global::java.text.AttributedCharacterIterator_Attribute); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _INPUT_METHOD_SEGMENT12536; 
-		public static java.text.AttributedCharacterIterator_Attribute INPUT_METHOD_SEGMENT
+		public static global::java.text.AttributedCharacterIterator_Attribute INPUT_METHOD_SEGMENT
 		{ 
 			get 
 			{ 
-				return default(java.text.AttributedCharacterIterator_Attribute); 
+				return default(global::java.text.AttributedCharacterIterator_Attribute); 
 			} 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 

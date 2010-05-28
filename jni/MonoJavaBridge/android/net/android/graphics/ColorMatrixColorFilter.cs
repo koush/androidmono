@@ -6,7 +6,7 @@ namespace android.graphics
 		internal new static global::java.lang.Class staticClass; 
 		static ColorMatrixColorFilter() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.graphics.ColorMatrixColorFilter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.ColorMatrixColorFilter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -22,13 +22,13 @@ namespace android.graphics
 		public ColorMatrixColorFilter(android.graphics.ColorMatrix arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.ColorMatrixColorFilter.staticClass, _ColorMatrixColorFilter2926, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.graphics.ColorMatrixColorFilter.staticClass, global::android.graphics.ColorMatrixColorFilter._ColorMatrixColorFilter2926, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ColorMatrixColorFilter2927; 
 		public ColorMatrixColorFilter(float[] arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.ColorMatrixColorFilter.staticClass, _ColorMatrixColorFilter2927, this, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+			@__env.NewObject(android.graphics.ColorMatrixColorFilter.staticClass, global::android.graphics.ColorMatrixColorFilter._ColorMatrixColorFilter2927, this, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

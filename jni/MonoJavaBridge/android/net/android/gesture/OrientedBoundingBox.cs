@@ -6,7 +6,7 @@ namespace android.gesture
 		internal static global::java.lang.Class staticClass; 
 		static OrientedBoundingBox() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.gesture.OrientedBoundingBox), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.gesture.OrientedBoundingBox), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 

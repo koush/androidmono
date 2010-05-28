@@ -6,19 +6,19 @@ namespace android.location
 		internal static global::java.lang.Class staticClass; 
 		static LocationProvider() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.location.LocationProvider), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.location.LocationProvider), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected LocationProvider(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getName4346; 
-		public virtual java.lang.String getName() 
+		public virtual global::java.lang.String getName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.location.LocationProvider)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getName4346)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationProvider._getName4346)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.location.LocationProvider.staticClass, _getName4346)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationProvider.staticClass, global::android.location.LocationProvider._getName4346)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAccuracy4347; 
 		public abstract int getAccuracy(); 
@@ -43,9 +43,9 @@ namespace android.location
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.location.LocationProvider)) 
-				return @__env.CallBooleanMethod(this, _meetsCriteria4356, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.location.LocationProvider._meetsCriteria4356, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.location.LocationProvider.staticClass, _meetsCriteria4356, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.LocationProvider.staticClass, global::android.location.LocationProvider._meetsCriteria4356, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		public static int OUT_OF_SERVICE
 		{ 

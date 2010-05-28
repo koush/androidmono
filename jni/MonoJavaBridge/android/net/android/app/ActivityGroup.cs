@@ -6,7 +6,7 @@ namespace android.app
 		internal new static global::java.lang.Class staticClass; 
 		static ActivityGroup() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.app.ActivityGroup), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.ActivityGroup), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,84 +23,84 @@ namespace android.app
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityGroup)) 
-				@__env.CallVoidMethod(this, _onCreate269, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.app.ActivityGroup._onCreate269, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ActivityGroup.staticClass, _onCreate269, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityGroup.staticClass, global::android.app.ActivityGroup._onCreate269, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onDestroy270; 
 		protected override void onDestroy() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityGroup)) 
-				@__env.CallVoidMethod(this, _onDestroy270); 
+				@__env.CallVoidMethod(this, global::android.app.ActivityGroup._onDestroy270); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ActivityGroup.staticClass, _onDestroy270); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityGroup.staticClass, global::android.app.ActivityGroup._onDestroy270); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onResume271; 
 		protected override void onResume() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityGroup)) 
-				@__env.CallVoidMethod(this, _onResume271); 
+				@__env.CallVoidMethod(this, global::android.app.ActivityGroup._onResume271); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ActivityGroup.staticClass, _onResume271); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityGroup.staticClass, global::android.app.ActivityGroup._onResume271); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onSaveInstanceState272; 
 		protected override void onSaveInstanceState(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityGroup)) 
-				@__env.CallVoidMethod(this, _onSaveInstanceState272, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.app.ActivityGroup._onSaveInstanceState272, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ActivityGroup.staticClass, _onSaveInstanceState272, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityGroup.staticClass, global::android.app.ActivityGroup._onSaveInstanceState272, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onPause273; 
 		protected override void onPause() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityGroup)) 
-				@__env.CallVoidMethod(this, _onPause273); 
+				@__env.CallVoidMethod(this, global::android.app.ActivityGroup._onPause273); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ActivityGroup.staticClass, _onPause273); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityGroup.staticClass, global::android.app.ActivityGroup._onPause273); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onStop274; 
 		protected override void onStop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityGroup)) 
-				@__env.CallVoidMethod(this, _onStop274); 
+				@__env.CallVoidMethod(this, global::android.app.ActivityGroup._onStop274); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ActivityGroup.staticClass, _onStop274); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityGroup.staticClass, global::android.app.ActivityGroup._onStop274); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCurrentActivity275; 
-		public virtual android.app.Activity getCurrentActivity() 
+		public virtual global::android.app.Activity getCurrentActivity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityGroup)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.Activity>(@__env, @__env.CallObjectMethodPtr(this, _getCurrentActivity275)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.Activity>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.ActivityGroup._getCurrentActivity275)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.Activity>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.ActivityGroup.staticClass, _getCurrentActivity275)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.Activity>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.ActivityGroup.staticClass, global::android.app.ActivityGroup._getCurrentActivity275)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getLocalActivityManager276; 
-		public virtual android.app.LocalActivityManager getLocalActivityManager() 
+		public virtual global::android.app.LocalActivityManager getLocalActivityManager() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityGroup)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.LocalActivityManager>(@__env, @__env.CallObjectMethodPtr(this, _getLocalActivityManager276)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.LocalActivityManager>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.ActivityGroup._getLocalActivityManager276)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.LocalActivityManager>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.ActivityGroup.staticClass, _getLocalActivityManager276)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.LocalActivityManager>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.ActivityGroup.staticClass, global::android.app.ActivityGroup._getLocalActivityManager276)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ActivityGroup277; 
 		public ActivityGroup(bool arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.app.ActivityGroup.staticClass, _ActivityGroup277, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			@__env.NewObject(android.app.ActivityGroup.staticClass, global::android.app.ActivityGroup._ActivityGroup277, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ActivityGroup278; 
 		public ActivityGroup()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.app.ActivityGroup.staticClass, _ActivityGroup278, this); 
+			@__env.NewObject(android.app.ActivityGroup.staticClass, global::android.app.ActivityGroup._ActivityGroup278, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

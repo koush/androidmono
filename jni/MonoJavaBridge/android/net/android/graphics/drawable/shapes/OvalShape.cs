@@ -6,7 +6,7 @@ namespace android.graphics.drawable.shapes
 		internal new static global::java.lang.Class staticClass; 
 		static OvalShape() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.graphics.drawable.shapes.OvalShape), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.drawable.shapes.OvalShape), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,15 +23,15 @@ namespace android.graphics.drawable.shapes
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.shapes.OvalShape)) 
-				@__env.CallVoidMethod(this, _draw3823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.shapes.OvalShape._draw3823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.shapes.OvalShape.staticClass, _draw3823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.shapes.OvalShape.staticClass, global::android.graphics.drawable.shapes.OvalShape._draw3823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _OvalShape3824; 
 		public OvalShape()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.drawable.shapes.OvalShape.staticClass, _OvalShape3824, this); 
+			@__env.NewObject(android.graphics.drawable.shapes.OvalShape.staticClass, global::android.graphics.drawable.shapes.OvalShape._OvalShape3824, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

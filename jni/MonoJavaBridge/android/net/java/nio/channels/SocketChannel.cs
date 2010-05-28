@@ -6,7 +6,7 @@ namespace java.nio.channels
 		internal new static global::java.lang.Class staticClass; 
 		static SocketChannel() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.nio.channels.SocketChannel), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.nio.channels.SocketChannel), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected SocketChannel(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -16,9 +16,9 @@ namespace java.nio.channels
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.SocketChannel)) 
-				return @__env.CallLongMethod(this, _write12279, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				return @__env.CallLongMethod(this, global::java.nio.channels.SocketChannel._write12279, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, java.nio.channels.SocketChannel.staticClass, _write12279, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				return @__env.CallNonVirtualLongMethod(this, global::java.nio.channels.SocketChannel.staticClass, global::java.nio.channels.SocketChannel._write12279, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _write12280; 
 		public abstract int write(java.nio.ByteBuffer arg0); 
@@ -31,28 +31,28 @@ namespace java.nio.channels
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.SocketChannel)) 
-				return @__env.CallLongMethod(this, _read12283, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				return @__env.CallLongMethod(this, global::java.nio.channels.SocketChannel._read12283, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, java.nio.channels.SocketChannel.staticClass, _read12283, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				return @__env.CallNonVirtualLongMethod(this, global::java.nio.channels.SocketChannel.staticClass, global::java.nio.channels.SocketChannel._read12283, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _read12284; 
 		public abstract int read(java.nio.ByteBuffer arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _open12285; 
-		public static java.nio.channels.SocketChannel open(java.net.SocketAddress arg0) 
+		public static global::java.nio.channels.SocketChannel open(java.net.SocketAddress arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SocketChannel>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.channels.SocketChannel.staticClass, _open12285, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SocketChannel>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.channels.SocketChannel.staticClass, global::java.nio.channels.SocketChannel._open12285, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _open12286; 
-		public static java.nio.channels.SocketChannel open() 
+		public static global::java.nio.channels.SocketChannel open() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SocketChannel>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.channels.SocketChannel.staticClass, _open12286)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SocketChannel>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.channels.SocketChannel.staticClass, global::java.nio.channels.SocketChannel._open12286)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _connect12287; 
 		public abstract bool connect(java.net.SocketAddress arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _socket12288; 
-		public abstract java.net.Socket socket(); 
+		public abstract global::java.net.Socket socket(); 
 		internal static global::net.sf.jni4net.jni.MethodId _isConnected12289; 
 		public abstract bool isConnected(); 
 		internal static global::net.sf.jni4net.jni.MethodId _validOps12290; 
@@ -60,9 +60,9 @@ namespace java.nio.channels
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.SocketChannel)) 
-				return @__env.CallIntMethod(this, _validOps12290); 
+				return @__env.CallIntMethod(this, global::java.nio.channels.SocketChannel._validOps12290); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.nio.channels.SocketChannel.staticClass, _validOps12290); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.nio.channels.SocketChannel.staticClass, global::java.nio.channels.SocketChannel._validOps12290); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isConnectionPending12291; 
 		public abstract bool isConnectionPending(); 
@@ -72,7 +72,7 @@ namespace java.nio.channels
 		protected SocketChannel(java.nio.channels.spi.SelectorProvider arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.nio.channels.SocketChannel.staticClass, _SocketChannel12293, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(java.nio.channels.SocketChannel.staticClass, global::java.nio.channels.SocketChannel._SocketChannel12293, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

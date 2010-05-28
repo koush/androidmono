@@ -6,7 +6,7 @@ namespace android.app
 		internal new static global::java.lang.Class staticClass; 
 		static ListActivity() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.app.ListActivity), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.ListActivity), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,87 +23,87 @@ namespace android.app
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				@__env.CallVoidMethod(this, _onRestoreInstanceState635, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.app.ListActivity._onRestoreInstanceState635, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ListActivity.staticClass, _onRestoreInstanceState635, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._onRestoreInstanceState635, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onContentChanged636; 
 		public override void onContentChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				@__env.CallVoidMethod(this, _onContentChanged636); 
+				@__env.CallVoidMethod(this, global::android.app.ListActivity._onContentChanged636); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ListActivity.staticClass, _onContentChanged636); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._onContentChanged636); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getListView637; 
-		public virtual android.widget.ListView getListView() 
+		public virtual global::android.widget.ListView getListView() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.ListView>(@__env, @__env.CallObjectMethodPtr(this, _getListView637)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.ListView>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.ListActivity._getListView637)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.ListView>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.ListActivity.staticClass, _getListView637)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.ListView>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._getListView637)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSelectedItemPosition638; 
 		public virtual int getSelectedItemPosition() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				return @__env.CallIntMethod(this, _getSelectedItemPosition638); 
+				return @__env.CallIntMethod(this, global::android.app.ListActivity._getSelectedItemPosition638); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.app.ListActivity.staticClass, _getSelectedItemPosition638); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._getSelectedItemPosition638); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSelectedItemId639; 
 		public virtual long getSelectedItemId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				return @__env.CallLongMethod(this, _getSelectedItemId639); 
+				return @__env.CallLongMethod(this, global::android.app.ListActivity._getSelectedItemId639); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, android.app.ListActivity.staticClass, _getSelectedItemId639); 
+				return @__env.CallNonVirtualLongMethod(this, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._getSelectedItemId639); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setSelection640; 
 		public virtual void setSelection(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				@__env.CallVoidMethod(this, _setSelection640, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.app.ListActivity._setSelection640, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ListActivity.staticClass, _setSelection640, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._setSelection640, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setListAdapter641; 
 		public virtual void setListAdapter(android.widget.ListAdapter arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				@__env.CallVoidMethod(this, _setListAdapter641, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.app.ListActivity._setListAdapter641, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ListActivity.staticClass, _setListAdapter641, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._setListAdapter641, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onListItemClick642; 
 		protected virtual void onListItemClick(android.widget.ListView arg0, android.view.View arg1, int arg2, long arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				@__env.CallVoidMethod(this, _onListItemClick642, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallVoidMethod(this, global::android.app.ListActivity._onListItemClick642, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ListActivity.staticClass, _onListItemClick642, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._onListItemClick642, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getListAdapter643; 
-		public virtual android.widget.ListAdapter getListAdapter() 
+		public virtual global::android.widget.ListAdapter getListAdapter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ListActivity)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.ListAdapter>(@__env, @__env.CallObjectMethodPtr(this, _getListAdapter643)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.ListAdapter>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.ListActivity._getListAdapter643)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.ListAdapter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.ListActivity.staticClass, _getListAdapter643)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.ListAdapter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.ListActivity.staticClass, global::android.app.ListActivity._getListAdapter643)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ListActivity644; 
 		public ListActivity()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.app.ListActivity.staticClass, _ListActivity644, this); 
+			@__env.NewObject(android.app.ListActivity.staticClass, global::android.app.ListActivity._ListActivity644, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

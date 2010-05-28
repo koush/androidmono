@@ -20,7 +20,7 @@ namespace android.sax
 		internal static global::java.lang.Class staticClass; 
 		static __StartElementListener() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.sax.__StartElementListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.sax.__StartElementListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -37,9 +37,9 @@ namespace android.sax
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.sax.__StartElementListener)) 
-				@__env.CallVoidMethod(this, _start6391, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.sax.__StartElementListener._start6391, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.sax.__StartElementListener.staticClass, _start6391, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.sax.__StartElementListener.staticClass, global::android.sax.__StartElementListener._start6391, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

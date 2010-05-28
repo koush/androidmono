@@ -20,7 +20,7 @@ namespace android.view
 		internal static global::java.lang.Class staticClass; 
 		static __MenuItem_OnMenuItemClickListener() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.view.__MenuItem_OnMenuItemClickListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.__MenuItem_OnMenuItemClickListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -37,9 +37,9 @@ namespace android.view
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.__MenuItem_OnMenuItemClickListener)) 
-				return @__env.CallBooleanMethod(this, _onMenuItemClick7904, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem_OnMenuItemClickListener._onMenuItemClick7904, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.view.__MenuItem_OnMenuItemClickListener.staticClass, _onMenuItemClick7904, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem_OnMenuItemClickListener.staticClass, global::android.view.__MenuItem_OnMenuItemClickListener._onMenuItemClick7904, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

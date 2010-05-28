@@ -6,7 +6,7 @@ namespace android.content
 		internal static global::java.lang.Class staticClass; 
 		static SyncAdapterType() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.content.SyncAdapterType), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.SyncAdapterType), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,96 +23,96 @@ namespace android.content
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.SyncAdapterType)) 
-				return @__env.CallIntMethod(this, _hashCode1512); 
+				return @__env.CallIntMethod(this, global::android.content.SyncAdapterType._hashCode1512); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.SyncAdapterType.staticClass, _hashCode1512); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.SyncAdapterType.staticClass, global::android.content.SyncAdapterType._hashCode1512); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _equals1513; 
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.SyncAdapterType)) 
-				return @__env.CallBooleanMethod(this, _equals1513, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.content.SyncAdapterType._equals1513, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.content.SyncAdapterType.staticClass, _equals1513, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.SyncAdapterType.staticClass, global::android.content.SyncAdapterType._equals1513, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString1514; 
-		public override java.lang.String toString() 
+		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.SyncAdapterType)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString1514)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.SyncAdapterType._toString1514)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.SyncAdapterType.staticClass, _toString1514)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.SyncAdapterType.staticClass, global::android.content.SyncAdapterType._toString1514)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _supportsUploading1515; 
 		public virtual bool supportsUploading() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.SyncAdapterType)) 
-				return @__env.CallBooleanMethod(this, _supportsUploading1515); 
+				return @__env.CallBooleanMethod(this, global::android.content.SyncAdapterType._supportsUploading1515); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.content.SyncAdapterType.staticClass, _supportsUploading1515); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.SyncAdapterType.staticClass, global::android.content.SyncAdapterType._supportsUploading1515); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel1516; 
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.SyncAdapterType)) 
-				@__env.CallVoidMethod(this, _writeToParcel1516, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.content.SyncAdapterType._writeToParcel1516, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.SyncAdapterType.staticClass, _writeToParcel1516, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.SyncAdapterType.staticClass, global::android.content.SyncAdapterType._writeToParcel1516, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _describeContents1517; 
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.SyncAdapterType)) 
-				return @__env.CallIntMethod(this, _describeContents1517); 
+				return @__env.CallIntMethod(this, global::android.content.SyncAdapterType._describeContents1517); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.SyncAdapterType.staticClass, _describeContents1517); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.SyncAdapterType.staticClass, global::android.content.SyncAdapterType._describeContents1517); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _newKey1518; 
-		public static android.content.SyncAdapterType newKey(java.lang.String arg0, java.lang.String arg1) 
+		public static global::android.content.SyncAdapterType newKey(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.SyncAdapterType>(@__env, @__env.CallStaticObjectMethodPtr(android.content.SyncAdapterType.staticClass, _newKey1518, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.SyncAdapterType>(@__env, @__env.CallStaticObjectMethodPtr(android.content.SyncAdapterType.staticClass, global::android.content.SyncAdapterType._newKey1518, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isUserVisible1519; 
 		public virtual bool isUserVisible() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.SyncAdapterType)) 
-				return @__env.CallBooleanMethod(this, _isUserVisible1519); 
+				return @__env.CallBooleanMethod(this, global::android.content.SyncAdapterType._isUserVisible1519); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.content.SyncAdapterType.staticClass, _isUserVisible1519); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.SyncAdapterType.staticClass, global::android.content.SyncAdapterType._isUserVisible1519); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _SyncAdapterType1520; 
 		public SyncAdapterType(java.lang.String arg0, java.lang.String arg1, bool arg2, bool arg3)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.content.SyncAdapterType.staticClass, _SyncAdapterType1520, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+			@__env.NewObject(android.content.SyncAdapterType.staticClass, global::android.content.SyncAdapterType._SyncAdapterType1520, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _SyncAdapterType1521; 
 		public SyncAdapterType(android.os.Parcel arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.content.SyncAdapterType.staticClass, _SyncAdapterType1521, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.content.SyncAdapterType.staticClass, global::android.content.SyncAdapterType._SyncAdapterType1521, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _authority1522; 
-		public java.lang.String authority
+		public global::java.lang.String authority
 		{ 
 			get 
 			{ 
-				return default(java.lang.String); 
+				return default(global::java.lang.String); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _accountType1523; 
-		public java.lang.String accountType
+		public global::java.lang.String accountType
 		{ 
 			get 
 			{ 
-				return default(java.lang.String); 
+				return default(global::java.lang.String); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _isKey1524; 
@@ -124,11 +124,11 @@ namespace android.content
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _CREATOR1525; 
-		public static android.os.Parcelable_Creator CREATOR
+		public static global::android.os.Parcelable_Creator CREATOR
 		{ 
 			get 
 			{ 
-				return default(android.os.Parcelable_Creator); 
+				return default(global::android.os.Parcelable_Creator); 
 			} 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 

@@ -6,7 +6,7 @@ namespace android.util
 		internal static global::java.lang.Class staticClass; 
 		static Config() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.util.Config), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.util.Config), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -22,7 +22,7 @@ namespace android.util
 		public Config()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.util.Config.staticClass, _Config7531, this); 
+			@__env.NewObject(android.util.Config.staticClass, global::android.util.Config._Config7531, this); 
 		} 
 		public static bool DEBUG
 		{ 

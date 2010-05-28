@@ -22,7 +22,7 @@ namespace android.graphics.drawable
 		internal static global::java.lang.Class staticClass; 
 		static __Animatable() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.graphics.drawable.__Animatable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.drawable.__Animatable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -39,27 +39,27 @@ namespace android.graphics.drawable
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.__Animatable)) 
-				@__env.CallVoidMethod(this, _start3432); 
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.__Animatable._start3432); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.__Animatable.staticClass, _start3432); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.__Animatable.staticClass, global::android.graphics.drawable.__Animatable._start3432); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _stop3433; 
 		 void android.graphics.drawable.Animatable.stop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.__Animatable)) 
-				@__env.CallVoidMethod(this, _stop3433); 
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.__Animatable._stop3433); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.__Animatable.staticClass, _stop3433); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.__Animatable.staticClass, global::android.graphics.drawable.__Animatable._stop3433); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isRunning3434; 
 		 bool android.graphics.drawable.Animatable.isRunning() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.__Animatable)) 
-				return @__env.CallBooleanMethod(this, _isRunning3434); 
+				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.__Animatable._isRunning3434); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.__Animatable.staticClass, _isRunning3434); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.__Animatable.staticClass, global::android.graphics.drawable.__Animatable._isRunning3434); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

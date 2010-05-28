@@ -6,7 +6,7 @@ namespace android.view.accessibility
 		internal static global::java.lang.Class staticClass; 
 		static AccessibilityManager() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.view.accessibility.AccessibilityManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.accessibility.AccessibilityManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,36 +23,36 @@ namespace android.view.accessibility
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityManager)) 
-				@__env.CallVoidMethod(this, _interrupt8831); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityManager._interrupt8831); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityManager.staticClass, _interrupt8831); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityManager.staticClass, global::android.view.accessibility.AccessibilityManager._interrupt8831); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isEnabled8832; 
 		public bool isEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityManager)) 
-				return @__env.CallBooleanMethod(this, _isEnabled8832); 
+				return @__env.CallBooleanMethod(this, global::android.view.accessibility.AccessibilityManager._isEnabled8832); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.view.accessibility.AccessibilityManager.staticClass, _isEnabled8832); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.accessibility.AccessibilityManager.staticClass, global::android.view.accessibility.AccessibilityManager._isEnabled8832); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _sendAccessibilityEvent8833; 
 		public void sendAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityManager)) 
-				@__env.CallVoidMethod(this, _sendAccessibilityEvent8833, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityManager._sendAccessibilityEvent8833, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityManager.staticClass, _sendAccessibilityEvent8833, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityManager.staticClass, global::android.view.accessibility.AccessibilityManager._sendAccessibilityEvent8833, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAccessibilityServiceList8834; 
-		public java.util.List getAccessibilityServiceList() 
+		public global::java.util.List getAccessibilityServiceList() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityManager)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getAccessibilityServiceList8834)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.accessibility.AccessibilityManager._getAccessibilityServiceList8834)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.accessibility.AccessibilityManager.staticClass, _getAccessibilityServiceList8834)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.accessibility.AccessibilityManager.staticClass, global::android.view.accessibility.AccessibilityManager._getAccessibilityServiceList8834)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

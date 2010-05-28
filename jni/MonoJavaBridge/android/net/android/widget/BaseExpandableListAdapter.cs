@@ -6,7 +6,7 @@ namespace android.widget
 		internal static global::java.lang.Class staticClass; 
 		static BaseExpandableListAdapter() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.BaseExpandableListAdapter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.BaseExpandableListAdapter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected BaseExpandableListAdapter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -20,15 +20,15 @@ namespace android.widget
 		internal static global::net.sf.jni4net.jni.MethodId _getChildrenCount9962; 
 		public abstract int getChildrenCount(int arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _getGroup9963; 
-		public abstract java.lang.Object getGroup(int arg0); 
+		public abstract global::java.lang.Object getGroup(int arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _getChild9964; 
-		public abstract java.lang.Object getChild(int arg0, int arg1); 
+		public abstract global::java.lang.Object getChild(int arg0, int arg1); 
 		internal static global::net.sf.jni4net.jni.MethodId _getChildId9965; 
 		public abstract long getChildId(int arg0, int arg1); 
 		internal static global::net.sf.jni4net.jni.MethodId _getGroupView9966; 
-		public abstract android.view.View getGroupView(int arg0, bool arg1, android.view.View arg2, android.view.ViewGroup arg3); 
+		public abstract global::android.view.View getGroupView(int arg0, bool arg1, android.view.View arg2, android.view.ViewGroup arg3); 
 		internal static global::net.sf.jni4net.jni.MethodId _getChildView9967; 
-		public abstract android.view.View getChildView(int arg0, int arg1, bool arg2, android.view.View arg3, android.view.ViewGroup arg4); 
+		public abstract global::android.view.View getChildView(int arg0, int arg1, bool arg2, android.view.View arg3, android.view.ViewGroup arg4); 
 		internal static global::net.sf.jni4net.jni.MethodId _isChildSelectable9968; 
 		public abstract bool isChildSelectable(int arg0, int arg1); 
 		internal static global::net.sf.jni4net.jni.MethodId _isEmpty9969; 
@@ -36,96 +36,96 @@ namespace android.widget
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.BaseExpandableListAdapter)) 
-				return @__env.CallBooleanMethod(this, _isEmpty9969); 
+				return @__env.CallBooleanMethod(this, global::android.widget.BaseExpandableListAdapter._isEmpty9969); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.BaseExpandableListAdapter.staticClass, _isEmpty9969); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.BaseExpandableListAdapter.staticClass, global::android.widget.BaseExpandableListAdapter._isEmpty9969); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _registerDataSetObserver9970; 
 		public virtual void registerDataSetObserver(android.database.DataSetObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.BaseExpandableListAdapter)) 
-				@__env.CallVoidMethod(this, _registerDataSetObserver9970, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.BaseExpandableListAdapter._registerDataSetObserver9970, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.BaseExpandableListAdapter.staticClass, _registerDataSetObserver9970, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.BaseExpandableListAdapter.staticClass, global::android.widget.BaseExpandableListAdapter._registerDataSetObserver9970, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _unregisterDataSetObserver9971; 
 		public virtual void unregisterDataSetObserver(android.database.DataSetObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.BaseExpandableListAdapter)) 
-				@__env.CallVoidMethod(this, _unregisterDataSetObserver9971, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.BaseExpandableListAdapter._unregisterDataSetObserver9971, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.BaseExpandableListAdapter.staticClass, _unregisterDataSetObserver9971, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.BaseExpandableListAdapter.staticClass, global::android.widget.BaseExpandableListAdapter._unregisterDataSetObserver9971, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _areAllItemsEnabled9972; 
 		public virtual bool areAllItemsEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.BaseExpandableListAdapter)) 
-				return @__env.CallBooleanMethod(this, _areAllItemsEnabled9972); 
+				return @__env.CallBooleanMethod(this, global::android.widget.BaseExpandableListAdapter._areAllItemsEnabled9972); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.BaseExpandableListAdapter.staticClass, _areAllItemsEnabled9972); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.BaseExpandableListAdapter.staticClass, global::android.widget.BaseExpandableListAdapter._areAllItemsEnabled9972); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onGroupExpanded9973; 
 		public virtual void onGroupExpanded(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.BaseExpandableListAdapter)) 
-				@__env.CallVoidMethod(this, _onGroupExpanded9973, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.BaseExpandableListAdapter._onGroupExpanded9973, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.BaseExpandableListAdapter.staticClass, _onGroupExpanded9973, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.BaseExpandableListAdapter.staticClass, global::android.widget.BaseExpandableListAdapter._onGroupExpanded9973, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onGroupCollapsed9974; 
 		public virtual void onGroupCollapsed(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.BaseExpandableListAdapter)) 
-				@__env.CallVoidMethod(this, _onGroupCollapsed9974, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.BaseExpandableListAdapter._onGroupCollapsed9974, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.BaseExpandableListAdapter.staticClass, _onGroupCollapsed9974, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.BaseExpandableListAdapter.staticClass, global::android.widget.BaseExpandableListAdapter._onGroupCollapsed9974, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCombinedChildId9975; 
 		public virtual long getCombinedChildId(long arg0, long arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.BaseExpandableListAdapter)) 
-				return @__env.CallLongMethod(this, _getCombinedChildId9975, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallLongMethod(this, global::android.widget.BaseExpandableListAdapter._getCombinedChildId9975, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, android.widget.BaseExpandableListAdapter.staticClass, _getCombinedChildId9975, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualLongMethod(this, global::android.widget.BaseExpandableListAdapter.staticClass, global::android.widget.BaseExpandableListAdapter._getCombinedChildId9975, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCombinedGroupId9976; 
 		public virtual long getCombinedGroupId(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.BaseExpandableListAdapter)) 
-				return @__env.CallLongMethod(this, _getCombinedGroupId9976, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallLongMethod(this, global::android.widget.BaseExpandableListAdapter._getCombinedGroupId9976, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, android.widget.BaseExpandableListAdapter.staticClass, _getCombinedGroupId9976, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualLongMethod(this, global::android.widget.BaseExpandableListAdapter.staticClass, global::android.widget.BaseExpandableListAdapter._getCombinedGroupId9976, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _notifyDataSetChanged9977; 
 		public virtual void notifyDataSetChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.BaseExpandableListAdapter)) 
-				@__env.CallVoidMethod(this, _notifyDataSetChanged9977); 
+				@__env.CallVoidMethod(this, global::android.widget.BaseExpandableListAdapter._notifyDataSetChanged9977); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.BaseExpandableListAdapter.staticClass, _notifyDataSetChanged9977); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.BaseExpandableListAdapter.staticClass, global::android.widget.BaseExpandableListAdapter._notifyDataSetChanged9977); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _notifyDataSetInvalidated9978; 
 		public virtual void notifyDataSetInvalidated() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.BaseExpandableListAdapter)) 
-				@__env.CallVoidMethod(this, _notifyDataSetInvalidated9978); 
+				@__env.CallVoidMethod(this, global::android.widget.BaseExpandableListAdapter._notifyDataSetInvalidated9978); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.BaseExpandableListAdapter.staticClass, _notifyDataSetInvalidated9978); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.BaseExpandableListAdapter.staticClass, global::android.widget.BaseExpandableListAdapter._notifyDataSetInvalidated9978); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _BaseExpandableListAdapter9979; 
 		public BaseExpandableListAdapter()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.BaseExpandableListAdapter.staticClass, _BaseExpandableListAdapter9979, this); 
+			@__env.NewObject(android.widget.BaseExpandableListAdapter.staticClass, global::android.widget.BaseExpandableListAdapter._BaseExpandableListAdapter9979, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

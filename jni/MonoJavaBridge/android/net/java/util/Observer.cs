@@ -20,7 +20,7 @@ namespace java.util
 		internal static global::java.lang.Class staticClass; 
 		static __Observer() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.util.__Observer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.util.__Observer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -37,9 +37,9 @@ namespace java.util
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.__Observer)) 
-				@__env.CallVoidMethod(this, _update12960, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallVoidMethod(this, global::java.util.__Observer._update12960, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.__Observer.staticClass, _update12960, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.util.__Observer.staticClass, global::java.util.__Observer._update12960, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

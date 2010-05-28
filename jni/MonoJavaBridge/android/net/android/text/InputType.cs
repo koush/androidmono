@@ -19,7 +19,7 @@ namespace android.text
 		internal static global::java.lang.Class staticClass; 
 		static __InputType() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.text.__InputType), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.__InputType), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 

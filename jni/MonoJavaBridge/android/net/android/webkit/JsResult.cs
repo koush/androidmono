@@ -6,7 +6,7 @@ namespace android.webkit
 		internal static global::java.lang.Class staticClass; 
 		static JsResult() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.webkit.JsResult), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.webkit.JsResult), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,27 +23,27 @@ namespace android.webkit
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.JsResult)) 
-				@__env.CallVoidMethod(this, _cancel9299); 
+				@__env.CallVoidMethod(this, global::android.webkit.JsResult._cancel9299); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.JsResult.staticClass, _cancel9299); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._cancel9299); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _confirm9300; 
 		public virtual void confirm() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.JsResult)) 
-				@__env.CallVoidMethod(this, _confirm9300); 
+				@__env.CallVoidMethod(this, global::android.webkit.JsResult._confirm9300); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.JsResult.staticClass, _confirm9300); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._confirm9300); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _wakeUp9301; 
 		protected virtual void wakeUp() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.JsResult)) 
-				@__env.CallVoidMethod(this, _wakeUp9301); 
+				@__env.CallVoidMethod(this, global::android.webkit.JsResult._wakeUp9301); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.JsResult.staticClass, _wakeUp9301); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._wakeUp9301); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

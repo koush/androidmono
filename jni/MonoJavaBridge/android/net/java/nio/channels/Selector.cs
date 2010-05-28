@@ -6,22 +6,22 @@ namespace java.nio.channels
 		internal static global::java.lang.Class staticClass; 
 		static Selector() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.nio.channels.Selector), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.nio.channels.Selector), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected Selector(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _provider12263; 
-		public abstract java.nio.channels.spi.SelectorProvider provider(); 
+		public abstract global::java.nio.channels.spi.SelectorProvider provider(); 
 		internal static global::net.sf.jni4net.jni.MethodId _keys12264; 
-		public abstract java.util.Set keys(); 
+		public abstract global::java.util.Set keys(); 
 		internal static global::net.sf.jni4net.jni.MethodId _close12265; 
 		public abstract void close(); 
 		internal static global::net.sf.jni4net.jni.MethodId _open12266; 
-		public static java.nio.channels.Selector open() 
+		public static global::java.nio.channels.Selector open() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.Selector>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.channels.Selector.staticClass, _open12266)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.Selector>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.channels.Selector.staticClass, global::java.nio.channels.Selector._open12266)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isOpen12267; 
 		public abstract bool isOpen(); 
@@ -30,16 +30,16 @@ namespace java.nio.channels
 		internal static global::net.sf.jni4net.jni.MethodId _select12269; 
 		public abstract int select(); 
 		internal static global::net.sf.jni4net.jni.MethodId _selectedKeys12270; 
-		public abstract java.util.Set selectedKeys(); 
+		public abstract global::java.util.Set selectedKeys(); 
 		internal static global::net.sf.jni4net.jni.MethodId _selectNow12271; 
 		public abstract int selectNow(); 
 		internal static global::net.sf.jni4net.jni.MethodId _wakeup12272; 
-		public abstract java.nio.channels.Selector wakeup(); 
+		public abstract global::java.nio.channels.Selector wakeup(); 
 		internal static global::net.sf.jni4net.jni.MethodId _Selector12273; 
 		protected Selector()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.nio.channels.Selector.staticClass, _Selector12273, this); 
+			@__env.NewObject(java.nio.channels.Selector.staticClass, global::java.nio.channels.Selector._Selector12273, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

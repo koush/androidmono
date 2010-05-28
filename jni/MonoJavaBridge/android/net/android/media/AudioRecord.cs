@@ -6,7 +6,7 @@ namespace android.media
 		internal static global::java.lang.Class staticClass; 
 		static AudioRecord() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.media.AudioRecord), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.AudioRecord), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -39,7 +39,7 @@ namespace android.media
 			internal static global::java.lang.Class staticClass; 
 			static __OnRecordPositionUpdateListener() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.media.AudioRecord.__OnRecordPositionUpdateListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.AudioRecord.__OnRecordPositionUpdateListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -56,18 +56,18 @@ namespace android.media
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.media.AudioRecord.__OnRecordPositionUpdateListener)) 
-					@__env.CallVoidMethod(this, _onMarkerReached4395, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.media.AudioRecord.__OnRecordPositionUpdateListener._onMarkerReached4395, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.media.AudioRecord.__OnRecordPositionUpdateListener.staticClass, _onMarkerReached4395, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioRecord.__OnRecordPositionUpdateListener.staticClass, global::android.media.AudioRecord.__OnRecordPositionUpdateListener._onMarkerReached4395, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _onPeriodicNotification4396; 
 			 void android.media.AudioRecord.OnRecordPositionUpdateListener.onPeriodicNotification(android.media.AudioRecord arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.media.AudioRecord.__OnRecordPositionUpdateListener)) 
-					@__env.CallVoidMethod(this, _onPeriodicNotification4396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.media.AudioRecord.__OnRecordPositionUpdateListener._onPeriodicNotification4396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.media.AudioRecord.__OnRecordPositionUpdateListener.staticClass, _onPeriodicNotification4396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioRecord.__OnRecordPositionUpdateListener.staticClass, global::android.media.AudioRecord.__OnRecordPositionUpdateListener._onPeriodicNotification4396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -81,183 +81,183 @@ namespace android.media
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				@__env.CallVoidMethod(this, _stop4397); 
+				@__env.CallVoidMethod(this, global::android.media.AudioRecord._stop4397); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioRecord.staticClass, _stop4397); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._stop4397); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getState4398; 
 		public virtual int getState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				return @__env.CallIntMethod(this, _getState4398); 
+				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getState4398); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioRecord.staticClass, _getState4398); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getState4398); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _read4399; 
 		public virtual int read(byte[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				return @__env.CallIntMethod(this, _read4399, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallIntMethod(this, global::android.media.AudioRecord._read4399, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioRecord.staticClass, _read4399, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._read4399, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _read4400; 
 		public virtual int read(java.nio.ByteBuffer arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				return @__env.CallIntMethod(this, _read4400, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallIntMethod(this, global::android.media.AudioRecord._read4400, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioRecord.staticClass, _read4400, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._read4400, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _read4401; 
 		public virtual int read(short[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				return @__env.CallIntMethod(this, _read4401, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallIntMethod(this, global::android.media.AudioRecord._read4401, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioRecord.staticClass, _read4401, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._read4401, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _release4402; 
 		public virtual void release() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				@__env.CallVoidMethod(this, _release4402); 
+				@__env.CallVoidMethod(this, global::android.media.AudioRecord._release4402); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioRecord.staticClass, _release4402); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._release4402); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSampleRate4403; 
 		public virtual int getSampleRate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				return @__env.CallIntMethod(this, _getSampleRate4403); 
+				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getSampleRate4403); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioRecord.staticClass, _getSampleRate4403); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getSampleRate4403); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAudioSource4404; 
 		public virtual int getAudioSource() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				return @__env.CallIntMethod(this, _getAudioSource4404); 
+				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getAudioSource4404); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioRecord.staticClass, _getAudioSource4404); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getAudioSource4404); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAudioFormat4405; 
 		public virtual int getAudioFormat() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				return @__env.CallIntMethod(this, _getAudioFormat4405); 
+				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getAudioFormat4405); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioRecord.staticClass, _getAudioFormat4405); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getAudioFormat4405); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getChannelConfiguration4406; 
 		public virtual int getChannelConfiguration() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				return @__env.CallIntMethod(this, _getChannelConfiguration4406); 
+				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getChannelConfiguration4406); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioRecord.staticClass, _getChannelConfiguration4406); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getChannelConfiguration4406); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getChannelCount4407; 
 		public virtual int getChannelCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				return @__env.CallIntMethod(this, _getChannelCount4407); 
+				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getChannelCount4407); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioRecord.staticClass, _getChannelCount4407); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getChannelCount4407); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getRecordingState4408; 
 		public virtual int getRecordingState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				return @__env.CallIntMethod(this, _getRecordingState4408); 
+				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getRecordingState4408); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioRecord.staticClass, _getRecordingState4408); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getRecordingState4408); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getNotificationMarkerPosition4409; 
 		public virtual int getNotificationMarkerPosition() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				return @__env.CallIntMethod(this, _getNotificationMarkerPosition4409); 
+				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getNotificationMarkerPosition4409); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioRecord.staticClass, _getNotificationMarkerPosition4409); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getNotificationMarkerPosition4409); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getPositionNotificationPeriod4410; 
 		public virtual int getPositionNotificationPeriod() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				return @__env.CallIntMethod(this, _getPositionNotificationPeriod4410); 
+				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getPositionNotificationPeriod4410); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioRecord.staticClass, _getPositionNotificationPeriod4410); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getPositionNotificationPeriod4410); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getMinBufferSize4411; 
 		public static int getMinBufferSize(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.media.AudioRecord.staticClass, _getMinBufferSize4411, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			return @__env.CallStaticIntMethod(android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getMinBufferSize4411, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _startRecording4412; 
 		public virtual void startRecording() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				@__env.CallVoidMethod(this, _startRecording4412); 
+				@__env.CallVoidMethod(this, global::android.media.AudioRecord._startRecording4412); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioRecord.staticClass, _startRecording4412); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._startRecording4412); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setRecordPositionUpdateListener4413; 
 		public virtual void setRecordPositionUpdateListener(android.media.AudioRecord.OnRecordPositionUpdateListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				@__env.CallVoidMethod(this, _setRecordPositionUpdateListener4413, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioRecord._setRecordPositionUpdateListener4413, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioRecord.staticClass, _setRecordPositionUpdateListener4413, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._setRecordPositionUpdateListener4413, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setRecordPositionUpdateListener4414; 
 		public virtual void setRecordPositionUpdateListener(android.media.AudioRecord.OnRecordPositionUpdateListener arg0, android.os.Handler arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				@__env.CallVoidMethod(this, _setRecordPositionUpdateListener4414, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioRecord._setRecordPositionUpdateListener4414, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioRecord.staticClass, _setRecordPositionUpdateListener4414, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._setRecordPositionUpdateListener4414, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setNotificationMarkerPosition4415; 
 		public virtual int setNotificationMarkerPosition(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				return @__env.CallIntMethod(this, _setNotificationMarkerPosition4415, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, global::android.media.AudioRecord._setNotificationMarkerPosition4415, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioRecord.staticClass, _setNotificationMarkerPosition4415, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._setNotificationMarkerPosition4415, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setPositionNotificationPeriod4416; 
 		public virtual int setPositionNotificationPeriod(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioRecord)) 
-				return @__env.CallIntMethod(this, _setPositionNotificationPeriod4416, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, global::android.media.AudioRecord._setPositionNotificationPeriod4416, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioRecord.staticClass, _setPositionNotificationPeriod4416, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._setPositionNotificationPeriod4416, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _AudioRecord4417; 
 		public AudioRecord(int arg0, int arg1, int arg2, int arg3, int arg4)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.media.AudioRecord.staticClass, _AudioRecord4417, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
+			@__env.NewObject(android.media.AudioRecord.staticClass, global::android.media.AudioRecord._AudioRecord4417, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 		} 
 		public static int STATE_UNINITIALIZED
 		{ 

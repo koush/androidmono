@@ -4,10 +4,10 @@ namespace android.os
 	public interface IBinder 
 	{ 
 		void dump(java.io.FileDescriptor arg0, java.lang.String[] arg1); 
-		java.lang.String getInterfaceDescriptor(); 
+		global::java.lang.String getInterfaceDescriptor(); 
 		bool pingBinder(); 
 		bool isBinderAlive(); 
-		android.os.IInterface queryLocalInterface(java.lang.String arg0); 
+		global::android.os.IInterface queryLocalInterface(java.lang.String arg0); 
 		bool transact(int arg0, android.os.Parcel arg1, android.os.Parcel arg2, int arg3); 
 		void linkToDeath(android.os.IBinder_DeathRecipient arg0, int arg1); 
 		bool unlinkToDeath(android.os.IBinder_DeathRecipient arg0, int arg1); 
@@ -27,7 +27,7 @@ namespace android.os
 		internal static global::java.lang.Class staticClass; 
 		static __IBinder() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.__IBinder), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.__IBinder), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -44,72 +44,72 @@ namespace android.os
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.__IBinder)) 
-				@__env.CallVoidMethod(this, _dump5619, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)); 
+				@__env.CallVoidMethod(this, global::android.os.__IBinder._dump5619, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.__IBinder.staticClass, _dump5619, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.__IBinder.staticClass, global::android.os.__IBinder._dump5619, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getInterfaceDescriptor5620; 
-		 java.lang.String android.os.IBinder.getInterfaceDescriptor() 
+		 global::java.lang.String android.os.IBinder.getInterfaceDescriptor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.__IBinder)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getInterfaceDescriptor5620)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.__IBinder._getInterfaceDescriptor5620)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.__IBinder.staticClass, _getInterfaceDescriptor5620)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.__IBinder.staticClass, global::android.os.__IBinder._getInterfaceDescriptor5620)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _pingBinder5621; 
 		 bool android.os.IBinder.pingBinder() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.__IBinder)) 
-				return @__env.CallBooleanMethod(this, _pingBinder5621); 
+				return @__env.CallBooleanMethod(this, global::android.os.__IBinder._pingBinder5621); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.os.__IBinder.staticClass, _pingBinder5621); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.__IBinder.staticClass, global::android.os.__IBinder._pingBinder5621); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isBinderAlive5622; 
 		 bool android.os.IBinder.isBinderAlive() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.__IBinder)) 
-				return @__env.CallBooleanMethod(this, _isBinderAlive5622); 
+				return @__env.CallBooleanMethod(this, global::android.os.__IBinder._isBinderAlive5622); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.os.__IBinder.staticClass, _isBinderAlive5622); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.__IBinder.staticClass, global::android.os.__IBinder._isBinderAlive5622); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _queryLocalInterface5623; 
-		 android.os.IInterface android.os.IBinder.queryLocalInterface(java.lang.String arg0) 
+		 global::android.os.IInterface android.os.IBinder.queryLocalInterface(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.__IBinder)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IInterface>(@__env, @__env.CallObjectMethodPtr(this, _queryLocalInterface5623, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IInterface>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.__IBinder._queryLocalInterface5623, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IInterface>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.__IBinder.staticClass, _queryLocalInterface5623, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IInterface>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.__IBinder.staticClass, global::android.os.__IBinder._queryLocalInterface5623, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _transact5624; 
 		 bool android.os.IBinder.transact(int arg0, android.os.Parcel arg1, android.os.Parcel arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.__IBinder)) 
-				return @__env.CallBooleanMethod(this, _transact5624, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				return @__env.CallBooleanMethod(this, global::android.os.__IBinder._transact5624, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.os.__IBinder.staticClass, _transact5624, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.__IBinder.staticClass, global::android.os.__IBinder._transact5624, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _linkToDeath5625; 
 		 void android.os.IBinder.linkToDeath(android.os.IBinder_DeathRecipient arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.__IBinder)) 
-				@__env.CallVoidMethod(this, _linkToDeath5625, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.os.__IBinder._linkToDeath5625, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.__IBinder.staticClass, _linkToDeath5625, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.__IBinder.staticClass, global::android.os.__IBinder._linkToDeath5625, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _unlinkToDeath5626; 
 		 bool android.os.IBinder.unlinkToDeath(android.os.IBinder_DeathRecipient arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.__IBinder)) 
-				return @__env.CallBooleanMethod(this, _unlinkToDeath5626, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallBooleanMethod(this, global::android.os.__IBinder._unlinkToDeath5626, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.os.__IBinder.staticClass, _unlinkToDeath5626, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.__IBinder.staticClass, global::android.os.__IBinder._unlinkToDeath5626, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

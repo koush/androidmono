@@ -6,7 +6,7 @@ namespace android.opengl
 		internal static global::java.lang.Class staticClass; 
 		static GLDebugHelper() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.opengl.GLDebugHelper), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.opengl.GLDebugHelper), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,22 +19,22 @@ namespace android.opengl
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _wrap4943; 
-		public static javax.microedition.khronos.opengles.GL wrap(javax.microedition.khronos.opengles.GL arg0, int arg1, java.io.Writer arg2) 
+		public static global::javax.microedition.khronos.opengles.GL wrap(javax.microedition.khronos.opengles.GL arg0, int arg1, java.io.Writer arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<javax.microedition.khronos.opengles.GL>(@__env, @__env.CallStaticObjectMethodPtr(android.opengl.GLDebugHelper.staticClass, _wrap4943, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<javax.microedition.khronos.opengles.GL>(@__env, @__env.CallStaticObjectMethodPtr(android.opengl.GLDebugHelper.staticClass, global::android.opengl.GLDebugHelper._wrap4943, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _wrap4944; 
-		public static javax.microedition.khronos.egl.EGL wrap(javax.microedition.khronos.egl.EGL arg0, int arg1, java.io.Writer arg2) 
+		public static global::javax.microedition.khronos.egl.EGL wrap(javax.microedition.khronos.egl.EGL arg0, int arg1, java.io.Writer arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<javax.microedition.khronos.egl.EGL>(@__env, @__env.CallStaticObjectMethodPtr(android.opengl.GLDebugHelper.staticClass, _wrap4944, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<javax.microedition.khronos.egl.EGL>(@__env, @__env.CallStaticObjectMethodPtr(android.opengl.GLDebugHelper.staticClass, global::android.opengl.GLDebugHelper._wrap4944, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _GLDebugHelper4945; 
 		public GLDebugHelper()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.opengl.GLDebugHelper.staticClass, _GLDebugHelper4945, this); 
+			@__env.NewObject(android.opengl.GLDebugHelper.staticClass, global::android.opengl.GLDebugHelper._GLDebugHelper4945, this); 
 		} 
 		public static int CONFIG_CHECK_GL_ERROR
 		{ 

@@ -3,7 +3,7 @@ namespace java.net
 	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 	public interface URLStreamHandlerFactory 
 	{ 
-		java.net.URLStreamHandler createURLStreamHandler(java.lang.String arg0); 
+		global::java.net.URLStreamHandler createURLStreamHandler(java.lang.String arg0); 
 	} 
 
 	public partial class URLStreamHandlerFactory_ 
@@ -20,7 +20,7 @@ namespace java.net
 		internal static global::java.lang.Class staticClass; 
 		static __URLStreamHandlerFactory() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.net.__URLStreamHandlerFactory), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.net.__URLStreamHandlerFactory), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -33,13 +33,13 @@ namespace java.net
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createURLStreamHandler11995; 
-		 java.net.URLStreamHandler java.net.URLStreamHandlerFactory.createURLStreamHandler(java.lang.String arg0) 
+		 global::java.net.URLStreamHandler java.net.URLStreamHandlerFactory.createURLStreamHandler(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.__URLStreamHandlerFactory)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URLStreamHandler>(@__env, @__env.CallObjectMethodPtr(this, _createURLStreamHandler11995, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URLStreamHandler>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.__URLStreamHandlerFactory._createURLStreamHandler11995, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URLStreamHandler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.__URLStreamHandlerFactory.staticClass, _createURLStreamHandler11995, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URLStreamHandler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.__URLStreamHandlerFactory.staticClass, global::java.net.__URLStreamHandlerFactory._createURLStreamHandler11995, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

@@ -6,7 +6,7 @@ namespace android.webkit
 		internal static global::java.lang.Class staticClass; 
 		static PluginData() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.webkit.PluginData), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.webkit.PluginData), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,46 +19,46 @@ namespace android.webkit
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getInputStream9321; 
-		public java.io.InputStream getInputStream() 
+		public global::java.io.InputStream getInputStream() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.PluginData)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallObjectMethodPtr(this, _getInputStream9321)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.PluginData._getInputStream9321)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.PluginData.staticClass, _getInputStream9321)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.PluginData.staticClass, global::android.webkit.PluginData._getInputStream9321)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getContentLength9322; 
 		public long getContentLength() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.PluginData)) 
-				return @__env.CallLongMethod(this, _getContentLength9322); 
+				return @__env.CallLongMethod(this, global::android.webkit.PluginData._getContentLength9322); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, android.webkit.PluginData.staticClass, _getContentLength9322); 
+				return @__env.CallNonVirtualLongMethod(this, global::android.webkit.PluginData.staticClass, global::android.webkit.PluginData._getContentLength9322); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getHeaders9323; 
-		public java.util.Map getHeaders() 
+		public global::java.util.Map getHeaders() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.PluginData)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallObjectMethodPtr(this, _getHeaders9323)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.PluginData._getHeaders9323)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.PluginData.staticClass, _getHeaders9323)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.PluginData.staticClass, global::android.webkit.PluginData._getHeaders9323)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getStatusCode9324; 
 		public int getStatusCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.PluginData)) 
-				return @__env.CallIntMethod(this, _getStatusCode9324); 
+				return @__env.CallIntMethod(this, global::android.webkit.PluginData._getStatusCode9324); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.webkit.PluginData.staticClass, _getStatusCode9324); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.PluginData.staticClass, global::android.webkit.PluginData._getStatusCode9324); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _PluginData9325; 
 		public PluginData(java.io.InputStream arg0, long arg1, java.util.Map arg2, int arg3)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.webkit.PluginData.staticClass, _PluginData9325, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+			@__env.NewObject(android.webkit.PluginData.staticClass, global::android.webkit.PluginData._PluginData9325, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

@@ -6,41 +6,41 @@ namespace java.nio.channels.spi
 		internal static global::java.lang.Class staticClass; 
 		static SelectorProvider() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.nio.channels.spi.SelectorProvider), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.nio.channels.spi.SelectorProvider), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected SelectorProvider(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _inheritedChannel12328; 
-		public virtual java.nio.channels.Channel inheritedChannel() 
+		public virtual global::java.nio.channels.Channel inheritedChannel() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.spi.SelectorProvider)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.nio.channels.Channel>(@__env, @__env.CallObjectMethodPtr(this, _inheritedChannel12328)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.nio.channels.Channel>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.channels.spi.SelectorProvider._inheritedChannel12328)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.nio.channels.Channel>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.spi.SelectorProvider.staticClass, _inheritedChannel12328)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.nio.channels.Channel>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.channels.spi.SelectorProvider.staticClass, global::java.nio.channels.spi.SelectorProvider._inheritedChannel12328)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _provider12329; 
-		public static java.nio.channels.spi.SelectorProvider provider() 
+		public static global::java.nio.channels.spi.SelectorProvider provider() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.spi.SelectorProvider>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.channels.spi.SelectorProvider.staticClass, _provider12329)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.spi.SelectorProvider>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.channels.spi.SelectorProvider.staticClass, global::java.nio.channels.spi.SelectorProvider._provider12329)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _openDatagramChannel12330; 
-		public abstract java.nio.channels.DatagramChannel openDatagramChannel(); 
+		public abstract global::java.nio.channels.DatagramChannel openDatagramChannel(); 
 		internal static global::net.sf.jni4net.jni.MethodId _openServerSocketChannel12331; 
-		public abstract java.nio.channels.ServerSocketChannel openServerSocketChannel(); 
+		public abstract global::java.nio.channels.ServerSocketChannel openServerSocketChannel(); 
 		internal static global::net.sf.jni4net.jni.MethodId _openSocketChannel12332; 
-		public abstract java.nio.channels.SocketChannel openSocketChannel(); 
+		public abstract global::java.nio.channels.SocketChannel openSocketChannel(); 
 		internal static global::net.sf.jni4net.jni.MethodId _openSelector12333; 
-		public abstract java.nio.channels.spi.AbstractSelector openSelector(); 
+		public abstract global::java.nio.channels.spi.AbstractSelector openSelector(); 
 		internal static global::net.sf.jni4net.jni.MethodId _openPipe12334; 
-		public abstract java.nio.channels.Pipe openPipe(); 
+		public abstract global::java.nio.channels.Pipe openPipe(); 
 		internal static global::net.sf.jni4net.jni.MethodId _SelectorProvider12335; 
 		protected SelectorProvider()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.nio.channels.spi.SelectorProvider.staticClass, _SelectorProvider12335, this); 
+			@__env.NewObject(java.nio.channels.spi.SelectorProvider.staticClass, global::java.nio.channels.spi.SelectorProvider._SelectorProvider12335, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

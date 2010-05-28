@@ -6,7 +6,7 @@ namespace android.net
 		internal new static global::java.lang.Class staticClass; 
 		static SSLCertificateSocketFactory() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.net.SSLCertificateSocketFactory), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.net.SSLCertificateSocketFactory), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,77 +19,77 @@ namespace android.net
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDefault4729; 
-		public static javax.net.SocketFactory getDefault(int arg0) 
+		public static global::javax.net.SocketFactory getDefault(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.net.SocketFactory>(@__env, @__env.CallStaticObjectMethodPtr(android.net.SSLCertificateSocketFactory.staticClass, _getDefault4729, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.net.SocketFactory>(@__env, @__env.CallStaticObjectMethodPtr(android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._getDefault4729, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createSocket4730; 
-		public override java.net.Socket createSocket(java.net.InetAddress arg0, int arg1, java.net.InetAddress arg2, int arg3) 
+		public override global::java.net.Socket createSocket(java.net.InetAddress arg0, int arg1, java.net.InetAddress arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.SSLCertificateSocketFactory)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallObjectMethodPtr(this, _createSocket4730, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.SSLCertificateSocketFactory._createSocket4730, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.SSLCertificateSocketFactory.staticClass, _createSocket4730, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._createSocket4730, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createSocket4731; 
-		public override java.net.Socket createSocket(java.lang.String arg0, int arg1, java.net.InetAddress arg2, int arg3) 
+		public override global::java.net.Socket createSocket(java.lang.String arg0, int arg1, java.net.InetAddress arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.SSLCertificateSocketFactory)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallObjectMethodPtr(this, _createSocket4731, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.SSLCertificateSocketFactory._createSocket4731, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.SSLCertificateSocketFactory.staticClass, _createSocket4731, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._createSocket4731, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createSocket4732; 
-		public override java.net.Socket createSocket(java.lang.String arg0, int arg1) 
+		public override global::java.net.Socket createSocket(java.lang.String arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.SSLCertificateSocketFactory)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallObjectMethodPtr(this, _createSocket4732, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.SSLCertificateSocketFactory._createSocket4732, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.SSLCertificateSocketFactory.staticClass, _createSocket4732, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._createSocket4732, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createSocket4733; 
-		public override java.net.Socket createSocket(java.net.InetAddress arg0, int arg1) 
+		public override global::java.net.Socket createSocket(java.net.InetAddress arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.SSLCertificateSocketFactory)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallObjectMethodPtr(this, _createSocket4733, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.SSLCertificateSocketFactory._createSocket4733, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.SSLCertificateSocketFactory.staticClass, _createSocket4733, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._createSocket4733, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createSocket4734; 
-		public override java.net.Socket createSocket(java.net.Socket arg0, java.lang.String arg1, int arg2, bool arg3) 
+		public override global::java.net.Socket createSocket(java.net.Socket arg0, java.lang.String arg1, int arg2, bool arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.SSLCertificateSocketFactory)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallObjectMethodPtr(this, _createSocket4734, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.SSLCertificateSocketFactory._createSocket4734, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.SSLCertificateSocketFactory.staticClass, _createSocket4734, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._createSocket4734, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDefaultCipherSuites4735; 
-		public override java.lang.String[] getDefaultCipherSuites() 
+		public override global::java.lang.String[] getDefaultCipherSuites() 
 		{ 
 			if (GetType() == typeof(android.net.SSLCertificateSocketFactory)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getDefaultCipherSuites4735)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.net.SSLCertificateSocketFactory._getDefaultCipherSuites4735)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.SSLCertificateSocketFactory.staticClass, _getDefaultCipherSuites4735)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._getDefaultCipherSuites4735)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSupportedCipherSuites4736; 
-		public override java.lang.String[] getSupportedCipherSuites() 
+		public override global::java.lang.String[] getSupportedCipherSuites() 
 		{ 
 			if (GetType() == typeof(android.net.SSLCertificateSocketFactory)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getSupportedCipherSuites4736)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.net.SSLCertificateSocketFactory._getSupportedCipherSuites4736)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.SSLCertificateSocketFactory.staticClass, _getSupportedCipherSuites4736)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._getSupportedCipherSuites4736)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _SSLCertificateSocketFactory4737; 
 		public SSLCertificateSocketFactory(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.net.SSLCertificateSocketFactory.staticClass, _SSLCertificateSocketFactory4737, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			@__env.NewObject(android.net.SSLCertificateSocketFactory.staticClass, global::android.net.SSLCertificateSocketFactory._SSLCertificateSocketFactory4737, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

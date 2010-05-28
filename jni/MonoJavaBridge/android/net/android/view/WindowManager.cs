@@ -3,7 +3,7 @@ namespace android.view
 	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 	public interface WindowManager : ViewManager
 	{ 
-		android.view.Display getDefaultDisplay(); 
+		global::android.view.Display getDefaultDisplay(); 
 		void removeViewImmediate(android.view.View arg0); 
 	} 
 
@@ -21,7 +21,7 @@ namespace android.view
 		internal static global::java.lang.Class staticClass; 
 		static __WindowManager() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.view.__WindowManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.__WindowManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -34,49 +34,49 @@ namespace android.view
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDefaultDisplay8783; 
-		 android.view.Display android.view.WindowManager.getDefaultDisplay() 
+		 global::android.view.Display android.view.WindowManager.getDefaultDisplay() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.__WindowManager)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.Display>(@__env, @__env.CallObjectMethodPtr(this, _getDefaultDisplay8783)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.Display>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__WindowManager._getDefaultDisplay8783)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.Display>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.__WindowManager.staticClass, _getDefaultDisplay8783)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.Display>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__WindowManager.staticClass, global::android.view.__WindowManager._getDefaultDisplay8783)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _removeViewImmediate8784; 
 		 void android.view.WindowManager.removeViewImmediate(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.__WindowManager)) 
-				@__env.CallVoidMethod(this, _removeViewImmediate8784, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.__WindowManager._removeViewImmediate8784, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.__WindowManager.staticClass, _removeViewImmediate8784, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.__WindowManager.staticClass, global::android.view.__WindowManager._removeViewImmediate8784, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _addView8785; 
 		 void android.view.ViewManager.addView(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.__WindowManager)) 
-				@__env.CallVoidMethod(this, _addView8785, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.view.__WindowManager._addView8785, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.__WindowManager.staticClass, _addView8785, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.__WindowManager.staticClass, global::android.view.__WindowManager._addView8785, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _updateViewLayout8786; 
 		 void android.view.ViewManager.updateViewLayout(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.__WindowManager)) 
-				@__env.CallVoidMethod(this, _updateViewLayout8786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.view.__WindowManager._updateViewLayout8786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.__WindowManager.staticClass, _updateViewLayout8786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.__WindowManager.staticClass, global::android.view.__WindowManager._updateViewLayout8786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _removeView8787; 
 		 void android.view.ViewManager.removeView(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.__WindowManager)) 
-				@__env.CallVoidMethod(this, _removeView8787, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.__WindowManager._removeView8787, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.__WindowManager.staticClass, _removeView8787, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.__WindowManager.staticClass, global::android.view.__WindowManager._removeView8787, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

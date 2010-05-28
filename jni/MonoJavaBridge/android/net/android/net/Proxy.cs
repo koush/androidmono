@@ -6,7 +6,7 @@ namespace android.net
 		internal static global::java.lang.Class staticClass; 
 		static Proxy() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.net.Proxy), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.net.Proxy), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -22,33 +22,33 @@ namespace android.net
 		public static int getPort(android.content.Context arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.net.Proxy.staticClass, _getPort4724, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			return @__env.CallStaticIntMethod(android.net.Proxy.staticClass, global::android.net.Proxy._getPort4724, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDefaultPort4725; 
 		public static int getDefaultPort() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.net.Proxy.staticClass, _getDefaultPort4725); 
+			return @__env.CallStaticIntMethod(android.net.Proxy.staticClass, global::android.net.Proxy._getDefaultPort4725); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getHost4726; 
-		public static java.lang.String getHost(android.content.Context arg0) 
+		public static global::java.lang.String getHost(android.content.Context arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.net.Proxy.staticClass, _getHost4726, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.net.Proxy.staticClass, global::android.net.Proxy._getHost4726, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDefaultHost4727; 
-		public static java.lang.String getDefaultHost() 
+		public static global::java.lang.String getDefaultHost() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.net.Proxy.staticClass, _getDefaultHost4727)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.net.Proxy.staticClass, global::android.net.Proxy._getDefaultHost4727)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _Proxy4728; 
 		public Proxy()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.net.Proxy.staticClass, _Proxy4728, this); 
+			@__env.NewObject(android.net.Proxy.staticClass, global::android.net.Proxy._Proxy4728, this); 
 		} 
-		public static java.lang.String PROXY_CHANGE_ACTION
+		public static global::java.lang.String PROXY_CHANGE_ACTION
 		{ 
 			get 
 			{ 

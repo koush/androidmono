@@ -21,7 +21,7 @@ namespace android.widget
 		internal static global::java.lang.Class staticClass; 
 		static __ListAdapter() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.__ListAdapter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.__ListAdapter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -38,108 +38,108 @@ namespace android.widget
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.__ListAdapter)) 
-				return @__env.CallBooleanMethod(this, _isEnabled10425, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.widget.__ListAdapter._isEnabled10425, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.__ListAdapter.staticClass, _isEnabled10425, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.__ListAdapter.staticClass, global::android.widget.__ListAdapter._isEnabled10425, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _areAllItemsEnabled10426; 
 		 bool android.widget.ListAdapter.areAllItemsEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.__ListAdapter)) 
-				return @__env.CallBooleanMethod(this, _areAllItemsEnabled10426); 
+				return @__env.CallBooleanMethod(this, global::android.widget.__ListAdapter._areAllItemsEnabled10426); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.__ListAdapter.staticClass, _areAllItemsEnabled10426); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.__ListAdapter.staticClass, global::android.widget.__ListAdapter._areAllItemsEnabled10426); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isEmpty10427; 
 		 bool android.widget.Adapter.isEmpty() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.__ListAdapter)) 
-				return @__env.CallBooleanMethod(this, _isEmpty10427); 
+				return @__env.CallBooleanMethod(this, global::android.widget.__ListAdapter._isEmpty10427); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.__ListAdapter.staticClass, _isEmpty10427); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.__ListAdapter.staticClass, global::android.widget.__ListAdapter._isEmpty10427); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCount10428; 
 		 int android.widget.Adapter.getCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.__ListAdapter)) 
-				return @__env.CallIntMethod(this, _getCount10428); 
+				return @__env.CallIntMethod(this, global::android.widget.__ListAdapter._getCount10428); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.__ListAdapter.staticClass, _getCount10428); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.__ListAdapter.staticClass, global::android.widget.__ListAdapter._getCount10428); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _registerDataSetObserver10429; 
 		 void android.widget.Adapter.registerDataSetObserver(android.database.DataSetObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.__ListAdapter)) 
-				@__env.CallVoidMethod(this, _registerDataSetObserver10429, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.__ListAdapter._registerDataSetObserver10429, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.__ListAdapter.staticClass, _registerDataSetObserver10429, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.__ListAdapter.staticClass, global::android.widget.__ListAdapter._registerDataSetObserver10429, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _unregisterDataSetObserver10430; 
 		 void android.widget.Adapter.unregisterDataSetObserver(android.database.DataSetObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.__ListAdapter)) 
-				@__env.CallVoidMethod(this, _unregisterDataSetObserver10430, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.__ListAdapter._unregisterDataSetObserver10430, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.__ListAdapter.staticClass, _unregisterDataSetObserver10430, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.__ListAdapter.staticClass, global::android.widget.__ListAdapter._unregisterDataSetObserver10430, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getItem10431; 
-		 java.lang.Object android.widget.Adapter.getItem(int arg0) 
+		 global::java.lang.Object android.widget.Adapter.getItem(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.__ListAdapter)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _getItem10431, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.__ListAdapter._getItem10431, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.__ListAdapter.staticClass, _getItem10431, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.__ListAdapter.staticClass, global::android.widget.__ListAdapter._getItem10431, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getItemId10432; 
 		 long android.widget.Adapter.getItemId(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.__ListAdapter)) 
-				return @__env.CallLongMethod(this, _getItemId10432, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallLongMethod(this, global::android.widget.__ListAdapter._getItemId10432, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, android.widget.__ListAdapter.staticClass, _getItemId10432, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualLongMethod(this, global::android.widget.__ListAdapter.staticClass, global::android.widget.__ListAdapter._getItemId10432, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _hasStableIds10433; 
 		 bool android.widget.Adapter.hasStableIds() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.__ListAdapter)) 
-				return @__env.CallBooleanMethod(this, _hasStableIds10433); 
+				return @__env.CallBooleanMethod(this, global::android.widget.__ListAdapter._hasStableIds10433); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.__ListAdapter.staticClass, _hasStableIds10433); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.__ListAdapter.staticClass, global::android.widget.__ListAdapter._hasStableIds10433); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getView10434; 
-		 android.view.View android.widget.Adapter.getView(int arg0, android.view.View arg1, android.view.ViewGroup arg2) 
+		 global::android.view.View android.widget.Adapter.getView(int arg0, android.view.View arg1, android.view.ViewGroup arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.__ListAdapter)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, _getView10434, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.__ListAdapter._getView10434, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.__ListAdapter.staticClass, _getView10434, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.__ListAdapter.staticClass, global::android.widget.__ListAdapter._getView10434, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getItemViewType10435; 
 		 int android.widget.Adapter.getItemViewType(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.__ListAdapter)) 
-				return @__env.CallIntMethod(this, _getItemViewType10435, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, global::android.widget.__ListAdapter._getItemViewType10435, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.__ListAdapter.staticClass, _getItemViewType10435, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.__ListAdapter.staticClass, global::android.widget.__ListAdapter._getItemViewType10435, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getViewTypeCount10436; 
 		 int android.widget.Adapter.getViewTypeCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.__ListAdapter)) 
-				return @__env.CallIntMethod(this, _getViewTypeCount10436); 
+				return @__env.CallIntMethod(this, global::android.widget.__ListAdapter._getViewTypeCount10436); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.__ListAdapter.staticClass, _getViewTypeCount10436); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.__ListAdapter.staticClass, global::android.widget.__ListAdapter._getViewTypeCount10436); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

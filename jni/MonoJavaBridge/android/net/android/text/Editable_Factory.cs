@@ -6,7 +6,7 @@ namespace android.text
 		internal static global::java.lang.Class staticClass; 
 		static Editable_Factory() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.text.Editable_Factory), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.Editable_Factory), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,25 +19,25 @@ namespace android.text
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getInstance6745; 
-		public static android.text.Editable_Factory getInstance() 
+		public static global::android.text.Editable_Factory getInstance() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Editable_Factory>(@__env, @__env.CallStaticObjectMethodPtr(android.text.Editable_Factory.staticClass, _getInstance6745)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Editable_Factory>(@__env, @__env.CallStaticObjectMethodPtr(android.text.Editable_Factory.staticClass, global::android.text.Editable_Factory._getInstance6745)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _newEditable6746; 
-		public virtual android.text.Editable newEditable(java.lang.CharSequence arg0) 
+		public virtual global::android.text.Editable newEditable(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.Editable_Factory)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallObjectMethodPtr(this, _newEditable6746, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.Editable_Factory._newEditable6746, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.Editable_Factory.staticClass, _newEditable6746, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.Editable_Factory.staticClass, global::android.text.Editable_Factory._newEditable6746, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _Editable_Factory6747; 
 		public Editable_Factory()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.Editable_Factory.staticClass, _Editable_Factory6747, this); 
+			@__env.NewObject(android.text.Editable_Factory.staticClass, global::android.text.Editable_Factory._Editable_Factory6747, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

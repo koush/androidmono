@@ -6,7 +6,7 @@ namespace android.webkit
 		internal static global::java.lang.Class staticClass; 
 		static PluginList() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.webkit.PluginList), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.webkit.PluginList), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,51 +23,51 @@ namespace android.webkit
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.PluginList)) 
-				@__env.CallVoidMethod(this, _clear9326); 
+				@__env.CallVoidMethod(this, global::android.webkit.PluginList._clear9326); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.PluginList.staticClass, _clear9326); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.PluginList.staticClass, global::android.webkit.PluginList._clear9326); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getList9327; 
-		public virtual java.util.List getList() 
+		public virtual global::java.util.List getList() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.PluginList)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getList9327)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.PluginList._getList9327)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.PluginList.staticClass, _getList9327)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.PluginList.staticClass, global::android.webkit.PluginList._getList9327)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _addPlugin9328; 
 		public virtual void addPlugin(android.webkit.Plugin arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.PluginList)) 
-				@__env.CallVoidMethod(this, _addPlugin9328, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.webkit.PluginList._addPlugin9328, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.PluginList.staticClass, _addPlugin9328, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.PluginList.staticClass, global::android.webkit.PluginList._addPlugin9328, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _removePlugin9329; 
 		public virtual void removePlugin(android.webkit.Plugin arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.PluginList)) 
-				@__env.CallVoidMethod(this, _removePlugin9329, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.webkit.PluginList._removePlugin9329, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.PluginList.staticClass, _removePlugin9329, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.PluginList.staticClass, global::android.webkit.PluginList._removePlugin9329, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _pluginClicked9330; 
 		public virtual void pluginClicked(android.content.Context arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.PluginList)) 
-				@__env.CallVoidMethod(this, _pluginClicked9330, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.webkit.PluginList._pluginClicked9330, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.PluginList.staticClass, _pluginClicked9330, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.PluginList.staticClass, global::android.webkit.PluginList._pluginClicked9330, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _PluginList9331; 
 		public PluginList()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.webkit.PluginList.staticClass, _PluginList9331, this); 
+			@__env.NewObject(android.webkit.PluginList.staticClass, global::android.webkit.PluginList._PluginList9331, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

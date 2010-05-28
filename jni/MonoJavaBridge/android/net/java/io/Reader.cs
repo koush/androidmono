@@ -6,7 +6,7 @@ namespace java.io
 		internal static global::java.lang.Class staticClass; 
 		static Reader() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.io.Reader), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.io.Reader), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected Reader(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -18,18 +18,18 @@ namespace java.io
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.Reader)) 
-				@__env.CallVoidMethod(this, _mark11456, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.io.Reader._mark11456, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.Reader.staticClass, _mark11456, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.io.Reader.staticClass, global::java.io.Reader._mark11456, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _reset11457; 
 		public virtual void reset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.Reader)) 
-				@__env.CallVoidMethod(this, _reset11457); 
+				@__env.CallVoidMethod(this, global::java.io.Reader._reset11457); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.Reader.staticClass, _reset11457); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.io.Reader.staticClass, global::java.io.Reader._reset11457); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _read11458; 
 		public abstract int read(char[] arg0, int arg1, int arg2); 
@@ -38,66 +38,66 @@ namespace java.io
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.Reader)) 
-				return @__env.CallIntMethod(this, _read11459); 
+				return @__env.CallIntMethod(this, global::java.io.Reader._read11459); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.io.Reader.staticClass, _read11459); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.io.Reader.staticClass, global::java.io.Reader._read11459); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _read11460; 
 		public virtual int read(char[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.Reader)) 
-				return @__env.CallIntMethod(this, _read11460, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				return @__env.CallIntMethod(this, global::java.io.Reader._read11460, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.io.Reader.staticClass, _read11460, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.io.Reader.staticClass, global::java.io.Reader._read11460, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _read11461; 
 		public virtual int read(java.nio.CharBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.Reader)) 
-				return @__env.CallIntMethod(this, _read11461, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallIntMethod(this, global::java.io.Reader._read11461, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.io.Reader.staticClass, _read11461, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.io.Reader.staticClass, global::java.io.Reader._read11461, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _skip11462; 
 		public virtual long skip(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.Reader)) 
-				return @__env.CallLongMethod(this, _skip11462, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallLongMethod(this, global::java.io.Reader._skip11462, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, java.io.Reader.staticClass, _skip11462, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualLongMethod(this, global::java.io.Reader.staticClass, global::java.io.Reader._skip11462, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _markSupported11463; 
 		public virtual bool markSupported() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.Reader)) 
-				return @__env.CallBooleanMethod(this, _markSupported11463); 
+				return @__env.CallBooleanMethod(this, global::java.io.Reader._markSupported11463); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.io.Reader.staticClass, _markSupported11463); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.io.Reader.staticClass, global::java.io.Reader._markSupported11463); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ready11464; 
 		public virtual bool ready() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.Reader)) 
-				return @__env.CallBooleanMethod(this, _ready11464); 
+				return @__env.CallBooleanMethod(this, global::java.io.Reader._ready11464); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.io.Reader.staticClass, _ready11464); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.io.Reader.staticClass, global::java.io.Reader._ready11464); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _Reader11465; 
 		protected Reader()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.io.Reader.staticClass, _Reader11465, this); 
+			@__env.NewObject(java.io.Reader.staticClass, global::java.io.Reader._Reader11465, this); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _Reader11466; 
 		protected Reader(java.lang.Object arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.io.Reader.staticClass, _Reader11466, this, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+			@__env.NewObject(java.io.Reader.staticClass, global::java.io.Reader._Reader11466, this, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

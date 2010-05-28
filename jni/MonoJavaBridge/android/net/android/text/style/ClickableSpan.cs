@@ -6,7 +6,7 @@ namespace android.text.style
 		internal new static global::java.lang.Class staticClass; 
 		static ClickableSpan() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.text.style.ClickableSpan), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.style.ClickableSpan), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected ClickableSpan(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -18,15 +18,15 @@ namespace android.text.style
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.style.ClickableSpan)) 
-				@__env.CallVoidMethod(this, _updateDrawState7315, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.text.style.ClickableSpan._updateDrawState7315, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.text.style.ClickableSpan.staticClass, _updateDrawState7315, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.ClickableSpan.staticClass, global::android.text.style.ClickableSpan._updateDrawState7315, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ClickableSpan7316; 
 		public ClickableSpan()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.style.ClickableSpan.staticClass, _ClickableSpan7316, this); 
+			@__env.NewObject(android.text.style.ClickableSpan.staticClass, global::android.text.style.ClickableSpan._ClickableSpan7316, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

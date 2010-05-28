@@ -6,7 +6,7 @@ namespace android.media
 		internal static global::java.lang.Class staticClass; 
 		static FaceDetector() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.media.FaceDetector), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.FaceDetector), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -24,7 +24,7 @@ namespace android.media
 			internal static global::java.lang.Class staticClass; 
 			static Face() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.media.FaceDetector.Face), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.FaceDetector.Face), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -41,36 +41,36 @@ namespace android.media
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.media.FaceDetector.Face)) 
-					return @__env.CallFloatMethod(this, _confidence4462); 
+					return @__env.CallFloatMethod(this, global::android.media.FaceDetector.Face._confidence4462); 
 				else 
-					return @__env.CallNonVirtualFloatMethod(this, android.media.FaceDetector.Face.staticClass, _confidence4462); 
+					return @__env.CallNonVirtualFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._confidence4462); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getMidPoint4463; 
 			public virtual void getMidPoint(android.graphics.PointF arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.media.FaceDetector.Face)) 
-					@__env.CallVoidMethod(this, _getMidPoint4463, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.media.FaceDetector.Face._getMidPoint4463, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.media.FaceDetector.Face.staticClass, _getMidPoint4463, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._getMidPoint4463, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _eyesDistance4464; 
 			public virtual float eyesDistance() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.media.FaceDetector.Face)) 
-					return @__env.CallFloatMethod(this, _eyesDistance4464); 
+					return @__env.CallFloatMethod(this, global::android.media.FaceDetector.Face._eyesDistance4464); 
 				else 
-					return @__env.CallNonVirtualFloatMethod(this, android.media.FaceDetector.Face.staticClass, _eyesDistance4464); 
+					return @__env.CallNonVirtualFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._eyesDistance4464); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _pose4465; 
 			public virtual float pose(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.media.FaceDetector.Face)) 
-					return @__env.CallFloatMethod(this, _pose4465, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					return @__env.CallFloatMethod(this, global::android.media.FaceDetector.Face._pose4465, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					return @__env.CallNonVirtualFloatMethod(this, android.media.FaceDetector.Face.staticClass, _pose4465, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					return @__env.CallNonVirtualFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._pose4465, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			public static float CONFIDENCE_THRESHOLD
 			{ 
@@ -114,15 +114,15 @@ namespace android.media
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.FaceDetector)) 
-				return @__env.CallIntMethod(this, _findFaces4466, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)); 
+				return @__env.CallIntMethod(this, global::android.media.FaceDetector._findFaces4466, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.FaceDetector.staticClass, _findFaces4466, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.FaceDetector.staticClass, global::android.media.FaceDetector._findFaces4466, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _FaceDetector4467; 
 		public FaceDetector(int arg0, int arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.media.FaceDetector.staticClass, _FaceDetector4467, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.media.FaceDetector.staticClass, global::android.media.FaceDetector._FaceDetector4467, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

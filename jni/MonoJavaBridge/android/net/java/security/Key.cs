@@ -3,9 +3,9 @@ namespace java.security
 	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 	public interface Key : java.io.Serializable
 	{ 
-		java.lang.String getAlgorithm(); 
+		global::java.lang.String getAlgorithm(); 
 		byte[] getEncoded(); 
-		java.lang.String getFormat(); 
+		global::java.lang.String getFormat(); 
 	} 
 
 	public partial class Key_ 
@@ -22,7 +22,7 @@ namespace java.security
 		internal static global::java.lang.Class staticClass; 
 		static __Key() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.security.__Key), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.security.__Key), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -35,30 +35,30 @@ namespace java.security
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAlgorithm12437; 
-		 java.lang.String java.security.Key.getAlgorithm() 
+		 global::java.lang.String java.security.Key.getAlgorithm() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.__Key)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getAlgorithm12437)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Key._getAlgorithm12437)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.security.__Key.staticClass, _getAlgorithm12437)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Key.staticClass, global::java.security.__Key._getAlgorithm12437)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getEncoded12438; 
 		 byte[] java.security.Key.getEncoded() 
 		{ 
 			if (GetType() == typeof(java.security.__Key)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getEncoded12438)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Key._getEncoded12438)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.security.__Key.staticClass, _getEncoded12438)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Key.staticClass, global::java.security.__Key._getEncoded12438)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getFormat12439; 
-		 java.lang.String java.security.Key.getFormat() 
+		 global::java.lang.String java.security.Key.getFormat() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.__Key)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getFormat12439)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Key._getFormat12439)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.security.__Key.staticClass, _getFormat12439)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Key.staticClass, global::java.security.__Key._getFormat12439)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

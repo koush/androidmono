@@ -6,7 +6,7 @@ namespace android.view
 		internal static global::java.lang.Class staticClass; 
 		static TouchDelegate() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.view.TouchDelegate), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.TouchDelegate), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,15 +23,15 @@ namespace android.view
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.TouchDelegate)) 
-				return @__env.CallBooleanMethod(this, _onTouchEvent8086, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.view.TouchDelegate._onTouchEvent8086, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.view.TouchDelegate.staticClass, _onTouchEvent8086, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.TouchDelegate.staticClass, global::android.view.TouchDelegate._onTouchEvent8086, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _TouchDelegate8087; 
 		public TouchDelegate(android.graphics.Rect arg0, android.view.View arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.TouchDelegate.staticClass, _TouchDelegate8087, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(android.view.TouchDelegate.staticClass, global::android.view.TouchDelegate._TouchDelegate8087, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		public static int ABOVE
 		{ 

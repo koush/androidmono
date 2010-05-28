@@ -20,7 +20,7 @@ namespace android.content
 		internal static global::java.lang.Class staticClass; 
 		static __SyncStatusObserver() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.content.__SyncStatusObserver), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.__SyncStatusObserver), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -37,9 +37,9 @@ namespace android.content
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.__SyncStatusObserver)) 
-				@__env.CallVoidMethod(this, _onStatusChanged1564, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.content.__SyncStatusObserver._onStatusChanged1564, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.__SyncStatusObserver.staticClass, _onStatusChanged1564, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.__SyncStatusObserver.staticClass, global::android.content.__SyncStatusObserver._onStatusChanged1564, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

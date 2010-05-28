@@ -6,7 +6,7 @@ namespace android.text
 		internal static global::java.lang.Class staticClass; 
 		static Html() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.text.Html), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.Html), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -21,7 +21,7 @@ namespace android.text
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 		public interface ImageGetter 
 		{ 
-			android.graphics.drawable.Drawable getDrawable(java.lang.String arg0); 
+			global::android.graphics.drawable.Drawable getDrawable(java.lang.String arg0); 
 		} 
 
 		public partial class ImageGetter_ 
@@ -38,7 +38,7 @@ namespace android.text
 			internal static global::java.lang.Class staticClass; 
 			static __ImageGetter() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.text.Html.__ImageGetter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.Html.__ImageGetter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -51,13 +51,13 @@ namespace android.text
 			{ 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getDrawable6780; 
-			 android.graphics.drawable.Drawable android.text.Html.ImageGetter.getDrawable(java.lang.String arg0) 
+			 global::android.graphics.drawable.Drawable android.text.Html.ImageGetter.getDrawable(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.text.Html.__ImageGetter)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, _getDrawable6780, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.Html.__ImageGetter._getDrawable6780, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.Html.__ImageGetter.staticClass, _getDrawable6780, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.Html.__ImageGetter.staticClass, global::android.text.Html.__ImageGetter._getDrawable6780, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -85,7 +85,7 @@ namespace android.text
 			internal static global::java.lang.Class staticClass; 
 			static __TagHandler() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.text.Html.__TagHandler), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.Html.__TagHandler), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -102,9 +102,9 @@ namespace android.text
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.text.Html.__TagHandler)) 
-					@__env.CallVoidMethod(this, _handleTag6781, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)); 
+					@__env.CallVoidMethod(this, global::android.text.Html.__TagHandler._handleTag6781, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.text.Html.__TagHandler.staticClass, _handleTag6781, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.text.Html.__TagHandler.staticClass, global::android.text.Html.__TagHandler._handleTag6781, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -113,22 +113,22 @@ namespace android.text
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _fromHtml6782; 
-		public static android.text.Spanned fromHtml(java.lang.String arg0) 
+		public static global::android.text.Spanned fromHtml(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Spanned>(@__env, @__env.CallStaticObjectMethodPtr(android.text.Html.staticClass, _fromHtml6782, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Spanned>(@__env, @__env.CallStaticObjectMethodPtr(android.text.Html.staticClass, global::android.text.Html._fromHtml6782, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _fromHtml6783; 
-		public static android.text.Spanned fromHtml(java.lang.String arg0, android.text.Html.ImageGetter arg1, android.text.Html.TagHandler arg2) 
+		public static global::android.text.Spanned fromHtml(java.lang.String arg0, android.text.Html.ImageGetter arg1, android.text.Html.TagHandler arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Spanned>(@__env, @__env.CallStaticObjectMethodPtr(android.text.Html.staticClass, _fromHtml6783, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Spanned>(@__env, @__env.CallStaticObjectMethodPtr(android.text.Html.staticClass, global::android.text.Html._fromHtml6783, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toHtml6784; 
-		public static java.lang.String toHtml(android.text.Spanned arg0) 
+		public static global::java.lang.String toHtml(android.text.Spanned arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.Html.staticClass, _toHtml6784, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.text.Html.staticClass, global::android.text.Html._toHtml6784, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

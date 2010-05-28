@@ -6,7 +6,7 @@ namespace java.nio.channels.spi
 		internal static global::java.lang.Class staticClass; 
 		static AbstractInterruptibleChannel() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.nio.channels.spi.AbstractInterruptibleChannel), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.nio.channels.spi.AbstractInterruptibleChannel), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected AbstractInterruptibleChannel(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -16,27 +16,27 @@ namespace java.nio.channels.spi
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.spi.AbstractInterruptibleChannel)) 
-				@__env.CallVoidMethod(this, _close12298); 
+				@__env.CallVoidMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel._close12298); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, _close12298); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, global::java.nio.channels.spi.AbstractInterruptibleChannel._close12298); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isOpen12299; 
 		public virtual bool isOpen() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.spi.AbstractInterruptibleChannel)) 
-				return @__env.CallBooleanMethod(this, _isOpen12299); 
+				return @__env.CallBooleanMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel._isOpen12299); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, _isOpen12299); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, global::java.nio.channels.spi.AbstractInterruptibleChannel._isOpen12299); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _end12300; 
 		protected virtual void end(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.spi.AbstractInterruptibleChannel)) 
-				@__env.CallVoidMethod(this, _end12300, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel._end12300, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, _end12300, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, global::java.nio.channels.spi.AbstractInterruptibleChannel._end12300, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _implCloseChannel12301; 
 		protected abstract void implCloseChannel(); 
@@ -45,15 +45,15 @@ namespace java.nio.channels.spi
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.spi.AbstractInterruptibleChannel)) 
-				@__env.CallVoidMethod(this, _begin12302); 
+				@__env.CallVoidMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel._begin12302); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, _begin12302); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, global::java.nio.channels.spi.AbstractInterruptibleChannel._begin12302); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _AbstractInterruptibleChannel12303; 
 		protected AbstractInterruptibleChannel()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, _AbstractInterruptibleChannel12303, this); 
+			@__env.NewObject(java.nio.channels.spi.AbstractInterruptibleChannel.staticClass, global::java.nio.channels.spi.AbstractInterruptibleChannel._AbstractInterruptibleChannel12303, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

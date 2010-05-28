@@ -3,7 +3,7 @@ namespace android.widget
 	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 	public interface Filterable 
 	{ 
-		android.widget.Filter getFilter(); 
+		global::android.widget.Filter getFilter(); 
 	} 
 
 	public partial class Filterable_ 
@@ -20,7 +20,7 @@ namespace android.widget
 		internal static global::java.lang.Class staticClass; 
 		static __Filterable() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.__Filterable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.__Filterable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -33,13 +33,13 @@ namespace android.widget
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getFilter10204; 
-		 android.widget.Filter android.widget.Filterable.getFilter() 
+		 global::android.widget.Filter android.widget.Filterable.getFilter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.__Filterable)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Filter>(@__env, @__env.CallObjectMethodPtr(this, _getFilter10204)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Filter>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.__Filterable._getFilter10204)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Filter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.__Filterable.staticClass, _getFilter10204)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Filter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.__Filterable.staticClass, global::android.widget.__Filterable._getFilter10204)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

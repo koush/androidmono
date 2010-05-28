@@ -6,7 +6,7 @@ namespace java.net
 		internal static global::java.lang.Class staticClass; 
 		static NetworkInterface() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.net.NetworkInterface), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.net.NetworkInterface), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,161 +23,161 @@ namespace java.net
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.NetworkInterface)) 
-				return @__env.CallIntMethod(this, _hashCode11763); 
+				return @__env.CallIntMethod(this, global::java.net.NetworkInterface._hashCode11763); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.net.NetworkInterface.staticClass, _hashCode11763); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._hashCode11763); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _equals11764; 
 		public sealed override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.NetworkInterface)) 
-				return @__env.CallBooleanMethod(this, _equals11764, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, global::java.net.NetworkInterface._equals11764, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.NetworkInterface.staticClass, _equals11764, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._equals11764, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString11765; 
-		public sealed override java.lang.String toString() 
+		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.NetworkInterface)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString11765)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.NetworkInterface._toString11765)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.NetworkInterface.staticClass, _toString11765)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._toString11765)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getName11766; 
-		public java.lang.String getName() 
+		public global::java.lang.String getName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.NetworkInterface)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getName11766)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.NetworkInterface._getName11766)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.NetworkInterface.staticClass, _getName11766)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._getName11766)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getParent11767; 
-		public java.net.NetworkInterface getParent() 
+		public global::java.net.NetworkInterface getParent() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.NetworkInterface)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.NetworkInterface>(@__env, @__env.CallObjectMethodPtr(this, _getParent11767)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.NetworkInterface>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.NetworkInterface._getParent11767)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.NetworkInterface>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.NetworkInterface.staticClass, _getParent11767)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.NetworkInterface>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._getParent11767)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDisplayName11768; 
-		public java.lang.String getDisplayName() 
+		public global::java.lang.String getDisplayName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.NetworkInterface)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getDisplayName11768)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.NetworkInterface._getDisplayName11768)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.NetworkInterface.staticClass, _getDisplayName11768)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._getDisplayName11768)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getByName11769; 
-		public static java.net.NetworkInterface getByName(java.lang.String arg0) 
+		public static global::java.net.NetworkInterface getByName(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.NetworkInterface>(@__env, @__env.CallStaticObjectMethodPtr(java.net.NetworkInterface.staticClass, _getByName11769, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.NetworkInterface>(@__env, @__env.CallStaticObjectMethodPtr(java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._getByName11769, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getInetAddresses11770; 
-		public java.util.Enumeration getInetAddresses() 
+		public global::java.util.Enumeration getInetAddresses() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.NetworkInterface)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Enumeration>(@__env, @__env.CallObjectMethodPtr(this, _getInetAddresses11770)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Enumeration>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.NetworkInterface._getInetAddresses11770)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Enumeration>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.NetworkInterface.staticClass, _getInetAddresses11770)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Enumeration>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._getInetAddresses11770)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getInterfaceAddresses11771; 
-		public java.util.List getInterfaceAddresses() 
+		public global::java.util.List getInterfaceAddresses() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.NetworkInterface)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getInterfaceAddresses11771)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.NetworkInterface._getInterfaceAddresses11771)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.NetworkInterface.staticClass, _getInterfaceAddresses11771)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._getInterfaceAddresses11771)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSubInterfaces11772; 
-		public java.util.Enumeration getSubInterfaces() 
+		public global::java.util.Enumeration getSubInterfaces() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.NetworkInterface)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Enumeration>(@__env, @__env.CallObjectMethodPtr(this, _getSubInterfaces11772)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Enumeration>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.NetworkInterface._getSubInterfaces11772)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Enumeration>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.NetworkInterface.staticClass, _getSubInterfaces11772)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Enumeration>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._getSubInterfaces11772)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getByInetAddress11773; 
-		public static java.net.NetworkInterface getByInetAddress(java.net.InetAddress arg0) 
+		public static global::java.net.NetworkInterface getByInetAddress(java.net.InetAddress arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.NetworkInterface>(@__env, @__env.CallStaticObjectMethodPtr(java.net.NetworkInterface.staticClass, _getByInetAddress11773, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.NetworkInterface>(@__env, @__env.CallStaticObjectMethodPtr(java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._getByInetAddress11773, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getNetworkInterfaces11774; 
-		public static java.util.Enumeration getNetworkInterfaces() 
+		public static global::java.util.Enumeration getNetworkInterfaces() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Enumeration>(@__env, @__env.CallStaticObjectMethodPtr(java.net.NetworkInterface.staticClass, _getNetworkInterfaces11774)); 
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Enumeration>(@__env, @__env.CallStaticObjectMethodPtr(java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._getNetworkInterfaces11774)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isUp11775; 
 		public bool isUp() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.NetworkInterface)) 
-				return @__env.CallBooleanMethod(this, _isUp11775); 
+				return @__env.CallBooleanMethod(this, global::java.net.NetworkInterface._isUp11775); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.NetworkInterface.staticClass, _isUp11775); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._isUp11775); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isLoopback11776; 
 		public bool isLoopback() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.NetworkInterface)) 
-				return @__env.CallBooleanMethod(this, _isLoopback11776); 
+				return @__env.CallBooleanMethod(this, global::java.net.NetworkInterface._isLoopback11776); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.NetworkInterface.staticClass, _isLoopback11776); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._isLoopback11776); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isPointToPoint11777; 
 		public bool isPointToPoint() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.NetworkInterface)) 
-				return @__env.CallBooleanMethod(this, _isPointToPoint11777); 
+				return @__env.CallBooleanMethod(this, global::java.net.NetworkInterface._isPointToPoint11777); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.NetworkInterface.staticClass, _isPointToPoint11777); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._isPointToPoint11777); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _supportsMulticast11778; 
 		public bool supportsMulticast() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.NetworkInterface)) 
-				return @__env.CallBooleanMethod(this, _supportsMulticast11778); 
+				return @__env.CallBooleanMethod(this, global::java.net.NetworkInterface._supportsMulticast11778); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.NetworkInterface.staticClass, _supportsMulticast11778); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._supportsMulticast11778); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getHardwareAddress11779; 
 		public byte[] getHardwareAddress() 
 		{ 
 			if (GetType() == typeof(java.net.NetworkInterface)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getHardwareAddress11779)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.net.NetworkInterface._getHardwareAddress11779)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.NetworkInterface.staticClass, _getHardwareAddress11779)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._getHardwareAddress11779)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getMTU11780; 
 		public int getMTU() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.NetworkInterface)) 
-				return @__env.CallIntMethod(this, _getMTU11780); 
+				return @__env.CallIntMethod(this, global::java.net.NetworkInterface._getMTU11780); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.net.NetworkInterface.staticClass, _getMTU11780); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._getMTU11780); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isVirtual11781; 
 		public bool isVirtual() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.NetworkInterface)) 
-				return @__env.CallBooleanMethod(this, _isVirtual11781); 
+				return @__env.CallBooleanMethod(this, global::java.net.NetworkInterface._isVirtual11781); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.NetworkInterface.staticClass, _isVirtual11781); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.NetworkInterface.staticClass, global::java.net.NetworkInterface._isVirtual11781); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

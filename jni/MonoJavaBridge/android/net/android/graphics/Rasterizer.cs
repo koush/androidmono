@@ -6,7 +6,7 @@ namespace android.graphics
 		internal static global::java.lang.Class staticClass; 
 		static Rasterizer() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.graphics.Rasterizer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.Rasterizer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -22,7 +22,7 @@ namespace android.graphics
 		public Rasterizer()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.Rasterizer.staticClass, _Rasterizer3281, this); 
+			@__env.NewObject(android.graphics.Rasterizer.staticClass, global::android.graphics.Rasterizer._Rasterizer3281, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

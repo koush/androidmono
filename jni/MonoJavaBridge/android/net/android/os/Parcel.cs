@@ -6,7 +6,7 @@ namespace android.os
 		internal static global::java.lang.Class staticClass; 
 		static Parcel() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.Parcel), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.Parcel), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,882 +23,882 @@ namespace android.os
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeInt5690, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeInt5690, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeInt5690, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeInt5690, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readInt5691; 
 		public int readInt() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return @__env.CallIntMethod(this, _readInt5691); 
+				return @__env.CallIntMethod(this, global::android.os.Parcel._readInt5691); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.os.Parcel.staticClass, _readInt5691); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readInt5691); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readLong5692; 
 		public long readLong() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return @__env.CallLongMethod(this, _readLong5692); 
+				return @__env.CallLongMethod(this, global::android.os.Parcel._readLong5692); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, android.os.Parcel.staticClass, _readLong5692); 
+				return @__env.CallNonVirtualLongMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readLong5692); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readByte5693; 
 		public byte readByte() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return @__env.CallByteMethod(this, _readByte5693); 
+				return @__env.CallByteMethod(this, global::android.os.Parcel._readByte5693); 
 			else 
-				return @__env.CallNonVirtualByteMethod(this, android.os.Parcel.staticClass, _readByte5693); 
+				return @__env.CallNonVirtualByteMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readByte5693); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeLong5694; 
 		public void writeLong(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeLong5694, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeLong5694, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeLong5694, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeLong5694, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeByte5695; 
 		public void writeByte(byte arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeByte5695, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeByte5695, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeByte5695, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeByte5695, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeFloat5696; 
 		public void writeFloat(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeFloat5696, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeFloat5696, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeFloat5696, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeFloat5696, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readFloat5697; 
 		public float readFloat() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return @__env.CallFloatMethod(this, _readFloat5697); 
+				return @__env.CallFloatMethod(this, global::android.os.Parcel._readFloat5697); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.os.Parcel.staticClass, _readFloat5697); 
+				return @__env.CallNonVirtualFloatMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readFloat5697); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readDouble5698; 
 		public double readDouble() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return @__env.CallDoubleMethod(this, _readDouble5698); 
+				return @__env.CallDoubleMethod(this, global::android.os.Parcel._readDouble5698); 
 			else 
-				return @__env.CallNonVirtualDoubleMethod(this, android.os.Parcel.staticClass, _readDouble5698); 
+				return @__env.CallNonVirtualDoubleMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readDouble5698); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readString5699; 
-		public java.lang.String readString() 
+		public global::java.lang.String readString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _readString5699)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._readString5699)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _readString5699)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readString5699)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _dataSize5700; 
 		public int dataSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return @__env.CallIntMethod(this, _dataSize5700); 
+				return @__env.CallIntMethod(this, global::android.os.Parcel._dataSize5700); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.os.Parcel.staticClass, _dataSize5700); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._dataSize5700); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeValue5701; 
 		public void writeValue(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeValue5701, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeValue5701, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeValue5701, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeValue5701, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeString5702; 
 		public void writeString(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeString5702, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeString5702, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeString5702, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeString5702, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _obtain5703; 
-		public static android.os.Parcel obtain() 
+		public static global::android.os.Parcel obtain() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Parcel>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Parcel.staticClass, _obtain5703)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Parcel>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Parcel.staticClass, global::android.os.Parcel._obtain5703)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _recycle5704; 
 		public void recycle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _recycle5704); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._recycle5704); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _recycle5704); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._recycle5704); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _hasFileDescriptors5705; 
 		public bool hasFileDescriptors() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return @__env.CallBooleanMethod(this, _hasFileDescriptors5705); 
+				return @__env.CallBooleanMethod(this, global::android.os.Parcel._hasFileDescriptors5705); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.os.Parcel.staticClass, _hasFileDescriptors5705); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._hasFileDescriptors5705); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _dataAvail5706; 
 		public int dataAvail() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return @__env.CallIntMethod(this, _dataAvail5706); 
+				return @__env.CallIntMethod(this, global::android.os.Parcel._dataAvail5706); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.os.Parcel.staticClass, _dataAvail5706); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._dataAvail5706); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _dataPosition5707; 
 		public int dataPosition() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return @__env.CallIntMethod(this, _dataPosition5707); 
+				return @__env.CallIntMethod(this, global::android.os.Parcel._dataPosition5707); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.os.Parcel.staticClass, _dataPosition5707); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._dataPosition5707); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _dataCapacity5708; 
 		public int dataCapacity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return @__env.CallIntMethod(this, _dataCapacity5708); 
+				return @__env.CallIntMethod(this, global::android.os.Parcel._dataCapacity5708); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.os.Parcel.staticClass, _dataCapacity5708); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._dataCapacity5708); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setDataSize5709; 
 		public void setDataSize(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _setDataSize5709, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._setDataSize5709, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _setDataSize5709, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._setDataSize5709, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setDataPosition5710; 
 		public void setDataPosition(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _setDataPosition5710, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._setDataPosition5710, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _setDataPosition5710, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._setDataPosition5710, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setDataCapacity5711; 
 		public void setDataCapacity(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _setDataCapacity5711, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._setDataCapacity5711, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _setDataCapacity5711, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._setDataCapacity5711, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _marshall5712; 
 		public byte[] marshall() 
 		{ 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _marshall5712)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._marshall5712)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _marshall5712)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._marshall5712)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _unmarshall5713; 
 		public void unmarshall(byte[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _unmarshall5713, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._unmarshall5713, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _unmarshall5713, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._unmarshall5713, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _appendFrom5714; 
 		public void appendFrom(android.os.Parcel arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _appendFrom5714, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._appendFrom5714, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _appendFrom5714, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._appendFrom5714, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeInterfaceToken5715; 
 		public void writeInterfaceToken(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeInterfaceToken5715, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeInterfaceToken5715, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeInterfaceToken5715, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeInterfaceToken5715, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _enforceInterface5716; 
 		public void enforceInterface(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _enforceInterface5716, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._enforceInterface5716, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _enforceInterface5716, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._enforceInterface5716, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeByteArray5717; 
 		public void writeByteArray(byte[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeByteArray5717, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeByteArray5717, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeByteArray5717, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeByteArray5717, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeByteArray5718; 
 		public void writeByteArray(byte[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeByteArray5718, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeByteArray5718, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeByteArray5718, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeByteArray5718, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeDouble5719; 
 		public void writeDouble(double arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeDouble5719, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeDouble5719, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeDouble5719, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeDouble5719, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeStrongBinder5720; 
 		public void writeStrongBinder(android.os.IBinder arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeStrongBinder5720, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeStrongBinder5720, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeStrongBinder5720, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeStrongBinder5720, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeStrongInterface5721; 
 		public void writeStrongInterface(android.os.IInterface arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeStrongInterface5721, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeStrongInterface5721, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeStrongInterface5721, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeStrongInterface5721, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeFileDescriptor5722; 
 		public void writeFileDescriptor(java.io.FileDescriptor arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeFileDescriptor5722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeFileDescriptor5722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeFileDescriptor5722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeFileDescriptor5722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeMap5723; 
 		public void writeMap(java.util.Map arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeMap5723, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeMap5723, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeMap5723, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeMap5723, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeBundle5724; 
 		public void writeBundle(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeBundle5724, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeBundle5724, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeBundle5724, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeBundle5724, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeList5725; 
 		public void writeList(java.util.List arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeList5725, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeList5725, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeList5725, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeList5725, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeArray5726; 
 		public void writeArray(java.lang.Object[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeArray5726, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeArray5726, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeArray5726, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeArray5726, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeSparseArray5727; 
 		public void writeSparseArray(android.util.SparseArray arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeSparseArray5727, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeSparseArray5727, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeSparseArray5727, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeSparseArray5727, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeSparseBooleanArray5728; 
 		public void writeSparseBooleanArray(android.util.SparseBooleanArray arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeSparseBooleanArray5728, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeSparseBooleanArray5728, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeSparseBooleanArray5728, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeSparseBooleanArray5728, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeBooleanArray5729; 
 		public void writeBooleanArray(bool[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeBooleanArray5729, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeBooleanArray5729, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeBooleanArray5729, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeBooleanArray5729, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createBooleanArray5730; 
 		public bool[] createBooleanArray() 
 		{ 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _createBooleanArray5730)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._createBooleanArray5730)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _createBooleanArray5730)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._createBooleanArray5730)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readBooleanArray5731; 
 		public void readBooleanArray(bool[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _readBooleanArray5731, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._readBooleanArray5731, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _readBooleanArray5731, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readBooleanArray5731, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeCharArray5732; 
 		public void writeCharArray(char[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeCharArray5732, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeCharArray5732, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeCharArray5732, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeCharArray5732, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createCharArray5733; 
 		public char[] createCharArray() 
 		{ 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _createCharArray5733)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._createCharArray5733)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _createCharArray5733)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._createCharArray5733)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readCharArray5734; 
 		public void readCharArray(char[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _readCharArray5734, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._readCharArray5734, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _readCharArray5734, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readCharArray5734, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeIntArray5735; 
 		public void writeIntArray(int[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeIntArray5735, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeIntArray5735, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeIntArray5735, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeIntArray5735, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createIntArray5736; 
 		public int[] createIntArray() 
 		{ 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _createIntArray5736)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._createIntArray5736)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _createIntArray5736)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._createIntArray5736)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readIntArray5737; 
 		public void readIntArray(int[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _readIntArray5737, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._readIntArray5737, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _readIntArray5737, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readIntArray5737, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeLongArray5738; 
 		public void writeLongArray(long[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeLongArray5738, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeLongArray5738, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeLongArray5738, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeLongArray5738, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createLongArray5739; 
 		public long[] createLongArray() 
 		{ 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _createLongArray5739)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._createLongArray5739)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _createLongArray5739)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._createLongArray5739)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readLongArray5740; 
 		public void readLongArray(long[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _readLongArray5740, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._readLongArray5740, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _readLongArray5740, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readLongArray5740, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeFloatArray5741; 
 		public void writeFloatArray(float[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeFloatArray5741, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeFloatArray5741, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeFloatArray5741, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeFloatArray5741, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createFloatArray5742; 
 		public float[] createFloatArray() 
 		{ 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _createFloatArray5742)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._createFloatArray5742)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _createFloatArray5742)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._createFloatArray5742)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readFloatArray5743; 
 		public void readFloatArray(float[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _readFloatArray5743, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._readFloatArray5743, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _readFloatArray5743, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readFloatArray5743, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeDoubleArray5744; 
 		public void writeDoubleArray(double[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeDoubleArray5744, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeDoubleArray5744, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeDoubleArray5744, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeDoubleArray5744, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createDoubleArray5745; 
 		public double[] createDoubleArray() 
 		{ 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _createDoubleArray5745)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._createDoubleArray5745)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _createDoubleArray5745)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._createDoubleArray5745)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readDoubleArray5746; 
 		public void readDoubleArray(double[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _readDoubleArray5746, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._readDoubleArray5746, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _readDoubleArray5746, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readDoubleArray5746, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeStringArray5747; 
 		public void writeStringArray(java.lang.String[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeStringArray5747, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeStringArray5747, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeStringArray5747, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeStringArray5747, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createStringArray5748; 
-		public java.lang.String[] createStringArray() 
+		public global::java.lang.String[] createStringArray() 
 		{ 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _createStringArray5748)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._createStringArray5748)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _createStringArray5748)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._createStringArray5748)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readStringArray5749; 
 		public void readStringArray(java.lang.String[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _readStringArray5749, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._readStringArray5749, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _readStringArray5749, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readStringArray5749, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeBinderArray5750; 
 		public void writeBinderArray(android.os.IBinder[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeBinderArray5750, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.os.IBinder[], android.os.IBinder>(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeBinderArray5750, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.os.IBinder[], android.os.IBinder>(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeBinderArray5750, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.os.IBinder[], android.os.IBinder>(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeBinderArray5750, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.os.IBinder[], android.os.IBinder>(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createBinderArray5751; 
-		public android.os.IBinder[] createBinderArray() 
+		public global::android.os.IBinder[] createBinderArray() 
 		{ 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _createBinderArray5751)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._createBinderArray5751)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _createBinderArray5751)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._createBinderArray5751)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readBinderArray5752; 
 		public void readBinderArray(android.os.IBinder[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _readBinderArray5752, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.os.IBinder[], android.os.IBinder>(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._readBinderArray5752, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.os.IBinder[], android.os.IBinder>(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _readBinderArray5752, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.os.IBinder[], android.os.IBinder>(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readBinderArray5752, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.os.IBinder[], android.os.IBinder>(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeTypedList5753; 
 		public void writeTypedList(java.util.List arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeTypedList5753, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeTypedList5753, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeTypedList5753, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeTypedList5753, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeStringList5754; 
 		public void writeStringList(java.util.List arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeStringList5754, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeStringList5754, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeStringList5754, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeStringList5754, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeBinderList5755; 
 		public void writeBinderList(java.util.List arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeBinderList5755, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeBinderList5755, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeBinderList5755, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeBinderList5755, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeTypedArray5756; 
 		public void writeTypedArray(android.os.Parcelable[] arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeTypedArray5756, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.os.Parcelable[], android.os.Parcelable>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeTypedArray5756, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.os.Parcelable[], android.os.Parcelable>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeTypedArray5756, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.os.Parcelable[], android.os.Parcelable>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeTypedArray5756, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.os.Parcelable[], android.os.Parcelable>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeParcelable5757; 
 		public void writeParcelable(android.os.Parcelable arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeParcelable5757, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeParcelable5757, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeParcelable5757, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeParcelable5757, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeSerializable5758; 
 		public void writeSerializable(java.io.Serializable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeSerializable5758, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeSerializable5758, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeSerializable5758, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeSerializable5758, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeException5759; 
 		public void writeException(java.lang.Exception arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeException5759, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeException5759, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeException5759, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeException5759, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeNoException5760; 
 		public void writeNoException() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeNoException5760); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeNoException5760); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeNoException5760); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeNoException5760); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readException5761; 
 		public void readException() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _readException5761); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._readException5761); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _readException5761); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readException5761); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readException5762; 
 		public void readException(int arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _readException5762, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._readException5762, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _readException5762, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readException5762, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readStrongBinder5763; 
-		public android.os.IBinder readStrongBinder() 
+		public global::android.os.IBinder readStrongBinder() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, _readStrongBinder5763)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._readStrongBinder5763)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _readStrongBinder5763)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readStrongBinder5763)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readFileDescriptor5764; 
-		public android.os.ParcelFileDescriptor readFileDescriptor() 
+		public global::android.os.ParcelFileDescriptor readFileDescriptor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.ParcelFileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, _readFileDescriptor5764)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.ParcelFileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._readFileDescriptor5764)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.ParcelFileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _readFileDescriptor5764)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.ParcelFileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readFileDescriptor5764)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readMap5765; 
 		public void readMap(java.util.Map arg0, java.lang.ClassLoader arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _readMap5765, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._readMap5765, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _readMap5765, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readMap5765, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readList5766; 
 		public void readList(java.util.List arg0, java.lang.ClassLoader arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _readList5766, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._readList5766, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _readList5766, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readList5766, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readHashMap5767; 
-		public java.util.HashMap readHashMap(java.lang.ClassLoader arg0) 
+		public global::java.util.HashMap readHashMap(java.lang.ClassLoader arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.HashMap>(@__env, @__env.CallObjectMethodPtr(this, _readHashMap5767, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.HashMap>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._readHashMap5767, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.HashMap>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _readHashMap5767, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.HashMap>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readHashMap5767, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readBundle5768; 
-		public android.os.Bundle readBundle() 
+		public global::android.os.Bundle readBundle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallObjectMethodPtr(this, _readBundle5768)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._readBundle5768)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _readBundle5768)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readBundle5768)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readBundle5769; 
-		public android.os.Bundle readBundle(java.lang.ClassLoader arg0) 
+		public global::android.os.Bundle readBundle(java.lang.ClassLoader arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallObjectMethodPtr(this, _readBundle5769, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._readBundle5769, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _readBundle5769, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readBundle5769, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createByteArray5770; 
 		public byte[] createByteArray() 
 		{ 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _createByteArray5770)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._createByteArray5770)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _createByteArray5770)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._createByteArray5770)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readByteArray5771; 
 		public void readByteArray(byte[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _readByteArray5771, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._readByteArray5771, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _readByteArray5771, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readByteArray5771, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readArrayList5772; 
-		public java.util.ArrayList readArrayList(java.lang.ClassLoader arg0) 
+		public global::java.util.ArrayList readArrayList(java.lang.ClassLoader arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.ArrayList>(@__env, @__env.CallObjectMethodPtr(this, _readArrayList5772, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.ArrayList>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._readArrayList5772, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.ArrayList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _readArrayList5772, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.ArrayList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readArrayList5772, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readArray5773; 
-		public java.lang.Object[] readArray(java.lang.ClassLoader arg0) 
+		public global::java.lang.Object[] readArray(java.lang.ClassLoader arg0) 
 		{ 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _readArray5773, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._readArray5773, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _readArray5773, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readArray5773, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readSparseArray5774; 
-		public android.util.SparseArray readSparseArray(java.lang.ClassLoader arg0) 
+		public global::android.util.SparseArray readSparseArray(java.lang.ClassLoader arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.SparseArray>(@__env, @__env.CallObjectMethodPtr(this, _readSparseArray5774, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.SparseArray>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._readSparseArray5774, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.SparseArray>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _readSparseArray5774, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.SparseArray>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readSparseArray5774, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readSparseBooleanArray5775; 
-		public android.util.SparseBooleanArray readSparseBooleanArray() 
+		public global::android.util.SparseBooleanArray readSparseBooleanArray() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.SparseBooleanArray>(@__env, @__env.CallObjectMethodPtr(this, _readSparseBooleanArray5775)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.SparseBooleanArray>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._readSparseBooleanArray5775)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.SparseBooleanArray>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _readSparseBooleanArray5775)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.SparseBooleanArray>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readSparseBooleanArray5775)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createTypedArrayList5776; 
-		public java.util.ArrayList createTypedArrayList(android.os.Parcelable_Creator arg0) 
+		public global::java.util.ArrayList createTypedArrayList(android.os.Parcelable_Creator arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.ArrayList>(@__env, @__env.CallObjectMethodPtr(this, _createTypedArrayList5776, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.ArrayList>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._createTypedArrayList5776, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.ArrayList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _createTypedArrayList5776, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.ArrayList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._createTypedArrayList5776, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readTypedList5777; 
 		public void readTypedList(java.util.List arg0, android.os.Parcelable_Creator arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _readTypedList5777, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._readTypedList5777, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _readTypedList5777, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readTypedList5777, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createStringArrayList5778; 
-		public java.util.ArrayList createStringArrayList() 
+		public global::java.util.ArrayList createStringArrayList() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.ArrayList>(@__env, @__env.CallObjectMethodPtr(this, _createStringArrayList5778)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.ArrayList>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._createStringArrayList5778)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.ArrayList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _createStringArrayList5778)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.ArrayList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._createStringArrayList5778)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createBinderArrayList5779; 
-		public java.util.ArrayList createBinderArrayList() 
+		public global::java.util.ArrayList createBinderArrayList() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.ArrayList>(@__env, @__env.CallObjectMethodPtr(this, _createBinderArrayList5779)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.ArrayList>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._createBinderArrayList5779)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.ArrayList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _createBinderArrayList5779)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.ArrayList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._createBinderArrayList5779)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readStringList5780; 
 		public void readStringList(java.util.List arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _readStringList5780, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._readStringList5780, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _readStringList5780, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readStringList5780, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readBinderList5781; 
 		public void readBinderList(java.util.List arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _readBinderList5781, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._readBinderList5781, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _readBinderList5781, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readBinderList5781, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createTypedArray5782; 
-		public java.lang.Object[] createTypedArray(android.os.Parcelable_Creator arg0) 
+		public global::java.lang.Object[] createTypedArray(android.os.Parcelable_Creator arg0) 
 		{ 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _createTypedArray5782, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._createTypedArray5782, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _createTypedArray5782, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._createTypedArray5782, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readTypedArray5783; 
 		public void readTypedArray(java.lang.Object[] arg0, android.os.Parcelable_Creator arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _readTypedArray5783, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._readTypedArray5783, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _readTypedArray5783, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readTypedArray5783, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeParcelableArray5784; 
 		public void writeParcelableArray(android.os.Parcelable[] arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				@__env.CallVoidMethod(this, _writeParcelableArray5784, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.os.Parcelable[], android.os.Parcelable>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.os.Parcel._writeParcelableArray5784, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.os.Parcelable[], android.os.Parcelable>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Parcel.staticClass, _writeParcelableArray5784, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.os.Parcelable[], android.os.Parcelable>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._writeParcelableArray5784, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.os.Parcelable[], android.os.Parcelable>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readValue5785; 
-		public java.lang.Object readValue(java.lang.ClassLoader arg0) 
+		public global::java.lang.Object readValue(java.lang.ClassLoader arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _readValue5785, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._readValue5785, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _readValue5785, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readValue5785, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readParcelable5786; 
-		public android.os.Parcelable readParcelable(java.lang.ClassLoader arg0) 
+		public global::android.os.Parcelable readParcelable(java.lang.ClassLoader arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, _readParcelable5786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._readParcelable5786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _readParcelable5786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readParcelable5786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readParcelableArray5787; 
-		public android.os.Parcelable[] readParcelableArray(java.lang.ClassLoader arg0) 
+		public global::android.os.Parcelable[] readParcelableArray(java.lang.ClassLoader arg0) 
 		{ 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _readParcelableArray5787, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._readParcelableArray5787, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _readParcelableArray5787, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readParcelableArray5787, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _readSerializable5788; 
-		public java.io.Serializable readSerializable() 
+		public global::java.io.Serializable readSerializable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Parcel)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.io.Serializable>(@__env, @__env.CallObjectMethodPtr(this, _readSerializable5788)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.io.Serializable>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Parcel._readSerializable5788)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.io.Serializable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Parcel.staticClass, _readSerializable5788)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.io.Serializable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Parcel.staticClass, global::android.os.Parcel._readSerializable5788)); 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _STRING_CREATOR5789; 
-		public static android.os.Parcelable_Creator STRING_CREATOR
+		public static global::android.os.Parcelable_Creator STRING_CREATOR
 		{ 
 			get 
 			{ 
-				return default(android.os.Parcelable_Creator); 
+				return default(global::android.os.Parcelable_Creator); 
 			} 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 

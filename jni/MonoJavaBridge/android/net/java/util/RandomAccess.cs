@@ -19,7 +19,7 @@ namespace java.util
 		internal static global::java.lang.Class staticClass; 
 		static __RandomAccess() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.util.__RandomAccess), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.util.__RandomAccess), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 

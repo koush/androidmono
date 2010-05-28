@@ -6,7 +6,7 @@ namespace java.nio.channels
 		internal new static global::java.lang.Class staticClass; 
 		static DatagramChannel() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.nio.channels.DatagramChannel), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.nio.channels.DatagramChannel), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected DatagramChannel(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -16,9 +16,9 @@ namespace java.nio.channels
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.DatagramChannel)) 
-				return @__env.CallLongMethod(this, _write12156, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				return @__env.CallLongMethod(this, global::java.nio.channels.DatagramChannel._write12156, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, java.nio.channels.DatagramChannel.staticClass, _write12156, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				return @__env.CallNonVirtualLongMethod(this, global::java.nio.channels.DatagramChannel.staticClass, global::java.nio.channels.DatagramChannel._write12156, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _write12157; 
 		public abstract int write(java.nio.ByteBuffer arg0); 
@@ -33,42 +33,42 @@ namespace java.nio.channels
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.DatagramChannel)) 
-				return @__env.CallLongMethod(this, _read12161, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				return @__env.CallLongMethod(this, global::java.nio.channels.DatagramChannel._read12161, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, java.nio.channels.DatagramChannel.staticClass, _read12161, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				return @__env.CallNonVirtualLongMethod(this, global::java.nio.channels.DatagramChannel.staticClass, global::java.nio.channels.DatagramChannel._read12161, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _read12162; 
 		public abstract int read(java.nio.ByteBuffer arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _open12163; 
-		public static java.nio.channels.DatagramChannel open() 
+		public static global::java.nio.channels.DatagramChannel open() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.DatagramChannel>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.channels.DatagramChannel.staticClass, _open12163)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.DatagramChannel>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.channels.DatagramChannel.staticClass, global::java.nio.channels.DatagramChannel._open12163)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _connect12164; 
-		public abstract java.nio.channels.DatagramChannel connect(java.net.SocketAddress arg0); 
+		public abstract global::java.nio.channels.DatagramChannel connect(java.net.SocketAddress arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _socket12165; 
-		public abstract java.net.DatagramSocket socket(); 
+		public abstract global::java.net.DatagramSocket socket(); 
 		internal static global::net.sf.jni4net.jni.MethodId _disconnect12166; 
-		public abstract java.nio.channels.DatagramChannel disconnect(); 
+		public abstract global::java.nio.channels.DatagramChannel disconnect(); 
 		internal static global::net.sf.jni4net.jni.MethodId _isConnected12167; 
 		public abstract bool isConnected(); 
 		internal static global::net.sf.jni4net.jni.MethodId _receive12168; 
-		public abstract java.net.SocketAddress receive(java.nio.ByteBuffer arg0); 
+		public abstract global::java.net.SocketAddress receive(java.nio.ByteBuffer arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _validOps12169; 
 		public sealed override int validOps() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.DatagramChannel)) 
-				return @__env.CallIntMethod(this, _validOps12169); 
+				return @__env.CallIntMethod(this, global::java.nio.channels.DatagramChannel._validOps12169); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.nio.channels.DatagramChannel.staticClass, _validOps12169); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.nio.channels.DatagramChannel.staticClass, global::java.nio.channels.DatagramChannel._validOps12169); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _DatagramChannel12170; 
 		protected DatagramChannel(java.nio.channels.spi.SelectorProvider arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.nio.channels.DatagramChannel.staticClass, _DatagramChannel12170, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(java.nio.channels.DatagramChannel.staticClass, global::java.nio.channels.DatagramChannel._DatagramChannel12170, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

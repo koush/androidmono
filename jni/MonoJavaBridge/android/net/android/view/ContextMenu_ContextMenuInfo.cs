@@ -19,7 +19,7 @@ namespace android.view
 		internal static global::java.lang.Class staticClass; 
 		static __ContextMenu_ContextMenuInfo() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.view.__ContextMenu_ContextMenuInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.__ContextMenu_ContextMenuInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 

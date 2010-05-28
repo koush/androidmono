@@ -6,7 +6,7 @@ namespace java.util
 		internal static global::java.lang.Class staticClass; 
 		static Observable() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.util.Observable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.util.Observable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,87 +23,87 @@ namespace java.util
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Observable)) 
-				@__env.CallVoidMethod(this, _addObserver12950, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::java.util.Observable._addObserver12950, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Observable.staticClass, _addObserver12950, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._addObserver12950, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _deleteObserver12951; 
 		public virtual void deleteObserver(java.util.Observer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Observable)) 
-				@__env.CallVoidMethod(this, _deleteObserver12951, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::java.util.Observable._deleteObserver12951, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Observable.staticClass, _deleteObserver12951, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._deleteObserver12951, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _notifyObservers12952; 
 		public virtual void notifyObservers() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Observable)) 
-				@__env.CallVoidMethod(this, _notifyObservers12952); 
+				@__env.CallVoidMethod(this, global::java.util.Observable._notifyObservers12952); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Observable.staticClass, _notifyObservers12952); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._notifyObservers12952); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _notifyObservers12953; 
 		public virtual void notifyObservers(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Observable)) 
-				@__env.CallVoidMethod(this, _notifyObservers12953, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::java.util.Observable._notifyObservers12953, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Observable.staticClass, _notifyObservers12953, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._notifyObservers12953, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _deleteObservers12954; 
 		public virtual void deleteObservers() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Observable)) 
-				@__env.CallVoidMethod(this, _deleteObservers12954); 
+				@__env.CallVoidMethod(this, global::java.util.Observable._deleteObservers12954); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Observable.staticClass, _deleteObservers12954); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._deleteObservers12954); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setChanged12955; 
 		protected virtual void setChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Observable)) 
-				@__env.CallVoidMethod(this, _setChanged12955); 
+				@__env.CallVoidMethod(this, global::java.util.Observable._setChanged12955); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Observable.staticClass, _setChanged12955); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._setChanged12955); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _clearChanged12956; 
 		protected virtual void clearChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Observable)) 
-				@__env.CallVoidMethod(this, _clearChanged12956); 
+				@__env.CallVoidMethod(this, global::java.util.Observable._clearChanged12956); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.Observable.staticClass, _clearChanged12956); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._clearChanged12956); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _hasChanged12957; 
 		public virtual bool hasChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Observable)) 
-				return @__env.CallBooleanMethod(this, _hasChanged12957); 
+				return @__env.CallBooleanMethod(this, global::java.util.Observable._hasChanged12957); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.util.Observable.staticClass, _hasChanged12957); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._hasChanged12957); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _countObservers12958; 
 		public virtual int countObservers() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Observable)) 
-				return @__env.CallIntMethod(this, _countObservers12958); 
+				return @__env.CallIntMethod(this, global::java.util.Observable._countObservers12958); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.util.Observable.staticClass, _countObservers12958); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._countObservers12958); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _Observable12959; 
 		public Observable()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.util.Observable.staticClass, _Observable12959, this); 
+			@__env.NewObject(java.util.Observable.staticClass, global::java.util.Observable._Observable12959, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

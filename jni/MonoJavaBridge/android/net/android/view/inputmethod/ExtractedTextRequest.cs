@@ -6,7 +6,7 @@ namespace android.view.inputmethod
 		internal static global::java.lang.Class staticClass; 
 		static ExtractedTextRequest() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.view.inputmethod.ExtractedTextRequest), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.inputmethod.ExtractedTextRequest), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,24 +23,24 @@ namespace android.view.inputmethod
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.inputmethod.ExtractedTextRequest)) 
-				@__env.CallVoidMethod(this, _writeToParcel9088, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.view.inputmethod.ExtractedTextRequest._writeToParcel9088, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.inputmethod.ExtractedTextRequest.staticClass, _writeToParcel9088, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.ExtractedTextRequest.staticClass, global::android.view.inputmethod.ExtractedTextRequest._writeToParcel9088, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _describeContents9089; 
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.inputmethod.ExtractedTextRequest)) 
-				return @__env.CallIntMethod(this, _describeContents9089); 
+				return @__env.CallIntMethod(this, global::android.view.inputmethod.ExtractedTextRequest._describeContents9089); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.view.inputmethod.ExtractedTextRequest.staticClass, _describeContents9089); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.inputmethod.ExtractedTextRequest.staticClass, global::android.view.inputmethod.ExtractedTextRequest._describeContents9089); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ExtractedTextRequest9090; 
 		public ExtractedTextRequest()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.inputmethod.ExtractedTextRequest.staticClass, _ExtractedTextRequest9090, this); 
+			@__env.NewObject(android.view.inputmethod.ExtractedTextRequest.staticClass, global::android.view.inputmethod.ExtractedTextRequest._ExtractedTextRequest9090, this); 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _token9091; 
 		public int token
@@ -87,11 +87,11 @@ namespace android.view.inputmethod
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _CREATOR9095; 
-		public static android.os.Parcelable_Creator CREATOR
+		public static global::android.os.Parcelable_Creator CREATOR
 		{ 
 			get 
 			{ 
-				return default(android.os.Parcelable_Creator); 
+				return default(global::android.os.Parcelable_Creator); 
 			} 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 

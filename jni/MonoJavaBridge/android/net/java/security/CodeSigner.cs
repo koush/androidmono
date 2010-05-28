@@ -6,7 +6,7 @@ namespace java.security
 		internal static global::java.lang.Class staticClass; 
 		static CodeSigner() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.security.CodeSigner), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.security.CodeSigner), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,51 +23,51 @@ namespace java.security
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.CodeSigner)) 
-				return @__env.CallIntMethod(this, _hashCode12421); 
+				return @__env.CallIntMethod(this, global::java.security.CodeSigner._hashCode12421); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.security.CodeSigner.staticClass, _hashCode12421); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.security.CodeSigner.staticClass, global::java.security.CodeSigner._hashCode12421); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _equals12422; 
 		public sealed override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.CodeSigner)) 
-				return @__env.CallBooleanMethod(this, _equals12422, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, global::java.security.CodeSigner._equals12422, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.security.CodeSigner.staticClass, _equals12422, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.CodeSigner.staticClass, global::java.security.CodeSigner._equals12422, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString12423; 
-		public sealed override java.lang.String toString() 
+		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.CodeSigner)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString12423)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.CodeSigner._toString12423)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.security.CodeSigner.staticClass, _toString12423)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.CodeSigner.staticClass, global::java.security.CodeSigner._toString12423)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSignerCertPath12424; 
-		public java.security.cert.CertPath getSignerCertPath() 
+		public global::java.security.cert.CertPath getSignerCertPath() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.CodeSigner)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.cert.CertPath>(@__env, @__env.CallObjectMethodPtr(this, _getSignerCertPath12424)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.cert.CertPath>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.CodeSigner._getSignerCertPath12424)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.cert.CertPath>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.security.CodeSigner.staticClass, _getSignerCertPath12424)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.cert.CertPath>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.CodeSigner.staticClass, global::java.security.CodeSigner._getSignerCertPath12424)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getTimestamp12425; 
-		public java.security.Timestamp getTimestamp() 
+		public global::java.security.Timestamp getTimestamp() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.CodeSigner)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.Timestamp>(@__env, @__env.CallObjectMethodPtr(this, _getTimestamp12425)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.Timestamp>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.CodeSigner._getTimestamp12425)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.Timestamp>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.security.CodeSigner.staticClass, _getTimestamp12425)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.Timestamp>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.CodeSigner.staticClass, global::java.security.CodeSigner._getTimestamp12425)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _CodeSigner12426; 
 		public CodeSigner(java.security.cert.CertPath arg0, java.security.Timestamp arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.security.CodeSigner.staticClass, _CodeSigner12426, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(java.security.CodeSigner.staticClass, global::java.security.CodeSigner._CodeSigner12426, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

@@ -6,7 +6,7 @@ namespace android.webkit
 		internal static global::java.lang.Class staticClass; 
 		static WebSyncManager() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.webkit.WebSyncManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.webkit.WebSyncManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected WebSyncManager(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -16,60 +16,60 @@ namespace android.webkit
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebSyncManager)) 
-				@__env.CallVoidMethod(this, _run9519); 
+				@__env.CallVoidMethod(this, global::android.webkit.WebSyncManager._run9519); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebSyncManager.staticClass, _run9519); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._run9519); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _sync9520; 
 		public virtual void sync() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebSyncManager)) 
-				@__env.CallVoidMethod(this, _sync9520); 
+				@__env.CallVoidMethod(this, global::android.webkit.WebSyncManager._sync9520); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebSyncManager.staticClass, _sync9520); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._sync9520); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _startSync9521; 
 		public virtual void startSync() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebSyncManager)) 
-				@__env.CallVoidMethod(this, _startSync9521); 
+				@__env.CallVoidMethod(this, global::android.webkit.WebSyncManager._startSync9521); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebSyncManager.staticClass, _startSync9521); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._startSync9521); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resetSync9522; 
 		public virtual void resetSync() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebSyncManager)) 
-				@__env.CallVoidMethod(this, _resetSync9522); 
+				@__env.CallVoidMethod(this, global::android.webkit.WebSyncManager._resetSync9522); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebSyncManager.staticClass, _resetSync9522); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._resetSync9522); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _stopSync9523; 
 		public virtual void stopSync() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebSyncManager)) 
-				@__env.CallVoidMethod(this, _stopSync9523); 
+				@__env.CallVoidMethod(this, global::android.webkit.WebSyncManager._stopSync9523); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebSyncManager.staticClass, _stopSync9523); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._stopSync9523); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onSyncInit9524; 
 		protected virtual void onSyncInit() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebSyncManager)) 
-				@__env.CallVoidMethod(this, _onSyncInit9524); 
+				@__env.CallVoidMethod(this, global::android.webkit.WebSyncManager._onSyncInit9524); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebSyncManager.staticClass, _onSyncInit9524); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._onSyncInit9524); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _WebSyncManager9525; 
 		protected WebSyncManager(android.content.Context arg0, java.lang.String arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.webkit.WebSyncManager.staticClass, _WebSyncManager9525, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(android.webkit.WebSyncManager.staticClass, global::android.webkit.WebSyncManager._WebSyncManager9525, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

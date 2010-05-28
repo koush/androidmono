@@ -6,7 +6,7 @@ namespace android.text.method
 		internal new static global::java.lang.Class staticClass; 
 		static DialerKeyListener() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.text.method.DialerKeyListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.method.DialerKeyListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,42 +19,42 @@ namespace android.text.method
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getInstance7138; 
-		public static android.text.method.DialerKeyListener getInstance() 
+		public static global::android.text.method.DialerKeyListener getInstance() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.method.DialerKeyListener>(@__env, @__env.CallStaticObjectMethodPtr(android.text.method.DialerKeyListener.staticClass, _getInstance7138)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.method.DialerKeyListener>(@__env, @__env.CallStaticObjectMethodPtr(android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._getInstance7138)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _lookup7139; 
 		protected override int lookup(android.view.KeyEvent arg0, android.text.Spannable arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.method.DialerKeyListener)) 
-				return @__env.CallIntMethod(this, _lookup7139, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				return @__env.CallIntMethod(this, global::android.text.method.DialerKeyListener._lookup7139, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.method.DialerKeyListener.staticClass, _lookup7139, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._lookup7139, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getInputType7140; 
 		public override int getInputType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.method.DialerKeyListener)) 
-				return @__env.CallIntMethod(this, _getInputType7140); 
+				return @__env.CallIntMethod(this, global::android.text.method.DialerKeyListener._getInputType7140); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.method.DialerKeyListener.staticClass, _getInputType7140); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._getInputType7140); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAcceptedChars7141; 
 		protected override char[] getAcceptedChars() 
 		{ 
 			if (GetType() == typeof(android.text.method.DialerKeyListener)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getAcceptedChars7141)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.text.method.DialerKeyListener._getAcceptedChars7141)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.method.DialerKeyListener.staticClass, _getAcceptedChars7141)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._getAcceptedChars7141)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _DialerKeyListener7142; 
 		public DialerKeyListener()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.method.DialerKeyListener.staticClass, _DialerKeyListener7142, this); 
+			@__env.NewObject(android.text.method.DialerKeyListener.staticClass, global::android.text.method.DialerKeyListener._DialerKeyListener7142, this); 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _CHARACTERS7143; 
 		public static char[] CHARACTERS

@@ -6,7 +6,7 @@ namespace android.graphics
 		internal new static global::java.lang.Class staticClass; 
 		static AvoidXfermode() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.graphics.AvoidXfermode), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.AvoidXfermode), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -24,7 +24,7 @@ namespace android.graphics
 			internal new static global::java.lang.Class staticClass; 
 			static Mode() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.graphics.AvoidXfermode.Mode), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.AvoidXfermode.Mode), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -37,30 +37,30 @@ namespace android.graphics
 			{ 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _valueOf2701; 
-			public static android.graphics.AvoidXfermode.Mode valueOf(java.lang.String arg0) 
+			public static global::android.graphics.AvoidXfermode.Mode valueOf(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.AvoidXfermode.Mode>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.AvoidXfermode.Mode.staticClass, _valueOf2701, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.AvoidXfermode.Mode>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.AvoidXfermode.Mode.staticClass, global::android.graphics.AvoidXfermode.Mode._valueOf2701, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _values2702; 
-			public static android.graphics.AvoidXfermode.Mode[] values() 
+			public static global::android.graphics.AvoidXfermode.Mode[] values() 
 			{ 
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.AvoidXfermode.Mode.staticClass, _values2702)); 
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.AvoidXfermode.Mode.staticClass, global::android.graphics.AvoidXfermode.Mode._values2702)); 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _AVOID2703; 
-			public static android.graphics.AvoidXfermode.Mode AVOID
+			public static global::android.graphics.AvoidXfermode.Mode AVOID
 			{ 
 				get 
 				{ 
-					return default(android.graphics.AvoidXfermode.Mode); 
+					return default(global::android.graphics.AvoidXfermode.Mode); 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _TARGET2704; 
-			public static android.graphics.AvoidXfermode.Mode TARGET
+			public static global::android.graphics.AvoidXfermode.Mode TARGET
 			{ 
 				get 
 				{ 
-					return default(android.graphics.AvoidXfermode.Mode); 
+					return default(global::android.graphics.AvoidXfermode.Mode); 
 				} 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
@@ -74,7 +74,7 @@ namespace android.graphics
 		public AvoidXfermode(int arg0, int arg1, android.graphics.AvoidXfermode.Mode arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.AvoidXfermode.staticClass, _AvoidXfermode2705, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+			@__env.NewObject(android.graphics.AvoidXfermode.staticClass, global::android.graphics.AvoidXfermode._AvoidXfermode2705, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

@@ -6,7 +6,7 @@ namespace android.provider
 		internal static global::java.lang.Class staticClass; 
 		static LiveFolders() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.provider.LiveFolders), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.LiveFolders), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -18,42 +18,42 @@ namespace android.provider
 		internal LiveFolders(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		public static java.lang.String NAME
+		public static global::java.lang.String NAME
 		{ 
 			get 
 			{ 
 				return "name"; 
 			} 
 		} 
-		public static java.lang.String DESCRIPTION
+		public static global::java.lang.String DESCRIPTION
 		{ 
 			get 
 			{ 
 				return "description"; 
 			} 
 		} 
-		public static java.lang.String INTENT
+		public static global::java.lang.String INTENT
 		{ 
 			get 
 			{ 
 				return "intent"; 
 			} 
 		} 
-		public static java.lang.String ICON_BITMAP
+		public static global::java.lang.String ICON_BITMAP
 		{ 
 			get 
 			{ 
 				return "icon_bitmap"; 
 			} 
 		} 
-		public static java.lang.String ICON_PACKAGE
+		public static global::java.lang.String ICON_PACKAGE
 		{ 
 			get 
 			{ 
 				return "icon_package"; 
 			} 
 		} 
-		public static java.lang.String ICON_RESOURCE
+		public static global::java.lang.String ICON_RESOURCE
 		{ 
 			get 
 			{ 
@@ -74,35 +74,35 @@ namespace android.provider
 				return 2; 
 			} 
 		} 
-		public static java.lang.String EXTRA_LIVE_FOLDER_NAME
+		public static global::java.lang.String EXTRA_LIVE_FOLDER_NAME
 		{ 
 			get 
 			{ 
 				return "android.intent.extra.livefolder.NAME"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_LIVE_FOLDER_ICON
+		public static global::java.lang.String EXTRA_LIVE_FOLDER_ICON
 		{ 
 			get 
 			{ 
 				return "android.intent.extra.livefolder.ICON"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_LIVE_FOLDER_DISPLAY_MODE
+		public static global::java.lang.String EXTRA_LIVE_FOLDER_DISPLAY_MODE
 		{ 
 			get 
 			{ 
 				return "android.intent.extra.livefolder.DISPLAY_MODE"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_LIVE_FOLDER_BASE_INTENT
+		public static global::java.lang.String EXTRA_LIVE_FOLDER_BASE_INTENT
 		{ 
 			get 
 			{ 
 				return "android.intent.extra.livefolder.BASE_INTENT"; 
 			} 
 		} 
-		public static java.lang.String ACTION_CREATE_LIVE_FOLDER
+		public static global::java.lang.String ACTION_CREATE_LIVE_FOLDER
 		{ 
 			get 
 			{ 

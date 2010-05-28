@@ -6,7 +6,7 @@ namespace android.os
 		internal static global::java.lang.Class staticClass; 
 		static Debug() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.Debug), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.Debug), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -24,7 +24,7 @@ namespace android.os
 			internal static global::java.lang.Class staticClass; 
 			static InstructionCount() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.Debug.InstructionCount), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.Debug.InstructionCount), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -41,42 +41,42 @@ namespace android.os
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.os.Debug.InstructionCount)) 
-					return @__env.CallBooleanMethod(this, _resetAndStart5486); 
+					return @__env.CallBooleanMethod(this, global::android.os.Debug.InstructionCount._resetAndStart5486); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.os.Debug.InstructionCount.staticClass, _resetAndStart5486); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._resetAndStart5486); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _collect5487; 
 			public virtual bool collect() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.os.Debug.InstructionCount)) 
-					return @__env.CallBooleanMethod(this, _collect5487); 
+					return @__env.CallBooleanMethod(this, global::android.os.Debug.InstructionCount._collect5487); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.os.Debug.InstructionCount.staticClass, _collect5487); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._collect5487); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _globalTotal5488; 
 			public virtual int globalTotal() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.os.Debug.InstructionCount)) 
-					return @__env.CallIntMethod(this, _globalTotal5488); 
+					return @__env.CallIntMethod(this, global::android.os.Debug.InstructionCount._globalTotal5488); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.os.Debug.InstructionCount.staticClass, _globalTotal5488); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._globalTotal5488); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _globalMethodInvocations5489; 
 			public virtual int globalMethodInvocations() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.os.Debug.InstructionCount)) 
-					return @__env.CallIntMethod(this, _globalMethodInvocations5489); 
+					return @__env.CallIntMethod(this, global::android.os.Debug.InstructionCount._globalMethodInvocations5489); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.os.Debug.InstructionCount.staticClass, _globalMethodInvocations5489); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._globalMethodInvocations5489); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _InstructionCount5490; 
 			public InstructionCount()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.os.Debug.InstructionCount.staticClass, _InstructionCount5490, this); 
+				@__env.NewObject(android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._InstructionCount5490, this); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -94,7 +94,7 @@ namespace android.os
 			internal static global::java.lang.Class staticClass; 
 			static MemoryInfo() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.Debug.MemoryInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.Debug.MemoryInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -111,60 +111,60 @@ namespace android.os
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.os.Debug.MemoryInfo)) 
-					@__env.CallVoidMethod(this, _writeToParcel5491, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.os.Debug.MemoryInfo._writeToParcel5491, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.os.Debug.MemoryInfo.staticClass, _writeToParcel5491, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._writeToParcel5491, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _describeContents5492; 
 			public virtual int describeContents() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.os.Debug.MemoryInfo)) 
-					return @__env.CallIntMethod(this, _describeContents5492); 
+					return @__env.CallIntMethod(this, global::android.os.Debug.MemoryInfo._describeContents5492); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.os.Debug.MemoryInfo.staticClass, _describeContents5492); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._describeContents5492); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _readFromParcel5493; 
 			public virtual void readFromParcel(android.os.Parcel arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.os.Debug.MemoryInfo)) 
-					@__env.CallVoidMethod(this, _readFromParcel5493, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.os.Debug.MemoryInfo._readFromParcel5493, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.os.Debug.MemoryInfo.staticClass, _readFromParcel5493, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._readFromParcel5493, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getTotalPss5494; 
 			public virtual int getTotalPss() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.os.Debug.MemoryInfo)) 
-					return @__env.CallIntMethod(this, _getTotalPss5494); 
+					return @__env.CallIntMethod(this, global::android.os.Debug.MemoryInfo._getTotalPss5494); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.os.Debug.MemoryInfo.staticClass, _getTotalPss5494); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._getTotalPss5494); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getTotalPrivateDirty5495; 
 			public virtual int getTotalPrivateDirty() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.os.Debug.MemoryInfo)) 
-					return @__env.CallIntMethod(this, _getTotalPrivateDirty5495); 
+					return @__env.CallIntMethod(this, global::android.os.Debug.MemoryInfo._getTotalPrivateDirty5495); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.os.Debug.MemoryInfo.staticClass, _getTotalPrivateDirty5495); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._getTotalPrivateDirty5495); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getTotalSharedDirty5496; 
 			public virtual int getTotalSharedDirty() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.os.Debug.MemoryInfo)) 
-					return @__env.CallIntMethod(this, _getTotalSharedDirty5496); 
+					return @__env.CallIntMethod(this, global::android.os.Debug.MemoryInfo._getTotalSharedDirty5496); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.os.Debug.MemoryInfo.staticClass, _getTotalSharedDirty5496); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._getTotalSharedDirty5496); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _MemoryInfo5497; 
 			public MemoryInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.os.Debug.MemoryInfo.staticClass, _MemoryInfo5497, this); 
+				@__env.NewObject(android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._MemoryInfo5497, this); 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _dalvikPss5498; 
 			public int dalvikPss
@@ -266,11 +266,11 @@ namespace android.os
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _CREATOR5507; 
-			public static android.os.Parcelable_Creator CREATOR
+			public static global::android.os.Parcelable_Creator CREATOR
 			{ 
 				get 
 				{ 
-					return default(android.os.Parcelable_Creator); 
+					return default(global::android.os.Parcelable_Creator); 
 				} 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
@@ -289,349 +289,349 @@ namespace android.os
 		public static void getMemoryInfo(android.os.Debug.MemoryInfo arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _getMemoryInfo5508, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._getMemoryInfo5508, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _waitForDebugger5509; 
 		public static void waitForDebugger() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _waitForDebugger5509); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._waitForDebugger5509); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _waitingForDebugger5510; 
 		public static bool waitingForDebugger() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.os.Debug.staticClass, _waitingForDebugger5510); 
+			return @__env.CallStaticBooleanMethod(android.os.Debug.staticClass, global::android.os.Debug._waitingForDebugger5510); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isDebuggerConnected5511; 
 		public static bool isDebuggerConnected() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.os.Debug.staticClass, _isDebuggerConnected5511); 
+			return @__env.CallStaticBooleanMethod(android.os.Debug.staticClass, global::android.os.Debug._isDebuggerConnected5511); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _changeDebugPort5512; 
 		public static void changeDebugPort(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _changeDebugPort5512, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._changeDebugPort5512, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _startNativeTracing5513; 
 		public static void startNativeTracing() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _startNativeTracing5513); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._startNativeTracing5513); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _stopNativeTracing5514; 
 		public static void stopNativeTracing() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _stopNativeTracing5514); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._stopNativeTracing5514); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _enableEmulatorTraceOutput5515; 
 		public static void enableEmulatorTraceOutput() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _enableEmulatorTraceOutput5515); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._enableEmulatorTraceOutput5515); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _startMethodTracing5516; 
 		public static void startMethodTracing(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _startMethodTracing5516, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._startMethodTracing5516, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _startMethodTracing5517; 
 		public static void startMethodTracing(java.lang.String arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _startMethodTracing5517, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._startMethodTracing5517, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _startMethodTracing5518; 
 		public static void startMethodTracing(java.lang.String arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _startMethodTracing5518, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._startMethodTracing5518, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _startMethodTracing5519; 
 		public static void startMethodTracing() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _startMethodTracing5519); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._startMethodTracing5519); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _stopMethodTracing5520; 
 		public static void stopMethodTracing() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _stopMethodTracing5520); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._stopMethodTracing5520); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _threadCpuTimeNanos5521; 
 		public static long threadCpuTimeNanos() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticLongMethod(android.os.Debug.staticClass, _threadCpuTimeNanos5521); 
+			return @__env.CallStaticLongMethod(android.os.Debug.staticClass, global::android.os.Debug._threadCpuTimeNanos5521); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _startAllocCounting5522; 
 		public static void startAllocCounting() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _startAllocCounting5522); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._startAllocCounting5522); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _stopAllocCounting5523; 
 		public static void stopAllocCounting() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _stopAllocCounting5523); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._stopAllocCounting5523); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getGlobalAllocCount5524; 
 		public static int getGlobalAllocCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getGlobalAllocCount5524); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalAllocCount5524); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getGlobalAllocSize5525; 
 		public static int getGlobalAllocSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getGlobalAllocSize5525); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalAllocSize5525); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getGlobalFreedCount5526; 
 		public static int getGlobalFreedCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getGlobalFreedCount5526); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalFreedCount5526); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getGlobalFreedSize5527; 
 		public static int getGlobalFreedSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getGlobalFreedSize5527); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalFreedSize5527); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getGlobalExternalAllocCount5528; 
 		public static int getGlobalExternalAllocCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getGlobalExternalAllocCount5528); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalExternalAllocCount5528); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getGlobalExternalAllocSize5529; 
 		public static int getGlobalExternalAllocSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getGlobalExternalAllocSize5529); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalExternalAllocSize5529); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getGlobalExternalFreedCount5530; 
 		public static int getGlobalExternalFreedCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getGlobalExternalFreedCount5530); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalExternalFreedCount5530); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getGlobalExternalFreedSize5531; 
 		public static int getGlobalExternalFreedSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getGlobalExternalFreedSize5531); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalExternalFreedSize5531); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getGlobalGcInvocationCount5532; 
 		public static int getGlobalGcInvocationCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getGlobalGcInvocationCount5532); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getGlobalGcInvocationCount5532); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getThreadAllocCount5533; 
 		public static int getThreadAllocCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getThreadAllocCount5533); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getThreadAllocCount5533); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getThreadAllocSize5534; 
 		public static int getThreadAllocSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getThreadAllocSize5534); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getThreadAllocSize5534); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getThreadExternalAllocCount5535; 
 		public static int getThreadExternalAllocCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getThreadExternalAllocCount5535); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getThreadExternalAllocCount5535); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getThreadExternalAllocSize5536; 
 		public static int getThreadExternalAllocSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getThreadExternalAllocSize5536); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getThreadExternalAllocSize5536); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getThreadGcInvocationCount5537; 
 		public static int getThreadGcInvocationCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getThreadGcInvocationCount5537); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getThreadGcInvocationCount5537); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resetGlobalAllocCount5538; 
 		public static void resetGlobalAllocCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _resetGlobalAllocCount5538); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalAllocCount5538); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resetGlobalAllocSize5539; 
 		public static void resetGlobalAllocSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _resetGlobalAllocSize5539); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalAllocSize5539); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resetGlobalFreedCount5540; 
 		public static void resetGlobalFreedCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _resetGlobalFreedCount5540); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalFreedCount5540); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resetGlobalFreedSize5541; 
 		public static void resetGlobalFreedSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _resetGlobalFreedSize5541); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalFreedSize5541); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resetGlobalExternalAllocCount5542; 
 		public static void resetGlobalExternalAllocCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _resetGlobalExternalAllocCount5542); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalExternalAllocCount5542); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resetGlobalExternalAllocSize5543; 
 		public static void resetGlobalExternalAllocSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _resetGlobalExternalAllocSize5543); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalExternalAllocSize5543); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resetGlobalExternalFreedCount5544; 
 		public static void resetGlobalExternalFreedCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _resetGlobalExternalFreedCount5544); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalExternalFreedCount5544); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resetGlobalExternalFreedSize5545; 
 		public static void resetGlobalExternalFreedSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _resetGlobalExternalFreedSize5545); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalExternalFreedSize5545); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resetGlobalGcInvocationCount5546; 
 		public static void resetGlobalGcInvocationCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _resetGlobalGcInvocationCount5546); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetGlobalGcInvocationCount5546); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resetThreadAllocCount5547; 
 		public static void resetThreadAllocCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _resetThreadAllocCount5547); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetThreadAllocCount5547); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resetThreadAllocSize5548; 
 		public static void resetThreadAllocSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _resetThreadAllocSize5548); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetThreadAllocSize5548); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resetThreadExternalAllocCount5549; 
 		public static void resetThreadExternalAllocCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _resetThreadExternalAllocCount5549); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetThreadExternalAllocCount5549); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resetThreadExternalAllocSize5550; 
 		public static void resetThreadExternalAllocSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _resetThreadExternalAllocSize5550); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetThreadExternalAllocSize5550); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resetThreadGcInvocationCount5551; 
 		public static void resetThreadGcInvocationCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _resetThreadGcInvocationCount5551); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetThreadGcInvocationCount5551); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resetAllCounts5552; 
 		public static void resetAllCounts() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _resetAllCounts5552); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._resetAllCounts5552); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getNativeHeapSize5553; 
 		public static long getNativeHeapSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticLongMethod(android.os.Debug.staticClass, _getNativeHeapSize5553); 
+			return @__env.CallStaticLongMethod(android.os.Debug.staticClass, global::android.os.Debug._getNativeHeapSize5553); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getNativeHeapAllocatedSize5554; 
 		public static long getNativeHeapAllocatedSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticLongMethod(android.os.Debug.staticClass, _getNativeHeapAllocatedSize5554); 
+			return @__env.CallStaticLongMethod(android.os.Debug.staticClass, global::android.os.Debug._getNativeHeapAllocatedSize5554); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getNativeHeapFreeSize5555; 
 		public static long getNativeHeapFreeSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticLongMethod(android.os.Debug.staticClass, _getNativeHeapFreeSize5555); 
+			return @__env.CallStaticLongMethod(android.os.Debug.staticClass, global::android.os.Debug._getNativeHeapFreeSize5555); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setAllocationLimit5556; 
 		public static int setAllocationLimit(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _setAllocationLimit5556, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._setAllocationLimit5556, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setGlobalAllocationLimit5557; 
 		public static int setGlobalAllocationLimit(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _setGlobalAllocationLimit5557, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._setGlobalAllocationLimit5557, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _printLoadedClasses5558; 
 		public static void printLoadedClasses(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _printLoadedClasses5558, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._printLoadedClasses5558, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getLoadedClassCount5559; 
 		public static int getLoadedClassCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getLoadedClassCount5559); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getLoadedClassCount5559); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _dumpHprofData5560; 
 		public static void dumpHprofData(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, _dumpHprofData5560, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.CallStaticVoidMethod(android.os.Debug.staticClass, global::android.os.Debug._dumpHprofData5560, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getBinderSentTransactions5561; 
 		public static int getBinderSentTransactions() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getBinderSentTransactions5561); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getBinderSentTransactions5561); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getBinderReceivedTransactions5562; 
 		public static int getBinderReceivedTransactions() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getBinderReceivedTransactions5562); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getBinderReceivedTransactions5562); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getBinderLocalObjectCount5563; 
 		public static int getBinderLocalObjectCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getBinderLocalObjectCount5563); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getBinderLocalObjectCount5563); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getBinderProxyObjectCount5564; 
 		public static int getBinderProxyObjectCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getBinderProxyObjectCount5564); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getBinderProxyObjectCount5564); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getBinderDeathObjectCount5565; 
 		public static int getBinderDeathObjectCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, _getBinderDeathObjectCount5565); 
+			return @__env.CallStaticIntMethod(android.os.Debug.staticClass, global::android.os.Debug._getBinderDeathObjectCount5565); 
 		} 
 		public static int TRACE_COUNT_ALLOCS
 		{ 

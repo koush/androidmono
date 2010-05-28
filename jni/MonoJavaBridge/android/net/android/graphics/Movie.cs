@@ -6,7 +6,7 @@ namespace android.graphics
 		internal static global::java.lang.Class staticClass; 
 		static Movie() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.graphics.Movie), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.Movie), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,81 +23,81 @@ namespace android.graphics
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Movie)) 
-				return @__env.CallBooleanMethod(this, _isOpaque3014); 
+				return @__env.CallBooleanMethod(this, global::android.graphics.Movie._isOpaque3014); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Movie.staticClass, _isOpaque3014); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Movie.staticClass, global::android.graphics.Movie._isOpaque3014); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setTime3015; 
 		public virtual bool setTime(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Movie)) 
-				return @__env.CallBooleanMethod(this, _setTime3015, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.graphics.Movie._setTime3015, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Movie.staticClass, _setTime3015, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Movie.staticClass, global::android.graphics.Movie._setTime3015, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _duration3016; 
 		public virtual int duration() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Movie)) 
-				return @__env.CallIntMethod(this, _duration3016); 
+				return @__env.CallIntMethod(this, global::android.graphics.Movie._duration3016); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.graphics.Movie.staticClass, _duration3016); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Movie.staticClass, global::android.graphics.Movie._duration3016); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _height3017; 
 		public virtual int height() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Movie)) 
-				return @__env.CallIntMethod(this, _height3017); 
+				return @__env.CallIntMethod(this, global::android.graphics.Movie._height3017); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.graphics.Movie.staticClass, _height3017); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Movie.staticClass, global::android.graphics.Movie._height3017); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _width3018; 
 		public virtual int width() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Movie)) 
-				return @__env.CallIntMethod(this, _width3018); 
+				return @__env.CallIntMethod(this, global::android.graphics.Movie._width3018); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.graphics.Movie.staticClass, _width3018); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Movie.staticClass, global::android.graphics.Movie._width3018); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _draw3019; 
 		public virtual void draw(android.graphics.Canvas arg0, float arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Movie)) 
-				@__env.CallVoidMethod(this, _draw3019, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, global::android.graphics.Movie._draw3019, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.Movie.staticClass, _draw3019, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Movie.staticClass, global::android.graphics.Movie._draw3019, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _draw3020; 
 		public virtual void draw(android.graphics.Canvas arg0, float arg1, float arg2, android.graphics.Paint arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Movie)) 
-				@__env.CallVoidMethod(this, _draw3020, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+				@__env.CallVoidMethod(this, global::android.graphics.Movie._draw3020, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.Movie.staticClass, _draw3020, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Movie.staticClass, global::android.graphics.Movie._draw3020, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _decodeStream3021; 
-		public static android.graphics.Movie decodeStream(java.io.InputStream arg0) 
+		public static global::android.graphics.Movie decodeStream(java.io.InputStream arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Movie>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Movie.staticClass, _decodeStream3021, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Movie>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Movie.staticClass, global::android.graphics.Movie._decodeStream3021, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _decodeByteArray3022; 
-		public static android.graphics.Movie decodeByteArray(byte[] arg0, int arg1, int arg2) 
+		public static global::android.graphics.Movie decodeByteArray(byte[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Movie>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Movie.staticClass, _decodeByteArray3022, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Movie>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Movie.staticClass, global::android.graphics.Movie._decodeByteArray3022, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _decodeFile3023; 
-		public static android.graphics.Movie decodeFile(java.lang.String arg0) 
+		public static global::android.graphics.Movie decodeFile(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Movie>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Movie.staticClass, _decodeFile3023, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Movie>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Movie.staticClass, global::android.graphics.Movie._decodeFile3023, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

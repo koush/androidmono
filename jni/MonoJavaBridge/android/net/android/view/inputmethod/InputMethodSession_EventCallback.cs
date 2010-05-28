@@ -20,7 +20,7 @@ namespace android.view.inputmethod
 		internal static global::java.lang.Class staticClass; 
 		static __InputMethodSession_EventCallback() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.view.inputmethod.__InputMethodSession_EventCallback), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.inputmethod.__InputMethodSession_EventCallback), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -37,9 +37,9 @@ namespace android.view.inputmethod
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.inputmethod.__InputMethodSession_EventCallback)) 
-				@__env.CallVoidMethod(this, _finishedEvent9197, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethodSession_EventCallback._finishedEvent9197, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.inputmethod.__InputMethodSession_EventCallback.staticClass, _finishedEvent9197, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethodSession_EventCallback.staticClass, global::android.view.inputmethod.__InputMethodSession_EventCallback._finishedEvent9197, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

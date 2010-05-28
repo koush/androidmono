@@ -6,7 +6,7 @@ namespace android.os
 		internal static global::java.lang.Class staticClass; 
 		static MessageQueue() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.MessageQueue), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.MessageQueue), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -38,7 +38,7 @@ namespace android.os
 			internal static global::java.lang.Class staticClass; 
 			static __IdleHandler() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.MessageQueue.__IdleHandler), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.MessageQueue.__IdleHandler), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -55,9 +55,9 @@ namespace android.os
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.os.MessageQueue.__IdleHandler)) 
-					return @__env.CallBooleanMethod(this, _queueIdle5676); 
+					return @__env.CallBooleanMethod(this, global::android.os.MessageQueue.__IdleHandler._queueIdle5676); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.os.MessageQueue.__IdleHandler.staticClass, _queueIdle5676); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.os.MessageQueue.__IdleHandler.staticClass, global::android.os.MessageQueue.__IdleHandler._queueIdle5676); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -70,18 +70,18 @@ namespace android.os
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.MessageQueue)) 
-				@__env.CallVoidMethod(this, _addIdleHandler5677, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.MessageQueue._addIdleHandler5677, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.MessageQueue.staticClass, _addIdleHandler5677, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.MessageQueue.staticClass, global::android.os.MessageQueue._addIdleHandler5677, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _removeIdleHandler5678; 
 		public virtual void removeIdleHandler(android.os.MessageQueue.IdleHandler arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.MessageQueue)) 
-				@__env.CallVoidMethod(this, _removeIdleHandler5678, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.MessageQueue._removeIdleHandler5678, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.MessageQueue.staticClass, _removeIdleHandler5678, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.MessageQueue.staticClass, global::android.os.MessageQueue._removeIdleHandler5678, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

@@ -6,7 +6,7 @@ namespace android.os
 		internal static global::java.lang.Class staticClass; 
 		static StatFs() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.StatFs), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.StatFs), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,51 +23,51 @@ namespace android.os
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.StatFs)) 
-				@__env.CallVoidMethod(this, _restat5869, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.StatFs._restat5869, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.StatFs.staticClass, _restat5869, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.StatFs.staticClass, global::android.os.StatFs._restat5869, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getBlockSize5870; 
 		public virtual int getBlockSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.StatFs)) 
-				return @__env.CallIntMethod(this, _getBlockSize5870); 
+				return @__env.CallIntMethod(this, global::android.os.StatFs._getBlockSize5870); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.os.StatFs.staticClass, _getBlockSize5870); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.os.StatFs.staticClass, global::android.os.StatFs._getBlockSize5870); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getBlockCount5871; 
 		public virtual int getBlockCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.StatFs)) 
-				return @__env.CallIntMethod(this, _getBlockCount5871); 
+				return @__env.CallIntMethod(this, global::android.os.StatFs._getBlockCount5871); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.os.StatFs.staticClass, _getBlockCount5871); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.os.StatFs.staticClass, global::android.os.StatFs._getBlockCount5871); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getFreeBlocks5872; 
 		public virtual int getFreeBlocks() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.StatFs)) 
-				return @__env.CallIntMethod(this, _getFreeBlocks5872); 
+				return @__env.CallIntMethod(this, global::android.os.StatFs._getFreeBlocks5872); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.os.StatFs.staticClass, _getFreeBlocks5872); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.os.StatFs.staticClass, global::android.os.StatFs._getFreeBlocks5872); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAvailableBlocks5873; 
 		public virtual int getAvailableBlocks() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.StatFs)) 
-				return @__env.CallIntMethod(this, _getAvailableBlocks5873); 
+				return @__env.CallIntMethod(this, global::android.os.StatFs._getAvailableBlocks5873); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.os.StatFs.staticClass, _getAvailableBlocks5873); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.os.StatFs.staticClass, global::android.os.StatFs._getAvailableBlocks5873); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _StatFs5874; 
 		public StatFs(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.os.StatFs.staticClass, _StatFs5874, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.os.StatFs.staticClass, global::android.os.StatFs._StatFs5874, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

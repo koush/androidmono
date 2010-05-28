@@ -6,7 +6,7 @@ namespace android.content
 		internal new static global::java.lang.Class staticClass; 
 		static ContentQueryMap() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.content.ContentQueryMap), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.ContentQueryMap), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,51 +23,51 @@ namespace android.content
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.ContentQueryMap)) 
-				@__env.CallVoidMethod(this, _close1045); 
+				@__env.CallVoidMethod(this, global::android.content.ContentQueryMap._close1045); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.ContentQueryMap.staticClass, _close1045); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._close1045); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _requery1046; 
 		public virtual void requery() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.ContentQueryMap)) 
-				@__env.CallVoidMethod(this, _requery1046); 
+				@__env.CallVoidMethod(this, global::android.content.ContentQueryMap._requery1046); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.ContentQueryMap.staticClass, _requery1046); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._requery1046); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setKeepUpdated1047; 
 		public virtual void setKeepUpdated(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.ContentQueryMap)) 
-				@__env.CallVoidMethod(this, _setKeepUpdated1047, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.content.ContentQueryMap._setKeepUpdated1047, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.ContentQueryMap.staticClass, _setKeepUpdated1047, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._setKeepUpdated1047, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getValues1048; 
-		public virtual android.content.ContentValues getValues(java.lang.String arg0) 
+		public virtual global::android.content.ContentValues getValues(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.ContentQueryMap)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.ContentValues>(@__env, @__env.CallObjectMethodPtr(this, _getValues1048, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.ContentValues>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ContentQueryMap._getValues1048, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.ContentValues>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.ContentQueryMap.staticClass, _getValues1048, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.ContentValues>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._getValues1048, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getRows1049; 
-		public virtual java.util.Map getRows() 
+		public virtual global::java.util.Map getRows() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.ContentQueryMap)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallObjectMethodPtr(this, _getRows1049)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ContentQueryMap._getRows1049)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.ContentQueryMap.staticClass, _getRows1049)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._getRows1049)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ContentQueryMap1050; 
 		public ContentQueryMap(android.database.Cursor arg0, java.lang.String arg1, bool arg2, android.os.Handler arg3)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.content.ContentQueryMap.staticClass, _ContentQueryMap1050, this, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
+			@__env.NewObject(android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._ContentQueryMap1050, this, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

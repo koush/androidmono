@@ -6,7 +6,7 @@ namespace android.os
 		internal new static global::java.lang.Class staticClass; 
 		static DeadObjectException() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.DeadObjectException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.DeadObjectException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -22,7 +22,7 @@ namespace android.os
 		public DeadObjectException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.os.DeadObjectException.staticClass, _DeadObjectException5485, this); 
+			@__env.NewObject(android.os.DeadObjectException.staticClass, global::android.os.DeadObjectException._DeadObjectException5485, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

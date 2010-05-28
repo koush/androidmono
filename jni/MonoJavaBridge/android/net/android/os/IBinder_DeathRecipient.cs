@@ -20,7 +20,7 @@ namespace android.os
 		internal static global::java.lang.Class staticClass; 
 		static __IBinder_DeathRecipient() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.__IBinder_DeathRecipient), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.__IBinder_DeathRecipient), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -37,9 +37,9 @@ namespace android.os
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.__IBinder_DeathRecipient)) 
-				@__env.CallVoidMethod(this, _binderDied5618); 
+				@__env.CallVoidMethod(this, global::android.os.__IBinder_DeathRecipient._binderDied5618); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.__IBinder_DeathRecipient.staticClass, _binderDied5618); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.__IBinder_DeathRecipient.staticClass, global::android.os.__IBinder_DeathRecipient._binderDied5618); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

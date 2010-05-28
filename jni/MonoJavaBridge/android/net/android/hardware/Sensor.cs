@@ -6,7 +6,7 @@ namespace android.hardware
 		internal static global::java.lang.Class staticClass; 
 		static Sensor() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.hardware.Sensor), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.hardware.Sensor), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,67 +19,67 @@ namespace android.hardware
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getName3930; 
-		public virtual java.lang.String getName() 
+		public virtual global::java.lang.String getName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Sensor)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getName3930)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Sensor._getName3930)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Sensor.staticClass, _getName3930)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getName3930)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getType3931; 
 		public virtual int getType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Sensor)) 
-				return @__env.CallIntMethod(this, _getType3931); 
+				return @__env.CallIntMethod(this, global::android.hardware.Sensor._getType3931); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.hardware.Sensor.staticClass, _getType3931); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getType3931); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getVersion3932; 
 		public virtual int getVersion() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Sensor)) 
-				return @__env.CallIntMethod(this, _getVersion3932); 
+				return @__env.CallIntMethod(this, global::android.hardware.Sensor._getVersion3932); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.hardware.Sensor.staticClass, _getVersion3932); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getVersion3932); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getVendor3933; 
-		public virtual java.lang.String getVendor() 
+		public virtual global::java.lang.String getVendor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Sensor)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getVendor3933)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Sensor._getVendor3933)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Sensor.staticClass, _getVendor3933)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getVendor3933)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getMaximumRange3934; 
 		public virtual float getMaximumRange() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Sensor)) 
-				return @__env.CallFloatMethod(this, _getMaximumRange3934); 
+				return @__env.CallFloatMethod(this, global::android.hardware.Sensor._getMaximumRange3934); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.hardware.Sensor.staticClass, _getMaximumRange3934); 
+				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getMaximumRange3934); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getResolution3935; 
 		public virtual float getResolution() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Sensor)) 
-				return @__env.CallFloatMethod(this, _getResolution3935); 
+				return @__env.CallFloatMethod(this, global::android.hardware.Sensor._getResolution3935); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.hardware.Sensor.staticClass, _getResolution3935); 
+				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getResolution3935); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getPower3936; 
 		public virtual float getPower() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Sensor)) 
-				return @__env.CallFloatMethod(this, _getPower3936); 
+				return @__env.CallFloatMethod(this, global::android.hardware.Sensor._getPower3936); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.hardware.Sensor.staticClass, _getPower3936); 
+				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getPower3936); 
 		} 
 		public static int TYPE_ACCELEROMETER
 		{ 

@@ -9,12 +9,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "android", "android\android.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoJavaBridge", "JavaBridge\MonoJavaBridge.csproj", "{AEDFC761-C0ED-4A82-824F-60C6299A9086}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono2Jni", "Mono2Jni\Mono2Jni.csproj", "{1276BA20-A085-4D52-8239-220E76524771}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1276BA20-A085-4D52-8239-220E76524771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1276BA20-A085-4D52-8239-220E76524771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1276BA20-A085-4D52-8239-220E76524771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1276BA20-A085-4D52-8239-220E76524771}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4C491434-C5BB-41B9-B8E6-433EBE16EC4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4C491434-C5BB-41B9-B8E6-433EBE16EC4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C491434-C5BB-41B9-B8E6-433EBE16EC4A}.Release|Any CPU.ActiveCfg = Release|Any CPU

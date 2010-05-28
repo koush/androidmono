@@ -6,83 +6,83 @@ namespace android.content
 		internal static global::java.lang.Class staticClass; 
 		static Context() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.content.Context), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.Context), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected Context(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getClassLoader1125; 
-		public abstract java.lang.ClassLoader getClassLoader(); 
+		public abstract global::java.lang.ClassLoader getClassLoader(); 
 		internal static global::net.sf.jni4net.jni.MethodId _checkPermission1126; 
 		public abstract int checkPermission(java.lang.String arg0, int arg1, int arg2); 
 		internal static global::net.sf.jni4net.jni.MethodId _getResources1127; 
-		public abstract android.content.res.Resources getResources(); 
+		public abstract global::android.content.res.Resources getResources(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getPackageName1128; 
-		public abstract java.lang.String getPackageName(); 
+		public abstract global::java.lang.String getPackageName(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getString1129; 
-		public virtual java.lang.String getString(int arg0, java.lang.Object[] arg1) 
+		public virtual global::java.lang.String getString(int arg0, java.lang.Object[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.Context)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getString1129, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.Context._getString1129, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.Context.staticClass, _getString1129, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.Context.staticClass, global::android.content.Context._getString1129, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg1))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getString1130; 
-		public virtual java.lang.String getString(int arg0) 
+		public virtual global::java.lang.String getString(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.Context)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getString1130, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.Context._getString1130, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.Context.staticClass, _getString1130, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.Context.staticClass, global::android.content.Context._getString1130, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAssets1131; 
-		public abstract android.content.res.AssetManager getAssets(); 
+		public abstract global::android.content.res.AssetManager getAssets(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getPackageManager1132; 
-		public abstract android.content.pm.PackageManager getPackageManager(); 
+		public abstract global::android.content.pm.PackageManager getPackageManager(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getContentResolver1133; 
-		public abstract android.content.ContentResolver getContentResolver(); 
+		public abstract global::android.content.ContentResolver getContentResolver(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getMainLooper1134; 
-		public abstract android.os.Looper getMainLooper(); 
+		public abstract global::android.os.Looper getMainLooper(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getApplicationContext1135; 
-		public abstract android.content.Context getApplicationContext(); 
+		public abstract global::android.content.Context getApplicationContext(); 
 		internal static global::net.sf.jni4net.jni.MethodId _setTheme1136; 
 		public abstract void setTheme(int arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _getTheme1137; 
-		public abstract android.content.res.Resources.Theme getTheme(); 
+		public abstract global::android.content.res.Resources.Theme getTheme(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getApplicationInfo1138; 
-		public abstract android.content.pm.ApplicationInfo getApplicationInfo(); 
+		public abstract global::android.content.pm.ApplicationInfo getApplicationInfo(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getSharedPreferences1139; 
-		public abstract android.content.SharedPreferences getSharedPreferences(java.lang.String arg0, int arg1); 
+		public abstract global::android.content.SharedPreferences getSharedPreferences(java.lang.String arg0, int arg1); 
 		internal static global::net.sf.jni4net.jni.MethodId _openFileInput1140; 
-		public abstract java.io.FileInputStream openFileInput(java.lang.String arg0); 
+		public abstract global::java.io.FileInputStream openFileInput(java.lang.String arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _openFileOutput1141; 
-		public abstract java.io.FileOutputStream openFileOutput(java.lang.String arg0, int arg1); 
+		public abstract global::java.io.FileOutputStream openFileOutput(java.lang.String arg0, int arg1); 
 		internal static global::net.sf.jni4net.jni.MethodId _deleteFile1142; 
 		public abstract bool deleteFile(java.lang.String arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _getFileStreamPath1143; 
-		public abstract java.io.File getFileStreamPath(java.lang.String arg0); 
+		public abstract global::java.io.File getFileStreamPath(java.lang.String arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _fileList1144; 
-		public abstract java.lang.String[] fileList(); 
+		public abstract global::java.lang.String[] fileList(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getFilesDir1145; 
-		public abstract java.io.File getFilesDir(); 
+		public abstract global::java.io.File getFilesDir(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getCacheDir1146; 
-		public abstract java.io.File getCacheDir(); 
+		public abstract global::java.io.File getCacheDir(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getDir1147; 
-		public abstract java.io.File getDir(java.lang.String arg0, int arg1); 
+		public abstract global::java.io.File getDir(java.lang.String arg0, int arg1); 
 		internal static global::net.sf.jni4net.jni.MethodId _openOrCreateDatabase1148; 
-		public abstract android.database.sqlite.SQLiteDatabase openOrCreateDatabase(java.lang.String arg0, int arg1, android.database.sqlite.SQLiteDatabase.CursorFactory arg2); 
+		public abstract global::android.database.sqlite.SQLiteDatabase openOrCreateDatabase(java.lang.String arg0, int arg1, android.database.sqlite.SQLiteDatabase.CursorFactory arg2); 
 		internal static global::net.sf.jni4net.jni.MethodId _deleteDatabase1149; 
 		public abstract bool deleteDatabase(java.lang.String arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _getDatabasePath1150; 
-		public abstract java.io.File getDatabasePath(java.lang.String arg0); 
+		public abstract global::java.io.File getDatabasePath(java.lang.String arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _databaseList1151; 
-		public abstract java.lang.String[] databaseList(); 
+		public abstract global::java.lang.String[] databaseList(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getWallpaper1152; 
-		public abstract android.graphics.drawable.Drawable getWallpaper(); 
+		public abstract global::android.graphics.drawable.Drawable getWallpaper(); 
 		internal static global::net.sf.jni4net.jni.MethodId _peekWallpaper1153; 
-		public abstract android.graphics.drawable.Drawable peekWallpaper(); 
+		public abstract global::android.graphics.drawable.Drawable peekWallpaper(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getWallpaperDesiredMinimumWidth1154; 
 		public abstract int getWallpaperDesiredMinimumWidth(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getWallpaperDesiredMinimumHeight1155; 
@@ -112,13 +112,13 @@ namespace android.content
 		internal static global::net.sf.jni4net.jni.MethodId _removeStickyBroadcast1167; 
 		public abstract void removeStickyBroadcast(android.content.Intent arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _registerReceiver1168; 
-		public abstract android.content.Intent registerReceiver(android.content.BroadcastReceiver arg0, android.content.IntentFilter arg1, java.lang.String arg2, android.os.Handler arg3); 
+		public abstract global::android.content.Intent registerReceiver(android.content.BroadcastReceiver arg0, android.content.IntentFilter arg1, java.lang.String arg2, android.os.Handler arg3); 
 		internal static global::net.sf.jni4net.jni.MethodId _registerReceiver1169; 
-		public abstract android.content.Intent registerReceiver(android.content.BroadcastReceiver arg0, android.content.IntentFilter arg1); 
+		public abstract global::android.content.Intent registerReceiver(android.content.BroadcastReceiver arg0, android.content.IntentFilter arg1); 
 		internal static global::net.sf.jni4net.jni.MethodId _unregisterReceiver1170; 
 		public abstract void unregisterReceiver(android.content.BroadcastReceiver arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _startService1171; 
-		public abstract android.content.ComponentName startService(android.content.Intent arg0); 
+		public abstract global::android.content.ComponentName startService(android.content.Intent arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _stopService1172; 
 		public abstract bool stopService(android.content.Intent arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _bindService1173; 
@@ -128,7 +128,7 @@ namespace android.content
 		internal static global::net.sf.jni4net.jni.MethodId _startInstrumentation1175; 
 		public abstract bool startInstrumentation(android.content.ComponentName arg0, java.lang.String arg1, android.os.Bundle arg2); 
 		internal static global::net.sf.jni4net.jni.MethodId _getSystemService1176; 
-		public abstract java.lang.Object getSystemService(java.lang.String arg0); 
+		public abstract global::java.lang.Object getSystemService(java.lang.String arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _checkCallingPermission1177; 
 		public abstract int checkCallingPermission(java.lang.String arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _checkCallingOrSelfPermission1178; 
@@ -160,66 +160,66 @@ namespace android.content
 		internal static global::net.sf.jni4net.jni.MethodId _enforceCallingOrSelfUriPermission1191; 
 		public abstract void enforceCallingOrSelfUriPermission(android.net.Uri arg0, int arg1, java.lang.String arg2); 
 		internal static global::net.sf.jni4net.jni.MethodId _createPackageContext1192; 
-		public abstract android.content.Context createPackageContext(java.lang.String arg0, int arg1); 
+		public abstract global::android.content.Context createPackageContext(java.lang.String arg0, int arg1); 
 		internal static global::net.sf.jni4net.jni.MethodId _isRestricted1193; 
 		public virtual bool isRestricted() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.Context)) 
-				return @__env.CallBooleanMethod(this, _isRestricted1193); 
+				return @__env.CallBooleanMethod(this, global::android.content.Context._isRestricted1193); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.content.Context.staticClass, _isRestricted1193); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.Context.staticClass, global::android.content.Context._isRestricted1193); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getText1194; 
-		public virtual java.lang.CharSequence getText(int arg0) 
+		public virtual global::java.lang.CharSequence getText(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.Context)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getText1194, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.Context._getText1194, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.Context.staticClass, _getText1194, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.Context.staticClass, global::android.content.Context._getText1194, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _obtainStyledAttributes1195; 
-		public virtual android.content.res.TypedArray obtainStyledAttributes(android.util.AttributeSet arg0, int[] arg1, int arg2, int arg3) 
+		public virtual global::android.content.res.TypedArray obtainStyledAttributes(android.util.AttributeSet arg0, int[] arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.Context)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallObjectMethodPtr(this, _obtainStyledAttributes1195, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.Context._obtainStyledAttributes1195, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.Context.staticClass, _obtainStyledAttributes1195, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.Context.staticClass, global::android.content.Context._obtainStyledAttributes1195, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _obtainStyledAttributes1196; 
-		public virtual android.content.res.TypedArray obtainStyledAttributes(int arg0, int[] arg1) 
+		public virtual global::android.content.res.TypedArray obtainStyledAttributes(int arg0, int[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.Context)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallObjectMethodPtr(this, _obtainStyledAttributes1196, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.Context._obtainStyledAttributes1196, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.Context.staticClass, _obtainStyledAttributes1196, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.Context.staticClass, global::android.content.Context._obtainStyledAttributes1196, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _obtainStyledAttributes1197; 
-		public virtual android.content.res.TypedArray obtainStyledAttributes(android.util.AttributeSet arg0, int[] arg1) 
+		public virtual global::android.content.res.TypedArray obtainStyledAttributes(android.util.AttributeSet arg0, int[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.Context)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallObjectMethodPtr(this, _obtainStyledAttributes1197, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.Context._obtainStyledAttributes1197, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.Context.staticClass, _obtainStyledAttributes1197, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.Context.staticClass, global::android.content.Context._obtainStyledAttributes1197, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _obtainStyledAttributes1198; 
-		public virtual android.content.res.TypedArray obtainStyledAttributes(int[] arg0) 
+		public virtual global::android.content.res.TypedArray obtainStyledAttributes(int[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.Context)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallObjectMethodPtr(this, _obtainStyledAttributes1198, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.Context._obtainStyledAttributes1198, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.Context.staticClass, _obtainStyledAttributes1198, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.Context.staticClass, global::android.content.Context._obtainStyledAttributes1198, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _Context1199; 
 		public Context()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.content.Context.staticClass, _Context1199, this); 
+			@__env.NewObject(android.content.Context.staticClass, global::android.content.Context._Context1199, this); 
 		} 
 		public static int MODE_PRIVATE
 		{ 
@@ -263,140 +263,140 @@ namespace android.content
 				return 2; 
 			} 
 		} 
-		public static java.lang.String POWER_SERVICE
+		public static global::java.lang.String POWER_SERVICE
 		{ 
 			get 
 			{ 
 				return "power"; 
 			} 
 		} 
-		public static java.lang.String WINDOW_SERVICE
+		public static global::java.lang.String WINDOW_SERVICE
 		{ 
 			get 
 			{ 
 				return "window"; 
 			} 
 		} 
-		public static java.lang.String LAYOUT_INFLATER_SERVICE
+		public static global::java.lang.String LAYOUT_INFLATER_SERVICE
 		{ 
 			get 
 			{ 
 				return "layout_inflater"; 
 			} 
 		} 
-		public static java.lang.String ACCOUNT_SERVICE
+		public static global::java.lang.String ACCOUNT_SERVICE
 		{ 
 			get 
 			{ 
 				return "account"; 
 			} 
 		} 
-		public static java.lang.String ACTIVITY_SERVICE
+		public static global::java.lang.String ACTIVITY_SERVICE
 		{ 
 			get 
 			{ 
 				return "activity"; 
 			} 
 		} 
-		public static java.lang.String ALARM_SERVICE
+		public static global::java.lang.String ALARM_SERVICE
 		{ 
 			get 
 			{ 
 				return "alarm"; 
 			} 
 		} 
-		public static java.lang.String NOTIFICATION_SERVICE
+		public static global::java.lang.String NOTIFICATION_SERVICE
 		{ 
 			get 
 			{ 
 				return "notification"; 
 			} 
 		} 
-		public static java.lang.String ACCESSIBILITY_SERVICE
+		public static global::java.lang.String ACCESSIBILITY_SERVICE
 		{ 
 			get 
 			{ 
 				return "accessibility"; 
 			} 
 		} 
-		public static java.lang.String KEYGUARD_SERVICE
+		public static global::java.lang.String KEYGUARD_SERVICE
 		{ 
 			get 
 			{ 
 				return "keyguard"; 
 			} 
 		} 
-		public static java.lang.String LOCATION_SERVICE
+		public static global::java.lang.String LOCATION_SERVICE
 		{ 
 			get 
 			{ 
 				return "location"; 
 			} 
 		} 
-		public static java.lang.String SEARCH_SERVICE
+		public static global::java.lang.String SEARCH_SERVICE
 		{ 
 			get 
 			{ 
 				return "search"; 
 			} 
 		} 
-		public static java.lang.String SENSOR_SERVICE
+		public static global::java.lang.String SENSOR_SERVICE
 		{ 
 			get 
 			{ 
 				return "sensor"; 
 			} 
 		} 
-		public static java.lang.String WALLPAPER_SERVICE
+		public static global::java.lang.String WALLPAPER_SERVICE
 		{ 
 			get 
 			{ 
 				return "wallpaper"; 
 			} 
 		} 
-		public static java.lang.String VIBRATOR_SERVICE
+		public static global::java.lang.String VIBRATOR_SERVICE
 		{ 
 			get 
 			{ 
 				return "vibrator"; 
 			} 
 		} 
-		public static java.lang.String CONNECTIVITY_SERVICE
+		public static global::java.lang.String CONNECTIVITY_SERVICE
 		{ 
 			get 
 			{ 
 				return "connectivity"; 
 			} 
 		} 
-		public static java.lang.String WIFI_SERVICE
+		public static global::java.lang.String WIFI_SERVICE
 		{ 
 			get 
 			{ 
 				return "wifi"; 
 			} 
 		} 
-		public static java.lang.String AUDIO_SERVICE
+		public static global::java.lang.String AUDIO_SERVICE
 		{ 
 			get 
 			{ 
 				return "audio"; 
 			} 
 		} 
-		public static java.lang.String TELEPHONY_SERVICE
+		public static global::java.lang.String TELEPHONY_SERVICE
 		{ 
 			get 
 			{ 
 				return "phone"; 
 			} 
 		} 
-		public static java.lang.String CLIPBOARD_SERVICE
+		public static global::java.lang.String CLIPBOARD_SERVICE
 		{ 
 			get 
 			{ 
 				return "clipboard"; 
 			} 
 		} 
-		public static java.lang.String INPUT_METHOD_SERVICE
+		public static global::java.lang.String INPUT_METHOD_SERVICE
 		{ 
 			get 
 			{ 

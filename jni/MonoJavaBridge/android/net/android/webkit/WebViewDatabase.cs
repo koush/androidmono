@@ -6,7 +6,7 @@ namespace android.webkit
 		internal static global::java.lang.Class staticClass; 
 		static WebViewDatabase() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.webkit.WebViewDatabase), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.webkit.WebViewDatabase), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,64 +19,64 @@ namespace android.webkit
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getInstance9648; 
-		public static android.webkit.WebViewDatabase getInstance(android.content.Context arg0) 
+		public static global::android.webkit.WebViewDatabase getInstance(android.content.Context arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebViewDatabase>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebViewDatabase.staticClass, _getInstance9648, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebViewDatabase>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebViewDatabase.staticClass, global::android.webkit.WebViewDatabase._getInstance9648, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _clearFormData9649; 
 		public virtual void clearFormData() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewDatabase)) 
-				@__env.CallVoidMethod(this, _clearFormData9649); 
+				@__env.CallVoidMethod(this, global::android.webkit.WebViewDatabase._clearFormData9649); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewDatabase.staticClass, _clearFormData9649); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebViewDatabase.staticClass, global::android.webkit.WebViewDatabase._clearFormData9649); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _hasUsernamePassword9650; 
 		public virtual bool hasUsernamePassword() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewDatabase)) 
-				return @__env.CallBooleanMethod(this, _hasUsernamePassword9650); 
+				return @__env.CallBooleanMethod(this, global::android.webkit.WebViewDatabase._hasUsernamePassword9650); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.webkit.WebViewDatabase.staticClass, _hasUsernamePassword9650); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebViewDatabase.staticClass, global::android.webkit.WebViewDatabase._hasUsernamePassword9650); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _clearUsernamePassword9651; 
 		public virtual void clearUsernamePassword() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewDatabase)) 
-				@__env.CallVoidMethod(this, _clearUsernamePassword9651); 
+				@__env.CallVoidMethod(this, global::android.webkit.WebViewDatabase._clearUsernamePassword9651); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewDatabase.staticClass, _clearUsernamePassword9651); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebViewDatabase.staticClass, global::android.webkit.WebViewDatabase._clearUsernamePassword9651); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _hasHttpAuthUsernamePassword9652; 
 		public virtual bool hasHttpAuthUsernamePassword() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewDatabase)) 
-				return @__env.CallBooleanMethod(this, _hasHttpAuthUsernamePassword9652); 
+				return @__env.CallBooleanMethod(this, global::android.webkit.WebViewDatabase._hasHttpAuthUsernamePassword9652); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.webkit.WebViewDatabase.staticClass, _hasHttpAuthUsernamePassword9652); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebViewDatabase.staticClass, global::android.webkit.WebViewDatabase._hasHttpAuthUsernamePassword9652); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _clearHttpAuthUsernamePassword9653; 
 		public virtual void clearHttpAuthUsernamePassword() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewDatabase)) 
-				@__env.CallVoidMethod(this, _clearHttpAuthUsernamePassword9653); 
+				@__env.CallVoidMethod(this, global::android.webkit.WebViewDatabase._clearHttpAuthUsernamePassword9653); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebViewDatabase.staticClass, _clearHttpAuthUsernamePassword9653); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebViewDatabase.staticClass, global::android.webkit.WebViewDatabase._clearHttpAuthUsernamePassword9653); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _hasFormData9654; 
 		public virtual bool hasFormData() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebViewDatabase)) 
-				return @__env.CallBooleanMethod(this, _hasFormData9654); 
+				return @__env.CallBooleanMethod(this, global::android.webkit.WebViewDatabase._hasFormData9654); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.webkit.WebViewDatabase.staticClass, _hasFormData9654); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebViewDatabase.staticClass, global::android.webkit.WebViewDatabase._hasFormData9654); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

@@ -6,7 +6,7 @@ namespace android.view.accessibility
 		internal static global::java.lang.Class staticClass; 
 		static AccessibilityEvent() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.view.accessibility.AccessibilityEvent), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.accessibility.AccessibilityEvent), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,358 +19,358 @@ namespace android.view.accessibility
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString8788; 
-		public sealed override java.lang.String toString() 
+		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString8788)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.accessibility.AccessibilityEvent._toString8788)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.accessibility.AccessibilityEvent.staticClass, _toString8788)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._toString8788)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getClassName8789; 
-		public java.lang.CharSequence getClassName() 
+		public global::java.lang.CharSequence getClassName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getClassName8789)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.accessibility.AccessibilityEvent._getClassName8789)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.accessibility.AccessibilityEvent.staticClass, _getClassName8789)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getClassName8789)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getPackageName8790; 
-		public java.lang.CharSequence getPackageName() 
+		public global::java.lang.CharSequence getPackageName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getPackageName8790)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.accessibility.AccessibilityEvent._getPackageName8790)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.accessibility.AccessibilityEvent.staticClass, _getPackageName8790)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getPackageName8790)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getText8791; 
-		public java.util.List getText() 
+		public global::java.util.List getText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getText8791)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.accessibility.AccessibilityEvent._getText8791)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.accessibility.AccessibilityEvent.staticClass, _getText8791)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getText8791)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isChecked8792; 
 		public bool isChecked() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return @__env.CallBooleanMethod(this, _isChecked8792); 
+				return @__env.CallBooleanMethod(this, global::android.view.accessibility.AccessibilityEvent._isChecked8792); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _isChecked8792); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._isChecked8792); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setChecked8793; 
 		public void setChecked(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _setChecked8793, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setChecked8793, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _setChecked8793, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setChecked8793, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isEnabled8794; 
 		public bool isEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return @__env.CallBooleanMethod(this, _isEnabled8794); 
+				return @__env.CallBooleanMethod(this, global::android.view.accessibility.AccessibilityEvent._isEnabled8794); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _isEnabled8794); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._isEnabled8794); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setEnabled8795; 
 		public void setEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _setEnabled8795, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setEnabled8795, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _setEnabled8795, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setEnabled8795, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isPassword8796; 
 		public bool isPassword() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return @__env.CallBooleanMethod(this, _isPassword8796); 
+				return @__env.CallBooleanMethod(this, global::android.view.accessibility.AccessibilityEvent._isPassword8796); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _isPassword8796); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._isPassword8796); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setPassword8797; 
 		public void setPassword(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _setPassword8797, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setPassword8797, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _setPassword8797, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setPassword8797, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setFullScreen8798; 
 		public void setFullScreen(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _setFullScreen8798, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setFullScreen8798, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _setFullScreen8798, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setFullScreen8798, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isFullScreen8799; 
 		public bool isFullScreen() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return @__env.CallBooleanMethod(this, _isFullScreen8799); 
+				return @__env.CallBooleanMethod(this, global::android.view.accessibility.AccessibilityEvent._isFullScreen8799); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _isFullScreen8799); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._isFullScreen8799); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getEventType8800; 
 		public int getEventType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return @__env.CallIntMethod(this, _getEventType8800); 
+				return @__env.CallIntMethod(this, global::android.view.accessibility.AccessibilityEvent._getEventType8800); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _getEventType8800); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getEventType8800); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setEventType8801; 
 		public void setEventType(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _setEventType8801, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setEventType8801, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _setEventType8801, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setEventType8801, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getItemCount8802; 
 		public int getItemCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return @__env.CallIntMethod(this, _getItemCount8802); 
+				return @__env.CallIntMethod(this, global::android.view.accessibility.AccessibilityEvent._getItemCount8802); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _getItemCount8802); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getItemCount8802); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setItemCount8803; 
 		public void setItemCount(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _setItemCount8803, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setItemCount8803, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _setItemCount8803, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setItemCount8803, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCurrentItemIndex8804; 
 		public int getCurrentItemIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return @__env.CallIntMethod(this, _getCurrentItemIndex8804); 
+				return @__env.CallIntMethod(this, global::android.view.accessibility.AccessibilityEvent._getCurrentItemIndex8804); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _getCurrentItemIndex8804); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getCurrentItemIndex8804); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setCurrentItemIndex8805; 
 		public void setCurrentItemIndex(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _setCurrentItemIndex8805, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setCurrentItemIndex8805, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _setCurrentItemIndex8805, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setCurrentItemIndex8805, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getFromIndex8806; 
 		public int getFromIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return @__env.CallIntMethod(this, _getFromIndex8806); 
+				return @__env.CallIntMethod(this, global::android.view.accessibility.AccessibilityEvent._getFromIndex8806); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _getFromIndex8806); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getFromIndex8806); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setFromIndex8807; 
 		public void setFromIndex(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _setFromIndex8807, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setFromIndex8807, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _setFromIndex8807, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setFromIndex8807, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAddedCount8808; 
 		public int getAddedCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return @__env.CallIntMethod(this, _getAddedCount8808); 
+				return @__env.CallIntMethod(this, global::android.view.accessibility.AccessibilityEvent._getAddedCount8808); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _getAddedCount8808); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getAddedCount8808); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setAddedCount8809; 
 		public void setAddedCount(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _setAddedCount8809, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setAddedCount8809, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _setAddedCount8809, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setAddedCount8809, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getRemovedCount8810; 
 		public int getRemovedCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return @__env.CallIntMethod(this, _getRemovedCount8810); 
+				return @__env.CallIntMethod(this, global::android.view.accessibility.AccessibilityEvent._getRemovedCount8810); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _getRemovedCount8810); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getRemovedCount8810); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setRemovedCount8811; 
 		public void setRemovedCount(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _setRemovedCount8811, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setRemovedCount8811, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _setRemovedCount8811, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setRemovedCount8811, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getEventTime8812; 
 		public long getEventTime() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return @__env.CallLongMethod(this, _getEventTime8812); 
+				return @__env.CallLongMethod(this, global::android.view.accessibility.AccessibilityEvent._getEventTime8812); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _getEventTime8812); 
+				return @__env.CallNonVirtualLongMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getEventTime8812); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setEventTime8813; 
 		public void setEventTime(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _setEventTime8813, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setEventTime8813, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _setEventTime8813, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setEventTime8813, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setClassName8814; 
 		public void setClassName(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _setClassName8814, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setClassName8814, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _setClassName8814, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setClassName8814, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setPackageName8815; 
 		public void setPackageName(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _setPackageName8815, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setPackageName8815, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _setPackageName8815, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setPackageName8815, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getBeforeText8816; 
-		public java.lang.CharSequence getBeforeText() 
+		public global::java.lang.CharSequence getBeforeText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getBeforeText8816)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.accessibility.AccessibilityEvent._getBeforeText8816)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.accessibility.AccessibilityEvent.staticClass, _getBeforeText8816)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getBeforeText8816)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setBeforeText8817; 
 		public void setBeforeText(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _setBeforeText8817, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setBeforeText8817, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _setBeforeText8817, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setBeforeText8817, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getContentDescription8818; 
-		public java.lang.CharSequence getContentDescription() 
+		public global::java.lang.CharSequence getContentDescription() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getContentDescription8818)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.accessibility.AccessibilityEvent._getContentDescription8818)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.accessibility.AccessibilityEvent.staticClass, _getContentDescription8818)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getContentDescription8818)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setContentDescription8819; 
 		public void setContentDescription(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _setContentDescription8819, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setContentDescription8819, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _setContentDescription8819, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setContentDescription8819, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getParcelableData8820; 
-		public android.os.Parcelable getParcelableData() 
+		public global::android.os.Parcelable getParcelableData() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, _getParcelableData8820)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.accessibility.AccessibilityEvent._getParcelableData8820)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.accessibility.AccessibilityEvent.staticClass, _getParcelableData8820)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._getParcelableData8820)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setParcelableData8821; 
 		public void setParcelableData(android.os.Parcelable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _setParcelableData8821, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setParcelableData8821, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _setParcelableData8821, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setParcelableData8821, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _obtain8822; 
-		public static android.view.accessibility.AccessibilityEvent obtain() 
+		public static global::android.view.accessibility.AccessibilityEvent obtain() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.accessibility.AccessibilityEvent>(@__env, @__env.CallStaticObjectMethodPtr(android.view.accessibility.AccessibilityEvent.staticClass, _obtain8822)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.accessibility.AccessibilityEvent>(@__env, @__env.CallStaticObjectMethodPtr(android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._obtain8822)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _obtain8823; 
-		public static android.view.accessibility.AccessibilityEvent obtain(int arg0) 
+		public static global::android.view.accessibility.AccessibilityEvent obtain(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.accessibility.AccessibilityEvent>(@__env, @__env.CallStaticObjectMethodPtr(android.view.accessibility.AccessibilityEvent.staticClass, _obtain8823, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.accessibility.AccessibilityEvent>(@__env, @__env.CallStaticObjectMethodPtr(android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._obtain8823, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _recycle8824; 
 		public void recycle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _recycle8824); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._recycle8824); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _recycle8824); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._recycle8824); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _initFromParcel8825; 
 		public void initFromParcel(android.os.Parcel arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _initFromParcel8825, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._initFromParcel8825, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _initFromParcel8825, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._initFromParcel8825, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel8826; 
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				@__env.CallVoidMethod(this, _writeToParcel8826, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._writeToParcel8826, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _writeToParcel8826, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._writeToParcel8826, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _describeContents8827; 
 		public int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.accessibility.AccessibilityEvent)) 
-				return @__env.CallIntMethod(this, _describeContents8827); 
+				return @__env.CallIntMethod(this, global::android.view.accessibility.AccessibilityEvent._describeContents8827); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.view.accessibility.AccessibilityEvent.staticClass, _describeContents8827); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._describeContents8827); 
 		} 
 		public static int INVALID_POSITION
 		{ 
@@ -443,11 +443,11 @@ namespace android.view.accessibility
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _CREATOR8828; 
-		public static android.os.Parcelable_Creator CREATOR
+		public static global::android.os.Parcelable_Creator CREATOR
 		{ 
 			get 
 			{ 
-				return default(android.os.Parcelable_Creator); 
+				return default(global::android.os.Parcelable_Creator); 
 			} 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 

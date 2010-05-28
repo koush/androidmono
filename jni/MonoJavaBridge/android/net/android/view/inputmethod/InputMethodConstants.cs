@@ -3,14 +3,14 @@ namespace android.view.inputmethod
 	[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
 	public static class InputMethodConstants 
 	{ 
-		public static java.lang.String SERVICE_INTERFACE
+		public static global::java.lang.String SERVICE_INTERFACE
 		{ 
 			get 
 			{ 
 				return "android.view.InputMethod"; 
 			} 
 		} 
-		public static java.lang.String SERVICE_META_DATA
+		public static global::java.lang.String SERVICE_META_DATA
 		{ 
 			get 
 			{ 

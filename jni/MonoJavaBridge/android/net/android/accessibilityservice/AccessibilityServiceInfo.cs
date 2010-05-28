@@ -6,7 +6,7 @@ namespace android.accessibilityservice
 		internal static global::java.lang.Class staticClass; 
 		static AccessibilityServiceInfo() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.accessibilityservice.AccessibilityServiceInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.accessibilityservice.AccessibilityServiceInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,24 +23,24 @@ namespace android.accessibilityservice
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.accessibilityservice.AccessibilityServiceInfo)) 
-				@__env.CallVoidMethod(this, _writeToParcel25, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.accessibilityservice.AccessibilityServiceInfo._writeToParcel25, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.accessibilityservice.AccessibilityServiceInfo.staticClass, _writeToParcel25, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, global::android.accessibilityservice.AccessibilityServiceInfo._writeToParcel25, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _describeContents26; 
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.accessibilityservice.AccessibilityServiceInfo)) 
-				return @__env.CallIntMethod(this, _describeContents26); 
+				return @__env.CallIntMethod(this, global::android.accessibilityservice.AccessibilityServiceInfo._describeContents26); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.accessibilityservice.AccessibilityServiceInfo.staticClass, _describeContents26); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, global::android.accessibilityservice.AccessibilityServiceInfo._describeContents26); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _AccessibilityServiceInfo27; 
 		public AccessibilityServiceInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.accessibilityservice.AccessibilityServiceInfo.staticClass, _AccessibilityServiceInfo27, this); 
+			@__env.NewObject(android.accessibilityservice.AccessibilityServiceInfo.staticClass, global::android.accessibilityservice.AccessibilityServiceInfo._AccessibilityServiceInfo27, this); 
 		} 
 		public static int FEEDBACK_SPOKEN
 		{ 
@@ -96,11 +96,11 @@ namespace android.accessibilityservice
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _packageNames29; 
-		public java.lang.String[] packageNames
+		public global::java.lang.String[] packageNames
 		{ 
 			get 
 			{ 
-				return default(java.lang.String[]); 
+				return default(global::java.lang.String[]); 
 			} 
 			set 
 			{ 
@@ -140,11 +140,11 @@ namespace android.accessibilityservice
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _CREATOR33; 
-		public static android.os.Parcelable_Creator CREATOR
+		public static global::android.os.Parcelable_Creator CREATOR
 		{ 
 			get 
 			{ 
-				return default(android.os.Parcelable_Creator); 
+				return default(global::android.os.Parcelable_Creator); 
 			} 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 

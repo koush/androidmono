@@ -6,7 +6,7 @@ namespace android.text.util
 		internal static global::java.lang.Class staticClass; 
 		static Linkify() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.text.util.Linkify), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.util.Linkify), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -38,7 +38,7 @@ namespace android.text.util
 			internal static global::java.lang.Class staticClass; 
 			static __MatchFilter() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.text.util.Linkify.__MatchFilter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.util.Linkify.__MatchFilter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -55,9 +55,9 @@ namespace android.text.util
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.text.util.Linkify.__MatchFilter)) 
-					return @__env.CallBooleanMethod(this, _acceptMatch7473, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+					return @__env.CallBooleanMethod(this, global::android.text.util.Linkify.__MatchFilter._acceptMatch7473, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.text.util.Linkify.__MatchFilter.staticClass, _acceptMatch7473, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.text.util.Linkify.__MatchFilter.staticClass, global::android.text.util.Linkify.__MatchFilter._acceptMatch7473, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -68,7 +68,7 @@ namespace android.text.util
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 		public interface TransformFilter 
 		{ 
-			java.lang.String transformUrl(java.util.regex.Matcher arg0, java.lang.String arg1); 
+			global::java.lang.String transformUrl(java.util.regex.Matcher arg0, java.lang.String arg1); 
 		} 
 
 		public partial class TransformFilter_ 
@@ -85,7 +85,7 @@ namespace android.text.util
 			internal static global::java.lang.Class staticClass; 
 			static __TransformFilter() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.text.util.Linkify.__TransformFilter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.util.Linkify.__TransformFilter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -98,13 +98,13 @@ namespace android.text.util
 			{ 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _transformUrl7474; 
-			 java.lang.String android.text.util.Linkify.TransformFilter.transformUrl(java.util.regex.Matcher arg0, java.lang.String arg1) 
+			 global::java.lang.String android.text.util.Linkify.TransformFilter.transformUrl(java.util.regex.Matcher arg0, java.lang.String arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.text.util.Linkify.__TransformFilter)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _transformUrl7474, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.util.Linkify.__TransformFilter._transformUrl7474, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.util.Linkify.__TransformFilter.staticClass, _transformUrl7474, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.util.Linkify.__TransformFilter.staticClass, global::android.text.util.Linkify.__TransformFilter._transformUrl7474, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -116,43 +116,43 @@ namespace android.text.util
 		public static bool addLinks(android.widget.TextView arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.text.util.Linkify.staticClass, _addLinks7475, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			return @__env.CallStaticBooleanMethod(android.text.util.Linkify.staticClass, global::android.text.util.Linkify._addLinks7475, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _addLinks7476; 
 		public static void addLinks(android.widget.TextView arg0, java.util.regex.Pattern arg1, java.lang.String arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.text.util.Linkify.staticClass, _addLinks7476, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+			@__env.CallStaticVoidMethod(android.text.util.Linkify.staticClass, global::android.text.util.Linkify._addLinks7476, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _addLinks7477; 
 		public static void addLinks(android.widget.TextView arg0, java.util.regex.Pattern arg1, java.lang.String arg2, android.text.util.Linkify.MatchFilter arg3, android.text.util.Linkify.TransformFilter arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.text.util.Linkify.staticClass, _addLinks7477, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg4)); 
+			@__env.CallStaticVoidMethod(android.text.util.Linkify.staticClass, global::android.text.util.Linkify._addLinks7477, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg4)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _addLinks7478; 
 		public static bool addLinks(android.text.Spannable arg0, java.util.regex.Pattern arg1, java.lang.String arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.text.util.Linkify.staticClass, _addLinks7478, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+			return @__env.CallStaticBooleanMethod(android.text.util.Linkify.staticClass, global::android.text.util.Linkify._addLinks7478, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _addLinks7479; 
 		public static bool addLinks(android.text.Spannable arg0, java.util.regex.Pattern arg1, java.lang.String arg2, android.text.util.Linkify.MatchFilter arg3, android.text.util.Linkify.TransformFilter arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.text.util.Linkify.staticClass, _addLinks7479, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg4)); 
+			return @__env.CallStaticBooleanMethod(android.text.util.Linkify.staticClass, global::android.text.util.Linkify._addLinks7479, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg4)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _addLinks7480; 
 		public static bool addLinks(android.text.Spannable arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.text.util.Linkify.staticClass, _addLinks7480, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			return @__env.CallStaticBooleanMethod(android.text.util.Linkify.staticClass, global::android.text.util.Linkify._addLinks7480, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _Linkify7481; 
 		public Linkify()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.util.Linkify.staticClass, _Linkify7481, this); 
+			@__env.NewObject(android.text.util.Linkify.staticClass, global::android.text.util.Linkify._Linkify7481, this); 
 		} 
 		public static int WEB_URLS
 		{ 
@@ -190,27 +190,27 @@ namespace android.text.util
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _sUrlMatchFilter7482; 
-		public static android.text.util.Linkify.MatchFilter sUrlMatchFilter
+		public static global::android.text.util.Linkify.MatchFilter sUrlMatchFilter
 		{ 
 			get 
 			{ 
-				return default(android.text.util.Linkify.MatchFilter); 
+				return default(global::android.text.util.Linkify.MatchFilter); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _sPhoneNumberMatchFilter7483; 
-		public static android.text.util.Linkify.MatchFilter sPhoneNumberMatchFilter
+		public static global::android.text.util.Linkify.MatchFilter sPhoneNumberMatchFilter
 		{ 
 			get 
 			{ 
-				return default(android.text.util.Linkify.MatchFilter); 
+				return default(global::android.text.util.Linkify.MatchFilter); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _sPhoneNumberTransformFilter7484; 
-		public static android.text.util.Linkify.TransformFilter sPhoneNumberTransformFilter
+		public static global::android.text.util.Linkify.TransformFilter sPhoneNumberTransformFilter
 		{ 
 			get 
 			{ 
-				return default(android.text.util.Linkify.TransformFilter); 
+				return default(global::android.text.util.Linkify.TransformFilter); 
 			} 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 

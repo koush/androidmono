@@ -20,7 +20,7 @@ namespace android.text
 		internal static global::java.lang.Class staticClass; 
 		static __ParcelableSpan() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.text.__ParcelableSpan), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.__ParcelableSpan), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -37,27 +37,27 @@ namespace android.text
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.__ParcelableSpan)) 
-				return @__env.CallIntMethod(this, _getSpanTypeId6858); 
+				return @__env.CallIntMethod(this, global::android.text.__ParcelableSpan._getSpanTypeId6858); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.__ParcelableSpan.staticClass, _getSpanTypeId6858); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.__ParcelableSpan.staticClass, global::android.text.__ParcelableSpan._getSpanTypeId6858); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel6859; 
 		 void android.os.Parcelable.writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.__ParcelableSpan)) 
-				@__env.CallVoidMethod(this, _writeToParcel6859, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.text.__ParcelableSpan._writeToParcel6859, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.text.__ParcelableSpan.staticClass, _writeToParcel6859, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.__ParcelableSpan.staticClass, global::android.text.__ParcelableSpan._writeToParcel6859, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _describeContents6860; 
 		 int android.os.Parcelable.describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.__ParcelableSpan)) 
-				return @__env.CallIntMethod(this, _describeContents6860); 
+				return @__env.CallIntMethod(this, global::android.text.__ParcelableSpan._describeContents6860); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.__ParcelableSpan.staticClass, _describeContents6860); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.__ParcelableSpan.staticClass, global::android.text.__ParcelableSpan._describeContents6860); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

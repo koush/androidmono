@@ -4,8 +4,8 @@ namespace org.xml.sax
 	public interface Locator 
 	{ 
 		int getLineNumber(); 
-		java.lang.String getPublicId(); 
-		java.lang.String getSystemId(); 
+		global::java.lang.String getPublicId(); 
+		global::java.lang.String getSystemId(); 
 		int getColumnNumber(); 
 	} 
 
@@ -23,7 +23,7 @@ namespace org.xml.sax
 		internal static global::java.lang.Class staticClass; 
 		static __Locator() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(org.xml.sax.__Locator), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.xml.sax.__Locator), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -40,36 +40,36 @@ namespace org.xml.sax
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(org.xml.sax.__Locator)) 
-				return @__env.CallIntMethod(this, _getLineNumber13320); 
+				return @__env.CallIntMethod(this, global::org.xml.sax.__Locator._getLineNumber13320); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, org.xml.sax.__Locator.staticClass, _getLineNumber13320); 
+				return @__env.CallNonVirtualIntMethod(this, global::org.xml.sax.__Locator.staticClass, global::org.xml.sax.__Locator._getLineNumber13320); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getPublicId13321; 
-		 java.lang.String org.xml.sax.Locator.getPublicId() 
+		 global::java.lang.String org.xml.sax.Locator.getPublicId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(org.xml.sax.__Locator)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getPublicId13321)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Locator._getPublicId13321)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, org.xml.sax.__Locator.staticClass, _getPublicId13321)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Locator.staticClass, global::org.xml.sax.__Locator._getPublicId13321)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSystemId13322; 
-		 java.lang.String org.xml.sax.Locator.getSystemId() 
+		 global::java.lang.String org.xml.sax.Locator.getSystemId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(org.xml.sax.__Locator)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getSystemId13322)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Locator._getSystemId13322)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, org.xml.sax.__Locator.staticClass, _getSystemId13322)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Locator.staticClass, global::org.xml.sax.__Locator._getSystemId13322)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getColumnNumber13323; 
 		 int org.xml.sax.Locator.getColumnNumber() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(org.xml.sax.__Locator)) 
-				return @__env.CallIntMethod(this, _getColumnNumber13323); 
+				return @__env.CallIntMethod(this, global::org.xml.sax.__Locator._getColumnNumber13323); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, org.xml.sax.__Locator.staticClass, _getColumnNumber13323); 
+				return @__env.CallNonVirtualIntMethod(this, global::org.xml.sax.__Locator.staticClass, global::org.xml.sax.__Locator._getColumnNumber13323); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

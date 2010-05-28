@@ -6,7 +6,7 @@ namespace android.hardware
 		internal static global::java.lang.Class staticClass; 
 		static Camera() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.hardware.Camera), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.hardware.Camera), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -38,7 +38,7 @@ namespace android.hardware
 			internal static global::java.lang.Class staticClass; 
 			static __AutoFocusCallback() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.hardware.Camera.__AutoFocusCallback), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.hardware.Camera.__AutoFocusCallback), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -55,9 +55,9 @@ namespace android.hardware
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.__AutoFocusCallback)) 
-					@__env.CallVoidMethod(this, _onAutoFocus3846, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.__AutoFocusCallback._onAutoFocus3846, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.__AutoFocusCallback.staticClass, _onAutoFocus3846, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.__AutoFocusCallback.staticClass, global::android.hardware.Camera.__AutoFocusCallback._onAutoFocus3846, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -85,7 +85,7 @@ namespace android.hardware
 			internal static global::java.lang.Class staticClass; 
 			static __ErrorCallback() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.hardware.Camera.__ErrorCallback), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.hardware.Camera.__ErrorCallback), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -102,9 +102,9 @@ namespace android.hardware
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.__ErrorCallback)) 
-					@__env.CallVoidMethod(this, _onError3847, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.__ErrorCallback._onError3847, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.__ErrorCallback.staticClass, _onError3847, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.__ErrorCallback.staticClass, global::android.hardware.Camera.__ErrorCallback._onError3847, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -118,7 +118,7 @@ namespace android.hardware
 			internal static global::java.lang.Class staticClass; 
 			static Parameters() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.hardware.Camera.Parameters), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.hardware.Camera.Parameters), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -131,782 +131,782 @@ namespace android.hardware
 			{ 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _get3848; 
-			public virtual java.lang.String get(java.lang.String arg0) 
+			public virtual global::java.lang.String get(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _get3848, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._get3848, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _get3848, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._get3848, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getInt3849; 
 			public virtual int getInt(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return @__env.CallIntMethod(this, _getInt3849, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					return @__env.CallIntMethod(this, global::android.hardware.Camera.Parameters._getInt3849, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.hardware.Camera.Parameters.staticClass, _getInt3849, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getInt3849, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _set3850; 
 			public virtual void set(java.lang.String arg0, java.lang.String arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _set3850, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._set3850, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _set3850, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._set3850, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _set3851; 
 			public virtual void set(java.lang.String arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _set3851, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._set3851, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _set3851, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._set3851, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _remove3852; 
 			public virtual void remove(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _remove3852, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._remove3852, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _remove3852, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._remove3852, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _flatten3853; 
-			public virtual java.lang.String flatten() 
+			public virtual global::java.lang.String flatten() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _flatten3853)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._flatten3853)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _flatten3853)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._flatten3853)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _unflatten3854; 
 			public virtual void unflatten(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _unflatten3854, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._unflatten3854, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _unflatten3854, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._unflatten3854, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setPreviewSize3855; 
 			public virtual void setPreviewSize(int arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setPreviewSize3855, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setPreviewSize3855, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setPreviewSize3855, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setPreviewSize3855, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getPreviewSize3856; 
-			public virtual android.hardware.Camera.Size getPreviewSize() 
+			public virtual global::android.hardware.Camera.Size getPreviewSize() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera.Size>(@__env, @__env.CallObjectMethodPtr(this, _getPreviewSize3856)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera.Size>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getPreviewSize3856)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera.Size>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getPreviewSize3856)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera.Size>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getPreviewSize3856)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getSupportedPreviewSizes3857; 
-			public virtual java.util.List getSupportedPreviewSizes() 
+			public virtual global::java.util.List getSupportedPreviewSizes() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getSupportedPreviewSizes3857)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getSupportedPreviewSizes3857)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getSupportedPreviewSizes3857)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getSupportedPreviewSizes3857)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setJpegThumbnailSize3858; 
 			public virtual void setJpegThumbnailSize(int arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setJpegThumbnailSize3858, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setJpegThumbnailSize3858, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setJpegThumbnailSize3858, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setJpegThumbnailSize3858, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getJpegThumbnailSize3859; 
-			public virtual android.hardware.Camera.Size getJpegThumbnailSize() 
+			public virtual global::android.hardware.Camera.Size getJpegThumbnailSize() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera.Size>(@__env, @__env.CallObjectMethodPtr(this, _getJpegThumbnailSize3859)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera.Size>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getJpegThumbnailSize3859)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera.Size>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getJpegThumbnailSize3859)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera.Size>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getJpegThumbnailSize3859)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setJpegThumbnailQuality3860; 
 			public virtual void setJpegThumbnailQuality(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setJpegThumbnailQuality3860, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setJpegThumbnailQuality3860, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setJpegThumbnailQuality3860, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setJpegThumbnailQuality3860, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getJpegThumbnailQuality3861; 
 			public virtual int getJpegThumbnailQuality() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return @__env.CallIntMethod(this, _getJpegThumbnailQuality3861); 
+					return @__env.CallIntMethod(this, global::android.hardware.Camera.Parameters._getJpegThumbnailQuality3861); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.hardware.Camera.Parameters.staticClass, _getJpegThumbnailQuality3861); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getJpegThumbnailQuality3861); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setJpegQuality3862; 
 			public virtual void setJpegQuality(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setJpegQuality3862, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setJpegQuality3862, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setJpegQuality3862, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setJpegQuality3862, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getJpegQuality3863; 
 			public virtual int getJpegQuality() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return @__env.CallIntMethod(this, _getJpegQuality3863); 
+					return @__env.CallIntMethod(this, global::android.hardware.Camera.Parameters._getJpegQuality3863); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.hardware.Camera.Parameters.staticClass, _getJpegQuality3863); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getJpegQuality3863); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setPreviewFrameRate3864; 
 			public virtual void setPreviewFrameRate(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setPreviewFrameRate3864, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setPreviewFrameRate3864, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setPreviewFrameRate3864, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setPreviewFrameRate3864, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getPreviewFrameRate3865; 
 			public virtual int getPreviewFrameRate() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return @__env.CallIntMethod(this, _getPreviewFrameRate3865); 
+					return @__env.CallIntMethod(this, global::android.hardware.Camera.Parameters._getPreviewFrameRate3865); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.hardware.Camera.Parameters.staticClass, _getPreviewFrameRate3865); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getPreviewFrameRate3865); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getSupportedPreviewFrameRates3866; 
-			public virtual java.util.List getSupportedPreviewFrameRates() 
+			public virtual global::java.util.List getSupportedPreviewFrameRates() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getSupportedPreviewFrameRates3866)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getSupportedPreviewFrameRates3866)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getSupportedPreviewFrameRates3866)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getSupportedPreviewFrameRates3866)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setPreviewFormat3867; 
 			public virtual void setPreviewFormat(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setPreviewFormat3867, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setPreviewFormat3867, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setPreviewFormat3867, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setPreviewFormat3867, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getPreviewFormat3868; 
 			public virtual int getPreviewFormat() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return @__env.CallIntMethod(this, _getPreviewFormat3868); 
+					return @__env.CallIntMethod(this, global::android.hardware.Camera.Parameters._getPreviewFormat3868); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.hardware.Camera.Parameters.staticClass, _getPreviewFormat3868); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getPreviewFormat3868); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getSupportedPreviewFormats3869; 
-			public virtual java.util.List getSupportedPreviewFormats() 
+			public virtual global::java.util.List getSupportedPreviewFormats() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getSupportedPreviewFormats3869)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getSupportedPreviewFormats3869)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getSupportedPreviewFormats3869)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getSupportedPreviewFormats3869)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setPictureSize3870; 
 			public virtual void setPictureSize(int arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setPictureSize3870, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setPictureSize3870, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setPictureSize3870, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setPictureSize3870, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getPictureSize3871; 
-			public virtual android.hardware.Camera.Size getPictureSize() 
+			public virtual global::android.hardware.Camera.Size getPictureSize() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera.Size>(@__env, @__env.CallObjectMethodPtr(this, _getPictureSize3871)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera.Size>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getPictureSize3871)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera.Size>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getPictureSize3871)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera.Size>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getPictureSize3871)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getSupportedPictureSizes3872; 
-			public virtual java.util.List getSupportedPictureSizes() 
+			public virtual global::java.util.List getSupportedPictureSizes() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getSupportedPictureSizes3872)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getSupportedPictureSizes3872)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getSupportedPictureSizes3872)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getSupportedPictureSizes3872)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setPictureFormat3873; 
 			public virtual void setPictureFormat(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setPictureFormat3873, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setPictureFormat3873, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setPictureFormat3873, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setPictureFormat3873, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getPictureFormat3874; 
 			public virtual int getPictureFormat() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return @__env.CallIntMethod(this, _getPictureFormat3874); 
+					return @__env.CallIntMethod(this, global::android.hardware.Camera.Parameters._getPictureFormat3874); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.hardware.Camera.Parameters.staticClass, _getPictureFormat3874); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getPictureFormat3874); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getSupportedPictureFormats3875; 
-			public virtual java.util.List getSupportedPictureFormats() 
+			public virtual global::java.util.List getSupportedPictureFormats() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getSupportedPictureFormats3875)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getSupportedPictureFormats3875)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getSupportedPictureFormats3875)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getSupportedPictureFormats3875)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setRotation3876; 
 			public virtual void setRotation(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setRotation3876, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setRotation3876, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setRotation3876, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setRotation3876, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setGpsLatitude3877; 
 			public virtual void setGpsLatitude(double arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setGpsLatitude3877, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setGpsLatitude3877, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setGpsLatitude3877, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setGpsLatitude3877, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setGpsLongitude3878; 
 			public virtual void setGpsLongitude(double arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setGpsLongitude3878, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setGpsLongitude3878, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setGpsLongitude3878, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setGpsLongitude3878, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setGpsAltitude3879; 
 			public virtual void setGpsAltitude(double arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setGpsAltitude3879, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setGpsAltitude3879, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setGpsAltitude3879, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setGpsAltitude3879, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setGpsTimestamp3880; 
 			public virtual void setGpsTimestamp(long arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setGpsTimestamp3880, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setGpsTimestamp3880, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setGpsTimestamp3880, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setGpsTimestamp3880, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _removeGpsData3881; 
 			public virtual void removeGpsData() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _removeGpsData3881); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._removeGpsData3881); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _removeGpsData3881); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._removeGpsData3881); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getWhiteBalance3882; 
-			public virtual java.lang.String getWhiteBalance() 
+			public virtual global::java.lang.String getWhiteBalance() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getWhiteBalance3882)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getWhiteBalance3882)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getWhiteBalance3882)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getWhiteBalance3882)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setWhiteBalance3883; 
 			public virtual void setWhiteBalance(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setWhiteBalance3883, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setWhiteBalance3883, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setWhiteBalance3883, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setWhiteBalance3883, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getSupportedWhiteBalance3884; 
-			public virtual java.util.List getSupportedWhiteBalance() 
+			public virtual global::java.util.List getSupportedWhiteBalance() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getSupportedWhiteBalance3884)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getSupportedWhiteBalance3884)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getSupportedWhiteBalance3884)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getSupportedWhiteBalance3884)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getColorEffect3885; 
-			public virtual java.lang.String getColorEffect() 
+			public virtual global::java.lang.String getColorEffect() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getColorEffect3885)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getColorEffect3885)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getColorEffect3885)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getColorEffect3885)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setColorEffect3886; 
 			public virtual void setColorEffect(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setColorEffect3886, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setColorEffect3886, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setColorEffect3886, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setColorEffect3886, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getSupportedColorEffects3887; 
-			public virtual java.util.List getSupportedColorEffects() 
+			public virtual global::java.util.List getSupportedColorEffects() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getSupportedColorEffects3887)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getSupportedColorEffects3887)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getSupportedColorEffects3887)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getSupportedColorEffects3887)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getAntibanding3888; 
-			public virtual java.lang.String getAntibanding() 
+			public virtual global::java.lang.String getAntibanding() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getAntibanding3888)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getAntibanding3888)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getAntibanding3888)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getAntibanding3888)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setAntibanding3889; 
 			public virtual void setAntibanding(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setAntibanding3889, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setAntibanding3889, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setAntibanding3889, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setAntibanding3889, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getSupportedAntibanding3890; 
-			public virtual java.util.List getSupportedAntibanding() 
+			public virtual global::java.util.List getSupportedAntibanding() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getSupportedAntibanding3890)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getSupportedAntibanding3890)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getSupportedAntibanding3890)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getSupportedAntibanding3890)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getSceneMode3891; 
-			public virtual java.lang.String getSceneMode() 
+			public virtual global::java.lang.String getSceneMode() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getSceneMode3891)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getSceneMode3891)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getSceneMode3891)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getSceneMode3891)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setSceneMode3892; 
 			public virtual void setSceneMode(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setSceneMode3892, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setSceneMode3892, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setSceneMode3892, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setSceneMode3892, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getSupportedSceneModes3893; 
-			public virtual java.util.List getSupportedSceneModes() 
+			public virtual global::java.util.List getSupportedSceneModes() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getSupportedSceneModes3893)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getSupportedSceneModes3893)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getSupportedSceneModes3893)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getSupportedSceneModes3893)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getFlashMode3894; 
-			public virtual java.lang.String getFlashMode() 
+			public virtual global::java.lang.String getFlashMode() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getFlashMode3894)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getFlashMode3894)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getFlashMode3894)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getFlashMode3894)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setFlashMode3895; 
 			public virtual void setFlashMode(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setFlashMode3895, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setFlashMode3895, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setFlashMode3895, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setFlashMode3895, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getSupportedFlashModes3896; 
-			public virtual java.util.List getSupportedFlashModes() 
+			public virtual global::java.util.List getSupportedFlashModes() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getSupportedFlashModes3896)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getSupportedFlashModes3896)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getSupportedFlashModes3896)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getSupportedFlashModes3896)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getFocusMode3897; 
-			public virtual java.lang.String getFocusMode() 
+			public virtual global::java.lang.String getFocusMode() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getFocusMode3897)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getFocusMode3897)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getFocusMode3897)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getFocusMode3897)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setFocusMode3898; 
 			public virtual void setFocusMode(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					@__env.CallVoidMethod(this, _setFocusMode3898, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.Parameters._setFocusMode3898, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.Parameters.staticClass, _setFocusMode3898, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._setFocusMode3898, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getSupportedFocusModes3899; 
-			public virtual java.util.List getSupportedFocusModes() 
+			public virtual global::java.util.List getSupportedFocusModes() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.Parameters)) 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getSupportedFocusModes3899)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera.Parameters._getSupportedFocusModes3899)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.Parameters.staticClass, _getSupportedFocusModes3899)); 
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.Parameters.staticClass, global::android.hardware.Camera.Parameters._getSupportedFocusModes3899)); 
 			} 
-			public static java.lang.String WHITE_BALANCE_AUTO
+			public static global::java.lang.String WHITE_BALANCE_AUTO
 			{ 
 				get 
 				{ 
 					return "auto"; 
 				} 
 			} 
-			public static java.lang.String WHITE_BALANCE_INCANDESCENT
+			public static global::java.lang.String WHITE_BALANCE_INCANDESCENT
 			{ 
 				get 
 				{ 
 					return "incandescent"; 
 				} 
 			} 
-			public static java.lang.String WHITE_BALANCE_FLUORESCENT
+			public static global::java.lang.String WHITE_BALANCE_FLUORESCENT
 			{ 
 				get 
 				{ 
 					return "fluorescent"; 
 				} 
 			} 
-			public static java.lang.String WHITE_BALANCE_WARM_FLUORESCENT
+			public static global::java.lang.String WHITE_BALANCE_WARM_FLUORESCENT
 			{ 
 				get 
 				{ 
 					return "warm-fluorescent"; 
 				} 
 			} 
-			public static java.lang.String WHITE_BALANCE_DAYLIGHT
+			public static global::java.lang.String WHITE_BALANCE_DAYLIGHT
 			{ 
 				get 
 				{ 
 					return "daylight"; 
 				} 
 			} 
-			public static java.lang.String WHITE_BALANCE_CLOUDY_DAYLIGHT
+			public static global::java.lang.String WHITE_BALANCE_CLOUDY_DAYLIGHT
 			{ 
 				get 
 				{ 
 					return "cloudy-daylight"; 
 				} 
 			} 
-			public static java.lang.String WHITE_BALANCE_TWILIGHT
+			public static global::java.lang.String WHITE_BALANCE_TWILIGHT
 			{ 
 				get 
 				{ 
 					return "twilight"; 
 				} 
 			} 
-			public static java.lang.String WHITE_BALANCE_SHADE
+			public static global::java.lang.String WHITE_BALANCE_SHADE
 			{ 
 				get 
 				{ 
 					return "shade"; 
 				} 
 			} 
-			public static java.lang.String EFFECT_NONE
+			public static global::java.lang.String EFFECT_NONE
 			{ 
 				get 
 				{ 
 					return "none"; 
 				} 
 			} 
-			public static java.lang.String EFFECT_MONO
+			public static global::java.lang.String EFFECT_MONO
 			{ 
 				get 
 				{ 
 					return "mono"; 
 				} 
 			} 
-			public static java.lang.String EFFECT_NEGATIVE
+			public static global::java.lang.String EFFECT_NEGATIVE
 			{ 
 				get 
 				{ 
 					return "negative"; 
 				} 
 			} 
-			public static java.lang.String EFFECT_SOLARIZE
+			public static global::java.lang.String EFFECT_SOLARIZE
 			{ 
 				get 
 				{ 
 					return "solarize"; 
 				} 
 			} 
-			public static java.lang.String EFFECT_SEPIA
+			public static global::java.lang.String EFFECT_SEPIA
 			{ 
 				get 
 				{ 
 					return "sepia"; 
 				} 
 			} 
-			public static java.lang.String EFFECT_POSTERIZE
+			public static global::java.lang.String EFFECT_POSTERIZE
 			{ 
 				get 
 				{ 
 					return "posterize"; 
 				} 
 			} 
-			public static java.lang.String EFFECT_WHITEBOARD
+			public static global::java.lang.String EFFECT_WHITEBOARD
 			{ 
 				get 
 				{ 
 					return "whiteboard"; 
 				} 
 			} 
-			public static java.lang.String EFFECT_BLACKBOARD
+			public static global::java.lang.String EFFECT_BLACKBOARD
 			{ 
 				get 
 				{ 
 					return "blackboard"; 
 				} 
 			} 
-			public static java.lang.String EFFECT_AQUA
+			public static global::java.lang.String EFFECT_AQUA
 			{ 
 				get 
 				{ 
 					return "aqua"; 
 				} 
 			} 
-			public static java.lang.String ANTIBANDING_AUTO
+			public static global::java.lang.String ANTIBANDING_AUTO
 			{ 
 				get 
 				{ 
 					return "auto"; 
 				} 
 			} 
-			public static java.lang.String ANTIBANDING_50HZ
+			public static global::java.lang.String ANTIBANDING_50HZ
 			{ 
 				get 
 				{ 
 					return "50hz"; 
 				} 
 			} 
-			public static java.lang.String ANTIBANDING_60HZ
+			public static global::java.lang.String ANTIBANDING_60HZ
 			{ 
 				get 
 				{ 
 					return "60hz"; 
 				} 
 			} 
-			public static java.lang.String ANTIBANDING_OFF
+			public static global::java.lang.String ANTIBANDING_OFF
 			{ 
 				get 
 				{ 
 					return "off"; 
 				} 
 			} 
-			public static java.lang.String FLASH_MODE_OFF
+			public static global::java.lang.String FLASH_MODE_OFF
 			{ 
 				get 
 				{ 
 					return "off"; 
 				} 
 			} 
-			public static java.lang.String FLASH_MODE_AUTO
+			public static global::java.lang.String FLASH_MODE_AUTO
 			{ 
 				get 
 				{ 
 					return "auto"; 
 				} 
 			} 
-			public static java.lang.String FLASH_MODE_ON
+			public static global::java.lang.String FLASH_MODE_ON
 			{ 
 				get 
 				{ 
 					return "on"; 
 				} 
 			} 
-			public static java.lang.String FLASH_MODE_RED_EYE
+			public static global::java.lang.String FLASH_MODE_RED_EYE
 			{ 
 				get 
 				{ 
 					return "red-eye"; 
 				} 
 			} 
-			public static java.lang.String FLASH_MODE_TORCH
+			public static global::java.lang.String FLASH_MODE_TORCH
 			{ 
 				get 
 				{ 
 					return "torch"; 
 				} 
 			} 
-			public static java.lang.String SCENE_MODE_AUTO
+			public static global::java.lang.String SCENE_MODE_AUTO
 			{ 
 				get 
 				{ 
 					return "auto"; 
 				} 
 			} 
-			public static java.lang.String SCENE_MODE_ACTION
+			public static global::java.lang.String SCENE_MODE_ACTION
 			{ 
 				get 
 				{ 
 					return "action"; 
 				} 
 			} 
-			public static java.lang.String SCENE_MODE_PORTRAIT
+			public static global::java.lang.String SCENE_MODE_PORTRAIT
 			{ 
 				get 
 				{ 
 					return "portrait"; 
 				} 
 			} 
-			public static java.lang.String SCENE_MODE_LANDSCAPE
+			public static global::java.lang.String SCENE_MODE_LANDSCAPE
 			{ 
 				get 
 				{ 
 					return "landscape"; 
 				} 
 			} 
-			public static java.lang.String SCENE_MODE_NIGHT
+			public static global::java.lang.String SCENE_MODE_NIGHT
 			{ 
 				get 
 				{ 
 					return "night"; 
 				} 
 			} 
-			public static java.lang.String SCENE_MODE_NIGHT_PORTRAIT
+			public static global::java.lang.String SCENE_MODE_NIGHT_PORTRAIT
 			{ 
 				get 
 				{ 
 					return "night-portrait"; 
 				} 
 			} 
-			public static java.lang.String SCENE_MODE_THEATRE
+			public static global::java.lang.String SCENE_MODE_THEATRE
 			{ 
 				get 
 				{ 
 					return "theatre"; 
 				} 
 			} 
-			public static java.lang.String SCENE_MODE_BEACH
+			public static global::java.lang.String SCENE_MODE_BEACH
 			{ 
 				get 
 				{ 
 					return "beach"; 
 				} 
 			} 
-			public static java.lang.String SCENE_MODE_SNOW
+			public static global::java.lang.String SCENE_MODE_SNOW
 			{ 
 				get 
 				{ 
 					return "snow"; 
 				} 
 			} 
-			public static java.lang.String SCENE_MODE_SUNSET
+			public static global::java.lang.String SCENE_MODE_SUNSET
 			{ 
 				get 
 				{ 
 					return "sunset"; 
 				} 
 			} 
-			public static java.lang.String SCENE_MODE_STEADYPHOTO
+			public static global::java.lang.String SCENE_MODE_STEADYPHOTO
 			{ 
 				get 
 				{ 
 					return "steadyphoto"; 
 				} 
 			} 
-			public static java.lang.String SCENE_MODE_FIREWORKS
+			public static global::java.lang.String SCENE_MODE_FIREWORKS
 			{ 
 				get 
 				{ 
 					return "fireworks"; 
 				} 
 			} 
-			public static java.lang.String SCENE_MODE_SPORTS
+			public static global::java.lang.String SCENE_MODE_SPORTS
 			{ 
 				get 
 				{ 
 					return "sports"; 
 				} 
 			} 
-			public static java.lang.String SCENE_MODE_PARTY
+			public static global::java.lang.String SCENE_MODE_PARTY
 			{ 
 				get 
 				{ 
 					return "party"; 
 				} 
 			} 
-			public static java.lang.String SCENE_MODE_CANDLELIGHT
+			public static global::java.lang.String SCENE_MODE_CANDLELIGHT
 			{ 
 				get 
 				{ 
 					return "candlelight"; 
 				} 
 			} 
-			public static java.lang.String FOCUS_MODE_AUTO
+			public static global::java.lang.String FOCUS_MODE_AUTO
 			{ 
 				get 
 				{ 
 					return "auto"; 
 				} 
 			} 
-			public static java.lang.String FOCUS_MODE_INFINITY
+			public static global::java.lang.String FOCUS_MODE_INFINITY
 			{ 
 				get 
 				{ 
 					return "infinity"; 
 				} 
 			} 
-			public static java.lang.String FOCUS_MODE_MACRO
+			public static global::java.lang.String FOCUS_MODE_MACRO
 			{ 
 				get 
 				{ 
 					return "macro"; 
 				} 
 			} 
-			public static java.lang.String FOCUS_MODE_FIXED
+			public static global::java.lang.String FOCUS_MODE_FIXED
 			{ 
 				get 
 				{ 
@@ -990,7 +990,7 @@ namespace android.hardware
 			internal static global::java.lang.Class staticClass; 
 			static __PictureCallback() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.hardware.Camera.__PictureCallback), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.hardware.Camera.__PictureCallback), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -1007,9 +1007,9 @@ namespace android.hardware
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.__PictureCallback)) 
-					@__env.CallVoidMethod(this, _onPictureTaken3900, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.__PictureCallback._onPictureTaken3900, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.__PictureCallback.staticClass, _onPictureTaken3900, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.__PictureCallback.staticClass, global::android.hardware.Camera.__PictureCallback._onPictureTaken3900, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -1037,7 +1037,7 @@ namespace android.hardware
 			internal static global::java.lang.Class staticClass; 
 			static __PreviewCallback() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.hardware.Camera.__PreviewCallback), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.hardware.Camera.__PreviewCallback), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -1054,9 +1054,9 @@ namespace android.hardware
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.__PreviewCallback)) 
-					@__env.CallVoidMethod(this, _onPreviewFrame3901, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.__PreviewCallback._onPreviewFrame3901, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.__PreviewCallback.staticClass, _onPreviewFrame3901, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.__PreviewCallback.staticClass, global::android.hardware.Camera.__PreviewCallback._onPreviewFrame3901, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -1084,7 +1084,7 @@ namespace android.hardware
 			internal static global::java.lang.Class staticClass; 
 			static __ShutterCallback() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.hardware.Camera.__ShutterCallback), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.hardware.Camera.__ShutterCallback), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -1101,9 +1101,9 @@ namespace android.hardware
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.hardware.Camera.__ShutterCallback)) 
-					@__env.CallVoidMethod(this, _onShutter3902); 
+					@__env.CallVoidMethod(this, global::android.hardware.Camera.__ShutterCallback._onShutter3902); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.__ShutterCallback.staticClass, _onShutter3902); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.__ShutterCallback.staticClass, global::android.hardware.Camera.__ShutterCallback._onShutter3902); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -1117,7 +1117,7 @@ namespace android.hardware
 			internal static global::java.lang.Class staticClass; 
 			static Size() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.hardware.Camera.Size), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.hardware.Camera.Size), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -1133,7 +1133,7 @@ namespace android.hardware
 			public Size(android.hardware.Camera arg0, int arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.hardware.Camera.Size.staticClass, _Size3903, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.NewObject(android.hardware.Camera.Size.staticClass, global::android.hardware.Camera.Size._Size3903, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _width3904; 
 			public int width
@@ -1168,141 +1168,141 @@ namespace android.hardware
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Camera)) 
-				@__env.CallVoidMethod(this, _lock3906); 
+				@__env.CallVoidMethod(this, global::android.hardware.Camera._lock3906); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.staticClass, _lock3906); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.staticClass, global::android.hardware.Camera._lock3906); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _release3907; 
 		public virtual void release() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Camera)) 
-				@__env.CallVoidMethod(this, _release3907); 
+				@__env.CallVoidMethod(this, global::android.hardware.Camera._release3907); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.staticClass, _release3907); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.staticClass, global::android.hardware.Camera._release3907); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _open3908; 
-		public static android.hardware.Camera open() 
+		public static global::android.hardware.Camera open() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera>(@__env, @__env.CallStaticObjectMethodPtr(android.hardware.Camera.staticClass, _open3908)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera>(@__env, @__env.CallStaticObjectMethodPtr(android.hardware.Camera.staticClass, global::android.hardware.Camera._open3908)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _unlock3909; 
 		public virtual void unlock() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Camera)) 
-				@__env.CallVoidMethod(this, _unlock3909); 
+				@__env.CallVoidMethod(this, global::android.hardware.Camera._unlock3909); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.staticClass, _unlock3909); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.staticClass, global::android.hardware.Camera._unlock3909); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getParameters3910; 
-		public virtual android.hardware.Camera.Parameters getParameters() 
+		public virtual global::android.hardware.Camera.Parameters getParameters() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Camera)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera.Parameters>(@__env, @__env.CallObjectMethodPtr(this, _getParameters3910)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera.Parameters>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Camera._getParameters3910)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera.Parameters>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.hardware.Camera.staticClass, _getParameters3910)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Camera.Parameters>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Camera.staticClass, global::android.hardware.Camera._getParameters3910)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setPreviewDisplay3911; 
 		public virtual void setPreviewDisplay(android.view.SurfaceHolder arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Camera)) 
-				@__env.CallVoidMethod(this, _setPreviewDisplay3911, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.hardware.Camera._setPreviewDisplay3911, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.staticClass, _setPreviewDisplay3911, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.staticClass, global::android.hardware.Camera._setPreviewDisplay3911, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _startPreview3912; 
 		public virtual void startPreview() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Camera)) 
-				@__env.CallVoidMethod(this, _startPreview3912); 
+				@__env.CallVoidMethod(this, global::android.hardware.Camera._startPreview3912); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.staticClass, _startPreview3912); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.staticClass, global::android.hardware.Camera._startPreview3912); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _stopPreview3913; 
 		public virtual void stopPreview() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Camera)) 
-				@__env.CallVoidMethod(this, _stopPreview3913); 
+				@__env.CallVoidMethod(this, global::android.hardware.Camera._stopPreview3913); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.staticClass, _stopPreview3913); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.staticClass, global::android.hardware.Camera._stopPreview3913); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setPreviewCallback3914; 
 		public virtual void setPreviewCallback(android.hardware.Camera.PreviewCallback arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Camera)) 
-				@__env.CallVoidMethod(this, _setPreviewCallback3914, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.hardware.Camera._setPreviewCallback3914, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.staticClass, _setPreviewCallback3914, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.staticClass, global::android.hardware.Camera._setPreviewCallback3914, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setOneShotPreviewCallback3915; 
 		public virtual void setOneShotPreviewCallback(android.hardware.Camera.PreviewCallback arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Camera)) 
-				@__env.CallVoidMethod(this, _setOneShotPreviewCallback3915, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.hardware.Camera._setOneShotPreviewCallback3915, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.staticClass, _setOneShotPreviewCallback3915, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.staticClass, global::android.hardware.Camera._setOneShotPreviewCallback3915, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _autoFocus3916; 
 		public virtual void autoFocus(android.hardware.Camera.AutoFocusCallback arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Camera)) 
-				@__env.CallVoidMethod(this, _autoFocus3916, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.hardware.Camera._autoFocus3916, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.staticClass, _autoFocus3916, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.staticClass, global::android.hardware.Camera._autoFocus3916, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _cancelAutoFocus3917; 
 		public virtual void cancelAutoFocus() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Camera)) 
-				@__env.CallVoidMethod(this, _cancelAutoFocus3917); 
+				@__env.CallVoidMethod(this, global::android.hardware.Camera._cancelAutoFocus3917); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.staticClass, _cancelAutoFocus3917); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.staticClass, global::android.hardware.Camera._cancelAutoFocus3917); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _takePicture3918; 
 		public virtual void takePicture(android.hardware.Camera.ShutterCallback arg0, android.hardware.Camera.PictureCallback arg1, android.hardware.Camera.PictureCallback arg2, android.hardware.Camera.PictureCallback arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Camera)) 
-				@__env.CallVoidMethod(this, _takePicture3918, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)); 
+				@__env.CallVoidMethod(this, global::android.hardware.Camera._takePicture3918, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.staticClass, _takePicture3918, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.staticClass, global::android.hardware.Camera._takePicture3918, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _takePicture3919; 
 		public virtual void takePicture(android.hardware.Camera.ShutterCallback arg0, android.hardware.Camera.PictureCallback arg1, android.hardware.Camera.PictureCallback arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Camera)) 
-				@__env.CallVoidMethod(this, _takePicture3919, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
+				@__env.CallVoidMethod(this, global::android.hardware.Camera._takePicture3919, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.staticClass, _takePicture3919, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.staticClass, global::android.hardware.Camera._takePicture3919, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setErrorCallback3920; 
 		public virtual void setErrorCallback(android.hardware.Camera.ErrorCallback arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Camera)) 
-				@__env.CallVoidMethod(this, _setErrorCallback3920, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.hardware.Camera._setErrorCallback3920, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.staticClass, _setErrorCallback3920, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.staticClass, global::android.hardware.Camera._setErrorCallback3920, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setParameters3921; 
 		public virtual void setParameters(android.hardware.Camera.Parameters arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.hardware.Camera)) 
-				@__env.CallVoidMethod(this, _setParameters3921, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.hardware.Camera._setParameters3921, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.hardware.Camera.staticClass, _setParameters3921, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.Camera.staticClass, global::android.hardware.Camera._setParameters3921, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		public static int CAMERA_ERROR_UNKNOWN
 		{ 

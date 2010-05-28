@@ -6,7 +6,7 @@ namespace android.gesture
 		internal static global::java.lang.Class staticClass; 
 		static GestureLibraries() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.gesture.GestureLibraries), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.gesture.GestureLibraries), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,28 +19,28 @@ namespace android.gesture
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _fromFile2591; 
-		public static android.gesture.GestureLibrary fromFile(java.lang.String arg0) 
+		public static global::android.gesture.GestureLibrary fromFile(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.gesture.GestureLibrary>(@__env, @__env.CallStaticObjectMethodPtr(android.gesture.GestureLibraries.staticClass, _fromFile2591, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.gesture.GestureLibrary>(@__env, @__env.CallStaticObjectMethodPtr(android.gesture.GestureLibraries.staticClass, global::android.gesture.GestureLibraries._fromFile2591, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _fromFile2592; 
-		public static android.gesture.GestureLibrary fromFile(java.io.File arg0) 
+		public static global::android.gesture.GestureLibrary fromFile(java.io.File arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.gesture.GestureLibrary>(@__env, @__env.CallStaticObjectMethodPtr(android.gesture.GestureLibraries.staticClass, _fromFile2592, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.gesture.GestureLibrary>(@__env, @__env.CallStaticObjectMethodPtr(android.gesture.GestureLibraries.staticClass, global::android.gesture.GestureLibraries._fromFile2592, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _fromPrivateFile2593; 
-		public static android.gesture.GestureLibrary fromPrivateFile(android.content.Context arg0, java.lang.String arg1) 
+		public static global::android.gesture.GestureLibrary fromPrivateFile(android.content.Context arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.gesture.GestureLibrary>(@__env, @__env.CallStaticObjectMethodPtr(android.gesture.GestureLibraries.staticClass, _fromPrivateFile2593, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.gesture.GestureLibrary>(@__env, @__env.CallStaticObjectMethodPtr(android.gesture.GestureLibraries.staticClass, global::android.gesture.GestureLibraries._fromPrivateFile2593, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _fromRawResource2594; 
-		public static android.gesture.GestureLibrary fromRawResource(android.content.Context arg0, int arg1) 
+		public static global::android.gesture.GestureLibrary fromRawResource(android.content.Context arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.gesture.GestureLibrary>(@__env, @__env.CallStaticObjectMethodPtr(android.gesture.GestureLibraries.staticClass, _fromRawResource2594, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.gesture.GestureLibrary>(@__env, @__env.CallStaticObjectMethodPtr(android.gesture.GestureLibraries.staticClass, global::android.gesture.GestureLibraries._fromRawResource2594, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

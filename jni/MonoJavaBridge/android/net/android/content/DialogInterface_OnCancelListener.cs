@@ -20,7 +20,7 @@ namespace android.content
 		internal static global::java.lang.Class staticClass; 
 		static __DialogInterface_OnCancelListener() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.content.__DialogInterface_OnCancelListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.__DialogInterface_OnCancelListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -37,9 +37,9 @@ namespace android.content
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.__DialogInterface_OnCancelListener)) 
-				@__env.CallVoidMethod(this, _onCancel1272, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.content.__DialogInterface_OnCancelListener._onCancel1272, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.__DialogInterface_OnCancelListener.staticClass, _onCancel1272, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface_OnCancelListener.staticClass, global::android.content.__DialogInterface_OnCancelListener._onCancel1272, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

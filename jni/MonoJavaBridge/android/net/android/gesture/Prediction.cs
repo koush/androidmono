@@ -6,7 +6,7 @@ namespace android.gesture
 		internal static global::java.lang.Class staticClass; 
 		static Prediction() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.gesture.Prediction), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.gesture.Prediction), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,20 +19,20 @@ namespace android.gesture
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString2698; 
-		public override java.lang.String toString() 
+		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.gesture.Prediction)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString2698)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.gesture.Prediction._toString2698)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.gesture.Prediction.staticClass, _toString2698)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.gesture.Prediction.staticClass, global::android.gesture.Prediction._toString2698)); 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _name2699; 
-		public java.lang.String name
+		public global::java.lang.String name
 		{ 
 			get 
 			{ 
-				return default(java.lang.String); 
+				return default(global::java.lang.String); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _score2700; 

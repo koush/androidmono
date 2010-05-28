@@ -6,7 +6,7 @@ namespace java.util
 		internal static global::java.lang.Class staticClass; 
 		static Locale() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.util.Locale), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.util.Locale), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,373 +23,373 @@ namespace java.util
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Locale)) 
-				return @__env.CallIntMethod(this, _hashCode12903); 
+				return @__env.CallIntMethod(this, global::java.util.Locale._hashCode12903); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.util.Locale.staticClass, _hashCode12903); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.util.Locale.staticClass, global::java.util.Locale._hashCode12903); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _clone12904; 
-		public java.lang.Object clone() 
+		public global::java.lang.Object clone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Locale)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _clone12904)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._clone12904)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Locale.staticClass, _clone12904)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._clone12904)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _equals12905; 
 		public sealed override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Locale)) 
-				return @__env.CallBooleanMethod(this, _equals12905, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, global::java.util.Locale._equals12905, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.util.Locale.staticClass, _equals12905, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Locale.staticClass, global::java.util.Locale._equals12905, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString12906; 
-		public sealed override java.lang.String toString() 
+		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Locale)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString12906)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._toString12906)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Locale.staticClass, _toString12906)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._toString12906)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getLanguage12907; 
-		public java.lang.String getLanguage() 
+		public global::java.lang.String getLanguage() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Locale)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getLanguage12907)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._getLanguage12907)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Locale.staticClass, _getLanguage12907)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._getLanguage12907)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDefault12908; 
-		public static java.util.Locale getDefault() 
+		public static global::java.util.Locale getDefault() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Locale>(@__env, @__env.CallStaticObjectMethodPtr(java.util.Locale.staticClass, _getDefault12908)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Locale>(@__env, @__env.CallStaticObjectMethodPtr(java.util.Locale.staticClass, global::java.util.Locale._getDefault12908)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setDefault12909; 
 		public static void setDefault(java.util.Locale arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(java.util.Locale.staticClass, _setDefault12909, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.CallStaticVoidMethod(java.util.Locale.staticClass, global::java.util.Locale._setDefault12909, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAvailableLocales12910; 
-		public static java.util.Locale[] getAvailableLocales() 
+		public static global::java.util.Locale[] getAvailableLocales() 
 		{ 
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.util.Locale.staticClass, _getAvailableLocales12910)); 
+			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.util.Locale.staticClass, global::java.util.Locale._getAvailableLocales12910)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getISOCountries12911; 
-		public static java.lang.String[] getISOCountries() 
+		public static global::java.lang.String[] getISOCountries() 
 		{ 
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.util.Locale.staticClass, _getISOCountries12911)); 
+			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.util.Locale.staticClass, global::java.util.Locale._getISOCountries12911)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getISOLanguages12912; 
-		public static java.lang.String[] getISOLanguages() 
+		public static global::java.lang.String[] getISOLanguages() 
 		{ 
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.util.Locale.staticClass, _getISOLanguages12912)); 
+			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.util.Locale.staticClass, global::java.util.Locale._getISOLanguages12912)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCountry12913; 
-		public java.lang.String getCountry() 
+		public global::java.lang.String getCountry() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Locale)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getCountry12913)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._getCountry12913)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Locale.staticClass, _getCountry12913)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._getCountry12913)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getVariant12914; 
-		public java.lang.String getVariant() 
+		public global::java.lang.String getVariant() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Locale)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getVariant12914)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._getVariant12914)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Locale.staticClass, _getVariant12914)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._getVariant12914)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getISO3Language12915; 
-		public java.lang.String getISO3Language() 
+		public global::java.lang.String getISO3Language() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Locale)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getISO3Language12915)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._getISO3Language12915)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Locale.staticClass, _getISO3Language12915)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._getISO3Language12915)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getISO3Country12916; 
-		public java.lang.String getISO3Country() 
+		public global::java.lang.String getISO3Country() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Locale)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getISO3Country12916)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._getISO3Country12916)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Locale.staticClass, _getISO3Country12916)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._getISO3Country12916)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDisplayLanguage12917; 
-		public java.lang.String getDisplayLanguage(java.util.Locale arg0) 
+		public global::java.lang.String getDisplayLanguage(java.util.Locale arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Locale)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getDisplayLanguage12917, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._getDisplayLanguage12917, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Locale.staticClass, _getDisplayLanguage12917, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayLanguage12917, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDisplayLanguage12918; 
-		public java.lang.String getDisplayLanguage() 
+		public global::java.lang.String getDisplayLanguage() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Locale)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getDisplayLanguage12918)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._getDisplayLanguage12918)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Locale.staticClass, _getDisplayLanguage12918)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayLanguage12918)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDisplayCountry12919; 
-		public java.lang.String getDisplayCountry(java.util.Locale arg0) 
+		public global::java.lang.String getDisplayCountry(java.util.Locale arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Locale)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getDisplayCountry12919, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._getDisplayCountry12919, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Locale.staticClass, _getDisplayCountry12919, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayCountry12919, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDisplayCountry12920; 
-		public java.lang.String getDisplayCountry() 
+		public global::java.lang.String getDisplayCountry() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Locale)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getDisplayCountry12920)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._getDisplayCountry12920)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Locale.staticClass, _getDisplayCountry12920)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayCountry12920)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDisplayVariant12921; 
-		public java.lang.String getDisplayVariant() 
+		public global::java.lang.String getDisplayVariant() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Locale)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getDisplayVariant12921)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._getDisplayVariant12921)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Locale.staticClass, _getDisplayVariant12921)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayVariant12921)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDisplayVariant12922; 
-		public java.lang.String getDisplayVariant(java.util.Locale arg0) 
+		public global::java.lang.String getDisplayVariant(java.util.Locale arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Locale)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getDisplayVariant12922, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._getDisplayVariant12922, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Locale.staticClass, _getDisplayVariant12922, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayVariant12922, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDisplayName12923; 
-		public java.lang.String getDisplayName(java.util.Locale arg0) 
+		public global::java.lang.String getDisplayName(java.util.Locale arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Locale)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getDisplayName12923, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._getDisplayName12923, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Locale.staticClass, _getDisplayName12923, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayName12923, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDisplayName12924; 
-		public java.lang.String getDisplayName() 
+		public global::java.lang.String getDisplayName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.Locale)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getDisplayName12924)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._getDisplayName12924)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.Locale.staticClass, _getDisplayName12924)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._getDisplayName12924)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _Locale12925; 
 		public Locale(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.util.Locale.staticClass, _Locale12925, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+			@__env.NewObject(java.util.Locale.staticClass, global::java.util.Locale._Locale12925, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _Locale12926; 
 		public Locale(java.lang.String arg0, java.lang.String arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.util.Locale.staticClass, _Locale12926, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(java.util.Locale.staticClass, global::java.util.Locale._Locale12926, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _Locale12927; 
 		public Locale(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.util.Locale.staticClass, _Locale12927, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(java.util.Locale.staticClass, global::java.util.Locale._Locale12927, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _ENGLISH12928; 
-		public static java.util.Locale ENGLISH
+		public static global::java.util.Locale ENGLISH
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _FRENCH12929; 
-		public static java.util.Locale FRENCH
+		public static global::java.util.Locale FRENCH
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _GERMAN12930; 
-		public static java.util.Locale GERMAN
+		public static global::java.util.Locale GERMAN
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _ITALIAN12931; 
-		public static java.util.Locale ITALIAN
+		public static global::java.util.Locale ITALIAN
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _JAPANESE12932; 
-		public static java.util.Locale JAPANESE
+		public static global::java.util.Locale JAPANESE
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _KOREAN12933; 
-		public static java.util.Locale KOREAN
+		public static global::java.util.Locale KOREAN
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _CHINESE12934; 
-		public static java.util.Locale CHINESE
+		public static global::java.util.Locale CHINESE
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _SIMPLIFIED_CHINESE12935; 
-		public static java.util.Locale SIMPLIFIED_CHINESE
+		public static global::java.util.Locale SIMPLIFIED_CHINESE
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _TRADITIONAL_CHINESE12936; 
-		public static java.util.Locale TRADITIONAL_CHINESE
+		public static global::java.util.Locale TRADITIONAL_CHINESE
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _FRANCE12937; 
-		public static java.util.Locale FRANCE
+		public static global::java.util.Locale FRANCE
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _GERMANY12938; 
-		public static java.util.Locale GERMANY
+		public static global::java.util.Locale GERMANY
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _ITALY12939; 
-		public static java.util.Locale ITALY
+		public static global::java.util.Locale ITALY
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _JAPAN12940; 
-		public static java.util.Locale JAPAN
+		public static global::java.util.Locale JAPAN
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _KOREA12941; 
-		public static java.util.Locale KOREA
+		public static global::java.util.Locale KOREA
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _CHINA12942; 
-		public static java.util.Locale CHINA
+		public static global::java.util.Locale CHINA
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _PRC12943; 
-		public static java.util.Locale PRC
+		public static global::java.util.Locale PRC
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _TAIWAN12944; 
-		public static java.util.Locale TAIWAN
+		public static global::java.util.Locale TAIWAN
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _UK12945; 
-		public static java.util.Locale UK
+		public static global::java.util.Locale UK
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _US12946; 
-		public static java.util.Locale US
+		public static global::java.util.Locale US
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _CANADA12947; 
-		public static java.util.Locale CANADA
+		public static global::java.util.Locale CANADA
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _CANADA_FRENCH12948; 
-		public static java.util.Locale CANADA_FRENCH
+		public static global::java.util.Locale CANADA_FRENCH
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _ROOT12949; 
-		public static java.util.Locale ROOT
+		public static global::java.util.Locale ROOT
 		{ 
 			get 
 			{ 
-				return default(java.util.Locale); 
+				return default(global::java.util.Locale); 
 			} 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 

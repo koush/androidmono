@@ -6,7 +6,7 @@ namespace android.widget
 		internal static global::java.lang.Class staticClass; 
 		static ZoomButtonsController() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.ZoomButtonsController), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.ZoomButtonsController), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -39,7 +39,7 @@ namespace android.widget
 			internal static global::java.lang.Class staticClass; 
 			static __OnZoomListener() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.ZoomButtonsController.__OnZoomListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.ZoomButtonsController.__OnZoomListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -56,18 +56,18 @@ namespace android.widget
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.widget.ZoomButtonsController.__OnZoomListener)) 
-					@__env.CallVoidMethod(this, _onVisibilityChanged11351, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.widget.ZoomButtonsController.__OnZoomListener._onVisibilityChanged11351, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.widget.ZoomButtonsController.__OnZoomListener.staticClass, _onVisibilityChanged11351, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomButtonsController.__OnZoomListener.staticClass, global::android.widget.ZoomButtonsController.__OnZoomListener._onVisibilityChanged11351, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _onZoom11352; 
 			 void android.widget.ZoomButtonsController.OnZoomListener.onZoom(bool arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.widget.ZoomButtonsController.__OnZoomListener)) 
-					@__env.CallVoidMethod(this, _onZoom11352, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.widget.ZoomButtonsController.__OnZoomListener._onZoom11352, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.widget.ZoomButtonsController.__OnZoomListener.staticClass, _onZoom11352, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomButtonsController.__OnZoomListener.staticClass, global::android.widget.ZoomButtonsController.__OnZoomListener._onZoom11352, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -81,114 +81,114 @@ namespace android.widget
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ZoomButtonsController)) 
-				@__env.CallVoidMethod(this, _setVisible11353, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.ZoomButtonsController._setVisible11353, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ZoomButtonsController.staticClass, _setVisible11353, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, global::android.widget.ZoomButtonsController._setVisible11353, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isVisible11354; 
 		public virtual bool isVisible() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ZoomButtonsController)) 
-				return @__env.CallBooleanMethod(this, _isVisible11354); 
+				return @__env.CallBooleanMethod(this, global::android.widget.ZoomButtonsController._isVisible11354); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.ZoomButtonsController.staticClass, _isVisible11354); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ZoomButtonsController.staticClass, global::android.widget.ZoomButtonsController._isVisible11354); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getContainer11355; 
-		public virtual android.view.ViewGroup getContainer() 
+		public virtual global::android.view.ViewGroup getContainer() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ZoomButtonsController)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup>(@__env, @__env.CallObjectMethodPtr(this, _getContainer11355)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ZoomButtonsController._getContainer11355)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.ZoomButtonsController.staticClass, _getContainer11355)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ZoomButtonsController.staticClass, global::android.widget.ZoomButtonsController._getContainer11355)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setFocusable11356; 
 		public virtual void setFocusable(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ZoomButtonsController)) 
-				@__env.CallVoidMethod(this, _setFocusable11356, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.ZoomButtonsController._setFocusable11356, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ZoomButtonsController.staticClass, _setFocusable11356, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, global::android.widget.ZoomButtonsController._setFocusable11356, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onTouch11357; 
 		public virtual bool onTouch(android.view.View arg0, android.view.MotionEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ZoomButtonsController)) 
-				return @__env.CallBooleanMethod(this, _onTouch11357, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallBooleanMethod(this, global::android.widget.ZoomButtonsController._onTouch11357, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.ZoomButtonsController.staticClass, _onTouch11357, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ZoomButtonsController.staticClass, global::android.widget.ZoomButtonsController._onTouch11357, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getZoomControls11358; 
-		public virtual android.view.View getZoomControls() 
+		public virtual global::android.view.View getZoomControls() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ZoomButtonsController)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, _getZoomControls11358)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ZoomButtonsController._getZoomControls11358)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.ZoomButtonsController.staticClass, _getZoomControls11358)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ZoomButtonsController.staticClass, global::android.widget.ZoomButtonsController._getZoomControls11358)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setZoomSpeed11359; 
 		public virtual void setZoomSpeed(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ZoomButtonsController)) 
-				@__env.CallVoidMethod(this, _setZoomSpeed11359, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.ZoomButtonsController._setZoomSpeed11359, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ZoomButtonsController.staticClass, _setZoomSpeed11359, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, global::android.widget.ZoomButtonsController._setZoomSpeed11359, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setZoomInEnabled11360; 
 		public virtual void setZoomInEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ZoomButtonsController)) 
-				@__env.CallVoidMethod(this, _setZoomInEnabled11360, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.ZoomButtonsController._setZoomInEnabled11360, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ZoomButtonsController.staticClass, _setZoomInEnabled11360, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, global::android.widget.ZoomButtonsController._setZoomInEnabled11360, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setZoomOutEnabled11361; 
 		public virtual void setZoomOutEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ZoomButtonsController)) 
-				@__env.CallVoidMethod(this, _setZoomOutEnabled11361, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.ZoomButtonsController._setZoomOutEnabled11361, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ZoomButtonsController.staticClass, _setZoomOutEnabled11361, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, global::android.widget.ZoomButtonsController._setZoomOutEnabled11361, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setOnZoomListener11362; 
 		public virtual void setOnZoomListener(android.widget.ZoomButtonsController.OnZoomListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ZoomButtonsController)) 
-				@__env.CallVoidMethod(this, _setOnZoomListener11362, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.ZoomButtonsController._setOnZoomListener11362, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ZoomButtonsController.staticClass, _setOnZoomListener11362, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, global::android.widget.ZoomButtonsController._setOnZoomListener11362, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isAutoDismissed11363; 
 		public virtual bool isAutoDismissed() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ZoomButtonsController)) 
-				return @__env.CallBooleanMethod(this, _isAutoDismissed11363); 
+				return @__env.CallBooleanMethod(this, global::android.widget.ZoomButtonsController._isAutoDismissed11363); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.ZoomButtonsController.staticClass, _isAutoDismissed11363); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ZoomButtonsController.staticClass, global::android.widget.ZoomButtonsController._isAutoDismissed11363); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setAutoDismissed11364; 
 		public virtual void setAutoDismissed(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ZoomButtonsController)) 
-				@__env.CallVoidMethod(this, _setAutoDismissed11364, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.ZoomButtonsController._setAutoDismissed11364, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ZoomButtonsController.staticClass, _setAutoDismissed11364, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomButtonsController.staticClass, global::android.widget.ZoomButtonsController._setAutoDismissed11364, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ZoomButtonsController11365; 
 		public ZoomButtonsController(android.view.View arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.ZoomButtonsController.staticClass, _ZoomButtonsController11365, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.widget.ZoomButtonsController.staticClass, global::android.widget.ZoomButtonsController._ZoomButtonsController11365, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

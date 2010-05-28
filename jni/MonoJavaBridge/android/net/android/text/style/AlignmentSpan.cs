@@ -3,7 +3,7 @@ namespace android.text.style
 	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 	public interface AlignmentSpan : ParagraphStyle
 	{ 
-		android.text.Layout.Alignment getAlignment(); 
+		global::android.text.Layout.Alignment getAlignment(); 
 	} 
 
 	public partial class AlignmentSpan_ 
@@ -20,7 +20,7 @@ namespace android.text.style
 		internal static global::java.lang.Class staticClass; 
 		static __AlignmentSpan() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.text.style.__AlignmentSpan), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.style.__AlignmentSpan), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -33,13 +33,13 @@ namespace android.text.style
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAlignment7293; 
-		 android.text.Layout.Alignment android.text.style.AlignmentSpan.getAlignment() 
+		 global::android.text.Layout.Alignment android.text.style.AlignmentSpan.getAlignment() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.style.__AlignmentSpan)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallObjectMethodPtr(this, _getAlignment7293)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.style.__AlignmentSpan._getAlignment7293)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.style.__AlignmentSpan.staticClass, _getAlignment7293)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.style.__AlignmentSpan.staticClass, global::android.text.style.__AlignmentSpan._getAlignment7293)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

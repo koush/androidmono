@@ -3,7 +3,7 @@ namespace java.net
 	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 	public interface SocketOptions 
 	{ 
-		java.lang.Object getOption(int arg0); 
+		global::java.lang.Object getOption(int arg0); 
 		void setOption(int arg0, java.lang.Object arg1); 
 	} 
 
@@ -21,7 +21,7 @@ namespace java.net
 		internal static global::java.lang.Class staticClass; 
 		static __SocketOptions() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.net.__SocketOptions), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.net.__SocketOptions), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -34,22 +34,22 @@ namespace java.net
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getOption11895; 
-		 java.lang.Object java.net.SocketOptions.getOption(int arg0) 
+		 global::java.lang.Object java.net.SocketOptions.getOption(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.__SocketOptions)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _getOption11895, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.__SocketOptions._getOption11895, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.__SocketOptions.staticClass, _getOption11895, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.__SocketOptions.staticClass, global::java.net.__SocketOptions._getOption11895, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setOption11896; 
 		 void java.net.SocketOptions.setOption(int arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.__SocketOptions)) 
-				@__env.CallVoidMethod(this, _setOption11896, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallVoidMethod(this, global::java.net.__SocketOptions._setOption11896, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.net.__SocketOptions.staticClass, _setOption11896, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.net.__SocketOptions.staticClass, global::java.net.__SocketOptions._setOption11896, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

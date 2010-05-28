@@ -22,7 +22,7 @@ namespace org.xml.sax
 		internal static global::java.lang.Class staticClass; 
 		static __ErrorHandler() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(org.xml.sax.__ErrorHandler), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.xml.sax.__ErrorHandler), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -39,27 +39,27 @@ namespace org.xml.sax
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(org.xml.sax.__ErrorHandler)) 
-				@__env.CallVoidMethod(this, _fatalError13303, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::org.xml.sax.__ErrorHandler._fatalError13303, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, org.xml.sax.__ErrorHandler.staticClass, _fatalError13303, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ErrorHandler.staticClass, global::org.xml.sax.__ErrorHandler._fatalError13303, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _error13304; 
 		 void org.xml.sax.ErrorHandler.error(org.xml.sax.SAXParseException arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(org.xml.sax.__ErrorHandler)) 
-				@__env.CallVoidMethod(this, _error13304, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::org.xml.sax.__ErrorHandler._error13304, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, org.xml.sax.__ErrorHandler.staticClass, _error13304, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ErrorHandler.staticClass, global::org.xml.sax.__ErrorHandler._error13304, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _warning13305; 
 		 void org.xml.sax.ErrorHandler.warning(org.xml.sax.SAXParseException arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(org.xml.sax.__ErrorHandler)) 
-				@__env.CallVoidMethod(this, _warning13305, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::org.xml.sax.__ErrorHandler._warning13305, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, org.xml.sax.__ErrorHandler.staticClass, _warning13305, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ErrorHandler.staticClass, global::org.xml.sax.__ErrorHandler._warning13305, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

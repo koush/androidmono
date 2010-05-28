@@ -20,7 +20,7 @@ namespace android.text.style
 		internal static global::java.lang.Class staticClass; 
 		static __TabStopSpan() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.text.style.__TabStopSpan), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.style.__TabStopSpan), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -37,9 +37,9 @@ namespace android.text.style
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.style.__TabStopSpan)) 
-				return @__env.CallIntMethod(this, _getTabStop7437); 
+				return @__env.CallIntMethod(this, global::android.text.style.__TabStopSpan._getTabStop7437); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.style.__TabStopSpan.staticClass, _getTabStop7437); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.__TabStopSpan.staticClass, global::android.text.style.__TabStopSpan._getTabStop7437); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

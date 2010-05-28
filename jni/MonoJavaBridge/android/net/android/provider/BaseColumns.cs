@@ -19,7 +19,7 @@ namespace android.provider
 		internal static global::java.lang.Class staticClass; 
 		static __BaseColumns() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.provider.__BaseColumns), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.__BaseColumns), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 

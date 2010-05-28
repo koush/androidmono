@@ -6,28 +6,28 @@ namespace android.content
 		internal static global::java.lang.Class staticClass; 
 		static AbstractThreadedSyncAdapter() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.content.AbstractThreadedSyncAdapter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.AbstractThreadedSyncAdapter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected AbstractThreadedSyncAdapter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getContext909; 
-		public virtual android.content.Context getContext() 
+		public virtual global::android.content.Context getContext() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.AbstractThreadedSyncAdapter)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Context>(@__env, @__env.CallObjectMethodPtr(this, _getContext909)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Context>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.AbstractThreadedSyncAdapter._getContext909)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Context>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.AbstractThreadedSyncAdapter.staticClass, _getContext909)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Context>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.AbstractThreadedSyncAdapter.staticClass, global::android.content.AbstractThreadedSyncAdapter._getContext909)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSyncAdapterBinder910; 
-		public virtual android.os.IBinder getSyncAdapterBinder() 
+		public virtual global::android.os.IBinder getSyncAdapterBinder() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.AbstractThreadedSyncAdapter)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, _getSyncAdapterBinder910)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.AbstractThreadedSyncAdapter._getSyncAdapterBinder910)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.AbstractThreadedSyncAdapter.staticClass, _getSyncAdapterBinder910)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.AbstractThreadedSyncAdapter.staticClass, global::android.content.AbstractThreadedSyncAdapter._getSyncAdapterBinder910)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onPerformSync911; 
 		public abstract void onPerformSync(android.accounts.Account arg0, android.os.Bundle arg1, java.lang.String arg2, android.content.ContentProviderClient arg3, android.content.SyncResult arg4); 
@@ -35,7 +35,7 @@ namespace android.content
 		public AbstractThreadedSyncAdapter(android.content.Context arg0, bool arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.content.AbstractThreadedSyncAdapter.staticClass, _AbstractThreadedSyncAdapter912, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(android.content.AbstractThreadedSyncAdapter.staticClass, global::android.content.AbstractThreadedSyncAdapter._AbstractThreadedSyncAdapter912, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		public static int LOG_SYNC_DETAILS
 		{ 

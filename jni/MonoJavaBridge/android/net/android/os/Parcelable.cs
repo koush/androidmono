@@ -21,7 +21,7 @@ namespace android.os
 		internal static global::java.lang.Class staticClass; 
 		static __Parcelable() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.__Parcelable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.__Parcelable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -38,18 +38,18 @@ namespace android.os
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.__Parcelable)) 
-				@__env.CallVoidMethod(this, _writeToParcel5817, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.os.__Parcelable._writeToParcel5817, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.__Parcelable.staticClass, _writeToParcel5817, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.__Parcelable.staticClass, global::android.os.__Parcelable._writeToParcel5817, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _describeContents5818; 
 		 int android.os.Parcelable.describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.__Parcelable)) 
-				return @__env.CallIntMethod(this, _describeContents5818); 
+				return @__env.CallIntMethod(this, global::android.os.__Parcelable._describeContents5818); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.os.__Parcelable.staticClass, _describeContents5818); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.os.__Parcelable.staticClass, global::android.os.__Parcelable._describeContents5818); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

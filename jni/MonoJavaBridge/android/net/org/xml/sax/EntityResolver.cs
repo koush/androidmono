@@ -3,7 +3,7 @@ namespace org.xml.sax
 	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 	public interface EntityResolver 
 	{ 
-		org.xml.sax.InputSource resolveEntity(java.lang.String arg0, java.lang.String arg1); 
+		global::org.xml.sax.InputSource resolveEntity(java.lang.String arg0, java.lang.String arg1); 
 	} 
 
 	public partial class EntityResolver_ 
@@ -20,7 +20,7 @@ namespace org.xml.sax
 		internal static global::java.lang.Class staticClass; 
 		static __EntityResolver() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(org.xml.sax.__EntityResolver), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::org.xml.sax.__EntityResolver), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -33,13 +33,13 @@ namespace org.xml.sax
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resolveEntity13302; 
-		 org.xml.sax.InputSource org.xml.sax.EntityResolver.resolveEntity(java.lang.String arg0, java.lang.String arg1) 
+		 global::org.xml.sax.InputSource org.xml.sax.EntityResolver.resolveEntity(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(org.xml.sax.__EntityResolver)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.xml.sax.InputSource>(@__env, @__env.CallObjectMethodPtr(this, _resolveEntity13302, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.xml.sax.InputSource>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__EntityResolver._resolveEntity13302, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.xml.sax.InputSource>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, org.xml.sax.__EntityResolver.staticClass, _resolveEntity13302, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.xml.sax.InputSource>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__EntityResolver.staticClass, global::org.xml.sax.__EntityResolver._resolveEntity13302, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

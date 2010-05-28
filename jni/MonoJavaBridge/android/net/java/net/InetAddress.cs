@@ -6,7 +6,7 @@ namespace java.net
 		internal static global::java.lang.Class staticClass; 
 		static InetAddress() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.net.InetAddress), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.net.InetAddress), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,199 +23,199 @@ namespace java.net
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return @__env.CallIntMethod(this, _hashCode11739); 
+				return @__env.CallIntMethod(this, global::java.net.InetAddress._hashCode11739); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.net.InetAddress.staticClass, _hashCode11739); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._hashCode11739); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _equals11740; 
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return @__env.CallBooleanMethod(this, _equals11740, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._equals11740, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.InetAddress.staticClass, _equals11740, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._equals11740, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAddress11741; 
 		public virtual byte[] getAddress() 
 		{ 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getAddress11741)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.net.InetAddress._getAddress11741)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.InetAddress.staticClass, _getAddress11741)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._getAddress11741)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString11742; 
-		public override java.lang.String toString() 
+		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString11742)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.InetAddress._toString11742)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.InetAddress.staticClass, _toString11742)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._toString11742)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getHostName11743; 
-		public virtual java.lang.String getHostName() 
+		public virtual global::java.lang.String getHostName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getHostName11743)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.InetAddress._getHostName11743)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.InetAddress.staticClass, _getHostName11743)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._getHostName11743)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getHostAddress11744; 
-		public virtual java.lang.String getHostAddress() 
+		public virtual global::java.lang.String getHostAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getHostAddress11744)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.InetAddress._getHostAddress11744)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.InetAddress.staticClass, _getHostAddress11744)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._getHostAddress11744)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getByName11745; 
-		public static java.net.InetAddress getByName(java.lang.String arg0) 
+		public static global::java.net.InetAddress getByName(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallStaticObjectMethodPtr(java.net.InetAddress.staticClass, _getByName11745, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallStaticObjectMethodPtr(java.net.InetAddress.staticClass, global::java.net.InetAddress._getByName11745, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isMulticastAddress11746; 
 		public virtual bool isMulticastAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return @__env.CallBooleanMethod(this, _isMulticastAddress11746); 
+				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isMulticastAddress11746); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.InetAddress.staticClass, _isMulticastAddress11746); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMulticastAddress11746); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isAnyLocalAddress11747; 
 		public virtual bool isAnyLocalAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return @__env.CallBooleanMethod(this, _isAnyLocalAddress11747); 
+				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isAnyLocalAddress11747); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.InetAddress.staticClass, _isAnyLocalAddress11747); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isAnyLocalAddress11747); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isLoopbackAddress11748; 
 		public virtual bool isLoopbackAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return @__env.CallBooleanMethod(this, _isLoopbackAddress11748); 
+				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isLoopbackAddress11748); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.InetAddress.staticClass, _isLoopbackAddress11748); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isLoopbackAddress11748); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isLinkLocalAddress11749; 
 		public virtual bool isLinkLocalAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return @__env.CallBooleanMethod(this, _isLinkLocalAddress11749); 
+				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isLinkLocalAddress11749); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.InetAddress.staticClass, _isLinkLocalAddress11749); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isLinkLocalAddress11749); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isSiteLocalAddress11750; 
 		public virtual bool isSiteLocalAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return @__env.CallBooleanMethod(this, _isSiteLocalAddress11750); 
+				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isSiteLocalAddress11750); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.InetAddress.staticClass, _isSiteLocalAddress11750); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isSiteLocalAddress11750); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isMCGlobal11751; 
 		public virtual bool isMCGlobal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return @__env.CallBooleanMethod(this, _isMCGlobal11751); 
+				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isMCGlobal11751); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.InetAddress.staticClass, _isMCGlobal11751); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMCGlobal11751); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isMCNodeLocal11752; 
 		public virtual bool isMCNodeLocal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return @__env.CallBooleanMethod(this, _isMCNodeLocal11752); 
+				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isMCNodeLocal11752); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.InetAddress.staticClass, _isMCNodeLocal11752); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMCNodeLocal11752); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isMCLinkLocal11753; 
 		public virtual bool isMCLinkLocal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return @__env.CallBooleanMethod(this, _isMCLinkLocal11753); 
+				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isMCLinkLocal11753); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.InetAddress.staticClass, _isMCLinkLocal11753); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMCLinkLocal11753); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isMCSiteLocal11754; 
 		public virtual bool isMCSiteLocal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return @__env.CallBooleanMethod(this, _isMCSiteLocal11754); 
+				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isMCSiteLocal11754); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.InetAddress.staticClass, _isMCSiteLocal11754); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMCSiteLocal11754); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isMCOrgLocal11755; 
 		public virtual bool isMCOrgLocal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return @__env.CallBooleanMethod(this, _isMCOrgLocal11755); 
+				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isMCOrgLocal11755); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.InetAddress.staticClass, _isMCOrgLocal11755); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMCOrgLocal11755); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isReachable11756; 
 		public virtual bool isReachable(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return @__env.CallBooleanMethod(this, _isReachable11756, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isReachable11756, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.InetAddress.staticClass, _isReachable11756, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isReachable11756, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isReachable11757; 
 		public virtual bool isReachable(java.net.NetworkInterface arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return @__env.CallBooleanMethod(this, _isReachable11757, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isReachable11757, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.InetAddress.staticClass, _isReachable11757, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isReachable11757, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCanonicalHostName11758; 
-		public virtual java.lang.String getCanonicalHostName() 
+		public virtual global::java.lang.String getCanonicalHostName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.InetAddress)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getCanonicalHostName11758)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.InetAddress._getCanonicalHostName11758)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.InetAddress.staticClass, _getCanonicalHostName11758)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._getCanonicalHostName11758)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getByAddress11759; 
-		public static java.net.InetAddress getByAddress(java.lang.String arg0, byte[] arg1) 
+		public static global::java.net.InetAddress getByAddress(java.lang.String arg0, byte[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallStaticObjectMethodPtr(java.net.InetAddress.staticClass, _getByAddress11759, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallStaticObjectMethodPtr(java.net.InetAddress.staticClass, global::java.net.InetAddress._getByAddress11759, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getByAddress11760; 
-		public static java.net.InetAddress getByAddress(byte[] arg0) 
+		public static global::java.net.InetAddress getByAddress(byte[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallStaticObjectMethodPtr(java.net.InetAddress.staticClass, _getByAddress11760, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallStaticObjectMethodPtr(java.net.InetAddress.staticClass, global::java.net.InetAddress._getByAddress11760, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAllByName11761; 
-		public static java.net.InetAddress[] getAllByName(java.lang.String arg0) 
+		public static global::java.net.InetAddress[] getAllByName(java.lang.String arg0) 
 		{ 
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.net.InetAddress.staticClass, _getAllByName11761, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.net.InetAddress.staticClass, global::java.net.InetAddress._getAllByName11761, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getLocalHost11762; 
-		public static java.net.InetAddress getLocalHost() 
+		public static global::java.net.InetAddress getLocalHost() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallStaticObjectMethodPtr(java.net.InetAddress.staticClass, _getLocalHost11762)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallStaticObjectMethodPtr(java.net.InetAddress.staticClass, global::java.net.InetAddress._getLocalHost11762)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

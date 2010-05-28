@@ -6,207 +6,207 @@ namespace java.nio.charset
 		internal static global::java.lang.Class staticClass; 
 		static CharsetDecoder() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.nio.charset.CharsetDecoder), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.nio.charset.CharsetDecoder), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected CharsetDecoder(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _charset12358; 
-		public virtual java.nio.charset.Charset charset() 
+		public virtual global::java.nio.charset.Charset charset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.Charset>(@__env, @__env.CallObjectMethodPtr(this, _charset12358)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.Charset>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder._charset12358)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.Charset>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.charset.CharsetDecoder.staticClass, _charset12358)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.Charset>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._charset12358)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _decode12359; 
-		public virtual java.nio.charset.CoderResult decode(java.nio.ByteBuffer arg0, java.nio.CharBuffer arg1, bool arg2) 
+		public virtual global::java.nio.charset.CoderResult decode(java.nio.ByteBuffer arg0, java.nio.CharBuffer arg1, bool arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallObjectMethodPtr(this, _decode12359, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder._decode12359, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.charset.CharsetDecoder.staticClass, _decode12359, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._decode12359, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _decode12360; 
-		public virtual java.nio.CharBuffer decode(java.nio.ByteBuffer arg0) 
+		public virtual global::java.nio.CharBuffer decode(java.nio.ByteBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.CharBuffer>(@__env, @__env.CallObjectMethodPtr(this, _decode12360, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.CharBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder._decode12360, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.CharBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.charset.CharsetDecoder.staticClass, _decode12360, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.CharBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._decode12360, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _flush12361; 
-		public virtual java.nio.charset.CoderResult flush(java.nio.CharBuffer arg0) 
+		public virtual global::java.nio.charset.CoderResult flush(java.nio.CharBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallObjectMethodPtr(this, _flush12361, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder._flush12361, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.charset.CharsetDecoder.staticClass, _flush12361, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._flush12361, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _reset12362; 
-		public virtual java.nio.charset.CharsetDecoder reset() 
+		public virtual global::java.nio.charset.CharsetDecoder reset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetDecoder>(@__env, @__env.CallObjectMethodPtr(this, _reset12362)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetDecoder>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder._reset12362)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetDecoder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.charset.CharsetDecoder.staticClass, _reset12362)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetDecoder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._reset12362)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _implFlush12363; 
-		protected virtual java.nio.charset.CoderResult implFlush(java.nio.CharBuffer arg0) 
+		protected virtual global::java.nio.charset.CoderResult implFlush(java.nio.CharBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallObjectMethodPtr(this, _implFlush12363, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder._implFlush12363, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.charset.CharsetDecoder.staticClass, _implFlush12363, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._implFlush12363, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onMalformedInput12364; 
-		public virtual java.nio.charset.CharsetDecoder onMalformedInput(java.nio.charset.CodingErrorAction arg0) 
+		public virtual global::java.nio.charset.CharsetDecoder onMalformedInput(java.nio.charset.CodingErrorAction arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetDecoder>(@__env, @__env.CallObjectMethodPtr(this, _onMalformedInput12364, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetDecoder>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder._onMalformedInput12364, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetDecoder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.charset.CharsetDecoder.staticClass, _onMalformedInput12364, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetDecoder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._onMalformedInput12364, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onUnmappableCharacter12365; 
-		public virtual java.nio.charset.CharsetDecoder onUnmappableCharacter(java.nio.charset.CodingErrorAction arg0) 
+		public virtual global::java.nio.charset.CharsetDecoder onUnmappableCharacter(java.nio.charset.CodingErrorAction arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetDecoder>(@__env, @__env.CallObjectMethodPtr(this, _onUnmappableCharacter12365, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetDecoder>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder._onUnmappableCharacter12365, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetDecoder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.charset.CharsetDecoder.staticClass, _onUnmappableCharacter12365, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetDecoder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._onUnmappableCharacter12365, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _replacement12366; 
-		public virtual java.lang.String replacement() 
+		public virtual global::java.lang.String replacement() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _replacement12366)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder._replacement12366)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.charset.CharsetDecoder.staticClass, _replacement12366)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._replacement12366)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _malformedInputAction12367; 
-		public virtual java.nio.charset.CodingErrorAction malformedInputAction() 
+		public virtual global::java.nio.charset.CodingErrorAction malformedInputAction() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CodingErrorAction>(@__env, @__env.CallObjectMethodPtr(this, _malformedInputAction12367)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CodingErrorAction>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder._malformedInputAction12367)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CodingErrorAction>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.charset.CharsetDecoder.staticClass, _malformedInputAction12367)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CodingErrorAction>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._malformedInputAction12367)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _unmappableCharacterAction12368; 
-		public virtual java.nio.charset.CodingErrorAction unmappableCharacterAction() 
+		public virtual global::java.nio.charset.CodingErrorAction unmappableCharacterAction() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CodingErrorAction>(@__env, @__env.CallObjectMethodPtr(this, _unmappableCharacterAction12368)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CodingErrorAction>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder._unmappableCharacterAction12368)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CodingErrorAction>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.charset.CharsetDecoder.staticClass, _unmappableCharacterAction12368)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CodingErrorAction>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._unmappableCharacterAction12368)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _replaceWith12369; 
-		public virtual java.nio.charset.CharsetDecoder replaceWith(java.lang.String arg0) 
+		public virtual global::java.nio.charset.CharsetDecoder replaceWith(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetDecoder>(@__env, @__env.CallObjectMethodPtr(this, _replaceWith12369, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetDecoder>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder._replaceWith12369, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetDecoder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.charset.CharsetDecoder.staticClass, _replaceWith12369, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetDecoder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._replaceWith12369, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _implReplaceWith12370; 
 		protected virtual void implReplaceWith(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				@__env.CallVoidMethod(this, _implReplaceWith12370, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.nio.charset.CharsetDecoder._implReplaceWith12370, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.nio.charset.CharsetDecoder.staticClass, _implReplaceWith12370, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._implReplaceWith12370, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _implOnMalformedInput12371; 
 		protected virtual void implOnMalformedInput(java.nio.charset.CodingErrorAction arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				@__env.CallVoidMethod(this, _implOnMalformedInput12371, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.nio.charset.CharsetDecoder._implOnMalformedInput12371, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.nio.charset.CharsetDecoder.staticClass, _implOnMalformedInput12371, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._implOnMalformedInput12371, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _implOnUnmappableCharacter12372; 
 		protected virtual void implOnUnmappableCharacter(java.nio.charset.CodingErrorAction arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				@__env.CallVoidMethod(this, _implOnUnmappableCharacter12372, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.nio.charset.CharsetDecoder._implOnUnmappableCharacter12372, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.nio.charset.CharsetDecoder.staticClass, _implOnUnmappableCharacter12372, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._implOnUnmappableCharacter12372, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _implReset12373; 
 		protected virtual void implReset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				@__env.CallVoidMethod(this, _implReset12373); 
+				@__env.CallVoidMethod(this, global::java.nio.charset.CharsetDecoder._implReset12373); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.nio.charset.CharsetDecoder.staticClass, _implReset12373); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._implReset12373); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _maxCharsPerByte12374; 
 		public virtual float maxCharsPerByte() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				return @__env.CallFloatMethod(this, _maxCharsPerByte12374); 
+				return @__env.CallFloatMethod(this, global::java.nio.charset.CharsetDecoder._maxCharsPerByte12374); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, java.nio.charset.CharsetDecoder.staticClass, _maxCharsPerByte12374); 
+				return @__env.CallNonVirtualFloatMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._maxCharsPerByte12374); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _decodeLoop12375; 
-		protected abstract java.nio.charset.CoderResult decodeLoop(java.nio.ByteBuffer arg0, java.nio.CharBuffer arg1); 
+		protected abstract global::java.nio.charset.CoderResult decodeLoop(java.nio.ByteBuffer arg0, java.nio.CharBuffer arg1); 
 		internal static global::net.sf.jni4net.jni.MethodId _averageCharsPerByte12376; 
 		public virtual float averageCharsPerByte() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				return @__env.CallFloatMethod(this, _averageCharsPerByte12376); 
+				return @__env.CallFloatMethod(this, global::java.nio.charset.CharsetDecoder._averageCharsPerByte12376); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, java.nio.charset.CharsetDecoder.staticClass, _averageCharsPerByte12376); 
+				return @__env.CallNonVirtualFloatMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._averageCharsPerByte12376); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isAutoDetecting12377; 
 		public virtual bool isAutoDetecting() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				return @__env.CallBooleanMethod(this, _isAutoDetecting12377); 
+				return @__env.CallBooleanMethod(this, global::java.nio.charset.CharsetDecoder._isAutoDetecting12377); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.nio.charset.CharsetDecoder.staticClass, _isAutoDetecting12377); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._isAutoDetecting12377); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isCharsetDetected12378; 
 		public virtual bool isCharsetDetected() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				return @__env.CallBooleanMethod(this, _isCharsetDetected12378); 
+				return @__env.CallBooleanMethod(this, global::java.nio.charset.CharsetDecoder._isCharsetDetected12378); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.nio.charset.CharsetDecoder.staticClass, _isCharsetDetected12378); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._isCharsetDetected12378); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _detectedCharset12379; 
-		public virtual java.nio.charset.Charset detectedCharset() 
+		public virtual global::java.nio.charset.Charset detectedCharset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CharsetDecoder)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.Charset>(@__env, @__env.CallObjectMethodPtr(this, _detectedCharset12379)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.Charset>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder._detectedCharset12379)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.Charset>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.charset.CharsetDecoder.staticClass, _detectedCharset12379)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.Charset>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._detectedCharset12379)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _CharsetDecoder12380; 
 		protected CharsetDecoder(java.nio.charset.Charset arg0, float arg1, float arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.nio.charset.CharsetDecoder.staticClass, _CharsetDecoder12380, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(java.nio.charset.CharsetDecoder.staticClass, global::java.nio.charset.CharsetDecoder._CharsetDecoder12380, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

@@ -6,7 +6,7 @@ namespace java.security.cert
 		internal static global::java.lang.Class staticClass; 
 		static CertPath() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.security.cert.CertPath), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.security.cert.CertPath), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected CertPath(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -16,59 +16,59 @@ namespace java.security.cert
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.cert.CertPath)) 
-				return @__env.CallIntMethod(this, _hashCode12477); 
+				return @__env.CallIntMethod(this, global::java.security.cert.CertPath._hashCode12477); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.security.cert.CertPath.staticClass, _hashCode12477); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._hashCode12477); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _equals12478; 
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.cert.CertPath)) 
-				return @__env.CallBooleanMethod(this, _equals12478, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, global::java.security.cert.CertPath._equals12478, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.security.cert.CertPath.staticClass, _equals12478, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._equals12478, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString12479; 
-		public override java.lang.String toString() 
+		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.cert.CertPath)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString12479)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.CertPath._toString12479)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.security.cert.CertPath.staticClass, _toString12479)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._toString12479)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCertificates12480; 
-		public abstract java.util.List getCertificates(); 
+		public abstract global::java.util.List getCertificates(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getType12481; 
-		public virtual java.lang.String getType() 
+		public virtual global::java.lang.String getType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.cert.CertPath)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getType12481)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.CertPath._getType12481)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.security.cert.CertPath.staticClass, _getType12481)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._getType12481)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getEncoded12482; 
 		public abstract byte[] getEncoded(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getEncoded12483; 
 		public abstract byte[] getEncoded(java.lang.String arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _writeReplace12484; 
-		protected virtual java.lang.Object writeReplace() 
+		protected virtual global::java.lang.Object writeReplace() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.cert.CertPath)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _writeReplace12484)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.CertPath._writeReplace12484)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.security.cert.CertPath.staticClass, _writeReplace12484)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._writeReplace12484)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getEncodings12485; 
-		public abstract java.util.Iterator getEncodings(); 
+		public abstract global::java.util.Iterator getEncodings(); 
 		internal static global::net.sf.jni4net.jni.MethodId _CertPath12486; 
 		protected CertPath(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.security.cert.CertPath.staticClass, _CertPath12486, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._CertPath12486, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

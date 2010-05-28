@@ -6,7 +6,7 @@ namespace java.nio.channels
 		internal static global::java.lang.Class staticClass; 
 		static Pipe() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.nio.channels.Pipe), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.nio.channels.Pipe), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected Pipe(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -17,7 +17,7 @@ namespace java.nio.channels
 			internal new static global::java.lang.Class staticClass; 
 			static SinkChannel() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.nio.channels.Pipe.SinkChannel), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.nio.channels.Pipe.SinkChannel), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			protected SinkChannel(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
@@ -33,15 +33,15 @@ namespace java.nio.channels
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(java.nio.channels.Pipe.SinkChannel)) 
-					return @__env.CallIntMethod(this, _validOps12218); 
+					return @__env.CallIntMethod(this, global::java.nio.channels.Pipe.SinkChannel._validOps12218); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, java.nio.channels.Pipe.SinkChannel.staticClass, _validOps12218); 
+					return @__env.CallNonVirtualIntMethod(this, global::java.nio.channels.Pipe.SinkChannel.staticClass, global::java.nio.channels.Pipe.SinkChannel._validOps12218); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _SinkChannel12219; 
 			protected SinkChannel(java.nio.channels.spi.SelectorProvider arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(java.nio.channels.Pipe.SinkChannel.staticClass, _SinkChannel12219, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.NewObject(java.nio.channels.Pipe.SinkChannel.staticClass, global::java.nio.channels.Pipe.SinkChannel._SinkChannel12219, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -59,7 +59,7 @@ namespace java.nio.channels
 			internal new static global::java.lang.Class staticClass; 
 			static SourceChannel() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.nio.channels.Pipe.SourceChannel), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.nio.channels.Pipe.SourceChannel), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			protected SourceChannel(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
@@ -75,15 +75,15 @@ namespace java.nio.channels
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(java.nio.channels.Pipe.SourceChannel)) 
-					return @__env.CallIntMethod(this, _validOps12223); 
+					return @__env.CallIntMethod(this, global::java.nio.channels.Pipe.SourceChannel._validOps12223); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, java.nio.channels.Pipe.SourceChannel.staticClass, _validOps12223); 
+					return @__env.CallNonVirtualIntMethod(this, global::java.nio.channels.Pipe.SourceChannel.staticClass, global::java.nio.channels.Pipe.SourceChannel._validOps12223); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _SourceChannel12224; 
 			protected SourceChannel(java.nio.channels.spi.SelectorProvider arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(java.nio.channels.Pipe.SourceChannel.staticClass, _SourceChannel12224, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.NewObject(java.nio.channels.Pipe.SourceChannel.staticClass, global::java.nio.channels.Pipe.SourceChannel._SourceChannel12224, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -96,20 +96,20 @@ namespace java.nio.channels
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _open12225; 
-		public static java.nio.channels.Pipe open() 
+		public static global::java.nio.channels.Pipe open() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.Pipe>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.channels.Pipe.staticClass, _open12225)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.Pipe>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.channels.Pipe.staticClass, global::java.nio.channels.Pipe._open12225)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _source12226; 
-		public abstract java.nio.channels.Pipe.SourceChannel source(); 
+		public abstract global::java.nio.channels.Pipe.SourceChannel source(); 
 		internal static global::net.sf.jni4net.jni.MethodId _sink12227; 
-		public abstract java.nio.channels.Pipe.SinkChannel sink(); 
+		public abstract global::java.nio.channels.Pipe.SinkChannel sink(); 
 		internal static global::net.sf.jni4net.jni.MethodId _Pipe12228; 
 		protected Pipe()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.nio.channels.Pipe.staticClass, _Pipe12228, this); 
+			@__env.NewObject(java.nio.channels.Pipe.staticClass, global::java.nio.channels.Pipe._Pipe12228, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

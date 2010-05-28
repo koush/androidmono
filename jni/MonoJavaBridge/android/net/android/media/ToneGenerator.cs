@@ -6,7 +6,7 @@ namespace android.media
 		internal static global::java.lang.Class staticClass; 
 		static ToneGenerator() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.media.ToneGenerator), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.ToneGenerator), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,42 +23,42 @@ namespace android.media
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.ToneGenerator)) 
-				@__env.CallVoidMethod(this, _release4607); 
+				@__env.CallVoidMethod(this, global::android.media.ToneGenerator._release4607); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.ToneGenerator.staticClass, _release4607); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._release4607); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _startTone4608; 
 		public virtual bool startTone(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.ToneGenerator)) 
-				return @__env.CallBooleanMethod(this, _startTone4608, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.media.ToneGenerator._startTone4608, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.media.ToneGenerator.staticClass, _startTone4608, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._startTone4608, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _startTone4609; 
 		public virtual bool startTone(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.ToneGenerator)) 
-				return @__env.CallBooleanMethod(this, _startTone4609, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallBooleanMethod(this, global::android.media.ToneGenerator._startTone4609, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.media.ToneGenerator.staticClass, _startTone4609, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._startTone4609, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _stopTone4610; 
 		public virtual void stopTone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.ToneGenerator)) 
-				@__env.CallVoidMethod(this, _stopTone4610); 
+				@__env.CallVoidMethod(this, global::android.media.ToneGenerator._stopTone4610); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.ToneGenerator.staticClass, _stopTone4610); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._stopTone4610); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ToneGenerator4611; 
 		public ToneGenerator(int arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.media.ToneGenerator.staticClass, _ToneGenerator4611, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._ToneGenerator4611, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		public static int TONE_DTMF_0
 		{ 

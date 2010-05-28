@@ -6,7 +6,7 @@ namespace android.speech
 		internal static global::java.lang.Class staticClass; 
 		static RecognizerIntent() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.speech.RecognizerIntent), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.speech.RecognizerIntent), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -18,70 +18,70 @@ namespace android.speech
 		protected RecognizerIntent(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
-		public static java.lang.String ACTION_RECOGNIZE_SPEECH
+		public static global::java.lang.String ACTION_RECOGNIZE_SPEECH
 		{ 
 			get 
 			{ 
 				return "android.speech.action.RECOGNIZE_SPEECH"; 
 			} 
 		} 
-		public static java.lang.String ACTION_WEB_SEARCH
+		public static global::java.lang.String ACTION_WEB_SEARCH
 		{ 
 			get 
 			{ 
 				return "android.speech.action.WEB_SEARCH"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_LANGUAGE_MODEL
+		public static global::java.lang.String EXTRA_LANGUAGE_MODEL
 		{ 
 			get 
 			{ 
 				return "android.speech.extra.LANGUAGE_MODEL"; 
 			} 
 		} 
-		public static java.lang.String LANGUAGE_MODEL_FREE_FORM
+		public static global::java.lang.String LANGUAGE_MODEL_FREE_FORM
 		{ 
 			get 
 			{ 
 				return "free_form"; 
 			} 
 		} 
-		public static java.lang.String LANGUAGE_MODEL_WEB_SEARCH
+		public static global::java.lang.String LANGUAGE_MODEL_WEB_SEARCH
 		{ 
 			get 
 			{ 
 				return "web_search"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_PROMPT
+		public static global::java.lang.String EXTRA_PROMPT
 		{ 
 			get 
 			{ 
 				return "android.speech.extra.PROMPT"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_LANGUAGE
+		public static global::java.lang.String EXTRA_LANGUAGE
 		{ 
 			get 
 			{ 
 				return "android.speech.extra.LANGUAGE"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_MAX_RESULTS
+		public static global::java.lang.String EXTRA_MAX_RESULTS
 		{ 
 			get 
 			{ 
 				return "android.speech.extra.MAX_RESULTS"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_RESULTS_PENDINGINTENT
+		public static global::java.lang.String EXTRA_RESULTS_PENDINGINTENT
 		{ 
 			get 
 			{ 
 				return "android.speech.extra.RESULTS_PENDINGINTENT"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_RESULTS_PENDINGINTENT_BUNDLE
+		public static global::java.lang.String EXTRA_RESULTS_PENDINGINTENT_BUNDLE
 		{ 
 			get 
 			{ 
@@ -123,7 +123,7 @@ namespace android.speech
 				return 5; 
 			} 
 		} 
-		public static java.lang.String EXTRA_RESULTS
+		public static global::java.lang.String EXTRA_RESULTS
 		{ 
 			get 
 			{ 

@@ -6,7 +6,7 @@ namespace android.media
 		internal static global::java.lang.Class staticClass; 
 		static AudioManager() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.media.AudioManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.AudioManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,347 +19,347 @@ namespace android.media
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getParameters4361; 
-		public virtual java.lang.String getParameters(java.lang.String arg0) 
+		public virtual global::java.lang.String getParameters(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getParameters4361, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.media.AudioManager._getParameters4361, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.media.AudioManager.staticClass, _getParameters4361, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._getParameters4361, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setMode4362; 
 		public virtual void setMode(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _setMode4362, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._setMode4362, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _setMode4362, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._setMode4362, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getMode4363; 
 		public virtual int getMode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				return @__env.CallIntMethod(this, _getMode4363); 
+				return @__env.CallIntMethod(this, global::android.media.AudioManager._getMode4363); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioManager.staticClass, _getMode4363); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._getMode4363); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _playSoundEffect4364; 
 		public virtual void playSoundEffect(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _playSoundEffect4364, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._playSoundEffect4364, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _playSoundEffect4364, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._playSoundEffect4364, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _playSoundEffect4365; 
 		public virtual void playSoundEffect(int arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _playSoundEffect4365, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._playSoundEffect4365, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _playSoundEffect4365, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._playSoundEffect4365, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setParameters4366; 
 		public virtual void setParameters(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _setParameters4366, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._setParameters4366, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _setParameters4366, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._setParameters4366, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _adjustStreamVolume4367; 
 		public virtual void adjustStreamVolume(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _adjustStreamVolume4367, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._adjustStreamVolume4367, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _adjustStreamVolume4367, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._adjustStreamVolume4367, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _adjustVolume4368; 
 		public virtual void adjustVolume(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _adjustVolume4368, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._adjustVolume4368, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _adjustVolume4368, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._adjustVolume4368, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _adjustSuggestedStreamVolume4369; 
 		public virtual void adjustSuggestedStreamVolume(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _adjustSuggestedStreamVolume4369, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._adjustSuggestedStreamVolume4369, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _adjustSuggestedStreamVolume4369, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._adjustSuggestedStreamVolume4369, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getRingerMode4370; 
 		public virtual int getRingerMode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				return @__env.CallIntMethod(this, _getRingerMode4370); 
+				return @__env.CallIntMethod(this, global::android.media.AudioManager._getRingerMode4370); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioManager.staticClass, _getRingerMode4370); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._getRingerMode4370); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getStreamMaxVolume4371; 
 		public virtual int getStreamMaxVolume(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				return @__env.CallIntMethod(this, _getStreamMaxVolume4371, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, global::android.media.AudioManager._getStreamMaxVolume4371, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioManager.staticClass, _getStreamMaxVolume4371, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._getStreamMaxVolume4371, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getStreamVolume4372; 
 		public virtual int getStreamVolume(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				return @__env.CallIntMethod(this, _getStreamVolume4372, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, global::android.media.AudioManager._getStreamVolume4372, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioManager.staticClass, _getStreamVolume4372, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._getStreamVolume4372, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setRingerMode4373; 
 		public virtual void setRingerMode(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _setRingerMode4373, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._setRingerMode4373, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _setRingerMode4373, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._setRingerMode4373, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setStreamVolume4374; 
 		public virtual void setStreamVolume(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _setStreamVolume4374, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._setStreamVolume4374, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _setStreamVolume4374, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._setStreamVolume4374, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setStreamSolo4375; 
 		public virtual void setStreamSolo(int arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _setStreamSolo4375, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._setStreamSolo4375, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _setStreamSolo4375, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._setStreamSolo4375, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setStreamMute4376; 
 		public virtual void setStreamMute(int arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _setStreamMute4376, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._setStreamMute4376, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _setStreamMute4376, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._setStreamMute4376, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _shouldVibrate4377; 
 		public virtual bool shouldVibrate(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				return @__env.CallBooleanMethod(this, _shouldVibrate4377, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.media.AudioManager._shouldVibrate4377, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.media.AudioManager.staticClass, _shouldVibrate4377, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._shouldVibrate4377, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getVibrateSetting4378; 
 		public virtual int getVibrateSetting(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				return @__env.CallIntMethod(this, _getVibrateSetting4378, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, global::android.media.AudioManager._getVibrateSetting4378, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioManager.staticClass, _getVibrateSetting4378, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._getVibrateSetting4378, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setVibrateSetting4379; 
 		public virtual void setVibrateSetting(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _setVibrateSetting4379, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._setVibrateSetting4379, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _setVibrateSetting4379, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._setVibrateSetting4379, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setSpeakerphoneOn4380; 
 		public virtual void setSpeakerphoneOn(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _setSpeakerphoneOn4380, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._setSpeakerphoneOn4380, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _setSpeakerphoneOn4380, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._setSpeakerphoneOn4380, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isSpeakerphoneOn4381; 
 		public virtual bool isSpeakerphoneOn() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				return @__env.CallBooleanMethod(this, _isSpeakerphoneOn4381); 
+				return @__env.CallBooleanMethod(this, global::android.media.AudioManager._isSpeakerphoneOn4381); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.media.AudioManager.staticClass, _isSpeakerphoneOn4381); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._isSpeakerphoneOn4381); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setBluetoothScoOn4382; 
 		public virtual void setBluetoothScoOn(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _setBluetoothScoOn4382, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._setBluetoothScoOn4382, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _setBluetoothScoOn4382, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._setBluetoothScoOn4382, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isBluetoothScoOn4383; 
 		public virtual bool isBluetoothScoOn() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				return @__env.CallBooleanMethod(this, _isBluetoothScoOn4383); 
+				return @__env.CallBooleanMethod(this, global::android.media.AudioManager._isBluetoothScoOn4383); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.media.AudioManager.staticClass, _isBluetoothScoOn4383); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._isBluetoothScoOn4383); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setBluetoothA2dpOn4384; 
 		public virtual void setBluetoothA2dpOn(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _setBluetoothA2dpOn4384, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._setBluetoothA2dpOn4384, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _setBluetoothA2dpOn4384, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._setBluetoothA2dpOn4384, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isBluetoothA2dpOn4385; 
 		public virtual bool isBluetoothA2dpOn() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				return @__env.CallBooleanMethod(this, _isBluetoothA2dpOn4385); 
+				return @__env.CallBooleanMethod(this, global::android.media.AudioManager._isBluetoothA2dpOn4385); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.media.AudioManager.staticClass, _isBluetoothA2dpOn4385); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._isBluetoothA2dpOn4385); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setWiredHeadsetOn4386; 
 		public virtual void setWiredHeadsetOn(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _setWiredHeadsetOn4386, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._setWiredHeadsetOn4386, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _setWiredHeadsetOn4386, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._setWiredHeadsetOn4386, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isWiredHeadsetOn4387; 
 		public virtual bool isWiredHeadsetOn() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				return @__env.CallBooleanMethod(this, _isWiredHeadsetOn4387); 
+				return @__env.CallBooleanMethod(this, global::android.media.AudioManager._isWiredHeadsetOn4387); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.media.AudioManager.staticClass, _isWiredHeadsetOn4387); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._isWiredHeadsetOn4387); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setMicrophoneMute4388; 
 		public virtual void setMicrophoneMute(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _setMicrophoneMute4388, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._setMicrophoneMute4388, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _setMicrophoneMute4388, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._setMicrophoneMute4388, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isMicrophoneMute4389; 
 		public virtual bool isMicrophoneMute() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				return @__env.CallBooleanMethod(this, _isMicrophoneMute4389); 
+				return @__env.CallBooleanMethod(this, global::android.media.AudioManager._isMicrophoneMute4389); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.media.AudioManager.staticClass, _isMicrophoneMute4389); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._isMicrophoneMute4389); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setRouting4390; 
 		public virtual void setRouting(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _setRouting4390, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._setRouting4390, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _setRouting4390, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._setRouting4390, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getRouting4391; 
 		public virtual int getRouting(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				return @__env.CallIntMethod(this, _getRouting4391, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, global::android.media.AudioManager._getRouting4391, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.media.AudioManager.staticClass, _getRouting4391, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._getRouting4391, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isMusicActive4392; 
 		public virtual bool isMusicActive() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				return @__env.CallBooleanMethod(this, _isMusicActive4392); 
+				return @__env.CallBooleanMethod(this, global::android.media.AudioManager._isMusicActive4392); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.media.AudioManager.staticClass, _isMusicActive4392); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._isMusicActive4392); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _loadSoundEffects4393; 
 		public virtual void loadSoundEffects() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _loadSoundEffects4393); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._loadSoundEffects4393); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _loadSoundEffects4393); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._loadSoundEffects4393); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _unloadSoundEffects4394; 
 		public virtual void unloadSoundEffects() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.media.AudioManager)) 
-				@__env.CallVoidMethod(this, _unloadSoundEffects4394); 
+				@__env.CallVoidMethod(this, global::android.media.AudioManager._unloadSoundEffects4394); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.media.AudioManager.staticClass, _unloadSoundEffects4394); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioManager.staticClass, global::android.media.AudioManager._unloadSoundEffects4394); 
 		} 
-		public static java.lang.String ACTION_AUDIO_BECOMING_NOISY
+		public static global::java.lang.String ACTION_AUDIO_BECOMING_NOISY
 		{ 
 			get 
 			{ 
 				return "android.media.AUDIO_BECOMING_NOISY"; 
 			} 
 		} 
-		public static java.lang.String RINGER_MODE_CHANGED_ACTION
+		public static global::java.lang.String RINGER_MODE_CHANGED_ACTION
 		{ 
 			get 
 			{ 
 				return "android.media.RINGER_MODE_CHANGED"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_RINGER_MODE
+		public static global::java.lang.String EXTRA_RINGER_MODE
 		{ 
 			get 
 			{ 
 				return "android.media.EXTRA_RINGER_MODE"; 
 			} 
 		} 
-		public static java.lang.String VIBRATE_SETTING_CHANGED_ACTION
+		public static global::java.lang.String VIBRATE_SETTING_CHANGED_ACTION
 		{ 
 			get 
 			{ 
 				return "android.media.VIBRATE_SETTING_CHANGED"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_VIBRATE_SETTING
+		public static global::java.lang.String EXTRA_VIBRATE_SETTING
 		{ 
 			get 
 			{ 
 				return "android.media.EXTRA_VIBRATE_SETTING"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_VIBRATE_TYPE
+		public static global::java.lang.String EXTRA_VIBRATE_TYPE
 		{ 
 			get 
 			{ 

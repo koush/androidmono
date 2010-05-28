@@ -6,7 +6,7 @@ namespace java.net
 		internal static global::java.lang.Class staticClass; 
 		static SocketAddress() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.net.SocketAddress), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.net.SocketAddress), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected SocketAddress(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -15,7 +15,7 @@ namespace java.net
 		public SocketAddress()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.net.SocketAddress.staticClass, _SocketAddress11869, this); 
+			@__env.NewObject(java.net.SocketAddress.staticClass, global::java.net.SocketAddress._SocketAddress11869, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

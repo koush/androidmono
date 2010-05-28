@@ -6,7 +6,7 @@ namespace android.webkit
 		internal static global::java.lang.Class staticClass; 
 		static WebBackForwardList() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.webkit.WebBackForwardList), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.webkit.WebBackForwardList), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,49 +19,49 @@ namespace android.webkit
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _clone9364; 
-		protected virtual android.webkit.WebBackForwardList clone() 
+		protected virtual global::android.webkit.WebBackForwardList clone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebBackForwardList)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebBackForwardList>(@__env, @__env.CallObjectMethodPtr(this, _clone9364)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebBackForwardList>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebBackForwardList._clone9364)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebBackForwardList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.WebBackForwardList.staticClass, _clone9364)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebBackForwardList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._clone9364)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSize9365; 
 		public virtual int getSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebBackForwardList)) 
-				return @__env.CallIntMethod(this, _getSize9365); 
+				return @__env.CallIntMethod(this, global::android.webkit.WebBackForwardList._getSize9365); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.webkit.WebBackForwardList.staticClass, _getSize9365); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getSize9365); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCurrentItem9366; 
-		public virtual android.webkit.WebHistoryItem getCurrentItem() 
+		public virtual global::android.webkit.WebHistoryItem getCurrentItem() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebBackForwardList)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebHistoryItem>(@__env, @__env.CallObjectMethodPtr(this, _getCurrentItem9366)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebHistoryItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebBackForwardList._getCurrentItem9366)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebHistoryItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.WebBackForwardList.staticClass, _getCurrentItem9366)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebHistoryItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getCurrentItem9366)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCurrentIndex9367; 
 		public virtual int getCurrentIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebBackForwardList)) 
-				return @__env.CallIntMethod(this, _getCurrentIndex9367); 
+				return @__env.CallIntMethod(this, global::android.webkit.WebBackForwardList._getCurrentIndex9367); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.webkit.WebBackForwardList.staticClass, _getCurrentIndex9367); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getCurrentIndex9367); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getItemAtIndex9368; 
-		public virtual android.webkit.WebHistoryItem getItemAtIndex(int arg0) 
+		public virtual global::android.webkit.WebHistoryItem getItemAtIndex(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebBackForwardList)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebHistoryItem>(@__env, @__env.CallObjectMethodPtr(this, _getItemAtIndex9368, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebHistoryItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebBackForwardList._getItemAtIndex9368, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebHistoryItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.webkit.WebBackForwardList.staticClass, _getItemAtIndex9368, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebHistoryItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebBackForwardList.staticClass, global::android.webkit.WebBackForwardList._getItemAtIndex9368, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

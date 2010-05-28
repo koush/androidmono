@@ -6,7 +6,7 @@ namespace android.inputmethodservice
 		internal static global::java.lang.Class staticClass; 
 		static Keyboard() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.inputmethodservice.Keyboard), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.inputmethodservice.Keyboard), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -24,7 +24,7 @@ namespace android.inputmethodservice
 			internal static global::java.lang.Class staticClass; 
 			static Key() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.inputmethodservice.Keyboard.Key), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.inputmethodservice.Keyboard.Key), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -41,56 +41,56 @@ namespace android.inputmethodservice
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.inputmethodservice.Keyboard.Key)) 
-					@__env.CallVoidMethod(this, _onPressed4103); 
+					@__env.CallVoidMethod(this, global::android.inputmethodservice.Keyboard.Key._onPressed4103); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.Keyboard.Key.staticClass, _onPressed4103); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._onPressed4103); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _onReleased4104; 
 			public virtual void onReleased(bool arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.inputmethodservice.Keyboard.Key)) 
-					@__env.CallVoidMethod(this, _onReleased4104, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.inputmethodservice.Keyboard.Key._onReleased4104, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.Keyboard.Key.staticClass, _onReleased4104, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._onReleased4104, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _isInside4105; 
 			public virtual bool isInside(int arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.inputmethodservice.Keyboard.Key)) 
-					return @__env.CallBooleanMethod(this, _isInside4105, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					return @__env.CallBooleanMethod(this, global::android.inputmethodservice.Keyboard.Key._isInside4105, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.Keyboard.Key.staticClass, _isInside4105, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._isInside4105, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _squaredDistanceFrom4106; 
 			public virtual int squaredDistanceFrom(int arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.inputmethodservice.Keyboard.Key)) 
-					return @__env.CallIntMethod(this, _squaredDistanceFrom4106, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					return @__env.CallIntMethod(this, global::android.inputmethodservice.Keyboard.Key._squaredDistanceFrom4106, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.inputmethodservice.Keyboard.Key.staticClass, _squaredDistanceFrom4106, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._squaredDistanceFrom4106, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getCurrentDrawableState4107; 
 			public virtual int[] getCurrentDrawableState() 
 			{ 
 				if (GetType() == typeof(android.inputmethodservice.Keyboard.Key)) 
-					return null;//(@__env, @__env.CallObjectMethodPtr(this, _getCurrentDrawableState4107)); 
+					return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.inputmethodservice.Keyboard.Key._getCurrentDrawableState4107)); 
 				else 
-					return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.inputmethodservice.Keyboard.Key.staticClass, _getCurrentDrawableState4107)); 
+					return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._getCurrentDrawableState4107)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _Key4108; 
 			public Key(android.inputmethodservice.Keyboard.Row arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.inputmethodservice.Keyboard.Key.staticClass, _Key4108, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.NewObject(android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._Key4108, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _Key4109; 
 			public Key(android.content.res.Resources arg0, android.inputmethodservice.Keyboard.Row arg1, int arg2, int arg3, android.content.res.XmlResourceParser arg4)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.inputmethodservice.Keyboard.Key.staticClass, _Key4109, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg4)); 
+				@__env.NewObject(android.inputmethodservice.Keyboard.Key.staticClass, global::android.inputmethodservice.Keyboard.Key._Key4109, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg4)); 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _codes4110; 
 			public int[] codes
@@ -104,33 +104,33 @@ namespace android.inputmethodservice
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _label4111; 
-			public java.lang.CharSequence label
+			public global::java.lang.CharSequence label
 			{ 
 				get 
 				{ 
-					return default(java.lang.CharSequence); 
+					return default(global::java.lang.CharSequence); 
 				} 
 				set 
 				{ 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _icon4112; 
-			public android.graphics.drawable.Drawable icon
+			public global::android.graphics.drawable.Drawable icon
 			{ 
 				get 
 				{ 
-					return default(android.graphics.drawable.Drawable); 
+					return default(global::android.graphics.drawable.Drawable); 
 				} 
 				set 
 				{ 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _iconPreview4113; 
-			public android.graphics.drawable.Drawable iconPreview
+			public global::android.graphics.drawable.Drawable iconPreview
 			{ 
 				get 
 				{ 
-					return default(android.graphics.drawable.Drawable); 
+					return default(global::android.graphics.drawable.Drawable); 
 				} 
 				set 
 				{ 
@@ -225,22 +225,22 @@ namespace android.inputmethodservice
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _text4122; 
-			public java.lang.CharSequence text
+			public global::java.lang.CharSequence text
 			{ 
 				get 
 				{ 
-					return default(java.lang.CharSequence); 
+					return default(global::java.lang.CharSequence); 
 				} 
 				set 
 				{ 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _popupCharacters4123; 
-			public java.lang.CharSequence popupCharacters
+			public global::java.lang.CharSequence popupCharacters
 			{ 
 				get 
 				{ 
-					return default(java.lang.CharSequence); 
+					return default(global::java.lang.CharSequence); 
 				} 
 				set 
 				{ 
@@ -308,7 +308,7 @@ namespace android.inputmethodservice
 			internal static global::java.lang.Class staticClass; 
 			static Row() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.inputmethodservice.Keyboard.Row), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.inputmethodservice.Keyboard.Row), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -324,13 +324,13 @@ namespace android.inputmethodservice
 			public Row(android.inputmethodservice.Keyboard arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.inputmethodservice.Keyboard.Row.staticClass, _Row4128, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.NewObject(android.inputmethodservice.Keyboard.Row.staticClass, global::android.inputmethodservice.Keyboard.Row._Row4128, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _Row4129; 
 			public Row(android.content.res.Resources arg0, android.inputmethodservice.Keyboard arg1, android.content.res.XmlResourceParser arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.inputmethodservice.Keyboard.Row.staticClass, _Row4129, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
+				@__env.NewObject(android.inputmethodservice.Keyboard.Row.staticClass, global::android.inputmethodservice.Keyboard.Row._Row4129, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _defaultWidth4130; 
 			public int defaultWidth
@@ -410,179 +410,179 @@ namespace android.inputmethodservice
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				return @__env.CallIntMethod(this, _getHeight4136); 
+				return @__env.CallIntMethod(this, global::android.inputmethodservice.Keyboard._getHeight4136); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.inputmethodservice.Keyboard.staticClass, _getHeight4136); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getHeight4136); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getKeys4137; 
-		public virtual java.util.List getKeys() 
+		public virtual global::java.util.List getKeys() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getKeys4137)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.inputmethodservice.Keyboard._getKeys4137)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.inputmethodservice.Keyboard.staticClass, _getKeys4137)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getKeys4137)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getModifierKeys4138; 
-		public virtual java.util.List getModifierKeys() 
+		public virtual global::java.util.List getModifierKeys() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getModifierKeys4138)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.inputmethodservice.Keyboard._getModifierKeys4138)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.inputmethodservice.Keyboard.staticClass, _getModifierKeys4138)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getModifierKeys4138)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getHorizontalGap4139; 
 		protected virtual int getHorizontalGap() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				return @__env.CallIntMethod(this, _getHorizontalGap4139); 
+				return @__env.CallIntMethod(this, global::android.inputmethodservice.Keyboard._getHorizontalGap4139); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.inputmethodservice.Keyboard.staticClass, _getHorizontalGap4139); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getHorizontalGap4139); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setHorizontalGap4140; 
 		protected virtual void setHorizontalGap(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				@__env.CallVoidMethod(this, _setHorizontalGap4140, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.inputmethodservice.Keyboard._setHorizontalGap4140, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.Keyboard.staticClass, _setHorizontalGap4140, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setHorizontalGap4140, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getVerticalGap4141; 
 		protected virtual int getVerticalGap() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				return @__env.CallIntMethod(this, _getVerticalGap4141); 
+				return @__env.CallIntMethod(this, global::android.inputmethodservice.Keyboard._getVerticalGap4141); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.inputmethodservice.Keyboard.staticClass, _getVerticalGap4141); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getVerticalGap4141); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setVerticalGap4142; 
 		protected virtual void setVerticalGap(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				@__env.CallVoidMethod(this, _setVerticalGap4142, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.inputmethodservice.Keyboard._setVerticalGap4142, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.Keyboard.staticClass, _setVerticalGap4142, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setVerticalGap4142, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getKeyHeight4143; 
 		protected virtual int getKeyHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				return @__env.CallIntMethod(this, _getKeyHeight4143); 
+				return @__env.CallIntMethod(this, global::android.inputmethodservice.Keyboard._getKeyHeight4143); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.inputmethodservice.Keyboard.staticClass, _getKeyHeight4143); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getKeyHeight4143); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setKeyHeight4144; 
 		protected virtual void setKeyHeight(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				@__env.CallVoidMethod(this, _setKeyHeight4144, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.inputmethodservice.Keyboard._setKeyHeight4144, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.Keyboard.staticClass, _setKeyHeight4144, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setKeyHeight4144, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getKeyWidth4145; 
 		protected virtual int getKeyWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				return @__env.CallIntMethod(this, _getKeyWidth4145); 
+				return @__env.CallIntMethod(this, global::android.inputmethodservice.Keyboard._getKeyWidth4145); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.inputmethodservice.Keyboard.staticClass, _getKeyWidth4145); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getKeyWidth4145); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setKeyWidth4146; 
 		protected virtual void setKeyWidth(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				@__env.CallVoidMethod(this, _setKeyWidth4146, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.inputmethodservice.Keyboard._setKeyWidth4146, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.Keyboard.staticClass, _setKeyWidth4146, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setKeyWidth4146, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getMinWidth4147; 
 		public virtual int getMinWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				return @__env.CallIntMethod(this, _getMinWidth4147); 
+				return @__env.CallIntMethod(this, global::android.inputmethodservice.Keyboard._getMinWidth4147); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.inputmethodservice.Keyboard.staticClass, _getMinWidth4147); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getMinWidth4147); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setShifted4148; 
 		public virtual bool setShifted(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				return @__env.CallBooleanMethod(this, _setShifted4148, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.inputmethodservice.Keyboard._setShifted4148, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.Keyboard.staticClass, _setShifted4148, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._setShifted4148, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isShifted4149; 
 		public virtual bool isShifted() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				return @__env.CallBooleanMethod(this, _isShifted4149); 
+				return @__env.CallBooleanMethod(this, global::android.inputmethodservice.Keyboard._isShifted4149); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.Keyboard.staticClass, _isShifted4149); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._isShifted4149); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getShiftKeyIndex4150; 
 		public virtual int getShiftKeyIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				return @__env.CallIntMethod(this, _getShiftKeyIndex4150); 
+				return @__env.CallIntMethod(this, global::android.inputmethodservice.Keyboard._getShiftKeyIndex4150); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.inputmethodservice.Keyboard.staticClass, _getShiftKeyIndex4150); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getShiftKeyIndex4150); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getNearestKeys4151; 
 		public virtual int[] getNearestKeys(int arg0, int arg1) 
 		{ 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getNearestKeys4151, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.inputmethodservice.Keyboard._getNearestKeys4151, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.inputmethodservice.Keyboard.staticClass, _getNearestKeys4151, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._getNearestKeys4151, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createRowFromXml4152; 
-		protected virtual android.inputmethodservice.Keyboard.Row createRowFromXml(android.content.res.Resources arg0, android.content.res.XmlResourceParser arg1) 
+		protected virtual global::android.inputmethodservice.Keyboard.Row createRowFromXml(android.content.res.Resources arg0, android.content.res.XmlResourceParser arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.inputmethodservice.Keyboard.Row>(@__env, @__env.CallObjectMethodPtr(this, _createRowFromXml4152, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.inputmethodservice.Keyboard.Row>(@__env, @__env.CallObjectMethodPtr(this, global::android.inputmethodservice.Keyboard._createRowFromXml4152, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.inputmethodservice.Keyboard.Row>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.inputmethodservice.Keyboard.staticClass, _createRowFromXml4152, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.inputmethodservice.Keyboard.Row>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._createRowFromXml4152, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createKeyFromXml4153; 
-		protected virtual android.inputmethodservice.Keyboard.Key createKeyFromXml(android.content.res.Resources arg0, android.inputmethodservice.Keyboard.Row arg1, int arg2, int arg3, android.content.res.XmlResourceParser arg4) 
+		protected virtual global::android.inputmethodservice.Keyboard.Key createKeyFromXml(android.content.res.Resources arg0, android.inputmethodservice.Keyboard.Row arg1, int arg2, int arg3, android.content.res.XmlResourceParser arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.Keyboard)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.inputmethodservice.Keyboard.Key>(@__env, @__env.CallObjectMethodPtr(this, _createKeyFromXml4153, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg4))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.inputmethodservice.Keyboard.Key>(@__env, @__env.CallObjectMethodPtr(this, global::android.inputmethodservice.Keyboard._createKeyFromXml4153, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg4))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.inputmethodservice.Keyboard.Key>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.inputmethodservice.Keyboard.staticClass, _createKeyFromXml4153, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg4))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.inputmethodservice.Keyboard.Key>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._createKeyFromXml4153, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg4))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _Keyboard4154; 
 		public Keyboard(android.content.Context arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.inputmethodservice.Keyboard.staticClass, _Keyboard4154, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._Keyboard4154, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _Keyboard4155; 
 		public Keyboard(android.content.Context arg0, int arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.inputmethodservice.Keyboard.staticClass, _Keyboard4155, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._Keyboard4155, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _Keyboard4156; 
 		public Keyboard(android.content.Context arg0, int arg1, java.lang.CharSequence arg2, int arg3, int arg4)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.inputmethodservice.Keyboard.staticClass, _Keyboard4156, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
+			@__env.NewObject(android.inputmethodservice.Keyboard.staticClass, global::android.inputmethodservice.Keyboard._Keyboard4156, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 		} 
 		public static int EDGE_LEFT
 		{ 

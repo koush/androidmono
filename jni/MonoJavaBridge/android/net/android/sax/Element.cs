@@ -6,7 +6,7 @@ namespace android.sax
 		internal static global::java.lang.Class staticClass; 
 		static Element() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.sax.Element), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.sax.Element), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,94 +19,94 @@ namespace android.sax
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString6374; 
-		public override java.lang.String toString() 
+		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.sax.Element)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString6374)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.sax.Element._toString6374)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.sax.Element.staticClass, _toString6374)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.sax.Element.staticClass, global::android.sax.Element._toString6374)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getChild6375; 
-		public virtual android.sax.Element getChild(java.lang.String arg0, java.lang.String arg1) 
+		public virtual global::android.sax.Element getChild(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.sax.Element)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.sax.Element>(@__env, @__env.CallObjectMethodPtr(this, _getChild6375, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.sax.Element>(@__env, @__env.CallObjectMethodPtr(this, global::android.sax.Element._getChild6375, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.sax.Element>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.sax.Element.staticClass, _getChild6375, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.sax.Element>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.sax.Element.staticClass, global::android.sax.Element._getChild6375, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getChild6376; 
-		public virtual android.sax.Element getChild(java.lang.String arg0) 
+		public virtual global::android.sax.Element getChild(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.sax.Element)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.sax.Element>(@__env, @__env.CallObjectMethodPtr(this, _getChild6376, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.sax.Element>(@__env, @__env.CallObjectMethodPtr(this, global::android.sax.Element._getChild6376, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.sax.Element>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.sax.Element.staticClass, _getChild6376, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.sax.Element>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.sax.Element.staticClass, global::android.sax.Element._getChild6376, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _requireChild6377; 
-		public virtual android.sax.Element requireChild(java.lang.String arg0) 
+		public virtual global::android.sax.Element requireChild(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.sax.Element)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.sax.Element>(@__env, @__env.CallObjectMethodPtr(this, _requireChild6377, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.sax.Element>(@__env, @__env.CallObjectMethodPtr(this, global::android.sax.Element._requireChild6377, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.sax.Element>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.sax.Element.staticClass, _requireChild6377, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.sax.Element>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.sax.Element.staticClass, global::android.sax.Element._requireChild6377, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _requireChild6378; 
-		public virtual android.sax.Element requireChild(java.lang.String arg0, java.lang.String arg1) 
+		public virtual global::android.sax.Element requireChild(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.sax.Element)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.sax.Element>(@__env, @__env.CallObjectMethodPtr(this, _requireChild6378, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.sax.Element>(@__env, @__env.CallObjectMethodPtr(this, global::android.sax.Element._requireChild6378, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.sax.Element>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.sax.Element.staticClass, _requireChild6378, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.sax.Element>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.sax.Element.staticClass, global::android.sax.Element._requireChild6378, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setElementListener6379; 
 		public virtual void setElementListener(android.sax.ElementListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.sax.Element)) 
-				@__env.CallVoidMethod(this, _setElementListener6379, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.sax.Element._setElementListener6379, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.sax.Element.staticClass, _setElementListener6379, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.sax.Element.staticClass, global::android.sax.Element._setElementListener6379, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setTextElementListener6380; 
 		public virtual void setTextElementListener(android.sax.TextElementListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.sax.Element)) 
-				@__env.CallVoidMethod(this, _setTextElementListener6380, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.sax.Element._setTextElementListener6380, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.sax.Element.staticClass, _setTextElementListener6380, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.sax.Element.staticClass, global::android.sax.Element._setTextElementListener6380, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setStartElementListener6381; 
 		public virtual void setStartElementListener(android.sax.StartElementListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.sax.Element)) 
-				@__env.CallVoidMethod(this, _setStartElementListener6381, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.sax.Element._setStartElementListener6381, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.sax.Element.staticClass, _setStartElementListener6381, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.sax.Element.staticClass, global::android.sax.Element._setStartElementListener6381, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setEndElementListener6382; 
 		public virtual void setEndElementListener(android.sax.EndElementListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.sax.Element)) 
-				@__env.CallVoidMethod(this, _setEndElementListener6382, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.sax.Element._setEndElementListener6382, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.sax.Element.staticClass, _setEndElementListener6382, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.sax.Element.staticClass, global::android.sax.Element._setEndElementListener6382, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setEndTextElementListener6383; 
 		public virtual void setEndTextElementListener(android.sax.EndTextElementListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.sax.Element)) 
-				@__env.CallVoidMethod(this, _setEndTextElementListener6383, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.sax.Element._setEndTextElementListener6383, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.sax.Element.staticClass, _setEndTextElementListener6383, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.sax.Element.staticClass, global::android.sax.Element._setEndTextElementListener6383, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

@@ -6,7 +6,7 @@ namespace java.nio.charset
 		internal static global::java.lang.Class staticClass; 
 		static CodingErrorAction() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.nio.charset.CodingErrorAction), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.nio.charset.CodingErrorAction), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,36 +19,36 @@ namespace java.nio.charset
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString12417; 
-		public override java.lang.String toString() 
+		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.charset.CodingErrorAction)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString12417)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CodingErrorAction._toString12417)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.charset.CodingErrorAction.staticClass, _toString12417)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CodingErrorAction.staticClass, global::java.nio.charset.CodingErrorAction._toString12417)); 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _IGNORE12418; 
-		public static java.nio.charset.CodingErrorAction IGNORE
+		public static global::java.nio.charset.CodingErrorAction IGNORE
 		{ 
 			get 
 			{ 
-				return default(java.nio.charset.CodingErrorAction); 
+				return default(global::java.nio.charset.CodingErrorAction); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _REPLACE12419; 
-		public static java.nio.charset.CodingErrorAction REPLACE
+		public static global::java.nio.charset.CodingErrorAction REPLACE
 		{ 
 			get 
 			{ 
-				return default(java.nio.charset.CodingErrorAction); 
+				return default(global::java.nio.charset.CodingErrorAction); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _REPORT12420; 
-		public static java.nio.charset.CodingErrorAction REPORT
+		public static global::java.nio.charset.CodingErrorAction REPORT
 		{ 
 			get 
 			{ 
-				return default(java.nio.charset.CodingErrorAction); 
+				return default(global::java.nio.charset.CodingErrorAction); 
 			} 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 

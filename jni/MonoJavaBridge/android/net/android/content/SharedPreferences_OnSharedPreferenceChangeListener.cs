@@ -20,7 +20,7 @@ namespace android.content
 		internal static global::java.lang.Class staticClass; 
 		static __SharedPreferences_OnSharedPreferenceChangeListener() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.content.__SharedPreferences_OnSharedPreferenceChangeListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -37,9 +37,9 @@ namespace android.content
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.__SharedPreferences_OnSharedPreferenceChangeListener)) 
-				@__env.CallVoidMethod(this, _onSharedPreferenceChanged1501, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener._onSharedPreferenceChanged1501, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.__SharedPreferences_OnSharedPreferenceChangeListener.staticClass, _onSharedPreferenceChanged1501, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener.staticClass, global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener._onSharedPreferenceChanged1501, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

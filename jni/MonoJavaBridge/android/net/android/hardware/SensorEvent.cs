@@ -6,7 +6,7 @@ namespace android.hardware
 		internal static global::java.lang.Class staticClass; 
 		static SensorEvent() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.hardware.SensorEvent), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.hardware.SensorEvent), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -27,11 +27,11 @@ namespace android.hardware
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _sensor3938; 
-		public android.hardware.Sensor sensor
+		public global::android.hardware.Sensor sensor
 		{ 
 			get 
 			{ 
-				return default(android.hardware.Sensor); 
+				return default(global::android.hardware.Sensor); 
 			} 
 			set 
 			{ 

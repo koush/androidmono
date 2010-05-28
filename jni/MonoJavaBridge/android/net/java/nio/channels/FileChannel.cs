@@ -6,7 +6,7 @@ namespace java.nio.channels
 		internal new static global::java.lang.Class staticClass; 
 		static FileChannel() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.nio.channels.FileChannel), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.nio.channels.FileChannel), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected FileChannel(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -17,7 +17,7 @@ namespace java.nio.channels
 			internal static global::java.lang.Class staticClass; 
 			static MapMode() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.nio.channels.FileChannel.MapMode), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.nio.channels.FileChannel.MapMode), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -30,36 +30,36 @@ namespace java.nio.channels
 			{ 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _toString12171; 
-			public override java.lang.String toString() 
+			public override global::java.lang.String toString() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(java.nio.channels.FileChannel.MapMode)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString12171)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.channels.FileChannel.MapMode._toString12171)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.FileChannel.MapMode.staticClass, _toString12171)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.channels.FileChannel.MapMode.staticClass, global::java.nio.channels.FileChannel.MapMode._toString12171)); 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _READ_ONLY12172; 
-			public static java.nio.channels.FileChannel.MapMode READ_ONLY
+			public static global::java.nio.channels.FileChannel.MapMode READ_ONLY
 			{ 
 				get 
 				{ 
-					return default(java.nio.channels.FileChannel.MapMode); 
+					return default(global::java.nio.channels.FileChannel.MapMode); 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _READ_WRITE12173; 
-			public static java.nio.channels.FileChannel.MapMode READ_WRITE
+			public static global::java.nio.channels.FileChannel.MapMode READ_WRITE
 			{ 
 				get 
 				{ 
-					return default(java.nio.channels.FileChannel.MapMode); 
+					return default(global::java.nio.channels.FileChannel.MapMode); 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _PRIVATE12174; 
-			public static java.nio.channels.FileChannel.MapMode PRIVATE
+			public static global::java.nio.channels.FileChannel.MapMode PRIVATE
 			{ 
 				get 
 				{ 
-					return default(java.nio.channels.FileChannel.MapMode); 
+					return default(global::java.nio.channels.FileChannel.MapMode); 
 				} 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
@@ -69,22 +69,22 @@ namespace java.nio.channels
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _lock12175; 
-		public abstract java.nio.channels.FileLock @lock(long arg0, long arg1, bool arg2); 
+		public abstract global::java.nio.channels.FileLock @lock(long arg0, long arg1, bool arg2); 
 		internal static global::net.sf.jni4net.jni.MethodId _lock12176; 
-		public virtual java.nio.channels.FileLock @lock() 
+		public virtual global::java.nio.channels.FileLock @lock() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.FileChannel)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.FileLock>(@__env, @__env.CallObjectMethodPtr(this, _lock12176)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.FileLock>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.channels.FileChannel._lock12176)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.FileLock>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.FileChannel.staticClass, _lock12176)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.FileLock>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.channels.FileChannel.staticClass, global::java.nio.channels.FileChannel._lock12176)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _size12177; 
 		public abstract long size(); 
 		internal static global::net.sf.jni4net.jni.MethodId _position12178; 
 		public abstract long position(); 
 		internal static global::net.sf.jni4net.jni.MethodId _position12179; 
-		public abstract java.nio.channels.FileChannel position(long arg0); 
+		public abstract global::java.nio.channels.FileChannel position(long arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _write12180; 
 		public abstract int write(java.nio.ByteBuffer arg0, long arg1); 
 		internal static global::net.sf.jni4net.jni.MethodId _write12181; 
@@ -96,20 +96,20 @@ namespace java.nio.channels
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.FileChannel)) 
-				return @__env.CallLongMethod(this, _write12183, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				return @__env.CallLongMethod(this, global::java.nio.channels.FileChannel._write12183, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, java.nio.channels.FileChannel.staticClass, _write12183, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				return @__env.CallNonVirtualLongMethod(this, global::java.nio.channels.FileChannel.staticClass, global::java.nio.channels.FileChannel._write12183, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _map12184; 
-		public abstract java.nio.MappedByteBuffer map(java.nio.channels.FileChannel.MapMode arg0, long arg1, long arg2); 
+		public abstract global::java.nio.MappedByteBuffer map(java.nio.channels.FileChannel.MapMode arg0, long arg1, long arg2); 
 		internal static global::net.sf.jni4net.jni.MethodId _read12185; 
 		public virtual long read(java.nio.ByteBuffer[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.FileChannel)) 
-				return @__env.CallLongMethod(this, _read12185, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				return @__env.CallLongMethod(this, global::java.nio.channels.FileChannel._read12185, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, java.nio.channels.FileChannel.staticClass, _read12185, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
+				return @__env.CallNonVirtualLongMethod(this, global::java.nio.channels.FileChannel.staticClass, global::java.nio.channels.FileChannel._read12185, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _read12186; 
 		public abstract long read(java.nio.ByteBuffer[] arg0, int arg1, int arg2); 
@@ -118,18 +118,18 @@ namespace java.nio.channels
 		internal static global::net.sf.jni4net.jni.MethodId _read12188; 
 		public abstract int read(java.nio.ByteBuffer arg0, long arg1); 
 		internal static global::net.sf.jni4net.jni.MethodId _tryLock12189; 
-		public virtual java.nio.channels.FileLock tryLock() 
+		public virtual global::java.nio.channels.FileLock tryLock() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.FileChannel)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.FileLock>(@__env, @__env.CallObjectMethodPtr(this, _tryLock12189)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.FileLock>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.channels.FileChannel._tryLock12189)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.FileLock>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.FileChannel.staticClass, _tryLock12189)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.FileLock>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.channels.FileChannel.staticClass, global::java.nio.channels.FileChannel._tryLock12189)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _tryLock12190; 
-		public abstract java.nio.channels.FileLock tryLock(long arg0, long arg1, bool arg2); 
+		public abstract global::java.nio.channels.FileLock tryLock(long arg0, long arg1, bool arg2); 
 		internal static global::net.sf.jni4net.jni.MethodId _truncate12191; 
-		public abstract java.nio.channels.FileChannel truncate(long arg0); 
+		public abstract global::java.nio.channels.FileChannel truncate(long arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _force12192; 
 		public abstract void force(bool arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _transferTo12193; 
@@ -140,7 +140,7 @@ namespace java.nio.channels
 		protected FileChannel()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.nio.channels.FileChannel.staticClass, _FileChannel12195, this); 
+			@__env.NewObject(java.nio.channels.FileChannel.staticClass, global::java.nio.channels.FileChannel._FileChannel12195, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

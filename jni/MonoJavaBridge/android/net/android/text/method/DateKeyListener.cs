@@ -6,7 +6,7 @@ namespace android.text.method
 		internal new static global::java.lang.Class staticClass; 
 		static DateKeyListener() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.text.method.DateKeyListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.method.DateKeyListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,33 +19,33 @@ namespace android.text.method
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getInstance7128; 
-		public static android.text.method.DateKeyListener getInstance() 
+		public static global::android.text.method.DateKeyListener getInstance() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.method.DateKeyListener>(@__env, @__env.CallStaticObjectMethodPtr(android.text.method.DateKeyListener.staticClass, _getInstance7128)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.method.DateKeyListener>(@__env, @__env.CallStaticObjectMethodPtr(android.text.method.DateKeyListener.staticClass, global::android.text.method.DateKeyListener._getInstance7128)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getInputType7129; 
 		public override int getInputType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.method.DateKeyListener)) 
-				return @__env.CallIntMethod(this, _getInputType7129); 
+				return @__env.CallIntMethod(this, global::android.text.method.DateKeyListener._getInputType7129); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.method.DateKeyListener.staticClass, _getInputType7129); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.method.DateKeyListener.staticClass, global::android.text.method.DateKeyListener._getInputType7129); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAcceptedChars7130; 
 		protected override char[] getAcceptedChars() 
 		{ 
 			if (GetType() == typeof(android.text.method.DateKeyListener)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getAcceptedChars7130)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.text.method.DateKeyListener._getAcceptedChars7130)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.method.DateKeyListener.staticClass, _getAcceptedChars7130)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.method.DateKeyListener.staticClass, global::android.text.method.DateKeyListener._getAcceptedChars7130)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _DateKeyListener7131; 
 		public DateKeyListener()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.text.method.DateKeyListener.staticClass, _DateKeyListener7131, this); 
+			@__env.NewObject(android.text.method.DateKeyListener.staticClass, global::android.text.method.DateKeyListener._DateKeyListener7131, this); 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _CHARACTERS7132; 
 		public static char[] CHARACTERS

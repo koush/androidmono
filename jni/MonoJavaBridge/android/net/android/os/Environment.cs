@@ -6,7 +6,7 @@ namespace android.os
 		internal static global::java.lang.Class staticClass; 
 		static Environment() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.Environment), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.Environment), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,98 +19,98 @@ namespace android.os
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getRootDirectory5566; 
-		public static java.io.File getRootDirectory() 
+		public static global::java.io.File getRootDirectory() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.File>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Environment.staticClass, _getRootDirectory5566)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.File>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Environment.staticClass, global::android.os.Environment._getRootDirectory5566)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDataDirectory5567; 
-		public static java.io.File getDataDirectory() 
+		public static global::java.io.File getDataDirectory() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.File>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Environment.staticClass, _getDataDirectory5567)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.File>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Environment.staticClass, global::android.os.Environment._getDataDirectory5567)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getExternalStorageDirectory5568; 
-		public static java.io.File getExternalStorageDirectory() 
+		public static global::java.io.File getExternalStorageDirectory() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.File>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Environment.staticClass, _getExternalStorageDirectory5568)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.File>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Environment.staticClass, global::android.os.Environment._getExternalStorageDirectory5568)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDownloadCacheDirectory5569; 
-		public static java.io.File getDownloadCacheDirectory() 
+		public static global::java.io.File getDownloadCacheDirectory() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.File>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Environment.staticClass, _getDownloadCacheDirectory5569)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.File>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Environment.staticClass, global::android.os.Environment._getDownloadCacheDirectory5569)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getExternalStorageState5570; 
-		public static java.lang.String getExternalStorageState() 
+		public static global::java.lang.String getExternalStorageState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Environment.staticClass, _getExternalStorageState5570)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Environment.staticClass, global::android.os.Environment._getExternalStorageState5570)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _Environment5571; 
 		public Environment()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.os.Environment.staticClass, _Environment5571, this); 
+			@__env.NewObject(android.os.Environment.staticClass, global::android.os.Environment._Environment5571, this); 
 		} 
-		public static java.lang.String MEDIA_REMOVED
+		public static global::java.lang.String MEDIA_REMOVED
 		{ 
 			get 
 			{ 
 				return "removed"; 
 			} 
 		} 
-		public static java.lang.String MEDIA_UNMOUNTED
+		public static global::java.lang.String MEDIA_UNMOUNTED
 		{ 
 			get 
 			{ 
 				return "unmounted"; 
 			} 
 		} 
-		public static java.lang.String MEDIA_CHECKING
+		public static global::java.lang.String MEDIA_CHECKING
 		{ 
 			get 
 			{ 
 				return "checking"; 
 			} 
 		} 
-		public static java.lang.String MEDIA_NOFS
+		public static global::java.lang.String MEDIA_NOFS
 		{ 
 			get 
 			{ 
 				return "nofs"; 
 			} 
 		} 
-		public static java.lang.String MEDIA_MOUNTED
+		public static global::java.lang.String MEDIA_MOUNTED
 		{ 
 			get 
 			{ 
 				return "mounted"; 
 			} 
 		} 
-		public static java.lang.String MEDIA_MOUNTED_READ_ONLY
+		public static global::java.lang.String MEDIA_MOUNTED_READ_ONLY
 		{ 
 			get 
 			{ 
 				return "mounted_ro"; 
 			} 
 		} 
-		public static java.lang.String MEDIA_SHARED
+		public static global::java.lang.String MEDIA_SHARED
 		{ 
 			get 
 			{ 
 				return "shared"; 
 			} 
 		} 
-		public static java.lang.String MEDIA_BAD_REMOVAL
+		public static global::java.lang.String MEDIA_BAD_REMOVAL
 		{ 
 			get 
 			{ 
 				return "bad_removal"; 
 			} 
 		} 
-		public static java.lang.String MEDIA_UNMOUNTABLE
+		public static global::java.lang.String MEDIA_UNMOUNTABLE
 		{ 
 			get 
 			{ 

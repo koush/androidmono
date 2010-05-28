@@ -6,7 +6,7 @@ namespace android.net
 		internal static global::java.lang.Class staticClass; 
 		static ConnectivityManager() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.net.ConnectivityManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.net.ConnectivityManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -22,138 +22,138 @@ namespace android.net
 		public static bool isNetworkTypeValid(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.net.ConnectivityManager.staticClass, _isNetworkTypeValid4612, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			return @__env.CallStaticBooleanMethod(android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._isNetworkTypeValid4612, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setNetworkPreference4613; 
 		public virtual void setNetworkPreference(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.ConnectivityManager)) 
-				@__env.CallVoidMethod(this, _setNetworkPreference4613, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.net.ConnectivityManager._setNetworkPreference4613, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.net.ConnectivityManager.staticClass, _setNetworkPreference4613, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._setNetworkPreference4613, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getNetworkPreference4614; 
 		public virtual int getNetworkPreference() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.ConnectivityManager)) 
-				return @__env.CallIntMethod(this, _getNetworkPreference4614); 
+				return @__env.CallIntMethod(this, global::android.net.ConnectivityManager._getNetworkPreference4614); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.net.ConnectivityManager.staticClass, _getNetworkPreference4614); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getNetworkPreference4614); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getActiveNetworkInfo4615; 
-		public virtual android.net.NetworkInfo getActiveNetworkInfo() 
+		public virtual global::android.net.NetworkInfo getActiveNetworkInfo() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.ConnectivityManager)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo>(@__env, @__env.CallObjectMethodPtr(this, _getActiveNetworkInfo4615)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.ConnectivityManager._getActiveNetworkInfo4615)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.ConnectivityManager.staticClass, _getActiveNetworkInfo4615)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getActiveNetworkInfo4615)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getNetworkInfo4616; 
-		public virtual android.net.NetworkInfo getNetworkInfo(int arg0) 
+		public virtual global::android.net.NetworkInfo getNetworkInfo(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.ConnectivityManager)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo>(@__env, @__env.CallObjectMethodPtr(this, _getNetworkInfo4616, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.ConnectivityManager._getNetworkInfo4616, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.ConnectivityManager.staticClass, _getNetworkInfo4616, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getNetworkInfo4616, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAllNetworkInfo4617; 
-		public virtual android.net.NetworkInfo[] getAllNetworkInfo() 
+		public virtual global::android.net.NetworkInfo[] getAllNetworkInfo() 
 		{ 
 			if (GetType() == typeof(android.net.ConnectivityManager)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getAllNetworkInfo4617)); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.net.ConnectivityManager._getAllNetworkInfo4617)); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.ConnectivityManager.staticClass, _getAllNetworkInfo4617)); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getAllNetworkInfo4617)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _startUsingNetworkFeature4618; 
 		public virtual int startUsingNetworkFeature(int arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.ConnectivityManager)) 
-				return @__env.CallIntMethod(this, _startUsingNetworkFeature4618, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallIntMethod(this, global::android.net.ConnectivityManager._startUsingNetworkFeature4618, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.net.ConnectivityManager.staticClass, _startUsingNetworkFeature4618, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._startUsingNetworkFeature4618, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _stopUsingNetworkFeature4619; 
 		public virtual int stopUsingNetworkFeature(int arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.ConnectivityManager)) 
-				return @__env.CallIntMethod(this, _stopUsingNetworkFeature4619, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallIntMethod(this, global::android.net.ConnectivityManager._stopUsingNetworkFeature4619, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.net.ConnectivityManager.staticClass, _stopUsingNetworkFeature4619, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._stopUsingNetworkFeature4619, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _requestRouteToHost4620; 
 		public virtual bool requestRouteToHost(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.ConnectivityManager)) 
-				return @__env.CallBooleanMethod(this, _requestRouteToHost4620, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallBooleanMethod(this, global::android.net.ConnectivityManager._requestRouteToHost4620, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.net.ConnectivityManager.staticClass, _requestRouteToHost4620, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._requestRouteToHost4620, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getBackgroundDataSetting4621; 
 		public virtual bool getBackgroundDataSetting() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.ConnectivityManager)) 
-				return @__env.CallBooleanMethod(this, _getBackgroundDataSetting4621); 
+				return @__env.CallBooleanMethod(this, global::android.net.ConnectivityManager._getBackgroundDataSetting4621); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.net.ConnectivityManager.staticClass, _getBackgroundDataSetting4621); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getBackgroundDataSetting4621); 
 		} 
-		public static java.lang.String CONNECTIVITY_ACTION
+		public static global::java.lang.String CONNECTIVITY_ACTION
 		{ 
 			get 
 			{ 
 				return "android.net.conn.CONNECTIVITY_CHANGE"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_NETWORK_INFO
+		public static global::java.lang.String EXTRA_NETWORK_INFO
 		{ 
 			get 
 			{ 
 				return "networkInfo"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_IS_FAILOVER
+		public static global::java.lang.String EXTRA_IS_FAILOVER
 		{ 
 			get 
 			{ 
 				return "isFailover"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_OTHER_NETWORK_INFO
+		public static global::java.lang.String EXTRA_OTHER_NETWORK_INFO
 		{ 
 			get 
 			{ 
 				return "otherNetwork"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_NO_CONNECTIVITY
+		public static global::java.lang.String EXTRA_NO_CONNECTIVITY
 		{ 
 			get 
 			{ 
 				return "noConnectivity"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_REASON
+		public static global::java.lang.String EXTRA_REASON
 		{ 
 			get 
 			{ 
 				return "reason"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_EXTRA_INFO
+		public static global::java.lang.String EXTRA_EXTRA_INFO
 		{ 
 			get 
 			{ 
 				return "extraInfo"; 
 			} 
 		} 
-		public static java.lang.String ACTION_BACKGROUND_DATA_SETTING_CHANGED
+		public static global::java.lang.String ACTION_BACKGROUND_DATA_SETTING_CHANGED
 		{ 
 			get 
 			{ 

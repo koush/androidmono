@@ -6,7 +6,7 @@ namespace android.graphics
 		internal static global::java.lang.Class staticClass; 
 		static Shader() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.graphics.Shader), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.Shader), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -24,7 +24,7 @@ namespace android.graphics
 			internal new static global::java.lang.Class staticClass; 
 			static TileMode() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.graphics.Shader.TileMode), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.Shader.TileMode), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -37,38 +37,38 @@ namespace android.graphics
 			{ 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _valueOf3406; 
-			public static android.graphics.Shader.TileMode valueOf(java.lang.String arg0) 
+			public static global::android.graphics.Shader.TileMode valueOf(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Shader.TileMode>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Shader.TileMode.staticClass, _valueOf3406, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Shader.TileMode>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Shader.TileMode.staticClass, global::android.graphics.Shader.TileMode._valueOf3406, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _values3407; 
-			public static android.graphics.Shader.TileMode[] values() 
+			public static global::android.graphics.Shader.TileMode[] values() 
 			{ 
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Shader.TileMode.staticClass, _values3407)); 
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Shader.TileMode.staticClass, global::android.graphics.Shader.TileMode._values3407)); 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _CLAMP3408; 
-			public static android.graphics.Shader.TileMode CLAMP
+			public static global::android.graphics.Shader.TileMode CLAMP
 			{ 
 				get 
 				{ 
-					return default(android.graphics.Shader.TileMode); 
+					return default(global::android.graphics.Shader.TileMode); 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _MIRROR3409; 
-			public static android.graphics.Shader.TileMode MIRROR
+			public static global::android.graphics.Shader.TileMode MIRROR
 			{ 
 				get 
 				{ 
-					return default(android.graphics.Shader.TileMode); 
+					return default(global::android.graphics.Shader.TileMode); 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _REPEAT3410; 
-			public static android.graphics.Shader.TileMode REPEAT
+			public static global::android.graphics.Shader.TileMode REPEAT
 			{ 
 				get 
 				{ 
-					return default(android.graphics.Shader.TileMode); 
+					return default(global::android.graphics.Shader.TileMode); 
 				} 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
@@ -83,24 +83,24 @@ namespace android.graphics
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Shader)) 
-				return @__env.CallBooleanMethod(this, _getLocalMatrix3411, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.graphics.Shader._getLocalMatrix3411, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.Shader.staticClass, _getLocalMatrix3411, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Shader.staticClass, global::android.graphics.Shader._getLocalMatrix3411, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setLocalMatrix3412; 
 		public virtual void setLocalMatrix(android.graphics.Matrix arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.Shader)) 
-				@__env.CallVoidMethod(this, _setLocalMatrix3412, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.graphics.Shader._setLocalMatrix3412, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.Shader.staticClass, _setLocalMatrix3412, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Shader.staticClass, global::android.graphics.Shader._setLocalMatrix3412, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _Shader3413; 
 		public Shader()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.Shader.staticClass, _Shader3413, this); 
+			@__env.NewObject(android.graphics.Shader.staticClass, global::android.graphics.Shader._Shader3413, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

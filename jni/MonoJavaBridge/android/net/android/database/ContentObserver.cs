@@ -6,7 +6,7 @@ namespace android.database
 		internal static global::java.lang.Class staticClass; 
 		static ContentObserver() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.database.ContentObserver), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.database.ContentObserver), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected ContentObserver(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -16,33 +16,33 @@ namespace android.database
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.database.ContentObserver)) 
-				return @__env.CallBooleanMethod(this, _deliverSelfNotifications2169); 
+				return @__env.CallBooleanMethod(this, global::android.database.ContentObserver._deliverSelfNotifications2169); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.database.ContentObserver.staticClass, _deliverSelfNotifications2169); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.ContentObserver.staticClass, global::android.database.ContentObserver._deliverSelfNotifications2169); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onChange2170; 
 		public virtual void onChange(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.database.ContentObserver)) 
-				@__env.CallVoidMethod(this, _onChange2170, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.database.ContentObserver._onChange2170, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.database.ContentObserver.staticClass, _onChange2170, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.database.ContentObserver.staticClass, global::android.database.ContentObserver._onChange2170, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _dispatchChange2171; 
 		public virtual void dispatchChange(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.database.ContentObserver)) 
-				@__env.CallVoidMethod(this, _dispatchChange2171, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.database.ContentObserver._dispatchChange2171, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.database.ContentObserver.staticClass, _dispatchChange2171, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.database.ContentObserver.staticClass, global::android.database.ContentObserver._dispatchChange2171, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ContentObserver2172; 
 		public ContentObserver(android.os.Handler arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.database.ContentObserver.staticClass, _ContentObserver2172, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.database.ContentObserver.staticClass, global::android.database.ContentObserver._ContentObserver2172, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

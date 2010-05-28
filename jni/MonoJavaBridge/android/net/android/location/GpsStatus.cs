@@ -6,7 +6,7 @@ namespace android.location
 		internal static global::java.lang.Class staticClass; 
 		static GpsStatus() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.location.GpsStatus), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.location.GpsStatus), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -38,7 +38,7 @@ namespace android.location
 			internal static global::java.lang.Class staticClass; 
 			static __Listener() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.location.GpsStatus.__Listener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.location.GpsStatus.__Listener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -55,9 +55,9 @@ namespace android.location
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.location.GpsStatus.__Listener)) 
-					@__env.CallVoidMethod(this, _onGpsStatusChanged4269, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.location.GpsStatus.__Listener._onGpsStatusChanged4269, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.location.GpsStatus.__Listener.staticClass, _onGpsStatusChanged4269, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.location.GpsStatus.__Listener.staticClass, global::android.location.GpsStatus.__Listener._onGpsStatusChanged4269, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -85,7 +85,7 @@ namespace android.location
 			internal static global::java.lang.Class staticClass; 
 			static __NmeaListener() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.location.GpsStatus.__NmeaListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.location.GpsStatus.__NmeaListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -102,9 +102,9 @@ namespace android.location
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.location.GpsStatus.__NmeaListener)) 
-					@__env.CallVoidMethod(this, _onNmeaReceived4270, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.location.GpsStatus.__NmeaListener._onNmeaReceived4270, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.location.GpsStatus.__NmeaListener.staticClass, _onNmeaReceived4270, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.location.GpsStatus.__NmeaListener.staticClass, global::android.location.GpsStatus.__NmeaListener._onNmeaReceived4270, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -117,27 +117,27 @@ namespace android.location
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.location.GpsStatus)) 
-				return @__env.CallIntMethod(this, _getTimeToFirstFix4271); 
+				return @__env.CallIntMethod(this, global::android.location.GpsStatus._getTimeToFirstFix4271); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.location.GpsStatus.staticClass, _getTimeToFirstFix4271); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.location.GpsStatus.staticClass, global::android.location.GpsStatus._getTimeToFirstFix4271); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSatellites4272; 
-		public java.lang.Iterable getSatellites() 
+		public global::java.lang.Iterable getSatellites() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.location.GpsStatus)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Iterable>(@__env, @__env.CallObjectMethodPtr(this, _getSatellites4272)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Iterable>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.GpsStatus._getSatellites4272)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Iterable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.location.GpsStatus.staticClass, _getSatellites4272)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Iterable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.GpsStatus.staticClass, global::android.location.GpsStatus._getSatellites4272)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getMaxSatellites4273; 
 		public int getMaxSatellites() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.location.GpsStatus)) 
-				return @__env.CallIntMethod(this, _getMaxSatellites4273); 
+				return @__env.CallIntMethod(this, global::android.location.GpsStatus._getMaxSatellites4273); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.location.GpsStatus.staticClass, _getMaxSatellites4273); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.location.GpsStatus.staticClass, global::android.location.GpsStatus._getMaxSatellites4273); 
 		} 
 		public static int GPS_EVENT_STARTED
 		{ 

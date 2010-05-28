@@ -6,7 +6,7 @@ namespace android.app
 		internal static global::java.lang.Class staticClass; 
 		static ActivityManager() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.app.ActivityManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.ActivityManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -24,7 +24,7 @@ namespace android.app
 			internal static global::java.lang.Class staticClass; 
 			static MemoryInfo() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.app.ActivityManager.MemoryInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.ActivityManager.MemoryInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -41,33 +41,33 @@ namespace android.app
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.MemoryInfo)) 
-					@__env.CallVoidMethod(this, _writeToParcel279, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.app.ActivityManager.MemoryInfo._writeToParcel279, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.app.ActivityManager.MemoryInfo.staticClass, _writeToParcel279, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityManager.MemoryInfo.staticClass, global::android.app.ActivityManager.MemoryInfo._writeToParcel279, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _describeContents280; 
 			public virtual int describeContents() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.MemoryInfo)) 
-					return @__env.CallIntMethod(this, _describeContents280); 
+					return @__env.CallIntMethod(this, global::android.app.ActivityManager.MemoryInfo._describeContents280); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.app.ActivityManager.MemoryInfo.staticClass, _describeContents280); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.app.ActivityManager.MemoryInfo.staticClass, global::android.app.ActivityManager.MemoryInfo._describeContents280); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _readFromParcel281; 
 			public virtual void readFromParcel(android.os.Parcel arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.MemoryInfo)) 
-					@__env.CallVoidMethod(this, _readFromParcel281, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.app.ActivityManager.MemoryInfo._readFromParcel281, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.app.ActivityManager.MemoryInfo.staticClass, _readFromParcel281, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityManager.MemoryInfo.staticClass, global::android.app.ActivityManager.MemoryInfo._readFromParcel281, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _MemoryInfo282; 
 			public MemoryInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.app.ActivityManager.MemoryInfo.staticClass, _MemoryInfo282, this); 
+				@__env.NewObject(android.app.ActivityManager.MemoryInfo.staticClass, global::android.app.ActivityManager.MemoryInfo._MemoryInfo282, this); 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _availMem283; 
 			public long availMem
@@ -103,11 +103,11 @@ namespace android.app
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _CREATOR286; 
-			public static android.os.Parcelable_Creator CREATOR
+			public static global::android.os.Parcelable_Creator CREATOR
 			{ 
 				get 
 				{ 
-					return default(android.os.Parcelable_Creator); 
+					return default(global::android.os.Parcelable_Creator); 
 				} 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
@@ -125,7 +125,7 @@ namespace android.app
 			internal static global::java.lang.Class staticClass; 
 			static ProcessErrorStateInfo() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.app.ActivityManager.ProcessErrorStateInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.ActivityManager.ProcessErrorStateInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -142,33 +142,33 @@ namespace android.app
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.ProcessErrorStateInfo)) 
-					@__env.CallVoidMethod(this, _writeToParcel287, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.app.ActivityManager.ProcessErrorStateInfo._writeToParcel287, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.app.ActivityManager.ProcessErrorStateInfo.staticClass, _writeToParcel287, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, global::android.app.ActivityManager.ProcessErrorStateInfo._writeToParcel287, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _describeContents288; 
 			public virtual int describeContents() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.ProcessErrorStateInfo)) 
-					return @__env.CallIntMethod(this, _describeContents288); 
+					return @__env.CallIntMethod(this, global::android.app.ActivityManager.ProcessErrorStateInfo._describeContents288); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.app.ActivityManager.ProcessErrorStateInfo.staticClass, _describeContents288); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, global::android.app.ActivityManager.ProcessErrorStateInfo._describeContents288); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _readFromParcel289; 
 			public virtual void readFromParcel(android.os.Parcel arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.ProcessErrorStateInfo)) 
-					@__env.CallVoidMethod(this, _readFromParcel289, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.app.ActivityManager.ProcessErrorStateInfo._readFromParcel289, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.app.ActivityManager.ProcessErrorStateInfo.staticClass, _readFromParcel289, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityManager.ProcessErrorStateInfo.staticClass, global::android.app.ActivityManager.ProcessErrorStateInfo._readFromParcel289, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _ProcessErrorStateInfo290; 
 			public ProcessErrorStateInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.app.ActivityManager.ProcessErrorStateInfo.staticClass, _ProcessErrorStateInfo290, this); 
+				@__env.NewObject(android.app.ActivityManager.ProcessErrorStateInfo.staticClass, global::android.app.ActivityManager.ProcessErrorStateInfo._ProcessErrorStateInfo290, this); 
 			} 
 			public static int NO_ERROR
 			{ 
@@ -203,11 +203,11 @@ namespace android.app
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _processName292; 
-			public java.lang.String processName
+			public global::java.lang.String processName
 			{ 
 				get 
 				{ 
-					return default(java.lang.String); 
+					return default(global::java.lang.String); 
 				} 
 				set 
 				{ 
@@ -236,33 +236,33 @@ namespace android.app
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _tag295; 
-			public java.lang.String tag
+			public global::java.lang.String tag
 			{ 
 				get 
 				{ 
-					return default(java.lang.String); 
+					return default(global::java.lang.String); 
 				} 
 				set 
 				{ 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _shortMsg296; 
-			public java.lang.String shortMsg
+			public global::java.lang.String shortMsg
 			{ 
 				get 
 				{ 
-					return default(java.lang.String); 
+					return default(global::java.lang.String); 
 				} 
 				set 
 				{ 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _longMsg297; 
-			public java.lang.String longMsg
+			public global::java.lang.String longMsg
 			{ 
 				get 
 				{ 
-					return default(java.lang.String); 
+					return default(global::java.lang.String); 
 				} 
 				set 
 				{ 
@@ -280,11 +280,11 @@ namespace android.app
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _CREATOR299; 
-			public static android.os.Parcelable_Creator CREATOR
+			public static global::android.os.Parcelable_Creator CREATOR
 			{ 
 				get 
 				{ 
-					return default(android.os.Parcelable_Creator); 
+					return default(global::android.os.Parcelable_Creator); 
 				} 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
@@ -302,7 +302,7 @@ namespace android.app
 			internal static global::java.lang.Class staticClass; 
 			static RecentTaskInfo() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.app.ActivityManager.RecentTaskInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.ActivityManager.RecentTaskInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -319,33 +319,33 @@ namespace android.app
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.RecentTaskInfo)) 
-					@__env.CallVoidMethod(this, _writeToParcel300, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.app.ActivityManager.RecentTaskInfo._writeToParcel300, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.app.ActivityManager.RecentTaskInfo.staticClass, _writeToParcel300, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityManager.RecentTaskInfo.staticClass, global::android.app.ActivityManager.RecentTaskInfo._writeToParcel300, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _describeContents301; 
 			public virtual int describeContents() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.RecentTaskInfo)) 
-					return @__env.CallIntMethod(this, _describeContents301); 
+					return @__env.CallIntMethod(this, global::android.app.ActivityManager.RecentTaskInfo._describeContents301); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.app.ActivityManager.RecentTaskInfo.staticClass, _describeContents301); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.app.ActivityManager.RecentTaskInfo.staticClass, global::android.app.ActivityManager.RecentTaskInfo._describeContents301); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _readFromParcel302; 
 			public virtual void readFromParcel(android.os.Parcel arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.RecentTaskInfo)) 
-					@__env.CallVoidMethod(this, _readFromParcel302, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.app.ActivityManager.RecentTaskInfo._readFromParcel302, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.app.ActivityManager.RecentTaskInfo.staticClass, _readFromParcel302, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityManager.RecentTaskInfo.staticClass, global::android.app.ActivityManager.RecentTaskInfo._readFromParcel302, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _RecentTaskInfo303; 
 			public RecentTaskInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.app.ActivityManager.RecentTaskInfo.staticClass, _RecentTaskInfo303, this); 
+				@__env.NewObject(android.app.ActivityManager.RecentTaskInfo.staticClass, global::android.app.ActivityManager.RecentTaskInfo._RecentTaskInfo303, this); 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _id304; 
 			public int id
@@ -359,33 +359,33 @@ namespace android.app
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _baseIntent305; 
-			public android.content.Intent baseIntent
+			public global::android.content.Intent baseIntent
 			{ 
 				get 
 				{ 
-					return default(android.content.Intent); 
+					return default(global::android.content.Intent); 
 				} 
 				set 
 				{ 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _origActivity306; 
-			public android.content.ComponentName origActivity
+			public global::android.content.ComponentName origActivity
 			{ 
 				get 
 				{ 
-					return default(android.content.ComponentName); 
+					return default(global::android.content.ComponentName); 
 				} 
 				set 
 				{ 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _CREATOR307; 
-			public static android.os.Parcelable_Creator CREATOR
+			public static global::android.os.Parcelable_Creator CREATOR
 			{ 
 				get 
 				{ 
-					return default(android.os.Parcelable_Creator); 
+					return default(global::android.os.Parcelable_Creator); 
 				} 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
@@ -403,7 +403,7 @@ namespace android.app
 			internal static global::java.lang.Class staticClass; 
 			static RunningAppProcessInfo() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.app.ActivityManager.RunningAppProcessInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.ActivityManager.RunningAppProcessInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -420,46 +420,46 @@ namespace android.app
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.RunningAppProcessInfo)) 
-					@__env.CallVoidMethod(this, _writeToParcel308, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.app.ActivityManager.RunningAppProcessInfo._writeToParcel308, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.app.ActivityManager.RunningAppProcessInfo.staticClass, _writeToParcel308, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, global::android.app.ActivityManager.RunningAppProcessInfo._writeToParcel308, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _describeContents309; 
 			public virtual int describeContents() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.RunningAppProcessInfo)) 
-					return @__env.CallIntMethod(this, _describeContents309); 
+					return @__env.CallIntMethod(this, global::android.app.ActivityManager.RunningAppProcessInfo._describeContents309); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.app.ActivityManager.RunningAppProcessInfo.staticClass, _describeContents309); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, global::android.app.ActivityManager.RunningAppProcessInfo._describeContents309); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _readFromParcel310; 
 			public virtual void readFromParcel(android.os.Parcel arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.RunningAppProcessInfo)) 
-					@__env.CallVoidMethod(this, _readFromParcel310, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.app.ActivityManager.RunningAppProcessInfo._readFromParcel310, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.app.ActivityManager.RunningAppProcessInfo.staticClass, _readFromParcel310, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityManager.RunningAppProcessInfo.staticClass, global::android.app.ActivityManager.RunningAppProcessInfo._readFromParcel310, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _RunningAppProcessInfo311; 
 			public RunningAppProcessInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.app.ActivityManager.RunningAppProcessInfo.staticClass, _RunningAppProcessInfo311, this); 
+				@__env.NewObject(android.app.ActivityManager.RunningAppProcessInfo.staticClass, global::android.app.ActivityManager.RunningAppProcessInfo._RunningAppProcessInfo311, this); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _RunningAppProcessInfo312; 
 			public RunningAppProcessInfo(java.lang.String arg0, int arg1, java.lang.String[] arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.app.ActivityManager.RunningAppProcessInfo.staticClass, _RunningAppProcessInfo312, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)); 
+				@__env.NewObject(android.app.ActivityManager.RunningAppProcessInfo.staticClass, global::android.app.ActivityManager.RunningAppProcessInfo._RunningAppProcessInfo312, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)); 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _processName313; 
-			public java.lang.String processName
+			public global::java.lang.String processName
 			{ 
 				get 
 				{ 
-					return default(java.lang.String); 
+					return default(global::java.lang.String); 
 				} 
 				set 
 				{ 
@@ -488,11 +488,11 @@ namespace android.app
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _pkgList316; 
-			public java.lang.String[] pkgList
+			public global::java.lang.String[] pkgList
 			{ 
 				get 
 				{ 
-					return default(java.lang.String[]); 
+					return default(global::java.lang.String[]); 
 				} 
 				set 
 				{ 
@@ -599,22 +599,22 @@ namespace android.app
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _importanceReasonComponent321; 
-			public android.content.ComponentName importanceReasonComponent
+			public global::android.content.ComponentName importanceReasonComponent
 			{ 
 				get 
 				{ 
-					return default(android.content.ComponentName); 
+					return default(global::android.content.ComponentName); 
 				} 
 				set 
 				{ 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _CREATOR322; 
-			public static android.os.Parcelable_Creator CREATOR
+			public static global::android.os.Parcelable_Creator CREATOR
 			{ 
 				get 
 				{ 
-					return default(android.os.Parcelable_Creator); 
+					return default(global::android.os.Parcelable_Creator); 
 				} 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
@@ -633,7 +633,7 @@ namespace android.app
 			internal static global::java.lang.Class staticClass; 
 			static RunningServiceInfo() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.app.ActivityManager.RunningServiceInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.ActivityManager.RunningServiceInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -650,40 +650,40 @@ namespace android.app
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.RunningServiceInfo)) 
-					@__env.CallVoidMethod(this, _writeToParcel323, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.app.ActivityManager.RunningServiceInfo._writeToParcel323, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.app.ActivityManager.RunningServiceInfo.staticClass, _writeToParcel323, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityManager.RunningServiceInfo.staticClass, global::android.app.ActivityManager.RunningServiceInfo._writeToParcel323, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _describeContents324; 
 			public virtual int describeContents() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.RunningServiceInfo)) 
-					return @__env.CallIntMethod(this, _describeContents324); 
+					return @__env.CallIntMethod(this, global::android.app.ActivityManager.RunningServiceInfo._describeContents324); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.app.ActivityManager.RunningServiceInfo.staticClass, _describeContents324); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.app.ActivityManager.RunningServiceInfo.staticClass, global::android.app.ActivityManager.RunningServiceInfo._describeContents324); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _readFromParcel325; 
 			public virtual void readFromParcel(android.os.Parcel arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.RunningServiceInfo)) 
-					@__env.CallVoidMethod(this, _readFromParcel325, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.app.ActivityManager.RunningServiceInfo._readFromParcel325, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.app.ActivityManager.RunningServiceInfo.staticClass, _readFromParcel325, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityManager.RunningServiceInfo.staticClass, global::android.app.ActivityManager.RunningServiceInfo._readFromParcel325, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _RunningServiceInfo326; 
 			public RunningServiceInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.app.ActivityManager.RunningServiceInfo.staticClass, _RunningServiceInfo326, this); 
+				@__env.NewObject(android.app.ActivityManager.RunningServiceInfo.staticClass, global::android.app.ActivityManager.RunningServiceInfo._RunningServiceInfo326, this); 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _service327; 
-			public android.content.ComponentName service
+			public global::android.content.ComponentName service
 			{ 
 				get 
 				{ 
-					return default(android.content.ComponentName); 
+					return default(global::android.content.ComponentName); 
 				} 
 				set 
 				{ 
@@ -712,11 +712,11 @@ namespace android.app
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _process330; 
-			public java.lang.String process
+			public global::java.lang.String process
 			{ 
 				get 
 				{ 
-					return default(java.lang.String); 
+					return default(global::java.lang.String); 
 				} 
 				set 
 				{ 
@@ -839,11 +839,11 @@ namespace android.app
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _clientPackage339; 
-			public java.lang.String clientPackage
+			public global::java.lang.String clientPackage
 			{ 
 				get 
 				{ 
-					return default(java.lang.String); 
+					return default(global::java.lang.String); 
 				} 
 				set 
 				{ 
@@ -861,11 +861,11 @@ namespace android.app
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _CREATOR341; 
-			public static android.os.Parcelable_Creator CREATOR
+			public static global::android.os.Parcelable_Creator CREATOR
 			{ 
 				get 
 				{ 
-					return default(android.os.Parcelable_Creator); 
+					return default(global::android.os.Parcelable_Creator); 
 				} 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
@@ -883,7 +883,7 @@ namespace android.app
 			internal static global::java.lang.Class staticClass; 
 			static RunningTaskInfo() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.app.ActivityManager.RunningTaskInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.ActivityManager.RunningTaskInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -900,33 +900,33 @@ namespace android.app
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.RunningTaskInfo)) 
-					@__env.CallVoidMethod(this, _writeToParcel342, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.app.ActivityManager.RunningTaskInfo._writeToParcel342, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.app.ActivityManager.RunningTaskInfo.staticClass, _writeToParcel342, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityManager.RunningTaskInfo.staticClass, global::android.app.ActivityManager.RunningTaskInfo._writeToParcel342, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _describeContents343; 
 			public virtual int describeContents() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.RunningTaskInfo)) 
-					return @__env.CallIntMethod(this, _describeContents343); 
+					return @__env.CallIntMethod(this, global::android.app.ActivityManager.RunningTaskInfo._describeContents343); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.app.ActivityManager.RunningTaskInfo.staticClass, _describeContents343); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.app.ActivityManager.RunningTaskInfo.staticClass, global::android.app.ActivityManager.RunningTaskInfo._describeContents343); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _readFromParcel344; 
 			public virtual void readFromParcel(android.os.Parcel arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.ActivityManager.RunningTaskInfo)) 
-					@__env.CallVoidMethod(this, _readFromParcel344, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.app.ActivityManager.RunningTaskInfo._readFromParcel344, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.app.ActivityManager.RunningTaskInfo.staticClass, _readFromParcel344, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityManager.RunningTaskInfo.staticClass, global::android.app.ActivityManager.RunningTaskInfo._readFromParcel344, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _RunningTaskInfo345; 
 			public RunningTaskInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.app.ActivityManager.RunningTaskInfo.staticClass, _RunningTaskInfo345, this); 
+				@__env.NewObject(android.app.ActivityManager.RunningTaskInfo.staticClass, global::android.app.ActivityManager.RunningTaskInfo._RunningTaskInfo345, this); 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _id346; 
 			public int id
@@ -940,44 +940,44 @@ namespace android.app
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _baseActivity347; 
-			public android.content.ComponentName baseActivity
+			public global::android.content.ComponentName baseActivity
 			{ 
 				get 
 				{ 
-					return default(android.content.ComponentName); 
+					return default(global::android.content.ComponentName); 
 				} 
 				set 
 				{ 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _topActivity348; 
-			public android.content.ComponentName topActivity
+			public global::android.content.ComponentName topActivity
 			{ 
 				get 
 				{ 
-					return default(android.content.ComponentName); 
+					return default(global::android.content.ComponentName); 
 				} 
 				set 
 				{ 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _thumbnail349; 
-			public android.graphics.Bitmap thumbnail
+			public global::android.graphics.Bitmap thumbnail
 			{ 
 				get 
 				{ 
-					return default(android.graphics.Bitmap); 
+					return default(global::android.graphics.Bitmap); 
 				} 
 				set 
 				{ 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _description350; 
-			public java.lang.CharSequence description
+			public global::java.lang.CharSequence description
 			{ 
 				get 
 				{ 
-					return default(java.lang.CharSequence); 
+					return default(global::java.lang.CharSequence); 
 				} 
 				set 
 				{ 
@@ -1006,11 +1006,11 @@ namespace android.app
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _CREATOR353; 
-			public static android.os.Parcelable_Creator CREATOR
+			public static global::android.os.Parcelable_Creator CREATOR
 			{ 
 				get 
 				{ 
-					return default(android.os.Parcelable_Creator); 
+					return default(global::android.os.Parcelable_Creator); 
 				} 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
@@ -1027,98 +1027,98 @@ namespace android.app
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityManager)) 
-				return @__env.CallIntMethod(this, _getMemoryClass354); 
+				return @__env.CallIntMethod(this, global::android.app.ActivityManager._getMemoryClass354); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.app.ActivityManager.staticClass, _getMemoryClass354); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getMemoryClass354); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getRecentTasks355; 
-		public virtual java.util.List getRecentTasks(int arg0, int arg1) 
+		public virtual global::java.util.List getRecentTasks(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityManager)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getRecentTasks355, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.ActivityManager._getRecentTasks355, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.ActivityManager.staticClass, _getRecentTasks355, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getRecentTasks355, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getRunningTasks356; 
-		public virtual java.util.List getRunningTasks(int arg0) 
+		public virtual global::java.util.List getRunningTasks(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityManager)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getRunningTasks356, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.ActivityManager._getRunningTasks356, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.ActivityManager.staticClass, _getRunningTasks356, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getRunningTasks356, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getRunningServices357; 
-		public virtual java.util.List getRunningServices(int arg0) 
+		public virtual global::java.util.List getRunningServices(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityManager)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getRunningServices357, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.ActivityManager._getRunningServices357, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.ActivityManager.staticClass, _getRunningServices357, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getRunningServices357, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getRunningServiceControlPanel358; 
-		public virtual android.app.PendingIntent getRunningServiceControlPanel(android.content.ComponentName arg0) 
+		public virtual global::android.app.PendingIntent getRunningServiceControlPanel(android.content.ComponentName arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityManager)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.PendingIntent>(@__env, @__env.CallObjectMethodPtr(this, _getRunningServiceControlPanel358, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.PendingIntent>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.ActivityManager._getRunningServiceControlPanel358, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.PendingIntent>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.ActivityManager.staticClass, _getRunningServiceControlPanel358, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.PendingIntent>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getRunningServiceControlPanel358, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getMemoryInfo359; 
 		public virtual void getMemoryInfo(android.app.ActivityManager.MemoryInfo arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityManager)) 
-				@__env.CallVoidMethod(this, _getMemoryInfo359, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.app.ActivityManager._getMemoryInfo359, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ActivityManager.staticClass, _getMemoryInfo359, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getMemoryInfo359, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getProcessesInErrorState360; 
-		public virtual java.util.List getProcessesInErrorState() 
+		public virtual global::java.util.List getProcessesInErrorState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityManager)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getProcessesInErrorState360)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.ActivityManager._getProcessesInErrorState360)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.ActivityManager.staticClass, _getProcessesInErrorState360)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getProcessesInErrorState360)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getRunningAppProcesses361; 
-		public virtual java.util.List getRunningAppProcesses() 
+		public virtual global::java.util.List getRunningAppProcesses() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityManager)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getRunningAppProcesses361)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.ActivityManager._getRunningAppProcesses361)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.ActivityManager.staticClass, _getRunningAppProcesses361)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getRunningAppProcesses361)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getProcessMemoryInfo362; 
-		public virtual android.os.Debug.MemoryInfo[] getProcessMemoryInfo(int[] arg0) 
+		public virtual global::android.os.Debug.MemoryInfo[] getProcessMemoryInfo(int[] arg0) 
 		{ 
 			if (GetType() == typeof(android.app.ActivityManager)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getProcessMemoryInfo362, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.app.ActivityManager._getProcessMemoryInfo362, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.ActivityManager.staticClass, _getProcessMemoryInfo362, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getProcessMemoryInfo362, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _restartPackage363; 
 		public virtual void restartPackage(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityManager)) 
-				@__env.CallVoidMethod(this, _restartPackage363, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.app.ActivityManager._restartPackage363, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.ActivityManager.staticClass, _restartPackage363, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._restartPackage363, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDeviceConfigurationInfo364; 
-		public virtual android.content.pm.ConfigurationInfo getDeviceConfigurationInfo() 
+		public virtual global::android.content.pm.ConfigurationInfo getDeviceConfigurationInfo() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.ActivityManager)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.pm.ConfigurationInfo>(@__env, @__env.CallObjectMethodPtr(this, _getDeviceConfigurationInfo364)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.pm.ConfigurationInfo>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.ActivityManager._getDeviceConfigurationInfo364)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.pm.ConfigurationInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.ActivityManager.staticClass, _getDeviceConfigurationInfo364)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.pm.ConfigurationInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.ActivityManager.staticClass, global::android.app.ActivityManager._getDeviceConfigurationInfo364)); 
 		} 
 		public static int RECENT_WITH_EXCLUDED
 		{ 

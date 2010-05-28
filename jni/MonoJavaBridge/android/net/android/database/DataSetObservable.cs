@@ -6,7 +6,7 @@ namespace android.database
 		internal new static global::java.lang.Class staticClass; 
 		static DataSetObservable() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.database.DataSetObservable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.database.DataSetObservable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,24 +23,24 @@ namespace android.database
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.database.DataSetObservable)) 
-				@__env.CallVoidMethod(this, _notifyChanged2335); 
+				@__env.CallVoidMethod(this, global::android.database.DataSetObservable._notifyChanged2335); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.database.DataSetObservable.staticClass, _notifyChanged2335); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.database.DataSetObservable.staticClass, global::android.database.DataSetObservable._notifyChanged2335); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _notifyInvalidated2336; 
 		public virtual void notifyInvalidated() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.database.DataSetObservable)) 
-				@__env.CallVoidMethod(this, _notifyInvalidated2336); 
+				@__env.CallVoidMethod(this, global::android.database.DataSetObservable._notifyInvalidated2336); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.database.DataSetObservable.staticClass, _notifyInvalidated2336); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.database.DataSetObservable.staticClass, global::android.database.DataSetObservable._notifyInvalidated2336); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _DataSetObservable2337; 
 		public DataSetObservable()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.database.DataSetObservable.staticClass, _DataSetObservable2337, this); 
+			@__env.NewObject(android.database.DataSetObservable.staticClass, global::android.database.DataSetObservable._DataSetObservable2337, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

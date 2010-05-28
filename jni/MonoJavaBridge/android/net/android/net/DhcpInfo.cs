@@ -6,7 +6,7 @@ namespace android.net
 		internal static global::java.lang.Class staticClass; 
 		static DhcpInfo() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.net.DhcpInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.net.DhcpInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,37 +19,37 @@ namespace android.net
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString4626; 
-		public override java.lang.String toString() 
+		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.DhcpInfo)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString4626)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.DhcpInfo._toString4626)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.net.DhcpInfo.staticClass, _toString4626)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._toString4626)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel4627; 
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.DhcpInfo)) 
-				@__env.CallVoidMethod(this, _writeToParcel4627, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.net.DhcpInfo._writeToParcel4627, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.net.DhcpInfo.staticClass, _writeToParcel4627, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._writeToParcel4627, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _describeContents4628; 
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.net.DhcpInfo)) 
-				return @__env.CallIntMethod(this, _describeContents4628); 
+				return @__env.CallIntMethod(this, global::android.net.DhcpInfo._describeContents4628); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.net.DhcpInfo.staticClass, _describeContents4628); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._describeContents4628); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _DhcpInfo4629; 
 		public DhcpInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.net.DhcpInfo.staticClass, _DhcpInfo4629, this); 
+			@__env.NewObject(android.net.DhcpInfo.staticClass, global::android.net.DhcpInfo._DhcpInfo4629, this); 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _ipAddress4630; 
 		public int ipAddress

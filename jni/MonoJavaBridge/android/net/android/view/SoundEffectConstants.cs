@@ -6,7 +6,7 @@ namespace android.view
 		internal static global::java.lang.Class staticClass; 
 		static SoundEffectConstants() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.view.SoundEffectConstants), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.SoundEffectConstants), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -22,7 +22,7 @@ namespace android.view
 		public static int getContantForFocusDirection(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticIntMethod(android.view.SoundEffectConstants.staticClass, _getContantForFocusDirection7994, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			return @__env.CallStaticIntMethod(android.view.SoundEffectConstants.staticClass, global::android.view.SoundEffectConstants._getContantForFocusDirection7994, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		public static int CLICK
 		{ 

@@ -6,7 +6,7 @@ namespace java.io
 		internal static global::java.lang.Class staticClass; 
 		static FileDescriptor() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.io.FileDescriptor), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.io.FileDescriptor), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,47 +23,47 @@ namespace java.io
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.FileDescriptor)) 
-				return @__env.CallBooleanMethod(this, _valid11388); 
+				return @__env.CallBooleanMethod(this, global::java.io.FileDescriptor._valid11388); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.io.FileDescriptor.staticClass, _valid11388); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.io.FileDescriptor.staticClass, global::java.io.FileDescriptor._valid11388); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _sync11389; 
 		public void sync() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.io.FileDescriptor)) 
-				@__env.CallVoidMethod(this, _sync11389); 
+				@__env.CallVoidMethod(this, global::java.io.FileDescriptor._sync11389); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.io.FileDescriptor.staticClass, _sync11389); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.io.FileDescriptor.staticClass, global::java.io.FileDescriptor._sync11389); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _FileDescriptor11390; 
 		public FileDescriptor()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.io.FileDescriptor.staticClass, _FileDescriptor11390, this); 
+			@__env.NewObject(java.io.FileDescriptor.staticClass, global::java.io.FileDescriptor._FileDescriptor11390, this); 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _in11391; 
-		public static java.io.FileDescriptor @in
+		public static global::java.io.FileDescriptor @in
 		{ 
 			get 
 			{ 
-				return default(java.io.FileDescriptor); 
+				return default(global::java.io.FileDescriptor); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _out11392; 
-		public static java.io.FileDescriptor @out
+		public static global::java.io.FileDescriptor @out
 		{ 
 			get 
 			{ 
-				return default(java.io.FileDescriptor); 
+				return default(global::java.io.FileDescriptor); 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _err11393; 
-		public static java.io.FileDescriptor err
+		public static global::java.io.FileDescriptor err
 		{ 
 			get 
 			{ 
-				return default(java.io.FileDescriptor); 
+				return default(global::java.io.FileDescriptor); 
 			} 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 

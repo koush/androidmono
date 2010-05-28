@@ -6,7 +6,7 @@ namespace android.view
 		internal static global::java.lang.Class staticClass; 
 		static VelocityTracker() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.view.VelocityTracker), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.VelocityTracker), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,69 +23,69 @@ namespace android.view
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.VelocityTracker)) 
-				@__env.CallVoidMethod(this, _clear8088); 
+				@__env.CallVoidMethod(this, global::android.view.VelocityTracker._clear8088); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.VelocityTracker.staticClass, _clear8088); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._clear8088); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _obtain8089; 
-		public static android.view.VelocityTracker obtain() 
+		public static global::android.view.VelocityTracker obtain() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.VelocityTracker>(@__env, @__env.CallStaticObjectMethodPtr(android.view.VelocityTracker.staticClass, _obtain8089)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.VelocityTracker>(@__env, @__env.CallStaticObjectMethodPtr(android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._obtain8089)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _recycle8090; 
 		public void recycle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.VelocityTracker)) 
-				@__env.CallVoidMethod(this, _recycle8090); 
+				@__env.CallVoidMethod(this, global::android.view.VelocityTracker._recycle8090); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.VelocityTracker.staticClass, _recycle8090); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._recycle8090); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _addMovement8091; 
 		public void addMovement(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.VelocityTracker)) 
-				@__env.CallVoidMethod(this, _addMovement8091, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.VelocityTracker._addMovement8091, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.VelocityTracker.staticClass, _addMovement8091, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._addMovement8091, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _computeCurrentVelocity8092; 
 		public void computeCurrentVelocity(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.VelocityTracker)) 
-				@__env.CallVoidMethod(this, _computeCurrentVelocity8092, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.VelocityTracker._computeCurrentVelocity8092, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.VelocityTracker.staticClass, _computeCurrentVelocity8092, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._computeCurrentVelocity8092, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _computeCurrentVelocity8093; 
 		public void computeCurrentVelocity(int arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.VelocityTracker)) 
-				@__env.CallVoidMethod(this, _computeCurrentVelocity8093, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.view.VelocityTracker._computeCurrentVelocity8093, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.VelocityTracker.staticClass, _computeCurrentVelocity8093, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._computeCurrentVelocity8093, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getXVelocity8094; 
 		public float getXVelocity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.VelocityTracker)) 
-				return @__env.CallFloatMethod(this, _getXVelocity8094); 
+				return @__env.CallFloatMethod(this, global::android.view.VelocityTracker._getXVelocity8094); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.view.VelocityTracker.staticClass, _getXVelocity8094); 
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._getXVelocity8094); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getYVelocity8095; 
 		public float getYVelocity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.VelocityTracker)) 
-				return @__env.CallFloatMethod(this, _getYVelocity8095); 
+				return @__env.CallFloatMethod(this, global::android.view.VelocityTracker._getYVelocity8095); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.view.VelocityTracker.staticClass, _getYVelocity8095); 
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._getYVelocity8095); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

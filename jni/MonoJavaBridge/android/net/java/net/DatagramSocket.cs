@@ -6,7 +6,7 @@ namespace java.net
 		internal static global::java.lang.Class staticClass; 
 		static DatagramSocket() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.net.DatagramSocket), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.net.DatagramSocket), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,297 +23,297 @@ namespace java.net
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				@__env.CallVoidMethod(this, _close11680); 
+				@__env.CallVoidMethod(this, global::java.net.DatagramSocket._close11680); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.net.DatagramSocket.staticClass, _close11680); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._close11680); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _send11681; 
 		public virtual void send(java.net.DatagramPacket arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				@__env.CallVoidMethod(this, _send11681, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.net.DatagramSocket._send11681, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.net.DatagramSocket.staticClass, _send11681, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._send11681, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getChannel11682; 
-		public virtual java.nio.channels.DatagramChannel getChannel() 
+		public virtual global::java.nio.channels.DatagramChannel getChannel() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.DatagramChannel>(@__env, @__env.CallObjectMethodPtr(this, _getChannel11682)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.DatagramChannel>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.DatagramSocket._getChannel11682)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.DatagramChannel>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.DatagramSocket.staticClass, _getChannel11682)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.DatagramChannel>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getChannel11682)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getPort11683; 
 		public virtual int getPort() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				return @__env.CallIntMethod(this, _getPort11683); 
+				return @__env.CallIntMethod(this, global::java.net.DatagramSocket._getPort11683); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.net.DatagramSocket.staticClass, _getPort11683); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getPort11683); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _connect11684; 
 		public virtual void connect(java.net.InetAddress arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				@__env.CallVoidMethod(this, _connect11684, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::java.net.DatagramSocket._connect11684, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.net.DatagramSocket.staticClass, _connect11684, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._connect11684, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _connect11685; 
 		public virtual void connect(java.net.SocketAddress arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				@__env.CallVoidMethod(this, _connect11685, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.net.DatagramSocket._connect11685, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.net.DatagramSocket.staticClass, _connect11685, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._connect11685, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isClosed11686; 
 		public virtual bool isClosed() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				return @__env.CallBooleanMethod(this, _isClosed11686); 
+				return @__env.CallBooleanMethod(this, global::java.net.DatagramSocket._isClosed11686); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.DatagramSocket.staticClass, _isClosed11686); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._isClosed11686); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getBroadcast11687; 
 		public virtual bool getBroadcast() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				return @__env.CallBooleanMethod(this, _getBroadcast11687); 
+				return @__env.CallBooleanMethod(this, global::java.net.DatagramSocket._getBroadcast11687); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.DatagramSocket.staticClass, _getBroadcast11687); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getBroadcast11687); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _bind11688; 
 		public virtual void bind(java.net.SocketAddress arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				@__env.CallVoidMethod(this, _bind11688, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.net.DatagramSocket._bind11688, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.net.DatagramSocket.staticClass, _bind11688, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._bind11688, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _disconnect11689; 
 		public virtual void disconnect() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				@__env.CallVoidMethod(this, _disconnect11689); 
+				@__env.CallVoidMethod(this, global::java.net.DatagramSocket._disconnect11689); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.net.DatagramSocket.staticClass, _disconnect11689); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._disconnect11689); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isConnected11690; 
 		public virtual bool isConnected() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				return @__env.CallBooleanMethod(this, _isConnected11690); 
+				return @__env.CallBooleanMethod(this, global::java.net.DatagramSocket._isConnected11690); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.DatagramSocket.staticClass, _isConnected11690); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._isConnected11690); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getLocalSocketAddress11691; 
-		public virtual java.net.SocketAddress getLocalSocketAddress() 
+		public virtual global::java.net.SocketAddress getLocalSocketAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallObjectMethodPtr(this, _getLocalSocketAddress11691)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.DatagramSocket._getLocalSocketAddress11691)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.DatagramSocket.staticClass, _getLocalSocketAddress11691)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getLocalSocketAddress11691)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setReceiveBufferSize11692; 
 		public virtual void setReceiveBufferSize(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				@__env.CallVoidMethod(this, _setReceiveBufferSize11692, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.net.DatagramSocket._setReceiveBufferSize11692, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.net.DatagramSocket.staticClass, _setReceiveBufferSize11692, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._setReceiveBufferSize11692, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getReceiveBufferSize11693; 
 		public virtual int getReceiveBufferSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				return @__env.CallIntMethod(this, _getReceiveBufferSize11693); 
+				return @__env.CallIntMethod(this, global::java.net.DatagramSocket._getReceiveBufferSize11693); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.net.DatagramSocket.staticClass, _getReceiveBufferSize11693); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getReceiveBufferSize11693); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setSoTimeout11694; 
 		public virtual void setSoTimeout(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				@__env.CallVoidMethod(this, _setSoTimeout11694, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.net.DatagramSocket._setSoTimeout11694, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.net.DatagramSocket.staticClass, _setSoTimeout11694, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._setSoTimeout11694, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSoTimeout11695; 
 		public virtual int getSoTimeout() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				return @__env.CallIntMethod(this, _getSoTimeout11695); 
+				return @__env.CallIntMethod(this, global::java.net.DatagramSocket._getSoTimeout11695); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.net.DatagramSocket.staticClass, _getSoTimeout11695); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getSoTimeout11695); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setSendBufferSize11696; 
 		public virtual void setSendBufferSize(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				@__env.CallVoidMethod(this, _setSendBufferSize11696, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.net.DatagramSocket._setSendBufferSize11696, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.net.DatagramSocket.staticClass, _setSendBufferSize11696, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._setSendBufferSize11696, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSendBufferSize11697; 
 		public virtual int getSendBufferSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				return @__env.CallIntMethod(this, _getSendBufferSize11697); 
+				return @__env.CallIntMethod(this, global::java.net.DatagramSocket._getSendBufferSize11697); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.net.DatagramSocket.staticClass, _getSendBufferSize11697); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getSendBufferSize11697); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getRemoteSocketAddress11698; 
-		public virtual java.net.SocketAddress getRemoteSocketAddress() 
+		public virtual global::java.net.SocketAddress getRemoteSocketAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallObjectMethodPtr(this, _getRemoteSocketAddress11698)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.DatagramSocket._getRemoteSocketAddress11698)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.DatagramSocket.staticClass, _getRemoteSocketAddress11698)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getRemoteSocketAddress11698)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isBound11699; 
 		public virtual bool isBound() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				return @__env.CallBooleanMethod(this, _isBound11699); 
+				return @__env.CallBooleanMethod(this, global::java.net.DatagramSocket._isBound11699); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.DatagramSocket.staticClass, _isBound11699); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._isBound11699); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getInetAddress11700; 
-		public virtual java.net.InetAddress getInetAddress() 
+		public virtual global::java.net.InetAddress getInetAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallObjectMethodPtr(this, _getInetAddress11700)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.DatagramSocket._getInetAddress11700)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.DatagramSocket.staticClass, _getInetAddress11700)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getInetAddress11700)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getLocalAddress11701; 
-		public virtual java.net.InetAddress getLocalAddress() 
+		public virtual global::java.net.InetAddress getLocalAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallObjectMethodPtr(this, _getLocalAddress11701)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.DatagramSocket._getLocalAddress11701)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.DatagramSocket.staticClass, _getLocalAddress11701)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getLocalAddress11701)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getLocalPort11702; 
 		public virtual int getLocalPort() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				return @__env.CallIntMethod(this, _getLocalPort11702); 
+				return @__env.CallIntMethod(this, global::java.net.DatagramSocket._getLocalPort11702); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.net.DatagramSocket.staticClass, _getLocalPort11702); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getLocalPort11702); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setTrafficClass11703; 
 		public virtual void setTrafficClass(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				@__env.CallVoidMethod(this, _setTrafficClass11703, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.net.DatagramSocket._setTrafficClass11703, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.net.DatagramSocket.staticClass, _setTrafficClass11703, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._setTrafficClass11703, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getTrafficClass11704; 
 		public virtual int getTrafficClass() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				return @__env.CallIntMethod(this, _getTrafficClass11704); 
+				return @__env.CallIntMethod(this, global::java.net.DatagramSocket._getTrafficClass11704); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.net.DatagramSocket.staticClass, _getTrafficClass11704); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getTrafficClass11704); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setReuseAddress11705; 
 		public virtual void setReuseAddress(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				@__env.CallVoidMethod(this, _setReuseAddress11705, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.net.DatagramSocket._setReuseAddress11705, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.net.DatagramSocket.staticClass, _setReuseAddress11705, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._setReuseAddress11705, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getReuseAddress11706; 
 		public virtual bool getReuseAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				return @__env.CallBooleanMethod(this, _getReuseAddress11706); 
+				return @__env.CallBooleanMethod(this, global::java.net.DatagramSocket._getReuseAddress11706); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.net.DatagramSocket.staticClass, _getReuseAddress11706); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._getReuseAddress11706); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _receive11707; 
 		public virtual void receive(java.net.DatagramPacket arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				@__env.CallVoidMethod(this, _receive11707, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.net.DatagramSocket._receive11707, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.net.DatagramSocket.staticClass, _receive11707, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._receive11707, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setBroadcast11708; 
 		public virtual void setBroadcast(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocket)) 
-				@__env.CallVoidMethod(this, _setBroadcast11708, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.net.DatagramSocket._setBroadcast11708, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.net.DatagramSocket.staticClass, _setBroadcast11708, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._setBroadcast11708, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setDatagramSocketImplFactory11709; 
 		public static void setDatagramSocketImplFactory(java.net.DatagramSocketImplFactory arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(java.net.DatagramSocket.staticClass, _setDatagramSocketImplFactory11709, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+			@__env.CallStaticVoidMethod(java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._setDatagramSocketImplFactory11709, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _DatagramSocket11710; 
 		public DatagramSocket()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.net.DatagramSocket.staticClass, _DatagramSocket11710, this); 
+			@__env.NewObject(java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._DatagramSocket11710, this); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _DatagramSocket11711; 
 		protected DatagramSocket(java.net.DatagramSocketImpl arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.net.DatagramSocket.staticClass, _DatagramSocket11711, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._DatagramSocket11711, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _DatagramSocket11712; 
 		public DatagramSocket(java.net.SocketAddress arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.net.DatagramSocket.staticClass, _DatagramSocket11712, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._DatagramSocket11712, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _DatagramSocket11713; 
 		public DatagramSocket(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.net.DatagramSocket.staticClass, _DatagramSocket11713, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+			@__env.NewObject(java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._DatagramSocket11713, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _DatagramSocket11714; 
 		public DatagramSocket(int arg0, java.net.InetAddress arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.net.DatagramSocket.staticClass, _DatagramSocket11714, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+			@__env.NewObject(java.net.DatagramSocket.staticClass, global::java.net.DatagramSocket._DatagramSocket11714, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

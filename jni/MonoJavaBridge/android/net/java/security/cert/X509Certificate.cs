@@ -6,7 +6,7 @@ namespace java.security.cert
 		internal new static global::java.lang.Class staticClass; 
 		static X509Certificate() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.security.cert.X509Certificate), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.security.cert.X509Certificate), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected X509Certificate(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -14,9 +14,9 @@ namespace java.security.cert
 		internal static global::net.sf.jni4net.jni.MethodId _hasUnsupportedCriticalExtension12497; 
 		public abstract bool hasUnsupportedCriticalExtension(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getCriticalExtensionOIDs12498; 
-		public abstract java.util.Set getCriticalExtensionOIDs(); 
+		public abstract global::java.util.Set getCriticalExtensionOIDs(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getNonCriticalExtensionOIDs12499; 
-		public abstract java.util.Set getNonCriticalExtensionOIDs(); 
+		public abstract global::java.util.Set getNonCriticalExtensionOIDs(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getExtensionValue12500; 
 		public abstract byte[] getExtensionValue(java.lang.String arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _getSignature12501; 
@@ -24,9 +24,9 @@ namespace java.security.cert
 		internal static global::net.sf.jni4net.jni.MethodId _getVersion12502; 
 		public abstract int getVersion(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getSerialNumber12503; 
-		public abstract java.math.BigInteger getSerialNumber(); 
+		public abstract global::java.math.BigInteger getSerialNumber(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getIssuerDN12504; 
-		public abstract java.security.Principal getIssuerDN(); 
+		public abstract global::java.security.Principal getIssuerDN(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getTBSCertificate12505; 
 		public abstract byte[] getTBSCertificate(); 
 		internal static global::net.sf.jni4net.jni.MethodId _checkValidity12506; 
@@ -34,33 +34,33 @@ namespace java.security.cert
 		internal static global::net.sf.jni4net.jni.MethodId _checkValidity12507; 
 		public abstract void checkValidity(java.util.Date arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _getIssuerX500Principal12508; 
-		public virtual javax.security.auth.x500.X500Principal getIssuerX500Principal() 
+		public virtual global::javax.security.auth.x500.X500Principal getIssuerX500Principal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.cert.X509Certificate)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.security.auth.x500.X500Principal>(@__env, @__env.CallObjectMethodPtr(this, _getIssuerX500Principal12508)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.security.auth.x500.X500Principal>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.X509Certificate._getIssuerX500Principal12508)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.security.auth.x500.X500Principal>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.security.cert.X509Certificate.staticClass, _getIssuerX500Principal12508)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.security.auth.x500.X500Principal>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.X509Certificate.staticClass, global::java.security.cert.X509Certificate._getIssuerX500Principal12508)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSubjectDN12509; 
-		public abstract java.security.Principal getSubjectDN(); 
+		public abstract global::java.security.Principal getSubjectDN(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getSubjectX500Principal12510; 
-		public virtual javax.security.auth.x500.X500Principal getSubjectX500Principal() 
+		public virtual global::javax.security.auth.x500.X500Principal getSubjectX500Principal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.cert.X509Certificate)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.security.auth.x500.X500Principal>(@__env, @__env.CallObjectMethodPtr(this, _getSubjectX500Principal12510)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.security.auth.x500.X500Principal>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.X509Certificate._getSubjectX500Principal12510)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.security.auth.x500.X500Principal>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.security.cert.X509Certificate.staticClass, _getSubjectX500Principal12510)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.security.auth.x500.X500Principal>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.X509Certificate.staticClass, global::java.security.cert.X509Certificate._getSubjectX500Principal12510)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getNotBefore12511; 
-		public abstract java.util.Date getNotBefore(); 
+		public abstract global::java.util.Date getNotBefore(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getNotAfter12512; 
-		public abstract java.util.Date getNotAfter(); 
+		public abstract global::java.util.Date getNotAfter(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getSigAlgName12513; 
-		public abstract java.lang.String getSigAlgName(); 
+		public abstract global::java.lang.String getSigAlgName(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getSigAlgOID12514; 
-		public abstract java.lang.String getSigAlgOID(); 
+		public abstract global::java.lang.String getSigAlgOID(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getSigAlgParams12515; 
 		public abstract byte[] getSigAlgParams(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getIssuerUniqueID12516; 
@@ -70,39 +70,39 @@ namespace java.security.cert
 		internal static global::net.sf.jni4net.jni.MethodId _getKeyUsage12518; 
 		public abstract bool[] getKeyUsage(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getExtendedKeyUsage12519; 
-		public virtual java.util.List getExtendedKeyUsage() 
+		public virtual global::java.util.List getExtendedKeyUsage() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.cert.X509Certificate)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _getExtendedKeyUsage12519)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.X509Certificate._getExtendedKeyUsage12519)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.security.cert.X509Certificate.staticClass, _getExtendedKeyUsage12519)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.X509Certificate.staticClass, global::java.security.cert.X509Certificate._getExtendedKeyUsage12519)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getBasicConstraints12520; 
 		public abstract int getBasicConstraints(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getSubjectAlternativeNames12521; 
-		public virtual java.util.Collection getSubjectAlternativeNames() 
+		public virtual global::java.util.Collection getSubjectAlternativeNames() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.cert.X509Certificate)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallObjectMethodPtr(this, _getSubjectAlternativeNames12521)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.X509Certificate._getSubjectAlternativeNames12521)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.security.cert.X509Certificate.staticClass, _getSubjectAlternativeNames12521)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.X509Certificate.staticClass, global::java.security.cert.X509Certificate._getSubjectAlternativeNames12521)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getIssuerAlternativeNames12522; 
-		public virtual java.util.Collection getIssuerAlternativeNames() 
+		public virtual global::java.util.Collection getIssuerAlternativeNames() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.cert.X509Certificate)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallObjectMethodPtr(this, _getIssuerAlternativeNames12522)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.X509Certificate._getIssuerAlternativeNames12522)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.security.cert.X509Certificate.staticClass, _getIssuerAlternativeNames12522)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.X509Certificate.staticClass, global::java.security.cert.X509Certificate._getIssuerAlternativeNames12522)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _X509Certificate12523; 
 		protected X509Certificate()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.security.cert.X509Certificate.staticClass, _X509Certificate12523, this); 
+			@__env.NewObject(java.security.cert.X509Certificate.staticClass, global::java.security.cert.X509Certificate._X509Certificate12523, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

@@ -6,7 +6,7 @@ namespace java.nio
 		internal static global::java.lang.Class staticClass; 
 		static FloatBuffer() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.nio.FloatBuffer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.nio.FloatBuffer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected FloatBuffer(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -14,131 +14,131 @@ namespace java.nio
 		internal static global::net.sf.jni4net.jni.MethodId _get12053; 
 		public abstract float get(); 
 		internal static global::net.sf.jni4net.jni.MethodId _get12054; 
-		public virtual java.nio.FloatBuffer get(float[] arg0) 
+		public virtual global::java.nio.FloatBuffer get(float[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.FloatBuffer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallObjectMethodPtr(this, _get12054, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.FloatBuffer._get12054, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.FloatBuffer.staticClass, _get12054, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._get12054, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _get12055; 
-		public virtual java.nio.FloatBuffer get(float[] arg0, int arg1, int arg2) 
+		public virtual global::java.nio.FloatBuffer get(float[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.FloatBuffer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallObjectMethodPtr(this, _get12055, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.FloatBuffer._get12055, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.FloatBuffer.staticClass, _get12055, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._get12055, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _get12056; 
 		public abstract float get(int arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _put12057; 
-		public virtual java.nio.FloatBuffer put(java.nio.FloatBuffer arg0) 
+		public virtual global::java.nio.FloatBuffer put(java.nio.FloatBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.FloatBuffer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallObjectMethodPtr(this, _put12057, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.FloatBuffer._put12057, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.FloatBuffer.staticClass, _put12057, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._put12057, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _put12058; 
-		public abstract java.nio.FloatBuffer put(float arg0); 
+		public abstract global::java.nio.FloatBuffer put(float arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _put12059; 
-		public abstract java.nio.FloatBuffer put(int arg0, float arg1); 
+		public abstract global::java.nio.FloatBuffer put(int arg0, float arg1); 
 		internal static global::net.sf.jni4net.jni.MethodId _put12060; 
-		public virtual java.nio.FloatBuffer put(float[] arg0, int arg1, int arg2) 
+		public virtual global::java.nio.FloatBuffer put(float[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.FloatBuffer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallObjectMethodPtr(this, _put12060, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.FloatBuffer._put12060, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.FloatBuffer.staticClass, _put12060, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._put12060, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _put12061; 
-		public virtual java.nio.FloatBuffer put(float[] arg0) 
+		public virtual global::java.nio.FloatBuffer put(float[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.FloatBuffer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallObjectMethodPtr(this, _put12061, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.FloatBuffer._put12061, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.FloatBuffer.staticClass, _put12061, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._put12061, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _hashCode12062; 
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.FloatBuffer)) 
-				return @__env.CallIntMethod(this, _hashCode12062); 
+				return @__env.CallIntMethod(this, global::java.nio.FloatBuffer._hashCode12062); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.nio.FloatBuffer.staticClass, _hashCode12062); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._hashCode12062); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _equals12063; 
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.FloatBuffer)) 
-				return @__env.CallBooleanMethod(this, _equals12063, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, global::java.nio.FloatBuffer._equals12063, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.nio.FloatBuffer.staticClass, _equals12063, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._equals12063, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _compareTo12064; 
 		public virtual int compareTo(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.FloatBuffer)) 
-				return @__env.CallIntMethod(this, _compareTo12064, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallIntMethod(this, global::java.nio.FloatBuffer._compareTo12064, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.nio.FloatBuffer.staticClass, _compareTo12064, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._compareTo12064, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _compareTo12065; 
 		public virtual int compareTo(java.nio.FloatBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.FloatBuffer)) 
-				return @__env.CallIntMethod(this, _compareTo12065, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallIntMethod(this, global::java.nio.FloatBuffer._compareTo12065, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.nio.FloatBuffer.staticClass, _compareTo12065, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._compareTo12065, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString12066; 
-		public override java.lang.String toString() 
+		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.FloatBuffer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString12066)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.FloatBuffer._toString12066)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.FloatBuffer.staticClass, _toString12066)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._toString12066)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isDirect12067; 
 		public abstract bool isDirect(); 
 		internal static global::net.sf.jni4net.jni.MethodId _wrap12068; 
-		public static java.nio.FloatBuffer wrap(float[] arg0, int arg1, int arg2) 
+		public static global::java.nio.FloatBuffer wrap(float[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.FloatBuffer.staticClass, _wrap12068, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._wrap12068, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _wrap12069; 
-		public static java.nio.FloatBuffer wrap(float[] arg0) 
+		public static global::java.nio.FloatBuffer wrap(float[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.FloatBuffer.staticClass, _wrap12069, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._wrap12069, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _allocate12070; 
-		public static java.nio.FloatBuffer allocate(int arg0) 
+		public static global::java.nio.FloatBuffer allocate(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.FloatBuffer.staticClass, _allocate12070, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.FloatBuffer>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.FloatBuffer.staticClass, global::java.nio.FloatBuffer._allocate12070, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _duplicate12071; 
-		public abstract java.nio.FloatBuffer duplicate(); 
+		public abstract global::java.nio.FloatBuffer duplicate(); 
 		internal static global::net.sf.jni4net.jni.MethodId _slice12072; 
-		public abstract java.nio.FloatBuffer slice(); 
+		public abstract global::java.nio.FloatBuffer slice(); 
 		internal static global::net.sf.jni4net.jni.MethodId _asReadOnlyBuffer12073; 
-		public abstract java.nio.FloatBuffer asReadOnlyBuffer(); 
+		public abstract global::java.nio.FloatBuffer asReadOnlyBuffer(); 
 		internal static global::net.sf.jni4net.jni.MethodId _compact12074; 
-		public abstract java.nio.FloatBuffer compact(); 
+		public abstract global::java.nio.FloatBuffer compact(); 
 		internal static global::net.sf.jni4net.jni.MethodId _order12075; 
-		public abstract java.nio.ByteOrder order(); 
+		public abstract global::java.nio.ByteOrder order(); 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
 			global::java.nio.FloatBuffer.staticClass = @__class; 

@@ -3,7 +3,7 @@ namespace android.text
 	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 	public interface Spanned : java.lang.CharSequence
 	{ 
-		java.lang.Object[] getSpans(int arg0, int arg1, java.lang.Class arg2); 
+		global::java.lang.Object[] getSpans(int arg0, int arg1, java.lang.Class arg2); 
 		int getSpanStart(java.lang.Object arg0); 
 		int getSpanEnd(java.lang.Object arg0); 
 		int getSpanFlags(java.lang.Object arg0); 
@@ -24,7 +24,7 @@ namespace android.text
 		internal static global::java.lang.Class staticClass; 
 		static __Spanned() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.text.__Spanned), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.text.__Spanned), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -37,84 +37,84 @@ namespace android.text
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSpans6944; 
-		 java.lang.Object[] android.text.Spanned.getSpans(int arg0, int arg1, java.lang.Class arg2) 
+		 global::java.lang.Object[] android.text.Spanned.getSpans(int arg0, int arg1, java.lang.Class arg2) 
 		{ 
 			if (GetType() == typeof(android.text.__Spanned)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getSpans6944, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.text.__Spanned._getSpans6944, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.__Spanned.staticClass, _getSpans6944, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.__Spanned.staticClass, global::android.text.__Spanned._getSpans6944, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSpanStart6945; 
 		 int android.text.Spanned.getSpanStart(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.__Spanned)) 
-				return @__env.CallIntMethod(this, _getSpanStart6945, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallIntMethod(this, global::android.text.__Spanned._getSpanStart6945, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.__Spanned.staticClass, _getSpanStart6945, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.__Spanned.staticClass, global::android.text.__Spanned._getSpanStart6945, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSpanEnd6946; 
 		 int android.text.Spanned.getSpanEnd(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.__Spanned)) 
-				return @__env.CallIntMethod(this, _getSpanEnd6946, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallIntMethod(this, global::android.text.__Spanned._getSpanEnd6946, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.__Spanned.staticClass, _getSpanEnd6946, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.__Spanned.staticClass, global::android.text.__Spanned._getSpanEnd6946, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSpanFlags6947; 
 		 int android.text.Spanned.getSpanFlags(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.__Spanned)) 
-				return @__env.CallIntMethod(this, _getSpanFlags6947, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallIntMethod(this, global::android.text.__Spanned._getSpanFlags6947, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.__Spanned.staticClass, _getSpanFlags6947, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.__Spanned.staticClass, global::android.text.__Spanned._getSpanFlags6947, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _nextSpanTransition6948; 
 		 int android.text.Spanned.nextSpanTransition(int arg0, int arg1, java.lang.Class arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.__Spanned)) 
-				return @__env.CallIntMethod(this, _nextSpanTransition6948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				return @__env.CallIntMethod(this, global::android.text.__Spanned._nextSpanTransition6948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.__Spanned.staticClass, _nextSpanTransition6948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.__Spanned.staticClass, global::android.text.__Spanned._nextSpanTransition6948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString6949; 
-		 java.lang.String java.lang.CharSequence.toString() 
+		 global::java.lang.String java.lang.CharSequence.toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.__Spanned)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString6949)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.__Spanned._toString6949)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.__Spanned.staticClass, _toString6949)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.__Spanned.staticClass, global::android.text.__Spanned._toString6949)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _length6950; 
 		 int java.lang.CharSequence.length() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.__Spanned)) 
-				return @__env.CallIntMethod(this, _length6950); 
+				return @__env.CallIntMethod(this, global::android.text.__Spanned._length6950); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.text.__Spanned.staticClass, _length6950); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.__Spanned.staticClass, global::android.text.__Spanned._length6950); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _charAt6951; 
 		 char java.lang.CharSequence.charAt(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.__Spanned)) 
-				return @__env.CallCharMethod(this, _charAt6951, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallCharMethod(this, global::android.text.__Spanned._charAt6951, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualCharMethod(this, android.text.__Spanned.staticClass, _charAt6951, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualCharMethod(this, global::android.text.__Spanned.staticClass, global::android.text.__Spanned._charAt6951, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _subSequence6952; 
-		 java.lang.CharSequence java.lang.CharSequence.subSequence(int arg0, int arg1) 
+		 global::java.lang.CharSequence java.lang.CharSequence.subSequence(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.text.__Spanned)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _subSequence6952, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.__Spanned._subSequence6952, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.text.__Spanned.staticClass, _subSequence6952, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.__Spanned.staticClass, global::android.text.__Spanned._subSequence6952, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

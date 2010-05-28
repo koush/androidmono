@@ -6,7 +6,7 @@ namespace android.inputmethodservice
 		internal new static global::java.lang.Class staticClass; 
 		static AbstractInputMethodService() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.inputmethodservice.AbstractInputMethodService), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.inputmethodservice.AbstractInputMethodService), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected AbstractInputMethodService(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -17,7 +17,7 @@ namespace android.inputmethodservice
 			internal static global::java.lang.Class staticClass; 
 			static AbstractInputMethodImpl() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			protected AbstractInputMethodImpl(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
@@ -41,33 +41,33 @@ namespace android.inputmethodservice
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl)) 
-					@__env.CallVoidMethod(this, _createSession3967, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+					@__env.CallVoidMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl._createSession3967, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl.staticClass, _createSession3967, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl._createSession3967, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setSessionEnabled3968; 
 			public virtual void setSessionEnabled(android.view.inputmethod.InputMethodSession arg0, bool arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl)) 
-					@__env.CallVoidMethod(this, _setSessionEnabled3968, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl._setSessionEnabled3968, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl.staticClass, _setSessionEnabled3968, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl._setSessionEnabled3968, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _revokeSession3969; 
 			public virtual void revokeSession(android.view.inputmethod.InputMethodSession arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl)) 
-					@__env.CallVoidMethod(this, _revokeSession3969, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+					@__env.CallVoidMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl._revokeSession3969, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl.staticClass, _revokeSession3969, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl._revokeSession3969, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _AbstractInputMethodImpl3970; 
 			public AbstractInputMethodImpl(android.inputmethodservice.AbstractInputMethodService arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl.staticClass, _AbstractInputMethodImpl3970, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.NewObject(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl._AbstractInputMethodImpl3970, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -91,7 +91,7 @@ namespace android.inputmethodservice
 			internal static global::java.lang.Class staticClass; 
 			static AbstractInputMethodSessionImpl() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			protected AbstractInputMethodSessionImpl(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
@@ -115,60 +115,60 @@ namespace android.inputmethodservice
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl)) 
-					return @__env.CallBooleanMethod(this, _isEnabled3978); 
+					return @__env.CallBooleanMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._isEnabled3978); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, _isEnabled3978); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._isEnabled3978); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setEnabled3979; 
 			public virtual void setEnabled(bool arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl)) 
-					@__env.CallVoidMethod(this, _setEnabled3979, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._setEnabled3979, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, _setEnabled3979, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._setEnabled3979, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _dispatchKeyEvent3980; 
 			public virtual void dispatchKeyEvent(int arg0, android.view.KeyEvent arg1, android.view.inputmethod.InputMethodSession_EventCallback arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl)) 
-					@__env.CallVoidMethod(this, _dispatchKeyEvent3980, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
+					@__env.CallVoidMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._dispatchKeyEvent3980, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, _dispatchKeyEvent3980, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._dispatchKeyEvent3980, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _dispatchTrackballEvent3981; 
 			public virtual void dispatchTrackballEvent(int arg0, android.view.MotionEvent arg1, android.view.inputmethod.InputMethodSession_EventCallback arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl)) 
-					@__env.CallVoidMethod(this, _dispatchTrackballEvent3981, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
+					@__env.CallVoidMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._dispatchTrackballEvent3981, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, _dispatchTrackballEvent3981, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._dispatchTrackballEvent3981, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _isRevoked3982; 
 			public virtual bool isRevoked() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl)) 
-					return @__env.CallBooleanMethod(this, _isRevoked3982); 
+					return @__env.CallBooleanMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._isRevoked3982); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, _isRevoked3982); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._isRevoked3982); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _revokeSelf3983; 
 			public virtual void revokeSelf() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl)) 
-					@__env.CallVoidMethod(this, _revokeSelf3983); 
+					@__env.CallVoidMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._revokeSelf3983); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, _revokeSelf3983); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._revokeSelf3983); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _AbstractInputMethodSessionImpl3984; 
 			public AbstractInputMethodSessionImpl(android.inputmethodservice.AbstractInputMethodService arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, _AbstractInputMethodSessionImpl3984, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.NewObject(android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl.staticClass, global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl._AbstractInputMethodSessionImpl3984, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -198,50 +198,50 @@ namespace android.inputmethodservice
 		internal static global::net.sf.jni4net.jni.MethodId _onKeyMultiple3988; 
 		public abstract bool onKeyMultiple(int arg0, int arg1, android.view.KeyEvent arg2); 
 		internal static global::net.sf.jni4net.jni.MethodId _onBind3989; 
-		public sealed override android.os.IBinder onBind(android.content.Intent arg0) 
+		public sealed override global::android.os.IBinder onBind(android.content.Intent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.AbstractInputMethodService)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, _onBind3989, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.inputmethodservice.AbstractInputMethodService._onBind3989, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.inputmethodservice.AbstractInputMethodService.staticClass, _onBind3989, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.inputmethodservice.AbstractInputMethodService.staticClass, global::android.inputmethodservice.AbstractInputMethodService._onBind3989, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _dump3990; 
 		protected override void dump(java.io.FileDescriptor arg0, java.io.PrintWriter arg1, java.lang.String[] arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.AbstractInputMethodService)) 
-				@__env.CallVoidMethod(this, _dump3990, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)); 
+				@__env.CallVoidMethod(this, global::android.inputmethodservice.AbstractInputMethodService._dump3990, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.inputmethodservice.AbstractInputMethodService.staticClass, _dump3990, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.AbstractInputMethodService.staticClass, global::android.inputmethodservice.AbstractInputMethodService._dump3990, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onTrackballEvent3991; 
 		public virtual bool onTrackballEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.AbstractInputMethodService)) 
-				return @__env.CallBooleanMethod(this, _onTrackballEvent3991, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.inputmethodservice.AbstractInputMethodService._onTrackballEvent3991, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.inputmethodservice.AbstractInputMethodService.staticClass, _onTrackballEvent3991, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.AbstractInputMethodService.staticClass, global::android.inputmethodservice.AbstractInputMethodService._onTrackballEvent3991, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getKeyDispatcherState3992; 
-		public virtual android.view.KeyEvent.DispatcherState getKeyDispatcherState() 
+		public virtual global::android.view.KeyEvent.DispatcherState getKeyDispatcherState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.inputmethodservice.AbstractInputMethodService)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.KeyEvent.DispatcherState>(@__env, @__env.CallObjectMethodPtr(this, _getKeyDispatcherState3992)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.KeyEvent.DispatcherState>(@__env, @__env.CallObjectMethodPtr(this, global::android.inputmethodservice.AbstractInputMethodService._getKeyDispatcherState3992)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.KeyEvent.DispatcherState>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.inputmethodservice.AbstractInputMethodService.staticClass, _getKeyDispatcherState3992)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.KeyEvent.DispatcherState>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.inputmethodservice.AbstractInputMethodService.staticClass, global::android.inputmethodservice.AbstractInputMethodService._getKeyDispatcherState3992)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onCreateInputMethodInterface3993; 
-		public abstract android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl onCreateInputMethodInterface(); 
+		public abstract global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl onCreateInputMethodInterface(); 
 		internal static global::net.sf.jni4net.jni.MethodId _onCreateInputMethodSessionInterface3994; 
-		public abstract android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl onCreateInputMethodSessionInterface(); 
+		public abstract global::android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl onCreateInputMethodSessionInterface(); 
 		internal static global::net.sf.jni4net.jni.MethodId _AbstractInputMethodService3995; 
 		public AbstractInputMethodService()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.inputmethodservice.AbstractInputMethodService.staticClass, _AbstractInputMethodService3995, this); 
+			@__env.NewObject(android.inputmethodservice.AbstractInputMethodService.staticClass, global::android.inputmethodservice.AbstractInputMethodService._AbstractInputMethodService3995, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

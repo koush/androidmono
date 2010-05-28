@@ -6,28 +6,28 @@ namespace android.graphics.drawable.shapes
 		internal static global::java.lang.Class staticClass; 
 		static Shape() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.graphics.drawable.shapes.Shape), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.drawable.shapes.Shape), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected Shape(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _clone3838; 
-		public virtual android.graphics.drawable.shapes.Shape clone() 
+		public virtual global::android.graphics.drawable.shapes.Shape clone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.shapes.Shape)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.shapes.Shape>(@__env, @__env.CallObjectMethodPtr(this, _clone3838)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.shapes.Shape>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.shapes.Shape._clone3838)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.shapes.Shape>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.drawable.shapes.Shape.staticClass, _clone3838)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.shapes.Shape>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.shapes.Shape.staticClass, global::android.graphics.drawable.shapes.Shape._clone3838)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _resize3839; 
 		public virtual void resize(float arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.shapes.Shape)) 
-				@__env.CallVoidMethod(this, _resize3839, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.shapes.Shape._resize3839, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.shapes.Shape.staticClass, _resize3839, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.shapes.Shape.staticClass, global::android.graphics.drawable.shapes.Shape._resize3839, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _draw3840; 
 		public abstract void draw(android.graphics.Canvas arg0, android.graphics.Paint arg1); 
@@ -36,42 +36,42 @@ namespace android.graphics.drawable.shapes
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.shapes.Shape)) 
-				return @__env.CallFloatMethod(this, _getWidth3841); 
+				return @__env.CallFloatMethod(this, global::android.graphics.drawable.shapes.Shape._getWidth3841); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.graphics.drawable.shapes.Shape.staticClass, _getWidth3841); 
+				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.drawable.shapes.Shape.staticClass, global::android.graphics.drawable.shapes.Shape._getWidth3841); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getHeight3842; 
 		public virtual float getHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.shapes.Shape)) 
-				return @__env.CallFloatMethod(this, _getHeight3842); 
+				return @__env.CallFloatMethod(this, global::android.graphics.drawable.shapes.Shape._getHeight3842); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.graphics.drawable.shapes.Shape.staticClass, _getHeight3842); 
+				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.drawable.shapes.Shape.staticClass, global::android.graphics.drawable.shapes.Shape._getHeight3842); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _hasAlpha3843; 
 		public virtual bool hasAlpha() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.shapes.Shape)) 
-				return @__env.CallBooleanMethod(this, _hasAlpha3843); 
+				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.shapes.Shape._hasAlpha3843); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.shapes.Shape.staticClass, _hasAlpha3843); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.shapes.Shape.staticClass, global::android.graphics.drawable.shapes.Shape._hasAlpha3843); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onResize3844; 
 		protected virtual void onResize(float arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.shapes.Shape)) 
-				@__env.CallVoidMethod(this, _onResize3844, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.shapes.Shape._onResize3844, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.shapes.Shape.staticClass, _onResize3844, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.shapes.Shape.staticClass, global::android.graphics.drawable.shapes.Shape._onResize3844, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _Shape3845; 
 		public Shape()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.drawable.shapes.Shape.staticClass, _Shape3845, this); 
+			@__env.NewObject(android.graphics.drawable.shapes.Shape.staticClass, global::android.graphics.drawable.shapes.Shape._Shape3845, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

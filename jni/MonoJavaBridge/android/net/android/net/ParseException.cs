@@ -6,7 +6,7 @@ namespace android.net
 		internal static global::java.lang.Class staticClass; 
 		static ParseException() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.net.ParseException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.net.ParseException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,11 +19,11 @@ namespace android.net
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _response4723; 
-		public java.lang.String response
+		public global::java.lang.String response
 		{ 
 			get 
 			{ 
-				return default(java.lang.String); 
+				return default(global::java.lang.String); 
 			} 
 			set 
 			{ 

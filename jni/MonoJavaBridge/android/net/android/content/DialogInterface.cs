@@ -21,7 +21,7 @@ namespace android.content
 		internal static global::java.lang.Class staticClass; 
 		static __DialogInterface() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.content.__DialogInterface), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.__DialogInterface), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -38,18 +38,18 @@ namespace android.content
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.__DialogInterface)) 
-				@__env.CallVoidMethod(this, _cancel1277); 
+				@__env.CallVoidMethod(this, global::android.content.__DialogInterface._cancel1277); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.__DialogInterface.staticClass, _cancel1277); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface.staticClass, global::android.content.__DialogInterface._cancel1277); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _dismiss1278; 
 		 void android.content.DialogInterface.dismiss() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.__DialogInterface)) 
-				@__env.CallVoidMethod(this, _dismiss1278); 
+				@__env.CallVoidMethod(this, global::android.content.__DialogInterface._dismiss1278); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.__DialogInterface.staticClass, _dismiss1278); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface.staticClass, global::android.content.__DialogInterface._dismiss1278); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

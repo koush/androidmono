@@ -5,12 +5,12 @@ namespace java.util
 	{ 
 		void add(java.lang.Object arg0); 
 		new bool hasNext(); 
-		new java.lang.Object next(); 
+		new global::java.lang.Object next(); 
 		void set(java.lang.Object arg0); 
 		new void remove(); 
 		int previousIndex(); 
 		bool hasPrevious(); 
-		java.lang.Object previous(); 
+		global::java.lang.Object previous(); 
 		int nextIndex(); 
 	} 
 
@@ -28,7 +28,7 @@ namespace java.util
 		internal static global::java.lang.Class staticClass; 
 		static __ListIterator() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.util.__ListIterator), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.util.__ListIterator), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -45,108 +45,108 @@ namespace java.util
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.__ListIterator)) 
-				@__env.CallVoidMethod(this, _add12891, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::java.util.__ListIterator._add12891, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.__ListIterator.staticClass, _add12891, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._add12891, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _hasNext12892; 
 		 bool java.util.ListIterator.hasNext() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.__ListIterator)) 
-				return @__env.CallBooleanMethod(this, _hasNext12892); 
+				return @__env.CallBooleanMethod(this, global::java.util.__ListIterator._hasNext12892); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.util.__ListIterator.staticClass, _hasNext12892); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._hasNext12892); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _next12893; 
-		 java.lang.Object java.util.ListIterator.next() 
+		 global::java.lang.Object java.util.ListIterator.next() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.__ListIterator)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _next12893)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__ListIterator._next12893)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.__ListIterator.staticClass, _next12893)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._next12893)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _set12894; 
 		 void java.util.ListIterator.set(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.__ListIterator)) 
-				@__env.CallVoidMethod(this, _set12894, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::java.util.__ListIterator._set12894, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.__ListIterator.staticClass, _set12894, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._set12894, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _remove12895; 
 		 void java.util.ListIterator.remove() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.__ListIterator)) 
-				@__env.CallVoidMethod(this, _remove12895); 
+				@__env.CallVoidMethod(this, global::java.util.__ListIterator._remove12895); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.__ListIterator.staticClass, _remove12895); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._remove12895); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _previousIndex12896; 
 		 int java.util.ListIterator.previousIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.__ListIterator)) 
-				return @__env.CallIntMethod(this, _previousIndex12896); 
+				return @__env.CallIntMethod(this, global::java.util.__ListIterator._previousIndex12896); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.util.__ListIterator.staticClass, _previousIndex12896); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._previousIndex12896); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _hasPrevious12897; 
 		 bool java.util.ListIterator.hasPrevious() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.__ListIterator)) 
-				return @__env.CallBooleanMethod(this, _hasPrevious12897); 
+				return @__env.CallBooleanMethod(this, global::java.util.__ListIterator._hasPrevious12897); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.util.__ListIterator.staticClass, _hasPrevious12897); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._hasPrevious12897); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _previous12898; 
-		 java.lang.Object java.util.ListIterator.previous() 
+		 global::java.lang.Object java.util.ListIterator.previous() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.__ListIterator)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _previous12898)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__ListIterator._previous12898)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.__ListIterator.staticClass, _previous12898)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._previous12898)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _nextIndex12899; 
 		 int java.util.ListIterator.nextIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.__ListIterator)) 
-				return @__env.CallIntMethod(this, _nextIndex12899); 
+				return @__env.CallIntMethod(this, global::java.util.__ListIterator._nextIndex12899); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.util.__ListIterator.staticClass, _nextIndex12899); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._nextIndex12899); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _hasNext12900; 
 		 bool java.util.Iterator.hasNext() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.__ListIterator)) 
-				return @__env.CallBooleanMethod(this, _hasNext12900); 
+				return @__env.CallBooleanMethod(this, global::java.util.__ListIterator._hasNext12900); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.util.__ListIterator.staticClass, _hasNext12900); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._hasNext12900); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _next12901; 
-		 java.lang.Object java.util.Iterator.next() 
+		 global::java.lang.Object java.util.Iterator.next() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.__ListIterator)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _next12901)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__ListIterator._next12901)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.util.__ListIterator.staticClass, _next12901)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._next12901)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _remove12902; 
 		 void java.util.Iterator.remove() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.util.__ListIterator)) 
-				@__env.CallVoidMethod(this, _remove12902); 
+				@__env.CallVoidMethod(this, global::java.util.__ListIterator._remove12902); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.util.__ListIterator.staticClass, _remove12902); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._remove12902); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

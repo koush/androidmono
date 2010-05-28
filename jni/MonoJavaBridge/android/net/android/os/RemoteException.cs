@@ -6,7 +6,7 @@ namespace android.os
 		internal new static global::java.lang.Class staticClass; 
 		static RemoteException() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.RemoteException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.RemoteException), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -22,7 +22,7 @@ namespace android.os
 		public RemoteException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.os.RemoteException.staticClass, _RemoteException5862, this); 
+			@__env.NewObject(android.os.RemoteException.staticClass, global::android.os.RemoteException._RemoteException5862, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

@@ -3,7 +3,7 @@ namespace java.net
 	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 	public interface SocketImplFactory 
 	{ 
-		java.net.SocketImpl createSocketImpl(); 
+		global::java.net.SocketImpl createSocketImpl(); 
 	} 
 
 	public partial class SocketImplFactory_ 
@@ -20,7 +20,7 @@ namespace java.net
 		internal static global::java.lang.Class staticClass; 
 		static __SocketImplFactory() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.net.__SocketImplFactory), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.net.__SocketImplFactory), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -33,13 +33,13 @@ namespace java.net
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createSocketImpl11894; 
-		 java.net.SocketImpl java.net.SocketImplFactory.createSocketImpl() 
+		 global::java.net.SocketImpl java.net.SocketImplFactory.createSocketImpl() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.__SocketImplFactory)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketImpl>(@__env, @__env.CallObjectMethodPtr(this, _createSocketImpl11894)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketImpl>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.__SocketImplFactory._createSocketImpl11894)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketImpl>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.__SocketImplFactory.staticClass, _createSocketImpl11894)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketImpl>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.__SocketImplFactory.staticClass, global::java.net.__SocketImplFactory._createSocketImpl11894)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

@@ -6,7 +6,7 @@ namespace android.provider
 		internal static global::java.lang.Class staticClass; 
 		static SyncStateContract() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.provider.SyncStateContract), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.SyncStateContract), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -37,7 +37,7 @@ namespace android.provider
 			internal static global::java.lang.Class staticClass; 
 			static __Columns() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.provider.SyncStateContract.__Columns), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.SyncStateContract.__Columns), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -57,21 +57,21 @@ namespace android.provider
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()] 
 		public static class ColumnsConstants 
 		{ 
-			public static java.lang.String ACCOUNT_NAME
+			public static global::java.lang.String ACCOUNT_NAME
 			{ 
 				get 
 				{ 
 					return "account_name"; 
 				} 
 			} 
-			public static java.lang.String ACCOUNT_TYPE
+			public static global::java.lang.String ACCOUNT_TYPE
 			{ 
 				get 
 				{ 
 					return "account_type"; 
 				} 
 			} 
-			public static java.lang.String DATA
+			public static global::java.lang.String DATA
 			{ 
 				get 
 				{ 
@@ -85,7 +85,7 @@ namespace android.provider
 			internal static global::java.lang.Class staticClass; 
 			static Constants() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.provider.SyncStateContract.Constants), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.SyncStateContract.Constants), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -101,9 +101,9 @@ namespace android.provider
 			public Constants()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.provider.SyncStateContract.Constants.staticClass, _Constants6359, this); 
+				@__env.NewObject(android.provider.SyncStateContract.Constants.staticClass, global::android.provider.SyncStateContract.Constants._Constants6359, this); 
 			} 
-			public static java.lang.String CONTENT_DIRECTORY
+			public static global::java.lang.String CONTENT_DIRECTORY
 			{ 
 				get 
 				{ 
@@ -122,7 +122,7 @@ namespace android.provider
 			internal static global::java.lang.Class staticClass; 
 			static Helpers() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.provider.SyncStateContract.Helpers), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.SyncStateContract.Helpers), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -137,49 +137,49 @@ namespace android.provider
 			internal static global::net.sf.jni4net.jni.MethodId _get6360; 
 			public static byte[] get(android.content.ContentProviderClient arg0, android.net.Uri arg1, android.accounts.Account arg2) 
 			{ 
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.provider.SyncStateContract.Helpers.staticClass, _get6360, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.provider.SyncStateContract.Helpers.staticClass, global::android.provider.SyncStateContract.Helpers._get6360, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _set6361; 
 			public static void set(android.content.ContentProviderClient arg0, android.net.Uri arg1, android.accounts.Account arg2, byte[] arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.CallStaticVoidMethod(android.provider.SyncStateContract.Helpers.staticClass, _set6361, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3)); 
+				@__env.CallStaticVoidMethod(android.provider.SyncStateContract.Helpers.staticClass, global::android.provider.SyncStateContract.Helpers._set6361, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _insert6362; 
-			public static android.net.Uri insert(android.content.ContentProviderClient arg0, android.net.Uri arg1, android.accounts.Account arg2, byte[] arg3) 
+			public static global::android.net.Uri insert(android.content.ContentProviderClient arg0, android.net.Uri arg1, android.accounts.Account arg2, byte[] arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.SyncStateContract.Helpers.staticClass, _insert6362, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.SyncStateContract.Helpers.staticClass, global::android.provider.SyncStateContract.Helpers._insert6362, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3))); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _update6363; 
 			public static void update(android.content.ContentProviderClient arg0, android.net.Uri arg1, byte[] arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.CallStaticVoidMethod(android.provider.SyncStateContract.Helpers.staticClass, _update6363, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2)); 
+				@__env.CallStaticVoidMethod(android.provider.SyncStateContract.Helpers.staticClass, global::android.provider.SyncStateContract.Helpers._update6363, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getWithUri6364; 
-			public static android.util.Pair getWithUri(android.content.ContentProviderClient arg0, android.net.Uri arg1, android.accounts.Account arg2) 
+			public static global::android.util.Pair getWithUri(android.content.ContentProviderClient arg0, android.net.Uri arg1, android.accounts.Account arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.Pair>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.SyncStateContract.Helpers.staticClass, _getWithUri6364, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.Pair>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.SyncStateContract.Helpers.staticClass, global::android.provider.SyncStateContract.Helpers._getWithUri6364, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _newSetOperation6365; 
-			public static android.content.ContentProviderOperation newSetOperation(android.net.Uri arg0, android.accounts.Account arg1, byte[] arg2) 
+			public static global::android.content.ContentProviderOperation newSetOperation(android.net.Uri arg0, android.accounts.Account arg1, byte[] arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.ContentProviderOperation>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.SyncStateContract.Helpers.staticClass, _newSetOperation6365, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.ContentProviderOperation>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.SyncStateContract.Helpers.staticClass, global::android.provider.SyncStateContract.Helpers._newSetOperation6365, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2))); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _newUpdateOperation6366; 
-			public static android.content.ContentProviderOperation newUpdateOperation(android.net.Uri arg0, byte[] arg1) 
+			public static global::android.content.ContentProviderOperation newUpdateOperation(android.net.Uri arg0, byte[] arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.ContentProviderOperation>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.SyncStateContract.Helpers.staticClass, _newUpdateOperation6366, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.ContentProviderOperation>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.SyncStateContract.Helpers.staticClass, global::android.provider.SyncStateContract.Helpers._newUpdateOperation6366, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _Helpers6367; 
 			public Helpers()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.provider.SyncStateContract.Helpers.staticClass, _Helpers6367, this); 
+				@__env.NewObject(android.provider.SyncStateContract.Helpers.staticClass, global::android.provider.SyncStateContract.Helpers._Helpers6367, this); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -198,7 +198,7 @@ namespace android.provider
 		public SyncStateContract()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.provider.SyncStateContract.staticClass, _SyncStateContract6368, this); 
+			@__env.NewObject(android.provider.SyncStateContract.staticClass, global::android.provider.SyncStateContract._SyncStateContract6368, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

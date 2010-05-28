@@ -19,7 +19,7 @@ namespace java.nio.channels
 		internal static global::java.lang.Class staticClass; 
 		static __ByteChannel() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.nio.channels.__ByteChannel), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.nio.channels.__ByteChannel), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -36,45 +36,45 @@ namespace java.nio.channels
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.__ByteChannel)) 
-				return @__env.CallIntMethod(this, _read12148, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallIntMethod(this, global::java.nio.channels.__ByteChannel._read12148, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.nio.channels.__ByteChannel.staticClass, _read12148, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.nio.channels.__ByteChannel.staticClass, global::java.nio.channels.__ByteChannel._read12148, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _close12149; 
 		 void java.nio.channels.Channel.close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.__ByteChannel)) 
-				@__env.CallVoidMethod(this, _close12149); 
+				@__env.CallVoidMethod(this, global::java.nio.channels.__ByteChannel._close12149); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.nio.channels.__ByteChannel.staticClass, _close12149); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__ByteChannel.staticClass, global::java.nio.channels.__ByteChannel._close12149); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isOpen12150; 
 		 bool java.nio.channels.Channel.isOpen() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.__ByteChannel)) 
-				return @__env.CallBooleanMethod(this, _isOpen12150); 
+				return @__env.CallBooleanMethod(this, global::java.nio.channels.__ByteChannel._isOpen12150); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.nio.channels.__ByteChannel.staticClass, _isOpen12150); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.__ByteChannel.staticClass, global::java.nio.channels.__ByteChannel._isOpen12150); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _close12151; 
 		 void java.io.Closeable.close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.__ByteChannel)) 
-				@__env.CallVoidMethod(this, _close12151); 
+				@__env.CallVoidMethod(this, global::java.nio.channels.__ByteChannel._close12151); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.nio.channels.__ByteChannel.staticClass, _close12151); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__ByteChannel.staticClass, global::java.nio.channels.__ByteChannel._close12151); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _write12152; 
 		 int java.nio.channels.WritableByteChannel.write(java.nio.ByteBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.__ByteChannel)) 
-				return @__env.CallIntMethod(this, _write12152, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallIntMethod(this, global::java.nio.channels.__ByteChannel._write12152, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.nio.channels.__ByteChannel.staticClass, _write12152, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.nio.channels.__ByteChannel.staticClass, global::java.nio.channels.__ByteChannel._write12152, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

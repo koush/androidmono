@@ -3,7 +3,7 @@ namespace java.net
 	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 	public interface FileNameMap 
 	{ 
-		java.lang.String getContentTypeFor(java.lang.String arg0); 
+		global::java.lang.String getContentTypeFor(java.lang.String arg0); 
 	} 
 
 	public partial class FileNameMap_ 
@@ -20,7 +20,7 @@ namespace java.net
 		internal static global::java.lang.Class staticClass; 
 		static __FileNameMap() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.net.__FileNameMap), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.net.__FileNameMap), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -33,13 +33,13 @@ namespace java.net
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getContentTypeFor11738; 
-		 java.lang.String java.net.FileNameMap.getContentTypeFor(java.lang.String arg0) 
+		 global::java.lang.String java.net.FileNameMap.getContentTypeFor(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.__FileNameMap)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getContentTypeFor11738, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.__FileNameMap._getContentTypeFor11738, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.__FileNameMap.staticClass, _getContentTypeFor11738, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.__FileNameMap.staticClass, global::java.net.__FileNameMap._getContentTypeFor11738, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

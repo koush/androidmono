@@ -18,20 +18,19 @@ namespace MonoDroid
 	
 	public class ObjectModel
 	{
-		/*
-		private ObjectModel()
+		public static bool IsSystemType(string type)
 		{
-			myTypes.Add(new Type() { Name = "void", IsSystemType = true });
-			myTypes.Add(new Type() { Name = "int", IsSystemType = true });
-			myTypes.Add(new Type() { Name = "long", IsSystemType = true });
-			myTypes.Add(new Type() { Name = "short", IsSystemType = true });
-			myTypes.Add(new Type() { Name = "char", IsSystemType = true });
-			myTypes.Add(new Type() { Name = "byte", IsSystemType = true });
-			myTypes.Add(new Type() { Name = "float", IsSystemType = true });
-			myTypes.Add(new Type() { Name = "double", IsSystemType = true });
-			//myTypes.Add(new Type() { Name = "void", IsSystemType = true });
+            if (type.StartsWith("void")) return true;
+            if (type.StartsWith("int")) return true;
+            if (type.StartsWith("long")) return true;
+            if (type.StartsWith("short")) return true;
+            if (type.StartsWith("char")) return true;
+            if (type.StartsWith("byte")) return true;
+            if (type.StartsWith("float")) return true;
+            if (type.StartsWith("double")) return true;
+            if (type.StartsWith("bool")) return true;
+            return false;
 		}
-		*/
 		
 		public static ObjectModel Load(string filename)
 		{

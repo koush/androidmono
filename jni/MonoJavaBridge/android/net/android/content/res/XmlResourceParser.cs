@@ -20,7 +20,7 @@ namespace android.content.res
 		internal static global::java.lang.Class staticClass; 
 		static __XmlResourceParser() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.content.res.__XmlResourceParser), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.content.res.__XmlResourceParser), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -37,539 +37,539 @@ namespace android.content.res
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				@__env.CallVoidMethod(this, _close2034); 
+				@__env.CallVoidMethod(this, global::android.content.res.__XmlResourceParser._close2034); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.res.__XmlResourceParser.staticClass, _close2034); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._close2034); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setProperty2035; 
 		 void org.xmlpull.v1.XmlPullParser.setProperty(java.lang.String arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				@__env.CallVoidMethod(this, _setProperty2035, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallVoidMethod(this, global::android.content.res.__XmlResourceParser._setProperty2035, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.res.__XmlResourceParser.staticClass, _setProperty2035, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._setProperty2035, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getProperty2036; 
-		 java.lang.Object org.xmlpull.v1.XmlPullParser.getProperty(java.lang.String arg0) 
+		 global::java.lang.Object org.xmlpull.v1.XmlPullParser.getProperty(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _getProperty2036, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getProperty2036, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getProperty2036, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getProperty2036, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getName2037; 
-		 java.lang.String org.xmlpull.v1.XmlPullParser.getName() 
+		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getName2037)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getName2037)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getName2037)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getName2037)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _next2038; 
 		 int org.xmlpull.v1.XmlPullParser.next() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _next2038); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._next2038); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _next2038); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._next2038); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getLineNumber2039; 
 		 int org.xmlpull.v1.XmlPullParser.getLineNumber() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getLineNumber2039); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getLineNumber2039); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getLineNumber2039); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getLineNumber2039); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isWhitespace2040; 
 		 bool org.xmlpull.v1.XmlPullParser.isWhitespace() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallBooleanMethod(this, _isWhitespace2040); 
+				return @__env.CallBooleanMethod(this, global::android.content.res.__XmlResourceParser._isWhitespace2040); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.content.res.__XmlResourceParser.staticClass, _isWhitespace2040); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._isWhitespace2040); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _nextToken2041; 
 		 int org.xmlpull.v1.XmlPullParser.nextToken() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _nextToken2041); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._nextToken2041); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _nextToken2041); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._nextToken2041); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setInput2042; 
 		 void org.xmlpull.v1.XmlPullParser.setInput(java.io.InputStream arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				@__env.CallVoidMethod(this, _setInput2042, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.content.res.__XmlResourceParser._setInput2042, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.res.__XmlResourceParser.staticClass, _setInput2042, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._setInput2042, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setInput2043; 
 		 void org.xmlpull.v1.XmlPullParser.setInput(java.io.Reader arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				@__env.CallVoidMethod(this, _setInput2043, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.content.res.__XmlResourceParser._setInput2043, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.res.__XmlResourceParser.staticClass, _setInput2043, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._setInput2043, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getPrefix2044; 
-		 java.lang.String org.xmlpull.v1.XmlPullParser.getPrefix() 
+		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getPrefix() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getPrefix2044)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getPrefix2044)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getPrefix2044)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getPrefix2044)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeValue2045; 
-		 java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeValue(java.lang.String arg0, java.lang.String arg1) 
+		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeValue(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getAttributeValue2045, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getAttributeValue2045, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeValue2045, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeValue2045, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeValue2046; 
-		 java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeValue(int arg0) 
+		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeValue(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getAttributeValue2046, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getAttributeValue2046, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeValue2046, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeValue2046, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getColumnNumber2047; 
 		 int org.xmlpull.v1.XmlPullParser.getColumnNumber() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getColumnNumber2047); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getColumnNumber2047); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getColumnNumber2047); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getColumnNumber2047); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getText2048; 
-		 java.lang.String org.xmlpull.v1.XmlPullParser.getText() 
+		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getText2048)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getText2048)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getText2048)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getText2048)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getEventType2049; 
 		 int org.xmlpull.v1.XmlPullParser.getEventType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getEventType2049); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getEventType2049); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getEventType2049); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getEventType2049); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeCount2050; 
 		 int org.xmlpull.v1.XmlPullParser.getAttributeCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getAttributeCount2050); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getAttributeCount2050); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeCount2050); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeCount2050); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeName2051; 
-		 java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeName(int arg0) 
+		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeName(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getAttributeName2051, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getAttributeName2051, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeName2051, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeName2051, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getPositionDescription2052; 
-		 java.lang.String org.xmlpull.v1.XmlPullParser.getPositionDescription() 
+		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getPositionDescription() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getPositionDescription2052)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getPositionDescription2052)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getPositionDescription2052)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getPositionDescription2052)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setFeature2053; 
 		 void org.xmlpull.v1.XmlPullParser.setFeature(java.lang.String arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				@__env.CallVoidMethod(this, _setFeature2053, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.content.res.__XmlResourceParser._setFeature2053, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.res.__XmlResourceParser.staticClass, _setFeature2053, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._setFeature2053, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getFeature2054; 
 		 bool org.xmlpull.v1.XmlPullParser.getFeature(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallBooleanMethod(this, _getFeature2054, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.content.res.__XmlResourceParser._getFeature2054, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.content.res.__XmlResourceParser.staticClass, _getFeature2054, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getFeature2054, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getInputEncoding2055; 
-		 java.lang.String org.xmlpull.v1.XmlPullParser.getInputEncoding() 
+		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getInputEncoding() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getInputEncoding2055)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getInputEncoding2055)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getInputEncoding2055)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getInputEncoding2055)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _defineEntityReplacementText2056; 
 		 void org.xmlpull.v1.XmlPullParser.defineEntityReplacementText(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				@__env.CallVoidMethod(this, _defineEntityReplacementText2056, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.content.res.__XmlResourceParser._defineEntityReplacementText2056, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.res.__XmlResourceParser.staticClass, _defineEntityReplacementText2056, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._defineEntityReplacementText2056, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getNamespaceCount2057; 
 		 int org.xmlpull.v1.XmlPullParser.getNamespaceCount(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getNamespaceCount2057, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getNamespaceCount2057, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getNamespaceCount2057, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getNamespaceCount2057, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getNamespacePrefix2058; 
-		 java.lang.String org.xmlpull.v1.XmlPullParser.getNamespacePrefix(int arg0) 
+		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getNamespacePrefix(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getNamespacePrefix2058, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getNamespacePrefix2058, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getNamespacePrefix2058, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getNamespacePrefix2058, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getNamespaceUri2059; 
-		 java.lang.String org.xmlpull.v1.XmlPullParser.getNamespaceUri(int arg0) 
+		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getNamespaceUri(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getNamespaceUri2059, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getNamespaceUri2059, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getNamespaceUri2059, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getNamespaceUri2059, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getNamespace2060; 
-		 java.lang.String org.xmlpull.v1.XmlPullParser.getNamespace() 
+		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getNamespace() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getNamespace2060)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getNamespace2060)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getNamespace2060)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getNamespace2060)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getNamespace2061; 
-		 java.lang.String org.xmlpull.v1.XmlPullParser.getNamespace(java.lang.String arg0) 
+		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getNamespace(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getNamespace2061, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getNamespace2061, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getNamespace2061, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getNamespace2061, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDepth2062; 
 		 int org.xmlpull.v1.XmlPullParser.getDepth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getDepth2062); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getDepth2062); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getDepth2062); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getDepth2062); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getTextCharacters2063; 
 		 char[] org.xmlpull.v1.XmlPullParser.getTextCharacters(int[] arg0) 
 		{ 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _getTextCharacters2063, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getTextCharacters2063, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getTextCharacters2063, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getTextCharacters2063, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isEmptyElementTag2064; 
 		 bool org.xmlpull.v1.XmlPullParser.isEmptyElementTag() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallBooleanMethod(this, _isEmptyElementTag2064); 
+				return @__env.CallBooleanMethod(this, global::android.content.res.__XmlResourceParser._isEmptyElementTag2064); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.content.res.__XmlResourceParser.staticClass, _isEmptyElementTag2064); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._isEmptyElementTag2064); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeNamespace2065; 
-		 java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeNamespace(int arg0) 
+		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeNamespace(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getAttributeNamespace2065, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getAttributeNamespace2065, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeNamespace2065, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeNamespace2065, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributePrefix2066; 
-		 java.lang.String org.xmlpull.v1.XmlPullParser.getAttributePrefix(int arg0) 
+		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributePrefix(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getAttributePrefix2066, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getAttributePrefix2066, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getAttributePrefix2066, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributePrefix2066, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeType2067; 
-		 java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeType(int arg0) 
+		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeType(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getAttributeType2067, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getAttributeType2067, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeType2067, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeType2067, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isAttributeDefault2068; 
 		 bool org.xmlpull.v1.XmlPullParser.isAttributeDefault(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallBooleanMethod(this, _isAttributeDefault2068, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.content.res.__XmlResourceParser._isAttributeDefault2068, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.content.res.__XmlResourceParser.staticClass, _isAttributeDefault2068, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._isAttributeDefault2068, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _require2069; 
 		 void org.xmlpull.v1.XmlPullParser.require(int arg0, java.lang.String arg1, java.lang.String arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				@__env.CallVoidMethod(this, _require2069, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallVoidMethod(this, global::android.content.res.__XmlResourceParser._require2069, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.content.res.__XmlResourceParser.staticClass, _require2069, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._require2069, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _nextText2070; 
-		 java.lang.String org.xmlpull.v1.XmlPullParser.nextText() 
+		 global::java.lang.String org.xmlpull.v1.XmlPullParser.nextText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _nextText2070)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._nextText2070)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _nextText2070)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._nextText2070)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _nextTag2071; 
 		 int org.xmlpull.v1.XmlPullParser.nextTag() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _nextTag2071); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._nextTag2071); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _nextTag2071); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._nextTag2071); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeValue2072; 
-		 java.lang.String android.util.AttributeSet.getAttributeValue(int arg0) 
+		 global::java.lang.String android.util.AttributeSet.getAttributeValue(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getAttributeValue2072, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getAttributeValue2072, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeValue2072, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeValue2072, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeValue2073; 
-		 java.lang.String android.util.AttributeSet.getAttributeValue(java.lang.String arg0, java.lang.String arg1) 
+		 global::java.lang.String android.util.AttributeSet.getAttributeValue(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getAttributeValue2073, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getAttributeValue2073, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeValue2073, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeValue2073, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeCount2074; 
 		 int android.util.AttributeSet.getAttributeCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getAttributeCount2074); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getAttributeCount2074); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeCount2074); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeCount2074); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeName2075; 
-		 java.lang.String android.util.AttributeSet.getAttributeName(int arg0) 
+		 global::java.lang.String android.util.AttributeSet.getAttributeName(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getAttributeName2075, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getAttributeName2075, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeName2075, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeName2075, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getPositionDescription2076; 
-		 java.lang.String android.util.AttributeSet.getPositionDescription() 
+		 global::java.lang.String android.util.AttributeSet.getPositionDescription() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getPositionDescription2076)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getPositionDescription2076)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getPositionDescription2076)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getPositionDescription2076)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeNameResource2077; 
 		 int android.util.AttributeSet.getAttributeNameResource(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getAttributeNameResource2077, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getAttributeNameResource2077, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeNameResource2077, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeNameResource2077, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeListValue2078; 
 		 int android.util.AttributeSet.getAttributeListValue(java.lang.String arg0, java.lang.String arg1, java.lang.String[] arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getAttributeListValue2078, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getAttributeListValue2078, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeListValue2078, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeListValue2078, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeListValue2079; 
 		 int android.util.AttributeSet.getAttributeListValue(int arg0, java.lang.String[] arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getAttributeListValue2079, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getAttributeListValue2079, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeListValue2079, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeListValue2079, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeBooleanValue2080; 
 		 bool android.util.AttributeSet.getAttributeBooleanValue(java.lang.String arg0, java.lang.String arg1, bool arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallBooleanMethod(this, _getAttributeBooleanValue2080, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallBooleanMethod(this, global::android.content.res.__XmlResourceParser._getAttributeBooleanValue2080, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeBooleanValue2080, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeBooleanValue2080, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeBooleanValue2081; 
 		 bool android.util.AttributeSet.getAttributeBooleanValue(int arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallBooleanMethod(this, _getAttributeBooleanValue2081, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallBooleanMethod(this, global::android.content.res.__XmlResourceParser._getAttributeBooleanValue2081, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeBooleanValue2081, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeBooleanValue2081, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeResourceValue2082; 
 		 int android.util.AttributeSet.getAttributeResourceValue(java.lang.String arg0, java.lang.String arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getAttributeResourceValue2082, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getAttributeResourceValue2082, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeResourceValue2082, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeResourceValue2082, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeResourceValue2083; 
 		 int android.util.AttributeSet.getAttributeResourceValue(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getAttributeResourceValue2083, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getAttributeResourceValue2083, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeResourceValue2083, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeResourceValue2083, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeIntValue2084; 
 		 int android.util.AttributeSet.getAttributeIntValue(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getAttributeIntValue2084, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getAttributeIntValue2084, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeIntValue2084, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeIntValue2084, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeIntValue2085; 
 		 int android.util.AttributeSet.getAttributeIntValue(java.lang.String arg0, java.lang.String arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getAttributeIntValue2085, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getAttributeIntValue2085, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeIntValue2085, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeIntValue2085, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeUnsignedIntValue2086; 
 		 int android.util.AttributeSet.getAttributeUnsignedIntValue(java.lang.String arg0, java.lang.String arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getAttributeUnsignedIntValue2086, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getAttributeUnsignedIntValue2086, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeUnsignedIntValue2086, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeUnsignedIntValue2086, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeUnsignedIntValue2087; 
 		 int android.util.AttributeSet.getAttributeUnsignedIntValue(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getAttributeUnsignedIntValue2087, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getAttributeUnsignedIntValue2087, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeUnsignedIntValue2087, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeUnsignedIntValue2087, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeFloatValue2088; 
 		 float android.util.AttributeSet.getAttributeFloatValue(java.lang.String arg0, java.lang.String arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallFloatMethod(this, _getAttributeFloatValue2088, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallFloatMethod(this, global::android.content.res.__XmlResourceParser._getAttributeFloatValue2088, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeFloatValue2088, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallNonVirtualFloatMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeFloatValue2088, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributeFloatValue2089; 
 		 float android.util.AttributeSet.getAttributeFloatValue(int arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallFloatMethod(this, _getAttributeFloatValue2089, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallFloatMethod(this, global::android.content.res.__XmlResourceParser._getAttributeFloatValue2089, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.content.res.__XmlResourceParser.staticClass, _getAttributeFloatValue2089, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualFloatMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getAttributeFloatValue2089, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getIdAttribute2090; 
-		 java.lang.String android.util.AttributeSet.getIdAttribute() 
+		 global::java.lang.String android.util.AttributeSet.getIdAttribute() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getIdAttribute2090)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getIdAttribute2090)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getIdAttribute2090)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getIdAttribute2090)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getClassAttribute2091; 
-		 java.lang.String android.util.AttributeSet.getClassAttribute() 
+		 global::java.lang.String android.util.AttributeSet.getClassAttribute() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getClassAttribute2091)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.__XmlResourceParser._getClassAttribute2091)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.content.res.__XmlResourceParser.staticClass, _getClassAttribute2091)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getClassAttribute2091)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getIdAttributeResourceValue2092; 
 		 int android.util.AttributeSet.getIdAttributeResourceValue(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getIdAttributeResourceValue2092, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getIdAttributeResourceValue2092, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getIdAttributeResourceValue2092, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getIdAttributeResourceValue2092, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getStyleAttribute2093; 
 		 int android.util.AttributeSet.getStyleAttribute() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.content.res.__XmlResourceParser)) 
-				return @__env.CallIntMethod(this, _getStyleAttribute2093); 
+				return @__env.CallIntMethod(this, global::android.content.res.__XmlResourceParser._getStyleAttribute2093); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.content.res.__XmlResourceParser.staticClass, _getStyleAttribute2093); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.__XmlResourceParser.staticClass, global::android.content.res.__XmlResourceParser._getStyleAttribute2093); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

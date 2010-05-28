@@ -6,7 +6,7 @@ namespace android.util
 		internal static global::java.lang.Class staticClass; 
 		static PrintWriterPrinter() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.util.PrintWriterPrinter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.util.PrintWriterPrinter), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,15 +23,15 @@ namespace android.util
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.util.PrintWriterPrinter)) 
-				@__env.CallVoidMethod(this, _println7595, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.util.PrintWriterPrinter._println7595, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.util.PrintWriterPrinter.staticClass, _println7595, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.util.PrintWriterPrinter.staticClass, global::android.util.PrintWriterPrinter._println7595, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _PrintWriterPrinter7596; 
 		public PrintWriterPrinter(java.io.PrintWriter arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.util.PrintWriterPrinter.staticClass, _PrintWriterPrinter7596, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.util.PrintWriterPrinter.staticClass, global::android.util.PrintWriterPrinter._PrintWriterPrinter7596, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

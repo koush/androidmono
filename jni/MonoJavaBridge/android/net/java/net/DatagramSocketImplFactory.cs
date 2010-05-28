@@ -3,7 +3,7 @@ namespace java.net
 	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 	public interface DatagramSocketImplFactory 
 	{ 
-		java.net.DatagramSocketImpl createDatagramSocketImpl(); 
+		global::java.net.DatagramSocketImpl createDatagramSocketImpl(); 
 	} 
 
 	public partial class DatagramSocketImplFactory_ 
@@ -20,7 +20,7 @@ namespace java.net
 		internal static global::java.lang.Class staticClass; 
 		static __DatagramSocketImplFactory() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.net.__DatagramSocketImplFactory), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.net.__DatagramSocketImplFactory), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -33,13 +33,13 @@ namespace java.net
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createDatagramSocketImpl11737; 
-		 java.net.DatagramSocketImpl java.net.DatagramSocketImplFactory.createDatagramSocketImpl() 
+		 global::java.net.DatagramSocketImpl java.net.DatagramSocketImplFactory.createDatagramSocketImpl() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.__DatagramSocketImplFactory)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.DatagramSocketImpl>(@__env, @__env.CallObjectMethodPtr(this, _createDatagramSocketImpl11737)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.DatagramSocketImpl>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.__DatagramSocketImplFactory._createDatagramSocketImpl11737)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.DatagramSocketImpl>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.__DatagramSocketImplFactory.staticClass, _createDatagramSocketImpl11737)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.DatagramSocketImpl>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.__DatagramSocketImplFactory.staticClass, global::java.net.__DatagramSocketImplFactory._createDatagramSocketImpl11737)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

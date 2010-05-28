@@ -6,7 +6,7 @@ namespace android.media
 		internal static global::java.lang.Class staticClass; 
 		static AudioFormat() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.media.AudioFormat), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.media.AudioFormat), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -22,7 +22,7 @@ namespace android.media
 		public AudioFormat()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.media.AudioFormat.staticClass, _AudioFormat4360, this); 
+			@__env.NewObject(android.media.AudioFormat.staticClass, global::android.media.AudioFormat._AudioFormat4360, this); 
 		} 
 		public static int ENCODING_INVALID
 		{ 

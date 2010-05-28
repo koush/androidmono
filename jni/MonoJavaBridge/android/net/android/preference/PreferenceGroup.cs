@@ -6,7 +6,7 @@ namespace android.preference
 		internal new static global::java.lang.Class staticClass; 
 		static PreferenceGroup() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.preference.PreferenceGroup), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.preference.PreferenceGroup), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected PreferenceGroup(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -16,156 +16,156 @@ namespace android.preference
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceGroup)) 
-				@__env.CallVoidMethod(this, _removeAll6075); 
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceGroup._removeAll6075); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.preference.PreferenceGroup.staticClass, _removeAll6075); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._removeAll6075); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setEnabled6076; 
 		public override void setEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceGroup)) 
-				@__env.CallVoidMethod(this, _setEnabled6076, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceGroup._setEnabled6076, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.preference.PreferenceGroup.staticClass, _setEnabled6076, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._setEnabled6076, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _dispatchSaveInstanceState6077; 
 		protected virtual void dispatchSaveInstanceState(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceGroup)) 
-				@__env.CallVoidMethod(this, _dispatchSaveInstanceState6077, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceGroup._dispatchSaveInstanceState6077, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.preference.PreferenceGroup.staticClass, _dispatchSaveInstanceState6077, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._dispatchSaveInstanceState6077, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _dispatchRestoreInstanceState6078; 
 		protected virtual void dispatchRestoreInstanceState(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceGroup)) 
-				@__env.CallVoidMethod(this, _dispatchRestoreInstanceState6078, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceGroup._dispatchRestoreInstanceState6078, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.preference.PreferenceGroup.staticClass, _dispatchRestoreInstanceState6078, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._dispatchRestoreInstanceState6078, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onAttachedToActivity6079; 
 		protected override void onAttachedToActivity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceGroup)) 
-				@__env.CallVoidMethod(this, _onAttachedToActivity6079); 
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceGroup._onAttachedToActivity6079); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.preference.PreferenceGroup.staticClass, _onAttachedToActivity6079); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._onAttachedToActivity6079); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onPrepareForRemoval6080; 
 		protected override void onPrepareForRemoval() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceGroup)) 
-				@__env.CallVoidMethod(this, _onPrepareForRemoval6080); 
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceGroup._onPrepareForRemoval6080); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.preference.PreferenceGroup.staticClass, _onPrepareForRemoval6080); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._onPrepareForRemoval6080); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _findPreference6081; 
-		public virtual android.preference.Preference findPreference(java.lang.CharSequence arg0) 
+		public virtual global::android.preference.Preference findPreference(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceGroup)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallObjectMethodPtr(this, _findPreference6081, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.PreferenceGroup._findPreference6081, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.preference.PreferenceGroup.staticClass, _findPreference6081, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._findPreference6081, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isOnSameScreenAsChildren6082; 
 		protected virtual bool isOnSameScreenAsChildren() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceGroup)) 
-				return @__env.CallBooleanMethod(this, _isOnSameScreenAsChildren6082); 
+				return @__env.CallBooleanMethod(this, global::android.preference.PreferenceGroup._isOnSameScreenAsChildren6082); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.preference.PreferenceGroup.staticClass, _isOnSameScreenAsChildren6082); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._isOnSameScreenAsChildren6082); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setOrderingAsAdded6083; 
 		public virtual void setOrderingAsAdded(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceGroup)) 
-				@__env.CallVoidMethod(this, _setOrderingAsAdded6083, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceGroup._setOrderingAsAdded6083, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.preference.PreferenceGroup.staticClass, _setOrderingAsAdded6083, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._setOrderingAsAdded6083, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isOrderingAsAdded6084; 
 		public virtual bool isOrderingAsAdded() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceGroup)) 
-				return @__env.CallBooleanMethod(this, _isOrderingAsAdded6084); 
+				return @__env.CallBooleanMethod(this, global::android.preference.PreferenceGroup._isOrderingAsAdded6084); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.preference.PreferenceGroup.staticClass, _isOrderingAsAdded6084); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._isOrderingAsAdded6084); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _addItemFromInflater6085; 
 		public virtual void addItemFromInflater(android.preference.Preference arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceGroup)) 
-				@__env.CallVoidMethod(this, _addItemFromInflater6085, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceGroup._addItemFromInflater6085, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.preference.PreferenceGroup.staticClass, _addItemFromInflater6085, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._addItemFromInflater6085, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getPreferenceCount6086; 
 		public virtual int getPreferenceCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceGroup)) 
-				return @__env.CallIntMethod(this, _getPreferenceCount6086); 
+				return @__env.CallIntMethod(this, global::android.preference.PreferenceGroup._getPreferenceCount6086); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.preference.PreferenceGroup.staticClass, _getPreferenceCount6086); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._getPreferenceCount6086); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getPreference6087; 
-		public virtual android.preference.Preference getPreference(int arg0) 
+		public virtual global::android.preference.Preference getPreference(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceGroup)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallObjectMethodPtr(this, _getPreference6087, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.PreferenceGroup._getPreference6087, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.preference.PreferenceGroup.staticClass, _getPreference6087, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._getPreference6087, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _addPreference6088; 
 		public virtual bool addPreference(android.preference.Preference arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceGroup)) 
-				return @__env.CallBooleanMethod(this, _addPreference6088, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.preference.PreferenceGroup._addPreference6088, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.preference.PreferenceGroup.staticClass, _addPreference6088, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._addPreference6088, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _removePreference6089; 
 		public virtual bool removePreference(android.preference.Preference arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceGroup)) 
-				return @__env.CallBooleanMethod(this, _removePreference6089, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.preference.PreferenceGroup._removePreference6089, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.preference.PreferenceGroup.staticClass, _removePreference6089, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._removePreference6089, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onPrepareAddPreference6090; 
 		protected virtual bool onPrepareAddPreference(android.preference.Preference arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.preference.PreferenceGroup)) 
-				return @__env.CallBooleanMethod(this, _onPrepareAddPreference6090, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.preference.PreferenceGroup._onPrepareAddPreference6090, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.preference.PreferenceGroup.staticClass, _onPrepareAddPreference6090, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._onPrepareAddPreference6090, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _PreferenceGroup6091; 
 		public PreferenceGroup(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.preference.PreferenceGroup.staticClass, _PreferenceGroup6091, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._PreferenceGroup6091, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _PreferenceGroup6092; 
 		public PreferenceGroup(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.preference.PreferenceGroup.staticClass, _PreferenceGroup6092, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._PreferenceGroup6092, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

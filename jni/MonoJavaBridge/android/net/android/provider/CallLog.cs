@@ -6,7 +6,7 @@ namespace android.provider
 		internal static global::java.lang.Class staticClass; 
 		static CallLog() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.provider.CallLog), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.CallLog), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -24,7 +24,7 @@ namespace android.provider
 			internal static global::java.lang.Class staticClass; 
 			static Calls() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.provider.CallLog.Calls), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.provider.CallLog.Calls), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -40,46 +40,46 @@ namespace android.provider
 			public Calls()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.provider.CallLog.Calls.staticClass, _Calls6149, this); 
+				@__env.NewObject(android.provider.CallLog.Calls.staticClass, global::android.provider.CallLog.Calls._Calls6149, this); 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6150; 
-			public static android.net.Uri CONTENT_URI
+			public static global::android.net.Uri CONTENT_URI
 			{ 
 				get 
 				{ 
-					return default(android.net.Uri); 
+					return default(global::android.net.Uri); 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_FILTER_URI6151; 
-			public static android.net.Uri CONTENT_FILTER_URI
+			public static global::android.net.Uri CONTENT_FILTER_URI
 			{ 
 				get 
 				{ 
-					return default(android.net.Uri); 
+					return default(global::android.net.Uri); 
 				} 
 			} 
-			public static java.lang.String DEFAULT_SORT_ORDER
+			public static global::java.lang.String DEFAULT_SORT_ORDER
 			{ 
 				get 
 				{ 
 					return "date DESC"; 
 				} 
 			} 
-			public static java.lang.String CONTENT_TYPE
+			public static global::java.lang.String CONTENT_TYPE
 			{ 
 				get 
 				{ 
 					return "vnd.android.cursor.dir/calls"; 
 				} 
 			} 
-			public static java.lang.String CONTENT_ITEM_TYPE
+			public static global::java.lang.String CONTENT_ITEM_TYPE
 			{ 
 				get 
 				{ 
 					return "vnd.android.cursor.item/calls"; 
 				} 
 			} 
-			public static java.lang.String TYPE
+			public static global::java.lang.String TYPE
 			{ 
 				get 
 				{ 
@@ -107,49 +107,49 @@ namespace android.provider
 					return 3; 
 				} 
 			} 
-			public static java.lang.String NUMBER
+			public static global::java.lang.String NUMBER
 			{ 
 				get 
 				{ 
 					return "number"; 
 				} 
 			} 
-			public static java.lang.String DATE
+			public static global::java.lang.String DATE
 			{ 
 				get 
 				{ 
 					return "date"; 
 				} 
 			} 
-			public static java.lang.String DURATION
+			public static global::java.lang.String DURATION
 			{ 
 				get 
 				{ 
 					return "duration"; 
 				} 
 			} 
-			public static java.lang.String NEW
+			public static global::java.lang.String NEW
 			{ 
 				get 
 				{ 
 					return "new"; 
 				} 
 			} 
-			public static java.lang.String CACHED_NAME
+			public static global::java.lang.String CACHED_NAME
 			{ 
 				get 
 				{ 
 					return "name"; 
 				} 
 			} 
-			public static java.lang.String CACHED_NUMBER_TYPE
+			public static global::java.lang.String CACHED_NUMBER_TYPE
 			{ 
 				get 
 				{ 
 					return "numbertype"; 
 				} 
 			} 
-			public static java.lang.String CACHED_NUMBER_LABEL
+			public static global::java.lang.String CACHED_NUMBER_LABEL
 			{ 
 				get 
 				{ 
@@ -166,9 +166,9 @@ namespace android.provider
 		public CallLog()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.provider.CallLog.staticClass, _CallLog6152, this); 
+			@__env.NewObject(android.provider.CallLog.staticClass, global::android.provider.CallLog._CallLog6152, this); 
 		} 
-		public static java.lang.String AUTHORITY
+		public static global::java.lang.String AUTHORITY
 		{ 
 			get 
 			{ 
@@ -176,11 +176,11 @@ namespace android.provider
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6153; 
-		public static android.net.Uri CONTENT_URI
+		public static global::android.net.Uri CONTENT_URI
 		{ 
 			get 
 			{ 
-				return default(android.net.Uri); 
+				return default(global::android.net.Uri); 
 			} 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 

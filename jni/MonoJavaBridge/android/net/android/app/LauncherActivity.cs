@@ -6,7 +6,7 @@ namespace android.app
 		internal new static global::java.lang.Class staticClass; 
 		static LauncherActivity() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.app.LauncherActivity), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.LauncherActivity), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected LauncherActivity(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -17,7 +17,7 @@ namespace android.app
 			internal static global::java.lang.Class staticClass; 
 			static IconResizer() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.app.LauncherActivity.IconResizer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.LauncherActivity.IconResizer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -30,19 +30,19 @@ namespace android.app
 			{ 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _createIconThumbnail617; 
-			public virtual android.graphics.drawable.Drawable createIconThumbnail(android.graphics.drawable.Drawable arg0) 
+			public virtual global::android.graphics.drawable.Drawable createIconThumbnail(android.graphics.drawable.Drawable arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.app.LauncherActivity.IconResizer)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, _createIconThumbnail617, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.LauncherActivity.IconResizer._createIconThumbnail617, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.LauncherActivity.IconResizer.staticClass, _createIconThumbnail617, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.LauncherActivity.IconResizer.staticClass, global::android.app.LauncherActivity.IconResizer._createIconThumbnail617, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _IconResizer618; 
 			public IconResizer(android.app.LauncherActivity arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.app.LauncherActivity.IconResizer.staticClass, _IconResizer618, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.NewObject(android.app.LauncherActivity.IconResizer.staticClass, global::android.app.LauncherActivity.IconResizer._IconResizer618, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -57,7 +57,7 @@ namespace android.app
 			internal static global::java.lang.Class staticClass; 
 			static ListItem() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.app.LauncherActivity.ListItem), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.LauncherActivity.ListItem), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -73,69 +73,69 @@ namespace android.app
 			public ListItem()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.app.LauncherActivity.ListItem.staticClass, _ListItem619, this); 
+				@__env.NewObject(android.app.LauncherActivity.ListItem.staticClass, global::android.app.LauncherActivity.ListItem._ListItem619, this); 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _resolveInfo620; 
-			public android.content.pm.ResolveInfo resolveInfo
+			public global::android.content.pm.ResolveInfo resolveInfo
 			{ 
 				get 
 				{ 
-					return default(android.content.pm.ResolveInfo); 
+					return default(global::android.content.pm.ResolveInfo); 
 				} 
 				set 
 				{ 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _label621; 
-			public java.lang.CharSequence label
+			public global::java.lang.CharSequence label
 			{ 
 				get 
 				{ 
-					return default(java.lang.CharSequence); 
+					return default(global::java.lang.CharSequence); 
 				} 
 				set 
 				{ 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _icon622; 
-			public android.graphics.drawable.Drawable icon
+			public global::android.graphics.drawable.Drawable icon
 			{ 
 				get 
 				{ 
-					return default(android.graphics.drawable.Drawable); 
+					return default(global::android.graphics.drawable.Drawable); 
 				} 
 				set 
 				{ 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _packageName623; 
-			public java.lang.String packageName
+			public global::java.lang.String packageName
 			{ 
 				get 
 				{ 
-					return default(java.lang.String); 
+					return default(global::java.lang.String); 
 				} 
 				set 
 				{ 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _className624; 
-			public java.lang.String className
+			public global::java.lang.String className
 			{ 
 				get 
 				{ 
-					return default(java.lang.String); 
+					return default(global::java.lang.String); 
 				} 
 				set 
 				{ 
 				} 
 			} 
 			internal static global::net.sf.jni4net.jni.FieldId _extras625; 
-			public android.os.Bundle extras
+			public global::android.os.Bundle extras
 			{ 
 				get 
 				{ 
-					return default(android.os.Bundle); 
+					return default(global::android.os.Bundle); 
 				} 
 				set 
 				{ 
@@ -152,78 +152,78 @@ namespace android.app
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.LauncherActivity)) 
-				@__env.CallVoidMethod(this, _onCreate626, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.app.LauncherActivity._onCreate626, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.LauncherActivity.staticClass, _onCreate626, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._onCreate626, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onSetContentView627; 
 		protected virtual void onSetContentView() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.LauncherActivity)) 
-				@__env.CallVoidMethod(this, _onSetContentView627); 
+				@__env.CallVoidMethod(this, global::android.app.LauncherActivity._onSetContentView627); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.LauncherActivity.staticClass, _onSetContentView627); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._onSetContentView627); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onListItemClick628; 
 		protected override void onListItemClick(android.widget.ListView arg0, android.view.View arg1, int arg2, long arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.LauncherActivity)) 
-				@__env.CallVoidMethod(this, _onListItemClick628, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallVoidMethod(this, global::android.app.LauncherActivity._onListItemClick628, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.LauncherActivity.staticClass, _onListItemClick628, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._onListItemClick628, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _intentForPosition629; 
-		protected virtual android.content.Intent intentForPosition(int arg0) 
+		protected virtual global::android.content.Intent intentForPosition(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.LauncherActivity)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Intent>(@__env, @__env.CallObjectMethodPtr(this, _intentForPosition629, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Intent>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.LauncherActivity._intentForPosition629, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Intent>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.LauncherActivity.staticClass, _intentForPosition629, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Intent>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._intentForPosition629, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _itemForPosition630; 
-		protected virtual android.app.LauncherActivity.ListItem itemForPosition(int arg0) 
+		protected virtual global::android.app.LauncherActivity.ListItem itemForPosition(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.LauncherActivity)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.LauncherActivity.ListItem>(@__env, @__env.CallObjectMethodPtr(this, _itemForPosition630, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.LauncherActivity.ListItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.LauncherActivity._itemForPosition630, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.LauncherActivity.ListItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.LauncherActivity.staticClass, _itemForPosition630, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.LauncherActivity.ListItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._itemForPosition630, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getTargetIntent631; 
-		protected virtual android.content.Intent getTargetIntent() 
+		protected virtual global::android.content.Intent getTargetIntent() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.LauncherActivity)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Intent>(@__env, @__env.CallObjectMethodPtr(this, _getTargetIntent631)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Intent>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.LauncherActivity._getTargetIntent631)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Intent>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.LauncherActivity.staticClass, _getTargetIntent631)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Intent>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._getTargetIntent631)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onQueryPackageManager632; 
-		protected virtual java.util.List onQueryPackageManager(android.content.Intent arg0) 
+		protected virtual global::java.util.List onQueryPackageManager(android.content.Intent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.LauncherActivity)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _onQueryPackageManager632, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.LauncherActivity._onQueryPackageManager632, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.LauncherActivity.staticClass, _onQueryPackageManager632, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._onQueryPackageManager632, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _makeListItems633; 
-		public virtual java.util.List makeListItems() 
+		public virtual global::java.util.List makeListItems() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.LauncherActivity)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, _makeListItems633)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.LauncherActivity._makeListItems633)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.LauncherActivity.staticClass, _makeListItems633)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._makeListItems633)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _LauncherActivity634; 
 		public LauncherActivity()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.app.LauncherActivity.staticClass, _LauncherActivity634, this); 
+			@__env.NewObject(android.app.LauncherActivity.staticClass, global::android.app.LauncherActivity._LauncherActivity634, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

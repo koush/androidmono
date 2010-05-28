@@ -6,7 +6,7 @@ namespace android.location
 		internal static global::java.lang.Class staticClass; 
 		static GpsSatellite() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.location.GpsSatellite), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.location.GpsSatellite), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,63 +23,63 @@ namespace android.location
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.location.GpsSatellite)) 
-				return @__env.CallIntMethod(this, _getPrn4262); 
+				return @__env.CallIntMethod(this, global::android.location.GpsSatellite._getPrn4262); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.location.GpsSatellite.staticClass, _getPrn4262); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._getPrn4262); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSnr4263; 
 		public float getSnr() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.location.GpsSatellite)) 
-				return @__env.CallFloatMethod(this, _getSnr4263); 
+				return @__env.CallFloatMethod(this, global::android.location.GpsSatellite._getSnr4263); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.location.GpsSatellite.staticClass, _getSnr4263); 
+				return @__env.CallNonVirtualFloatMethod(this, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._getSnr4263); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getElevation4264; 
 		public float getElevation() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.location.GpsSatellite)) 
-				return @__env.CallFloatMethod(this, _getElevation4264); 
+				return @__env.CallFloatMethod(this, global::android.location.GpsSatellite._getElevation4264); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.location.GpsSatellite.staticClass, _getElevation4264); 
+				return @__env.CallNonVirtualFloatMethod(this, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._getElevation4264); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAzimuth4265; 
 		public float getAzimuth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.location.GpsSatellite)) 
-				return @__env.CallFloatMethod(this, _getAzimuth4265); 
+				return @__env.CallFloatMethod(this, global::android.location.GpsSatellite._getAzimuth4265); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.location.GpsSatellite.staticClass, _getAzimuth4265); 
+				return @__env.CallNonVirtualFloatMethod(this, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._getAzimuth4265); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _hasEphemeris4266; 
 		public bool hasEphemeris() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.location.GpsSatellite)) 
-				return @__env.CallBooleanMethod(this, _hasEphemeris4266); 
+				return @__env.CallBooleanMethod(this, global::android.location.GpsSatellite._hasEphemeris4266); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.location.GpsSatellite.staticClass, _hasEphemeris4266); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._hasEphemeris4266); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _hasAlmanac4267; 
 		public bool hasAlmanac() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.location.GpsSatellite)) 
-				return @__env.CallBooleanMethod(this, _hasAlmanac4267); 
+				return @__env.CallBooleanMethod(this, global::android.location.GpsSatellite._hasAlmanac4267); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.location.GpsSatellite.staticClass, _hasAlmanac4267); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._hasAlmanac4267); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _usedInFix4268; 
 		public bool usedInFix() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.location.GpsSatellite)) 
-				return @__env.CallBooleanMethod(this, _usedInFix4268); 
+				return @__env.CallBooleanMethod(this, global::android.location.GpsSatellite._usedInFix4268); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.location.GpsSatellite.staticClass, _usedInFix4268); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._usedInFix4268); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

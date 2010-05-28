@@ -19,7 +19,7 @@ namespace javax.microedition.khronos.opengles
 		internal static global::java.lang.Class staticClass; 
 		static __GL() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(javax.microedition.khronos.opengles.__GL), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::javax.microedition.khronos.opengles.__GL), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 

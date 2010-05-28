@@ -6,7 +6,7 @@ namespace java.text
 		internal new static global::java.lang.Class staticClass; 
 		static NumberFormat() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.text.NumberFormat), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.text.NumberFormat), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected NumberFormat(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -16,284 +16,284 @@ namespace java.text
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				return @__env.CallIntMethod(this, _hashCode12614); 
+				return @__env.CallIntMethod(this, global::java.text.NumberFormat._hashCode12614); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.text.NumberFormat.staticClass, _hashCode12614); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._hashCode12614); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _equals12615; 
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				return @__env.CallBooleanMethod(this, _equals12615, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, global::java.text.NumberFormat._equals12615, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.text.NumberFormat.staticClass, _equals12615, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._equals12615, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _format12616; 
-		public abstract java.lang.StringBuffer format(double arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2); 
+		public abstract global::java.lang.StringBuffer format(double arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2); 
 		internal static global::net.sf.jni4net.jni.MethodId _format12617; 
-		public virtual java.lang.String format(double arg0) 
+		public virtual global::java.lang.String format(double arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _format12617, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.NumberFormat._format12617, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.NumberFormat.staticClass, _format12617, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._format12617, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _format12618; 
-		public override java.lang.StringBuffer format(java.lang.Object arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2) 
+		public override global::java.lang.StringBuffer format(java.lang.Object arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.StringBuffer>(@__env, @__env.CallObjectMethodPtr(this, _format12618, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.StringBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.NumberFormat._format12618, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.StringBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.NumberFormat.staticClass, _format12618, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.StringBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._format12618, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _format12619; 
-		public abstract java.lang.StringBuffer format(long arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2); 
+		public abstract global::java.lang.StringBuffer format(long arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2); 
 		internal static global::net.sf.jni4net.jni.MethodId _format12620; 
-		public virtual java.lang.String format(long arg0) 
+		public virtual global::java.lang.String format(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _format12620, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.NumberFormat._format12620, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.NumberFormat.staticClass, _format12620, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._format12620, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getInstance12621; 
-		public static java.text.NumberFormat getInstance() 
+		public static global::java.text.NumberFormat getInstance() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, _getInstance12621)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getInstance12621)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getInstance12622; 
-		public static java.text.NumberFormat getInstance(java.util.Locale arg0) 
+		public static global::java.text.NumberFormat getInstance(java.util.Locale arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, _getInstance12622, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getInstance12622, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _parse12623; 
-		public virtual java.lang.Number parse(java.lang.String arg0) 
+		public virtual global::java.lang.Number parse(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Number>(@__env, @__env.CallObjectMethodPtr(this, _parse12623, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Number>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.NumberFormat._parse12623, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Number>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.NumberFormat.staticClass, _parse12623, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Number>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._parse12623, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _parse12624; 
-		public abstract java.lang.Number parse(java.lang.String arg0, java.text.ParsePosition arg1); 
+		public abstract global::java.lang.Number parse(java.lang.String arg0, java.text.ParsePosition arg1); 
 		internal static global::net.sf.jni4net.jni.MethodId _getAvailableLocales12625; 
-		public static java.util.Locale[] getAvailableLocales() 
+		public static global::java.util.Locale[] getAvailableLocales() 
 		{ 
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, _getAvailableLocales12625)); 
+			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getAvailableLocales12625)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _parseObject12626; 
-		public sealed override java.lang.Object parseObject(java.lang.String arg0, java.text.ParsePosition arg1) 
+		public sealed override global::java.lang.Object parseObject(java.lang.String arg0, java.text.ParsePosition arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, _parseObject12626, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.NumberFormat._parseObject12626, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.NumberFormat.staticClass, _parseObject12626, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._parseObject12626, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getRoundingMode12627; 
-		public virtual java.math.RoundingMode getRoundingMode() 
+		public virtual global::java.math.RoundingMode getRoundingMode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.RoundingMode>(@__env, @__env.CallObjectMethodPtr(this, _getRoundingMode12627)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.RoundingMode>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.NumberFormat._getRoundingMode12627)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.RoundingMode>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.NumberFormat.staticClass, _getRoundingMode12627)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.RoundingMode>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getRoundingMode12627)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isParseIntegerOnly12628; 
 		public virtual bool isParseIntegerOnly() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				return @__env.CallBooleanMethod(this, _isParseIntegerOnly12628); 
+				return @__env.CallBooleanMethod(this, global::java.text.NumberFormat._isParseIntegerOnly12628); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.text.NumberFormat.staticClass, _isParseIntegerOnly12628); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._isParseIntegerOnly12628); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setParseIntegerOnly12629; 
 		public virtual void setParseIntegerOnly(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				@__env.CallVoidMethod(this, _setParseIntegerOnly12629, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.text.NumberFormat._setParseIntegerOnly12629, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.text.NumberFormat.staticClass, _setParseIntegerOnly12629, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._setParseIntegerOnly12629, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getNumberInstance12630; 
-		public static java.text.NumberFormat getNumberInstance(java.util.Locale arg0) 
+		public static global::java.text.NumberFormat getNumberInstance(java.util.Locale arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, _getNumberInstance12630, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getNumberInstance12630, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getNumberInstance12631; 
-		public static java.text.NumberFormat getNumberInstance() 
+		public static global::java.text.NumberFormat getNumberInstance() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, _getNumberInstance12631)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getNumberInstance12631)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getIntegerInstance12632; 
-		public static java.text.NumberFormat getIntegerInstance(java.util.Locale arg0) 
+		public static global::java.text.NumberFormat getIntegerInstance(java.util.Locale arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, _getIntegerInstance12632, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getIntegerInstance12632, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getIntegerInstance12633; 
-		public static java.text.NumberFormat getIntegerInstance() 
+		public static global::java.text.NumberFormat getIntegerInstance() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, _getIntegerInstance12633)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getIntegerInstance12633)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCurrencyInstance12634; 
-		public static java.text.NumberFormat getCurrencyInstance(java.util.Locale arg0) 
+		public static global::java.text.NumberFormat getCurrencyInstance(java.util.Locale arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, _getCurrencyInstance12634, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getCurrencyInstance12634, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCurrencyInstance12635; 
-		public static java.text.NumberFormat getCurrencyInstance() 
+		public static global::java.text.NumberFormat getCurrencyInstance() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, _getCurrencyInstance12635)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getCurrencyInstance12635)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getPercentInstance12636; 
-		public static java.text.NumberFormat getPercentInstance(java.util.Locale arg0) 
+		public static global::java.text.NumberFormat getPercentInstance(java.util.Locale arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, _getPercentInstance12636, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getPercentInstance12636, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getPercentInstance12637; 
-		public static java.text.NumberFormat getPercentInstance() 
+		public static global::java.text.NumberFormat getPercentInstance() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, _getPercentInstance12637)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallStaticObjectMethodPtr(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getPercentInstance12637)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isGroupingUsed12638; 
 		public virtual bool isGroupingUsed() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				return @__env.CallBooleanMethod(this, _isGroupingUsed12638); 
+				return @__env.CallBooleanMethod(this, global::java.text.NumberFormat._isGroupingUsed12638); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.text.NumberFormat.staticClass, _isGroupingUsed12638); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._isGroupingUsed12638); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setGroupingUsed12639; 
 		public virtual void setGroupingUsed(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				@__env.CallVoidMethod(this, _setGroupingUsed12639, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.text.NumberFormat._setGroupingUsed12639, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.text.NumberFormat.staticClass, _setGroupingUsed12639, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._setGroupingUsed12639, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getMaximumIntegerDigits12640; 
 		public virtual int getMaximumIntegerDigits() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				return @__env.CallIntMethod(this, _getMaximumIntegerDigits12640); 
+				return @__env.CallIntMethod(this, global::java.text.NumberFormat._getMaximumIntegerDigits12640); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.text.NumberFormat.staticClass, _getMaximumIntegerDigits12640); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getMaximumIntegerDigits12640); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setMaximumIntegerDigits12641; 
 		public virtual void setMaximumIntegerDigits(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				@__env.CallVoidMethod(this, _setMaximumIntegerDigits12641, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.text.NumberFormat._setMaximumIntegerDigits12641, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.text.NumberFormat.staticClass, _setMaximumIntegerDigits12641, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._setMaximumIntegerDigits12641, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getMinimumIntegerDigits12642; 
 		public virtual int getMinimumIntegerDigits() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				return @__env.CallIntMethod(this, _getMinimumIntegerDigits12642); 
+				return @__env.CallIntMethod(this, global::java.text.NumberFormat._getMinimumIntegerDigits12642); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.text.NumberFormat.staticClass, _getMinimumIntegerDigits12642); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getMinimumIntegerDigits12642); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setMinimumIntegerDigits12643; 
 		public virtual void setMinimumIntegerDigits(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				@__env.CallVoidMethod(this, _setMinimumIntegerDigits12643, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.text.NumberFormat._setMinimumIntegerDigits12643, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.text.NumberFormat.staticClass, _setMinimumIntegerDigits12643, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._setMinimumIntegerDigits12643, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getMaximumFractionDigits12644; 
 		public virtual int getMaximumFractionDigits() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				return @__env.CallIntMethod(this, _getMaximumFractionDigits12644); 
+				return @__env.CallIntMethod(this, global::java.text.NumberFormat._getMaximumFractionDigits12644); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.text.NumberFormat.staticClass, _getMaximumFractionDigits12644); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getMaximumFractionDigits12644); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setMaximumFractionDigits12645; 
 		public virtual void setMaximumFractionDigits(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				@__env.CallVoidMethod(this, _setMaximumFractionDigits12645, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.text.NumberFormat._setMaximumFractionDigits12645, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.text.NumberFormat.staticClass, _setMaximumFractionDigits12645, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._setMaximumFractionDigits12645, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getMinimumFractionDigits12646; 
 		public virtual int getMinimumFractionDigits() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				return @__env.CallIntMethod(this, _getMinimumFractionDigits12646); 
+				return @__env.CallIntMethod(this, global::java.text.NumberFormat._getMinimumFractionDigits12646); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.text.NumberFormat.staticClass, _getMinimumFractionDigits12646); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getMinimumFractionDigits12646); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setMinimumFractionDigits12647; 
 		public virtual void setMinimumFractionDigits(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				@__env.CallVoidMethod(this, _setMinimumFractionDigits12647, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.text.NumberFormat._setMinimumFractionDigits12647, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.text.NumberFormat.staticClass, _setMinimumFractionDigits12647, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._setMinimumFractionDigits12647, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCurrency12648; 
-		public virtual java.util.Currency getCurrency() 
+		public virtual global::java.util.Currency getCurrency() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Currency>(@__env, @__env.CallObjectMethodPtr(this, _getCurrency12648)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Currency>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.NumberFormat._getCurrency12648)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Currency>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.text.NumberFormat.staticClass, _getCurrency12648)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Currency>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._getCurrency12648)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setCurrency12649; 
 		public virtual void setCurrency(java.util.Currency arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				@__env.CallVoidMethod(this, _setCurrency12649, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.text.NumberFormat._setCurrency12649, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.text.NumberFormat.staticClass, _setCurrency12649, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._setCurrency12649, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setRoundingMode12650; 
 		public virtual void setRoundingMode(java.math.RoundingMode arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.text.NumberFormat)) 
-				@__env.CallVoidMethod(this, _setRoundingMode12650, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::java.text.NumberFormat._setRoundingMode12650, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.text.NumberFormat.staticClass, _setRoundingMode12650, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._setRoundingMode12650, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _NumberFormat12651; 
 		protected NumberFormat()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.text.NumberFormat.staticClass, _NumberFormat12651, this); 
+			@__env.NewObject(java.text.NumberFormat.staticClass, global::java.text.NumberFormat._NumberFormat12651, this); 
 		} 
 		public static int INTEGER_FIELD
 		{ 

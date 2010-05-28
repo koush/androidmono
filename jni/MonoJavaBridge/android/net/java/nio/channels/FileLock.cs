@@ -6,57 +6,57 @@ namespace java.nio.channels
 		internal static global::java.lang.Class staticClass; 
 		static FileLock() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.nio.channels.FileLock), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.nio.channels.FileLock), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected FileLock(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString12196; 
-		public sealed override java.lang.String toString() 
+		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.FileLock)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString12196)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.channels.FileLock._toString12196)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.FileLock.staticClass, _toString12196)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._toString12196)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _size12197; 
 		public virtual long size() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.FileLock)) 
-				return @__env.CallLongMethod(this, _size12197); 
+				return @__env.CallLongMethod(this, global::java.nio.channels.FileLock._size12197); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, java.nio.channels.FileLock.staticClass, _size12197); 
+				return @__env.CallNonVirtualLongMethod(this, global::java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._size12197); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _position12198; 
 		public virtual long position() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.FileLock)) 
-				return @__env.CallLongMethod(this, _position12198); 
+				return @__env.CallLongMethod(this, global::java.nio.channels.FileLock._position12198); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, java.nio.channels.FileLock.staticClass, _position12198); 
+				return @__env.CallNonVirtualLongMethod(this, global::java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._position12198); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _release12199; 
 		public abstract void release(); 
 		internal static global::net.sf.jni4net.jni.MethodId _channel12200; 
-		public virtual java.nio.channels.FileChannel channel() 
+		public virtual global::java.nio.channels.FileChannel channel() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.FileLock)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.FileChannel>(@__env, @__env.CallObjectMethodPtr(this, _channel12200)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.FileChannel>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.channels.FileLock._channel12200)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.FileChannel>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.nio.channels.FileLock.staticClass, _channel12200)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.FileChannel>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._channel12200)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isShared12201; 
 		public virtual bool isShared() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.FileLock)) 
-				return @__env.CallBooleanMethod(this, _isShared12201); 
+				return @__env.CallBooleanMethod(this, global::java.nio.channels.FileLock._isShared12201); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.nio.channels.FileLock.staticClass, _isShared12201); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._isShared12201); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isValid12202; 
 		public abstract bool isValid(); 
@@ -65,15 +65,15 @@ namespace java.nio.channels
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.nio.channels.FileLock)) 
-				return @__env.CallBooleanMethod(this, _overlaps12203, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallBooleanMethod(this, global::java.nio.channels.FileLock._overlaps12203, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, java.nio.channels.FileLock.staticClass, _overlaps12203, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._overlaps12203, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _FileLock12204; 
 		protected FileLock(java.nio.channels.FileChannel arg0, long arg1, long arg2, bool arg3)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.nio.channels.FileLock.staticClass, _FileLock12204, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+			@__env.NewObject(java.nio.channels.FileLock.staticClass, global::java.nio.channels.FileLock._FileLock12204, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

@@ -6,7 +6,7 @@ namespace android.view
 		internal static global::java.lang.Class staticClass; 
 		static Window() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.view.Window), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.Window), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected Window(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -23,7 +23,7 @@ namespace android.view
 			bool dispatchTouchEvent(android.view.MotionEvent arg0); 
 			bool dispatchTrackballEvent(android.view.MotionEvent arg0); 
 			bool dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0); 
-			android.view.View onCreatePanelView(int arg0); 
+			global::android.view.View onCreatePanelView(int arg0); 
 			bool onCreatePanelMenu(int arg0, android.view.Menu arg1); 
 			bool onPreparePanel(int arg0, android.view.View arg1, android.view.Menu arg2); 
 			bool onMenuOpened(int arg0, android.view.Menu arg1); 
@@ -46,7 +46,7 @@ namespace android.view
 			internal static global::java.lang.Class staticClass; 
 			static __Callback() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.view.Window.__Callback), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.Window.__Callback), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -63,144 +63,144 @@ namespace android.view
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.view.Window.__Callback)) 
-					@__env.CallVoidMethod(this, _onWindowAttributesChanged8662, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.view.Window.__Callback._onWindowAttributesChanged8662, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.view.Window.__Callback.staticClass, _onWindowAttributesChanged8662, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.__Callback.staticClass, global::android.view.Window.__Callback._onWindowAttributesChanged8662, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _onContentChanged8663; 
 			 void android.view.Window.Callback.onContentChanged() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.view.Window.__Callback)) 
-					@__env.CallVoidMethod(this, _onContentChanged8663); 
+					@__env.CallVoidMethod(this, global::android.view.Window.__Callback._onContentChanged8663); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.view.Window.__Callback.staticClass, _onContentChanged8663); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.__Callback.staticClass, global::android.view.Window.__Callback._onContentChanged8663); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _onWindowFocusChanged8664; 
 			 void android.view.Window.Callback.onWindowFocusChanged(bool arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.view.Window.__Callback)) 
-					@__env.CallVoidMethod(this, _onWindowFocusChanged8664, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.view.Window.__Callback._onWindowFocusChanged8664, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.view.Window.__Callback.staticClass, _onWindowFocusChanged8664, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.__Callback.staticClass, global::android.view.Window.__Callback._onWindowFocusChanged8664, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _onAttachedToWindow8665; 
 			 void android.view.Window.Callback.onAttachedToWindow() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.view.Window.__Callback)) 
-					@__env.CallVoidMethod(this, _onAttachedToWindow8665); 
+					@__env.CallVoidMethod(this, global::android.view.Window.__Callback._onAttachedToWindow8665); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.view.Window.__Callback.staticClass, _onAttachedToWindow8665); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.__Callback.staticClass, global::android.view.Window.__Callback._onAttachedToWindow8665); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _onDetachedFromWindow8666; 
 			 void android.view.Window.Callback.onDetachedFromWindow() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.view.Window.__Callback)) 
-					@__env.CallVoidMethod(this, _onDetachedFromWindow8666); 
+					@__env.CallVoidMethod(this, global::android.view.Window.__Callback._onDetachedFromWindow8666); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.view.Window.__Callback.staticClass, _onDetachedFromWindow8666); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.__Callback.staticClass, global::android.view.Window.__Callback._onDetachedFromWindow8666); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _dispatchKeyEvent8667; 
 			 bool android.view.Window.Callback.dispatchKeyEvent(android.view.KeyEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.view.Window.__Callback)) 
-					return @__env.CallBooleanMethod(this, _dispatchKeyEvent8667, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					return @__env.CallBooleanMethod(this, global::android.view.Window.__Callback._dispatchKeyEvent8667, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.view.Window.__Callback.staticClass, _dispatchKeyEvent8667, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.Window.__Callback.staticClass, global::android.view.Window.__Callback._dispatchKeyEvent8667, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _dispatchTouchEvent8668; 
 			 bool android.view.Window.Callback.dispatchTouchEvent(android.view.MotionEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.view.Window.__Callback)) 
-					return @__env.CallBooleanMethod(this, _dispatchTouchEvent8668, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					return @__env.CallBooleanMethod(this, global::android.view.Window.__Callback._dispatchTouchEvent8668, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.view.Window.__Callback.staticClass, _dispatchTouchEvent8668, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.Window.__Callback.staticClass, global::android.view.Window.__Callback._dispatchTouchEvent8668, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _dispatchTrackballEvent8669; 
 			 bool android.view.Window.Callback.dispatchTrackballEvent(android.view.MotionEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.view.Window.__Callback)) 
-					return @__env.CallBooleanMethod(this, _dispatchTrackballEvent8669, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					return @__env.CallBooleanMethod(this, global::android.view.Window.__Callback._dispatchTrackballEvent8669, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.view.Window.__Callback.staticClass, _dispatchTrackballEvent8669, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.Window.__Callback.staticClass, global::android.view.Window.__Callback._dispatchTrackballEvent8669, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _dispatchPopulateAccessibilityEvent8670; 
 			 bool android.view.Window.Callback.dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.view.Window.__Callback)) 
-					return @__env.CallBooleanMethod(this, _dispatchPopulateAccessibilityEvent8670, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					return @__env.CallBooleanMethod(this, global::android.view.Window.__Callback._dispatchPopulateAccessibilityEvent8670, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.view.Window.__Callback.staticClass, _dispatchPopulateAccessibilityEvent8670, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.Window.__Callback.staticClass, global::android.view.Window.__Callback._dispatchPopulateAccessibilityEvent8670, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _onCreatePanelView8671; 
-			 android.view.View android.view.Window.Callback.onCreatePanelView(int arg0) 
+			 global::android.view.View android.view.Window.Callback.onCreatePanelView(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.view.Window.__Callback)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, _onCreatePanelView8671, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.Window.__Callback._onCreatePanelView8671, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.Window.__Callback.staticClass, _onCreatePanelView8671, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.Window.__Callback.staticClass, global::android.view.Window.__Callback._onCreatePanelView8671, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _onCreatePanelMenu8672; 
 			 bool android.view.Window.Callback.onCreatePanelMenu(int arg0, android.view.Menu arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.view.Window.__Callback)) 
-					return @__env.CallBooleanMethod(this, _onCreatePanelMenu8672, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+					return @__env.CallBooleanMethod(this, global::android.view.Window.__Callback._onCreatePanelMenu8672, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.view.Window.__Callback.staticClass, _onCreatePanelMenu8672, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.Window.__Callback.staticClass, global::android.view.Window.__Callback._onCreatePanelMenu8672, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _onPreparePanel8673; 
 			 bool android.view.Window.Callback.onPreparePanel(int arg0, android.view.View arg1, android.view.Menu arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.view.Window.__Callback)) 
-					return @__env.CallBooleanMethod(this, _onPreparePanel8673, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
+					return @__env.CallBooleanMethod(this, global::android.view.Window.__Callback._onPreparePanel8673, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.view.Window.__Callback.staticClass, _onPreparePanel8673, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.Window.__Callback.staticClass, global::android.view.Window.__Callback._onPreparePanel8673, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _onMenuOpened8674; 
 			 bool android.view.Window.Callback.onMenuOpened(int arg0, android.view.Menu arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.view.Window.__Callback)) 
-					return @__env.CallBooleanMethod(this, _onMenuOpened8674, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+					return @__env.CallBooleanMethod(this, global::android.view.Window.__Callback._onMenuOpened8674, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.view.Window.__Callback.staticClass, _onMenuOpened8674, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.Window.__Callback.staticClass, global::android.view.Window.__Callback._onMenuOpened8674, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _onMenuItemSelected8675; 
 			 bool android.view.Window.Callback.onMenuItemSelected(int arg0, android.view.MenuItem arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.view.Window.__Callback)) 
-					return @__env.CallBooleanMethod(this, _onMenuItemSelected8675, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+					return @__env.CallBooleanMethod(this, global::android.view.Window.__Callback._onMenuItemSelected8675, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.view.Window.__Callback.staticClass, _onMenuItemSelected8675, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.Window.__Callback.staticClass, global::android.view.Window.__Callback._onMenuItemSelected8675, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _onPanelClosed8676; 
 			 void android.view.Window.Callback.onPanelClosed(int arg0, android.view.Menu arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.view.Window.__Callback)) 
-					@__env.CallVoidMethod(this, _onPanelClosed8676, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+					@__env.CallVoidMethod(this, global::android.view.Window.__Callback._onPanelClosed8676, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.view.Window.__Callback.staticClass, _onPanelClosed8676, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.__Callback.staticClass, global::android.view.Window.__Callback._onPanelClosed8676, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _onSearchRequested8677; 
 			 bool android.view.Window.Callback.onSearchRequested() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.view.Window.__Callback)) 
-					return @__env.CallBooleanMethod(this, _onSearchRequested8677); 
+					return @__env.CallBooleanMethod(this, global::android.view.Window.__Callback._onSearchRequested8677); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.view.Window.__Callback.staticClass, _onSearchRequested8677); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.Window.__Callback.staticClass, global::android.view.Window.__Callback._onSearchRequested8677); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -224,22 +224,22 @@ namespace android.view
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getContext8678; 
-		public virtual android.content.Context getContext() 
+		public virtual global::android.content.Context getContext() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Context>(@__env, @__env.CallObjectMethodPtr(this, _getContext8678)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Context>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.Window._getContext8678)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Context>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.Window.staticClass, _getContext8678)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Context>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.Window.staticClass, global::android.view.Window._getContext8678)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getAttributes8679; 
-		public virtual android.view.WindowManager_LayoutParams getAttributes() 
+		public virtual global::android.view.WindowManager_LayoutParams getAttributes() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.WindowManager_LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, _getAttributes8679)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.WindowManager_LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.Window._getAttributes8679)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.WindowManager_LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.Window.staticClass, _getAttributes8679)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.WindowManager_LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.Window.staticClass, global::android.view.Window._getAttributes8679)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onConfigurationChanged8680; 
 		public abstract void onConfigurationChanged(android.content.res.Configuration arg0); 
@@ -248,56 +248,56 @@ namespace android.view
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				@__env.CallVoidMethod(this, _setType8681, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.Window._setType8681, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.Window.staticClass, _setType8681, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.staticClass, global::android.view.Window._setType8681, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setFlags8682; 
 		public virtual void setFlags(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				@__env.CallVoidMethod(this, _setFlags8682, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.view.Window._setFlags8682, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.Window.staticClass, _setFlags8682, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.staticClass, global::android.view.Window._setFlags8682, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _addFlags8683; 
 		public virtual void addFlags(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				@__env.CallVoidMethod(this, _addFlags8683, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.Window._addFlags8683, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.Window.staticClass, _addFlags8683, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.staticClass, global::android.view.Window._addFlags8683, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setCallback8684; 
 		public virtual void setCallback(android.view.Window.Callback arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				@__env.CallVoidMethod(this, _setCallback8684, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.Window._setCallback8684, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.Window.staticClass, _setCallback8684, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.staticClass, global::android.view.Window._setCallback8684, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getWindowManager8685; 
-		public virtual android.view.WindowManager getWindowManager() 
+		public virtual global::android.view.WindowManager getWindowManager() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.WindowManager>(@__env, @__env.CallObjectMethodPtr(this, _getWindowManager8685)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.WindowManager>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.Window._getWindowManager8685)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.WindowManager>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.Window.staticClass, _getWindowManager8685)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.WindowManager>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.Window.staticClass, global::android.view.Window._getWindowManager8685)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCurrentFocus8686; 
-		public abstract android.view.View getCurrentFocus(); 
+		public abstract global::android.view.View getCurrentFocus(); 
 		internal static global::net.sf.jni4net.jni.MethodId _findViewById8687; 
-		public virtual android.view.View findViewById(int arg0) 
+		public virtual global::android.view.View findViewById(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, _findViewById8687, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.Window._findViewById8687, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.Window.staticClass, _findViewById8687, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.Window.staticClass, global::android.view.Window._findViewById8687, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setContentView8688; 
 		public abstract void setContentView(int arg0); 
@@ -318,7 +318,7 @@ namespace android.view
 		internal static global::net.sf.jni4net.jni.MethodId _setFeatureDrawableAlpha8696; 
 		public abstract void setFeatureDrawableAlpha(int arg0, int arg1); 
 		internal static global::net.sf.jni4net.jni.MethodId _getLayoutInflater8697; 
-		public abstract android.view.LayoutInflater getLayoutInflater(); 
+		public abstract global::android.view.LayoutInflater getLayoutInflater(); 
 		internal static global::net.sf.jni4net.jni.MethodId _setTitle8698; 
 		public abstract void setTitle(java.lang.CharSequence arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _setTitleColor8699; 
@@ -328,58 +328,58 @@ namespace android.view
 		internal static global::net.sf.jni4net.jni.MethodId _getVolumeControlStream8701; 
 		public abstract int getVolumeControlStream(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getWindowStyle8702; 
-		public virtual android.content.res.TypedArray getWindowStyle() 
+		public virtual global::android.content.res.TypedArray getWindowStyle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallObjectMethodPtr(this, _getWindowStyle8702)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.Window._getWindowStyle8702)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.Window.staticClass, _getWindowStyle8702)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.TypedArray>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.Window.staticClass, global::android.view.Window._getWindowStyle8702)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setContainer8703; 
 		public virtual void setContainer(android.view.Window arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				@__env.CallVoidMethod(this, _setContainer8703, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.Window._setContainer8703, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.Window.staticClass, _setContainer8703, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.staticClass, global::android.view.Window._setContainer8703, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getContainer8704; 
-		public virtual android.view.Window getContainer() 
+		public virtual global::android.view.Window getContainer() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.Window>(@__env, @__env.CallObjectMethodPtr(this, _getContainer8704)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.Window>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.Window._getContainer8704)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.Window>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.Window.staticClass, _getContainer8704)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.Window>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.Window.staticClass, global::android.view.Window._getContainer8704)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _hasChildren8705; 
 		public virtual bool hasChildren() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				return @__env.CallBooleanMethod(this, _hasChildren8705); 
+				return @__env.CallBooleanMethod(this, global::android.view.Window._hasChildren8705); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.view.Window.staticClass, _hasChildren8705); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.Window.staticClass, global::android.view.Window._hasChildren8705); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setWindowManager8706; 
 		public virtual void setWindowManager(android.view.WindowManager arg0, android.os.IBinder arg1, java.lang.String arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				@__env.CallVoidMethod(this, _setWindowManager8706, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallVoidMethod(this, global::android.view.Window._setWindowManager8706, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.Window.staticClass, _setWindowManager8706, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.staticClass, global::android.view.Window._setWindowManager8706, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCallback8707; 
-		public virtual android.view.Window.Callback getCallback() 
+		public virtual global::android.view.Window.Callback getCallback() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.Window.Callback>(@__env, @__env.CallObjectMethodPtr(this, _getCallback8707)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.Window.Callback>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.Window._getCallback8707)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.Window.Callback>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.Window.staticClass, _getCallback8707)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.Window.Callback>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.Window.staticClass, global::android.view.Window._getCallback8707)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isFloating8708; 
 		public abstract bool isFloating(); 
@@ -388,108 +388,108 @@ namespace android.view
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				@__env.CallVoidMethod(this, _setLayout8709, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.view.Window._setLayout8709, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.Window.staticClass, _setLayout8709, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.staticClass, global::android.view.Window._setLayout8709, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setGravity8710; 
 		public virtual void setGravity(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				@__env.CallVoidMethod(this, _setGravity8710, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.Window._setGravity8710, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.Window.staticClass, _setGravity8710, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.staticClass, global::android.view.Window._setGravity8710, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setFormat8711; 
 		public virtual void setFormat(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				@__env.CallVoidMethod(this, _setFormat8711, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.Window._setFormat8711, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.Window.staticClass, _setFormat8711, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.staticClass, global::android.view.Window._setFormat8711, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setWindowAnimations8712; 
 		public virtual void setWindowAnimations(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				@__env.CallVoidMethod(this, _setWindowAnimations8712, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.Window._setWindowAnimations8712, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.Window.staticClass, _setWindowAnimations8712, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.staticClass, global::android.view.Window._setWindowAnimations8712, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setSoftInputMode8713; 
 		public virtual void setSoftInputMode(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				@__env.CallVoidMethod(this, _setSoftInputMode8713, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.Window._setSoftInputMode8713, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.Window.staticClass, _setSoftInputMode8713, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.staticClass, global::android.view.Window._setSoftInputMode8713, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _clearFlags8714; 
 		public virtual void clearFlags(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				@__env.CallVoidMethod(this, _clearFlags8714, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.Window._clearFlags8714, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.Window.staticClass, _clearFlags8714, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.staticClass, global::android.view.Window._clearFlags8714, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setAttributes8715; 
 		public virtual void setAttributes(android.view.WindowManager_LayoutParams arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				@__env.CallVoidMethod(this, _setAttributes8715, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.Window._setAttributes8715, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.Window.staticClass, _setAttributes8715, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.staticClass, global::android.view.Window._setAttributes8715, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getForcedWindowFlags8716; 
 		protected virtual int getForcedWindowFlags() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				return @__env.CallIntMethod(this, _getForcedWindowFlags8716); 
+				return @__env.CallIntMethod(this, global::android.view.Window._getForcedWindowFlags8716); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.view.Window.staticClass, _getForcedWindowFlags8716); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.Window.staticClass, global::android.view.Window._getForcedWindowFlags8716); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _hasSoftInputMode8717; 
 		protected virtual bool hasSoftInputMode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				return @__env.CallBooleanMethod(this, _hasSoftInputMode8717); 
+				return @__env.CallBooleanMethod(this, global::android.view.Window._hasSoftInputMode8717); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.view.Window.staticClass, _hasSoftInputMode8717); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.Window.staticClass, global::android.view.Window._hasSoftInputMode8717); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _requestFeature8718; 
 		public virtual bool requestFeature(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				return @__env.CallBooleanMethod(this, _requestFeature8718, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.view.Window._requestFeature8718, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.view.Window.staticClass, _requestFeature8718, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.Window.staticClass, global::android.view.Window._requestFeature8718, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _makeActive8719; 
 		public virtual void makeActive() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				@__env.CallVoidMethod(this, _makeActive8719); 
+				@__env.CallVoidMethod(this, global::android.view.Window._makeActive8719); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.Window.staticClass, _makeActive8719); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.staticClass, global::android.view.Window._makeActive8719); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isActive8720; 
 		public virtual bool isActive() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				return @__env.CallBooleanMethod(this, _isActive8720); 
+				return @__env.CallBooleanMethod(this, global::android.view.Window._isActive8720); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.view.Window.staticClass, _isActive8720); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.Window.staticClass, global::android.view.Window._isActive8720); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _openPanel8721; 
 		public abstract void openPanel(int arg0, android.view.KeyEvent arg1); 
@@ -510,9 +510,9 @@ namespace android.view
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				@__env.CallVoidMethod(this, _setBackgroundDrawableResource8728, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.Window._setBackgroundDrawableResource8728, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.Window.staticClass, _setBackgroundDrawableResource8728, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.staticClass, global::android.view.Window._setBackgroundDrawableResource8728, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setBackgroundDrawable8729; 
 		public abstract void setBackgroundDrawable(android.graphics.drawable.Drawable arg0); 
@@ -525,11 +525,11 @@ namespace android.view
 		internal static global::net.sf.jni4net.jni.MethodId _superDispatchTrackballEvent8733; 
 		public abstract bool superDispatchTrackballEvent(android.view.MotionEvent arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _getDecorView8734; 
-		public abstract android.view.View getDecorView(); 
+		public abstract global::android.view.View getDecorView(); 
 		internal static global::net.sf.jni4net.jni.MethodId _peekDecorView8735; 
-		public abstract android.view.View peekDecorView(); 
+		public abstract global::android.view.View peekDecorView(); 
 		internal static global::net.sf.jni4net.jni.MethodId _saveHierarchyState8736; 
-		public abstract android.os.Bundle saveHierarchyState(); 
+		public abstract global::android.os.Bundle saveHierarchyState(); 
 		internal static global::net.sf.jni4net.jni.MethodId _restoreHierarchyState8737; 
 		public abstract void restoreHierarchyState(android.os.Bundle arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _onActive8738; 
@@ -539,27 +539,27 @@ namespace android.view
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				return @__env.CallIntMethod(this, _getFeatures8739); 
+				return @__env.CallIntMethod(this, global::android.view.Window._getFeatures8739); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.view.Window.staticClass, _getFeatures8739); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.Window.staticClass, global::android.view.Window._getFeatures8739); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getLocalFeatures8740; 
 		protected virtual int getLocalFeatures() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				return @__env.CallIntMethod(this, _getLocalFeatures8740); 
+				return @__env.CallIntMethod(this, global::android.view.Window._getLocalFeatures8740); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.view.Window.staticClass, _getLocalFeatures8740); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.Window.staticClass, global::android.view.Window._getLocalFeatures8740); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setDefaultWindowFormat8741; 
 		protected virtual void setDefaultWindowFormat(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.Window)) 
-				@__env.CallVoidMethod(this, _setDefaultWindowFormat8741, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.Window._setDefaultWindowFormat8741, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.Window.staticClass, _setDefaultWindowFormat8741, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.Window.staticClass, global::android.view.Window._setDefaultWindowFormat8741, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setChildDrawable8742; 
 		public abstract void setChildDrawable(int arg0, android.graphics.drawable.Drawable arg1); 
@@ -571,7 +571,7 @@ namespace android.view
 		public Window(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.Window.staticClass, _Window8745, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.view.Window.staticClass, global::android.view.Window._Window8745, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		public static int FEATURE_OPTIONS_PANEL
 		{ 

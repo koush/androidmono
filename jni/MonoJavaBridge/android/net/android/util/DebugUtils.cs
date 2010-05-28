@@ -6,7 +6,7 @@ namespace android.util
 		internal static global::java.lang.Class staticClass; 
 		static DebugUtils() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.util.DebugUtils), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.util.DebugUtils), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -22,13 +22,13 @@ namespace android.util
 		public static bool isObjectSelected(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return @__env.CallStaticBooleanMethod(android.util.DebugUtils.staticClass, _isObjectSelected7532, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+			return @__env.CallStaticBooleanMethod(android.util.DebugUtils.staticClass, global::android.util.DebugUtils._isObjectSelected7532, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _DebugUtils7533; 
 		public DebugUtils()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.util.DebugUtils.staticClass, _DebugUtils7533, this); 
+			@__env.NewObject(android.util.DebugUtils.staticClass, global::android.util.DebugUtils._DebugUtils7533, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

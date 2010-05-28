@@ -6,7 +6,7 @@ namespace android.os
 		internal static global::java.lang.Class staticClass; 
 		static Looper() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.Looper), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.Looper), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,85 +19,85 @@ namespace android.os
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString5628; 
-		public override java.lang.String toString() 
+		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Looper)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString5628)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Looper._toString5628)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Looper.staticClass, _toString5628)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Looper.staticClass, global::android.os.Looper._toString5628)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _loop5629; 
 		public static void loop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Looper.staticClass, _loop5629); 
+			@__env.CallStaticVoidMethod(android.os.Looper.staticClass, global::android.os.Looper._loop5629); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _prepare5630; 
 		public static void prepare() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Looper.staticClass, _prepare5630); 
+			@__env.CallStaticVoidMethod(android.os.Looper.staticClass, global::android.os.Looper._prepare5630); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _dump5631; 
 		public virtual void dump(android.util.Printer arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Looper)) 
-				@__env.CallVoidMethod(this, _dump5631, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.os.Looper._dump5631, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Looper.staticClass, _dump5631, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Looper.staticClass, global::android.os.Looper._dump5631, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getMainLooper5632; 
-		public static android.os.Looper getMainLooper() 
+		public static global::android.os.Looper getMainLooper() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Looper>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Looper.staticClass, _getMainLooper5632)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Looper>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Looper.staticClass, global::android.os.Looper._getMainLooper5632)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _prepareMainLooper5633; 
 		public static void prepareMainLooper() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.CallStaticVoidMethod(android.os.Looper.staticClass, _prepareMainLooper5633); 
+			@__env.CallStaticVoidMethod(android.os.Looper.staticClass, global::android.os.Looper._prepareMainLooper5633); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _myLooper5634; 
-		public static android.os.Looper myLooper() 
+		public static global::android.os.Looper myLooper() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Looper>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Looper.staticClass, _myLooper5634)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Looper>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Looper.staticClass, global::android.os.Looper._myLooper5634)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setMessageLogging5635; 
 		public virtual void setMessageLogging(android.util.Printer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Looper)) 
-				@__env.CallVoidMethod(this, _setMessageLogging5635, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.os.Looper._setMessageLogging5635, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Looper.staticClass, _setMessageLogging5635, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Looper.staticClass, global::android.os.Looper._setMessageLogging5635, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _myQueue5636; 
-		public static android.os.MessageQueue myQueue() 
+		public static global::android.os.MessageQueue myQueue() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.MessageQueue>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Looper.staticClass, _myQueue5636)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.MessageQueue>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Looper.staticClass, global::android.os.Looper._myQueue5636)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _quit5637; 
 		public virtual void quit() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Looper)) 
-				@__env.CallVoidMethod(this, _quit5637); 
+				@__env.CallVoidMethod(this, global::android.os.Looper._quit5637); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.Looper.staticClass, _quit5637); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Looper.staticClass, global::android.os.Looper._quit5637); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getThread5638; 
-		public virtual java.lang.Thread getThread() 
+		public virtual global::java.lang.Thread getThread() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.Looper)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Thread>(@__env, @__env.CallObjectMethodPtr(this, _getThread5638)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Thread>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Looper._getThread5638)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Thread>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.Looper.staticClass, _getThread5638)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Thread>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Looper.staticClass, global::android.os.Looper._getThread5638)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

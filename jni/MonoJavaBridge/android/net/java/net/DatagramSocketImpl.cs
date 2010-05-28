@@ -6,13 +6,13 @@ namespace java.net
 		internal static global::java.lang.Class staticClass; 
 		static DatagramSocketImpl() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.net.DatagramSocketImpl), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.net.DatagramSocketImpl), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected DatagramSocketImpl(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getOption11715; 
-		public abstract java.lang.Object getOption(int arg0); 
+		public abstract global::java.lang.Object getOption(int arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _setOption11716; 
 		public abstract void setOption(int arg0, java.lang.Object arg1); 
 		internal static global::net.sf.jni4net.jni.MethodId _join11717; 
@@ -30,20 +30,20 @@ namespace java.net
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocketImpl)) 
-				@__env.CallVoidMethod(this, _connect11722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::java.net.DatagramSocketImpl._connect11722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.net.DatagramSocketImpl.staticClass, _connect11722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramSocketImpl.staticClass, global::java.net.DatagramSocketImpl._connect11722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _peekData11723; 
 		protected abstract int peekData(java.net.DatagramPacket arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _getFileDescriptor11724; 
-		protected virtual java.io.FileDescriptor getFileDescriptor() 
+		protected virtual global::java.io.FileDescriptor getFileDescriptor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocketImpl)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, _getFileDescriptor11724)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.DatagramSocketImpl._getFileDescriptor11724)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.net.DatagramSocketImpl.staticClass, _getFileDescriptor11724)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.DatagramSocketImpl.staticClass, global::java.net.DatagramSocketImpl._getFileDescriptor11724)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _bind11725; 
 		protected abstract void bind(int arg0, java.net.InetAddress arg1); 
@@ -52,18 +52,18 @@ namespace java.net
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocketImpl)) 
-				@__env.CallVoidMethod(this, _disconnect11726); 
+				@__env.CallVoidMethod(this, global::java.net.DatagramSocketImpl._disconnect11726); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.net.DatagramSocketImpl.staticClass, _disconnect11726); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramSocketImpl.staticClass, global::java.net.DatagramSocketImpl._disconnect11726); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getLocalPort11727; 
 		protected virtual int getLocalPort() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.net.DatagramSocketImpl)) 
-				return @__env.CallIntMethod(this, _getLocalPort11727); 
+				return @__env.CallIntMethod(this, global::java.net.DatagramSocketImpl._getLocalPort11727); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, java.net.DatagramSocketImpl.staticClass, _getLocalPort11727); 
+				return @__env.CallNonVirtualIntMethod(this, global::java.net.DatagramSocketImpl.staticClass, global::java.net.DatagramSocketImpl._getLocalPort11727); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _receive11728; 
 		protected abstract void receive(java.net.DatagramPacket arg0); 
@@ -85,7 +85,7 @@ namespace java.net
 		public DatagramSocketImpl()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.net.DatagramSocketImpl.staticClass, _DatagramSocketImpl11736, this); 
+			@__env.NewObject(java.net.DatagramSocketImpl.staticClass, global::java.net.DatagramSocketImpl._DatagramSocketImpl11736, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

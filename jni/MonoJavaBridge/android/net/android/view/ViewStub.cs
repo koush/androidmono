@@ -6,7 +6,7 @@ namespace android.view
 		internal new static global::java.lang.Class staticClass; 
 		static ViewStub() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.view.ViewStub), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.ViewStub), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -38,7 +38,7 @@ namespace android.view
 			internal static global::java.lang.Class staticClass; 
 			static __OnInflateListener() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.view.ViewStub.__OnInflateListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.ViewStub.__OnInflateListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -55,9 +55,9 @@ namespace android.view
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.view.ViewStub.__OnInflateListener)) 
-					@__env.CallVoidMethod(this, _onInflate8631, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.view.ViewStub.__OnInflateListener._onInflate8631, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.view.ViewStub.__OnInflateListener.staticClass, _onInflate8631, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.__OnInflateListener.staticClass, global::android.view.ViewStub.__OnInflateListener._onInflate8631, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -66,100 +66,100 @@ namespace android.view
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _inflate8632; 
-		public android.view.View inflate() 
+		public global::android.view.View inflate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.ViewStub)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, _inflate8632)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewStub._inflate8632)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.view.ViewStub.staticClass, _inflate8632)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._inflate8632)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _draw8633; 
 		public sealed override void draw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.ViewStub)) 
-				@__env.CallVoidMethod(this, _draw8633, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.ViewStub._draw8633, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.ViewStub.staticClass, _draw8633, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._draw8633, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setVisibility8634; 
 		public sealed override void setVisibility(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.ViewStub)) 
-				@__env.CallVoidMethod(this, _setVisibility8634, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.ViewStub._setVisibility8634, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.ViewStub.staticClass, _setVisibility8634, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setVisibility8634, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setLayoutResource8635; 
 		public void setLayoutResource(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.ViewStub)) 
-				@__env.CallVoidMethod(this, _setLayoutResource8635, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.ViewStub._setLayoutResource8635, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.ViewStub.staticClass, _setLayoutResource8635, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setLayoutResource8635, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getLayoutResource8636; 
 		public int getLayoutResource() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.ViewStub)) 
-				return @__env.CallIntMethod(this, _getLayoutResource8636); 
+				return @__env.CallIntMethod(this, global::android.view.ViewStub._getLayoutResource8636); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.view.ViewStub.staticClass, _getLayoutResource8636); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._getLayoutResource8636); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getInflatedId8637; 
 		public int getInflatedId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.ViewStub)) 
-				return @__env.CallIntMethod(this, _getInflatedId8637); 
+				return @__env.CallIntMethod(this, global::android.view.ViewStub._getInflatedId8637); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.view.ViewStub.staticClass, _getInflatedId8637); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._getInflatedId8637); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setInflatedId8638; 
 		public void setInflatedId(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.ViewStub)) 
-				@__env.CallVoidMethod(this, _setInflatedId8638, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.ViewStub._setInflatedId8638, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.ViewStub.staticClass, _setInflatedId8638, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setInflatedId8638, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setOnInflateListener8639; 
 		public void setOnInflateListener(android.view.ViewStub.OnInflateListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.ViewStub)) 
-				@__env.CallVoidMethod(this, _setOnInflateListener8639, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.view.ViewStub._setOnInflateListener8639, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.view.ViewStub.staticClass, _setOnInflateListener8639, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setOnInflateListener8639, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ViewStub8640; 
 		public ViewStub(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.ViewStub.staticClass, _ViewStub8640, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.view.ViewStub.staticClass, global::android.view.ViewStub._ViewStub8640, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ViewStub8641; 
 		public ViewStub(android.content.Context arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.ViewStub.staticClass, _ViewStub8641, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(android.view.ViewStub.staticClass, global::android.view.ViewStub._ViewStub8641, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ViewStub8642; 
 		public ViewStub(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.ViewStub.staticClass, _ViewStub8642, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.view.ViewStub.staticClass, global::android.view.ViewStub._ViewStub8642, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ViewStub8643; 
 		public ViewStub(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.view.ViewStub.staticClass, _ViewStub8643, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.view.ViewStub.staticClass, global::android.view.ViewStub._ViewStub8643, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

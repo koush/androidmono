@@ -6,7 +6,7 @@ namespace java.security
 		internal static global::java.lang.Class staticClass; 
 		static Permission() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(java.security.Permission), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::java.security.Permission), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected Permission(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -16,50 +16,50 @@ namespace java.security
 		internal static global::net.sf.jni4net.jni.MethodId _equals12441; 
 		public abstract new bool equals(java.lang.Object arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _toString12442; 
-		public override java.lang.String toString() 
+		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.Permission)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString12442)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.Permission._toString12442)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.security.Permission.staticClass, _toString12442)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.Permission.staticClass, global::java.security.Permission._toString12442)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getName12443; 
-		public virtual java.lang.String getName() 
+		public virtual global::java.lang.String getName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.Permission)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getName12443)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.Permission._getName12443)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.security.Permission.staticClass, _getName12443)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.Permission.staticClass, global::java.security.Permission._getName12443)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _implies12444; 
 		public abstract bool implies(java.security.Permission arg0); 
 		internal static global::net.sf.jni4net.jni.MethodId _getActions12445; 
-		public abstract java.lang.String getActions(); 
+		public abstract global::java.lang.String getActions(); 
 		internal static global::net.sf.jni4net.jni.MethodId _newPermissionCollection12446; 
-		public virtual java.security.PermissionCollection newPermissionCollection() 
+		public virtual global::java.security.PermissionCollection newPermissionCollection() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.Permission)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.PermissionCollection>(@__env, @__env.CallObjectMethodPtr(this, _newPermissionCollection12446)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.PermissionCollection>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.Permission._newPermissionCollection12446)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.PermissionCollection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, java.security.Permission.staticClass, _newPermissionCollection12446)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.PermissionCollection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.Permission.staticClass, global::java.security.Permission._newPermissionCollection12446)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _checkGuard12447; 
 		public virtual void checkGuard(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(java.security.Permission)) 
-				@__env.CallVoidMethod(this, _checkGuard12447, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::java.security.Permission._checkGuard12447, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, java.security.Permission.staticClass, _checkGuard12447, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::java.security.Permission.staticClass, global::java.security.Permission._checkGuard12447, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _Permission12448; 
 		public Permission(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(java.security.Permission.staticClass, _Permission12448, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(java.security.Permission.staticClass, global::java.security.Permission._Permission12448, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

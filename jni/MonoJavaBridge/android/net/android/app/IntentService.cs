@@ -6,64 +6,64 @@ namespace android.app
 		internal new static global::java.lang.Class staticClass; 
 		static IntentService() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.app.IntentService), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.app.IntentService), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected IntentService(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onBind603; 
-		public override android.os.IBinder onBind(android.content.Intent arg0) 
+		public override global::android.os.IBinder onBind(android.content.Intent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.IntentService)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, _onBind603, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.IntentService._onBind603, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.app.IntentService.staticClass, _onBind603, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._onBind603, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onCreate604; 
 		public override void onCreate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.IntentService)) 
-				@__env.CallVoidMethod(this, _onCreate604); 
+				@__env.CallVoidMethod(this, global::android.app.IntentService._onCreate604); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.IntentService.staticClass, _onCreate604); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._onCreate604); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onStart605; 
 		public override void onStart(android.content.Intent arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.IntentService)) 
-				@__env.CallVoidMethod(this, _onStart605, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.app.IntentService._onStart605, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.IntentService.staticClass, _onStart605, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._onStart605, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onStartCommand606; 
 		public override int onStartCommand(android.content.Intent arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.IntentService)) 
-				return @__env.CallIntMethod(this, _onStartCommand606, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallIntMethod(this, global::android.app.IntentService._onStartCommand606, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.app.IntentService.staticClass, _onStartCommand606, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._onStartCommand606, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onDestroy607; 
 		public override void onDestroy() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.IntentService)) 
-				@__env.CallVoidMethod(this, _onDestroy607); 
+				@__env.CallVoidMethod(this, global::android.app.IntentService._onDestroy607); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.IntentService.staticClass, _onDestroy607); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._onDestroy607); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setIntentRedelivery608; 
 		public virtual void setIntentRedelivery(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.app.IntentService)) 
-				@__env.CallVoidMethod(this, _setIntentRedelivery608, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.app.IntentService._setIntentRedelivery608, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.app.IntentService.staticClass, _setIntentRedelivery608, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._setIntentRedelivery608, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onHandleIntent609; 
 		protected abstract void onHandleIntent(android.content.Intent arg0); 
@@ -71,7 +71,7 @@ namespace android.app
 		public IntentService(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.app.IntentService.staticClass, _IntentService610, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.app.IntentService.staticClass, global::android.app.IntentService._IntentService610, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

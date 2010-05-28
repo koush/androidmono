@@ -241,7 +241,7 @@ namespace MonoDroid
                 WriteLine("static {0}()", type.SimpleName);
                 WriteLine("{");
                 myIndent++;
-                WriteLine("global::net.sf.jni4net.utils.Registry.RegisterType(typeof({0}), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);", type.Name);
+                WriteLine("global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::{0}), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv);", type.Name);
                 myIndent--;
                 WriteLine("}");
                 
@@ -372,7 +372,7 @@ namespace MonoDroid
             Write(field.Scope);
             if (field.Static)
                 Write("static");
-            Write(field.Type);
+            Write("{0}{1}", ObjectModel.IsSystemType(field.Type) ? string.Empty : "global::", field.Type);
             Write(field.Name, false);
             WriteLine();
             WriteLine("{");
@@ -412,7 +412,7 @@ namespace MonoDroid
             else
             {
                 myIndent++;
-                WriteLine("return default({0});", field.Type);
+                WriteLine("return default({0}{1});", ObjectModel.IsSystemType(field.Type) ? string.Empty : "global::", field.Type);
                 myIndent--;
             }
             WriteLine("}");
@@ -676,7 +676,7 @@ namespace MonoDroid
             if (method.IsNew && (method.Name != "clone" || !myJniTypes.ContainsKey(method.Type.Parent)))
                 Write("new");
             if (method.Return != null)
-                Write(method.Return);
+                Write("{0}{1}", ObjectModel.IsSystemType(method.Return) ? string.Empty : "global::", method.Return);
             //if (method.PropertyType == null)
             if (true)
             {
@@ -705,7 +705,7 @@ namespace MonoDroid
                         parBuilder.AppendFormat("{0}.staticClass, ", method.Type.Name);
                     else
                         parBuilder.Append("this, ");
-                    parBuilder.Append(methodId);
+                    parBuilder.AppendFormat("global::{0}.{1}", method.Type.Name, methodId);
                     if (method.IsConstructor)
                         parBuilder.Append(", this");
                     for (int i = 0; i < method.Parameters.Count; i++)
@@ -728,7 +728,7 @@ namespace MonoDroid
                         myIndent--;
                         WriteLine("else");
                         myIndent++;
-                        WriteLine(statement, "NonVirtual", string.Format(parBuilder.ToString().Replace("this, ", "this, {0}.staticClass, "), method.Type.Name));
+                        WriteLine(statement, "NonVirtual", string.Format(parBuilder.ToString().Replace("this, ", "this, global::{0}.staticClass, "), method.Type.Name));
                         myIndent--;
                     }
                     myIndent--;

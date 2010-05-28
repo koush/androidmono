@@ -6,7 +6,7 @@ namespace android.os
 		internal new static global::java.lang.Class staticClass; 
 		static HandlerThread() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.HandlerThread), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.HandlerThread), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,57 +23,57 @@ namespace android.os
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.HandlerThread)) 
-				@__env.CallVoidMethod(this, _run5611); 
+				@__env.CallVoidMethod(this, global::android.os.HandlerThread._run5611); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.HandlerThread.staticClass, _run5611); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.HandlerThread.staticClass, global::android.os.HandlerThread._run5611); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _quit5612; 
 		public virtual bool quit() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.HandlerThread)) 
-				return @__env.CallBooleanMethod(this, _quit5612); 
+				return @__env.CallBooleanMethod(this, global::android.os.HandlerThread._quit5612); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.os.HandlerThread.staticClass, _quit5612); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.HandlerThread.staticClass, global::android.os.HandlerThread._quit5612); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getLooper5613; 
-		public virtual android.os.Looper getLooper() 
+		public virtual global::android.os.Looper getLooper() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.HandlerThread)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Looper>(@__env, @__env.CallObjectMethodPtr(this, _getLooper5613)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Looper>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.HandlerThread._getLooper5613)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Looper>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.HandlerThread.staticClass, _getLooper5613)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Looper>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.HandlerThread.staticClass, global::android.os.HandlerThread._getLooper5613)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onLooperPrepared5614; 
 		protected virtual void onLooperPrepared() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.HandlerThread)) 
-				@__env.CallVoidMethod(this, _onLooperPrepared5614); 
+				@__env.CallVoidMethod(this, global::android.os.HandlerThread._onLooperPrepared5614); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.os.HandlerThread.staticClass, _onLooperPrepared5614); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.HandlerThread.staticClass, global::android.os.HandlerThread._onLooperPrepared5614); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getThreadId5615; 
 		public virtual int getThreadId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.HandlerThread)) 
-				return @__env.CallIntMethod(this, _getThreadId5615); 
+				return @__env.CallIntMethod(this, global::android.os.HandlerThread._getThreadId5615); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.os.HandlerThread.staticClass, _getThreadId5615); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.os.HandlerThread.staticClass, global::android.os.HandlerThread._getThreadId5615); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _HandlerThread5616; 
 		public HandlerThread(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.os.HandlerThread.staticClass, _HandlerThread5616, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.os.HandlerThread.staticClass, global::android.os.HandlerThread._HandlerThread5616, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _HandlerThread5617; 
 		public HandlerThread(java.lang.String arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.os.HandlerThread.staticClass, _HandlerThread5617, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+			@__env.NewObject(android.os.HandlerThread.staticClass, global::android.os.HandlerThread._HandlerThread5617, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

@@ -6,7 +6,7 @@ namespace android.widget
 		internal new static global::java.lang.Class staticClass; 
 		static AbsListView() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.AbsListView), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.AbsListView), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected AbsListView(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -17,7 +17,7 @@ namespace android.widget
 			internal new static global::java.lang.Class staticClass; 
 			static LayoutParams() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.AbsListView.LayoutParams), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.AbsListView.LayoutParams), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -33,25 +33,25 @@ namespace android.widget
 			public LayoutParams(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.widget.AbsListView.LayoutParams.staticClass, _LayoutParams9655, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.NewObject(android.widget.AbsListView.LayoutParams.staticClass, global::android.widget.AbsListView.LayoutParams._LayoutParams9655, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams9656; 
 			public LayoutParams(int arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.widget.AbsListView.LayoutParams.staticClass, _LayoutParams9656, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.NewObject(android.widget.AbsListView.LayoutParams.staticClass, global::android.widget.AbsListView.LayoutParams._LayoutParams9656, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams9657; 
 			public LayoutParams(int arg0, int arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.widget.AbsListView.LayoutParams.staticClass, _LayoutParams9657, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.NewObject(android.widget.AbsListView.LayoutParams.staticClass, global::android.widget.AbsListView.LayoutParams._LayoutParams9657, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _LayoutParams9658; 
 			public LayoutParams(android.view.ViewGroup.LayoutParams arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.widget.AbsListView.LayoutParams.staticClass, _LayoutParams9658, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.NewObject(android.widget.AbsListView.LayoutParams.staticClass, global::android.widget.AbsListView.LayoutParams._LayoutParams9658, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -83,7 +83,7 @@ namespace android.widget
 			internal static global::java.lang.Class staticClass; 
 			static __OnScrollListener() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.AbsListView.__OnScrollListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.AbsListView.__OnScrollListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -100,18 +100,18 @@ namespace android.widget
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.widget.AbsListView.__OnScrollListener)) 
-					@__env.CallVoidMethod(this, _onScroll9659, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+					@__env.CallVoidMethod(this, global::android.widget.AbsListView.__OnScrollListener._onScroll9659, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.__OnScrollListener.staticClass, _onScroll9659, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.__OnScrollListener.staticClass, global::android.widget.AbsListView.__OnScrollListener._onScroll9659, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _onScrollStateChanged9660; 
 			 void android.widget.AbsListView.OnScrollListener.onScrollStateChanged(android.widget.AbsListView arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.widget.AbsListView.__OnScrollListener)) 
-					@__env.CallVoidMethod(this, _onScrollStateChanged9660, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.widget.AbsListView.__OnScrollListener._onScrollStateChanged9660, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.__OnScrollListener.staticClass, _onScrollStateChanged9660, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.__OnScrollListener.staticClass, global::android.widget.AbsListView.__OnScrollListener._onScrollStateChanged9660, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -165,7 +165,7 @@ namespace android.widget
 			internal static global::java.lang.Class staticClass; 
 			static __RecyclerListener() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.AbsListView.__RecyclerListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.AbsListView.__RecyclerListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -182,9 +182,9 @@ namespace android.widget
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.widget.AbsListView.__RecyclerListener)) 
-					@__env.CallVoidMethod(this, _onMovedToScrapHeap9661, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.widget.AbsListView.__RecyclerListener._onMovedToScrapHeap9661, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.__RecyclerListener.staticClass, _onMovedToScrapHeap9661, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.__RecyclerListener.staticClass, global::android.widget.AbsListView.__RecyclerListener._onMovedToScrapHeap9661, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -197,719 +197,719 @@ namespace android.widget
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _draw9662, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._draw9662, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _draw9662, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._draw9662, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onRestoreInstanceState9663; 
 		public virtual new void onRestoreInstanceState(android.os.Parcelable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _onRestoreInstanceState9663, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._onRestoreInstanceState9663, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _onRestoreInstanceState9663, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onRestoreInstanceState9663, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onSaveInstanceState9664; 
-		public virtual new android.os.Parcelable onSaveInstanceState() 
+		public virtual new global::android.os.Parcelable onSaveInstanceState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, _onSaveInstanceState9664)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AbsListView._onSaveInstanceState9664)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.AbsListView.staticClass, _onSaveInstanceState9664)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onSaveInstanceState9664)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onKeyDown9665; 
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallBooleanMethod(this, _onKeyDown9665, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallBooleanMethod(this, global::android.widget.AbsListView._onKeyDown9665, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.AbsListView.staticClass, _onKeyDown9665, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onKeyDown9665, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onKeyUp9666; 
 		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallBooleanMethod(this, _onKeyUp9666, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallBooleanMethod(this, global::android.widget.AbsListView._onKeyUp9666, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.AbsListView.staticClass, _onKeyUp9666, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onKeyUp9666, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onTouchEvent9667; 
 		public override bool onTouchEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallBooleanMethod(this, _onTouchEvent9667, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.widget.AbsListView._onTouchEvent9667, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.AbsListView.staticClass, _onTouchEvent9667, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onTouchEvent9667, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onWindowFocusChanged9668; 
 		public override void onWindowFocusChanged(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _onWindowFocusChanged9668, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._onWindowFocusChanged9668, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _onWindowFocusChanged9668, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onWindowFocusChanged9668, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onAttachedToWindow9669; 
 		protected override void onAttachedToWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _onAttachedToWindow9669); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._onAttachedToWindow9669); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _onAttachedToWindow9669); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onAttachedToWindow9669); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onDetachedFromWindow9670; 
 		protected override void onDetachedFromWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _onDetachedFromWindow9670); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._onDetachedFromWindow9670); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _onDetachedFromWindow9670); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onDetachedFromWindow9670); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onFocusChanged9671; 
 		protected override void onFocusChanged(bool arg0, int arg1, android.graphics.Rect arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _onFocusChanged9671, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._onFocusChanged9671, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _onFocusChanged9671, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onFocusChanged9671, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _dispatchSetPressed9672; 
 		protected override void dispatchSetPressed(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _dispatchSetPressed9672, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._dispatchSetPressed9672, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _dispatchSetPressed9672, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._dispatchSetPressed9672, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _addTouchables9673; 
 		public override void addTouchables(java.util.ArrayList arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _addTouchables9673, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._addTouchables9673, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _addTouchables9673, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._addTouchables9673, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onCreateInputConnection9674; 
-		public override android.view.inputmethod.InputConnection onCreateInputConnection(android.view.inputmethod.EditorInfo arg0) 
+		public override global::android.view.inputmethod.InputConnection onCreateInputConnection(android.view.inputmethod.EditorInfo arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.inputmethod.InputConnection>(@__env, @__env.CallObjectMethodPtr(this, _onCreateInputConnection9674, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.inputmethod.InputConnection>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AbsListView._onCreateInputConnection9674, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.inputmethod.InputConnection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.AbsListView.staticClass, _onCreateInputConnection9674, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.inputmethod.InputConnection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onCreateInputConnection9674, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _checkInputConnectionProxy9675; 
 		public override bool checkInputConnectionProxy(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallBooleanMethod(this, _checkInputConnectionProxy9675, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.widget.AbsListView._checkInputConnectionProxy9675, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.AbsListView.staticClass, _checkInputConnectionProxy9675, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._checkInputConnectionProxy9675, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getContextMenuInfo9676; 
-		protected override android.view.ContextMenu_ContextMenuInfo getContextMenuInfo() 
+		protected override global::android.view.ContextMenu_ContextMenuInfo getContextMenuInfo() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ContextMenu_ContextMenuInfo>(@__env, @__env.CallObjectMethodPtr(this, _getContextMenuInfo9676)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ContextMenu_ContextMenuInfo>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AbsListView._getContextMenuInfo9676)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ContextMenu_ContextMenuInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.AbsListView.staticClass, _getContextMenuInfo9676)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ContextMenu_ContextMenuInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getContextMenuInfo9676)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onSizeChanged9677; 
 		protected override void onSizeChanged(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _onSizeChanged9677, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._onSizeChanged9677, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _onSizeChanged9677, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onSizeChanged9677, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _dispatchDraw9678; 
 		protected override void dispatchDraw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _dispatchDraw9678, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._dispatchDraw9678, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _dispatchDraw9678, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._dispatchDraw9678, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getFocusedRect9679; 
 		public override void getFocusedRect(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _getFocusedRect9679, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._getFocusedRect9679, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _getFocusedRect9679, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getFocusedRect9679, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getTopFadingEdgeStrength9680; 
 		protected override float getTopFadingEdgeStrength() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallFloatMethod(this, _getTopFadingEdgeStrength9680); 
+				return @__env.CallFloatMethod(this, global::android.widget.AbsListView._getTopFadingEdgeStrength9680); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.widget.AbsListView.staticClass, _getTopFadingEdgeStrength9680); 
+				return @__env.CallNonVirtualFloatMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getTopFadingEdgeStrength9680); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getBottomFadingEdgeStrength9681; 
 		protected override float getBottomFadingEdgeStrength() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallFloatMethod(this, _getBottomFadingEdgeStrength9681); 
+				return @__env.CallFloatMethod(this, global::android.widget.AbsListView._getBottomFadingEdgeStrength9681); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.widget.AbsListView.staticClass, _getBottomFadingEdgeStrength9681); 
+				return @__env.CallNonVirtualFloatMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getBottomFadingEdgeStrength9681); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _computeVerticalScrollRange9682; 
 		protected override int computeVerticalScrollRange() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallIntMethod(this, _computeVerticalScrollRange9682); 
+				return @__env.CallIntMethod(this, global::android.widget.AbsListView._computeVerticalScrollRange9682); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.AbsListView.staticClass, _computeVerticalScrollRange9682); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._computeVerticalScrollRange9682); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _computeVerticalScrollOffset9683; 
 		protected override int computeVerticalScrollOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallIntMethod(this, _computeVerticalScrollOffset9683); 
+				return @__env.CallIntMethod(this, global::android.widget.AbsListView._computeVerticalScrollOffset9683); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.AbsListView.staticClass, _computeVerticalScrollOffset9683); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._computeVerticalScrollOffset9683); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _computeVerticalScrollExtent9684; 
 		protected override int computeVerticalScrollExtent() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallIntMethod(this, _computeVerticalScrollExtent9684); 
+				return @__env.CallIntMethod(this, global::android.widget.AbsListView._computeVerticalScrollExtent9684); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.AbsListView.staticClass, _computeVerticalScrollExtent9684); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._computeVerticalScrollExtent9684); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSolidColor9685; 
 		public override int getSolidColor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallIntMethod(this, _getSolidColor9685); 
+				return @__env.CallIntMethod(this, global::android.widget.AbsListView._getSolidColor9685); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.AbsListView.staticClass, _getSolidColor9685); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getSolidColor9685); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onLayout9686; 
 		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _onLayout9686, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._onLayout9686, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _onLayout9686, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onLayout9686, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _verifyDrawable9687; 
 		public virtual new bool verifyDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallBooleanMethod(this, _verifyDrawable9687, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.widget.AbsListView._verifyDrawable9687, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.AbsListView.staticClass, _verifyDrawable9687, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._verifyDrawable9687, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _drawableStateChanged9688; 
 		protected override void drawableStateChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _drawableStateChanged9688); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._drawableStateChanged9688); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _drawableStateChanged9688); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._drawableStateChanged9688); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onCreateDrawableState9689; 
 		protected override int[] onCreateDrawableState(int arg0) 
 		{ 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, _onCreateDrawableState9689, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AbsListView._onCreateDrawableState9689, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.AbsListView.staticClass, _onCreateDrawableState9689, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onCreateDrawableState9689, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _requestLayout9690; 
 		public override void requestLayout() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _requestLayout9690); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._requestLayout9690); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _requestLayout9690); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._requestLayout9690); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onMeasure9691; 
 		protected override void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _onMeasure9691, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._onMeasure9691, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _onMeasure9691, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onMeasure9691, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _showContextMenuForChild9692; 
 		public override bool showContextMenuForChild(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallBooleanMethod(this, _showContextMenuForChild9692, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.widget.AbsListView._showContextMenuForChild9692, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.AbsListView.staticClass, _showContextMenuForChild9692, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._showContextMenuForChild9692, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onInterceptTouchEvent9693; 
 		public override bool onInterceptTouchEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallBooleanMethod(this, _onInterceptTouchEvent9693, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.widget.AbsListView._onInterceptTouchEvent9693, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.AbsListView.staticClass, _onInterceptTouchEvent9693, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onInterceptTouchEvent9693, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _checkLayoutParams9694; 
 		protected override bool checkLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallBooleanMethod(this, _checkLayoutParams9694, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.widget.AbsListView._checkLayoutParams9694, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.AbsListView.staticClass, _checkLayoutParams9694, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._checkLayoutParams9694, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _generateLayoutParams9695; 
-		public virtual new android.widget.AbsListView.LayoutParams generateLayoutParams(android.util.AttributeSet arg0) 
+		public virtual new global::android.widget.AbsListView.LayoutParams generateLayoutParams(android.util.AttributeSet arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.AbsListView.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, _generateLayoutParams9695, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.AbsListView.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AbsListView._generateLayoutParams9695, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.AbsListView.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.AbsListView.staticClass, _generateLayoutParams9695, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.AbsListView.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._generateLayoutParams9695, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _generateLayoutParams9696; 
-		protected override android.view.ViewGroup.LayoutParams generateLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
+		protected override global::android.view.ViewGroup.LayoutParams generateLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, _generateLayoutParams9696, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AbsListView._generateLayoutParams9696, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.AbsListView.staticClass, _generateLayoutParams9696, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._generateLayoutParams9696, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSelectedView9697; 
-		public override android.view.View getSelectedView() 
+		public override global::android.view.View getSelectedView() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, _getSelectedView9697)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AbsListView._getSelectedView9697)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.AbsListView.staticClass, _getSelectedView9697)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getSelectedView9697)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onTextChanged9698; 
 		public virtual void onTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _onTextChanged9698, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._onTextChanged9698, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _onTextChanged9698, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onTextChanged9698, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _layoutChildren9699; 
 		protected virtual void layoutChildren() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _layoutChildren9699); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._layoutChildren9699); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _layoutChildren9699); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._layoutChildren9699); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setCacheColorHint9700; 
 		public virtual void setCacheColorHint(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _setCacheColorHint9700, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._setCacheColorHint9700, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _setCacheColorHint9700, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setCacheColorHint9700, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setFastScrollEnabled9701; 
 		public virtual void setFastScrollEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _setFastScrollEnabled9701, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._setFastScrollEnabled9701, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _setFastScrollEnabled9701, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setFastScrollEnabled9701, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isFastScrollEnabled9702; 
 		public virtual bool isFastScrollEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallBooleanMethod(this, _isFastScrollEnabled9702); 
+				return @__env.CallBooleanMethod(this, global::android.widget.AbsListView._isFastScrollEnabled9702); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.AbsListView.staticClass, _isFastScrollEnabled9702); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isFastScrollEnabled9702); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setSmoothScrollbarEnabled9703; 
 		public virtual void setSmoothScrollbarEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _setSmoothScrollbarEnabled9703, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._setSmoothScrollbarEnabled9703, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _setSmoothScrollbarEnabled9703, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setSmoothScrollbarEnabled9703, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isSmoothScrollbarEnabled9704; 
 		public virtual bool isSmoothScrollbarEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallBooleanMethod(this, _isSmoothScrollbarEnabled9704); 
+				return @__env.CallBooleanMethod(this, global::android.widget.AbsListView._isSmoothScrollbarEnabled9704); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.AbsListView.staticClass, _isSmoothScrollbarEnabled9704); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isSmoothScrollbarEnabled9704); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setOnScrollListener9705; 
 		public virtual void setOnScrollListener(android.widget.AbsListView.OnScrollListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _setOnScrollListener9705, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._setOnScrollListener9705, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _setOnScrollListener9705, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setOnScrollListener9705, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isScrollingCacheEnabled9706; 
 		public virtual bool isScrollingCacheEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallBooleanMethod(this, _isScrollingCacheEnabled9706); 
+				return @__env.CallBooleanMethod(this, global::android.widget.AbsListView._isScrollingCacheEnabled9706); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.AbsListView.staticClass, _isScrollingCacheEnabled9706); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isScrollingCacheEnabled9706); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setScrollingCacheEnabled9707; 
 		public virtual void setScrollingCacheEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _setScrollingCacheEnabled9707, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._setScrollingCacheEnabled9707, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _setScrollingCacheEnabled9707, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setScrollingCacheEnabled9707, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setTextFilterEnabled9708; 
 		public virtual void setTextFilterEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _setTextFilterEnabled9708, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._setTextFilterEnabled9708, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _setTextFilterEnabled9708, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setTextFilterEnabled9708, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isTextFilterEnabled9709; 
 		public virtual bool isTextFilterEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallBooleanMethod(this, _isTextFilterEnabled9709); 
+				return @__env.CallBooleanMethod(this, global::android.widget.AbsListView._isTextFilterEnabled9709); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.AbsListView.staticClass, _isTextFilterEnabled9709); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isTextFilterEnabled9709); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isStackFromBottom9710; 
 		public virtual bool isStackFromBottom() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallBooleanMethod(this, _isStackFromBottom9710); 
+				return @__env.CallBooleanMethod(this, global::android.widget.AbsListView._isStackFromBottom9710); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.AbsListView.staticClass, _isStackFromBottom9710); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isStackFromBottom9710); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setStackFromBottom9711; 
 		public virtual void setStackFromBottom(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _setStackFromBottom9711, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._setStackFromBottom9711, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _setStackFromBottom9711, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setStackFromBottom9711, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setFilterText9712; 
 		public virtual void setFilterText(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _setFilterText9712, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._setFilterText9712, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _setFilterText9712, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setFilterText9712, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getTextFilter9713; 
-		public virtual java.lang.CharSequence getTextFilter() 
+		public virtual global::java.lang.CharSequence getTextFilter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, _getTextFilter9713)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AbsListView._getTextFilter9713)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.AbsListView.staticClass, _getTextFilter9713)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getTextFilter9713)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getListPaddingTop9714; 
 		public virtual int getListPaddingTop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallIntMethod(this, _getListPaddingTop9714); 
+				return @__env.CallIntMethod(this, global::android.widget.AbsListView._getListPaddingTop9714); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.AbsListView.staticClass, _getListPaddingTop9714); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getListPaddingTop9714); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getListPaddingBottom9715; 
 		public virtual int getListPaddingBottom() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallIntMethod(this, _getListPaddingBottom9715); 
+				return @__env.CallIntMethod(this, global::android.widget.AbsListView._getListPaddingBottom9715); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.AbsListView.staticClass, _getListPaddingBottom9715); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getListPaddingBottom9715); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getListPaddingLeft9716; 
 		public virtual int getListPaddingLeft() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallIntMethod(this, _getListPaddingLeft9716); 
+				return @__env.CallIntMethod(this, global::android.widget.AbsListView._getListPaddingLeft9716); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.AbsListView.staticClass, _getListPaddingLeft9716); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getListPaddingLeft9716); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getListPaddingRight9717; 
 		public virtual int getListPaddingRight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallIntMethod(this, _getListPaddingRight9717); 
+				return @__env.CallIntMethod(this, global::android.widget.AbsListView._getListPaddingRight9717); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.AbsListView.staticClass, _getListPaddingRight9717); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getListPaddingRight9717); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setDrawSelectorOnTop9718; 
 		public virtual void setDrawSelectorOnTop(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _setDrawSelectorOnTop9718, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._setDrawSelectorOnTop9718, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _setDrawSelectorOnTop9718, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setDrawSelectorOnTop9718, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setSelector9719; 
 		public virtual void setSelector(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _setSelector9719, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._setSelector9719, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _setSelector9719, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setSelector9719, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setSelector9720; 
 		public virtual void setSelector(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _setSelector9720, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._setSelector9720, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _setSelector9720, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setSelector9720, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getSelector9721; 
-		public virtual android.graphics.drawable.Drawable getSelector() 
+		public virtual global::android.graphics.drawable.Drawable getSelector() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, _getSelector9721)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AbsListView._getSelector9721)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.AbsListView.staticClass, _getSelector9721)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getSelector9721)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setScrollIndicators9722; 
 		public virtual void setScrollIndicators(android.view.View arg0, android.view.View arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _setScrollIndicators9722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._setScrollIndicators9722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _setScrollIndicators9722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setScrollIndicators9722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _pointToPosition9723; 
 		public virtual int pointToPosition(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallIntMethod(this, _pointToPosition9723, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallIntMethod(this, global::android.widget.AbsListView._pointToPosition9723, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.AbsListView.staticClass, _pointToPosition9723, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._pointToPosition9723, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _pointToRowId9724; 
 		public virtual long pointToRowId(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallLongMethod(this, _pointToRowId9724, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallLongMethod(this, global::android.widget.AbsListView._pointToRowId9724, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualLongMethod(this, android.widget.AbsListView.staticClass, _pointToRowId9724, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualLongMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._pointToRowId9724, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onTouchModeChanged9725; 
 		public virtual void onTouchModeChanged(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _onTouchModeChanged9725, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._onTouchModeChanged9725, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _onTouchModeChanged9725, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onTouchModeChanged9725, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _invalidateViews9726; 
 		public virtual void invalidateViews() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _invalidateViews9726); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._invalidateViews9726); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _invalidateViews9726); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._invalidateViews9726); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _handleDataChanged9727; 
 		protected virtual void handleDataChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _handleDataChanged9727); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._handleDataChanged9727); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _handleDataChanged9727); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._handleDataChanged9727); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isInFilterMode9728; 
 		protected virtual bool isInFilterMode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallBooleanMethod(this, _isInFilterMode9728); 
+				return @__env.CallBooleanMethod(this, global::android.widget.AbsListView._isInFilterMode9728); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.AbsListView.staticClass, _isInFilterMode9728); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._isInFilterMode9728); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _clearTextFilter9729; 
 		public virtual void clearTextFilter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _clearTextFilter9729); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._clearTextFilter9729); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _clearTextFilter9729); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._clearTextFilter9729); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _hasTextFilter9730; 
 		public virtual bool hasTextFilter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallBooleanMethod(this, _hasTextFilter9730); 
+				return @__env.CallBooleanMethod(this, global::android.widget.AbsListView._hasTextFilter9730); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.AbsListView.staticClass, _hasTextFilter9730); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._hasTextFilter9730); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onGlobalLayout9731; 
 		public virtual void onGlobalLayout() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _onGlobalLayout9731); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._onGlobalLayout9731); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _onGlobalLayout9731); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onGlobalLayout9731); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _beforeTextChanged9732; 
 		public virtual void beforeTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _beforeTextChanged9732, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._beforeTextChanged9732, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _beforeTextChanged9732, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._beforeTextChanged9732, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _afterTextChanged9733; 
 		public virtual void afterTextChanged(android.text.Editable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _afterTextChanged9733, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._afterTextChanged9733, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _afterTextChanged9733, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._afterTextChanged9733, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onFilterComplete9734; 
 		public virtual void onFilterComplete(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _onFilterComplete9734, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._onFilterComplete9734, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _onFilterComplete9734, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onFilterComplete9734, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setTranscriptMode9735; 
 		public virtual void setTranscriptMode(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _setTranscriptMode9735, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._setTranscriptMode9735, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _setTranscriptMode9735, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setTranscriptMode9735, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getTranscriptMode9736; 
 		public virtual int getTranscriptMode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallIntMethod(this, _getTranscriptMode9736); 
+				return @__env.CallIntMethod(this, global::android.widget.AbsListView._getTranscriptMode9736); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.AbsListView.staticClass, _getTranscriptMode9736); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getTranscriptMode9736); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCacheColorHint9737; 
 		public virtual int getCacheColorHint() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				return @__env.CallIntMethod(this, _getCacheColorHint9737); 
+				return @__env.CallIntMethod(this, global::android.widget.AbsListView._getCacheColorHint9737); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.AbsListView.staticClass, _getCacheColorHint9737); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._getCacheColorHint9737); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _reclaimViews9738; 
 		public virtual void reclaimViews(java.util.List arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _reclaimViews9738, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._reclaimViews9738, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _reclaimViews9738, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._reclaimViews9738, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setRecyclerListener9739; 
 		public virtual void setRecyclerListener(android.widget.AbsListView.RecyclerListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.AbsListView)) 
-				@__env.CallVoidMethod(this, _setRecyclerListener9739, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.AbsListView._setRecyclerListener9739, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.AbsListView.staticClass, _setRecyclerListener9739, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._setRecyclerListener9739, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _AbsListView9740; 
 		public AbsListView(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.AbsListView.staticClass, _AbsListView9740, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.widget.AbsListView.staticClass, global::android.widget.AbsListView._AbsListView9740, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _AbsListView9741; 
 		public AbsListView(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.AbsListView.staticClass, _AbsListView9741, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+			@__env.NewObject(android.widget.AbsListView.staticClass, global::android.widget.AbsListView._AbsListView9741, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _AbsListView9742; 
 		public AbsListView(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.AbsListView.staticClass, _AbsListView9742, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.widget.AbsListView.staticClass, global::android.widget.AbsListView._AbsListView9742, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		public static int TRANSCRIPT_MODE_DISABLED
 		{ 

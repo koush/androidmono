@@ -6,7 +6,7 @@ namespace android.appwidget
 		internal static global::java.lang.Class staticClass; 
 		static AppWidgetProviderInfo() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.appwidget.AppWidgetProviderInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.appwidget.AppWidgetProviderInfo), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -19,50 +19,50 @@ namespace android.appwidget
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _toString848; 
-		public override java.lang.String toString() 
+		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.appwidget.AppWidgetProviderInfo)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _toString848)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.appwidget.AppWidgetProviderInfo._toString848)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.appwidget.AppWidgetProviderInfo.staticClass, _toString848)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._toString848)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel849; 
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.appwidget.AppWidgetProviderInfo)) 
-				@__env.CallVoidMethod(this, _writeToParcel849, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallVoidMethod(this, global::android.appwidget.AppWidgetProviderInfo._writeToParcel849, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.appwidget.AppWidgetProviderInfo.staticClass, _writeToParcel849, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._writeToParcel849, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _describeContents850; 
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.appwidget.AppWidgetProviderInfo)) 
-				return @__env.CallIntMethod(this, _describeContents850); 
+				return @__env.CallIntMethod(this, global::android.appwidget.AppWidgetProviderInfo._describeContents850); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.appwidget.AppWidgetProviderInfo.staticClass, _describeContents850); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._describeContents850); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _AppWidgetProviderInfo851; 
 		public AppWidgetProviderInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.appwidget.AppWidgetProviderInfo.staticClass, _AppWidgetProviderInfo851, this); 
+			@__env.NewObject(android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._AppWidgetProviderInfo851, this); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _AppWidgetProviderInfo852; 
 		public AppWidgetProviderInfo(android.os.Parcel arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.appwidget.AppWidgetProviderInfo.staticClass, _AppWidgetProviderInfo852, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._AppWidgetProviderInfo852, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _provider853; 
-		public android.content.ComponentName provider
+		public global::android.content.ComponentName provider
 		{ 
 			get 
 			{ 
-				return default(android.content.ComponentName); 
+				return default(global::android.content.ComponentName); 
 			} 
 			set 
 			{ 
@@ -113,22 +113,22 @@ namespace android.appwidget
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _configure858; 
-		public android.content.ComponentName configure
+		public global::android.content.ComponentName configure
 		{ 
 			get 
 			{ 
-				return default(android.content.ComponentName); 
+				return default(global::android.content.ComponentName); 
 			} 
 			set 
 			{ 
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _label859; 
-		public java.lang.String label
+		public global::java.lang.String label
 		{ 
 			get 
 			{ 
-				return default(java.lang.String); 
+				return default(global::java.lang.String); 
 			} 
 			set 
 			{ 
@@ -146,11 +146,11 @@ namespace android.appwidget
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.FieldId _CREATOR861; 
-		public static android.os.Parcelable_Creator CREATOR
+		public static global::android.os.Parcelable_Creator CREATOR
 		{ 
 			get 
 			{ 
-				return default(android.os.Parcelable_Creator); 
+				return default(global::android.os.Parcelable_Creator); 
 			} 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 

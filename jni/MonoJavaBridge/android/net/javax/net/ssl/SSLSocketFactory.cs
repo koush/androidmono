@@ -6,28 +6,28 @@ namespace javax.net.ssl
 		internal new static global::java.lang.Class staticClass; 
 		static SSLSocketFactory() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(javax.net.ssl.SSLSocketFactory), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::javax.net.ssl.SSLSocketFactory), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected SSLSocketFactory(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDefault13261; 
-		public static new javax.net.SocketFactory getDefault() 
+		public static new global::javax.net.SocketFactory getDefault() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.net.SocketFactory>(@__env, @__env.CallStaticObjectMethodPtr(javax.net.ssl.SSLSocketFactory.staticClass, _getDefault13261)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.net.SocketFactory>(@__env, @__env.CallStaticObjectMethodPtr(javax.net.ssl.SSLSocketFactory.staticClass, global::javax.net.ssl.SSLSocketFactory._getDefault13261)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createSocket13262; 
-		public abstract java.net.Socket createSocket(java.net.Socket arg0, java.lang.String arg1, int arg2, bool arg3); 
+		public abstract global::java.net.Socket createSocket(java.net.Socket arg0, java.lang.String arg1, int arg2, bool arg3); 
 		internal static global::net.sf.jni4net.jni.MethodId _getDefaultCipherSuites13263; 
-		public abstract java.lang.String[] getDefaultCipherSuites(); 
+		public abstract global::java.lang.String[] getDefaultCipherSuites(); 
 		internal static global::net.sf.jni4net.jni.MethodId _getSupportedCipherSuites13264; 
-		public abstract java.lang.String[] getSupportedCipherSuites(); 
+		public abstract global::java.lang.String[] getSupportedCipherSuites(); 
 		internal static global::net.sf.jni4net.jni.MethodId _SSLSocketFactory13265; 
 		public SSLSocketFactory()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(javax.net.ssl.SSLSocketFactory.staticClass, _SSLSocketFactory13265, this); 
+			@__env.NewObject(javax.net.ssl.SSLSocketFactory.staticClass, global::javax.net.ssl.SSLSocketFactory._SSLSocketFactory13265, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

@@ -6,39 +6,39 @@ namespace javax.net
 		internal static global::java.lang.Class staticClass; 
 		static SocketFactory() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(javax.net.SocketFactory), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::javax.net.SocketFactory), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected SocketFactory(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getDefault13254; 
-		public static javax.net.SocketFactory getDefault() 
+		public static global::javax.net.SocketFactory getDefault() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.net.SocketFactory>(@__env, @__env.CallStaticObjectMethodPtr(javax.net.SocketFactory.staticClass, _getDefault13254)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.net.SocketFactory>(@__env, @__env.CallStaticObjectMethodPtr(javax.net.SocketFactory.staticClass, global::javax.net.SocketFactory._getDefault13254)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createSocket13255; 
-		public virtual java.net.Socket createSocket() 
+		public virtual global::java.net.Socket createSocket() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(javax.net.SocketFactory)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallObjectMethodPtr(this, _createSocket13255)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallObjectMethodPtr(this, global::javax.net.SocketFactory._createSocket13255)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, javax.net.SocketFactory.staticClass, _createSocket13255)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::javax.net.SocketFactory.staticClass, global::javax.net.SocketFactory._createSocket13255)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _createSocket13256; 
-		public abstract java.net.Socket createSocket(java.lang.String arg0, int arg1); 
+		public abstract global::java.net.Socket createSocket(java.lang.String arg0, int arg1); 
 		internal static global::net.sf.jni4net.jni.MethodId _createSocket13257; 
-		public abstract java.net.Socket createSocket(java.lang.String arg0, int arg1, java.net.InetAddress arg2, int arg3); 
+		public abstract global::java.net.Socket createSocket(java.lang.String arg0, int arg1, java.net.InetAddress arg2, int arg3); 
 		internal static global::net.sf.jni4net.jni.MethodId _createSocket13258; 
-		public abstract java.net.Socket createSocket(java.net.InetAddress arg0, int arg1); 
+		public abstract global::java.net.Socket createSocket(java.net.InetAddress arg0, int arg1); 
 		internal static global::net.sf.jni4net.jni.MethodId _createSocket13259; 
-		public abstract java.net.Socket createSocket(java.net.InetAddress arg0, int arg1, java.net.InetAddress arg2, int arg3); 
+		public abstract global::java.net.Socket createSocket(java.net.InetAddress arg0, int arg1, java.net.InetAddress arg2, int arg3); 
 		internal static global::net.sf.jni4net.jni.MethodId _SocketFactory13260; 
 		protected SocketFactory()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(javax.net.SocketFactory.staticClass, _SocketFactory13260, this); 
+			@__env.NewObject(javax.net.SocketFactory.staticClass, global::javax.net.SocketFactory._SocketFactory13260, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

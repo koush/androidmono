@@ -6,7 +6,7 @@ namespace javax.microedition.khronos.egl
 		internal static global::java.lang.Class staticClass; 
 		static EGLConfig() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(javax.microedition.khronos.egl.EGLConfig), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::javax.microedition.khronos.egl.EGLConfig), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		protected EGLConfig(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 		{ 
@@ -15,7 +15,7 @@ namespace javax.microedition.khronos.egl
 		public EGLConfig()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(javax.microedition.khronos.egl.EGLConfig.staticClass, _EGLConfig13125, this); 
+			@__env.NewObject(javax.microedition.khronos.egl.EGLConfig.staticClass, global::javax.microedition.khronos.egl.EGLConfig._EGLConfig13125, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

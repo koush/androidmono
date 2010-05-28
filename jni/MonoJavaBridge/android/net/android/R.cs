@@ -6,7 +6,7 @@ namespace android
 		internal static global::java.lang.Class staticClass; 
 		static R() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.R), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -24,7 +24,7 @@ namespace android
 			internal static global::java.lang.Class staticClass; 
 			static anim() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.R.anim), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.anim), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -40,7 +40,7 @@ namespace android
 			public anim()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.R.anim.staticClass, _anim3, this); 
+				@__env.NewObject(android.R.anim.staticClass, global::android.R.anim._anim3, this); 
 			} 
 			public static int accelerate_decelerate_interpolator
 			{ 
@@ -138,7 +138,7 @@ namespace android
 			internal static global::java.lang.Class staticClass; 
 			static array() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.R.array), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.array), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -154,7 +154,7 @@ namespace android
 			public array()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.R.array.staticClass, _array4, this); 
+				@__env.NewObject(android.R.array.staticClass, global::android.R.array._array4, this); 
 			} 
 			public static int emailAddressTypes
 			{ 
@@ -203,7 +203,7 @@ namespace android
 			internal static global::java.lang.Class staticClass; 
 			static attr() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.R.attr), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.attr), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -219,7 +219,7 @@ namespace android
 			public attr()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.R.attr.staticClass, _attr5, this); 
+				@__env.NewObject(android.R.attr.staticClass, global::android.R.attr._attr5, this); 
 			} 
 			public static int absListViewStyle
 			{ 
@@ -5084,7 +5084,7 @@ namespace android
 			internal static global::java.lang.Class staticClass; 
 			static @bool() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.R.@bool), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.@bool), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -5100,7 +5100,7 @@ namespace android
 			public @bool()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.R.@bool.staticClass, _bool6, this); 
+				@__env.NewObject(android.R.@bool.staticClass, global::android.R.@bool._bool6, this); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -5114,7 +5114,7 @@ namespace android
 			internal static global::java.lang.Class staticClass; 
 			static color() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.R.color), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.color), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -5130,7 +5130,7 @@ namespace android
 			public color()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.R.color.staticClass, _color7, this); 
+				@__env.NewObject(android.R.color.staticClass, global::android.R.color._color7, this); 
 			} 
 			public static int background_dark
 			{ 
@@ -5270,7 +5270,7 @@ namespace android
 			internal static global::java.lang.Class staticClass; 
 			static dimen() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.R.dimen), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.dimen), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -5286,7 +5286,7 @@ namespace android
 			public dimen()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.R.dimen.staticClass, _dimen8, this); 
+				@__env.NewObject(android.R.dimen.staticClass, global::android.R.dimen._dimen8, this); 
 			} 
 			public static int app_icon_size
 			{ 
@@ -5321,7 +5321,7 @@ namespace android
 			internal static global::java.lang.Class staticClass; 
 			static drawable() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.R.drawable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.drawable), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -5337,7 +5337,7 @@ namespace android
 			public drawable()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.R.drawable.staticClass, _drawable9, this); 
+				@__env.NewObject(android.R.drawable.staticClass, global::android.R.drawable._drawable9, this); 
 			} 
 			public static int alert_dark_frame
 			{ 
@@ -6513,7 +6513,7 @@ namespace android
 			internal static global::java.lang.Class staticClass; 
 			static id() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.R.id), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.id), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -6529,7 +6529,7 @@ namespace android
 			public id()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.R.id.staticClass, _id10, this); 
+				@__env.NewObject(android.R.id.staticClass, global::android.R.id._id10, this); 
 			} 
 			public static int addToDictionary
 			{ 
@@ -6844,7 +6844,7 @@ namespace android
 			internal static global::java.lang.Class staticClass; 
 			static integer() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.R.integer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.integer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -6860,7 +6860,7 @@ namespace android
 			public integer()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.R.integer.staticClass, _integer11, this); 
+				@__env.NewObject(android.R.integer.staticClass, global::android.R.integer._integer11, this); 
 			} 
 			public static int config_longAnimTime
 			{ 
@@ -6895,7 +6895,7 @@ namespace android
 			internal static global::java.lang.Class staticClass; 
 			static layout() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.R.layout), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.layout), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -6911,7 +6911,7 @@ namespace android
 			public layout()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.R.layout.staticClass, _layout12, this); 
+				@__env.NewObject(android.R.layout.staticClass, global::android.R.layout._layout12, this); 
 			} 
 			public static int activity_list_item
 			{ 
@@ -7065,7 +7065,7 @@ namespace android
 			internal static global::java.lang.Class staticClass; 
 			static plurals() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.R.plurals), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.plurals), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -7081,7 +7081,7 @@ namespace android
 			public plurals()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.R.plurals.staticClass, _plurals13, this); 
+				@__env.NewObject(android.R.plurals.staticClass, global::android.R.plurals._plurals13, this); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -7095,7 +7095,7 @@ namespace android
 			internal static global::java.lang.Class staticClass; 
 			static raw() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.R.raw), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.raw), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -7111,7 +7111,7 @@ namespace android
 			public raw()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.R.raw.staticClass, _raw14, this); 
+				@__env.NewObject(android.R.raw.staticClass, global::android.R.raw._raw14, this); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -7125,7 +7125,7 @@ namespace android
 			internal static global::java.lang.Class staticClass; 
 			static @string() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.R.@string), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.@string), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -7141,7 +7141,7 @@ namespace android
 			public @string()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.R.@string.staticClass, _string15, this); 
+				@__env.NewObject(android.R.@string.staticClass, global::android.R.@string._string15, this); 
 			} 
 			public static int VideoView_error_button
 			{ 
@@ -7309,7 +7309,7 @@ namespace android
 			internal static global::java.lang.Class staticClass; 
 			static style() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.R.style), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.style), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -7325,7 +7325,7 @@ namespace android
 			public style()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.R.style.staticClass, _style16, this); 
+				@__env.NewObject(android.R.style.staticClass, global::android.R.style._style16, this); 
 			} 
 			public static int Animation
 			{ 
@@ -8025,7 +8025,7 @@ namespace android
 			internal static global::java.lang.Class staticClass; 
 			static xml() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.R.xml), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.R.xml), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -8041,7 +8041,7 @@ namespace android
 			public xml()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				@__env.NewObject(android.R.xml.staticClass, _xml17, this); 
+				@__env.NewObject(android.R.xml.staticClass, global::android.R.xml._xml17, this); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -8053,7 +8053,7 @@ namespace android
 		public R()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.R.staticClass, _R18, this); 
+			@__env.NewObject(android.R.staticClass, global::android.R._R18, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

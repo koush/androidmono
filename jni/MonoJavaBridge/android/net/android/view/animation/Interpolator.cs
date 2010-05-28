@@ -20,7 +20,7 @@ namespace android.view.animation
 		internal static global::java.lang.Class staticClass; 
 		static __Interpolator() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.view.animation.__Interpolator), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.view.animation.__Interpolator), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -37,9 +37,9 @@ namespace android.view.animation
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.view.animation.__Interpolator)) 
-				return @__env.CallFloatMethod(this, _getInterpolation8962, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallFloatMethod(this, global::android.view.animation.__Interpolator._getInterpolation8962, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualFloatMethod(this, android.view.animation.__Interpolator.staticClass, _getInterpolation8962, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.animation.__Interpolator.staticClass, global::android.view.animation.__Interpolator._getInterpolation8962, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

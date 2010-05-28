@@ -6,7 +6,7 @@ namespace android.os
 		internal static global::java.lang.Class staticClass; 
 		static BatteryManager() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.BatteryManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.BatteryManager), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -22,72 +22,72 @@ namespace android.os
 		public BatteryManager()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.os.BatteryManager.staticClass, _BatteryManager5351, this); 
+			@__env.NewObject(android.os.BatteryManager.staticClass, global::android.os.BatteryManager._BatteryManager5351, this); 
 		} 
-		public static java.lang.String EXTRA_STATUS
+		public static global::java.lang.String EXTRA_STATUS
 		{ 
 			get 
 			{ 
 				return "status"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_HEALTH
+		public static global::java.lang.String EXTRA_HEALTH
 		{ 
 			get 
 			{ 
 				return "health"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_PRESENT
+		public static global::java.lang.String EXTRA_PRESENT
 		{ 
 			get 
 			{ 
 				return "present"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_LEVEL
+		public static global::java.lang.String EXTRA_LEVEL
 		{ 
 			get 
 			{ 
 				return "level"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_SCALE
+		public static global::java.lang.String EXTRA_SCALE
 		{ 
 			get 
 			{ 
 				return "scale"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_ICON_SMALL
+		public static global::java.lang.String EXTRA_ICON_SMALL
 		{ 
 			get 
 			{ 
 				return "icon-small"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_PLUGGED
+		public static global::java.lang.String EXTRA_PLUGGED
 		{ 
 			get 
 			{ 
 				return "plugged"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_VOLTAGE
+		public static global::java.lang.String EXTRA_VOLTAGE
 		{ 
 			get 
 			{ 
 				return "voltage"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_TEMPERATURE
+		public static global::java.lang.String EXTRA_TEMPERATURE
 		{ 
 			get 
 			{ 
 				return "temperature"; 
 			} 
 		} 
-		public static java.lang.String EXTRA_TECHNOLOGY
+		public static global::java.lang.String EXTRA_TECHNOLOGY
 		{ 
 			get 
 			{ 

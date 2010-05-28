@@ -3,7 +3,7 @@ namespace android.os
 	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 	public interface IInterface 
 	{ 
-		android.os.IBinder asBinder(); 
+		global::android.os.IBinder asBinder(); 
 	} 
 
 	public partial class IInterface_ 
@@ -20,7 +20,7 @@ namespace android.os
 		internal static global::java.lang.Class staticClass; 
 		static __IInterface() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.os.__IInterface), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.os.__IInterface), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -33,13 +33,13 @@ namespace android.os
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _asBinder5627; 
-		 android.os.IBinder android.os.IInterface.asBinder() 
+		 global::android.os.IBinder android.os.IInterface.asBinder() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.os.__IInterface)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, _asBinder5627)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.__IInterface._asBinder5627)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.os.__IInterface.staticClass, _asBinder5627)); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.__IInterface.staticClass, global::android.os.__IInterface._asBinder5627)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

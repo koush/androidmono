@@ -6,7 +6,7 @@ namespace android.widget
 		internal new static global::java.lang.Class staticClass; 
 		static TabHost() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.TabHost), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.TabHost), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -38,7 +38,7 @@ namespace android.widget
 			internal static global::java.lang.Class staticClass; 
 			static __OnTabChangeListener() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.TabHost.__OnTabChangeListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.TabHost.__OnTabChangeListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -55,9 +55,9 @@ namespace android.widget
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.widget.TabHost.__OnTabChangeListener)) 
-					@__env.CallVoidMethod(this, _onTabChanged10912, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.widget.TabHost.__OnTabChangeListener._onTabChanged10912, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.widget.TabHost.__OnTabChangeListener.staticClass, _onTabChanged10912, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabHost.__OnTabChangeListener.staticClass, global::android.widget.TabHost.__OnTabChangeListener._onTabChanged10912, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -68,7 +68,7 @@ namespace android.widget
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 		public interface TabContentFactory 
 		{ 
-			android.view.View createTabContent(java.lang.String arg0); 
+			global::android.view.View createTabContent(java.lang.String arg0); 
 		} 
 
 		public partial class TabContentFactory_ 
@@ -85,7 +85,7 @@ namespace android.widget
 			internal static global::java.lang.Class staticClass; 
 			static __TabContentFactory() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.TabHost.__TabContentFactory), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.TabHost.__TabContentFactory), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -98,13 +98,13 @@ namespace android.widget
 			{ 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _createTabContent10913; 
-			 android.view.View android.widget.TabHost.TabContentFactory.createTabContent(java.lang.String arg0) 
+			 global::android.view.View android.widget.TabHost.TabContentFactory.createTabContent(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.widget.TabHost.__TabContentFactory)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, _createTabContent10913, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TabHost.__TabContentFactory._createTabContent10913, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TabHost.__TabContentFactory.staticClass, _createTabContent10913, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TabHost.__TabContentFactory.staticClass, global::android.widget.TabHost.__TabContentFactory._createTabContent10913, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -118,7 +118,7 @@ namespace android.widget
 			internal static global::java.lang.Class staticClass; 
 			static TabSpec() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.TabHost.TabSpec), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.TabHost.TabSpec), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -131,67 +131,67 @@ namespace android.widget
 			{ 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getTag10914; 
-			public virtual java.lang.String getTag() 
+			public virtual global::java.lang.String getTag() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.widget.TabHost.TabSpec)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getTag10914)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TabHost.TabSpec._getTag10914)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TabHost.TabSpec.staticClass, _getTag10914)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TabHost.TabSpec.staticClass, global::android.widget.TabHost.TabSpec._getTag10914)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setIndicator10915; 
-			public virtual android.widget.TabHost.TabSpec setIndicator(java.lang.CharSequence arg0, android.graphics.drawable.Drawable arg1) 
+			public virtual global::android.widget.TabHost.TabSpec setIndicator(java.lang.CharSequence arg0, android.graphics.drawable.Drawable arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.widget.TabHost.TabSpec)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallObjectMethodPtr(this, _setIndicator10915, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TabHost.TabSpec._setIndicator10915, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TabHost.TabSpec.staticClass, _setIndicator10915, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TabHost.TabSpec.staticClass, global::android.widget.TabHost.TabSpec._setIndicator10915, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setIndicator10916; 
-			public virtual android.widget.TabHost.TabSpec setIndicator(android.view.View arg0) 
+			public virtual global::android.widget.TabHost.TabSpec setIndicator(android.view.View arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.widget.TabHost.TabSpec)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallObjectMethodPtr(this, _setIndicator10916, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TabHost.TabSpec._setIndicator10916, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TabHost.TabSpec.staticClass, _setIndicator10916, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TabHost.TabSpec.staticClass, global::android.widget.TabHost.TabSpec._setIndicator10916, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setIndicator10917; 
-			public virtual android.widget.TabHost.TabSpec setIndicator(java.lang.CharSequence arg0) 
+			public virtual global::android.widget.TabHost.TabSpec setIndicator(java.lang.CharSequence arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.widget.TabHost.TabSpec)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallObjectMethodPtr(this, _setIndicator10917, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TabHost.TabSpec._setIndicator10917, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TabHost.TabSpec.staticClass, _setIndicator10917, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TabHost.TabSpec.staticClass, global::android.widget.TabHost.TabSpec._setIndicator10917, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setContent10918; 
-			public virtual android.widget.TabHost.TabSpec setContent(int arg0) 
+			public virtual global::android.widget.TabHost.TabSpec setContent(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.widget.TabHost.TabSpec)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallObjectMethodPtr(this, _setContent10918, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TabHost.TabSpec._setContent10918, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TabHost.TabSpec.staticClass, _setContent10918, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TabHost.TabSpec.staticClass, global::android.widget.TabHost.TabSpec._setContent10918, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setContent10919; 
-			public virtual android.widget.TabHost.TabSpec setContent(android.widget.TabHost.TabContentFactory arg0) 
+			public virtual global::android.widget.TabHost.TabSpec setContent(android.widget.TabHost.TabContentFactory arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.widget.TabHost.TabSpec)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallObjectMethodPtr(this, _setContent10919, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TabHost.TabSpec._setContent10919, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TabHost.TabSpec.staticClass, _setContent10919, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TabHost.TabSpec.staticClass, global::android.widget.TabHost.TabSpec._setContent10919, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setContent10920; 
-			public virtual android.widget.TabHost.TabSpec setContent(android.content.Intent arg0) 
+			public virtual global::android.widget.TabHost.TabSpec setContent(android.content.Intent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.widget.TabHost.TabSpec)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallObjectMethodPtr(this, _setContent10920, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TabHost.TabSpec._setContent10920, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TabHost.TabSpec.staticClass, _setContent10920, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TabHost.TabSpec.staticClass, global::android.widget.TabHost.TabSpec._setContent10920, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -210,183 +210,183 @@ namespace android.widget
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				@__env.CallVoidMethod(this, _setup10921, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.TabHost._setup10921, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.TabHost.staticClass, _setup10921, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._setup10921, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setup10922; 
 		public virtual void setup() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				@__env.CallVoidMethod(this, _setup10922); 
+				@__env.CallVoidMethod(this, global::android.widget.TabHost._setup10922); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.TabHost.staticClass, _setup10922); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._setup10922); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onAttachedToWindow10923; 
 		protected override void onAttachedToWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				@__env.CallVoidMethod(this, _onAttachedToWindow10923); 
+				@__env.CallVoidMethod(this, global::android.widget.TabHost._onAttachedToWindow10923); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.TabHost.staticClass, _onAttachedToWindow10923); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._onAttachedToWindow10923); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onDetachedFromWindow10924; 
 		protected override void onDetachedFromWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				@__env.CallVoidMethod(this, _onDetachedFromWindow10924); 
+				@__env.CallVoidMethod(this, global::android.widget.TabHost._onDetachedFromWindow10924); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.TabHost.staticClass, _onDetachedFromWindow10924); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._onDetachedFromWindow10924); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _dispatchKeyEvent10925; 
 		public override bool dispatchKeyEvent(android.view.KeyEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				return @__env.CallBooleanMethod(this, _dispatchKeyEvent10925, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.widget.TabHost._dispatchKeyEvent10925, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.TabHost.staticClass, _dispatchKeyEvent10925, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._dispatchKeyEvent10925, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _dispatchWindowFocusChanged10926; 
 		public override void dispatchWindowFocusChanged(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				@__env.CallVoidMethod(this, _dispatchWindowFocusChanged10926, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.TabHost._dispatchWindowFocusChanged10926, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.TabHost.staticClass, _dispatchWindowFocusChanged10926, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._dispatchWindowFocusChanged10926, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onTouchModeChanged10927; 
 		public virtual void onTouchModeChanged(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				@__env.CallVoidMethod(this, _onTouchModeChanged10927, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.TabHost._onTouchModeChanged10927, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.TabHost.staticClass, _onTouchModeChanged10927, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._onTouchModeChanged10927, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getTabWidget10928; 
-		public virtual android.widget.TabWidget getTabWidget() 
+		public virtual global::android.widget.TabWidget getTabWidget() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabWidget>(@__env, @__env.CallObjectMethodPtr(this, _getTabWidget10928)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabWidget>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TabHost._getTabWidget10928)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabWidget>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TabHost.staticClass, _getTabWidget10928)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabWidget>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._getTabWidget10928)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _newTabSpec10929; 
-		public virtual android.widget.TabHost.TabSpec newTabSpec(java.lang.String arg0) 
+		public virtual global::android.widget.TabHost.TabSpec newTabSpec(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallObjectMethodPtr(this, _newTabSpec10929, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TabHost._newTabSpec10929, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TabHost.staticClass, _newTabSpec10929, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._newTabSpec10929, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _addTab10930; 
 		public virtual void addTab(android.widget.TabHost.TabSpec arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				@__env.CallVoidMethod(this, _addTab10930, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.TabHost._addTab10930, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.TabHost.staticClass, _addTab10930, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._addTab10930, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _clearAllTabs10931; 
 		public virtual void clearAllTabs() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				@__env.CallVoidMethod(this, _clearAllTabs10931); 
+				@__env.CallVoidMethod(this, global::android.widget.TabHost._clearAllTabs10931); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.TabHost.staticClass, _clearAllTabs10931); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._clearAllTabs10931); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCurrentTab10932; 
 		public virtual int getCurrentTab() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				return @__env.CallIntMethod(this, _getCurrentTab10932); 
+				return @__env.CallIntMethod(this, global::android.widget.TabHost._getCurrentTab10932); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.widget.TabHost.staticClass, _getCurrentTab10932); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._getCurrentTab10932); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCurrentTabTag10933; 
-		public virtual java.lang.String getCurrentTabTag() 
+		public virtual global::java.lang.String getCurrentTabTag() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, _getCurrentTabTag10933)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TabHost._getCurrentTabTag10933)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TabHost.staticClass, _getCurrentTabTag10933)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._getCurrentTabTag10933)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCurrentTabView10934; 
-		public virtual android.view.View getCurrentTabView() 
+		public virtual global::android.view.View getCurrentTabView() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, _getCurrentTabView10934)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TabHost._getCurrentTabView10934)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TabHost.staticClass, _getCurrentTabView10934)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._getCurrentTabView10934)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCurrentView10935; 
-		public virtual android.view.View getCurrentView() 
+		public virtual global::android.view.View getCurrentView() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, _getCurrentView10935)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TabHost._getCurrentView10935)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TabHost.staticClass, _getCurrentView10935)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._getCurrentView10935)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setCurrentTabByTag10936; 
 		public virtual void setCurrentTabByTag(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				@__env.CallVoidMethod(this, _setCurrentTabByTag10936, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.TabHost._setCurrentTabByTag10936, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.TabHost.staticClass, _setCurrentTabByTag10936, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._setCurrentTabByTag10936, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getTabContentView10937; 
-		public virtual android.widget.FrameLayout getTabContentView() 
+		public virtual global::android.widget.FrameLayout getTabContentView() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.FrameLayout>(@__env, @__env.CallObjectMethodPtr(this, _getTabContentView10937)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.FrameLayout>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TabHost._getTabContentView10937)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.FrameLayout>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.TabHost.staticClass, _getTabContentView10937)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.FrameLayout>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._getTabContentView10937)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setCurrentTab10938; 
 		public virtual void setCurrentTab(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				@__env.CallVoidMethod(this, _setCurrentTab10938, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.TabHost._setCurrentTab10938, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.TabHost.staticClass, _setCurrentTab10938, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._setCurrentTab10938, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setOnTabChangedListener10939; 
 		public virtual void setOnTabChangedListener(android.widget.TabHost.OnTabChangeListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.TabHost)) 
-				@__env.CallVoidMethod(this, _setOnTabChangedListener10939, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.TabHost._setOnTabChangedListener10939, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.TabHost.staticClass, _setOnTabChangedListener10939, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabHost.staticClass, global::android.widget.TabHost._setOnTabChangedListener10939, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _TabHost10940; 
 		public TabHost(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.TabHost.staticClass, _TabHost10940, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.widget.TabHost.staticClass, global::android.widget.TabHost._TabHost10940, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _TabHost10941; 
 		public TabHost(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.TabHost.staticClass, _TabHost10941, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.widget.TabHost.staticClass, global::android.widget.TabHost._TabHost10941, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

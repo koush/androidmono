@@ -6,7 +6,7 @@ namespace android.graphics.drawable
 		internal new static global::java.lang.Class staticClass; 
 		static DrawableContainer() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.graphics.drawable.DrawableContainer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.drawable.DrawableContainer), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -24,7 +24,7 @@ namespace android.graphics.drawable
 			internal new static global::java.lang.Class staticClass; 
 			static DrawableContainerState() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.graphics.drawable.DrawableContainer.DrawableContainerState), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.graphics.drawable.DrawableContainer.DrawableContainerState), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			protected DrawableContainerState(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env) 
 			{ 
@@ -34,143 +34,143 @@ namespace android.graphics.drawable
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.graphics.drawable.DrawableContainer.DrawableContainerState)) 
-					return @__env.CallIntMethod(this, _getChangingConfigurations3567); 
+					return @__env.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getChangingConfigurations3567); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, _getChangingConfigurations3567); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getChangingConfigurations3567); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _isStateful3568; 
 			public virtual bool isStateful() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.graphics.drawable.DrawableContainer.DrawableContainerState)) 
-					return @__env.CallBooleanMethod(this, _isStateful3568); 
+					return @__env.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._isStateful3568); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, _isStateful3568); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._isStateful3568); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getOpacity3569; 
 			public virtual int getOpacity() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.graphics.drawable.DrawableContainer.DrawableContainerState)) 
-					return @__env.CallIntMethod(this, _getOpacity3569); 
+					return @__env.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getOpacity3569); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, _getOpacity3569); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getOpacity3569); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getChildCount3570; 
 			public virtual int getChildCount() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.graphics.drawable.DrawableContainer.DrawableContainerState)) 
-					return @__env.CallIntMethod(this, _getChildCount3570); 
+					return @__env.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getChildCount3570); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, _getChildCount3570); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getChildCount3570); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _addChild3571; 
 			public virtual int addChild(android.graphics.drawable.Drawable arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.graphics.drawable.DrawableContainer.DrawableContainerState)) 
-					return @__env.CallIntMethod(this, _addChild3571, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					return @__env.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._addChild3571, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, _addChild3571, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._addChild3571, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getChildren3572; 
-			public virtual android.graphics.drawable.Drawable[] getChildren() 
+			public virtual global::android.graphics.drawable.Drawable[] getChildren() 
 			{ 
 				if (GetType() == typeof(android.graphics.drawable.DrawableContainer.DrawableContainerState)) 
-					return null;//(@__env, @__env.CallObjectMethodPtr(this, _getChildren3572)); 
+					return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getChildren3572)); 
 				else 
-					return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, _getChildren3572)); 
+					return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getChildren3572)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setVariablePadding3573; 
 			public virtual void setVariablePadding(bool arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.graphics.drawable.DrawableContainer.DrawableContainerState)) 
-					@__env.CallVoidMethod(this, _setVariablePadding3573, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._setVariablePadding3573, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, _setVariablePadding3573, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._setVariablePadding3573, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getConstantPadding3574; 
-			public virtual android.graphics.Rect getConstantPadding() 
+			public virtual global::android.graphics.Rect getConstantPadding() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.graphics.drawable.DrawableContainer.DrawableContainerState)) 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallObjectMethodPtr(this, _getConstantPadding3574)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getConstantPadding3574)); 
 				else 
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, _getConstantPadding3574)); 
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getConstantPadding3574)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _setConstantSize3575; 
 			public virtual void setConstantSize(bool arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.graphics.drawable.DrawableContainer.DrawableContainerState)) 
-					@__env.CallVoidMethod(this, _setConstantSize3575, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._setConstantSize3575, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, _setConstantSize3575, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._setConstantSize3575, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _isConstantSize3576; 
 			public virtual bool isConstantSize() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.graphics.drawable.DrawableContainer.DrawableContainerState)) 
-					return @__env.CallBooleanMethod(this, _isConstantSize3576); 
+					return @__env.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._isConstantSize3576); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, _isConstantSize3576); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._isConstantSize3576); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getConstantWidth3577; 
 			public virtual int getConstantWidth() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.graphics.drawable.DrawableContainer.DrawableContainerState)) 
-					return @__env.CallIntMethod(this, _getConstantWidth3577); 
+					return @__env.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getConstantWidth3577); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, _getConstantWidth3577); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getConstantWidth3577); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getConstantHeight3578; 
 			public virtual int getConstantHeight() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.graphics.drawable.DrawableContainer.DrawableContainerState)) 
-					return @__env.CallIntMethod(this, _getConstantHeight3578); 
+					return @__env.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getConstantHeight3578); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, _getConstantHeight3578); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getConstantHeight3578); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getConstantMinimumWidth3579; 
 			public virtual int getConstantMinimumWidth() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.graphics.drawable.DrawableContainer.DrawableContainerState)) 
-					return @__env.CallIntMethod(this, _getConstantMinimumWidth3579); 
+					return @__env.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getConstantMinimumWidth3579); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, _getConstantMinimumWidth3579); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getConstantMinimumWidth3579); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _getConstantMinimumHeight3580; 
 			public virtual int getConstantMinimumHeight() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.graphics.drawable.DrawableContainer.DrawableContainerState)) 
-					return @__env.CallIntMethod(this, _getConstantMinimumHeight3580); 
+					return @__env.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getConstantMinimumHeight3580); 
 				else 
-					return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, _getConstantMinimumHeight3580); 
+					return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._getConstantMinimumHeight3580); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _growArray3581; 
 			public virtual void growArray(int arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.graphics.drawable.DrawableContainer.DrawableContainerState)) 
-					@__env.CallVoidMethod(this, _growArray3581, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._growArray3581, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, _growArray3581, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._growArray3581, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			} 
 			internal static global::net.sf.jni4net.jni.MethodId _canConstantState3582; 
 			public virtual bool canConstantState() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.graphics.drawable.DrawableContainer.DrawableContainerState)) 
-					return @__env.CallBooleanMethod(this, _canConstantState3582); 
+					return @__env.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._canConstantState3582); 
 				else 
-					return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, _canConstantState3582); 
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.DrawableContainerState.staticClass, global::android.graphics.drawable.DrawableContainer.DrawableContainerState._canConstantState3582); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -198,222 +198,222 @@ namespace android.graphics.drawable
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				@__env.CallVoidMethod(this, _draw3583, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer._draw3583, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _draw3583, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._draw3583, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getChangingConfigurations3584; 
 		public override int getChangingConfigurations() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				return @__env.CallIntMethod(this, _getChangingConfigurations3584); 
+				return @__env.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer._getChangingConfigurations3584); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _getChangingConfigurations3584); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._getChangingConfigurations3584); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setDither3585; 
 		public override void setDither(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				@__env.CallVoidMethod(this, _setDither3585, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer._setDither3585, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _setDither3585, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._setDither3585, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setAlpha3586; 
 		public override void setAlpha(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				@__env.CallVoidMethod(this, _setAlpha3586, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer._setAlpha3586, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _setAlpha3586, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._setAlpha3586, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setColorFilter3587; 
 		public override void setColorFilter(android.graphics.ColorFilter arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				@__env.CallVoidMethod(this, _setColorFilter3587, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer._setColorFilter3587, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _setColorFilter3587, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._setColorFilter3587, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isStateful3588; 
 		public override bool isStateful() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				return @__env.CallBooleanMethod(this, _isStateful3588); 
+				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer._isStateful3588); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _isStateful3588); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._isStateful3588); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getCurrent3589; 
-		public override android.graphics.drawable.Drawable getCurrent() 
+		public override global::android.graphics.drawable.Drawable getCurrent() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, _getCurrent3589)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.DrawableContainer._getCurrent3589)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.drawable.DrawableContainer.staticClass, _getCurrent3589)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._getCurrent3589)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setVisible3590; 
 		public override bool setVisible(bool arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				return @__env.CallBooleanMethod(this, _setVisible3590, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer._setVisible3590, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _setVisible3590, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._setVisible3590, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getOpacity3591; 
 		public override int getOpacity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				return @__env.CallIntMethod(this, _getOpacity3591); 
+				return @__env.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer._getOpacity3591); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _getOpacity3591); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._getOpacity3591); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onStateChange3592; 
 		protected override bool onStateChange(int[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				return @__env.CallBooleanMethod(this, _onStateChange3592, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer._onStateChange3592, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _onStateChange3592, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._onStateChange3592, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onLevelChange3593; 
 		protected override bool onLevelChange(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				return @__env.CallBooleanMethod(this, _onLevelChange3593, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer._onLevelChange3593, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _onLevelChange3593, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._onLevelChange3593, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onBoundsChange3594; 
 		protected override void onBoundsChange(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				@__env.CallVoidMethod(this, _onBoundsChange3594, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer._onBoundsChange3594, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _onBoundsChange3594, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._onBoundsChange3594, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getIntrinsicWidth3595; 
 		public override int getIntrinsicWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				return @__env.CallIntMethod(this, _getIntrinsicWidth3595); 
+				return @__env.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer._getIntrinsicWidth3595); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _getIntrinsicWidth3595); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._getIntrinsicWidth3595); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getIntrinsicHeight3596; 
 		public override int getIntrinsicHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				return @__env.CallIntMethod(this, _getIntrinsicHeight3596); 
+				return @__env.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer._getIntrinsicHeight3596); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _getIntrinsicHeight3596); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._getIntrinsicHeight3596); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getMinimumWidth3597; 
 		public override int getMinimumWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				return @__env.CallIntMethod(this, _getMinimumWidth3597); 
+				return @__env.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer._getMinimumWidth3597); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _getMinimumWidth3597); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._getMinimumWidth3597); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getMinimumHeight3598; 
 		public override int getMinimumHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				return @__env.CallIntMethod(this, _getMinimumHeight3598); 
+				return @__env.CallIntMethod(this, global::android.graphics.drawable.DrawableContainer._getMinimumHeight3598); 
 			else 
-				return @__env.CallNonVirtualIntMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _getMinimumHeight3598); 
+				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._getMinimumHeight3598); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getPadding3599; 
 		public override bool getPadding(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				return @__env.CallBooleanMethod(this, _getPadding3599, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer._getPadding3599, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _getPadding3599, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._getPadding3599, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _mutate3600; 
-		public override android.graphics.drawable.Drawable mutate() 
+		public override global::android.graphics.drawable.Drawable mutate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, _mutate3600)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.DrawableContainer._mutate3600)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.drawable.DrawableContainer.staticClass, _mutate3600)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._mutate3600)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getConstantState3601; 
-		public override android.graphics.drawable.Drawable.ConstantState getConstantState() 
+		public override global::android.graphics.drawable.Drawable.ConstantState getConstantState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallObjectMethodPtr(this, _getConstantState3601)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.DrawableContainer._getConstantState3601)); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.graphics.drawable.DrawableContainer.staticClass, _getConstantState3601)); 
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._getConstantState3601)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _invalidateDrawable3602; 
 		public virtual void invalidateDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				@__env.CallVoidMethod(this, _invalidateDrawable3602, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer._invalidateDrawable3602, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _invalidateDrawable3602, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._invalidateDrawable3602, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _scheduleDrawable3603; 
 		public virtual void scheduleDrawable(android.graphics.drawable.Drawable arg0, java.lang.Runnable arg1, long arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				@__env.CallVoidMethod(this, _scheduleDrawable3603, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer._scheduleDrawable3603, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _scheduleDrawable3603, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._scheduleDrawable3603, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _unscheduleDrawable3604; 
 		public virtual void unscheduleDrawable(android.graphics.drawable.Drawable arg0, java.lang.Runnable arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				@__env.CallVoidMethod(this, _unscheduleDrawable3604, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer._unscheduleDrawable3604, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _unscheduleDrawable3604, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._unscheduleDrawable3604, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _selectDrawable3605; 
 		public virtual bool selectDrawable(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				return @__env.CallBooleanMethod(this, _selectDrawable3605, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.DrawableContainer._selectDrawable3605, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _selectDrawable3605, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._selectDrawable3605, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setConstantState3606; 
 		protected virtual void setConstantState(android.graphics.drawable.DrawableContainer.DrawableContainerState arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.graphics.drawable.DrawableContainer)) 
-				@__env.CallVoidMethod(this, _setConstantState3606, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.DrawableContainer._setConstantState3606, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.graphics.drawable.DrawableContainer.staticClass, _setConstantState3606, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._setConstantState3606, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _DrawableContainer3607; 
 		public DrawableContainer()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.graphics.drawable.DrawableContainer.staticClass, _DrawableContainer3607, this); 
+			@__env.NewObject(android.graphics.drawable.DrawableContainer.staticClass, global::android.graphics.drawable.DrawableContainer._DrawableContainer3607, this); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

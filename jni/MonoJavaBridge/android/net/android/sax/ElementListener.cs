@@ -19,7 +19,7 @@ namespace android.sax
 		internal static global::java.lang.Class staticClass; 
 		static __ElementListener() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.sax.__ElementListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.sax.__ElementListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -36,18 +36,18 @@ namespace android.sax
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.sax.__ElementListener)) 
-				@__env.CallVoidMethod(this, _start6384, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallVoidMethod(this, global::android.sax.__ElementListener._start6384, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.sax.__ElementListener.staticClass, _start6384, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.sax.__ElementListener.staticClass, global::android.sax.__ElementListener._start6384, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _end6385; 
 		 void android.sax.EndElementListener.end() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.sax.__ElementListener)) 
-				@__env.CallVoidMethod(this, _end6385); 
+				@__env.CallVoidMethod(this, global::android.sax.__ElementListener._end6385); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.sax.__ElementListener.staticClass, _end6385); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.sax.__ElementListener.staticClass, global::android.sax.__ElementListener._end6385); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

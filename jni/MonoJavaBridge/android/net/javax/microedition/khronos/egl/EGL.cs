@@ -19,7 +19,7 @@ namespace javax.microedition.khronos.egl
 		internal static global::java.lang.Class staticClass; 
 		static __EGL() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(javax.microedition.khronos.egl.__EGL), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::javax.microedition.khronos.egl.__EGL), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 

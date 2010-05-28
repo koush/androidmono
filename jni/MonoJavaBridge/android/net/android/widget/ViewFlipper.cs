@@ -6,7 +6,7 @@ namespace android.widget
 		internal new static global::java.lang.Class staticClass; 
 		static ViewFlipper() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.ViewFlipper), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.ViewFlipper), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -23,93 +23,93 @@ namespace android.widget
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ViewFlipper)) 
-				@__env.CallVoidMethod(this, _onAttachedToWindow11311); 
+				@__env.CallVoidMethod(this, global::android.widget.ViewFlipper._onAttachedToWindow11311); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ViewFlipper.staticClass, _onAttachedToWindow11311); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._onAttachedToWindow11311); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onDetachedFromWindow11312; 
 		protected override void onDetachedFromWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ViewFlipper)) 
-				@__env.CallVoidMethod(this, _onDetachedFromWindow11312); 
+				@__env.CallVoidMethod(this, global::android.widget.ViewFlipper._onDetachedFromWindow11312); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ViewFlipper.staticClass, _onDetachedFromWindow11312); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._onDetachedFromWindow11312); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _onWindowVisibilityChanged11313; 
 		protected override void onWindowVisibilityChanged(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ViewFlipper)) 
-				@__env.CallVoidMethod(this, _onWindowVisibilityChanged11313, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.ViewFlipper._onWindowVisibilityChanged11313, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ViewFlipper.staticClass, _onWindowVisibilityChanged11313, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._onWindowVisibilityChanged11313, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setFlipInterval11314; 
 		public virtual void setFlipInterval(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ViewFlipper)) 
-				@__env.CallVoidMethod(this, _setFlipInterval11314, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.ViewFlipper._setFlipInterval11314, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ViewFlipper.staticClass, _setFlipInterval11314, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._setFlipInterval11314, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _startFlipping11315; 
 		public virtual void startFlipping() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ViewFlipper)) 
-				@__env.CallVoidMethod(this, _startFlipping11315); 
+				@__env.CallVoidMethod(this, global::android.widget.ViewFlipper._startFlipping11315); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ViewFlipper.staticClass, _startFlipping11315); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._startFlipping11315); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _stopFlipping11316; 
 		public virtual void stopFlipping() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ViewFlipper)) 
-				@__env.CallVoidMethod(this, _stopFlipping11316); 
+				@__env.CallVoidMethod(this, global::android.widget.ViewFlipper._stopFlipping11316); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ViewFlipper.staticClass, _stopFlipping11316); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._stopFlipping11316); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isFlipping11317; 
 		public virtual bool isFlipping() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ViewFlipper)) 
-				return @__env.CallBooleanMethod(this, _isFlipping11317); 
+				return @__env.CallBooleanMethod(this, global::android.widget.ViewFlipper._isFlipping11317); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.ViewFlipper.staticClass, _isFlipping11317); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._isFlipping11317); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _setAutoStart11318; 
 		public virtual void setAutoStart(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ViewFlipper)) 
-				@__env.CallVoidMethod(this, _setAutoStart11318, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.widget.ViewFlipper._setAutoStart11318, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.widget.ViewFlipper.staticClass, _setAutoStart11318, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._setAutoStart11318, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _isAutoStart11319; 
 		public virtual bool isAutoStart() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.ViewFlipper)) 
-				return @__env.CallBooleanMethod(this, _isAutoStart11319); 
+				return @__env.CallBooleanMethod(this, global::android.widget.ViewFlipper._isAutoStart11319); 
 			else 
-				return @__env.CallNonVirtualBooleanMethod(this, android.widget.ViewFlipper.staticClass, _isAutoStart11319); 
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._isAutoStart11319); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ViewFlipper11320; 
 		public ViewFlipper(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.ViewFlipper.staticClass, _ViewFlipper11320, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+			@__env.NewObject(android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._ViewFlipper11320, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _ViewFlipper11321; 
 		public ViewFlipper(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			@__env.NewObject(android.widget.ViewFlipper.staticClass, _ViewFlipper11321, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+			@__env.NewObject(android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._ViewFlipper11321, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

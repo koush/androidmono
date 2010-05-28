@@ -6,7 +6,7 @@ namespace android.webkit
 		internal static global::java.lang.Class staticClass; 
 		static WebIconDatabase() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.webkit.WebIconDatabase), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.webkit.WebIconDatabase), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -38,7 +38,7 @@ namespace android.webkit
 			internal static global::java.lang.Class staticClass; 
 			static __IconListener() 
 			{ 
-				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.webkit.WebIconDatabase.__IconListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+				global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.webkit.WebIconDatabase.__IconListener), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 			} 
 			private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 			{ 
@@ -55,9 +55,9 @@ namespace android.webkit
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 				if (GetType() == typeof(android.webkit.WebIconDatabase.__IconListener)) 
-					@__env.CallVoidMethod(this, _onReceivedIcon9399, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+					@__env.CallVoidMethod(this, global::android.webkit.WebIconDatabase.__IconListener._onReceivedIcon9399, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 				else 
-					@__env.CallNonVirtualVoidMethod(this, android.webkit.WebIconDatabase.__IconListener.staticClass, _onReceivedIcon9399, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
+					@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebIconDatabase.__IconListener.staticClass, global::android.webkit.WebIconDatabase.__IconListener._onReceivedIcon9399, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			} 
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 			{ 
@@ -66,64 +66,64 @@ namespace android.webkit
 			} 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _getInstance9400; 
-		public static android.webkit.WebIconDatabase getInstance() 
+		public static global::android.webkit.WebIconDatabase getInstance() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebIconDatabase>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebIconDatabase.staticClass, _getInstance9400)); 
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebIconDatabase>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebIconDatabase.staticClass, global::android.webkit.WebIconDatabase._getInstance9400)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _close9401; 
 		public void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebIconDatabase)) 
-				@__env.CallVoidMethod(this, _close9401); 
+				@__env.CallVoidMethod(this, global::android.webkit.WebIconDatabase._close9401); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebIconDatabase.staticClass, _close9401); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebIconDatabase.staticClass, global::android.webkit.WebIconDatabase._close9401); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _open9402; 
 		public void open(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebIconDatabase)) 
-				@__env.CallVoidMethod(this, _open9402, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.webkit.WebIconDatabase._open9402, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebIconDatabase.staticClass, _open9402, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebIconDatabase.staticClass, global::android.webkit.WebIconDatabase._open9402, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _removeAllIcons9403; 
 		public void removeAllIcons() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebIconDatabase)) 
-				@__env.CallVoidMethod(this, _removeAllIcons9403); 
+				@__env.CallVoidMethod(this, global::android.webkit.WebIconDatabase._removeAllIcons9403); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebIconDatabase.staticClass, _removeAllIcons9403); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebIconDatabase.staticClass, global::android.webkit.WebIconDatabase._removeAllIcons9403); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _requestIconForPageUrl9404; 
 		public void requestIconForPageUrl(java.lang.String arg0, android.webkit.WebIconDatabase.IconListener arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebIconDatabase)) 
-				@__env.CallVoidMethod(this, _requestIconForPageUrl9404, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallVoidMethod(this, global::android.webkit.WebIconDatabase._requestIconForPageUrl9404, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebIconDatabase.staticClass, _requestIconForPageUrl9404, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebIconDatabase.staticClass, global::android.webkit.WebIconDatabase._requestIconForPageUrl9404, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _retainIconForPageUrl9405; 
 		public void retainIconForPageUrl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebIconDatabase)) 
-				@__env.CallVoidMethod(this, _retainIconForPageUrl9405, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.webkit.WebIconDatabase._retainIconForPageUrl9405, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebIconDatabase.staticClass, _retainIconForPageUrl9405, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebIconDatabase.staticClass, global::android.webkit.WebIconDatabase._retainIconForPageUrl9405, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _releaseIconForPageUrl9406; 
 		public void releaseIconForPageUrl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.webkit.WebIconDatabase)) 
-				@__env.CallVoidMethod(this, _releaseIconForPageUrl9406, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallVoidMethod(this, global::android.webkit.WebIconDatabase._releaseIconForPageUrl9406, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
-				@__env.CallNonVirtualVoidMethod(this, android.webkit.WebIconDatabase.staticClass, _releaseIconForPageUrl9406, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebIconDatabase.staticClass, global::android.webkit.WebIconDatabase._releaseIconForPageUrl9406, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 

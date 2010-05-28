@@ -3,7 +3,7 @@ namespace android.widget
 	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()] 
 	public interface FilterQueryProvider 
 	{ 
-		android.database.Cursor runQuery(java.lang.CharSequence arg0); 
+		global::android.database.Cursor runQuery(java.lang.CharSequence arg0); 
 	} 
 
 	public partial class FilterQueryProvider_ 
@@ -20,7 +20,7 @@ namespace android.widget
 		internal static global::java.lang.Class staticClass; 
 		static __FilterQueryProvider() 
 		{ 
-			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(android.widget.__FilterQueryProvider), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
+			global::net.sf.jni4net.utils.Registry.RegisterType(typeof(global::android.widget.__FilterQueryProvider), true, global::net.sf.jni4net.jni.JNIEnv.ThreadEnv); 
 		} 
 		private sealed class ContructionHelper : global::net.sf.jni4net.utils.IConstructionHelper 
 		{ 
@@ -33,13 +33,13 @@ namespace android.widget
 		{ 
 		} 
 		internal static global::net.sf.jni4net.jni.MethodId _runQuery10203; 
-		 android.database.Cursor android.widget.FilterQueryProvider.runQuery(java.lang.CharSequence arg0) 
+		 global::android.database.Cursor android.widget.FilterQueryProvider.runQuery(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
 			if (GetType() == typeof(android.widget.__FilterQueryProvider)) 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallObjectMethodPtr(this, _runQuery10203, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.__FilterQueryProvider._runQuery10203, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, android.widget.__FilterQueryProvider.staticClass, _runQuery10203, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.__FilterQueryProvider.staticClass, global::android.widget.__FilterQueryProvider._runQuery10203, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 		} 
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class) 
 		{ 
