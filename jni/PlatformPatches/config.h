@@ -140,7 +140,8 @@
 /* #undef DISABLE_ATTACH */
 
 /* Disable COM support */
-#define DISABLE_COM 1
+// apparently you need this for Marshal.FreeBSTR
+// #define DISABLE_COM 1
 
 /* Disable runtime debugging support */
 /* #undef DISABLE_DEBUG */
