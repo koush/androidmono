@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "android", "android\android.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoJavaBridge", "JavaBridge\MonoJavaBridge.csproj", "{AEDFC761-C0ED-4A82-824F-60C6299A9086}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono2Jni", "Mono2Jni\Mono2Jni.csproj", "{1276BA20-A085-4D52-8239-220E76524771}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono2Jni", "Mono2Jni\Mono2Jni.csproj", "{2B0BCB6A-139F-4F6E-AD37-F65E5E99C4B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono2Jni.Test", "Mono2Jni.Test\Mono2Jni.Test.csproj", "{8C67E93E-7D8B-45C9-99DD-078FC6817A51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +19,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1276BA20-A085-4D52-8239-220E76524771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1276BA20-A085-4D52-8239-220E76524771}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1276BA20-A085-4D52-8239-220E76524771}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1276BA20-A085-4D52-8239-220E76524771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B0BCB6A-139F-4F6E-AD37-F65E5E99C4B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B0BCB6A-139F-4F6E-AD37-F65E5E99C4B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B0BCB6A-139F-4F6E-AD37-F65E5E99C4B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B0BCB6A-139F-4F6E-AD37-F65E5E99C4B2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4C491434-C5BB-41B9-B8E6-433EBE16EC4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4C491434-C5BB-41B9-B8E6-433EBE16EC4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C491434-C5BB-41B9-B8E6-433EBE16EC4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -29,6 +31,10 @@ Global
 		{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C67E93E-7D8B-45C9-99DD-078FC6817A51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C67E93E-7D8B-45C9-99DD-078FC6817A51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C67E93E-7D8B-45C9-99DD-078FC6817A51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C67E93E-7D8B-45C9-99DD-078FC6817A51}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A3900426-8A60-473D-A454-3B5C124946D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A3900426-8A60-473D-A454-3B5C124946D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3900426-8A60-473D-A454-3B5C124946D4}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -3,6 +3,8 @@ obj/*
 JavaBridge/MonoJavaBridge.pidb
 MonoDroid/MonoDroid.pidb
 android/android.pidb
+Mono2Jni/Mono2Jni.pidb
+Mono2Jni.Test/Mono2Jni.Test.pidb
 bin
 obj
 dump.txt

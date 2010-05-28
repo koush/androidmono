@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{AEDFC761-C0ED-4A82-824F-60C6299A9086}</ProjectGuid>
+    <ProjectGuid>{2B0BCB6A-139F-4F6E-AD37-F65E5E99C4B2}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>MonoJavaBridge</RootNamespace>
-    <AssemblyName>MonoJavaBridge</AssemblyName>
+    <RootNamespace>Mono2Jni</RootNamespace>
+    <AssemblyName>Mono2Jni</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -20,7 +20,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
@@ -29,19 +28,27 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="JavaBridge.cs" />
+    <Compile Include="GenerationFlags.cs" />
+    <Compile Include="MonoReflector.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <EmbeddedResource Include="JavaTemplate.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\android\android.csproj">
+      <Project>{4C491434-C5BB-41B9-B8E6-433EBE16EC4A}</Project>
+      <Name>android</Name>
+    </ProjectReference>
     <ProjectReference Include="..\jni4net.n\jni4net.n.androidmono.csproj">
       <Project>{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}</Project>
       <Name>jni4net.n.androidmono</Name>
