@@ -11,6 +11,7 @@ namespace Mono2Jni
     public class MonoReflector
     {
         private List<Assembly> assems = new List<Assembly>();
+        private static string template = new StreamReader(typeof(MonoReflector).Assembly.GetManifestResourceStream(typeof(MonoReflector).Assembly.GetName().Name + ".JavaTemplate.txt")).ReadToEnd();
 
         public MonoReflector(params string[] files)
         {
@@ -24,75 +25,77 @@ namespace Mono2Jni
         }
 
         public bool Generate(GenerationFlags flags)
-        {
-            string template = new StreamReader(GetType().Assembly.GetManifestResourceStream(GetType().Assembly.GetName().Name + ".JavaTemplate.txt")).ReadToEnd();
-
+        {          
             foreach (Assembly a in assems)
-            {
-                foreach (Type t in a.GetTypes())
-                {
-                    Dictionary<MethodInfo, MethodInfo> methods = new Dictionary<MethodInfo, MethodInfo>();
-                    bool isBaseClass = false;
-                    foreach (MethodInfo subm in t.GetMethods(BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance))
-                    {
-                        if ((subm.MemberType & MemberTypes.Property) == MemberTypes.Property || (subm.MemberType & MemberTypes.Method) == MemberTypes.Method)
-                        {
-                            MethodInfo androidMethod = FindBaseForMethod(subm, null);
-                            if (androidMethod != null)
-                            {
-                                isBaseClass |= true;
-                                methods.Add(subm, androidMethod);
-                            }
-                            else//must be implementing an interface
-                            {
-                                androidMethod = FindInterfaceForMethod(subm);
-                                if (androidMethod != null)
-                                    methods.Add(subm, androidMethod);
-                            }
-                        }
-                    }
-                    if (methods.Count > 0)
-                    {
-                        StringBuilder linkMethods = new StringBuilder(), natives = new StringBuilder();
-                        //get the link methods
-
-                        KeyValuePair<MethodInfo, MethodInfo>? first = null;
-                        foreach (KeyValuePair<MethodInfo, MethodInfo> pair in methods)
-                        {
-                            if (first == null)
-                                first = pair;
-                            StringBuilder args = new StringBuilder(), jniArgs = new StringBuilder();
-                            ParameterInfo[] paramInfo = null;
-                            foreach (ParameterInfo p in paramInfo = pair.Key.GetParameters())
-                                jniArgs.Append(GetJType(p.ParameterType, true, true));
-                            for (int i = 0; i < paramInfo.Length; i++)
-                            {
-                                args.Append(paramInfo[i].ParameterType.FullName);
-                                if (i < paramInfo.Length - 1)
-                                    args.Append(",");
-                            }
-                            linkMethods.AppendLine(string.Format("\t\tMonoBridge.link({0}.class, \"{1}\", \"({2}){3}\", \"{4}\");", t.Name, pair.Key.Name, jniArgs, GetJType(pair.Key.ReturnType, true, true), args));
-                            args = new StringBuilder();//reuse var
-
-                            for (int i = 0; i < paramInfo.Length; i++)
-                            {
-                                args.AppendFormat("{0} {1}", paramInfo[i].ParameterType.FullName, paramInfo[i].Name);
-                                if (i < paramInfo.Length - 1)
-                                    args.Append(",");
-                            }
-                            natives.AppendLine("\t@Override");
-                            natives.AppendLine(string.Format("\t{0} native {1} {2}({3});", pair.Key.IsPublic ? "public" : "protected", GetJLangType(pair.Value.ReturnType), pair.Key.Name, args));
-                        }
-                        string[] fqcn = SplitFQCN(t.FullName);
-                        string basePath = Path.GetDirectoryName(a.Location);
-                        File.WriteAllText(Path.Combine(basePath, t.FullName + ".java"), string.Format(template, fqcn[0], t.Name, isBaseClass ? " extends " : string.Empty, isBaseClass ? first.Value.Value.DeclaringType.FullName : string.Empty, linkMethods, natives));
-                    }
-                }
-            }
+                Generate(a.GetTypes(), flags);
             //FIXME: compile with sdk here
             if ((flags & GenerationFlags.KeepIntermediateFiles) != GenerationFlags.KeepIntermediateFiles)
             {
 
+            }
+            return true;
+        }
+
+        public bool Generate(Type[] types, GenerationFlags flags)
+        {
+            foreach (Type t in types)
+            {
+                Dictionary<MethodInfo, MethodInfo> methods = new Dictionary<MethodInfo, MethodInfo>();
+                bool isBaseClass = false;
+                foreach (MethodInfo subm in t.GetMethods(BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance))
+                {
+                    if ((subm.MemberType & MemberTypes.Property) == MemberTypes.Property || (subm.MemberType & MemberTypes.Method) == MemberTypes.Method)
+                    {
+                        MethodInfo androidMethod = FindBaseForMethod(subm, null);
+                        if (androidMethod != null)
+                        {
+                            isBaseClass |= true;
+                            methods.Add(subm, androidMethod);
+                        }
+                        else//must be implementing an interface
+                        {
+                            androidMethod = FindInterfaceForMethod(subm);
+                            if (androidMethod != null)
+                                methods.Add(subm, androidMethod);
+                        }
+                    }
+                }
+                if (methods.Count > 0)
+                {
+                    StringBuilder linkMethods = new StringBuilder(), natives = new StringBuilder();
+                    //get the link methods
+
+                    KeyValuePair<MethodInfo, MethodInfo>? first = null;
+                    foreach (KeyValuePair<MethodInfo, MethodInfo> pair in methods)
+                    {
+                        if (first == null)
+                            first = pair;
+                        StringBuilder args = new StringBuilder(), jniArgs = new StringBuilder();
+                        ParameterInfo[] paramInfo = null;
+                        foreach (ParameterInfo p in paramInfo = pair.Key.GetParameters())
+                            jniArgs.Append(GetJType(p.ParameterType, true, true));
+                        for (int i = 0; i < paramInfo.Length; i++)
+                        {
+                            args.Append(paramInfo[i].ParameterType.FullName);
+                            if (i < paramInfo.Length - 1)
+                                args.Append(",");
+                        }
+                        linkMethods.AppendLine(string.Format("\t\tMonoBridge.link({0}.class, \"{1}\", \"({2}){3}\", \"{4}\");", t.Name, pair.Key.Name, jniArgs, GetJType(pair.Key.ReturnType, true, true), args));
+                        args = new StringBuilder();//reuse var
+
+                        for (int i = 0; i < paramInfo.Length; i++)
+                        {
+                            args.AppendFormat("{0} {1}", paramInfo[i].ParameterType.FullName, paramInfo[i].Name);
+                            if (i < paramInfo.Length - 1)
+                                args.Append(",");
+                        }
+                        natives.AppendLine("\t@Override");
+                        natives.AppendLine(string.Format("\t{0} native {1} {2}({3});", pair.Key.IsPublic ? "public" : "protected", GetJLangType(pair.Value.ReturnType), pair.Key.Name, args));
+                    }
+                    string[] fqcn = SplitFQCN(t.FullName);
+                    string basePath = Path.GetDirectoryName(t.Assembly.Location);
+                    File.WriteAllText(Path.Combine(basePath, t.FullName + ".java"), string.Format(template, fqcn[0], t.Name, isBaseClass ? " extends " : string.Empty, isBaseClass ? first.Value.Value.DeclaringType.FullName : string.Empty, linkMethods, natives));
+                }
             }
             return true;
         }
@@ -124,20 +127,6 @@ namespace Mono2Jni
             }
             return null;
         }
-
-        /*private bool MatchParams(MethodInfo subm, MethodInfo supm)
-        {
-            ParameterInfo[] supp = supm.GetParameters();
-            ParameterInfo[] subp = subm.GetParameters();
-            if (supp.Length == subp.Length)
-            {
-                for (int i = 0; i < supp.Length; i++)
-                    if (supp[i].ParameterType != subp[i].ParameterType)
-                        return false;
-                return true;
-            }
-            return false;
-        }*/
 
         private string GetJType(Type type, bool replace, bool jniClasses)
         {

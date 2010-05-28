@@ -46,6 +46,10 @@
       <Project>{4C491434-C5BB-41B9-B8E6-433EBE16EC4A}</Project>
       <Name>android</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Mono2Jni\Mono2Jni.csproj">
+      <Project>{2B0BCB6A-139F-4F6E-AD37-F65E5E99C4B2}</Project>
+      <Name>Mono2Jni</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
