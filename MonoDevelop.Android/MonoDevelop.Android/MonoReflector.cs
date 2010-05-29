@@ -100,10 +100,9 @@ namespace MonoDevelop.Android
                         natives.AppendLine("\t@Override");
                         natives.AppendLine(string.Format("\t{0} native {1} {2}({3});", pair.Key.IsPublic ? "public" : "protected", GetJLangType(pair.Value.ReturnType), pair.Key.Name, args));
                     }
-                    string[] fqcn = SplitFQCN(t.FullName);
                     string basePath = Path.GetDirectoryName(t.Assembly.Location);
                     Console.WriteLine(basePath);
-                    File.WriteAllText(Path.Combine(basePath, t.FullName + ".java"), string.Format(template, fqcn[0], t.Name, isBaseClass ? " extends " : string.Empty, isBaseClass ? first.Value.Value.DeclaringType.FullName : string.Empty, linkMethods, natives));
+                    File.WriteAllText(Path.Combine(basePath, t.FullName + ".java"), string.Format(template, t.Namespace, t.Name, isBaseClass ? " extends " : string.Empty, isBaseClass ? first.Value.Value.DeclaringType.FullName : string.Empty, linkMethods, natives));
                 }
             }
             return true;
@@ -197,20 +196,6 @@ namespace MonoDevelop.Android
                 default:
                     return type.FullName;
             }
-        }
-
-        private string[] SplitFQCN(string fqcn)
-        {
-            string[] names = fqcn.Split('.');
-            StringBuilder b = new StringBuilder();
-            for (int i = 0; i < names.Length - 1; i++)
-            {
-                b.Append(names[i]);
-                if (i < names.Length - 2)
-                    b.Append(".");
-            }
-            return new string[] { b.ToString(), names[names.Length - 1] };
-            //{ string.Concat(names.Take(names.Length - 1).Select(x => ++index < names.Length - 1 ? x + "." : x).ToArray()), names[names.Length - 1] };
         }
     }
 }
