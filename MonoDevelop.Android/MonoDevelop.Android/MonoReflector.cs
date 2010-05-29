@@ -104,6 +104,8 @@ namespace MonoDevelop.Android
                         }
                         string[] fqcn = SplitFQCN(t.FullName);
                         string basePath = Path.GetDirectoryName(t.Assembly.Location);
+                        basePath = Path.Combine(basePath, t.Namespace.Replace('.', Path.DirectorySeparatorChar));
+                        Directory.CreateDirectory(basePath);
                         File.WriteAllText(Path.Combine(basePath, t.FullName + ".java"),
                             string.Format(template, fqcn[0], t.Name, isBaseClass ? " extends " : string.Empty, isBaseClass ? first.Value.Value.DeclaringType.FullName : string.Empty, linkMethods, natives));
                     }
@@ -120,7 +122,7 @@ namespace MonoDevelop.Android
                 null, sub.GetParameters().Select(x => x.ParameterType).ToArray(), null);
             if (sup != null)
             {
-                foreach (var attrib in sup.GetCustomAttributes(false))
+                foreach (var attrib in currentSuper.GetCustomAttributes(false))
                 {
                     if (attrib.GetType().FullName == "net.sf.jni4net.attributes.JavaClassAttribute")
                         return sup;
@@ -137,7 +139,7 @@ namespace MonoDevelop.Android
                     null, sub.GetParameters().Select(x => x.ParameterType).ToArray(), null);
                 if (sup != null)
                 {
-                    foreach (var attrib in sup.GetCustomAttributes(false))
+                    foreach (var attrib in t.GetCustomAttributes(false))
                     {
                         if (attrib.GetType().FullName == "net.sf.jni4net.attributes.JavaInterfaceAttribute")
                             return sup;
