@@ -31,7 +31,7 @@ namespace MonoDevelop.Android
         }
 
         public bool Generate(GenerationFlags flags)
-        {   
+        {
             foreach (Assembly a in assems)
                 Generate(a.GetTypes(), flags);
             //FIXME: compile with sdk here
@@ -46,63 +46,67 @@ namespace MonoDevelop.Android
         {
             foreach (Type t in types)
             {
-                Dictionary<MethodInfo, MethodInfo> methods = new Dictionary<MethodInfo, MethodInfo>();
-                bool isBaseClass = false;
-                foreach (MethodInfo subm in t.GetMethods(BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance))
+                if (!t.IsInterface)
                 {
-                    if ((subm.MemberType & MemberTypes.Property) == MemberTypes.Property || (subm.MemberType & MemberTypes.Method) == MemberTypes.Method)
+                    Dictionary<MethodInfo, MethodInfo> methods = new Dictionary<MethodInfo, MethodInfo>();
+                    bool isBaseClass = false;
+                    foreach (MethodInfo subm in t.GetMethods(BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance).Where(x => x.IsVirtual))
                     {
-                        Console.WriteLine(subm);
-                        MethodInfo androidMethod = FindBaseForMethod(subm, null);
-                        if (androidMethod != null)
+                        if ((subm.MemberType & MemberTypes.Property) == MemberTypes.Property || (subm.MemberType & MemberTypes.Method) == MemberTypes.Method)
                         {
-                            Console.WriteLine("Found: {0}", androidMethod);
-                            isBaseClass |= true;
-                            methods.Add(subm, androidMethod);
-                        }
-                        else//must be implementing an interface
-                        {
-                            androidMethod = FindInterfaceForMethod(subm);
+                            MethodInfo androidMethod = FindBaseForMethod(subm, null);
                             if (androidMethod != null)
+                            {
+                                isBaseClass |= true;
                                 methods.Add(subm, androidMethod);
+                            }
+                            else//must be implementing an interface
+                            {
+                                androidMethod = FindInterfaceForMethod(subm);
+                                if (androidMethod != null)
+                                    methods.Add(subm, androidMethod);
+                            }
                         }
                     }
-                }
-                if (methods.Count > 0)
-                {
-                    StringBuilder linkMethods = new StringBuilder(), natives = new StringBuilder();
-                    //get the link methods
-
-                    KeyValuePair<MethodInfo, MethodInfo>? first = null;
-                    foreach (KeyValuePair<MethodInfo, MethodInfo> pair in methods)
+                    if (methods.Count > 0)
                     {
-                        if (first == null)
-                            first = pair;
-                        StringBuilder args = new StringBuilder(), jniArgs = new StringBuilder();
-                        ParameterInfo[] paramInfo = null;
-                        foreach (ParameterInfo p in paramInfo = pair.Key.GetParameters())
-                            jniArgs.Append(GetJType(p.ParameterType, true, true));
-                        for (int i = 0; i < paramInfo.Length; i++)
-                        {
-                            args.Append(paramInfo[i].ParameterType.FullName);
-                            if (i < paramInfo.Length - 1)
-                                args.Append(",");
-                        }
-                        linkMethods.AppendLine(string.Format("\t\tMonoBridge.link({0}.class, \"{1}\", \"({2}){3}\", \"{4}\");", t.Name, pair.Key.Name, jniArgs, GetJType(pair.Key.ReturnType, true, true), args));
-                        args = new StringBuilder();//reuse var
+                        StringBuilder linkMethods = new StringBuilder(), natives = new StringBuilder();
+                        //get the link methods
 
-                        for (int i = 0; i < paramInfo.Length; i++)
+                        KeyValuePair<MethodInfo, MethodInfo>? first = null;
+                        foreach (KeyValuePair<MethodInfo, MethodInfo> pair in methods)
                         {
-                            args.AppendFormat("{0} {1}", paramInfo[i].ParameterType.FullName, paramInfo[i].Name);
-                            if (i < paramInfo.Length - 1)
-                                args.Append(",");
+                            if (first == null)
+                                first = pair;
+                            StringBuilder args = new StringBuilder(), jniArgs = new StringBuilder();
+                            ParameterInfo[] paramInfo = null;
+                            foreach (ParameterInfo p in paramInfo = pair.Key.GetParameters())
+                                jniArgs.Append(GetJType(p.ParameterType, true, true));
+                            for (int i = 0; i < paramInfo.Length; i++)
+                            {
+                                args.Append(paramInfo[i].ParameterType.FullName);
+                                if (i < paramInfo.Length - 1)
+                                    args.Append(",");
+                            }
+                            linkMethods.AppendLine(string.Format("\t\tMonoBridge.link({0}.class, \"{1}\", \"({2}){3}\", \"{4}\");",
+                                t.Name, pair.Key.Name, jniArgs, GetJType(pair.Key.ReturnType, true, true), args));
+                            args = new StringBuilder();//reuse var
+
+                            for (int i = 0; i < paramInfo.Length; i++)
+                            {
+                                args.AppendFormat("{0} {1}", paramInfo[i].ParameterType.FullName, paramInfo[i].Name);
+                                if (i < paramInfo.Length - 1)
+                                    args.Append(",");
+                            }
+                            natives.AppendLine("\t@Override");
+                            natives.AppendLine(string.Format("\t{0} native {1} {2}({3});",
+                                pair.Key.IsPublic ? "public" : "protected", GetJLangType(pair.Value.ReturnType), pair.Key.Name, args));
                         }
-                        natives.AppendLine("\t@Override");
-                        natives.AppendLine(string.Format("\t{0} native {1} {2}({3});", pair.Key.IsPublic ? "public" : "protected", GetJLangType(pair.Value.ReturnType), pair.Key.Name, args));
+                        string[] fqcn = SplitFQCN(t.FullName);
+                        string basePath = Path.GetDirectoryName(t.Assembly.Location);
+                        File.WriteAllText(Path.Combine(basePath, t.FullName + ".java"),
+                            string.Format(template, fqcn[0], t.Name, isBaseClass ? " extends " : string.Empty, isBaseClass ? first.Value.Value.DeclaringType.FullName : string.Empty, linkMethods, natives));
                     }
-                    string basePath = Path.GetDirectoryName(t.Assembly.Location);
-                    Console.WriteLine(basePath);
-                    File.WriteAllText(Path.Combine(basePath, t.FullName + ".java"), string.Format(template, t.Namespace, t.Name, isBaseClass ? " extends " : string.Empty, isBaseClass ? first.Value.Value.DeclaringType.FullName : string.Empty, linkMethods, natives));
                 }
             }
             return true;
@@ -116,7 +120,7 @@ namespace MonoDevelop.Android
                 null, sub.GetParameters().Select(x => x.ParameterType).ToArray(), null);
             if (sup != null)
             {
-                foreach (var attrib in currentSuper.GetCustomAttributes(false))
+                foreach (var attrib in sup.GetCustomAttributes(false))
                 {
                     if (attrib.GetType().FullName == "net.sf.jni4net.attributes.JavaClassAttribute")
                         return sup;
@@ -125,7 +129,7 @@ namespace MonoDevelop.Android
             return currentSuper.BaseType != null ? FindBaseForMethod(sub, currentSuper.BaseType) : null;
         }
 
-       private MethodInfo FindInterfaceForMethod(MethodInfo sub)
+        private MethodInfo FindInterfaceForMethod(MethodInfo sub)
         {
             foreach (Type t in sub.DeclaringType.GetInterfaces())
             {
@@ -197,6 +201,19 @@ namespace MonoDevelop.Android
                     return type.FullName;
             }
         }
+
+        private string[] SplitFQCN(string fqcn)
+        {
+            string[] names = fqcn.Split('.');
+            StringBuilder b = new StringBuilder();
+            for (int i = 0; i < names.Length - 1; i++)
+            {
+                b.Append(names[i]);
+                if (i < names.Length - 2)
+                    b.Append(".");
+            }
+            return new string[] { b.ToString(), names[names.Length - 1] };
+            //{ string.Concat(names.Take(names.Length - 1).Select(x => ++index < names.Length - 1 ? x + "." : x).ToArray()), names[names.Length - 1] };
+        }
     }
 }
-
