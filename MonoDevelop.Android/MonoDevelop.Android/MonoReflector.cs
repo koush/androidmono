@@ -2,10 +2,8 @@ using System;
 using System.Linq;
 using System.Reflection;
 using System.Collections.Generic;
-using net.sf.jni4net.attributes;
 using System.IO;
 using System.Text;
-using android;
 
 namespace MonoDevelop.Android
 {
@@ -23,10 +21,6 @@ namespace MonoDevelop.Android
 
         public MonoReflector(params string[] files)
         {
-            var t1 = typeof(net.sf.jni4net.jni.JNIEnv);
-            var t2 = typeof(android.app.Activity);
-            Console.WriteLine("{0}{1}", t1, t2);
-            
             foreach (string assem in files)
                 assems.Add(Assembly.LoadFile(assem));
         }
@@ -37,7 +31,7 @@ namespace MonoDevelop.Android
         }
 
         public bool Generate(GenerationFlags flags)
-        {          
+        {   
             foreach (Assembly a in assems)
                 Generate(a.GetTypes(), flags);
             //FIXME: compile with sdk here
@@ -58,9 +52,11 @@ namespace MonoDevelop.Android
                 {
                     if ((subm.MemberType & MemberTypes.Property) == MemberTypes.Property || (subm.MemberType & MemberTypes.Method) == MemberTypes.Method)
                     {
+                        Console.WriteLine(subm);
                         MethodInfo androidMethod = FindBaseForMethod(subm, null);
                         if (androidMethod != null)
                         {
+                            Console.WriteLine("Found: {0}", androidMethod);
                             isBaseClass |= true;
                             methods.Add(subm, androidMethod);
                         }
@@ -106,6 +102,7 @@ namespace MonoDevelop.Android
                     }
                     string[] fqcn = SplitFQCN(t.FullName);
                     string basePath = Path.GetDirectoryName(t.Assembly.Location);
+                    Console.WriteLine(basePath);
                     File.WriteAllText(Path.Combine(basePath, t.FullName + ".java"), string.Format(template, fqcn[0], t.Name, isBaseClass ? " extends " : string.Empty, isBaseClass ? first.Value.Value.DeclaringType.FullName : string.Empty, linkMethods, natives));
                 }
             }
@@ -120,9 +117,11 @@ namespace MonoDevelop.Android
                 null, sub.GetParameters().Select(x => x.ParameterType).ToArray(), null);
             if (sup != null)
             {
-                object[] attribs = null;
-                if (sup != null && (attribs = currentSuper.GetCustomAttributes(typeof(JavaClassAttribute), false)) != null && attribs.Length > 0)
-                    return sup;
+                foreach (var attrib in currentSuper.GetCustomAttributes(false))
+                {
+                    if (attrib.GetType().FullName == "net.sf.jni4net.attributes.JavaClassAttribute")
+                        return sup;
+                }
             }
             return currentSuper.BaseType != null ? FindBaseForMethod(sub, currentSuper.BaseType) : null;
         }
@@ -133,9 +132,14 @@ namespace MonoDevelop.Android
             {
                 MethodInfo sup = t.GetMethod(sub.Name, BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public,
                     null, sub.GetParameters().Select(x => x.ParameterType).ToArray(), null);
-                object[] attribs = null;
-                if (sup != null && (attribs = sup.DeclaringType.GetCustomAttributes(typeof(JavaInterfaceAttribute), false)) != null && attribs.Length > 0)
-                    return sup;
+                if (sup != null)
+                {
+                    foreach (var attrib in sup.GetCustomAttributes(false))
+                    {
+                        if (attrib.GetType().FullName == "net.sf.jni4net.attributes.JavaInterfaceAttribute")
+                            return sup;
+                    }
+                }
             }
             return null;
         }
