@@ -74,7 +74,33 @@ namespace ${Namespace}
     {
         public static void Main (string[] args)
         {
-            Console.WriteLine("Starting the application via Activity Manager (am). This process will exit.");
+            bool debug = false;
+            foreach (var arg in args)
+            {
+                if (arg == "--debug")
+                    debug = true;
+            }
+            Console.WriteLine ("Starting the application via Activity Manager (am). This process will exit.");
+            var arguments = "-c 'am start -a android.intent.action.MAIN -n ${Namespace}/${Namespace}.MainActivity'";
+            if (debug)
+                arguments += " -ez mono_debug true";
+            var psi = new System.Diagnostics.ProcessStartInfo()
+            {
+                Arguments = arguments,
+                FileName = "/system/bin/sh",
+            };
+            try
+            {
+                var p = System.Diagnostics.Process.Start (psi);
+                if (p == null)
+                    throw new Exception("null Process returned");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error starting activity!");
+                Console.WriteLine(ex);
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }   

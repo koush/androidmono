@@ -22,21 +22,25 @@ namespace MonoDevelop.Android
 		
         protected override BuildResult Build (IProgressMonitor monitor, SolutionEntityItem item, ConfigurationSelector configuration)
         {
-            //monitor.BeginTask("Generating Java files.", 0);
-            
             var proj = item as AndroidProject;
-            if (proj != null)
-            {
-                var conf = proj.GetConfiguration(configuration) as AndroidProjectConfiguration;        
-                if (conf != null)
-                    Console.WriteLine(conf.CompiledOutputName);
-            }
-                
-             //
-            //Console.WriteLine("Output assembly: {0}", conf.OutputAssembly);
+            if (proj == null)
+                return base.Build (monitor, item, configuration);            //monitor.BeginTask("Generating Java files.", 0);
+            
+            var conf = proj.GetConfiguration(configuration) as AndroidProjectConfiguration;        
+            Console.WriteLine("Output assembly: {0}", conf.OutputAssembly);
+            Console.WriteLine("Compiled Output assembly: {0}", conf.CompiledOutputName);
+            Console.WriteLine(File.Exists(conf.CompiledOutputName));
             
             //monitor.EndTask();
-            return base.Build (monitor, item, configuration);
+            var buildResult = base.Build (monitor, item, configuration);
+            Console.WriteLine(File.Exists(conf.CompiledOutputName));
+            if (buildResult.Errors.Count > 0)
+                return buildResult;
+            
+            var mr = new MonoReflector(conf.CompiledOutputName);
+            if (!mr.Generate(GenerationFlags.None))
+                buildResult.AddError("Error while generating Java classes.");
+            return buildResult;
         }
         
         protected override BuildResult Compile (IProgressMonitor monitor, SolutionEntityItem item, BuildData buildData)

@@ -75,6 +75,7 @@
     <Compile Include="AndroidExecutionCommand.cs" />
     <Compile Include="AndroidExecutionHandler.cs" />
     <Compile Include="AndroidFrameworkBackend.cs" />
+    <Compile Include="MonoReflector.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -95,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Icons\48x48\icon.png">
       <LogicalName>icon.png</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\JavaClassTemplate.java">
+      <LogicalName>JavaClassTemplate.java</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

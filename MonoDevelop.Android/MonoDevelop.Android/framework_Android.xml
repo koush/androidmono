@@ -4,6 +4,7 @@
   <Assembly name="System" version="2.0.5.0" publicKeyToken="7cec85d7bea7798e" />
   <Assembly name="System.Core" version="2.0.5.0" publicKeyToken="7cec85d7bea7798e" />
   <Assembly name="System.Xml" version="2.0.5.0" publicKeyToken="7cec85d7bea7798e" />
-  <Assembly name="android" version="0.0.0.0" />
+  <Assembly name="android" />
+  <Assembly name="jni4net.n-0.8.1.0" />
 </Assemblies>
 </TargetFramework>

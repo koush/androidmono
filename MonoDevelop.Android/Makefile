@@ -1,14 +1,15 @@
 include config.make
+TOP_SRCDIR=/Users/koush/src/monodevelop
 installdir = "$(prefix)/lib/monodevelop/AddIns/MonoDevelop.Android"
 conf=Debug
 SLN=MonoDevelop.Android.sln
 
 
-ISLOCAL := $(wildcard "../local-config/monodevelop.pc")
+ISLOCAL := $(wildcard "$(TOP_SRCDIR)/local-config/monodevelop.pc")
 ifeq ($(strip $(ISLOCAL)),)
-	LOCAL_MDBUILD=../../main/build
+	LOCAL_MDBUILD=$(TOP_SRCDIR)/main/build
 	MDTOOL=\
-		PKG_CONFIG_PATH="../../local-config:${PKG_CONFIG_PATH}" \
+		PKG_CONFIG_PATH="$(TOP_SRCDIR)/local-config:${PKG_CONFIG_PATH}" \
 		MONODEVELOP_LOCALE_PATH="${LOCAL_MDBUILD}/locale" \
 		MONO_ADDINS_REGISTRY="${LOCAL_MDBUILD}/bin" \
 		mono --debug "${LOCAL_MDBUILD}/bin/mdrun.exe"
