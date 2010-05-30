@@ -41,26 +41,20 @@ namespace MonoDevelop.Android
             mOutputPath = outputPath;
         }
         
-        public bool Generate(GenerationFlags flags, string assemblyFile)
+        public void Generate(GenerationFlags flags, string assemblyFile)
         {
-            return Generate(flags, Assembly.LoadFile(assemblyFile));
+            Generate(flags, Assembly.LoadFile(assemblyFile));
         }
 
-        private bool Generate(GenerationFlags flags, params Assembly[] assemblies)
+        private void Generate(GenerationFlags flags, params Assembly[] assemblies)
         {
             foreach (Assembly a in assemblies)
             {
                 Generate(flags, a);
             }
-            //FIXME: compile with sdk here
-            if ((flags & GenerationFlags.KeepIntermediateFiles) != GenerationFlags.KeepIntermediateFiles)
-            {
-
-            }
-            return true;
         }
 
-        public bool Generate(GenerationFlags flags, Assembly assembly)
+        public void Generate(GenerationFlags flags, Assembly assembly)
         {
             foreach (Type t in assembly.GetTypes())
             {
@@ -123,12 +117,11 @@ namespace MonoDevelop.Android
                         string basePath = mOutputPath ?? Path.GetDirectoryName(t.Assembly.Location);
                         basePath = Path.Combine(basePath, t.Namespace.Replace('.', Path.DirectorySeparatorChar));
                         Directory.CreateDirectory(basePath);
-                        File.WriteAllText(Path.Combine(basePath, t.FullName + ".java"),
+                        File.WriteAllText(Path.Combine(basePath, t.Name + ".java"),
                             string.Format(mTemplate, t.Namespace, t.Name, isBaseClass ? " extends " : string.Empty, isBaseClass ? first.Value.Value.DeclaringType.FullName : string.Empty, linkMethods, natives));
                     }
                 }
             }
-            return true;
         }
 
         private MethodInfo FindBaseForMethod(MethodInfo sub, Type currentSuper)

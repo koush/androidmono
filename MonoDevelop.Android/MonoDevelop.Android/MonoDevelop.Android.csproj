@@ -76,6 +76,7 @@
     <Compile Include="AndroidExecutionHandler.cs" />
     <Compile Include="AndroidFrameworkBackend.cs" />
     <Compile Include="MonoReflector.cs" />
+    <Compile Include="Config.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -99,6 +100,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Templates\JavaClassTemplate.java">
       <LogicalName>JavaClassTemplate.java</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Application.java">
+      <LogicalName>Application.java</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
