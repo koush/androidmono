@@ -12,29 +12,34 @@ using MonoDevelop.Core.Execution;
 namespace MonoDevelop.Android
 {
 
-	public class AndroidProject : DotNetProject
-	{
-		public AndroidProject ()
-		{
+    public class AndroidProject : DotNetProject
+    {
+        public AndroidProject ()
+        {
             Console.WriteLine("AndroidProject");
-		}
+        }
 
-		public AndroidProject (string languageName)
-			: base (languageName)
-		{
-		}
+        public AndroidProject (string languageName)
+            : base (languageName)
+        {
+        }
         
         protected override void OnEndLoad ()
         {
             base.OnEndLoad ();
             
-            var iconPath = Path.Combine(BaseDirectory, "Android/res/drawable/icon.png");
+            var manifest = Path.Combine(Path.Combine(BaseDirectory, "Android"), "AndroidManifest.xml");
+            if (null == GetProjectFile(manifest))
+                return;
+            
+            var javaProjDir = Path.Combine(BaseDirectory, "Android");
+            var thisAssembly = System.Reflection.Assembly.GetExecutingAssembly();
+            var iconPath = Path.Combine(javaProjDir, "res/drawable/icon.png");
             var iconFile = GetProjectFile(iconPath);
             if (iconFile == null)
             {
                 var projectFile = AddFile(iconPath);
-                var a = System.Reflection.Assembly.GetExecutingAssembly();
-                using (var istream = a.GetManifestResourceStream("icon.png"))
+                using (var istream = thisAssembly.GetManifestResourceStream("icon.png"))
                 {
                     using (var ostream = new FileStream(iconPath, FileMode.Create))
                     {
@@ -45,40 +50,45 @@ namespace MonoDevelop.Android
                 }
             }
             
-            Directory.CreateDirectory(Path.Combine(BaseDirectory, "Android/src"));
+            var monoActivityPath = Path.Combine(javaProjDir, "src");
+            monoActivityPath = Path.Combine(monoActivityPath, DefaultNamespace.Replace('.', Path.DirectorySeparatorChar));
+            Directory.CreateDirectory(monoActivityPath);
+            monoActivityPath = Path.Combine(monoActivityPath, "MonoActivity.java");
+            if (iconFile == null)
+            {
+                var projectFile = AddFile(monoActivityPath);
+                using (var istream = new StreamReader(thisAssembly.GetManifestResourceStream("MonoActivity.java")))
+                {
+                    
+                    File.WriteAllText(monoActivityPath, string.Format(istream.ReadToEnd(), DefaultNamespace));
+                }
+            }
         }
         
-		
-		public override string ProjectType {
-			get { return "Android"; }
-		}
-		
-		public AndroidProject (string languageName, ProjectCreateInformation info, XmlElement projectOptions)
-			: base (languageName, info, projectOptions)
-		{
-		}
+        
+        public override string ProjectType {
+            get { return "Android"; }
+        }
+        
+        public AndroidProject (string languageName, ProjectCreateInformation info, XmlElement projectOptions)
+            : base (languageName, info, projectOptions)
+        {
+        }
                 
         protected override void OnBeginLoad ()
         {
             base.OnBeginLoad ();
         }
         
-		
-		protected override ExecutionCommand CreateExecutionCommand (ConfigurationSelector configSel, DotNetProjectConfiguration configuration)
-		{
-            bool isApk = false;
-            foreach (var reference in References)
-            {
-                if (reference.Reference.StartsWith("android"))
-                {
-                    isApk = true;
-                    break;
-                }
-            }
-            
-			return new AndroidExecutionCommand (TargetRuntime, TargetFramework, configuration.CompiledOutputName.FileName, configuration.OutputDirectory,
-			                                   configuration.DebugMode, isApk);
-		}
+        
+        protected override ExecutionCommand CreateExecutionCommand (ConfigurationSelector configSel, DotNetProjectConfiguration configuration)
+        {
+            var javaProjectPath = Path.Combine(BaseDirectory, "Android");
+            var manifest = Path.Combine(javaProjectPath, "AndroidManifest.xml");
+            var isApk = null != GetProjectFile(manifest);
+            return new AndroidExecutionCommand (TargetRuntime, TargetFramework, configuration.CompiledOutputName.FileName, configuration.OutputDirectory,
+                                               configuration.DebugMode, isApk, javaProjectPath, DefaultNamespace);
+        }
         
         public override SolutionItemConfiguration CreateConfiguration (string name)
         {
@@ -97,5 +107,5 @@ namespace MonoDevelop.Android
             return conf;
         }
         
-	}
+    }
 }

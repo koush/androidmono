@@ -25,11 +25,17 @@ namespace MonoDevelop.Android
         {
             var proj = item as AndroidProject;
             if (proj == null)
-                return base.Build (monitor, item, configuration);            //monitor.BeginTask("Generating Java files.", 0);
+                return base.Build (monitor, item, configuration);
+            
+            var manifest = Path.Combine(Path.Combine(proj.BaseDirectory, "Android"), "AndroidManifest.xml");
+            if (null == proj.GetProjectFile(manifest))
+            {
+                Console.WriteLine("AndroidManifest.xml not found. Skipping APK build.");
+                return base.Build (monitor, item, configuration);
+            }
             
             var conf = proj.GetConfiguration(configuration) as AndroidProjectConfiguration;
             
-            //monitor.EndTask();
             var buildResult = base.Build (monitor, item, configuration);
             if (buildResult.Errors.Count > 0)
                 return buildResult;
@@ -51,26 +57,17 @@ namespace MonoDevelop.Android
             }
             monitor.EndTask();
             
-            var androidmonoDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), ".androidmono");
-            var configFile = Path.Combine(androidmonoDir, "config.xml");
-            if (!File.Exists(configFile))
-                throw new Exception("androidmono config.xml not found in <HOME>/.androidmono/config.xml");
-            var serializer = new XmlSerializer(typeof(Config));
-            var cfg = (Config)serializer.Deserialize(new FileStream(configFile, FileMode.Open));
+            var cfg = Config.Load();
             
             var androidPath = Path.Combine(cfg.AndroidSDK, "tools/android");
             var args = string.Format("update project -p {0}", javaProjDir);
             Process.Start(androidPath, args).WaitForExit();
             
-            var javaPackageSrcDir = Path.Combine(javaSrcDir, proj.DefaultNamespace.Replace('.', Path.DirectorySeparatorChar));
-            Directory.CreateDirectory(javaPackageSrcDir);
-            var applicationSource = string.Format(mApplicationTemplate, proj.DefaultNamespace);
-            var applicationSrcFile = Path.Combine(javaPackageSrcDir, "MonoApplication.java");
             var assetsDir = Path.Combine(javaProjDir, "assets");
             var packagedAssembly = Path.Combine(assetsDir, Path.GetFileName(conf.CompiledOutputName));
-            File.WriteAllText(applicationSrcFile, applicationSource);
             File.Copy(conf.CompiledOutputName, packagedAssembly, true);
 
+            var androidmonoDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), ".androidmono");
             var monojavabridgejar = Path.Combine(androidmonoDir, "com.koushikdutta.monojavabridge.jar");
             var libsDir = Path.Combine(javaProjDir, "libs");
             Directory.CreateDirectory(libsDir);
@@ -89,7 +86,6 @@ namespace MonoDevelop.Android
             
             return buildResult;
         }
-        private static string mApplicationTemplate = new StreamReader(typeof(MonoReflector).Assembly.GetManifestResourceStream("Application.java")).ReadToEnd();
         
         [Serializable]
         public class MonoReflectorContext

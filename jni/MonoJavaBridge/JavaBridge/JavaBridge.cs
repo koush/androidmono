@@ -125,7 +125,7 @@ namespace MonoJavaBridge
 			myVM = new JavaVM(vm);
 			Log("Setting JVM");
 			Bridge.SetJVM(myVM);
-            //Bridge.Setup.VeryVerbose = Bridge.Setup.Verbose = true;
+            Bridge.Setup.VeryVerbose = Bridge.Setup.Verbose = true;
 			var env = JNIEnv.GetEnvForVm(myVM);
 			Registry.Initialize();
 			Registry.RegisterType(typeof(java.lang.reflect.Method), true, env);
@@ -148,6 +148,7 @@ namespace MonoJavaBridge
 			var assembly = Assembly.LoadFile(assemblyName);
 			if (assembly != null)
 				myAssemblies.Add(assembly.FullName);
+            Console.WriteLine("Done loading assembly");
 		}
 
 		[MethodImpl(MethodImplOptions.InternalCall)]

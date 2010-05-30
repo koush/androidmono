@@ -21,6 +21,7 @@ namespace MonoDevelop.Debugger.Soft.Android
 		
 		public DebuggerStartInfo CreateDebuggerStartInfo (ExecutionCommand command)
 		{
+            Console.WriteLine("CreateDebuggerStartInfo");
 			var cmd = (AndroidExecutionCommand) command;
 			var startInfo = new AndroidDebuggerStartInfo (AndroidBuildExtension.DebuggerIP,
 								     AndroidBuildExtension.DebuggerPort,
@@ -30,11 +31,13 @@ namespace MonoDevelop.Debugger.Soft.Android
 
 		public DebuggerSession CreateSession ()
 		{
+            Console.WriteLine("CreateSession");
 			return new AndroidDebuggerSession ();
 		}
 		
 		public ProcessInfo[] GetAttachableProcesses ()
 		{
+            Console.WriteLine("GetAttachableProcesses");
 			return new ProcessInfo[0];
 		}
 	}

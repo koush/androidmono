@@ -81,17 +81,14 @@ JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_loadAssem
     mono_runtime_invoke(g_LoadAssembly, NULL, args, NULL);
 }
 
-jint JNI_OnLoad(JavaVM* vm, void* reserved)
+JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initializeMono
+  (JNIEnv *env, jclass clazz, jboolean debug)
 {
     setenv("MONO_PATH", "/data/data/com.koushikdutta.mono/", 0);
-#ifdef PLATFORM_ANDROID
-    LOGI("JNI_OnLoad...");
-#endif
-	g_JavaVM = vm;
 	MonoDomain *domain;
 
 	mono_debug_init (MONO_DEBUG_FORMAT_MONO);
- 
+
 #ifdef PLATFORM_ANDROID
     LOGI("mono_jit_init...");
 #endif
@@ -127,6 +124,15 @@ jint JNI_OnLoad(JavaVM* vm, void* reserved)
     desc = mono_method_desc_new ("MonoJavaBridge.JavaBridge:LoadAssembly(intptr)", 1);
     g_LoadAssembly = mono_method_desc_search_in_image (desc, image);
     mono_method_desc_free(desc);
+    
+    return TRUE;
+}
 
+jint JNI_OnLoad(JavaVM* vm, void* reserved)
+{
+	g_JavaVM = vm;
+#ifdef PLATFORM_ANDROID
+    LOGI("JNI_OnLoad...");
+#endif
     return JNI_VERSION_1_4;
 }

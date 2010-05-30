@@ -12,8 +12,6 @@ using System.Net;
 
 namespace MonoDevelop.Debugger.Soft.Android
 {
-
-
 	public class AndroidDebuggerSession : RemoteSoftDebuggerSession
 	{
 		System.Diagnostics.Process simProcess;

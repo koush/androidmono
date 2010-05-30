@@ -101,8 +101,8 @@
     <EmbeddedResource Include="Templates\JavaClassTemplate.java">
       <LogicalName>JavaClassTemplate.java</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="Templates\Application.java">
-      <LogicalName>Application.java</LogicalName>
+    <EmbeddedResource Include="Templates\MonoActivity.java">
+      <LogicalName>MonoActivity.java</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -3,12 +3,27 @@ package com.koushikdutta.monojavabridge;
 import java.io.File;
 import java.io.IOException;
 
+import android.util.Log;
+
 public class MonoBridge {
-	static 
+	private final static String LOGTAG = "MonoBridge";
+	public static boolean initialize(boolean debug)
 	{
+		Log.i(LOGTAG, "Initializing Mono...");
+		if (mInitialized)
+			return true;
+		
 		if (System.getenv("LD_LIBRARY_PATH").contains("/system/lib"))
 		{
-			System.load("/data/data/com.koushikdutta.mono/libmono.so");
+			try
+			{
+				System.load("/data/data/com.koushikdutta.mono/libmono.so");
+			}
+			catch (Exception ex)
+			{
+				ex.printStackTrace();
+				return false;
+			}
 		}
 		else
 		{
@@ -18,9 +33,24 @@ public class MonoBridge {
 			} 
 			catch (IOException e) {
 				e.printStackTrace();
+				return false;
 			}
 		}
+		
+		try
+		{
+			return mInitialized = initializeMono(debug);
+		}
+		catch (Exception ex)
+		{
+			ex.printStackTrace();
+			return false;
+		}
 	}
+
+
+	private static boolean mInitialized = false;
+	private static native boolean initializeMono(boolean debug);
 
 	public static Class getPrimitiveClass(String className)
 	{
@@ -67,5 +97,4 @@ public class MonoBridge {
 	@SuppressWarnings("unchecked")
 	public static native void link(Class clazz, String methodName, String methodSignature, String methodParameters);
 	public static native void loadAssembly(String assemblyName);
-	public static native void register(Class clazz);
 }

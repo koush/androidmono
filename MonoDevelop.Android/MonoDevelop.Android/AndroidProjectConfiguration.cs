@@ -14,15 +14,17 @@ namespace MonoDevelop.Android
 		#region ICustomDataItem implementation
 		public DataCollection Serialize (ITypeSerializer handler)
 		{
-			return new DataCollection();
+            var collection = handler.Serialize (this);
+            return collection;
 		}
 		
 		public void Deserialize (ITypeSerializer handler, DataCollection data)
 		{
+            handler.Deserialize (this, data);
 		}
 		#endregion
-
-		public AndroidProjectConfiguration ()
+   
+		public AndroidProjectConfiguration () : base()
 		{
 		}
         
