@@ -16,9 +16,10 @@ namespace MonoDevelop.Android
     
     public class MonoReflector
     {
-        private List<Assembly> assems = new List<Assembly>();
-        private static string template = new StreamReader(typeof(MonoReflector).Assembly.GetManifestResourceStream("JavaClassTemplate.java")).ReadToEnd();
+        private string mOutputPath;
+        private static string mTemplate = new StreamReader(typeof(MonoReflector).Assembly.GetManifestResourceStream("JavaClassTemplate.java")).ReadToEnd();
 
+        /*
         public MonoReflector(params string[] files)
         {
             foreach (string assem in files)
@@ -29,11 +30,28 @@ namespace MonoDevelop.Android
         {
             assems.AddRange(assems);
         }
-
-        public bool Generate(GenerationFlags flags)
+        */
+        
+        public MonoReflector()
         {
-            foreach (Assembly a in assems)
-                Generate(a.GetTypes(), flags);
+        }
+        
+        public MonoReflector(string outputPath)
+        {
+            mOutputPath = outputPath;
+        }
+        
+        public bool Generate(GenerationFlags flags, string assemblyFile)
+        {
+            return Generate(flags, Assembly.LoadFile(assemblyFile));
+        }
+
+        private bool Generate(GenerationFlags flags, params Assembly[] assemblies)
+        {
+            foreach (Assembly a in assemblies)
+            {
+                Generate(flags, a);
+            }
             //FIXME: compile with sdk here
             if ((flags & GenerationFlags.KeepIntermediateFiles) != GenerationFlags.KeepIntermediateFiles)
             {
@@ -42,9 +60,9 @@ namespace MonoDevelop.Android
             return true;
         }
 
-        public bool Generate(Type[] types, GenerationFlags flags)
+        public bool Generate(GenerationFlags flags, Assembly assembly)
         {
-            foreach (Type t in types)
+            foreach (Type t in assembly.GetTypes())
             {
                 if (!t.IsInterface)
                 {
@@ -102,12 +120,11 @@ namespace MonoDevelop.Android
                             natives.AppendLine(string.Format("\t{0} native {1} {2}({3});",
                                 pair.Key.IsPublic ? "public" : "protected", GetJLangType(pair.Value.ReturnType), pair.Key.Name, args));
                         }
-                        string[] fqcn = SplitFQCN(t.FullName);
-                        string basePath = Path.GetDirectoryName(t.Assembly.Location);
+                        string basePath = mOutputPath ?? Path.GetDirectoryName(t.Assembly.Location);
                         basePath = Path.Combine(basePath, t.Namespace.Replace('.', Path.DirectorySeparatorChar));
                         Directory.CreateDirectory(basePath);
                         File.WriteAllText(Path.Combine(basePath, t.FullName + ".java"),
-                            string.Format(template, fqcn[0], t.Name, isBaseClass ? " extends " : string.Empty, isBaseClass ? first.Value.Value.DeclaringType.FullName : string.Empty, linkMethods, natives));
+                            string.Format(mTemplate, t.Namespace, t.Name, isBaseClass ? " extends " : string.Empty, isBaseClass ? first.Value.Value.DeclaringType.FullName : string.Empty, linkMethods, natives));
                     }
                 }
             }
@@ -202,20 +219,6 @@ namespace MonoDevelop.Android
                 default:
                     return type.FullName;
             }
-        }
-
-        private string[] SplitFQCN(string fqcn)
-        {
-            string[] names = fqcn.Split('.');
-            StringBuilder b = new StringBuilder();
-            for (int i = 0; i < names.Length - 1; i++)
-            {
-                b.Append(names[i]);
-                if (i < names.Length - 2)
-                    b.Append(".");
-            }
-            return new string[] { b.ToString(), names[names.Length - 1] };
-            //{ string.Concat(names.Take(names.Length - 1).Select(x => ++index < names.Length - 1 ? x + "." : x).ToArray()), names[names.Length - 1] };
         }
     }
 }

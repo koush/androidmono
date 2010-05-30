@@ -37,10 +37,29 @@ namespace MonoDevelop.Android
             if (buildResult.Errors.Count > 0)
                 return buildResult;
             
-            var mr = new MonoReflector(conf.CompiledOutputName);
-            if (!mr.Generate(GenerationFlags.None))
-                buildResult.AddError("Error while generating Java classes.");
+            AppDomain other = AppDomain.CreateDomain("other");
+            other.Load(System.Reflection.Assembly.GetExecutingAssembly().GetName());
+            MonoReflectorContext ctx = new MonoReflectorContext();
+            ctx.OutputDirectory = conf.OutputDirectory.ToString();
+            ctx.AssemblyFile = conf.CompiledOutputName;
+            other.DoCallBack(new CrossAppDomainDelegate(ctx.Callback));
+            AppDomain.Unload(other);
+            
             return buildResult;
+        }
+        
+        [Serializable]
+        public class MonoReflectorContext
+        {
+            public string OutputDirectory;
+            public string AssemblyFile;
+            
+            public void Callback()
+            {
+                Console.WriteLine("od: {0} af: {1}", OutputDirectory, AssemblyFile);
+                var mr = new MonoReflector(OutputDirectory);
+                mr.Generate(GenerationFlags.None, AssemblyFile);
+            }
         }
         
         protected override BuildResult Compile (IProgressMonitor monitor, SolutionEntityItem item, BuildData buildData)
