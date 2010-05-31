@@ -220,4 +220,15 @@ namespace android.view.inputmethod
 			global::android.view.inputmethod.InputConnectionWrapper._InputConnectionWrapper9143 = @__env.GetMethodID(global::android.view.inputmethod.InputConnectionWrapper.staticClass, "<init>", "(Landroid/view/inputmethod/InputConnection;Z)V"); 
 		} 
 	} 
+	public static class InputConnectionWrapperExtensionMethods 
+	{ 
+		public static bool setComposingText(this global::android.view.inputmethod.InputConnectionWrapper __this, string arg0, int arg1) 
+		{ 
+			return __this.setComposingText((global::java.lang.String)arg0, arg1); 
+		} 
+		public static bool commitText(this global::android.view.inputmethod.InputConnectionWrapper __this, string arg0, int arg1) 
+		{ 
+			return __this.commitText((global::java.lang.String)arg0, arg1); 
+		} 
+	} 
 } 

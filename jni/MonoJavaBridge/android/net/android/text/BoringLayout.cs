@@ -296,4 +296,15 @@ namespace android.text
 			global::android.text.BoringLayout._BoringLayout6726 = @__env.GetMethodID(global::android.text.BoringLayout.staticClass, "<init>", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;Z)V"); 
 		} 
 	} 
+	public static class BoringLayoutExtensionMethods 
+	{ 
+		public static android.text.BoringLayout replaceOrMake(this global::android.text.BoringLayout __this, string arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, android.text.BoringLayout.Metrics arg6, bool arg7) 
+		{ 
+			return __this.replaceOrMake((global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7); 
+		} 
+		public static android.text.BoringLayout replaceOrMake(this global::android.text.BoringLayout __this, string arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, android.text.BoringLayout.Metrics arg6, bool arg7, android.text.TextUtils.TruncateAt arg8, int arg9) 
+		{ 
+			return __this.replaceOrMake((global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9); 
+		} 
+	} 
 } 

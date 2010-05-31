@@ -248,4 +248,15 @@ namespace android.view.inputmethod
 			global::android.view.inputmethod.BaseInputConnection._BaseInputConnection9047 = @__env.GetMethodID(global::android.view.inputmethod.BaseInputConnection.staticClass, "<init>", "(Landroid/view/View;Z)V"); 
 		} 
 	} 
+	public static class BaseInputConnectionExtensionMethods 
+	{ 
+		public static bool setComposingText(this global::android.view.inputmethod.BaseInputConnection __this, string arg0, int arg1) 
+		{ 
+			return __this.setComposingText((global::java.lang.String)arg0, arg1); 
+		} 
+		public static bool commitText(this global::android.view.inputmethod.BaseInputConnection __this, string arg0, int arg1) 
+		{ 
+			return __this.commitText((global::java.lang.String)arg0, arg1); 
+		} 
+	} 
 } 

@@ -2063,4 +2063,47 @@ namespace android.widget
 			global::android.widget.TextView._TextView11213 = @__env.GetMethodID(global::android.widget.TextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
 		} 
 	} 
+	public static class TextViewExtensionMethods 
+	{ 
+		public static void append(this global::android.widget.TextView __this, string arg0) 
+		{ 
+			__this.append((global::java.lang.String)arg0); 
+		} 
+		public static void append(this global::android.widget.TextView __this, string arg0, int arg1, int arg2) 
+		{ 
+			__this.append((global::java.lang.String)arg0, arg1, arg2); 
+		} 
+		public static void setError(this global::android.widget.TextView __this, string arg0, android.graphics.drawable.Drawable arg1) 
+		{ 
+			__this.setError((global::java.lang.String)arg0, arg1); 
+		} 
+		public static void setError(this global::android.widget.TextView __this, string arg0) 
+		{ 
+			__this.setError((global::java.lang.String)arg0); 
+		} 
+		public static void setText(this global::android.widget.TextView __this, string arg0) 
+		{ 
+			__this.setText((global::java.lang.String)arg0); 
+		} 
+		public static void setText(this global::android.widget.TextView __this, string arg0, android.widget.TextView.BufferType arg1) 
+		{ 
+			__this.setText((global::java.lang.String)arg0, arg1); 
+		} 
+		public static void setTextKeepState(this global::android.widget.TextView __this, string arg0, android.widget.TextView.BufferType arg1) 
+		{ 
+			__this.setTextKeepState((global::java.lang.String)arg0, arg1); 
+		} 
+		public static void setTextKeepState(this global::android.widget.TextView __this, string arg0) 
+		{ 
+			__this.setTextKeepState((global::java.lang.String)arg0); 
+		} 
+		public static void setHint(this global::android.widget.TextView __this, string arg0) 
+		{ 
+			__this.setHint((global::java.lang.String)arg0); 
+		} 
+		public static void setImeActionLabel(this global::android.widget.TextView __this, string arg0, int arg1) 
+		{ 
+			__this.setImeActionLabel((global::java.lang.String)arg0, arg1); 
+		} 
+	} 
 } 

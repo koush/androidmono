@@ -612,4 +612,11 @@ namespace android.widget
 			global::android.widget.AutoCompleteTextView._AutoCompleteTextView9942 = @__env.GetMethodID(global::android.widget.AutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
 		} 
 	} 
+	public static class AutoCompleteTextViewExtensionMethods 
+	{ 
+		public static void setCompletionHint(this global::android.widget.AutoCompleteTextView __this, string arg0) 
+		{ 
+			__this.setCompletionHint((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

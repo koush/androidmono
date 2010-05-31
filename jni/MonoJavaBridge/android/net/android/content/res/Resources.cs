@@ -604,4 +604,11 @@ namespace android.content.res
 			global::android.content.res.Resources._Resources2005 = @__env.GetMethodID(global::android.content.res.Resources.staticClass, "<init>", "(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;)V"); 
 		} 
 	} 
+	public static class ResourcesExtensionMethods 
+	{ 
+		public static java.lang.CharSequence getText(this global::android.content.res.Resources __this, int arg0, string arg1) 
+		{ 
+			return __this.getText(arg0, (global::java.lang.String)arg1); 
+		} 
+	} 
 } 

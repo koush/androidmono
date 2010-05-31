@@ -47,4 +47,11 @@ namespace android.text
 			global::android.text.Spannable_Factory._Spannable_Factory6887 = @__env.GetMethodID(global::android.text.Spannable_Factory.staticClass, "<init>", "()V"); 
 		} 
 	} 
+	public static class Spannable_FactoryExtensionMethods 
+	{ 
+		public static android.text.Spannable newSpannable(this global::android.text.Spannable_Factory __this, string arg0) 
+		{ 
+			return __this.newSpannable((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

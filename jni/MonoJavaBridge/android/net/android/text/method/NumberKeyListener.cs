@@ -63,4 +63,11 @@ namespace android.text.method
 			global::android.text.method.NumberKeyListener._NumberKeyListener7211 = @__env.GetMethodID(global::android.text.method.NumberKeyListener.staticClass, "<init>", "()V"); 
 		} 
 	} 
+	public static class NumberKeyListenerExtensionMethods 
+	{ 
+		public static java.lang.CharSequence filter(this global::android.text.method.NumberKeyListener __this, string arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5) 
+		{ 
+			return __this.filter((global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5); 
+		} 
+	} 
 } 

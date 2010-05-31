@@ -38,9 +38,9 @@ namespace MonoDroid
 					
 				using (myWriter = new StreamWriter(new FileStream(path, FileMode.Create)))
 				{
-					BeginNamespace(type.Namespace);
+					BeginNamespace(type);
 					GenerateType(type);
-					EndNamespace();
+					EndNamespace(type);
 				}
 			}
 		}
@@ -112,8 +112,8 @@ namespace MonoDroid
 			myIsNewLine = true;
 		}
 		
-		protected abstract void BeginNamespace(string name);
-		protected virtual void EndNamespace()
+		protected abstract void BeginNamespace(Type type);
+		protected virtual void EndNamespace(Type type)
 		{
 			WriteLine("}");
 		}

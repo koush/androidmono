@@ -40,4 +40,11 @@ namespace android.text
 			global::android.text.InputFilter_AllCaps._InputFilter_AllCaps6786 = @__env.GetMethodID(global::android.text.InputFilter_AllCaps.staticClass, "<init>", "()V"); 
 		} 
 	} 
+	public static class InputFilter_AllCapsExtensionMethods 
+	{ 
+		public static java.lang.CharSequence filter(this global::android.text.InputFilter_AllCaps __this, string arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5) 
+		{ 
+			return __this.filter((global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5); 
+		} 
+	} 
 } 

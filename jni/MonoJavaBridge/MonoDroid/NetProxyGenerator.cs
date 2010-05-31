@@ -182,12 +182,52 @@ namespace MonoDroid
                 myContainReplaceKeywords[i] = ".@" + keyword + '.';
             }
         }
-
-        protected override void BeginNamespace (string name)
+        
+        List<Method> myExtensionMethods = new List<Method>();
+        
+        protected override void BeginNamespace (Type type)
         {
-            WriteLine("namespace {0}", name);
+            myExtensionMethods.Clear();
+            WriteLine("namespace {0}", type.Namespace);
             WriteLine("{");
         }
+        
+        protected override void EndNamespace (Type type)
+        {
+            if (myExtensionMethods.Count > 0)
+            {
+                myIndent++;
+                WriteLine("public static class {0}ExtensionMethods", type.SimpleName);
+                WriteLine("{");
+                
+                myIndent++;
+                foreach (var em in myExtensionMethods)
+                {
+                    Write("public static {0} {1}(", false, em.Return, em.Name);
+                    Write("this global::{0} __this", false, em.Type.Name);
+                    if (em.Parameters.Count > 0)
+                        Write(",");
+                    WriteDelimited(em.Parameters, (v, i) => string.Format("{0} arg{1}", v == "java.lang.CharSequence" ? "string" : v, i), ",");
+                    WriteLine(")");
+                    WriteLine("{");
+                    myIndent++;
+                    if (em.Return != "void")
+                        Write("return");
+                    
+                    Write("__this.{0}(", false, em.Name);
+                    WriteDelimited(em.Parameters, (v, i) => string.Format("{0}arg{1}", v == "java.lang.CharSequence" ? "(global::java.lang.String)" : string.Empty, i), ",");
+                    WriteLine(");");
+                    myIndent--;
+                    WriteLine("}");
+                }
+                myIndent--;
+                
+                WriteLine("}");
+                myIndent--;
+            }
+            base.EndNamespace (type);
+        }
+        
         
         protected override string GetFilePath (Type type)
         {
@@ -534,6 +574,7 @@ namespace MonoDroid
             StringBuilder ret = new StringBuilder();
             if (typeName.EndsWith("[]"))
             {
+                // TODO: Actually return something
                 ret.Append("return null;//");
             }
             else
@@ -551,10 +592,6 @@ namespace MonoDroid
             ret.Append("(@__env, @__env.Call{0}ObjectMethodPtr({1}));");
             
             return ret.ToString();
-            
-            //string ret  String.Format("return global::net.sf.jni4net.utils.Convertor.{0}<{1}, {2}>", converter);
-            
-            return null;
         }
         
         public string GetParameterStatement(Type parameterType, string parameter)
@@ -677,74 +714,65 @@ namespace MonoDroid
                 Write("new");
             if (method.Return != null)
                 Write("{0}{1}", ObjectModel.IsSystemType(method.Return) ? string.Empty : "global::", method.Return);
-            //if (method.PropertyType == null)
-            if (true)
+            Write(method.Name, false);
+            Write("(", false);
+            //WriteDelimited(method.Parameters, (v, i) => string.Format("{0} arg{1}", v == "java.lang.CharSequence" && !method.Name.Contains('.') ? "string" : v, i), ",");
+            WriteDelimited(method.Parameters, (v, i) => string.Format("{0} arg{1}", v, i), ",");
+            if (method.Type.IsInterface || method.Abstract || method.Scope == "internal")
             {
-                Write(method.Name, false);
-                Write("(", false);
-                //WriteDelimited(method.Parameters, (v, i) => string.Format("{0} arg{1}", v == "java.lang.CharSequence" && !method.Name.Contains('.') ? "string" : v, i), ",");
-                WriteDelimited(method.Parameters, (v, i) => string.Format("{0} arg{1}", v, i), ",");
-                if (method.Type.IsInterface || method.Abstract || method.Scope == "internal")
-                {
-                    WriteLine(");");
-                }
-                else
-                {
-                    Write(")");
-                    if (method.IsConstructor)
-                        Write(" : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv)");
-                    WriteLine();
-                    WriteLine("{");
-                    myIndent++;
-                    // TODO: Remove this if statement when object initializeation is properly supported.
-                    if (method.Return == null || !method.Return.EndsWith("[]"))
-                        WriteLine("global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;");
-                    var statement = GetMethodStatement(method);
-                    StringBuilder parBuilder = new StringBuilder();
-                    if (method.Static || method.IsConstructor)
-                        parBuilder.AppendFormat("{0}.staticClass, ", method.Type.Name);
-                    else
-                        parBuilder.Append("this, ");
-                    parBuilder.AppendFormat("global::{0}.{1}", method.Type.Name, methodId);
-                    if (method.IsConstructor)
-                        parBuilder.Append(", this");
-                    for (int i = 0; i < method.Parameters.Count; i++)
-                    {
-                        parBuilder.Append(", ");
-                        var parType = method.ParameterTypes[i];
-                        var par = method.Parameters[i];
-                        parBuilder.Append("global::net.sf.jni4net.utils.Convertor.");
-                        parBuilder.Append(string.Format(GetParameterStatement(parType, par), "arg" + i));
-                    }
-                    if (method.Static || method.IsConstructor)
-                    {
-                        WriteLine(statement, method.Static ? "Static" : string.Empty, parBuilder);
-                    }
-                    else
-                    {
-                        WriteLine("if (!IsClrObject)", method.Type.Name);
-                        myIndent++;
-                        WriteLine(statement, string.Empty, parBuilder);
-                        myIndent--;
-                        WriteLine("else");
-                        myIndent++;
-                        WriteLine(statement, "NonVirtual", string.Format(parBuilder.ToString().Replace("this, ", "this, global::{0}.staticClass, "), method.Type.Name));
-                        myIndent--;
-                    }
-                    myIndent--;
-                    WriteLine("}");
-                }
+                WriteLine(");");
             }
             else
             {
-                WriteLine(method.Name.Substring(3), false);
+                Write(")");
+                if (method.IsConstructor)
+                    Write(" : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv)");
+                WriteLine();
                 WriteLine("{");
-                if (method.PropertyType == PropertyType.ReadOnly)
-                    WriteLine("get;");
+                myIndent++;
+                // TODO: Remove this if statement when array returns are properly supported
+                if (method.Return == null || !method.Return.EndsWith("[]"))
+                    WriteLine("global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;");
+                var statement = GetMethodStatement(method);
+                StringBuilder parBuilder = new StringBuilder();
+                if (method.Static || method.IsConstructor)
+                    parBuilder.AppendFormat("{0}.staticClass, ", method.Type.Name);
                 else
-                    WriteLine("get; set;");
+                    parBuilder.Append("this, ");
+                parBuilder.AppendFormat("global::{0}.{1}", method.Type.Name, methodId);
+                if (method.IsConstructor)
+                    parBuilder.Append(", this");
+                bool hasCharSequenceArgument = false;
+                for (int i = 0; i < method.Parameters.Count; i++)
+                {
+                    parBuilder.Append(", ");
+                    var parType = method.ParameterTypes[i];
+                    var par = method.Parameters[i];
+                    if (par == "java.lang.CharSequence")
+                        hasCharSequenceArgument = true;
+                    parBuilder.Append("global::net.sf.jni4net.utils.Convertor.");
+                    parBuilder.Append(string.Format(GetParameterStatement(parType, par), "arg" + i));
+                }
+                if (hasCharSequenceArgument && !method.IsConstructor && method.Scope == "public" && !method.Static)
+                    myExtensionMethods.Add(method);
+                if (method.Static || method.IsConstructor)
+                {
+                    WriteLine(statement, method.Static ? "Static" : string.Empty, parBuilder);
+                }
+                else
+                {
+                    WriteLine("if (!IsClrObject)", method.Type.Name);
+                    myIndent++;
+                    WriteLine(statement, string.Empty, parBuilder);
+                    myIndent--;
+                    WriteLine("else");
+                    myIndent++;
+                    WriteLine(statement, "NonVirtual", string.Format(parBuilder.ToString().Replace("this, ", "this, global::{0}.staticClass, "), method.Type.Name));
+                    myIndent--;
+                }
+                myIndent--;
                 WriteLine("}");
             }
-        }
+}
     }
 }

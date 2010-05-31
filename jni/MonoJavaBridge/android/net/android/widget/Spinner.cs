@@ -134,4 +134,11 @@ namespace android.widget
 			global::android.widget.Spinner._Spinner10900 = @__env.GetMethodID(global::android.widget.Spinner.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
 		} 
 	} 
+	public static class SpinnerExtensionMethods 
+	{ 
+		public static void setPrompt(this global::android.widget.Spinner __this, string arg0) 
+		{ 
+			__this.setPrompt((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

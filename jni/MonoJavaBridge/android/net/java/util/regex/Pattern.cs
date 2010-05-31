@@ -165,4 +165,19 @@ namespace java.util.regex
 			global::java.util.regex.Pattern._flags13100 = @__env.GetMethodID(global::java.util.regex.Pattern.staticClass, "flags", "()I"); 
 		} 
 	} 
+	public static class PatternExtensionMethods 
+	{ 
+		public static java.lang.String[] split(this global::java.util.regex.Pattern __this, string arg0, int arg1) 
+		{ 
+			return __this.split((global::java.lang.String)arg0, arg1); 
+		} 
+		public static java.lang.String[] split(this global::java.util.regex.Pattern __this, string arg0) 
+		{ 
+			return __this.split((global::java.lang.String)arg0); 
+		} 
+		public static java.util.regex.Matcher matcher(this global::java.util.regex.Pattern __this, string arg0) 
+		{ 
+			return __this.matcher((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

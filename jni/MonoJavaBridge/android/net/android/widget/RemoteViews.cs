@@ -458,4 +458,15 @@ namespace android.widget
 			global::android.widget.RemoteViews._RemoteViews10724 = @__env.GetMethodID(global::android.widget.RemoteViews.staticClass, "<init>", "(Landroid/os/Parcel;)V"); 
 		} 
 	} 
+	public static class RemoteViewsExtensionMethods 
+	{ 
+		public static void setTextViewText(this global::android.widget.RemoteViews __this, int arg0, string arg1) 
+		{ 
+			__this.setTextViewText(arg0, (global::java.lang.String)arg1); 
+		} 
+		public static void setCharSequence(this global::android.widget.RemoteViews __this, int arg0, java.lang.String arg1, string arg2) 
+		{ 
+			__this.setCharSequence(arg0, arg1, (global::java.lang.String)arg2); 
+		} 
+	} 
 } 

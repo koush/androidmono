@@ -275,4 +275,11 @@ namespace android.widget
 			global::android.widget.CursorTreeAdapter._CursorTreeAdapter10083 = @__env.GetMethodID(global::android.widget.CursorTreeAdapter.staticClass, "<init>", "(Landroid/database/Cursor;Landroid/content/Context;)V"); 
 		} 
 	} 
+	public static class CursorTreeAdapterExtensionMethods 
+	{ 
+		public static android.database.Cursor runQueryOnBackgroundThread(this global::android.widget.CursorTreeAdapter __this, string arg0) 
+		{ 
+			return __this.runQueryOnBackgroundThread((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

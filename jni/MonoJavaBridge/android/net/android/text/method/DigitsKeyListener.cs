@@ -87,4 +87,11 @@ namespace android.text.method
 			global::android.text.method.DigitsKeyListener._DigitsKeyListener7151 = @__env.GetMethodID(global::android.text.method.DigitsKeyListener.staticClass, "<init>", "(ZZ)V"); 
 		} 
 	} 
+	public static class DigitsKeyListenerExtensionMethods 
+	{ 
+		public static java.lang.CharSequence filter(this global::android.text.method.DigitsKeyListener __this, string arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5) 
+		{ 
+			return __this.filter((global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5); 
+		} 
+	} 
 } 

@@ -604,4 +604,67 @@ namespace android.app
 			global::android.app.AlertDialog._AlertDialog426 = @__env.GetMethodID(global::android.app.AlertDialog.staticClass, "<init>", "(Landroid/content/Context;)V"); 
 		} 
 	} 
+	public static class AlertDialogExtensionMethods 
+	{ 
+		public static android.app.AlertDialog.Builder setTitle(this global::android.app.AlertDialog.Builder __this, string arg0) 
+		{ 
+			return __this.setTitle((global::java.lang.String)arg0); 
+		} 
+		public static android.app.AlertDialog.Builder setMessage(this global::android.app.AlertDialog.Builder __this, string arg0) 
+		{ 
+			return __this.setMessage((global::java.lang.String)arg0); 
+		} 
+		public static android.app.AlertDialog.Builder setPositiveButton(this global::android.app.AlertDialog.Builder __this, string arg0, android.content.DialogInterface_OnClickListener arg1) 
+		{ 
+			return __this.setPositiveButton((global::java.lang.String)arg0, arg1); 
+		} 
+		public static android.app.AlertDialog.Builder setNegativeButton(this global::android.app.AlertDialog.Builder __this, string arg0, android.content.DialogInterface_OnClickListener arg1) 
+		{ 
+			return __this.setNegativeButton((global::java.lang.String)arg0, arg1); 
+		} 
+		public static android.app.AlertDialog.Builder setNeutralButton(this global::android.app.AlertDialog.Builder __this, string arg0, android.content.DialogInterface_OnClickListener arg1) 
+		{ 
+			return __this.setNeutralButton((global::java.lang.String)arg0, arg1); 
+		} 
+		public static void setTitle(this global::android.app.AlertDialog __this, string arg0) 
+		{ 
+			__this.setTitle((global::java.lang.String)arg0); 
+		} 
+		public static void setMessage(this global::android.app.AlertDialog __this, string arg0) 
+		{ 
+			__this.setMessage((global::java.lang.String)arg0); 
+		} 
+		public static void setButton(this global::android.app.AlertDialog __this, string arg0, android.content.DialogInterface_OnClickListener arg1) 
+		{ 
+			__this.setButton((global::java.lang.String)arg0, arg1); 
+		} 
+		public static void setButton(this global::android.app.AlertDialog __this, string arg0, android.os.Message arg1) 
+		{ 
+			__this.setButton((global::java.lang.String)arg0, arg1); 
+		} 
+		public static void setButton(this global::android.app.AlertDialog __this, int arg0, string arg1, android.content.DialogInterface_OnClickListener arg2) 
+		{ 
+			__this.setButton(arg0, (global::java.lang.String)arg1, arg2); 
+		} 
+		public static void setButton(this global::android.app.AlertDialog __this, int arg0, string arg1, android.os.Message arg2) 
+		{ 
+			__this.setButton(arg0, (global::java.lang.String)arg1, arg2); 
+		} 
+		public static void setButton2(this global::android.app.AlertDialog __this, string arg0, android.content.DialogInterface_OnClickListener arg1) 
+		{ 
+			__this.setButton2((global::java.lang.String)arg0, arg1); 
+		} 
+		public static void setButton2(this global::android.app.AlertDialog __this, string arg0, android.os.Message arg1) 
+		{ 
+			__this.setButton2((global::java.lang.String)arg0, arg1); 
+		} 
+		public static void setButton3(this global::android.app.AlertDialog __this, string arg0, android.content.DialogInterface_OnClickListener arg1) 
+		{ 
+			__this.setButton3((global::java.lang.String)arg0, arg1); 
+		} 
+		public static void setButton3(this global::android.app.AlertDialog __this, string arg0, android.os.Message arg1) 
+		{ 
+			__this.setButton3((global::java.lang.String)arg0, arg1); 
+		} 
+	} 
 } 

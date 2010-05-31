@@ -1493,4 +1493,11 @@ namespace android.app
 			global::android.app.Activity._Activity268 = @__env.GetMethodID(global::android.app.Activity.staticClass, "<init>", "()V"); 
 		} 
 	} 
+	public static class ActivityExtensionMethods 
+	{ 
+		public static void setTitle(this global::android.app.Activity __this, string arg0) 
+		{ 
+			__this.setTitle((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

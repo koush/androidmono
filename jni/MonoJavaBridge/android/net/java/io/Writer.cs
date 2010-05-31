@@ -109,4 +109,15 @@ namespace java.io
 			global::java.io.Writer._Writer11478 = @__env.GetMethodID(global::java.io.Writer.staticClass, "<init>", "(Ljava/lang/Object;)V"); 
 		} 
 	} 
+	public static class WriterExtensionMethods 
+	{ 
+		public static java.lang.Appendable append(this global::java.io.Writer __this, string arg0) 
+		{ 
+			return __this.append((global::java.lang.String)arg0); 
+		} 
+		public static java.lang.Appendable append(this global::java.io.Writer __this, string arg0, int arg1, int arg2) 
+		{ 
+			return __this.append((global::java.lang.String)arg0, arg1, arg2); 
+		} 
+	} 
 } 

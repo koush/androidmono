@@ -233,4 +233,19 @@ namespace android.widget
 			global::android.widget.MultiAutoCompleteTextView._MultiAutoCompleteTextView10534 = @__env.GetMethodID(global::android.widget.MultiAutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
 		} 
 	} 
+	public static class MultiAutoCompleteTextViewExtensionMethods 
+	{ 
+		public static int findTokenStart(this global::android.widget.MultiAutoCompleteTextView.CommaTokenizer __this, string arg0, int arg1) 
+		{ 
+			return __this.findTokenStart((global::java.lang.String)arg0, arg1); 
+		} 
+		public static int findTokenEnd(this global::android.widget.MultiAutoCompleteTextView.CommaTokenizer __this, string arg0, int arg1) 
+		{ 
+			return __this.findTokenEnd((global::java.lang.String)arg0, arg1); 
+		} 
+		public static java.lang.CharSequence terminateToken(this global::android.widget.MultiAutoCompleteTextView.CommaTokenizer __this, string arg0) 
+		{ 
+			return __this.terminateToken((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

@@ -414,4 +414,15 @@ namespace android.widget
 			global::android.widget.TabHost._TabHost10941 = @__env.GetMethodID(global::android.widget.TabHost.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
 		} 
 	} 
+	public static class TabHostExtensionMethods 
+	{ 
+		public static android.widget.TabHost.TabSpec setIndicator(this global::android.widget.TabHost.TabSpec __this, string arg0, android.graphics.drawable.Drawable arg1) 
+		{ 
+			return __this.setIndicator((global::java.lang.String)arg0, arg1); 
+		} 
+		public static android.widget.TabHost.TabSpec setIndicator(this global::android.widget.TabHost.TabSpec __this, string arg0) 
+		{ 
+			return __this.setIndicator((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

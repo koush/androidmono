@@ -2402,4 +2402,11 @@ namespace android.content
 			global::android.content.Intent._Intent1403 = @__env.GetMethodID(global::android.content.Intent.staticClass, "<init>", "(Ljava/lang/String;Landroid/net/Uri;Landroid/content/Context;Ljava/lang/Class;)V"); 
 		} 
 	} 
+	public static class IntentExtensionMethods 
+	{ 
+		public static android.content.Intent putExtra(this global::android.content.Intent __this, java.lang.String arg0, string arg1) 
+		{ 
+			return __this.putExtra(arg0, (global::java.lang.String)arg1); 
+		} 
+	} 
 } 

@@ -352,4 +352,11 @@ namespace android.app
 			global::android.app.Notification._Notification664 = @__env.GetMethodID(global::android.app.Notification.staticClass, "<init>", "(Landroid/os/Parcel;)V"); 
 		} 
 	} 
+	public static class NotificationExtensionMethods 
+	{ 
+		public static void setLatestEventInfo(this global::android.app.Notification __this, android.content.Context arg0, string arg1, string arg2, android.app.PendingIntent arg3) 
+		{ 
+			__this.setLatestEventInfo(arg0, (global::java.lang.String)arg1, (global::java.lang.String)arg2, arg3); 
+		} 
+	} 
 } 

@@ -319,4 +319,31 @@ namespace android.text
 			global::android.text.SpannableStringBuilder._SpannableStringBuilder6934 = @__env.GetMethodID(global::android.text.SpannableStringBuilder.staticClass, "<init>", "()V"); 
 		} 
 	} 
+	public static class SpannableStringBuilderExtensionMethods 
+	{ 
+		public static android.text.Editable append(this global::android.text.SpannableStringBuilder __this, string arg0) 
+		{ 
+			return __this.append((global::java.lang.String)arg0); 
+		} 
+		public static android.text.Editable append(this global::android.text.SpannableStringBuilder __this, string arg0, int arg1, int arg2) 
+		{ 
+			return __this.append((global::java.lang.String)arg0, arg1, arg2); 
+		} 
+		public static android.text.Editable replace(this global::android.text.SpannableStringBuilder __this, int arg0, int arg1, string arg2) 
+		{ 
+			return __this.replace(arg0, arg1, (global::java.lang.String)arg2); 
+		} 
+		public static android.text.Editable replace(this global::android.text.SpannableStringBuilder __this, int arg0, int arg1, string arg2, int arg3, int arg4) 
+		{ 
+			return __this.replace(arg0, arg1, (global::java.lang.String)arg2, arg3, arg4); 
+		} 
+		public static android.text.Editable insert(this global::android.text.SpannableStringBuilder __this, int arg0, string arg1, int arg2, int arg3) 
+		{ 
+			return __this.insert(arg0, (global::java.lang.String)arg1, arg2, arg3); 
+		} 
+		public static android.text.Editable insert(this global::android.text.SpannableStringBuilder __this, int arg0, string arg1) 
+		{ 
+			return __this.insert(arg0, (global::java.lang.String)arg1); 
+		} 
+	} 
 } 

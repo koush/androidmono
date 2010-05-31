@@ -242,4 +242,11 @@ namespace java.nio.charset
 			global::java.nio.charset.CharsetEncoder._CharsetEncoder12404 = @__env.GetMethodID(global::java.nio.charset.CharsetEncoder.staticClass, "<init>", "(Ljava/nio/charset/Charset;FF)V"); 
 		} 
 	} 
+	public static class CharsetEncoderExtensionMethods 
+	{ 
+		public static bool canEncode(this global::java.nio.charset.CharsetEncoder __this, string arg0) 
+		{ 
+			return __this.canEncode((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

@@ -124,4 +124,15 @@ namespace android.widget
 			global::android.widget.ToggleButton._ToggleButton11257 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
 		} 
 	} 
+	public static class ToggleButtonExtensionMethods 
+	{ 
+		public static void setTextOn(this global::android.widget.ToggleButton __this, string arg0) 
+		{ 
+			__this.setTextOn((global::java.lang.String)arg0); 
+		} 
+		public static void setTextOff(this global::android.widget.ToggleButton __this, string arg0) 
+		{ 
+			__this.setTextOff((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

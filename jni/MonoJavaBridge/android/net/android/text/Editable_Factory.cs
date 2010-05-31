@@ -47,4 +47,11 @@ namespace android.text
 			global::android.text.Editable_Factory._Editable_Factory6747 = @__env.GetMethodID(global::android.text.Editable_Factory.staticClass, "<init>", "()V"); 
 		} 
 	} 
+	public static class Editable_FactoryExtensionMethods 
+	{ 
+		public static android.text.Editable newEditable(this global::android.text.Editable_Factory __this, string arg0) 
+		{ 
+			return __this.newEditable((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

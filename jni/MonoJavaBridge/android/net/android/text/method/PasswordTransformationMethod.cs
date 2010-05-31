@@ -87,4 +87,23 @@ namespace android.text.method
 			global::android.text.method.PasswordTransformationMethod._PasswordTransformationMethod7218 = @__env.GetMethodID(global::android.text.method.PasswordTransformationMethod.staticClass, "<init>", "()V"); 
 		} 
 	} 
+	public static class PasswordTransformationMethodExtensionMethods 
+	{ 
+		public static void onFocusChanged(this global::android.text.method.PasswordTransformationMethod __this, android.view.View arg0, string arg1, bool arg2, int arg3, android.graphics.Rect arg4) 
+		{ 
+			__this.onFocusChanged(arg0, (global::java.lang.String)arg1, arg2, arg3, arg4); 
+		} 
+		public static void onTextChanged(this global::android.text.method.PasswordTransformationMethod __this, string arg0, int arg1, int arg2, int arg3) 
+		{ 
+			__this.onTextChanged((global::java.lang.String)arg0, arg1, arg2, arg3); 
+		} 
+		public static void beforeTextChanged(this global::android.text.method.PasswordTransformationMethod __this, string arg0, int arg1, int arg2, int arg3) 
+		{ 
+			__this.beforeTextChanged((global::java.lang.String)arg0, arg1, arg2, arg3); 
+		} 
+		public static java.lang.CharSequence getTransformation(this global::android.text.method.PasswordTransformationMethod __this, string arg0, android.view.View arg1) 
+		{ 
+			return __this.getTransformation((global::java.lang.String)arg0, arg1); 
+		} 
+	} 
 } 

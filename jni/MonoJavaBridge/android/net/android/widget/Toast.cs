@@ -208,4 +208,11 @@ namespace android.widget
 			global::android.widget.Toast._Toast11246 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "<init>", "(Landroid/content/Context;)V"); 
 		} 
 	} 
+	public static class ToastExtensionMethods 
+	{ 
+		public static void setText(this global::android.widget.Toast __this, string arg0) 
+		{ 
+			__this.setText((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

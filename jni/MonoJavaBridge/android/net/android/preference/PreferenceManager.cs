@@ -269,4 +269,11 @@ namespace android.preference
 			global::android.preference.PreferenceManager._setDefaultValues6105 = @__env.GetStaticMethodID(global::android.preference.PreferenceManager.staticClass, "setDefaultValues", "(Landroid/content/Context;Ljava/lang/String;IIZ)V"); 
 		} 
 	} 
+	public static class PreferenceManagerExtensionMethods 
+	{ 
+		public static android.preference.Preference findPreference(this global::android.preference.PreferenceManager __this, string arg0) 
+		{ 
+			return __this.findPreference((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

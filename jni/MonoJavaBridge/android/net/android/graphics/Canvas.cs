@@ -1035,4 +1035,11 @@ namespace android.graphics
 			global::android.graphics.Canvas._Canvas2897 = @__env.GetMethodID(global::android.graphics.Canvas.staticClass, "<init>", "()V"); 
 		} 
 	} 
+	public static class CanvasExtensionMethods 
+	{ 
+		public static void drawText(this global::android.graphics.Canvas __this, string arg0, int arg1, int arg2, float arg3, float arg4, android.graphics.Paint arg5) 
+		{ 
+			__this.drawText((global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5); 
+		} 
+	} 
 } 

@@ -1347,4 +1347,19 @@ namespace android.graphics
 			global::android.graphics.Paint._Paint3152 = @__env.GetMethodID(global::android.graphics.Paint.staticClass, "<init>", "(Landroid/graphics/Paint;)V"); 
 		} 
 	} 
+	public static class PaintExtensionMethods 
+	{ 
+		public static float measureText(this global::android.graphics.Paint __this, string arg0, int arg1, int arg2) 
+		{ 
+			return __this.measureText((global::java.lang.String)arg0, arg1, arg2); 
+		} 
+		public static int breakText(this global::android.graphics.Paint __this, string arg0, int arg1, int arg2, bool arg3, float arg4, float[] arg5) 
+		{ 
+			return __this.breakText((global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5); 
+		} 
+		public static int getTextWidths(this global::android.graphics.Paint __this, string arg0, int arg1, int arg2, float[] arg3) 
+		{ 
+			return __this.getTextWidths((global::java.lang.String)arg0, arg1, arg2, arg3); 
+		} 
+	} 
 } 

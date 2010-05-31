@@ -40,4 +40,11 @@ namespace android.text
 			global::android.text.InputFilter_LengthFilter._InputFilter_LengthFilter6788 = @__env.GetMethodID(global::android.text.InputFilter_LengthFilter.staticClass, "<init>", "(I)V"); 
 		} 
 	} 
+	public static class InputFilter_LengthFilterExtensionMethods 
+	{ 
+		public static java.lang.CharSequence filter(this global::android.text.InputFilter_LengthFilter __this, string arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5) 
+		{ 
+			return __this.filter((global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5); 
+		} 
+	} 
 } 

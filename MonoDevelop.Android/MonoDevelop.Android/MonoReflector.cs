@@ -41,21 +41,24 @@ namespace MonoDevelop.Android
             mOutputPath = outputPath;
         }
         
-        public void Generate(GenerationFlags flags, string assemblyFile)
+        public string[] Generate(GenerationFlags flags, string assemblyFile)
         {
-            Generate(flags, Assembly.LoadFile(assemblyFile));
+            return Generate(flags, Assembly.LoadFile(assemblyFile));
         }
 
-        private void Generate(GenerationFlags flags, params Assembly[] assemblies)
+        private string[] Generate(GenerationFlags flags, params Assembly[] assemblies)
         {
+            List<string> ret = new List<string>();
             foreach (Assembly a in assemblies)
             {
-                Generate(flags, a);
+                ret.AddRange(Generate(flags, a));
             }
+            return ret.ToArray();
         }
 
-        public void Generate(GenerationFlags flags, Assembly assembly)
+        public string[] Generate(GenerationFlags flags, Assembly assembly)
         {
+            List<string> ret = new List<string>();
             foreach (Type t in assembly.GetTypes())
             {
                 if (!t.IsInterface)
@@ -117,11 +120,14 @@ namespace MonoDevelop.Android
                         string basePath = mOutputPath ?? Path.GetDirectoryName(t.Assembly.Location);
                         basePath = Path.Combine(basePath, t.Namespace.Replace('.', Path.DirectorySeparatorChar));
                         Directory.CreateDirectory(basePath);
-                        File.WriteAllText(Path.Combine(basePath, t.Name + ".java"),
+                        string outputFile = Path.Combine(basePath, t.Name + ".java");
+                        ret.Add(outputFile);
+                        File.WriteAllText(outputFile,
                             string.Format(mTemplate, t.Namespace, t.Name, isBaseClass ? " extends " : string.Empty, isBaseClass ? first.Value.Value.DeclaringType.FullName : string.Empty, linkMethods, natives));
                     }
                 }
             }
+            return ret.ToArray();
         }
 
         private MethodInfo FindBaseForMethod(MethodInfo sub, Type currentSuper)

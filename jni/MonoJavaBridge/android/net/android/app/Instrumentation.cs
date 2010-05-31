@@ -768,4 +768,11 @@ namespace android.app
 			global::android.app.Instrumentation._Instrumentation602 = @__env.GetMethodID(global::android.app.Instrumentation.staticClass, "<init>", "()V"); 
 		} 
 	} 
+	public static class InstrumentationExtensionMethods 
+	{ 
+		public static android.app.Activity newActivity(this global::android.app.Instrumentation __this, java.lang.Class arg0, android.content.Context arg1, android.os.IBinder arg2, android.app.Application arg3, android.content.Intent arg4, android.content.pm.ActivityInfo arg5, string arg6, android.app.Activity arg7, java.lang.String arg8, java.lang.Object arg9) 
+		{ 
+			return __this.newActivity(arg0, arg1, arg2, arg3, arg4, arg5, (global::java.lang.String)arg6, arg7, arg8, arg9); 
+		} 
+	} 
 } 

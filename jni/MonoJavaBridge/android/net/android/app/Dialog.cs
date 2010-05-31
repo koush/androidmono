@@ -774,4 +774,11 @@ namespace android.app
 			global::android.app.Dialog._Dialog518 = @__env.GetMethodID(global::android.app.Dialog.staticClass, "<init>", "(Landroid/content/Context;ZLandroid/content/DialogInterface$OnCancelListener;)V"); 
 		} 
 	} 
+	public static class DialogExtensionMethods 
+	{ 
+		public static void setTitle(this global::android.app.Dialog __this, string arg0) 
+		{ 
+			__this.setTitle((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

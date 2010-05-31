@@ -66,4 +66,19 @@ namespace android.text.util
 			global::android.text.util.Rfc822Tokenizer._Rfc822Tokenizer7502 = @__env.GetMethodID(global::android.text.util.Rfc822Tokenizer.staticClass, "<init>", "()V"); 
 		} 
 	} 
+	public static class Rfc822TokenizerExtensionMethods 
+	{ 
+		public static int findTokenStart(this global::android.text.util.Rfc822Tokenizer __this, string arg0, int arg1) 
+		{ 
+			return __this.findTokenStart((global::java.lang.String)arg0, arg1); 
+		} 
+		public static int findTokenEnd(this global::android.text.util.Rfc822Tokenizer __this, string arg0, int arg1) 
+		{ 
+			return __this.findTokenEnd((global::java.lang.String)arg0, arg1); 
+		} 
+		public static java.lang.CharSequence terminateToken(this global::android.text.util.Rfc822Tokenizer __this, string arg0) 
+		{ 
+			return __this.terminateToken((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

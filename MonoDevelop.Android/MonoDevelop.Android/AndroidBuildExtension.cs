@@ -56,6 +56,11 @@ namespace MonoDevelop.Android
                 AppDomain.Unload(other);
             }
             monitor.EndTask();
+            foreach (var outputFile in ctx.OutputFiles)
+            {
+                if (null == proj.GetProjectFile(outputFile))
+                    proj.AddFile(outputFile);
+            }
             
             var cfg = Config.Load();
             
@@ -91,15 +96,16 @@ namespace MonoDevelop.Android
         }
         
         [Serializable]
-        public class MonoReflectorContext
+        public class MonoReflectorContext : MarshalByRefObject
         {
             public string OutputDirectory;
             public string AssemblyFile;
+            public List<string> OutputFiles = new List<string>();
             
             public void Callback()
             {
                 var mr = new MonoReflector(OutputDirectory);
-                mr.Generate(GenerationFlags.None, AssemblyFile);
+                OutputFiles.AddRange(mr.Generate(GenerationFlags.None, AssemblyFile));
             }
         }
         

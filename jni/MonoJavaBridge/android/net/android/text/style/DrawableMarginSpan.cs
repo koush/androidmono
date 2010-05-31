@@ -67,4 +67,15 @@ namespace android.text.style
 			global::android.text.style.DrawableMarginSpan._DrawableMarginSpan7321 = @__env.GetMethodID(global::android.text.style.DrawableMarginSpan.staticClass, "<init>", "(Landroid/graphics/drawable/Drawable;I)V"); 
 		} 
 	} 
+	public static class DrawableMarginSpanExtensionMethods 
+	{ 
+		public static void drawLeadingMargin(this global::android.text.style.DrawableMarginSpan __this, android.graphics.Canvas arg0, android.graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, string arg7, int arg8, int arg9, bool arg10, android.text.Layout arg11) 
+		{ 
+			__this.drawLeadingMargin(arg0, arg1, arg2, arg3, arg4, arg5, arg6, (global::java.lang.String)arg7, arg8, arg9, arg10, arg11); 
+		} 
+		public static void chooseHeight(this global::android.text.style.DrawableMarginSpan __this, string arg0, int arg1, int arg2, int arg3, int arg4, android.graphics.Paint.FontMetricsInt arg5) 
+		{ 
+			__this.chooseHeight((global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5); 
+		} 
+	} 
 } 

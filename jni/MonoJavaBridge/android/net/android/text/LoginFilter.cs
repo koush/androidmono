@@ -200,4 +200,11 @@ namespace android.text
 			global::android.text.LoginFilter._onInvalidCharacter6856 = @__env.GetMethodID(global::android.text.LoginFilter.staticClass, "onInvalidCharacter", "(C)V"); 
 		} 
 	} 
+	public static class LoginFilterExtensionMethods 
+	{ 
+		public static java.lang.CharSequence filter(this global::android.text.LoginFilter __this, string arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5) 
+		{ 
+			return __this.filter((global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5); 
+		} 
+	} 
 } 

@@ -94,4 +94,11 @@ namespace android.text.style
 			global::android.text.style.LeadingMarginSpan_Standard._LeadingMarginSpan_Standard7361 = @__env.GetMethodID(global::android.text.style.LeadingMarginSpan_Standard.staticClass, "<init>", "(Landroid/os/Parcel;)V"); 
 		} 
 	} 
+	public static class LeadingMarginSpan_StandardExtensionMethods 
+	{ 
+		public static void drawLeadingMargin(this global::android.text.style.LeadingMarginSpan_Standard __this, android.graphics.Canvas arg0, android.graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, string arg7, int arg8, int arg9, bool arg10, android.text.Layout arg11) 
+		{ 
+			__this.drawLeadingMargin(arg0, arg1, arg2, arg3, arg4, arg5, arg6, (global::java.lang.String)arg7, arg8, arg9, arg10, arg11); 
+		} 
+	} 
 } 

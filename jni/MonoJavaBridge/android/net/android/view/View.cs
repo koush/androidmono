@@ -3339,4 +3339,11 @@ namespace android.view
 			global::android.view.View._View8387 = @__env.GetMethodID(global::android.view.View.staticClass, "<init>", "(Landroid/content/Context;)V"); 
 		} 
 	} 
+	public static class ViewExtensionMethods 
+	{ 
+		public static void setContentDescription(this global::android.view.View __this, string arg0) 
+		{ 
+			__this.setContentDescription((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

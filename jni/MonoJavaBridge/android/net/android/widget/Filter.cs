@@ -158,4 +158,15 @@ namespace android.widget
 			global::android.widget.Filter._Filter10202 = @__env.GetMethodID(global::android.widget.Filter.staticClass, "<init>", "()V"); 
 		} 
 	} 
+	public static class FilterExtensionMethods 
+	{ 
+		public static void filter(this global::android.widget.Filter __this, string arg0) 
+		{ 
+			__this.filter((global::java.lang.String)arg0); 
+		} 
+		public static void filter(this global::android.widget.Filter __this, string arg0, android.widget.Filter.FilterListener arg1) 
+		{ 
+			__this.filter((global::java.lang.String)arg0, arg1); 
+		} 
+	} 
 } 

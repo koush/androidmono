@@ -60,4 +60,15 @@ namespace android.telephony
 			global::android.telephony.PhoneNumberFormattingTextWatcher._PhoneNumberFormattingTextWatcher6458 = @__env.GetMethodID(global::android.telephony.PhoneNumberFormattingTextWatcher.staticClass, "<init>", "()V"); 
 		} 
 	} 
+	public static class PhoneNumberFormattingTextWatcherExtensionMethods 
+	{ 
+		public static void onTextChanged(this global::android.telephony.PhoneNumberFormattingTextWatcher __this, string arg0, int arg1, int arg2, int arg3) 
+		{ 
+			__this.onTextChanged((global::java.lang.String)arg0, arg1, arg2, arg3); 
+		} 
+		public static void beforeTextChanged(this global::android.telephony.PhoneNumberFormattingTextWatcher __this, string arg0, int arg1, int arg2, int arg3) 
+		{ 
+			__this.beforeTextChanged((global::java.lang.String)arg0, arg1, arg2, arg3); 
+		} 
+	} 
 } 

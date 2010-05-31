@@ -53,4 +53,11 @@ namespace android.text
 			global::android.text.ClipboardManager._hasText6729 = @__env.GetMethodID(global::android.text.ClipboardManager.staticClass, "hasText", "()Z"); 
 		} 
 	} 
+	public static class ClipboardManagerExtensionMethods 
+	{ 
+		public static void setText(this global::android.text.ClipboardManager __this, string arg0) 
+		{ 
+			__this.setText((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

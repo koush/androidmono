@@ -249,4 +249,11 @@ namespace android.app
 			global::android.app.ProgressDialog._ProgressDialog732 = @__env.GetMethodID(global::android.app.ProgressDialog.staticClass, "<init>", "(Landroid/content/Context;I)V"); 
 		} 
 	} 
+	public static class ProgressDialogExtensionMethods 
+	{ 
+		public static void setMessage(this global::android.app.ProgressDialog __this, string arg0) 
+		{ 
+			__this.setMessage((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

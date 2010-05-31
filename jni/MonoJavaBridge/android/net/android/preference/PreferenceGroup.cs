@@ -190,4 +190,11 @@ namespace android.preference
 			global::android.preference.PreferenceGroup._PreferenceGroup6092 = @__env.GetMethodID(global::android.preference.PreferenceGroup.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
 		} 
 	} 
+	public static class PreferenceGroupExtensionMethods 
+	{ 
+		public static android.preference.Preference findPreference(this global::android.preference.PreferenceGroup __this, string arg0) 
+		{ 
+			return __this.findPreference((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

@@ -173,4 +173,11 @@ namespace android.preference
 			global::android.preference.PreferenceActivity._PreferenceActivity6069 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "<init>", "()V"); 
 		} 
 	} 
+	public static class PreferenceActivityExtensionMethods 
+	{ 
+		public static android.preference.Preference findPreference(this global::android.preference.PreferenceActivity __this, string arg0) 
+		{ 
+			return __this.findPreference((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

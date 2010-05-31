@@ -320,4 +320,23 @@ namespace android.preference
 			global::android.preference.DialogPreference._DialogPreference5941 = @__env.GetMethodID(global::android.preference.DialogPreference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
 		} 
 	} 
+	public static class DialogPreferenceExtensionMethods 
+	{ 
+		public static void setDialogTitle(this global::android.preference.DialogPreference __this, string arg0) 
+		{ 
+			__this.setDialogTitle((global::java.lang.String)arg0); 
+		} 
+		public static void setDialogMessage(this global::android.preference.DialogPreference __this, string arg0) 
+		{ 
+			__this.setDialogMessage((global::java.lang.String)arg0); 
+		} 
+		public static void setPositiveButtonText(this global::android.preference.DialogPreference __this, string arg0) 
+		{ 
+			__this.setPositiveButtonText((global::java.lang.String)arg0); 
+		} 
+		public static void setNegativeButtonText(this global::android.preference.DialogPreference __this, string arg0) 
+		{ 
+			__this.setNegativeButtonText((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

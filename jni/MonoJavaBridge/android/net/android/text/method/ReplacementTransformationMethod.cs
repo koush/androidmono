@@ -49,4 +49,15 @@ namespace android.text.method
 			global::android.text.method.ReplacementTransformationMethod._ReplacementTransformationMethod7228 = @__env.GetMethodID(global::android.text.method.ReplacementTransformationMethod.staticClass, "<init>", "()V"); 
 		} 
 	} 
+	public static class ReplacementTransformationMethodExtensionMethods 
+	{ 
+		public static void onFocusChanged(this global::android.text.method.ReplacementTransformationMethod __this, android.view.View arg0, string arg1, bool arg2, int arg3, android.graphics.Rect arg4) 
+		{ 
+			__this.onFocusChanged(arg0, (global::java.lang.String)arg1, arg2, arg3, arg4); 
+		} 
+		public static java.lang.CharSequence getTransformation(this global::android.text.method.ReplacementTransformationMethod __this, string arg0, android.view.View arg1) 
+		{ 
+			return __this.getTransformation((global::java.lang.String)arg0, arg1); 
+		} 
+	} 
 } 

@@ -912,4 +912,11 @@ namespace android.view
 			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8762 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(Landroid/os/Parcel;)V"); 
 		} 
 	} 
+	public static class WindowManager_LayoutParamsExtensionMethods 
+	{ 
+		public static void setTitle(this global::android.view.WindowManager_LayoutParams __this, string arg0) 
+		{ 
+			__this.setTitle((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

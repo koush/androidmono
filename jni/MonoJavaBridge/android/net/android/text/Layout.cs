@@ -507,4 +507,11 @@ namespace android.text
 			global::android.text.Layout._Layout6842 = @__env.GetMethodID(global::android.text.Layout.staticClass, "<init>", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FF)V"); 
 		} 
 	} 
+	public static class LayoutExtensionMethods 
+	{ 
+		public static void getCursorPath(this global::android.text.Layout __this, int arg0, android.graphics.Path arg1, string arg2) 
+		{ 
+			__this.getCursorPath(arg0, arg1, (global::java.lang.String)arg2); 
+		} 
+	} 
 } 

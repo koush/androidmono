@@ -900,4 +900,15 @@ namespace android.preference
 			global::android.preference.Preference._Preference6053 = @__env.GetMethodID(global::android.preference.Preference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
 		} 
 	} 
+	public static class PreferenceExtensionMethods 
+	{ 
+		public static void setTitle(this global::android.preference.Preference __this, string arg0) 
+		{ 
+			__this.setTitle((global::java.lang.String)arg0); 
+		} 
+		public static void setSummary(this global::android.preference.Preference __this, string arg0) 
+		{ 
+			__this.setSummary((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

@@ -77,4 +77,15 @@ namespace android.text.style
 			global::android.text.style.DynamicDrawableSpan._DynamicDrawableSpan7327 = @__env.GetMethodID(global::android.text.style.DynamicDrawableSpan.staticClass, "<init>", "(I)V"); 
 		} 
 	} 
+	public static class DynamicDrawableSpanExtensionMethods 
+	{ 
+		public static int getSize(this global::android.text.style.DynamicDrawableSpan __this, android.graphics.Paint arg0, string arg1, int arg2, int arg3, android.graphics.Paint.FontMetricsInt arg4) 
+		{ 
+			return __this.getSize(arg0, (global::java.lang.String)arg1, arg2, arg3, arg4); 
+		} 
+		public static void draw(this global::android.text.style.DynamicDrawableSpan __this, android.graphics.Canvas arg0, string arg1, int arg2, int arg3, float arg4, int arg5, int arg6, int arg7, android.graphics.Paint arg8) 
+		{ 
+			__this.draw(arg0, (global::java.lang.String)arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8); 
+		} 
+	} 
 } 

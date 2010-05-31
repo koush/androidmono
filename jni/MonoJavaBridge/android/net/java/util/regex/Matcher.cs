@@ -330,4 +330,11 @@ namespace java.util.regex
 			global::java.util.regex.Matcher._useAnchoringBounds13090 = @__env.GetMethodID(global::java.util.regex.Matcher.staticClass, "useAnchoringBounds", "(Z)Ljava/util/regex/Matcher;"); 
 		} 
 	} 
+	public static class MatcherExtensionMethods 
+	{ 
+		public static java.util.regex.Matcher reset(this global::java.util.regex.Matcher __this, string arg0) 
+		{ 
+			return __this.reset((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

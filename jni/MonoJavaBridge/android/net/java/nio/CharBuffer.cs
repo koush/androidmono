@@ -264,4 +264,15 @@ namespace java.nio
 			global::java.nio.CharBuffer._order12029 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "order", "()Ljava/nio/ByteOrder;"); 
 		} 
 	} 
+	public static class CharBufferExtensionMethods 
+	{ 
+		public static java.lang.Appendable append(this global::java.nio.CharBuffer __this, string arg0) 
+		{ 
+			return __this.append((global::java.lang.String)arg0); 
+		} 
+		public static java.lang.Appendable append(this global::java.nio.CharBuffer __this, string arg0, int arg1, int arg2) 
+		{ 
+			return __this.append((global::java.lang.String)arg0, arg1, arg2); 
+		} 
+	} 
 } 

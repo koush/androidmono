@@ -67,4 +67,15 @@ namespace android.widget
 			global::android.widget.TextSwitcher._TextSwitcher11014 = @__env.GetMethodID(global::android.widget.TextSwitcher.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V"); 
 		} 
 	} 
+	public static class TextSwitcherExtensionMethods 
+	{ 
+		public static void setText(this global::android.widget.TextSwitcher __this, string arg0) 
+		{ 
+			__this.setText((global::java.lang.String)arg0); 
+		} 
+		public static void setCurrentText(this global::android.widget.TextSwitcher __this, string arg0) 
+		{ 
+			__this.setCurrentText((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

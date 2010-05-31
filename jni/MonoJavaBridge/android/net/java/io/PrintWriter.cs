@@ -439,4 +439,15 @@ namespace java.io
 			global::java.io.PrintWriter._PrintWriter11454 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/io/OutputStream;)V"); 
 		} 
 	} 
+	public static class PrintWriterExtensionMethods 
+	{ 
+		public static java.io.PrintWriter append(this global::java.io.PrintWriter __this, string arg0) 
+		{ 
+			return __this.append((global::java.lang.String)arg0); 
+		} 
+		public static java.io.PrintWriter append(this global::java.io.PrintWriter __this, string arg0, int arg1, int arg2) 
+		{ 
+			return __this.append((global::java.lang.String)arg0, arg1, arg2); 
+		} 
+	} 
 } 

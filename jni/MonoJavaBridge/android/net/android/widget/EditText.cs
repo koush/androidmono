@@ -134,4 +134,11 @@ namespace android.widget
 			global::android.widget.EditText._EditText10131 = @__env.GetMethodID(global::android.widget.EditText.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V"); 
 		} 
 	} 
+	public static class EditTextExtensionMethods 
+	{ 
+		public static void setText(this global::android.widget.EditText __this, string arg0, android.widget.TextView.BufferType arg1) 
+		{ 
+			__this.setText((global::java.lang.String)arg0, arg1); 
+		} 
+	} 
 } 

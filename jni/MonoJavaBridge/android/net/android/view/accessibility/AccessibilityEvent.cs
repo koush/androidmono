@@ -495,4 +495,23 @@ namespace android.view.accessibility
 			global::android.view.accessibility.AccessibilityEvent._describeContents8827 = @__env.GetMethodID(global::android.view.accessibility.AccessibilityEvent.staticClass, "describeContents", "()I"); 
 		} 
 	} 
+	public static class AccessibilityEventExtensionMethods 
+	{ 
+		public static void setClassName(this global::android.view.accessibility.AccessibilityEvent __this, string arg0) 
+		{ 
+			__this.setClassName((global::java.lang.String)arg0); 
+		} 
+		public static void setPackageName(this global::android.view.accessibility.AccessibilityEvent __this, string arg0) 
+		{ 
+			__this.setPackageName((global::java.lang.String)arg0); 
+		} 
+		public static void setBeforeText(this global::android.view.accessibility.AccessibilityEvent __this, string arg0) 
+		{ 
+			__this.setBeforeText((global::java.lang.String)arg0); 
+		} 
+		public static void setContentDescription(this global::android.view.accessibility.AccessibilityEvent __this, string arg0) 
+		{ 
+			__this.setContentDescription((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

@@ -164,4 +164,11 @@ namespace android.database.sqlite
 			global::android.database.sqlite.SQLiteQueryBuilder._SQLiteQueryBuilder2567 = @__env.GetMethodID(global::android.database.sqlite.SQLiteQueryBuilder.staticClass, "<init>", "()V"); 
 		} 
 	} 
+	public static class SQLiteQueryBuilderExtensionMethods 
+	{ 
+		public static void appendWhere(this global::android.database.sqlite.SQLiteQueryBuilder __this, string arg0) 
+		{ 
+			__this.appendWhere((global::java.lang.String)arg0); 
+		} 
+	} 
 } 

@@ -1018,4 +1018,15 @@ namespace android.widget
 			global::android.widget.AbsListView._AbsListView9742 = @__env.GetMethodID(global::android.widget.AbsListView.staticClass, "<init>", "(Landroid/content/Context;)V"); 
 		} 
 	} 
+	public static class AbsListViewExtensionMethods 
+	{ 
+		public static void onTextChanged(this global::android.widget.AbsListView __this, string arg0, int arg1, int arg2, int arg3) 
+		{ 
+			__this.onTextChanged((global::java.lang.String)arg0, arg1, arg2, arg3); 
+		} 
+		public static void beforeTextChanged(this global::android.widget.AbsListView __this, string arg0, int arg1, int arg2, int arg3) 
+		{ 
+			__this.beforeTextChanged((global::java.lang.String)arg0, arg1, arg2, arg3); 
+		} 
+	} 
 } 

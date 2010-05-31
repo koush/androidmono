@@ -827,4 +827,11 @@ namespace android.os
 			global::android.os.Bundle._Bundle5471 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "<init>", "(Landroid/os/Bundle;)V"); 
 		} 
 	} 
+	public static class BundleExtensionMethods 
+	{ 
+		public static void putCharSequence(this global::android.os.Bundle __this, java.lang.String arg0, string arg1) 
+		{ 
+			__this.putCharSequence(arg0, (global::java.lang.String)arg1); 
+		} 
+	} 
 } 
