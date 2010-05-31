@@ -1,8 +1,10 @@
 #include "com_koushikdutta_monojavabridge_MonoBridge.h"
-         #include <mono/metadata/metadata.h>
+#include <mono/metadata/metadata.h>
 #include <mono/metadata/debug-helpers.h>
 #include <mono/metadata/class-internals.h>
 #include <mono/metadata/mono-debug.h>
+
+#include <mono/mini/debugger-agent.h>
 
 #ifdef PLATFORM_ANDROID
 #include <android/log.h>
@@ -82,8 +84,31 @@ JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_loadAssem
 }
 
 JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initializeMono
-  (JNIEnv *env, jclass clazz, jboolean debug)
+  (JNIEnv *env, jclass clazz, jstring debuggerAgentOptions)
 {
+#ifdef PLATFORM_ANDROID
+    if (debuggerAgentOptions != NULL)
+    {
+        LOGI("Debugger enabled...");
+        int length = (*env)->GetStringLength(env, debuggerAgentOptions);
+        LOGI("Debugger enabled...1");
+        const jbyte *str = (*env)->GetStringUTFChars(env, debuggerAgentOptions, NULL);
+        LOGI("Debugger enabled...2");
+        char *copy = (char*)malloc(length + 1);
+        copy[length] = NULL;
+        memcpy(copy, str, length);
+        LOGI("Debugger enabled...3");
+        LOGI(copy);
+        LOGI("Debugger enabled...4");
+        mono_debugger_agent_parse_options(copy);
+        LOGI("Debugger enabled...5");
+        free(copy);
+        LOGI("Debugger enabled...6");
+        (*env)->ReleaseStringUTFChars(env, debuggerAgentOptions, str);
+        LOGI("Debugger enabled...7");
+    }
+#endif
+    
     setenv("MONO_PATH", "/data/data/com.koushikdutta.mono/", 0);
 	MonoDomain *domain;
 

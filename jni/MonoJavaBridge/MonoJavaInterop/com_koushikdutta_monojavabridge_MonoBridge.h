@@ -10,10 +10,10 @@ extern "C" {
 /*
  * Class:     com_koushikdutta_monojavabridge_MonoBridge
  * Method:    initializeMono
- * Signature: (Z)Z
+ * Signature: (Ljava/lang/String;)Z
  */
 JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initializeMono
-  (JNIEnv *, jclass, jboolean);
+  (JNIEnv *, jclass, jstring);
 
 /*
  * Class:     com_koushikdutta_monojavabridge_MonoBridge

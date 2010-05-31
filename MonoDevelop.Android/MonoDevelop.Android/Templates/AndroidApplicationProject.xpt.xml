@@ -66,6 +66,7 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <uses-sdk android:minSdkVersion="7" />
 </manifest> 
 ]]>
@@ -97,16 +98,8 @@ namespace ${Namespace}
         public static void Main (string[] args)
         {
             string appNamespace = typeof(Program).Namespace;
-            bool debug = false;
-            foreach (var arg in args)
-            {
-                if (arg == "--debug")
-                    debug = true;
-            }
             Console.WriteLine ("Starting the application via Activity Manager (am). This process will exit.");
             var arguments = string.Format("-c 'am start -a android.intent.action.MAIN -n {0}/{0}.MainActivity'", appNamespace);
-            if (debug)
-                arguments += " -ez mono_debug true";
             var psi = new System.Diagnostics.ProcessStartInfo()
             {
                 Arguments = arguments,

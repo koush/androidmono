@@ -14,8 +14,8 @@ public class MonoActivity extends Activity
     {{
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
-        boolean debug = intent.getBooleanExtra("mono_debug", false);
-        MonoBridge.initialize(debug);
+        String debuggerAgentOptions = intent.getStringExtra("mono_debugger_agent_options");
+        MonoBridge.initialize(debuggerAgentOptions);
         
         AssetExtractor.extractAssets(this, false);
         MonoBridge.loadAssembly("/data/data/com.koushikdutta.mono/android.dll");

@@ -7,9 +7,10 @@ import android.util.Log;
 
 public class MonoBridge {
 	private final static String LOGTAG = "MonoBridge";
-	public static boolean initialize(boolean debug)
+	public static boolean initialize(String debuggerAgentOptions)
 	{
 		Log.i(LOGTAG, "Initializing Mono...");
+		Log.i(LOGTAG, "Debugger Agent Options: " + debuggerAgentOptions);
 		if (mInitialized)
 			return true;
 		
@@ -39,7 +40,7 @@ public class MonoBridge {
 		
 		try
 		{
-			return mInitialized = initializeMono(debug);
+			return mInitialized = initializeMono(debuggerAgentOptions);
 		}
 		catch (Exception ex)
 		{
@@ -50,7 +51,7 @@ public class MonoBridge {
 
 
 	private static boolean mInitialized = false;
-	private static native boolean initializeMono(boolean debug);
+	private static native boolean initializeMono(String debuggerAgentOptions);
 
 	public static Class getPrimitiveClass(String className)
 	{

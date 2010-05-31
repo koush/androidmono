@@ -66,6 +66,9 @@ namespace MonoDevelop.Android
             var assetsDir = Path.Combine(javaProjDir, "assets");
             var packagedAssembly = Path.Combine(assetsDir, Path.GetFileName(conf.CompiledOutputName));
             File.Copy(conf.CompiledOutputName, packagedAssembly, true);
+            var mdb = conf.CompiledOutputName + ".mdb";
+            var packagedMdb = Path.Combine(assetsDir, Path.GetFileName(mdb));
+            File.Copy(mdb, packagedMdb, true);
 
             var androidmonoDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), ".androidmono");
             var monojavabridgejar = Path.Combine(androidmonoDir, "com.koushikdutta.monojavabridge.jar");
@@ -117,14 +120,25 @@ namespace MonoDevelop.Android
 			get
 			{
 				var ipStr = MonoDevelop.Core.PropertyService.Get<string> ("Android.Debugger.HostIP", "");
+                Console.WriteLine("Android.Debugger.HostIP: {0}", ipStr);
 				try {
 					if (!string.IsNullOrEmpty (ipStr))
 						return System.Net.IPAddress.Parse (ipStr);
 				} catch (Exception e) {
 					LoggingService.LogInfo ("Error parsing Debugger HostIP: {0}: {1}", ipStr, e);
 				}
+                
+                var hostName = System.Net.Dns.GetHostName();
+                Console.WriteLine("Host Name: {0}", hostName);
+                var addresses = System.Net.Dns.GetHostAddresses(hostName);
+                foreach (var addr in addresses)
+                {
+                    Console.WriteLine(addr);
+                    if (addr.ToString().StartsWith("192.168.1"))
+                        return addr;
+                }
 				
-				return System.Net.Dns.GetHostEntry (System.Net.Dns.GetHostName ()).AddressList[0];
+                return addresses[0];
 			}
 		}
 		
