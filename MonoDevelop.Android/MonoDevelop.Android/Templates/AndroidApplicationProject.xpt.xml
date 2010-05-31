@@ -137,7 +137,7 @@ namespace ${Namespace}
         {
             base.onCreate (arg0);
             var tv = new TextView(this);
-            tv.setText((java.lang.String)"Hello World!");
+            tv.setText("Hello World!");
             setContentView(tv);
         }
 
