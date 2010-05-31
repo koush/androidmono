@@ -22,7 +22,7 @@ namespace android.app
 		public virtual void clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.WallpaperManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.WallpaperManager._clear794); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._clear794); 
@@ -37,7 +37,7 @@ namespace android.app
 		public virtual global::android.graphics.drawable.Drawable getDrawable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.WallpaperManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.WallpaperManager._getDrawable796)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getDrawable796)); 
@@ -46,7 +46,7 @@ namespace android.app
 		public virtual void setBitmap(android.graphics.Bitmap arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.WallpaperManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.WallpaperManager._setBitmap797, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._setBitmap797, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -55,7 +55,7 @@ namespace android.app
 		public virtual global::android.graphics.drawable.Drawable peekDrawable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.WallpaperManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.WallpaperManager._peekDrawable798)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._peekDrawable798)); 
@@ -64,7 +64,7 @@ namespace android.app
 		public virtual global::android.graphics.drawable.Drawable getFastDrawable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.WallpaperManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.WallpaperManager._getFastDrawable799)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getFastDrawable799)); 
@@ -73,7 +73,7 @@ namespace android.app
 		public virtual global::android.graphics.drawable.Drawable peekFastDrawable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.WallpaperManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.WallpaperManager._peekFastDrawable800)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._peekFastDrawable800)); 
@@ -82,7 +82,7 @@ namespace android.app
 		public virtual global::android.app.WallpaperInfo getWallpaperInfo() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.WallpaperManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.WallpaperInfo>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.WallpaperManager._getWallpaperInfo801)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.WallpaperInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getWallpaperInfo801)); 
@@ -91,7 +91,7 @@ namespace android.app
 		public virtual void setResource(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.WallpaperManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.WallpaperManager._setResource802, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._setResource802, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -100,7 +100,7 @@ namespace android.app
 		public virtual void setStream(java.io.InputStream arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.WallpaperManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.WallpaperManager._setStream803, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._setStream803, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -109,7 +109,7 @@ namespace android.app
 		public virtual int getDesiredMinimumWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.WallpaperManager)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.app.WallpaperManager._getDesiredMinimumWidth804); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getDesiredMinimumWidth804); 
@@ -118,7 +118,7 @@ namespace android.app
 		public virtual int getDesiredMinimumHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.WallpaperManager)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.app.WallpaperManager._getDesiredMinimumHeight805); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._getDesiredMinimumHeight805); 
@@ -127,7 +127,7 @@ namespace android.app
 		public virtual void suggestDesiredDimensions(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.WallpaperManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.WallpaperManager._suggestDesiredDimensions806, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._suggestDesiredDimensions806, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -136,7 +136,7 @@ namespace android.app
 		public virtual void setWallpaperOffsets(android.os.IBinder arg0, float arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.WallpaperManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.WallpaperManager._setWallpaperOffsets807, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._setWallpaperOffsets807, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -145,7 +145,7 @@ namespace android.app
 		public virtual void setWallpaperOffsetSteps(float arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.WallpaperManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.WallpaperManager._setWallpaperOffsetSteps808, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._setWallpaperOffsetSteps808, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -154,7 +154,7 @@ namespace android.app
 		public virtual void sendWallpaperCommand(android.os.IBinder arg0, java.lang.String arg1, int arg2, int arg3, int arg4, android.os.Bundle arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.WallpaperManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.WallpaperManager._sendWallpaperCommand809, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._sendWallpaperCommand809, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5)); 
@@ -163,7 +163,7 @@ namespace android.app
 		public virtual void clearWallpaperOffsets(android.os.IBinder arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.WallpaperManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.WallpaperManager._clearWallpaperOffsets810, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.WallpaperManager.staticClass, global::android.app.WallpaperManager._clearWallpaperOffsets810, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

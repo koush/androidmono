@@ -22,7 +22,7 @@ namespace android.widget
 		protected override void onFinishInflate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TwoLineListItem)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TwoLineListItem._onFinishInflate11258); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._onFinishInflate11258); 
@@ -31,7 +31,7 @@ namespace android.widget
 		public virtual global::android.widget.TextView getText1() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TwoLineListItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TextView>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TwoLineListItem._getText111259)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TextView>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._getText111259)); 
@@ -40,7 +40,7 @@ namespace android.widget
 		public virtual global::android.widget.TextView getText2() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TwoLineListItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TextView>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TwoLineListItem._getText211260)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TextView>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TwoLineListItem.staticClass, global::android.widget.TwoLineListItem._getText211260)); 

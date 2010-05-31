@@ -36,7 +36,7 @@ namespace java.util
 		 void java.util.Observer.update(java.util.Observable arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__Observer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.__Observer._update12960, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.__Observer.staticClass, global::java.util.__Observer._update12960, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 

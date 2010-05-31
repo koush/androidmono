@@ -22,7 +22,7 @@ namespace android.accounts
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accounts.Account)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.accounts.Account._hashCode44); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._hashCode44); 
@@ -31,7 +31,7 @@ namespace android.accounts
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accounts.Account)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.accounts.Account._equals45, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._equals45, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace android.accounts
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accounts.Account)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.accounts.Account._toString46)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._toString46)); 
@@ -49,7 +49,7 @@ namespace android.accounts
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accounts.Account)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.accounts.Account._writeToParcel47, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._writeToParcel47, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -58,7 +58,7 @@ namespace android.accounts
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accounts.Account)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.accounts.Account._describeContents48); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._describeContents48); 

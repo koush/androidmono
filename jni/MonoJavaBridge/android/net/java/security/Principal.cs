@@ -39,7 +39,7 @@ namespace java.security
 		 int java.security.Principal.hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.__Principal)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.security.__Principal._hashCode12456); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.security.__Principal.staticClass, global::java.security.__Principal._hashCode12456); 
@@ -48,7 +48,7 @@ namespace java.security
 		 bool java.security.Principal.equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.__Principal)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.security.__Principal._equals12457, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.__Principal.staticClass, global::java.security.__Principal._equals12457, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -57,7 +57,7 @@ namespace java.security
 		 global::java.lang.String java.security.Principal.toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.__Principal)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Principal._toString12458)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Principal.staticClass, global::java.security.__Principal._toString12458)); 
@@ -66,7 +66,7 @@ namespace java.security
 		 global::java.lang.String java.security.Principal.getName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.__Principal)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Principal._getName12459)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Principal.staticClass, global::java.security.__Principal._getName12459)); 

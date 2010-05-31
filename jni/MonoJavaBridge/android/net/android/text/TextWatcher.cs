@@ -38,7 +38,7 @@ namespace android.text
 		 void android.text.TextWatcher.onTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.__TextWatcher)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.__TextWatcher._onTextChanged7034, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.__TextWatcher.staticClass, global::android.text.__TextWatcher._onTextChanged7034, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -47,7 +47,7 @@ namespace android.text
 		 void android.text.TextWatcher.beforeTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.__TextWatcher)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.__TextWatcher._beforeTextChanged7035, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.__TextWatcher.staticClass, global::android.text.__TextWatcher._beforeTextChanged7035, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -56,7 +56,7 @@ namespace android.text
 		 void android.text.TextWatcher.afterTextChanged(android.text.Editable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.__TextWatcher)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.__TextWatcher._afterTextChanged7036, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.__TextWatcher.staticClass, global::android.text.__TextWatcher._afterTextChanged7036, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

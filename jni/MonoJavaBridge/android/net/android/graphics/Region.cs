@@ -106,7 +106,7 @@ namespace android.graphics
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._equals3370, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._equals3370, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -115,7 +115,7 @@ namespace android.graphics
 		public virtual bool isEmpty() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._isEmpty3371); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._isEmpty3371); 
@@ -124,7 +124,7 @@ namespace android.graphics
 		public virtual bool contains(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._contains3372, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._contains3372, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -133,7 +133,7 @@ namespace android.graphics
 		public virtual bool set(android.graphics.Region arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._set3373, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._set3373, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -142,7 +142,7 @@ namespace android.graphics
 		public virtual bool set(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._set3374, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._set3374, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -151,7 +151,7 @@ namespace android.graphics
 		public virtual bool set(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._set3375, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._set3375, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -160,7 +160,7 @@ namespace android.graphics
 		public virtual bool union(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._union3376, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._union3376, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -169,7 +169,7 @@ namespace android.graphics
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Region._writeToParcel3377, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._writeToParcel3377, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -178,7 +178,7 @@ namespace android.graphics
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Region._describeContents3378); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._describeContents3378); 
@@ -187,7 +187,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Rect getBounds() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Region._getBounds3379)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._getBounds3379)); 
@@ -196,7 +196,7 @@ namespace android.graphics
 		public virtual bool getBounds(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._getBounds3380, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._getBounds3380, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -205,7 +205,7 @@ namespace android.graphics
 		public virtual void translate(int arg0, int arg1, android.graphics.Region arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Region._translate3381, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._translate3381, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -214,7 +214,7 @@ namespace android.graphics
 		public virtual void translate(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Region._translate3382, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._translate3382, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -223,7 +223,7 @@ namespace android.graphics
 		public virtual bool op(android.graphics.Rect arg0, android.graphics.Region arg1, android.graphics.Region.Op arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._op3383, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._op3383, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -232,7 +232,7 @@ namespace android.graphics
 		public virtual bool op(int arg0, int arg1, int arg2, int arg3, android.graphics.Region.Op arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._op3384, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._op3384, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)); 
@@ -241,7 +241,7 @@ namespace android.graphics
 		public virtual bool op(android.graphics.Rect arg0, android.graphics.Region.Op arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._op3385, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._op3385, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -250,7 +250,7 @@ namespace android.graphics
 		public virtual bool op(android.graphics.Region arg0, android.graphics.Region arg1, android.graphics.Region.Op arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._op3386, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._op3386, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -259,7 +259,7 @@ namespace android.graphics
 		public virtual bool op(android.graphics.Region arg0, android.graphics.Region.Op arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._op3387, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._op3387, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -268,7 +268,7 @@ namespace android.graphics
 		public virtual bool quickReject(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._quickReject3388, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._quickReject3388, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -277,7 +277,7 @@ namespace android.graphics
 		public virtual bool quickReject(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._quickReject3389, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._quickReject3389, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -286,7 +286,7 @@ namespace android.graphics
 		public virtual bool quickReject(android.graphics.Region arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._quickReject3390, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._quickReject3390, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -295,7 +295,7 @@ namespace android.graphics
 		public virtual void setEmpty() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Region._setEmpty3391); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._setEmpty3391); 
@@ -304,7 +304,7 @@ namespace android.graphics
 		public virtual bool setPath(android.graphics.Path arg0, android.graphics.Region arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._setPath3392, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._setPath3392, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -313,7 +313,7 @@ namespace android.graphics
 		public virtual bool isRect() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._isRect3393); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._isRect3393); 
@@ -322,7 +322,7 @@ namespace android.graphics
 		public virtual bool isComplex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._isComplex3394); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._isComplex3394); 
@@ -331,7 +331,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Path getBoundaryPath() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Path>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Region._getBoundaryPath3395)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Path>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._getBoundaryPath3395)); 
@@ -340,7 +340,7 @@ namespace android.graphics
 		public virtual bool getBoundaryPath(android.graphics.Path arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._getBoundaryPath3396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._getBoundaryPath3396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -349,7 +349,7 @@ namespace android.graphics
 		public virtual bool quickContains(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._quickContains3397, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._quickContains3397, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -358,7 +358,7 @@ namespace android.graphics
 		public virtual bool quickContains(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Region)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Region._quickContains3398, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Region.staticClass, global::android.graphics.Region._quickContains3398, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

@@ -22,7 +22,7 @@ namespace android.widget
 		public override void addView(android.view.View arg0, int arg1, android.view.ViewGroup.LayoutParams arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewAnimator._addView11289, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._addView11289, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -31,7 +31,7 @@ namespace android.widget
 		public override void removeView(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewAnimator._removeView11290, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._removeView11290, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -40,7 +40,7 @@ namespace android.widget
 		public override int getBaseline() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.ViewAnimator._getBaseline11291); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._getBaseline11291); 
@@ -49,7 +49,7 @@ namespace android.widget
 		public override void removeViewInLayout(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewAnimator._removeViewInLayout11292, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._removeViewInLayout11292, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.widget
 		public override void removeViewsInLayout(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewAnimator._removeViewsInLayout11293, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._removeViewsInLayout11293, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -67,7 +67,7 @@ namespace android.widget
 		public override void removeViewAt(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewAnimator._removeViewAt11294, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._removeViewAt11294, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -76,7 +76,7 @@ namespace android.widget
 		public override void removeViews(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewAnimator._removeViews11295, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._removeViews11295, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -85,7 +85,7 @@ namespace android.widget
 		public override void removeAllViews() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewAnimator._removeAllViews11296); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._removeAllViews11296); 
@@ -94,7 +94,7 @@ namespace android.widget
 		public virtual global::android.view.View getCurrentView() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ViewAnimator._getCurrentView11297)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._getCurrentView11297)); 
@@ -103,7 +103,7 @@ namespace android.widget
 		public virtual void setDisplayedChild(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewAnimator._setDisplayedChild11298, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._setDisplayedChild11298, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -112,7 +112,7 @@ namespace android.widget
 		public virtual int getDisplayedChild() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.ViewAnimator._getDisplayedChild11299); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._getDisplayedChild11299); 
@@ -121,7 +121,7 @@ namespace android.widget
 		public virtual void showNext() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewAnimator._showNext11300); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._showNext11300); 
@@ -130,7 +130,7 @@ namespace android.widget
 		public virtual void showPrevious() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewAnimator._showPrevious11301); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._showPrevious11301); 
@@ -139,7 +139,7 @@ namespace android.widget
 		public virtual global::android.view.animation.Animation getInAnimation() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.animation.Animation>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ViewAnimator._getInAnimation11302)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.animation.Animation>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._getInAnimation11302)); 
@@ -148,7 +148,7 @@ namespace android.widget
 		public virtual void setInAnimation(android.content.Context arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewAnimator._setInAnimation11303, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._setInAnimation11303, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -157,7 +157,7 @@ namespace android.widget
 		public virtual void setInAnimation(android.view.animation.Animation arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewAnimator._setInAnimation11304, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._setInAnimation11304, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -166,7 +166,7 @@ namespace android.widget
 		public virtual global::android.view.animation.Animation getOutAnimation() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.animation.Animation>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ViewAnimator._getOutAnimation11305)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.animation.Animation>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._getOutAnimation11305)); 
@@ -175,7 +175,7 @@ namespace android.widget
 		public virtual void setOutAnimation(android.content.Context arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewAnimator._setOutAnimation11306, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._setOutAnimation11306, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -184,7 +184,7 @@ namespace android.widget
 		public virtual void setOutAnimation(android.view.animation.Animation arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewAnimator._setOutAnimation11307, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._setOutAnimation11307, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -193,7 +193,7 @@ namespace android.widget
 		public virtual void setAnimateFirstView(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewAnimator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewAnimator._setAnimateFirstView11308, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewAnimator.staticClass, global::android.widget.ViewAnimator._setAnimateFirstView11308, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

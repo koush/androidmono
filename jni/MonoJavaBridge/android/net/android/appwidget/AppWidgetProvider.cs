@@ -22,7 +22,7 @@ namespace android.appwidget
 		public override void onReceive(android.content.Context arg0, android.content.Intent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.appwidget.AppWidgetProvider)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.appwidget.AppWidgetProvider._onReceive842, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.appwidget.AppWidgetProvider.staticClass, global::android.appwidget.AppWidgetProvider._onReceive842, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -31,7 +31,7 @@ namespace android.appwidget
 		public virtual void onUpdate(android.content.Context arg0, android.appwidget.AppWidgetManager arg1, int[] arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.appwidget.AppWidgetProvider)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.appwidget.AppWidgetProvider._onUpdate843, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.appwidget.AppWidgetProvider.staticClass, global::android.appwidget.AppWidgetProvider._onUpdate843, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2)); 
@@ -40,7 +40,7 @@ namespace android.appwidget
 		public virtual void onDeleted(android.content.Context arg0, int[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.appwidget.AppWidgetProvider)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.appwidget.AppWidgetProvider._onDeleted844, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.appwidget.AppWidgetProvider.staticClass, global::android.appwidget.AppWidgetProvider._onDeleted844, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)); 
@@ -49,7 +49,7 @@ namespace android.appwidget
 		public virtual void onEnabled(android.content.Context arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.appwidget.AppWidgetProvider)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.appwidget.AppWidgetProvider._onEnabled845, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.appwidget.AppWidgetProvider.staticClass, global::android.appwidget.AppWidgetProvider._onEnabled845, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.appwidget
 		public virtual void onDisabled(android.content.Context arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.appwidget.AppWidgetProvider)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.appwidget.AppWidgetProvider._onDisabled846, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.appwidget.AppWidgetProvider.staticClass, global::android.appwidget.AppWidgetProvider._onDisabled846, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

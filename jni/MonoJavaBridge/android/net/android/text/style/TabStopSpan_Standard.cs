@@ -22,7 +22,7 @@ namespace android.text.style
 		public virtual int getTabStop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.TabStopSpan_Standard)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.style.TabStopSpan_Standard._getTabStop7435); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.TabStopSpan_Standard.staticClass, global::android.text.style.TabStopSpan_Standard._getTabStop7435); 

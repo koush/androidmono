@@ -22,7 +22,7 @@ namespace android.graphics
 		public virtual void draw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Picture)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Picture._draw3219, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._draw3219, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -37,7 +37,7 @@ namespace android.graphics
 		public virtual int getWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Picture)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Picture._getWidth3221); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._getWidth3221); 
@@ -46,7 +46,7 @@ namespace android.graphics
 		public virtual int getHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Picture)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Picture._getHeight3222); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._getHeight3222); 
@@ -55,7 +55,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Canvas beginRecording(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Picture)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Canvas>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Picture._beginRecording3223, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Canvas>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._beginRecording3223, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -64,7 +64,7 @@ namespace android.graphics
 		public virtual void endRecording() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Picture)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Picture._endRecording3224); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._endRecording3224); 
@@ -73,7 +73,7 @@ namespace android.graphics
 		public virtual void writeToStream(java.io.OutputStream arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Picture)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Picture._writeToStream3225, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Picture.staticClass, global::android.graphics.Picture._writeToStream3225, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

@@ -22,7 +22,7 @@ namespace android.content
 		public virtual void clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.SyncStats)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.SyncStats._clear1548); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.SyncStats.staticClass, global::android.content.SyncStats._clear1548); 
@@ -31,7 +31,7 @@ namespace android.content
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.SyncStats)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.SyncStats._toString1549)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.SyncStats.staticClass, global::android.content.SyncStats._toString1549)); 
@@ -40,7 +40,7 @@ namespace android.content
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.SyncStats)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.SyncStats._writeToParcel1550, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.SyncStats.staticClass, global::android.content.SyncStats._writeToParcel1550, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -49,7 +49,7 @@ namespace android.content
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.SyncStats)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.SyncStats._describeContents1551); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.SyncStats.staticClass, global::android.content.SyncStats._describeContents1551); 

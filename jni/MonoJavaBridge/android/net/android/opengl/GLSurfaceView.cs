@@ -54,7 +54,7 @@ namespace android.opengl
 			 global::javax.microedition.khronos.egl.EGLConfig android.opengl.GLSurfaceView.EGLConfigChooser.chooseConfig(javax.microedition.khronos.egl.EGL10 arg0, javax.microedition.khronos.egl.EGLDisplay arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.opengl.GLSurfaceView.__EGLConfigChooser)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.microedition.khronos.egl.EGLConfig>(@__env, @__env.CallObjectMethodPtr(this, global::android.opengl.GLSurfaceView.__EGLConfigChooser._chooseConfig5266, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.microedition.khronos.egl.EGLConfig>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.opengl.GLSurfaceView.__EGLConfigChooser.staticClass, global::android.opengl.GLSurfaceView.__EGLConfigChooser._chooseConfig5266, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -102,7 +102,7 @@ namespace android.opengl
 			 global::javax.microedition.khronos.egl.EGLContext android.opengl.GLSurfaceView.EGLContextFactory.createContext(javax.microedition.khronos.egl.EGL10 arg0, javax.microedition.khronos.egl.EGLDisplay arg1, javax.microedition.khronos.egl.EGLConfig arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.opengl.GLSurfaceView.__EGLContextFactory)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.microedition.khronos.egl.EGLContext>(@__env, @__env.CallObjectMethodPtr(this, global::android.opengl.GLSurfaceView.__EGLContextFactory._createContext5267, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.microedition.khronos.egl.EGLContext>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.opengl.GLSurfaceView.__EGLContextFactory.staticClass, global::android.opengl.GLSurfaceView.__EGLContextFactory._createContext5267, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
@@ -111,7 +111,7 @@ namespace android.opengl
 			 void android.opengl.GLSurfaceView.EGLContextFactory.destroyContext(javax.microedition.khronos.egl.EGL10 arg0, javax.microedition.khronos.egl.EGLDisplay arg1, javax.microedition.khronos.egl.EGLContext arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.opengl.GLSurfaceView.__EGLContextFactory)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView.__EGLContextFactory._destroyContext5268, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.__EGLContextFactory.staticClass, global::android.opengl.GLSurfaceView.__EGLContextFactory._destroyContext5268, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -160,7 +160,7 @@ namespace android.opengl
 			 global::javax.microedition.khronos.egl.EGLSurface android.opengl.GLSurfaceView.EGLWindowSurfaceFactory.createWindowSurface(javax.microedition.khronos.egl.EGL10 arg0, javax.microedition.khronos.egl.EGLDisplay arg1, javax.microedition.khronos.egl.EGLConfig arg2, java.lang.Object arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.opengl.GLSurfaceView.__EGLWindowSurfaceFactory)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.microedition.khronos.egl.EGLSurface>(@__env, @__env.CallObjectMethodPtr(this, global::android.opengl.GLSurfaceView.__EGLWindowSurfaceFactory._createWindowSurface5269, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.microedition.khronos.egl.EGLSurface>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.opengl.GLSurfaceView.__EGLWindowSurfaceFactory.staticClass, global::android.opengl.GLSurfaceView.__EGLWindowSurfaceFactory._createWindowSurface5269, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3))); 
@@ -169,7 +169,7 @@ namespace android.opengl
 			 void android.opengl.GLSurfaceView.EGLWindowSurfaceFactory.destroySurface(javax.microedition.khronos.egl.EGL10 arg0, javax.microedition.khronos.egl.EGLDisplay arg1, javax.microedition.khronos.egl.EGLSurface arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.opengl.GLSurfaceView.__EGLWindowSurfaceFactory)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView.__EGLWindowSurfaceFactory._destroySurface5270, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.__EGLWindowSurfaceFactory.staticClass, global::android.opengl.GLSurfaceView.__EGLWindowSurfaceFactory._destroySurface5270, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -217,7 +217,7 @@ namespace android.opengl
 			 global::javax.microedition.khronos.opengles.GL android.opengl.GLSurfaceView.GLWrapper.wrap(javax.microedition.khronos.opengles.GL arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.opengl.GLSurfaceView.__GLWrapper)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.FullJ2C<javax.microedition.khronos.opengles.GL>(@__env, @__env.CallObjectMethodPtr(this, global::android.opengl.GLSurfaceView.__GLWrapper._wrap5271, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.FullJ2C<javax.microedition.khronos.opengles.GL>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.opengl.GLSurfaceView.__GLWrapper.staticClass, global::android.opengl.GLSurfaceView.__GLWrapper._wrap5271, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -266,7 +266,7 @@ namespace android.opengl
 			 void android.opengl.GLSurfaceView.Renderer.onSurfaceCreated(javax.microedition.khronos.opengles.GL10 arg0, javax.microedition.khronos.egl.EGLConfig arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.opengl.GLSurfaceView.__Renderer)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView.__Renderer._onSurfaceCreated5272, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.__Renderer.staticClass, global::android.opengl.GLSurfaceView.__Renderer._onSurfaceCreated5272, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -275,7 +275,7 @@ namespace android.opengl
 			 void android.opengl.GLSurfaceView.Renderer.onSurfaceChanged(javax.microedition.khronos.opengles.GL10 arg0, int arg1, int arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.opengl.GLSurfaceView.__Renderer)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView.__Renderer._onSurfaceChanged5273, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.__Renderer.staticClass, global::android.opengl.GLSurfaceView.__Renderer._onSurfaceChanged5273, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -284,7 +284,7 @@ namespace android.opengl
 			 void android.opengl.GLSurfaceView.Renderer.onDrawFrame(javax.microedition.khronos.opengles.GL10 arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.opengl.GLSurfaceView.__Renderer)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView.__Renderer._onDrawFrame5274, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.__Renderer.staticClass, global::android.opengl.GLSurfaceView.__Renderer._onDrawFrame5274, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -301,7 +301,7 @@ namespace android.opengl
 		public virtual void onResume() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView._onResume5275); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._onResume5275); 
@@ -310,7 +310,7 @@ namespace android.opengl
 		public virtual void onPause() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView._onPause5276); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._onPause5276); 
@@ -319,7 +319,7 @@ namespace android.opengl
 		protected override void onDetachedFromWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView._onDetachedFromWindow5277); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._onDetachedFromWindow5277); 
@@ -328,7 +328,7 @@ namespace android.opengl
 		public virtual void setGLWrapper(android.opengl.GLSurfaceView.GLWrapper arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView._setGLWrapper5278, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._setGLWrapper5278, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -337,7 +337,7 @@ namespace android.opengl
 		public virtual void setDebugFlags(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView._setDebugFlags5279, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._setDebugFlags5279, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -346,7 +346,7 @@ namespace android.opengl
 		public virtual int getDebugFlags() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.opengl.GLSurfaceView._getDebugFlags5280); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._getDebugFlags5280); 
@@ -355,7 +355,7 @@ namespace android.opengl
 		public virtual void setRenderer(android.opengl.GLSurfaceView.Renderer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView._setRenderer5281, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._setRenderer5281, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -364,7 +364,7 @@ namespace android.opengl
 		public virtual void setEGLContextFactory(android.opengl.GLSurfaceView.EGLContextFactory arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView._setEGLContextFactory5282, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._setEGLContextFactory5282, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -373,7 +373,7 @@ namespace android.opengl
 		public virtual void setEGLWindowSurfaceFactory(android.opengl.GLSurfaceView.EGLWindowSurfaceFactory arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView._setEGLWindowSurfaceFactory5283, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._setEGLWindowSurfaceFactory5283, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -382,7 +382,7 @@ namespace android.opengl
 		public virtual void setEGLConfigChooser(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView._setEGLConfigChooser5284, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._setEGLConfigChooser5284, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -391,7 +391,7 @@ namespace android.opengl
 		public virtual void setEGLConfigChooser(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView._setEGLConfigChooser5285, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._setEGLConfigChooser5285, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
@@ -400,7 +400,7 @@ namespace android.opengl
 		public virtual void setEGLConfigChooser(android.opengl.GLSurfaceView.EGLConfigChooser arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView._setEGLConfigChooser5286, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._setEGLConfigChooser5286, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -409,7 +409,7 @@ namespace android.opengl
 		public virtual void setRenderMode(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView._setRenderMode5287, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._setRenderMode5287, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -418,7 +418,7 @@ namespace android.opengl
 		public virtual int getRenderMode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.opengl.GLSurfaceView._getRenderMode5288); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._getRenderMode5288); 
@@ -427,7 +427,7 @@ namespace android.opengl
 		public virtual void requestRender() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView._requestRender5289); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._requestRender5289); 
@@ -436,7 +436,7 @@ namespace android.opengl
 		public virtual void surfaceCreated(android.view.SurfaceHolder arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView._surfaceCreated5290, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._surfaceCreated5290, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -445,7 +445,7 @@ namespace android.opengl
 		public virtual void surfaceDestroyed(android.view.SurfaceHolder arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView._surfaceDestroyed5291, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._surfaceDestroyed5291, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -454,7 +454,7 @@ namespace android.opengl
 		public virtual void surfaceChanged(android.view.SurfaceHolder arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView._surfaceChanged5292, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._surfaceChanged5292, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -463,7 +463,7 @@ namespace android.opengl
 		public virtual void queueEvent(java.lang.Runnable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.opengl.GLSurfaceView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.opengl.GLSurfaceView._queueEvent5293, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.opengl.GLSurfaceView.staticClass, global::android.opengl.GLSurfaceView._queueEvent5293, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

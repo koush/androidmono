@@ -22,7 +22,7 @@ namespace java.net
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.Socket._toString11818)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.Socket.staticClass, global::java.net.Socket._toString11818)); 
@@ -31,7 +31,7 @@ namespace java.net
 		public virtual void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.Socket._close11819); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._close11819); 
@@ -40,7 +40,7 @@ namespace java.net
 		public virtual global::java.nio.channels.SocketChannel getChannel() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SocketChannel>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.Socket._getChannel11820)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.SocketChannel>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.Socket.staticClass, global::java.net.Socket._getChannel11820)); 
@@ -49,7 +49,7 @@ namespace java.net
 		public virtual int getPort() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.net.Socket._getPort11821); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getPort11821); 
@@ -58,7 +58,7 @@ namespace java.net
 		public virtual global::java.io.InputStream getInputStream() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.Socket._getInputStream11822)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.Socket.staticClass, global::java.net.Socket._getInputStream11822)); 
@@ -67,7 +67,7 @@ namespace java.net
 		public virtual void connect(java.net.SocketAddress arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.Socket._connect11823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._connect11823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -76,7 +76,7 @@ namespace java.net
 		public virtual void connect(java.net.SocketAddress arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.Socket._connect11824, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._connect11824, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -85,7 +85,7 @@ namespace java.net
 		public virtual bool isClosed() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.Socket._isClosed11825); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._isClosed11825); 
@@ -94,7 +94,7 @@ namespace java.net
 		public virtual global::java.io.OutputStream getOutputStream() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.OutputStream>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.Socket._getOutputStream11826)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.OutputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.Socket.staticClass, global::java.net.Socket._getOutputStream11826)); 
@@ -103,7 +103,7 @@ namespace java.net
 		public virtual void bind(java.net.SocketAddress arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.Socket._bind11827, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._bind11827, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -112,7 +112,7 @@ namespace java.net
 		public virtual bool isConnected() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.Socket._isConnected11828); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._isConnected11828); 
@@ -121,7 +121,7 @@ namespace java.net
 		public virtual global::java.net.SocketAddress getLocalSocketAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.Socket._getLocalSocketAddress11829)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.Socket.staticClass, global::java.net.Socket._getLocalSocketAddress11829)); 
@@ -130,7 +130,7 @@ namespace java.net
 		public virtual void shutdownInput() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.Socket._shutdownInput11830); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._shutdownInput11830); 
@@ -139,7 +139,7 @@ namespace java.net
 		public virtual void shutdownOutput() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.Socket._shutdownOutput11831); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._shutdownOutput11831); 
@@ -148,7 +148,7 @@ namespace java.net
 		public virtual void setReceiveBufferSize(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.Socket._setReceiveBufferSize11832, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setReceiveBufferSize11832, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -157,7 +157,7 @@ namespace java.net
 		public virtual int getReceiveBufferSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.net.Socket._getReceiveBufferSize11833); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getReceiveBufferSize11833); 
@@ -166,7 +166,7 @@ namespace java.net
 		public virtual void setSoTimeout(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.Socket._setSoTimeout11834, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setSoTimeout11834, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -175,7 +175,7 @@ namespace java.net
 		public virtual int getSoTimeout() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.net.Socket._getSoTimeout11835); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getSoTimeout11835); 
@@ -184,7 +184,7 @@ namespace java.net
 		public virtual void setSendBufferSize(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.Socket._setSendBufferSize11836, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setSendBufferSize11836, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -193,7 +193,7 @@ namespace java.net
 		public virtual int getSendBufferSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.net.Socket._getSendBufferSize11837); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getSendBufferSize11837); 
@@ -202,7 +202,7 @@ namespace java.net
 		public virtual global::java.net.SocketAddress getRemoteSocketAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.Socket._getRemoteSocketAddress11838)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.Socket.staticClass, global::java.net.Socket._getRemoteSocketAddress11838)); 
@@ -211,7 +211,7 @@ namespace java.net
 		public virtual bool isBound() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.Socket._isBound11839); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._isBound11839); 
@@ -220,7 +220,7 @@ namespace java.net
 		public virtual bool isOutputShutdown() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.Socket._isOutputShutdown11840); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._isOutputShutdown11840); 
@@ -229,7 +229,7 @@ namespace java.net
 		public virtual bool isInputShutdown() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.Socket._isInputShutdown11841); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._isInputShutdown11841); 
@@ -238,7 +238,7 @@ namespace java.net
 		public virtual global::java.net.InetAddress getInetAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.Socket._getInetAddress11842)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.Socket.staticClass, global::java.net.Socket._getInetAddress11842)); 
@@ -247,7 +247,7 @@ namespace java.net
 		public virtual global::java.net.InetAddress getLocalAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.Socket._getLocalAddress11843)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.Socket.staticClass, global::java.net.Socket._getLocalAddress11843)); 
@@ -256,7 +256,7 @@ namespace java.net
 		public virtual int getLocalPort() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.net.Socket._getLocalPort11844); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getLocalPort11844); 
@@ -265,7 +265,7 @@ namespace java.net
 		public virtual void setTcpNoDelay(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.Socket._setTcpNoDelay11845, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setTcpNoDelay11845, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -274,7 +274,7 @@ namespace java.net
 		public virtual bool getTcpNoDelay() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.Socket._getTcpNoDelay11846); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getTcpNoDelay11846); 
@@ -283,7 +283,7 @@ namespace java.net
 		public virtual void setSoLinger(bool arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.Socket._setSoLinger11847, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setSoLinger11847, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -292,7 +292,7 @@ namespace java.net
 		public virtual int getSoLinger() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.net.Socket._getSoLinger11848); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getSoLinger11848); 
@@ -301,7 +301,7 @@ namespace java.net
 		public virtual void sendUrgentData(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.Socket._sendUrgentData11849, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._sendUrgentData11849, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -310,7 +310,7 @@ namespace java.net
 		public virtual void setOOBInline(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.Socket._setOOBInline11850, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setOOBInline11850, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -319,7 +319,7 @@ namespace java.net
 		public virtual bool getOOBInline() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.Socket._getOOBInline11851); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getOOBInline11851); 
@@ -328,7 +328,7 @@ namespace java.net
 		public virtual void setKeepAlive(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.Socket._setKeepAlive11852, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setKeepAlive11852, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -337,7 +337,7 @@ namespace java.net
 		public virtual bool getKeepAlive() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.Socket._getKeepAlive11853); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getKeepAlive11853); 
@@ -346,7 +346,7 @@ namespace java.net
 		public virtual void setTrafficClass(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.Socket._setTrafficClass11854, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setTrafficClass11854, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -355,7 +355,7 @@ namespace java.net
 		public virtual int getTrafficClass() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.net.Socket._getTrafficClass11855); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getTrafficClass11855); 
@@ -364,7 +364,7 @@ namespace java.net
 		public virtual void setReuseAddress(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.Socket._setReuseAddress11856, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setReuseAddress11856, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -373,7 +373,7 @@ namespace java.net
 		public virtual bool getReuseAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.Socket._getReuseAddress11857); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._getReuseAddress11857); 
@@ -388,7 +388,7 @@ namespace java.net
 		public virtual void setPerformancePreferences(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Socket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.Socket._setPerformancePreferences11859, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.Socket.staticClass, global::java.net.Socket._setPerformancePreferences11859, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 

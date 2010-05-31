@@ -15,7 +15,7 @@ namespace android.widget
 		public virtual new void onRestoreInstanceState(android.os.Parcelable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSpinner)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AbsSpinner._onRestoreInstanceState9759, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._onRestoreInstanceState9759, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -24,7 +24,7 @@ namespace android.widget
 		public virtual new global::android.os.Parcelable onSaveInstanceState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSpinner)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AbsSpinner._onSaveInstanceState9760)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._onSaveInstanceState9760)); 
@@ -33,7 +33,7 @@ namespace android.widget
 		public override void requestLayout() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSpinner)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AbsSpinner._requestLayout9761); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._requestLayout9761); 
@@ -42,7 +42,7 @@ namespace android.widget
 		protected override void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSpinner)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AbsSpinner._onMeasure9762, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._onMeasure9762, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -51,7 +51,7 @@ namespace android.widget
 		public override int getCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSpinner)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.AbsSpinner._getCount9763); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._getCount9763); 
@@ -60,7 +60,7 @@ namespace android.widget
 		protected override global::android.view.ViewGroup.LayoutParams generateDefaultLayoutParams() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSpinner)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AbsSpinner._generateDefaultLayoutParams9764)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._generateDefaultLayoutParams9764)); 
@@ -69,7 +69,7 @@ namespace android.widget
 		public override void setAdapter(android.widget.Adapter arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSpinner)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AbsSpinner._setAdapter9765, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._setAdapter9765, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -78,7 +78,7 @@ namespace android.widget
 		public virtual void setAdapter(android.widget.SpinnerAdapter arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSpinner)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AbsSpinner._setAdapter9766, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._setAdapter9766, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -87,7 +87,7 @@ namespace android.widget
 		public override global::android.widget.Adapter getAdapter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSpinner)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.Adapter>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AbsSpinner._getAdapter9767)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.Adapter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._getAdapter9767)); 
@@ -96,7 +96,7 @@ namespace android.widget
 		public override global::android.view.View getSelectedView() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSpinner)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AbsSpinner._getSelectedView9768)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._getSelectedView9768)); 
@@ -105,7 +105,7 @@ namespace android.widget
 		public override void setSelection(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSpinner)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AbsSpinner._setSelection9769, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._setSelection9769, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -114,7 +114,7 @@ namespace android.widget
 		public virtual void setSelection(int arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSpinner)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AbsSpinner._setSelection9770, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._setSelection9770, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -123,7 +123,7 @@ namespace android.widget
 		public virtual int pointToPosition(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSpinner)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.AbsSpinner._pointToPosition9771, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AbsSpinner.staticClass, global::android.widget.AbsSpinner._pointToPosition9771, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 

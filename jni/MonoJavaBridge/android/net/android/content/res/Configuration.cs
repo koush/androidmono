@@ -22,7 +22,7 @@ namespace android.content.res
 		public sealed override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.Configuration)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.Configuration._hashCode1924); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._hashCode1924); 
@@ -31,7 +31,7 @@ namespace android.content.res
 		public sealed override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.Configuration)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.res.Configuration._equals1925, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._equals1925, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace android.content.res
 		public bool equals(android.content.res.Configuration arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.Configuration)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.res.Configuration._equals1926, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._equals1926, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.content.res
 		public int compareTo(android.content.res.Configuration arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.Configuration)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.Configuration._compareTo1927, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._compareTo1927, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.content.res
 		public int compareTo(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.Configuration)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.Configuration._compareTo1928, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._compareTo1928, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -67,7 +67,7 @@ namespace android.content.res
 		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.Configuration)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.Configuration._toString1929)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._toString1929)); 
@@ -76,7 +76,7 @@ namespace android.content.res
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.Configuration)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.res.Configuration._writeToParcel1930, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._writeToParcel1930, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -85,7 +85,7 @@ namespace android.content.res
 		public int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.Configuration)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.Configuration._describeContents1931); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._describeContents1931); 
@@ -94,7 +94,7 @@ namespace android.content.res
 		public void setToDefaults() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.Configuration)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.res.Configuration._setToDefaults1932); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._setToDefaults1932); 
@@ -103,7 +103,7 @@ namespace android.content.res
 		public int updateFrom(android.content.res.Configuration arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.Configuration)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.Configuration._updateFrom1933, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._updateFrom1933, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -112,7 +112,7 @@ namespace android.content.res
 		public int diff(android.content.res.Configuration arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.Configuration)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.Configuration._diff1934, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.Configuration.staticClass, global::android.content.res.Configuration._diff1934, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

@@ -36,7 +36,7 @@ namespace android.os
 		 void android.os.IBinder_DeathRecipient.binderDied() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.__IBinder_DeathRecipient)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.__IBinder_DeathRecipient._binderDied5618); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.__IBinder_DeathRecipient.staticClass, global::android.os.__IBinder_DeathRecipient._binderDied5618); 

@@ -15,7 +15,7 @@ namespace android.database
 		public virtual void onChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.DataSetObserver)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.DataSetObserver._onChanged2338); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.DataSetObserver.staticClass, global::android.database.DataSetObserver._onChanged2338); 
@@ -24,7 +24,7 @@ namespace android.database
 		public virtual void onInvalidated() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.DataSetObserver)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.DataSetObserver._onInvalidated2339); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.DataSetObserver.staticClass, global::android.database.DataSetObserver._onInvalidated2339); 

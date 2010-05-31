@@ -54,7 +54,7 @@ namespace android.widget
 			 void android.widget.SlidingDrawer.OnDrawerCloseListener.onDrawerClosed() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.SlidingDrawer.__OnDrawerCloseListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer.__OnDrawerCloseListener._onDrawerClosed10862); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.__OnDrawerCloseListener.staticClass, global::android.widget.SlidingDrawer.__OnDrawerCloseListener._onDrawerClosed10862); 
@@ -101,7 +101,7 @@ namespace android.widget
 			 void android.widget.SlidingDrawer.OnDrawerOpenListener.onDrawerOpened() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.SlidingDrawer.__OnDrawerOpenListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer.__OnDrawerOpenListener._onDrawerOpened10863); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.__OnDrawerOpenListener.staticClass, global::android.widget.SlidingDrawer.__OnDrawerOpenListener._onDrawerOpened10863); 
@@ -149,7 +149,7 @@ namespace android.widget
 			 void android.widget.SlidingDrawer.OnDrawerScrollListener.onScrollStarted() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.SlidingDrawer.__OnDrawerScrollListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer.__OnDrawerScrollListener._onScrollStarted10864); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.__OnDrawerScrollListener.staticClass, global::android.widget.SlidingDrawer.__OnDrawerScrollListener._onScrollStarted10864); 
@@ -158,7 +158,7 @@ namespace android.widget
 			 void android.widget.SlidingDrawer.OnDrawerScrollListener.onScrollEnded() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.SlidingDrawer.__OnDrawerScrollListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer.__OnDrawerScrollListener._onScrollEnded10865); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.__OnDrawerScrollListener.staticClass, global::android.widget.SlidingDrawer.__OnDrawerScrollListener._onScrollEnded10865); 
@@ -174,7 +174,7 @@ namespace android.widget
 		public virtual void @lock() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer._lock10866); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._lock10866); 
@@ -183,7 +183,7 @@ namespace android.widget
 		public virtual void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer._close10867); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._close10867); 
@@ -192,7 +192,7 @@ namespace android.widget
 		public virtual void open() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer._open10868); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._open10868); 
@@ -201,7 +201,7 @@ namespace android.widget
 		public virtual global::android.view.View getContent() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SlidingDrawer._getContent10869)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._getContent10869)); 
@@ -210,7 +210,7 @@ namespace android.widget
 		public virtual void unlock() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer._unlock10870); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._unlock10870); 
@@ -219,7 +219,7 @@ namespace android.widget
 		public virtual void toggle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer._toggle10871); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._toggle10871); 
@@ -228,7 +228,7 @@ namespace android.widget
 		public override bool onTouchEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.SlidingDrawer._onTouchEvent10872, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._onTouchEvent10872, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -237,7 +237,7 @@ namespace android.widget
 		protected override void dispatchDraw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer._dispatchDraw10873, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._dispatchDraw10873, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -246,7 +246,7 @@ namespace android.widget
 		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer._onLayout10874, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._onLayout10874, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -255,7 +255,7 @@ namespace android.widget
 		protected override void onFinishInflate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer._onFinishInflate10875); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._onFinishInflate10875); 
@@ -264,7 +264,7 @@ namespace android.widget
 		protected override void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer._onMeasure10876, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._onMeasure10876, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -273,7 +273,7 @@ namespace android.widget
 		public override bool onInterceptTouchEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.SlidingDrawer._onInterceptTouchEvent10877, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._onInterceptTouchEvent10877, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -282,7 +282,7 @@ namespace android.widget
 		public virtual void animateToggle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer._animateToggle10878); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._animateToggle10878); 
@@ -291,7 +291,7 @@ namespace android.widget
 		public virtual void animateClose() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer._animateClose10879); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._animateClose10879); 
@@ -300,7 +300,7 @@ namespace android.widget
 		public virtual void animateOpen() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer._animateOpen10880); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._animateOpen10880); 
@@ -309,7 +309,7 @@ namespace android.widget
 		public virtual void setOnDrawerOpenListener(android.widget.SlidingDrawer.OnDrawerOpenListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer._setOnDrawerOpenListener10881, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._setOnDrawerOpenListener10881, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -318,7 +318,7 @@ namespace android.widget
 		public virtual void setOnDrawerCloseListener(android.widget.SlidingDrawer.OnDrawerCloseListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer._setOnDrawerCloseListener10882, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._setOnDrawerCloseListener10882, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -327,7 +327,7 @@ namespace android.widget
 		public virtual void setOnDrawerScrollListener(android.widget.SlidingDrawer.OnDrawerScrollListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer._setOnDrawerScrollListener10883, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._setOnDrawerScrollListener10883, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -336,7 +336,7 @@ namespace android.widget
 		public virtual global::android.view.View getHandle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SlidingDrawer._getHandle10884)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._getHandle10884)); 
@@ -345,7 +345,7 @@ namespace android.widget
 		public virtual bool isOpened() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.SlidingDrawer._isOpened10885); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._isOpened10885); 
@@ -354,7 +354,7 @@ namespace android.widget
 		public virtual bool isMoving() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SlidingDrawer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.SlidingDrawer._isMoving10886); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._isMoving10886); 

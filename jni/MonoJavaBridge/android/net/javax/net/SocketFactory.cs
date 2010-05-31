@@ -21,7 +21,7 @@ namespace javax.net
 		public virtual global::java.net.Socket createSocket() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.net.SocketFactory)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallObjectMethodPtr(this, global::javax.net.SocketFactory._createSocket13255)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Socket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::javax.net.SocketFactory.staticClass, global::javax.net.SocketFactory._createSocket13255)); 

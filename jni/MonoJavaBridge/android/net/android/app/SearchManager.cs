@@ -54,7 +54,7 @@ namespace android.app
 			 void android.app.SearchManager.OnCancelListener.onCancel() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.SearchManager.__OnCancelListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.app.SearchManager.__OnCancelListener._onCancel733); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.app.SearchManager.__OnCancelListener.staticClass, global::android.app.SearchManager.__OnCancelListener._onCancel733); 
@@ -101,7 +101,7 @@ namespace android.app
 			 void android.app.SearchManager.OnDismissListener.onDismiss() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.SearchManager.__OnDismissListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.app.SearchManager.__OnDismissListener._onDismiss734); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.app.SearchManager.__OnDismissListener.staticClass, global::android.app.SearchManager.__OnDismissListener._onDismiss734); 
@@ -116,7 +116,7 @@ namespace android.app
 		public virtual void startSearch(java.lang.String arg0, bool arg1, android.content.ComponentName arg2, android.os.Bundle arg3, bool arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.SearchManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.SearchManager._startSearch735, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._startSearch735, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -125,7 +125,7 @@ namespace android.app
 		public virtual void triggerSearch(java.lang.String arg0, android.content.ComponentName arg1, android.os.Bundle arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.SearchManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.SearchManager._triggerSearch736, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._triggerSearch736, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -134,7 +134,7 @@ namespace android.app
 		public virtual void setOnCancelListener(android.app.SearchManager.OnCancelListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.SearchManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.SearchManager._setOnCancelListener737, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._setOnCancelListener737, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -143,7 +143,7 @@ namespace android.app
 		public virtual void setOnDismissListener(android.app.SearchManager.OnDismissListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.SearchManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.SearchManager._setOnDismissListener738, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._setOnDismissListener738, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -152,7 +152,7 @@ namespace android.app
 		public virtual void onCancel(android.content.DialogInterface arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.SearchManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.SearchManager._onCancel739, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._onCancel739, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -161,7 +161,7 @@ namespace android.app
 		public virtual void onDismiss(android.content.DialogInterface arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.SearchManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.SearchManager._onDismiss740, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._onDismiss740, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -170,7 +170,7 @@ namespace android.app
 		public virtual void stopSearch() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.SearchManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.SearchManager._stopSearch741); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.SearchManager.staticClass, global::android.app.SearchManager._stopSearch741); 

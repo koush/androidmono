@@ -40,7 +40,7 @@ namespace android.media
 			public virtual float confidence() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.FaceDetector.Face)) 
+				if (!IsClrObject) 
 					return @__env.CallFloatMethod(this, global::android.media.FaceDetector.Face._confidence4462); 
 				else 
 					return @__env.CallNonVirtualFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._confidence4462); 
@@ -49,7 +49,7 @@ namespace android.media
 			public virtual void getMidPoint(android.graphics.PointF arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.FaceDetector.Face)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.media.FaceDetector.Face._getMidPoint4463, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._getMidPoint4463, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.media
 			public virtual float eyesDistance() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.FaceDetector.Face)) 
+				if (!IsClrObject) 
 					return @__env.CallFloatMethod(this, global::android.media.FaceDetector.Face._eyesDistance4464); 
 				else 
 					return @__env.CallNonVirtualFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._eyesDistance4464); 
@@ -67,7 +67,7 @@ namespace android.media
 			public virtual float pose(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.FaceDetector.Face)) 
+				if (!IsClrObject) 
 					return @__env.CallFloatMethod(this, global::android.media.FaceDetector.Face._pose4465, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._pose4465, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -113,7 +113,7 @@ namespace android.media
 		public virtual int findFaces(android.graphics.Bitmap arg0, android.media.FaceDetector.Face[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.FaceDetector)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.FaceDetector._findFaces4466, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.FaceDetector.staticClass, global::android.media.FaceDetector._findFaces4466, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)); 

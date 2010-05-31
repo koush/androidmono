@@ -82,7 +82,7 @@ namespace android.database
 		public global::java.util.Iterator iterator() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.CursorJoiner)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.CursorJoiner._iterator2259)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.CursorJoiner.staticClass, global::android.database.CursorJoiner._iterator2259)); 
@@ -91,7 +91,7 @@ namespace android.database
 		public bool hasNext() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.CursorJoiner)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.CursorJoiner._hasNext2260); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.CursorJoiner.staticClass, global::android.database.CursorJoiner._hasNext2260); 
@@ -100,7 +100,7 @@ namespace android.database
 		public global::java.lang.Object next() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.CursorJoiner)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.CursorJoiner._next2261)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.CursorJoiner.staticClass, global::android.database.CursorJoiner._next2261)); 
@@ -109,7 +109,7 @@ namespace android.database
 		public void remove() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.CursorJoiner)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.CursorJoiner._remove2262); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.CursorJoiner.staticClass, global::android.database.CursorJoiner._remove2262); 

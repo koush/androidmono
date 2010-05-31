@@ -22,7 +22,7 @@ namespace java.security
 		public sealed override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.Timestamp)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.security.Timestamp._hashCode12471); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.security.Timestamp.staticClass, global::java.security.Timestamp._hashCode12471); 
@@ -31,7 +31,7 @@ namespace java.security
 		public sealed override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.Timestamp)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.security.Timestamp._equals12472, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.Timestamp.staticClass, global::java.security.Timestamp._equals12472, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace java.security
 		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.Timestamp)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.Timestamp._toString12473)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.Timestamp.staticClass, global::java.security.Timestamp._toString12473)); 
@@ -49,7 +49,7 @@ namespace java.security
 		public global::java.security.cert.CertPath getSignerCertPath() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.Timestamp)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.cert.CertPath>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.Timestamp._getSignerCertPath12474)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.cert.CertPath>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.Timestamp.staticClass, global::java.security.Timestamp._getSignerCertPath12474)); 
@@ -58,7 +58,7 @@ namespace java.security
 		public global::java.util.Date getTimestamp() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.Timestamp)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Date>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.Timestamp._getTimestamp12475)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Date>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.Timestamp.staticClass, global::java.security.Timestamp._getTimestamp12475)); 

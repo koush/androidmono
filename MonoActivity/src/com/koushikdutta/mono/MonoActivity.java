@@ -18,23 +18,21 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
-public class MonoActivity extends Activity
-{
+public class MonoActivity extends Activity {
 	TextView mStatus;
 
 	/** Called when the activity is first created. */
 	@Override
-	public void onCreate(Bundle savedInstanceState)
-	{
+	public void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-		
+
 		mStatus = (TextView) findViewById(R.id.StatusText);
 		mStatus.setVerticalScrollBarEnabled(true);
 
 		findViewById(R.id.LinearLayout).setVerticalScrollBarEnabled(true);
-		
+
 		AssetExtractor.extractAssets(this, true);
 		mStatus.setText("All Files extracted!");
 	}

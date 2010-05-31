@@ -60,7 +60,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlSerializer.setProperty(java.lang.String arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer._setProperty13391, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._setProperty13391, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -69,7 +69,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.Object org.xmlpull.v1.XmlSerializer.getProperty(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer._getProperty13392, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._getProperty13392, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -78,7 +78,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlSerializer.getName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer._getName13393)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._getName13393)); 
@@ -87,7 +87,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlSerializer.flush() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer._flush13394); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._flush13394); 
@@ -96,7 +96,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlSerializer.comment(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer._comment13395, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._comment13395, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -105,7 +105,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlSerializer.getPrefix(java.lang.String arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer._getPrefix13396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._getPrefix13396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -114,7 +114,7 @@ namespace org.xmlpull.v1
 		 global::org.xmlpull.v1.XmlSerializer org.xmlpull.v1.XmlSerializer.text(char[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xmlpull.v1.XmlSerializer>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer._text13397, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xmlpull.v1.XmlSerializer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._text13397, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
@@ -123,7 +123,7 @@ namespace org.xmlpull.v1
 		 global::org.xmlpull.v1.XmlSerializer org.xmlpull.v1.XmlSerializer.text(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xmlpull.v1.XmlSerializer>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer._text13398, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xmlpull.v1.XmlSerializer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._text13398, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -132,7 +132,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlSerializer.startDocument(java.lang.String arg0, java.lang.Boolean arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer._startDocument13399, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._startDocument13399, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -141,7 +141,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlSerializer.endDocument() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer._endDocument13400); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._endDocument13400); 
@@ -150,7 +150,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlSerializer.ignorableWhitespace(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer._ignorableWhitespace13401, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._ignorableWhitespace13401, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -159,7 +159,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlSerializer.processingInstruction(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer._processingInstruction13402, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._processingInstruction13402, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -168,7 +168,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlSerializer.setFeature(java.lang.String arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer._setFeature13403, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._setFeature13403, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -177,7 +177,7 @@ namespace org.xmlpull.v1
 		 bool org.xmlpull.v1.XmlSerializer.getFeature(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::org.xmlpull.v1.__XmlSerializer._getFeature13404, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._getFeature13404, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -186,7 +186,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlSerializer.getNamespace() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer._getNamespace13405)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._getNamespace13405)); 
@@ -195,7 +195,7 @@ namespace org.xmlpull.v1
 		 int org.xmlpull.v1.XmlSerializer.getDepth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlSerializer._getDepth13406); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._getDepth13406); 
@@ -204,7 +204,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlSerializer.setOutput(java.io.OutputStream arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer._setOutput13407, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._setOutput13407, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -213,7 +213,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlSerializer.setOutput(java.io.Writer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer._setOutput13408, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._setOutput13408, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -222,7 +222,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlSerializer.setPrefix(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer._setPrefix13409, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._setPrefix13409, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -231,7 +231,7 @@ namespace org.xmlpull.v1
 		 global::org.xmlpull.v1.XmlSerializer org.xmlpull.v1.XmlSerializer.startTag(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xmlpull.v1.XmlSerializer>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer._startTag13410, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xmlpull.v1.XmlSerializer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._startTag13410, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -240,7 +240,7 @@ namespace org.xmlpull.v1
 		 global::org.xmlpull.v1.XmlSerializer org.xmlpull.v1.XmlSerializer.attribute(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xmlpull.v1.XmlSerializer>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer._attribute13411, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xmlpull.v1.XmlSerializer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._attribute13411, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
@@ -249,7 +249,7 @@ namespace org.xmlpull.v1
 		 global::org.xmlpull.v1.XmlSerializer org.xmlpull.v1.XmlSerializer.endTag(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xmlpull.v1.XmlSerializer>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer._endTag13412, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xmlpull.v1.XmlSerializer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._endTag13412, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -258,7 +258,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlSerializer.cdsect(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer._cdsect13413, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._cdsect13413, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -267,7 +267,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlSerializer.entityRef(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer._entityRef13414, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._entityRef13414, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -276,7 +276,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlSerializer.docdecl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlSerializer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer._docdecl13415, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlSerializer.staticClass, global::org.xmlpull.v1.__XmlSerializer._docdecl13415, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

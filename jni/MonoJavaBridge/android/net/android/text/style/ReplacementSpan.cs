@@ -19,7 +19,7 @@ namespace android.text.style
 		public override void updateDrawState(android.text.TextPaint arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.ReplacementSpan)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.style.ReplacementSpan._updateDrawState7396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.ReplacementSpan.staticClass, global::android.text.style.ReplacementSpan._updateDrawState7396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -28,7 +28,7 @@ namespace android.text.style
 		public override void updateMeasureState(android.text.TextPaint arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.ReplacementSpan)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.style.ReplacementSpan._updateMeasureState7397, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.ReplacementSpan.staticClass, global::android.text.style.ReplacementSpan._updateMeasureState7397, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

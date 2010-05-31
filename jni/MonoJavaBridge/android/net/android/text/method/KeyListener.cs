@@ -40,7 +40,7 @@ namespace android.text.method
 		 bool android.text.method.KeyListener.onKeyDown(android.view.View arg0, android.text.Editable arg1, int arg2, android.view.KeyEvent arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.method.__KeyListener)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.text.method.__KeyListener._onKeyDown7156, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.method.__KeyListener.staticClass, global::android.text.method.__KeyListener._onKeyDown7156, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
@@ -49,7 +49,7 @@ namespace android.text.method
 		 bool android.text.method.KeyListener.onKeyUp(android.view.View arg0, android.text.Editable arg1, int arg2, android.view.KeyEvent arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.method.__KeyListener)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.text.method.__KeyListener._onKeyUp7157, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.method.__KeyListener.staticClass, global::android.text.method.__KeyListener._onKeyUp7157, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
@@ -58,7 +58,7 @@ namespace android.text.method
 		 int android.text.method.KeyListener.getInputType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.method.__KeyListener)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.method.__KeyListener._getInputType7158); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.method.__KeyListener.staticClass, global::android.text.method.__KeyListener._getInputType7158); 
@@ -67,7 +67,7 @@ namespace android.text.method
 		 bool android.text.method.KeyListener.onKeyOther(android.view.View arg0, android.text.Editable arg1, android.view.KeyEvent arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.method.__KeyListener)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.text.method.__KeyListener._onKeyOther7159, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.method.__KeyListener.staticClass, global::android.text.method.__KeyListener._onKeyOther7159, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -76,7 +76,7 @@ namespace android.text.method
 		 void android.text.method.KeyListener.clearMetaKeyState(android.view.View arg0, android.text.Editable arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.method.__KeyListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.method.__KeyListener._clearMetaKeyState7160, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.method.__KeyListener.staticClass, global::android.text.method.__KeyListener._clearMetaKeyState7160, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 

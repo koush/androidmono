@@ -22,7 +22,7 @@ namespace android.telephony.cdma
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.cdma.CdmaCellLocation)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.cdma.CdmaCellLocation._hashCode6610); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._hashCode6610); 
@@ -31,7 +31,7 @@ namespace android.telephony.cdma
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.cdma.CdmaCellLocation)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.telephony.cdma.CdmaCellLocation._equals6611, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._equals6611, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace android.telephony.cdma
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.cdma.CdmaCellLocation)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.cdma.CdmaCellLocation._toString6612)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._toString6612)); 
@@ -49,7 +49,7 @@ namespace android.telephony.cdma
 		public virtual int getSystemId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.cdma.CdmaCellLocation)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.cdma.CdmaCellLocation._getSystemId6613); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._getSystemId6613); 
@@ -58,7 +58,7 @@ namespace android.telephony.cdma
 		public virtual int getNetworkId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.cdma.CdmaCellLocation)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.cdma.CdmaCellLocation._getNetworkId6614); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._getNetworkId6614); 
@@ -67,7 +67,7 @@ namespace android.telephony.cdma
 		public virtual int getBaseStationId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.cdma.CdmaCellLocation)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.cdma.CdmaCellLocation._getBaseStationId6615); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._getBaseStationId6615); 
@@ -76,7 +76,7 @@ namespace android.telephony.cdma
 		public virtual int getBaseStationLatitude() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.cdma.CdmaCellLocation)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.cdma.CdmaCellLocation._getBaseStationLatitude6616); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._getBaseStationLatitude6616); 
@@ -85,7 +85,7 @@ namespace android.telephony.cdma
 		public virtual int getBaseStationLongitude() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.cdma.CdmaCellLocation)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.cdma.CdmaCellLocation._getBaseStationLongitude6617); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._getBaseStationLongitude6617); 
@@ -94,7 +94,7 @@ namespace android.telephony.cdma
 		public virtual void setStateInvalid() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.cdma.CdmaCellLocation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.cdma.CdmaCellLocation._setStateInvalid6618); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._setStateInvalid6618); 
@@ -103,7 +103,7 @@ namespace android.telephony.cdma
 		public virtual void setCellLocationData(int arg0, int arg1, int arg2, int arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.cdma.CdmaCellLocation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.cdma.CdmaCellLocation._setCellLocationData6619, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._setCellLocationData6619, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -112,7 +112,7 @@ namespace android.telephony.cdma
 		public virtual void setCellLocationData(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.cdma.CdmaCellLocation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.cdma.CdmaCellLocation._setCellLocationData6620, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._setCellLocationData6620, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -121,7 +121,7 @@ namespace android.telephony.cdma
 		public virtual void fillInNotifierBundle(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.cdma.CdmaCellLocation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.cdma.CdmaCellLocation._fillInNotifierBundle6621, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._fillInNotifierBundle6621, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

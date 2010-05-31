@@ -15,7 +15,7 @@ namespace android.view
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.AbsSavedState)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.AbsSavedState._writeToParcel7694, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.AbsSavedState.staticClass, global::android.view.AbsSavedState._writeToParcel7694, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -24,7 +24,7 @@ namespace android.view
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.AbsSavedState)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.AbsSavedState._describeContents7695); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.AbsSavedState.staticClass, global::android.view.AbsSavedState._describeContents7695); 
@@ -33,7 +33,7 @@ namespace android.view
 		public virtual global::android.os.Parcelable getSuperState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.AbsSavedState)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.AbsSavedState._getSuperState7696)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.AbsSavedState.staticClass, global::android.view.AbsSavedState._getSuperState7696)); 

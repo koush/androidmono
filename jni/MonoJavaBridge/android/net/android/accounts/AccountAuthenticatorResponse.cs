@@ -22,7 +22,7 @@ namespace android.accounts
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accounts.AccountAuthenticatorResponse)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.accounts.AccountAuthenticatorResponse._writeToParcel58, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.AccountAuthenticatorResponse.staticClass, global::android.accounts.AccountAuthenticatorResponse._writeToParcel58, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -31,7 +31,7 @@ namespace android.accounts
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accounts.AccountAuthenticatorResponse)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.accounts.AccountAuthenticatorResponse._describeContents59); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.accounts.AccountAuthenticatorResponse.staticClass, global::android.accounts.AccountAuthenticatorResponse._describeContents59); 
@@ -40,7 +40,7 @@ namespace android.accounts
 		public virtual void onResult(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accounts.AccountAuthenticatorResponse)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.accounts.AccountAuthenticatorResponse._onResult60, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.AccountAuthenticatorResponse.staticClass, global::android.accounts.AccountAuthenticatorResponse._onResult60, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.accounts
 		public virtual void onRequestContinued() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accounts.AccountAuthenticatorResponse)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.accounts.AccountAuthenticatorResponse._onRequestContinued61); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.AccountAuthenticatorResponse.staticClass, global::android.accounts.AccountAuthenticatorResponse._onRequestContinued61); 
@@ -58,7 +58,7 @@ namespace android.accounts
 		public virtual void onError(int arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accounts.AccountAuthenticatorResponse)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.accounts.AccountAuthenticatorResponse._onError62, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.AccountAuthenticatorResponse.staticClass, global::android.accounts.AccountAuthenticatorResponse._onError62, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 

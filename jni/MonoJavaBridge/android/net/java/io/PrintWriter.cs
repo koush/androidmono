@@ -22,7 +22,7 @@ namespace java.io
 		public virtual void println(char arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._println11411, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._println11411, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -31,7 +31,7 @@ namespace java.io
 		public virtual void println() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._println11412); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._println11412); 
@@ -40,7 +40,7 @@ namespace java.io
 		public virtual void println(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._println11413, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._println11413, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -49,7 +49,7 @@ namespace java.io
 		public virtual void println(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._println11414, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._println11414, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -58,7 +58,7 @@ namespace java.io
 		public virtual void println(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._println11415, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._println11415, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -67,7 +67,7 @@ namespace java.io
 		public virtual void println(char[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._println11416, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._println11416, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
@@ -76,7 +76,7 @@ namespace java.io
 		public virtual void println(double arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._println11417, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._println11417, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -85,7 +85,7 @@ namespace java.io
 		public virtual void println(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._println11418, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._println11418, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -94,7 +94,7 @@ namespace java.io
 		public virtual void println(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._println11419, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._println11419, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -103,7 +103,7 @@ namespace java.io
 		public virtual void println(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._println11420, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._println11420, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -112,7 +112,7 @@ namespace java.io
 		public virtual new global::java.io.PrintWriter append(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, global::java.io.PrintWriter._append11421, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._append11421, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -121,7 +121,7 @@ namespace java.io
 		public virtual new global::java.io.PrintWriter append(java.lang.CharSequence arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, global::java.io.PrintWriter._append11422, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._append11422, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
@@ -130,7 +130,7 @@ namespace java.io
 		public virtual new global::java.io.PrintWriter append(char arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, global::java.io.PrintWriter._append11423, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._append11423, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -139,7 +139,7 @@ namespace java.io
 		public virtual global::java.io.PrintWriter format(java.util.Locale arg0, java.lang.String arg1, java.lang.Object[] arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, global::java.io.PrintWriter._format11424, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg2))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._format11424, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg2))); 
@@ -148,7 +148,7 @@ namespace java.io
 		public virtual global::java.io.PrintWriter format(java.lang.String arg0, java.lang.Object[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, global::java.io.PrintWriter._format11425, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._format11425, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg1))); 
@@ -157,7 +157,7 @@ namespace java.io
 		public override void write(char[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._write11426, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._write11426, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
@@ -166,7 +166,7 @@ namespace java.io
 		public override void write(char[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._write11427, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._write11427, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -175,7 +175,7 @@ namespace java.io
 		public override void write(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._write11428, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._write11428, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -184,7 +184,7 @@ namespace java.io
 		public override void write(java.lang.String arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._write11429, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._write11429, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -193,7 +193,7 @@ namespace java.io
 		public override void write(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._write11430, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._write11430, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -202,7 +202,7 @@ namespace java.io
 		public virtual void print(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._print11431, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._print11431, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -211,7 +211,7 @@ namespace java.io
 		public virtual void print(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._print11432, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._print11432, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -220,7 +220,7 @@ namespace java.io
 		public virtual void print(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._print11433, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._print11433, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -229,7 +229,7 @@ namespace java.io
 		public virtual void print(char arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._print11434, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._print11434, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -238,7 +238,7 @@ namespace java.io
 		public virtual void print(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._print11435, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._print11435, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -247,7 +247,7 @@ namespace java.io
 		public virtual void print(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._print11436, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._print11436, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -256,7 +256,7 @@ namespace java.io
 		public virtual void print(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._print11437, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._print11437, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -265,7 +265,7 @@ namespace java.io
 		public virtual void print(double arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._print11438, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._print11438, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -274,7 +274,7 @@ namespace java.io
 		public virtual void print(char[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._print11439, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._print11439, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
@@ -283,7 +283,7 @@ namespace java.io
 		public override void flush() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._flush11440); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._flush11440); 
@@ -292,7 +292,7 @@ namespace java.io
 		public override void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._close11441); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._close11441); 
@@ -301,7 +301,7 @@ namespace java.io
 		public virtual bool checkError() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.io.PrintWriter._checkError11442); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._checkError11442); 
@@ -310,7 +310,7 @@ namespace java.io
 		protected virtual void setError() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._setError11443); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._setError11443); 
@@ -319,7 +319,7 @@ namespace java.io
 		protected virtual void clearError() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.PrintWriter._clearError11444); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._clearError11444); 
@@ -328,7 +328,7 @@ namespace java.io
 		public virtual global::java.io.PrintWriter printf(java.lang.String arg0, java.lang.Object[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, global::java.io.PrintWriter._printf11445, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._printf11445, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg1))); 
@@ -337,7 +337,7 @@ namespace java.io
 		public virtual global::java.io.PrintWriter printf(java.util.Locale arg0, java.lang.String arg1, java.lang.Object[] arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.PrintWriter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, global::java.io.PrintWriter._printf11446, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg2))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._printf11446, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg2))); 

@@ -22,7 +22,7 @@ namespace android.location
 		public virtual global::android.location.LocationProvider getProvider(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.location.LocationProvider>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationManager._getProvider4318, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.location.LocationProvider>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getProvider4318, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -31,7 +31,7 @@ namespace android.location
 		public virtual global::java.util.List getProviders(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationManager._getProviders4319, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getProviders4319, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -40,7 +40,7 @@ namespace android.location
 		public virtual global::java.util.List getProviders(android.location.Criteria arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationManager._getProviders4320, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getProviders4320, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -49,7 +49,7 @@ namespace android.location
 		public virtual global::java.util.List getAllProviders() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationManager._getAllProviders4321)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getAllProviders4321)); 
@@ -58,7 +58,7 @@ namespace android.location
 		public virtual global::java.lang.String getBestProvider(android.location.Criteria arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationManager._getBestProvider4322, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getBestProvider4322, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -67,7 +67,7 @@ namespace android.location
 		public virtual void requestLocationUpdates(java.lang.String arg0, long arg1, float arg2, android.location.LocationListener arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.LocationManager._requestLocationUpdates4323, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._requestLocationUpdates4323, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)); 
@@ -76,7 +76,7 @@ namespace android.location
 		public virtual void requestLocationUpdates(java.lang.String arg0, long arg1, float arg2, android.location.LocationListener arg3, android.os.Looper arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.LocationManager._requestLocationUpdates4324, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._requestLocationUpdates4324, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)); 
@@ -85,7 +85,7 @@ namespace android.location
 		public virtual void requestLocationUpdates(java.lang.String arg0, long arg1, float arg2, android.app.PendingIntent arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.LocationManager._requestLocationUpdates4325, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._requestLocationUpdates4325, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
@@ -94,7 +94,7 @@ namespace android.location
 		public virtual void removeUpdates(android.location.LocationListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.LocationManager._removeUpdates4326, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeUpdates4326, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -103,7 +103,7 @@ namespace android.location
 		public virtual void removeUpdates(android.app.PendingIntent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.LocationManager._removeUpdates4327, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeUpdates4327, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -112,7 +112,7 @@ namespace android.location
 		public virtual void addProximityAlert(double arg0, double arg1, float arg2, long arg3, android.app.PendingIntent arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.LocationManager._addProximityAlert4328, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._addProximityAlert4328, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)); 
@@ -121,7 +121,7 @@ namespace android.location
 		public virtual void removeProximityAlert(android.app.PendingIntent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.LocationManager._removeProximityAlert4329, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeProximityAlert4329, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -130,7 +130,7 @@ namespace android.location
 		public virtual bool isProviderEnabled(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.location.LocationManager._isProviderEnabled4330, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._isProviderEnabled4330, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -139,7 +139,7 @@ namespace android.location
 		public virtual global::android.location.Location getLastKnownLocation(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.location.Location>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationManager._getLastKnownLocation4331, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.location.Location>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getLastKnownLocation4331, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -148,7 +148,7 @@ namespace android.location
 		public virtual void addTestProvider(java.lang.String arg0, bool arg1, bool arg2, bool arg3, bool arg4, bool arg5, bool arg6, bool arg7, int arg8, int arg9) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.LocationManager._addTestProvider4332, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg8), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg9)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._addTestProvider4332, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg8), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg9)); 
@@ -157,7 +157,7 @@ namespace android.location
 		public virtual void removeTestProvider(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.LocationManager._removeTestProvider4333, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeTestProvider4333, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -166,7 +166,7 @@ namespace android.location
 		public virtual void setTestProviderLocation(java.lang.String arg0, android.location.Location arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.LocationManager._setTestProviderLocation4334, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._setTestProviderLocation4334, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -175,7 +175,7 @@ namespace android.location
 		public virtual void clearTestProviderLocation(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.LocationManager._clearTestProviderLocation4335, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._clearTestProviderLocation4335, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -184,7 +184,7 @@ namespace android.location
 		public virtual void setTestProviderEnabled(java.lang.String arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.LocationManager._setTestProviderEnabled4336, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._setTestProviderEnabled4336, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -193,7 +193,7 @@ namespace android.location
 		public virtual void clearTestProviderEnabled(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.LocationManager._clearTestProviderEnabled4337, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._clearTestProviderEnabled4337, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -202,7 +202,7 @@ namespace android.location
 		public virtual void setTestProviderStatus(java.lang.String arg0, int arg1, android.os.Bundle arg2, long arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.LocationManager._setTestProviderStatus4338, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._setTestProviderStatus4338, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -211,7 +211,7 @@ namespace android.location
 		public virtual void clearTestProviderStatus(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.LocationManager._clearTestProviderStatus4339, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._clearTestProviderStatus4339, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -220,7 +220,7 @@ namespace android.location
 		public virtual bool addGpsStatusListener(android.location.GpsStatus.Listener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.location.LocationManager._addGpsStatusListener4340, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._addGpsStatusListener4340, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -229,7 +229,7 @@ namespace android.location
 		public virtual void removeGpsStatusListener(android.location.GpsStatus.Listener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.LocationManager._removeGpsStatusListener4341, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeGpsStatusListener4341, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -238,7 +238,7 @@ namespace android.location
 		public virtual bool addNmeaListener(android.location.GpsStatus.NmeaListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.location.LocationManager._addNmeaListener4342, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._addNmeaListener4342, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -247,7 +247,7 @@ namespace android.location
 		public virtual void removeNmeaListener(android.location.GpsStatus.NmeaListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.LocationManager._removeNmeaListener4343, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._removeNmeaListener4343, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -256,7 +256,7 @@ namespace android.location
 		public virtual global::android.location.GpsStatus getGpsStatus(android.location.GpsStatus arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.location.GpsStatus>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationManager._getGpsStatus4344, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.location.GpsStatus>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._getGpsStatus4344, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -265,7 +265,7 @@ namespace android.location
 		public virtual bool sendExtraCommand(java.lang.String arg0, java.lang.String arg1, android.os.Bundle arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.location.LocationManager._sendExtraCommand4345, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.LocationManager.staticClass, global::android.location.LocationManager._sendExtraCommand4345, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 

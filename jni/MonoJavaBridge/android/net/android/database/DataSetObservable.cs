@@ -22,7 +22,7 @@ namespace android.database
 		public virtual void notifyChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.DataSetObservable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.DataSetObservable._notifyChanged2335); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.DataSetObservable.staticClass, global::android.database.DataSetObservable._notifyChanged2335); 
@@ -31,7 +31,7 @@ namespace android.database
 		public virtual void notifyInvalidated() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.DataSetObservable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.DataSetObservable._notifyInvalidated2336); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.DataSetObservable.staticClass, global::android.database.DataSetObservable._notifyInvalidated2336); 

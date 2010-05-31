@@ -722,7 +722,7 @@ namespace MonoDroid
                     }
                     else
                     {
-                        WriteLine("if (GetType() == typeof({0}))", method.Type.Name);
+                        WriteLine("if (!IsClrObject)", method.Type.Name);
                         myIndent++;
                         WriteLine(statement, string.Empty, parBuilder);
                         myIndent--;

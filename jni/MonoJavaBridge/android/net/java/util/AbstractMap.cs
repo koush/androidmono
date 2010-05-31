@@ -15,7 +15,7 @@ namespace java.util
 		public virtual global::java.lang.Object get(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.AbstractMap._get12692, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.AbstractMap.staticClass, global::java.util.AbstractMap._get12692, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -24,7 +24,7 @@ namespace java.util
 		public virtual global::java.lang.Object put(java.lang.Object arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.AbstractMap._put12693, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.AbstractMap.staticClass, global::java.util.AbstractMap._put12693, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
@@ -33,7 +33,7 @@ namespace java.util
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractMap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.AbstractMap._hashCode12694); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.AbstractMap.staticClass, global::java.util.AbstractMap._hashCode12694); 
@@ -42,7 +42,7 @@ namespace java.util
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractMap)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.AbstractMap._equals12695, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.AbstractMap.staticClass, global::java.util.AbstractMap._equals12695, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -51,7 +51,7 @@ namespace java.util
 		public virtual void clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractMap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.AbstractMap._clear12696); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.AbstractMap.staticClass, global::java.util.AbstractMap._clear12696); 
@@ -60,7 +60,7 @@ namespace java.util
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.AbstractMap._toString12697)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.AbstractMap.staticClass, global::java.util.AbstractMap._toString12697)); 
@@ -69,7 +69,7 @@ namespace java.util
 		public virtual bool isEmpty() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractMap)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.AbstractMap._isEmpty12698); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.AbstractMap.staticClass, global::java.util.AbstractMap._isEmpty12698); 
@@ -78,7 +78,7 @@ namespace java.util
 		public virtual global::java.util.Collection values() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.AbstractMap._values12699)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.AbstractMap.staticClass, global::java.util.AbstractMap._values12699)); 
@@ -87,7 +87,7 @@ namespace java.util
 		public virtual int size() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractMap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.AbstractMap._size12700); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.AbstractMap.staticClass, global::java.util.AbstractMap._size12700); 
@@ -98,7 +98,7 @@ namespace java.util
 		public virtual void putAll(java.util.Map arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractMap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.AbstractMap._putAll12702, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.AbstractMap.staticClass, global::java.util.AbstractMap._putAll12702, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -107,7 +107,7 @@ namespace java.util
 		public virtual global::java.lang.Object remove(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.AbstractMap._remove12703, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.AbstractMap.staticClass, global::java.util.AbstractMap._remove12703, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -116,7 +116,7 @@ namespace java.util
 		public virtual global::java.util.Set keySet() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.AbstractMap._keySet12704)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.AbstractMap.staticClass, global::java.util.AbstractMap._keySet12704)); 
@@ -125,7 +125,7 @@ namespace java.util
 		public virtual bool containsValue(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractMap)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.AbstractMap._containsValue12705, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.AbstractMap.staticClass, global::java.util.AbstractMap._containsValue12705, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -134,7 +134,7 @@ namespace java.util
 		public virtual bool containsKey(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractMap)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.AbstractMap._containsKey12706, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.AbstractMap.staticClass, global::java.util.AbstractMap._containsKey12706, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

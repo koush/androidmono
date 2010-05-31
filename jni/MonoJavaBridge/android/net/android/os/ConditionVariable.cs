@@ -22,7 +22,7 @@ namespace android.os
 		public virtual void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.ConditionVariable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.ConditionVariable._close5474); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._close5474); 
@@ -31,7 +31,7 @@ namespace android.os
 		public virtual void open() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.ConditionVariable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.ConditionVariable._open5475); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._open5475); 
@@ -40,7 +40,7 @@ namespace android.os
 		public virtual void block() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.ConditionVariable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.ConditionVariable._block5476); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._block5476); 
@@ -49,7 +49,7 @@ namespace android.os
 		public virtual bool block(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.ConditionVariable)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.ConditionVariable._block5477, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._block5477, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

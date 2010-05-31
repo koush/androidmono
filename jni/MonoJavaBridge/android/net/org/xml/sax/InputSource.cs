@@ -22,7 +22,7 @@ namespace org.xml.sax
 		public virtual global::java.lang.String getEncoding() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.InputSource)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.InputSource._getEncoding13306)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._getEncoding13306)); 
@@ -31,7 +31,7 @@ namespace org.xml.sax
 		public virtual void setEncoding(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.InputSource)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xml.sax.InputSource._setEncoding13307, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._setEncoding13307, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -40,7 +40,7 @@ namespace org.xml.sax
 		public virtual global::java.lang.String getPublicId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.InputSource)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.InputSource._getPublicId13308)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._getPublicId13308)); 
@@ -49,7 +49,7 @@ namespace org.xml.sax
 		public virtual global::java.lang.String getSystemId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.InputSource)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.InputSource._getSystemId13309)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._getSystemId13309)); 
@@ -58,7 +58,7 @@ namespace org.xml.sax
 		public virtual global::java.io.Reader getCharacterStream() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.InputSource)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.Reader>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.InputSource._getCharacterStream13310)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.Reader>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._getCharacterStream13310)); 
@@ -67,7 +67,7 @@ namespace org.xml.sax
 		public virtual void setCharacterStream(java.io.Reader arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.InputSource)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xml.sax.InputSource._setCharacterStream13311, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._setCharacterStream13311, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -76,7 +76,7 @@ namespace org.xml.sax
 		public virtual void setSystemId(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.InputSource)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xml.sax.InputSource._setSystemId13312, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._setSystemId13312, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -85,7 +85,7 @@ namespace org.xml.sax
 		public virtual void setPublicId(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.InputSource)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xml.sax.InputSource._setPublicId13313, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._setPublicId13313, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -94,7 +94,7 @@ namespace org.xml.sax
 		public virtual void setByteStream(java.io.InputStream arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.InputSource)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xml.sax.InputSource._setByteStream13314, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._setByteStream13314, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -103,7 +103,7 @@ namespace org.xml.sax
 		public virtual global::java.io.InputStream getByteStream() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.InputSource)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.InputSource._getByteStream13315)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.InputSource.staticClass, global::org.xml.sax.InputSource._getByteStream13315)); 

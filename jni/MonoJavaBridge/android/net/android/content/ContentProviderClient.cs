@@ -22,7 +22,7 @@ namespace android.content
 		public virtual global::java.lang.String getType(android.net.Uri arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentProviderClient)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ContentProviderClient._getType1002, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ContentProviderClient.staticClass, global::android.content.ContentProviderClient._getType1002, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -31,7 +31,7 @@ namespace android.content
 		public virtual int delete(android.net.Uri arg0, java.lang.String arg1, java.lang.String[] arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentProviderClient)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.ContentProviderClient._delete1003, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.ContentProviderClient.staticClass, global::android.content.ContentProviderClient._delete1003, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)); 
@@ -40,7 +40,7 @@ namespace android.content
 		public virtual global::android.net.Uri insert(android.net.Uri arg0, android.content.ContentValues arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentProviderClient)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ContentProviderClient._insert1004, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ContentProviderClient.staticClass, global::android.content.ContentProviderClient._insert1004, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -49,7 +49,7 @@ namespace android.content
 		public virtual bool release() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentProviderClient)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.ContentProviderClient._release1005); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.ContentProviderClient.staticClass, global::android.content.ContentProviderClient._release1005); 
@@ -58,7 +58,7 @@ namespace android.content
 		public virtual global::android.database.Cursor query(android.net.Uri arg0, java.lang.String[] arg1, java.lang.String arg2, java.lang.String[] arg3, java.lang.String arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentProviderClient)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ContentProviderClient._query1006, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ContentProviderClient.staticClass, global::android.content.ContentProviderClient._query1006, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4))); 
@@ -67,7 +67,7 @@ namespace android.content
 		public virtual int update(android.net.Uri arg0, android.content.ContentValues arg1, java.lang.String arg2, java.lang.String[] arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentProviderClient)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.ContentProviderClient._update1007, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg3)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.ContentProviderClient.staticClass, global::android.content.ContentProviderClient._update1007, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg3)); 
@@ -75,7 +75,7 @@ namespace android.content
 		internal static global::net.sf.jni4net.jni.MethodId _applyBatch1008; 
 		public virtual global::android.content.ContentProviderResult[] applyBatch(java.util.ArrayList arg0) 
 		{ 
-			if (GetType() == typeof(android.content.ContentProviderClient)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ContentProviderClient._applyBatch1008, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ContentProviderClient.staticClass, global::android.content.ContentProviderClient._applyBatch1008, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -84,7 +84,7 @@ namespace android.content
 		public virtual int bulkInsert(android.net.Uri arg0, android.content.ContentValues[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentProviderClient)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.ContentProviderClient._bulkInsert1009, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.ContentProviderClient.staticClass, global::android.content.ContentProviderClient._bulkInsert1009, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)); 
@@ -93,7 +93,7 @@ namespace android.content
 		public virtual global::android.os.ParcelFileDescriptor openFile(android.net.Uri arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentProviderClient)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.ParcelFileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ContentProviderClient._openFile1010, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.ParcelFileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ContentProviderClient.staticClass, global::android.content.ContentProviderClient._openFile1010, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -102,7 +102,7 @@ namespace android.content
 		public virtual global::android.content.res.AssetFileDescriptor openAssetFile(android.net.Uri arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentProviderClient)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.AssetFileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ContentProviderClient._openAssetFile1011, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.AssetFileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ContentProviderClient.staticClass, global::android.content.ContentProviderClient._openAssetFile1011, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -111,7 +111,7 @@ namespace android.content
 		public virtual global::android.content.ContentProvider getLocalContentProvider() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentProviderClient)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.ContentProvider>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ContentProviderClient._getLocalContentProvider1012)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.ContentProvider>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ContentProviderClient.staticClass, global::android.content.ContentProviderClient._getLocalContentProvider1012)); 

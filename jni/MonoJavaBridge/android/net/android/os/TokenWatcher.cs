@@ -15,7 +15,7 @@ namespace android.os
 		public virtual void cleanup(android.os.IBinder arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.TokenWatcher)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.TokenWatcher._cleanup5880, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.TokenWatcher.staticClass, global::android.os.TokenWatcher._cleanup5880, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -24,7 +24,7 @@ namespace android.os
 		public virtual void acquire(android.os.IBinder arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.TokenWatcher)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.TokenWatcher._acquire5881, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.TokenWatcher.staticClass, global::android.os.TokenWatcher._acquire5881, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -33,7 +33,7 @@ namespace android.os
 		public virtual void release(android.os.IBinder arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.TokenWatcher)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.TokenWatcher._release5882, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.TokenWatcher.staticClass, global::android.os.TokenWatcher._release5882, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -42,7 +42,7 @@ namespace android.os
 		public virtual void dump() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.TokenWatcher)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.TokenWatcher._dump5883); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.TokenWatcher.staticClass, global::android.os.TokenWatcher._dump5883); 
@@ -55,7 +55,7 @@ namespace android.os
 		public virtual bool isAcquired() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.TokenWatcher)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.TokenWatcher._isAcquired5886); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.TokenWatcher.staticClass, global::android.os.TokenWatcher._isAcquired5886); 

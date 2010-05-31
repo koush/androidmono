@@ -22,7 +22,7 @@ namespace android.content
 		public virtual void setBaseContext(android.content.Context arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.MutableContextWrapper)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.MutableContextWrapper._setBaseContext1473, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.MutableContextWrapper.staticClass, global::android.content.MutableContextWrapper._setBaseContext1473, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

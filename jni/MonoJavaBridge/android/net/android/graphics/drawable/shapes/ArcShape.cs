@@ -22,7 +22,7 @@ namespace android.graphics.drawable.shapes
 		public override void draw(android.graphics.Canvas arg0, android.graphics.Paint arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.shapes.ArcShape)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.drawable.shapes.ArcShape._draw3821, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.shapes.ArcShape.staticClass, global::android.graphics.drawable.shapes.ArcShape._draw3821, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 

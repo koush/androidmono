@@ -22,7 +22,7 @@ namespace android.graphics
 		public virtual void draw(android.graphics.Canvas arg0, android.graphics.RectF arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.NinePatch)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.NinePatch._draw3024, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._draw3024, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -31,7 +31,7 @@ namespace android.graphics
 		public virtual void draw(android.graphics.Canvas arg0, android.graphics.Rect arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.NinePatch)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.NinePatch._draw3025, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._draw3025, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -40,7 +40,7 @@ namespace android.graphics
 		public virtual void draw(android.graphics.Canvas arg0, android.graphics.Rect arg1, android.graphics.Paint arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.NinePatch)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.NinePatch._draw3026, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._draw3026, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -49,7 +49,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Region getTransparentRegion(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.NinePatch)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Region>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.NinePatch._getTransparentRegion3027, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Region>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._getTransparentRegion3027, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -58,7 +58,7 @@ namespace android.graphics
 		public virtual int getDensity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.NinePatch)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.NinePatch._getDensity3028); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._getDensity3028); 
@@ -67,7 +67,7 @@ namespace android.graphics
 		public virtual int getWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.NinePatch)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.NinePatch._getWidth3029); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._getWidth3029); 
@@ -76,7 +76,7 @@ namespace android.graphics
 		public virtual int getHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.NinePatch)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.NinePatch._getHeight3030); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._getHeight3030); 
@@ -85,7 +85,7 @@ namespace android.graphics
 		public virtual bool hasAlpha() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.NinePatch)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.NinePatch._hasAlpha3031); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._hasAlpha3031); 
@@ -94,7 +94,7 @@ namespace android.graphics
 		public virtual void setPaint(android.graphics.Paint arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.NinePatch)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.NinePatch._setPaint3032, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.NinePatch.staticClass, global::android.graphics.NinePatch._setPaint3032, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

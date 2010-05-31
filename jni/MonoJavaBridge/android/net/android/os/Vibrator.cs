@@ -22,7 +22,7 @@ namespace android.os
 		public virtual void cancel() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Vibrator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Vibrator._cancel5888); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Vibrator.staticClass, global::android.os.Vibrator._cancel5888); 
@@ -31,7 +31,7 @@ namespace android.os
 		public virtual void vibrate(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Vibrator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Vibrator._vibrate5889, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Vibrator.staticClass, global::android.os.Vibrator._vibrate5889, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -40,7 +40,7 @@ namespace android.os
 		public virtual void vibrate(long[] arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Vibrator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Vibrator._vibrate5890, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Vibrator.staticClass, global::android.os.Vibrator._vibrate5890, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 

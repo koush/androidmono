@@ -15,7 +15,7 @@ namespace java.nio.channels
 		public virtual long write(java.nio.ByteBuffer[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.DatagramChannel)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.nio.channels.DatagramChannel._write12156, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.nio.channels.DatagramChannel.staticClass, global::java.nio.channels.DatagramChannel._write12156, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
@@ -32,7 +32,7 @@ namespace java.nio.channels
 		public virtual long read(java.nio.ByteBuffer[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.DatagramChannel)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.nio.channels.DatagramChannel._read12161, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.nio.channels.DatagramChannel.staticClass, global::java.nio.channels.DatagramChannel._read12161, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
@@ -59,7 +59,7 @@ namespace java.nio.channels
 		public sealed override int validOps() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.DatagramChannel)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.nio.channels.DatagramChannel._validOps12169); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.nio.channels.DatagramChannel.staticClass, global::java.nio.channels.DatagramChannel._validOps12169); 

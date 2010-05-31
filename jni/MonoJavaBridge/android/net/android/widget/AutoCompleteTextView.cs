@@ -55,7 +55,7 @@ namespace android.widget
 			 bool android.widget.AutoCompleteTextView.Validator.isValid(java.lang.CharSequence arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.AutoCompleteTextView.__Validator)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.widget.AutoCompleteTextView.__Validator._isValid9887, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AutoCompleteTextView.__Validator.staticClass, global::android.widget.AutoCompleteTextView.__Validator._isValid9887, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -64,7 +64,7 @@ namespace android.widget
 			 global::java.lang.CharSequence android.widget.AutoCompleteTextView.Validator.fixText(java.lang.CharSequence arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.AutoCompleteTextView.__Validator)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AutoCompleteTextView.__Validator._fixText9888, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AutoCompleteTextView.__Validator.staticClass, global::android.widget.AutoCompleteTextView.__Validator._fixText9888, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -80,7 +80,7 @@ namespace android.widget
 		public virtual void setThreshold(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._setThreshold9889, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setThreshold9889, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -89,7 +89,7 @@ namespace android.widget
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.AutoCompleteTextView._onKeyDown9890, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onKeyDown9890, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -98,7 +98,7 @@ namespace android.widget
 		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.AutoCompleteTextView._onKeyUp9891, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onKeyUp9891, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -107,7 +107,7 @@ namespace android.widget
 		public override void onWindowFocusChanged(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._onWindowFocusChanged9892, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onWindowFocusChanged9892, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -116,7 +116,7 @@ namespace android.widget
 		protected override void onAttachedToWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._onAttachedToWindow9893); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onAttachedToWindow9893); 
@@ -125,7 +125,7 @@ namespace android.widget
 		protected override void onDetachedFromWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._onDetachedFromWindow9894); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onDetachedFromWindow9894); 
@@ -134,7 +134,7 @@ namespace android.widget
 		public override void setOnClickListener(android.view.View.OnClickListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._setOnClickListener9895, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setOnClickListener9895, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -143,7 +143,7 @@ namespace android.widget
 		protected override void onFocusChanged(bool arg0, int arg1, android.graphics.Rect arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._onFocusChanged9896, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onFocusChanged9896, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -152,7 +152,7 @@ namespace android.widget
 		public override bool onKeyPreIme(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.AutoCompleteTextView._onKeyPreIme9897, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onKeyPreIme9897, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -161,7 +161,7 @@ namespace android.widget
 		protected virtual global::android.widget.Filter getFilter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Filter>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AutoCompleteTextView._getFilter9898)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Filter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getFilter9898)); 
@@ -170,7 +170,7 @@ namespace android.widget
 		public virtual void setAdapter(android.widget.ListAdapter arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._setAdapter9899, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setAdapter9899, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -179,7 +179,7 @@ namespace android.widget
 		public virtual void setOnItemSelectedListener(android.widget.AdapterView.OnItemSelectedListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._setOnItemSelectedListener9900, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setOnItemSelectedListener9900, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -188,7 +188,7 @@ namespace android.widget
 		public virtual void setOnItemClickListener(android.widget.AdapterView.OnItemClickListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._setOnItemClickListener9901, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setOnItemClickListener9901, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -197,7 +197,7 @@ namespace android.widget
 		public virtual global::android.widget.AdapterView.OnItemClickListener getOnItemClickListener() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.AdapterView.OnItemClickListener>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AutoCompleteTextView._getOnItemClickListener9902)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.AdapterView.OnItemClickListener>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getOnItemClickListener9902)); 
@@ -206,7 +206,7 @@ namespace android.widget
 		public virtual global::android.widget.AdapterView.OnItemSelectedListener getOnItemSelectedListener() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.AdapterView.OnItemSelectedListener>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AutoCompleteTextView._getOnItemSelectedListener9903)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.AdapterView.OnItemSelectedListener>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getOnItemSelectedListener9903)); 
@@ -215,7 +215,7 @@ namespace android.widget
 		public virtual global::android.widget.ListAdapter getAdapter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.ListAdapter>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AutoCompleteTextView._getAdapter9904)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.ListAdapter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getAdapter9904)); 
@@ -224,7 +224,7 @@ namespace android.widget
 		protected override bool setFrame(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.AutoCompleteTextView._setFrame9905, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setFrame9905, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -233,7 +233,7 @@ namespace android.widget
 		public override void onCommitCompletion(android.view.inputmethod.CompletionInfo arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._onCommitCompletion9906, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onCommitCompletion9906, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -242,7 +242,7 @@ namespace android.widget
 		public virtual void onFilterComplete(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._onFilterComplete9907, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._onFilterComplete9907, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -251,7 +251,7 @@ namespace android.widget
 		protected virtual void performFiltering(java.lang.CharSequence arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._performFiltering9908, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._performFiltering9908, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -260,7 +260,7 @@ namespace android.widget
 		public virtual bool enoughToFilter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.AutoCompleteTextView._enoughToFilter9909); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._enoughToFilter9909); 
@@ -269,7 +269,7 @@ namespace android.widget
 		public virtual void performValidation() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._performValidation9910); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._performValidation9910); 
@@ -278,7 +278,7 @@ namespace android.widget
 		protected virtual void replaceText(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._replaceText9911, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._replaceText9911, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -287,7 +287,7 @@ namespace android.widget
 		public virtual void setCompletionHint(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._setCompletionHint9912, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setCompletionHint9912, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -296,7 +296,7 @@ namespace android.widget
 		public virtual int getDropDownWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.AutoCompleteTextView._getDropDownWidth9913); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownWidth9913); 
@@ -305,7 +305,7 @@ namespace android.widget
 		public virtual void setDropDownWidth(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._setDropDownWidth9914, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownWidth9914, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -314,7 +314,7 @@ namespace android.widget
 		public virtual int getDropDownHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.AutoCompleteTextView._getDropDownHeight9915); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownHeight9915); 
@@ -323,7 +323,7 @@ namespace android.widget
 		public virtual void setDropDownHeight(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._setDropDownHeight9916, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownHeight9916, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -332,7 +332,7 @@ namespace android.widget
 		public virtual int getDropDownAnchor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.AutoCompleteTextView._getDropDownAnchor9917); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownAnchor9917); 
@@ -341,7 +341,7 @@ namespace android.widget
 		public virtual void setDropDownAnchor(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._setDropDownAnchor9918, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownAnchor9918, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -350,7 +350,7 @@ namespace android.widget
 		public virtual global::android.graphics.drawable.Drawable getDropDownBackground() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AutoCompleteTextView._getDropDownBackground9919)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownBackground9919)); 
@@ -359,7 +359,7 @@ namespace android.widget
 		public virtual void setDropDownBackgroundDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._setDropDownBackgroundDrawable9920, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownBackgroundDrawable9920, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -368,7 +368,7 @@ namespace android.widget
 		public virtual void setDropDownBackgroundResource(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._setDropDownBackgroundResource9921, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownBackgroundResource9921, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -377,7 +377,7 @@ namespace android.widget
 		public virtual void setDropDownVerticalOffset(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._setDropDownVerticalOffset9922, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownVerticalOffset9922, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -386,7 +386,7 @@ namespace android.widget
 		public virtual int getDropDownVerticalOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.AutoCompleteTextView._getDropDownVerticalOffset9923); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownVerticalOffset9923); 
@@ -395,7 +395,7 @@ namespace android.widget
 		public virtual void setDropDownHorizontalOffset(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._setDropDownHorizontalOffset9924, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setDropDownHorizontalOffset9924, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -404,7 +404,7 @@ namespace android.widget
 		public virtual int getDropDownHorizontalOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.AutoCompleteTextView._getDropDownHorizontalOffset9925); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getDropDownHorizontalOffset9925); 
@@ -413,7 +413,7 @@ namespace android.widget
 		public virtual int getThreshold() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.AutoCompleteTextView._getThreshold9926); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getThreshold9926); 
@@ -422,7 +422,7 @@ namespace android.widget
 		public virtual global::android.widget.AdapterView.OnItemClickListener getItemClickListener() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.AdapterView.OnItemClickListener>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AutoCompleteTextView._getItemClickListener9927)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.AdapterView.OnItemClickListener>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getItemClickListener9927)); 
@@ -431,7 +431,7 @@ namespace android.widget
 		public virtual global::android.widget.AdapterView.OnItemSelectedListener getItemSelectedListener() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.AdapterView.OnItemSelectedListener>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AutoCompleteTextView._getItemSelectedListener9928)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.AdapterView.OnItemSelectedListener>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getItemSelectedListener9928)); 
@@ -440,7 +440,7 @@ namespace android.widget
 		public virtual bool isPopupShowing() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.AutoCompleteTextView._isPopupShowing9929); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._isPopupShowing9929); 
@@ -449,7 +449,7 @@ namespace android.widget
 		protected virtual global::java.lang.CharSequence convertSelectionToString(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AutoCompleteTextView._convertSelectionToString9930, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._convertSelectionToString9930, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -458,7 +458,7 @@ namespace android.widget
 		public virtual void clearListSelection() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._clearListSelection9931); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._clearListSelection9931); 
@@ -467,7 +467,7 @@ namespace android.widget
 		public virtual void setListSelection(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._setListSelection9932, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setListSelection9932, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -476,7 +476,7 @@ namespace android.widget
 		public virtual int getListSelection() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.AutoCompleteTextView._getListSelection9933); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getListSelection9933); 
@@ -485,7 +485,7 @@ namespace android.widget
 		public virtual void performCompletion() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._performCompletion9934); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._performCompletion9934); 
@@ -494,7 +494,7 @@ namespace android.widget
 		public virtual bool isPerformingCompletion() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.AutoCompleteTextView._isPerformingCompletion9935); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._isPerformingCompletion9935); 
@@ -503,7 +503,7 @@ namespace android.widget
 		public virtual void dismissDropDown() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._dismissDropDown9936); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._dismissDropDown9936); 
@@ -512,7 +512,7 @@ namespace android.widget
 		public virtual void showDropDown() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._showDropDown9937); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._showDropDown9937); 
@@ -521,7 +521,7 @@ namespace android.widget
 		public virtual void setValidator(android.widget.AutoCompleteTextView.Validator arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AutoCompleteTextView._setValidator9938, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setValidator9938, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -530,7 +530,7 @@ namespace android.widget
 		public virtual global::android.widget.AutoCompleteTextView.Validator getValidator() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.AutoCompleteTextView.Validator>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AutoCompleteTextView._getValidator9939)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.AutoCompleteTextView.Validator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._getValidator9939)); 

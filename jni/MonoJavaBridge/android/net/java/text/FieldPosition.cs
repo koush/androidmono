@@ -22,7 +22,7 @@ namespace java.text
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.FieldPosition)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.text.FieldPosition._hashCode12594); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._hashCode12594); 
@@ -31,7 +31,7 @@ namespace java.text
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.FieldPosition)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.text.FieldPosition._equals12595, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._equals12595, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace java.text
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.FieldPosition)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.FieldPosition._toString12596)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._toString12596)); 
@@ -49,7 +49,7 @@ namespace java.text
 		public virtual int getField() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.FieldPosition)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.text.FieldPosition._getField12597); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._getField12597); 
@@ -58,7 +58,7 @@ namespace java.text
 		public virtual int getBeginIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.FieldPosition)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.text.FieldPosition._getBeginIndex12598); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._getBeginIndex12598); 
@@ -67,7 +67,7 @@ namespace java.text
 		public virtual int getEndIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.FieldPosition)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.text.FieldPosition._getEndIndex12599); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._getEndIndex12599); 
@@ -76,7 +76,7 @@ namespace java.text
 		public virtual global::java.text.Format.Field getFieldAttribute() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.FieldPosition)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.Format.Field>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.FieldPosition._getFieldAttribute12600)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.Format.Field>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._getFieldAttribute12600)); 
@@ -85,7 +85,7 @@ namespace java.text
 		public virtual void setBeginIndex(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.FieldPosition)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.text.FieldPosition._setBeginIndex12601, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._setBeginIndex12601, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -94,7 +94,7 @@ namespace java.text
 		public virtual void setEndIndex(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.FieldPosition)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.text.FieldPosition._setEndIndex12602, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._setEndIndex12602, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

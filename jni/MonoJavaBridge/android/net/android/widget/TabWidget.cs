@@ -22,7 +22,7 @@ namespace android.widget
 		public override void setEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TabWidget)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TabWidget._setEnabled10942, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabWidget.staticClass, global::android.widget.TabWidget._setEnabled10942, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -31,7 +31,7 @@ namespace android.widget
 		public override void addView(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TabWidget)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TabWidget._addView10943, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabWidget.staticClass, global::android.widget.TabWidget._addView10943, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -40,7 +40,7 @@ namespace android.widget
 		protected override void onSizeChanged(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TabWidget)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TabWidget._onSizeChanged10944, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabWidget.staticClass, global::android.widget.TabWidget._onSizeChanged10944, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -49,7 +49,7 @@ namespace android.widget
 		public virtual new void dispatchDraw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TabWidget)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TabWidget._dispatchDraw10945, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabWidget.staticClass, global::android.widget.TabWidget._dispatchDraw10945, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.widget
 		protected override int getChildDrawingOrder(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TabWidget)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TabWidget._getChildDrawingOrder10946, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TabWidget.staticClass, global::android.widget.TabWidget._getChildDrawingOrder10946, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -67,7 +67,7 @@ namespace android.widget
 		public override void childDrawableStateChanged(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TabWidget)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TabWidget._childDrawableStateChanged10947, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabWidget.staticClass, global::android.widget.TabWidget._childDrawableStateChanged10947, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -76,7 +76,7 @@ namespace android.widget
 		public virtual void setCurrentTab(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TabWidget)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TabWidget._setCurrentTab10948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabWidget.staticClass, global::android.widget.TabWidget._setCurrentTab10948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -85,7 +85,7 @@ namespace android.widget
 		public virtual global::android.view.View getChildTabViewAt(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TabWidget)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TabWidget._getChildTabViewAt10949, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TabWidget.staticClass, global::android.widget.TabWidget._getChildTabViewAt10949, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -94,7 +94,7 @@ namespace android.widget
 		public virtual int getTabCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TabWidget)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TabWidget._getTabCount10950); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TabWidget.staticClass, global::android.widget.TabWidget._getTabCount10950); 
@@ -103,7 +103,7 @@ namespace android.widget
 		public virtual void setDividerDrawable(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TabWidget)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TabWidget._setDividerDrawable10951, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabWidget.staticClass, global::android.widget.TabWidget._setDividerDrawable10951, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -112,7 +112,7 @@ namespace android.widget
 		public virtual void setDividerDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TabWidget)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TabWidget._setDividerDrawable10952, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabWidget.staticClass, global::android.widget.TabWidget._setDividerDrawable10952, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -121,7 +121,7 @@ namespace android.widget
 		public virtual void focusCurrentTab(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TabWidget)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TabWidget._focusCurrentTab10953, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabWidget.staticClass, global::android.widget.TabWidget._focusCurrentTab10953, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -130,7 +130,7 @@ namespace android.widget
 		public virtual void onFocusChange(android.view.View arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TabWidget)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TabWidget._onFocusChange10954, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TabWidget.staticClass, global::android.widget.TabWidget._onFocusChange10954, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 

@@ -22,7 +22,7 @@ namespace android.preference
 		protected override void onClick() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.CheckBoxPreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.CheckBoxPreference._onClick5891); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._onClick5891); 
@@ -31,7 +31,7 @@ namespace android.preference
 		public virtual bool isChecked() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.CheckBoxPreference)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.preference.CheckBoxPreference._isChecked5892); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._isChecked5892); 
@@ -40,7 +40,7 @@ namespace android.preference
 		public virtual void setChecked(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.CheckBoxPreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.CheckBoxPreference._setChecked5893, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._setChecked5893, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.preference
 		protected override void onRestoreInstanceState(android.os.Parcelable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.CheckBoxPreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.CheckBoxPreference._onRestoreInstanceState5894, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._onRestoreInstanceState5894, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -58,7 +58,7 @@ namespace android.preference
 		protected override global::android.os.Parcelable onSaveInstanceState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.CheckBoxPreference)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.CheckBoxPreference._onSaveInstanceState5895)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._onSaveInstanceState5895)); 
@@ -67,7 +67,7 @@ namespace android.preference
 		protected override void onBindView(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.CheckBoxPreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.CheckBoxPreference._onBindView5896, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._onBindView5896, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -76,7 +76,7 @@ namespace android.preference
 		public override bool shouldDisableDependents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.CheckBoxPreference)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.preference.CheckBoxPreference._shouldDisableDependents5897); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._shouldDisableDependents5897); 
@@ -85,7 +85,7 @@ namespace android.preference
 		public virtual void setSummaryOn(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.CheckBoxPreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.CheckBoxPreference._setSummaryOn5898, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._setSummaryOn5898, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -94,7 +94,7 @@ namespace android.preference
 		public virtual void setSummaryOn(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.CheckBoxPreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.CheckBoxPreference._setSummaryOn5899, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._setSummaryOn5899, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -103,7 +103,7 @@ namespace android.preference
 		public virtual global::java.lang.CharSequence getSummaryOn() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.CheckBoxPreference)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.CheckBoxPreference._getSummaryOn5900)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._getSummaryOn5900)); 
@@ -112,7 +112,7 @@ namespace android.preference
 		public virtual void setSummaryOff(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.CheckBoxPreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.CheckBoxPreference._setSummaryOff5901, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._setSummaryOff5901, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -121,7 +121,7 @@ namespace android.preference
 		public virtual void setSummaryOff(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.CheckBoxPreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.CheckBoxPreference._setSummaryOff5902, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._setSummaryOff5902, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -130,7 +130,7 @@ namespace android.preference
 		public virtual global::java.lang.CharSequence getSummaryOff() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.CheckBoxPreference)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.CheckBoxPreference._getSummaryOff5903)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._getSummaryOff5903)); 
@@ -139,7 +139,7 @@ namespace android.preference
 		public virtual bool getDisableDependentsState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.CheckBoxPreference)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.preference.CheckBoxPreference._getDisableDependentsState5904); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._getDisableDependentsState5904); 
@@ -148,7 +148,7 @@ namespace android.preference
 		public virtual void setDisableDependentsState(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.CheckBoxPreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.CheckBoxPreference._setDisableDependentsState5905, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._setDisableDependentsState5905, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -157,7 +157,7 @@ namespace android.preference
 		protected override global::java.lang.Object onGetDefaultValue(android.content.res.TypedArray arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.CheckBoxPreference)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.CheckBoxPreference._onGetDefaultValue5906, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._onGetDefaultValue5906, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -166,7 +166,7 @@ namespace android.preference
 		protected override void onSetInitialValue(bool arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.CheckBoxPreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.CheckBoxPreference._onSetInitialValue5907, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._onSetInitialValue5907, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 

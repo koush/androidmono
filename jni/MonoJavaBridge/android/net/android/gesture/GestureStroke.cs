@@ -22,7 +22,7 @@ namespace android.gesture
 		public virtual global::android.graphics.Path getPath() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.gesture.GestureStroke)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Path>(@__env, @__env.CallObjectMethodPtr(this, global::android.gesture.GestureStroke._getPath2684)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Path>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._getPath2684)); 
@@ -31,7 +31,7 @@ namespace android.gesture
 		public virtual global::android.graphics.Path toPath(float arg0, float arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.gesture.GestureStroke)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Path>(@__env, @__env.CallObjectMethodPtr(this, global::android.gesture.GestureStroke._toPath2685, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Path>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._toPath2685, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
@@ -40,7 +40,7 @@ namespace android.gesture
 		public virtual void clearPath() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.gesture.GestureStroke)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.gesture.GestureStroke._clearPath2686); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._clearPath2686); 
@@ -49,7 +49,7 @@ namespace android.gesture
 		public virtual global::android.gesture.OrientedBoundingBox computeOrientedBoundingBox() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.gesture.GestureStroke)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.gesture.OrientedBoundingBox>(@__env, @__env.CallObjectMethodPtr(this, global::android.gesture.GestureStroke._computeOrientedBoundingBox2687)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.gesture.OrientedBoundingBox>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.gesture.GestureStroke.staticClass, global::android.gesture.GestureStroke._computeOrientedBoundingBox2687)); 

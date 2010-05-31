@@ -15,7 +15,7 @@ namespace android.database
 		public virtual bool deliverSelfNotifications() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.ContentObserver)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.ContentObserver._deliverSelfNotifications2169); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.ContentObserver.staticClass, global::android.database.ContentObserver._deliverSelfNotifications2169); 
@@ -24,7 +24,7 @@ namespace android.database
 		public virtual void onChange(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.ContentObserver)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.ContentObserver._onChange2170, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.ContentObserver.staticClass, global::android.database.ContentObserver._onChange2170, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -33,7 +33,7 @@ namespace android.database
 		public virtual void dispatchChange(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.ContentObserver)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.ContentObserver._dispatchChange2171, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.ContentObserver.staticClass, global::android.database.ContentObserver._dispatchChange2171, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

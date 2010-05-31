@@ -22,7 +22,7 @@ namespace android.content
 		public virtual void onFinished(android.content.SyncResult arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.SyncContext)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.SyncContext._onFinished1526, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.SyncContext.staticClass, global::android.content.SyncContext._onFinished1526, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -31,7 +31,7 @@ namespace android.content
 		public virtual global::android.os.IBinder getSyncContextBinder() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.SyncContext)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.SyncContext._getSyncContextBinder1527)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.SyncContext.staticClass, global::android.content.SyncContext._getSyncContextBinder1527)); 

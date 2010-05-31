@@ -54,7 +54,7 @@ namespace android.content
 			 void android.content.IntentSender.OnFinished.onSendFinished(android.content.IntentSender arg0, android.content.Intent arg1, int arg2, java.lang.String arg3, android.os.Bundle arg4) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.content.IntentSender.__OnFinished)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.content.IntentSender.__OnFinished._onSendFinished1460, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.content.IntentSender.__OnFinished.staticClass, global::android.content.IntentSender.__OnFinished._onSendFinished1460, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)); 
@@ -113,7 +113,7 @@ namespace android.content
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentSender)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.IntentSender._hashCode1464); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.IntentSender.staticClass, global::android.content.IntentSender._hashCode1464); 
@@ -122,7 +122,7 @@ namespace android.content
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentSender)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.IntentSender._equals1465, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.IntentSender.staticClass, global::android.content.IntentSender._equals1465, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -131,7 +131,7 @@ namespace android.content
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentSender)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.IntentSender._toString1466)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.IntentSender.staticClass, global::android.content.IntentSender._toString1466)); 
@@ -140,7 +140,7 @@ namespace android.content
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentSender)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.IntentSender._writeToParcel1467, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.IntentSender.staticClass, global::android.content.IntentSender._writeToParcel1467, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -149,7 +149,7 @@ namespace android.content
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentSender)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.IntentSender._describeContents1468); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.IntentSender.staticClass, global::android.content.IntentSender._describeContents1468); 
@@ -158,7 +158,7 @@ namespace android.content
 		public virtual void sendIntent(android.content.Context arg0, int arg1, android.content.Intent arg2, android.content.IntentSender.OnFinished arg3, android.os.Handler arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentSender)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.IntentSender._sendIntent1469, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.IntentSender.staticClass, global::android.content.IntentSender._sendIntent1469, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)); 

@@ -82,7 +82,7 @@ namespace android.net
 		public virtual global::java.lang.String getName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocketAddress)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.LocalSocketAddress._getName4675)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.LocalSocketAddress.staticClass, global::android.net.LocalSocketAddress._getName4675)); 
@@ -91,7 +91,7 @@ namespace android.net
 		public virtual global::android.net.LocalSocketAddress.Namespace getNamespace() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocketAddress)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocketAddress.Namespace>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.LocalSocketAddress._getNamespace4676)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocketAddress.Namespace>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.LocalSocketAddress.staticClass, global::android.net.LocalSocketAddress._getNamespace4676)); 

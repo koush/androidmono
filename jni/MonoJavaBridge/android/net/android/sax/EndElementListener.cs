@@ -36,7 +36,7 @@ namespace android.sax
 		 void android.sax.EndElementListener.end() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.sax.__EndElementListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.sax.__EndElementListener._end6386); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.sax.__EndElementListener.staticClass, global::android.sax.__EndElementListener._end6386); 

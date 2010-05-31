@@ -22,7 +22,7 @@ namespace android.graphics.drawable
 		public override void draw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.PictureDrawable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.drawable.PictureDrawable._draw3727, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.PictureDrawable.staticClass, global::android.graphics.drawable.PictureDrawable._draw3727, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -31,7 +31,7 @@ namespace android.graphics.drawable
 		public override void setDither(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.PictureDrawable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.drawable.PictureDrawable._setDither3728, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.PictureDrawable.staticClass, global::android.graphics.drawable.PictureDrawable._setDither3728, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -40,7 +40,7 @@ namespace android.graphics.drawable
 		public override void setFilterBitmap(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.PictureDrawable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.drawable.PictureDrawable._setFilterBitmap3729, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.PictureDrawable.staticClass, global::android.graphics.drawable.PictureDrawable._setFilterBitmap3729, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.graphics.drawable
 		public override void setAlpha(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.PictureDrawable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.drawable.PictureDrawable._setAlpha3730, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.PictureDrawable.staticClass, global::android.graphics.drawable.PictureDrawable._setAlpha3730, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.graphics.drawable
 		public override void setColorFilter(android.graphics.ColorFilter arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.PictureDrawable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.drawable.PictureDrawable._setColorFilter3731, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.PictureDrawable.staticClass, global::android.graphics.drawable.PictureDrawable._setColorFilter3731, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.graphics.drawable
 		public override int getOpacity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.PictureDrawable)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.drawable.PictureDrawable._getOpacity3732); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.PictureDrawable.staticClass, global::android.graphics.drawable.PictureDrawable._getOpacity3732); 
@@ -76,7 +76,7 @@ namespace android.graphics.drawable
 		public override int getIntrinsicWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.PictureDrawable)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.drawable.PictureDrawable._getIntrinsicWidth3733); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.PictureDrawable.staticClass, global::android.graphics.drawable.PictureDrawable._getIntrinsicWidth3733); 
@@ -85,7 +85,7 @@ namespace android.graphics.drawable
 		public override int getIntrinsicHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.PictureDrawable)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.drawable.PictureDrawable._getIntrinsicHeight3734); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.PictureDrawable.staticClass, global::android.graphics.drawable.PictureDrawable._getIntrinsicHeight3734); 
@@ -94,7 +94,7 @@ namespace android.graphics.drawable
 		public virtual global::android.graphics.Picture getPicture() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.PictureDrawable)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Picture>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.PictureDrawable._getPicture3735)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Picture>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.PictureDrawable.staticClass, global::android.graphics.drawable.PictureDrawable._getPicture3735)); 
@@ -103,7 +103,7 @@ namespace android.graphics.drawable
 		public virtual void setPicture(android.graphics.Picture arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.PictureDrawable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.drawable.PictureDrawable._setPicture3736, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.PictureDrawable.staticClass, global::android.graphics.drawable.PictureDrawable._setPicture3736, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

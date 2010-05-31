@@ -22,7 +22,7 @@ namespace android.graphics.drawable
 		public override void inflate(android.content.res.Resources arg0, org.xmlpull.v1.XmlPullParser arg1, android.util.AttributeSet arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable._inflate3698, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._inflate3698, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
@@ -31,7 +31,7 @@ namespace android.graphics.drawable
 		public override void draw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable._draw3699, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._draw3699, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -40,7 +40,7 @@ namespace android.graphics.drawable
 		public override int getChangingConfigurations() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.drawable.NinePatchDrawable._getChangingConfigurations3700); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._getChangingConfigurations3700); 
@@ -49,7 +49,7 @@ namespace android.graphics.drawable
 		public override void setDither(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable._setDither3701, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._setDither3701, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.graphics.drawable
 		public override void setFilterBitmap(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable._setFilterBitmap3702, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._setFilterBitmap3702, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.graphics.drawable
 		public override void setAlpha(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable._setAlpha3703, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._setAlpha3703, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -76,7 +76,7 @@ namespace android.graphics.drawable
 		public override void setColorFilter(android.graphics.ColorFilter arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable._setColorFilter3704, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._setColorFilter3704, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -85,7 +85,7 @@ namespace android.graphics.drawable
 		public override int getOpacity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.drawable.NinePatchDrawable._getOpacity3705); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._getOpacity3705); 
@@ -94,7 +94,7 @@ namespace android.graphics.drawable
 		public override global::android.graphics.Region getTransparentRegion() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Region>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.NinePatchDrawable._getTransparentRegion3706)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Region>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._getTransparentRegion3706)); 
@@ -103,7 +103,7 @@ namespace android.graphics.drawable
 		public override int getIntrinsicWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.drawable.NinePatchDrawable._getIntrinsicWidth3707); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._getIntrinsicWidth3707); 
@@ -112,7 +112,7 @@ namespace android.graphics.drawable
 		public override int getIntrinsicHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.drawable.NinePatchDrawable._getIntrinsicHeight3708); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._getIntrinsicHeight3708); 
@@ -121,7 +121,7 @@ namespace android.graphics.drawable
 		public override int getMinimumWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.drawable.NinePatchDrawable._getMinimumWidth3709); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._getMinimumWidth3709); 
@@ -130,7 +130,7 @@ namespace android.graphics.drawable
 		public override int getMinimumHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.drawable.NinePatchDrawable._getMinimumHeight3710); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._getMinimumHeight3710); 
@@ -139,7 +139,7 @@ namespace android.graphics.drawable
 		public override bool getPadding(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.NinePatchDrawable._getPadding3711, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._getPadding3711, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -148,7 +148,7 @@ namespace android.graphics.drawable
 		public override global::android.graphics.drawable.Drawable mutate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.NinePatchDrawable._mutate3712)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._mutate3712)); 
@@ -157,7 +157,7 @@ namespace android.graphics.drawable
 		public override global::android.graphics.drawable.Drawable.ConstantState getConstantState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.NinePatchDrawable._getConstantState3713)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._getConstantState3713)); 
@@ -166,7 +166,7 @@ namespace android.graphics.drawable
 		public virtual global::android.graphics.Paint getPaint() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.NinePatchDrawable._getPaint3714)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._getPaint3714)); 
@@ -175,7 +175,7 @@ namespace android.graphics.drawable
 		public virtual void setTargetDensity(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable._setTargetDensity3715, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._setTargetDensity3715, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -184,7 +184,7 @@ namespace android.graphics.drawable
 		public virtual void setTargetDensity(android.util.DisplayMetrics arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable._setTargetDensity3716, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._setTargetDensity3716, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -193,7 +193,7 @@ namespace android.graphics.drawable
 		public virtual void setTargetDensity(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.drawable.NinePatchDrawable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable._setTargetDensity3717, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.NinePatchDrawable.staticClass, global::android.graphics.drawable.NinePatchDrawable._setTargetDensity3717, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

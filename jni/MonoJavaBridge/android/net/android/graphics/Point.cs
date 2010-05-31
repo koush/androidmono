@@ -22,7 +22,7 @@ namespace android.graphics
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Point)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Point._hashCode3234); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._hashCode3234); 
@@ -31,7 +31,7 @@ namespace android.graphics
 		public virtual bool equals(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Point)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Point._equals3235, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._equals3235, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -40,7 +40,7 @@ namespace android.graphics
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Point)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Point._equals3236, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._equals3236, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -49,7 +49,7 @@ namespace android.graphics
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Point)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Point._toString3237)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._toString3237)); 
@@ -58,7 +58,7 @@ namespace android.graphics
 		public virtual void offset(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Point)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Point._offset3238, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._offset3238, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -67,7 +67,7 @@ namespace android.graphics
 		public virtual void set(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Point)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Point._set3239, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._set3239, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -76,7 +76,7 @@ namespace android.graphics
 		public virtual void negate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Point)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Point._negate3240); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Point.staticClass, global::android.graphics.Point._negate3240); 

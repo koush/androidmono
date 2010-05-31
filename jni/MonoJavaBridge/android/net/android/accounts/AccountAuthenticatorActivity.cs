@@ -22,7 +22,7 @@ namespace android.accounts
 		protected override void onCreate(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accounts.AccountAuthenticatorActivity)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.accounts.AccountAuthenticatorActivity._onCreate54, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.AccountAuthenticatorActivity.staticClass, global::android.accounts.AccountAuthenticatorActivity._onCreate54, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -31,7 +31,7 @@ namespace android.accounts
 		public virtual void setAccountAuthenticatorResult(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accounts.AccountAuthenticatorActivity)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.accounts.AccountAuthenticatorActivity._setAccountAuthenticatorResult55, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.AccountAuthenticatorActivity.staticClass, global::android.accounts.AccountAuthenticatorActivity._setAccountAuthenticatorResult55, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -40,7 +40,7 @@ namespace android.accounts
 		public override void finish() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accounts.AccountAuthenticatorActivity)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.accounts.AccountAuthenticatorActivity._finish56); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.AccountAuthenticatorActivity.staticClass, global::android.accounts.AccountAuthenticatorActivity._finish56); 

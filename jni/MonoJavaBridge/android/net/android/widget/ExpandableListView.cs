@@ -117,7 +117,7 @@ namespace android.widget
 			 bool android.widget.ExpandableListView.OnChildClickListener.onChildClick(android.widget.ExpandableListView arg0, android.view.View arg1, int arg2, int arg3, long arg4) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.ExpandableListView.__OnChildClickListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.widget.ExpandableListView.__OnChildClickListener._onChildClick10154, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ExpandableListView.__OnChildClickListener.staticClass, global::android.widget.ExpandableListView.__OnChildClickListener._onChildClick10154, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -164,7 +164,7 @@ namespace android.widget
 			 bool android.widget.ExpandableListView.OnGroupClickListener.onGroupClick(android.widget.ExpandableListView arg0, android.view.View arg1, int arg2, long arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.ExpandableListView.__OnGroupClickListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.widget.ExpandableListView.__OnGroupClickListener._onGroupClick10155, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ExpandableListView.__OnGroupClickListener.staticClass, global::android.widget.ExpandableListView.__OnGroupClickListener._onGroupClick10155, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -211,7 +211,7 @@ namespace android.widget
 			 void android.widget.ExpandableListView.OnGroupCollapseListener.onGroupCollapse(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.ExpandableListView.__OnGroupCollapseListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.ExpandableListView.__OnGroupCollapseListener._onGroupCollapse10156, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.ExpandableListView.__OnGroupCollapseListener.staticClass, global::android.widget.ExpandableListView.__OnGroupCollapseListener._onGroupCollapse10156, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -258,7 +258,7 @@ namespace android.widget
 			 void android.widget.ExpandableListView.OnGroupExpandListener.onGroupExpand(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.ExpandableListView.__OnGroupExpandListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.ExpandableListView.__OnGroupExpandListener._onGroupExpand10157, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.ExpandableListView.__OnGroupExpandListener.staticClass, global::android.widget.ExpandableListView.__OnGroupExpandListener._onGroupExpand10157, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -273,7 +273,7 @@ namespace android.widget
 		public override void onRestoreInstanceState(android.os.Parcelable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ExpandableListView._onRestoreInstanceState10158, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._onRestoreInstanceState10158, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -282,7 +282,7 @@ namespace android.widget
 		public override global::android.os.Parcelable onSaveInstanceState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ExpandableListView._onSaveInstanceState10159)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._onSaveInstanceState10159)); 
@@ -291,7 +291,7 @@ namespace android.widget
 		protected override void dispatchDraw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ExpandableListView._dispatchDraw10160, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._dispatchDraw10160, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -300,7 +300,7 @@ namespace android.widget
 		public override void setAdapter(android.widget.ListAdapter arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ExpandableListView._setAdapter10161, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setAdapter10161, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -309,7 +309,7 @@ namespace android.widget
 		public virtual void setAdapter(android.widget.ExpandableListAdapter arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ExpandableListView._setAdapter10162, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setAdapter10162, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -318,7 +318,7 @@ namespace android.widget
 		public override void setOnItemClickListener(android.widget.AdapterView.OnItemClickListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ExpandableListView._setOnItemClickListener10163, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setOnItemClickListener10163, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -327,7 +327,7 @@ namespace android.widget
 		public override bool performItemClick(android.view.View arg0, int arg1, long arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ExpandableListView._performItemClick10164, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._performItemClick10164, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -336,7 +336,7 @@ namespace android.widget
 		public virtual new global::android.widget.ListAdapter getAdapter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.ListAdapter>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ExpandableListView._getAdapter10165)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.ListAdapter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getAdapter10165)); 
@@ -345,7 +345,7 @@ namespace android.widget
 		public virtual global::android.widget.ExpandableListAdapter getExpandableListAdapter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.ExpandableListAdapter>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ExpandableListView._getExpandableListAdapter10166)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.ExpandableListAdapter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getExpandableListAdapter10166)); 
@@ -354,7 +354,7 @@ namespace android.widget
 		public virtual long getSelectedId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.widget.ExpandableListView._getSelectedId10167); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getSelectedId10167); 
@@ -363,7 +363,7 @@ namespace android.widget
 		public virtual long getSelectedPosition() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.widget.ExpandableListView._getSelectedPosition10168); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getSelectedPosition10168); 
@@ -372,7 +372,7 @@ namespace android.widget
 		public virtual bool setSelectedChild(int arg0, int arg1, bool arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ExpandableListView._setSelectedChild10169, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setSelectedChild10169, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -381,7 +381,7 @@ namespace android.widget
 		public virtual void setSelectedGroup(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ExpandableListView._setSelectedGroup10170, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setSelectedGroup10170, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -390,7 +390,7 @@ namespace android.widget
 		public virtual void setChildDivider(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ExpandableListView._setChildDivider10171, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setChildDivider10171, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -399,7 +399,7 @@ namespace android.widget
 		public virtual bool expandGroup(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ExpandableListView._expandGroup10172, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._expandGroup10172, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -408,7 +408,7 @@ namespace android.widget
 		public virtual bool collapseGroup(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ExpandableListView._collapseGroup10173, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._collapseGroup10173, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -417,7 +417,7 @@ namespace android.widget
 		public virtual void setOnGroupCollapseListener(android.widget.ExpandableListView.OnGroupCollapseListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ExpandableListView._setOnGroupCollapseListener10174, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setOnGroupCollapseListener10174, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -426,7 +426,7 @@ namespace android.widget
 		public virtual void setOnGroupExpandListener(android.widget.ExpandableListView.OnGroupExpandListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ExpandableListView._setOnGroupExpandListener10175, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setOnGroupExpandListener10175, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -435,7 +435,7 @@ namespace android.widget
 		public virtual void setOnGroupClickListener(android.widget.ExpandableListView.OnGroupClickListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ExpandableListView._setOnGroupClickListener10176, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setOnGroupClickListener10176, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -444,7 +444,7 @@ namespace android.widget
 		public virtual void setOnChildClickListener(android.widget.ExpandableListView.OnChildClickListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ExpandableListView._setOnChildClickListener10177, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setOnChildClickListener10177, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -453,7 +453,7 @@ namespace android.widget
 		public virtual long getExpandableListPosition(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.widget.ExpandableListView._getExpandableListPosition10178, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getExpandableListPosition10178, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -462,7 +462,7 @@ namespace android.widget
 		public virtual int getFlatListPosition(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.ExpandableListView._getFlatListPosition10179, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._getFlatListPosition10179, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -471,7 +471,7 @@ namespace android.widget
 		public virtual bool isGroupExpanded(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ExpandableListView._isGroupExpanded10180, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._isGroupExpanded10180, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -510,7 +510,7 @@ namespace android.widget
 		public virtual void setChildIndicator(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ExpandableListView._setChildIndicator10186, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setChildIndicator10186, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -519,7 +519,7 @@ namespace android.widget
 		public virtual void setChildIndicatorBounds(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ExpandableListView._setChildIndicatorBounds10187, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setChildIndicatorBounds10187, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -528,7 +528,7 @@ namespace android.widget
 		public virtual void setGroupIndicator(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ExpandableListView._setGroupIndicator10188, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setGroupIndicator10188, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -537,7 +537,7 @@ namespace android.widget
 		public virtual void setIndicatorBounds(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ExpandableListView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ExpandableListView._setIndicatorBounds10189, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ExpandableListView.staticClass, global::android.widget.ExpandableListView._setIndicatorBounds10189, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 

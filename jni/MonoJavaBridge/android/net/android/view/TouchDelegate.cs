@@ -22,7 +22,7 @@ namespace android.view
 		public virtual bool onTouchEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.TouchDelegate)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.TouchDelegate._onTouchEvent8086, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.TouchDelegate.staticClass, global::android.view.TouchDelegate._onTouchEvent8086, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

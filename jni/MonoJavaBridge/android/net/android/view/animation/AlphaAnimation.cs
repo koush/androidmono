@@ -22,7 +22,7 @@ namespace android.view.animation
 		public override bool willChangeTransformationMatrix() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.AlphaAnimation)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.animation.AlphaAnimation._willChangeTransformationMatrix8842); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.animation.AlphaAnimation.staticClass, global::android.view.animation.AlphaAnimation._willChangeTransformationMatrix8842); 
@@ -31,7 +31,7 @@ namespace android.view.animation
 		public override bool willChangeBounds() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.AlphaAnimation)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.animation.AlphaAnimation._willChangeBounds8843); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.animation.AlphaAnimation.staticClass, global::android.view.animation.AlphaAnimation._willChangeBounds8843); 
@@ -40,7 +40,7 @@ namespace android.view.animation
 		protected override void applyTransformation(float arg0, android.view.animation.Transformation arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.AlphaAnimation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.AlphaAnimation._applyTransformation8844, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.AlphaAnimation.staticClass, global::android.view.animation.AlphaAnimation._applyTransformation8844, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 

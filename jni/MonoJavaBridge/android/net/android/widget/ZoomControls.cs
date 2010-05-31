@@ -22,7 +22,7 @@ namespace android.widget
 		public override bool onTouchEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ZoomControls)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ZoomControls._onTouchEvent11366, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._onTouchEvent11366, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -31,7 +31,7 @@ namespace android.widget
 		public override bool hasFocus() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ZoomControls)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ZoomControls._hasFocus11367); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._hasFocus11367); 
@@ -40,7 +40,7 @@ namespace android.widget
 		public virtual void show() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ZoomControls)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ZoomControls._show11368); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._show11368); 
@@ -49,7 +49,7 @@ namespace android.widget
 		public virtual void hide() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ZoomControls)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ZoomControls._hide11369); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._hide11369); 
@@ -58,7 +58,7 @@ namespace android.widget
 		public virtual void setZoomSpeed(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ZoomControls)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ZoomControls._setZoomSpeed11370, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setZoomSpeed11370, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.widget
 		public virtual void setOnZoomInClickListener(android.view.View.OnClickListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ZoomControls)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ZoomControls._setOnZoomInClickListener11371, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setOnZoomInClickListener11371, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -76,7 +76,7 @@ namespace android.widget
 		public virtual void setOnZoomOutClickListener(android.view.View.OnClickListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ZoomControls)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ZoomControls._setOnZoomOutClickListener11372, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setOnZoomOutClickListener11372, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -85,7 +85,7 @@ namespace android.widget
 		public virtual void setIsZoomInEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ZoomControls)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ZoomControls._setIsZoomInEnabled11373, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setIsZoomInEnabled11373, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -94,7 +94,7 @@ namespace android.widget
 		public virtual void setIsZoomOutEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ZoomControls)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ZoomControls._setIsZoomOutEnabled11374, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomControls.staticClass, global::android.widget.ZoomControls._setIsZoomOutEnabled11374, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

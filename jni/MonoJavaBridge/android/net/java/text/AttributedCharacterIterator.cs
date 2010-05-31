@@ -44,7 +44,7 @@ namespace java.text
 		 global::java.util.Map java.text.AttributedCharacterIterator.getAttributes() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.__AttributedCharacterIterator._getAttributes12537)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._getAttributes12537)); 
@@ -53,7 +53,7 @@ namespace java.text
 		 global::java.lang.Object java.text.AttributedCharacterIterator.getAttribute(java.text.AttributedCharacterIterator_Attribute arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.__AttributedCharacterIterator._getAttribute12538, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._getAttribute12538, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -62,7 +62,7 @@ namespace java.text
 		 int java.text.AttributedCharacterIterator.getRunStart(java.util.Set arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.text.__AttributedCharacterIterator._getRunStart12539, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._getRunStart12539, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -71,7 +71,7 @@ namespace java.text
 		 int java.text.AttributedCharacterIterator.getRunStart(java.text.AttributedCharacterIterator_Attribute arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.text.__AttributedCharacterIterator._getRunStart12540, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._getRunStart12540, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -80,7 +80,7 @@ namespace java.text
 		 int java.text.AttributedCharacterIterator.getRunStart() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.text.__AttributedCharacterIterator._getRunStart12541); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._getRunStart12541); 
@@ -89,7 +89,7 @@ namespace java.text
 		 int java.text.AttributedCharacterIterator.getRunLimit(java.text.AttributedCharacterIterator_Attribute arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.text.__AttributedCharacterIterator._getRunLimit12542, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._getRunLimit12542, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -98,7 +98,7 @@ namespace java.text
 		 int java.text.AttributedCharacterIterator.getRunLimit() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.text.__AttributedCharacterIterator._getRunLimit12543); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._getRunLimit12543); 
@@ -107,7 +107,7 @@ namespace java.text
 		 int java.text.AttributedCharacterIterator.getRunLimit(java.util.Set arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.text.__AttributedCharacterIterator._getRunLimit12544, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._getRunLimit12544, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -116,7 +116,7 @@ namespace java.text
 		 global::java.util.Set java.text.AttributedCharacterIterator.getAllAttributeKeys() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.__AttributedCharacterIterator._getAllAttributeKeys12545)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._getAllAttributeKeys12545)); 
@@ -125,7 +125,7 @@ namespace java.text
 		 global::java.lang.Object java.text.CharacterIterator.clone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.__AttributedCharacterIterator._clone12546)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._clone12546)); 
@@ -134,7 +134,7 @@ namespace java.text
 		 char java.text.CharacterIterator.next() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallCharMethod(this, global::java.text.__AttributedCharacterIterator._next12547); 
 			else 
 				return @__env.CallNonVirtualCharMethod(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._next12547); 
@@ -143,7 +143,7 @@ namespace java.text
 		 char java.text.CharacterIterator.previous() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallCharMethod(this, global::java.text.__AttributedCharacterIterator._previous12548); 
 			else 
 				return @__env.CallNonVirtualCharMethod(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._previous12548); 
@@ -152,7 +152,7 @@ namespace java.text
 		 int java.text.CharacterIterator.getIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.text.__AttributedCharacterIterator._getIndex12549); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._getIndex12549); 
@@ -161,7 +161,7 @@ namespace java.text
 		 char java.text.CharacterIterator.current() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallCharMethod(this, global::java.text.__AttributedCharacterIterator._current12550); 
 			else 
 				return @__env.CallNonVirtualCharMethod(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._current12550); 
@@ -170,7 +170,7 @@ namespace java.text
 		 char java.text.CharacterIterator.setIndex(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallCharMethod(this, global::java.text.__AttributedCharacterIterator._setIndex12551, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualCharMethod(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._setIndex12551, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -179,7 +179,7 @@ namespace java.text
 		 int java.text.CharacterIterator.getBeginIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.text.__AttributedCharacterIterator._getBeginIndex12552); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._getBeginIndex12552); 
@@ -188,7 +188,7 @@ namespace java.text
 		 int java.text.CharacterIterator.getEndIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.text.__AttributedCharacterIterator._getEndIndex12553); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._getEndIndex12553); 
@@ -197,7 +197,7 @@ namespace java.text
 		 char java.text.CharacterIterator.last() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallCharMethod(this, global::java.text.__AttributedCharacterIterator._last12554); 
 			else 
 				return @__env.CallNonVirtualCharMethod(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._last12554); 
@@ -206,7 +206,7 @@ namespace java.text
 		 char java.text.CharacterIterator.first() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.__AttributedCharacterIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallCharMethod(this, global::java.text.__AttributedCharacterIterator._first12555); 
 			else 
 				return @__env.CallNonVirtualCharMethod(this, global::java.text.__AttributedCharacterIterator.staticClass, global::java.text.__AttributedCharacterIterator._first12555); 

@@ -22,7 +22,7 @@ namespace android.widget
 		public override bool onTouchEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ScrollView._onTouchEvent10739, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._onTouchEvent10739, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -31,7 +31,7 @@ namespace android.widget
 		public override bool dispatchKeyEvent(android.view.KeyEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ScrollView._dispatchKeyEvent10740, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._dispatchKeyEvent10740, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -40,7 +40,7 @@ namespace android.widget
 		public override void addView(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._addView10741, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._addView10741, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.widget
 		public override void addView(android.view.View arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._addView10742, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._addView10742, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -58,7 +58,7 @@ namespace android.widget
 		public override void addView(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._addView10743, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._addView10743, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -67,7 +67,7 @@ namespace android.widget
 		public override void addView(android.view.View arg0, int arg1, android.view.ViewGroup.LayoutParams arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._addView10744, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._addView10744, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -76,7 +76,7 @@ namespace android.widget
 		protected override void onSizeChanged(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._onSizeChanged10745, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._onSizeChanged10745, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -85,7 +85,7 @@ namespace android.widget
 		public override void scrollTo(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._scrollTo10746, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._scrollTo10746, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -94,7 +94,7 @@ namespace android.widget
 		public override void computeScroll() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._computeScroll10747); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._computeScroll10747); 
@@ -103,7 +103,7 @@ namespace android.widget
 		protected override float getTopFadingEdgeStrength() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.widget.ScrollView._getTopFadingEdgeStrength10748); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._getTopFadingEdgeStrength10748); 
@@ -112,7 +112,7 @@ namespace android.widget
 		protected override float getBottomFadingEdgeStrength() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.widget.ScrollView._getBottomFadingEdgeStrength10749); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._getBottomFadingEdgeStrength10749); 
@@ -121,7 +121,7 @@ namespace android.widget
 		protected override int computeVerticalScrollRange() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.ScrollView._computeVerticalScrollRange10750); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._computeVerticalScrollRange10750); 
@@ -130,7 +130,7 @@ namespace android.widget
 		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._onLayout10751, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._onLayout10751, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -139,7 +139,7 @@ namespace android.widget
 		public override void requestLayout() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._requestLayout10752); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._requestLayout10752); 
@@ -148,7 +148,7 @@ namespace android.widget
 		protected override void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._onMeasure10753, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._onMeasure10753, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -157,7 +157,7 @@ namespace android.widget
 		public override void requestChildFocus(android.view.View arg0, android.view.View arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._requestChildFocus10754, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._requestChildFocus10754, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -166,7 +166,7 @@ namespace android.widget
 		public override bool requestChildRectangleOnScreen(android.view.View arg0, android.graphics.Rect arg1, bool arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ScrollView._requestChildRectangleOnScreen10755, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._requestChildRectangleOnScreen10755, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -175,7 +175,7 @@ namespace android.widget
 		public override bool onInterceptTouchEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ScrollView._onInterceptTouchEvent10756, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._onInterceptTouchEvent10756, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -184,7 +184,7 @@ namespace android.widget
 		protected override bool onRequestFocusInDescendants(int arg0, android.graphics.Rect arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ScrollView._onRequestFocusInDescendants10757, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._onRequestFocusInDescendants10757, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -193,7 +193,7 @@ namespace android.widget
 		protected override void measureChild(android.view.View arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._measureChild10758, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._measureChild10758, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -202,7 +202,7 @@ namespace android.widget
 		protected override void measureChildWithMargins(android.view.View arg0, int arg1, int arg2, int arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._measureChildWithMargins10759, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._measureChildWithMargins10759, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -211,7 +211,7 @@ namespace android.widget
 		public virtual int getMaxScrollAmount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.ScrollView._getMaxScrollAmount10760); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._getMaxScrollAmount10760); 
@@ -220,7 +220,7 @@ namespace android.widget
 		public virtual void fling(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._fling10761, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._fling10761, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -229,7 +229,7 @@ namespace android.widget
 		public virtual bool isFillViewport() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ScrollView._isFillViewport10762); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._isFillViewport10762); 
@@ -238,7 +238,7 @@ namespace android.widget
 		public virtual void setFillViewport(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._setFillViewport10763, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._setFillViewport10763, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -247,7 +247,7 @@ namespace android.widget
 		public virtual bool isSmoothScrollingEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ScrollView._isSmoothScrollingEnabled10764); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._isSmoothScrollingEnabled10764); 
@@ -256,7 +256,7 @@ namespace android.widget
 		public virtual void setSmoothScrollingEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._setSmoothScrollingEnabled10765, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._setSmoothScrollingEnabled10765, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -265,7 +265,7 @@ namespace android.widget
 		public virtual bool executeKeyEvent(android.view.KeyEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ScrollView._executeKeyEvent10766, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._executeKeyEvent10766, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -274,7 +274,7 @@ namespace android.widget
 		public virtual bool pageScroll(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ScrollView._pageScroll10767, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._pageScroll10767, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -283,7 +283,7 @@ namespace android.widget
 		public virtual bool fullScroll(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ScrollView._fullScroll10768, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._fullScroll10768, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -292,7 +292,7 @@ namespace android.widget
 		public virtual bool arrowScroll(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ScrollView._arrowScroll10769, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._arrowScroll10769, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -301,7 +301,7 @@ namespace android.widget
 		public virtual void smoothScrollBy(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._smoothScrollBy10770, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._smoothScrollBy10770, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -310,7 +310,7 @@ namespace android.widget
 		public virtual void smoothScrollTo(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ScrollView._smoothScrollTo10771, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._smoothScrollTo10771, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -319,7 +319,7 @@ namespace android.widget
 		protected virtual int computeScrollDeltaToGetChildRectOnScreen(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ScrollView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.ScrollView._computeScrollDeltaToGetChildRectOnScreen10772, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.ScrollView.staticClass, global::android.widget.ScrollView._computeScrollDeltaToGetChildRectOnScreen10772, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

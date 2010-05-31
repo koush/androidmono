@@ -114,7 +114,7 @@ namespace android.widget
 			 bool android.widget.TextView.OnEditorActionListener.onEditorAction(android.widget.TextView arg0, int arg1, android.view.KeyEvent arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.TextView.__OnEditorActionListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.widget.TextView.__OnEditorActionListener._onEditorAction11020, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.__OnEditorActionListener.staticClass, global::android.widget.TextView.__OnEditorActionListener._onEditorAction11020, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -147,7 +147,7 @@ namespace android.widget
 			public override global::java.lang.String toString() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.TextView.SavedState)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView.SavedState._toString11021)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.SavedState.staticClass, global::android.widget.TextView.SavedState._toString11021)); 
@@ -156,7 +156,7 @@ namespace android.widget
 			public override void writeToParcel(android.os.Parcel arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.TextView.SavedState)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.TextView.SavedState._writeToParcel11022, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.SavedState.staticClass, global::android.widget.TextView.SavedState._writeToParcel11022, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -180,7 +180,7 @@ namespace android.widget
 		public virtual void append(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._append11024, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._append11024, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -189,7 +189,7 @@ namespace android.widget
 		public virtual void append(java.lang.CharSequence arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._append11025, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._append11025, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -198,7 +198,7 @@ namespace android.widget
 		public virtual int length() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._length11026); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._length11026); 
@@ -207,7 +207,7 @@ namespace android.widget
 		public virtual void debug(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._debug11027, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._debug11027, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -216,7 +216,7 @@ namespace android.widget
 		public virtual void setError(java.lang.CharSequence arg0, android.graphics.drawable.Drawable arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setError11028, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setError11028, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -225,7 +225,7 @@ namespace android.widget
 		public virtual void setError(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setError11029, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setError11029, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -234,7 +234,7 @@ namespace android.widget
 		public virtual void setText(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setText11030, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setText11030, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -243,7 +243,7 @@ namespace android.widget
 		public virtual void setText(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setText11031, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setText11031, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -252,7 +252,7 @@ namespace android.widget
 		public virtual void setText(java.lang.CharSequence arg0, android.widget.TextView.BufferType arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setText11032, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setText11032, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -261,7 +261,7 @@ namespace android.widget
 		public virtual void setText(char[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setText11033, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setText11033, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -270,7 +270,7 @@ namespace android.widget
 		public virtual void setText(int arg0, android.widget.TextView.BufferType arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setText11034, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setText11034, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -279,7 +279,7 @@ namespace android.widget
 		public virtual global::java.lang.CharSequence getText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getText11035)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getText11035)); 
@@ -288,7 +288,7 @@ namespace android.widget
 		public virtual global::android.text.Layout getLayout() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getLayout11036)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getLayout11036)); 
@@ -297,7 +297,7 @@ namespace android.widget
 		public virtual new void onRestoreInstanceState(android.os.Parcelable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._onRestoreInstanceState11037, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onRestoreInstanceState11037, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -306,7 +306,7 @@ namespace android.widget
 		public virtual new global::android.os.Parcelable onSaveInstanceState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._onSaveInstanceState11038)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onSaveInstanceState11038)); 
@@ -315,7 +315,7 @@ namespace android.widget
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._onKeyDown11039, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onKeyDown11039, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -324,7 +324,7 @@ namespace android.widget
 		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._onKeyUp11040, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onKeyUp11040, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -333,7 +333,7 @@ namespace android.widget
 		public override bool onKeyMultiple(int arg0, int arg1, android.view.KeyEvent arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._onKeyMultiple11041, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onKeyMultiple11041, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -342,7 +342,7 @@ namespace android.widget
 		public override bool onTouchEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._onTouchEvent11042, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onTouchEvent11042, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -351,7 +351,7 @@ namespace android.widget
 		public override bool onTrackballEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._onTrackballEvent11043, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onTrackballEvent11043, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -360,7 +360,7 @@ namespace android.widget
 		public override void onWindowFocusChanged(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._onWindowFocusChanged11044, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onWindowFocusChanged11044, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -369,7 +369,7 @@ namespace android.widget
 		protected override void onAttachedToWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._onAttachedToWindow11045); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onAttachedToWindow11045); 
@@ -378,7 +378,7 @@ namespace android.widget
 		protected override void onDetachedFromWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._onDetachedFromWindow11046); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onDetachedFromWindow11046); 
@@ -387,7 +387,7 @@ namespace android.widget
 		public override bool dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._dispatchPopulateAccessibilityEvent11047, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._dispatchPopulateAccessibilityEvent11047, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -396,7 +396,7 @@ namespace android.widget
 		protected override void onCreateContextMenu(android.view.ContextMenu arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._onCreateContextMenu11048, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onCreateContextMenu11048, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -405,7 +405,7 @@ namespace android.widget
 		public virtual void setGravity(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setGravity11049, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setGravity11049, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -414,7 +414,7 @@ namespace android.widget
 		public override bool performLongClick() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._performLongClick11050); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._performLongClick11050); 
@@ -423,7 +423,7 @@ namespace android.widget
 		protected override void onFocusChanged(bool arg0, int arg1, android.graphics.Rect arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._onFocusChanged11051, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onFocusChanged11051, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -432,7 +432,7 @@ namespace android.widget
 		public override void onStartTemporaryDetach() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._onStartTemporaryDetach11052); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onStartTemporaryDetach11052); 
@@ -441,7 +441,7 @@ namespace android.widget
 		public override void onFinishTemporaryDetach() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._onFinishTemporaryDetach11053); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onFinishTemporaryDetach11053); 
@@ -450,7 +450,7 @@ namespace android.widget
 		public override bool onKeyShortcut(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._onKeyShortcut11054, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onKeyShortcut11054, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -459,7 +459,7 @@ namespace android.widget
 		public override bool onCheckIsTextEditor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._onCheckIsTextEditor11055); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onCheckIsTextEditor11055); 
@@ -468,7 +468,7 @@ namespace android.widget
 		public override global::android.view.inputmethod.InputConnection onCreateInputConnection(android.view.inputmethod.EditorInfo arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.inputmethod.InputConnection>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._onCreateInputConnection11056, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.inputmethod.InputConnection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onCreateInputConnection11056, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -477,7 +477,7 @@ namespace android.widget
 		public override void cancelLongPress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._cancelLongPress11057); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._cancelLongPress11057); 
@@ -486,7 +486,7 @@ namespace android.widget
 		public override void getFocusedRect(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._getFocusedRect11058, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getFocusedRect11058, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -495,7 +495,7 @@ namespace android.widget
 		public override void computeScroll() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._computeScroll11059); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._computeScroll11059); 
@@ -504,7 +504,7 @@ namespace android.widget
 		protected override float getLeftFadingEdgeStrength() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.widget.TextView._getLeftFadingEdgeStrength11060); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getLeftFadingEdgeStrength11060); 
@@ -513,7 +513,7 @@ namespace android.widget
 		protected override float getRightFadingEdgeStrength() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.widget.TextView._getRightFadingEdgeStrength11061); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getRightFadingEdgeStrength11061); 
@@ -522,7 +522,7 @@ namespace android.widget
 		protected override int computeHorizontalScrollRange() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._computeHorizontalScrollRange11062); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._computeHorizontalScrollRange11062); 
@@ -531,7 +531,7 @@ namespace android.widget
 		protected override int computeVerticalScrollRange() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._computeVerticalScrollRange11063); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._computeVerticalScrollRange11063); 
@@ -540,7 +540,7 @@ namespace android.widget
 		protected override int computeVerticalScrollExtent() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._computeVerticalScrollExtent11064); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._computeVerticalScrollExtent11064); 
@@ -549,7 +549,7 @@ namespace android.widget
 		protected override void onDraw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._onDraw11065, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onDraw11065, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -558,7 +558,7 @@ namespace android.widget
 		protected override bool isPaddingOffsetRequired() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._isPaddingOffsetRequired11066); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._isPaddingOffsetRequired11066); 
@@ -567,7 +567,7 @@ namespace android.widget
 		protected override int getLeftPaddingOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getLeftPaddingOffset11067); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getLeftPaddingOffset11067); 
@@ -576,7 +576,7 @@ namespace android.widget
 		protected override int getRightPaddingOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getRightPaddingOffset11068); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getRightPaddingOffset11068); 
@@ -585,7 +585,7 @@ namespace android.widget
 		protected override int getTopPaddingOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getTopPaddingOffset11069); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getTopPaddingOffset11069); 
@@ -594,7 +594,7 @@ namespace android.widget
 		protected override int getBottomPaddingOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getBottomPaddingOffset11070); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getBottomPaddingOffset11070); 
@@ -603,7 +603,7 @@ namespace android.widget
 		public override void invalidateDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._invalidateDrawable11071, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._invalidateDrawable11071, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -612,7 +612,7 @@ namespace android.widget
 		protected override bool verifyDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._verifyDrawable11072, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._verifyDrawable11072, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -621,7 +621,7 @@ namespace android.widget
 		protected override void drawableStateChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._drawableStateChanged11073); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._drawableStateChanged11073); 
@@ -630,7 +630,7 @@ namespace android.widget
 		public override void setPadding(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setPadding11074, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setPadding11074, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -639,7 +639,7 @@ namespace android.widget
 		public override void setSelected(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setSelected11075, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setSelected11075, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -648,7 +648,7 @@ namespace android.widget
 		public override int getBaseline() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getBaseline11076); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getBaseline11076); 
@@ -657,7 +657,7 @@ namespace android.widget
 		protected override void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._onMeasure11077, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onMeasure11077, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -666,7 +666,7 @@ namespace android.widget
 		public virtual void setTypeface(android.graphics.Typeface arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setTypeface11078, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setTypeface11078, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -675,7 +675,7 @@ namespace android.widget
 		public virtual void setTypeface(android.graphics.Typeface arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setTypeface11079, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setTypeface11079, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -684,7 +684,7 @@ namespace android.widget
 		protected virtual bool getDefaultEditable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._getDefaultEditable11080); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getDefaultEditable11080); 
@@ -693,7 +693,7 @@ namespace android.widget
 		protected virtual global::android.text.method.MovementMethod getDefaultMovementMethod() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.method.MovementMethod>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getDefaultMovementMethod11081)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.method.MovementMethod>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getDefaultMovementMethod11081)); 
@@ -702,7 +702,7 @@ namespace android.widget
 		public virtual global::android.text.Editable getEditableText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getEditableText11082)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getEditableText11082)); 
@@ -711,7 +711,7 @@ namespace android.widget
 		public virtual int getLineHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getLineHeight11083); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getLineHeight11083); 
@@ -720,7 +720,7 @@ namespace android.widget
 		public virtual global::android.text.method.KeyListener getKeyListener() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.method.KeyListener>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getKeyListener11084)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.method.KeyListener>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getKeyListener11084)); 
@@ -729,7 +729,7 @@ namespace android.widget
 		public virtual void setKeyListener(android.text.method.KeyListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setKeyListener11085, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setKeyListener11085, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -738,7 +738,7 @@ namespace android.widget
 		public virtual global::android.text.method.MovementMethod getMovementMethod() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.method.MovementMethod>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getMovementMethod11086)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.method.MovementMethod>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getMovementMethod11086)); 
@@ -747,7 +747,7 @@ namespace android.widget
 		public virtual void setMovementMethod(android.text.method.MovementMethod arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setMovementMethod11087, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setMovementMethod11087, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -756,7 +756,7 @@ namespace android.widget
 		public virtual global::android.text.method.TransformationMethod getTransformationMethod() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.method.TransformationMethod>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getTransformationMethod11088)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.method.TransformationMethod>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getTransformationMethod11088)); 
@@ -765,7 +765,7 @@ namespace android.widget
 		public virtual void setTransformationMethod(android.text.method.TransformationMethod arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setTransformationMethod11089, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setTransformationMethod11089, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -774,7 +774,7 @@ namespace android.widget
 		public virtual int getCompoundPaddingTop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getCompoundPaddingTop11090); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getCompoundPaddingTop11090); 
@@ -783,7 +783,7 @@ namespace android.widget
 		public virtual int getCompoundPaddingBottom() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getCompoundPaddingBottom11091); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getCompoundPaddingBottom11091); 
@@ -792,7 +792,7 @@ namespace android.widget
 		public virtual int getCompoundPaddingLeft() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getCompoundPaddingLeft11092); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getCompoundPaddingLeft11092); 
@@ -801,7 +801,7 @@ namespace android.widget
 		public virtual int getCompoundPaddingRight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getCompoundPaddingRight11093); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getCompoundPaddingRight11093); 
@@ -810,7 +810,7 @@ namespace android.widget
 		public virtual int getExtendedPaddingTop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getExtendedPaddingTop11094); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getExtendedPaddingTop11094); 
@@ -819,7 +819,7 @@ namespace android.widget
 		public virtual int getExtendedPaddingBottom() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getExtendedPaddingBottom11095); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getExtendedPaddingBottom11095); 
@@ -828,7 +828,7 @@ namespace android.widget
 		public virtual int getTotalPaddingLeft() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getTotalPaddingLeft11096); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getTotalPaddingLeft11096); 
@@ -837,7 +837,7 @@ namespace android.widget
 		public virtual int getTotalPaddingRight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getTotalPaddingRight11097); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getTotalPaddingRight11097); 
@@ -846,7 +846,7 @@ namespace android.widget
 		public virtual int getTotalPaddingTop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getTotalPaddingTop11098); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getTotalPaddingTop11098); 
@@ -855,7 +855,7 @@ namespace android.widget
 		public virtual int getTotalPaddingBottom() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getTotalPaddingBottom11099); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getTotalPaddingBottom11099); 
@@ -864,7 +864,7 @@ namespace android.widget
 		public virtual void setCompoundDrawables(android.graphics.drawable.Drawable arg0, android.graphics.drawable.Drawable arg1, android.graphics.drawable.Drawable arg2, android.graphics.drawable.Drawable arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setCompoundDrawables11100, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setCompoundDrawables11100, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
@@ -873,7 +873,7 @@ namespace android.widget
 		public virtual void setCompoundDrawablesWithIntrinsicBounds(android.graphics.drawable.Drawable arg0, android.graphics.drawable.Drawable arg1, android.graphics.drawable.Drawable arg2, android.graphics.drawable.Drawable arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setCompoundDrawablesWithIntrinsicBounds11101, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setCompoundDrawablesWithIntrinsicBounds11101, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
@@ -882,7 +882,7 @@ namespace android.widget
 		public virtual void setCompoundDrawablesWithIntrinsicBounds(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setCompoundDrawablesWithIntrinsicBounds11102, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setCompoundDrawablesWithIntrinsicBounds11102, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -890,7 +890,7 @@ namespace android.widget
 		internal static global::net.sf.jni4net.jni.MethodId _getCompoundDrawables11103; 
 		public virtual global::android.graphics.drawable.Drawable[] getCompoundDrawables() 
 		{ 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getCompoundDrawables11103)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getCompoundDrawables11103)); 
@@ -899,7 +899,7 @@ namespace android.widget
 		public virtual void setCompoundDrawablePadding(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setCompoundDrawablePadding11104, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setCompoundDrawablePadding11104, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -908,7 +908,7 @@ namespace android.widget
 		public virtual int getCompoundDrawablePadding() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getCompoundDrawablePadding11105); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getCompoundDrawablePadding11105); 
@@ -917,7 +917,7 @@ namespace android.widget
 		public virtual int getAutoLinkMask() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getAutoLinkMask11106); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getAutoLinkMask11106); 
@@ -926,7 +926,7 @@ namespace android.widget
 		public virtual void setTextAppearance(android.content.Context arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setTextAppearance11107, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setTextAppearance11107, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -935,7 +935,7 @@ namespace android.widget
 		public virtual float getTextSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.widget.TextView._getTextSize11108); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getTextSize11108); 
@@ -944,7 +944,7 @@ namespace android.widget
 		public virtual void setTextSize(int arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setTextSize11109, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setTextSize11109, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -953,7 +953,7 @@ namespace android.widget
 		public virtual void setTextSize(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setTextSize11110, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setTextSize11110, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -962,7 +962,7 @@ namespace android.widget
 		public virtual float getTextScaleX() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.widget.TextView._getTextScaleX11111); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getTextScaleX11111); 
@@ -971,7 +971,7 @@ namespace android.widget
 		public virtual void setTextScaleX(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setTextScaleX11112, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setTextScaleX11112, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -980,7 +980,7 @@ namespace android.widget
 		public virtual global::android.graphics.Typeface getTypeface() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Typeface>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getTypeface11113)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Typeface>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getTypeface11113)); 
@@ -989,7 +989,7 @@ namespace android.widget
 		public virtual void setTextColor(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setTextColor11114, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setTextColor11114, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -998,7 +998,7 @@ namespace android.widget
 		public virtual void setTextColor(android.content.res.ColorStateList arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setTextColor11115, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setTextColor11115, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -1007,7 +1007,7 @@ namespace android.widget
 		public virtual global::android.content.res.ColorStateList getTextColors() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getTextColors11116)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getTextColors11116)); 
@@ -1022,7 +1022,7 @@ namespace android.widget
 		public virtual int getCurrentTextColor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getCurrentTextColor11118); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getCurrentTextColor11118); 
@@ -1031,7 +1031,7 @@ namespace android.widget
 		public virtual void setHighlightColor(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setHighlightColor11119, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setHighlightColor11119, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1040,7 +1040,7 @@ namespace android.widget
 		public virtual void setShadowLayer(float arg0, float arg1, float arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setShadowLayer11120, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setShadowLayer11120, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -1049,7 +1049,7 @@ namespace android.widget
 		public virtual global::android.text.TextPaint getPaint() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.TextPaint>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getPaint11121)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.TextPaint>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getPaint11121)); 
@@ -1058,7 +1058,7 @@ namespace android.widget
 		public virtual void setAutoLinkMask(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setAutoLinkMask11122, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setAutoLinkMask11122, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1067,7 +1067,7 @@ namespace android.widget
 		public virtual void setLinksClickable(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setLinksClickable11123, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setLinksClickable11123, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1076,7 +1076,7 @@ namespace android.widget
 		public virtual bool getLinksClickable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._getLinksClickable11124); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getLinksClickable11124); 
@@ -1084,7 +1084,7 @@ namespace android.widget
 		internal static global::net.sf.jni4net.jni.MethodId _getUrls11125; 
 		public virtual global::android.text.style.URLSpan[] getUrls() 
 		{ 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getUrls11125)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getUrls11125)); 
@@ -1093,7 +1093,7 @@ namespace android.widget
 		public virtual void setHintTextColor(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setHintTextColor11126, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setHintTextColor11126, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1102,7 +1102,7 @@ namespace android.widget
 		public virtual void setHintTextColor(android.content.res.ColorStateList arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setHintTextColor11127, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setHintTextColor11127, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -1111,7 +1111,7 @@ namespace android.widget
 		public virtual global::android.content.res.ColorStateList getHintTextColors() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getHintTextColors11128)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getHintTextColors11128)); 
@@ -1120,7 +1120,7 @@ namespace android.widget
 		public virtual int getCurrentHintTextColor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getCurrentHintTextColor11129); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getCurrentHintTextColor11129); 
@@ -1129,7 +1129,7 @@ namespace android.widget
 		public virtual void setLinkTextColor(android.content.res.ColorStateList arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setLinkTextColor11130, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setLinkTextColor11130, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -1138,7 +1138,7 @@ namespace android.widget
 		public virtual void setLinkTextColor(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setLinkTextColor11131, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setLinkTextColor11131, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1147,7 +1147,7 @@ namespace android.widget
 		public virtual global::android.content.res.ColorStateList getLinkTextColors() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getLinkTextColors11132)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getLinkTextColors11132)); 
@@ -1156,7 +1156,7 @@ namespace android.widget
 		public virtual int getGravity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getGravity11133); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getGravity11133); 
@@ -1165,7 +1165,7 @@ namespace android.widget
 		public virtual int getPaintFlags() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getPaintFlags11134); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getPaintFlags11134); 
@@ -1174,7 +1174,7 @@ namespace android.widget
 		public virtual void setPaintFlags(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setPaintFlags11135, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setPaintFlags11135, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1183,7 +1183,7 @@ namespace android.widget
 		public virtual void setHorizontallyScrolling(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setHorizontallyScrolling11136, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setHorizontallyScrolling11136, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1192,7 +1192,7 @@ namespace android.widget
 		public virtual void setMinLines(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setMinLines11137, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setMinLines11137, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1201,7 +1201,7 @@ namespace android.widget
 		public virtual void setMinHeight(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setMinHeight11138, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setMinHeight11138, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1210,7 +1210,7 @@ namespace android.widget
 		public virtual void setMaxLines(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setMaxLines11139, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setMaxLines11139, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1219,7 +1219,7 @@ namespace android.widget
 		public virtual void setMaxHeight(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setMaxHeight11140, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setMaxHeight11140, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1228,7 +1228,7 @@ namespace android.widget
 		public virtual void setLines(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setLines11141, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setLines11141, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1237,7 +1237,7 @@ namespace android.widget
 		public virtual void setHeight(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setHeight11142, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setHeight11142, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1246,7 +1246,7 @@ namespace android.widget
 		public virtual void setMinEms(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setMinEms11143, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setMinEms11143, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1255,7 +1255,7 @@ namespace android.widget
 		public virtual void setMinWidth(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setMinWidth11144, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setMinWidth11144, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1264,7 +1264,7 @@ namespace android.widget
 		public virtual void setMaxEms(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setMaxEms11145, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setMaxEms11145, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1273,7 +1273,7 @@ namespace android.widget
 		public virtual void setMaxWidth(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setMaxWidth11146, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setMaxWidth11146, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1282,7 +1282,7 @@ namespace android.widget
 		public virtual void setEms(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setEms11147, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setEms11147, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1291,7 +1291,7 @@ namespace android.widget
 		public virtual void setWidth(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setWidth11148, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setWidth11148, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1300,7 +1300,7 @@ namespace android.widget
 		public virtual void setLineSpacing(float arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setLineSpacing11149, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setLineSpacing11149, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -1309,7 +1309,7 @@ namespace android.widget
 		public virtual void setFreezesText(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setFreezesText11150, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setFreezesText11150, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1318,7 +1318,7 @@ namespace android.widget
 		public virtual bool getFreezesText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._getFreezesText11151); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getFreezesText11151); 
@@ -1327,7 +1327,7 @@ namespace android.widget
 		public virtual void setEditableFactory(android.text.Editable_Factory arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setEditableFactory11152, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setEditableFactory11152, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -1336,7 +1336,7 @@ namespace android.widget
 		public virtual void setSpannableFactory(android.text.Spannable_Factory arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setSpannableFactory11153, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setSpannableFactory11153, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -1345,7 +1345,7 @@ namespace android.widget
 		public virtual void setTextKeepState(java.lang.CharSequence arg0, android.widget.TextView.BufferType arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setTextKeepState11154, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setTextKeepState11154, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -1354,7 +1354,7 @@ namespace android.widget
 		public virtual void setTextKeepState(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setTextKeepState11155, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setTextKeepState11155, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -1363,7 +1363,7 @@ namespace android.widget
 		public virtual void setHint(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setHint11156, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setHint11156, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -1372,7 +1372,7 @@ namespace android.widget
 		public virtual void setHint(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setHint11157, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setHint11157, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1381,7 +1381,7 @@ namespace android.widget
 		public virtual global::java.lang.CharSequence getHint() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getHint11158)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getHint11158)); 
@@ -1390,7 +1390,7 @@ namespace android.widget
 		public virtual void setInputType(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setInputType11159, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setInputType11159, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1399,7 +1399,7 @@ namespace android.widget
 		public virtual void setRawInputType(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setRawInputType11160, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setRawInputType11160, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1408,7 +1408,7 @@ namespace android.widget
 		public virtual int getInputType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getInputType11161); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getInputType11161); 
@@ -1417,7 +1417,7 @@ namespace android.widget
 		public virtual void setImeOptions(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setImeOptions11162, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setImeOptions11162, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1426,7 +1426,7 @@ namespace android.widget
 		public virtual int getImeOptions() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getImeOptions11163); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getImeOptions11163); 
@@ -1435,7 +1435,7 @@ namespace android.widget
 		public virtual void setImeActionLabel(java.lang.CharSequence arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setImeActionLabel11164, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setImeActionLabel11164, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -1444,7 +1444,7 @@ namespace android.widget
 		public virtual global::java.lang.CharSequence getImeActionLabel() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getImeActionLabel11165)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getImeActionLabel11165)); 
@@ -1453,7 +1453,7 @@ namespace android.widget
 		public virtual int getImeActionId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getImeActionId11166); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getImeActionId11166); 
@@ -1462,7 +1462,7 @@ namespace android.widget
 		public virtual void setOnEditorActionListener(android.widget.TextView.OnEditorActionListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setOnEditorActionListener11167, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setOnEditorActionListener11167, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -1471,7 +1471,7 @@ namespace android.widget
 		public virtual void onEditorAction(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._onEditorAction11168, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onEditorAction11168, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1480,7 +1480,7 @@ namespace android.widget
 		public virtual void setPrivateImeOptions(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setPrivateImeOptions11169, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setPrivateImeOptions11169, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -1489,7 +1489,7 @@ namespace android.widget
 		public virtual global::java.lang.String getPrivateImeOptions() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getPrivateImeOptions11170)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getPrivateImeOptions11170)); 
@@ -1498,7 +1498,7 @@ namespace android.widget
 		public virtual void setInputExtras(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setInputExtras11171, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setInputExtras11171, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1507,7 +1507,7 @@ namespace android.widget
 		public virtual global::android.os.Bundle getInputExtras(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getInputExtras11172, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getInputExtras11172, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -1516,7 +1516,7 @@ namespace android.widget
 		public virtual global::java.lang.CharSequence getError() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getError11173)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getError11173)); 
@@ -1525,7 +1525,7 @@ namespace android.widget
 		protected virtual bool setFrame(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._setFrame11174, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setFrame11174, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -1534,7 +1534,7 @@ namespace android.widget
 		public virtual void setFilters(android.text.InputFilter[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setFilters11175, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.text.InputFilter[], android.text.InputFilter>(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setFilters11175, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<android.text.InputFilter[], android.text.InputFilter>(@__env, arg0)); 
@@ -1542,7 +1542,7 @@ namespace android.widget
 		internal static global::net.sf.jni4net.jni.MethodId _getFilters11176; 
 		public virtual global::android.text.InputFilter[] getFilters() 
 		{ 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getFilters11176)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getFilters11176)); 
@@ -1551,7 +1551,7 @@ namespace android.widget
 		public virtual bool onPreDraw() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._onPreDraw11177); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onPreDraw11177); 
@@ -1560,7 +1560,7 @@ namespace android.widget
 		public virtual int getLineCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getLineCount11178); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getLineCount11178); 
@@ -1569,7 +1569,7 @@ namespace android.widget
 		public virtual int getLineBounds(int arg0, android.graphics.Rect arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getLineBounds11179, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getLineBounds11179, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -1578,7 +1578,7 @@ namespace android.widget
 		public virtual bool extractText(android.view.inputmethod.ExtractedTextRequest arg0, android.view.inputmethod.ExtractedText arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._extractText11180, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._extractText11180, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -1587,7 +1587,7 @@ namespace android.widget
 		public virtual void setExtractedText(android.view.inputmethod.ExtractedText arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setExtractedText11181, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setExtractedText11181, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -1596,7 +1596,7 @@ namespace android.widget
 		public virtual void onCommitCompletion(android.view.inputmethod.CompletionInfo arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._onCommitCompletion11182, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onCommitCompletion11182, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -1605,7 +1605,7 @@ namespace android.widget
 		public virtual void beginBatchEdit() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._beginBatchEdit11183); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._beginBatchEdit11183); 
@@ -1614,7 +1614,7 @@ namespace android.widget
 		public virtual void endBatchEdit() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._endBatchEdit11184); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._endBatchEdit11184); 
@@ -1623,7 +1623,7 @@ namespace android.widget
 		public virtual void onBeginBatchEdit() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._onBeginBatchEdit11185); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onBeginBatchEdit11185); 
@@ -1632,7 +1632,7 @@ namespace android.widget
 		public virtual void onEndBatchEdit() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._onEndBatchEdit11186); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onEndBatchEdit11186); 
@@ -1641,7 +1641,7 @@ namespace android.widget
 		public virtual bool onPrivateIMECommand(java.lang.String arg0, android.os.Bundle arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._onPrivateIMECommand11187, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onPrivateIMECommand11187, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -1650,7 +1650,7 @@ namespace android.widget
 		public virtual void setIncludeFontPadding(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setIncludeFontPadding11188, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setIncludeFontPadding11188, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1659,7 +1659,7 @@ namespace android.widget
 		public virtual bool bringPointIntoView(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._bringPointIntoView11189, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._bringPointIntoView11189, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1668,7 +1668,7 @@ namespace android.widget
 		public virtual bool moveCursorToVisibleOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._moveCursorToVisibleOffset11190); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._moveCursorToVisibleOffset11190); 
@@ -1677,7 +1677,7 @@ namespace android.widget
 		public virtual int getSelectionStart() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getSelectionStart11191); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getSelectionStart11191); 
@@ -1686,7 +1686,7 @@ namespace android.widget
 		public virtual int getSelectionEnd() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TextView._getSelectionEnd11192); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getSelectionEnd11192); 
@@ -1695,7 +1695,7 @@ namespace android.widget
 		public virtual bool hasSelection() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._hasSelection11193); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._hasSelection11193); 
@@ -1704,7 +1704,7 @@ namespace android.widget
 		public virtual void setSingleLine() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setSingleLine11194); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setSingleLine11194); 
@@ -1713,7 +1713,7 @@ namespace android.widget
 		public virtual void setSingleLine(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setSingleLine11195, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setSingleLine11195, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1722,7 +1722,7 @@ namespace android.widget
 		public virtual void setEllipsize(android.text.TextUtils.TruncateAt arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setEllipsize11196, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setEllipsize11196, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -1731,7 +1731,7 @@ namespace android.widget
 		public virtual void setMarqueeRepeatLimit(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setMarqueeRepeatLimit11197, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setMarqueeRepeatLimit11197, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1740,7 +1740,7 @@ namespace android.widget
 		public virtual global::android.text.TextUtils.TruncateAt getEllipsize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.TextUtils.TruncateAt>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TextView._getEllipsize11198)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.TextUtils.TruncateAt>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._getEllipsize11198)); 
@@ -1749,7 +1749,7 @@ namespace android.widget
 		public virtual void setSelectAllOnFocus(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setSelectAllOnFocus11199, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setSelectAllOnFocus11199, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1758,7 +1758,7 @@ namespace android.widget
 		public virtual void setCursorVisible(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setCursorVisible11200, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setCursorVisible11200, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1767,7 +1767,7 @@ namespace android.widget
 		protected virtual void onTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._onTextChanged11201, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onTextChanged11201, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -1776,7 +1776,7 @@ namespace android.widget
 		protected virtual void onSelectionChanged(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._onSelectionChanged11202, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onSelectionChanged11202, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -1785,7 +1785,7 @@ namespace android.widget
 		public virtual void addTextChangedListener(android.text.TextWatcher arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._addTextChangedListener11203, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._addTextChangedListener11203, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -1794,7 +1794,7 @@ namespace android.widget
 		public virtual void removeTextChangedListener(android.text.TextWatcher arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._removeTextChangedListener11204, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._removeTextChangedListener11204, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -1803,7 +1803,7 @@ namespace android.widget
 		public virtual void clearComposingText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._clearComposingText11205); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._clearComposingText11205); 
@@ -1812,7 +1812,7 @@ namespace android.widget
 		public virtual bool didTouchFocusSelect() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._didTouchFocusSelect11206); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._didTouchFocusSelect11206); 
@@ -1821,7 +1821,7 @@ namespace android.widget
 		public virtual void setScroller(android.widget.Scroller arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setScroller11207, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setScroller11207, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -1836,7 +1836,7 @@ namespace android.widget
 		public virtual bool isInputMethodTarget() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._isInputMethodTarget11209); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._isInputMethodTarget11209); 
@@ -1845,7 +1845,7 @@ namespace android.widget
 		public virtual bool onTextContextMenuItem(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TextView._onTextContextMenuItem11210, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._onTextContextMenuItem11210, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

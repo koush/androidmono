@@ -17,7 +17,7 @@ namespace android.app
 		public virtual global::android.app.Application getApplication() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Service)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.Application>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.Service._getApplication743)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.Application>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.Service.staticClass, global::android.app.Service._getApplication743)); 
@@ -26,7 +26,7 @@ namespace android.app
 		public virtual void onCreate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Service)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.Service._onCreate744); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Service.staticClass, global::android.app.Service._onCreate744); 
@@ -35,7 +35,7 @@ namespace android.app
 		public virtual void onStart(android.content.Intent arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Service)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.Service._onStart745, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Service.staticClass, global::android.app.Service._onStart745, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -44,7 +44,7 @@ namespace android.app
 		public virtual int onStartCommand(android.content.Intent arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Service)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.app.Service._onStartCommand746, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.app.Service.staticClass, global::android.app.Service._onStartCommand746, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -53,7 +53,7 @@ namespace android.app
 		public virtual void onDestroy() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Service)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.Service._onDestroy747); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Service.staticClass, global::android.app.Service._onDestroy747); 
@@ -62,7 +62,7 @@ namespace android.app
 		public virtual void onConfigurationChanged(android.content.res.Configuration arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Service)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.Service._onConfigurationChanged748, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Service.staticClass, global::android.app.Service._onConfigurationChanged748, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -71,7 +71,7 @@ namespace android.app
 		public virtual void onLowMemory() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Service)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.Service._onLowMemory749); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Service.staticClass, global::android.app.Service._onLowMemory749); 
@@ -80,7 +80,7 @@ namespace android.app
 		public virtual bool onUnbind(android.content.Intent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Service)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.app.Service._onUnbind750, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.app.Service.staticClass, global::android.app.Service._onUnbind750, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -89,7 +89,7 @@ namespace android.app
 		public virtual void onRebind(android.content.Intent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Service)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.Service._onRebind751, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Service.staticClass, global::android.app.Service._onRebind751, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -98,7 +98,7 @@ namespace android.app
 		public virtual void stopSelf() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Service)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.Service._stopSelf752); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Service.staticClass, global::android.app.Service._stopSelf752); 
@@ -107,7 +107,7 @@ namespace android.app
 		public virtual void stopSelf(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Service)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.Service._stopSelf753, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Service.staticClass, global::android.app.Service._stopSelf753, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -116,7 +116,7 @@ namespace android.app
 		public virtual bool stopSelfResult(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Service)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.app.Service._stopSelfResult754, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.app.Service.staticClass, global::android.app.Service._stopSelfResult754, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -125,7 +125,7 @@ namespace android.app
 		public virtual void setForeground(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Service)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.Service._setForeground755, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Service.staticClass, global::android.app.Service._setForeground755, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -134,7 +134,7 @@ namespace android.app
 		public virtual void startForeground(int arg0, android.app.Notification arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Service)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.Service._startForeground756, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Service.staticClass, global::android.app.Service._startForeground756, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -143,7 +143,7 @@ namespace android.app
 		public virtual void stopForeground(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Service)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.Service._stopForeground757, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Service.staticClass, global::android.app.Service._stopForeground757, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -152,7 +152,7 @@ namespace android.app
 		protected virtual void dump(java.io.FileDescriptor arg0, java.io.PrintWriter arg1, java.lang.String[] arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Service)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.Service._dump758, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Service.staticClass, global::android.app.Service._dump758, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)); 

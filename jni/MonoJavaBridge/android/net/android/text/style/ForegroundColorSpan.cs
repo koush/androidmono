@@ -22,7 +22,7 @@ namespace android.text.style
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.ForegroundColorSpan)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.style.ForegroundColorSpan._writeToParcel7328, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.ForegroundColorSpan.staticClass, global::android.text.style.ForegroundColorSpan._writeToParcel7328, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -31,7 +31,7 @@ namespace android.text.style
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.ForegroundColorSpan)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.style.ForegroundColorSpan._describeContents7329); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.ForegroundColorSpan.staticClass, global::android.text.style.ForegroundColorSpan._describeContents7329); 
@@ -40,7 +40,7 @@ namespace android.text.style
 		public virtual int getSpanTypeId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.ForegroundColorSpan)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.style.ForegroundColorSpan._getSpanTypeId7330); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.ForegroundColorSpan.staticClass, global::android.text.style.ForegroundColorSpan._getSpanTypeId7330); 
@@ -49,7 +49,7 @@ namespace android.text.style
 		public override void updateDrawState(android.text.TextPaint arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.ForegroundColorSpan)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.style.ForegroundColorSpan._updateDrawState7331, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.ForegroundColorSpan.staticClass, global::android.text.style.ForegroundColorSpan._updateDrawState7331, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.text.style
 		public virtual int getForegroundColor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.ForegroundColorSpan)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.style.ForegroundColorSpan._getForegroundColor7332); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.ForegroundColorSpan.staticClass, global::android.text.style.ForegroundColorSpan._getForegroundColor7332); 

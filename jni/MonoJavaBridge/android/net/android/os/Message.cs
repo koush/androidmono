@@ -22,7 +22,7 @@ namespace android.os
 		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Message)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Message._toString5648)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Message.staticClass, global::android.os.Message._toString5648)); 
@@ -31,7 +31,7 @@ namespace android.os
 		public global::android.os.Bundle getData() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Message)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Message._getData5649)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Message.staticClass, global::android.os.Message._getData5649)); 
@@ -88,7 +88,7 @@ namespace android.os
 		public void recycle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Message)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Message._recycle5658); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Message.staticClass, global::android.os.Message._recycle5658); 
@@ -97,7 +97,7 @@ namespace android.os
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Message)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Message._writeToParcel5659, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Message.staticClass, global::android.os.Message._writeToParcel5659, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -106,7 +106,7 @@ namespace android.os
 		public int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Message)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.os.Message._describeContents5660); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.os.Message.staticClass, global::android.os.Message._describeContents5660); 
@@ -115,7 +115,7 @@ namespace android.os
 		public void setData(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Message)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Message._setData5661, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Message.staticClass, global::android.os.Message._setData5661, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -124,7 +124,7 @@ namespace android.os
 		public global::java.lang.Runnable getCallback() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Message)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Runnable>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Message._getCallback5662)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Runnable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Message.staticClass, global::android.os.Message._getCallback5662)); 
@@ -133,7 +133,7 @@ namespace android.os
 		public void copyFrom(android.os.Message arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Message)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Message._copyFrom5663, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Message.staticClass, global::android.os.Message._copyFrom5663, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -142,7 +142,7 @@ namespace android.os
 		public long getWhen() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Message)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.os.Message._getWhen5664); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.os.Message.staticClass, global::android.os.Message._getWhen5664); 
@@ -151,7 +151,7 @@ namespace android.os
 		public void setTarget(android.os.Handler arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Message)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Message._setTarget5665, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Message.staticClass, global::android.os.Message._setTarget5665, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -160,7 +160,7 @@ namespace android.os
 		public global::android.os.Handler getTarget() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Message)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Handler>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Message._getTarget5666)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Handler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Message.staticClass, global::android.os.Message._getTarget5666)); 
@@ -169,7 +169,7 @@ namespace android.os
 		public global::android.os.Bundle peekData() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Message)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Message._peekData5667)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Message.staticClass, global::android.os.Message._peekData5667)); 
@@ -178,7 +178,7 @@ namespace android.os
 		public void sendToTarget() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Message)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Message._sendToTarget5668); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Message.staticClass, global::android.os.Message._sendToTarget5668); 

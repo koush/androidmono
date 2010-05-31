@@ -37,7 +37,7 @@ namespace android.view
 		 global::android.view.Display android.view.WindowManager.getDefaultDisplay() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__WindowManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.Display>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__WindowManager._getDefaultDisplay8783)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.Display>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__WindowManager.staticClass, global::android.view.__WindowManager._getDefaultDisplay8783)); 
@@ -46,7 +46,7 @@ namespace android.view
 		 void android.view.WindowManager.removeViewImmediate(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__WindowManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__WindowManager._removeViewImmediate8784, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__WindowManager.staticClass, global::android.view.__WindowManager._removeViewImmediate8784, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -55,7 +55,7 @@ namespace android.view
 		 void android.view.ViewManager.addView(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__WindowManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__WindowManager._addView8785, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__WindowManager.staticClass, global::android.view.__WindowManager._addView8785, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -64,7 +64,7 @@ namespace android.view
 		 void android.view.ViewManager.updateViewLayout(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__WindowManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__WindowManager._updateViewLayout8786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__WindowManager.staticClass, global::android.view.__WindowManager._updateViewLayout8786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -73,7 +73,7 @@ namespace android.view
 		 void android.view.ViewManager.removeView(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__WindowManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__WindowManager._removeView8787, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__WindowManager.staticClass, global::android.view.__WindowManager._removeView8787, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

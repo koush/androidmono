@@ -22,7 +22,7 @@ namespace android.content
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentProviderResult)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ContentProviderResult._toString1036)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ContentProviderResult.staticClass, global::android.content.ContentProviderResult._toString1036)); 
@@ -31,7 +31,7 @@ namespace android.content
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentProviderResult)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.ContentProviderResult._writeToParcel1037, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentProviderResult.staticClass, global::android.content.ContentProviderResult._writeToParcel1037, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -40,7 +40,7 @@ namespace android.content
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentProviderResult)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.ContentProviderResult._describeContents1038); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.ContentProviderResult.staticClass, global::android.content.ContentProviderResult._describeContents1038); 

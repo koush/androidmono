@@ -36,7 +36,7 @@ namespace java.security
 		 void java.security.Guard.checkGuard(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.__Guard)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.security.__Guard._checkGuard12436, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.security.__Guard.staticClass, global::java.security.__Guard._checkGuard12436, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

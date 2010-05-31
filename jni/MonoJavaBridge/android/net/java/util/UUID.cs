@@ -22,7 +22,7 @@ namespace java.util
 		public sealed override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.UUID)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.UUID._hashCode13017); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._hashCode13017); 
@@ -31,7 +31,7 @@ namespace java.util
 		public sealed override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.UUID)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.UUID._equals13018, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._equals13018, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace java.util
 		public int compareTo(java.util.UUID arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.UUID)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.UUID._compareTo13019, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._compareTo13019, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -49,7 +49,7 @@ namespace java.util
 		public int compareTo(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.UUID)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.UUID._compareTo13020, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._compareTo13020, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -58,7 +58,7 @@ namespace java.util
 		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.UUID)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.UUID._toString13021)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.UUID.staticClass, global::java.util.UUID._toString13021)); 
@@ -67,7 +67,7 @@ namespace java.util
 		public long timestamp() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.UUID)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.util.UUID._timestamp13022); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._timestamp13022); 
@@ -76,7 +76,7 @@ namespace java.util
 		public int variant() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.UUID)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.UUID._variant13023); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._variant13023); 
@@ -85,7 +85,7 @@ namespace java.util
 		public int version() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.UUID)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.UUID._version13024); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._version13024); 
@@ -94,7 +94,7 @@ namespace java.util
 		public long node() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.UUID)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.util.UUID._node13025); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._node13025); 
@@ -121,7 +121,7 @@ namespace java.util
 		public long getLeastSignificantBits() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.UUID)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.util.UUID._getLeastSignificantBits13029); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._getLeastSignificantBits13029); 
@@ -130,7 +130,7 @@ namespace java.util
 		public long getMostSignificantBits() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.UUID)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.util.UUID._getMostSignificantBits13030); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._getMostSignificantBits13030); 
@@ -139,7 +139,7 @@ namespace java.util
 		public int clockSequence() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.UUID)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.UUID._clockSequence13031); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._clockSequence13031); 

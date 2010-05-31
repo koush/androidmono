@@ -48,7 +48,7 @@ namespace android.view
 		 void android.view.SurfaceHolder.setType(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__SurfaceHolder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__SurfaceHolder._setType8057, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SurfaceHolder.staticClass, global::android.view.__SurfaceHolder._setType8057, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -57,7 +57,7 @@ namespace android.view
 		 void android.view.SurfaceHolder.setFormat(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__SurfaceHolder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__SurfaceHolder._setFormat8058, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SurfaceHolder.staticClass, global::android.view.__SurfaceHolder._setFormat8058, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -66,7 +66,7 @@ namespace android.view
 		 void android.view.SurfaceHolder.setKeepScreenOn(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__SurfaceHolder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__SurfaceHolder._setKeepScreenOn8059, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SurfaceHolder.staticClass, global::android.view.__SurfaceHolder._setKeepScreenOn8059, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -75,7 +75,7 @@ namespace android.view
 		 void android.view.SurfaceHolder.addCallback(android.view.SurfaceHolder_Callback arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__SurfaceHolder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__SurfaceHolder._addCallback8060, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SurfaceHolder.staticClass, global::android.view.__SurfaceHolder._addCallback8060, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -84,7 +84,7 @@ namespace android.view
 		 void android.view.SurfaceHolder.removeCallback(android.view.SurfaceHolder_Callback arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__SurfaceHolder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__SurfaceHolder._removeCallback8061, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SurfaceHolder.staticClass, global::android.view.__SurfaceHolder._removeCallback8061, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -93,7 +93,7 @@ namespace android.view
 		 bool android.view.SurfaceHolder.isCreating() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__SurfaceHolder)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.__SurfaceHolder._isCreating8062); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__SurfaceHolder.staticClass, global::android.view.__SurfaceHolder._isCreating8062); 
@@ -102,7 +102,7 @@ namespace android.view
 		 void android.view.SurfaceHolder.setFixedSize(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__SurfaceHolder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__SurfaceHolder._setFixedSize8063, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SurfaceHolder.staticClass, global::android.view.__SurfaceHolder._setFixedSize8063, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -111,7 +111,7 @@ namespace android.view
 		 void android.view.SurfaceHolder.setSizeFromLayout() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__SurfaceHolder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__SurfaceHolder._setSizeFromLayout8064); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SurfaceHolder.staticClass, global::android.view.__SurfaceHolder._setSizeFromLayout8064); 
@@ -120,7 +120,7 @@ namespace android.view
 		 global::android.graphics.Canvas android.view.SurfaceHolder.lockCanvas() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__SurfaceHolder)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Canvas>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SurfaceHolder._lockCanvas8065)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Canvas>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SurfaceHolder.staticClass, global::android.view.__SurfaceHolder._lockCanvas8065)); 
@@ -129,7 +129,7 @@ namespace android.view
 		 global::android.graphics.Canvas android.view.SurfaceHolder.lockCanvas(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__SurfaceHolder)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Canvas>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SurfaceHolder._lockCanvas8066, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Canvas>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SurfaceHolder.staticClass, global::android.view.__SurfaceHolder._lockCanvas8066, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -138,7 +138,7 @@ namespace android.view
 		 void android.view.SurfaceHolder.unlockCanvasAndPost(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__SurfaceHolder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__SurfaceHolder._unlockCanvasAndPost8067, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__SurfaceHolder.staticClass, global::android.view.__SurfaceHolder._unlockCanvasAndPost8067, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -147,7 +147,7 @@ namespace android.view
 		 global::android.graphics.Rect android.view.SurfaceHolder.getSurfaceFrame() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__SurfaceHolder)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SurfaceHolder._getSurfaceFrame8068)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SurfaceHolder.staticClass, global::android.view.__SurfaceHolder._getSurfaceFrame8068)); 
@@ -156,7 +156,7 @@ namespace android.view
 		 global::android.view.Surface android.view.SurfaceHolder.getSurface() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__SurfaceHolder)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.Surface>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__SurfaceHolder._getSurface8069)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.Surface>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__SurfaceHolder.staticClass, global::android.view.__SurfaceHolder._getSurface8069)); 

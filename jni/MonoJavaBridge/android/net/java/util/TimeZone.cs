@@ -15,7 +15,7 @@ namespace java.util
 		public virtual global::java.lang.Object clone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.TimeZone)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.TimeZone._clone12996)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._clone12996)); 
@@ -30,7 +30,7 @@ namespace java.util
 		public virtual int getOffset(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.TimeZone)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.TimeZone._getOffset12998, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getOffset12998, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -47,7 +47,7 @@ namespace java.util
 		public virtual global::java.lang.String getDisplayName(bool arg0, int arg1, java.util.Locale arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.TimeZone)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.TimeZone._getDisplayName13001, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDisplayName13001, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
@@ -56,7 +56,7 @@ namespace java.util
 		public virtual global::java.lang.String getDisplayName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.TimeZone)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.TimeZone._getDisplayName13002)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDisplayName13002)); 
@@ -65,7 +65,7 @@ namespace java.util
 		public virtual global::java.lang.String getDisplayName(java.util.Locale arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.TimeZone)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.TimeZone._getDisplayName13003, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDisplayName13003, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -74,7 +74,7 @@ namespace java.util
 		public virtual global::java.lang.String getDisplayName(bool arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.TimeZone)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.TimeZone._getDisplayName13004, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDisplayName13004, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -91,7 +91,7 @@ namespace java.util
 		public virtual global::java.lang.String getID() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.TimeZone)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.TimeZone._getID13007)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getID13007)); 
@@ -100,7 +100,7 @@ namespace java.util
 		public virtual bool hasSameRules(java.util.TimeZone arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.TimeZone)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.TimeZone._hasSameRules13008, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._hasSameRules13008, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -111,7 +111,7 @@ namespace java.util
 		public virtual void setID(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.TimeZone)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.TimeZone._setID13010, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._setID13010, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -120,7 +120,7 @@ namespace java.util
 		public virtual int getDSTSavings() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.TimeZone)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.TimeZone._getDSTSavings13011); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.TimeZone.staticClass, global::java.util.TimeZone._getDSTSavings13011); 

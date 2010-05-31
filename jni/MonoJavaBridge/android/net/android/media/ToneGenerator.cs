@@ -22,7 +22,7 @@ namespace android.media
 		public virtual void release() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.ToneGenerator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.ToneGenerator._release4607); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._release4607); 
@@ -31,7 +31,7 @@ namespace android.media
 		public virtual bool startTone(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.ToneGenerator)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.ToneGenerator._startTone4608, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._startTone4608, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -40,7 +40,7 @@ namespace android.media
 		public virtual bool startTone(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.ToneGenerator)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.ToneGenerator._startTone4609, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._startTone4609, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -49,7 +49,7 @@ namespace android.media
 		public virtual void stopTone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.ToneGenerator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.ToneGenerator._stopTone4610); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.ToneGenerator.staticClass, global::android.media.ToneGenerator._stopTone4610); 

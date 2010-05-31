@@ -40,7 +40,7 @@ namespace android.os
 			public virtual bool resetAndStart() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.Debug.InstructionCount)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.os.Debug.InstructionCount._resetAndStart5486); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._resetAndStart5486); 
@@ -49,7 +49,7 @@ namespace android.os
 			public virtual bool collect() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.Debug.InstructionCount)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.os.Debug.InstructionCount._collect5487); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._collect5487); 
@@ -58,7 +58,7 @@ namespace android.os
 			public virtual int globalTotal() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.Debug.InstructionCount)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.os.Debug.InstructionCount._globalTotal5488); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._globalTotal5488); 
@@ -67,7 +67,7 @@ namespace android.os
 			public virtual int globalMethodInvocations() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.Debug.InstructionCount)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.os.Debug.InstructionCount._globalMethodInvocations5489); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.os.Debug.InstructionCount.staticClass, global::android.os.Debug.InstructionCount._globalMethodInvocations5489); 
@@ -110,7 +110,7 @@ namespace android.os
 			public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.Debug.MemoryInfo)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.os.Debug.MemoryInfo._writeToParcel5491, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._writeToParcel5491, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -119,7 +119,7 @@ namespace android.os
 			public virtual int describeContents() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.Debug.MemoryInfo)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.os.Debug.MemoryInfo._describeContents5492); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._describeContents5492); 
@@ -128,7 +128,7 @@ namespace android.os
 			public virtual void readFromParcel(android.os.Parcel arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.Debug.MemoryInfo)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.os.Debug.MemoryInfo._readFromParcel5493, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._readFromParcel5493, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -137,7 +137,7 @@ namespace android.os
 			public virtual int getTotalPss() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.Debug.MemoryInfo)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.os.Debug.MemoryInfo._getTotalPss5494); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._getTotalPss5494); 
@@ -146,7 +146,7 @@ namespace android.os
 			public virtual int getTotalPrivateDirty() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.Debug.MemoryInfo)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.os.Debug.MemoryInfo._getTotalPrivateDirty5495); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._getTotalPrivateDirty5495); 
@@ -155,7 +155,7 @@ namespace android.os
 			public virtual int getTotalSharedDirty() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.Debug.MemoryInfo)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.os.Debug.MemoryInfo._getTotalSharedDirty5496); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.os.Debug.MemoryInfo.staticClass, global::android.os.Debug.MemoryInfo._getTotalSharedDirty5496); 

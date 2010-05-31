@@ -27,7 +27,7 @@ namespace android.text.method
 		internal static global::net.sf.jni4net.jni.MethodId _getOriginal7153; 
 		protected override char[] getOriginal() 
 		{ 
-			if (GetType() == typeof(android.text.method.HideReturnsTransformationMethod)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.text.method.HideReturnsTransformationMethod._getOriginal7153)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.method.HideReturnsTransformationMethod.staticClass, global::android.text.method.HideReturnsTransformationMethod._getOriginal7153)); 
@@ -35,7 +35,7 @@ namespace android.text.method
 		internal static global::net.sf.jni4net.jni.MethodId _getReplacement7154; 
 		protected override char[] getReplacement() 
 		{ 
-			if (GetType() == typeof(android.text.method.HideReturnsTransformationMethod)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.text.method.HideReturnsTransformationMethod._getReplacement7154)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.method.HideReturnsTransformationMethod.staticClass, global::android.text.method.HideReturnsTransformationMethod._getReplacement7154)); 

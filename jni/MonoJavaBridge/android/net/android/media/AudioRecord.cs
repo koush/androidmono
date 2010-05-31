@@ -55,7 +55,7 @@ namespace android.media
 			 void android.media.AudioRecord.OnRecordPositionUpdateListener.onMarkerReached(android.media.AudioRecord arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.AudioRecord.__OnRecordPositionUpdateListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.media.AudioRecord.__OnRecordPositionUpdateListener._onMarkerReached4395, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioRecord.__OnRecordPositionUpdateListener.staticClass, global::android.media.AudioRecord.__OnRecordPositionUpdateListener._onMarkerReached4395, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -64,7 +64,7 @@ namespace android.media
 			 void android.media.AudioRecord.OnRecordPositionUpdateListener.onPeriodicNotification(android.media.AudioRecord arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.AudioRecord.__OnRecordPositionUpdateListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.media.AudioRecord.__OnRecordPositionUpdateListener._onPeriodicNotification4396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioRecord.__OnRecordPositionUpdateListener.staticClass, global::android.media.AudioRecord.__OnRecordPositionUpdateListener._onPeriodicNotification4396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -80,7 +80,7 @@ namespace android.media
 		public virtual void stop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.AudioRecord._stop4397); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._stop4397); 
@@ -89,7 +89,7 @@ namespace android.media
 		public virtual int getState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getState4398); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getState4398); 
@@ -98,7 +98,7 @@ namespace android.media
 		public virtual int read(byte[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.AudioRecord._read4399, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._read4399, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -107,7 +107,7 @@ namespace android.media
 		public virtual int read(java.nio.ByteBuffer arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.AudioRecord._read4400, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._read4400, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -116,7 +116,7 @@ namespace android.media
 		public virtual int read(short[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.AudioRecord._read4401, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._read4401, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -125,7 +125,7 @@ namespace android.media
 		public virtual void release() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.AudioRecord._release4402); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._release4402); 
@@ -134,7 +134,7 @@ namespace android.media
 		public virtual int getSampleRate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getSampleRate4403); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getSampleRate4403); 
@@ -143,7 +143,7 @@ namespace android.media
 		public virtual int getAudioSource() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getAudioSource4404); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getAudioSource4404); 
@@ -152,7 +152,7 @@ namespace android.media
 		public virtual int getAudioFormat() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getAudioFormat4405); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getAudioFormat4405); 
@@ -161,7 +161,7 @@ namespace android.media
 		public virtual int getChannelConfiguration() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getChannelConfiguration4406); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getChannelConfiguration4406); 
@@ -170,7 +170,7 @@ namespace android.media
 		public virtual int getChannelCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getChannelCount4407); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getChannelCount4407); 
@@ -179,7 +179,7 @@ namespace android.media
 		public virtual int getRecordingState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getRecordingState4408); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getRecordingState4408); 
@@ -188,7 +188,7 @@ namespace android.media
 		public virtual int getNotificationMarkerPosition() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getNotificationMarkerPosition4409); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getNotificationMarkerPosition4409); 
@@ -197,7 +197,7 @@ namespace android.media
 		public virtual int getPositionNotificationPeriod() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.AudioRecord._getPositionNotificationPeriod4410); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._getPositionNotificationPeriod4410); 
@@ -212,7 +212,7 @@ namespace android.media
 		public virtual void startRecording() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.AudioRecord._startRecording4412); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._startRecording4412); 
@@ -221,7 +221,7 @@ namespace android.media
 		public virtual void setRecordPositionUpdateListener(android.media.AudioRecord.OnRecordPositionUpdateListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.AudioRecord._setRecordPositionUpdateListener4413, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._setRecordPositionUpdateListener4413, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -230,7 +230,7 @@ namespace android.media
 		public virtual void setRecordPositionUpdateListener(android.media.AudioRecord.OnRecordPositionUpdateListener arg0, android.os.Handler arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.AudioRecord._setRecordPositionUpdateListener4414, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._setRecordPositionUpdateListener4414, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -239,7 +239,7 @@ namespace android.media
 		public virtual int setNotificationMarkerPosition(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.AudioRecord._setNotificationMarkerPosition4415, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._setNotificationMarkerPosition4415, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -248,7 +248,7 @@ namespace android.media
 		public virtual int setPositionNotificationPeriod(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AudioRecord)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.AudioRecord._setPositionNotificationPeriod4416, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.AudioRecord.staticClass, global::android.media.AudioRecord._setPositionNotificationPeriod4416, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

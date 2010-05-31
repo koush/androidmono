@@ -33,7 +33,7 @@ namespace android.database
 			public override bool deliverSelfNotifications() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.AbstractCursor.SelfContentObserver)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.database.AbstractCursor.SelfContentObserver._deliverSelfNotifications2094); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractCursor.SelfContentObserver.staticClass, global::android.database.AbstractCursor.SelfContentObserver._deliverSelfNotifications2094); 
@@ -42,7 +42,7 @@ namespace android.database
 			public override void onChange(bool arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.AbstractCursor.SelfContentObserver)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.database.AbstractCursor.SelfContentObserver._onChange2095, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.database.AbstractCursor.SelfContentObserver.staticClass, global::android.database.AbstractCursor.SelfContentObserver._onChange2095, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -75,7 +75,7 @@ namespace android.database
 		public virtual void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.AbstractCursor._close2102); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._close2102); 
@@ -86,7 +86,7 @@ namespace android.database
 		public virtual bool isFirst() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.AbstractCursor._isFirst2104); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._isFirst2104); 
@@ -95,7 +95,7 @@ namespace android.database
 		public virtual bool isClosed() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.AbstractCursor._isClosed2105); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._isClosed2105); 
@@ -104,7 +104,7 @@ namespace android.database
 		public virtual int getPosition() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.database.AbstractCursor._getPosition2106); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._getPosition2106); 
@@ -113,7 +113,7 @@ namespace android.database
 		public virtual global::android.os.Bundle getExtras() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.AbstractCursor._getExtras2107)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._getExtras2107)); 
@@ -122,7 +122,7 @@ namespace android.database
 		public virtual void registerContentObserver(android.database.ContentObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.AbstractCursor._registerContentObserver2108, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._registerContentObserver2108, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -131,7 +131,7 @@ namespace android.database
 		public virtual void unregisterContentObserver(android.database.ContentObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.AbstractCursor._unregisterContentObserver2109, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._unregisterContentObserver2109, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -140,7 +140,7 @@ namespace android.database
 		public virtual global::android.database.CursorWindow getWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.database.CursorWindow>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.AbstractCursor._getWindow2110)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.database.CursorWindow>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._getWindow2110)); 
@@ -151,7 +151,7 @@ namespace android.database
 		public virtual bool move(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.AbstractCursor._move2112, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._move2112, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -160,7 +160,7 @@ namespace android.database
 		public virtual bool moveToPosition(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.AbstractCursor._moveToPosition2113, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._moveToPosition2113, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -169,7 +169,7 @@ namespace android.database
 		public virtual bool moveToFirst() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.AbstractCursor._moveToFirst2114); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._moveToFirst2114); 
@@ -178,7 +178,7 @@ namespace android.database
 		public virtual bool moveToLast() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.AbstractCursor._moveToLast2115); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._moveToLast2115); 
@@ -187,7 +187,7 @@ namespace android.database
 		public virtual bool moveToNext() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.AbstractCursor._moveToNext2116); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._moveToNext2116); 
@@ -196,7 +196,7 @@ namespace android.database
 		public virtual bool moveToPrevious() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.AbstractCursor._moveToPrevious2117); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._moveToPrevious2117); 
@@ -205,7 +205,7 @@ namespace android.database
 		public virtual bool isLast() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.AbstractCursor._isLast2118); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._isLast2118); 
@@ -214,7 +214,7 @@ namespace android.database
 		public virtual bool isBeforeFirst() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.AbstractCursor._isBeforeFirst2119); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._isBeforeFirst2119); 
@@ -223,7 +223,7 @@ namespace android.database
 		public virtual bool isAfterLast() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.AbstractCursor._isAfterLast2120); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._isAfterLast2120); 
@@ -232,7 +232,7 @@ namespace android.database
 		public virtual int getColumnIndex(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.database.AbstractCursor._getColumnIndex2121, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._getColumnIndex2121, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -241,7 +241,7 @@ namespace android.database
 		public virtual int getColumnIndexOrThrow(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.database.AbstractCursor._getColumnIndexOrThrow2122, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._getColumnIndexOrThrow2122, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -250,7 +250,7 @@ namespace android.database
 		public virtual global::java.lang.String getColumnName(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.AbstractCursor._getColumnName2123, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._getColumnName2123, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -261,7 +261,7 @@ namespace android.database
 		public virtual int getColumnCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.database.AbstractCursor._getColumnCount2125); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._getColumnCount2125); 
@@ -269,7 +269,7 @@ namespace android.database
 		internal static global::net.sf.jni4net.jni.MethodId _getBlob2126; 
 		public virtual byte[] getBlob(int arg0) 
 		{ 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.database.AbstractCursor._getBlob2126, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._getBlob2126, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -278,7 +278,7 @@ namespace android.database
 		public virtual void copyStringToBuffer(int arg0, android.database.CharArrayBuffer arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.AbstractCursor._copyStringToBuffer2127, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._copyStringToBuffer2127, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -289,7 +289,7 @@ namespace android.database
 		public virtual void deactivate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.AbstractCursor._deactivate2129); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._deactivate2129); 
@@ -298,7 +298,7 @@ namespace android.database
 		public virtual bool requery() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.AbstractCursor._requery2130); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._requery2130); 
@@ -307,7 +307,7 @@ namespace android.database
 		public virtual void registerDataSetObserver(android.database.DataSetObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.AbstractCursor._registerDataSetObserver2131, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._registerDataSetObserver2131, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -316,7 +316,7 @@ namespace android.database
 		public virtual void unregisterDataSetObserver(android.database.DataSetObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.AbstractCursor._unregisterDataSetObserver2132, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._unregisterDataSetObserver2132, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -325,7 +325,7 @@ namespace android.database
 		public virtual void setNotificationUri(android.content.ContentResolver arg0, android.net.Uri arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.AbstractCursor._setNotificationUri2133, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._setNotificationUri2133, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -334,7 +334,7 @@ namespace android.database
 		public virtual bool getWantsAllOnMoveCalls() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.AbstractCursor._getWantsAllOnMoveCalls2134); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._getWantsAllOnMoveCalls2134); 
@@ -343,7 +343,7 @@ namespace android.database
 		public virtual global::android.os.Bundle respond(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.AbstractCursor._respond2135, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._respond2135, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -352,7 +352,7 @@ namespace android.database
 		protected virtual void onChange(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.AbstractCursor._onChange2136, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._onChange2136, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -361,7 +361,7 @@ namespace android.database
 		public virtual bool onMove(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.AbstractCursor._onMove2137, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._onMove2137, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -370,7 +370,7 @@ namespace android.database
 		public virtual void fillWindow(int arg0, android.database.CursorWindow arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.AbstractCursor._fillWindow2138, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._fillWindow2138, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -379,7 +379,7 @@ namespace android.database
 		protected virtual bool isFieldUpdated(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.AbstractCursor._isFieldUpdated2139, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._isFieldUpdated2139, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -388,7 +388,7 @@ namespace android.database
 		protected virtual global::java.lang.Object getUpdatedField(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.AbstractCursor._getUpdatedField2140, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._getUpdatedField2140, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -397,7 +397,7 @@ namespace android.database
 		protected virtual void checkPosition() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.AbstractCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.AbstractCursor._checkPosition2141); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.AbstractCursor.staticClass, global::android.database.AbstractCursor._checkPosition2141); 

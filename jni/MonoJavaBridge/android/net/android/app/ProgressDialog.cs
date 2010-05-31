@@ -22,7 +22,7 @@ namespace android.app
 		protected override void onCreate(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.ProgressDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.ProgressDialog._onCreate710, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._onCreate710, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -31,7 +31,7 @@ namespace android.app
 		public virtual new void onStart() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.ProgressDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.ProgressDialog._onStart711); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._onStart711); 
@@ -40,7 +40,7 @@ namespace android.app
 		protected override void onStop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.ProgressDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.ProgressDialog._onStop712); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._onStop712); 
@@ -49,7 +49,7 @@ namespace android.app
 		public virtual void setProgress(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.ProgressDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.ProgressDialog._setProgress713, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._setProgress713, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.app
 		public virtual void setSecondaryProgress(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.ProgressDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.ProgressDialog._setSecondaryProgress714, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._setSecondaryProgress714, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -91,7 +91,7 @@ namespace android.app
 		public override void setMessage(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.ProgressDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.ProgressDialog._setMessage719, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._setMessage719, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -100,7 +100,7 @@ namespace android.app
 		public virtual int getProgress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.ProgressDialog)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.app.ProgressDialog._getProgress720); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._getProgress720); 
@@ -109,7 +109,7 @@ namespace android.app
 		public virtual int getSecondaryProgress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.ProgressDialog)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.app.ProgressDialog._getSecondaryProgress721); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._getSecondaryProgress721); 
@@ -118,7 +118,7 @@ namespace android.app
 		public virtual int getMax() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.ProgressDialog)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.app.ProgressDialog._getMax722); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._getMax722); 
@@ -127,7 +127,7 @@ namespace android.app
 		public virtual void setMax(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.ProgressDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.ProgressDialog._setMax723, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._setMax723, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -136,7 +136,7 @@ namespace android.app
 		public virtual void incrementProgressBy(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.ProgressDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.ProgressDialog._incrementProgressBy724, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._incrementProgressBy724, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -145,7 +145,7 @@ namespace android.app
 		public virtual void incrementSecondaryProgressBy(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.ProgressDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.ProgressDialog._incrementSecondaryProgressBy725, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._incrementSecondaryProgressBy725, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -154,7 +154,7 @@ namespace android.app
 		public virtual void setProgressDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.ProgressDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.ProgressDialog._setProgressDrawable726, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._setProgressDrawable726, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -163,7 +163,7 @@ namespace android.app
 		public virtual void setIndeterminateDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.ProgressDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.ProgressDialog._setIndeterminateDrawable727, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._setIndeterminateDrawable727, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -172,7 +172,7 @@ namespace android.app
 		public virtual void setIndeterminate(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.ProgressDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.ProgressDialog._setIndeterminate728, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._setIndeterminate728, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -181,7 +181,7 @@ namespace android.app
 		public virtual bool isIndeterminate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.ProgressDialog)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.app.ProgressDialog._isIndeterminate729); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._isIndeterminate729); 
@@ -190,7 +190,7 @@ namespace android.app
 		public virtual void setProgressStyle(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.ProgressDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.ProgressDialog._setProgressStyle730, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._setProgressStyle730, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

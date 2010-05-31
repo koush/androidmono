@@ -22,7 +22,7 @@ namespace android.app
 		public virtual void notify(int arg0, android.app.Notification arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.NotificationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.NotificationManager._notify682, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.NotificationManager.staticClass, global::android.app.NotificationManager._notify682, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -31,7 +31,7 @@ namespace android.app
 		public virtual void notify(java.lang.String arg0, int arg1, android.app.Notification arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.NotificationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.NotificationManager._notify683, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.NotificationManager.staticClass, global::android.app.NotificationManager._notify683, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -40,7 +40,7 @@ namespace android.app
 		public virtual void cancel(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.NotificationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.NotificationManager._cancel684, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.NotificationManager.staticClass, global::android.app.NotificationManager._cancel684, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.app
 		public virtual void cancel(java.lang.String arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.NotificationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.NotificationManager._cancel685, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.NotificationManager.staticClass, global::android.app.NotificationManager._cancel685, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -58,7 +58,7 @@ namespace android.app
 		public virtual void cancelAll() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.NotificationManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.NotificationManager._cancelAll686); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.NotificationManager.staticClass, global::android.app.NotificationManager._cancelAll686); 

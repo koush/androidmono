@@ -33,7 +33,7 @@ namespace android.net
 			public sealed override global::java.lang.String toString() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.Uri.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri.Builder._toString4738)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._toString4738)); 
@@ -42,7 +42,7 @@ namespace android.net
 			public global::android.net.Uri.Builder path(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.Uri.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri.Builder._path4739, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._path4739, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -51,7 +51,7 @@ namespace android.net
 			public global::android.net.Uri.Builder query(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.Uri.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri.Builder._query4740, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._query4740, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -60,7 +60,7 @@ namespace android.net
 			public global::android.net.Uri.Builder authority(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.Uri.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri.Builder._authority4741, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._authority4741, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -69,7 +69,7 @@ namespace android.net
 			public global::android.net.Uri.Builder scheme(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.Uri.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri.Builder._scheme4742, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._scheme4742, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -78,7 +78,7 @@ namespace android.net
 			public global::android.net.Uri.Builder fragment(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.Uri.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri.Builder._fragment4743, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._fragment4743, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -87,7 +87,7 @@ namespace android.net
 			public global::android.net.Uri build() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.Uri.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri.Builder._build4744)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._build4744)); 
@@ -96,7 +96,7 @@ namespace android.net
 			public global::android.net.Uri.Builder opaquePart(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.Uri.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri.Builder._opaquePart4745, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._opaquePart4745, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -105,7 +105,7 @@ namespace android.net
 			public global::android.net.Uri.Builder encodedOpaquePart(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.Uri.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri.Builder._encodedOpaquePart4746, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._encodedOpaquePart4746, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -114,7 +114,7 @@ namespace android.net
 			public global::android.net.Uri.Builder encodedAuthority(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.Uri.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri.Builder._encodedAuthority4747, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._encodedAuthority4747, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -123,7 +123,7 @@ namespace android.net
 			public global::android.net.Uri.Builder encodedPath(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.Uri.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri.Builder._encodedPath4748, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._encodedPath4748, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -132,7 +132,7 @@ namespace android.net
 			public global::android.net.Uri.Builder appendPath(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.Uri.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri.Builder._appendPath4749, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._appendPath4749, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -141,7 +141,7 @@ namespace android.net
 			public global::android.net.Uri.Builder appendEncodedPath(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.Uri.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri.Builder._appendEncodedPath4750, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._appendEncodedPath4750, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -150,7 +150,7 @@ namespace android.net
 			public global::android.net.Uri.Builder encodedQuery(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.Uri.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri.Builder._encodedQuery4751, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._encodedQuery4751, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -159,7 +159,7 @@ namespace android.net
 			public global::android.net.Uri.Builder encodedFragment(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.Uri.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri.Builder._encodedFragment4752, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._encodedFragment4752, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -168,7 +168,7 @@ namespace android.net
 			public global::android.net.Uri.Builder appendQueryParameter(java.lang.String arg0, java.lang.String arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.Uri.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri.Builder._appendQueryParameter4753, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.Builder.staticClass, global::android.net.Uri.Builder._appendQueryParameter4753, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -209,7 +209,7 @@ namespace android.net
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.Uri)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.Uri._hashCode4757); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.Uri.staticClass, global::android.net.Uri._hashCode4757); 
@@ -218,7 +218,7 @@ namespace android.net
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.Uri)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.Uri._equals4758, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.Uri.staticClass, global::android.net.Uri._equals4758, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -227,7 +227,7 @@ namespace android.net
 		public virtual int compareTo(android.net.Uri arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.Uri)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.Uri._compareTo4759, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.Uri.staticClass, global::android.net.Uri._compareTo4759, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -236,7 +236,7 @@ namespace android.net
 		public virtual int compareTo(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.Uri)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.Uri._compareTo4760, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.Uri.staticClass, global::android.net.Uri._compareTo4760, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -265,7 +265,7 @@ namespace android.net
 		public virtual bool isAbsolute() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.Uri)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.Uri._isAbsolute4765); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.Uri.staticClass, global::android.net.Uri._isAbsolute4765); 
@@ -276,7 +276,7 @@ namespace android.net
 		public virtual bool isOpaque() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.Uri)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.Uri._isOpaque4767); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.Uri.staticClass, global::android.net.Uri._isOpaque4767); 
@@ -347,7 +347,7 @@ namespace android.net
 		public virtual global::java.util.List getQueryParameters(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.Uri)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri._getQueryParameters4791, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.staticClass, global::android.net.Uri._getQueryParameters4791, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -356,7 +356,7 @@ namespace android.net
 		public virtual global::java.lang.String getQueryParameter(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.Uri)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.Uri._getQueryParameter4792, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.Uri.staticClass, global::android.net.Uri._getQueryParameter4792, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 

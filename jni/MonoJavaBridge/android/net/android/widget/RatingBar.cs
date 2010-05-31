@@ -54,7 +54,7 @@ namespace android.widget
 			 void android.widget.RatingBar.OnRatingBarChangeListener.onRatingChanged(android.widget.RatingBar arg0, float arg1, bool arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.RatingBar.__OnRatingBarChangeListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.RatingBar.__OnRatingBarChangeListener._onRatingChanged10646, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.RatingBar.__OnRatingBarChangeListener.staticClass, global::android.widget.RatingBar.__OnRatingBarChangeListener._onRatingChanged10646, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -69,7 +69,7 @@ namespace android.widget
 		public virtual bool isIndicator() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RatingBar)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.RatingBar._isIndicator10647); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._isIndicator10647); 
@@ -78,7 +78,7 @@ namespace android.widget
 		protected override void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RatingBar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RatingBar._onMeasure10648, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._onMeasure10648, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -87,7 +87,7 @@ namespace android.widget
 		public override void setMax(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RatingBar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RatingBar._setMax10649, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._setMax10649, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -96,7 +96,7 @@ namespace android.widget
 		public virtual void setOnRatingBarChangeListener(android.widget.RatingBar.OnRatingBarChangeListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RatingBar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RatingBar._setOnRatingBarChangeListener10650, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._setOnRatingBarChangeListener10650, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -105,7 +105,7 @@ namespace android.widget
 		public virtual global::android.widget.RatingBar.OnRatingBarChangeListener getOnRatingBarChangeListener() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RatingBar)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.RatingBar.OnRatingBarChangeListener>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.RatingBar._getOnRatingBarChangeListener10651)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.RatingBar.OnRatingBarChangeListener>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._getOnRatingBarChangeListener10651)); 
@@ -114,7 +114,7 @@ namespace android.widget
 		public virtual void setIsIndicator(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RatingBar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RatingBar._setIsIndicator10652, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._setIsIndicator10652, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -123,7 +123,7 @@ namespace android.widget
 		public virtual void setNumStars(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RatingBar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RatingBar._setNumStars10653, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._setNumStars10653, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -132,7 +132,7 @@ namespace android.widget
 		public virtual int getNumStars() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RatingBar)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.RatingBar._getNumStars10654); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._getNumStars10654); 
@@ -141,7 +141,7 @@ namespace android.widget
 		public virtual void setRating(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RatingBar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RatingBar._setRating10655, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._setRating10655, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -150,7 +150,7 @@ namespace android.widget
 		public virtual float getRating() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RatingBar)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.widget.RatingBar._getRating10656); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._getRating10656); 
@@ -159,7 +159,7 @@ namespace android.widget
 		public virtual void setStepSize(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RatingBar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RatingBar._setStepSize10657, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._setStepSize10657, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -168,7 +168,7 @@ namespace android.widget
 		public virtual float getStepSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RatingBar)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.widget.RatingBar._getStepSize10658); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.widget.RatingBar.staticClass, global::android.widget.RatingBar._getStepSize10658); 

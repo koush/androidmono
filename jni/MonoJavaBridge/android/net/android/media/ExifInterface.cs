@@ -22,7 +22,7 @@ namespace android.media
 		public virtual global::java.lang.String getAttribute(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.ExifInterface)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.media.ExifInterface._getAttribute4454, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._getAttribute4454, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -31,7 +31,7 @@ namespace android.media
 		public virtual int getAttributeInt(java.lang.String arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.ExifInterface)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.ExifInterface._getAttributeInt4455, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._getAttributeInt4455, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -40,7 +40,7 @@ namespace android.media
 		public virtual void setAttribute(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.ExifInterface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.ExifInterface._setAttribute4456, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._setAttribute4456, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -49,7 +49,7 @@ namespace android.media
 		public virtual void saveAttributes() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.ExifInterface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.ExifInterface._saveAttributes4457); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._saveAttributes4457); 
@@ -58,7 +58,7 @@ namespace android.media
 		public virtual bool hasThumbnail() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.ExifInterface)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.ExifInterface._hasThumbnail4458); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._hasThumbnail4458); 
@@ -66,7 +66,7 @@ namespace android.media
 		internal static global::net.sf.jni4net.jni.MethodId _getThumbnail4459; 
 		public virtual byte[] getThumbnail() 
 		{ 
-			if (GetType() == typeof(android.media.ExifInterface)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.media.ExifInterface._getThumbnail4459)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._getThumbnail4459)); 
@@ -75,7 +75,7 @@ namespace android.media
 		public virtual bool getLatLong(float[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.ExifInterface)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.ExifInterface._getLatLong4460, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.ExifInterface.staticClass, global::android.media.ExifInterface._getLatLong4460, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 

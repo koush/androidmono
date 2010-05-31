@@ -22,7 +22,7 @@ namespace android.webkit
 		public virtual int getIndex(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.DateSorter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.webkit.DateSorter._getIndex9281, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._getIndex9281, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -31,7 +31,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getLabel(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.DateSorter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.DateSorter._getLabel9282, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._getLabel9282, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -40,7 +40,7 @@ namespace android.webkit
 		public virtual long getBoundary(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.DateSorter)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.webkit.DateSorter._getBoundary9283, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._getBoundary9283, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

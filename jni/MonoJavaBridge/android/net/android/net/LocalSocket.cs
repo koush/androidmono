@@ -22,7 +22,7 @@ namespace android.net
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.LocalSocket._toString4643)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._toString4643)); 
@@ -31,7 +31,7 @@ namespace android.net
 		public virtual void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.net.LocalSocket._close4644); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._close4644); 
@@ -40,7 +40,7 @@ namespace android.net
 		public virtual global::java.io.InputStream getInputStream() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.LocalSocket._getInputStream4645)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._getInputStream4645)); 
@@ -49,7 +49,7 @@ namespace android.net
 		public virtual void connect(android.net.LocalSocketAddress arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.net.LocalSocket._connect4646, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._connect4646, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -58,7 +58,7 @@ namespace android.net
 		public virtual void connect(android.net.LocalSocketAddress arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.net.LocalSocket._connect4647, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._connect4647, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.net
 		public virtual bool isClosed() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.LocalSocket._isClosed4648); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._isClosed4648); 
@@ -76,7 +76,7 @@ namespace android.net
 		public virtual global::java.io.OutputStream getOutputStream() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.OutputStream>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.LocalSocket._getOutputStream4649)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.OutputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._getOutputStream4649)); 
@@ -85,7 +85,7 @@ namespace android.net
 		public virtual global::java.io.FileDescriptor getFileDescriptor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.LocalSocket._getFileDescriptor4650)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._getFileDescriptor4650)); 
@@ -94,7 +94,7 @@ namespace android.net
 		public virtual void bind(android.net.LocalSocketAddress arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.net.LocalSocket._bind4651, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._bind4651, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -103,7 +103,7 @@ namespace android.net
 		public virtual bool isConnected() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.LocalSocket._isConnected4652); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._isConnected4652); 
@@ -112,7 +112,7 @@ namespace android.net
 		public virtual global::android.net.LocalSocketAddress getLocalSocketAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocketAddress>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.LocalSocket._getLocalSocketAddress4653)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocketAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._getLocalSocketAddress4653)); 
@@ -121,7 +121,7 @@ namespace android.net
 		public virtual void shutdownInput() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.net.LocalSocket._shutdownInput4654); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._shutdownInput4654); 
@@ -130,7 +130,7 @@ namespace android.net
 		public virtual void shutdownOutput() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.net.LocalSocket._shutdownOutput4655); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._shutdownOutput4655); 
@@ -139,7 +139,7 @@ namespace android.net
 		public virtual void setReceiveBufferSize(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.net.LocalSocket._setReceiveBufferSize4656, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._setReceiveBufferSize4656, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -148,7 +148,7 @@ namespace android.net
 		public virtual int getReceiveBufferSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.LocalSocket._getReceiveBufferSize4657); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._getReceiveBufferSize4657); 
@@ -157,7 +157,7 @@ namespace android.net
 		public virtual void setSoTimeout(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.net.LocalSocket._setSoTimeout4658, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._setSoTimeout4658, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -166,7 +166,7 @@ namespace android.net
 		public virtual int getSoTimeout() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.LocalSocket._getSoTimeout4659); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._getSoTimeout4659); 
@@ -175,7 +175,7 @@ namespace android.net
 		public virtual void setSendBufferSize(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.net.LocalSocket._setSendBufferSize4660, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._setSendBufferSize4660, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -184,7 +184,7 @@ namespace android.net
 		public virtual int getSendBufferSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.LocalSocket._getSendBufferSize4661); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._getSendBufferSize4661); 
@@ -193,7 +193,7 @@ namespace android.net
 		public virtual global::android.net.LocalSocketAddress getRemoteSocketAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocketAddress>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.LocalSocket._getRemoteSocketAddress4662)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocketAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._getRemoteSocketAddress4662)); 
@@ -202,7 +202,7 @@ namespace android.net
 		public virtual bool isBound() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.LocalSocket._isBound4663); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._isBound4663); 
@@ -211,7 +211,7 @@ namespace android.net
 		public virtual bool isOutputShutdown() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.LocalSocket._isOutputShutdown4664); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._isOutputShutdown4664); 
@@ -220,7 +220,7 @@ namespace android.net
 		public virtual bool isInputShutdown() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.LocalSocket._isInputShutdown4665); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._isInputShutdown4665); 
@@ -229,7 +229,7 @@ namespace android.net
 		public virtual void setFileDescriptorsForSend(java.io.FileDescriptor[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.net.LocalSocket._setFileDescriptorsForSend4666, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._setFileDescriptorsForSend4666, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
@@ -237,7 +237,7 @@ namespace android.net
 		internal static global::net.sf.jni4net.jni.MethodId _getAncillaryFileDescriptors4667; 
 		public virtual global::java.io.FileDescriptor[] getAncillaryFileDescriptors() 
 		{ 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.net.LocalSocket._getAncillaryFileDescriptors4667)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._getAncillaryFileDescriptors4667)); 
@@ -246,7 +246,7 @@ namespace android.net
 		public virtual global::android.net.Credentials getPeerCredentials() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalSocket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Credentials>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.LocalSocket._getPeerCredentials4668)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Credentials>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.LocalSocket.staticClass, global::android.net.LocalSocket._getPeerCredentials4668)); 

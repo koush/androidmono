@@ -22,7 +22,7 @@ namespace java.util
 		public override void add(int arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.ArrayList._add12708, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._add12708, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -31,7 +31,7 @@ namespace java.util
 		public override bool add(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.ArrayList._add12709, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._add12709, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace java.util
 		public override global::java.lang.Object get(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.ArrayList._get12710, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._get12710, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -49,7 +49,7 @@ namespace java.util
 		public virtual new global::java.lang.Object clone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.ArrayList._clone12711)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._clone12711)); 
@@ -58,7 +58,7 @@ namespace java.util
 		public override int indexOf(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.ArrayList._indexOf12712, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._indexOf12712, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -67,7 +67,7 @@ namespace java.util
 		public override void clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.ArrayList._clear12713); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._clear12713); 
@@ -76,7 +76,7 @@ namespace java.util
 		public override bool isEmpty() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.ArrayList._isEmpty12714); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._isEmpty12714); 
@@ -85,7 +85,7 @@ namespace java.util
 		public override int lastIndexOf(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.ArrayList._lastIndexOf12715, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._lastIndexOf12715, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -94,7 +94,7 @@ namespace java.util
 		public override bool contains(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.ArrayList._contains12716, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._contains12716, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -103,7 +103,7 @@ namespace java.util
 		public override bool addAll(java.util.Collection arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.ArrayList._addAll12717, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._addAll12717, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -112,7 +112,7 @@ namespace java.util
 		public override bool addAll(int arg0, java.util.Collection arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.ArrayList._addAll12718, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._addAll12718, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -121,7 +121,7 @@ namespace java.util
 		public override int size() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.ArrayList._size12719); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._size12719); 
@@ -129,7 +129,7 @@ namespace java.util
 		internal static global::net.sf.jni4net.jni.MethodId _toArray12720; 
 		public override global::java.lang.Object[] toArray(java.lang.Object[] arg0) 
 		{ 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.util.ArrayList._toArray12720, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._toArray12720, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0))); 
@@ -137,7 +137,7 @@ namespace java.util
 		internal static global::net.sf.jni4net.jni.MethodId _toArray12721; 
 		public override global::java.lang.Object[] toArray() 
 		{ 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.util.ArrayList._toArray12721)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._toArray12721)); 
@@ -146,7 +146,7 @@ namespace java.util
 		public override global::java.lang.Object set(int arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.ArrayList._set12722, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._set12722, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
@@ -155,7 +155,7 @@ namespace java.util
 		public override global::java.lang.Object remove(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.ArrayList._remove12723, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._remove12723, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -164,7 +164,7 @@ namespace java.util
 		public override bool remove(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.ArrayList._remove12724, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._remove12724, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -173,7 +173,7 @@ namespace java.util
 		public virtual void trimToSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.ArrayList._trimToSize12725); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._trimToSize12725); 
@@ -182,7 +182,7 @@ namespace java.util
 		public virtual void ensureCapacity(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.ArrayList._ensureCapacity12726, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._ensureCapacity12726, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -191,7 +191,7 @@ namespace java.util
 		protected override void removeRange(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.ArrayList)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.ArrayList._removeRange12727, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._removeRange12727, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 

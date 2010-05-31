@@ -17,7 +17,7 @@ namespace android.text.style
 		public override void updateDrawState(android.text.TextPaint arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.ClickableSpan)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.style.ClickableSpan._updateDrawState7315, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.ClickableSpan.staticClass, global::android.text.style.ClickableSpan._updateDrawState7315, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

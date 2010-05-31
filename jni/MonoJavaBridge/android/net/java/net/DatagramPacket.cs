@@ -22,7 +22,7 @@ namespace java.net
 		public int getLength() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.DatagramPacket)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.net.DatagramPacket._getLength11662); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._getLength11662); 
@@ -31,7 +31,7 @@ namespace java.net
 		public global::java.net.InetAddress getAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.DatagramPacket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.DatagramPacket._getAddress11663)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.InetAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._getAddress11663)); 
@@ -40,7 +40,7 @@ namespace java.net
 		public void setLength(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.DatagramPacket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.DatagramPacket._setLength11664, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._setLength11664, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -49,7 +49,7 @@ namespace java.net
 		public int getOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.DatagramPacket)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.net.DatagramPacket._getOffset11665); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._getOffset11665); 
@@ -58,7 +58,7 @@ namespace java.net
 		public int getPort() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.DatagramPacket)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.net.DatagramPacket._getPort11666); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._getPort11666); 
@@ -66,7 +66,7 @@ namespace java.net
 		internal static global::net.sf.jni4net.jni.MethodId _getData11667; 
 		public byte[] getData() 
 		{ 
-			if (GetType() == typeof(java.net.DatagramPacket)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.net.DatagramPacket._getData11667)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._getData11667)); 
@@ -75,7 +75,7 @@ namespace java.net
 		public void setData(byte[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.DatagramPacket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.DatagramPacket._setData11668, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._setData11668, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
@@ -84,7 +84,7 @@ namespace java.net
 		public void setData(byte[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.DatagramPacket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.DatagramPacket._setData11669, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._setData11669, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -93,7 +93,7 @@ namespace java.net
 		public void setAddress(java.net.InetAddress arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.DatagramPacket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.DatagramPacket._setAddress11670, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._setAddress11670, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -102,7 +102,7 @@ namespace java.net
 		public void setPort(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.DatagramPacket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.DatagramPacket._setPort11671, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._setPort11671, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -111,7 +111,7 @@ namespace java.net
 		public void setSocketAddress(java.net.SocketAddress arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.DatagramPacket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.DatagramPacket._setSocketAddress11672, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._setSocketAddress11672, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -120,7 +120,7 @@ namespace java.net
 		public global::java.net.SocketAddress getSocketAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.DatagramPacket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.DatagramPacket._getSocketAddress11673)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.DatagramPacket.staticClass, global::java.net.DatagramPacket._getSocketAddress11673)); 

@@ -22,7 +22,7 @@ namespace android.text.style
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.TypefaceSpan)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.style.TypefaceSpan._writeToParcel7452, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.TypefaceSpan.staticClass, global::android.text.style.TypefaceSpan._writeToParcel7452, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -31,7 +31,7 @@ namespace android.text.style
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.TypefaceSpan)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.style.TypefaceSpan._describeContents7453); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.TypefaceSpan.staticClass, global::android.text.style.TypefaceSpan._describeContents7453); 
@@ -40,7 +40,7 @@ namespace android.text.style
 		public virtual int getSpanTypeId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.TypefaceSpan)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.style.TypefaceSpan._getSpanTypeId7454); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.TypefaceSpan.staticClass, global::android.text.style.TypefaceSpan._getSpanTypeId7454); 
@@ -49,7 +49,7 @@ namespace android.text.style
 		public override void updateDrawState(android.text.TextPaint arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.TypefaceSpan)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.style.TypefaceSpan._updateDrawState7455, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.TypefaceSpan.staticClass, global::android.text.style.TypefaceSpan._updateDrawState7455, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.text.style
 		public override void updateMeasureState(android.text.TextPaint arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.TypefaceSpan)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.style.TypefaceSpan._updateMeasureState7456, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.TypefaceSpan.staticClass, global::android.text.style.TypefaceSpan._updateMeasureState7456, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.text.style
 		public virtual global::java.lang.String getFamily() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.TypefaceSpan)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.style.TypefaceSpan._getFamily7457)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.style.TypefaceSpan.staticClass, global::android.text.style.TypefaceSpan._getFamily7457)); 

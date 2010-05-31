@@ -57,7 +57,7 @@ namespace android.media
 			 void android.media.JetPlayer.OnJetEventListener.onJetEvent(android.media.JetPlayer arg0, short arg1, byte arg2, byte arg3, byte arg4, byte arg5) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.JetPlayer.__OnJetEventListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.media.JetPlayer.__OnJetEventListener._onJetEvent4468, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.media.JetPlayer.__OnJetEventListener.staticClass, global::android.media.JetPlayer.__OnJetEventListener._onJetEvent4468, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
@@ -66,7 +66,7 @@ namespace android.media
 			 void android.media.JetPlayer.OnJetEventListener.onJetUserIdUpdate(android.media.JetPlayer arg0, int arg1, int arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.JetPlayer.__OnJetEventListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.media.JetPlayer.__OnJetEventListener._onJetUserIdUpdate4469, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.media.JetPlayer.__OnJetEventListener.staticClass, global::android.media.JetPlayer.__OnJetEventListener._onJetUserIdUpdate4469, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -75,7 +75,7 @@ namespace android.media
 			 void android.media.JetPlayer.OnJetEventListener.onJetNumQueuedSegmentUpdate(android.media.JetPlayer arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.JetPlayer.__OnJetEventListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.media.JetPlayer.__OnJetEventListener._onJetNumQueuedSegmentUpdate4470, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.media.JetPlayer.__OnJetEventListener.staticClass, global::android.media.JetPlayer.__OnJetEventListener._onJetNumQueuedSegmentUpdate4470, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -84,7 +84,7 @@ namespace android.media
 			 void android.media.JetPlayer.OnJetEventListener.onJetPauseUpdate(android.media.JetPlayer arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.JetPlayer.__OnJetEventListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.media.JetPlayer.__OnJetEventListener._onJetPauseUpdate4471, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.media.JetPlayer.__OnJetEventListener.staticClass, global::android.media.JetPlayer.__OnJetEventListener._onJetPauseUpdate4471, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -102,7 +102,7 @@ namespace android.media
 		public virtual global::java.lang.Object clone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.JetPlayer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.media.JetPlayer._clone4472)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._clone4472)); 
@@ -111,7 +111,7 @@ namespace android.media
 		public virtual void release() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.JetPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.JetPlayer._release4473); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._release4473); 
@@ -120,7 +120,7 @@ namespace android.media
 		public virtual bool play() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.JetPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._play4474); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._play4474); 
@@ -129,7 +129,7 @@ namespace android.media
 		public virtual bool pause() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.JetPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._pause4475); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._pause4475); 
@@ -150,7 +150,7 @@ namespace android.media
 		public virtual bool loadJetFile(android.content.res.AssetFileDescriptor arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.JetPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._loadJetFile4478, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._loadJetFile4478, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -159,7 +159,7 @@ namespace android.media
 		public virtual bool loadJetFile(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.JetPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._loadJetFile4479, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._loadJetFile4479, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -168,7 +168,7 @@ namespace android.media
 		public virtual bool closeJetFile() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.JetPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._closeJetFile4480); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._closeJetFile4480); 
@@ -177,7 +177,7 @@ namespace android.media
 		public virtual bool queueJetSegment(int arg0, int arg1, int arg2, int arg3, int arg4, byte arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.JetPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._queueJetSegment4481, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._queueJetSegment4481, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
@@ -186,7 +186,7 @@ namespace android.media
 		public virtual bool queueJetSegmentMuteArray(int arg0, int arg1, int arg2, int arg3, bool[] arg4, byte arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.JetPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._queueJetSegmentMuteArray4482, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._queueJetSegmentMuteArray4482, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
@@ -195,7 +195,7 @@ namespace android.media
 		public virtual bool setMuteFlags(int arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.JetPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._setMuteFlags4483, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._setMuteFlags4483, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -204,7 +204,7 @@ namespace android.media
 		public virtual bool setMuteArray(bool[] arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.JetPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._setMuteArray4484, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._setMuteArray4484, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -213,7 +213,7 @@ namespace android.media
 		public virtual bool setMuteFlag(int arg0, bool arg1, bool arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.JetPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._setMuteFlag4485, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._setMuteFlag4485, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -222,7 +222,7 @@ namespace android.media
 		public virtual bool triggerClip(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.JetPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._triggerClip4486, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._triggerClip4486, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -231,7 +231,7 @@ namespace android.media
 		public virtual bool clearQueue() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.JetPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.JetPlayer._clearQueue4487); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._clearQueue4487); 
@@ -240,7 +240,7 @@ namespace android.media
 		public virtual void setEventListener(android.media.JetPlayer.OnJetEventListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.JetPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.JetPlayer._setEventListener4488, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._setEventListener4488, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -249,7 +249,7 @@ namespace android.media
 		public virtual void setEventListener(android.media.JetPlayer.OnJetEventListener arg0, android.os.Handler arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.JetPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.JetPlayer._setEventListener4489, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.JetPlayer.staticClass, global::android.media.JetPlayer._setEventListener4489, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 

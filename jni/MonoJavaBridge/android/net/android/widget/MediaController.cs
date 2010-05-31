@@ -63,7 +63,7 @@ namespace android.widget
 			 void android.widget.MediaController.MediaPlayerControl.start() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.MediaController.__MediaPlayerControl)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl._start10494); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._start10494); 
@@ -72,7 +72,7 @@ namespace android.widget
 			 int android.widget.MediaController.MediaPlayerControl.getDuration() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.MediaController.__MediaPlayerControl)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl._getDuration10495); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._getDuration10495); 
@@ -81,7 +81,7 @@ namespace android.widget
 			 void android.widget.MediaController.MediaPlayerControl.pause() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.MediaController.__MediaPlayerControl)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl._pause10496); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._pause10496); 
@@ -90,7 +90,7 @@ namespace android.widget
 			 bool android.widget.MediaController.MediaPlayerControl.isPlaying() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.MediaController.__MediaPlayerControl)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl._isPlaying10497); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._isPlaying10497); 
@@ -99,7 +99,7 @@ namespace android.widget
 			 void android.widget.MediaController.MediaPlayerControl.seekTo(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.MediaController.__MediaPlayerControl)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl._seekTo10498, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._seekTo10498, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -108,7 +108,7 @@ namespace android.widget
 			 int android.widget.MediaController.MediaPlayerControl.getCurrentPosition() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.MediaController.__MediaPlayerControl)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl._getCurrentPosition10499); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._getCurrentPosition10499); 
@@ -117,7 +117,7 @@ namespace android.widget
 			 int android.widget.MediaController.MediaPlayerControl.getBufferPercentage() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.MediaController.__MediaPlayerControl)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl._getBufferPercentage10500); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._getBufferPercentage10500); 
@@ -126,7 +126,7 @@ namespace android.widget
 			 bool android.widget.MediaController.MediaPlayerControl.canPause() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.MediaController.__MediaPlayerControl)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl._canPause10501); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._canPause10501); 
@@ -135,7 +135,7 @@ namespace android.widget
 			 bool android.widget.MediaController.MediaPlayerControl.canSeekBackward() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.MediaController.__MediaPlayerControl)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl._canSeekBackward10502); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._canSeekBackward10502); 
@@ -144,7 +144,7 @@ namespace android.widget
 			 bool android.widget.MediaController.MediaPlayerControl.canSeekForward() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.MediaController.__MediaPlayerControl)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl._canSeekForward10503); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._canSeekForward10503); 
@@ -168,7 +168,7 @@ namespace android.widget
 		public override void setEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MediaController)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.MediaController._setEnabled10504, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._setEnabled10504, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -177,7 +177,7 @@ namespace android.widget
 		public override bool onTouchEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MediaController)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.MediaController._onTouchEvent10505, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._onTouchEvent10505, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -186,7 +186,7 @@ namespace android.widget
 		public override bool onTrackballEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MediaController)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.MediaController._onTrackballEvent10506, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._onTrackballEvent10506, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -195,7 +195,7 @@ namespace android.widget
 		public override bool dispatchKeyEvent(android.view.KeyEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MediaController)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.MediaController._dispatchKeyEvent10507, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._dispatchKeyEvent10507, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -204,7 +204,7 @@ namespace android.widget
 		public virtual new void onFinishInflate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MediaController)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.MediaController._onFinishInflate10508); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._onFinishInflate10508); 
@@ -213,7 +213,7 @@ namespace android.widget
 		public virtual bool isShowing() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MediaController)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.MediaController._isShowing10509); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._isShowing10509); 
@@ -222,7 +222,7 @@ namespace android.widget
 		public virtual void show(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MediaController)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.MediaController._show10510, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._show10510, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -231,7 +231,7 @@ namespace android.widget
 		public virtual void show() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MediaController)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.MediaController._show10511); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._show10511); 
@@ -240,7 +240,7 @@ namespace android.widget
 		public virtual void hide() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MediaController)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.MediaController._hide10512); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._hide10512); 
@@ -249,7 +249,7 @@ namespace android.widget
 		public virtual void setMediaPlayer(android.widget.MediaController.MediaPlayerControl arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MediaController)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.MediaController._setMediaPlayer10513, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._setMediaPlayer10513, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -258,7 +258,7 @@ namespace android.widget
 		public virtual void setAnchorView(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MediaController)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.MediaController._setAnchorView10514, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._setAnchorView10514, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -267,7 +267,7 @@ namespace android.widget
 		public virtual void setPrevNextListeners(android.view.View.OnClickListener arg0, android.view.View.OnClickListener arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MediaController)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.MediaController._setPrevNextListeners10515, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._setPrevNextListeners10515, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 

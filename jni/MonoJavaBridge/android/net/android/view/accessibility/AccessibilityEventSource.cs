@@ -37,7 +37,7 @@ namespace android.view.accessibility
 		 void android.view.accessibility.AccessibilityEventSource.sendAccessibilityEvent(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.accessibility.__AccessibilityEventSource)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.accessibility.__AccessibilityEventSource._sendAccessibilityEvent8829, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.__AccessibilityEventSource.staticClass, global::android.view.accessibility.__AccessibilityEventSource._sendAccessibilityEvent8829, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -46,7 +46,7 @@ namespace android.view.accessibility
 		 void android.view.accessibility.AccessibilityEventSource.sendAccessibilityEventUnchecked(android.view.accessibility.AccessibilityEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.accessibility.__AccessibilityEventSource)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.accessibility.__AccessibilityEventSource._sendAccessibilityEventUnchecked8830, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.__AccessibilityEventSource.staticClass, global::android.view.accessibility.__AccessibilityEventSource._sendAccessibilityEventUnchecked8830, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

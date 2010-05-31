@@ -36,7 +36,7 @@ namespace android.text.style
 		 int android.text.style.TabStopSpan.getTabStop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.__TabStopSpan)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.style.__TabStopSpan._getTabStop7437); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.__TabStopSpan.staticClass, global::android.text.style.__TabStopSpan._getTabStop7437); 

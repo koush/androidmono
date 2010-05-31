@@ -22,7 +22,7 @@ namespace android.os
 		public override void run() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.HandlerThread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.HandlerThread._run5611); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.HandlerThread.staticClass, global::android.os.HandlerThread._run5611); 
@@ -31,7 +31,7 @@ namespace android.os
 		public virtual bool quit() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.HandlerThread)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.HandlerThread._quit5612); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.HandlerThread.staticClass, global::android.os.HandlerThread._quit5612); 
@@ -40,7 +40,7 @@ namespace android.os
 		public virtual global::android.os.Looper getLooper() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.HandlerThread)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Looper>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.HandlerThread._getLooper5613)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Looper>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.HandlerThread.staticClass, global::android.os.HandlerThread._getLooper5613)); 
@@ -49,7 +49,7 @@ namespace android.os
 		protected virtual void onLooperPrepared() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.HandlerThread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.HandlerThread._onLooperPrepared5614); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.HandlerThread.staticClass, global::android.os.HandlerThread._onLooperPrepared5614); 
@@ -58,7 +58,7 @@ namespace android.os
 		public virtual int getThreadId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.HandlerThread)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.os.HandlerThread._getThreadId5615); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.os.HandlerThread.staticClass, global::android.os.HandlerThread._getThreadId5615); 

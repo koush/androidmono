@@ -22,7 +22,7 @@ namespace android.media
 		public virtual void stop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AsyncPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.AsyncPlayer._stop4357); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.AsyncPlayer.staticClass, global::android.media.AsyncPlayer._stop4357); 
@@ -31,7 +31,7 @@ namespace android.media
 		public virtual void play(android.content.Context arg0, android.net.Uri arg1, bool arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.AsyncPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.AsyncPlayer._play4358, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.AsyncPlayer.staticClass, global::android.media.AsyncPlayer._play4358, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 

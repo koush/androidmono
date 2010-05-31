@@ -37,7 +37,7 @@ namespace java.net
 		 global::java.lang.Object java.net.SocketOptions.getOption(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.__SocketOptions)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.__SocketOptions._getOption11895, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.__SocketOptions.staticClass, global::java.net.__SocketOptions._getOption11895, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -46,7 +46,7 @@ namespace java.net
 		 void java.net.SocketOptions.setOption(int arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.__SocketOptions)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.__SocketOptions._setOption11896, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.__SocketOptions.staticClass, global::java.net.__SocketOptions._setOption11896, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 

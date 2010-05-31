@@ -22,7 +22,7 @@ namespace android.widget
 		protected override void onAttachedToWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DigitalClock)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.DigitalClock._onAttachedToWindow10116); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._onAttachedToWindow10116); 
@@ -31,7 +31,7 @@ namespace android.widget
 		protected override void onDetachedFromWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DigitalClock)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.DigitalClock._onDetachedFromWindow10117); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DigitalClock.staticClass, global::android.widget.DigitalClock._onDetachedFromWindow10117); 

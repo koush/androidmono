@@ -28,7 +28,7 @@ namespace android.net
 		public virtual void setNetworkPreference(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.ConnectivityManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.net.ConnectivityManager._setNetworkPreference4613, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._setNetworkPreference4613, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -37,7 +37,7 @@ namespace android.net
 		public virtual int getNetworkPreference() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.ConnectivityManager)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.ConnectivityManager._getNetworkPreference4614); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getNetworkPreference4614); 
@@ -46,7 +46,7 @@ namespace android.net
 		public virtual global::android.net.NetworkInfo getActiveNetworkInfo() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.ConnectivityManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.ConnectivityManager._getActiveNetworkInfo4615)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getActiveNetworkInfo4615)); 
@@ -55,7 +55,7 @@ namespace android.net
 		public virtual global::android.net.NetworkInfo getNetworkInfo(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.ConnectivityManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.ConnectivityManager._getNetworkInfo4616, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getNetworkInfo4616, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -63,7 +63,7 @@ namespace android.net
 		internal static global::net.sf.jni4net.jni.MethodId _getAllNetworkInfo4617; 
 		public virtual global::android.net.NetworkInfo[] getAllNetworkInfo() 
 		{ 
-			if (GetType() == typeof(android.net.ConnectivityManager)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.net.ConnectivityManager._getAllNetworkInfo4617)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getAllNetworkInfo4617)); 
@@ -72,7 +72,7 @@ namespace android.net
 		public virtual int startUsingNetworkFeature(int arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.ConnectivityManager)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.ConnectivityManager._startUsingNetworkFeature4618, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._startUsingNetworkFeature4618, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -81,7 +81,7 @@ namespace android.net
 		public virtual int stopUsingNetworkFeature(int arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.ConnectivityManager)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.ConnectivityManager._stopUsingNetworkFeature4619, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._stopUsingNetworkFeature4619, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -90,7 +90,7 @@ namespace android.net
 		public virtual bool requestRouteToHost(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.ConnectivityManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.ConnectivityManager._requestRouteToHost4620, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._requestRouteToHost4620, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -99,7 +99,7 @@ namespace android.net
 		public virtual bool getBackgroundDataSetting() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.ConnectivityManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.ConnectivityManager._getBackgroundDataSetting4621); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.ConnectivityManager.staticClass, global::android.net.ConnectivityManager._getBackgroundDataSetting4621); 

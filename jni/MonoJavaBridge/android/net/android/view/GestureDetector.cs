@@ -56,7 +56,7 @@ namespace android.view
 			 bool android.view.GestureDetector.OnDoubleTapListener.onSingleTapConfirmed(android.view.MotionEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.__OnDoubleTapListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.GestureDetector.__OnDoubleTapListener._onSingleTapConfirmed7749, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.GestureDetector.__OnDoubleTapListener.staticClass, global::android.view.GestureDetector.__OnDoubleTapListener._onSingleTapConfirmed7749, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -65,7 +65,7 @@ namespace android.view
 			 bool android.view.GestureDetector.OnDoubleTapListener.onDoubleTap(android.view.MotionEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.__OnDoubleTapListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.GestureDetector.__OnDoubleTapListener._onDoubleTap7750, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.GestureDetector.__OnDoubleTapListener.staticClass, global::android.view.GestureDetector.__OnDoubleTapListener._onDoubleTap7750, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -74,7 +74,7 @@ namespace android.view
 			 bool android.view.GestureDetector.OnDoubleTapListener.onDoubleTapEvent(android.view.MotionEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.__OnDoubleTapListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.GestureDetector.__OnDoubleTapListener._onDoubleTapEvent7751, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.GestureDetector.__OnDoubleTapListener.staticClass, global::android.view.GestureDetector.__OnDoubleTapListener._onDoubleTapEvent7751, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -128,7 +128,7 @@ namespace android.view
 			 void android.view.GestureDetector.OnGestureListener.onLongPress(android.view.MotionEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.__OnGestureListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.view.GestureDetector.__OnGestureListener._onLongPress7752, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.view.GestureDetector.__OnGestureListener.staticClass, global::android.view.GestureDetector.__OnGestureListener._onLongPress7752, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -137,7 +137,7 @@ namespace android.view
 			 bool android.view.GestureDetector.OnGestureListener.onSingleTapUp(android.view.MotionEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.__OnGestureListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.GestureDetector.__OnGestureListener._onSingleTapUp7753, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.GestureDetector.__OnGestureListener.staticClass, global::android.view.GestureDetector.__OnGestureListener._onSingleTapUp7753, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -146,7 +146,7 @@ namespace android.view
 			 bool android.view.GestureDetector.OnGestureListener.onScroll(android.view.MotionEvent arg0, android.view.MotionEvent arg1, float arg2, float arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.__OnGestureListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.GestureDetector.__OnGestureListener._onScroll7754, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.GestureDetector.__OnGestureListener.staticClass, global::android.view.GestureDetector.__OnGestureListener._onScroll7754, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -155,7 +155,7 @@ namespace android.view
 			 bool android.view.GestureDetector.OnGestureListener.onFling(android.view.MotionEvent arg0, android.view.MotionEvent arg1, float arg2, float arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.__OnGestureListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.GestureDetector.__OnGestureListener._onFling7755, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.GestureDetector.__OnGestureListener.staticClass, global::android.view.GestureDetector.__OnGestureListener._onFling7755, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -164,7 +164,7 @@ namespace android.view
 			 void android.view.GestureDetector.OnGestureListener.onShowPress(android.view.MotionEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.__OnGestureListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.view.GestureDetector.__OnGestureListener._onShowPress7756, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.view.GestureDetector.__OnGestureListener.staticClass, global::android.view.GestureDetector.__OnGestureListener._onShowPress7756, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -173,7 +173,7 @@ namespace android.view
 			 bool android.view.GestureDetector.OnGestureListener.onDown(android.view.MotionEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.__OnGestureListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.GestureDetector.__OnGestureListener._onDown7757, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.GestureDetector.__OnGestureListener.staticClass, global::android.view.GestureDetector.__OnGestureListener._onDown7757, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -211,7 +211,7 @@ namespace android.view
 			public virtual void onLongPress(android.view.MotionEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.SimpleOnGestureListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener._onLongPress7758, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener.staticClass, global::android.view.GestureDetector.SimpleOnGestureListener._onLongPress7758, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -220,7 +220,7 @@ namespace android.view
 			public virtual bool onSingleTapConfirmed(android.view.MotionEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.SimpleOnGestureListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener._onSingleTapConfirmed7759, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener.staticClass, global::android.view.GestureDetector.SimpleOnGestureListener._onSingleTapConfirmed7759, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -229,7 +229,7 @@ namespace android.view
 			public virtual bool onDoubleTap(android.view.MotionEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.SimpleOnGestureListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener._onDoubleTap7760, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener.staticClass, global::android.view.GestureDetector.SimpleOnGestureListener._onDoubleTap7760, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -238,7 +238,7 @@ namespace android.view
 			public virtual bool onDoubleTapEvent(android.view.MotionEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.SimpleOnGestureListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener._onDoubleTapEvent7761, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener.staticClass, global::android.view.GestureDetector.SimpleOnGestureListener._onDoubleTapEvent7761, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -247,7 +247,7 @@ namespace android.view
 			public virtual bool onSingleTapUp(android.view.MotionEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.SimpleOnGestureListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener._onSingleTapUp7762, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener.staticClass, global::android.view.GestureDetector.SimpleOnGestureListener._onSingleTapUp7762, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -256,7 +256,7 @@ namespace android.view
 			public virtual bool onScroll(android.view.MotionEvent arg0, android.view.MotionEvent arg1, float arg2, float arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.SimpleOnGestureListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener._onScroll7763, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener.staticClass, global::android.view.GestureDetector.SimpleOnGestureListener._onScroll7763, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -265,7 +265,7 @@ namespace android.view
 			public virtual bool onFling(android.view.MotionEvent arg0, android.view.MotionEvent arg1, float arg2, float arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.SimpleOnGestureListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener._onFling7764, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener.staticClass, global::android.view.GestureDetector.SimpleOnGestureListener._onFling7764, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -274,7 +274,7 @@ namespace android.view
 			public virtual void onShowPress(android.view.MotionEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.SimpleOnGestureListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener._onShowPress7765, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener.staticClass, global::android.view.GestureDetector.SimpleOnGestureListener._onShowPress7765, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -283,7 +283,7 @@ namespace android.view
 			public virtual bool onDown(android.view.MotionEvent arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.GestureDetector.SimpleOnGestureListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener._onDown7766, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.GestureDetector.SimpleOnGestureListener.staticClass, global::android.view.GestureDetector.SimpleOnGestureListener._onDown7766, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -313,7 +313,7 @@ namespace android.view
 		public virtual bool onTouchEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.GestureDetector)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.GestureDetector._onTouchEvent7768, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.GestureDetector.staticClass, global::android.view.GestureDetector._onTouchEvent7768, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -322,7 +322,7 @@ namespace android.view
 		public virtual void setOnDoubleTapListener(android.view.GestureDetector.OnDoubleTapListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.GestureDetector)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.GestureDetector._setOnDoubleTapListener7769, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.GestureDetector.staticClass, global::android.view.GestureDetector._setOnDoubleTapListener7769, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -331,7 +331,7 @@ namespace android.view
 		public virtual void setIsLongpressEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.GestureDetector)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.GestureDetector._setIsLongpressEnabled7770, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.GestureDetector.staticClass, global::android.view.GestureDetector._setIsLongpressEnabled7770, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -340,7 +340,7 @@ namespace android.view
 		public virtual bool isLongpressEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.GestureDetector)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.GestureDetector._isLongpressEnabled7771); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.GestureDetector.staticClass, global::android.view.GestureDetector._isLongpressEnabled7771); 

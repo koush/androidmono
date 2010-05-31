@@ -45,7 +45,7 @@ namespace android.content
 		 bool android.content.SharedPreferences.getBoolean(java.lang.String arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.__SharedPreferences)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.__SharedPreferences._getBoolean1502, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.__SharedPreferences.staticClass, global::android.content.__SharedPreferences._getBoolean1502, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -54,7 +54,7 @@ namespace android.content
 		 int android.content.SharedPreferences.getInt(java.lang.String arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.__SharedPreferences)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.__SharedPreferences._getInt1503, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.__SharedPreferences.staticClass, global::android.content.__SharedPreferences._getInt1503, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -63,7 +63,7 @@ namespace android.content
 		 long android.content.SharedPreferences.getLong(java.lang.String arg0, long arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.__SharedPreferences)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.content.__SharedPreferences._getLong1504, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.content.__SharedPreferences.staticClass, global::android.content.__SharedPreferences._getLong1504, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -72,7 +72,7 @@ namespace android.content
 		 float android.content.SharedPreferences.getFloat(java.lang.String arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.__SharedPreferences)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.content.__SharedPreferences._getFloat1505, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.content.__SharedPreferences.staticClass, global::android.content.__SharedPreferences._getFloat1505, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -81,7 +81,7 @@ namespace android.content
 		 bool android.content.SharedPreferences.contains(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.__SharedPreferences)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.__SharedPreferences._contains1506, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.__SharedPreferences.staticClass, global::android.content.__SharedPreferences._contains1506, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -90,7 +90,7 @@ namespace android.content
 		 global::java.lang.String android.content.SharedPreferences.getString(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.__SharedPreferences)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.__SharedPreferences._getString1507, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.__SharedPreferences.staticClass, global::android.content.__SharedPreferences._getString1507, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -99,7 +99,7 @@ namespace android.content
 		 global::android.content.SharedPreferences_Editor android.content.SharedPreferences.edit() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.__SharedPreferences)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.SharedPreferences_Editor>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.__SharedPreferences._edit1508)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.content.SharedPreferences_Editor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.__SharedPreferences.staticClass, global::android.content.__SharedPreferences._edit1508)); 
@@ -108,7 +108,7 @@ namespace android.content
 		 global::java.util.Map android.content.SharedPreferences.getAll() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.__SharedPreferences)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.__SharedPreferences._getAll1509)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.__SharedPreferences.staticClass, global::android.content.__SharedPreferences._getAll1509)); 
@@ -117,7 +117,7 @@ namespace android.content
 		 void android.content.SharedPreferences.registerOnSharedPreferenceChangeListener(android.content.SharedPreferences_OnSharedPreferenceChangeListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.__SharedPreferences)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.__SharedPreferences._registerOnSharedPreferenceChangeListener1510, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.__SharedPreferences.staticClass, global::android.content.__SharedPreferences._registerOnSharedPreferenceChangeListener1510, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -126,7 +126,7 @@ namespace android.content
 		 void android.content.SharedPreferences.unregisterOnSharedPreferenceChangeListener(android.content.SharedPreferences_OnSharedPreferenceChangeListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.__SharedPreferences)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.__SharedPreferences._unregisterOnSharedPreferenceChangeListener1511, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.__SharedPreferences.staticClass, global::android.content.__SharedPreferences._unregisterOnSharedPreferenceChangeListener1511, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

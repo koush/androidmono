@@ -35,7 +35,7 @@ namespace java.nio.channels
 		 int java.nio.channels.ReadableByteChannel.read(java.nio.ByteBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__ByteChannel)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.nio.channels.__ByteChannel._read12148, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.nio.channels.__ByteChannel.staticClass, global::java.nio.channels.__ByteChannel._read12148, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -44,7 +44,7 @@ namespace java.nio.channels
 		 void java.nio.channels.Channel.close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__ByteChannel)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.nio.channels.__ByteChannel._close12149); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__ByteChannel.staticClass, global::java.nio.channels.__ByteChannel._close12149); 
@@ -53,7 +53,7 @@ namespace java.nio.channels
 		 bool java.nio.channels.Channel.isOpen() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__ByteChannel)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.channels.__ByteChannel._isOpen12150); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.__ByteChannel.staticClass, global::java.nio.channels.__ByteChannel._isOpen12150); 
@@ -62,7 +62,7 @@ namespace java.nio.channels
 		 void java.io.Closeable.close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__ByteChannel)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.nio.channels.__ByteChannel._close12151); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__ByteChannel.staticClass, global::java.nio.channels.__ByteChannel._close12151); 
@@ -71,7 +71,7 @@ namespace java.nio.channels
 		 int java.nio.channels.WritableByteChannel.write(java.nio.ByteBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__ByteChannel)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.nio.channels.__ByteChannel._write12152, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.nio.channels.__ByteChannel.staticClass, global::java.nio.channels.__ByteChannel._write12152, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

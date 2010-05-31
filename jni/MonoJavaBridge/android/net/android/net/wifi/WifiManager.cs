@@ -40,7 +40,7 @@ namespace android.net.wifi
 			public override global::java.lang.String toString() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.wifi.WifiManager.MulticastLock)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.wifi.WifiManager.MulticastLock._toString4910)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.wifi.WifiManager.MulticastLock.staticClass, global::android.net.wifi.WifiManager.MulticastLock._toString4910)); 
@@ -49,7 +49,7 @@ namespace android.net.wifi
 			public virtual void acquire() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.wifi.WifiManager.MulticastLock)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.net.wifi.WifiManager.MulticastLock._acquire4911); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.net.wifi.WifiManager.MulticastLock.staticClass, global::android.net.wifi.WifiManager.MulticastLock._acquire4911); 
@@ -58,7 +58,7 @@ namespace android.net.wifi
 			public virtual void release() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.wifi.WifiManager.MulticastLock)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.net.wifi.WifiManager.MulticastLock._release4912); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.net.wifi.WifiManager.MulticastLock.staticClass, global::android.net.wifi.WifiManager.MulticastLock._release4912); 
@@ -67,7 +67,7 @@ namespace android.net.wifi
 			public virtual void setReferenceCounted(bool arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.wifi.WifiManager.MulticastLock)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.net.wifi.WifiManager.MulticastLock._setReferenceCounted4913, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.net.wifi.WifiManager.MulticastLock.staticClass, global::android.net.wifi.WifiManager.MulticastLock._setReferenceCounted4913, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -76,7 +76,7 @@ namespace android.net.wifi
 			public virtual bool isHeld() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.wifi.WifiManager.MulticastLock)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.net.wifi.WifiManager.MulticastLock._isHeld4914); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.net.wifi.WifiManager.MulticastLock.staticClass, global::android.net.wifi.WifiManager.MulticastLock._isHeld4914); 
@@ -113,7 +113,7 @@ namespace android.net.wifi
 			public override global::java.lang.String toString() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.wifi.WifiManager.WifiLock)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.wifi.WifiManager.WifiLock._toString4915)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.wifi.WifiManager.WifiLock.staticClass, global::android.net.wifi.WifiManager.WifiLock._toString4915)); 
@@ -122,7 +122,7 @@ namespace android.net.wifi
 			public virtual void acquire() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.wifi.WifiManager.WifiLock)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.net.wifi.WifiManager.WifiLock._acquire4916); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.net.wifi.WifiManager.WifiLock.staticClass, global::android.net.wifi.WifiManager.WifiLock._acquire4916); 
@@ -131,7 +131,7 @@ namespace android.net.wifi
 			public virtual void release() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.wifi.WifiManager.WifiLock)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.net.wifi.WifiManager.WifiLock._release4917); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.net.wifi.WifiManager.WifiLock.staticClass, global::android.net.wifi.WifiManager.WifiLock._release4917); 
@@ -140,7 +140,7 @@ namespace android.net.wifi
 			public virtual void setReferenceCounted(bool arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.wifi.WifiManager.WifiLock)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.net.wifi.WifiManager.WifiLock._setReferenceCounted4918, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.net.wifi.WifiManager.WifiLock.staticClass, global::android.net.wifi.WifiManager.WifiLock._setReferenceCounted4918, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -149,7 +149,7 @@ namespace android.net.wifi
 			public virtual bool isHeld() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.wifi.WifiManager.WifiLock)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.net.wifi.WifiManager.WifiLock._isHeld4919); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.net.wifi.WifiManager.WifiLock.staticClass, global::android.net.wifi.WifiManager.WifiLock._isHeld4919); 
@@ -168,7 +168,7 @@ namespace android.net.wifi
 		public virtual bool disconnect() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.wifi.WifiManager._disconnect4920); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._disconnect4920); 
@@ -177,7 +177,7 @@ namespace android.net.wifi
 		public virtual global::java.util.List getConfiguredNetworks() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.wifi.WifiManager._getConfiguredNetworks4921)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._getConfiguredNetworks4921)); 
@@ -186,7 +186,7 @@ namespace android.net.wifi
 		public virtual int addNetwork(android.net.wifi.WifiConfiguration arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.wifi.WifiManager._addNetwork4922, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._addNetwork4922, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -195,7 +195,7 @@ namespace android.net.wifi
 		public virtual int updateNetwork(android.net.wifi.WifiConfiguration arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.wifi.WifiManager._updateNetwork4923, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._updateNetwork4923, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -204,7 +204,7 @@ namespace android.net.wifi
 		public virtual bool removeNetwork(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.wifi.WifiManager._removeNetwork4924, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._removeNetwork4924, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -213,7 +213,7 @@ namespace android.net.wifi
 		public virtual bool enableNetwork(int arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.wifi.WifiManager._enableNetwork4925, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._enableNetwork4925, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -222,7 +222,7 @@ namespace android.net.wifi
 		public virtual bool disableNetwork(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.wifi.WifiManager._disableNetwork4926, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._disableNetwork4926, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -231,7 +231,7 @@ namespace android.net.wifi
 		public virtual bool reconnect() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.wifi.WifiManager._reconnect4927); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._reconnect4927); 
@@ -240,7 +240,7 @@ namespace android.net.wifi
 		public virtual bool reassociate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.wifi.WifiManager._reassociate4928); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._reassociate4928); 
@@ -249,7 +249,7 @@ namespace android.net.wifi
 		public virtual bool pingSupplicant() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.wifi.WifiManager._pingSupplicant4929); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._pingSupplicant4929); 
@@ -258,7 +258,7 @@ namespace android.net.wifi
 		public virtual bool startScan() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.wifi.WifiManager._startScan4930); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._startScan4930); 
@@ -267,7 +267,7 @@ namespace android.net.wifi
 		public virtual global::android.net.wifi.WifiInfo getConnectionInfo() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.wifi.WifiInfo>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.wifi.WifiManager._getConnectionInfo4931)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.wifi.WifiInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._getConnectionInfo4931)); 
@@ -276,7 +276,7 @@ namespace android.net.wifi
 		public virtual global::java.util.List getScanResults() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.wifi.WifiManager._getScanResults4932)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._getScanResults4932)); 
@@ -285,7 +285,7 @@ namespace android.net.wifi
 		public virtual bool saveConfiguration() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.wifi.WifiManager._saveConfiguration4933); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._saveConfiguration4933); 
@@ -294,7 +294,7 @@ namespace android.net.wifi
 		public virtual global::android.net.DhcpInfo getDhcpInfo() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.DhcpInfo>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.wifi.WifiManager._getDhcpInfo4934)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.DhcpInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._getDhcpInfo4934)); 
@@ -303,7 +303,7 @@ namespace android.net.wifi
 		public virtual bool setWifiEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.wifi.WifiManager._setWifiEnabled4935, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._setWifiEnabled4935, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -312,7 +312,7 @@ namespace android.net.wifi
 		public virtual int getWifiState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.wifi.WifiManager._getWifiState4936); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._getWifiState4936); 
@@ -321,7 +321,7 @@ namespace android.net.wifi
 		public virtual bool isWifiEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.wifi.WifiManager._isWifiEnabled4937); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._isWifiEnabled4937); 
@@ -342,7 +342,7 @@ namespace android.net.wifi
 		public virtual global::android.net.wifi.WifiManager.WifiLock createWifiLock(int arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.wifi.WifiManager.WifiLock>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.wifi.WifiManager._createWifiLock4940, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.wifi.WifiManager.WifiLock>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._createWifiLock4940, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -351,7 +351,7 @@ namespace android.net.wifi
 		public virtual global::android.net.wifi.WifiManager.WifiLock createWifiLock(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.wifi.WifiManager.WifiLock>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.wifi.WifiManager._createWifiLock4941, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.wifi.WifiManager.WifiLock>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._createWifiLock4941, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -360,7 +360,7 @@ namespace android.net.wifi
 		public virtual global::android.net.wifi.WifiManager.MulticastLock createMulticastLock(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.WifiManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.wifi.WifiManager.MulticastLock>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.wifi.WifiManager._createMulticastLock4942, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.wifi.WifiManager.MulticastLock>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.wifi.WifiManager.staticClass, global::android.net.wifi.WifiManager._createMulticastLock4942, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 

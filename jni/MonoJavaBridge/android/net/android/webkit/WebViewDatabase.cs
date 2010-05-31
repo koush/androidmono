@@ -28,7 +28,7 @@ namespace android.webkit
 		public virtual void clearFormData() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebViewDatabase)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebViewDatabase._clearFormData9649); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebViewDatabase.staticClass, global::android.webkit.WebViewDatabase._clearFormData9649); 
@@ -37,7 +37,7 @@ namespace android.webkit
 		public virtual bool hasUsernamePassword() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebViewDatabase)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebViewDatabase._hasUsernamePassword9650); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebViewDatabase.staticClass, global::android.webkit.WebViewDatabase._hasUsernamePassword9650); 
@@ -46,7 +46,7 @@ namespace android.webkit
 		public virtual void clearUsernamePassword() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebViewDatabase)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebViewDatabase._clearUsernamePassword9651); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebViewDatabase.staticClass, global::android.webkit.WebViewDatabase._clearUsernamePassword9651); 
@@ -55,7 +55,7 @@ namespace android.webkit
 		public virtual bool hasHttpAuthUsernamePassword() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebViewDatabase)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebViewDatabase._hasHttpAuthUsernamePassword9652); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebViewDatabase.staticClass, global::android.webkit.WebViewDatabase._hasHttpAuthUsernamePassword9652); 
@@ -64,7 +64,7 @@ namespace android.webkit
 		public virtual void clearHttpAuthUsernamePassword() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebViewDatabase)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebViewDatabase._clearHttpAuthUsernamePassword9653); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebViewDatabase.staticClass, global::android.webkit.WebViewDatabase._clearHttpAuthUsernamePassword9653); 
@@ -73,7 +73,7 @@ namespace android.webkit
 		public virtual bool hasFormData() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebViewDatabase)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebViewDatabase._hasFormData9654); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebViewDatabase.staticClass, global::android.webkit.WebViewDatabase._hasFormData9654); 

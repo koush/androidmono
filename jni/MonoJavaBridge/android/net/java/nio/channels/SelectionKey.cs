@@ -27,7 +27,7 @@ namespace java.nio.channels
 		public virtual global::java.lang.Object attach(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.SelectionKey)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.channels.SelectionKey._attach12255, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.channels.SelectionKey.staticClass, global::java.nio.channels.SelectionKey._attach12255, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -36,7 +36,7 @@ namespace java.nio.channels
 		public virtual global::java.lang.Object attachment() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.SelectionKey)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.channels.SelectionKey._attachment12256)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.channels.SelectionKey.staticClass, global::java.nio.channels.SelectionKey._attachment12256)); 
@@ -47,7 +47,7 @@ namespace java.nio.channels
 		public virtual bool isReadable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.SelectionKey)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.channels.SelectionKey._isReadable12258); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.SelectionKey.staticClass, global::java.nio.channels.SelectionKey._isReadable12258); 
@@ -56,7 +56,7 @@ namespace java.nio.channels
 		public virtual bool isWritable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.SelectionKey)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.channels.SelectionKey._isWritable12259); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.SelectionKey.staticClass, global::java.nio.channels.SelectionKey._isWritable12259); 
@@ -65,7 +65,7 @@ namespace java.nio.channels
 		public virtual bool isConnectable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.SelectionKey)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.channels.SelectionKey._isConnectable12260); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.SelectionKey.staticClass, global::java.nio.channels.SelectionKey._isConnectable12260); 
@@ -74,7 +74,7 @@ namespace java.nio.channels
 		public virtual bool isAcceptable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.SelectionKey)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.channels.SelectionKey._isAcceptable12261); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.SelectionKey.staticClass, global::java.nio.channels.SelectionKey._isAcceptable12261); 

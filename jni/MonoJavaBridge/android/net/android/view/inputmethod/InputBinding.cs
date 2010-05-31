@@ -22,7 +22,7 @@ namespace android.view.inputmethod
 		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.InputBinding)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.inputmethod.InputBinding._toString9096)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._toString9096)); 
@@ -31,7 +31,7 @@ namespace android.view.inputmethod
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.InputBinding)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.inputmethod.InputBinding._writeToParcel9097, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._writeToParcel9097, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -40,7 +40,7 @@ namespace android.view.inputmethod
 		public int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.InputBinding)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.inputmethod.InputBinding._describeContents9098); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._describeContents9098); 
@@ -49,7 +49,7 @@ namespace android.view.inputmethod
 		public global::android.view.inputmethod.InputConnection getConnection() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.InputBinding)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.inputmethod.InputConnection>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.inputmethod.InputBinding._getConnection9099)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.inputmethod.InputConnection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._getConnection9099)); 
@@ -58,7 +58,7 @@ namespace android.view.inputmethod
 		public global::android.os.IBinder getConnectionToken() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.InputBinding)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.inputmethod.InputBinding._getConnectionToken9100)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._getConnectionToken9100)); 
@@ -67,7 +67,7 @@ namespace android.view.inputmethod
 		public int getUid() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.InputBinding)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.inputmethod.InputBinding._getUid9101); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._getUid9101); 
@@ -76,7 +76,7 @@ namespace android.view.inputmethod
 		public int getPid() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.InputBinding)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.inputmethod.InputBinding._getPid9102); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.inputmethod.InputBinding.staticClass, global::android.view.inputmethod.InputBinding._getPid9102); 

@@ -35,7 +35,7 @@ namespace android.sax
 		 void android.sax.StartElementListener.start(org.xml.sax.Attributes arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.sax.__ElementListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.sax.__ElementListener._start6384, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.sax.__ElementListener.staticClass, global::android.sax.__ElementListener._start6384, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -44,7 +44,7 @@ namespace android.sax
 		 void android.sax.EndElementListener.end() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.sax.__ElementListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.sax.__ElementListener._end6385); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.sax.__ElementListener.staticClass, global::android.sax.__ElementListener._end6385); 

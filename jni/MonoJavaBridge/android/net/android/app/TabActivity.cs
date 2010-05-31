@@ -22,7 +22,7 @@ namespace android.app
 		protected override void onRestoreInstanceState(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.TabActivity)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.TabActivity._onRestoreInstanceState760, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.TabActivity.staticClass, global::android.app.TabActivity._onRestoreInstanceState760, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -31,7 +31,7 @@ namespace android.app
 		protected override void onPostCreate(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.TabActivity)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.TabActivity._onPostCreate761, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.TabActivity.staticClass, global::android.app.TabActivity._onPostCreate761, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -40,7 +40,7 @@ namespace android.app
 		protected override void onSaveInstanceState(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.TabActivity)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.TabActivity._onSaveInstanceState762, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.TabActivity.staticClass, global::android.app.TabActivity._onSaveInstanceState762, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.app
 		public override void onContentChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.TabActivity)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.TabActivity._onContentChanged763); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.TabActivity.staticClass, global::android.app.TabActivity._onContentChanged763); 
@@ -58,7 +58,7 @@ namespace android.app
 		protected override void onChildTitleChanged(android.app.Activity arg0, java.lang.CharSequence arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.TabActivity)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.TabActivity._onChildTitleChanged764, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.TabActivity.staticClass, global::android.app.TabActivity._onChildTitleChanged764, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -67,7 +67,7 @@ namespace android.app
 		public virtual void setDefaultTab(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.TabActivity)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.TabActivity._setDefaultTab765, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.TabActivity.staticClass, global::android.app.TabActivity._setDefaultTab765, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -76,7 +76,7 @@ namespace android.app
 		public virtual void setDefaultTab(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.TabActivity)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.TabActivity._setDefaultTab766, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.TabActivity.staticClass, global::android.app.TabActivity._setDefaultTab766, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -85,7 +85,7 @@ namespace android.app
 		public virtual global::android.widget.TabHost getTabHost() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.TabActivity)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.TabActivity._getTabHost767)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.TabActivity.staticClass, global::android.app.TabActivity._getTabHost767)); 
@@ -94,7 +94,7 @@ namespace android.app
 		public virtual global::android.widget.TabWidget getTabWidget() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.TabActivity)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabWidget>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.TabActivity._getTabWidget768)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabWidget>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.TabActivity.staticClass, global::android.app.TabActivity._getTabWidget768)); 

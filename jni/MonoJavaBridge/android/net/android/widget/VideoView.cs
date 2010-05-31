@@ -22,7 +22,7 @@ namespace android.widget
 		public virtual void start() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.VideoView._start11264); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._start11264); 
@@ -31,7 +31,7 @@ namespace android.widget
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.VideoView._onKeyDown11265, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._onKeyDown11265, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -40,7 +40,7 @@ namespace android.widget
 		public override bool onTouchEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.VideoView._onTouchEvent11266, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._onTouchEvent11266, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.widget
 		public override bool onTrackballEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.VideoView._onTrackballEvent11267, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._onTrackballEvent11267, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.widget
 		protected override void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.VideoView._onMeasure11268, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._onMeasure11268, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -67,7 +67,7 @@ namespace android.widget
 		public virtual int getDuration() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.VideoView._getDuration11269); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._getDuration11269); 
@@ -76,7 +76,7 @@ namespace android.widget
 		public virtual void pause() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.VideoView._pause11270); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._pause11270); 
@@ -85,7 +85,7 @@ namespace android.widget
 		public virtual bool isPlaying() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.VideoView._isPlaying11271); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._isPlaying11271); 
@@ -94,7 +94,7 @@ namespace android.widget
 		public virtual void seekTo(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.VideoView._seekTo11272, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._seekTo11272, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -103,7 +103,7 @@ namespace android.widget
 		public virtual int getCurrentPosition() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.VideoView._getCurrentPosition11273); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._getCurrentPosition11273); 
@@ -112,7 +112,7 @@ namespace android.widget
 		public virtual void setOnPreparedListener(android.media.MediaPlayer.OnPreparedListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.VideoView._setOnPreparedListener11274, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setOnPreparedListener11274, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -121,7 +121,7 @@ namespace android.widget
 		public virtual void setOnCompletionListener(android.media.MediaPlayer.OnCompletionListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.VideoView._setOnCompletionListener11275, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setOnCompletionListener11275, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -130,7 +130,7 @@ namespace android.widget
 		public virtual void setOnErrorListener(android.media.MediaPlayer.OnErrorListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.VideoView._setOnErrorListener11276, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setOnErrorListener11276, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -139,7 +139,7 @@ namespace android.widget
 		public virtual int getBufferPercentage() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.VideoView._getBufferPercentage11277); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._getBufferPercentage11277); 
@@ -148,7 +148,7 @@ namespace android.widget
 		public virtual bool canPause() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.VideoView._canPause11278); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._canPause11278); 
@@ -157,7 +157,7 @@ namespace android.widget
 		public virtual bool canSeekBackward() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.VideoView._canSeekBackward11279); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._canSeekBackward11279); 
@@ -166,7 +166,7 @@ namespace android.widget
 		public virtual bool canSeekForward() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.VideoView._canSeekForward11280); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._canSeekForward11280); 
@@ -175,7 +175,7 @@ namespace android.widget
 		public virtual int resolveAdjustedSize(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.VideoView._resolveAdjustedSize11281, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._resolveAdjustedSize11281, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -184,7 +184,7 @@ namespace android.widget
 		public virtual void setVideoPath(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.VideoView._setVideoPath11282, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setVideoPath11282, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -193,7 +193,7 @@ namespace android.widget
 		public virtual void setVideoURI(android.net.Uri arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.VideoView._setVideoURI11283, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setVideoURI11283, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -202,7 +202,7 @@ namespace android.widget
 		public virtual void stopPlayback() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.VideoView._stopPlayback11284); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._stopPlayback11284); 
@@ -211,7 +211,7 @@ namespace android.widget
 		public virtual void setMediaController(android.widget.MediaController arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.VideoView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.VideoView._setMediaController11285, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.VideoView.staticClass, global::android.widget.VideoView._setMediaController11285, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

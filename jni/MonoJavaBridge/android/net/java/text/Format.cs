@@ -45,7 +45,7 @@ namespace java.text
 		public virtual global::java.lang.Object clone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.Format)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.Format._clone12607)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.Format.staticClass, global::java.text.Format._clone12607)); 
@@ -54,7 +54,7 @@ namespace java.text
 		public virtual global::java.lang.String format(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.Format)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.Format._format12608, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.Format.staticClass, global::java.text.Format._format12608, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -65,7 +65,7 @@ namespace java.text
 		public virtual global::java.lang.Object parseObject(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.Format)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.Format._parseObject12610, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.Format.staticClass, global::java.text.Format._parseObject12610, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -76,7 +76,7 @@ namespace java.text
 		public virtual global::java.text.AttributedCharacterIterator formatToCharacterIterator(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.Format)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.text.AttributedCharacterIterator>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.Format._formatToCharacterIterator12612, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.text.AttributedCharacterIterator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.Format.staticClass, global::java.text.Format._formatToCharacterIterator12612, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 

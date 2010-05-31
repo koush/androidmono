@@ -22,7 +22,7 @@ namespace android.content.res
 		public virtual bool getBoolean(int arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.res.TypedArray._getBoolean2006, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getBoolean2006, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -31,7 +31,7 @@ namespace android.content.res
 		public virtual int getInt(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getInt2007, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getInt2007, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -40,7 +40,7 @@ namespace android.content.res
 		public virtual float getFloat(int arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.content.res.TypedArray._getFloat2008, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getFloat2008, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -49,7 +49,7 @@ namespace android.content.res
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._toString2009)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._toString2009)); 
@@ -58,7 +58,7 @@ namespace android.content.res
 		public virtual int length() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._length2010); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._length2010); 
@@ -67,7 +67,7 @@ namespace android.content.res
 		public virtual bool getValue(int arg0, android.util.TypedValue arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.res.TypedArray._getValue2011, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getValue2011, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -76,7 +76,7 @@ namespace android.content.res
 		public virtual global::android.content.res.Resources getResources() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.Resources>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._getResources2012)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.Resources>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getResources2012)); 
@@ -85,7 +85,7 @@ namespace android.content.res
 		public virtual int getInteger(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getInteger2013, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getInteger2013, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -94,7 +94,7 @@ namespace android.content.res
 		public virtual global::java.lang.String getString(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._getString2014, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getString2014, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -103,7 +103,7 @@ namespace android.content.res
 		public virtual int getIndex(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getIndex2015, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getIndex2015, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -112,7 +112,7 @@ namespace android.content.res
 		public virtual global::java.lang.CharSequence getText(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._getText2016, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getText2016, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -121,7 +121,7 @@ namespace android.content.res
 		public virtual void recycle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.res.TypedArray._recycle2017); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._recycle2017); 
@@ -129,7 +129,7 @@ namespace android.content.res
 		internal static global::net.sf.jni4net.jni.MethodId _getTextArray2018; 
 		public virtual global::java.lang.CharSequence[] getTextArray(int arg0) 
 		{ 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._getTextArray2018, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getTextArray2018, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -138,7 +138,7 @@ namespace android.content.res
 		public virtual float getDimension(int arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.content.res.TypedArray._getDimension2019, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getDimension2019, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -147,7 +147,7 @@ namespace android.content.res
 		public virtual int getDimensionPixelOffset(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getDimensionPixelOffset2020, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getDimensionPixelOffset2020, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -156,7 +156,7 @@ namespace android.content.res
 		public virtual int getDimensionPixelSize(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getDimensionPixelSize2021, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getDimensionPixelSize2021, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -165,7 +165,7 @@ namespace android.content.res
 		public virtual float getFraction(int arg0, int arg1, int arg2, float arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.content.res.TypedArray._getFraction2022, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getFraction2022, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -174,7 +174,7 @@ namespace android.content.res
 		public virtual global::android.graphics.drawable.Drawable getDrawable(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._getDrawable2023, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getDrawable2023, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -183,7 +183,7 @@ namespace android.content.res
 		public virtual int getColor(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getColor2024, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getColor2024, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -192,7 +192,7 @@ namespace android.content.res
 		public virtual global::android.content.res.ColorStateList getColorStateList(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._getColorStateList2025, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getColorStateList2025, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -201,7 +201,7 @@ namespace android.content.res
 		public virtual global::java.lang.String getPositionDescription() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._getPositionDescription2026)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getPositionDescription2026)); 
@@ -210,7 +210,7 @@ namespace android.content.res
 		public virtual int getIndexCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getIndexCount2027); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getIndexCount2027); 
@@ -219,7 +219,7 @@ namespace android.content.res
 		public virtual global::java.lang.String getNonResourceString(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._getNonResourceString2028, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getNonResourceString2028, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -228,7 +228,7 @@ namespace android.content.res
 		public virtual int getLayoutDimension(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getLayoutDimension2029, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getLayoutDimension2029, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -237,7 +237,7 @@ namespace android.content.res
 		public virtual int getLayoutDimension(int arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getLayoutDimension2030, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getLayoutDimension2030, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -246,7 +246,7 @@ namespace android.content.res
 		public virtual int getResourceId(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getResourceId2031, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getResourceId2031, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -255,7 +255,7 @@ namespace android.content.res
 		public virtual bool hasValue(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.res.TypedArray._hasValue2032, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._hasValue2032, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -264,7 +264,7 @@ namespace android.content.res
 		public virtual global::android.util.TypedValue peekValue(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.TypedArray)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.TypedValue>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._peekValue2033, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.TypedValue>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._peekValue2033, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 

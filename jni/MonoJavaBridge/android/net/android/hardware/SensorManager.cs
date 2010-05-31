@@ -33,7 +33,7 @@ namespace android.hardware
 		public virtual int getSensors() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.SensorManager)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.hardware.SensorManager._getSensors3947); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._getSensors3947); 
@@ -42,7 +42,7 @@ namespace android.hardware
 		public virtual global::java.util.List getSensorList(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.SensorManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.SensorManager._getSensorList3948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._getSensorList3948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -51,7 +51,7 @@ namespace android.hardware
 		public virtual global::android.hardware.Sensor getDefaultSensor(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.SensorManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Sensor>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.SensorManager._getDefaultSensor3949, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.hardware.Sensor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._getDefaultSensor3949, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -60,7 +60,7 @@ namespace android.hardware
 		public virtual bool registerListener(android.hardware.SensorEventListener arg0, android.hardware.Sensor arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.SensorManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.hardware.SensorManager._registerListener3950, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._registerListener3950, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -69,7 +69,7 @@ namespace android.hardware
 		public virtual bool registerListener(android.hardware.SensorListener arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.SensorManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.hardware.SensorManager._registerListener3951, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._registerListener3951, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -78,7 +78,7 @@ namespace android.hardware
 		public virtual bool registerListener(android.hardware.SensorEventListener arg0, android.hardware.Sensor arg1, int arg2, android.os.Handler arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.SensorManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.hardware.SensorManager._registerListener3952, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._registerListener3952, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
@@ -87,7 +87,7 @@ namespace android.hardware
 		public virtual bool registerListener(android.hardware.SensorListener arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.SensorManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.hardware.SensorManager._registerListener3953, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._registerListener3953, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -96,7 +96,7 @@ namespace android.hardware
 		public virtual void unregisterListener(android.hardware.SensorListener arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.SensorManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.hardware.SensorManager._unregisterListener3954, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._unregisterListener3954, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -105,7 +105,7 @@ namespace android.hardware
 		public virtual void unregisterListener(android.hardware.SensorListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.SensorManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.hardware.SensorManager._unregisterListener3955, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._unregisterListener3955, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -114,7 +114,7 @@ namespace android.hardware
 		public virtual void unregisterListener(android.hardware.SensorEventListener arg0, android.hardware.Sensor arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.SensorManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.hardware.SensorManager._unregisterListener3956, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._unregisterListener3956, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -123,7 +123,7 @@ namespace android.hardware
 		public virtual void unregisterListener(android.hardware.SensorEventListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.SensorManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.hardware.SensorManager._unregisterListener3957, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.SensorManager.staticClass, global::android.hardware.SensorManager._unregisterListener3957, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

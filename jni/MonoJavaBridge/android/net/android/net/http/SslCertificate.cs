@@ -40,7 +40,7 @@ namespace android.net.http
 			public virtual global::java.lang.String getDName() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.http.SslCertificate.DName)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.http.SslCertificate.DName._getDName4835)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.http.SslCertificate.DName.staticClass, global::android.net.http.SslCertificate.DName._getDName4835)); 
@@ -49,7 +49,7 @@ namespace android.net.http
 			public virtual global::java.lang.String getCName() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.http.SslCertificate.DName)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.http.SslCertificate.DName._getCName4836)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.http.SslCertificate.DName.staticClass, global::android.net.http.SslCertificate.DName._getCName4836)); 
@@ -58,7 +58,7 @@ namespace android.net.http
 			public virtual global::java.lang.String getOName() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.http.SslCertificate.DName)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.http.SslCertificate.DName._getOName4837)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.http.SslCertificate.DName.staticClass, global::android.net.http.SslCertificate.DName._getOName4837)); 
@@ -67,7 +67,7 @@ namespace android.net.http
 			public virtual global::java.lang.String getUName() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.net.http.SslCertificate.DName)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.http.SslCertificate.DName._getUName4838)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.http.SslCertificate.DName.staticClass, global::android.net.http.SslCertificate.DName._getUName4838)); 
@@ -92,7 +92,7 @@ namespace android.net.http
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.http.SslCertificate)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.http.SslCertificate._toString4840)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.http.SslCertificate.staticClass, global::android.net.http.SslCertificate._toString4840)); 
@@ -113,7 +113,7 @@ namespace android.net.http
 		public virtual global::java.lang.String getValidNotBefore() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.http.SslCertificate)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.http.SslCertificate._getValidNotBefore4843)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.http.SslCertificate.staticClass, global::android.net.http.SslCertificate._getValidNotBefore4843)); 
@@ -122,7 +122,7 @@ namespace android.net.http
 		public virtual global::java.lang.String getValidNotAfter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.http.SslCertificate)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.http.SslCertificate._getValidNotAfter4844)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.http.SslCertificate.staticClass, global::android.net.http.SslCertificate._getValidNotAfter4844)); 
@@ -131,7 +131,7 @@ namespace android.net.http
 		public virtual global::android.net.http.SslCertificate.DName getIssuedTo() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.http.SslCertificate)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.http.SslCertificate.DName>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.http.SslCertificate._getIssuedTo4845)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.http.SslCertificate.DName>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.http.SslCertificate.staticClass, global::android.net.http.SslCertificate._getIssuedTo4845)); 
@@ -140,7 +140,7 @@ namespace android.net.http
 		public virtual global::android.net.http.SslCertificate.DName getIssuedBy() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.http.SslCertificate)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.http.SslCertificate.DName>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.http.SslCertificate._getIssuedBy4846)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.http.SslCertificate.DName>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.http.SslCertificate.staticClass, global::android.net.http.SslCertificate._getIssuedBy4846)); 

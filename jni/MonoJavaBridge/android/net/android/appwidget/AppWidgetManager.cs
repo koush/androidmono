@@ -28,7 +28,7 @@ namespace android.appwidget
 		public virtual global::android.appwidget.AppWidgetProviderInfo getAppWidgetInfo(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.appwidget.AppWidgetManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.appwidget.AppWidgetProviderInfo>(@__env, @__env.CallObjectMethodPtr(this, global::android.appwidget.AppWidgetManager._getAppWidgetInfo835, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.appwidget.AppWidgetProviderInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._getAppWidgetInfo835, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -37,7 +37,7 @@ namespace android.appwidget
 		public virtual void updateAppWidget(android.content.ComponentName arg0, android.widget.RemoteViews arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.appwidget.AppWidgetManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.appwidget.AppWidgetManager._updateAppWidget836, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._updateAppWidget836, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -46,7 +46,7 @@ namespace android.appwidget
 		public virtual void updateAppWidget(int[] arg0, android.widget.RemoteViews arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.appwidget.AppWidgetManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.appwidget.AppWidgetManager._updateAppWidget837, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._updateAppWidget837, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -55,7 +55,7 @@ namespace android.appwidget
 		public virtual void updateAppWidget(int arg0, android.widget.RemoteViews arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.appwidget.AppWidgetManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.appwidget.AppWidgetManager._updateAppWidget838, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._updateAppWidget838, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -64,7 +64,7 @@ namespace android.appwidget
 		public virtual global::java.util.List getInstalledProviders() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.appwidget.AppWidgetManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.appwidget.AppWidgetManager._getInstalledProviders839)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._getInstalledProviders839)); 
@@ -73,7 +73,7 @@ namespace android.appwidget
 		public virtual void bindAppWidgetId(int arg0, android.content.ComponentName arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.appwidget.AppWidgetManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.appwidget.AppWidgetManager._bindAppWidgetId840, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._bindAppWidgetId840, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -81,7 +81,7 @@ namespace android.appwidget
 		internal static global::net.sf.jni4net.jni.MethodId _getAppWidgetIds841; 
 		public virtual int[] getAppWidgetIds(android.content.ComponentName arg0) 
 		{ 
-			if (GetType() == typeof(android.appwidget.AppWidgetManager)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.appwidget.AppWidgetManager._getAppWidgetIds841, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.appwidget.AppWidgetManager.staticClass, global::android.appwidget.AppWidgetManager._getAppWidgetIds841, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 

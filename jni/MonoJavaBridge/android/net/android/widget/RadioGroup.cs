@@ -40,7 +40,7 @@ namespace android.widget
 			protected override void setBaseAttributes(android.content.res.TypedArray arg0, int arg1, int arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.RadioGroup.LayoutParams)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.RadioGroup.LayoutParams._setBaseAttributes10627, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.RadioGroup.LayoutParams.staticClass, global::android.widget.RadioGroup.LayoutParams._setBaseAttributes10627, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -122,7 +122,7 @@ namespace android.widget
 			 void android.widget.RadioGroup.OnCheckedChangeListener.onCheckedChanged(android.widget.RadioGroup arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.RadioGroup.__OnCheckedChangeListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.RadioGroup.__OnCheckedChangeListener._onCheckedChanged10633, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.RadioGroup.__OnCheckedChangeListener.staticClass, global::android.widget.RadioGroup.__OnCheckedChangeListener._onCheckedChanged10633, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -137,7 +137,7 @@ namespace android.widget
 		public virtual void check(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RadioGroup)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RadioGroup._check10634, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._check10634, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -146,7 +146,7 @@ namespace android.widget
 		public override void addView(android.view.View arg0, int arg1, android.view.ViewGroup.LayoutParams arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RadioGroup)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RadioGroup._addView10635, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._addView10635, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -155,7 +155,7 @@ namespace android.widget
 		protected override void onFinishInflate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RadioGroup)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RadioGroup._onFinishInflate10636); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._onFinishInflate10636); 
@@ -164,7 +164,7 @@ namespace android.widget
 		protected override bool checkLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RadioGroup)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.RadioGroup._checkLayoutParams10637, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._checkLayoutParams10637, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -173,7 +173,7 @@ namespace android.widget
 		public override void setOnHierarchyChangeListener(android.view.ViewGroup.OnHierarchyChangeListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RadioGroup)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RadioGroup._setOnHierarchyChangeListener10638, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._setOnHierarchyChangeListener10638, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -182,7 +182,7 @@ namespace android.widget
 		public virtual new global::android.widget.RadioGroup.LayoutParams generateLayoutParams(android.util.AttributeSet arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RadioGroup)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.RadioGroup.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.RadioGroup._generateLayoutParams10639, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.RadioGroup.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._generateLayoutParams10639, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -191,7 +191,7 @@ namespace android.widget
 		protected override global::android.widget.LinearLayout.LayoutParams generateDefaultLayoutParams() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RadioGroup)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.RadioGroup._generateDefaultLayoutParams10640)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._generateDefaultLayoutParams10640)); 
@@ -200,7 +200,7 @@ namespace android.widget
 		public virtual void setOnCheckedChangeListener(android.widget.RadioGroup.OnCheckedChangeListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RadioGroup)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RadioGroup._setOnCheckedChangeListener10641, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._setOnCheckedChangeListener10641, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -209,7 +209,7 @@ namespace android.widget
 		public virtual int getCheckedRadioButtonId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RadioGroup)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.RadioGroup._getCheckedRadioButtonId10642); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._getCheckedRadioButtonId10642); 
@@ -218,7 +218,7 @@ namespace android.widget
 		public virtual void clearCheck() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RadioGroup)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RadioGroup._clearCheck10643); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RadioGroup.staticClass, global::android.widget.RadioGroup._clearCheck10643); 

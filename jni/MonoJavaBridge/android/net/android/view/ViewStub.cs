@@ -54,7 +54,7 @@ namespace android.view
 			 void android.view.ViewStub.OnInflateListener.onInflate(android.view.ViewStub arg0, android.view.View arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewStub.__OnInflateListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.view.ViewStub.__OnInflateListener._onInflate8631, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.__OnInflateListener.staticClass, global::android.view.ViewStub.__OnInflateListener._onInflate8631, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -69,7 +69,7 @@ namespace android.view
 		public global::android.view.View inflate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.ViewStub)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewStub._inflate8632)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._inflate8632)); 
@@ -78,7 +78,7 @@ namespace android.view
 		public sealed override void draw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.ViewStub)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.ViewStub._draw8633, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._draw8633, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -87,7 +87,7 @@ namespace android.view
 		public sealed override void setVisibility(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.ViewStub)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.ViewStub._setVisibility8634, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setVisibility8634, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -96,7 +96,7 @@ namespace android.view
 		public void setLayoutResource(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.ViewStub)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.ViewStub._setLayoutResource8635, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setLayoutResource8635, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -105,7 +105,7 @@ namespace android.view
 		public int getLayoutResource() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.ViewStub)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.ViewStub._getLayoutResource8636); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._getLayoutResource8636); 
@@ -114,7 +114,7 @@ namespace android.view
 		public int getInflatedId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.ViewStub)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.ViewStub._getInflatedId8637); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._getInflatedId8637); 
@@ -123,7 +123,7 @@ namespace android.view
 		public void setInflatedId(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.ViewStub)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.ViewStub._setInflatedId8638, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setInflatedId8638, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -132,7 +132,7 @@ namespace android.view
 		public void setOnInflateListener(android.view.ViewStub.OnInflateListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.ViewStub)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.ViewStub._setOnInflateListener8639, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.ViewStub.staticClass, global::android.view.ViewStub._setOnInflateListener8639, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

@@ -22,7 +22,7 @@ namespace android.content
 		public sealed override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ComponentName)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.ComponentName._hashCode958); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._hashCode958); 
@@ -31,7 +31,7 @@ namespace android.content
 		public sealed override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ComponentName)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.ComponentName._equals959, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._equals959, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace android.content
 		public int compareTo(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ComponentName)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.ComponentName._compareTo960, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._compareTo960, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -49,7 +49,7 @@ namespace android.content
 		public int compareTo(android.content.ComponentName arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ComponentName)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.ComponentName._compareTo961, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._compareTo961, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.content
 		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ComponentName)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ComponentName._toString962)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._toString962)); 
@@ -67,7 +67,7 @@ namespace android.content
 		public global::java.lang.String getClassName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ComponentName)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ComponentName._getClassName963)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._getClassName963)); 
@@ -76,7 +76,7 @@ namespace android.content
 		public global::java.lang.String getPackageName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ComponentName)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ComponentName._getPackageName964)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._getPackageName964)); 
@@ -85,7 +85,7 @@ namespace android.content
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ComponentName)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.ComponentName._writeToParcel965, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._writeToParcel965, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -100,7 +100,7 @@ namespace android.content
 		public int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ComponentName)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.ComponentName._describeContents967); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._describeContents967); 
@@ -115,7 +115,7 @@ namespace android.content
 		public global::java.lang.String getShortClassName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ComponentName)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ComponentName._getShortClassName969)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._getShortClassName969)); 
@@ -124,7 +124,7 @@ namespace android.content
 		public global::java.lang.String flattenToString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ComponentName)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ComponentName._flattenToString970)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._flattenToString970)); 
@@ -133,7 +133,7 @@ namespace android.content
 		public global::java.lang.String flattenToShortString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ComponentName)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ComponentName._flattenToShortString971)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._flattenToShortString971)); 
@@ -148,7 +148,7 @@ namespace android.content
 		public global::java.lang.String toShortString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ComponentName)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ComponentName._toShortString973)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._toShortString973)); 

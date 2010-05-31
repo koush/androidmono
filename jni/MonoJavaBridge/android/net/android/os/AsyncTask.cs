@@ -75,7 +75,7 @@ namespace android.os
 		public virtual global::java.lang.Object get() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.AsyncTask)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.AsyncTask._get5336)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._get5336)); 
@@ -84,7 +84,7 @@ namespace android.os
 		public virtual global::java.lang.Object get(long arg0, java.util.concurrent.TimeUnit arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.AsyncTask)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.AsyncTask._get5337, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._get5337, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -93,7 +93,7 @@ namespace android.os
 		public virtual global::android.os.AsyncTask execute(java.lang.Object[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.AsyncTask)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.AsyncTask>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.AsyncTask._execute5338, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.AsyncTask>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._execute5338, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0))); 
@@ -102,7 +102,7 @@ namespace android.os
 		public virtual bool cancel(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.AsyncTask)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.AsyncTask._cancel5339, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._cancel5339, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -111,7 +111,7 @@ namespace android.os
 		public virtual bool isCancelled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.AsyncTask)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.AsyncTask._isCancelled5340); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._isCancelled5340); 
@@ -120,7 +120,7 @@ namespace android.os
 		public virtual global::android.os.AsyncTask.Status getStatus() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.AsyncTask)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.AsyncTask.Status>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.AsyncTask._getStatus5341)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.AsyncTask.Status>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._getStatus5341)); 
@@ -131,7 +131,7 @@ namespace android.os
 		protected virtual void onPreExecute() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.AsyncTask)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.AsyncTask._onPreExecute5343); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._onPreExecute5343); 
@@ -140,7 +140,7 @@ namespace android.os
 		protected virtual void onPostExecute(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.AsyncTask)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.AsyncTask._onPostExecute5344, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._onPostExecute5344, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -149,7 +149,7 @@ namespace android.os
 		protected virtual void onProgressUpdate(java.lang.Object[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.AsyncTask)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.AsyncTask._onProgressUpdate5345, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._onProgressUpdate5345, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0)); 
@@ -158,7 +158,7 @@ namespace android.os
 		protected virtual void onCancelled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.AsyncTask)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.AsyncTask._onCancelled5346); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._onCancelled5346); 
@@ -167,7 +167,7 @@ namespace android.os
 		protected virtual void publishProgress(java.lang.Object[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.AsyncTask)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.AsyncTask._publishProgress5347, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.AsyncTask.staticClass, global::android.os.AsyncTask._publishProgress5347, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0)); 

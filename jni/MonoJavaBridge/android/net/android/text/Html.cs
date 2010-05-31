@@ -54,7 +54,7 @@ namespace android.text
 			 global::android.graphics.drawable.Drawable android.text.Html.ImageGetter.getDrawable(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.text.Html.__ImageGetter)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.Html.__ImageGetter._getDrawable6780, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.Html.__ImageGetter.staticClass, global::android.text.Html.__ImageGetter._getDrawable6780, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -101,7 +101,7 @@ namespace android.text
 			 void android.text.Html.TagHandler.handleTag(bool arg0, java.lang.String arg1, android.text.Editable arg2, org.xml.sax.XMLReader arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.text.Html.__TagHandler)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.text.Html.__TagHandler._handleTag6781, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.text.Html.__TagHandler.staticClass, global::android.text.Html.__TagHandler._handleTag6781, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)); 

@@ -17,7 +17,7 @@ namespace java.nio
 		public virtual global::java.nio.DoubleBuffer get(double[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.DoubleBuffer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.DoubleBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.DoubleBuffer._get12031, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.DoubleBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.DoubleBuffer.staticClass, global::java.nio.DoubleBuffer._get12031, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
@@ -26,7 +26,7 @@ namespace java.nio
 		public virtual global::java.nio.DoubleBuffer get(double[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.DoubleBuffer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.DoubleBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.DoubleBuffer._get12032, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.DoubleBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.DoubleBuffer.staticClass, global::java.nio.DoubleBuffer._get12032, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
@@ -37,7 +37,7 @@ namespace java.nio
 		public virtual global::java.nio.DoubleBuffer put(java.nio.DoubleBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.DoubleBuffer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.DoubleBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.DoubleBuffer._put12034, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.DoubleBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.DoubleBuffer.staticClass, global::java.nio.DoubleBuffer._put12034, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -50,7 +50,7 @@ namespace java.nio
 		public virtual global::java.nio.DoubleBuffer put(double[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.DoubleBuffer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.DoubleBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.DoubleBuffer._put12037, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.DoubleBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.DoubleBuffer.staticClass, global::java.nio.DoubleBuffer._put12037, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
@@ -59,7 +59,7 @@ namespace java.nio
 		public virtual global::java.nio.DoubleBuffer put(double[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.DoubleBuffer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.DoubleBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.DoubleBuffer._put12038, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.DoubleBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.DoubleBuffer.staticClass, global::java.nio.DoubleBuffer._put12038, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
@@ -68,7 +68,7 @@ namespace java.nio
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.DoubleBuffer)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.nio.DoubleBuffer._hashCode12039); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.nio.DoubleBuffer.staticClass, global::java.nio.DoubleBuffer._hashCode12039); 
@@ -77,7 +77,7 @@ namespace java.nio
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.DoubleBuffer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.DoubleBuffer._equals12040, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.DoubleBuffer.staticClass, global::java.nio.DoubleBuffer._equals12040, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -86,7 +86,7 @@ namespace java.nio
 		public virtual int compareTo(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.DoubleBuffer)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.nio.DoubleBuffer._compareTo12041, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.nio.DoubleBuffer.staticClass, global::java.nio.DoubleBuffer._compareTo12041, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -95,7 +95,7 @@ namespace java.nio
 		public virtual int compareTo(java.nio.DoubleBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.DoubleBuffer)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.nio.DoubleBuffer._compareTo12042, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.nio.DoubleBuffer.staticClass, global::java.nio.DoubleBuffer._compareTo12042, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -104,7 +104,7 @@ namespace java.nio
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.DoubleBuffer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.DoubleBuffer._toString12043)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.DoubleBuffer.staticClass, global::java.nio.DoubleBuffer._toString12043)); 

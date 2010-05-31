@@ -22,7 +22,7 @@ namespace java.security
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.CodeSource)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.security.CodeSource._hashCode12427); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._hashCode12427); 
@@ -31,7 +31,7 @@ namespace java.security
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.CodeSource)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.security.CodeSource._equals12428, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._equals12428, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace java.security
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.CodeSource)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.CodeSource._toString12429)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._toString12429)); 
@@ -49,7 +49,7 @@ namespace java.security
 		public virtual global::java.net.URL getLocation() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.CodeSource)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URL>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.CodeSource._getLocation12430)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URL>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._getLocation12430)); 
@@ -57,7 +57,7 @@ namespace java.security
 		internal static global::net.sf.jni4net.jni.MethodId _getCertificates12431; 
 		public virtual global::java.security.cert.Certificate[] getCertificates() 
 		{ 
-			if (GetType() == typeof(java.security.CodeSource)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.security.CodeSource._getCertificates12431)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._getCertificates12431)); 
@@ -66,7 +66,7 @@ namespace java.security
 		public virtual bool implies(java.security.CodeSource arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.CodeSource)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.security.CodeSource._implies12432, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._implies12432, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -74,7 +74,7 @@ namespace java.security
 		internal static global::net.sf.jni4net.jni.MethodId _getCodeSigners12433; 
 		public virtual global::java.security.CodeSigner[] getCodeSigners() 
 		{ 
-			if (GetType() == typeof(java.security.CodeSource)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.security.CodeSource._getCodeSigners12433)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.CodeSource.staticClass, global::java.security.CodeSource._getCodeSigners12433)); 

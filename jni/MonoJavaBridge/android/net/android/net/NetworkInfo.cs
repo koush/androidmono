@@ -222,7 +222,7 @@ namespace android.net
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.NetworkInfo)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.NetworkInfo._toString4707)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._toString4707)); 
@@ -231,7 +231,7 @@ namespace android.net
 		public virtual global::android.net.NetworkInfo.State getState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.NetworkInfo)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo.State>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.NetworkInfo._getState4708)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo.State>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getState4708)); 
@@ -240,7 +240,7 @@ namespace android.net
 		public virtual int getType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.NetworkInfo)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.NetworkInfo._getType4709); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getType4709); 
@@ -249,7 +249,7 @@ namespace android.net
 		public virtual global::java.lang.String getTypeName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.NetworkInfo)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.NetworkInfo._getTypeName4710)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getTypeName4710)); 
@@ -258,7 +258,7 @@ namespace android.net
 		public virtual bool isAvailable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.NetworkInfo)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.NetworkInfo._isAvailable4711); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._isAvailable4711); 
@@ -267,7 +267,7 @@ namespace android.net
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.NetworkInfo)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.net.NetworkInfo._writeToParcel4712, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._writeToParcel4712, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -276,7 +276,7 @@ namespace android.net
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.NetworkInfo)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.NetworkInfo._describeContents4713); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._describeContents4713); 
@@ -285,7 +285,7 @@ namespace android.net
 		public virtual global::java.lang.String getReason() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.NetworkInfo)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.NetworkInfo._getReason4714)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getReason4714)); 
@@ -294,7 +294,7 @@ namespace android.net
 		public virtual bool isConnected() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.NetworkInfo)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.NetworkInfo._isConnected4715); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._isConnected4715); 
@@ -303,7 +303,7 @@ namespace android.net
 		public virtual bool isFailover() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.NetworkInfo)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.NetworkInfo._isFailover4716); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._isFailover4716); 
@@ -312,7 +312,7 @@ namespace android.net
 		public virtual int getSubtype() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.NetworkInfo)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.NetworkInfo._getSubtype4717); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getSubtype4717); 
@@ -321,7 +321,7 @@ namespace android.net
 		public virtual global::java.lang.String getSubtypeName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.NetworkInfo)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.NetworkInfo._getSubtypeName4718)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getSubtypeName4718)); 
@@ -330,7 +330,7 @@ namespace android.net
 		public virtual bool isConnectedOrConnecting() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.NetworkInfo)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.NetworkInfo._isConnectedOrConnecting4719); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._isConnectedOrConnecting4719); 
@@ -339,7 +339,7 @@ namespace android.net
 		public virtual bool isRoaming() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.NetworkInfo)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.net.NetworkInfo._isRoaming4720); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._isRoaming4720); 
@@ -348,7 +348,7 @@ namespace android.net
 		public virtual global::android.net.NetworkInfo.DetailedState getDetailedState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.NetworkInfo)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo.DetailedState>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.NetworkInfo._getDetailedState4721)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.NetworkInfo.DetailedState>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getDetailedState4721)); 
@@ -357,7 +357,7 @@ namespace android.net
 		public virtual global::java.lang.String getExtraInfo() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.NetworkInfo)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.NetworkInfo._getExtraInfo4722)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.NetworkInfo.staticClass, global::android.net.NetworkInfo._getExtraInfo4722)); 

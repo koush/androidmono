@@ -36,7 +36,7 @@ namespace java.net
 		 global::java.net.DatagramSocketImpl java.net.DatagramSocketImplFactory.createDatagramSocketImpl() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.__DatagramSocketImplFactory)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.DatagramSocketImpl>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.__DatagramSocketImplFactory._createDatagramSocketImpl11737)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.DatagramSocketImpl>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.__DatagramSocketImplFactory.staticClass, global::java.net.__DatagramSocketImplFactory._createDatagramSocketImpl11737)); 

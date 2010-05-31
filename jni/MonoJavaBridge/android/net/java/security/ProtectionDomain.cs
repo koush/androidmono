@@ -22,7 +22,7 @@ namespace java.security
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.ProtectionDomain)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.ProtectionDomain._toString12460)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._toString12460)); 
@@ -31,7 +31,7 @@ namespace java.security
 		public virtual global::java.lang.ClassLoader getClassLoader() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.ProtectionDomain)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.ClassLoader>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.ProtectionDomain._getClassLoader12461)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.ClassLoader>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getClassLoader12461)); 
@@ -40,7 +40,7 @@ namespace java.security
 		public virtual global::java.security.CodeSource getCodeSource() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.ProtectionDomain)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.CodeSource>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.ProtectionDomain._getCodeSource12462)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.CodeSource>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getCodeSource12462)); 
@@ -48,7 +48,7 @@ namespace java.security
 		internal static global::net.sf.jni4net.jni.MethodId _getPrincipals12463; 
 		public virtual global::java.security.Principal[] getPrincipals() 
 		{ 
-			if (GetType() == typeof(java.security.ProtectionDomain)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.security.ProtectionDomain._getPrincipals12463)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getPrincipals12463)); 
@@ -57,7 +57,7 @@ namespace java.security
 		public virtual global::java.security.PermissionCollection getPermissions() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.ProtectionDomain)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.PermissionCollection>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.ProtectionDomain._getPermissions12464)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.security.PermissionCollection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._getPermissions12464)); 
@@ -66,7 +66,7 @@ namespace java.security
 		public virtual bool implies(java.security.Permission arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.ProtectionDomain)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.security.ProtectionDomain._implies12465, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.ProtectionDomain.staticClass, global::java.security.ProtectionDomain._implies12465, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

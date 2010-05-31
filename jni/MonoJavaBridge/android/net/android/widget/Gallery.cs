@@ -66,7 +66,7 @@ namespace android.widget
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._onKeyDown10233, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onKeyDown10233, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -75,7 +75,7 @@ namespace android.widget
 		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._onKeyUp10234, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onKeyUp10234, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -84,7 +84,7 @@ namespace android.widget
 		public override bool onTouchEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._onTouchEvent10235, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onTouchEvent10235, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -93,7 +93,7 @@ namespace android.widget
 		public override bool dispatchKeyEvent(android.view.KeyEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._dispatchKeyEvent10236, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._dispatchKeyEvent10236, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -102,7 +102,7 @@ namespace android.widget
 		public virtual void setGravity(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Gallery._setGravity10237, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._setGravity10237, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -111,7 +111,7 @@ namespace android.widget
 		public override bool showContextMenu() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._showContextMenu10238); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._showContextMenu10238); 
@@ -120,7 +120,7 @@ namespace android.widget
 		protected override void onFocusChanged(bool arg0, int arg1, android.graphics.Rect arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Gallery._onFocusChanged10239, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onFocusChanged10239, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -129,7 +129,7 @@ namespace android.widget
 		protected override void dispatchSetPressed(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Gallery._dispatchSetPressed10240, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._dispatchSetPressed10240, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -138,7 +138,7 @@ namespace android.widget
 		protected override global::android.view.ContextMenu_ContextMenuInfo getContextMenuInfo() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ContextMenu_ContextMenuInfo>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.Gallery._getContextMenuInfo10241)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ContextMenu_ContextMenuInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._getContextMenuInfo10241)); 
@@ -147,7 +147,7 @@ namespace android.widget
 		protected override int computeHorizontalScrollRange() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.Gallery._computeHorizontalScrollRange10242); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._computeHorizontalScrollRange10242); 
@@ -156,7 +156,7 @@ namespace android.widget
 		protected override int computeHorizontalScrollOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.Gallery._computeHorizontalScrollOffset10243); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._computeHorizontalScrollOffset10243); 
@@ -165,7 +165,7 @@ namespace android.widget
 		protected override int computeHorizontalScrollExtent() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.Gallery._computeHorizontalScrollExtent10244); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._computeHorizontalScrollExtent10244); 
@@ -174,7 +174,7 @@ namespace android.widget
 		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Gallery._onLayout10245, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onLayout10245, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -183,7 +183,7 @@ namespace android.widget
 		public override void dispatchSetSelected(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Gallery._dispatchSetSelected10246, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._dispatchSetSelected10246, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -192,7 +192,7 @@ namespace android.widget
 		public override bool showContextMenuForChild(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._showContextMenuForChild10247, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._showContextMenuForChild10247, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -201,7 +201,7 @@ namespace android.widget
 		protected override int getChildDrawingOrder(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.Gallery._getChildDrawingOrder10248, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._getChildDrawingOrder10248, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -210,7 +210,7 @@ namespace android.widget
 		protected override bool getChildStaticTransformation(android.view.View arg0, android.view.animation.Transformation arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._getChildStaticTransformation10249, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._getChildStaticTransformation10249, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -219,7 +219,7 @@ namespace android.widget
 		protected override bool checkLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._checkLayoutParams10250, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._checkLayoutParams10250, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -228,7 +228,7 @@ namespace android.widget
 		public override global::android.view.ViewGroup.LayoutParams generateLayoutParams(android.util.AttributeSet arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.Gallery._generateLayoutParams10251, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._generateLayoutParams10251, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -237,7 +237,7 @@ namespace android.widget
 		protected override global::android.view.ViewGroup.LayoutParams generateLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.Gallery._generateLayoutParams10252, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._generateLayoutParams10252, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -246,7 +246,7 @@ namespace android.widget
 		protected override global::android.view.ViewGroup.LayoutParams generateDefaultLayoutParams() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.Gallery._generateDefaultLayoutParams10253)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._generateDefaultLayoutParams10253)); 
@@ -255,7 +255,7 @@ namespace android.widget
 		public virtual void onLongPress(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Gallery._onLongPress10254, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onLongPress10254, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -264,7 +264,7 @@ namespace android.widget
 		public virtual bool onSingleTapUp(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._onSingleTapUp10255, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onSingleTapUp10255, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -273,7 +273,7 @@ namespace android.widget
 		public virtual bool onScroll(android.view.MotionEvent arg0, android.view.MotionEvent arg1, float arg2, float arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._onScroll10256, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onScroll10256, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -282,7 +282,7 @@ namespace android.widget
 		public virtual bool onFling(android.view.MotionEvent arg0, android.view.MotionEvent arg1, float arg2, float arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._onFling10257, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onFling10257, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -291,7 +291,7 @@ namespace android.widget
 		public virtual void onShowPress(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Gallery._onShowPress10258, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onShowPress10258, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -300,7 +300,7 @@ namespace android.widget
 		public virtual bool onDown(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.Gallery._onDown10259, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._onDown10259, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -309,7 +309,7 @@ namespace android.widget
 		public virtual void setCallbackDuringFling(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Gallery._setCallbackDuringFling10260, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._setCallbackDuringFling10260, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -318,7 +318,7 @@ namespace android.widget
 		public virtual void setAnimationDuration(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Gallery._setAnimationDuration10261, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._setAnimationDuration10261, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -327,7 +327,7 @@ namespace android.widget
 		public virtual void setSpacing(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Gallery._setSpacing10262, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._setSpacing10262, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -336,7 +336,7 @@ namespace android.widget
 		public virtual void setUnselectedAlpha(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Gallery)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Gallery._setUnselectedAlpha10263, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Gallery.staticClass, global::android.widget.Gallery._setUnselectedAlpha10263, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

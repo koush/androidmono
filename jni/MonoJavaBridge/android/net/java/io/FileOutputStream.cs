@@ -22,7 +22,7 @@ namespace java.io
 		public override void write(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.FileOutputStream)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.FileOutputStream._write11395, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._write11395, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -31,7 +31,7 @@ namespace java.io
 		public override void write(byte[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.FileOutputStream)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.FileOutputStream._write11396, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._write11396, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace java.io
 		public override void write(byte[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.FileOutputStream)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.FileOutputStream._write11397, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._write11397, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -49,7 +49,7 @@ namespace java.io
 		public override void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.FileOutputStream)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.FileOutputStream._close11398); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._close11398); 
@@ -58,7 +58,7 @@ namespace java.io
 		public virtual global::java.io.FileDescriptor getFD() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.FileOutputStream)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, global::java.io.FileOutputStream._getFD11399)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._getFD11399)); 
@@ -67,7 +67,7 @@ namespace java.io
 		public virtual global::java.nio.channels.FileChannel getChannel() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.FileOutputStream)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.FileChannel>(@__env, @__env.CallObjectMethodPtr(this, global::java.io.FileOutputStream._getChannel11400)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.channels.FileChannel>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.io.FileOutputStream.staticClass, global::java.io.FileOutputStream._getChannel11400)); 

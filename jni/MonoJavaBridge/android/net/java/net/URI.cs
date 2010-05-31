@@ -22,7 +22,7 @@ namespace java.net
 		public sealed override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.net.URI._hashCode11897); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.net.URI.staticClass, global::java.net.URI._hashCode11897); 
@@ -31,7 +31,7 @@ namespace java.net
 		public sealed override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.URI._equals11898, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.URI.staticClass, global::java.net.URI._equals11898, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace java.net
 		public int compareTo(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.net.URI._compareTo11899, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.net.URI.staticClass, global::java.net.URI._compareTo11899, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -49,7 +49,7 @@ namespace java.net
 		public int compareTo(java.net.URI arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.net.URI._compareTo11900, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.net.URI.staticClass, global::java.net.URI._compareTo11900, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace java.net
 		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._toString11901)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._toString11901)); 
@@ -67,7 +67,7 @@ namespace java.net
 		public bool isAbsolute() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.URI._isAbsolute11902); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.URI.staticClass, global::java.net.URI._isAbsolute11902); 
@@ -76,7 +76,7 @@ namespace java.net
 		public global::java.lang.String getPath() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._getPath11903)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._getPath11903)); 
@@ -85,7 +85,7 @@ namespace java.net
 		public global::java.net.URL toURL() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URL>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._toURL11904)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URL>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._toURL11904)); 
@@ -94,7 +94,7 @@ namespace java.net
 		public global::java.net.URI resolve(java.net.URI arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URI>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._resolve11905, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URI>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._resolve11905, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -103,7 +103,7 @@ namespace java.net
 		public global::java.net.URI resolve(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URI>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._resolve11906, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URI>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._resolve11906, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -112,7 +112,7 @@ namespace java.net
 		public global::java.net.URI normalize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URI>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._normalize11907)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URI>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._normalize11907)); 
@@ -121,7 +121,7 @@ namespace java.net
 		public bool isOpaque() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.URI._isOpaque11908); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.URI.staticClass, global::java.net.URI._isOpaque11908); 
@@ -130,7 +130,7 @@ namespace java.net
 		public global::java.lang.String getScheme() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._getScheme11909)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._getScheme11909)); 
@@ -139,7 +139,7 @@ namespace java.net
 		public global::java.lang.String getAuthority() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._getAuthority11910)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._getAuthority11910)); 
@@ -148,7 +148,7 @@ namespace java.net
 		public global::java.lang.String getFragment() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._getFragment11911)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._getFragment11911)); 
@@ -157,7 +157,7 @@ namespace java.net
 		public global::java.lang.String getQuery() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._getQuery11912)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._getQuery11912)); 
@@ -166,7 +166,7 @@ namespace java.net
 		public global::java.lang.String getUserInfo() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._getUserInfo11913)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._getUserInfo11913)); 
@@ -175,7 +175,7 @@ namespace java.net
 		public int getPort() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.net.URI._getPort11914); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.net.URI.staticClass, global::java.net.URI._getPort11914); 
@@ -184,7 +184,7 @@ namespace java.net
 		public global::java.lang.String getHost() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._getHost11915)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._getHost11915)); 
@@ -199,7 +199,7 @@ namespace java.net
 		public global::java.lang.String getSchemeSpecificPart() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._getSchemeSpecificPart11917)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._getSchemeSpecificPart11917)); 
@@ -208,7 +208,7 @@ namespace java.net
 		public global::java.net.URI parseServerAuthority() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URI>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._parseServerAuthority11918)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URI>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._parseServerAuthority11918)); 
@@ -217,7 +217,7 @@ namespace java.net
 		public global::java.net.URI relativize(java.net.URI arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URI>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._relativize11919, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URI>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._relativize11919, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -226,7 +226,7 @@ namespace java.net
 		public global::java.lang.String getRawSchemeSpecificPart() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._getRawSchemeSpecificPart11920)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._getRawSchemeSpecificPart11920)); 
@@ -235,7 +235,7 @@ namespace java.net
 		public global::java.lang.String getRawAuthority() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._getRawAuthority11921)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._getRawAuthority11921)); 
@@ -244,7 +244,7 @@ namespace java.net
 		public global::java.lang.String getRawUserInfo() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._getRawUserInfo11922)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._getRawUserInfo11922)); 
@@ -253,7 +253,7 @@ namespace java.net
 		public global::java.lang.String getRawPath() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._getRawPath11923)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._getRawPath11923)); 
@@ -262,7 +262,7 @@ namespace java.net
 		public global::java.lang.String getRawQuery() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._getRawQuery11924)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._getRawQuery11924)); 
@@ -271,7 +271,7 @@ namespace java.net
 		public global::java.lang.String getRawFragment() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._getRawFragment11925)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._getRawFragment11925)); 
@@ -280,7 +280,7 @@ namespace java.net
 		public global::java.lang.String toASCIIString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.URI)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.URI._toASCIIString11926)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.URI.staticClass, global::java.net.URI._toASCIIString11926)); 

@@ -22,7 +22,7 @@ namespace java.io
 		public virtual global::java.lang.String readLine() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.BufferedReader)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.io.BufferedReader._readLine11377)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._readLine11377)); 
@@ -31,7 +31,7 @@ namespace java.io
 		public override void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.BufferedReader)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.BufferedReader._close11378); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._close11378); 
@@ -40,7 +40,7 @@ namespace java.io
 		public override void mark(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.BufferedReader)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.BufferedReader._mark11379, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._mark11379, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -49,7 +49,7 @@ namespace java.io
 		public override void reset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.BufferedReader)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.BufferedReader._reset11380); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._reset11380); 
@@ -58,7 +58,7 @@ namespace java.io
 		public override int read(char[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.BufferedReader)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.io.BufferedReader._read11381, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._read11381, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -67,7 +67,7 @@ namespace java.io
 		public override int read() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.BufferedReader)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.io.BufferedReader._read11382); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._read11382); 
@@ -76,7 +76,7 @@ namespace java.io
 		public override long skip(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.BufferedReader)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.io.BufferedReader._skip11383, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._skip11383, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -85,7 +85,7 @@ namespace java.io
 		public override bool markSupported() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.BufferedReader)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.io.BufferedReader._markSupported11384); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._markSupported11384); 
@@ -94,7 +94,7 @@ namespace java.io
 		public override bool ready() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.BufferedReader)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.io.BufferedReader._ready11385); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.io.BufferedReader.staticClass, global::java.io.BufferedReader._ready11385); 

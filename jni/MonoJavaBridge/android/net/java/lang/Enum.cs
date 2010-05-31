@@ -15,7 +15,7 @@ namespace java.lang
 		public virtual global::java.lang.String name() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Enum)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Enum._name11479)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._name11479)); 
@@ -24,7 +24,7 @@ namespace java.lang
 		public sealed override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Enum)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.lang.Enum._hashCode11480); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._hashCode11480); 
@@ -33,7 +33,7 @@ namespace java.lang
 		public sealed override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Enum)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.lang.Enum._equals11481, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._equals11481, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -42,7 +42,7 @@ namespace java.lang
 		public virtual int compareTo(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Enum)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.lang.Enum._compareTo11482, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._compareTo11482, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -51,7 +51,7 @@ namespace java.lang
 		public virtual int compareTo(java.lang.Enum arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Enum)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.lang.Enum._compareTo11483, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._compareTo11483, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -60,7 +60,7 @@ namespace java.lang
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Enum)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Enum._toString11484)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._toString11484)); 
@@ -75,7 +75,7 @@ namespace java.lang
 		public virtual global::java.lang.Class getDeclaringClass() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Enum)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Class>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Enum._getDeclaringClass11486)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Class>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._getDeclaringClass11486)); 
@@ -84,7 +84,7 @@ namespace java.lang
 		public virtual int ordinal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Enum)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.lang.Enum._ordinal11487); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.lang.Enum.staticClass, global::java.lang.Enum._ordinal11487); 

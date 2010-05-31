@@ -49,7 +49,7 @@ namespace org.xml.sax
 		 void org.xml.sax.XMLReader.setProperty(java.lang.String arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__XMLReader)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xml.sax.__XMLReader._setProperty13340, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._setProperty13340, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -58,7 +58,7 @@ namespace org.xml.sax
 		 global::java.lang.Object org.xml.sax.XMLReader.getProperty(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__XMLReader)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__XMLReader._getProperty13341, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._getProperty13341, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -67,7 +67,7 @@ namespace org.xml.sax
 		 void org.xml.sax.XMLReader.parse(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__XMLReader)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xml.sax.__XMLReader._parse13342, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._parse13342, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -76,7 +76,7 @@ namespace org.xml.sax
 		 void org.xml.sax.XMLReader.parse(org.xml.sax.InputSource arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__XMLReader)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xml.sax.__XMLReader._parse13343, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._parse13343, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -85,7 +85,7 @@ namespace org.xml.sax
 		 global::org.xml.sax.ContentHandler org.xml.sax.XMLReader.getContentHandler() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__XMLReader)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.ContentHandler>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__XMLReader._getContentHandler13344)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.ContentHandler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._getContentHandler13344)); 
@@ -94,7 +94,7 @@ namespace org.xml.sax
 		 void org.xml.sax.XMLReader.setFeature(java.lang.String arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__XMLReader)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xml.sax.__XMLReader._setFeature13345, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._setFeature13345, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -103,7 +103,7 @@ namespace org.xml.sax
 		 bool org.xml.sax.XMLReader.getFeature(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__XMLReader)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::org.xml.sax.__XMLReader._getFeature13346, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._getFeature13346, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -112,7 +112,7 @@ namespace org.xml.sax
 		 void org.xml.sax.XMLReader.setEntityResolver(org.xml.sax.EntityResolver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__XMLReader)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xml.sax.__XMLReader._setEntityResolver13347, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._setEntityResolver13347, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -121,7 +121,7 @@ namespace org.xml.sax
 		 global::org.xml.sax.EntityResolver org.xml.sax.XMLReader.getEntityResolver() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__XMLReader)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.EntityResolver>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__XMLReader._getEntityResolver13348)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.EntityResolver>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._getEntityResolver13348)); 
@@ -130,7 +130,7 @@ namespace org.xml.sax
 		 void org.xml.sax.XMLReader.setDTDHandler(org.xml.sax.DTDHandler arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__XMLReader)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xml.sax.__XMLReader._setDTDHandler13349, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._setDTDHandler13349, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -139,7 +139,7 @@ namespace org.xml.sax
 		 global::org.xml.sax.DTDHandler org.xml.sax.XMLReader.getDTDHandler() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__XMLReader)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.DTDHandler>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__XMLReader._getDTDHandler13350)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.DTDHandler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._getDTDHandler13350)); 
@@ -148,7 +148,7 @@ namespace org.xml.sax
 		 void org.xml.sax.XMLReader.setContentHandler(org.xml.sax.ContentHandler arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__XMLReader)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xml.sax.__XMLReader._setContentHandler13351, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._setContentHandler13351, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -157,7 +157,7 @@ namespace org.xml.sax
 		 void org.xml.sax.XMLReader.setErrorHandler(org.xml.sax.ErrorHandler arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__XMLReader)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xml.sax.__XMLReader._setErrorHandler13352, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._setErrorHandler13352, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -166,7 +166,7 @@ namespace org.xml.sax
 		 global::org.xml.sax.ErrorHandler org.xml.sax.XMLReader.getErrorHandler() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__XMLReader)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.ErrorHandler>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__XMLReader._getErrorHandler13353)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.ErrorHandler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__XMLReader.staticClass, global::org.xml.sax.__XMLReader._getErrorHandler13353)); 

@@ -15,7 +15,7 @@ namespace android.database.sqlite
 		public virtual void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteOpenHelper)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.sqlite.SQLiteOpenHelper._close2522); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.SQLiteOpenHelper.staticClass, global::android.database.sqlite.SQLiteOpenHelper._close2522); 
@@ -26,7 +26,7 @@ namespace android.database.sqlite
 		public virtual global::android.database.sqlite.SQLiteDatabase getWritableDatabase() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteOpenHelper)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.database.sqlite.SQLiteDatabase>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.sqlite.SQLiteOpenHelper._getWritableDatabase2524)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.database.sqlite.SQLiteDatabase>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.sqlite.SQLiteOpenHelper.staticClass, global::android.database.sqlite.SQLiteOpenHelper._getWritableDatabase2524)); 
@@ -35,7 +35,7 @@ namespace android.database.sqlite
 		public virtual global::android.database.sqlite.SQLiteDatabase getReadableDatabase() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteOpenHelper)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.database.sqlite.SQLiteDatabase>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.sqlite.SQLiteOpenHelper._getReadableDatabase2525)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.database.sqlite.SQLiteDatabase>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.sqlite.SQLiteOpenHelper.staticClass, global::android.database.sqlite.SQLiteOpenHelper._getReadableDatabase2525)); 
@@ -46,7 +46,7 @@ namespace android.database.sqlite
 		public virtual void onOpen(android.database.sqlite.SQLiteDatabase arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteOpenHelper)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.sqlite.SQLiteOpenHelper._onOpen2527, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.SQLiteOpenHelper.staticClass, global::android.database.sqlite.SQLiteOpenHelper._onOpen2527, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

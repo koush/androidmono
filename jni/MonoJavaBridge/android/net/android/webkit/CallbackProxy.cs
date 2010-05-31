@@ -22,7 +22,7 @@ namespace android.webkit
 		public override void handleMessage(android.os.Message arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._handleMessage9230, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._handleMessage9230, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -31,7 +31,7 @@ namespace android.webkit
 		public virtual int getProgress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.webkit.CallbackProxy._getProgress9231); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._getProgress9231); 
@@ -40,7 +40,7 @@ namespace android.webkit
 		public virtual void onReceivedIcon(android.graphics.Bitmap arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onReceivedIcon9232, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onReceivedIcon9232, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.webkit
 		public virtual void setWebViewClient(android.webkit.WebViewClient arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._setWebViewClient9233, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._setWebViewClient9233, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.webkit
 		public virtual void setWebChromeClient(android.webkit.WebChromeClient arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._setWebChromeClient9234, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._setWebChromeClient9234, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.webkit
 		public virtual global::android.webkit.WebChromeClient getWebChromeClient() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebChromeClient>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.CallbackProxy._getWebChromeClient9235)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebChromeClient>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._getWebChromeClient9235)); 
@@ -76,7 +76,7 @@ namespace android.webkit
 		public virtual void setDownloadListener(android.webkit.DownloadListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._setDownloadListener9236, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._setDownloadListener9236, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -85,7 +85,7 @@ namespace android.webkit
 		public virtual global::android.webkit.WebBackForwardList getBackForwardList() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebBackForwardList>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.CallbackProxy._getBackForwardList9237)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebBackForwardList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._getBackForwardList9237)); 
@@ -94,7 +94,7 @@ namespace android.webkit
 		public virtual bool uiOverrideUrlLoading(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.CallbackProxy._uiOverrideUrlLoading9238, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._uiOverrideUrlLoading9238, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -103,7 +103,7 @@ namespace android.webkit
 		public virtual bool uiOverrideKeyEvent(android.view.KeyEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.CallbackProxy._uiOverrideKeyEvent9239, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._uiOverrideKeyEvent9239, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -112,7 +112,7 @@ namespace android.webkit
 		public virtual void onPageStarted(java.lang.String arg0, android.graphics.Bitmap arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onPageStarted9240, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onPageStarted9240, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -121,7 +121,7 @@ namespace android.webkit
 		public virtual void onPageFinished(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onPageFinished9241, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onPageFinished9241, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -130,7 +130,7 @@ namespace android.webkit
 		public virtual void onTooManyRedirects(android.os.Message arg0, android.os.Message arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onTooManyRedirects9242, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onTooManyRedirects9242, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -139,7 +139,7 @@ namespace android.webkit
 		public virtual void onReceivedError(int arg0, java.lang.String arg1, java.lang.String arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onReceivedError9243, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onReceivedError9243, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -148,7 +148,7 @@ namespace android.webkit
 		public virtual void onFormResubmission(android.os.Message arg0, android.os.Message arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onFormResubmission9244, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onFormResubmission9244, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -157,7 +157,7 @@ namespace android.webkit
 		public virtual bool shouldOverrideUrlLoading(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.CallbackProxy._shouldOverrideUrlLoading9245, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._shouldOverrideUrlLoading9245, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -166,7 +166,7 @@ namespace android.webkit
 		public virtual void onReceivedHttpAuthRequest(android.webkit.HttpAuthHandler arg0, java.lang.String arg1, java.lang.String arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onReceivedHttpAuthRequest9246, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onReceivedHttpAuthRequest9246, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -175,7 +175,7 @@ namespace android.webkit
 		public virtual void doUpdateVisitedHistory(java.lang.String arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._doUpdateVisitedHistory9247, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._doUpdateVisitedHistory9247, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -184,7 +184,7 @@ namespace android.webkit
 		public virtual void onLoadResource(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onLoadResource9248, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onLoadResource9248, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -193,7 +193,7 @@ namespace android.webkit
 		public virtual void onUnhandledKeyEvent(android.view.KeyEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onUnhandledKeyEvent9249, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onUnhandledKeyEvent9249, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -202,7 +202,7 @@ namespace android.webkit
 		public virtual void onScaleChanged(float arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onScaleChanged9250, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onScaleChanged9250, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -211,7 +211,7 @@ namespace android.webkit
 		public virtual bool onDownloadStart(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, long arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.CallbackProxy._onDownloadStart9251, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onDownloadStart9251, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -220,7 +220,7 @@ namespace android.webkit
 		public virtual bool onSavePassword(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, android.os.Message arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.CallbackProxy._onSavePassword9252, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onSavePassword9252, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
@@ -229,7 +229,7 @@ namespace android.webkit
 		public virtual void onProgressChanged(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onProgressChanged9253, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onProgressChanged9253, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -238,7 +238,7 @@ namespace android.webkit
 		public virtual global::android.webkit.WebView createWindow(bool arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebView>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.CallbackProxy._createWindow9254, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebView>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._createWindow9254, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -247,7 +247,7 @@ namespace android.webkit
 		public virtual void onRequestFocus() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onRequestFocus9255); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onRequestFocus9255); 
@@ -256,7 +256,7 @@ namespace android.webkit
 		public virtual void onCloseWindow(android.webkit.WebView arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onCloseWindow9256, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onCloseWindow9256, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -265,7 +265,7 @@ namespace android.webkit
 		public virtual void onReceivedTitle(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onReceivedTitle9257, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onReceivedTitle9257, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -274,7 +274,7 @@ namespace android.webkit
 		public virtual void onJsAlert(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onJsAlert9258, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onJsAlert9258, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -283,7 +283,7 @@ namespace android.webkit
 		public virtual bool onJsConfirm(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.CallbackProxy._onJsConfirm9259, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onJsConfirm9259, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -292,7 +292,7 @@ namespace android.webkit
 		public virtual global::java.lang.String onJsPrompt(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.CallbackProxy._onJsPrompt9260, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onJsPrompt9260, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
@@ -301,7 +301,7 @@ namespace android.webkit
 		public virtual bool onJsBeforeUnload(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.CallbackProxy._onJsBeforeUnload9261, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onJsBeforeUnload9261, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -310,7 +310,7 @@ namespace android.webkit
 		public virtual void onExceededDatabaseQuota(java.lang.String arg0, java.lang.String arg1, long arg2, long arg3, long arg4, android.webkit.WebStorage.QuotaUpdater arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onExceededDatabaseQuota9262, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg5)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onExceededDatabaseQuota9262, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg5)); 
@@ -319,7 +319,7 @@ namespace android.webkit
 		public virtual void onReachedMaxAppCacheSize(long arg0, long arg1, android.webkit.WebStorage.QuotaUpdater arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onReachedMaxAppCacheSize9263, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onReachedMaxAppCacheSize9263, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
@@ -328,7 +328,7 @@ namespace android.webkit
 		public virtual void onGeolocationPermissionsShowPrompt(java.lang.String arg0, android.webkit.GeolocationPermissions.Callback arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onGeolocationPermissionsShowPrompt9264, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onGeolocationPermissionsShowPrompt9264, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -337,7 +337,7 @@ namespace android.webkit
 		public virtual void onGeolocationPermissionsHidePrompt() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._onGeolocationPermissionsHidePrompt9265); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onGeolocationPermissionsHidePrompt9265); 
@@ -346,7 +346,7 @@ namespace android.webkit
 		public virtual void addMessageToConsole(java.lang.String arg0, int arg1, java.lang.String arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._addMessageToConsole9266, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._addMessageToConsole9266, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -355,7 +355,7 @@ namespace android.webkit
 		public virtual bool onJsTimeout() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.CallbackProxy._onJsTimeout9267); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._onJsTimeout9267); 
@@ -364,7 +364,7 @@ namespace android.webkit
 		public virtual void getVisitedHistory(android.webkit.ValueCallback arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CallbackProxy)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CallbackProxy._getVisitedHistory9268, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CallbackProxy.staticClass, global::android.webkit.CallbackProxy._getVisitedHistory9268, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

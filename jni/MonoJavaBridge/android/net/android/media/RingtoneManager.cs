@@ -28,7 +28,7 @@ namespace android.media
 		public virtual void setType(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.RingtoneManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.RingtoneManager._setType4573, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._setType4573, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -37,7 +37,7 @@ namespace android.media
 		public virtual int inferStreamType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.RingtoneManager)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.RingtoneManager._inferStreamType4574); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._inferStreamType4574); 
@@ -46,7 +46,7 @@ namespace android.media
 		public virtual void setStopPreviousRingtone(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.RingtoneManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.RingtoneManager._setStopPreviousRingtone4575, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._setStopPreviousRingtone4575, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -55,7 +55,7 @@ namespace android.media
 		public virtual void stopPreviousRingtone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.RingtoneManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.RingtoneManager._stopPreviousRingtone4576); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._stopPreviousRingtone4576); 
@@ -64,7 +64,7 @@ namespace android.media
 		public virtual bool getStopPreviousRingtone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.RingtoneManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.RingtoneManager._getStopPreviousRingtone4577); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._getStopPreviousRingtone4577); 
@@ -73,7 +73,7 @@ namespace android.media
 		public virtual bool getIncludeDrm() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.RingtoneManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.RingtoneManager._getIncludeDrm4578); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._getIncludeDrm4578); 
@@ -82,7 +82,7 @@ namespace android.media
 		public virtual void setIncludeDrm(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.RingtoneManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.RingtoneManager._setIncludeDrm4579, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._setIncludeDrm4579, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -91,7 +91,7 @@ namespace android.media
 		public virtual global::android.database.Cursor getCursor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.RingtoneManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallObjectMethodPtr(this, global::android.media.RingtoneManager._getCursor4580)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._getCursor4580)); 
@@ -100,7 +100,7 @@ namespace android.media
 		public virtual global::android.media.Ringtone getRingtone(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.RingtoneManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.media.Ringtone>(@__env, @__env.CallObjectMethodPtr(this, global::android.media.RingtoneManager._getRingtone4581, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.media.Ringtone>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._getRingtone4581, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -115,7 +115,7 @@ namespace android.media
 		public virtual global::android.net.Uri getRingtoneUri(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.RingtoneManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallObjectMethodPtr(this, global::android.media.RingtoneManager._getRingtoneUri4583, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._getRingtoneUri4583, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -124,7 +124,7 @@ namespace android.media
 		public virtual int getRingtonePosition(android.net.Uri arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.RingtoneManager)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.RingtoneManager._getRingtonePosition4584, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.RingtoneManager.staticClass, global::android.media.RingtoneManager._getRingtonePosition4584, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

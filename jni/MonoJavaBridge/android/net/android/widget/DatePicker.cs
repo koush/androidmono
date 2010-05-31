@@ -54,7 +54,7 @@ namespace android.widget
 			 void android.widget.DatePicker.OnDateChangedListener.onDateChanged(android.widget.DatePicker arg0, int arg1, int arg2, int arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.DatePicker.__OnDateChangedListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.DatePicker.__OnDateChangedListener._onDateChanged10084, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.DatePicker.__OnDateChangedListener.staticClass, global::android.widget.DatePicker.__OnDateChangedListener._onDateChanged10084, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -69,7 +69,7 @@ namespace android.widget
 		public virtual void init(int arg0, int arg1, int arg2, android.widget.DatePicker.OnDateChangedListener arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DatePicker)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.DatePicker._init10085, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._init10085, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3)); 
@@ -78,7 +78,7 @@ namespace android.widget
 		public virtual int getYear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DatePicker)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.DatePicker._getYear10086); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._getYear10086); 
@@ -87,7 +87,7 @@ namespace android.widget
 		public virtual int getMonth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DatePicker)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.DatePicker._getMonth10087); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._getMonth10087); 
@@ -96,7 +96,7 @@ namespace android.widget
 		public virtual int getDayOfMonth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DatePicker)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.DatePicker._getDayOfMonth10088); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._getDayOfMonth10088); 
@@ -105,7 +105,7 @@ namespace android.widget
 		public override void setEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DatePicker)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.DatePicker._setEnabled10089, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._setEnabled10089, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -114,7 +114,7 @@ namespace android.widget
 		protected override void onRestoreInstanceState(android.os.Parcelable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DatePicker)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.DatePicker._onRestoreInstanceState10090, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._onRestoreInstanceState10090, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -123,7 +123,7 @@ namespace android.widget
 		protected override global::android.os.Parcelable onSaveInstanceState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DatePicker)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.DatePicker._onSaveInstanceState10091)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._onSaveInstanceState10091)); 
@@ -132,7 +132,7 @@ namespace android.widget
 		protected override void dispatchRestoreInstanceState(android.util.SparseArray arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DatePicker)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.DatePicker._dispatchRestoreInstanceState10092, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._dispatchRestoreInstanceState10092, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -141,7 +141,7 @@ namespace android.widget
 		public virtual void updateDate(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DatePicker)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.DatePicker._updateDate10093, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DatePicker.staticClass, global::android.widget.DatePicker._updateDate10093, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 

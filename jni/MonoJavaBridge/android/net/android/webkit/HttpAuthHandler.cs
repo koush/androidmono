@@ -22,7 +22,7 @@ namespace android.webkit
 		public virtual void cancel() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.HttpAuthHandler)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.HttpAuthHandler._cancel9294); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.HttpAuthHandler.staticClass, global::android.webkit.HttpAuthHandler._cancel9294); 
@@ -31,7 +31,7 @@ namespace android.webkit
 		public override void handleMessage(android.os.Message arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.HttpAuthHandler)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.HttpAuthHandler._handleMessage9295, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.HttpAuthHandler.staticClass, global::android.webkit.HttpAuthHandler._handleMessage9295, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -40,7 +40,7 @@ namespace android.webkit
 		public virtual void proceed(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.HttpAuthHandler)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.HttpAuthHandler._proceed9296, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.HttpAuthHandler.staticClass, global::android.webkit.HttpAuthHandler._proceed9296, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -49,7 +49,7 @@ namespace android.webkit
 		public virtual bool useHttpAuthUsernamePassword() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.HttpAuthHandler)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.HttpAuthHandler._useHttpAuthUsernamePassword9297); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.HttpAuthHandler.staticClass, global::android.webkit.HttpAuthHandler._useHttpAuthUsernamePassword9297); 

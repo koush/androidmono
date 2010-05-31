@@ -22,7 +22,7 @@ namespace android.media
 		public virtual int load(android.content.Context arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.SoundPool)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.SoundPool._load4592, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._load4592, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -31,7 +31,7 @@ namespace android.media
 		public virtual int load(android.content.res.AssetFileDescriptor arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.SoundPool)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.SoundPool._load4593, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._load4593, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -40,7 +40,7 @@ namespace android.media
 		public virtual int load(java.io.FileDescriptor arg0, long arg1, long arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.SoundPool)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.SoundPool._load4594, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._load4594, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -49,7 +49,7 @@ namespace android.media
 		public virtual int load(java.lang.String arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.SoundPool)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.SoundPool._load4595, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._load4595, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -58,7 +58,7 @@ namespace android.media
 		public virtual void setPriority(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.SoundPool)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.SoundPool._setPriority4596, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._setPriority4596, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -67,7 +67,7 @@ namespace android.media
 		public virtual void stop(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.SoundPool)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.SoundPool._stop4597, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._stop4597, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -76,7 +76,7 @@ namespace android.media
 		public virtual void resume(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.SoundPool)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.SoundPool._resume4598, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._resume4598, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -85,7 +85,7 @@ namespace android.media
 		public virtual void release() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.SoundPool)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.SoundPool._release4599); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._release4599); 
@@ -94,7 +94,7 @@ namespace android.media
 		public virtual bool unload(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.SoundPool)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.SoundPool._unload4600, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._unload4600, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -103,7 +103,7 @@ namespace android.media
 		public virtual int play(int arg0, float arg1, float arg2, int arg3, int arg4, float arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.SoundPool)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.SoundPool._play4601, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._play4601, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
@@ -112,7 +112,7 @@ namespace android.media
 		public virtual void pause(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.SoundPool)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.SoundPool._pause4602, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._pause4602, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -121,7 +121,7 @@ namespace android.media
 		public virtual void setVolume(int arg0, float arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.SoundPool)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.SoundPool._setVolume4603, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._setVolume4603, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -130,7 +130,7 @@ namespace android.media
 		public virtual void setLoop(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.SoundPool)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.SoundPool._setLoop4604, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._setLoop4604, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -139,7 +139,7 @@ namespace android.media
 		public virtual void setRate(int arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.SoundPool)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.SoundPool._setRate4605, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.SoundPool.staticClass, global::android.media.SoundPool._setRate4605, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 

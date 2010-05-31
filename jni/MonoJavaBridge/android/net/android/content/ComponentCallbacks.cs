@@ -37,7 +37,7 @@ namespace android.content
 		 void android.content.ComponentCallbacks.onConfigurationChanged(android.content.res.Configuration arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.__ComponentCallbacks)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.__ComponentCallbacks._onConfigurationChanged956, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.__ComponentCallbacks.staticClass, global::android.content.__ComponentCallbacks._onConfigurationChanged956, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -46,7 +46,7 @@ namespace android.content
 		 void android.content.ComponentCallbacks.onLowMemory() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.__ComponentCallbacks)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.__ComponentCallbacks._onLowMemory957); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.__ComponentCallbacks.staticClass, global::android.content.__ComponentCallbacks._onLowMemory957); 

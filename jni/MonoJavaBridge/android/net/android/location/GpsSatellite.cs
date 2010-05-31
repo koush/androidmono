@@ -22,7 +22,7 @@ namespace android.location
 		public int getPrn() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.GpsSatellite)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.location.GpsSatellite._getPrn4262); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._getPrn4262); 
@@ -31,7 +31,7 @@ namespace android.location
 		public float getSnr() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.GpsSatellite)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.location.GpsSatellite._getSnr4263); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._getSnr4263); 
@@ -40,7 +40,7 @@ namespace android.location
 		public float getElevation() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.GpsSatellite)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.location.GpsSatellite._getElevation4264); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._getElevation4264); 
@@ -49,7 +49,7 @@ namespace android.location
 		public float getAzimuth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.GpsSatellite)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.location.GpsSatellite._getAzimuth4265); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._getAzimuth4265); 
@@ -58,7 +58,7 @@ namespace android.location
 		public bool hasEphemeris() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.GpsSatellite)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.location.GpsSatellite._hasEphemeris4266); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._hasEphemeris4266); 
@@ -67,7 +67,7 @@ namespace android.location
 		public bool hasAlmanac() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.GpsSatellite)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.location.GpsSatellite._hasAlmanac4267); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._hasAlmanac4267); 
@@ -76,7 +76,7 @@ namespace android.location
 		public bool usedInFix() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.GpsSatellite)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.location.GpsSatellite._usedInFix4268); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.GpsSatellite.staticClass, global::android.location.GpsSatellite._usedInFix4268); 

@@ -54,7 +54,7 @@ namespace android.location
 			 void android.location.GpsStatus.Listener.onGpsStatusChanged(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.location.GpsStatus.__Listener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.location.GpsStatus.__Listener._onGpsStatusChanged4269, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.location.GpsStatus.__Listener.staticClass, global::android.location.GpsStatus.__Listener._onGpsStatusChanged4269, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -101,7 +101,7 @@ namespace android.location
 			 void android.location.GpsStatus.NmeaListener.onNmeaReceived(long arg0, java.lang.String arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.location.GpsStatus.__NmeaListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.location.GpsStatus.__NmeaListener._onNmeaReceived4270, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.location.GpsStatus.__NmeaListener.staticClass, global::android.location.GpsStatus.__NmeaListener._onNmeaReceived4270, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -116,7 +116,7 @@ namespace android.location
 		public int getTimeToFirstFix() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.GpsStatus)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.location.GpsStatus._getTimeToFirstFix4271); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.location.GpsStatus.staticClass, global::android.location.GpsStatus._getTimeToFirstFix4271); 
@@ -125,7 +125,7 @@ namespace android.location
 		public global::java.lang.Iterable getSatellites() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.GpsStatus)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Iterable>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.GpsStatus._getSatellites4272)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Iterable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.GpsStatus.staticClass, global::android.location.GpsStatus._getSatellites4272)); 
@@ -134,7 +134,7 @@ namespace android.location
 		public int getMaxSatellites() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.GpsStatus)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.location.GpsStatus._getMaxSatellites4273); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.location.GpsStatus.staticClass, global::android.location.GpsStatus._getMaxSatellites4273); 

@@ -17,7 +17,7 @@ namespace java.util
 		public virtual int get(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Calendar._get12760, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._get12760, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -26,7 +26,7 @@ namespace java.util
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Calendar._hashCode12761); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._hashCode12761); 
@@ -35,7 +35,7 @@ namespace java.util
 		public virtual global::java.lang.Object clone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Calendar._clone12762)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._clone12762)); 
@@ -44,7 +44,7 @@ namespace java.util
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.Calendar._equals12763, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._equals12763, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -53,7 +53,7 @@ namespace java.util
 		public virtual int compareTo(java.util.Calendar arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Calendar._compareTo12764, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._compareTo12764, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -62,7 +62,7 @@ namespace java.util
 		public virtual int compareTo(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Calendar._compareTo12765, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._compareTo12765, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -71,7 +71,7 @@ namespace java.util
 		public virtual void clear(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Calendar._clear12766, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._clear12766, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -80,7 +80,7 @@ namespace java.util
 		public virtual void clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Calendar._clear12767); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._clear12767); 
@@ -89,7 +89,7 @@ namespace java.util
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Calendar._toString12768)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._toString12768)); 
@@ -122,7 +122,7 @@ namespace java.util
 		public virtual void set(int arg0, int arg1, int arg2, int arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Calendar._set12773, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._set12773, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -131,7 +131,7 @@ namespace java.util
 		public virtual void set(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Calendar._set12774, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._set12774, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -140,7 +140,7 @@ namespace java.util
 		public virtual void set(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Calendar._set12775, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._set12775, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -149,7 +149,7 @@ namespace java.util
 		public virtual void set(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Calendar._set12776, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._set12776, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
@@ -158,7 +158,7 @@ namespace java.util
 		public virtual bool isSet(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.Calendar._isSet12777, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._isSet12777, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -167,7 +167,7 @@ namespace java.util
 		public virtual bool after(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.Calendar._after12778, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._after12778, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -176,7 +176,7 @@ namespace java.util
 		public virtual bool before(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.Calendar._before12779, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._before12779, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -185,7 +185,7 @@ namespace java.util
 		protected virtual void complete() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Calendar._complete12780); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._complete12780); 
@@ -199,7 +199,7 @@ namespace java.util
 		public virtual global::java.lang.String getDisplayName(int arg0, int arg1, java.util.Locale arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Calendar._getDisplayName12782, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getDisplayName12782, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
@@ -208,7 +208,7 @@ namespace java.util
 		public virtual void setTime(java.util.Date arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Calendar._setTime12783, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._setTime12783, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -217,7 +217,7 @@ namespace java.util
 		public virtual global::java.util.Date getTime() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Date>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Calendar._getTime12784)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Date>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getTime12784)); 
@@ -226,7 +226,7 @@ namespace java.util
 		public virtual global::java.util.TimeZone getTimeZone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.TimeZone>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Calendar._getTimeZone12785)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.TimeZone>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getTimeZone12785)); 
@@ -235,7 +235,7 @@ namespace java.util
 		public virtual void setTimeZone(java.util.TimeZone arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Calendar._setTimeZone12786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._setTimeZone12786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -244,7 +244,7 @@ namespace java.util
 		public virtual long getTimeInMillis() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.util.Calendar._getTimeInMillis12787); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getTimeInMillis12787); 
@@ -257,7 +257,7 @@ namespace java.util
 		public virtual void setTimeInMillis(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Calendar._setTimeInMillis12790, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._setTimeInMillis12790, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -266,7 +266,7 @@ namespace java.util
 		protected virtual int internalGet(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Calendar._internalGet12791, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._internalGet12791, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -275,7 +275,7 @@ namespace java.util
 		public virtual global::java.util.Map getDisplayNames(int arg0, int arg1, java.util.Locale arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Calendar._getDisplayNames12792, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getDisplayNames12792, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
@@ -284,7 +284,7 @@ namespace java.util
 		public virtual void roll(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Calendar._roll12793, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._roll12793, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -295,7 +295,7 @@ namespace java.util
 		public virtual void setLenient(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Calendar._setLenient12795, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._setLenient12795, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -304,7 +304,7 @@ namespace java.util
 		public virtual bool isLenient() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.Calendar._isLenient12796); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._isLenient12796); 
@@ -313,7 +313,7 @@ namespace java.util
 		public virtual void setFirstDayOfWeek(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Calendar._setFirstDayOfWeek12797, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._setFirstDayOfWeek12797, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -322,7 +322,7 @@ namespace java.util
 		public virtual int getFirstDayOfWeek() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Calendar._getFirstDayOfWeek12798); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getFirstDayOfWeek12798); 
@@ -331,7 +331,7 @@ namespace java.util
 		public virtual void setMinimalDaysInFirstWeek(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Calendar._setMinimalDaysInFirstWeek12799, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._setMinimalDaysInFirstWeek12799, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -340,7 +340,7 @@ namespace java.util
 		public virtual int getMinimalDaysInFirstWeek() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Calendar._getMinimalDaysInFirstWeek12800); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getMinimalDaysInFirstWeek12800); 
@@ -357,7 +357,7 @@ namespace java.util
 		public virtual int getActualMinimum(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Calendar._getActualMinimum12805, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getActualMinimum12805, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -366,7 +366,7 @@ namespace java.util
 		public virtual int getActualMaximum(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Calendar)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Calendar._getActualMaximum12806, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Calendar.staticClass, global::java.util.Calendar._getActualMaximum12806, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

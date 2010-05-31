@@ -22,7 +22,7 @@ namespace java.util
 		public virtual void addObserver(java.util.Observer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Observable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Observable._addObserver12950, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._addObserver12950, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -31,7 +31,7 @@ namespace java.util
 		public virtual void deleteObserver(java.util.Observer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Observable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Observable._deleteObserver12951, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._deleteObserver12951, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace java.util
 		public virtual void notifyObservers() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Observable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Observable._notifyObservers12952); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._notifyObservers12952); 
@@ -49,7 +49,7 @@ namespace java.util
 		public virtual void notifyObservers(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Observable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Observable._notifyObservers12953, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._notifyObservers12953, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -58,7 +58,7 @@ namespace java.util
 		public virtual void deleteObservers() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Observable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Observable._deleteObservers12954); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._deleteObservers12954); 
@@ -67,7 +67,7 @@ namespace java.util
 		protected virtual void setChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Observable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Observable._setChanged12955); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._setChanged12955); 
@@ -76,7 +76,7 @@ namespace java.util
 		protected virtual void clearChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Observable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Observable._clearChanged12956); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._clearChanged12956); 
@@ -85,7 +85,7 @@ namespace java.util
 		public virtual bool hasChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Observable)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.Observable._hasChanged12957); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._hasChanged12957); 
@@ -94,7 +94,7 @@ namespace java.util
 		public virtual int countObservers() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Observable)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Observable._countObservers12958); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Observable.staticClass, global::java.util.Observable._countObservers12958); 

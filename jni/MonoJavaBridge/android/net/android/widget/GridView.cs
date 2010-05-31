@@ -22,7 +22,7 @@ namespace android.widget
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.GridView._onKeyDown10267, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._onKeyDown10267, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -31,7 +31,7 @@ namespace android.widget
 		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.GridView._onKeyUp10268, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._onKeyUp10268, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -40,7 +40,7 @@ namespace android.widget
 		public override bool onKeyMultiple(int arg0, int arg1, android.view.KeyEvent arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.GridView._onKeyMultiple10269, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._onKeyMultiple10269, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -49,7 +49,7 @@ namespace android.widget
 		public virtual void setGravity(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.GridView._setGravity10270, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setGravity10270, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.widget
 		protected override void onFocusChanged(bool arg0, int arg1, android.graphics.Rect arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.GridView._onFocusChanged10271, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._onFocusChanged10271, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -67,7 +67,7 @@ namespace android.widget
 		protected override int computeVerticalScrollRange() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.GridView._computeVerticalScrollRange10272); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._computeVerticalScrollRange10272); 
@@ -76,7 +76,7 @@ namespace android.widget
 		protected override int computeVerticalScrollOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.GridView._computeVerticalScrollOffset10273); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._computeVerticalScrollOffset10273); 
@@ -85,7 +85,7 @@ namespace android.widget
 		protected override int computeVerticalScrollExtent() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.GridView._computeVerticalScrollExtent10274); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._computeVerticalScrollExtent10274); 
@@ -94,7 +94,7 @@ namespace android.widget
 		protected override void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.GridView._onMeasure10275, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._onMeasure10275, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -103,7 +103,7 @@ namespace android.widget
 		protected override void attachLayoutAnimationParameters(android.view.View arg0, android.view.ViewGroup.LayoutParams arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.GridView._attachLayoutAnimationParameters10276, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._attachLayoutAnimationParameters10276, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -112,7 +112,7 @@ namespace android.widget
 		public virtual void setAdapter(android.widget.ListAdapter arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.GridView._setAdapter10277, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setAdapter10277, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -121,7 +121,7 @@ namespace android.widget
 		public override void setAdapter(android.widget.Adapter arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.GridView._setAdapter10278, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setAdapter10278, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -130,7 +130,7 @@ namespace android.widget
 		public override global::android.widget.Adapter getAdapter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.Adapter>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.GridView._getAdapter10279)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.Adapter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._getAdapter10279)); 
@@ -139,7 +139,7 @@ namespace android.widget
 		public override void setSelection(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.GridView._setSelection10280, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setSelection10280, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -148,7 +148,7 @@ namespace android.widget
 		protected override void layoutChildren() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.GridView._layoutChildren10281); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._layoutChildren10281); 
@@ -157,7 +157,7 @@ namespace android.widget
 		public virtual void setNumColumns(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.GridView._setNumColumns10282, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setNumColumns10282, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -166,7 +166,7 @@ namespace android.widget
 		public virtual void setHorizontalSpacing(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.GridView._setHorizontalSpacing10283, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setHorizontalSpacing10283, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -175,7 +175,7 @@ namespace android.widget
 		public virtual void setVerticalSpacing(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.GridView._setVerticalSpacing10284, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setVerticalSpacing10284, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -184,7 +184,7 @@ namespace android.widget
 		public virtual void setStretchMode(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.GridView._setStretchMode10285, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setStretchMode10285, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -193,7 +193,7 @@ namespace android.widget
 		public virtual int getStretchMode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.GridView._getStretchMode10286); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._getStretchMode10286); 
@@ -202,7 +202,7 @@ namespace android.widget
 		public virtual void setColumnWidth(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.GridView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.GridView._setColumnWidth10287, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.GridView.staticClass, global::android.widget.GridView._setColumnWidth10287, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

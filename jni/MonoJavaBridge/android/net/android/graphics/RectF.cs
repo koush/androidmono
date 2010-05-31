@@ -22,7 +22,7 @@ namespace android.graphics
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.RectF._toString3323)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._toString3323)); 
@@ -31,7 +31,7 @@ namespace android.graphics
 		public virtual void offset(float arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.RectF._offset3324, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._offset3324, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -40,7 +40,7 @@ namespace android.graphics
 		public virtual bool isEmpty() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.RectF._isEmpty3325); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._isEmpty3325); 
@@ -49,7 +49,7 @@ namespace android.graphics
 		public virtual bool contains(float arg0, float arg1, float arg2, float arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.RectF._contains3326, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._contains3326, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -58,7 +58,7 @@ namespace android.graphics
 		public virtual bool contains(float arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.RectF._contains3327, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._contains3327, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -67,7 +67,7 @@ namespace android.graphics
 		public virtual bool contains(android.graphics.RectF arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.RectF._contains3328, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._contains3328, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -76,7 +76,7 @@ namespace android.graphics
 		public virtual void set(android.graphics.RectF arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.RectF._set3329, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._set3329, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -85,7 +85,7 @@ namespace android.graphics
 		public virtual void set(float arg0, float arg1, float arg2, float arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.RectF._set3330, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._set3330, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -94,7 +94,7 @@ namespace android.graphics
 		public virtual void set(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.RectF._set3331, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._set3331, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -103,7 +103,7 @@ namespace android.graphics
 		public virtual void sort() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.RectF._sort3332); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._sort3332); 
@@ -112,7 +112,7 @@ namespace android.graphics
 		public virtual void round(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.RectF._round3333, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._round3333, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -127,7 +127,7 @@ namespace android.graphics
 		public virtual bool intersects(float arg0, float arg1, float arg2, float arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.RectF._intersects3335, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._intersects3335, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -136,7 +136,7 @@ namespace android.graphics
 		public virtual void union(android.graphics.RectF arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.RectF._union3336, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._union3336, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -145,7 +145,7 @@ namespace android.graphics
 		public virtual void union(float arg0, float arg1, float arg2, float arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.RectF._union3337, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._union3337, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -154,7 +154,7 @@ namespace android.graphics
 		public virtual void union(float arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.RectF._union3338, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._union3338, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -163,7 +163,7 @@ namespace android.graphics
 		public virtual float centerX() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.RectF._centerX3339); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._centerX3339); 
@@ -172,7 +172,7 @@ namespace android.graphics
 		public virtual float centerY() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.RectF._centerY3340); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._centerY3340); 
@@ -181,7 +181,7 @@ namespace android.graphics
 		public virtual float height() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.RectF._height3341); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._height3341); 
@@ -190,7 +190,7 @@ namespace android.graphics
 		public virtual float width() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.RectF._width3342); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._width3342); 
@@ -199,7 +199,7 @@ namespace android.graphics
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.RectF._writeToParcel3343, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._writeToParcel3343, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -208,7 +208,7 @@ namespace android.graphics
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.RectF._describeContents3344); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._describeContents3344); 
@@ -217,7 +217,7 @@ namespace android.graphics
 		public virtual void readFromParcel(android.os.Parcel arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.RectF._readFromParcel3345, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._readFromParcel3345, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -226,7 +226,7 @@ namespace android.graphics
 		public virtual void setEmpty() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.RectF._setEmpty3346); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._setEmpty3346); 
@@ -235,7 +235,7 @@ namespace android.graphics
 		public virtual void offsetTo(float arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.RectF._offsetTo3347, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._offsetTo3347, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -244,7 +244,7 @@ namespace android.graphics
 		public virtual void inset(float arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.RectF._inset3348, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._inset3348, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -253,7 +253,7 @@ namespace android.graphics
 		public virtual bool intersect(float arg0, float arg1, float arg2, float arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.RectF._intersect3349, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._intersect3349, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -262,7 +262,7 @@ namespace android.graphics
 		public virtual bool intersect(android.graphics.RectF arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.RectF._intersect3350, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._intersect3350, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -271,7 +271,7 @@ namespace android.graphics
 		public virtual bool setIntersect(android.graphics.RectF arg0, android.graphics.RectF arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.RectF._setIntersect3351, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._setIntersect3351, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -280,7 +280,7 @@ namespace android.graphics
 		public virtual void roundOut(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.RectF)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.RectF._roundOut3352, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.RectF.staticClass, global::android.graphics.RectF._roundOut3352, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

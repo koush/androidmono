@@ -36,7 +36,7 @@ namespace java.net
 		 global::java.net.ContentHandler java.net.ContentHandlerFactory.createContentHandler(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.__ContentHandlerFactory)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.ContentHandler>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.__ContentHandlerFactory._createContentHandler11661, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.ContentHandler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.__ContentHandlerFactory.staticClass, global::java.net.__ContentHandlerFactory._createContentHandler11661, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 

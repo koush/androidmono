@@ -59,7 +59,7 @@ namespace android.view
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.Surface._toString8030)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.Surface.staticClass, global::android.view.Surface._toString8030)); 
@@ -68,7 +68,7 @@ namespace android.view
 		public virtual void setSize(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.Surface._setSize8031, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._setSize8031, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -77,7 +77,7 @@ namespace android.view
 		public virtual bool isValid() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.Surface._isValid8032); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._isValid8032); 
@@ -86,7 +86,7 @@ namespace android.view
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.Surface._writeToParcel8033, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._writeToParcel8033, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -95,7 +95,7 @@ namespace android.view
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.Surface._describeContents8034); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._describeContents8034); 
@@ -104,7 +104,7 @@ namespace android.view
 		public virtual void setFlags(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.Surface._setFlags8035, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._setFlags8035, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -113,7 +113,7 @@ namespace android.view
 		public virtual void readFromParcel(android.os.Parcel arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.Surface._readFromParcel8036, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._readFromParcel8036, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -122,7 +122,7 @@ namespace android.view
 		public virtual void setAlpha(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.Surface._setAlpha8037, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._setAlpha8037, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -131,7 +131,7 @@ namespace android.view
 		public virtual void setMatrix(float arg0, float arg1, float arg2, float arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.Surface._setMatrix8038, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._setMatrix8038, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -140,7 +140,7 @@ namespace android.view
 		public virtual void show() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.Surface._show8039); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._show8039); 
@@ -149,7 +149,7 @@ namespace android.view
 		public virtual void hide() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.Surface._hide8040); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._hide8040); 
@@ -164,7 +164,7 @@ namespace android.view
 		public virtual global::android.graphics.Canvas lockCanvas(android.graphics.Rect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Canvas>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.Surface._lockCanvas8042, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Canvas>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.Surface.staticClass, global::android.view.Surface._lockCanvas8042, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -173,7 +173,7 @@ namespace android.view
 		public virtual void unlockCanvasAndPost(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.Surface._unlockCanvasAndPost8043, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._unlockCanvasAndPost8043, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -182,7 +182,7 @@ namespace android.view
 		public virtual void unlockCanvas(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.Surface._unlockCanvas8044, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._unlockCanvas8044, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -191,7 +191,7 @@ namespace android.view
 		public virtual void setLayer(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.Surface._setLayer8045, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._setLayer8045, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -200,7 +200,7 @@ namespace android.view
 		public virtual void setPosition(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.Surface._setPosition8046, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._setPosition8046, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -209,7 +209,7 @@ namespace android.view
 		public virtual void setTransparentRegionHint(android.graphics.Region arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.Surface._setTransparentRegionHint8047, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._setTransparentRegionHint8047, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -218,7 +218,7 @@ namespace android.view
 		public virtual void freeze() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.Surface._freeze8048); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._freeze8048); 
@@ -227,7 +227,7 @@ namespace android.view
 		public virtual void unfreeze() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.Surface._unfreeze8049); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._unfreeze8049); 
@@ -236,7 +236,7 @@ namespace android.view
 		public virtual void setFreezeTint(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Surface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.Surface._setFreezeTint8050, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.Surface.staticClass, global::android.view.Surface._setFreezeTint8050, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

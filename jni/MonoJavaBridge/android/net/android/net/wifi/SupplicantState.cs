@@ -33,7 +33,7 @@ namespace android.net.wifi
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.SupplicantState)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.net.wifi.SupplicantState._writeToParcel4859, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.net.wifi.SupplicantState.staticClass, global::android.net.wifi.SupplicantState._writeToParcel4859, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -42,7 +42,7 @@ namespace android.net.wifi
 		public int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.wifi.SupplicantState)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.wifi.SupplicantState._describeContents4860); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.wifi.SupplicantState.staticClass, global::android.net.wifi.SupplicantState._describeContents4860); 

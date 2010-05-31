@@ -15,7 +15,7 @@ namespace java.nio.charset
 		public virtual global::java.nio.charset.Charset charset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.Charset>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder._charset12381)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.Charset>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._charset12381)); 
@@ -24,7 +24,7 @@ namespace java.nio.charset
 		public virtual global::java.nio.charset.CoderResult encode(java.nio.CharBuffer arg0, java.nio.ByteBuffer arg1, bool arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder._encode12382, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._encode12382, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
@@ -33,7 +33,7 @@ namespace java.nio.charset
 		public virtual global::java.nio.ByteBuffer encode(java.nio.CharBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.ByteBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder._encode12383, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.ByteBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._encode12383, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -42,7 +42,7 @@ namespace java.nio.charset
 		public virtual global::java.nio.charset.CoderResult flush(java.nio.ByteBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder._flush12384, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._flush12384, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -51,7 +51,7 @@ namespace java.nio.charset
 		public virtual global::java.nio.charset.CharsetEncoder reset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetEncoder>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder._reset12385)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetEncoder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._reset12385)); 
@@ -60,7 +60,7 @@ namespace java.nio.charset
 		protected virtual global::java.nio.charset.CoderResult implFlush(java.nio.ByteBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder._implFlush12386, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._implFlush12386, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -69,7 +69,7 @@ namespace java.nio.charset
 		public virtual global::java.nio.charset.CharsetEncoder onMalformedInput(java.nio.charset.CodingErrorAction arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetEncoder>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder._onMalformedInput12387, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetEncoder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._onMalformedInput12387, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -78,7 +78,7 @@ namespace java.nio.charset
 		public virtual global::java.nio.charset.CharsetEncoder onUnmappableCharacter(java.nio.charset.CodingErrorAction arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetEncoder>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder._onUnmappableCharacter12388, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetEncoder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._onUnmappableCharacter12388, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -87,7 +87,7 @@ namespace java.nio.charset
 		public virtual bool canEncode(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.charset.CharsetEncoder._canEncode12389, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._canEncode12389, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -96,7 +96,7 @@ namespace java.nio.charset
 		public virtual bool canEncode(char arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.charset.CharsetEncoder._canEncode12390, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._canEncode12390, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -107,7 +107,7 @@ namespace java.nio.charset
 		public virtual float averageBytesPerChar() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::java.nio.charset.CharsetEncoder._averageBytesPerChar12392); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._averageBytesPerChar12392); 
@@ -116,7 +116,7 @@ namespace java.nio.charset
 		public virtual float maxBytesPerChar() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::java.nio.charset.CharsetEncoder._maxBytesPerChar12393); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._maxBytesPerChar12393); 
@@ -124,7 +124,7 @@ namespace java.nio.charset
 		internal static global::net.sf.jni4net.jni.MethodId _replacement12394; 
 		public virtual byte[] replacement() 
 		{ 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder._replacement12394)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._replacement12394)); 
@@ -133,7 +133,7 @@ namespace java.nio.charset
 		public virtual global::java.nio.charset.CodingErrorAction malformedInputAction() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CodingErrorAction>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder._malformedInputAction12395)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CodingErrorAction>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._malformedInputAction12395)); 
@@ -142,7 +142,7 @@ namespace java.nio.charset
 		public virtual global::java.nio.charset.CodingErrorAction unmappableCharacterAction() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CodingErrorAction>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder._unmappableCharacterAction12396)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CodingErrorAction>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._unmappableCharacterAction12396)); 
@@ -151,7 +151,7 @@ namespace java.nio.charset
 		public virtual global::java.nio.charset.CharsetEncoder replaceWith(byte[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetEncoder>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder._replaceWith12397, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CharsetEncoder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._replaceWith12397, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
@@ -160,7 +160,7 @@ namespace java.nio.charset
 		protected virtual void implReplaceWith(byte[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.nio.charset.CharsetEncoder._implReplaceWith12398, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._implReplaceWith12398, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
@@ -169,7 +169,7 @@ namespace java.nio.charset
 		public virtual bool isLegalReplacement(byte[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.charset.CharsetEncoder._isLegalReplacement12399, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._isLegalReplacement12399, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
@@ -178,7 +178,7 @@ namespace java.nio.charset
 		protected virtual void implOnMalformedInput(java.nio.charset.CodingErrorAction arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.nio.charset.CharsetEncoder._implOnMalformedInput12400, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._implOnMalformedInput12400, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -187,7 +187,7 @@ namespace java.nio.charset
 		protected virtual void implOnUnmappableCharacter(java.nio.charset.CodingErrorAction arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.nio.charset.CharsetEncoder._implOnUnmappableCharacter12401, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._implOnUnmappableCharacter12401, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -196,7 +196,7 @@ namespace java.nio.charset
 		protected virtual void implReset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CharsetEncoder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.nio.charset.CharsetEncoder._implReset12402); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._implReset12402); 

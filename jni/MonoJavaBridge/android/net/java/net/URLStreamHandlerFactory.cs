@@ -36,7 +36,7 @@ namespace java.net
 		 global::java.net.URLStreamHandler java.net.URLStreamHandlerFactory.createURLStreamHandler(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.__URLStreamHandlerFactory)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URLStreamHandler>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.__URLStreamHandlerFactory._createURLStreamHandler11995, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.URLStreamHandler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.__URLStreamHandlerFactory.staticClass, global::java.net.__URLStreamHandlerFactory._createURLStreamHandler11995, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 

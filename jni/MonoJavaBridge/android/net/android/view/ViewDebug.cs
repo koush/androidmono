@@ -54,7 +54,7 @@ namespace android.view
 			 bool android.view.ViewDebug.CapturedViewProperty.retrieveReturn() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__CapturedViewProperty)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.ViewDebug.__CapturedViewProperty._retrieveReturn8417); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__CapturedViewProperty.staticClass, global::android.view.ViewDebug.__CapturedViewProperty._retrieveReturn8417); 
@@ -63,7 +63,7 @@ namespace android.view
 			 int java.lang.annotation.Annotation.hashCode() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__CapturedViewProperty)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.view.ViewDebug.__CapturedViewProperty._hashCode8418); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewDebug.__CapturedViewProperty.staticClass, global::android.view.ViewDebug.__CapturedViewProperty._hashCode8418); 
@@ -72,7 +72,7 @@ namespace android.view
 			 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__CapturedViewProperty)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.ViewDebug.__CapturedViewProperty._equals8419, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__CapturedViewProperty.staticClass, global::android.view.ViewDebug.__CapturedViewProperty._equals8419, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -81,7 +81,7 @@ namespace android.view
 			 global::java.lang.String java.lang.annotation.Annotation.toString() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__CapturedViewProperty)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__CapturedViewProperty._toString8420)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__CapturedViewProperty.staticClass, global::android.view.ViewDebug.__CapturedViewProperty._toString8420)); 
@@ -90,7 +90,7 @@ namespace android.view
 			 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__CapturedViewProperty)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Class>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__CapturedViewProperty._annotationType8421)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Class>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__CapturedViewProperty.staticClass, global::android.view.ViewDebug.__CapturedViewProperty._annotationType8421)); 
@@ -146,7 +146,7 @@ namespace android.view
 			 global::java.lang.String android.view.ViewDebug.ExportedProperty.prefix() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__ExportedProperty)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__ExportedProperty._prefix8422)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__ExportedProperty.staticClass, global::android.view.ViewDebug.__ExportedProperty._prefix8422)); 
@@ -155,7 +155,7 @@ namespace android.view
 			 bool android.view.ViewDebug.ExportedProperty.resolveId() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__ExportedProperty)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.ViewDebug.__ExportedProperty._resolveId8423); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__ExportedProperty.staticClass, global::android.view.ViewDebug.__ExportedProperty._resolveId8423); 
@@ -163,7 +163,7 @@ namespace android.view
 			internal static global::net.sf.jni4net.jni.MethodId _mapping8424; 
 			 global::android.view.ViewDebug.IntToString[] android.view.ViewDebug.ExportedProperty.mapping() 
 			{ 
-				if (GetType() == typeof(android.view.ViewDebug.__ExportedProperty)) 
+				if (!IsClrObject) 
 					return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__ExportedProperty._mapping8424)); 
 				else 
 					return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__ExportedProperty.staticClass, global::android.view.ViewDebug.__ExportedProperty._mapping8424)); 
@@ -171,7 +171,7 @@ namespace android.view
 			internal static global::net.sf.jni4net.jni.MethodId _indexMapping8425; 
 			 global::android.view.ViewDebug.IntToString[] android.view.ViewDebug.ExportedProperty.indexMapping() 
 			{ 
-				if (GetType() == typeof(android.view.ViewDebug.__ExportedProperty)) 
+				if (!IsClrObject) 
 					return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__ExportedProperty._indexMapping8425)); 
 				else 
 					return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__ExportedProperty.staticClass, global::android.view.ViewDebug.__ExportedProperty._indexMapping8425)); 
@@ -179,7 +179,7 @@ namespace android.view
 			internal static global::net.sf.jni4net.jni.MethodId _flagMapping8426; 
 			 global::android.view.ViewDebug.FlagToString[] android.view.ViewDebug.ExportedProperty.flagMapping() 
 			{ 
-				if (GetType() == typeof(android.view.ViewDebug.__ExportedProperty)) 
+				if (!IsClrObject) 
 					return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__ExportedProperty._flagMapping8426)); 
 				else 
 					return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__ExportedProperty.staticClass, global::android.view.ViewDebug.__ExportedProperty._flagMapping8426)); 
@@ -188,7 +188,7 @@ namespace android.view
 			 bool android.view.ViewDebug.ExportedProperty.deepExport() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__ExportedProperty)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.ViewDebug.__ExportedProperty._deepExport8427); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__ExportedProperty.staticClass, global::android.view.ViewDebug.__ExportedProperty._deepExport8427); 
@@ -197,7 +197,7 @@ namespace android.view
 			 int java.lang.annotation.Annotation.hashCode() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__ExportedProperty)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.view.ViewDebug.__ExportedProperty._hashCode8428); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewDebug.__ExportedProperty.staticClass, global::android.view.ViewDebug.__ExportedProperty._hashCode8428); 
@@ -206,7 +206,7 @@ namespace android.view
 			 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__ExportedProperty)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.ViewDebug.__ExportedProperty._equals8429, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__ExportedProperty.staticClass, global::android.view.ViewDebug.__ExportedProperty._equals8429, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -215,7 +215,7 @@ namespace android.view
 			 global::java.lang.String java.lang.annotation.Annotation.toString() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__ExportedProperty)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__ExportedProperty._toString8430)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__ExportedProperty.staticClass, global::android.view.ViewDebug.__ExportedProperty._toString8430)); 
@@ -224,7 +224,7 @@ namespace android.view
 			 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__ExportedProperty)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Class>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__ExportedProperty._annotationType8431)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Class>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__ExportedProperty.staticClass, global::android.view.ViewDebug.__ExportedProperty._annotationType8431)); 
@@ -283,7 +283,7 @@ namespace android.view
 			 global::java.lang.String android.view.ViewDebug.FlagToString.name() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__FlagToString)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__FlagToString._name8432)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__FlagToString.staticClass, global::android.view.ViewDebug.__FlagToString._name8432)); 
@@ -292,7 +292,7 @@ namespace android.view
 			 int android.view.ViewDebug.FlagToString.equals() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__FlagToString)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.view.ViewDebug.__FlagToString._equals8433); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewDebug.__FlagToString.staticClass, global::android.view.ViewDebug.__FlagToString._equals8433); 
@@ -301,7 +301,7 @@ namespace android.view
 			 int android.view.ViewDebug.FlagToString.mask() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__FlagToString)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.view.ViewDebug.__FlagToString._mask8434); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewDebug.__FlagToString.staticClass, global::android.view.ViewDebug.__FlagToString._mask8434); 
@@ -310,7 +310,7 @@ namespace android.view
 			 bool android.view.ViewDebug.FlagToString.outputIf() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__FlagToString)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.ViewDebug.__FlagToString._outputIf8435); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__FlagToString.staticClass, global::android.view.ViewDebug.__FlagToString._outputIf8435); 
@@ -319,7 +319,7 @@ namespace android.view
 			 int java.lang.annotation.Annotation.hashCode() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__FlagToString)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.view.ViewDebug.__FlagToString._hashCode8436); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewDebug.__FlagToString.staticClass, global::android.view.ViewDebug.__FlagToString._hashCode8436); 
@@ -328,7 +328,7 @@ namespace android.view
 			 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__FlagToString)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.ViewDebug.__FlagToString._equals8437, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__FlagToString.staticClass, global::android.view.ViewDebug.__FlagToString._equals8437, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -337,7 +337,7 @@ namespace android.view
 			 global::java.lang.String java.lang.annotation.Annotation.toString() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__FlagToString)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__FlagToString._toString8438)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__FlagToString.staticClass, global::android.view.ViewDebug.__FlagToString._toString8438)); 
@@ -346,7 +346,7 @@ namespace android.view
 			 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__FlagToString)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Class>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__FlagToString._annotationType8439)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Class>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__FlagToString.staticClass, global::android.view.ViewDebug.__FlagToString._annotationType8439)); 
@@ -501,7 +501,7 @@ namespace android.view
 			 int android.view.ViewDebug.IntToString.from() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__IntToString)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.view.ViewDebug.__IntToString._from8450); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewDebug.__IntToString.staticClass, global::android.view.ViewDebug.__IntToString._from8450); 
@@ -510,7 +510,7 @@ namespace android.view
 			 global::java.lang.String android.view.ViewDebug.IntToString.to() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__IntToString)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__IntToString._to8451)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__IntToString.staticClass, global::android.view.ViewDebug.__IntToString._to8451)); 
@@ -519,7 +519,7 @@ namespace android.view
 			 int java.lang.annotation.Annotation.hashCode() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__IntToString)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.view.ViewDebug.__IntToString._hashCode8452); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewDebug.__IntToString.staticClass, global::android.view.ViewDebug.__IntToString._hashCode8452); 
@@ -528,7 +528,7 @@ namespace android.view
 			 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__IntToString)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.view.ViewDebug.__IntToString._equals8453, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__IntToString.staticClass, global::android.view.ViewDebug.__IntToString._equals8453, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -537,7 +537,7 @@ namespace android.view
 			 global::java.lang.String java.lang.annotation.Annotation.toString() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__IntToString)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__IntToString._toString8454)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__IntToString.staticClass, global::android.view.ViewDebug.__IntToString._toString8454)); 
@@ -546,7 +546,7 @@ namespace android.view
 			 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.ViewDebug.__IntToString)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Class>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__IntToString._annotationType8455)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Class>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__IntToString.staticClass, global::android.view.ViewDebug.__IntToString._annotationType8455)); 

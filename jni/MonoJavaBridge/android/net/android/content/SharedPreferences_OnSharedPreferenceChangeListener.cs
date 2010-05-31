@@ -36,7 +36,7 @@ namespace android.content
 		 void android.content.SharedPreferences_OnSharedPreferenceChangeListener.onSharedPreferenceChanged(android.content.SharedPreferences arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.__SharedPreferences_OnSharedPreferenceChangeListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener._onSharedPreferenceChanged1501, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener.staticClass, global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener._onSharedPreferenceChanged1501, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 

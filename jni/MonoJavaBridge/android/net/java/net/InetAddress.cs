@@ -22,7 +22,7 @@ namespace java.net
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.net.InetAddress._hashCode11739); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._hashCode11739); 
@@ -31,7 +31,7 @@ namespace java.net
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._equals11740, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._equals11740, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -39,7 +39,7 @@ namespace java.net
 		internal static global::net.sf.jni4net.jni.MethodId _getAddress11741; 
 		public virtual byte[] getAddress() 
 		{ 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.net.InetAddress._getAddress11741)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._getAddress11741)); 
@@ -48,7 +48,7 @@ namespace java.net
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.InetAddress._toString11742)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._toString11742)); 
@@ -57,7 +57,7 @@ namespace java.net
 		public virtual global::java.lang.String getHostName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.InetAddress._getHostName11743)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._getHostName11743)); 
@@ -66,7 +66,7 @@ namespace java.net
 		public virtual global::java.lang.String getHostAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.InetAddress._getHostAddress11744)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._getHostAddress11744)); 
@@ -81,7 +81,7 @@ namespace java.net
 		public virtual bool isMulticastAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isMulticastAddress11746); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMulticastAddress11746); 
@@ -90,7 +90,7 @@ namespace java.net
 		public virtual bool isAnyLocalAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isAnyLocalAddress11747); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isAnyLocalAddress11747); 
@@ -99,7 +99,7 @@ namespace java.net
 		public virtual bool isLoopbackAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isLoopbackAddress11748); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isLoopbackAddress11748); 
@@ -108,7 +108,7 @@ namespace java.net
 		public virtual bool isLinkLocalAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isLinkLocalAddress11749); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isLinkLocalAddress11749); 
@@ -117,7 +117,7 @@ namespace java.net
 		public virtual bool isSiteLocalAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isSiteLocalAddress11750); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isSiteLocalAddress11750); 
@@ -126,7 +126,7 @@ namespace java.net
 		public virtual bool isMCGlobal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isMCGlobal11751); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMCGlobal11751); 
@@ -135,7 +135,7 @@ namespace java.net
 		public virtual bool isMCNodeLocal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isMCNodeLocal11752); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMCNodeLocal11752); 
@@ -144,7 +144,7 @@ namespace java.net
 		public virtual bool isMCLinkLocal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isMCLinkLocal11753); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMCLinkLocal11753); 
@@ -153,7 +153,7 @@ namespace java.net
 		public virtual bool isMCSiteLocal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isMCSiteLocal11754); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMCSiteLocal11754); 
@@ -162,7 +162,7 @@ namespace java.net
 		public virtual bool isMCOrgLocal() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isMCOrgLocal11755); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isMCOrgLocal11755); 
@@ -171,7 +171,7 @@ namespace java.net
 		public virtual bool isReachable(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isReachable11756, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isReachable11756, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -180,7 +180,7 @@ namespace java.net
 		public virtual bool isReachable(java.net.NetworkInterface arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.InetAddress._isReachable11757, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._isReachable11757, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -189,7 +189,7 @@ namespace java.net
 		public virtual global::java.lang.String getCanonicalHostName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.InetAddress)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.InetAddress._getCanonicalHostName11758)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.InetAddress.staticClass, global::java.net.InetAddress._getCanonicalHostName11758)); 

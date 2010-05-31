@@ -22,7 +22,7 @@ namespace android.preference
 		public override bool isEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceCategory)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.preference.PreferenceCategory._isEnabled6070); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.PreferenceCategory.staticClass, global::android.preference.PreferenceCategory._isEnabled6070); 
@@ -31,7 +31,7 @@ namespace android.preference
 		protected override bool onPrepareAddPreference(android.preference.Preference arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceCategory)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.preference.PreferenceCategory._onPrepareAddPreference6071, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.PreferenceCategory.staticClass, global::android.preference.PreferenceCategory._onPrepareAddPreference6071, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

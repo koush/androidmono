@@ -23,7 +23,7 @@ namespace android.widget
 		public virtual bool isEmpty() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.BaseAdapter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.BaseAdapter._isEmpty9947); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.BaseAdapter.staticClass, global::android.widget.BaseAdapter._isEmpty9947); 
@@ -32,7 +32,7 @@ namespace android.widget
 		public virtual bool isEnabled(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.BaseAdapter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.BaseAdapter._isEnabled9948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.BaseAdapter.staticClass, global::android.widget.BaseAdapter._isEnabled9948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -41,7 +41,7 @@ namespace android.widget
 		public virtual void registerDataSetObserver(android.database.DataSetObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.BaseAdapter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.BaseAdapter._registerDataSetObserver9949, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.BaseAdapter.staticClass, global::android.widget.BaseAdapter._registerDataSetObserver9949, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -50,7 +50,7 @@ namespace android.widget
 		public virtual void unregisterDataSetObserver(android.database.DataSetObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.BaseAdapter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.BaseAdapter._unregisterDataSetObserver9950, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.BaseAdapter.staticClass, global::android.widget.BaseAdapter._unregisterDataSetObserver9950, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -59,7 +59,7 @@ namespace android.widget
 		public virtual bool areAllItemsEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.BaseAdapter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.BaseAdapter._areAllItemsEnabled9951); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.BaseAdapter.staticClass, global::android.widget.BaseAdapter._areAllItemsEnabled9951); 
@@ -68,7 +68,7 @@ namespace android.widget
 		public virtual bool hasStableIds() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.BaseAdapter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.BaseAdapter._hasStableIds9952); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.BaseAdapter.staticClass, global::android.widget.BaseAdapter._hasStableIds9952); 
@@ -77,7 +77,7 @@ namespace android.widget
 		public virtual int getItemViewType(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.BaseAdapter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.BaseAdapter._getItemViewType9953, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.BaseAdapter.staticClass, global::android.widget.BaseAdapter._getItemViewType9953, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -86,7 +86,7 @@ namespace android.widget
 		public virtual int getViewTypeCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.BaseAdapter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.BaseAdapter._getViewTypeCount9954); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.BaseAdapter.staticClass, global::android.widget.BaseAdapter._getViewTypeCount9954); 
@@ -95,7 +95,7 @@ namespace android.widget
 		public virtual global::android.view.View getDropDownView(int arg0, android.view.View arg1, android.view.ViewGroup arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.BaseAdapter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.BaseAdapter._getDropDownView9955, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.BaseAdapter.staticClass, global::android.widget.BaseAdapter._getDropDownView9955, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
@@ -104,7 +104,7 @@ namespace android.widget
 		public virtual void notifyDataSetChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.BaseAdapter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.BaseAdapter._notifyDataSetChanged9956); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.BaseAdapter.staticClass, global::android.widget.BaseAdapter._notifyDataSetChanged9956); 
@@ -113,7 +113,7 @@ namespace android.widget
 		public virtual void notifyDataSetInvalidated() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.BaseAdapter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.BaseAdapter._notifyDataSetInvalidated9957); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.BaseAdapter.staticClass, global::android.widget.BaseAdapter._notifyDataSetInvalidated9957); 

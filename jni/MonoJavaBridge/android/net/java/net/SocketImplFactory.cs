@@ -36,7 +36,7 @@ namespace java.net
 		 global::java.net.SocketImpl java.net.SocketImplFactory.createSocketImpl() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.__SocketImplFactory)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketImpl>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.__SocketImplFactory._createSocketImpl11894)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketImpl>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.__SocketImplFactory.staticClass, global::java.net.__SocketImplFactory._createSocketImpl11894)); 

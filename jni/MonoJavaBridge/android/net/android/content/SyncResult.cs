@@ -22,7 +22,7 @@ namespace android.content
 		public void clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.SyncResult)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.SyncResult._clear1528); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._clear1528); 
@@ -31,7 +31,7 @@ namespace android.content
 		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.SyncResult)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.SyncResult._toString1529)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._toString1529)); 
@@ -40,7 +40,7 @@ namespace android.content
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.SyncResult)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.SyncResult._writeToParcel1530, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._writeToParcel1530, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -49,7 +49,7 @@ namespace android.content
 		public int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.SyncResult)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.SyncResult._describeContents1531); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._describeContents1531); 
@@ -58,7 +58,7 @@ namespace android.content
 		public bool hasHardError() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.SyncResult)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.SyncResult._hasHardError1532); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._hasHardError1532); 
@@ -67,7 +67,7 @@ namespace android.content
 		public bool hasSoftError() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.SyncResult)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.SyncResult._hasSoftError1533); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._hasSoftError1533); 
@@ -76,7 +76,7 @@ namespace android.content
 		public bool hasError() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.SyncResult)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.SyncResult._hasError1534); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._hasError1534); 
@@ -85,7 +85,7 @@ namespace android.content
 		public bool madeSomeProgress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.SyncResult)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.SyncResult._madeSomeProgress1535); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._madeSomeProgress1535); 
@@ -94,7 +94,7 @@ namespace android.content
 		public global::java.lang.String toDebugString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.SyncResult)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.SyncResult._toDebugString1536)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.SyncResult.staticClass, global::android.content.SyncResult._toDebugString1536)); 

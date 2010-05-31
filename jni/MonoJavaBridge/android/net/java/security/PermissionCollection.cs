@@ -17,7 +17,7 @@ namespace java.security
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.PermissionCollection)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.PermissionCollection._toString12450)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.PermissionCollection.staticClass, global::java.security.PermissionCollection._toString12450)); 
@@ -28,7 +28,7 @@ namespace java.security
 		public virtual void setReadOnly() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.PermissionCollection)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.security.PermissionCollection._setReadOnly12452); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.security.PermissionCollection.staticClass, global::java.security.PermissionCollection._setReadOnly12452); 
@@ -39,7 +39,7 @@ namespace java.security
 		public virtual bool isReadOnly() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.PermissionCollection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.security.PermissionCollection._isReadOnly12454); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.PermissionCollection.staticClass, global::java.security.PermissionCollection._isReadOnly12454); 

@@ -36,7 +36,7 @@ namespace android.view
 		 bool android.view.MenuItem_OnMenuItemClickListener.onMenuItemClick(android.view.MenuItem arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem_OnMenuItemClickListener)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem_OnMenuItemClickListener._onMenuItemClick7904, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem_OnMenuItemClickListener.staticClass, global::android.view.__MenuItem_OnMenuItemClickListener._onMenuItemClick7904, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

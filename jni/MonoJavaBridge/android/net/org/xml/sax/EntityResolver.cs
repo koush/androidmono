@@ -36,7 +36,7 @@ namespace org.xml.sax
 		 global::org.xml.sax.InputSource org.xml.sax.EntityResolver.resolveEntity(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__EntityResolver)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.xml.sax.InputSource>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__EntityResolver._resolveEntity13302, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.xml.sax.InputSource>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__EntityResolver.staticClass, global::org.xml.sax.__EntityResolver._resolveEntity13302, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 

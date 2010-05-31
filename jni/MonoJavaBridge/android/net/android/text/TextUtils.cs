@@ -54,7 +54,7 @@ namespace android.text
 			 void android.text.TextUtils.EllipsizeCallback.ellipsized(int arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.text.TextUtils.__EllipsizeCallback)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.text.TextUtils.__EllipsizeCallback._ellipsized6981, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.text.TextUtils.__EllipsizeCallback.staticClass, global::android.text.TextUtils.__EllipsizeCallback._ellipsized6981, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -87,7 +87,7 @@ namespace android.text
 			public virtual global::java.util.Iterator iterator() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.text.TextUtils.SimpleStringSplitter)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.TextUtils.SimpleStringSplitter._iterator6982)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._iterator6982)); 
@@ -96,7 +96,7 @@ namespace android.text
 			public virtual bool hasNext() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.text.TextUtils.SimpleStringSplitter)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.text.TextUtils.SimpleStringSplitter._hasNext6983); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._hasNext6983); 
@@ -105,7 +105,7 @@ namespace android.text
 			public virtual global::java.lang.Object next() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.text.TextUtils.SimpleStringSplitter)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.TextUtils.SimpleStringSplitter._next6984)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._next6984)); 
@@ -114,7 +114,7 @@ namespace android.text
 			public virtual void remove() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.text.TextUtils.SimpleStringSplitter)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.text.TextUtils.SimpleStringSplitter._remove6985); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._remove6985); 
@@ -123,7 +123,7 @@ namespace android.text
 			public virtual void setString(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.text.TextUtils.SimpleStringSplitter)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.text.TextUtils.SimpleStringSplitter._setString6986, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.text.TextUtils.SimpleStringSplitter.staticClass, global::android.text.TextUtils.SimpleStringSplitter._setString6986, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -181,7 +181,7 @@ namespace android.text
 			 void android.text.TextUtils.StringSplitter.setString(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.text.TextUtils.__StringSplitter)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.text.TextUtils.__StringSplitter._setString6988, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.text.TextUtils.__StringSplitter.staticClass, global::android.text.TextUtils.__StringSplitter._setString6988, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -190,7 +190,7 @@ namespace android.text
 			 global::java.util.Iterator java.lang.Iterable.iterator() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.text.TextUtils.__StringSplitter)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.TextUtils.__StringSplitter._iterator6989)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.TextUtils.__StringSplitter.staticClass, global::android.text.TextUtils.__StringSplitter._iterator6989)); 

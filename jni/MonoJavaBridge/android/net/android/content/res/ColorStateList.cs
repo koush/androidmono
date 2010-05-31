@@ -22,7 +22,7 @@ namespace android.content.res
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.ColorStateList)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.ColorStateList._toString1913)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.ColorStateList.staticClass, global::android.content.res.ColorStateList._toString1913)); 
@@ -37,7 +37,7 @@ namespace android.content.res
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.ColorStateList)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.res.ColorStateList._writeToParcel1915, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.res.ColorStateList.staticClass, global::android.content.res.ColorStateList._writeToParcel1915, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -46,7 +46,7 @@ namespace android.content.res
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.ColorStateList)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.ColorStateList._describeContents1916); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.ColorStateList.staticClass, global::android.content.res.ColorStateList._describeContents1916); 
@@ -55,7 +55,7 @@ namespace android.content.res
 		public virtual bool isStateful() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.ColorStateList)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.res.ColorStateList._isStateful1917); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.ColorStateList.staticClass, global::android.content.res.ColorStateList._isStateful1917); 
@@ -70,7 +70,7 @@ namespace android.content.res
 		public virtual global::android.content.res.ColorStateList withAlpha(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.ColorStateList)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.ColorStateList._withAlpha1919, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.ColorStateList.staticClass, global::android.content.res.ColorStateList._withAlpha1919, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -79,7 +79,7 @@ namespace android.content.res
 		public virtual int getColorForState(int[] arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.ColorStateList)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.ColorStateList._getColorForState1920, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.ColorStateList.staticClass, global::android.content.res.ColorStateList._getColorForState1920, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -88,7 +88,7 @@ namespace android.content.res
 		public virtual int getDefaultColor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.ColorStateList)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.ColorStateList._getDefaultColor1921); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.ColorStateList.staticClass, global::android.content.res.ColorStateList._getDefaultColor1921); 

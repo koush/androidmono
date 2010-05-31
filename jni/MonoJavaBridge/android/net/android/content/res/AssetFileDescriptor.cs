@@ -40,7 +40,7 @@ namespace android.content.res
 			public override void mark(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.content.res.AssetFileDescriptor.AutoCloseInputStream)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._mark1867, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._mark1867, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.content.res
 			public override void reset() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.content.res.AssetFileDescriptor.AutoCloseInputStream)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._reset1868); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._reset1868); 
@@ -58,7 +58,7 @@ namespace android.content.res
 			public override int read(byte[] arg0, int arg1, int arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.content.res.AssetFileDescriptor.AutoCloseInputStream)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read1869, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read1869, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -67,7 +67,7 @@ namespace android.content.res
 			public override int read(byte[] arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.content.res.AssetFileDescriptor.AutoCloseInputStream)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read1870, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read1870, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
@@ -76,7 +76,7 @@ namespace android.content.res
 			public override int read() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.content.res.AssetFileDescriptor.AutoCloseInputStream)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read1871); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._read1871); 
@@ -85,7 +85,7 @@ namespace android.content.res
 			public override long skip(long arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.content.res.AssetFileDescriptor.AutoCloseInputStream)) 
+				if (!IsClrObject) 
 					return @__env.CallLongMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._skip1872, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualLongMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._skip1872, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -94,7 +94,7 @@ namespace android.content.res
 			public override int available() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.content.res.AssetFileDescriptor.AutoCloseInputStream)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._available1873); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._available1873); 
@@ -103,7 +103,7 @@ namespace android.content.res
 			public override bool markSupported() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.content.res.AssetFileDescriptor.AutoCloseInputStream)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._markSupported1874); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseInputStream._markSupported1874); 
@@ -150,7 +150,7 @@ namespace android.content.res
 			public override void write(byte[] arg0, int arg1, int arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.content.res.AssetFileDescriptor.AutoCloseOutputStream)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write1876, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write1876, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -159,7 +159,7 @@ namespace android.content.res
 			public override void write(byte[] arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.content.res.AssetFileDescriptor.AutoCloseOutputStream)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write1877, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write1877, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
@@ -168,7 +168,7 @@ namespace android.content.res
 			public override void write(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.content.res.AssetFileDescriptor.AutoCloseOutputStream)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write1878, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass, global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._write1878, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -192,7 +192,7 @@ namespace android.content.res
 		public virtual long getLength() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.AssetFileDescriptor)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.content.res.AssetFileDescriptor._getLength1880); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._getLength1880); 
@@ -201,7 +201,7 @@ namespace android.content.res
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.AssetFileDescriptor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.AssetFileDescriptor._toString1881)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._toString1881)); 
@@ -210,7 +210,7 @@ namespace android.content.res
 		public virtual void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.AssetFileDescriptor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor._close1882); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._close1882); 
@@ -219,7 +219,7 @@ namespace android.content.res
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.AssetFileDescriptor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.res.AssetFileDescriptor._writeToParcel1883, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._writeToParcel1883, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -228,7 +228,7 @@ namespace android.content.res
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.AssetFileDescriptor)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.res.AssetFileDescriptor._describeContents1884); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._describeContents1884); 
@@ -237,7 +237,7 @@ namespace android.content.res
 		public virtual long getStartOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.AssetFileDescriptor)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.content.res.AssetFileDescriptor._getStartOffset1885); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._getStartOffset1885); 
@@ -246,7 +246,7 @@ namespace android.content.res
 		public virtual global::java.io.FileDescriptor getFileDescriptor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.AssetFileDescriptor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.AssetFileDescriptor._getFileDescriptor1886)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._getFileDescriptor1886)); 
@@ -255,7 +255,7 @@ namespace android.content.res
 		public virtual global::android.os.ParcelFileDescriptor getParcelFileDescriptor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.AssetFileDescriptor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.ParcelFileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.AssetFileDescriptor._getParcelFileDescriptor1887)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.ParcelFileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._getParcelFileDescriptor1887)); 
@@ -264,7 +264,7 @@ namespace android.content.res
 		public virtual long getDeclaredLength() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.AssetFileDescriptor)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.content.res.AssetFileDescriptor._getDeclaredLength1888); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._getDeclaredLength1888); 
@@ -273,7 +273,7 @@ namespace android.content.res
 		public virtual global::java.io.FileInputStream createInputStream() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.AssetFileDescriptor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileInputStream>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.AssetFileDescriptor._createInputStream1889)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileInputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._createInputStream1889)); 
@@ -282,7 +282,7 @@ namespace android.content.res
 		public virtual global::java.io.FileOutputStream createOutputStream() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.res.AssetFileDescriptor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileOutputStream>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.AssetFileDescriptor._createOutputStream1890)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileOutputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._createOutputStream1890)); 

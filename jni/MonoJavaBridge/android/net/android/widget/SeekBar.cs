@@ -56,7 +56,7 @@ namespace android.widget
 			 void android.widget.SeekBar.OnSeekBarChangeListener.onProgressChanged(android.widget.SeekBar arg0, int arg1, bool arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.SeekBar.__OnSeekBarChangeListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.SeekBar.__OnSeekBarChangeListener._onProgressChanged10799, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.SeekBar.__OnSeekBarChangeListener.staticClass, global::android.widget.SeekBar.__OnSeekBarChangeListener._onProgressChanged10799, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -65,7 +65,7 @@ namespace android.widget
 			 void android.widget.SeekBar.OnSeekBarChangeListener.onStartTrackingTouch(android.widget.SeekBar arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.SeekBar.__OnSeekBarChangeListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.SeekBar.__OnSeekBarChangeListener._onStartTrackingTouch10800, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.SeekBar.__OnSeekBarChangeListener.staticClass, global::android.widget.SeekBar.__OnSeekBarChangeListener._onStartTrackingTouch10800, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -74,7 +74,7 @@ namespace android.widget
 			 void android.widget.SeekBar.OnSeekBarChangeListener.onStopTrackingTouch(android.widget.SeekBar arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.SeekBar.__OnSeekBarChangeListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.SeekBar.__OnSeekBarChangeListener._onStopTrackingTouch10801, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.SeekBar.__OnSeekBarChangeListener.staticClass, global::android.widget.SeekBar.__OnSeekBarChangeListener._onStopTrackingTouch10801, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -91,7 +91,7 @@ namespace android.widget
 		public virtual void setOnSeekBarChangeListener(android.widget.SeekBar.OnSeekBarChangeListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.SeekBar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.SeekBar._setOnSeekBarChangeListener10802, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SeekBar.staticClass, global::android.widget.SeekBar._setOnSeekBarChangeListener10802, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

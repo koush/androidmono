@@ -22,7 +22,7 @@ namespace android.database.sqlite
 		public override void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.sqlite.SQLiteCursor._close2444); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.SQLiteCursor.staticClass, global::android.database.sqlite.SQLiteCursor._close2444); 
@@ -31,7 +31,7 @@ namespace android.database.sqlite
 		public override int getCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.database.sqlite.SQLiteCursor._getCount2445); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.database.sqlite.SQLiteCursor.staticClass, global::android.database.sqlite.SQLiteCursor._getCount2445); 
@@ -40,7 +40,7 @@ namespace android.database.sqlite
 		public override int getColumnIndex(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.database.sqlite.SQLiteCursor._getColumnIndex2446, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.database.sqlite.SQLiteCursor.staticClass, global::android.database.sqlite.SQLiteCursor._getColumnIndex2446, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -48,7 +48,7 @@ namespace android.database.sqlite
 		internal static global::net.sf.jni4net.jni.MethodId _getColumnNames2447; 
 		public override global::java.lang.String[] getColumnNames() 
 		{ 
-			if (GetType() == typeof(android.database.sqlite.SQLiteCursor)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.database.sqlite.SQLiteCursor._getColumnNames2447)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.sqlite.SQLiteCursor.staticClass, global::android.database.sqlite.SQLiteCursor._getColumnNames2447)); 
@@ -57,7 +57,7 @@ namespace android.database.sqlite
 		public override void deactivate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.sqlite.SQLiteCursor._deactivate2448); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.SQLiteCursor.staticClass, global::android.database.sqlite.SQLiteCursor._deactivate2448); 
@@ -66,7 +66,7 @@ namespace android.database.sqlite
 		public override bool requery() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.sqlite.SQLiteCursor._requery2449); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.sqlite.SQLiteCursor.staticClass, global::android.database.sqlite.SQLiteCursor._requery2449); 
@@ -75,7 +75,7 @@ namespace android.database.sqlite
 		public override void registerDataSetObserver(android.database.DataSetObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.sqlite.SQLiteCursor._registerDataSetObserver2450, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.SQLiteCursor.staticClass, global::android.database.sqlite.SQLiteCursor._registerDataSetObserver2450, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -84,7 +84,7 @@ namespace android.database.sqlite
 		public override bool onMove(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.sqlite.SQLiteCursor._onMove2451, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.sqlite.SQLiteCursor.staticClass, global::android.database.sqlite.SQLiteCursor._onMove2451, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -93,7 +93,7 @@ namespace android.database.sqlite
 		public override void setWindow(android.database.CursorWindow arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.sqlite.SQLiteCursor._setWindow2452, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.SQLiteCursor.staticClass, global::android.database.sqlite.SQLiteCursor._setWindow2452, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -102,7 +102,7 @@ namespace android.database.sqlite
 		public virtual global::android.database.sqlite.SQLiteDatabase getDatabase() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteCursor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.database.sqlite.SQLiteDatabase>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.sqlite.SQLiteCursor._getDatabase2453)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.database.sqlite.SQLiteDatabase>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.sqlite.SQLiteCursor.staticClass, global::android.database.sqlite.SQLiteCursor._getDatabase2453)); 
@@ -111,7 +111,7 @@ namespace android.database.sqlite
 		public virtual void setSelectionArguments(java.lang.String[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.sqlite.SQLiteCursor._setSelectionArguments2454, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.SQLiteCursor.staticClass, global::android.database.sqlite.SQLiteCursor._setSelectionArguments2454, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 

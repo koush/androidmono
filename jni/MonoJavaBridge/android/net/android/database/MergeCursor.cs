@@ -22,7 +22,7 @@ namespace android.database
 		public override short getShort(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallShortMethod(this, global::android.database.MergeCursor._getShort2407, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualShortMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getShort2407, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -31,7 +31,7 @@ namespace android.database
 		public override int getInt(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.database.MergeCursor._getInt2408, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getInt2408, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -40,7 +40,7 @@ namespace android.database
 		public override long getLong(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.database.MergeCursor._getLong2409, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getLong2409, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.database
 		public override float getFloat(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.database.MergeCursor._getFloat2410, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getFloat2410, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.database
 		public override double getDouble(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallDoubleMethod(this, global::android.database.MergeCursor._getDouble2411, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualDoubleMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getDouble2411, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.database
 		public override void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.MergeCursor._close2412); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._close2412); 
@@ -76,7 +76,7 @@ namespace android.database
 		public override global::java.lang.String getString(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.MergeCursor._getString2413, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getString2413, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -85,7 +85,7 @@ namespace android.database
 		public override void registerContentObserver(android.database.ContentObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.MergeCursor._registerContentObserver2414, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._registerContentObserver2414, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -94,7 +94,7 @@ namespace android.database
 		public override void unregisterContentObserver(android.database.ContentObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.MergeCursor._unregisterContentObserver2415, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._unregisterContentObserver2415, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -103,7 +103,7 @@ namespace android.database
 		public override int getCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.database.MergeCursor._getCount2416); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getCount2416); 
@@ -111,7 +111,7 @@ namespace android.database
 		internal static global::net.sf.jni4net.jni.MethodId _getColumnNames2417; 
 		public override global::java.lang.String[] getColumnNames() 
 		{ 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.database.MergeCursor._getColumnNames2417)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getColumnNames2417)); 
@@ -119,7 +119,7 @@ namespace android.database
 		internal static global::net.sf.jni4net.jni.MethodId _getBlob2418; 
 		public override byte[] getBlob(int arg0) 
 		{ 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.database.MergeCursor._getBlob2418, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._getBlob2418, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -128,7 +128,7 @@ namespace android.database
 		public override bool isNull(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.MergeCursor._isNull2419, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._isNull2419, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -137,7 +137,7 @@ namespace android.database
 		public override void deactivate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.MergeCursor._deactivate2420); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._deactivate2420); 
@@ -146,7 +146,7 @@ namespace android.database
 		public override bool requery() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.MergeCursor._requery2421); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._requery2421); 
@@ -155,7 +155,7 @@ namespace android.database
 		public override void registerDataSetObserver(android.database.DataSetObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.MergeCursor._registerDataSetObserver2422, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._registerDataSetObserver2422, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -164,7 +164,7 @@ namespace android.database
 		public override void unregisterDataSetObserver(android.database.DataSetObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.MergeCursor._unregisterDataSetObserver2423, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._unregisterDataSetObserver2423, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -173,7 +173,7 @@ namespace android.database
 		public override bool onMove(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MergeCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.MergeCursor._onMove2424, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.MergeCursor.staticClass, global::android.database.MergeCursor._onMove2424, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 

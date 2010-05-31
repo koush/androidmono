@@ -15,7 +15,7 @@ namespace android.widget
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSeekBar)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.AbsSeekBar._onKeyDown9743, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._onKeyDown9743, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -24,7 +24,7 @@ namespace android.widget
 		public override bool onTouchEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSeekBar)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.AbsSeekBar._onTouchEvent9744, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._onTouchEvent9744, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -33,7 +33,7 @@ namespace android.widget
 		protected override void onSizeChanged(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSeekBar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AbsSeekBar._onSizeChanged9745, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._onSizeChanged9745, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -42,7 +42,7 @@ namespace android.widget
 		protected override void onDraw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSeekBar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AbsSeekBar._onDraw9746, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._onDraw9746, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -51,7 +51,7 @@ namespace android.widget
 		protected override bool verifyDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSeekBar)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.AbsSeekBar._verifyDrawable9747, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._verifyDrawable9747, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -60,7 +60,7 @@ namespace android.widget
 		protected override void drawableStateChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSeekBar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AbsSeekBar._drawableStateChanged9748); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._drawableStateChanged9748); 
@@ -69,7 +69,7 @@ namespace android.widget
 		protected override void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSeekBar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AbsSeekBar._onMeasure9749, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._onMeasure9749, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -78,7 +78,7 @@ namespace android.widget
 		public override void setMax(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSeekBar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AbsSeekBar._setMax9750, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._setMax9750, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -87,7 +87,7 @@ namespace android.widget
 		public virtual void setThumb(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSeekBar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AbsSeekBar._setThumb9751, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._setThumb9751, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -96,7 +96,7 @@ namespace android.widget
 		public virtual int getThumbOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSeekBar)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.AbsSeekBar._getThumbOffset9752); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._getThumbOffset9752); 
@@ -105,7 +105,7 @@ namespace android.widget
 		public virtual void setThumbOffset(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSeekBar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AbsSeekBar._setThumbOffset9753, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._setThumbOffset9753, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -114,7 +114,7 @@ namespace android.widget
 		public virtual void setKeyProgressIncrement(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSeekBar)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AbsSeekBar._setKeyProgressIncrement9754, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._setKeyProgressIncrement9754, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -123,7 +123,7 @@ namespace android.widget
 		public virtual int getKeyProgressIncrement() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AbsSeekBar)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.AbsSeekBar._getKeyProgressIncrement9755); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AbsSeekBar.staticClass, global::android.widget.AbsSeekBar._getKeyProgressIncrement9755); 

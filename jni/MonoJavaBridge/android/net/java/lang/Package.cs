@@ -22,7 +22,7 @@ namespace java.lang
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Package)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.lang.Package._hashCode11489); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.lang.Package.staticClass, global::java.lang.Package._hashCode11489); 
@@ -31,7 +31,7 @@ namespace java.lang
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Package)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._toString11490)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._toString11490)); 
@@ -40,7 +40,7 @@ namespace java.lang
 		public virtual global::java.lang.String getName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Package)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getName11491)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getName11491)); 
@@ -55,7 +55,7 @@ namespace java.lang
 		public virtual global::java.lang.annotation.Annotation getAnnotation(java.lang.Class arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Package)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.annotation.Annotation>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getAnnotation11493, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.annotation.Annotation>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getAnnotation11493, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -64,7 +64,7 @@ namespace java.lang
 		public virtual bool isAnnotationPresent(java.lang.Class arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Package)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.lang.Package._isAnnotationPresent11494, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.lang.Package.staticClass, global::java.lang.Package._isAnnotationPresent11494, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -72,7 +72,7 @@ namespace java.lang
 		internal static global::net.sf.jni4net.jni.MethodId _getAnnotations11495; 
 		public virtual global::java.lang.annotation.Annotation[] getAnnotations() 
 		{ 
-			if (GetType() == typeof(java.lang.Package)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getAnnotations11495)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getAnnotations11495)); 
@@ -80,7 +80,7 @@ namespace java.lang
 		internal static global::net.sf.jni4net.jni.MethodId _getDeclaredAnnotations11496; 
 		public virtual global::java.lang.annotation.Annotation[] getDeclaredAnnotations() 
 		{ 
-			if (GetType() == typeof(java.lang.Package)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getDeclaredAnnotations11496)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getDeclaredAnnotations11496)); 
@@ -94,7 +94,7 @@ namespace java.lang
 		public virtual bool isSealed() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Package)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.lang.Package._isSealed11498); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.lang.Package.staticClass, global::java.lang.Package._isSealed11498); 
@@ -103,7 +103,7 @@ namespace java.lang
 		public virtual bool isSealed(java.net.URL arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Package)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.lang.Package._isSealed11499, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.lang.Package.staticClass, global::java.lang.Package._isSealed11499, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -112,7 +112,7 @@ namespace java.lang
 		public virtual bool isCompatibleWith(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Package)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.lang.Package._isCompatibleWith11500, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.lang.Package.staticClass, global::java.lang.Package._isCompatibleWith11500, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -121,7 +121,7 @@ namespace java.lang
 		public virtual global::java.lang.String getSpecificationTitle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Package)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getSpecificationTitle11501)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getSpecificationTitle11501)); 
@@ -130,7 +130,7 @@ namespace java.lang
 		public virtual global::java.lang.String getSpecificationVersion() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Package)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getSpecificationVersion11502)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getSpecificationVersion11502)); 
@@ -139,7 +139,7 @@ namespace java.lang
 		public virtual global::java.lang.String getSpecificationVendor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Package)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getSpecificationVendor11503)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getSpecificationVendor11503)); 
@@ -148,7 +148,7 @@ namespace java.lang
 		public virtual global::java.lang.String getImplementationTitle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Package)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getImplementationTitle11504)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getImplementationTitle11504)); 
@@ -157,7 +157,7 @@ namespace java.lang
 		public virtual global::java.lang.String getImplementationVersion() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Package)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getImplementationVersion11505)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getImplementationVersion11505)); 
@@ -166,7 +166,7 @@ namespace java.lang
 		public virtual global::java.lang.String getImplementationVendor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Package)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getImplementationVendor11506)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getImplementationVendor11506)); 

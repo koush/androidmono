@@ -37,7 +37,7 @@ namespace android.content
 		 void android.content.DialogInterface.cancel() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.__DialogInterface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.__DialogInterface._cancel1277); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface.staticClass, global::android.content.__DialogInterface._cancel1277); 
@@ -46,7 +46,7 @@ namespace android.content
 		 void android.content.DialogInterface.dismiss() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.__DialogInterface)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.__DialogInterface._dismiss1278); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface.staticClass, global::android.content.__DialogInterface._dismiss1278); 

@@ -37,7 +37,7 @@ namespace java.util
 		 bool java.util.Comparator.equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__Comparator)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.__Comparator._equals12809, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__Comparator.staticClass, global::java.util.__Comparator._equals12809, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -46,7 +46,7 @@ namespace java.util
 		 int java.util.Comparator.compare(java.lang.Object arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__Comparator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.__Comparator._compare12810, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.__Comparator.staticClass, global::java.util.__Comparator._compare12810, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 

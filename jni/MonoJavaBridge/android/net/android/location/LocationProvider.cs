@@ -15,7 +15,7 @@ namespace android.location
 		public virtual global::java.lang.String getName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationProvider)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationProvider._getName4346)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationProvider.staticClass, global::android.location.LocationProvider._getName4346)); 
@@ -42,7 +42,7 @@ namespace android.location
 		public virtual bool meetsCriteria(android.location.Criteria arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.LocationProvider)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.location.LocationProvider._meetsCriteria4356, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.LocationProvider.staticClass, global::android.location.LocationProvider._meetsCriteria4356, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

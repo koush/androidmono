@@ -22,7 +22,7 @@ namespace android.media
 		public virtual void stop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.Ringtone)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.Ringtone._stop4566); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.Ringtone.staticClass, global::android.media.Ringtone._stop4566); 
@@ -31,7 +31,7 @@ namespace android.media
 		public virtual global::java.lang.String getTitle(android.content.Context arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.Ringtone)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.media.Ringtone._getTitle4567, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.media.Ringtone.staticClass, global::android.media.Ringtone._getTitle4567, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -40,7 +40,7 @@ namespace android.media
 		public virtual void play() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.Ringtone)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.Ringtone._play4568); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.Ringtone.staticClass, global::android.media.Ringtone._play4568); 
@@ -49,7 +49,7 @@ namespace android.media
 		public virtual int getStreamType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.Ringtone)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.Ringtone._getStreamType4569); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.Ringtone.staticClass, global::android.media.Ringtone._getStreamType4569); 
@@ -58,7 +58,7 @@ namespace android.media
 		public virtual bool isPlaying() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.Ringtone)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.Ringtone._isPlaying4570); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.Ringtone.staticClass, global::android.media.Ringtone._isPlaying4570); 
@@ -67,7 +67,7 @@ namespace android.media
 		public virtual void setStreamType(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.Ringtone)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.Ringtone._setStreamType4571, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.Ringtone.staticClass, global::android.media.Ringtone._setStreamType4571, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

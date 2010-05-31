@@ -40,7 +40,7 @@ namespace android.app
 			public virtual void disableKeyguard() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.KeyguardManager.KeyguardLock)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.app.KeyguardManager.KeyguardLock._disableKeyguard611); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.app.KeyguardManager.KeyguardLock.staticClass, global::android.app.KeyguardManager.KeyguardLock._disableKeyguard611); 
@@ -49,7 +49,7 @@ namespace android.app
 			public virtual void reenableKeyguard() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.KeyguardManager.KeyguardLock)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.app.KeyguardManager.KeyguardLock._reenableKeyguard612); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.app.KeyguardManager.KeyguardLock.staticClass, global::android.app.KeyguardManager.KeyguardLock._reenableKeyguard612); 
@@ -97,7 +97,7 @@ namespace android.app
 			 void android.app.KeyguardManager.OnKeyguardExitResult.onKeyguardExitResult(bool arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.KeyguardManager.__OnKeyguardExitResult)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.app.KeyguardManager.__OnKeyguardExitResult._onKeyguardExitResult613, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.app.KeyguardManager.__OnKeyguardExitResult.staticClass, global::android.app.KeyguardManager.__OnKeyguardExitResult._onKeyguardExitResult613, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -112,7 +112,7 @@ namespace android.app
 		public virtual global::android.app.KeyguardManager.KeyguardLock newKeyguardLock(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.KeyguardManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.KeyguardManager.KeyguardLock>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.KeyguardManager._newKeyguardLock614, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.KeyguardManager.KeyguardLock>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.KeyguardManager.staticClass, global::android.app.KeyguardManager._newKeyguardLock614, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -121,7 +121,7 @@ namespace android.app
 		public virtual bool inKeyguardRestrictedInputMode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.KeyguardManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.app.KeyguardManager._inKeyguardRestrictedInputMode615); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.app.KeyguardManager.staticClass, global::android.app.KeyguardManager._inKeyguardRestrictedInputMode615); 
@@ -130,7 +130,7 @@ namespace android.app
 		public virtual void exitKeyguardSecurely(android.app.KeyguardManager.OnKeyguardExitResult arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.KeyguardManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.KeyguardManager._exitKeyguardSecurely616, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.KeyguardManager.staticClass, global::android.app.KeyguardManager._exitKeyguardSecurely616, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

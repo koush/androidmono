@@ -92,7 +92,7 @@ namespace android.view
 		public virtual int get(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.KeyCharacterMap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.KeyCharacterMap._get7790, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._get7790, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -107,7 +107,7 @@ namespace android.view
 		public virtual char getNumber(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.KeyCharacterMap)) 
+			if (!IsClrObject) 
 				return @__env.CallCharMethod(this, global::android.view.KeyCharacterMap._getNumber7792, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualCharMethod(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getNumber7792, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -122,7 +122,7 @@ namespace android.view
 		public virtual char getDisplayLabel(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.KeyCharacterMap)) 
+			if (!IsClrObject) 
 				return @__env.CallCharMethod(this, global::android.view.KeyCharacterMap._getDisplayLabel7794, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualCharMethod(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getDisplayLabel7794, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -131,7 +131,7 @@ namespace android.view
 		public virtual bool getKeyData(int arg0, android.view.KeyCharacterMap.KeyData arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.KeyCharacterMap)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.KeyCharacterMap._getKeyData7795, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getKeyData7795, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -140,7 +140,7 @@ namespace android.view
 		public virtual char getMatch(int arg0, char[] arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.KeyCharacterMap)) 
+			if (!IsClrObject) 
 				return @__env.CallCharMethod(this, global::android.view.KeyCharacterMap._getMatch7796, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualCharMethod(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getMatch7796, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -149,7 +149,7 @@ namespace android.view
 		public virtual char getMatch(int arg0, char[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.KeyCharacterMap)) 
+			if (!IsClrObject) 
 				return @__env.CallCharMethod(this, global::android.view.KeyCharacterMap._getMatch7797, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)); 
 			else 
 				return @__env.CallNonVirtualCharMethod(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getMatch7797, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)); 
@@ -158,7 +158,7 @@ namespace android.view
 		public virtual bool isPrintingKey(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.KeyCharacterMap)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.KeyCharacterMap._isPrintingKey7798, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._isPrintingKey7798, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -166,7 +166,7 @@ namespace android.view
 		internal static global::net.sf.jni4net.jni.MethodId _getEvents7799; 
 		public virtual global::android.view.KeyEvent[] getEvents(char[] arg0) 
 		{ 
-			if (GetType() == typeof(android.view.KeyCharacterMap)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.view.KeyCharacterMap._getEvents7799, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getEvents7799, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
@@ -175,7 +175,7 @@ namespace android.view
 		public virtual int getKeyboardType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.KeyCharacterMap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.KeyCharacterMap._getKeyboardType7800); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.KeyCharacterMap.staticClass, global::android.view.KeyCharacterMap._getKeyboardType7800); 

@@ -54,7 +54,7 @@ namespace android.os
 			 bool android.os.Handler.Callback.handleMessage(android.os.Message arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.Handler.__Callback)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.os.Handler.__Callback._handleMessage5577, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Handler.__Callback.staticClass, global::android.os.Handler.__Callback._handleMessage5577, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -69,7 +69,7 @@ namespace android.os
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Handler._toString5578)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Handler.staticClass, global::android.os.Handler._toString5578)); 
@@ -78,7 +78,7 @@ namespace android.os
 		public virtual void dump(android.util.Printer arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Handler._dump5579, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._dump5579, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -87,7 +87,7 @@ namespace android.os
 		public virtual void handleMessage(android.os.Message arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Handler._handleMessage5580, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._handleMessage5580, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -96,7 +96,7 @@ namespace android.os
 		public virtual void dispatchMessage(android.os.Message arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Handler._dispatchMessage5581, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._dispatchMessage5581, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -105,7 +105,7 @@ namespace android.os
 		public virtual global::android.os.Message obtainMessage(int arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Message>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Handler._obtainMessage5582, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Message>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Handler.staticClass, global::android.os.Handler._obtainMessage5582, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
@@ -114,7 +114,7 @@ namespace android.os
 		public virtual global::android.os.Message obtainMessage(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Message>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Handler._obtainMessage5583, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Message>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Handler.staticClass, global::android.os.Handler._obtainMessage5583, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2))); 
@@ -123,7 +123,7 @@ namespace android.os
 		public virtual global::android.os.Message obtainMessage(int arg0, int arg1, int arg2, java.lang.Object arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Message>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Handler._obtainMessage5584, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Message>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Handler.staticClass, global::android.os.Handler._obtainMessage5584, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3))); 
@@ -132,7 +132,7 @@ namespace android.os
 		public virtual global::android.os.Message obtainMessage(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Message>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Handler._obtainMessage5585, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Message>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Handler.staticClass, global::android.os.Handler._obtainMessage5585, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -141,7 +141,7 @@ namespace android.os
 		public virtual global::android.os.Message obtainMessage() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Message>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Handler._obtainMessage5586)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Message>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Handler.staticClass, global::android.os.Handler._obtainMessage5586)); 
@@ -150,7 +150,7 @@ namespace android.os
 		public virtual bool post(java.lang.Runnable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.Handler._post5587, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._post5587, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -159,7 +159,7 @@ namespace android.os
 		public virtual bool postAtTime(java.lang.Runnable arg0, java.lang.Object arg1, long arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.Handler._postAtTime5588, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._postAtTime5588, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -168,7 +168,7 @@ namespace android.os
 		public virtual bool postAtTime(java.lang.Runnable arg0, long arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.Handler._postAtTime5589, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._postAtTime5589, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -177,7 +177,7 @@ namespace android.os
 		public virtual bool postDelayed(java.lang.Runnable arg0, long arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.Handler._postDelayed5590, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._postDelayed5590, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -186,7 +186,7 @@ namespace android.os
 		public virtual bool postAtFrontOfQueue(java.lang.Runnable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.Handler._postAtFrontOfQueue5591, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._postAtFrontOfQueue5591, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -195,7 +195,7 @@ namespace android.os
 		public virtual void removeCallbacks(java.lang.Runnable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Handler._removeCallbacks5592, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._removeCallbacks5592, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -204,7 +204,7 @@ namespace android.os
 		public virtual void removeCallbacks(java.lang.Runnable arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Handler._removeCallbacks5593, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._removeCallbacks5593, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -213,7 +213,7 @@ namespace android.os
 		public virtual bool sendMessage(android.os.Message arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.Handler._sendMessage5594, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._sendMessage5594, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -222,7 +222,7 @@ namespace android.os
 		public virtual bool sendEmptyMessage(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.Handler._sendEmptyMessage5595, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._sendEmptyMessage5595, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -231,7 +231,7 @@ namespace android.os
 		public virtual bool sendEmptyMessageDelayed(int arg0, long arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.Handler._sendEmptyMessageDelayed5596, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._sendEmptyMessageDelayed5596, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -240,7 +240,7 @@ namespace android.os
 		public virtual bool sendEmptyMessageAtTime(int arg0, long arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.Handler._sendEmptyMessageAtTime5597, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._sendEmptyMessageAtTime5597, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -249,7 +249,7 @@ namespace android.os
 		public virtual bool sendMessageDelayed(android.os.Message arg0, long arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.Handler._sendMessageDelayed5598, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._sendMessageDelayed5598, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -258,7 +258,7 @@ namespace android.os
 		public virtual bool sendMessageAtTime(android.os.Message arg0, long arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.Handler._sendMessageAtTime5599, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._sendMessageAtTime5599, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -267,7 +267,7 @@ namespace android.os
 		public virtual bool sendMessageAtFrontOfQueue(android.os.Message arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.Handler._sendMessageAtFrontOfQueue5600, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._sendMessageAtFrontOfQueue5600, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -276,7 +276,7 @@ namespace android.os
 		public virtual void removeMessages(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Handler._removeMessages5601, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._removeMessages5601, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -285,7 +285,7 @@ namespace android.os
 		public virtual void removeMessages(int arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Handler._removeMessages5602, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._removeMessages5602, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -294,7 +294,7 @@ namespace android.os
 		public virtual void removeCallbacksAndMessages(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Handler._removeCallbacksAndMessages5603, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._removeCallbacksAndMessages5603, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -303,7 +303,7 @@ namespace android.os
 		public virtual bool hasMessages(int arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.Handler._hasMessages5604, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._hasMessages5604, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -312,7 +312,7 @@ namespace android.os
 		public virtual bool hasMessages(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.Handler._hasMessages5605, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Handler.staticClass, global::android.os.Handler._hasMessages5605, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -321,7 +321,7 @@ namespace android.os
 		public virtual global::android.os.Looper getLooper() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Handler)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Looper>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Handler._getLooper5606)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Looper>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Handler.staticClass, global::android.os.Handler._getLooper5606)); 

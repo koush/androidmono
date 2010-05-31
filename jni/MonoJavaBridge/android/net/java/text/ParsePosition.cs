@@ -22,7 +22,7 @@ namespace java.text
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.ParsePosition)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.text.ParsePosition._hashCode12652); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._hashCode12652); 
@@ -31,7 +31,7 @@ namespace java.text
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.ParsePosition)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.text.ParsePosition._equals12653, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._equals12653, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace java.text
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.ParsePosition)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.ParsePosition._toString12654)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._toString12654)); 
@@ -49,7 +49,7 @@ namespace java.text
 		public virtual int getIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.ParsePosition)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.text.ParsePosition._getIndex12655); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._getIndex12655); 
@@ -58,7 +58,7 @@ namespace java.text
 		public virtual void setIndex(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.ParsePosition)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.text.ParsePosition._setIndex12656, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._setIndex12656, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -67,7 +67,7 @@ namespace java.text
 		public virtual void setErrorIndex(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.ParsePosition)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.text.ParsePosition._setErrorIndex12657, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._setErrorIndex12657, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -76,7 +76,7 @@ namespace java.text
 		public virtual int getErrorIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.ParsePosition)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.text.ParsePosition._getErrorIndex12658); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.text.ParsePosition.staticClass, global::java.text.ParsePosition._getErrorIndex12658); 

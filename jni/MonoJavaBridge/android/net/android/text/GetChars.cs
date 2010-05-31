@@ -36,7 +36,7 @@ namespace android.text
 		 void android.text.GetChars.getChars(int arg0, int arg1, char[] arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.__GetChars)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.__GetChars._getChars6775, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.__GetChars.staticClass, global::android.text.__GetChars._getChars6775, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -45,7 +45,7 @@ namespace android.text
 		 global::java.lang.String java.lang.CharSequence.toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.__GetChars)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.__GetChars._toString6776)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.__GetChars.staticClass, global::android.text.__GetChars._toString6776)); 
@@ -54,7 +54,7 @@ namespace android.text
 		 int java.lang.CharSequence.length() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.__GetChars)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.__GetChars._length6777); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.__GetChars.staticClass, global::android.text.__GetChars._length6777); 
@@ -63,7 +63,7 @@ namespace android.text
 		 char java.lang.CharSequence.charAt(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.__GetChars)) 
+			if (!IsClrObject) 
 				return @__env.CallCharMethod(this, global::android.text.__GetChars._charAt6778, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualCharMethod(this, global::android.text.__GetChars.staticClass, global::android.text.__GetChars._charAt6778, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -72,7 +72,7 @@ namespace android.text
 		 global::java.lang.CharSequence java.lang.CharSequence.subSequence(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.__GetChars)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.__GetChars._subSequence6779, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.__GetChars.staticClass, global::android.text.__GetChars._subSequence6779, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 

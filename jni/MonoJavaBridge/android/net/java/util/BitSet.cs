@@ -22,7 +22,7 @@ namespace java.util
 		public virtual global::java.util.BitSet get(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.BitSet>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.BitSet._get12731, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.BitSet>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._get12731, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -31,7 +31,7 @@ namespace java.util
 		public virtual bool get(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.BitSet._get12732, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._get12732, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -40,7 +40,7 @@ namespace java.util
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.BitSet._hashCode12733); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._hashCode12733); 
@@ -49,7 +49,7 @@ namespace java.util
 		public virtual global::java.lang.Object clone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.BitSet._clone12734)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._clone12734)); 
@@ -58,7 +58,7 @@ namespace java.util
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.BitSet._equals12735, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._equals12735, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -67,7 +67,7 @@ namespace java.util
 		public virtual void clear(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.BitSet._clear12736, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._clear12736, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -76,7 +76,7 @@ namespace java.util
 		public virtual void clear(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.BitSet._clear12737, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._clear12737, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -85,7 +85,7 @@ namespace java.util
 		public virtual void clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.BitSet._clear12738); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._clear12738); 
@@ -94,7 +94,7 @@ namespace java.util
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.BitSet._toString12739)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._toString12739)); 
@@ -103,7 +103,7 @@ namespace java.util
 		public virtual int length() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.BitSet._length12740); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._length12740); 
@@ -112,7 +112,7 @@ namespace java.util
 		public virtual bool isEmpty() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.BitSet._isEmpty12741); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._isEmpty12741); 
@@ -121,7 +121,7 @@ namespace java.util
 		public virtual int size() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.BitSet._size12742); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._size12742); 
@@ -130,7 +130,7 @@ namespace java.util
 		public virtual void set(int arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.BitSet._set12743, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._set12743, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -139,7 +139,7 @@ namespace java.util
 		public virtual void set(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.BitSet._set12744, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._set12744, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -148,7 +148,7 @@ namespace java.util
 		public virtual void set(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.BitSet._set12745, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._set12745, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -157,7 +157,7 @@ namespace java.util
 		public virtual void set(int arg0, int arg1, bool arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.BitSet._set12746, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._set12746, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -166,7 +166,7 @@ namespace java.util
 		public virtual void flip(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.BitSet._flip12747, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._flip12747, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -175,7 +175,7 @@ namespace java.util
 		public virtual void flip(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.BitSet._flip12748, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._flip12748, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -184,7 +184,7 @@ namespace java.util
 		public virtual int nextSetBit(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.BitSet._nextSetBit12749, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._nextSetBit12749, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -193,7 +193,7 @@ namespace java.util
 		public virtual int nextClearBit(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.BitSet._nextClearBit12750, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._nextClearBit12750, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -202,7 +202,7 @@ namespace java.util
 		public virtual bool intersects(java.util.BitSet arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.BitSet._intersects12751, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._intersects12751, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -211,7 +211,7 @@ namespace java.util
 		public virtual int cardinality() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.BitSet._cardinality12752); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._cardinality12752); 
@@ -220,7 +220,7 @@ namespace java.util
 		public virtual void and(java.util.BitSet arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.BitSet._and12753, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._and12753, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -229,7 +229,7 @@ namespace java.util
 		public virtual void or(java.util.BitSet arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.BitSet._or12754, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._or12754, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -238,7 +238,7 @@ namespace java.util
 		public virtual void xor(java.util.BitSet arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.BitSet._xor12755, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._xor12755, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -247,7 +247,7 @@ namespace java.util
 		public virtual void andNot(java.util.BitSet arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.BitSet)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.BitSet._andNot12756, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.BitSet.staticClass, global::java.util.BitSet._andNot12756, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

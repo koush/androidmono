@@ -36,7 +36,7 @@ namespace android.view.inputmethod
 		 void android.view.inputmethod.InputMethod_SessionCallback.sessionCreated(android.view.inputmethod.InputMethodSession arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputMethod_SessionCallback)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod_SessionCallback._sessionCreated9144, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod_SessionCallback.staticClass, global::android.view.inputmethod.__InputMethod_SessionCallback._sessionCreated9144, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

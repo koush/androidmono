@@ -37,7 +37,7 @@ namespace java.nio.channels
 		 void java.nio.channels.Channel.close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__Channel)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.nio.channels.__Channel._close12153); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__Channel.staticClass, global::java.nio.channels.__Channel._close12153); 
@@ -46,7 +46,7 @@ namespace java.nio.channels
 		 bool java.nio.channels.Channel.isOpen() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__Channel)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.channels.__Channel._isOpen12154); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.__Channel.staticClass, global::java.nio.channels.__Channel._isOpen12154); 
@@ -55,7 +55,7 @@ namespace java.nio.channels
 		 void java.io.Closeable.close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__Channel)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.nio.channels.__Channel._close12155); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__Channel.staticClass, global::java.nio.channels.__Channel._close12155); 

@@ -22,7 +22,7 @@ namespace android.provider
 		protected virtual void truncateHistory(android.content.ContentResolver arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.provider.SearchRecentSuggestions)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.provider.SearchRecentSuggestions._truncateHistory6312, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._truncateHistory6312, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -31,7 +31,7 @@ namespace android.provider
 		public virtual void clearHistory() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.provider.SearchRecentSuggestions)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.provider.SearchRecentSuggestions._clearHistory6313); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._clearHistory6313); 
@@ -40,7 +40,7 @@ namespace android.provider
 		public virtual void saveRecentQuery(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.provider.SearchRecentSuggestions)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.provider.SearchRecentSuggestions._saveRecentQuery6314, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.provider.SearchRecentSuggestions.staticClass, global::android.provider.SearchRecentSuggestions._saveRecentQuery6314, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 

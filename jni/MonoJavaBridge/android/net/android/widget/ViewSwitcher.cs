@@ -54,7 +54,7 @@ namespace android.widget
 			 global::android.view.View android.widget.ViewSwitcher.ViewFactory.makeView() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.ViewSwitcher.__ViewFactory)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ViewSwitcher.__ViewFactory._makeView11322)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ViewSwitcher.__ViewFactory.staticClass, global::android.widget.ViewSwitcher.__ViewFactory._makeView11322)); 
@@ -69,7 +69,7 @@ namespace android.widget
 		public virtual void reset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewSwitcher)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewSwitcher._reset11323); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._reset11323); 
@@ -78,7 +78,7 @@ namespace android.widget
 		public override void addView(android.view.View arg0, int arg1, android.view.ViewGroup.LayoutParams arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewSwitcher)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewSwitcher._addView11324, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._addView11324, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -87,7 +87,7 @@ namespace android.widget
 		public virtual void setFactory(android.widget.ViewSwitcher.ViewFactory arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewSwitcher)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewSwitcher._setFactory11325, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._setFactory11325, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -96,7 +96,7 @@ namespace android.widget
 		public virtual global::android.view.View getNextView() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewSwitcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ViewSwitcher._getNextView11326)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._getNextView11326)); 

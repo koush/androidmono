@@ -72,7 +72,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlPullParser.setProperty(java.lang.String arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser._setProperty13354, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._setProperty13354, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -81,7 +81,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.Object org.xmlpull.v1.XmlPullParser.getProperty(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getProperty13355, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getProperty13355, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -90,7 +90,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getName13356)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getName13356)); 
@@ -99,7 +99,7 @@ namespace org.xmlpull.v1
 		 int org.xmlpull.v1.XmlPullParser.next() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._next13357); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._next13357); 
@@ -108,7 +108,7 @@ namespace org.xmlpull.v1
 		 int org.xmlpull.v1.XmlPullParser.getLineNumber() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._getLineNumber13358); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getLineNumber13358); 
@@ -117,7 +117,7 @@ namespace org.xmlpull.v1
 		 bool org.xmlpull.v1.XmlPullParser.isWhitespace() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::org.xmlpull.v1.__XmlPullParser._isWhitespace13359); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._isWhitespace13359); 
@@ -126,7 +126,7 @@ namespace org.xmlpull.v1
 		 int org.xmlpull.v1.XmlPullParser.nextToken() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._nextToken13360); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._nextToken13360); 
@@ -135,7 +135,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlPullParser.setInput(java.io.InputStream arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser._setInput13361, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._setInput13361, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -144,7 +144,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlPullParser.setInput(java.io.Reader arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser._setInput13362, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._setInput13362, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -153,7 +153,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getPrefix() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getPrefix13363)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getPrefix13363)); 
@@ -162,7 +162,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeValue(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getAttributeValue13364, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getAttributeValue13364, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -171,7 +171,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeValue(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getAttributeValue13365, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getAttributeValue13365, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -180,7 +180,7 @@ namespace org.xmlpull.v1
 		 int org.xmlpull.v1.XmlPullParser.getColumnNumber() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._getColumnNumber13366); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getColumnNumber13366); 
@@ -189,7 +189,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getText13367)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getText13367)); 
@@ -198,7 +198,7 @@ namespace org.xmlpull.v1
 		 int org.xmlpull.v1.XmlPullParser.getEventType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._getEventType13368); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getEventType13368); 
@@ -207,7 +207,7 @@ namespace org.xmlpull.v1
 		 int org.xmlpull.v1.XmlPullParser.getAttributeCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._getAttributeCount13369); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getAttributeCount13369); 
@@ -216,7 +216,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeName(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getAttributeName13370, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getAttributeName13370, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -225,7 +225,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getPositionDescription() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getPositionDescription13371)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getPositionDescription13371)); 
@@ -234,7 +234,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlPullParser.setFeature(java.lang.String arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser._setFeature13372, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._setFeature13372, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -243,7 +243,7 @@ namespace org.xmlpull.v1
 		 bool org.xmlpull.v1.XmlPullParser.getFeature(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::org.xmlpull.v1.__XmlPullParser._getFeature13373, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getFeature13373, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -252,7 +252,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getInputEncoding() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getInputEncoding13374)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getInputEncoding13374)); 
@@ -261,7 +261,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlPullParser.defineEntityReplacementText(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser._defineEntityReplacementText13375, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._defineEntityReplacementText13375, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -270,7 +270,7 @@ namespace org.xmlpull.v1
 		 int org.xmlpull.v1.XmlPullParser.getNamespaceCount(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._getNamespaceCount13376, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getNamespaceCount13376, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -279,7 +279,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getNamespacePrefix(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getNamespacePrefix13377, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getNamespacePrefix13377, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -288,7 +288,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getNamespaceUri(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getNamespaceUri13378, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getNamespaceUri13378, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -297,7 +297,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getNamespace() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getNamespace13379)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getNamespace13379)); 
@@ -306,7 +306,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getNamespace(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getNamespace13380, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getNamespace13380, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -315,7 +315,7 @@ namespace org.xmlpull.v1
 		 int org.xmlpull.v1.XmlPullParser.getDepth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._getDepth13381); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getDepth13381); 
@@ -323,7 +323,7 @@ namespace org.xmlpull.v1
 		internal static global::net.sf.jni4net.jni.MethodId _getTextCharacters13382; 
 		 char[] org.xmlpull.v1.XmlPullParser.getTextCharacters(int[] arg0) 
 		{ 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getTextCharacters13382, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getTextCharacters13382, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
@@ -332,7 +332,7 @@ namespace org.xmlpull.v1
 		 bool org.xmlpull.v1.XmlPullParser.isEmptyElementTag() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::org.xmlpull.v1.__XmlPullParser._isEmptyElementTag13383); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._isEmptyElementTag13383); 
@@ -341,7 +341,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeNamespace(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getAttributeNamespace13384, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getAttributeNamespace13384, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -350,7 +350,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributePrefix(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getAttributePrefix13385, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getAttributePrefix13385, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -359,7 +359,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.getAttributeType(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._getAttributeType13386, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._getAttributeType13386, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -368,7 +368,7 @@ namespace org.xmlpull.v1
 		 bool org.xmlpull.v1.XmlPullParser.isAttributeDefault(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::org.xmlpull.v1.__XmlPullParser._isAttributeDefault13387, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._isAttributeDefault13387, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -377,7 +377,7 @@ namespace org.xmlpull.v1
 		 void org.xmlpull.v1.XmlPullParser.require(int arg0, java.lang.String arg1, java.lang.String arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser._require13388, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._require13388, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -386,7 +386,7 @@ namespace org.xmlpull.v1
 		 global::java.lang.String org.xmlpull.v1.XmlPullParser.nextText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser._nextText13389)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._nextText13389)); 
@@ -395,7 +395,7 @@ namespace org.xmlpull.v1
 		 int org.xmlpull.v1.XmlPullParser.nextTag() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xmlpull.v1.__XmlPullParser)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::org.xmlpull.v1.__XmlPullParser._nextTag13390); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::org.xmlpull.v1.__XmlPullParser.staticClass, global::org.xmlpull.v1.__XmlPullParser._nextTag13390); 

@@ -36,7 +36,7 @@ namespace android.webkit
 		 void android.webkit.ValueCallback.onReceiveValue(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.__ValueCallback)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.__ValueCallback._onReceiveValue9363, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.__ValueCallback.staticClass, global::android.webkit.__ValueCallback._onReceiveValue9363, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

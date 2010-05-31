@@ -22,7 +22,7 @@ namespace android.util
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.DisplayMetrics)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.DisplayMetrics._toString7534)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._toString7534)); 
@@ -31,7 +31,7 @@ namespace android.util
 		public virtual void setToDefaults() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.DisplayMetrics)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.util.DisplayMetrics._setToDefaults7535); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._setToDefaults7535); 
@@ -40,7 +40,7 @@ namespace android.util
 		public virtual void setTo(android.util.DisplayMetrics arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.DisplayMetrics)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.util.DisplayMetrics._setTo7536, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._setTo7536, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

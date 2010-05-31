@@ -36,7 +36,7 @@ namespace android.util
 		 void android.util.Printer.println(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.__Printer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.util.__Printer._println7597, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.util.__Printer.staticClass, global::android.util.__Printer._println7597, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

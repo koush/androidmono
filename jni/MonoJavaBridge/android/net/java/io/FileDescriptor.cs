@@ -22,7 +22,7 @@ namespace java.io
 		public bool valid() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.FileDescriptor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.io.FileDescriptor._valid11388); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.io.FileDescriptor.staticClass, global::java.io.FileDescriptor._valid11388); 
@@ -31,7 +31,7 @@ namespace java.io
 		public void sync() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.FileDescriptor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.FileDescriptor._sync11389); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.FileDescriptor.staticClass, global::java.io.FileDescriptor._sync11389); 

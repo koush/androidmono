@@ -22,7 +22,7 @@ namespace android.os
 		public virtual int length() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.MemoryFile)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.os.MemoryFile._length5639); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.os.MemoryFile.staticClass, global::android.os.MemoryFile._length5639); 
@@ -31,7 +31,7 @@ namespace android.os
 		public virtual void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.MemoryFile)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.MemoryFile._close5640); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.MemoryFile.staticClass, global::android.os.MemoryFile._close5640); 
@@ -40,7 +40,7 @@ namespace android.os
 		public virtual int readBytes(byte[] arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.MemoryFile)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.os.MemoryFile._readBytes5641, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.os.MemoryFile.staticClass, global::android.os.MemoryFile._readBytes5641, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -49,7 +49,7 @@ namespace android.os
 		public virtual void writeBytes(byte[] arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.MemoryFile)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.MemoryFile._writeBytes5642, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.MemoryFile.staticClass, global::android.os.MemoryFile._writeBytes5642, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -58,7 +58,7 @@ namespace android.os
 		public virtual global::java.io.InputStream getInputStream() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.MemoryFile)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.MemoryFile._getInputStream5643)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.MemoryFile.staticClass, global::android.os.MemoryFile._getInputStream5643)); 
@@ -67,7 +67,7 @@ namespace android.os
 		public virtual global::java.io.OutputStream getOutputStream() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.MemoryFile)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.OutputStream>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.MemoryFile._getOutputStream5644)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.OutputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.MemoryFile.staticClass, global::android.os.MemoryFile._getOutputStream5644)); 
@@ -76,7 +76,7 @@ namespace android.os
 		public virtual bool isPurgingAllowed() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.MemoryFile)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.MemoryFile._isPurgingAllowed5645); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.MemoryFile.staticClass, global::android.os.MemoryFile._isPurgingAllowed5645); 
@@ -85,7 +85,7 @@ namespace android.os
 		public virtual bool allowPurging(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.MemoryFile)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.MemoryFile._allowPurging5646, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.MemoryFile.staticClass, global::android.os.MemoryFile._allowPurging5646, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

@@ -22,7 +22,7 @@ namespace android.webkit
 		public virtual void clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.PluginList)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.PluginList._clear9326); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.PluginList.staticClass, global::android.webkit.PluginList._clear9326); 
@@ -31,7 +31,7 @@ namespace android.webkit
 		public virtual global::java.util.List getList() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.PluginList)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.PluginList._getList9327)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.PluginList.staticClass, global::android.webkit.PluginList._getList9327)); 
@@ -40,7 +40,7 @@ namespace android.webkit
 		public virtual void addPlugin(android.webkit.Plugin arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.PluginList)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.PluginList._addPlugin9328, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.PluginList.staticClass, global::android.webkit.PluginList._addPlugin9328, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.webkit
 		public virtual void removePlugin(android.webkit.Plugin arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.PluginList)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.PluginList._removePlugin9329, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.PluginList.staticClass, global::android.webkit.PluginList._removePlugin9329, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.webkit
 		public virtual void pluginClicked(android.content.Context arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.PluginList)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.PluginList._pluginClicked9330, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.PluginList.staticClass, global::android.webkit.PluginList._pluginClicked9330, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 

@@ -37,7 +37,7 @@ namespace android.widget
 		internal static global::net.sf.jni4net.jni.MethodId _getSections10796; 
 		 global::java.lang.Object[] android.widget.SectionIndexer.getSections() 
 		{ 
-			if (GetType() == typeof(android.widget.__SectionIndexer)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.__SectionIndexer._getSections10796)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.__SectionIndexer.staticClass, global::android.widget.__SectionIndexer._getSections10796)); 
@@ -46,7 +46,7 @@ namespace android.widget
 		 int android.widget.SectionIndexer.getPositionForSection(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.__SectionIndexer)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.__SectionIndexer._getPositionForSection10797, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.__SectionIndexer.staticClass, global::android.widget.__SectionIndexer._getPositionForSection10797, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -55,7 +55,7 @@ namespace android.widget
 		 int android.widget.SectionIndexer.getSectionForPosition(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.__SectionIndexer)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.__SectionIndexer._getSectionForPosition10798, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.__SectionIndexer.staticClass, global::android.widget.__SectionIndexer._getSectionForPosition10798, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

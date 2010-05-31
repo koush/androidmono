@@ -36,7 +36,7 @@ namespace java.io
 		 bool java.io.FilenameFilter.accept(java.io.File arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.__FilenameFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.io.__FilenameFilter._accept11406, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.io.__FilenameFilter.staticClass, global::java.io.__FilenameFilter._accept11406, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 

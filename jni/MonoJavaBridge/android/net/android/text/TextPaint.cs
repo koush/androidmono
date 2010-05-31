@@ -22,7 +22,7 @@ namespace android.text
 		public virtual void set(android.text.TextPaint arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.TextPaint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.TextPaint._set6972, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.TextPaint.staticClass, global::android.text.TextPaint._set6972, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

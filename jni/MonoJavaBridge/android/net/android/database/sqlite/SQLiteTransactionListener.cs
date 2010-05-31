@@ -38,7 +38,7 @@ namespace android.database.sqlite
 		 void android.database.sqlite.SQLiteTransactionListener.onBegin() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.__SQLiteTransactionListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.sqlite.__SQLiteTransactionListener._onBegin2572); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.__SQLiteTransactionListener.staticClass, global::android.database.sqlite.__SQLiteTransactionListener._onBegin2572); 
@@ -47,7 +47,7 @@ namespace android.database.sqlite
 		 void android.database.sqlite.SQLiteTransactionListener.onCommit() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.__SQLiteTransactionListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.sqlite.__SQLiteTransactionListener._onCommit2573); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.__SQLiteTransactionListener.staticClass, global::android.database.sqlite.__SQLiteTransactionListener._onCommit2573); 
@@ -56,7 +56,7 @@ namespace android.database.sqlite
 		 void android.database.sqlite.SQLiteTransactionListener.onRollback() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.__SQLiteTransactionListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.sqlite.__SQLiteTransactionListener._onRollback2574); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.__SQLiteTransactionListener.staticClass, global::android.database.sqlite.__SQLiteTransactionListener._onRollback2574); 

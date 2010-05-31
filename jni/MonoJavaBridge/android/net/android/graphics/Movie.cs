@@ -22,7 +22,7 @@ namespace android.graphics
 		public virtual bool isOpaque() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Movie)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Movie._isOpaque3014); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Movie.staticClass, global::android.graphics.Movie._isOpaque3014); 
@@ -31,7 +31,7 @@ namespace android.graphics
 		public virtual bool setTime(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Movie)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Movie._setTime3015, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Movie.staticClass, global::android.graphics.Movie._setTime3015, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -40,7 +40,7 @@ namespace android.graphics
 		public virtual int duration() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Movie)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Movie._duration3016); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Movie.staticClass, global::android.graphics.Movie._duration3016); 
@@ -49,7 +49,7 @@ namespace android.graphics
 		public virtual int height() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Movie)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Movie._height3017); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Movie.staticClass, global::android.graphics.Movie._height3017); 
@@ -58,7 +58,7 @@ namespace android.graphics
 		public virtual int width() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Movie)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Movie._width3018); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Movie.staticClass, global::android.graphics.Movie._width3018); 
@@ -67,7 +67,7 @@ namespace android.graphics
 		public virtual void draw(android.graphics.Canvas arg0, float arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Movie)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Movie._draw3019, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Movie.staticClass, global::android.graphics.Movie._draw3019, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -76,7 +76,7 @@ namespace android.graphics
 		public virtual void draw(android.graphics.Canvas arg0, float arg1, float arg2, android.graphics.Paint arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Movie)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Movie._draw3020, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Movie.staticClass, global::android.graphics.Movie._draw3020, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 

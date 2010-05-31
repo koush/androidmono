@@ -22,7 +22,7 @@ namespace android.accessibilityservice
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accessibilityservice.AccessibilityServiceInfo)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.accessibilityservice.AccessibilityServiceInfo._writeToParcel25, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, global::android.accessibilityservice.AccessibilityServiceInfo._writeToParcel25, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -31,7 +31,7 @@ namespace android.accessibilityservice
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accessibilityservice.AccessibilityServiceInfo)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.accessibilityservice.AccessibilityServiceInfo._describeContents26); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.accessibilityservice.AccessibilityServiceInfo.staticClass, global::android.accessibilityservice.AccessibilityServiceInfo._describeContents26); 

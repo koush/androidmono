@@ -40,7 +40,7 @@ namespace android.webkit
 			public virtual int getType() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.webkit.WebView.HitTestResult)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.webkit.WebView.HitTestResult._getType9526); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.webkit.WebView.HitTestResult.staticClass, global::android.webkit.WebView.HitTestResult._getType9526); 
@@ -49,7 +49,7 @@ namespace android.webkit
 			public virtual global::java.lang.String getExtra() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.webkit.WebView.HitTestResult)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebView.HitTestResult._getExtra9527)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebView.HitTestResult.staticClass, global::android.webkit.WebView.HitTestResult._getExtra9527)); 
@@ -167,7 +167,7 @@ namespace android.webkit
 			 void android.webkit.WebView.PictureListener.onNewPicture(android.webkit.WebView arg0, android.graphics.Picture arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.webkit.WebView.__PictureListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.webkit.WebView.__PictureListener._onNewPicture9528, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.__PictureListener.staticClass, global::android.webkit.WebView.__PictureListener._onNewPicture9528, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -200,7 +200,7 @@ namespace android.webkit
 			public virtual void setWebView(android.webkit.WebView arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.webkit.WebView.WebViewTransport)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.webkit.WebView.WebViewTransport._setWebView9529, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.WebViewTransport.staticClass, global::android.webkit.WebView.WebViewTransport._setWebView9529, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -209,7 +209,7 @@ namespace android.webkit
 			public virtual global::android.webkit.WebView getWebView() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.webkit.WebView.WebViewTransport)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebView>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebView.WebViewTransport._getWebView9530)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebView>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebView.WebViewTransport.staticClass, global::android.webkit.WebView.WebViewTransport._getWebView9530)); 
@@ -232,7 +232,7 @@ namespace android.webkit
 		public virtual void destroy() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._destroy9532); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._destroy9532); 
@@ -241,7 +241,7 @@ namespace android.webkit
 		public virtual void freeMemory() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._freeMemory9533); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._freeMemory9533); 
@@ -250,7 +250,7 @@ namespace android.webkit
 		public virtual global::android.net.http.SslCertificate getCertificate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.http.SslCertificate>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebView._getCertificate9534)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.http.SslCertificate>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getCertificate9534)); 
@@ -259,7 +259,7 @@ namespace android.webkit
 		public virtual void clearCache(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._clearCache9535, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearCache9535, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -268,7 +268,7 @@ namespace android.webkit
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._onKeyDown9536, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onKeyDown9536, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -277,7 +277,7 @@ namespace android.webkit
 		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._onKeyUp9537, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onKeyUp9537, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -286,7 +286,7 @@ namespace android.webkit
 		public override bool onTouchEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._onTouchEvent9538, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onTouchEvent9538, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -295,7 +295,7 @@ namespace android.webkit
 		public override bool onTrackballEvent(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._onTrackballEvent9539, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onTrackballEvent9539, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -304,7 +304,7 @@ namespace android.webkit
 		public override void onWindowFocusChanged(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._onWindowFocusChanged9540, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onWindowFocusChanged9540, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -313,7 +313,7 @@ namespace android.webkit
 		protected override void onAttachedToWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._onAttachedToWindow9541); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onAttachedToWindow9541); 
@@ -322,7 +322,7 @@ namespace android.webkit
 		protected override void onDetachedFromWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._onDetachedFromWindow9542); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onDetachedFromWindow9542); 
@@ -331,7 +331,7 @@ namespace android.webkit
 		public override bool dispatchKeyEvent(android.view.KeyEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._dispatchKeyEvent9543, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._dispatchKeyEvent9543, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -340,7 +340,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getTitle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebView._getTitle9544)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getTitle9544)); 
@@ -349,7 +349,7 @@ namespace android.webkit
 		public override bool performLongClick() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._performLongClick9545); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._performLongClick9545); 
@@ -358,7 +358,7 @@ namespace android.webkit
 		protected override void onFocusChanged(bool arg0, int arg1, android.graphics.Rect arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._onFocusChanged9546, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onFocusChanged9546, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -367,7 +367,7 @@ namespace android.webkit
 		public override bool requestFocus(int arg0, android.graphics.Rect arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._requestFocus9547, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._requestFocus9547, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -376,7 +376,7 @@ namespace android.webkit
 		protected override void onScrollChanged(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._onScrollChanged9548, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onScrollChanged9548, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -385,7 +385,7 @@ namespace android.webkit
 		protected override void onSizeChanged(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._onSizeChanged9549, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onSizeChanged9549, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -394,7 +394,7 @@ namespace android.webkit
 		public override void setLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._setLayoutParams9550, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setLayoutParams9550, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -403,7 +403,7 @@ namespace android.webkit
 		public override void computeScroll() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._computeScroll9551); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._computeScroll9551); 
@@ -412,7 +412,7 @@ namespace android.webkit
 		public override void setScrollBarStyle(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._setScrollBarStyle9552, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setScrollBarStyle9552, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -421,7 +421,7 @@ namespace android.webkit
 		protected override int computeHorizontalScrollRange() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.webkit.WebView._computeHorizontalScrollRange9553); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._computeHorizontalScrollRange9553); 
@@ -430,7 +430,7 @@ namespace android.webkit
 		protected override int computeVerticalScrollRange() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.webkit.WebView._computeVerticalScrollRange9554); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._computeVerticalScrollRange9554); 
@@ -439,7 +439,7 @@ namespace android.webkit
 		protected override int computeVerticalScrollOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.webkit.WebView._computeVerticalScrollOffset9555); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._computeVerticalScrollOffset9555); 
@@ -448,7 +448,7 @@ namespace android.webkit
 		protected override int computeVerticalScrollExtent() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.webkit.WebView._computeVerticalScrollExtent9556); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._computeVerticalScrollExtent9556); 
@@ -457,7 +457,7 @@ namespace android.webkit
 		protected override void onDraw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._onDraw9557, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onDraw9557, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -466,7 +466,7 @@ namespace android.webkit
 		public override void setBackgroundColor(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._setBackgroundColor9558, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setBackgroundColor9558, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -475,7 +475,7 @@ namespace android.webkit
 		protected override void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._onMeasure9559, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onMeasure9559, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -484,7 +484,7 @@ namespace android.webkit
 		public override bool requestChildRectangleOnScreen(android.view.View arg0, android.graphics.Rect arg1, bool arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._requestChildRectangleOnScreen9560, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._requestChildRectangleOnScreen9560, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -493,7 +493,7 @@ namespace android.webkit
 		protected override bool drawChild(android.graphics.Canvas arg0, android.view.View arg1, long arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._drawChild9561, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._drawChild9561, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -502,7 +502,7 @@ namespace android.webkit
 		public virtual int getProgress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.webkit.WebView._getProgress9562); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getProgress9562); 
@@ -511,7 +511,7 @@ namespace android.webkit
 		public virtual void onChildViewAdded(android.view.View arg0, android.view.View arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._onChildViewAdded9563, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onChildViewAdded9563, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -520,7 +520,7 @@ namespace android.webkit
 		public virtual void onChildViewRemoved(android.view.View arg0, android.view.View arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._onChildViewRemoved9564, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onChildViewRemoved9564, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -529,7 +529,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getUrl() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebView._getUrl9565)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getUrl9565)); 
@@ -538,7 +538,7 @@ namespace android.webkit
 		public virtual global::android.webkit.WebBackForwardList saveState(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebBackForwardList>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebView._saveState9566, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebBackForwardList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._saveState9566, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -547,7 +547,7 @@ namespace android.webkit
 		public virtual global::android.webkit.WebBackForwardList restoreState(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebBackForwardList>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebView._restoreState9567, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebBackForwardList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._restoreState9567, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -556,7 +556,7 @@ namespace android.webkit
 		public virtual void clearHistory() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._clearHistory9568); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearHistory9568); 
@@ -565,7 +565,7 @@ namespace android.webkit
 		public virtual void reload() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._reload9569); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._reload9569); 
@@ -574,7 +574,7 @@ namespace android.webkit
 		public virtual void onGlobalFocusChanged(android.view.View arg0, android.view.View arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._onGlobalFocusChanged9570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._onGlobalFocusChanged9570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -583,7 +583,7 @@ namespace android.webkit
 		public virtual void setWebViewClient(android.webkit.WebViewClient arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._setWebViewClient9571, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setWebViewClient9571, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -592,7 +592,7 @@ namespace android.webkit
 		public virtual void setWebChromeClient(android.webkit.WebChromeClient arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._setWebChromeClient9572, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setWebChromeClient9572, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -601,7 +601,7 @@ namespace android.webkit
 		public virtual void setDownloadListener(android.webkit.DownloadListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._setDownloadListener9573, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setDownloadListener9573, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -610,7 +610,7 @@ namespace android.webkit
 		public virtual void setHorizontalScrollbarOverlay(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._setHorizontalScrollbarOverlay9574, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setHorizontalScrollbarOverlay9574, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -619,7 +619,7 @@ namespace android.webkit
 		public virtual void setVerticalScrollbarOverlay(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._setVerticalScrollbarOverlay9575, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setVerticalScrollbarOverlay9575, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -628,7 +628,7 @@ namespace android.webkit
 		public virtual bool overlayHorizontalScrollbar() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._overlayHorizontalScrollbar9576); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._overlayHorizontalScrollbar9576); 
@@ -637,7 +637,7 @@ namespace android.webkit
 		public virtual bool overlayVerticalScrollbar() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._overlayVerticalScrollbar9577); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._overlayVerticalScrollbar9577); 
@@ -646,7 +646,7 @@ namespace android.webkit
 		public virtual void setCertificate(android.net.http.SslCertificate arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._setCertificate9578, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setCertificate9578, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -655,7 +655,7 @@ namespace android.webkit
 		public virtual void savePassword(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._savePassword9579, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._savePassword9579, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -664,7 +664,7 @@ namespace android.webkit
 		public virtual void setHttpAuthUsernamePassword(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._setHttpAuthUsernamePassword9580, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setHttpAuthUsernamePassword9580, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
@@ -672,7 +672,7 @@ namespace android.webkit
 		internal static global::net.sf.jni4net.jni.MethodId _getHttpAuthUsernamePassword9581; 
 		public virtual global::java.lang.String[] getHttpAuthUsernamePassword(java.lang.String arg0, java.lang.String arg1) 
 		{ 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebView._getHttpAuthUsernamePassword9581, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getHttpAuthUsernamePassword9581, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -693,7 +693,7 @@ namespace android.webkit
 		public virtual void setNetworkAvailable(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._setNetworkAvailable9584, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setNetworkAvailable9584, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -702,7 +702,7 @@ namespace android.webkit
 		public virtual bool savePicture(android.os.Bundle arg0, java.io.File arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._savePicture9585, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._savePicture9585, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -711,7 +711,7 @@ namespace android.webkit
 		public virtual bool restorePicture(android.os.Bundle arg0, java.io.File arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._restorePicture9586, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._restorePicture9586, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -720,7 +720,7 @@ namespace android.webkit
 		public virtual void loadUrl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._loadUrl9587, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._loadUrl9587, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -729,7 +729,7 @@ namespace android.webkit
 		public virtual void postUrl(java.lang.String arg0, byte[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._postUrl9588, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._postUrl9588, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)); 
@@ -738,7 +738,7 @@ namespace android.webkit
 		public virtual void loadData(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._loadData9589, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._loadData9589, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -747,7 +747,7 @@ namespace android.webkit
 		public virtual void loadDataWithBaseURL(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._loadDataWithBaseURL9590, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._loadDataWithBaseURL9590, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)); 
@@ -756,7 +756,7 @@ namespace android.webkit
 		public virtual void stopLoading() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._stopLoading9591); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._stopLoading9591); 
@@ -765,7 +765,7 @@ namespace android.webkit
 		public virtual bool canGoBack() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._canGoBack9592); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._canGoBack9592); 
@@ -774,7 +774,7 @@ namespace android.webkit
 		public virtual void goBack() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._goBack9593); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._goBack9593); 
@@ -783,7 +783,7 @@ namespace android.webkit
 		public virtual bool canGoForward() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._canGoForward9594); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._canGoForward9594); 
@@ -792,7 +792,7 @@ namespace android.webkit
 		public virtual void goForward() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._goForward9595); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._goForward9595); 
@@ -801,7 +801,7 @@ namespace android.webkit
 		public virtual bool canGoBackOrForward(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._canGoBackOrForward9596, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._canGoBackOrForward9596, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -810,7 +810,7 @@ namespace android.webkit
 		public virtual void goBackOrForward(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._goBackOrForward9597, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._goBackOrForward9597, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -819,7 +819,7 @@ namespace android.webkit
 		public virtual bool pageUp(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._pageUp9598, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._pageUp9598, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -828,7 +828,7 @@ namespace android.webkit
 		public virtual bool pageDown(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._pageDown9599, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._pageDown9599, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -837,7 +837,7 @@ namespace android.webkit
 		public virtual void clearView() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._clearView9600); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearView9600); 
@@ -846,7 +846,7 @@ namespace android.webkit
 		public virtual global::android.graphics.Picture capturePicture() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Picture>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebView._capturePicture9601)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Picture>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._capturePicture9601)); 
@@ -855,7 +855,7 @@ namespace android.webkit
 		public virtual float getScale() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.webkit.WebView._getScale9602); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getScale9602); 
@@ -864,7 +864,7 @@ namespace android.webkit
 		public virtual void setInitialScale(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._setInitialScale9603, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setInitialScale9603, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -873,7 +873,7 @@ namespace android.webkit
 		public virtual void invokeZoomPicker() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._invokeZoomPicker9604); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._invokeZoomPicker9604); 
@@ -882,7 +882,7 @@ namespace android.webkit
 		public virtual global::android.webkit.WebView.HitTestResult getHitTestResult() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebView.HitTestResult>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebView._getHitTestResult9605)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebView.HitTestResult>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getHitTestResult9605)); 
@@ -891,7 +891,7 @@ namespace android.webkit
 		public virtual void requestFocusNodeHref(android.os.Message arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._requestFocusNodeHref9606, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._requestFocusNodeHref9606, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -900,7 +900,7 @@ namespace android.webkit
 		public virtual void requestImageRef(android.os.Message arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._requestImageRef9607, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._requestImageRef9607, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -909,7 +909,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getOriginalUrl() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebView._getOriginalUrl9608)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getOriginalUrl9608)); 
@@ -918,7 +918,7 @@ namespace android.webkit
 		public virtual global::android.graphics.Bitmap getFavicon() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebView._getFavicon9609)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getFavicon9609)); 
@@ -927,7 +927,7 @@ namespace android.webkit
 		public virtual int getContentHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.webkit.WebView._getContentHeight9610); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getContentHeight9610); 
@@ -936,7 +936,7 @@ namespace android.webkit
 		public virtual void pauseTimers() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._pauseTimers9611); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._pauseTimers9611); 
@@ -945,7 +945,7 @@ namespace android.webkit
 		public virtual void resumeTimers() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._resumeTimers9612); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._resumeTimers9612); 
@@ -954,7 +954,7 @@ namespace android.webkit
 		public virtual void clearFormData() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._clearFormData9613); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearFormData9613); 
@@ -963,7 +963,7 @@ namespace android.webkit
 		public virtual void clearSslPreferences() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._clearSslPreferences9614); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearSslPreferences9614); 
@@ -972,7 +972,7 @@ namespace android.webkit
 		public virtual global::android.webkit.WebBackForwardList copyBackForwardList() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebBackForwardList>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebView._copyBackForwardList9615)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebBackForwardList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._copyBackForwardList9615)); 
@@ -981,7 +981,7 @@ namespace android.webkit
 		public virtual void findNext(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._findNext9616, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._findNext9616, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -990,7 +990,7 @@ namespace android.webkit
 		public virtual int findAll(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.webkit.WebView._findAll9617, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._findAll9617, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -1005,7 +1005,7 @@ namespace android.webkit
 		public virtual void clearMatches() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._clearMatches9619); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._clearMatches9619); 
@@ -1014,7 +1014,7 @@ namespace android.webkit
 		public virtual void documentHasImages(android.os.Message arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._documentHasImages9620, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._documentHasImages9620, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -1023,7 +1023,7 @@ namespace android.webkit
 		public virtual void setPictureListener(android.webkit.WebView.PictureListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._setPictureListener9621, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setPictureListener9621, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -1032,7 +1032,7 @@ namespace android.webkit
 		public virtual void addJavascriptInterface(java.lang.Object arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._addJavascriptInterface9622, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._addJavascriptInterface9622, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -1041,7 +1041,7 @@ namespace android.webkit
 		public virtual global::android.webkit.WebSettings getSettings() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebSettings>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebView._getSettings9623)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebSettings>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getSettings9623)); 
@@ -1056,7 +1056,7 @@ namespace android.webkit
 		public virtual void refreshPlugins(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._refreshPlugins9625, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._refreshPlugins9625, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1065,7 +1065,7 @@ namespace android.webkit
 		public virtual void setMapTrackballToArrowKeys(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._setMapTrackballToArrowKeys9626, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._setMapTrackballToArrowKeys9626, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1074,7 +1074,7 @@ namespace android.webkit
 		public virtual void flingScroll(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._flingScroll9627, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._flingScroll9627, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -1083,7 +1083,7 @@ namespace android.webkit
 		public virtual global::android.view.View getZoomControls() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebView._getZoomControls9628)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._getZoomControls9628)); 
@@ -1092,7 +1092,7 @@ namespace android.webkit
 		public virtual bool zoomIn() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._zoomIn9629); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._zoomIn9629); 
@@ -1101,7 +1101,7 @@ namespace android.webkit
 		public virtual bool zoomOut() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebView._zoomOut9630); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._zoomOut9630); 
@@ -1110,7 +1110,7 @@ namespace android.webkit
 		public virtual void debugDump() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebView._debugDump9631); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebView.staticClass, global::android.webkit.WebView._debugDump9631); 

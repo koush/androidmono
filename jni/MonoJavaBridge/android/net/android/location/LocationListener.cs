@@ -39,7 +39,7 @@ namespace android.location
 		 void android.location.LocationListener.onStatusChanged(java.lang.String arg0, int arg1, android.os.Bundle arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.__LocationListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.__LocationListener._onStatusChanged4314, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.__LocationListener.staticClass, global::android.location.__LocationListener._onStatusChanged4314, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -48,7 +48,7 @@ namespace android.location
 		 void android.location.LocationListener.onLocationChanged(android.location.Location arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.__LocationListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.__LocationListener._onLocationChanged4315, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.__LocationListener.staticClass, global::android.location.__LocationListener._onLocationChanged4315, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -57,7 +57,7 @@ namespace android.location
 		 void android.location.LocationListener.onProviderEnabled(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.__LocationListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.__LocationListener._onProviderEnabled4316, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.__LocationListener.staticClass, global::android.location.__LocationListener._onProviderEnabled4316, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -66,7 +66,7 @@ namespace android.location
 		 void android.location.LocationListener.onProviderDisabled(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.__LocationListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.__LocationListener._onProviderDisabled4317, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.__LocationListener.staticClass, global::android.location.__LocationListener._onProviderDisabled4317, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

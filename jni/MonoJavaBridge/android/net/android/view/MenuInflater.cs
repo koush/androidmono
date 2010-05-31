@@ -22,7 +22,7 @@ namespace android.view
 		public virtual void inflate(int arg0, android.view.Menu arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MenuInflater)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.MenuInflater._inflate7902, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.MenuInflater.staticClass, global::android.view.MenuInflater._inflate7902, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 

@@ -22,7 +22,7 @@ namespace android.telephony
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.ServiceState._hashCode6501); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._hashCode6501); 
@@ -31,7 +31,7 @@ namespace android.telephony
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.telephony.ServiceState._equals6502, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._equals6502, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace android.telephony
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.ServiceState._toString6503)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._toString6503)); 
@@ -49,7 +49,7 @@ namespace android.telephony
 		public virtual int getState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.ServiceState._getState6504); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getState6504); 
@@ -58,7 +58,7 @@ namespace android.telephony
 		public virtual void setState(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.ServiceState._setState6505, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setState6505, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.telephony
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.ServiceState._writeToParcel6506, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._writeToParcel6506, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -76,7 +76,7 @@ namespace android.telephony
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.ServiceState._describeContents6507); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._describeContents6507); 
@@ -85,7 +85,7 @@ namespace android.telephony
 		protected virtual void copyFrom(android.telephony.ServiceState arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.ServiceState._copyFrom6508, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._copyFrom6508, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -94,7 +94,7 @@ namespace android.telephony
 		public virtual bool getRoaming() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.telephony.ServiceState._getRoaming6509); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getRoaming6509); 
@@ -103,7 +103,7 @@ namespace android.telephony
 		public virtual global::java.lang.String getOperatorAlphaLong() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.ServiceState._getOperatorAlphaLong6510)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getOperatorAlphaLong6510)); 
@@ -112,7 +112,7 @@ namespace android.telephony
 		public virtual global::java.lang.String getOperatorAlphaShort() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.ServiceState._getOperatorAlphaShort6511)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getOperatorAlphaShort6511)); 
@@ -121,7 +121,7 @@ namespace android.telephony
 		public virtual global::java.lang.String getOperatorNumeric() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.ServiceState._getOperatorNumeric6512)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getOperatorNumeric6512)); 
@@ -130,7 +130,7 @@ namespace android.telephony
 		public virtual bool getIsManualSelection() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.telephony.ServiceState._getIsManualSelection6513); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._getIsManualSelection6513); 
@@ -139,7 +139,7 @@ namespace android.telephony
 		public virtual void setStateOutOfService() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.ServiceState._setStateOutOfService6514); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setStateOutOfService6514); 
@@ -148,7 +148,7 @@ namespace android.telephony
 		public virtual void setStateOff() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.ServiceState._setStateOff6515); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setStateOff6515); 
@@ -157,7 +157,7 @@ namespace android.telephony
 		public virtual void setRoaming(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.ServiceState._setRoaming6516, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setRoaming6516, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -166,7 +166,7 @@ namespace android.telephony
 		public virtual void setOperatorName(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.ServiceState._setOperatorName6517, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setOperatorName6517, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -175,7 +175,7 @@ namespace android.telephony
 		public virtual void setIsManualSelection(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.ServiceState)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.ServiceState._setIsManualSelection6518, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._setIsManualSelection6518, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

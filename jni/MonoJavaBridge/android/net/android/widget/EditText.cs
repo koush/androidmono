@@ -22,7 +22,7 @@ namespace android.widget
 		public override void setText(java.lang.CharSequence arg0, android.widget.TextView.BufferType arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.EditText)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.EditText._setText10120, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._setText10120, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -31,7 +31,7 @@ namespace android.widget
 		public virtual void selectAll() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.EditText)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.EditText._selectAll10121); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._selectAll10121); 
@@ -40,7 +40,7 @@ namespace android.widget
 		public virtual new global::android.text.Editable getText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.EditText)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.EditText._getText10122)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._getText10122)); 
@@ -49,7 +49,7 @@ namespace android.widget
 		public virtual void setSelection(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.EditText)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.EditText._setSelection10123, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._setSelection10123, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.widget
 		public virtual void setSelection(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.EditText)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.EditText._setSelection10124, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._setSelection10124, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -67,7 +67,7 @@ namespace android.widget
 		protected override bool getDefaultEditable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.EditText)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.EditText._getDefaultEditable10125); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._getDefaultEditable10125); 
@@ -76,7 +76,7 @@ namespace android.widget
 		protected override global::android.text.method.MovementMethod getDefaultMovementMethod() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.EditText)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.method.MovementMethod>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.EditText._getDefaultMovementMethod10126)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.method.MovementMethod>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._getDefaultMovementMethod10126)); 
@@ -85,7 +85,7 @@ namespace android.widget
 		public override void setEllipsize(android.text.TextUtils.TruncateAt arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.EditText)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.EditText._setEllipsize10127, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._setEllipsize10127, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -94,7 +94,7 @@ namespace android.widget
 		public virtual void extendSelection(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.EditText)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.EditText._extendSelection10128, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._extendSelection10128, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

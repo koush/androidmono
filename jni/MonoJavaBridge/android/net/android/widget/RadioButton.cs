@@ -22,7 +22,7 @@ namespace android.widget
 		public override void toggle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RadioButton)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RadioButton._toggle10623); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RadioButton.staticClass, global::android.widget.RadioButton._toggle10623); 

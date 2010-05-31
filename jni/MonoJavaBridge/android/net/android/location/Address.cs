@@ -22,7 +22,7 @@ namespace android.location
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.Address._toString4195)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.Address.staticClass, global::android.location.Address._toString4195)); 
@@ -31,7 +31,7 @@ namespace android.location
 		public virtual global::java.lang.String getLocality() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.Address._getLocality4196)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.Address.staticClass, global::android.location.Address._getLocality4196)); 
@@ -40,7 +40,7 @@ namespace android.location
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._writeToParcel4197, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._writeToParcel4197, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -49,7 +49,7 @@ namespace android.location
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.location.Address._describeContents4198); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.location.Address.staticClass, global::android.location.Address._describeContents4198); 
@@ -58,7 +58,7 @@ namespace android.location
 		public virtual global::android.os.Bundle getExtras() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.Address._getExtras4199)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.Address.staticClass, global::android.location.Address._getExtras4199)); 
@@ -67,7 +67,7 @@ namespace android.location
 		public virtual global::java.util.Locale getLocale() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Locale>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.Address._getLocale4200)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Locale>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.Address.staticClass, global::android.location.Address._getLocale4200)); 
@@ -76,7 +76,7 @@ namespace android.location
 		public virtual int getMaxAddressLineIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.location.Address._getMaxAddressLineIndex4201); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.location.Address.staticClass, global::android.location.Address._getMaxAddressLineIndex4201); 
@@ -85,7 +85,7 @@ namespace android.location
 		public virtual global::java.lang.String getAddressLine(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.Address._getAddressLine4202, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.Address.staticClass, global::android.location.Address._getAddressLine4202, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -94,7 +94,7 @@ namespace android.location
 		public virtual void setAddressLine(int arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._setAddressLine4203, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._setAddressLine4203, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -103,7 +103,7 @@ namespace android.location
 		public virtual global::java.lang.String getFeatureName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.Address._getFeatureName4204)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.Address.staticClass, global::android.location.Address._getFeatureName4204)); 
@@ -112,7 +112,7 @@ namespace android.location
 		public virtual void setFeatureName(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._setFeatureName4205, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._setFeatureName4205, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -121,7 +121,7 @@ namespace android.location
 		public virtual global::java.lang.String getAdminArea() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.Address._getAdminArea4206)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.Address.staticClass, global::android.location.Address._getAdminArea4206)); 
@@ -130,7 +130,7 @@ namespace android.location
 		public virtual void setAdminArea(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._setAdminArea4207, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._setAdminArea4207, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -139,7 +139,7 @@ namespace android.location
 		public virtual global::java.lang.String getSubAdminArea() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.Address._getSubAdminArea4208)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.Address.staticClass, global::android.location.Address._getSubAdminArea4208)); 
@@ -148,7 +148,7 @@ namespace android.location
 		public virtual void setSubAdminArea(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._setSubAdminArea4209, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._setSubAdminArea4209, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -157,7 +157,7 @@ namespace android.location
 		public virtual void setLocality(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._setLocality4210, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._setLocality4210, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -166,7 +166,7 @@ namespace android.location
 		public virtual global::java.lang.String getSubLocality() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.Address._getSubLocality4211)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.Address.staticClass, global::android.location.Address._getSubLocality4211)); 
@@ -175,7 +175,7 @@ namespace android.location
 		public virtual void setSubLocality(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._setSubLocality4212, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._setSubLocality4212, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -184,7 +184,7 @@ namespace android.location
 		public virtual global::java.lang.String getThoroughfare() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.Address._getThoroughfare4213)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.Address.staticClass, global::android.location.Address._getThoroughfare4213)); 
@@ -193,7 +193,7 @@ namespace android.location
 		public virtual void setThoroughfare(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._setThoroughfare4214, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._setThoroughfare4214, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -202,7 +202,7 @@ namespace android.location
 		public virtual global::java.lang.String getSubThoroughfare() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.Address._getSubThoroughfare4215)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.Address.staticClass, global::android.location.Address._getSubThoroughfare4215)); 
@@ -211,7 +211,7 @@ namespace android.location
 		public virtual void setSubThoroughfare(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._setSubThoroughfare4216, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._setSubThoroughfare4216, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -220,7 +220,7 @@ namespace android.location
 		public virtual global::java.lang.String getPremises() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.Address._getPremises4217)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.Address.staticClass, global::android.location.Address._getPremises4217)); 
@@ -229,7 +229,7 @@ namespace android.location
 		public virtual void setPremises(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._setPremises4218, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._setPremises4218, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -238,7 +238,7 @@ namespace android.location
 		public virtual global::java.lang.String getPostalCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.Address._getPostalCode4219)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.Address.staticClass, global::android.location.Address._getPostalCode4219)); 
@@ -247,7 +247,7 @@ namespace android.location
 		public virtual void setPostalCode(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._setPostalCode4220, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._setPostalCode4220, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -256,7 +256,7 @@ namespace android.location
 		public virtual global::java.lang.String getCountryCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.Address._getCountryCode4221)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.Address.staticClass, global::android.location.Address._getCountryCode4221)); 
@@ -265,7 +265,7 @@ namespace android.location
 		public virtual void setCountryCode(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._setCountryCode4222, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._setCountryCode4222, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -274,7 +274,7 @@ namespace android.location
 		public virtual global::java.lang.String getCountryName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.Address._getCountryName4223)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.Address.staticClass, global::android.location.Address._getCountryName4223)); 
@@ -283,7 +283,7 @@ namespace android.location
 		public virtual void setCountryName(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._setCountryName4224, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._setCountryName4224, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -292,7 +292,7 @@ namespace android.location
 		public virtual bool hasLatitude() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.location.Address._hasLatitude4225); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.Address.staticClass, global::android.location.Address._hasLatitude4225); 
@@ -301,7 +301,7 @@ namespace android.location
 		public virtual double getLatitude() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return @__env.CallDoubleMethod(this, global::android.location.Address._getLatitude4226); 
 			else 
 				return @__env.CallNonVirtualDoubleMethod(this, global::android.location.Address.staticClass, global::android.location.Address._getLatitude4226); 
@@ -310,7 +310,7 @@ namespace android.location
 		public virtual void setLatitude(double arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._setLatitude4227, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._setLatitude4227, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -319,7 +319,7 @@ namespace android.location
 		public virtual void clearLatitude() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._clearLatitude4228); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._clearLatitude4228); 
@@ -328,7 +328,7 @@ namespace android.location
 		public virtual bool hasLongitude() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.location.Address._hasLongitude4229); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.Address.staticClass, global::android.location.Address._hasLongitude4229); 
@@ -337,7 +337,7 @@ namespace android.location
 		public virtual double getLongitude() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return @__env.CallDoubleMethod(this, global::android.location.Address._getLongitude4230); 
 			else 
 				return @__env.CallNonVirtualDoubleMethod(this, global::android.location.Address.staticClass, global::android.location.Address._getLongitude4230); 
@@ -346,7 +346,7 @@ namespace android.location
 		public virtual void setLongitude(double arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._setLongitude4231, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._setLongitude4231, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -355,7 +355,7 @@ namespace android.location
 		public virtual void clearLongitude() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._clearLongitude4232); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._clearLongitude4232); 
@@ -364,7 +364,7 @@ namespace android.location
 		public virtual global::java.lang.String getPhone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.Address._getPhone4233)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.Address.staticClass, global::android.location.Address._getPhone4233)); 
@@ -373,7 +373,7 @@ namespace android.location
 		public virtual void setPhone(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._setPhone4234, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._setPhone4234, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -382,7 +382,7 @@ namespace android.location
 		public virtual global::java.lang.String getUrl() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.Address._getUrl4235)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.Address.staticClass, global::android.location.Address._getUrl4235)); 
@@ -391,7 +391,7 @@ namespace android.location
 		public virtual void setUrl(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._setUrl4236, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._setUrl4236, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -400,7 +400,7 @@ namespace android.location
 		public virtual void setExtras(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Address)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Address._setExtras4237, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Address.staticClass, global::android.location.Address._setExtras4237, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

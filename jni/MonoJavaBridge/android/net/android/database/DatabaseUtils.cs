@@ -40,7 +40,7 @@ namespace android.database
 			public virtual long replace(android.content.ContentValues arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.DatabaseUtils.InsertHelper)) 
+				if (!IsClrObject) 
 					return @__env.CallLongMethod(this, global::android.database.DatabaseUtils.InsertHelper._replace2341, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualLongMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._replace2341, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.database
 			public virtual void close() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.DatabaseUtils.InsertHelper)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._close2342); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._close2342); 
@@ -58,7 +58,7 @@ namespace android.database
 			public virtual long insert(android.content.ContentValues arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.DatabaseUtils.InsertHelper)) 
+				if (!IsClrObject) 
 					return @__env.CallLongMethod(this, global::android.database.DatabaseUtils.InsertHelper._insert2343, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualLongMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._insert2343, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.database
 			public virtual long execute() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.DatabaseUtils.InsertHelper)) 
+				if (!IsClrObject) 
 					return @__env.CallLongMethod(this, global::android.database.DatabaseUtils.InsertHelper._execute2344); 
 				else 
 					return @__env.CallNonVirtualLongMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._execute2344); 
@@ -76,7 +76,7 @@ namespace android.database
 			public virtual int getColumnIndex(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.DatabaseUtils.InsertHelper)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.database.DatabaseUtils.InsertHelper._getColumnIndex2345, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._getColumnIndex2345, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -85,7 +85,7 @@ namespace android.database
 			public virtual void bind(int arg0, bool arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.DatabaseUtils.InsertHelper)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2346, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2346, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -94,7 +94,7 @@ namespace android.database
 			public virtual void bind(int arg0, byte[] arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.DatabaseUtils.InsertHelper)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2347, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2347, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)); 
@@ -103,7 +103,7 @@ namespace android.database
 			public virtual void bind(int arg0, float arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.DatabaseUtils.InsertHelper)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2348, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2348, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -112,7 +112,7 @@ namespace android.database
 			public virtual void bind(int arg0, java.lang.String arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.DatabaseUtils.InsertHelper)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2349, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2349, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -121,7 +121,7 @@ namespace android.database
 			public virtual void bind(int arg0, long arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.DatabaseUtils.InsertHelper)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2350, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2350, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -130,7 +130,7 @@ namespace android.database
 			public virtual void bind(int arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.DatabaseUtils.InsertHelper)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2351, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2351, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -139,7 +139,7 @@ namespace android.database
 			public virtual void bind(int arg0, double arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.DatabaseUtils.InsertHelper)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2352, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2352, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -148,7 +148,7 @@ namespace android.database
 			public virtual void bindNull(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.DatabaseUtils.InsertHelper)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bindNull2353, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bindNull2353, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -157,7 +157,7 @@ namespace android.database
 			public virtual void prepareForInsert() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.DatabaseUtils.InsertHelper)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._prepareForInsert2354); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._prepareForInsert2354); 
@@ -166,7 +166,7 @@ namespace android.database
 			public virtual void prepareForReplace() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.DatabaseUtils.InsertHelper)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._prepareForReplace2355); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._prepareForReplace2355); 

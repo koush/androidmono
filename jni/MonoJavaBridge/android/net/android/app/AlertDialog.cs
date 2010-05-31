@@ -40,7 +40,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog create() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._create370)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._create370)); 
@@ -49,7 +49,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setTitle(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setTitle371, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setTitle371, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -58,7 +58,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setTitle(java.lang.CharSequence arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setTitle372, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setTitle372, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -67,7 +67,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setOnKeyListener(android.content.DialogInterface_OnKeyListener arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setOnKeyListener373, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setOnKeyListener373, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -76,7 +76,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setIcon(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setIcon374, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setIcon374, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -85,7 +85,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setIcon(android.graphics.drawable.Drawable arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setIcon375, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setIcon375, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -94,7 +94,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog show() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._show376)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._show376)); 
@@ -103,7 +103,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setCancelable(bool arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setCancelable377, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setCancelable377, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -112,7 +112,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setOnCancelListener(android.content.DialogInterface_OnCancelListener arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setOnCancelListener378, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setOnCancelListener378, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -121,7 +121,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setCustomTitle(android.view.View arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setCustomTitle379, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setCustomTitle379, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -130,7 +130,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setMessage(java.lang.CharSequence arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setMessage380, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setMessage380, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -139,7 +139,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setMessage(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setMessage381, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setMessage381, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -148,7 +148,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setPositiveButton(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setPositiveButton382, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setPositiveButton382, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
@@ -157,7 +157,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setPositiveButton(int arg0, android.content.DialogInterface_OnClickListener arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setPositiveButton383, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setPositiveButton383, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
@@ -166,7 +166,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setNegativeButton(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setNegativeButton384, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setNegativeButton384, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
@@ -175,7 +175,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setNegativeButton(int arg0, android.content.DialogInterface_OnClickListener arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setNegativeButton385, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setNegativeButton385, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
@@ -184,7 +184,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setNeutralButton(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setNeutralButton386, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setNeutralButton386, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
@@ -193,7 +193,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setNeutralButton(int arg0, android.content.DialogInterface_OnClickListener arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setNeutralButton387, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setNeutralButton387, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
@@ -202,7 +202,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setItems(int arg0, android.content.DialogInterface_OnClickListener arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setItems388, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setItems388, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
@@ -211,7 +211,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setItems(java.lang.CharSequence[] arg0, android.content.DialogInterface_OnClickListener arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setItems389, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.CharSequence[], java.lang.CharSequence>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setItems389, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.CharSequence[], java.lang.CharSequence>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
@@ -220,7 +220,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setAdapter(android.widget.ListAdapter arg0, android.content.DialogInterface_OnClickListener arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setAdapter390, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setAdapter390, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
@@ -229,7 +229,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setCursor(android.database.Cursor arg0, android.content.DialogInterface_OnClickListener arg1, java.lang.String arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setCursor391, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setCursor391, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
@@ -238,7 +238,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setMultiChoiceItems(android.database.Cursor arg0, java.lang.String arg1, java.lang.String arg2, android.content.DialogInterface_OnMultiChoiceClickListener arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setMultiChoiceItems392, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setMultiChoiceItems392, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3))); 
@@ -247,7 +247,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setMultiChoiceItems(java.lang.CharSequence[] arg0, bool[] arg1, android.content.DialogInterface_OnMultiChoiceClickListener arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setMultiChoiceItems393, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.CharSequence[], java.lang.CharSequence>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setMultiChoiceItems393, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.CharSequence[], java.lang.CharSequence>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
@@ -256,7 +256,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setMultiChoiceItems(int arg0, bool[] arg1, android.content.DialogInterface_OnMultiChoiceClickListener arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setMultiChoiceItems394, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setMultiChoiceItems394, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
@@ -265,7 +265,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setSingleChoiceItems(int arg0, int arg1, android.content.DialogInterface_OnClickListener arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setSingleChoiceItems395, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setSingleChoiceItems395, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
@@ -274,7 +274,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setSingleChoiceItems(android.widget.ListAdapter arg0, int arg1, android.content.DialogInterface_OnClickListener arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setSingleChoiceItems396, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setSingleChoiceItems396, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
@@ -283,7 +283,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setSingleChoiceItems(java.lang.CharSequence[] arg0, int arg1, android.content.DialogInterface_OnClickListener arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setSingleChoiceItems397, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.CharSequence[], java.lang.CharSequence>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setSingleChoiceItems397, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.CharSequence[], java.lang.CharSequence>(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2))); 
@@ -292,7 +292,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setSingleChoiceItems(android.database.Cursor arg0, int arg1, java.lang.String arg2, android.content.DialogInterface_OnClickListener arg3) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setSingleChoiceItems398, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setSingleChoiceItems398, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3))); 
@@ -301,7 +301,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setOnItemSelectedListener(android.widget.AdapterView.OnItemSelectedListener arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setOnItemSelectedListener399, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setOnItemSelectedListener399, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -310,7 +310,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setView(android.view.View arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setView400, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setView400, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -319,7 +319,7 @@ namespace android.app
 			public virtual global::android.app.AlertDialog.Builder setInverseBackgroundForced(bool arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.app.AlertDialog.Builder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setInverseBackgroundForced401, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setInverseBackgroundForced401, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -372,7 +372,7 @@ namespace android.app
 		protected override void onCreate(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._onCreate403, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._onCreate403, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -381,7 +381,7 @@ namespace android.app
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.app.AlertDialog._onKeyDown404, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._onKeyDown404, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -390,7 +390,7 @@ namespace android.app
 		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.app.AlertDialog._onKeyUp405, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._onKeyUp405, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -399,7 +399,7 @@ namespace android.app
 		public override void setTitle(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setTitle406, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setTitle406, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -408,7 +408,7 @@ namespace android.app
 		public virtual void setIcon(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setIcon407, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setIcon407, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -417,7 +417,7 @@ namespace android.app
 		public virtual void setIcon(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setIcon408, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setIcon408, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -426,7 +426,7 @@ namespace android.app
 		public virtual void setCustomTitle(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setCustomTitle409, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setCustomTitle409, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -435,7 +435,7 @@ namespace android.app
 		public virtual void setMessage(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setMessage410, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setMessage410, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -444,7 +444,7 @@ namespace android.app
 		public virtual void setView(android.view.View arg0, int arg1, int arg2, int arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setView411, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setView411, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -453,7 +453,7 @@ namespace android.app
 		public virtual void setView(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setView412, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setView412, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -462,7 +462,7 @@ namespace android.app
 		public virtual void setInverseBackgroundForced(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setInverseBackgroundForced413, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setInverseBackgroundForced413, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -471,7 +471,7 @@ namespace android.app
 		public virtual global::android.widget.Button getButton(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Button>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog._getButton414, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Button>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._getButton414, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -480,7 +480,7 @@ namespace android.app
 		public virtual global::android.widget.ListView getListView() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.ListView>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog._getListView415)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.ListView>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._getListView415)); 
@@ -489,7 +489,7 @@ namespace android.app
 		public virtual void setButton(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setButton416, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setButton416, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -498,7 +498,7 @@ namespace android.app
 		public virtual void setButton(java.lang.CharSequence arg0, android.os.Message arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setButton417, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setButton417, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -507,7 +507,7 @@ namespace android.app
 		public virtual void setButton(int arg0, java.lang.CharSequence arg1, android.content.DialogInterface_OnClickListener arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setButton418, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setButton418, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
@@ -516,7 +516,7 @@ namespace android.app
 		public virtual void setButton(int arg0, java.lang.CharSequence arg1, android.os.Message arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setButton419, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setButton419, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -525,7 +525,7 @@ namespace android.app
 		public virtual void setButton2(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setButton2420, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setButton2420, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -534,7 +534,7 @@ namespace android.app
 		public virtual void setButton2(java.lang.CharSequence arg0, android.os.Message arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setButton2421, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setButton2421, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -543,7 +543,7 @@ namespace android.app
 		public virtual void setButton3(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setButton3422, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setButton3422, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -552,7 +552,7 @@ namespace android.app
 		public virtual void setButton3(java.lang.CharSequence arg0, android.os.Message arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AlertDialog)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setButton3423, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setButton3423, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 

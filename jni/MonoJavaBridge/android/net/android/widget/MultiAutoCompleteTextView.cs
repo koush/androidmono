@@ -40,7 +40,7 @@ namespace android.widget
 			public virtual int findTokenStart(java.lang.CharSequence arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.MultiAutoCompleteTextView.CommaTokenizer)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.widget.MultiAutoCompleteTextView.CommaTokenizer._findTokenStart10519, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.widget.MultiAutoCompleteTextView.CommaTokenizer.staticClass, global::android.widget.MultiAutoCompleteTextView.CommaTokenizer._findTokenStart10519, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -49,7 +49,7 @@ namespace android.widget
 			public virtual int findTokenEnd(java.lang.CharSequence arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.MultiAutoCompleteTextView.CommaTokenizer)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.widget.MultiAutoCompleteTextView.CommaTokenizer._findTokenEnd10520, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.widget.MultiAutoCompleteTextView.CommaTokenizer.staticClass, global::android.widget.MultiAutoCompleteTextView.CommaTokenizer._findTokenEnd10520, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -58,7 +58,7 @@ namespace android.widget
 			public virtual global::java.lang.CharSequence terminateToken(java.lang.CharSequence arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.MultiAutoCompleteTextView.CommaTokenizer)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.MultiAutoCompleteTextView.CommaTokenizer._terminateToken10521, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.MultiAutoCompleteTextView.CommaTokenizer.staticClass, global::android.widget.MultiAutoCompleteTextView.CommaTokenizer._terminateToken10521, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -116,7 +116,7 @@ namespace android.widget
 			 int android.widget.MultiAutoCompleteTextView.Tokenizer.findTokenStart(java.lang.CharSequence arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.MultiAutoCompleteTextView.__Tokenizer)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.widget.MultiAutoCompleteTextView.__Tokenizer._findTokenStart10523, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.widget.MultiAutoCompleteTextView.__Tokenizer.staticClass, global::android.widget.MultiAutoCompleteTextView.__Tokenizer._findTokenStart10523, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -125,7 +125,7 @@ namespace android.widget
 			 int android.widget.MultiAutoCompleteTextView.Tokenizer.findTokenEnd(java.lang.CharSequence arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.MultiAutoCompleteTextView.__Tokenizer)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.widget.MultiAutoCompleteTextView.__Tokenizer._findTokenEnd10524, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.widget.MultiAutoCompleteTextView.__Tokenizer.staticClass, global::android.widget.MultiAutoCompleteTextView.__Tokenizer._findTokenEnd10524, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -134,7 +134,7 @@ namespace android.widget
 			 global::java.lang.CharSequence android.widget.MultiAutoCompleteTextView.Tokenizer.terminateToken(java.lang.CharSequence arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.MultiAutoCompleteTextView.__Tokenizer)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.MultiAutoCompleteTextView.__Tokenizer._terminateToken10525, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.MultiAutoCompleteTextView.__Tokenizer.staticClass, global::android.widget.MultiAutoCompleteTextView.__Tokenizer._terminateToken10525, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -151,7 +151,7 @@ namespace android.widget
 		public virtual void setTokenizer(android.widget.MultiAutoCompleteTextView.Tokenizer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MultiAutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.MultiAutoCompleteTextView._setTokenizer10526, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MultiAutoCompleteTextView.staticClass, global::android.widget.MultiAutoCompleteTextView._setTokenizer10526, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -160,7 +160,7 @@ namespace android.widget
 		protected override void performFiltering(java.lang.CharSequence arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MultiAutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.MultiAutoCompleteTextView._performFiltering10527, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MultiAutoCompleteTextView.staticClass, global::android.widget.MultiAutoCompleteTextView._performFiltering10527, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -169,7 +169,7 @@ namespace android.widget
 		protected virtual void performFiltering(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MultiAutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.MultiAutoCompleteTextView._performFiltering10528, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MultiAutoCompleteTextView.staticClass, global::android.widget.MultiAutoCompleteTextView._performFiltering10528, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -178,7 +178,7 @@ namespace android.widget
 		public override bool enoughToFilter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MultiAutoCompleteTextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.MultiAutoCompleteTextView._enoughToFilter10529); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MultiAutoCompleteTextView.staticClass, global::android.widget.MultiAutoCompleteTextView._enoughToFilter10529); 
@@ -187,7 +187,7 @@ namespace android.widget
 		public override void performValidation() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MultiAutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.MultiAutoCompleteTextView._performValidation10530); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MultiAutoCompleteTextView.staticClass, global::android.widget.MultiAutoCompleteTextView._performValidation10530); 
@@ -196,7 +196,7 @@ namespace android.widget
 		protected override void replaceText(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.MultiAutoCompleteTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.MultiAutoCompleteTextView._replaceText10531, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MultiAutoCompleteTextView.staticClass, global::android.widget.MultiAutoCompleteTextView._replaceText10531, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

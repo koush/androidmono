@@ -22,7 +22,7 @@ namespace android.database.sqlite
 		public virtual void execute() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteStatement)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.sqlite.SQLiteStatement._execute2568); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.SQLiteStatement.staticClass, global::android.database.sqlite.SQLiteStatement._execute2568); 
@@ -31,7 +31,7 @@ namespace android.database.sqlite
 		public virtual long executeInsert() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteStatement)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.database.sqlite.SQLiteStatement._executeInsert2569); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.database.sqlite.SQLiteStatement.staticClass, global::android.database.sqlite.SQLiteStatement._executeInsert2569); 
@@ -40,7 +40,7 @@ namespace android.database.sqlite
 		public virtual long simpleQueryForLong() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteStatement)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.database.sqlite.SQLiteStatement._simpleQueryForLong2570); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.database.sqlite.SQLiteStatement.staticClass, global::android.database.sqlite.SQLiteStatement._simpleQueryForLong2570); 
@@ -49,7 +49,7 @@ namespace android.database.sqlite
 		public virtual global::java.lang.String simpleQueryForString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.sqlite.SQLiteStatement)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.sqlite.SQLiteStatement._simpleQueryForString2571)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.sqlite.SQLiteStatement.staticClass, global::android.database.sqlite.SQLiteStatement._simpleQueryForString2571)); 

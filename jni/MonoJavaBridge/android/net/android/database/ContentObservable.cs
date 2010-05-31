@@ -22,7 +22,7 @@ namespace android.database
 		public virtual void notifyChange(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.ContentObservable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.ContentObservable._notifyChange2165, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.ContentObservable.staticClass, global::android.database.ContentObservable._notifyChange2165, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -31,7 +31,7 @@ namespace android.database
 		public virtual void dispatchChange(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.ContentObservable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.ContentObservable._dispatchChange2166, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.ContentObservable.staticClass, global::android.database.ContentObservable._dispatchChange2166, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -40,7 +40,7 @@ namespace android.database
 		public virtual void registerObserver(android.database.ContentObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.ContentObservable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.ContentObservable._registerObserver2167, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.ContentObservable.staticClass, global::android.database.ContentObservable._registerObserver2167, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

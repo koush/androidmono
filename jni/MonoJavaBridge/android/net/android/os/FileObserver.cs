@@ -15,7 +15,7 @@ namespace android.os
 		public virtual void startWatching() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.FileObserver)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.FileObserver._startWatching5572); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.FileObserver.staticClass, global::android.os.FileObserver._startWatching5572); 
@@ -24,7 +24,7 @@ namespace android.os
 		public virtual void stopWatching() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.FileObserver)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.FileObserver._stopWatching5573); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.FileObserver.staticClass, global::android.os.FileObserver._stopWatching5573); 

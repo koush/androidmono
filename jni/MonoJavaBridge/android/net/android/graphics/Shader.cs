@@ -82,7 +82,7 @@ namespace android.graphics
 		public virtual bool getLocalMatrix(android.graphics.Matrix arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Shader)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Shader._getLocalMatrix3411, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Shader.staticClass, global::android.graphics.Shader._getLocalMatrix3411, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -91,7 +91,7 @@ namespace android.graphics
 		public virtual void setLocalMatrix(android.graphics.Matrix arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Shader)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Shader._setLocalMatrix3412, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Shader.staticClass, global::android.graphics.Shader._setLocalMatrix3412, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

@@ -40,7 +40,7 @@ namespace android.graphics
 			public virtual void requestCancelDecode() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.graphics.BitmapFactory.Options)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.graphics.BitmapFactory.Options._requestCancelDecode2755); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.graphics.BitmapFactory.Options.staticClass, global::android.graphics.BitmapFactory.Options._requestCancelDecode2755); 

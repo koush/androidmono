@@ -15,7 +15,7 @@ namespace java.nio.channels.spi
 		public virtual global::java.nio.channels.Channel inheritedChannel() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.spi.SelectorProvider)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.nio.channels.Channel>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.channels.spi.SelectorProvider._inheritedChannel12328)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.nio.channels.Channel>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.channels.spi.SelectorProvider.staticClass, global::java.nio.channels.spi.SelectorProvider._inheritedChannel12328)); 

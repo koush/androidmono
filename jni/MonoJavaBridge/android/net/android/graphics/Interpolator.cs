@@ -82,7 +82,7 @@ namespace android.graphics
 		public virtual void reset(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Interpolator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Interpolator._reset2941, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._reset2941, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -91,7 +91,7 @@ namespace android.graphics
 		public virtual void reset(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Interpolator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Interpolator._reset2942, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._reset2942, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -100,7 +100,7 @@ namespace android.graphics
 		public virtual int getKeyFrameCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Interpolator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Interpolator._getKeyFrameCount2943); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._getKeyFrameCount2943); 
@@ -109,7 +109,7 @@ namespace android.graphics
 		public virtual int getValueCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Interpolator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Interpolator._getValueCount2944); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._getValueCount2944); 
@@ -118,7 +118,7 @@ namespace android.graphics
 		public virtual void setKeyFrame(int arg0, int arg1, float[] arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Interpolator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Interpolator._setKeyFrame2945, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._setKeyFrame2945, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2)); 
@@ -127,7 +127,7 @@ namespace android.graphics
 		public virtual void setKeyFrame(int arg0, int arg1, float[] arg2, float[] arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Interpolator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Interpolator._setKeyFrame2946, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._setKeyFrame2946, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3)); 
@@ -136,7 +136,7 @@ namespace android.graphics
 		public virtual void setRepeatMirror(float arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Interpolator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Interpolator._setRepeatMirror2947, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._setRepeatMirror2947, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -145,7 +145,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Interpolator.Result timeToValues(int arg0, float[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Interpolator)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Interpolator.Result>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Interpolator._timeToValues2948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Interpolator.Result>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._timeToValues2948, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
@@ -154,7 +154,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Interpolator.Result timeToValues(float[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Interpolator)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Interpolator.Result>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Interpolator._timeToValues2949, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Interpolator.Result>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Interpolator.staticClass, global::android.graphics.Interpolator._timeToValues2949, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0))); 

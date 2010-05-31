@@ -22,7 +22,7 @@ namespace android.text
 		public virtual global::java.lang.String getValue() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Annotation)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.Annotation._getValue6691)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.Annotation.staticClass, global::android.text.Annotation._getValue6691)); 
@@ -31,7 +31,7 @@ namespace android.text
 		public virtual global::java.lang.String getKey() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Annotation)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.Annotation._getKey6692)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.Annotation.staticClass, global::android.text.Annotation._getKey6692)); 
@@ -40,7 +40,7 @@ namespace android.text
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Annotation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.Annotation._writeToParcel6693, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.Annotation.staticClass, global::android.text.Annotation._writeToParcel6693, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -49,7 +49,7 @@ namespace android.text
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Annotation)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Annotation._describeContents6694); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Annotation.staticClass, global::android.text.Annotation._describeContents6694); 
@@ -58,7 +58,7 @@ namespace android.text
 		public virtual int getSpanTypeId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Annotation)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Annotation._getSpanTypeId6695); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Annotation.staticClass, global::android.text.Annotation._getSpanTypeId6695); 

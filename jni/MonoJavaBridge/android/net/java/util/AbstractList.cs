@@ -15,7 +15,7 @@ namespace java.util
 		public virtual void add(int arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractList)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.AbstractList._add12675, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.AbstractList.staticClass, global::java.util.AbstractList._add12675, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -24,7 +24,7 @@ namespace java.util
 		public override bool add(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractList)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.AbstractList._add12676, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.AbstractList.staticClass, global::java.util.AbstractList._add12676, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -35,7 +35,7 @@ namespace java.util
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractList)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.AbstractList._hashCode12678); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.AbstractList.staticClass, global::java.util.AbstractList._hashCode12678); 
@@ -44,7 +44,7 @@ namespace java.util
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractList)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.AbstractList._equals12679, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.AbstractList.staticClass, global::java.util.AbstractList._equals12679, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -53,7 +53,7 @@ namespace java.util
 		public virtual int indexOf(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractList)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.AbstractList._indexOf12680, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.AbstractList.staticClass, global::java.util.AbstractList._indexOf12680, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -62,7 +62,7 @@ namespace java.util
 		public override void clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractList)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.AbstractList._clear12681); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.AbstractList.staticClass, global::java.util.AbstractList._clear12681); 
@@ -71,7 +71,7 @@ namespace java.util
 		public virtual int lastIndexOf(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractList)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.AbstractList._lastIndexOf12682, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.AbstractList.staticClass, global::java.util.AbstractList._lastIndexOf12682, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -80,7 +80,7 @@ namespace java.util
 		public virtual bool addAll(int arg0, java.util.Collection arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractList)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.AbstractList._addAll12683, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.AbstractList.staticClass, global::java.util.AbstractList._addAll12683, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -89,7 +89,7 @@ namespace java.util
 		public override global::java.util.Iterator iterator() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractList)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.AbstractList._iterator12684)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.AbstractList.staticClass, global::java.util.AbstractList._iterator12684)); 
@@ -98,7 +98,7 @@ namespace java.util
 		public virtual global::java.lang.Object set(int arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractList)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.AbstractList._set12685, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.AbstractList.staticClass, global::java.util.AbstractList._set12685, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
@@ -107,7 +107,7 @@ namespace java.util
 		public virtual global::java.lang.Object remove(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractList)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.AbstractList._remove12686, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.AbstractList.staticClass, global::java.util.AbstractList._remove12686, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -116,7 +116,7 @@ namespace java.util
 		public virtual global::java.util.List subList(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractList)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.AbstractList._subList12687, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.AbstractList.staticClass, global::java.util.AbstractList._subList12687, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -125,7 +125,7 @@ namespace java.util
 		protected virtual void removeRange(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractList)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.AbstractList._removeRange12688, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.AbstractList.staticClass, global::java.util.AbstractList._removeRange12688, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -134,7 +134,7 @@ namespace java.util
 		public virtual global::java.util.Iterator listIterator(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractList)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.AbstractList._listIterator12689, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.AbstractList.staticClass, global::java.util.AbstractList._listIterator12689, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -143,7 +143,7 @@ namespace java.util
 		public virtual global::java.util.Iterator listIterator() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractList)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.AbstractList._listIterator12690)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.AbstractList.staticClass, global::java.util.AbstractList._listIterator12690)); 

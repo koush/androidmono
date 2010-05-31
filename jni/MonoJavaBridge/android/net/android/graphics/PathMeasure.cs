@@ -22,7 +22,7 @@ namespace android.graphics
 		public virtual float getLength() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.PathMeasure)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.PathMeasure._getLength3210); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._getLength3210); 
@@ -31,7 +31,7 @@ namespace android.graphics
 		public virtual bool isClosed() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.PathMeasure)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.PathMeasure._isClosed3211); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._isClosed3211); 
@@ -40,7 +40,7 @@ namespace android.graphics
 		public virtual bool getMatrix(float arg0, android.graphics.Matrix arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.PathMeasure)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.PathMeasure._getMatrix3212, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._getMatrix3212, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -49,7 +49,7 @@ namespace android.graphics
 		public virtual void setPath(android.graphics.Path arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.PathMeasure)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.PathMeasure._setPath3213, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._setPath3213, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -58,7 +58,7 @@ namespace android.graphics
 		public virtual bool getPosTan(float arg0, float[] arg1, float[] arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.PathMeasure)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.PathMeasure._getPosTan3214, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._getPosTan3214, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2)); 
@@ -67,7 +67,7 @@ namespace android.graphics
 		public virtual bool getSegment(float arg0, float arg1, android.graphics.Path arg2, bool arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.PathMeasure)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.PathMeasure._getSegment3215, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._getSegment3215, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -76,7 +76,7 @@ namespace android.graphics
 		public virtual bool nextContour() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.PathMeasure)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.PathMeasure._nextContour3216); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.PathMeasure.staticClass, global::android.graphics.PathMeasure._nextContour3216); 

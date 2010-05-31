@@ -22,7 +22,7 @@ namespace java.nio.charset
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CoderResult)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CoderResult._toString12405)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._toString12405)); 
@@ -31,7 +31,7 @@ namespace java.nio.charset
 		public virtual int length() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CoderResult)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.nio.charset.CoderResult._length12406); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._length12406); 
@@ -40,7 +40,7 @@ namespace java.nio.charset
 		public virtual void throwException() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CoderResult)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.nio.charset.CoderResult._throwException12407); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._throwException12407); 
@@ -49,7 +49,7 @@ namespace java.nio.charset
 		public virtual bool isUnderflow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CoderResult)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.charset.CoderResult._isUnderflow12408); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isUnderflow12408); 
@@ -58,7 +58,7 @@ namespace java.nio.charset
 		public virtual bool isOverflow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CoderResult)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.charset.CoderResult._isOverflow12409); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isOverflow12409); 
@@ -73,7 +73,7 @@ namespace java.nio.charset
 		public virtual bool isError() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CoderResult)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.charset.CoderResult._isError12411); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isError12411); 
@@ -88,7 +88,7 @@ namespace java.nio.charset
 		public virtual bool isMalformed() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CoderResult)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.charset.CoderResult._isMalformed12413); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isMalformed12413); 
@@ -97,7 +97,7 @@ namespace java.nio.charset
 		public virtual bool isUnmappable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.charset.CoderResult)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.charset.CoderResult._isUnmappable12414); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isUnmappable12414); 

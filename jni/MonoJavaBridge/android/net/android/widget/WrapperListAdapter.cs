@@ -36,7 +36,7 @@ namespace android.widget
 		 global::android.widget.ListAdapter android.widget.WrapperListAdapter.getWrappedAdapter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.__WrapperListAdapter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.ListAdapter>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.__WrapperListAdapter._getWrappedAdapter11329)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.ListAdapter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.__WrapperListAdapter.staticClass, global::android.widget.__WrapperListAdapter._getWrappedAdapter11329)); 
@@ -45,7 +45,7 @@ namespace android.widget
 		 bool android.widget.ListAdapter.isEnabled(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.__WrapperListAdapter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.__WrapperListAdapter._isEnabled11330, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.__WrapperListAdapter.staticClass, global::android.widget.__WrapperListAdapter._isEnabled11330, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -54,7 +54,7 @@ namespace android.widget
 		 bool android.widget.ListAdapter.areAllItemsEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.__WrapperListAdapter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.__WrapperListAdapter._areAllItemsEnabled11331); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.__WrapperListAdapter.staticClass, global::android.widget.__WrapperListAdapter._areAllItemsEnabled11331); 
@@ -63,7 +63,7 @@ namespace android.widget
 		 bool android.widget.Adapter.isEmpty() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.__WrapperListAdapter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.__WrapperListAdapter._isEmpty11332); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.__WrapperListAdapter.staticClass, global::android.widget.__WrapperListAdapter._isEmpty11332); 
@@ -72,7 +72,7 @@ namespace android.widget
 		 int android.widget.Adapter.getCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.__WrapperListAdapter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.__WrapperListAdapter._getCount11333); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.__WrapperListAdapter.staticClass, global::android.widget.__WrapperListAdapter._getCount11333); 
@@ -81,7 +81,7 @@ namespace android.widget
 		 void android.widget.Adapter.registerDataSetObserver(android.database.DataSetObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.__WrapperListAdapter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.__WrapperListAdapter._registerDataSetObserver11334, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.__WrapperListAdapter.staticClass, global::android.widget.__WrapperListAdapter._registerDataSetObserver11334, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -90,7 +90,7 @@ namespace android.widget
 		 void android.widget.Adapter.unregisterDataSetObserver(android.database.DataSetObserver arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.__WrapperListAdapter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.__WrapperListAdapter._unregisterDataSetObserver11335, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.__WrapperListAdapter.staticClass, global::android.widget.__WrapperListAdapter._unregisterDataSetObserver11335, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -99,7 +99,7 @@ namespace android.widget
 		 global::java.lang.Object android.widget.Adapter.getItem(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.__WrapperListAdapter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.__WrapperListAdapter._getItem11336, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.__WrapperListAdapter.staticClass, global::android.widget.__WrapperListAdapter._getItem11336, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -108,7 +108,7 @@ namespace android.widget
 		 long android.widget.Adapter.getItemId(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.__WrapperListAdapter)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.widget.__WrapperListAdapter._getItemId11337, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.widget.__WrapperListAdapter.staticClass, global::android.widget.__WrapperListAdapter._getItemId11337, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -117,7 +117,7 @@ namespace android.widget
 		 bool android.widget.Adapter.hasStableIds() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.__WrapperListAdapter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.__WrapperListAdapter._hasStableIds11338); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.__WrapperListAdapter.staticClass, global::android.widget.__WrapperListAdapter._hasStableIds11338); 
@@ -126,7 +126,7 @@ namespace android.widget
 		 global::android.view.View android.widget.Adapter.getView(int arg0, android.view.View arg1, android.view.ViewGroup arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.__WrapperListAdapter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.__WrapperListAdapter._getView11339, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.__WrapperListAdapter.staticClass, global::android.widget.__WrapperListAdapter._getView11339, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
@@ -135,7 +135,7 @@ namespace android.widget
 		 int android.widget.Adapter.getItemViewType(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.__WrapperListAdapter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.__WrapperListAdapter._getItemViewType11340, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.__WrapperListAdapter.staticClass, global::android.widget.__WrapperListAdapter._getItemViewType11340, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -144,7 +144,7 @@ namespace android.widget
 		 int android.widget.Adapter.getViewTypeCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.__WrapperListAdapter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.__WrapperListAdapter._getViewTypeCount11341); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.__WrapperListAdapter.staticClass, global::android.widget.__WrapperListAdapter._getViewTypeCount11341); 

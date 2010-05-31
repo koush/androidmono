@@ -96,7 +96,7 @@ namespace android.view.animation
 		public override bool willOverlap() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.GridLayoutAnimationController)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.animation.GridLayoutAnimationController._willOverlap8949); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._willOverlap8949); 
@@ -105,7 +105,7 @@ namespace android.view.animation
 		protected override long getDelayForView(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.GridLayoutAnimationController)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.view.animation.GridLayoutAnimationController._getDelayForView8950, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._getDelayForView8950, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -114,7 +114,7 @@ namespace android.view.animation
 		public virtual float getColumnDelay() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.GridLayoutAnimationController)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.animation.GridLayoutAnimationController._getColumnDelay8951); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._getColumnDelay8951); 
@@ -123,7 +123,7 @@ namespace android.view.animation
 		public virtual void setColumnDelay(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.GridLayoutAnimationController)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.GridLayoutAnimationController._setColumnDelay8952, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._setColumnDelay8952, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -132,7 +132,7 @@ namespace android.view.animation
 		public virtual float getRowDelay() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.GridLayoutAnimationController)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.animation.GridLayoutAnimationController._getRowDelay8953); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._getRowDelay8953); 
@@ -141,7 +141,7 @@ namespace android.view.animation
 		public virtual void setRowDelay(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.GridLayoutAnimationController)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.GridLayoutAnimationController._setRowDelay8954, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._setRowDelay8954, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -150,7 +150,7 @@ namespace android.view.animation
 		public virtual int getDirection() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.GridLayoutAnimationController)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.animation.GridLayoutAnimationController._getDirection8955); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._getDirection8955); 
@@ -159,7 +159,7 @@ namespace android.view.animation
 		public virtual void setDirection(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.GridLayoutAnimationController)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.GridLayoutAnimationController._setDirection8956, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._setDirection8956, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -168,7 +168,7 @@ namespace android.view.animation
 		public virtual int getDirectionPriority() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.GridLayoutAnimationController)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.animation.GridLayoutAnimationController._getDirectionPriority8957); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._getDirectionPriority8957); 
@@ -177,7 +177,7 @@ namespace android.view.animation
 		public virtual void setDirectionPriority(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.GridLayoutAnimationController)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.GridLayoutAnimationController._setDirectionPriority8958, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.GridLayoutAnimationController.staticClass, global::android.view.animation.GridLayoutAnimationController._setDirectionPriority8958, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

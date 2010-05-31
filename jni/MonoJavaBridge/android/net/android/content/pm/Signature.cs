@@ -22,7 +22,7 @@ namespace android.content.pm
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.pm.Signature)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.pm.Signature._hashCode1856); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._hashCode1856); 
@@ -31,7 +31,7 @@ namespace android.content.pm
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.pm.Signature)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.pm.Signature._equals1857, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._equals1857, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -39,7 +39,7 @@ namespace android.content.pm
 		internal static global::net.sf.jni4net.jni.MethodId _toChars1858; 
 		public virtual char[] toChars() 
 		{ 
-			if (GetType() == typeof(android.content.pm.Signature)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.Signature._toChars1858)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._toChars1858)); 
@@ -47,7 +47,7 @@ namespace android.content.pm
 		internal static global::net.sf.jni4net.jni.MethodId _toChars1859; 
 		public virtual char[] toChars(char[] arg0, int[] arg1) 
 		{ 
-			if (GetType() == typeof(android.content.pm.Signature)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.Signature._toChars1859, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._toChars1859, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
@@ -55,7 +55,7 @@ namespace android.content.pm
 		internal static global::net.sf.jni4net.jni.MethodId _toByteArray1860; 
 		public virtual byte[] toByteArray() 
 		{ 
-			if (GetType() == typeof(android.content.pm.Signature)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.Signature._toByteArray1860)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._toByteArray1860)); 
@@ -64,7 +64,7 @@ namespace android.content.pm
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.pm.Signature)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.pm.Signature._writeToParcel1861, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._writeToParcel1861, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -73,7 +73,7 @@ namespace android.content.pm
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.pm.Signature)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.pm.Signature._describeContents1862); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._describeContents1862); 
@@ -82,7 +82,7 @@ namespace android.content.pm
 		public virtual global::java.lang.String toCharsString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.pm.Signature)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.Signature._toCharsString1863)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._toCharsString1863)); 

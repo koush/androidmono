@@ -22,7 +22,7 @@ namespace android.text
 		public override int getLineCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.StaticLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.StaticLayout._getLineCount6956); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.StaticLayout.staticClass, global::android.text.StaticLayout._getLineCount6956); 
@@ -31,7 +31,7 @@ namespace android.text
 		public override int getEllipsizedWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.StaticLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.StaticLayout._getEllipsizedWidth6957); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.StaticLayout.staticClass, global::android.text.StaticLayout._getEllipsizedWidth6957); 
@@ -40,7 +40,7 @@ namespace android.text
 		public override int getLineTop(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.StaticLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.StaticLayout._getLineTop6958, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.StaticLayout.staticClass, global::android.text.StaticLayout._getLineTop6958, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.text
 		public override int getLineDescent(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.StaticLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.StaticLayout._getLineDescent6959, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.StaticLayout.staticClass, global::android.text.StaticLayout._getLineDescent6959, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.text
 		public override int getLineStart(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.StaticLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.StaticLayout._getLineStart6960, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.StaticLayout.staticClass, global::android.text.StaticLayout._getLineStart6960, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.text
 		public override int getParagraphDirection(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.StaticLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.StaticLayout._getParagraphDirection6961, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.StaticLayout.staticClass, global::android.text.StaticLayout._getParagraphDirection6961, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -76,7 +76,7 @@ namespace android.text
 		public override bool getLineContainsTab(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.StaticLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.text.StaticLayout._getLineContainsTab6962, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.StaticLayout.staticClass, global::android.text.StaticLayout._getLineContainsTab6962, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -85,7 +85,7 @@ namespace android.text
 		public sealed override global::android.text.Layout.Directions getLineDirections(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.StaticLayout)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Directions>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.StaticLayout._getLineDirections6963, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Directions>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.StaticLayout.staticClass, global::android.text.StaticLayout._getLineDirections6963, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -94,7 +94,7 @@ namespace android.text
 		public override int getTopPadding() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.StaticLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.StaticLayout._getTopPadding6964); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.StaticLayout.staticClass, global::android.text.StaticLayout._getTopPadding6964); 
@@ -103,7 +103,7 @@ namespace android.text
 		public override int getBottomPadding() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.StaticLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.StaticLayout._getBottomPadding6965); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.StaticLayout.staticClass, global::android.text.StaticLayout._getBottomPadding6965); 
@@ -112,7 +112,7 @@ namespace android.text
 		public override int getLineForVertical(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.StaticLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.StaticLayout._getLineForVertical6966, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.StaticLayout.staticClass, global::android.text.StaticLayout._getLineForVertical6966, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -121,7 +121,7 @@ namespace android.text
 		public override int getEllipsisStart(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.StaticLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.StaticLayout._getEllipsisStart6967, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.StaticLayout.staticClass, global::android.text.StaticLayout._getEllipsisStart6967, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -130,7 +130,7 @@ namespace android.text
 		public override int getEllipsisCount(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.StaticLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.StaticLayout._getEllipsisCount6968, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.StaticLayout.staticClass, global::android.text.StaticLayout._getEllipsisCount6968, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

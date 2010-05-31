@@ -36,7 +36,7 @@ namespace android.content
 		 void android.content.SyncStatusObserver.onStatusChanged(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.__SyncStatusObserver)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.__SyncStatusObserver._onStatusChanged1564, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.__SyncStatusObserver.staticClass, global::android.content.__SyncStatusObserver._onStatusChanged1564, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

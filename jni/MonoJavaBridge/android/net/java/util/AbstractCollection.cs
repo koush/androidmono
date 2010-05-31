@@ -15,7 +15,7 @@ namespace java.util
 		public virtual bool add(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractCollection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.AbstractCollection._add12660, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._add12660, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -24,7 +24,7 @@ namespace java.util
 		public virtual void clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractCollection)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.AbstractCollection._clear12661); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._clear12661); 
@@ -33,7 +33,7 @@ namespace java.util
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractCollection)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.AbstractCollection._toString12662)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._toString12662)); 
@@ -42,7 +42,7 @@ namespace java.util
 		public virtual bool isEmpty() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractCollection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.AbstractCollection._isEmpty12663); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._isEmpty12663); 
@@ -51,7 +51,7 @@ namespace java.util
 		public virtual bool contains(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractCollection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.AbstractCollection._contains12664, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._contains12664, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -60,7 +60,7 @@ namespace java.util
 		public virtual bool addAll(java.util.Collection arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractCollection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.AbstractCollection._addAll12665, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._addAll12665, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -70,7 +70,7 @@ namespace java.util
 		internal static global::net.sf.jni4net.jni.MethodId _toArray12667; 
 		public virtual global::java.lang.Object[] toArray(java.lang.Object[] arg0) 
 		{ 
-			if (GetType() == typeof(java.util.AbstractCollection)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.util.AbstractCollection._toArray12667, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._toArray12667, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0))); 
@@ -78,7 +78,7 @@ namespace java.util
 		internal static global::net.sf.jni4net.jni.MethodId _toArray12668; 
 		public virtual global::java.lang.Object[] toArray() 
 		{ 
-			if (GetType() == typeof(java.util.AbstractCollection)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.util.AbstractCollection._toArray12668)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._toArray12668)); 
@@ -89,7 +89,7 @@ namespace java.util
 		public virtual bool remove(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractCollection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.AbstractCollection._remove12670, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._remove12670, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -98,7 +98,7 @@ namespace java.util
 		public virtual bool containsAll(java.util.Collection arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractCollection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.AbstractCollection._containsAll12671, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._containsAll12671, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -107,7 +107,7 @@ namespace java.util
 		public virtual bool removeAll(java.util.Collection arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractCollection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.AbstractCollection._removeAll12672, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._removeAll12672, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -116,7 +116,7 @@ namespace java.util
 		public virtual bool retainAll(java.util.Collection arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.AbstractCollection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.AbstractCollection._retainAll12673, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._retainAll12673, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

@@ -22,7 +22,7 @@ namespace org.xml.sax
 		public virtual int getLineNumber() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.SAXParseException)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::org.xml.sax.SAXParseException._getLineNumber13332); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::org.xml.sax.SAXParseException.staticClass, global::org.xml.sax.SAXParseException._getLineNumber13332); 
@@ -31,7 +31,7 @@ namespace org.xml.sax
 		public virtual global::java.lang.String getPublicId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.SAXParseException)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.SAXParseException._getPublicId13333)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.SAXParseException.staticClass, global::org.xml.sax.SAXParseException._getPublicId13333)); 
@@ -40,7 +40,7 @@ namespace org.xml.sax
 		public virtual global::java.lang.String getSystemId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.SAXParseException)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.SAXParseException._getSystemId13334)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.SAXParseException.staticClass, global::org.xml.sax.SAXParseException._getSystemId13334)); 
@@ -49,7 +49,7 @@ namespace org.xml.sax
 		public virtual int getColumnNumber() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.SAXParseException)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::org.xml.sax.SAXParseException._getColumnNumber13335); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::org.xml.sax.SAXParseException.staticClass, global::org.xml.sax.SAXParseException._getColumnNumber13335); 

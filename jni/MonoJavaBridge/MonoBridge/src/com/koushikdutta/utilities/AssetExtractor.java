@@ -18,52 +18,38 @@ public class AssetExtractor {
 	final static int BUFSIZE = 100000;
 	final static String LOGTAG = "AssetExtractor";
 
-	static void Log(String string)
-	{
+	static void Log(String string) {
 		Log.v(LOGTAG, string);
 	}
-	
-	static void copyStreams(InputStream is, FileOutputStream fos)
-	{
+
+	static void copyStreams(InputStream is, FileOutputStream fos) {
 		BufferedOutputStream os = null;
-		try
-		{
+		try {
 			byte data[] = new byte[BUFSIZE];
 			int count;
 			os = new BufferedOutputStream(fos, BUFSIZE);
-			while ((count = is.read(data, 0, BUFSIZE)) != -1)
-			{
+			while ((count = is.read(data, 0, BUFSIZE)) != -1) {
 				os.write(data, 0, count);
 			}
 			os.flush();
-		}
-		catch (IOException e)
-		{
+		} catch (IOException e) {
 			Log("Exception while copying: " + e);
-		}
-		finally
-		{
-			try
-			{
+		} finally {
+			try {
 				os.close();
 				is.close();
-			}
-			catch (IOException e2)
-			{
+			} catch (IOException e2) {
 				Log("Exception while closing the stream: " + e2);
 			}
 		}
 	}
-	
-	public static String getAppRoot(ContextWrapper context) 
-	{
-		 return "/data/data/" + context.getPackageName();
+
+	public static String getAppRoot(ContextWrapper context) {
+		return "/data/data/" + context.getPackageName();
 	}
 
-	public static void extractAssets(ContextWrapper context, boolean worldReadable)
-	{
-		try
-		{
+	public static void extractAssets(ContextWrapper context, boolean worldReadable) {
+		try {
 			Runtime runtime = Runtime.getRuntime();
 			String appRoot = getAppRoot(context);
 			File zipFile = new File(context.getPackageCodePath());
@@ -73,50 +59,38 @@ public class AssetExtractor {
 			int zipFilterLength = ZIP_FILTER.length();
 
 			Enumeration entries = files.elements();
-			while (entries.hasMoreElements())
-			{
+			while (entries.hasMoreElements()) {
 				ZipEntry entry = (ZipEntry) entries.nextElement();
 				String path = entry.getName().substring(zipFilterLength);
 				File outputFile = new File(appRoot, path);
 				outputFile.getParentFile().mkdirs();
 
-				if (outputFile.exists() && entry.getSize() == outputFile.length() && zipLastModified < outputFile.lastModified())
-				{
+				if (outputFile.exists() && entry.getSize() == outputFile.length() && zipLastModified < outputFile.lastModified()) {
 					Log(outputFile.getName() + " already extracted.");
-				}
-				else
-				{
+				} else {
 					FileOutputStream fos = new FileOutputStream(outputFile);
 					Log("Copied " + entry + " to " + appRoot + "/" + path);
 					copyStreams(zip.getInputStream(entry), fos);
 					String curPath = outputFile.getAbsolutePath();
-					if (worldReadable)
-					{
-						do
-						{
+					if (worldReadable) {
+						do {
 							runtime.exec("chmod 755 " + curPath);
 							curPath = new File(curPath).getParent();
-						}
-						while (!curPath.equals(appRoot));
+						} while (!curPath.equals(appRoot));
 					}
 				}
 			}
-		}
-		catch (IOException e)
-		{
+		} catch (IOException e) {
 			Log("Error: " + e.getMessage());
 		}
 	}
-	
-	public static Vector<ZipEntry> pluginsFilesFromZip(ZipFile zip)
-	{
+
+	public static Vector<ZipEntry> pluginsFilesFromZip(ZipFile zip) {
 		Vector<ZipEntry> list = new Vector<ZipEntry>();
 		Enumeration entries = zip.entries();
-		while (entries.hasMoreElements())
-		{
+		while (entries.hasMoreElements()) {
 			ZipEntry entry = (ZipEntry) entries.nextElement();
-			if (entry.getName().startsWith(ZIP_FILTER))
-			{
+			if (entry.getName().startsWith(ZIP_FILTER)) {
 				list.add(entry);
 			}
 		}

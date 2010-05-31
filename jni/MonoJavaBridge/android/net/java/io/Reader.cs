@@ -17,7 +17,7 @@ namespace java.io
 		public virtual void mark(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.Reader)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.Reader._mark11456, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.Reader.staticClass, global::java.io.Reader._mark11456, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -26,7 +26,7 @@ namespace java.io
 		public virtual void reset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.Reader)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.io.Reader._reset11457); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.io.Reader.staticClass, global::java.io.Reader._reset11457); 
@@ -37,7 +37,7 @@ namespace java.io
 		public virtual int read() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.Reader)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.io.Reader._read11459); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.io.Reader.staticClass, global::java.io.Reader._read11459); 
@@ -46,7 +46,7 @@ namespace java.io
 		public virtual int read(char[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.Reader)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.io.Reader._read11460, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.io.Reader.staticClass, global::java.io.Reader._read11460, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
@@ -55,7 +55,7 @@ namespace java.io
 		public virtual int read(java.nio.CharBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.Reader)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.io.Reader._read11461, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.io.Reader.staticClass, global::java.io.Reader._read11461, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -64,7 +64,7 @@ namespace java.io
 		public virtual long skip(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.Reader)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.io.Reader._skip11462, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.io.Reader.staticClass, global::java.io.Reader._skip11462, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -73,7 +73,7 @@ namespace java.io
 		public virtual bool markSupported() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.Reader)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.io.Reader._markSupported11463); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.io.Reader.staticClass, global::java.io.Reader._markSupported11463); 
@@ -82,7 +82,7 @@ namespace java.io
 		public virtual bool ready() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.io.Reader)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.io.Reader._ready11464); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.io.Reader.staticClass, global::java.io.Reader._ready11464); 

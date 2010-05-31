@@ -22,7 +22,7 @@ namespace android.widget
 		protected override void onAttachedToWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewFlipper)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewFlipper._onAttachedToWindow11311); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._onAttachedToWindow11311); 
@@ -31,7 +31,7 @@ namespace android.widget
 		protected override void onDetachedFromWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewFlipper)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewFlipper._onDetachedFromWindow11312); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._onDetachedFromWindow11312); 
@@ -40,7 +40,7 @@ namespace android.widget
 		protected override void onWindowVisibilityChanged(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewFlipper)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewFlipper._onWindowVisibilityChanged11313, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._onWindowVisibilityChanged11313, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.widget
 		public virtual void setFlipInterval(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewFlipper)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewFlipper._setFlipInterval11314, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._setFlipInterval11314, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.widget
 		public virtual void startFlipping() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewFlipper)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewFlipper._startFlipping11315); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._startFlipping11315); 
@@ -67,7 +67,7 @@ namespace android.widget
 		public virtual void stopFlipping() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewFlipper)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewFlipper._stopFlipping11316); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._stopFlipping11316); 
@@ -76,7 +76,7 @@ namespace android.widget
 		public virtual bool isFlipping() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewFlipper)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ViewFlipper._isFlipping11317); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._isFlipping11317); 
@@ -85,7 +85,7 @@ namespace android.widget
 		public virtual void setAutoStart(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewFlipper)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ViewFlipper._setAutoStart11318, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._setAutoStart11318, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -94,7 +94,7 @@ namespace android.widget
 		public virtual bool isAutoStart() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ViewFlipper)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ViewFlipper._isAutoStart11319); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ViewFlipper.staticClass, global::android.widget.ViewFlipper._isAutoStart11319); 

@@ -40,7 +40,7 @@ namespace android.content
 			public int getPort() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.content.IntentFilter.AuthorityEntry)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.content.IntentFilter.AuthorityEntry._getPort1405); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.content.IntentFilter.AuthorityEntry.staticClass, global::android.content.IntentFilter.AuthorityEntry._getPort1405); 
@@ -49,7 +49,7 @@ namespace android.content
 			public global::java.lang.String getHost() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.content.IntentFilter.AuthorityEntry)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.IntentFilter.AuthorityEntry._getHost1406)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.IntentFilter.AuthorityEntry.staticClass, global::android.content.IntentFilter.AuthorityEntry._getHost1406)); 
@@ -58,7 +58,7 @@ namespace android.content
 			public int match(android.net.Uri arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.content.IntentFilter.AuthorityEntry)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.content.IntentFilter.AuthorityEntry._match1407, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.content.IntentFilter.AuthorityEntry.staticClass, global::android.content.IntentFilter.AuthorityEntry._match1407, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -119,7 +119,7 @@ namespace android.content
 		public virtual void setPriority(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.IntentFilter._setPriority1411, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._setPriority1411, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -128,7 +128,7 @@ namespace android.content
 		public virtual int getPriority() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.IntentFilter._getPriority1412); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._getPriority1412); 
@@ -143,7 +143,7 @@ namespace android.content
 		public virtual int match(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, android.net.Uri arg3, java.util.Set arg4, java.lang.String arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.IntentFilter._match1414, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._match1414, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5)); 
@@ -152,7 +152,7 @@ namespace android.content
 		public virtual int match(android.content.ContentResolver arg0, android.content.Intent arg1, bool arg2, java.lang.String arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.IntentFilter._match1415, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._match1415, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
@@ -161,7 +161,7 @@ namespace android.content
 		public virtual void dump(android.util.Printer arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.IntentFilter._dump1416, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._dump1416, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -170,7 +170,7 @@ namespace android.content
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.IntentFilter._writeToParcel1417, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._writeToParcel1417, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -179,7 +179,7 @@ namespace android.content
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.IntentFilter._describeContents1418); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._describeContents1418); 
@@ -188,7 +188,7 @@ namespace android.content
 		public virtual global::java.lang.String getAction(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.IntentFilter._getAction1419, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._getAction1419, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -197,7 +197,7 @@ namespace android.content
 		public virtual bool hasCategory(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.IntentFilter._hasCategory1420, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._hasCategory1420, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -206,7 +206,7 @@ namespace android.content
 		public virtual void addCategory(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.IntentFilter._addCategory1421, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._addCategory1421, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -215,7 +215,7 @@ namespace android.content
 		public virtual void addAction(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.IntentFilter._addAction1422, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._addAction1422, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -224,7 +224,7 @@ namespace android.content
 		public virtual int countActions() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.IntentFilter._countActions1423); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._countActions1423); 
@@ -233,7 +233,7 @@ namespace android.content
 		public virtual bool hasAction(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.IntentFilter._hasAction1424, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._hasAction1424, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -242,7 +242,7 @@ namespace android.content
 		public virtual bool matchAction(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.IntentFilter._matchAction1425, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._matchAction1425, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -251,7 +251,7 @@ namespace android.content
 		public virtual global::java.util.Iterator actionsIterator() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.IntentFilter._actionsIterator1426)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._actionsIterator1426)); 
@@ -260,7 +260,7 @@ namespace android.content
 		public virtual void addDataType(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.IntentFilter._addDataType1427, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._addDataType1427, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -269,7 +269,7 @@ namespace android.content
 		public virtual bool hasDataType(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.IntentFilter._hasDataType1428, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._hasDataType1428, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -278,7 +278,7 @@ namespace android.content
 		public virtual int countDataTypes() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.IntentFilter._countDataTypes1429); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._countDataTypes1429); 
@@ -287,7 +287,7 @@ namespace android.content
 		public virtual global::java.lang.String getDataType(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.IntentFilter._getDataType1430, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._getDataType1430, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -296,7 +296,7 @@ namespace android.content
 		public virtual global::java.util.Iterator typesIterator() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.IntentFilter._typesIterator1431)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._typesIterator1431)); 
@@ -305,7 +305,7 @@ namespace android.content
 		public virtual void addDataScheme(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.IntentFilter._addDataScheme1432, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._addDataScheme1432, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -314,7 +314,7 @@ namespace android.content
 		public virtual int countDataSchemes() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.IntentFilter._countDataSchemes1433); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._countDataSchemes1433); 
@@ -323,7 +323,7 @@ namespace android.content
 		public virtual global::java.lang.String getDataScheme(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.IntentFilter._getDataScheme1434, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._getDataScheme1434, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -332,7 +332,7 @@ namespace android.content
 		public virtual bool hasDataScheme(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.IntentFilter._hasDataScheme1435, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._hasDataScheme1435, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -341,7 +341,7 @@ namespace android.content
 		public virtual global::java.util.Iterator schemesIterator() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.IntentFilter._schemesIterator1436)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._schemesIterator1436)); 
@@ -350,7 +350,7 @@ namespace android.content
 		public virtual void addDataAuthority(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.IntentFilter._addDataAuthority1437, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._addDataAuthority1437, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -359,7 +359,7 @@ namespace android.content
 		public virtual int countDataAuthorities() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.IntentFilter._countDataAuthorities1438); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._countDataAuthorities1438); 
@@ -368,7 +368,7 @@ namespace android.content
 		public virtual global::android.content.IntentFilter.AuthorityEntry getDataAuthority(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.IntentFilter.AuthorityEntry>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.IntentFilter._getDataAuthority1439, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.IntentFilter.AuthorityEntry>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._getDataAuthority1439, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -377,7 +377,7 @@ namespace android.content
 		public virtual bool hasDataAuthority(android.net.Uri arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.IntentFilter._hasDataAuthority1440, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._hasDataAuthority1440, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -386,7 +386,7 @@ namespace android.content
 		public virtual global::java.util.Iterator authoritiesIterator() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.IntentFilter._authoritiesIterator1441)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._authoritiesIterator1441)); 
@@ -395,7 +395,7 @@ namespace android.content
 		public virtual void addDataPath(java.lang.String arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.IntentFilter._addDataPath1442, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._addDataPath1442, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -404,7 +404,7 @@ namespace android.content
 		public virtual int countDataPaths() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.IntentFilter._countDataPaths1443); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._countDataPaths1443); 
@@ -413,7 +413,7 @@ namespace android.content
 		public virtual global::android.os.PatternMatcher getDataPath(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.PatternMatcher>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.IntentFilter._getDataPath1444, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.PatternMatcher>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._getDataPath1444, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -422,7 +422,7 @@ namespace android.content
 		public virtual bool hasDataPath(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.IntentFilter._hasDataPath1445, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._hasDataPath1445, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -431,7 +431,7 @@ namespace android.content
 		public virtual global::java.util.Iterator pathsIterator() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.IntentFilter._pathsIterator1446)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._pathsIterator1446)); 
@@ -440,7 +440,7 @@ namespace android.content
 		public virtual int matchDataAuthority(android.net.Uri arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.IntentFilter._matchDataAuthority1447, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._matchDataAuthority1447, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -449,7 +449,7 @@ namespace android.content
 		public virtual int matchData(java.lang.String arg0, java.lang.String arg1, android.net.Uri arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.IntentFilter._matchData1448, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._matchData1448, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -458,7 +458,7 @@ namespace android.content
 		public virtual int countCategories() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.IntentFilter._countCategories1449); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._countCategories1449); 
@@ -467,7 +467,7 @@ namespace android.content
 		public virtual global::java.lang.String getCategory(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.IntentFilter._getCategory1450, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._getCategory1450, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -476,7 +476,7 @@ namespace android.content
 		public virtual global::java.util.Iterator categoriesIterator() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.IntentFilter._categoriesIterator1451)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Iterator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._categoriesIterator1451)); 
@@ -485,7 +485,7 @@ namespace android.content
 		public virtual global::java.lang.String matchCategories(java.util.Set arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.IntentFilter._matchCategories1452, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._matchCategories1452, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -494,7 +494,7 @@ namespace android.content
 		public virtual void writeToXml(org.xmlpull.v1.XmlSerializer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.IntentFilter._writeToXml1453, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._writeToXml1453, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -503,7 +503,7 @@ namespace android.content
 		public virtual void readFromXml(org.xmlpull.v1.XmlPullParser arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.IntentFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.IntentFilter._readFromXml1454, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.IntentFilter.staticClass, global::android.content.IntentFilter._readFromXml1454, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

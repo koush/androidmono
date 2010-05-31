@@ -22,7 +22,7 @@ namespace android.os
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.PatternMatcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.PatternMatcher._toString5819)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._toString5819)); 
@@ -31,7 +31,7 @@ namespace android.os
 		public virtual int getType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.PatternMatcher)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.os.PatternMatcher._getType5820); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._getType5820); 
@@ -40,7 +40,7 @@ namespace android.os
 		public virtual global::java.lang.String getPath() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.PatternMatcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.PatternMatcher._getPath5821)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._getPath5821)); 
@@ -49,7 +49,7 @@ namespace android.os
 		public virtual bool match(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.PatternMatcher)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.PatternMatcher._match5822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._match5822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.os
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.PatternMatcher)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.PatternMatcher._writeToParcel5823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._writeToParcel5823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -67,7 +67,7 @@ namespace android.os
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.PatternMatcher)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.os.PatternMatcher._describeContents5824); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.os.PatternMatcher.staticClass, global::android.os.PatternMatcher._describeContents5824); 

@@ -54,7 +54,7 @@ namespace android.media
 			 void android.media.MediaPlayer.OnBufferingUpdateListener.onBufferingUpdate(android.media.MediaPlayer arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.MediaPlayer.__OnBufferingUpdateListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.media.MediaPlayer.__OnBufferingUpdateListener._onBufferingUpdate4490, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.__OnBufferingUpdateListener.staticClass, global::android.media.MediaPlayer.__OnBufferingUpdateListener._onBufferingUpdate4490, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -101,7 +101,7 @@ namespace android.media
 			 void android.media.MediaPlayer.OnCompletionListener.onCompletion(android.media.MediaPlayer arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.MediaPlayer.__OnCompletionListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.media.MediaPlayer.__OnCompletionListener._onCompletion4491, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.__OnCompletionListener.staticClass, global::android.media.MediaPlayer.__OnCompletionListener._onCompletion4491, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -148,7 +148,7 @@ namespace android.media
 			 bool android.media.MediaPlayer.OnErrorListener.onError(android.media.MediaPlayer arg0, int arg1, int arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.MediaPlayer.__OnErrorListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.media.MediaPlayer.__OnErrorListener._onError4492, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.media.MediaPlayer.__OnErrorListener.staticClass, global::android.media.MediaPlayer.__OnErrorListener._onError4492, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -195,7 +195,7 @@ namespace android.media
 			 bool android.media.MediaPlayer.OnInfoListener.onInfo(android.media.MediaPlayer arg0, int arg1, int arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.MediaPlayer.__OnInfoListener)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.media.MediaPlayer.__OnInfoListener._onInfo4493, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.media.MediaPlayer.__OnInfoListener.staticClass, global::android.media.MediaPlayer.__OnInfoListener._onInfo4493, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -242,7 +242,7 @@ namespace android.media
 			 void android.media.MediaPlayer.OnPreparedListener.onPrepared(android.media.MediaPlayer arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.MediaPlayer.__OnPreparedListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.media.MediaPlayer.__OnPreparedListener._onPrepared4494, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.__OnPreparedListener.staticClass, global::android.media.MediaPlayer.__OnPreparedListener._onPrepared4494, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -289,7 +289,7 @@ namespace android.media
 			 void android.media.MediaPlayer.OnSeekCompleteListener.onSeekComplete(android.media.MediaPlayer arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.MediaPlayer.__OnSeekCompleteListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.media.MediaPlayer.__OnSeekCompleteListener._onSeekComplete4495, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.__OnSeekCompleteListener.staticClass, global::android.media.MediaPlayer.__OnSeekCompleteListener._onSeekComplete4495, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -336,7 +336,7 @@ namespace android.media
 			 void android.media.MediaPlayer.OnVideoSizeChangedListener.onVideoSizeChanged(android.media.MediaPlayer arg0, int arg1, int arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.MediaPlayer.__OnVideoSizeChangedListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.media.MediaPlayer.__OnVideoSizeChangedListener._onVideoSizeChanged4496, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.__OnVideoSizeChangedListener.staticClass, global::android.media.MediaPlayer.__OnVideoSizeChangedListener._onVideoSizeChanged4496, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -351,7 +351,7 @@ namespace android.media
 		public virtual void start() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._start4497); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._start4497); 
@@ -360,7 +360,7 @@ namespace android.media
 		public virtual void stop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._stop4498); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._stop4498); 
@@ -369,7 +369,7 @@ namespace android.media
 		public virtual void reset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._reset4499); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._reset4499); 
@@ -378,7 +378,7 @@ namespace android.media
 		public virtual void release() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._release4500); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._release4500); 
@@ -405,7 +405,7 @@ namespace android.media
 		public virtual void prepare() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._prepare4504); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._prepare4504); 
@@ -414,7 +414,7 @@ namespace android.media
 		public virtual int getDuration() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.MediaPlayer._getDuration4505); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._getDuration4505); 
@@ -423,7 +423,7 @@ namespace android.media
 		public virtual void pause() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._pause4506); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._pause4506); 
@@ -432,7 +432,7 @@ namespace android.media
 		public virtual void setDisplay(android.view.SurfaceHolder arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setDisplay4507, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setDisplay4507, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -441,7 +441,7 @@ namespace android.media
 		public virtual void setDataSource(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setDataSource4508, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setDataSource4508, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -450,7 +450,7 @@ namespace android.media
 		public virtual void setDataSource(java.io.FileDescriptor arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setDataSource4509, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setDataSource4509, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -459,7 +459,7 @@ namespace android.media
 		public virtual void setDataSource(java.io.FileDescriptor arg0, long arg1, long arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setDataSource4510, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setDataSource4510, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -468,7 +468,7 @@ namespace android.media
 		public virtual void setDataSource(android.content.Context arg0, android.net.Uri arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setDataSource4511, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setDataSource4511, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -477,7 +477,7 @@ namespace android.media
 		public virtual void prepareAsync() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._prepareAsync4512); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._prepareAsync4512); 
@@ -486,7 +486,7 @@ namespace android.media
 		public virtual void setWakeMode(android.content.Context arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setWakeMode4513, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setWakeMode4513, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -495,7 +495,7 @@ namespace android.media
 		public virtual void setScreenOnWhilePlaying(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setScreenOnWhilePlaying4514, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setScreenOnWhilePlaying4514, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -504,7 +504,7 @@ namespace android.media
 		public virtual int getVideoWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.MediaPlayer._getVideoWidth4515); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._getVideoWidth4515); 
@@ -513,7 +513,7 @@ namespace android.media
 		public virtual int getVideoHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.MediaPlayer._getVideoHeight4516); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._getVideoHeight4516); 
@@ -522,7 +522,7 @@ namespace android.media
 		public virtual bool isPlaying() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.MediaPlayer._isPlaying4517); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._isPlaying4517); 
@@ -531,7 +531,7 @@ namespace android.media
 		public virtual void seekTo(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._seekTo4518, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._seekTo4518, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -540,7 +540,7 @@ namespace android.media
 		public virtual int getCurrentPosition() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.MediaPlayer._getCurrentPosition4519); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._getCurrentPosition4519); 
@@ -549,7 +549,7 @@ namespace android.media
 		public virtual void setAudioStreamType(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setAudioStreamType4520, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setAudioStreamType4520, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -558,7 +558,7 @@ namespace android.media
 		public virtual void setLooping(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setLooping4521, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setLooping4521, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -567,7 +567,7 @@ namespace android.media
 		public virtual bool isLooping() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.MediaPlayer._isLooping4522); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._isLooping4522); 
@@ -576,7 +576,7 @@ namespace android.media
 		public virtual void setVolume(float arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setVolume4523, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setVolume4523, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -585,7 +585,7 @@ namespace android.media
 		public virtual void setOnPreparedListener(android.media.MediaPlayer.OnPreparedListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setOnPreparedListener4524, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnPreparedListener4524, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -594,7 +594,7 @@ namespace android.media
 		public virtual void setOnCompletionListener(android.media.MediaPlayer.OnCompletionListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setOnCompletionListener4525, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnCompletionListener4525, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -603,7 +603,7 @@ namespace android.media
 		public virtual void setOnBufferingUpdateListener(android.media.MediaPlayer.OnBufferingUpdateListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setOnBufferingUpdateListener4526, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnBufferingUpdateListener4526, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -612,7 +612,7 @@ namespace android.media
 		public virtual void setOnSeekCompleteListener(android.media.MediaPlayer.OnSeekCompleteListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setOnSeekCompleteListener4527, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnSeekCompleteListener4527, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -621,7 +621,7 @@ namespace android.media
 		public virtual void setOnVideoSizeChangedListener(android.media.MediaPlayer.OnVideoSizeChangedListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setOnVideoSizeChangedListener4528, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnVideoSizeChangedListener4528, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -630,7 +630,7 @@ namespace android.media
 		public virtual void setOnErrorListener(android.media.MediaPlayer.OnErrorListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setOnErrorListener4529, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnErrorListener4529, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -639,7 +639,7 @@ namespace android.media
 		public virtual void setOnInfoListener(android.media.MediaPlayer.OnInfoListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaPlayer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaPlayer._setOnInfoListener4530, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaPlayer.staticClass, global::android.media.MediaPlayer._setOnInfoListener4530, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

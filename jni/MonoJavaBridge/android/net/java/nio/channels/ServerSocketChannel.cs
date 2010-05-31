@@ -25,7 +25,7 @@ namespace java.nio.channels
 		public sealed override int validOps() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.ServerSocketChannel)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.nio.channels.ServerSocketChannel._validOps12277); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.nio.channels.ServerSocketChannel.staticClass, global::java.nio.channels.ServerSocketChannel._validOps12277); 

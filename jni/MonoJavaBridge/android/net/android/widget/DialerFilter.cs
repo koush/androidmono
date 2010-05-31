@@ -22,7 +22,7 @@ namespace android.widget
 		public virtual void append(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DialerFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.DialerFilter._append10097, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._append10097, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -31,7 +31,7 @@ namespace android.widget
 		public virtual void setMode(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DialerFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.DialerFilter._setMode10098, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._setMode10098, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -40,7 +40,7 @@ namespace android.widget
 		public virtual int getMode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DialerFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.DialerFilter._getMode10099); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._getMode10099); 
@@ -49,7 +49,7 @@ namespace android.widget
 		public override bool onKeyDown(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DialerFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.DialerFilter._onKeyDown10100, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._onKeyDown10100, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -58,7 +58,7 @@ namespace android.widget
 		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DialerFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.DialerFilter._onKeyUp10101, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._onKeyUp10101, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -67,7 +67,7 @@ namespace android.widget
 		protected override void onFocusChanged(bool arg0, int arg1, android.graphics.Rect arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DialerFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.DialerFilter._onFocusChanged10102, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._onFocusChanged10102, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -76,7 +76,7 @@ namespace android.widget
 		protected override void onFinishInflate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DialerFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.DialerFilter._onFinishInflate10103); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._onFinishInflate10103); 
@@ -85,7 +85,7 @@ namespace android.widget
 		public virtual bool isQwertyKeyboard() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DialerFilter)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.DialerFilter._isQwertyKeyboard10104); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._isQwertyKeyboard10104); 
@@ -94,7 +94,7 @@ namespace android.widget
 		public virtual global::java.lang.CharSequence getLetters() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DialerFilter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.DialerFilter._getLetters10105)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._getLetters10105)); 
@@ -103,7 +103,7 @@ namespace android.widget
 		public virtual global::java.lang.CharSequence getDigits() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DialerFilter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.DialerFilter._getDigits10106)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._getDigits10106)); 
@@ -112,7 +112,7 @@ namespace android.widget
 		public virtual global::java.lang.CharSequence getFilterText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DialerFilter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.DialerFilter._getFilterText10107)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._getFilterText10107)); 
@@ -121,7 +121,7 @@ namespace android.widget
 		public virtual void clearText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DialerFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.DialerFilter._clearText10108); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._clearText10108); 
@@ -130,7 +130,7 @@ namespace android.widget
 		public virtual void setLettersWatcher(android.text.TextWatcher arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DialerFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.DialerFilter._setLettersWatcher10109, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._setLettersWatcher10109, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -139,7 +139,7 @@ namespace android.widget
 		public virtual void setDigitsWatcher(android.text.TextWatcher arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DialerFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.DialerFilter._setDigitsWatcher10110, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._setDigitsWatcher10110, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -148,7 +148,7 @@ namespace android.widget
 		public virtual void setFilterWatcher(android.text.TextWatcher arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DialerFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.DialerFilter._setFilterWatcher10111, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._setFilterWatcher10111, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -157,7 +157,7 @@ namespace android.widget
 		public virtual void removeFilterWatcher(android.text.TextWatcher arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DialerFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.DialerFilter._removeFilterWatcher10112, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._removeFilterWatcher10112, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -166,7 +166,7 @@ namespace android.widget
 		protected virtual void onModeChange(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.DialerFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.DialerFilter._onModeChange10113, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.DialerFilter.staticClass, global::android.widget.DialerFilter._onModeChange10113, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 

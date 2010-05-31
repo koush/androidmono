@@ -15,7 +15,7 @@ namespace java.nio.channels
 		public virtual long write(java.nio.ByteBuffer[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.SocketChannel)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.nio.channels.SocketChannel._write12279, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.nio.channels.SocketChannel.staticClass, global::java.nio.channels.SocketChannel._write12279, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
@@ -30,7 +30,7 @@ namespace java.nio.channels
 		public virtual long read(java.nio.ByteBuffer[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.SocketChannel)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.nio.channels.SocketChannel._read12283, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.nio.channels.SocketChannel.staticClass, global::java.nio.channels.SocketChannel._read12283, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
@@ -59,7 +59,7 @@ namespace java.nio.channels
 		public sealed override int validOps() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.SocketChannel)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.nio.channels.SocketChannel._validOps12290); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.nio.channels.SocketChannel.staticClass, global::java.nio.channels.SocketChannel._validOps12290); 

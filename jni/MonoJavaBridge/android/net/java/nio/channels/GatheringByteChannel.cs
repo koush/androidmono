@@ -37,7 +37,7 @@ namespace java.nio.channels
 		 long java.nio.channels.GatheringByteChannel.write(java.nio.ByteBuffer[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__GatheringByteChannel)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.nio.channels.__GatheringByteChannel._write12205, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.nio.channels.__GatheringByteChannel.staticClass, global::java.nio.channels.__GatheringByteChannel._write12205, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -46,7 +46,7 @@ namespace java.nio.channels
 		 long java.nio.channels.GatheringByteChannel.write(java.nio.ByteBuffer[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__GatheringByteChannel)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.nio.channels.__GatheringByteChannel._write12206, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.nio.channels.__GatheringByteChannel.staticClass, global::java.nio.channels.__GatheringByteChannel._write12206, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
@@ -55,7 +55,7 @@ namespace java.nio.channels
 		 int java.nio.channels.WritableByteChannel.write(java.nio.ByteBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__GatheringByteChannel)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.nio.channels.__GatheringByteChannel._write12207, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.nio.channels.__GatheringByteChannel.staticClass, global::java.nio.channels.__GatheringByteChannel._write12207, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -64,7 +64,7 @@ namespace java.nio.channels
 		 void java.nio.channels.Channel.close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__GatheringByteChannel)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.nio.channels.__GatheringByteChannel._close12208); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__GatheringByteChannel.staticClass, global::java.nio.channels.__GatheringByteChannel._close12208); 
@@ -73,7 +73,7 @@ namespace java.nio.channels
 		 bool java.nio.channels.Channel.isOpen() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__GatheringByteChannel)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.channels.__GatheringByteChannel._isOpen12209); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.__GatheringByteChannel.staticClass, global::java.nio.channels.__GatheringByteChannel._isOpen12209); 
@@ -82,7 +82,7 @@ namespace java.nio.channels
 		 void java.io.Closeable.close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__GatheringByteChannel)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.nio.channels.__GatheringByteChannel._close12210); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__GatheringByteChannel.staticClass, global::java.nio.channels.__GatheringByteChannel._close12210); 

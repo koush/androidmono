@@ -142,7 +142,7 @@ namespace android.graphics
 		public global::android.graphics.Bitmap copy(android.graphics.Bitmap.Config arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Bitmap._copy2716, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._copy2716, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -151,7 +151,7 @@ namespace android.graphics
 		public void recycle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Bitmap._recycle2717); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._recycle2717); 
@@ -160,7 +160,7 @@ namespace android.graphics
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Bitmap._writeToParcel2718, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._writeToParcel2718, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -169,7 +169,7 @@ namespace android.graphics
 		public int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Bitmap._describeContents2719); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._describeContents2719); 
@@ -178,7 +178,7 @@ namespace android.graphics
 		public int getDensity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Bitmap._getDensity2720); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getDensity2720); 
@@ -187,7 +187,7 @@ namespace android.graphics
 		public void setDensity(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Bitmap._setDensity2721, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._setDensity2721, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -196,7 +196,7 @@ namespace android.graphics
 		public bool isRecycled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Bitmap._isRecycled2722); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._isRecycled2722); 
@@ -205,7 +205,7 @@ namespace android.graphics
 		public void copyPixelsToBuffer(java.nio.Buffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Bitmap._copyPixelsToBuffer2723, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._copyPixelsToBuffer2723, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -214,7 +214,7 @@ namespace android.graphics
 		public void copyPixelsFromBuffer(java.nio.Buffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Bitmap._copyPixelsFromBuffer2724, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._copyPixelsFromBuffer2724, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -223,7 +223,7 @@ namespace android.graphics
 		public bool isMutable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Bitmap._isMutable2725); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._isMutable2725); 
@@ -273,7 +273,7 @@ namespace android.graphics
 		internal static global::net.sf.jni4net.jni.MethodId _getNinePatchChunk2733; 
 		public byte[] getNinePatchChunk() 
 		{ 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Bitmap._getNinePatchChunk2733)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getNinePatchChunk2733)); 
@@ -282,7 +282,7 @@ namespace android.graphics
 		public bool compress(android.graphics.Bitmap.CompressFormat arg0, int arg1, java.io.OutputStream arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Bitmap._compress2734, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._compress2734, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -291,7 +291,7 @@ namespace android.graphics
 		public int getWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Bitmap._getWidth2735); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getWidth2735); 
@@ -300,7 +300,7 @@ namespace android.graphics
 		public int getHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Bitmap._getHeight2736); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getHeight2736); 
@@ -309,7 +309,7 @@ namespace android.graphics
 		public int getScaledWidth(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Bitmap._getScaledWidth2737, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getScaledWidth2737, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -318,7 +318,7 @@ namespace android.graphics
 		public int getScaledWidth(android.util.DisplayMetrics arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Bitmap._getScaledWidth2738, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getScaledWidth2738, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -327,7 +327,7 @@ namespace android.graphics
 		public int getScaledWidth(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Bitmap._getScaledWidth2739, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getScaledWidth2739, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -336,7 +336,7 @@ namespace android.graphics
 		public int getScaledHeight(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Bitmap._getScaledHeight2740, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getScaledHeight2740, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -345,7 +345,7 @@ namespace android.graphics
 		public int getScaledHeight(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Bitmap._getScaledHeight2741, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getScaledHeight2741, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -354,7 +354,7 @@ namespace android.graphics
 		public int getScaledHeight(android.util.DisplayMetrics arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Bitmap._getScaledHeight2742, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getScaledHeight2742, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -363,7 +363,7 @@ namespace android.graphics
 		public int getRowBytes() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Bitmap._getRowBytes2743); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getRowBytes2743); 
@@ -372,7 +372,7 @@ namespace android.graphics
 		public global::android.graphics.Bitmap.Config getConfig() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap.Config>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Bitmap._getConfig2744)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap.Config>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getConfig2744)); 
@@ -381,7 +381,7 @@ namespace android.graphics
 		public bool hasAlpha() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Bitmap._hasAlpha2745); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._hasAlpha2745); 
@@ -390,7 +390,7 @@ namespace android.graphics
 		public void eraseColor(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Bitmap._eraseColor2746, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._eraseColor2746, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -399,7 +399,7 @@ namespace android.graphics
 		public int getPixel(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Bitmap._getPixel2747, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getPixel2747, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -408,7 +408,7 @@ namespace android.graphics
 		public void getPixels(int[] arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Bitmap._getPixels2748, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._getPixels2748, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6)); 
@@ -417,7 +417,7 @@ namespace android.graphics
 		public void setPixel(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Bitmap._setPixel2749, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._setPixel2749, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -426,7 +426,7 @@ namespace android.graphics
 		public void setPixels(int[] arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Bitmap._setPixels2750, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._setPixels2750, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6)); 
@@ -435,7 +435,7 @@ namespace android.graphics
 		public global::android.graphics.Bitmap extractAlpha() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Bitmap._extractAlpha2751)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._extractAlpha2751)); 
@@ -444,7 +444,7 @@ namespace android.graphics
 		public global::android.graphics.Bitmap extractAlpha(android.graphics.Paint arg0, int[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Bitmap._extractAlpha2752, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._extractAlpha2752, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1))); 
@@ -453,7 +453,7 @@ namespace android.graphics
 		public void prepareToDraw() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Bitmap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Bitmap._prepareToDraw2753); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Bitmap.staticClass, global::android.graphics.Bitmap._prepareToDraw2753); 

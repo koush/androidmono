@@ -40,7 +40,7 @@ namespace android.database
 			public virtual global::android.database.MatrixCursor.RowBuilder add(java.lang.Object arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.database.MatrixCursor.RowBuilder)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.database.MatrixCursor.RowBuilder>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.MatrixCursor.RowBuilder._add2392, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.database.MatrixCursor.RowBuilder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.MatrixCursor.RowBuilder.staticClass, global::android.database.MatrixCursor.RowBuilder._add2392, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -55,7 +55,7 @@ namespace android.database
 		public override short getShort(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MatrixCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallShortMethod(this, global::android.database.MatrixCursor._getShort2393, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualShortMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getShort2393, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -64,7 +64,7 @@ namespace android.database
 		public override int getInt(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MatrixCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.database.MatrixCursor._getInt2394, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getInt2394, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -73,7 +73,7 @@ namespace android.database
 		public override long getLong(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MatrixCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.database.MatrixCursor._getLong2395, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getLong2395, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -82,7 +82,7 @@ namespace android.database
 		public override float getFloat(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MatrixCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.database.MatrixCursor._getFloat2396, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getFloat2396, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -91,7 +91,7 @@ namespace android.database
 		public override double getDouble(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MatrixCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallDoubleMethod(this, global::android.database.MatrixCursor._getDouble2397, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualDoubleMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getDouble2397, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -100,7 +100,7 @@ namespace android.database
 		public override global::java.lang.String getString(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MatrixCursor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.MatrixCursor._getString2398, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getString2398, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -109,7 +109,7 @@ namespace android.database
 		public override int getCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MatrixCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.database.MatrixCursor._getCount2399); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getCount2399); 
@@ -117,7 +117,7 @@ namespace android.database
 		internal static global::net.sf.jni4net.jni.MethodId _getColumnNames2400; 
 		public override global::java.lang.String[] getColumnNames() 
 		{ 
-			if (GetType() == typeof(android.database.MatrixCursor)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.database.MatrixCursor._getColumnNames2400)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._getColumnNames2400)); 
@@ -126,7 +126,7 @@ namespace android.database
 		public override bool isNull(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MatrixCursor)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.database.MatrixCursor._isNull2401, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._isNull2401, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -135,7 +135,7 @@ namespace android.database
 		public virtual global::android.database.MatrixCursor.RowBuilder newRow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MatrixCursor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.database.MatrixCursor.RowBuilder>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.MatrixCursor._newRow2402)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.database.MatrixCursor.RowBuilder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._newRow2402)); 
@@ -144,7 +144,7 @@ namespace android.database
 		public virtual void addRow(java.lang.Iterable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MatrixCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.MatrixCursor._addRow2403, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._addRow2403, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -153,7 +153,7 @@ namespace android.database
 		public virtual void addRow(java.lang.Object[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.MatrixCursor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.MatrixCursor._addRow2404, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.MatrixCursor.staticClass, global::android.database.MatrixCursor._addRow2404, global::net.sf.jni4net.utils.Convertor.ParArrayFullC2J<java.lang.Object[], java.lang.Object>(@__env, arg0)); 

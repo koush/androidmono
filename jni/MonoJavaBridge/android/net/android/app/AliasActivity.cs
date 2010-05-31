@@ -22,7 +22,7 @@ namespace android.app
 		protected override void onCreate(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.AliasActivity)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.AliasActivity._onCreate427, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AliasActivity.staticClass, global::android.app.AliasActivity._onCreate427, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

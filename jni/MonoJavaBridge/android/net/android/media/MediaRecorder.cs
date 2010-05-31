@@ -163,7 +163,7 @@ namespace android.media
 			 void android.media.MediaRecorder.OnErrorListener.onError(android.media.MediaRecorder arg0, int arg1, int arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.MediaRecorder.__OnErrorListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.media.MediaRecorder.__OnErrorListener._onError4532, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.__OnErrorListener.staticClass, global::android.media.MediaRecorder.__OnErrorListener._onError4532, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -210,7 +210,7 @@ namespace android.media
 			 void android.media.MediaRecorder.OnInfoListener.onInfo(android.media.MediaRecorder arg0, int arg1, int arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.MediaRecorder.__OnInfoListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.media.MediaRecorder.__OnInfoListener._onInfo4533, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.__OnInfoListener.staticClass, global::android.media.MediaRecorder.__OnInfoListener._onInfo4533, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -364,7 +364,7 @@ namespace android.media
 		public virtual void start() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._start4534); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._start4534); 
@@ -373,7 +373,7 @@ namespace android.media
 		public virtual void stop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._stop4535); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._stop4535); 
@@ -382,7 +382,7 @@ namespace android.media
 		public virtual void reset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._reset4536); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._reset4536); 
@@ -391,7 +391,7 @@ namespace android.media
 		public virtual void release() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._release4537); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._release4537); 
@@ -400,7 +400,7 @@ namespace android.media
 		public virtual void setOutputFormat(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._setOutputFormat4538, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._setOutputFormat4538, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -409,7 +409,7 @@ namespace android.media
 		public virtual void prepare() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._prepare4539); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._prepare4539); 
@@ -418,7 +418,7 @@ namespace android.media
 		public virtual void setPreviewDisplay(android.view.Surface arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._setPreviewDisplay4540, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._setPreviewDisplay4540, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -427,7 +427,7 @@ namespace android.media
 		public virtual void setOnErrorListener(android.media.MediaRecorder.OnErrorListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._setOnErrorListener4541, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._setOnErrorListener4541, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -436,7 +436,7 @@ namespace android.media
 		public virtual void setOnInfoListener(android.media.MediaRecorder.OnInfoListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._setOnInfoListener4542, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._setOnInfoListener4542, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -445,7 +445,7 @@ namespace android.media
 		public virtual void setCamera(android.hardware.Camera arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._setCamera4543, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._setCamera4543, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -454,7 +454,7 @@ namespace android.media
 		public virtual void setAudioSource(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._setAudioSource4544, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._setAudioSource4544, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -469,7 +469,7 @@ namespace android.media
 		public virtual void setVideoSource(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._setVideoSource4546, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._setVideoSource4546, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -478,7 +478,7 @@ namespace android.media
 		public virtual void setVideoSize(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._setVideoSize4547, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._setVideoSize4547, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -487,7 +487,7 @@ namespace android.media
 		public virtual void setVideoFrameRate(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._setVideoFrameRate4548, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._setVideoFrameRate4548, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -496,7 +496,7 @@ namespace android.media
 		public virtual void setMaxDuration(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._setMaxDuration4549, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._setMaxDuration4549, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -505,7 +505,7 @@ namespace android.media
 		public virtual void setMaxFileSize(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._setMaxFileSize4550, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._setMaxFileSize4550, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -514,7 +514,7 @@ namespace android.media
 		public virtual void setAudioEncoder(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._setAudioEncoder4551, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._setAudioEncoder4551, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -523,7 +523,7 @@ namespace android.media
 		public virtual void setVideoEncoder(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._setVideoEncoder4552, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._setVideoEncoder4552, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -532,7 +532,7 @@ namespace android.media
 		public virtual void setOutputFile(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._setOutputFile4553, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._setOutputFile4553, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -541,7 +541,7 @@ namespace android.media
 		public virtual void setOutputFile(java.io.FileDescriptor arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaRecorder._setOutputFile4554, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._setOutputFile4554, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -550,7 +550,7 @@ namespace android.media
 		public virtual int getMaxAmplitude() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaRecorder)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.media.MediaRecorder._getMaxAmplitude4555); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.media.MediaRecorder.staticClass, global::android.media.MediaRecorder._getMaxAmplitude4555); 

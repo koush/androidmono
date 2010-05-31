@@ -22,7 +22,7 @@ namespace android.widget
 		protected override void onAttachedToWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AnalogClock)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AnalogClock._onAttachedToWindow9856); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AnalogClock.staticClass, global::android.widget.AnalogClock._onAttachedToWindow9856); 
@@ -31,7 +31,7 @@ namespace android.widget
 		protected override void onDetachedFromWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AnalogClock)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AnalogClock._onDetachedFromWindow9857); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AnalogClock.staticClass, global::android.widget.AnalogClock._onDetachedFromWindow9857); 
@@ -40,7 +40,7 @@ namespace android.widget
 		protected override void onSizeChanged(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AnalogClock)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AnalogClock._onSizeChanged9858, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AnalogClock.staticClass, global::android.widget.AnalogClock._onSizeChanged9858, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -49,7 +49,7 @@ namespace android.widget
 		protected override void onDraw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AnalogClock)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AnalogClock._onDraw9859, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AnalogClock.staticClass, global::android.widget.AnalogClock._onDraw9859, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.widget
 		protected override void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AnalogClock)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AnalogClock._onMeasure9860, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AnalogClock.staticClass, global::android.widget.AnalogClock._onMeasure9860, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 

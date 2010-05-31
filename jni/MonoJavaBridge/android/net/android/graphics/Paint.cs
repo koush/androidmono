@@ -245,7 +245,7 @@ namespace android.graphics
 			public override global::java.lang.String toString() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.graphics.Paint.FontMetricsInt)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint.FontMetricsInt._toString3051)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.FontMetricsInt.staticClass, global::android.graphics.Paint.FontMetricsInt._toString3051)); 
@@ -442,7 +442,7 @@ namespace android.graphics
 		public virtual void set(android.graphics.Paint arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._set3068, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._set3068, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -451,7 +451,7 @@ namespace android.graphics
 		public virtual void reset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._reset3069); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._reset3069); 
@@ -460,7 +460,7 @@ namespace android.graphics
 		public virtual int getFlags() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Paint._getFlags3070); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getFlags3070); 
@@ -469,7 +469,7 @@ namespace android.graphics
 		public virtual void setFlags(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setFlags3071, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setFlags3071, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -478,7 +478,7 @@ namespace android.graphics
 		public virtual int getColor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Paint._getColor3072); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getColor3072); 
@@ -487,7 +487,7 @@ namespace android.graphics
 		public virtual void setDither(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setDither3073, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setDither3073, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -496,7 +496,7 @@ namespace android.graphics
 		public virtual void setFilterBitmap(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setFilterBitmap3074, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setFilterBitmap3074, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -505,7 +505,7 @@ namespace android.graphics
 		public virtual void setAlpha(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setAlpha3075, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setAlpha3075, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -514,7 +514,7 @@ namespace android.graphics
 		public virtual global::android.graphics.ColorFilter setColorFilter(android.graphics.ColorFilter arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.ColorFilter>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._setColorFilter3076, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.ColorFilter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setColorFilter3076, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -523,7 +523,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Typeface setTypeface(android.graphics.Typeface arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Typeface>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._setTypeface3077, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Typeface>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setTypeface3077, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -532,7 +532,7 @@ namespace android.graphics
 		public virtual float getTextSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.Paint._getTextSize3078); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextSize3078); 
@@ -541,7 +541,7 @@ namespace android.graphics
 		public virtual void setTextSize(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setTextSize3079, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setTextSize3079, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -550,7 +550,7 @@ namespace android.graphics
 		public virtual float getTextScaleX() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.Paint._getTextScaleX3080); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextScaleX3080); 
@@ -559,7 +559,7 @@ namespace android.graphics
 		public virtual void setTextScaleX(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setTextScaleX3081, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setTextScaleX3081, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -568,7 +568,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Typeface getTypeface() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Typeface>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._getTypeface3082)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Typeface>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTypeface3082)); 
@@ -577,7 +577,7 @@ namespace android.graphics
 		public virtual void setShadowLayer(float arg0, float arg1, float arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setShadowLayer3083, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setShadowLayer3083, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -586,7 +586,7 @@ namespace android.graphics
 		public virtual int getAlpha() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Paint._getAlpha3084); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getAlpha3084); 
@@ -595,7 +595,7 @@ namespace android.graphics
 		public virtual bool isAntiAlias() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Paint._isAntiAlias3085); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._isAntiAlias3085); 
@@ -604,7 +604,7 @@ namespace android.graphics
 		public virtual void setAntiAlias(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setAntiAlias3086, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setAntiAlias3086, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -613,7 +613,7 @@ namespace android.graphics
 		public virtual bool isDither() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Paint._isDither3087); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._isDither3087); 
@@ -622,7 +622,7 @@ namespace android.graphics
 		public virtual bool isLinearText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Paint._isLinearText3088); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._isLinearText3088); 
@@ -631,7 +631,7 @@ namespace android.graphics
 		public virtual void setLinearText(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setLinearText3089, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setLinearText3089, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -640,7 +640,7 @@ namespace android.graphics
 		public virtual bool isSubpixelText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Paint._isSubpixelText3090); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._isSubpixelText3090); 
@@ -649,7 +649,7 @@ namespace android.graphics
 		public virtual void setSubpixelText(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setSubpixelText3091, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setSubpixelText3091, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -658,7 +658,7 @@ namespace android.graphics
 		public virtual bool isUnderlineText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Paint._isUnderlineText3092); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._isUnderlineText3092); 
@@ -667,7 +667,7 @@ namespace android.graphics
 		public virtual void setUnderlineText(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setUnderlineText3093, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setUnderlineText3093, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -676,7 +676,7 @@ namespace android.graphics
 		public virtual bool isStrikeThruText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Paint._isStrikeThruText3094); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._isStrikeThruText3094); 
@@ -685,7 +685,7 @@ namespace android.graphics
 		public virtual void setStrikeThruText(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setStrikeThruText3095, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setStrikeThruText3095, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -694,7 +694,7 @@ namespace android.graphics
 		public virtual bool isFakeBoldText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Paint._isFakeBoldText3096); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._isFakeBoldText3096); 
@@ -703,7 +703,7 @@ namespace android.graphics
 		public virtual void setFakeBoldText(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setFakeBoldText3097, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setFakeBoldText3097, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -712,7 +712,7 @@ namespace android.graphics
 		public virtual bool isFilterBitmap() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Paint._isFilterBitmap3098); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._isFilterBitmap3098); 
@@ -721,7 +721,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Paint.Style getStyle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.Style>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._getStyle3099)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.Style>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getStyle3099)); 
@@ -730,7 +730,7 @@ namespace android.graphics
 		public virtual void setStyle(android.graphics.Paint.Style arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setStyle3100, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setStyle3100, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -739,7 +739,7 @@ namespace android.graphics
 		public virtual void setColor(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setColor3101, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setColor3101, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -748,7 +748,7 @@ namespace android.graphics
 		public virtual void setARGB(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setARGB3102, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setARGB3102, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -757,7 +757,7 @@ namespace android.graphics
 		public virtual float getStrokeWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.Paint._getStrokeWidth3103); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getStrokeWidth3103); 
@@ -766,7 +766,7 @@ namespace android.graphics
 		public virtual void setStrokeWidth(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setStrokeWidth3104, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setStrokeWidth3104, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -775,7 +775,7 @@ namespace android.graphics
 		public virtual float getStrokeMiter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.Paint._getStrokeMiter3105); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getStrokeMiter3105); 
@@ -784,7 +784,7 @@ namespace android.graphics
 		public virtual void setStrokeMiter(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setStrokeMiter3106, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setStrokeMiter3106, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -793,7 +793,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Paint.Cap getStrokeCap() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.Cap>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._getStrokeCap3107)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.Cap>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getStrokeCap3107)); 
@@ -802,7 +802,7 @@ namespace android.graphics
 		public virtual void setStrokeCap(android.graphics.Paint.Cap arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setStrokeCap3108, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setStrokeCap3108, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -811,7 +811,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Paint.Join getStrokeJoin() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.Join>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._getStrokeJoin3109)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.Join>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getStrokeJoin3109)); 
@@ -820,7 +820,7 @@ namespace android.graphics
 		public virtual void setStrokeJoin(android.graphics.Paint.Join arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setStrokeJoin3110, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setStrokeJoin3110, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -829,7 +829,7 @@ namespace android.graphics
 		public virtual bool getFillPath(android.graphics.Path arg0, android.graphics.Path arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Paint._getFillPath3111, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getFillPath3111, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -838,7 +838,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Shader getShader() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Shader>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._getShader3112)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Shader>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getShader3112)); 
@@ -847,7 +847,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Shader setShader(android.graphics.Shader arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Shader>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._setShader3113, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Shader>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setShader3113, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -856,7 +856,7 @@ namespace android.graphics
 		public virtual global::android.graphics.ColorFilter getColorFilter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.ColorFilter>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._getColorFilter3114)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.ColorFilter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getColorFilter3114)); 
@@ -865,7 +865,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Xfermode getXfermode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Xfermode>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._getXfermode3115)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Xfermode>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getXfermode3115)); 
@@ -874,7 +874,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Xfermode setXfermode(android.graphics.Xfermode arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Xfermode>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._setXfermode3116, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Xfermode>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setXfermode3116, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -883,7 +883,7 @@ namespace android.graphics
 		public virtual global::android.graphics.PathEffect getPathEffect() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.PathEffect>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._getPathEffect3117)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.PathEffect>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getPathEffect3117)); 
@@ -892,7 +892,7 @@ namespace android.graphics
 		public virtual global::android.graphics.PathEffect setPathEffect(android.graphics.PathEffect arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.PathEffect>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._setPathEffect3118, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.PathEffect>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setPathEffect3118, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -901,7 +901,7 @@ namespace android.graphics
 		public virtual global::android.graphics.MaskFilter getMaskFilter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.MaskFilter>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._getMaskFilter3119)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.MaskFilter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getMaskFilter3119)); 
@@ -910,7 +910,7 @@ namespace android.graphics
 		public virtual global::android.graphics.MaskFilter setMaskFilter(android.graphics.MaskFilter arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.MaskFilter>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._setMaskFilter3120, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.MaskFilter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setMaskFilter3120, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -919,7 +919,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Rasterizer getRasterizer() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rasterizer>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._getRasterizer3121)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rasterizer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getRasterizer3121)); 
@@ -928,7 +928,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Rasterizer setRasterizer(android.graphics.Rasterizer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rasterizer>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._setRasterizer3122, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rasterizer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setRasterizer3122, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -937,7 +937,7 @@ namespace android.graphics
 		public virtual void clearShadowLayer() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._clearShadowLayer3123); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._clearShadowLayer3123); 
@@ -946,7 +946,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Paint.Align getTextAlign() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.Align>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._getTextAlign3124)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.Align>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextAlign3124)); 
@@ -955,7 +955,7 @@ namespace android.graphics
 		public virtual void setTextAlign(android.graphics.Paint.Align arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setTextAlign3125, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setTextAlign3125, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -964,7 +964,7 @@ namespace android.graphics
 		public virtual float getTextSkewX() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.Paint._getTextSkewX3126); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextSkewX3126); 
@@ -973,7 +973,7 @@ namespace android.graphics
 		public virtual void setTextSkewX(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._setTextSkewX3127, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._setTextSkewX3127, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -982,7 +982,7 @@ namespace android.graphics
 		public virtual float ascent() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.Paint._ascent3128); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._ascent3128); 
@@ -991,7 +991,7 @@ namespace android.graphics
 		public virtual float descent() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.Paint._descent3129); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._descent3129); 
@@ -1000,7 +1000,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Paint.FontMetrics getFontMetrics() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.FontMetrics>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._getFontMetrics3130)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.FontMetrics>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getFontMetrics3130)); 
@@ -1009,7 +1009,7 @@ namespace android.graphics
 		public virtual float getFontMetrics(android.graphics.Paint.FontMetrics arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.Paint._getFontMetrics3131, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getFontMetrics3131, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -1018,7 +1018,7 @@ namespace android.graphics
 		public virtual global::android.graphics.Paint.FontMetricsInt getFontMetricsInt() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.FontMetricsInt>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.Paint._getFontMetricsInt3132)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.FontMetricsInt>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getFontMetricsInt3132)); 
@@ -1027,7 +1027,7 @@ namespace android.graphics
 		public virtual int getFontMetricsInt(android.graphics.Paint.FontMetricsInt arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Paint._getFontMetricsInt3133, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getFontMetricsInt3133, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -1036,7 +1036,7 @@ namespace android.graphics
 		public virtual float getFontSpacing() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.Paint._getFontSpacing3134); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getFontSpacing3134); 
@@ -1045,7 +1045,7 @@ namespace android.graphics
 		public virtual float measureText(java.lang.String arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.Paint._measureText3135, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._measureText3135, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -1054,7 +1054,7 @@ namespace android.graphics
 		public virtual float measureText(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.Paint._measureText3136, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._measureText3136, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -1063,7 +1063,7 @@ namespace android.graphics
 		public virtual float measureText(java.lang.CharSequence arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.Paint._measureText3137, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._measureText3137, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -1072,7 +1072,7 @@ namespace android.graphics
 		public virtual float measureText(char[] arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.Paint._measureText3138, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._measureText3138, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -1081,7 +1081,7 @@ namespace android.graphics
 		public virtual int breakText(java.lang.CharSequence arg0, int arg1, int arg2, bool arg3, float arg4, float[] arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Paint._breakText3139, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg5)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._breakText3139, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg5)); 
@@ -1090,7 +1090,7 @@ namespace android.graphics
 		public virtual int breakText(java.lang.String arg0, bool arg1, float arg2, float[] arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Paint._breakText3140, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._breakText3140, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3)); 
@@ -1099,7 +1099,7 @@ namespace android.graphics
 		public virtual int breakText(char[] arg0, int arg1, int arg2, float arg3, float[] arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Paint._breakText3141, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg4)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._breakText3141, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg4)); 
@@ -1108,7 +1108,7 @@ namespace android.graphics
 		public virtual int getTextWidths(java.lang.CharSequence arg0, int arg1, int arg2, float[] arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Paint._getTextWidths3142, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextWidths3142, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3)); 
@@ -1117,7 +1117,7 @@ namespace android.graphics
 		public virtual int getTextWidths(java.lang.String arg0, int arg1, int arg2, float[] arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Paint._getTextWidths3143, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextWidths3143, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3)); 
@@ -1126,7 +1126,7 @@ namespace android.graphics
 		public virtual int getTextWidths(java.lang.String arg0, float[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Paint._getTextWidths3144, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextWidths3144, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)); 
@@ -1135,7 +1135,7 @@ namespace android.graphics
 		public virtual int getTextWidths(char[] arg0, int arg1, int arg2, float[] arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Paint._getTextWidths3145, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextWidths3145, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3)); 
@@ -1144,7 +1144,7 @@ namespace android.graphics
 		public virtual void getTextPath(java.lang.String arg0, int arg1, int arg2, float arg3, float arg4, android.graphics.Path arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._getTextPath3146, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextPath3146, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5)); 
@@ -1153,7 +1153,7 @@ namespace android.graphics
 		public virtual void getTextPath(char[] arg0, int arg1, int arg2, float arg3, float arg4, android.graphics.Path arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._getTextPath3147, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextPath3147, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5)); 
@@ -1162,7 +1162,7 @@ namespace android.graphics
 		public virtual void getTextBounds(java.lang.String arg0, int arg1, int arg2, android.graphics.Rect arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._getTextBounds3148, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextBounds3148, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
@@ -1171,7 +1171,7 @@ namespace android.graphics
 		public virtual void getTextBounds(char[] arg0, int arg1, int arg2, android.graphics.Rect arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Paint)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Paint._getTextBounds3149, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextBounds3149, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 

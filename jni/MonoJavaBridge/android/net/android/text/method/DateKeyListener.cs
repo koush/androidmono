@@ -28,7 +28,7 @@ namespace android.text.method
 		public override int getInputType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.method.DateKeyListener)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.method.DateKeyListener._getInputType7129); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.method.DateKeyListener.staticClass, global::android.text.method.DateKeyListener._getInputType7129); 
@@ -36,7 +36,7 @@ namespace android.text.method
 		internal static global::net.sf.jni4net.jni.MethodId _getAcceptedChars7130; 
 		protected override char[] getAcceptedChars() 
 		{ 
-			if (GetType() == typeof(android.text.method.DateKeyListener)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.text.method.DateKeyListener._getAcceptedChars7130)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.method.DateKeyListener.staticClass, global::android.text.method.DateKeyListener._getAcceptedChars7130)); 

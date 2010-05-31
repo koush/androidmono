@@ -278,7 +278,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getDatabasePath() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebSettings._getDatabasePath9429)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDatabasePath9429)); 
@@ -287,7 +287,7 @@ namespace android.webkit
 		public virtual global::android.webkit.WebSettings.TextSize getTextSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebSettings.TextSize>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebSettings._getTextSize9430)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebSettings.TextSize>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getTextSize9430)); 
@@ -296,7 +296,7 @@ namespace android.webkit
 		public virtual void setTextSize(android.webkit.WebSettings.TextSize arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setTextSize9431, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setTextSize9431, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -305,7 +305,7 @@ namespace android.webkit
 		public virtual void setNavDump(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setNavDump9432, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setNavDump9432, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -314,7 +314,7 @@ namespace android.webkit
 		public virtual bool getNavDump() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._getNavDump9433); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getNavDump9433); 
@@ -323,7 +323,7 @@ namespace android.webkit
 		public virtual void setSupportZoom(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setSupportZoom9434, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setSupportZoom9434, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -332,7 +332,7 @@ namespace android.webkit
 		public virtual bool supportZoom() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._supportZoom9435); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._supportZoom9435); 
@@ -341,7 +341,7 @@ namespace android.webkit
 		public virtual void setBuiltInZoomControls(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setBuiltInZoomControls9436, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setBuiltInZoomControls9436, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -350,7 +350,7 @@ namespace android.webkit
 		public virtual bool getBuiltInZoomControls() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._getBuiltInZoomControls9437); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getBuiltInZoomControls9437); 
@@ -359,7 +359,7 @@ namespace android.webkit
 		public virtual void setAllowFileAccess(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setAllowFileAccess9438, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setAllowFileAccess9438, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -368,7 +368,7 @@ namespace android.webkit
 		public virtual bool getAllowFileAccess() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._getAllowFileAccess9439); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getAllowFileAccess9439); 
@@ -377,7 +377,7 @@ namespace android.webkit
 		public virtual void setLoadWithOverviewMode(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setLoadWithOverviewMode9440, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setLoadWithOverviewMode9440, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -386,7 +386,7 @@ namespace android.webkit
 		public virtual bool getLoadWithOverviewMode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._getLoadWithOverviewMode9441); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getLoadWithOverviewMode9441); 
@@ -395,7 +395,7 @@ namespace android.webkit
 		public virtual void setSaveFormData(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setSaveFormData9442, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setSaveFormData9442, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -404,7 +404,7 @@ namespace android.webkit
 		public virtual bool getSaveFormData() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._getSaveFormData9443); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getSaveFormData9443); 
@@ -413,7 +413,7 @@ namespace android.webkit
 		public virtual void setSavePassword(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setSavePassword9444, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setSavePassword9444, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -422,7 +422,7 @@ namespace android.webkit
 		public virtual bool getSavePassword() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._getSavePassword9445); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getSavePassword9445); 
@@ -431,7 +431,7 @@ namespace android.webkit
 		public virtual void setDefaultZoom(android.webkit.WebSettings.ZoomDensity arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setDefaultZoom9446, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setDefaultZoom9446, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -440,7 +440,7 @@ namespace android.webkit
 		public virtual global::android.webkit.WebSettings.ZoomDensity getDefaultZoom() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebSettings.ZoomDensity>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebSettings._getDefaultZoom9447)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebSettings.ZoomDensity>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDefaultZoom9447)); 
@@ -449,7 +449,7 @@ namespace android.webkit
 		public virtual void setLightTouchEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setLightTouchEnabled9448, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setLightTouchEnabled9448, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -458,7 +458,7 @@ namespace android.webkit
 		public virtual bool getLightTouchEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._getLightTouchEnabled9449); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getLightTouchEnabled9449); 
@@ -467,7 +467,7 @@ namespace android.webkit
 		public virtual void setUseDoubleTree(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setUseDoubleTree9450, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setUseDoubleTree9450, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -476,7 +476,7 @@ namespace android.webkit
 		public virtual bool getUseDoubleTree() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._getUseDoubleTree9451); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getUseDoubleTree9451); 
@@ -485,7 +485,7 @@ namespace android.webkit
 		public virtual void setUserAgent(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setUserAgent9452, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setUserAgent9452, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -494,7 +494,7 @@ namespace android.webkit
 		public virtual int getUserAgent() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.webkit.WebSettings._getUserAgent9453); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getUserAgent9453); 
@@ -503,7 +503,7 @@ namespace android.webkit
 		public virtual void setUseWideViewPort(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setUseWideViewPort9454, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setUseWideViewPort9454, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -512,7 +512,7 @@ namespace android.webkit
 		public virtual bool getUseWideViewPort() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._getUseWideViewPort9455); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getUseWideViewPort9455); 
@@ -521,7 +521,7 @@ namespace android.webkit
 		public virtual void setSupportMultipleWindows(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setSupportMultipleWindows9456, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setSupportMultipleWindows9456, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -530,7 +530,7 @@ namespace android.webkit
 		public virtual bool supportMultipleWindows() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._supportMultipleWindows9457); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._supportMultipleWindows9457); 
@@ -539,7 +539,7 @@ namespace android.webkit
 		public virtual void setLayoutAlgorithm(android.webkit.WebSettings.LayoutAlgorithm arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setLayoutAlgorithm9458, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setLayoutAlgorithm9458, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -548,7 +548,7 @@ namespace android.webkit
 		public virtual global::android.webkit.WebSettings.LayoutAlgorithm getLayoutAlgorithm() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebSettings.LayoutAlgorithm>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebSettings._getLayoutAlgorithm9459)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebSettings.LayoutAlgorithm>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getLayoutAlgorithm9459)); 
@@ -557,7 +557,7 @@ namespace android.webkit
 		public virtual void setStandardFontFamily(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setStandardFontFamily9460, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setStandardFontFamily9460, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -566,7 +566,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getStandardFontFamily() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebSettings._getStandardFontFamily9461)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getStandardFontFamily9461)); 
@@ -575,7 +575,7 @@ namespace android.webkit
 		public virtual void setFixedFontFamily(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setFixedFontFamily9462, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setFixedFontFamily9462, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -584,7 +584,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getFixedFontFamily() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebSettings._getFixedFontFamily9463)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getFixedFontFamily9463)); 
@@ -593,7 +593,7 @@ namespace android.webkit
 		public virtual void setSansSerifFontFamily(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setSansSerifFontFamily9464, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setSansSerifFontFamily9464, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -602,7 +602,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getSansSerifFontFamily() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebSettings._getSansSerifFontFamily9465)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getSansSerifFontFamily9465)); 
@@ -611,7 +611,7 @@ namespace android.webkit
 		public virtual void setSerifFontFamily(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setSerifFontFamily9466, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setSerifFontFamily9466, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -620,7 +620,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getSerifFontFamily() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebSettings._getSerifFontFamily9467)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getSerifFontFamily9467)); 
@@ -629,7 +629,7 @@ namespace android.webkit
 		public virtual void setCursiveFontFamily(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setCursiveFontFamily9468, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setCursiveFontFamily9468, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -638,7 +638,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getCursiveFontFamily() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebSettings._getCursiveFontFamily9469)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getCursiveFontFamily9469)); 
@@ -647,7 +647,7 @@ namespace android.webkit
 		public virtual void setFantasyFontFamily(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setFantasyFontFamily9470, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setFantasyFontFamily9470, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -656,7 +656,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getFantasyFontFamily() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebSettings._getFantasyFontFamily9471)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getFantasyFontFamily9471)); 
@@ -665,7 +665,7 @@ namespace android.webkit
 		public virtual void setMinimumFontSize(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setMinimumFontSize9472, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setMinimumFontSize9472, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -674,7 +674,7 @@ namespace android.webkit
 		public virtual int getMinimumFontSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.webkit.WebSettings._getMinimumFontSize9473); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getMinimumFontSize9473); 
@@ -683,7 +683,7 @@ namespace android.webkit
 		public virtual void setMinimumLogicalFontSize(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setMinimumLogicalFontSize9474, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setMinimumLogicalFontSize9474, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -692,7 +692,7 @@ namespace android.webkit
 		public virtual int getMinimumLogicalFontSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.webkit.WebSettings._getMinimumLogicalFontSize9475); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getMinimumLogicalFontSize9475); 
@@ -701,7 +701,7 @@ namespace android.webkit
 		public virtual void setDefaultFontSize(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setDefaultFontSize9476, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setDefaultFontSize9476, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -710,7 +710,7 @@ namespace android.webkit
 		public virtual int getDefaultFontSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.webkit.WebSettings._getDefaultFontSize9477); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDefaultFontSize9477); 
@@ -719,7 +719,7 @@ namespace android.webkit
 		public virtual void setDefaultFixedFontSize(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setDefaultFixedFontSize9478, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setDefaultFixedFontSize9478, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -728,7 +728,7 @@ namespace android.webkit
 		public virtual int getDefaultFixedFontSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.webkit.WebSettings._getDefaultFixedFontSize9479); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDefaultFixedFontSize9479); 
@@ -737,7 +737,7 @@ namespace android.webkit
 		public virtual void setLoadsImagesAutomatically(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setLoadsImagesAutomatically9480, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setLoadsImagesAutomatically9480, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -746,7 +746,7 @@ namespace android.webkit
 		public virtual bool getLoadsImagesAutomatically() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._getLoadsImagesAutomatically9481); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getLoadsImagesAutomatically9481); 
@@ -755,7 +755,7 @@ namespace android.webkit
 		public virtual void setBlockNetworkImage(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setBlockNetworkImage9482, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setBlockNetworkImage9482, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -764,7 +764,7 @@ namespace android.webkit
 		public virtual bool getBlockNetworkImage() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._getBlockNetworkImage9483); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getBlockNetworkImage9483); 
@@ -773,7 +773,7 @@ namespace android.webkit
 		public virtual void setJavaScriptEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setJavaScriptEnabled9484, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setJavaScriptEnabled9484, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -782,7 +782,7 @@ namespace android.webkit
 		public virtual void setPluginsEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setPluginsEnabled9485, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setPluginsEnabled9485, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -791,7 +791,7 @@ namespace android.webkit
 		public virtual void setPluginsPath(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setPluginsPath9486, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setPluginsPath9486, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -800,7 +800,7 @@ namespace android.webkit
 		public virtual void setDatabasePath(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setDatabasePath9487, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setDatabasePath9487, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -809,7 +809,7 @@ namespace android.webkit
 		public virtual void setGeolocationDatabasePath(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setGeolocationDatabasePath9488, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setGeolocationDatabasePath9488, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -818,7 +818,7 @@ namespace android.webkit
 		public virtual void setAppCacheEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setAppCacheEnabled9489, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setAppCacheEnabled9489, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -827,7 +827,7 @@ namespace android.webkit
 		public virtual void setAppCachePath(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setAppCachePath9490, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setAppCachePath9490, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -836,7 +836,7 @@ namespace android.webkit
 		public virtual void setAppCacheMaxSize(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setAppCacheMaxSize9491, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setAppCacheMaxSize9491, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -845,7 +845,7 @@ namespace android.webkit
 		public virtual void setDatabaseEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setDatabaseEnabled9492, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setDatabaseEnabled9492, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -854,7 +854,7 @@ namespace android.webkit
 		public virtual void setDomStorageEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setDomStorageEnabled9493, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setDomStorageEnabled9493, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -863,7 +863,7 @@ namespace android.webkit
 		public virtual bool getDomStorageEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._getDomStorageEnabled9494); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDomStorageEnabled9494); 
@@ -872,7 +872,7 @@ namespace android.webkit
 		public virtual bool getDatabaseEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._getDatabaseEnabled9495); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDatabaseEnabled9495); 
@@ -881,7 +881,7 @@ namespace android.webkit
 		public virtual void setGeolocationEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setGeolocationEnabled9496, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setGeolocationEnabled9496, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -890,7 +890,7 @@ namespace android.webkit
 		public virtual bool getJavaScriptEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._getJavaScriptEnabled9497); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getJavaScriptEnabled9497); 
@@ -899,7 +899,7 @@ namespace android.webkit
 		public virtual bool getPluginsEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._getPluginsEnabled9498); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getPluginsEnabled9498); 
@@ -908,7 +908,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getPluginsPath() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebSettings._getPluginsPath9499)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getPluginsPath9499)); 
@@ -917,7 +917,7 @@ namespace android.webkit
 		public virtual void setJavaScriptCanOpenWindowsAutomatically(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setJavaScriptCanOpenWindowsAutomatically9500, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setJavaScriptCanOpenWindowsAutomatically9500, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -926,7 +926,7 @@ namespace android.webkit
 		public virtual bool getJavaScriptCanOpenWindowsAutomatically() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.WebSettings._getJavaScriptCanOpenWindowsAutomatically9501); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getJavaScriptCanOpenWindowsAutomatically9501); 
@@ -935,7 +935,7 @@ namespace android.webkit
 		public virtual void setDefaultTextEncodingName(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setDefaultTextEncodingName9502, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setDefaultTextEncodingName9502, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -944,7 +944,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getDefaultTextEncodingName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebSettings._getDefaultTextEncodingName9503)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getDefaultTextEncodingName9503)); 
@@ -953,7 +953,7 @@ namespace android.webkit
 		public virtual void setUserAgentString(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setUserAgentString9504, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setUserAgentString9504, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -962,7 +962,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getUserAgentString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.WebSettings._getUserAgentString9505)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getUserAgentString9505)); 
@@ -971,7 +971,7 @@ namespace android.webkit
 		public virtual void setNeedInitialFocus(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setNeedInitialFocus9506, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setNeedInitialFocus9506, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -980,7 +980,7 @@ namespace android.webkit
 		public virtual void setRenderPriority(android.webkit.WebSettings.RenderPriority arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setRenderPriority9507, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setRenderPriority9507, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -989,7 +989,7 @@ namespace android.webkit
 		public virtual void setCacheMode(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebSettings._setCacheMode9508, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._setCacheMode9508, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -998,7 +998,7 @@ namespace android.webkit
 		public virtual int getCacheMode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebSettings)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.webkit.WebSettings._getCacheMode9509); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.WebSettings.staticClass, global::android.webkit.WebSettings._getCacheMode9509); 

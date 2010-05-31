@@ -15,7 +15,7 @@ namespace android.text
 		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.SpannableStringInternal)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.SpannableStringInternal._toString6935)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._toString6935)); 
@@ -24,7 +24,7 @@ namespace android.text
 		public virtual int length() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.SpannableStringInternal)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.SpannableStringInternal._length6936); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._length6936); 
@@ -33,7 +33,7 @@ namespace android.text
 		public virtual char charAt(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.SpannableStringInternal)) 
+			if (!IsClrObject) 
 				return @__env.CallCharMethod(this, global::android.text.SpannableStringInternal._charAt6937, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualCharMethod(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._charAt6937, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -42,7 +42,7 @@ namespace android.text
 		public virtual void getChars(int arg0, int arg1, char[] arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.SpannableStringInternal)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.SpannableStringInternal._getChars6938, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._getChars6938, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -50,7 +50,7 @@ namespace android.text
 		internal static global::net.sf.jni4net.jni.MethodId _getSpans6939; 
 		public virtual global::java.lang.Object[] getSpans(int arg0, int arg1, java.lang.Class arg2) 
 		{ 
-			if (GetType() == typeof(android.text.SpannableStringInternal)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.text.SpannableStringInternal._getSpans6939, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._getSpans6939, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
@@ -59,7 +59,7 @@ namespace android.text
 		public virtual int getSpanStart(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.SpannableStringInternal)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.SpannableStringInternal._getSpanStart6940, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._getSpanStart6940, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -68,7 +68,7 @@ namespace android.text
 		public virtual int getSpanEnd(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.SpannableStringInternal)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.SpannableStringInternal._getSpanEnd6941, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._getSpanEnd6941, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -77,7 +77,7 @@ namespace android.text
 		public virtual int getSpanFlags(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.SpannableStringInternal)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.SpannableStringInternal._getSpanFlags6942, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._getSpanFlags6942, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -86,7 +86,7 @@ namespace android.text
 		public virtual int nextSpanTransition(int arg0, int arg1, java.lang.Class arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.SpannableStringInternal)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.SpannableStringInternal._nextSpanTransition6943, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.SpannableStringInternal.staticClass, global::android.text.SpannableStringInternal._nextSpanTransition6943, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 

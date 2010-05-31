@@ -22,7 +22,7 @@ namespace android.hardware
 		public virtual float getY() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.GeomagneticField)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.hardware.GeomagneticField._getY3922); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getY3922); 
@@ -31,7 +31,7 @@ namespace android.hardware
 		public virtual float getX() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.GeomagneticField)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.hardware.GeomagneticField._getX3923); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getX3923); 
@@ -40,7 +40,7 @@ namespace android.hardware
 		public virtual float getZ() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.GeomagneticField)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.hardware.GeomagneticField._getZ3924); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getZ3924); 
@@ -49,7 +49,7 @@ namespace android.hardware
 		public virtual float getDeclination() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.GeomagneticField)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.hardware.GeomagneticField._getDeclination3925); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getDeclination3925); 
@@ -58,7 +58,7 @@ namespace android.hardware
 		public virtual float getInclination() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.GeomagneticField)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.hardware.GeomagneticField._getInclination3926); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getInclination3926); 
@@ -67,7 +67,7 @@ namespace android.hardware
 		public virtual float getHorizontalStrength() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.GeomagneticField)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.hardware.GeomagneticField._getHorizontalStrength3927); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getHorizontalStrength3927); 
@@ -76,7 +76,7 @@ namespace android.hardware
 		public virtual float getFieldStrength() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.GeomagneticField)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.hardware.GeomagneticField._getFieldStrength3928); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.GeomagneticField.staticClass, global::android.hardware.GeomagneticField._getFieldStrength3928); 

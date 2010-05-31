@@ -22,7 +22,7 @@ namespace android.text
 		public virtual void setText(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.ClipboardManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.ClipboardManager._setText6727, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._setText6727, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -31,7 +31,7 @@ namespace android.text
 		public virtual global::java.lang.CharSequence getText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.ClipboardManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.ClipboardManager._getText6728)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._getText6728)); 
@@ -40,7 +40,7 @@ namespace android.text
 		public virtual bool hasText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.ClipboardManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.text.ClipboardManager._hasText6729); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._hasText6729); 

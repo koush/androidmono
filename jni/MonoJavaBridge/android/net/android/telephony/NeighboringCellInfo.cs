@@ -22,7 +22,7 @@ namespace android.telephony
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.NeighboringCellInfo)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.NeighboringCellInfo._toString6440)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._toString6440)); 
@@ -31,7 +31,7 @@ namespace android.telephony
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.NeighboringCellInfo)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.NeighboringCellInfo._writeToParcel6441, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._writeToParcel6441, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -40,7 +40,7 @@ namespace android.telephony
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.NeighboringCellInfo)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.NeighboringCellInfo._describeContents6442); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._describeContents6442); 
@@ -49,7 +49,7 @@ namespace android.telephony
 		public virtual int getRssi() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.NeighboringCellInfo)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.NeighboringCellInfo._getRssi6443); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getRssi6443); 
@@ -58,7 +58,7 @@ namespace android.telephony
 		public virtual int getLac() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.NeighboringCellInfo)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.NeighboringCellInfo._getLac6444); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getLac6444); 
@@ -67,7 +67,7 @@ namespace android.telephony
 		public virtual int getCid() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.NeighboringCellInfo)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.NeighboringCellInfo._getCid6445); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getCid6445); 
@@ -76,7 +76,7 @@ namespace android.telephony
 		public virtual int getPsc() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.NeighboringCellInfo)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.NeighboringCellInfo._getPsc6446); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getPsc6446); 
@@ -85,7 +85,7 @@ namespace android.telephony
 		public virtual int getNetworkType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.NeighboringCellInfo)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.NeighboringCellInfo._getNetworkType6447); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._getNetworkType6447); 
@@ -94,7 +94,7 @@ namespace android.telephony
 		public virtual void setCid(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.NeighboringCellInfo)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.NeighboringCellInfo._setCid6448, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._setCid6448, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -103,7 +103,7 @@ namespace android.telephony
 		public virtual void setRssi(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.NeighboringCellInfo)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.NeighboringCellInfo._setRssi6449, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.NeighboringCellInfo.staticClass, global::android.telephony.NeighboringCellInfo._setRssi6449, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

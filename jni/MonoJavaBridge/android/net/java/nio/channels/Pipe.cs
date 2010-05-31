@@ -32,7 +32,7 @@ namespace java.nio.channels
 			public sealed override int validOps() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(java.nio.channels.Pipe.SinkChannel)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::java.nio.channels.Pipe.SinkChannel._validOps12218); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::java.nio.channels.Pipe.SinkChannel.staticClass, global::java.nio.channels.Pipe.SinkChannel._validOps12218); 
@@ -74,7 +74,7 @@ namespace java.nio.channels
 			public sealed override int validOps() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(java.nio.channels.Pipe.SourceChannel)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::java.nio.channels.Pipe.SourceChannel._validOps12223); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::java.nio.channels.Pipe.SourceChannel.staticClass, global::java.nio.channels.Pipe.SourceChannel._validOps12223); 

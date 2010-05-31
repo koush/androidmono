@@ -15,7 +15,7 @@ namespace java.nio
 		public virtual global::java.nio.MappedByteBuffer load() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.MappedByteBuffer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.MappedByteBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.MappedByteBuffer._load12122)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.MappedByteBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.MappedByteBuffer.staticClass, global::java.nio.MappedByteBuffer._load12122)); 
@@ -24,7 +24,7 @@ namespace java.nio
 		public virtual bool isLoaded() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.MappedByteBuffer)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.MappedByteBuffer._isLoaded12123); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.MappedByteBuffer.staticClass, global::java.nio.MappedByteBuffer._isLoaded12123); 
@@ -33,7 +33,7 @@ namespace java.nio
 		public virtual global::java.nio.MappedByteBuffer force() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.MappedByteBuffer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.MappedByteBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.MappedByteBuffer._force12124)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.MappedByteBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.MappedByteBuffer.staticClass, global::java.nio.MappedByteBuffer._force12124)); 

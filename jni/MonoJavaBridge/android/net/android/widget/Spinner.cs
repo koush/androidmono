@@ -22,7 +22,7 @@ namespace android.widget
 		public virtual void onClick(android.content.DialogInterface arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Spinner)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Spinner._onClick10889, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Spinner.staticClass, global::android.widget.Spinner._onClick10889, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -31,7 +31,7 @@ namespace android.widget
 		protected override void onDetachedFromWindow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Spinner)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Spinner._onDetachedFromWindow10890); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Spinner.staticClass, global::android.widget.Spinner._onDetachedFromWindow10890); 
@@ -40,7 +40,7 @@ namespace android.widget
 		public override bool performClick() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Spinner)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.Spinner._performClick10891); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Spinner.staticClass, global::android.widget.Spinner._performClick10891); 
@@ -49,7 +49,7 @@ namespace android.widget
 		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Spinner)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Spinner._onLayout10892, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Spinner.staticClass, global::android.widget.Spinner._onLayout10892, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -58,7 +58,7 @@ namespace android.widget
 		public override int getBaseline() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Spinner)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.Spinner._getBaseline10893); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Spinner.staticClass, global::android.widget.Spinner._getBaseline10893); 
@@ -67,7 +67,7 @@ namespace android.widget
 		public override void setOnItemClickListener(android.widget.AdapterView.OnItemClickListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Spinner)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Spinner._setOnItemClickListener10894, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Spinner.staticClass, global::android.widget.Spinner._setOnItemClickListener10894, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -76,7 +76,7 @@ namespace android.widget
 		public virtual void setPrompt(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Spinner)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Spinner._setPrompt10895, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Spinner.staticClass, global::android.widget.Spinner._setPrompt10895, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -85,7 +85,7 @@ namespace android.widget
 		public virtual void setPromptId(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Spinner)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Spinner._setPromptId10896, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Spinner.staticClass, global::android.widget.Spinner._setPromptId10896, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -94,7 +94,7 @@ namespace android.widget
 		public virtual global::java.lang.CharSequence getPrompt() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Spinner)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.Spinner._getPrompt10897)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.Spinner.staticClass, global::android.widget.Spinner._getPrompt10897)); 

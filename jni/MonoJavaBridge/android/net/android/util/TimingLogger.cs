@@ -22,7 +22,7 @@ namespace android.util
 		public virtual void reset(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.TimingLogger)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.util.TimingLogger._reset7652, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.util.TimingLogger.staticClass, global::android.util.TimingLogger._reset7652, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -31,7 +31,7 @@ namespace android.util
 		public virtual void reset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.TimingLogger)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.util.TimingLogger._reset7653); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.util.TimingLogger.staticClass, global::android.util.TimingLogger._reset7653); 
@@ -40,7 +40,7 @@ namespace android.util
 		public virtual void addSplit(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.TimingLogger)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.util.TimingLogger._addSplit7654, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.util.TimingLogger.staticClass, global::android.util.TimingLogger._addSplit7654, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.util
 		public virtual void dumpToLog() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.TimingLogger)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.util.TimingLogger._dumpToLog7655); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.util.TimingLogger.staticClass, global::android.util.TimingLogger._dumpToLog7655); 

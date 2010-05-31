@@ -22,7 +22,7 @@ namespace android.text.util
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.util.Rfc822Token)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.util.Rfc822Token._hashCode7485); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._hashCode7485); 
@@ -31,7 +31,7 @@ namespace android.text.util
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.util.Rfc822Token)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.text.util.Rfc822Token._equals7486, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._equals7486, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace android.text.util
 		public virtual global::java.lang.String getAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.util.Rfc822Token)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.util.Rfc822Token._getAddress7487)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._getAddress7487)); 
@@ -49,7 +49,7 @@ namespace android.text.util
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.util.Rfc822Token)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.util.Rfc822Token._toString7488)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._toString7488)); 
@@ -58,7 +58,7 @@ namespace android.text.util
 		public virtual global::java.lang.String getName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.util.Rfc822Token)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.util.Rfc822Token._getName7489)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._getName7489)); 
@@ -67,7 +67,7 @@ namespace android.text.util
 		public virtual void setName(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.util.Rfc822Token)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.util.Rfc822Token._setName7490, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._setName7490, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -76,7 +76,7 @@ namespace android.text.util
 		public virtual void setComment(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.util.Rfc822Token)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.util.Rfc822Token._setComment7491, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._setComment7491, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -85,7 +85,7 @@ namespace android.text.util
 		public virtual global::java.lang.String getComment() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.util.Rfc822Token)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.util.Rfc822Token._getComment7492)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._getComment7492)); 
@@ -94,7 +94,7 @@ namespace android.text.util
 		public virtual void setAddress(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.util.Rfc822Token)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.util.Rfc822Token._setAddress7493, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._setAddress7493, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

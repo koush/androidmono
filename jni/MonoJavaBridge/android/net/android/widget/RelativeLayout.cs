@@ -40,7 +40,7 @@ namespace android.widget
 			public virtual global::java.lang.String debug(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.RelativeLayout.LayoutParams)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.RelativeLayout.LayoutParams._debug10662, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._debug10662, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -49,7 +49,7 @@ namespace android.widget
 			public virtual void addRule(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.RelativeLayout.LayoutParams)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.RelativeLayout.LayoutParams._addRule10663, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._addRule10663, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.widget
 			public virtual void addRule(int arg0, int arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.RelativeLayout.LayoutParams)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.RelativeLayout.LayoutParams._addRule10664, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._addRule10664, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -66,7 +66,7 @@ namespace android.widget
 			internal static global::net.sf.jni4net.jni.MethodId _getRules10665; 
 			public virtual int[] getRules() 
 			{ 
-				if (GetType() == typeof(android.widget.RelativeLayout.LayoutParams)) 
+				if (!IsClrObject) 
 					return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.RelativeLayout.LayoutParams._getRules10665)); 
 				else 
 					return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.RelativeLayout.LayoutParams.staticClass, global::android.widget.RelativeLayout.LayoutParams._getRules10665)); 
@@ -123,7 +123,7 @@ namespace android.widget
 		public override bool dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RelativeLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.RelativeLayout._dispatchPopulateAccessibilityEvent10671, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._dispatchPopulateAccessibilityEvent10671, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -132,7 +132,7 @@ namespace android.widget
 		public virtual void setGravity(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RelativeLayout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RelativeLayout._setGravity10672, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._setGravity10672, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -141,7 +141,7 @@ namespace android.widget
 		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RelativeLayout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RelativeLayout._onLayout10673, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._onLayout10673, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -150,7 +150,7 @@ namespace android.widget
 		public override int getBaseline() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RelativeLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.RelativeLayout._getBaseline10674); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._getBaseline10674); 
@@ -159,7 +159,7 @@ namespace android.widget
 		public override void requestLayout() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RelativeLayout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RelativeLayout._requestLayout10675); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._requestLayout10675); 
@@ -168,7 +168,7 @@ namespace android.widget
 		protected override void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RelativeLayout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RelativeLayout._onMeasure10676, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._onMeasure10676, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -177,7 +177,7 @@ namespace android.widget
 		protected override bool checkLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RelativeLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.RelativeLayout._checkLayoutParams10677, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._checkLayoutParams10677, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -186,7 +186,7 @@ namespace android.widget
 		public virtual new global::android.widget.RelativeLayout.LayoutParams generateLayoutParams(android.util.AttributeSet arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RelativeLayout)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.RelativeLayout.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.RelativeLayout._generateLayoutParams10678, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.RelativeLayout.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._generateLayoutParams10678, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -195,7 +195,7 @@ namespace android.widget
 		protected override global::android.view.ViewGroup.LayoutParams generateLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RelativeLayout)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.RelativeLayout._generateLayoutParams10679, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._generateLayoutParams10679, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -204,7 +204,7 @@ namespace android.widget
 		protected override global::android.view.ViewGroup.LayoutParams generateDefaultLayoutParams() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RelativeLayout)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.RelativeLayout._generateDefaultLayoutParams10680)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewGroup.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._generateDefaultLayoutParams10680)); 
@@ -213,7 +213,7 @@ namespace android.widget
 		public virtual void setHorizontalGravity(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RelativeLayout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RelativeLayout._setHorizontalGravity10681, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._setHorizontalGravity10681, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -222,7 +222,7 @@ namespace android.widget
 		public virtual void setVerticalGravity(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RelativeLayout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RelativeLayout._setVerticalGravity10682, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._setVerticalGravity10682, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -231,7 +231,7 @@ namespace android.widget
 		public virtual void setIgnoreGravity(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RelativeLayout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RelativeLayout._setIgnoreGravity10683, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RelativeLayout.staticClass, global::android.widget.RelativeLayout._setIgnoreGravity10683, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

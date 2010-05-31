@@ -37,7 +37,7 @@ namespace android.os
 		 void android.os.Parcelable.writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.__Parcelable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.__Parcelable._writeToParcel5817, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.__Parcelable.staticClass, global::android.os.__Parcelable._writeToParcel5817, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -46,7 +46,7 @@ namespace android.os
 		 int android.os.Parcelable.describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.__Parcelable)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.os.__Parcelable._describeContents5818); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.os.__Parcelable.staticClass, global::android.os.__Parcelable._describeContents5818); 

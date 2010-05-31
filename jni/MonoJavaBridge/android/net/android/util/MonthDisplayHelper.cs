@@ -22,7 +22,7 @@ namespace android.util
 		public virtual int getOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.MonthDisplayHelper)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getOffset7572); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getOffset7572); 
@@ -31,7 +31,7 @@ namespace android.util
 		public virtual int getYear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.MonthDisplayHelper)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getYear7573); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getYear7573); 
@@ -40,7 +40,7 @@ namespace android.util
 		public virtual int getMonth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.MonthDisplayHelper)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getMonth7574); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getMonth7574); 
@@ -49,7 +49,7 @@ namespace android.util
 		public virtual int getWeekStartDay() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.MonthDisplayHelper)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getWeekStartDay7575); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getWeekStartDay7575); 
@@ -58,7 +58,7 @@ namespace android.util
 		public virtual int getFirstDayOfMonth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.MonthDisplayHelper)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getFirstDayOfMonth7576); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getFirstDayOfMonth7576); 
@@ -67,7 +67,7 @@ namespace android.util
 		public virtual int getNumberOfDaysInMonth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.MonthDisplayHelper)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getNumberOfDaysInMonth7577); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getNumberOfDaysInMonth7577); 
@@ -75,7 +75,7 @@ namespace android.util
 		internal static global::net.sf.jni4net.jni.MethodId _getDigitsForRow7578; 
 		public virtual int[] getDigitsForRow(int arg0) 
 		{ 
-			if (GetType() == typeof(android.util.MonthDisplayHelper)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.util.MonthDisplayHelper._getDigitsForRow7578, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getDigitsForRow7578, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -84,7 +84,7 @@ namespace android.util
 		public virtual int getDayAt(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.MonthDisplayHelper)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getDayAt7579, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getDayAt7579, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -93,7 +93,7 @@ namespace android.util
 		public virtual int getRowOf(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.MonthDisplayHelper)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getRowOf7580, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getRowOf7580, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -102,7 +102,7 @@ namespace android.util
 		public virtual int getColumnOf(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.MonthDisplayHelper)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.util.MonthDisplayHelper._getColumnOf7581, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._getColumnOf7581, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -111,7 +111,7 @@ namespace android.util
 		public virtual void previousMonth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.MonthDisplayHelper)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.util.MonthDisplayHelper._previousMonth7582); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._previousMonth7582); 
@@ -120,7 +120,7 @@ namespace android.util
 		public virtual void nextMonth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.MonthDisplayHelper)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.util.MonthDisplayHelper._nextMonth7583); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._nextMonth7583); 
@@ -129,7 +129,7 @@ namespace android.util
 		public virtual bool isWithinCurrentMonth(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.MonthDisplayHelper)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.util.MonthDisplayHelper._isWithinCurrentMonth7584, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.util.MonthDisplayHelper.staticClass, global::android.util.MonthDisplayHelper._isWithinCurrentMonth7584, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 

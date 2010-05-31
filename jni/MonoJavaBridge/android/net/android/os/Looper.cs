@@ -22,7 +22,7 @@ namespace android.os
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Looper)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Looper._toString5628)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Looper.staticClass, global::android.os.Looper._toString5628)); 
@@ -43,7 +43,7 @@ namespace android.os
 		public virtual void dump(android.util.Printer arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Looper)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Looper._dump5631, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Looper.staticClass, global::android.os.Looper._dump5631, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -70,7 +70,7 @@ namespace android.os
 		public virtual void setMessageLogging(android.util.Printer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Looper)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Looper._setMessageLogging5635, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Looper.staticClass, global::android.os.Looper._setMessageLogging5635, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -85,7 +85,7 @@ namespace android.os
 		public virtual void quit() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Looper)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Looper._quit5637); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Looper.staticClass, global::android.os.Looper._quit5637); 
@@ -94,7 +94,7 @@ namespace android.os
 		public virtual global::java.lang.Thread getThread() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Looper)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Thread>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Looper._getThread5638)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Thread>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Looper.staticClass, global::android.os.Looper._getThread5638)); 

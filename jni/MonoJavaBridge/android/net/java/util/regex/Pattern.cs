@@ -22,7 +22,7 @@ namespace java.util.regex
 		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Pattern)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Pattern._toString13091)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._toString13091)); 
@@ -36,7 +36,7 @@ namespace java.util.regex
 		internal static global::net.sf.jni4net.jni.MethodId _split13093; 
 		public global::java.lang.String[] split(java.lang.CharSequence arg0, int arg1) 
 		{ 
-			if (GetType() == typeof(java.util.regex.Pattern)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Pattern._split13093, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._split13093, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -44,7 +44,7 @@ namespace java.util.regex
 		internal static global::net.sf.jni4net.jni.MethodId _split13094; 
 		public global::java.lang.String[] split(java.lang.CharSequence arg0) 
 		{ 
-			if (GetType() == typeof(java.util.regex.Pattern)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Pattern._split13094, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._split13094, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -65,7 +65,7 @@ namespace java.util.regex
 		public global::java.util.regex.Matcher matcher(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Pattern)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Pattern._matcher13097, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._matcher13097, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -80,7 +80,7 @@ namespace java.util.regex
 		public global::java.lang.String pattern() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Pattern)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Pattern._pattern13099)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._pattern13099)); 
@@ -89,7 +89,7 @@ namespace java.util.regex
 		public int flags() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Pattern)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.regex.Pattern._flags13100); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._flags13100); 

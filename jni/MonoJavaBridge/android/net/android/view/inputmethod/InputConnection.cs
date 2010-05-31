@@ -53,7 +53,7 @@ namespace android.view.inputmethod
 		 bool android.view.inputmethod.InputConnection.setSelection(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._setSelection9106, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._setSelection9106, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -62,7 +62,7 @@ namespace android.view.inputmethod
 		 bool android.view.inputmethod.InputConnection.beginBatchEdit() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._beginBatchEdit9107); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._beginBatchEdit9107); 
@@ -71,7 +71,7 @@ namespace android.view.inputmethod
 		 bool android.view.inputmethod.InputConnection.endBatchEdit() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._endBatchEdit9108); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._endBatchEdit9108); 
@@ -80,7 +80,7 @@ namespace android.view.inputmethod
 		 global::java.lang.CharSequence android.view.inputmethod.InputConnection.getTextBeforeCursor(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.inputmethod.__InputConnection._getTextBeforeCursor9109, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._getTextBeforeCursor9109, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -89,7 +89,7 @@ namespace android.view.inputmethod
 		 global::java.lang.CharSequence android.view.inputmethod.InputConnection.getTextAfterCursor(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.inputmethod.__InputConnection._getTextAfterCursor9110, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._getTextAfterCursor9110, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -98,7 +98,7 @@ namespace android.view.inputmethod
 		 int android.view.inputmethod.InputConnection.getCursorCapsMode(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.inputmethod.__InputConnection._getCursorCapsMode9111, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._getCursorCapsMode9111, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -107,7 +107,7 @@ namespace android.view.inputmethod
 		 global::android.view.inputmethod.ExtractedText android.view.inputmethod.InputConnection.getExtractedText(android.view.inputmethod.ExtractedTextRequest arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.inputmethod.ExtractedText>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.inputmethod.__InputConnection._getExtractedText9112, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.inputmethod.ExtractedText>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._getExtractedText9112, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -116,7 +116,7 @@ namespace android.view.inputmethod
 		 bool android.view.inputmethod.InputConnection.deleteSurroundingText(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._deleteSurroundingText9113, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._deleteSurroundingText9113, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -125,7 +125,7 @@ namespace android.view.inputmethod
 		 bool android.view.inputmethod.InputConnection.setComposingText(java.lang.CharSequence arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._setComposingText9114, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._setComposingText9114, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -134,7 +134,7 @@ namespace android.view.inputmethod
 		 bool android.view.inputmethod.InputConnection.finishComposingText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._finishComposingText9115); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._finishComposingText9115); 
@@ -143,7 +143,7 @@ namespace android.view.inputmethod
 		 bool android.view.inputmethod.InputConnection.commitText(java.lang.CharSequence arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._commitText9116, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._commitText9116, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -152,7 +152,7 @@ namespace android.view.inputmethod
 		 bool android.view.inputmethod.InputConnection.commitCompletion(android.view.inputmethod.CompletionInfo arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._commitCompletion9117, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._commitCompletion9117, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -161,7 +161,7 @@ namespace android.view.inputmethod
 		 bool android.view.inputmethod.InputConnection.performEditorAction(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._performEditorAction9118, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._performEditorAction9118, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -170,7 +170,7 @@ namespace android.view.inputmethod
 		 bool android.view.inputmethod.InputConnection.performContextMenuAction(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._performContextMenuAction9119, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._performContextMenuAction9119, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -179,7 +179,7 @@ namespace android.view.inputmethod
 		 bool android.view.inputmethod.InputConnection.sendKeyEvent(android.view.KeyEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._sendKeyEvent9120, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._sendKeyEvent9120, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -188,7 +188,7 @@ namespace android.view.inputmethod
 		 bool android.view.inputmethod.InputConnection.clearMetaKeyStates(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._clearMetaKeyStates9121, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._clearMetaKeyStates9121, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -197,7 +197,7 @@ namespace android.view.inputmethod
 		 bool android.view.inputmethod.InputConnection.reportFullscreenMode(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._reportFullscreenMode9122, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._reportFullscreenMode9122, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -206,7 +206,7 @@ namespace android.view.inputmethod
 		 bool android.view.inputmethod.InputConnection.performPrivateCommand(java.lang.String arg0, android.os.Bundle arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.inputmethod.__InputConnection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.__InputConnection._performPrivateCommand9123, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.__InputConnection.staticClass, global::android.view.inputmethod.__InputConnection._performPrivateCommand9123, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 

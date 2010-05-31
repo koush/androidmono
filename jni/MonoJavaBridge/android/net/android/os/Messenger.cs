@@ -22,7 +22,7 @@ namespace android.os
 		public sealed override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Messenger)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.os.Messenger._hashCode5679); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._hashCode5679); 
@@ -31,7 +31,7 @@ namespace android.os
 		public sealed override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Messenger)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.Messenger._equals5680, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._equals5680, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace android.os
 		public void send(android.os.Message arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Messenger)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Messenger._send5681, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._send5681, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.os
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Messenger)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.Messenger._writeToParcel5682, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._writeToParcel5682, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -58,7 +58,7 @@ namespace android.os
 		public int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Messenger)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.os.Messenger._describeContents5683); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._describeContents5683); 
@@ -67,7 +67,7 @@ namespace android.os
 		public global::android.os.IBinder getBinder() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.Messenger)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Messenger._getBinder5684)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._getBinder5684)); 

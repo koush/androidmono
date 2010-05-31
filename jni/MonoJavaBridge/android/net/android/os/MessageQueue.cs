@@ -54,7 +54,7 @@ namespace android.os
 			 bool android.os.MessageQueue.IdleHandler.queueIdle() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.MessageQueue.__IdleHandler)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.os.MessageQueue.__IdleHandler._queueIdle5676); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.os.MessageQueue.__IdleHandler.staticClass, global::android.os.MessageQueue.__IdleHandler._queueIdle5676); 
@@ -69,7 +69,7 @@ namespace android.os
 		public virtual void addIdleHandler(android.os.MessageQueue.IdleHandler arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.MessageQueue)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.MessageQueue._addIdleHandler5677, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.MessageQueue.staticClass, global::android.os.MessageQueue._addIdleHandler5677, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -78,7 +78,7 @@ namespace android.os
 		public virtual void removeIdleHandler(android.os.MessageQueue.IdleHandler arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.MessageQueue)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.MessageQueue._removeIdleHandler5678, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.MessageQueue.staticClass, global::android.os.MessageQueue._removeIdleHandler5678, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

@@ -22,7 +22,7 @@ namespace android.widget
 		public virtual int getDuration() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.Scroller._getDuration10776); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._getDuration10776); 
@@ -31,7 +31,7 @@ namespace android.widget
 		public virtual bool isFinished() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.Scroller._isFinished10777); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._isFinished10777); 
@@ -40,7 +40,7 @@ namespace android.widget
 		public virtual void forceFinished(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Scroller._forceFinished10778, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._forceFinished10778, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.widget
 		public virtual int getCurrX() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.Scroller._getCurrX10779); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._getCurrX10779); 
@@ -58,7 +58,7 @@ namespace android.widget
 		public virtual int getCurrY() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.Scroller._getCurrY10780); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._getCurrY10780); 
@@ -67,7 +67,7 @@ namespace android.widget
 		public virtual int getStartX() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.Scroller._getStartX10781); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._getStartX10781); 
@@ -76,7 +76,7 @@ namespace android.widget
 		public virtual int getStartY() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.Scroller._getStartY10782); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._getStartY10782); 
@@ -85,7 +85,7 @@ namespace android.widget
 		public virtual int getFinalX() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.Scroller._getFinalX10783); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._getFinalX10783); 
@@ -94,7 +94,7 @@ namespace android.widget
 		public virtual int getFinalY() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.Scroller._getFinalY10784); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._getFinalY10784); 
@@ -103,7 +103,7 @@ namespace android.widget
 		public virtual bool computeScrollOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.Scroller._computeScrollOffset10785); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._computeScrollOffset10785); 
@@ -112,7 +112,7 @@ namespace android.widget
 		public virtual void startScroll(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Scroller._startScroll10786, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._startScroll10786, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -121,7 +121,7 @@ namespace android.widget
 		public virtual void startScroll(int arg0, int arg1, int arg2, int arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Scroller._startScroll10787, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._startScroll10787, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -130,7 +130,7 @@ namespace android.widget
 		public virtual void fling(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Scroller._fling10788, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._fling10788, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7)); 
@@ -139,7 +139,7 @@ namespace android.widget
 		public virtual void abortAnimation() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Scroller._abortAnimation10789); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._abortAnimation10789); 
@@ -148,7 +148,7 @@ namespace android.widget
 		public virtual void extendDuration(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Scroller._extendDuration10790, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._extendDuration10790, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -157,7 +157,7 @@ namespace android.widget
 		public virtual int timePassed() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.Scroller._timePassed10791); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._timePassed10791); 
@@ -166,7 +166,7 @@ namespace android.widget
 		public virtual void setFinalX(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Scroller._setFinalX10792, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._setFinalX10792, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -175,7 +175,7 @@ namespace android.widget
 		public virtual void setFinalY(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Scroller)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Scroller._setFinalY10793, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Scroller.staticClass, global::android.widget.Scroller._setFinalY10793, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

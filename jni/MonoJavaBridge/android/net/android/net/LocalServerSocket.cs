@@ -22,7 +22,7 @@ namespace android.net
 		public virtual void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalServerSocket)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.net.LocalServerSocket._close4637); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.net.LocalServerSocket.staticClass, global::android.net.LocalServerSocket._close4637); 
@@ -31,7 +31,7 @@ namespace android.net
 		public virtual global::android.net.LocalSocket accept() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalServerSocket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocket>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.LocalServerSocket._accept4638)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocket>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.LocalServerSocket.staticClass, global::android.net.LocalServerSocket._accept4638)); 
@@ -40,7 +40,7 @@ namespace android.net
 		public virtual global::java.io.FileDescriptor getFileDescriptor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalServerSocket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.LocalServerSocket._getFileDescriptor4639)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.LocalServerSocket.staticClass, global::android.net.LocalServerSocket._getFileDescriptor4639)); 
@@ -49,7 +49,7 @@ namespace android.net
 		public virtual global::android.net.LocalSocketAddress getLocalSocketAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.LocalServerSocket)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocketAddress>(@__env, @__env.CallObjectMethodPtr(this, global::android.net.LocalServerSocket._getLocalSocketAddress4640)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.LocalSocketAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.net.LocalServerSocket.staticClass, global::android.net.LocalServerSocket._getLocalSocketAddress4640)); 

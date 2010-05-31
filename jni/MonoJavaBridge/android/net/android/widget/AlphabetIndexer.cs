@@ -22,7 +22,7 @@ namespace android.widget
 		protected virtual int compare(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AlphabetIndexer)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.AlphabetIndexer._compare9848, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._compare9848, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -31,7 +31,7 @@ namespace android.widget
 		public virtual void setCursor(android.database.Cursor arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AlphabetIndexer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AlphabetIndexer._setCursor9849, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._setCursor9849, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace android.widget
 		public override void onChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AlphabetIndexer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AlphabetIndexer._onChanged9850); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._onChanged9850); 
@@ -49,7 +49,7 @@ namespace android.widget
 		public override void onInvalidated() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AlphabetIndexer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.AlphabetIndexer._onInvalidated9851); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._onInvalidated9851); 
@@ -57,7 +57,7 @@ namespace android.widget
 		internal static global::net.sf.jni4net.jni.MethodId _getSections9852; 
 		public virtual global::java.lang.Object[] getSections() 
 		{ 
-			if (GetType() == typeof(android.widget.AlphabetIndexer)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.AlphabetIndexer._getSections9852)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._getSections9852)); 
@@ -66,7 +66,7 @@ namespace android.widget
 		public virtual int getPositionForSection(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AlphabetIndexer)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.AlphabetIndexer._getPositionForSection9853, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._getPositionForSection9853, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -75,7 +75,7 @@ namespace android.widget
 		public virtual int getSectionForPosition(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.AlphabetIndexer)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.AlphabetIndexer._getSectionForPosition9854, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.AlphabetIndexer.staticClass, global::android.widget.AlphabetIndexer._getSectionForPosition9854, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

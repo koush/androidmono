@@ -22,7 +22,7 @@ namespace java.util
 		protected virtual int next(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Random)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Random._next12961, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Random.staticClass, global::java.util.Random._next12961, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -31,7 +31,7 @@ namespace java.util
 		public virtual int nextInt() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Random)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Random._nextInt12962); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextInt12962); 
@@ -40,7 +40,7 @@ namespace java.util
 		public virtual int nextInt(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Random)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Random._nextInt12963, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextInt12963, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -49,7 +49,7 @@ namespace java.util
 		public virtual long nextLong() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Random)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.util.Random._nextLong12964); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextLong12964); 
@@ -58,7 +58,7 @@ namespace java.util
 		public virtual double nextDouble() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Random)) 
+			if (!IsClrObject) 
 				return @__env.CallDoubleMethod(this, global::java.util.Random._nextDouble12965); 
 			else 
 				return @__env.CallNonVirtualDoubleMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextDouble12965); 
@@ -67,7 +67,7 @@ namespace java.util
 		public virtual void nextBytes(byte[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Random)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Random._nextBytes12966, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextBytes12966, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
@@ -76,7 +76,7 @@ namespace java.util
 		public virtual void setSeed(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Random)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Random._setSeed12967, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Random.staticClass, global::java.util.Random._setSeed12967, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -85,7 +85,7 @@ namespace java.util
 		public virtual bool nextBoolean() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Random)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.Random._nextBoolean12968); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextBoolean12968); 
@@ -94,7 +94,7 @@ namespace java.util
 		public virtual float nextFloat() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Random)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::java.util.Random._nextFloat12969); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextFloat12969); 
@@ -103,7 +103,7 @@ namespace java.util
 		public virtual double nextGaussian() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Random)) 
+			if (!IsClrObject) 
 				return @__env.CallDoubleMethod(this, global::java.util.Random._nextGaussian12970); 
 			else 
 				return @__env.CallNonVirtualDoubleMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextGaussian12970); 

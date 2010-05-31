@@ -22,7 +22,7 @@ namespace android.location
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Criteria)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Criteria._writeToParcel4240, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._writeToParcel4240, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -31,7 +31,7 @@ namespace android.location
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Criteria)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.location.Criteria._describeContents4241); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._describeContents4241); 
@@ -40,7 +40,7 @@ namespace android.location
 		public virtual void setAccuracy(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Criteria)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Criteria._setAccuracy4242, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._setAccuracy4242, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.location
 		public virtual int getAccuracy() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Criteria)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.location.Criteria._getAccuracy4243); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._getAccuracy4243); 
@@ -58,7 +58,7 @@ namespace android.location
 		public virtual void setPowerRequirement(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Criteria)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Criteria._setPowerRequirement4244, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._setPowerRequirement4244, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.location
 		public virtual int getPowerRequirement() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Criteria)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.location.Criteria._getPowerRequirement4245); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._getPowerRequirement4245); 
@@ -76,7 +76,7 @@ namespace android.location
 		public virtual void setCostAllowed(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Criteria)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Criteria._setCostAllowed4246, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._setCostAllowed4246, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -85,7 +85,7 @@ namespace android.location
 		public virtual bool isCostAllowed() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Criteria)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.location.Criteria._isCostAllowed4247); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._isCostAllowed4247); 
@@ -94,7 +94,7 @@ namespace android.location
 		public virtual void setAltitudeRequired(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Criteria)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Criteria._setAltitudeRequired4248, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._setAltitudeRequired4248, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -103,7 +103,7 @@ namespace android.location
 		public virtual bool isAltitudeRequired() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Criteria)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.location.Criteria._isAltitudeRequired4249); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._isAltitudeRequired4249); 
@@ -112,7 +112,7 @@ namespace android.location
 		public virtual void setSpeedRequired(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Criteria)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Criteria._setSpeedRequired4250, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._setSpeedRequired4250, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -121,7 +121,7 @@ namespace android.location
 		public virtual bool isSpeedRequired() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Criteria)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.location.Criteria._isSpeedRequired4251); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._isSpeedRequired4251); 
@@ -130,7 +130,7 @@ namespace android.location
 		public virtual void setBearingRequired(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Criteria)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.location.Criteria._setBearingRequired4252, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._setBearingRequired4252, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -139,7 +139,7 @@ namespace android.location
 		public virtual bool isBearingRequired() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.location.Criteria)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.location.Criteria._isBearingRequired4253); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.Criteria.staticClass, global::android.location.Criteria._isBearingRequired4253); 

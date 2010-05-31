@@ -36,7 +36,7 @@ namespace java.nio.channels
 		 int java.nio.channels.WritableByteChannel.write(java.nio.ByteBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__WritableByteChannel)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.nio.channels.__WritableByteChannel._write12294, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.nio.channels.__WritableByteChannel.staticClass, global::java.nio.channels.__WritableByteChannel._write12294, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -45,7 +45,7 @@ namespace java.nio.channels
 		 void java.nio.channels.Channel.close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__WritableByteChannel)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.nio.channels.__WritableByteChannel._close12295); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__WritableByteChannel.staticClass, global::java.nio.channels.__WritableByteChannel._close12295); 
@@ -54,7 +54,7 @@ namespace java.nio.channels
 		 bool java.nio.channels.Channel.isOpen() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__WritableByteChannel)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.channels.__WritableByteChannel._isOpen12296); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.__WritableByteChannel.staticClass, global::java.nio.channels.__WritableByteChannel._isOpen12296); 
@@ -63,7 +63,7 @@ namespace java.nio.channels
 		 void java.io.Closeable.close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__WritableByteChannel)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.nio.channels.__WritableByteChannel._close12297); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__WritableByteChannel.staticClass, global::java.nio.channels.__WritableByteChannel._close12297); 

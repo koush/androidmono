@@ -28,7 +28,7 @@ namespace android.text
 		public virtual global::android.text.Spannable newSpannable(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Spannable_Factory)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Spannable>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.Spannable_Factory._newSpannable6886, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Spannable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.Spannable_Factory.staticClass, global::android.text.Spannable_Factory._newSpannable6886, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 

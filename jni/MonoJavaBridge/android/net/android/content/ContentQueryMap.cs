@@ -22,7 +22,7 @@ namespace android.content
 		public virtual void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentQueryMap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.ContentQueryMap._close1045); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._close1045); 
@@ -31,7 +31,7 @@ namespace android.content
 		public virtual void requery() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentQueryMap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.ContentQueryMap._requery1046); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._requery1046); 
@@ -40,7 +40,7 @@ namespace android.content
 		public virtual void setKeepUpdated(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentQueryMap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.ContentQueryMap._setKeepUpdated1047, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._setKeepUpdated1047, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.content
 		public virtual global::android.content.ContentValues getValues(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentQueryMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.ContentValues>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ContentQueryMap._getValues1048, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.ContentValues>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._getValues1048, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -58,7 +58,7 @@ namespace android.content
 		public virtual global::java.util.Map getRows() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.ContentQueryMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ContentQueryMap._getRows1049)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ContentQueryMap.staticClass, global::android.content.ContentQueryMap._getRows1049)); 

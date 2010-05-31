@@ -22,7 +22,7 @@ namespace android.view.animation
 		public virtual void clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Transformation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Transformation._clear9004); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._clear9004); 
@@ -31,7 +31,7 @@ namespace android.view.animation
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Transformation)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.animation.Transformation._toString9005)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._toString9005)); 
@@ -40,7 +40,7 @@ namespace android.view.animation
 		public virtual void set(android.view.animation.Transformation arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Transformation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Transformation._set9006, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._set9006, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.view.animation
 		public virtual void compose(android.view.animation.Transformation arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Transformation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Transformation._compose9007, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._compose9007, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.view.animation
 		public virtual void setAlpha(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Transformation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Transformation._setAlpha9008, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._setAlpha9008, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.view.animation
 		public virtual global::java.lang.String toShortString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Transformation)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.animation.Transformation._toShortString9009)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._toShortString9009)); 
@@ -76,7 +76,7 @@ namespace android.view.animation
 		public virtual global::android.graphics.Matrix getMatrix() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Transformation)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Matrix>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.animation.Transformation._getMatrix9010)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Matrix>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._getMatrix9010)); 
@@ -85,7 +85,7 @@ namespace android.view.animation
 		public virtual int getTransformationType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Transformation)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.animation.Transformation._getTransformationType9011); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._getTransformationType9011); 
@@ -94,7 +94,7 @@ namespace android.view.animation
 		public virtual void setTransformationType(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Transformation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Transformation._setTransformationType9012, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._setTransformationType9012, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -103,7 +103,7 @@ namespace android.view.animation
 		public virtual float getAlpha() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Transformation)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.animation.Transformation._getAlpha9013); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._getAlpha9013); 

@@ -22,7 +22,7 @@ namespace android.os
 		public virtual void restat(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.StatFs)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.StatFs._restat5869, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.StatFs.staticClass, global::android.os.StatFs._restat5869, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -31,7 +31,7 @@ namespace android.os
 		public virtual int getBlockSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.StatFs)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.os.StatFs._getBlockSize5870); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.os.StatFs.staticClass, global::android.os.StatFs._getBlockSize5870); 
@@ -40,7 +40,7 @@ namespace android.os
 		public virtual int getBlockCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.StatFs)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.os.StatFs._getBlockCount5871); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.os.StatFs.staticClass, global::android.os.StatFs._getBlockCount5871); 
@@ -49,7 +49,7 @@ namespace android.os
 		public virtual int getFreeBlocks() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.StatFs)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.os.StatFs._getFreeBlocks5872); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.os.StatFs.staticClass, global::android.os.StatFs._getFreeBlocks5872); 
@@ -58,7 +58,7 @@ namespace android.os
 		public virtual int getAvailableBlocks() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.StatFs)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.os.StatFs._getAvailableBlocks5873); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.os.StatFs.staticClass, global::android.os.StatFs._getAvailableBlocks5873); 

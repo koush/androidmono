@@ -27,7 +27,7 @@ namespace android.text.method
 		internal static global::net.sf.jni4net.jni.MethodId _getOriginal7244; 
 		protected override char[] getOriginal() 
 		{ 
-			if (GetType() == typeof(android.text.method.SingleLineTransformationMethod)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.text.method.SingleLineTransformationMethod._getOriginal7244)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.method.SingleLineTransformationMethod.staticClass, global::android.text.method.SingleLineTransformationMethod._getOriginal7244)); 
@@ -35,7 +35,7 @@ namespace android.text.method
 		internal static global::net.sf.jni4net.jni.MethodId _getReplacement7245; 
 		protected override char[] getReplacement() 
 		{ 
-			if (GetType() == typeof(android.text.method.SingleLineTransformationMethod)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.text.method.SingleLineTransformationMethod._getReplacement7245)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.method.SingleLineTransformationMethod.staticClass, global::android.text.method.SingleLineTransformationMethod._getReplacement7245)); 

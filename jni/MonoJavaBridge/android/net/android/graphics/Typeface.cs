@@ -34,7 +34,7 @@ namespace android.graphics
 		public virtual int getStyle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Typeface)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.graphics.Typeface._getStyle3419); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._getStyle3419); 
@@ -43,7 +43,7 @@ namespace android.graphics
 		public virtual bool isBold() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Typeface)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Typeface._isBold3420); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._isBold3420); 
@@ -52,7 +52,7 @@ namespace android.graphics
 		public virtual bool isItalic() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Typeface)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.graphics.Typeface._isItalic3421); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.Typeface.staticClass, global::android.graphics.Typeface._isItalic3421); 

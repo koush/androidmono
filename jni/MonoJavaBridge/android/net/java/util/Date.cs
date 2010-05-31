@@ -22,7 +22,7 @@ namespace java.util
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Date._hashCode12818); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._hashCode12818); 
@@ -31,7 +31,7 @@ namespace java.util
 		public virtual global::java.lang.Object clone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Date._clone12819)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Date.staticClass, global::java.util.Date._clone12819)); 
@@ -40,7 +40,7 @@ namespace java.util
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.Date._equals12820, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Date.staticClass, global::java.util.Date._equals12820, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -49,7 +49,7 @@ namespace java.util
 		public virtual int compareTo(java.util.Date arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Date._compareTo12821, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._compareTo12821, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace java.util
 		public virtual int compareTo(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Date._compareTo12822, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._compareTo12822, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -67,7 +67,7 @@ namespace java.util
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Date._toString12823)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Date.staticClass, global::java.util.Date._toString12823)); 
@@ -76,7 +76,7 @@ namespace java.util
 		public virtual bool after(java.util.Date arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.Date._after12824, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Date.staticClass, global::java.util.Date._after12824, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -85,7 +85,7 @@ namespace java.util
 		public virtual bool before(java.util.Date arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.Date._before12825, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Date.staticClass, global::java.util.Date._before12825, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -100,7 +100,7 @@ namespace java.util
 		public virtual void setTime(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Date._setTime12827, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Date.staticClass, global::java.util.Date._setTime12827, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -109,7 +109,7 @@ namespace java.util
 		public virtual long getTime() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.util.Date._getTime12828); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getTime12828); 
@@ -118,7 +118,7 @@ namespace java.util
 		public virtual int getYear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Date._getYear12829); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getYear12829); 
@@ -127,7 +127,7 @@ namespace java.util
 		public virtual int getMonth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Date._getMonth12830); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getMonth12830); 
@@ -136,7 +136,7 @@ namespace java.util
 		public virtual int getDate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Date._getDate12831); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getDate12831); 
@@ -145,7 +145,7 @@ namespace java.util
 		public virtual int getHours() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Date._getHours12832); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getHours12832); 
@@ -154,7 +154,7 @@ namespace java.util
 		public virtual int getMinutes() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Date._getMinutes12833); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getMinutes12833); 
@@ -163,7 +163,7 @@ namespace java.util
 		public virtual int getSeconds() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Date._getSeconds12834); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getSeconds12834); 
@@ -178,7 +178,7 @@ namespace java.util
 		public virtual void setDate(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Date._setDate12836, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Date.staticClass, global::java.util.Date._setDate12836, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -187,7 +187,7 @@ namespace java.util
 		public virtual void setMonth(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Date._setMonth12837, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Date.staticClass, global::java.util.Date._setMonth12837, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -196,7 +196,7 @@ namespace java.util
 		public virtual void setHours(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Date._setHours12838, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Date.staticClass, global::java.util.Date._setHours12838, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -205,7 +205,7 @@ namespace java.util
 		public virtual void setMinutes(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Date._setMinutes12839, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Date.staticClass, global::java.util.Date._setMinutes12839, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -214,7 +214,7 @@ namespace java.util
 		public virtual void setSeconds(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Date._setSeconds12840, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Date.staticClass, global::java.util.Date._setSeconds12840, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -223,7 +223,7 @@ namespace java.util
 		public virtual void setYear(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.Date._setYear12841, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.Date.staticClass, global::java.util.Date._setYear12841, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -232,7 +232,7 @@ namespace java.util
 		public virtual int getDay() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Date._getDay12842); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getDay12842); 
@@ -241,7 +241,7 @@ namespace java.util
 		public virtual global::java.lang.String toLocaleString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Date._toLocaleString12843)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Date.staticClass, global::java.util.Date._toLocaleString12843)); 
@@ -250,7 +250,7 @@ namespace java.util
 		public virtual global::java.lang.String toGMTString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Date._toGMTString12844)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Date.staticClass, global::java.util.Date._toGMTString12844)); 
@@ -259,7 +259,7 @@ namespace java.util
 		public virtual int getTimezoneOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.Date)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.Date._getTimezoneOffset12845); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._getTimezoneOffset12845); 

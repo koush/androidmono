@@ -22,7 +22,7 @@ namespace android.webkit
 		public virtual void cancel() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.JsResult)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.JsResult._cancel9299); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._cancel9299); 
@@ -31,7 +31,7 @@ namespace android.webkit
 		public virtual void confirm() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.JsResult)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.JsResult._confirm9300); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._confirm9300); 
@@ -40,7 +40,7 @@ namespace android.webkit
 		protected virtual void wakeUp() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.JsResult)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.JsResult._wakeUp9301); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.JsResult.staticClass, global::android.webkit.JsResult._wakeUp9301); 

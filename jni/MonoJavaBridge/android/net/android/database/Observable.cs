@@ -15,7 +15,7 @@ namespace android.database
 		public virtual void registerObserver(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.Observable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.Observable._registerObserver2426, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.Observable.staticClass, global::android.database.Observable._registerObserver2426, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -24,7 +24,7 @@ namespace android.database
 		public virtual void unregisterObserver(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.Observable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.Observable._unregisterObserver2427, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.Observable.staticClass, global::android.database.Observable._unregisterObserver2427, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -33,7 +33,7 @@ namespace android.database
 		public virtual void unregisterAll() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.database.Observable)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.database.Observable._unregisterAll2428); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.Observable.staticClass, global::android.database.Observable._unregisterAll2428); 

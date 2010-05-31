@@ -34,7 +34,7 @@ namespace android.view
 		public virtual int getScaledScrollBarSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.ViewConfiguration)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.ViewConfiguration._getScaledScrollBarSize8390); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledScrollBarSize8390); 
@@ -61,7 +61,7 @@ namespace android.view
 		public virtual int getScaledFadingEdgeLength() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.ViewConfiguration)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.ViewConfiguration._getScaledFadingEdgeLength8394); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledFadingEdgeLength8394); 
@@ -106,7 +106,7 @@ namespace android.view
 		public virtual int getScaledEdgeSlop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.ViewConfiguration)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.ViewConfiguration._getScaledEdgeSlop8401); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledEdgeSlop8401); 
@@ -121,7 +121,7 @@ namespace android.view
 		public virtual int getScaledTouchSlop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.ViewConfiguration)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.ViewConfiguration._getScaledTouchSlop8403); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledTouchSlop8403); 
@@ -130,7 +130,7 @@ namespace android.view
 		public virtual int getScaledDoubleTapSlop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.ViewConfiguration)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.ViewConfiguration._getScaledDoubleTapSlop8404); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledDoubleTapSlop8404); 
@@ -145,7 +145,7 @@ namespace android.view
 		public virtual int getScaledWindowTouchSlop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.ViewConfiguration)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.ViewConfiguration._getScaledWindowTouchSlop8406); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledWindowTouchSlop8406); 
@@ -160,7 +160,7 @@ namespace android.view
 		public virtual int getScaledMinimumFlingVelocity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.ViewConfiguration)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.ViewConfiguration._getScaledMinimumFlingVelocity8408); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledMinimumFlingVelocity8408); 
@@ -175,7 +175,7 @@ namespace android.view
 		public virtual int getScaledMaximumFlingVelocity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.ViewConfiguration)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.ViewConfiguration._getScaledMaximumFlingVelocity8410); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledMaximumFlingVelocity8410); 
@@ -190,7 +190,7 @@ namespace android.view
 		public virtual int getScaledMaximumDrawingCacheSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.ViewConfiguration)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.ViewConfiguration._getScaledMaximumDrawingCacheSize8412); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewConfiguration.staticClass, global::android.view.ViewConfiguration._getScaledMaximumDrawingCacheSize8412); 

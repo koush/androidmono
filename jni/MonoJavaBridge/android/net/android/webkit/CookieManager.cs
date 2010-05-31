@@ -28,7 +28,7 @@ namespace android.webkit
 		public void setAcceptCookie(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CookieManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CookieManager._setAcceptCookie9271, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CookieManager.staticClass, global::android.webkit.CookieManager._setAcceptCookie9271, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -37,7 +37,7 @@ namespace android.webkit
 		public bool acceptCookie() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CookieManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.CookieManager._acceptCookie9272); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.CookieManager.staticClass, global::android.webkit.CookieManager._acceptCookie9272); 
@@ -46,7 +46,7 @@ namespace android.webkit
 		public void setCookie(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CookieManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CookieManager._setCookie9273, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CookieManager.staticClass, global::android.webkit.CookieManager._setCookie9273, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -55,7 +55,7 @@ namespace android.webkit
 		public global::java.lang.String getCookie(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CookieManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.CookieManager._getCookie9274, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.CookieManager.staticClass, global::android.webkit.CookieManager._getCookie9274, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -64,7 +64,7 @@ namespace android.webkit
 		public void removeSessionCookie() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CookieManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CookieManager._removeSessionCookie9275); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CookieManager.staticClass, global::android.webkit.CookieManager._removeSessionCookie9275); 
@@ -73,7 +73,7 @@ namespace android.webkit
 		public void removeAllCookie() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CookieManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CookieManager._removeAllCookie9276); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CookieManager.staticClass, global::android.webkit.CookieManager._removeAllCookie9276); 
@@ -82,7 +82,7 @@ namespace android.webkit
 		public bool hasCookies() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CookieManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.webkit.CookieManager._hasCookies9277); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.CookieManager.staticClass, global::android.webkit.CookieManager._hasCookies9277); 
@@ -91,7 +91,7 @@ namespace android.webkit
 		public void removeExpiredCookie() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.CookieManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.CookieManager._removeExpiredCookie9278); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.CookieManager.staticClass, global::android.webkit.CookieManager._removeExpiredCookie9278); 

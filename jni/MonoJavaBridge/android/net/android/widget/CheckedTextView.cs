@@ -22,7 +22,7 @@ namespace android.widget
 		public virtual void toggle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CheckedTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.CheckedTextView._toggle9989); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._toggle9989); 
@@ -31,7 +31,7 @@ namespace android.widget
 		public virtual bool isChecked() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CheckedTextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.CheckedTextView._isChecked9990); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._isChecked9990); 
@@ -40,7 +40,7 @@ namespace android.widget
 		public virtual void setChecked(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CheckedTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.CheckedTextView._setChecked9991, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._setChecked9991, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.widget
 		public override bool dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CheckedTextView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.CheckedTextView._dispatchPopulateAccessibilityEvent9992, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._dispatchPopulateAccessibilityEvent9992, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.widget
 		protected override void onDraw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CheckedTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.CheckedTextView._onDraw9993, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._onDraw9993, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.widget
 		protected override void drawableStateChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CheckedTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.CheckedTextView._drawableStateChanged9994); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._drawableStateChanged9994); 
@@ -75,7 +75,7 @@ namespace android.widget
 		internal static global::net.sf.jni4net.jni.MethodId _onCreateDrawableState9995; 
 		protected override int[] onCreateDrawableState(int arg0) 
 		{ 
-			if (GetType() == typeof(android.widget.CheckedTextView)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.CheckedTextView._onCreateDrawableState9995, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._onCreateDrawableState9995, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -84,7 +84,7 @@ namespace android.widget
 		public override void setPadding(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CheckedTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.CheckedTextView._setPadding9996, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._setPadding9996, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -93,7 +93,7 @@ namespace android.widget
 		public virtual void setCheckMarkDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CheckedTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.CheckedTextView._setCheckMarkDrawable9997, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._setCheckMarkDrawable9997, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -102,7 +102,7 @@ namespace android.widget
 		public virtual void setCheckMarkDrawable(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CheckedTextView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.CheckedTextView._setCheckMarkDrawable9998, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.CheckedTextView.staticClass, global::android.widget.CheckedTextView._setCheckMarkDrawable9998, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

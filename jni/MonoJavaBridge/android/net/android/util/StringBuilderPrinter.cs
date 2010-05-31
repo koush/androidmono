@@ -22,7 +22,7 @@ namespace android.util
 		public virtual void println(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.StringBuilderPrinter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.util.StringBuilderPrinter._println7647, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.util.StringBuilderPrinter.staticClass, global::android.util.StringBuilderPrinter._println7647, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

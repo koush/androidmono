@@ -36,7 +36,7 @@ namespace android.text.style
 		 global::android.text.Layout.Alignment android.text.style.AlignmentSpan.getAlignment() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.__AlignmentSpan)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.style.__AlignmentSpan._getAlignment7293)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.style.__AlignmentSpan.staticClass, global::android.text.style.__AlignmentSpan._getAlignment7293)); 

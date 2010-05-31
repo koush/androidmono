@@ -36,7 +36,7 @@ namespace java.net
 		 global::java.lang.String java.net.FileNameMap.getContentTypeFor(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.__FileNameMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.__FileNameMap._getContentTypeFor11738, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.__FileNameMap.staticClass, global::java.net.__FileNameMap._getContentTypeFor11738, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 

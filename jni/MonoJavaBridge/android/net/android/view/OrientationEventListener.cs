@@ -15,7 +15,7 @@ namespace android.view
 		public virtual void enable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.OrientationEventListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.OrientationEventListener._enable7981); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.OrientationEventListener.staticClass, global::android.view.OrientationEventListener._enable7981); 
@@ -24,7 +24,7 @@ namespace android.view
 		public virtual void disable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.OrientationEventListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.OrientationEventListener._disable7982); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.OrientationEventListener.staticClass, global::android.view.OrientationEventListener._disable7982); 
@@ -33,7 +33,7 @@ namespace android.view
 		public virtual bool canDetectOrientation() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.OrientationEventListener)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.OrientationEventListener._canDetectOrientation7983); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.OrientationEventListener.staticClass, global::android.view.OrientationEventListener._canDetectOrientation7983); 

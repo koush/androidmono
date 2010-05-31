@@ -40,7 +40,7 @@ namespace android.os
 			public override void close() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.ParcelFileDescriptor.AutoCloseInputStream)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.os.ParcelFileDescriptor.AutoCloseInputStream._close5790); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.os.ParcelFileDescriptor.AutoCloseInputStream.staticClass, global::android.os.ParcelFileDescriptor.AutoCloseInputStream._close5790); 
@@ -80,7 +80,7 @@ namespace android.os
 			public override void close() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.ParcelFileDescriptor.AutoCloseOutputStream)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.os.ParcelFileDescriptor.AutoCloseOutputStream._close5792); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.os.ParcelFileDescriptor.AutoCloseOutputStream.staticClass, global::android.os.ParcelFileDescriptor.AutoCloseOutputStream._close5792); 
@@ -102,7 +102,7 @@ namespace android.os
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.ParcelFileDescriptor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.ParcelFileDescriptor._toString5794)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._toString5794)); 
@@ -111,7 +111,7 @@ namespace android.os
 		public virtual void close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.ParcelFileDescriptor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.ParcelFileDescriptor._close5795); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._close5795); 
@@ -126,7 +126,7 @@ namespace android.os
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.ParcelFileDescriptor)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.ParcelFileDescriptor._writeToParcel5797, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._writeToParcel5797, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -135,7 +135,7 @@ namespace android.os
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.ParcelFileDescriptor)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.os.ParcelFileDescriptor._describeContents5798); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._describeContents5798); 
@@ -150,7 +150,7 @@ namespace android.os
 		public virtual global::java.io.FileDescriptor getFileDescriptor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.ParcelFileDescriptor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.ParcelFileDescriptor._getFileDescriptor5800)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._getFileDescriptor5800)); 
@@ -159,7 +159,7 @@ namespace android.os
 		public virtual long getStatSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.ParcelFileDescriptor)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.os.ParcelFileDescriptor._getStatSize5801); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.os.ParcelFileDescriptor.staticClass, global::android.os.ParcelFileDescriptor._getStatSize5801); 

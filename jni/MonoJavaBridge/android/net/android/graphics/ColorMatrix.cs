@@ -21,7 +21,7 @@ namespace android.graphics
 		internal static global::net.sf.jni4net.jni.MethodId _getArray2911; 
 		public virtual float[] getArray() 
 		{ 
-			if (GetType() == typeof(android.graphics.ColorMatrix)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.ColorMatrix._getArray2911)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._getArray2911)); 
@@ -30,7 +30,7 @@ namespace android.graphics
 		public virtual void set(android.graphics.ColorMatrix arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.ColorMatrix)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.ColorMatrix._set2912, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._set2912, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -39,7 +39,7 @@ namespace android.graphics
 		public virtual void set(float[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.ColorMatrix)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.ColorMatrix._set2913, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._set2913, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)); 
@@ -48,7 +48,7 @@ namespace android.graphics
 		public virtual void reset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.ColorMatrix)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.ColorMatrix._reset2914); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._reset2914); 
@@ -57,7 +57,7 @@ namespace android.graphics
 		public virtual void setScale(float arg0, float arg1, float arg2, float arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.ColorMatrix)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.ColorMatrix._setScale2915, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._setScale2915, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -66,7 +66,7 @@ namespace android.graphics
 		public virtual void setRotate(int arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.ColorMatrix)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.ColorMatrix._setRotate2916, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._setRotate2916, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -75,7 +75,7 @@ namespace android.graphics
 		public virtual void setConcat(android.graphics.ColorMatrix arg0, android.graphics.ColorMatrix arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.ColorMatrix)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.ColorMatrix._setConcat2917, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._setConcat2917, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -84,7 +84,7 @@ namespace android.graphics
 		public virtual void preConcat(android.graphics.ColorMatrix arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.ColorMatrix)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.ColorMatrix._preConcat2918, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._preConcat2918, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -93,7 +93,7 @@ namespace android.graphics
 		public virtual void postConcat(android.graphics.ColorMatrix arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.ColorMatrix)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.ColorMatrix._postConcat2919, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._postConcat2919, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -102,7 +102,7 @@ namespace android.graphics
 		public virtual void setSaturation(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.ColorMatrix)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.ColorMatrix._setSaturation2920, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._setSaturation2920, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -111,7 +111,7 @@ namespace android.graphics
 		public virtual void setRGB2YUV() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.ColorMatrix)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.ColorMatrix._setRGB2YUV2921); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._setRGB2YUV2921); 
@@ -120,7 +120,7 @@ namespace android.graphics
 		public virtual void setYUV2RGB() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.ColorMatrix)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.ColorMatrix._setYUV2RGB2922); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.ColorMatrix.staticClass, global::android.graphics.ColorMatrix._setYUV2RGB2922); 

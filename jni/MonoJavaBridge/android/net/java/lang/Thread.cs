@@ -138,7 +138,7 @@ namespace java.lang
 			 void java.lang.Thread.UncaughtExceptionHandler.uncaughtException(java.lang.Thread arg0, java.lang.Throwable arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(java.lang.Thread.__UncaughtExceptionHandler)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::java.lang.Thread.__UncaughtExceptionHandler._uncaughtException11516, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.__UncaughtExceptionHandler.staticClass, global::java.lang.Thread.__UncaughtExceptionHandler._uncaughtException11516, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -153,7 +153,7 @@ namespace java.lang
 		public virtual void run() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.lang.Thread._run11517); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._run11517); 
@@ -162,7 +162,7 @@ namespace java.lang
 		public virtual bool isInterrupted() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.lang.Thread._isInterrupted11518); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._isInterrupted11518); 
@@ -177,7 +177,7 @@ namespace java.lang
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Thread._toString11520)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._toString11520)); 
@@ -186,7 +186,7 @@ namespace java.lang
 		public virtual global::java.lang.String getName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Thread._getName11521)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getName11521)); 
@@ -195,7 +195,7 @@ namespace java.lang
 		public virtual global::java.lang.ThreadGroup getThreadGroup() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.ThreadGroup>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Thread._getThreadGroup11522)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.ThreadGroup>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getThreadGroup11522)); 
@@ -203,7 +203,7 @@ namespace java.lang
 		internal static global::net.sf.jni4net.jni.MethodId _getStackTrace11523; 
 		public virtual global::java.lang.StackTraceElement[] getStackTrace() 
 		{ 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Thread._getStackTrace11523)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getStackTrace11523)); 
@@ -218,7 +218,7 @@ namespace java.lang
 		public virtual void setPriority(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.lang.Thread._setPriority11525, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._setPriority11525, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -227,7 +227,7 @@ namespace java.lang
 		public virtual void setDaemon(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.lang.Thread._setDaemon11526, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._setDaemon11526, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -236,7 +236,7 @@ namespace java.lang
 		public virtual void start() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.lang.Thread._start11527); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._start11527); 
@@ -263,7 +263,7 @@ namespace java.lang
 		public virtual void stop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.lang.Thread._stop11531); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._stop11531); 
@@ -272,7 +272,7 @@ namespace java.lang
 		public virtual void stop(java.lang.Throwable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.lang.Thread._stop11532, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._stop11532, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -281,7 +281,7 @@ namespace java.lang
 		public virtual void interrupt() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.lang.Thread._interrupt11533); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._interrupt11533); 
@@ -296,7 +296,7 @@ namespace java.lang
 		public virtual void destroy() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.lang.Thread._destroy11535); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._destroy11535); 
@@ -305,7 +305,7 @@ namespace java.lang
 		public virtual bool isAlive() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.lang.Thread._isAlive11536); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._isAlive11536); 
@@ -314,7 +314,7 @@ namespace java.lang
 		public virtual void suspend() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.lang.Thread._suspend11537); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._suspend11537); 
@@ -323,7 +323,7 @@ namespace java.lang
 		public virtual void resume() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.lang.Thread._resume11538); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._resume11538); 
@@ -332,7 +332,7 @@ namespace java.lang
 		public virtual int getPriority() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.lang.Thread._getPriority11539); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getPriority11539); 
@@ -341,7 +341,7 @@ namespace java.lang
 		public virtual void setName(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.lang.Thread._setName11540, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._setName11540, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -362,7 +362,7 @@ namespace java.lang
 		public virtual int countStackFrames() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.lang.Thread._countStackFrames11543); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._countStackFrames11543); 
@@ -371,7 +371,7 @@ namespace java.lang
 		public virtual void join() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.lang.Thread._join11544); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._join11544); 
@@ -380,7 +380,7 @@ namespace java.lang
 		public virtual void join(long arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.lang.Thread._join11545, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._join11545, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -389,7 +389,7 @@ namespace java.lang
 		public virtual void join(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.lang.Thread._join11546, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._join11546, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -398,7 +398,7 @@ namespace java.lang
 		public virtual bool isDaemon() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.lang.Thread._isDaemon11547); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._isDaemon11547); 
@@ -407,7 +407,7 @@ namespace java.lang
 		public virtual void checkAccess() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.lang.Thread._checkAccess11548); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._checkAccess11548); 
@@ -416,7 +416,7 @@ namespace java.lang
 		public virtual global::java.lang.ClassLoader getContextClassLoader() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.ClassLoader>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Thread._getContextClassLoader11549)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.ClassLoader>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getContextClassLoader11549)); 
@@ -425,7 +425,7 @@ namespace java.lang
 		public virtual void setContextClassLoader(java.lang.ClassLoader arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.lang.Thread._setContextClassLoader11550, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._setContextClassLoader11550, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -446,7 +446,7 @@ namespace java.lang
 		public virtual long getId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.lang.Thread._getId11553); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getId11553); 
@@ -455,7 +455,7 @@ namespace java.lang
 		public virtual global::java.lang.Thread.State getState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Thread.State>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Thread._getState11554)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Thread.State>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getState11554)); 
@@ -476,7 +476,7 @@ namespace java.lang
 		public virtual global::java.lang.Thread.UncaughtExceptionHandler getUncaughtExceptionHandler() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Thread.UncaughtExceptionHandler>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Thread._getUncaughtExceptionHandler11557)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Thread.UncaughtExceptionHandler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._getUncaughtExceptionHandler11557)); 
@@ -485,7 +485,7 @@ namespace java.lang
 		public virtual void setUncaughtExceptionHandler(java.lang.Thread.UncaughtExceptionHandler arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.Thread)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.lang.Thread._setUncaughtExceptionHandler11558, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._setUncaughtExceptionHandler11558, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

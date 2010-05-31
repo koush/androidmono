@@ -22,7 +22,7 @@ namespace java.util
 		public override global::java.lang.Object get(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.HashMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.HashMap._get12874, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._get12874, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -31,7 +31,7 @@ namespace java.util
 		public override global::java.lang.Object put(java.lang.Object arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.HashMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.HashMap._put12875, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._put12875, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
@@ -40,7 +40,7 @@ namespace java.util
 		public virtual new global::java.lang.Object clone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.HashMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.HashMap._clone12876)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._clone12876)); 
@@ -49,7 +49,7 @@ namespace java.util
 		public override void clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.HashMap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.HashMap._clear12877); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._clear12877); 
@@ -58,7 +58,7 @@ namespace java.util
 		public override bool isEmpty() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.HashMap)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.HashMap._isEmpty12878); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._isEmpty12878); 
@@ -67,7 +67,7 @@ namespace java.util
 		public override global::java.util.Collection values() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.HashMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.HashMap._values12879)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._values12879)); 
@@ -76,7 +76,7 @@ namespace java.util
 		public override int size() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.HashMap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.HashMap._size12880); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._size12880); 
@@ -85,7 +85,7 @@ namespace java.util
 		public override global::java.util.Set entrySet() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.HashMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.HashMap._entrySet12881)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._entrySet12881)); 
@@ -94,7 +94,7 @@ namespace java.util
 		public override void putAll(java.util.Map arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.HashMap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.HashMap._putAll12882, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._putAll12882, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -103,7 +103,7 @@ namespace java.util
 		public override global::java.lang.Object remove(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.HashMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.HashMap._remove12883, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._remove12883, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -112,7 +112,7 @@ namespace java.util
 		public override global::java.util.Set keySet() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.HashMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.HashMap._keySet12884)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._keySet12884)); 
@@ -121,7 +121,7 @@ namespace java.util
 		public override bool containsValue(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.HashMap)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.HashMap._containsValue12885, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._containsValue12885, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -130,7 +130,7 @@ namespace java.util
 		public override bool containsKey(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.HashMap)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.HashMap._containsKey12886, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._containsKey12886, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

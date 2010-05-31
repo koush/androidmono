@@ -44,7 +44,7 @@ namespace java.util
 		 global::java.util.Collection java.util.SortedMap.values() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._values12973)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._values12973)); 
@@ -53,7 +53,7 @@ namespace java.util
 		 global::java.util.Set java.util.SortedMap.entrySet() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._entrySet12974)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._entrySet12974)); 
@@ -62,7 +62,7 @@ namespace java.util
 		 global::java.util.Set java.util.SortedMap.keySet() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._keySet12975)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._keySet12975)); 
@@ -71,7 +71,7 @@ namespace java.util
 		 global::java.util.Comparator java.util.SortedMap.comparator() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Comparator>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._comparator12976)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Comparator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._comparator12976)); 
@@ -80,7 +80,7 @@ namespace java.util
 		 global::java.util.SortedMap java.util.SortedMap.subMap(java.lang.Object arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.SortedMap>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._subMap12977, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.SortedMap>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._subMap12977, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
@@ -89,7 +89,7 @@ namespace java.util
 		 global::java.util.SortedMap java.util.SortedMap.headMap(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.SortedMap>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._headMap12978, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.SortedMap>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._headMap12978, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -98,7 +98,7 @@ namespace java.util
 		 global::java.util.SortedMap java.util.SortedMap.tailMap(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.SortedMap>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._tailMap12979, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.SortedMap>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._tailMap12979, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -107,7 +107,7 @@ namespace java.util
 		 global::java.lang.Object java.util.SortedMap.firstKey() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._firstKey12980)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._firstKey12980)); 
@@ -116,7 +116,7 @@ namespace java.util
 		 global::java.lang.Object java.util.SortedMap.lastKey() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._lastKey12981)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._lastKey12981)); 
@@ -125,7 +125,7 @@ namespace java.util
 		 global::java.lang.Object java.util.Map.get(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._get12982, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._get12982, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -134,7 +134,7 @@ namespace java.util
 		 global::java.lang.Object java.util.Map.put(java.lang.Object arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._put12983, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._put12983, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1))); 
@@ -143,7 +143,7 @@ namespace java.util
 		 int java.util.Map.hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.__SortedMap._hashCode12984); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._hashCode12984); 
@@ -152,7 +152,7 @@ namespace java.util
 		 bool java.util.Map.equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.__SortedMap._equals12985, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._equals12985, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -161,7 +161,7 @@ namespace java.util
 		 void java.util.Map.clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.__SortedMap._clear12986); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._clear12986); 
@@ -170,7 +170,7 @@ namespace java.util
 		 bool java.util.Map.isEmpty() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.__SortedMap._isEmpty12987); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._isEmpty12987); 
@@ -179,7 +179,7 @@ namespace java.util
 		 global::java.util.Collection java.util.Map.values() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._values12988)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._values12988)); 
@@ -188,7 +188,7 @@ namespace java.util
 		 int java.util.Map.size() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.__SortedMap._size12989); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._size12989); 
@@ -197,7 +197,7 @@ namespace java.util
 		 global::java.util.Set java.util.Map.entrySet() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._entrySet12990)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._entrySet12990)); 
@@ -206,7 +206,7 @@ namespace java.util
 		 void java.util.Map.putAll(java.util.Map arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.__SortedMap._putAll12991, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._putAll12991, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -215,7 +215,7 @@ namespace java.util
 		 global::java.lang.Object java.util.Map.remove(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._remove12992, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._remove12992, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -224,7 +224,7 @@ namespace java.util
 		 global::java.util.Set java.util.Map.keySet() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._keySet12993)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._keySet12993)); 
@@ -233,7 +233,7 @@ namespace java.util
 		 bool java.util.Map.containsValue(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.__SortedMap._containsValue12994, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._containsValue12994, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -242,7 +242,7 @@ namespace java.util
 		 bool java.util.Map.containsKey(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__SortedMap)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.__SortedMap._containsKey12995, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._containsKey12995, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

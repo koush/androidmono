@@ -29,7 +29,7 @@ namespace java.net
 		protected virtual void connect(java.net.InetAddress arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.DatagramSocketImpl)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.DatagramSocketImpl._connect11722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramSocketImpl.staticClass, global::java.net.DatagramSocketImpl._connect11722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -40,7 +40,7 @@ namespace java.net
 		protected virtual global::java.io.FileDescriptor getFileDescriptor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.DatagramSocketImpl)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.DatagramSocketImpl._getFileDescriptor11724)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.FileDescriptor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.DatagramSocketImpl.staticClass, global::java.net.DatagramSocketImpl._getFileDescriptor11724)); 
@@ -51,7 +51,7 @@ namespace java.net
 		protected virtual void disconnect() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.DatagramSocketImpl)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.net.DatagramSocketImpl._disconnect11726); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.net.DatagramSocketImpl.staticClass, global::java.net.DatagramSocketImpl._disconnect11726); 
@@ -60,7 +60,7 @@ namespace java.net
 		protected virtual int getLocalPort() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.DatagramSocketImpl)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.net.DatagramSocketImpl._getLocalPort11727); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.net.DatagramSocketImpl.staticClass, global::java.net.DatagramSocketImpl._getLocalPort11727); 

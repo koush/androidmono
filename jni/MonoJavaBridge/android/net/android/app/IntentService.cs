@@ -15,7 +15,7 @@ namespace android.app
 		public override global::android.os.IBinder onBind(android.content.Intent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.IntentService)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.IntentService._onBind603, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._onBind603, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -24,7 +24,7 @@ namespace android.app
 		public override void onCreate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.IntentService)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.IntentService._onCreate604); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._onCreate604); 
@@ -33,7 +33,7 @@ namespace android.app
 		public override void onStart(android.content.Intent arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.IntentService)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.IntentService._onStart605, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._onStart605, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -42,7 +42,7 @@ namespace android.app
 		public override int onStartCommand(android.content.Intent arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.IntentService)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.app.IntentService._onStartCommand606, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._onStartCommand606, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -51,7 +51,7 @@ namespace android.app
 		public override void onDestroy() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.IntentService)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.IntentService._onDestroy607); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._onDestroy607); 
@@ -60,7 +60,7 @@ namespace android.app
 		public virtual void setIntentRedelivery(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.IntentService)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.IntentService._setIntentRedelivery608, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.IntentService.staticClass, global::android.app.IntentService._setIntentRedelivery608, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

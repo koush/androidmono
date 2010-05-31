@@ -22,7 +22,7 @@ namespace android.net
 		public virtual int getUid() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.Credentials)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.Credentials._getUid4622); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.Credentials.staticClass, global::android.net.Credentials._getUid4622); 
@@ -31,7 +31,7 @@ namespace android.net
 		public virtual int getPid() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.Credentials)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.Credentials._getPid4623); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.Credentials.staticClass, global::android.net.Credentials._getPid4623); 
@@ -40,7 +40,7 @@ namespace android.net
 		public virtual int getGid() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.net.Credentials)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.net.Credentials._getGid4624); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.net.Credentials.staticClass, global::android.net.Credentials._getGid4624); 

@@ -15,7 +15,7 @@ namespace android.text.style
 		public virtual new global::android.text.style.MetricAffectingSpan getUnderlying() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.style.MetricAffectingSpan)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.style.MetricAffectingSpan>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.style.MetricAffectingSpan._getUnderlying7371)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.style.MetricAffectingSpan>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.style.MetricAffectingSpan.staticClass, global::android.text.style.MetricAffectingSpan._getUnderlying7371)); 

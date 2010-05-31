@@ -47,7 +47,7 @@ namespace android.widget
 			 void android.widget.Filter.FilterListener.onFilterComplete(int arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.Filter.__FilterListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.Filter.__FilterListener._onFilterComplete10193, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.Filter.__FilterListener.staticClass, global::android.widget.Filter.__FilterListener._onFilterComplete10193, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -114,7 +114,7 @@ namespace android.widget
 		public virtual void filter(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Filter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Filter._filter10197, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Filter.staticClass, global::android.widget.Filter._filter10197, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -123,7 +123,7 @@ namespace android.widget
 		public virtual void filter(java.lang.CharSequence arg0, android.widget.Filter.FilterListener arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Filter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.Filter._filter10198, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Filter.staticClass, global::android.widget.Filter._filter10198, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -136,7 +136,7 @@ namespace android.widget
 		public virtual global::java.lang.CharSequence convertResultToString(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.Filter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.Filter._convertResultToString10201, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.Filter.staticClass, global::android.widget.Filter._convertResultToString10201, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 

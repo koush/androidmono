@@ -54,7 +54,7 @@ namespace android.webkit
 			 void android.webkit.WebStorage.QuotaUpdater.updateQuota(long arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.webkit.WebStorage.__QuotaUpdater)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.webkit.WebStorage.__QuotaUpdater._updateQuota9510, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebStorage.__QuotaUpdater.staticClass, global::android.webkit.WebStorage.__QuotaUpdater._updateQuota9510, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -75,7 +75,7 @@ namespace android.webkit
 		public void getOrigins(android.webkit.ValueCallback arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebStorage)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebStorage._getOrigins9512, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebStorage.staticClass, global::android.webkit.WebStorage._getOrigins9512, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -84,7 +84,7 @@ namespace android.webkit
 		public void getUsageForOrigin(java.lang.String arg0, android.webkit.ValueCallback arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebStorage)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebStorage._getUsageForOrigin9513, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebStorage.staticClass, global::android.webkit.WebStorage._getUsageForOrigin9513, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -93,7 +93,7 @@ namespace android.webkit
 		public void getQuotaForOrigin(java.lang.String arg0, android.webkit.ValueCallback arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebStorage)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebStorage._getQuotaForOrigin9514, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebStorage.staticClass, global::android.webkit.WebStorage._getQuotaForOrigin9514, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -102,7 +102,7 @@ namespace android.webkit
 		public void setQuotaForOrigin(java.lang.String arg0, long arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebStorage)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebStorage._setQuotaForOrigin9515, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebStorage.staticClass, global::android.webkit.WebStorage._setQuotaForOrigin9515, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -111,7 +111,7 @@ namespace android.webkit
 		public void deleteOrigin(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebStorage)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebStorage._deleteOrigin9516, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebStorage.staticClass, global::android.webkit.WebStorage._deleteOrigin9516, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -120,7 +120,7 @@ namespace android.webkit
 		public void deleteAllData() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.WebStorage)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.WebStorage._deleteAllData9517); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.WebStorage.staticClass, global::android.webkit.WebStorage._deleteAllData9517); 

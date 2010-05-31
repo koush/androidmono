@@ -61,7 +61,7 @@ namespace android.util
 		public virtual global::android.util.EventLogTags.Description get(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.EventLogTags)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.EventLogTags.Description>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.EventLogTags._get7547, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.EventLogTags.Description>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.EventLogTags.staticClass, global::android.util.EventLogTags._get7547, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -70,7 +70,7 @@ namespace android.util
 		public virtual global::android.util.EventLogTags.Description get(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.EventLogTags)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.EventLogTags.Description>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.EventLogTags._get7548, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.EventLogTags.Description>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.EventLogTags.staticClass, global::android.util.EventLogTags._get7548, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 

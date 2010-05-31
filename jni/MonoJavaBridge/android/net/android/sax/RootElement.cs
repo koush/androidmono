@@ -22,7 +22,7 @@ namespace android.sax
 		public virtual global::org.xml.sax.ContentHandler getContentHandler() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.sax.RootElement)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.ContentHandler>(@__env, @__env.CallObjectMethodPtr(this, global::android.sax.RootElement._getContentHandler6388)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.ContentHandler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.sax.RootElement.staticClass, global::android.sax.RootElement._getContentHandler6388)); 

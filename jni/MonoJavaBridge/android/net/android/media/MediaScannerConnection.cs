@@ -55,7 +55,7 @@ namespace android.media
 			 void android.media.MediaScannerConnection.MediaScannerConnectionClient.onMediaScannerConnected() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.MediaScannerConnection.__MediaScannerConnectionClient)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.media.MediaScannerConnection.__MediaScannerConnectionClient._onMediaScannerConnected4557); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaScannerConnection.__MediaScannerConnectionClient.staticClass, global::android.media.MediaScannerConnection.__MediaScannerConnectionClient._onMediaScannerConnected4557); 
@@ -64,7 +64,7 @@ namespace android.media
 			 void android.media.MediaScannerConnection.MediaScannerConnectionClient.onScanCompleted(java.lang.String arg0, android.net.Uri arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.media.MediaScannerConnection.__MediaScannerConnectionClient)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.media.MediaScannerConnection.__MediaScannerConnectionClient._onScanCompleted4558, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaScannerConnection.__MediaScannerConnectionClient.staticClass, global::android.media.MediaScannerConnection.__MediaScannerConnectionClient._onScanCompleted4558, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -80,7 +80,7 @@ namespace android.media
 		public virtual void connect() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaScannerConnection)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaScannerConnection._connect4559); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaScannerConnection.staticClass, global::android.media.MediaScannerConnection._connect4559); 
@@ -89,7 +89,7 @@ namespace android.media
 		public virtual void onServiceConnected(android.content.ComponentName arg0, android.os.IBinder arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaScannerConnection)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaScannerConnection._onServiceConnected4560, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaScannerConnection.staticClass, global::android.media.MediaScannerConnection._onServiceConnected4560, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -98,7 +98,7 @@ namespace android.media
 		public virtual void onServiceDisconnected(android.content.ComponentName arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaScannerConnection)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaScannerConnection._onServiceDisconnected4561, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaScannerConnection.staticClass, global::android.media.MediaScannerConnection._onServiceDisconnected4561, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -107,7 +107,7 @@ namespace android.media
 		public virtual void disconnect() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaScannerConnection)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaScannerConnection._disconnect4562); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaScannerConnection.staticClass, global::android.media.MediaScannerConnection._disconnect4562); 
@@ -116,7 +116,7 @@ namespace android.media
 		public virtual bool isConnected() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaScannerConnection)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.media.MediaScannerConnection._isConnected4563); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.media.MediaScannerConnection.staticClass, global::android.media.MediaScannerConnection._isConnected4563); 
@@ -125,7 +125,7 @@ namespace android.media
 		public virtual void scanFile(java.lang.String arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.media.MediaScannerConnection)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.media.MediaScannerConnection._scanFile4564, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.media.MediaScannerConnection.staticClass, global::android.media.MediaScannerConnection._scanFile4564, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 

@@ -22,7 +22,7 @@ namespace android.os
 		public sealed override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.ParcelUuid)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.os.ParcelUuid._hashCode5806); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._hashCode5806); 
@@ -31,7 +31,7 @@ namespace android.os
 		public sealed override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.ParcelUuid)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.ParcelUuid._equals5807, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._equals5807, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace android.os
 		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.ParcelUuid)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.ParcelUuid._toString5808)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._toString5808)); 
@@ -49,7 +49,7 @@ namespace android.os
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.ParcelUuid)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.ParcelUuid._writeToParcel5809, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._writeToParcel5809, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -58,7 +58,7 @@ namespace android.os
 		public int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.ParcelUuid)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.os.ParcelUuid._describeContents5810); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._describeContents5810); 
@@ -73,7 +73,7 @@ namespace android.os
 		public global::java.util.UUID getUuid() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.ParcelUuid)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.UUID>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.ParcelUuid._getUuid5812)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.UUID>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.ParcelUuid.staticClass, global::android.os.ParcelUuid._getUuid5812)); 

@@ -22,7 +22,7 @@ namespace android.inputmethodservice
 		public override bool hasFocus() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.inputmethodservice.ExtractEditText)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.inputmethodservice.ExtractEditText._hasFocus3996); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._hasFocus3996); 
@@ -31,7 +31,7 @@ namespace android.inputmethodservice
 		public override bool hasWindowFocus() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.inputmethodservice.ExtractEditText)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.inputmethodservice.ExtractEditText._hasWindowFocus3997); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._hasWindowFocus3997); 
@@ -40,7 +40,7 @@ namespace android.inputmethodservice
 		public override bool performClick() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.inputmethodservice.ExtractEditText)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.inputmethodservice.ExtractEditText._performClick3998); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._performClick3998); 
@@ -49,7 +49,7 @@ namespace android.inputmethodservice
 		public override bool isFocused() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.inputmethodservice.ExtractEditText)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.inputmethodservice.ExtractEditText._isFocused3999); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._isFocused3999); 
@@ -58,7 +58,7 @@ namespace android.inputmethodservice
 		public override void setExtractedText(android.view.inputmethod.ExtractedText arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.inputmethodservice.ExtractEditText)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.inputmethodservice.ExtractEditText._setExtractedText4000, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._setExtractedText4000, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.inputmethodservice
 		protected override void onSelectionChanged(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.inputmethodservice.ExtractEditText)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.inputmethodservice.ExtractEditText._onSelectionChanged4001, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._onSelectionChanged4001, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -76,7 +76,7 @@ namespace android.inputmethodservice
 		public override bool isInputMethodTarget() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.inputmethodservice.ExtractEditText)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.inputmethodservice.ExtractEditText._isInputMethodTarget4002); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._isInputMethodTarget4002); 
@@ -85,7 +85,7 @@ namespace android.inputmethodservice
 		public override bool onTextContextMenuItem(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.inputmethodservice.ExtractEditText)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.inputmethodservice.ExtractEditText._onTextContextMenuItem4003, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._onTextContextMenuItem4003, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -94,7 +94,7 @@ namespace android.inputmethodservice
 		public virtual void startInternalChanges() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.inputmethodservice.ExtractEditText)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.inputmethodservice.ExtractEditText._startInternalChanges4004); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._startInternalChanges4004); 
@@ -103,7 +103,7 @@ namespace android.inputmethodservice
 		public virtual void finishInternalChanges() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.inputmethodservice.ExtractEditText)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.inputmethodservice.ExtractEditText._finishInternalChanges4005); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._finishInternalChanges4005); 
@@ -112,7 +112,7 @@ namespace android.inputmethodservice
 		public virtual bool hasVerticalScrollBar() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.inputmethodservice.ExtractEditText)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.inputmethodservice.ExtractEditText._hasVerticalScrollBar4006); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.inputmethodservice.ExtractEditText.staticClass, global::android.inputmethodservice.ExtractEditText._hasVerticalScrollBar4006); 

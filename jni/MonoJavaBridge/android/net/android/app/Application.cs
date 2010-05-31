@@ -22,7 +22,7 @@ namespace android.app
 		public virtual void onCreate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Application)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.Application._onCreate429); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Application.staticClass, global::android.app.Application._onCreate429); 
@@ -31,7 +31,7 @@ namespace android.app
 		public virtual void onConfigurationChanged(android.content.res.Configuration arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Application)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.Application._onConfigurationChanged430, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Application.staticClass, global::android.app.Application._onConfigurationChanged430, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -40,7 +40,7 @@ namespace android.app
 		public virtual void onLowMemory() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Application)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.Application._onLowMemory431); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Application.staticClass, global::android.app.Application._onLowMemory431); 
@@ -49,7 +49,7 @@ namespace android.app
 		public virtual void onTerminate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.app.Application)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.app.Application._onTerminate432); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Application.staticClass, global::android.app.Application._onTerminate432); 

@@ -22,7 +22,7 @@ namespace android.webkit
 		public virtual void cancel() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.SslErrorHandler)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.SslErrorHandler._cancel9334); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.SslErrorHandler.staticClass, global::android.webkit.SslErrorHandler._cancel9334); 
@@ -31,7 +31,7 @@ namespace android.webkit
 		public override void handleMessage(android.os.Message arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.SslErrorHandler)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.SslErrorHandler._handleMessage9335, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.SslErrorHandler.staticClass, global::android.webkit.SslErrorHandler._handleMessage9335, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -40,7 +40,7 @@ namespace android.webkit
 		public virtual void proceed() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.SslErrorHandler)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.SslErrorHandler._proceed9336); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.SslErrorHandler.staticClass, global::android.webkit.SslErrorHandler._proceed9336); 

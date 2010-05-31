@@ -40,7 +40,7 @@ namespace android.widget
 			public virtual global::java.lang.String debug(java.lang.String arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.LinearLayout.LayoutParams)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.LinearLayout.LayoutParams._debug10397, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.LinearLayout.LayoutParams.staticClass, global::android.widget.LinearLayout.LayoutParams._debug10397, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -112,7 +112,7 @@ namespace android.widget
 		public virtual void setGravity(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.LinearLayout._setGravity10405, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._setGravity10405, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -121,7 +121,7 @@ namespace android.widget
 		protected override void onLayout(bool arg0, int arg1, int arg2, int arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.LinearLayout._onLayout10406, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._onLayout10406, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -130,7 +130,7 @@ namespace android.widget
 		public override int getBaseline() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.LinearLayout._getBaseline10407); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._getBaseline10407); 
@@ -139,7 +139,7 @@ namespace android.widget
 		protected override void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.LinearLayout._onMeasure10408, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._onMeasure10408, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -148,7 +148,7 @@ namespace android.widget
 		protected override bool checkLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.LinearLayout._checkLayoutParams10409, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._checkLayoutParams10409, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -157,7 +157,7 @@ namespace android.widget
 		public virtual new global::android.widget.LinearLayout.LayoutParams generateLayoutParams(android.util.AttributeSet arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.LinearLayout._generateLayoutParams10410, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._generateLayoutParams10410, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -166,7 +166,7 @@ namespace android.widget
 		protected virtual new global::android.widget.LinearLayout.LayoutParams generateLayoutParams(android.view.ViewGroup.LayoutParams arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.LinearLayout._generateLayoutParams10411, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._generateLayoutParams10411, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -175,7 +175,7 @@ namespace android.widget
 		protected virtual new global::android.widget.LinearLayout.LayoutParams generateDefaultLayoutParams() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.LinearLayout._generateDefaultLayoutParams10412)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.LinearLayout.LayoutParams>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._generateDefaultLayoutParams10412)); 
@@ -184,7 +184,7 @@ namespace android.widget
 		public virtual bool isBaselineAligned() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.LinearLayout._isBaselineAligned10413); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._isBaselineAligned10413); 
@@ -193,7 +193,7 @@ namespace android.widget
 		public virtual void setBaselineAligned(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.LinearLayout._setBaselineAligned10414, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._setBaselineAligned10414, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -202,7 +202,7 @@ namespace android.widget
 		public virtual int getBaselineAlignedChildIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.LinearLayout._getBaselineAlignedChildIndex10415); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._getBaselineAlignedChildIndex10415); 
@@ -211,7 +211,7 @@ namespace android.widget
 		public virtual void setBaselineAlignedChildIndex(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.LinearLayout._setBaselineAlignedChildIndex10416, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._setBaselineAlignedChildIndex10416, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -220,7 +220,7 @@ namespace android.widget
 		public virtual float getWeightSum() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.widget.LinearLayout._getWeightSum10417); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._getWeightSum10417); 
@@ -229,7 +229,7 @@ namespace android.widget
 		public virtual void setWeightSum(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.LinearLayout._setWeightSum10418, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._setWeightSum10418, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -238,7 +238,7 @@ namespace android.widget
 		public virtual void setOrientation(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.LinearLayout._setOrientation10419, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._setOrientation10419, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -247,7 +247,7 @@ namespace android.widget
 		public virtual int getOrientation() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.LinearLayout._getOrientation10420); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._getOrientation10420); 
@@ -256,7 +256,7 @@ namespace android.widget
 		public virtual void setHorizontalGravity(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.LinearLayout._setHorizontalGravity10421, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._setHorizontalGravity10421, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -265,7 +265,7 @@ namespace android.widget
 		public virtual void setVerticalGravity(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.LinearLayout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.LinearLayout._setVerticalGravity10422, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.LinearLayout.staticClass, global::android.widget.LinearLayout._setVerticalGravity10422, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

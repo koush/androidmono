@@ -39,7 +39,7 @@ namespace java.security.cert
 		 bool java.security.cert.X509Extension.hasUnsupportedCriticalExtension() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.cert.__X509Extension)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.security.cert.__X509Extension._hasUnsupportedCriticalExtension12524); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.cert.__X509Extension.staticClass, global::java.security.cert.__X509Extension._hasUnsupportedCriticalExtension12524); 
@@ -48,7 +48,7 @@ namespace java.security.cert
 		 global::java.util.Set java.security.cert.X509Extension.getCriticalExtensionOIDs() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.cert.__X509Extension)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.__X509Extension._getCriticalExtensionOIDs12525)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.__X509Extension.staticClass, global::java.security.cert.__X509Extension._getCriticalExtensionOIDs12525)); 
@@ -57,7 +57,7 @@ namespace java.security.cert
 		 global::java.util.Set java.security.cert.X509Extension.getNonCriticalExtensionOIDs() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.cert.__X509Extension)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.__X509Extension._getNonCriticalExtensionOIDs12526)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Set>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.__X509Extension.staticClass, global::java.security.cert.__X509Extension._getNonCriticalExtensionOIDs12526)); 
@@ -65,7 +65,7 @@ namespace java.security.cert
 		internal static global::net.sf.jni4net.jni.MethodId _getExtensionValue12527; 
 		 byte[] java.security.cert.X509Extension.getExtensionValue(java.lang.String arg0) 
 		{ 
-			if (GetType() == typeof(java.security.cert.__X509Extension)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.__X509Extension._getExtensionValue12527, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.__X509Extension.staticClass, global::java.security.cert.__X509Extension._getExtensionValue12527, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 

@@ -15,7 +15,7 @@ namespace android.preference
 		public virtual void removeAll() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceGroup)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.PreferenceGroup._removeAll6075); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._removeAll6075); 
@@ -24,7 +24,7 @@ namespace android.preference
 		public override void setEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceGroup)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.PreferenceGroup._setEnabled6076, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._setEnabled6076, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -33,7 +33,7 @@ namespace android.preference
 		protected virtual void dispatchSaveInstanceState(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceGroup)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.PreferenceGroup._dispatchSaveInstanceState6077, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._dispatchSaveInstanceState6077, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -42,7 +42,7 @@ namespace android.preference
 		protected virtual void dispatchRestoreInstanceState(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceGroup)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.PreferenceGroup._dispatchRestoreInstanceState6078, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._dispatchRestoreInstanceState6078, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -51,7 +51,7 @@ namespace android.preference
 		protected override void onAttachedToActivity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceGroup)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.PreferenceGroup._onAttachedToActivity6079); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._onAttachedToActivity6079); 
@@ -60,7 +60,7 @@ namespace android.preference
 		protected override void onPrepareForRemoval() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceGroup)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.PreferenceGroup._onPrepareForRemoval6080); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._onPrepareForRemoval6080); 
@@ -69,7 +69,7 @@ namespace android.preference
 		public virtual global::android.preference.Preference findPreference(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceGroup)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.PreferenceGroup._findPreference6081, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._findPreference6081, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -78,7 +78,7 @@ namespace android.preference
 		protected virtual bool isOnSameScreenAsChildren() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceGroup)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.preference.PreferenceGroup._isOnSameScreenAsChildren6082); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._isOnSameScreenAsChildren6082); 
@@ -87,7 +87,7 @@ namespace android.preference
 		public virtual void setOrderingAsAdded(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceGroup)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.PreferenceGroup._setOrderingAsAdded6083, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._setOrderingAsAdded6083, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -96,7 +96,7 @@ namespace android.preference
 		public virtual bool isOrderingAsAdded() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceGroup)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.preference.PreferenceGroup._isOrderingAsAdded6084); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._isOrderingAsAdded6084); 
@@ -105,7 +105,7 @@ namespace android.preference
 		public virtual void addItemFromInflater(android.preference.Preference arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceGroup)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.PreferenceGroup._addItemFromInflater6085, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._addItemFromInflater6085, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -114,7 +114,7 @@ namespace android.preference
 		public virtual int getPreferenceCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceGroup)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.preference.PreferenceGroup._getPreferenceCount6086); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._getPreferenceCount6086); 
@@ -123,7 +123,7 @@ namespace android.preference
 		public virtual global::android.preference.Preference getPreference(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceGroup)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.PreferenceGroup._getPreference6087, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._getPreference6087, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -132,7 +132,7 @@ namespace android.preference
 		public virtual bool addPreference(android.preference.Preference arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceGroup)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.preference.PreferenceGroup._addPreference6088, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._addPreference6088, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -141,7 +141,7 @@ namespace android.preference
 		public virtual bool removePreference(android.preference.Preference arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceGroup)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.preference.PreferenceGroup._removePreference6089, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._removePreference6089, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -150,7 +150,7 @@ namespace android.preference
 		protected virtual bool onPrepareAddPreference(android.preference.Preference arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.PreferenceGroup)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.preference.PreferenceGroup._onPrepareAddPreference6090, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._onPrepareAddPreference6090, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

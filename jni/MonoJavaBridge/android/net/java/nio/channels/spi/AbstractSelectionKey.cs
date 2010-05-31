@@ -15,7 +15,7 @@ namespace java.nio.channels.spi
 		public sealed override bool isValid() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.spi.AbstractSelectionKey)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.channels.spi.AbstractSelectionKey._isValid12315); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.spi.AbstractSelectionKey.staticClass, global::java.nio.channels.spi.AbstractSelectionKey._isValid12315); 
@@ -24,7 +24,7 @@ namespace java.nio.channels.spi
 		public sealed override void cancel() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.spi.AbstractSelectionKey)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.nio.channels.spi.AbstractSelectionKey._cancel12316); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.spi.AbstractSelectionKey.staticClass, global::java.nio.channels.spi.AbstractSelectionKey._cancel12316); 

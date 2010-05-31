@@ -54,7 +54,7 @@ namespace android.widget
 			 void android.widget.TimePicker.OnTimeChangedListener.onTimeChanged(android.widget.TimePicker arg0, int arg1, int arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.TimePicker.__OnTimeChangedListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.TimePicker.__OnTimeChangedListener._onTimeChanged11214, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.TimePicker.__OnTimeChangedListener.staticClass, global::android.widget.TimePicker.__OnTimeChangedListener._onTimeChanged11214, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -69,7 +69,7 @@ namespace android.widget
 		public override void setEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TimePicker)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TimePicker._setEnabled11215, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TimePicker.staticClass, global::android.widget.TimePicker._setEnabled11215, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -78,7 +78,7 @@ namespace android.widget
 		protected override void onRestoreInstanceState(android.os.Parcelable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TimePicker)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TimePicker._onRestoreInstanceState11216, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TimePicker.staticClass, global::android.widget.TimePicker._onRestoreInstanceState11216, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -87,7 +87,7 @@ namespace android.widget
 		protected override global::android.os.Parcelable onSaveInstanceState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TimePicker)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TimePicker._onSaveInstanceState11217)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TimePicker.staticClass, global::android.widget.TimePicker._onSaveInstanceState11217)); 
@@ -96,7 +96,7 @@ namespace android.widget
 		public override int getBaseline() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TimePicker)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.TimePicker._getBaseline11218); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.TimePicker.staticClass, global::android.widget.TimePicker._getBaseline11218); 
@@ -105,7 +105,7 @@ namespace android.widget
 		public virtual bool is24HourView() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TimePicker)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.TimePicker._is24HourView11219); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.TimePicker.staticClass, global::android.widget.TimePicker._is24HourView11219); 
@@ -114,7 +114,7 @@ namespace android.widget
 		public virtual void setOnTimeChangedListener(android.widget.TimePicker.OnTimeChangedListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TimePicker)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TimePicker._setOnTimeChangedListener11220, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TimePicker.staticClass, global::android.widget.TimePicker._setOnTimeChangedListener11220, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -123,7 +123,7 @@ namespace android.widget
 		public virtual global::java.lang.Integer getCurrentHour() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TimePicker)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Integer>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TimePicker._getCurrentHour11221)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Integer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TimePicker.staticClass, global::android.widget.TimePicker._getCurrentHour11221)); 
@@ -132,7 +132,7 @@ namespace android.widget
 		public virtual void setCurrentHour(java.lang.Integer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TimePicker)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TimePicker._setCurrentHour11222, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TimePicker.staticClass, global::android.widget.TimePicker._setCurrentHour11222, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -141,7 +141,7 @@ namespace android.widget
 		public virtual void setIs24HourView(java.lang.Boolean arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TimePicker)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TimePicker._setIs24HourView11223, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TimePicker.staticClass, global::android.widget.TimePicker._setIs24HourView11223, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -150,7 +150,7 @@ namespace android.widget
 		public virtual global::java.lang.Integer getCurrentMinute() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TimePicker)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Integer>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TimePicker._getCurrentMinute11224)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Integer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TimePicker.staticClass, global::android.widget.TimePicker._getCurrentMinute11224)); 
@@ -159,7 +159,7 @@ namespace android.widget
 		public virtual void setCurrentMinute(java.lang.Integer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.TimePicker)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.TimePicker._setCurrentMinute11225, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TimePicker.staticClass, global::android.widget.TimePicker._setCurrentMinute11225, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

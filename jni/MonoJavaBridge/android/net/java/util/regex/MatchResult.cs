@@ -42,7 +42,7 @@ namespace java.util.regex
 		 global::java.lang.String java.util.regex.MatchResult.group() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.__MatchResult)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.__MatchResult._group13053)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.__MatchResult.staticClass, global::java.util.regex.__MatchResult._group13053)); 
@@ -51,7 +51,7 @@ namespace java.util.regex
 		 global::java.lang.String java.util.regex.MatchResult.group(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.__MatchResult)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.__MatchResult._group13054, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.__MatchResult.staticClass, global::java.util.regex.__MatchResult._group13054, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -60,7 +60,7 @@ namespace java.util.regex
 		 int java.util.regex.MatchResult.start() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.__MatchResult)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.regex.__MatchResult._start13055); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.__MatchResult.staticClass, global::java.util.regex.__MatchResult._start13055); 
@@ -69,7 +69,7 @@ namespace java.util.regex
 		 int java.util.regex.MatchResult.start(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.__MatchResult)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.regex.__MatchResult._start13056, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.__MatchResult.staticClass, global::java.util.regex.__MatchResult._start13056, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -78,7 +78,7 @@ namespace java.util.regex
 		 int java.util.regex.MatchResult.end() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.__MatchResult)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.regex.__MatchResult._end13057); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.__MatchResult.staticClass, global::java.util.regex.__MatchResult._end13057); 
@@ -87,7 +87,7 @@ namespace java.util.regex
 		 int java.util.regex.MatchResult.end(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.__MatchResult)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.regex.__MatchResult._end13058, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.__MatchResult.staticClass, global::java.util.regex.__MatchResult._end13058, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -96,7 +96,7 @@ namespace java.util.regex
 		 int java.util.regex.MatchResult.groupCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.__MatchResult)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.regex.__MatchResult._groupCount13059); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.__MatchResult.staticClass, global::java.util.regex.__MatchResult._groupCount13059); 

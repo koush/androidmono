@@ -22,7 +22,7 @@ namespace android.graphics
 		public virtual void save() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Camera)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Camera._save2792); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._save2792); 
@@ -31,7 +31,7 @@ namespace android.graphics
 		public virtual void restore() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Camera)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Camera._restore2793); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._restore2793); 
@@ -40,7 +40,7 @@ namespace android.graphics
 		public virtual void translate(float arg0, float arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Camera)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Camera._translate2794, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._translate2794, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -49,7 +49,7 @@ namespace android.graphics
 		public virtual void getMatrix(android.graphics.Matrix arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Camera)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Camera._getMatrix2795, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._getMatrix2795, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.graphics
 		public virtual void rotateX(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Camera)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Camera._rotateX2796, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._rotateX2796, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.graphics
 		public virtual void rotateY(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Camera)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Camera._rotateY2797, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._rotateY2797, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -76,7 +76,7 @@ namespace android.graphics
 		public virtual void rotateZ(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Camera)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Camera._rotateZ2798, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._rotateZ2798, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -85,7 +85,7 @@ namespace android.graphics
 		public virtual void applyToCanvas(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Camera)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.graphics.Camera._applyToCanvas2799, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._applyToCanvas2799, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -94,7 +94,7 @@ namespace android.graphics
 		public virtual float dotWithNormal(float arg0, float arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.graphics.Camera)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.graphics.Camera._dotWithNormal2800, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.Camera.staticClass, global::android.graphics.Camera._dotWithNormal2800, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 

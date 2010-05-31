@@ -40,7 +40,7 @@ namespace android.os
 			public override global::java.lang.String toString() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.PowerManager.WakeLock)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.PowerManager.WakeLock._toString5828)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._toString5828)); 
@@ -49,7 +49,7 @@ namespace android.os
 			public virtual void acquire() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.PowerManager.WakeLock)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.os.PowerManager.WakeLock._acquire5829); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._acquire5829); 
@@ -58,7 +58,7 @@ namespace android.os
 			public virtual void acquire(long arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.PowerManager.WakeLock)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.os.PowerManager.WakeLock._acquire5830, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._acquire5830, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.os
 			public virtual void release() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.PowerManager.WakeLock)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.os.PowerManager.WakeLock._release5831); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._release5831); 
@@ -76,7 +76,7 @@ namespace android.os
 			public virtual void setReferenceCounted(bool arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.PowerManager.WakeLock)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.os.PowerManager.WakeLock._setReferenceCounted5832, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._setReferenceCounted5832, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -85,7 +85,7 @@ namespace android.os
 			public virtual bool isHeld() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.os.PowerManager.WakeLock)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.os.PowerManager.WakeLock._isHeld5833); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.os.PowerManager.WakeLock.staticClass, global::android.os.PowerManager.WakeLock._isHeld5833); 
@@ -105,7 +105,7 @@ namespace android.os
 		public virtual global::android.os.PowerManager.WakeLock newWakeLock(int arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.PowerManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.PowerManager.WakeLock>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.PowerManager._newWakeLock5834, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.PowerManager.WakeLock>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.PowerManager.staticClass, global::android.os.PowerManager._newWakeLock5834, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -114,7 +114,7 @@ namespace android.os
 		public virtual void userActivity(long arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.PowerManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.PowerManager._userActivity5835, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.PowerManager.staticClass, global::android.os.PowerManager._userActivity5835, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -123,7 +123,7 @@ namespace android.os
 		public virtual void goToSleep(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.PowerManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.PowerManager._goToSleep5836, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.PowerManager.staticClass, global::android.os.PowerManager._goToSleep5836, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -132,7 +132,7 @@ namespace android.os
 		public virtual bool isScreenOn() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.PowerManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.PowerManager._isScreenOn5837); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.PowerManager.staticClass, global::android.os.PowerManager._isScreenOn5837); 

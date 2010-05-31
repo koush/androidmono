@@ -22,7 +22,7 @@ namespace android.webkit
 		public virtual void confirm(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.JsPromptResult)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.JsPromptResult._confirm9298, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.JsPromptResult.staticClass, global::android.webkit.JsPromptResult._confirm9298, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

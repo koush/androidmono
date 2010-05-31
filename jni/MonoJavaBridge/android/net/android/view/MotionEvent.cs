@@ -22,7 +22,7 @@ namespace android.view
 		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.MotionEvent._toString7935)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._toString7935)); 
@@ -31,7 +31,7 @@ namespace android.view
 		public float getSize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getSize7936); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getSize7936); 
@@ -40,7 +40,7 @@ namespace android.view
 		public float getSize(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getSize7937, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getSize7937, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.view
 		public float getY(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getY7938, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getY7938, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.view
 		public float getY() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getY7939); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getY7939); 
@@ -67,7 +67,7 @@ namespace android.view
 		public float getX() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getX7940); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getX7940); 
@@ -76,7 +76,7 @@ namespace android.view
 		public float getX(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getX7941, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getX7941, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -85,7 +85,7 @@ namespace android.view
 		public long getEventTime() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.view.MotionEvent._getEventTime7942); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getEventTime7942); 
@@ -118,7 +118,7 @@ namespace android.view
 		public void recycle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.MotionEvent._recycle7947); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._recycle7947); 
@@ -127,7 +127,7 @@ namespace android.view
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.MotionEvent._writeToParcel7948, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._writeToParcel7948, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -136,7 +136,7 @@ namespace android.view
 		public int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.MotionEvent._describeContents7949); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._describeContents7949); 
@@ -145,7 +145,7 @@ namespace android.view
 		public int getAction() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getAction7950); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getAction7950); 
@@ -154,7 +154,7 @@ namespace android.view
 		public void setAction(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.MotionEvent._setAction7951, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._setAction7951, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -163,7 +163,7 @@ namespace android.view
 		public int getMetaState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getMetaState7952); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getMetaState7952); 
@@ -172,7 +172,7 @@ namespace android.view
 		public long getDownTime() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.view.MotionEvent._getDownTime7953); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getDownTime7953); 
@@ -181,7 +181,7 @@ namespace android.view
 		public int getDeviceId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getDeviceId7954); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getDeviceId7954); 
@@ -196,7 +196,7 @@ namespace android.view
 		public float getPressure(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getPressure7956, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getPressure7956, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -205,7 +205,7 @@ namespace android.view
 		public float getPressure() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getPressure7957); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getPressure7957); 
@@ -214,7 +214,7 @@ namespace android.view
 		public int getPointerCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getPointerCount7958); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getPointerCount7958); 
@@ -223,7 +223,7 @@ namespace android.view
 		public int getPointerId(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getPointerId7959, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getPointerId7959, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -232,7 +232,7 @@ namespace android.view
 		public int findPointerIndex(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.MotionEvent._findPointerIndex7960, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._findPointerIndex7960, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -241,7 +241,7 @@ namespace android.view
 		public float getRawX() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getRawX7961); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getRawX7961); 
@@ -250,7 +250,7 @@ namespace android.view
 		public float getRawY() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getRawY7962); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getRawY7962); 
@@ -259,7 +259,7 @@ namespace android.view
 		public float getXPrecision() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getXPrecision7963); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getXPrecision7963); 
@@ -268,7 +268,7 @@ namespace android.view
 		public float getYPrecision() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getYPrecision7964); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getYPrecision7964); 
@@ -277,7 +277,7 @@ namespace android.view
 		public int getHistorySize() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getHistorySize7965); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistorySize7965); 
@@ -286,7 +286,7 @@ namespace android.view
 		public long getHistoricalEventTime(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.view.MotionEvent._getHistoricalEventTime7966, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalEventTime7966, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -295,7 +295,7 @@ namespace android.view
 		public float getHistoricalX(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalX7967, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalX7967, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -304,7 +304,7 @@ namespace android.view
 		public float getHistoricalX(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalX7968, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalX7968, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -313,7 +313,7 @@ namespace android.view
 		public float getHistoricalY(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalY7969, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalY7969, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -322,7 +322,7 @@ namespace android.view
 		public float getHistoricalY(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalY7970, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalY7970, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -331,7 +331,7 @@ namespace android.view
 		public float getHistoricalPressure(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalPressure7971, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalPressure7971, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -340,7 +340,7 @@ namespace android.view
 		public float getHistoricalPressure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalPressure7972, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalPressure7972, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -349,7 +349,7 @@ namespace android.view
 		public float getHistoricalSize(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalSize7973, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalSize7973, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -358,7 +358,7 @@ namespace android.view
 		public float getHistoricalSize(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalSize7974, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalSize7974, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -367,7 +367,7 @@ namespace android.view
 		public int getEdgeFlags() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getEdgeFlags7975); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getEdgeFlags7975); 
@@ -376,7 +376,7 @@ namespace android.view
 		public void setEdgeFlags(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.MotionEvent._setEdgeFlags7976, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._setEdgeFlags7976, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -385,7 +385,7 @@ namespace android.view
 		public void offsetLocation(float arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.MotionEvent._offsetLocation7977, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._offsetLocation7977, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -394,7 +394,7 @@ namespace android.view
 		public void setLocation(float arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.MotionEvent._setLocation7978, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._setLocation7978, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -403,7 +403,7 @@ namespace android.view
 		public void addBatch(long arg0, float arg1, float arg2, float arg3, float arg4, int arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.MotionEvent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.MotionEvent._addBatch7979, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._addBatch7979, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 

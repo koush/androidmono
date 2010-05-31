@@ -54,7 +54,7 @@ namespace android.widget
 			 void android.widget.PopupWindow.OnDismissListener.onDismiss() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.PopupWindow.__OnDismissListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.PopupWindow.__OnDismissListener._onDismiss10535); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.__OnDismissListener.staticClass, global::android.widget.PopupWindow.__OnDismissListener._onDismiss10535); 
@@ -69,7 +69,7 @@ namespace android.widget
 		public virtual void update(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._update10536, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._update10536, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -78,7 +78,7 @@ namespace android.widget
 		public virtual void update() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._update10537); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._update10537); 
@@ -87,7 +87,7 @@ namespace android.widget
 		public virtual void update(android.view.View arg0, int arg1, int arg2, int arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._update10538, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._update10538, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -96,7 +96,7 @@ namespace android.widget
 		public virtual void update(android.view.View arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._update10539, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._update10539, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -105,7 +105,7 @@ namespace android.widget
 		public virtual void update(int arg0, int arg1, int arg2, int arg3, bool arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._update10540, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._update10540, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -114,7 +114,7 @@ namespace android.widget
 		public virtual void update(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._update10541, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._update10541, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -123,7 +123,7 @@ namespace android.widget
 		public virtual int getWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.PopupWindow._getWidth10542); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._getWidth10542); 
@@ -132,7 +132,7 @@ namespace android.widget
 		public virtual int getHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.PopupWindow._getHeight10543); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._getHeight10543); 
@@ -141,7 +141,7 @@ namespace android.widget
 		public virtual void setContentView(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._setContentView10544, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setContentView10544, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -150,7 +150,7 @@ namespace android.widget
 		public virtual void setSoftInputMode(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._setSoftInputMode10545, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setSoftInputMode10545, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -159,7 +159,7 @@ namespace android.widget
 		public virtual void setBackgroundDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._setBackgroundDrawable10546, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setBackgroundDrawable10546, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -168,7 +168,7 @@ namespace android.widget
 		public virtual void setFocusable(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._setFocusable10547, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setFocusable10547, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -177,7 +177,7 @@ namespace android.widget
 		public virtual bool isFocusable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.PopupWindow._isFocusable10548); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._isFocusable10548); 
@@ -186,7 +186,7 @@ namespace android.widget
 		public virtual global::android.graphics.drawable.Drawable getBackground() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.PopupWindow._getBackground10549)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._getBackground10549)); 
@@ -195,7 +195,7 @@ namespace android.widget
 		public virtual bool isShowing() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.PopupWindow._isShowing10550); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._isShowing10550); 
@@ -204,7 +204,7 @@ namespace android.widget
 		public virtual void dismiss() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._dismiss10551); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._dismiss10551); 
@@ -213,7 +213,7 @@ namespace android.widget
 		public virtual void setOnDismissListener(android.widget.PopupWindow.OnDismissListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._setOnDismissListener10552, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setOnDismissListener10552, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -222,7 +222,7 @@ namespace android.widget
 		public virtual void setHeight(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._setHeight10553, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setHeight10553, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -231,7 +231,7 @@ namespace android.widget
 		public virtual void setWidth(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._setWidth10554, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setWidth10554, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -240,7 +240,7 @@ namespace android.widget
 		public virtual int getAnimationStyle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.PopupWindow._getAnimationStyle10555); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._getAnimationStyle10555); 
@@ -249,7 +249,7 @@ namespace android.widget
 		public virtual void setIgnoreCheekPress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._setIgnoreCheekPress10556); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setIgnoreCheekPress10556); 
@@ -258,7 +258,7 @@ namespace android.widget
 		public virtual void setAnimationStyle(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._setAnimationStyle10557, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setAnimationStyle10557, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -267,7 +267,7 @@ namespace android.widget
 		public virtual global::android.view.View getContentView() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.PopupWindow._getContentView10558)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._getContentView10558)); 
@@ -276,7 +276,7 @@ namespace android.widget
 		public virtual void setTouchInterceptor(android.view.View.OnTouchListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._setTouchInterceptor10559, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setTouchInterceptor10559, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -285,7 +285,7 @@ namespace android.widget
 		public virtual int getInputMethodMode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.PopupWindow._getInputMethodMode10560); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._getInputMethodMode10560); 
@@ -294,7 +294,7 @@ namespace android.widget
 		public virtual void setInputMethodMode(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._setInputMethodMode10561, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setInputMethodMode10561, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -303,7 +303,7 @@ namespace android.widget
 		public virtual int getSoftInputMode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.PopupWindow._getSoftInputMode10562); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._getSoftInputMode10562); 
@@ -312,7 +312,7 @@ namespace android.widget
 		public virtual bool isTouchable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.PopupWindow._isTouchable10563); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._isTouchable10563); 
@@ -321,7 +321,7 @@ namespace android.widget
 		public virtual void setTouchable(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._setTouchable10564, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setTouchable10564, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -330,7 +330,7 @@ namespace android.widget
 		public virtual bool isOutsideTouchable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.PopupWindow._isOutsideTouchable10565); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._isOutsideTouchable10565); 
@@ -339,7 +339,7 @@ namespace android.widget
 		public virtual void setOutsideTouchable(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._setOutsideTouchable10566, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setOutsideTouchable10566, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -348,7 +348,7 @@ namespace android.widget
 		public virtual bool isClippingEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.PopupWindow._isClippingEnabled10567); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._isClippingEnabled10567); 
@@ -357,7 +357,7 @@ namespace android.widget
 		public virtual void setClippingEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._setClippingEnabled10568, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setClippingEnabled10568, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -366,7 +366,7 @@ namespace android.widget
 		public virtual void setWindowLayoutMode(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._setWindowLayoutMode10569, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._setWindowLayoutMode10569, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -375,7 +375,7 @@ namespace android.widget
 		public virtual void showAtLocation(android.view.View arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._showAtLocation10570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._showAtLocation10570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -384,7 +384,7 @@ namespace android.widget
 		public virtual void showAsDropDown(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._showAsDropDown10571, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._showAsDropDown10571, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -393,7 +393,7 @@ namespace android.widget
 		public virtual void showAsDropDown(android.view.View arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.PopupWindow._showAsDropDown10572, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._showAsDropDown10572, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -402,7 +402,7 @@ namespace android.widget
 		public virtual bool isAboveAnchor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.PopupWindow._isAboveAnchor10573); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._isAboveAnchor10573); 
@@ -411,7 +411,7 @@ namespace android.widget
 		public virtual int getMaxAvailableHeight(android.view.View arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.PopupWindow._getMaxAvailableHeight10574, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._getMaxAvailableHeight10574, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -420,7 +420,7 @@ namespace android.widget
 		public virtual int getMaxAvailableHeight(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.PopupWindow)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.PopupWindow._getMaxAvailableHeight10575, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.PopupWindow.staticClass, global::android.widget.PopupWindow._getMaxAvailableHeight10575, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

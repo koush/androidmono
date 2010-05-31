@@ -158,7 +158,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glActiveTexture(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glActiveTexture13131, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glActiveTexture13131, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -167,7 +167,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glAlphaFunc(int arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glAlphaFunc13132, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glAlphaFunc13132, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -176,7 +176,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glAlphaFuncx(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glAlphaFuncx13133, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glAlphaFuncx13133, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -185,7 +185,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glBindTexture(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glBindTexture13134, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glBindTexture13134, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -194,7 +194,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glBlendFunc(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glBlendFunc13135, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glBlendFunc13135, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -203,7 +203,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glClear(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glClear13136, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glClear13136, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -212,7 +212,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glClearColor(float arg0, float arg1, float arg2, float arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glClearColor13137, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glClearColor13137, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -221,7 +221,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glClearColorx(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glClearColorx13138, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glClearColorx13138, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -230,7 +230,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glClearDepthf(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glClearDepthf13139, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glClearDepthf13139, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -239,7 +239,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glClearDepthx(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glClearDepthx13140, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glClearDepthx13140, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -248,7 +248,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glClearStencil(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glClearStencil13141, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glClearStencil13141, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -257,7 +257,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glClientActiveTexture(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glClientActiveTexture13142, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glClientActiveTexture13142, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -266,7 +266,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glColor4f(float arg0, float arg1, float arg2, float arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glColor4f13143, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glColor4f13143, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -275,7 +275,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glColor4x(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glColor4x13144, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glColor4x13144, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -284,7 +284,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glColorMask(bool arg0, bool arg1, bool arg2, bool arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glColorMask13145, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glColorMask13145, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -293,7 +293,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glColorPointer(int arg0, int arg1, int arg2, java.nio.Buffer arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glColorPointer13146, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glColorPointer13146, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
@@ -302,7 +302,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glCompressedTexImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, java.nio.Buffer arg7) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glCompressedTexImage2D13147, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg7)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glCompressedTexImage2D13147, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg7)); 
@@ -311,7 +311,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glCompressedTexSubImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, java.nio.Buffer arg8) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glCompressedTexSubImage2D13148, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg8)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glCompressedTexSubImage2D13148, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg8)); 
@@ -320,7 +320,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glCopyTexImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glCopyTexImage2D13149, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glCopyTexImage2D13149, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7)); 
@@ -329,7 +329,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glCopyTexSubImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glCopyTexSubImage2D13150, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glCopyTexSubImage2D13150, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7)); 
@@ -338,7 +338,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glCullFace(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glCullFace13151, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glCullFace13151, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -347,7 +347,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glDeleteTextures(int arg0, int[] arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glDeleteTextures13152, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glDeleteTextures13152, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -356,7 +356,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glDeleteTextures(int arg0, java.nio.IntBuffer arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glDeleteTextures13153, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glDeleteTextures13153, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -365,7 +365,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glDepthFunc(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glDepthFunc13154, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glDepthFunc13154, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -374,7 +374,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glDepthMask(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glDepthMask13155, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glDepthMask13155, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -383,7 +383,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glDepthRangef(float arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glDepthRangef13156, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glDepthRangef13156, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -392,7 +392,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glDepthRangex(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glDepthRangex13157, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glDepthRangex13157, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -401,7 +401,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glDisable(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glDisable13158, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glDisable13158, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -410,7 +410,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glDisableClientState(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glDisableClientState13159, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glDisableClientState13159, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -419,7 +419,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glDrawArrays(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glDrawArrays13160, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glDrawArrays13160, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -428,7 +428,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glDrawElements(int arg0, int arg1, int arg2, java.nio.Buffer arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glDrawElements13161, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glDrawElements13161, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
@@ -437,7 +437,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glEnable(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glEnable13162, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glEnable13162, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -446,7 +446,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glEnableClientState(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glEnableClientState13163, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glEnableClientState13163, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -455,7 +455,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glFinish() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glFinish13164); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glFinish13164); 
@@ -464,7 +464,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glFlush() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glFlush13165); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glFlush13165); 
@@ -473,7 +473,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glFogf(int arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glFogf13166, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glFogf13166, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -482,7 +482,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glFogfv(int arg0, float[] arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glFogfv13167, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glFogfv13167, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -491,7 +491,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glFogfv(int arg0, java.nio.FloatBuffer arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glFogfv13168, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glFogfv13168, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -500,7 +500,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glFogx(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glFogx13169, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glFogx13169, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -509,7 +509,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glFogxv(int arg0, int[] arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glFogxv13170, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glFogxv13170, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -518,7 +518,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glFogxv(int arg0, java.nio.IntBuffer arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glFogxv13171, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glFogxv13171, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -527,7 +527,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glFrontFace(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glFrontFace13172, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glFrontFace13172, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -536,7 +536,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glFrustumf(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glFrustumf13173, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glFrustumf13173, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
@@ -545,7 +545,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glFrustumx(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glFrustumx13174, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glFrustumx13174, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
@@ -554,7 +554,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glGenTextures(int arg0, int[] arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glGenTextures13175, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glGenTextures13175, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -563,7 +563,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glGenTextures(int arg0, java.nio.IntBuffer arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glGenTextures13176, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glGenTextures13176, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -572,7 +572,7 @@ namespace javax.microedition.khronos.opengles
 		 int javax.microedition.khronos.opengles.GL10.glGetError() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::javax.microedition.khronos.opengles.__GL10._glGetError13177); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glGetError13177); 
@@ -581,7 +581,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glGetIntegerv(int arg0, int[] arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glGetIntegerv13178, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glGetIntegerv13178, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -590,7 +590,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glGetIntegerv(int arg0, java.nio.IntBuffer arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glGetIntegerv13179, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glGetIntegerv13179, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -599,7 +599,7 @@ namespace javax.microedition.khronos.opengles
 		 global::java.lang.String javax.microedition.khronos.opengles.GL10.glGetString(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::javax.microedition.khronos.opengles.__GL10._glGetString13180, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glGetString13180, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -608,7 +608,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glHint(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glHint13181, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glHint13181, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -617,7 +617,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLightModelf(int arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLightModelf13182, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLightModelf13182, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -626,7 +626,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLightModelfv(int arg0, float[] arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLightModelfv13183, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLightModelfv13183, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -635,7 +635,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLightModelfv(int arg0, java.nio.FloatBuffer arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLightModelfv13184, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLightModelfv13184, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -644,7 +644,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLightModelx(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLightModelx13185, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLightModelx13185, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -653,7 +653,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLightModelxv(int arg0, int[] arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLightModelxv13186, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLightModelxv13186, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -662,7 +662,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLightModelxv(int arg0, java.nio.IntBuffer arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLightModelxv13187, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLightModelxv13187, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -671,7 +671,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLightf(int arg0, int arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLightf13188, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLightf13188, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -680,7 +680,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLightfv(int arg0, int arg1, float[] arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLightfv13189, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLightfv13189, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -689,7 +689,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLightfv(int arg0, int arg1, java.nio.FloatBuffer arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLightfv13190, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLightfv13190, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -698,7 +698,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLightx(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLightx13191, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLightx13191, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -707,7 +707,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLightxv(int arg0, int arg1, int[] arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLightxv13192, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLightxv13192, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -716,7 +716,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLightxv(int arg0, int arg1, java.nio.IntBuffer arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLightxv13193, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLightxv13193, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -725,7 +725,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLineWidth(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLineWidth13194, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLineWidth13194, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -734,7 +734,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLineWidthx(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLineWidthx13195, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLineWidthx13195, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -743,7 +743,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLoadIdentity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLoadIdentity13196); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLoadIdentity13196); 
@@ -752,7 +752,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLoadMatrixf(float[] arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLoadMatrixf13197, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLoadMatrixf13197, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -761,7 +761,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLoadMatrixf(java.nio.FloatBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLoadMatrixf13198, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLoadMatrixf13198, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -770,7 +770,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLoadMatrixx(int[] arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLoadMatrixx13199, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLoadMatrixx13199, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -779,7 +779,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLoadMatrixx(java.nio.IntBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLoadMatrixx13200, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLoadMatrixx13200, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -788,7 +788,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glLogicOp(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glLogicOp13201, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glLogicOp13201, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -797,7 +797,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glMaterialf(int arg0, int arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glMaterialf13202, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glMaterialf13202, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -806,7 +806,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glMaterialfv(int arg0, int arg1, float[] arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glMaterialfv13203, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glMaterialfv13203, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -815,7 +815,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glMaterialfv(int arg0, int arg1, java.nio.FloatBuffer arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glMaterialfv13204, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glMaterialfv13204, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -824,7 +824,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glMaterialx(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glMaterialx13205, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glMaterialx13205, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -833,7 +833,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glMaterialxv(int arg0, int arg1, int[] arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glMaterialxv13206, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glMaterialxv13206, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -842,7 +842,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glMaterialxv(int arg0, int arg1, java.nio.IntBuffer arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glMaterialxv13207, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glMaterialxv13207, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -851,7 +851,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glMatrixMode(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glMatrixMode13208, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glMatrixMode13208, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -860,7 +860,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glMultMatrixf(float[] arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glMultMatrixf13209, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glMultMatrixf13209, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -869,7 +869,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glMultMatrixf(java.nio.FloatBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glMultMatrixf13210, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glMultMatrixf13210, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -878,7 +878,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glMultMatrixx(int[] arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glMultMatrixx13211, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glMultMatrixx13211, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -887,7 +887,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glMultMatrixx(java.nio.IntBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glMultMatrixx13212, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glMultMatrixx13212, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -896,7 +896,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glMultiTexCoord4f(int arg0, float arg1, float arg2, float arg3, float arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glMultiTexCoord4f13213, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glMultiTexCoord4f13213, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -905,7 +905,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glMultiTexCoord4x(int arg0, int arg1, int arg2, int arg3, int arg4) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glMultiTexCoord4x13214, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glMultiTexCoord4x13214, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)); 
@@ -914,7 +914,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glNormal3f(float arg0, float arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glNormal3f13215, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glNormal3f13215, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -923,7 +923,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glNormal3x(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glNormal3x13216, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glNormal3x13216, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -932,7 +932,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glNormalPointer(int arg0, int arg1, java.nio.Buffer arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glNormalPointer13217, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glNormalPointer13217, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -941,7 +941,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glOrthof(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glOrthof13218, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glOrthof13218, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
@@ -950,7 +950,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glOrthox(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glOrthox13219, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glOrthox13219, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)); 
@@ -959,7 +959,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glPixelStorei(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glPixelStorei13220, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glPixelStorei13220, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -968,7 +968,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glPointSize(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glPointSize13221, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glPointSize13221, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -977,7 +977,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glPointSizex(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glPointSizex13222, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glPointSizex13222, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -986,7 +986,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glPolygonOffset(float arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glPolygonOffset13223, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glPolygonOffset13223, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -995,7 +995,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glPolygonOffsetx(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glPolygonOffsetx13224, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glPolygonOffsetx13224, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -1004,7 +1004,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glPopMatrix() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glPopMatrix13225); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glPopMatrix13225); 
@@ -1013,7 +1013,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glPushMatrix() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glPushMatrix13226); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glPushMatrix13226); 
@@ -1022,7 +1022,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glReadPixels(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, java.nio.Buffer arg6) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glReadPixels13227, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glReadPixels13227, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6)); 
@@ -1031,7 +1031,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glRotatef(float arg0, float arg1, float arg2, float arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glRotatef13228, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glRotatef13228, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -1040,7 +1040,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glRotatex(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glRotatex13229, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glRotatex13229, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -1049,7 +1049,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glSampleCoverage(float arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glSampleCoverage13230, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glSampleCoverage13230, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -1058,7 +1058,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glSampleCoveragex(int arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glSampleCoveragex13231, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glSampleCoveragex13231, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -1067,7 +1067,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glScalef(float arg0, float arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glScalef13232, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glScalef13232, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -1076,7 +1076,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glScalex(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glScalex13233, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glScalex13233, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -1085,7 +1085,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glScissor(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glScissor13234, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glScissor13234, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -1094,7 +1094,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glShadeModel(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glShadeModel13235, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glShadeModel13235, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1103,7 +1103,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glStencilFunc(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glStencilFunc13236, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glStencilFunc13236, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -1112,7 +1112,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glStencilMask(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glStencilMask13237, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glStencilMask13237, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -1121,7 +1121,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glStencilOp(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glStencilOp13238, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glStencilOp13238, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -1130,7 +1130,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glTexCoordPointer(int arg0, int arg1, int arg2, java.nio.Buffer arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glTexCoordPointer13239, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glTexCoordPointer13239, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
@@ -1139,7 +1139,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glTexEnvf(int arg0, int arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glTexEnvf13240, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glTexEnvf13240, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -1148,7 +1148,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glTexEnvfv(int arg0, int arg1, float[] arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glTexEnvfv13241, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glTexEnvfv13241, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -1157,7 +1157,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glTexEnvfv(int arg0, int arg1, java.nio.FloatBuffer arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glTexEnvfv13242, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glTexEnvfv13242, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -1166,7 +1166,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glTexEnvx(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glTexEnvx13243, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glTexEnvx13243, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -1175,7 +1175,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glTexEnvxv(int arg0, int arg1, int[] arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glTexEnvxv13244, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glTexEnvxv13244, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -1184,7 +1184,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glTexEnvxv(int arg0, int arg1, java.nio.IntBuffer arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glTexEnvxv13245, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glTexEnvxv13245, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -1193,7 +1193,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glTexImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, java.nio.Buffer arg8) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glTexImage2D13246, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg8)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glTexImage2D13246, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg8)); 
@@ -1202,7 +1202,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glTexParameterf(int arg0, int arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glTexParameterf13247, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glTexParameterf13247, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -1211,7 +1211,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glTexParameterx(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glTexParameterx13248, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glTexParameterx13248, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -1220,7 +1220,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glTexSubImage2D(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, java.nio.Buffer arg8) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glTexSubImage2D13249, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg8)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glTexSubImage2D13249, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg8)); 
@@ -1229,7 +1229,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glTranslatef(float arg0, float arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glTranslatef13250, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glTranslatef13250, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -1238,7 +1238,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glTranslatex(int arg0, int arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glTranslatex13251, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glTranslatex13251, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -1247,7 +1247,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glVertexPointer(int arg0, int arg1, int arg2, java.nio.Buffer arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glVertexPointer13252, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glVertexPointer13252, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)); 
@@ -1256,7 +1256,7 @@ namespace javax.microedition.khronos.opengles
 		 void javax.microedition.khronos.opengles.GL10.glViewport(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(javax.microedition.khronos.opengles.__GL10)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10._glViewport13253, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::javax.microedition.khronos.opengles.__GL10.staticClass, global::javax.microedition.khronos.opengles.__GL10._glViewport13253, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 

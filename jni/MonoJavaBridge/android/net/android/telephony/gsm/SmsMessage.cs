@@ -116,7 +116,7 @@ namespace android.telephony.gsm
 			public override global::java.lang.String toString() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.telephony.gsm.SmsMessage.SubmitPdu)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage.SubmitPdu._toString6646)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage.SubmitPdu.staticClass, global::android.telephony.gsm.SmsMessage.SubmitPdu._toString6646)); 
@@ -159,7 +159,7 @@ namespace android.telephony.gsm
 		internal static global::net.sf.jni4net.jni.MethodId _getUserData6650; 
 		public virtual byte[] getUserData() 
 		{ 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage._getUserData6650)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getUserData6650)); 
@@ -168,7 +168,7 @@ namespace android.telephony.gsm
 		public virtual int getStatus() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.gsm.SmsMessage._getStatus6651); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getStatus6651); 
@@ -211,7 +211,7 @@ namespace android.telephony.gsm
 		public virtual global::java.lang.String getServiceCenterAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage._getServiceCenterAddress6658)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getServiceCenterAddress6658)); 
@@ -220,7 +220,7 @@ namespace android.telephony.gsm
 		public virtual global::java.lang.String getOriginatingAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage._getOriginatingAddress6659)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getOriginatingAddress6659)); 
@@ -229,7 +229,7 @@ namespace android.telephony.gsm
 		public virtual global::java.lang.String getDisplayOriginatingAddress() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage._getDisplayOriginatingAddress6660)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getDisplayOriginatingAddress6660)); 
@@ -238,7 +238,7 @@ namespace android.telephony.gsm
 		public virtual global::java.lang.String getMessageBody() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage._getMessageBody6661)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getMessageBody6661)); 
@@ -247,7 +247,7 @@ namespace android.telephony.gsm
 		public virtual global::android.telephony.gsm.SmsMessage.MessageClass getMessageClass() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.telephony.gsm.SmsMessage.MessageClass>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage._getMessageClass6662)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.telephony.gsm.SmsMessage.MessageClass>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getMessageClass6662)); 
@@ -256,7 +256,7 @@ namespace android.telephony.gsm
 		public virtual global::java.lang.String getDisplayMessageBody() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage._getDisplayMessageBody6663)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getDisplayMessageBody6663)); 
@@ -265,7 +265,7 @@ namespace android.telephony.gsm
 		public virtual global::java.lang.String getPseudoSubject() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage._getPseudoSubject6664)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getPseudoSubject6664)); 
@@ -274,7 +274,7 @@ namespace android.telephony.gsm
 		public virtual long getTimestampMillis() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.telephony.gsm.SmsMessage._getTimestampMillis6665); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getTimestampMillis6665); 
@@ -283,7 +283,7 @@ namespace android.telephony.gsm
 		public virtual bool isEmail() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.telephony.gsm.SmsMessage._isEmail6666); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._isEmail6666); 
@@ -292,7 +292,7 @@ namespace android.telephony.gsm
 		public virtual global::java.lang.String getEmailBody() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage._getEmailBody6667)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getEmailBody6667)); 
@@ -301,7 +301,7 @@ namespace android.telephony.gsm
 		public virtual global::java.lang.String getEmailFrom() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage._getEmailFrom6668)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getEmailFrom6668)); 
@@ -310,7 +310,7 @@ namespace android.telephony.gsm
 		public virtual int getProtocolIdentifier() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.gsm.SmsMessage._getProtocolIdentifier6669); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getProtocolIdentifier6669); 
@@ -319,7 +319,7 @@ namespace android.telephony.gsm
 		public virtual bool isReplace() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.telephony.gsm.SmsMessage._isReplace6670); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._isReplace6670); 
@@ -328,7 +328,7 @@ namespace android.telephony.gsm
 		public virtual bool isCphsMwiMessage() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.telephony.gsm.SmsMessage._isCphsMwiMessage6671); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._isCphsMwiMessage6671); 
@@ -337,7 +337,7 @@ namespace android.telephony.gsm
 		public virtual bool isMWIClearMessage() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.telephony.gsm.SmsMessage._isMWIClearMessage6672); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._isMWIClearMessage6672); 
@@ -346,7 +346,7 @@ namespace android.telephony.gsm
 		public virtual bool isMWISetMessage() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.telephony.gsm.SmsMessage._isMWISetMessage6673); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._isMWISetMessage6673); 
@@ -355,7 +355,7 @@ namespace android.telephony.gsm
 		public virtual bool isMwiDontStore() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.telephony.gsm.SmsMessage._isMwiDontStore6674); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._isMwiDontStore6674); 
@@ -363,7 +363,7 @@ namespace android.telephony.gsm
 		internal static global::net.sf.jni4net.jni.MethodId _getPdu6675; 
 		public virtual byte[] getPdu() 
 		{ 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage._getPdu6675)); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getPdu6675)); 
@@ -372,7 +372,7 @@ namespace android.telephony.gsm
 		public virtual int getStatusOnSim() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.gsm.SmsMessage._getStatusOnSim6676); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getStatusOnSim6676); 
@@ -381,7 +381,7 @@ namespace android.telephony.gsm
 		public virtual int getIndexOnSim() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.gsm.SmsMessage._getIndexOnSim6677); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._getIndexOnSim6677); 
@@ -390,7 +390,7 @@ namespace android.telephony.gsm
 		public virtual bool isStatusReportMessage() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.telephony.gsm.SmsMessage._isStatusReportMessage6678); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._isStatusReportMessage6678); 
@@ -399,7 +399,7 @@ namespace android.telephony.gsm
 		public virtual bool isReplyPathPresent() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.SmsMessage)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.telephony.gsm.SmsMessage._isReplyPathPresent6679); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.gsm.SmsMessage.staticClass, global::android.telephony.gsm.SmsMessage._isReplyPathPresent6679); 

@@ -98,7 +98,7 @@ namespace android.text
 		public virtual float getLineWidth(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.text.Layout._getLineWidth6795, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getLineWidth6795, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -107,7 +107,7 @@ namespace android.text
 		public virtual global::java.lang.CharSequence getText() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.Layout._getText6796)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.Layout.staticClass, global::android.text.Layout._getText6796)); 
@@ -116,7 +116,7 @@ namespace android.text
 		public virtual void draw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.Layout._draw6797, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._draw6797, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -125,7 +125,7 @@ namespace android.text
 		public virtual void draw(android.graphics.Canvas arg0, android.graphics.Path arg1, android.graphics.Paint arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.Layout._draw6798, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._draw6798, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -134,7 +134,7 @@ namespace android.text
 		public virtual int getWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Layout._getWidth6799); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getWidth6799); 
@@ -143,7 +143,7 @@ namespace android.text
 		public virtual int getHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Layout._getHeight6800); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getHeight6800); 
@@ -152,7 +152,7 @@ namespace android.text
 		public virtual global::android.text.TextPaint getPaint() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.TextPaint>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.Layout._getPaint6801)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.TextPaint>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.Layout.staticClass, global::android.text.Layout._getPaint6801)); 
@@ -163,7 +163,7 @@ namespace android.text
 		public virtual int getLineBounds(int arg0, android.graphics.Rect arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Layout._getLineBounds6803, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getLineBounds6803, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -184,7 +184,7 @@ namespace android.text
 		public virtual int getEllipsizedWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Layout._getEllipsizedWidth6806); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getEllipsizedWidth6806); 
@@ -193,7 +193,7 @@ namespace android.text
 		public virtual void increaseWidthTo(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.Layout._increaseWidthTo6807, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._increaseWidthTo6807, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -202,7 +202,7 @@ namespace android.text
 		public virtual global::android.text.Layout.Alignment getAlignment() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.Layout._getAlignment6808)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.Layout.staticClass, global::android.text.Layout._getAlignment6808)); 
@@ -211,7 +211,7 @@ namespace android.text
 		public virtual float getSpacingMultiplier() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.text.Layout._getSpacingMultiplier6809); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getSpacingMultiplier6809); 
@@ -220,7 +220,7 @@ namespace android.text
 		public virtual float getSpacingAdd() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.text.Layout._getSpacingAdd6810); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getSpacingAdd6810); 
@@ -245,7 +245,7 @@ namespace android.text
 		public virtual float getPrimaryHorizontal(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.text.Layout._getPrimaryHorizontal6819, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getPrimaryHorizontal6819, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -254,7 +254,7 @@ namespace android.text
 		public virtual float getSecondaryHorizontal(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.text.Layout._getSecondaryHorizontal6820, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getSecondaryHorizontal6820, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -263,7 +263,7 @@ namespace android.text
 		public virtual float getLineLeft(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.text.Layout._getLineLeft6821, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getLineLeft6821, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -272,7 +272,7 @@ namespace android.text
 		public virtual float getLineRight(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.text.Layout._getLineRight6822, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getLineRight6822, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -281,7 +281,7 @@ namespace android.text
 		public virtual float getLineMax(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.text.Layout._getLineMax6823, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getLineMax6823, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -290,7 +290,7 @@ namespace android.text
 		public virtual int getLineForVertical(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Layout._getLineForVertical6824, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getLineForVertical6824, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -299,7 +299,7 @@ namespace android.text
 		public virtual int getLineForOffset(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Layout._getLineForOffset6825, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getLineForOffset6825, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -308,7 +308,7 @@ namespace android.text
 		public virtual int getOffsetForHorizontal(int arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Layout._getOffsetForHorizontal6826, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getOffsetForHorizontal6826, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -317,7 +317,7 @@ namespace android.text
 		public virtual int getLineEnd(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Layout._getLineEnd6827, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getLineEnd6827, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -326,7 +326,7 @@ namespace android.text
 		public virtual int getLineVisibleEnd(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Layout._getLineVisibleEnd6828, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getLineVisibleEnd6828, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -335,7 +335,7 @@ namespace android.text
 		public virtual int getLineBottom(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Layout._getLineBottom6829, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getLineBottom6829, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -344,7 +344,7 @@ namespace android.text
 		public virtual int getLineBaseline(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Layout._getLineBaseline6830, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getLineBaseline6830, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -353,7 +353,7 @@ namespace android.text
 		public virtual int getLineAscent(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Layout._getLineAscent6831, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getLineAscent6831, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -362,7 +362,7 @@ namespace android.text
 		public virtual int getOffsetToLeftOf(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Layout._getOffsetToLeftOf6832, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getOffsetToLeftOf6832, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -371,7 +371,7 @@ namespace android.text
 		public virtual int getOffsetToRightOf(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Layout._getOffsetToRightOf6833, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getOffsetToRightOf6833, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -380,7 +380,7 @@ namespace android.text
 		public virtual void getCursorPath(int arg0, android.graphics.Path arg1, java.lang.CharSequence arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.Layout._getCursorPath6834, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getCursorPath6834, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
@@ -389,7 +389,7 @@ namespace android.text
 		public virtual void getSelectionPath(int arg0, int arg1, android.graphics.Path arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.Layout._getSelectionPath6835, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getSelectionPath6835, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -398,7 +398,7 @@ namespace android.text
 		public virtual global::android.text.Layout.Alignment getParagraphAlignment(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.Layout._getParagraphAlignment6836, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.Layout.staticClass, global::android.text.Layout._getParagraphAlignment6836, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -407,7 +407,7 @@ namespace android.text
 		public virtual int getParagraphLeft(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Layout._getParagraphLeft6837, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getParagraphLeft6837, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -416,7 +416,7 @@ namespace android.text
 		public virtual int getParagraphRight(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.text.Layout._getParagraphRight6838, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getParagraphRight6838, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -425,7 +425,7 @@ namespace android.text
 		protected virtual bool isSpanned() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.Layout)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.text.Layout._isSpanned6839); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._isSpanned6839); 

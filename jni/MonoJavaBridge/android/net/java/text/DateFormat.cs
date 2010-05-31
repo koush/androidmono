@@ -15,7 +15,7 @@ namespace java.text
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.DateFormat)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.text.DateFormat._hashCode12566); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._hashCode12566); 
@@ -24,7 +24,7 @@ namespace java.text
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.DateFormat)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.text.DateFormat._equals12567, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._equals12567, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -33,7 +33,7 @@ namespace java.text
 		public sealed override global::java.lang.StringBuffer format(java.lang.Object arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.DateFormat)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.StringBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.DateFormat._format12568, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.StringBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._format12568, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2))); 
@@ -44,7 +44,7 @@ namespace java.text
 		public virtual global::java.lang.String format(java.util.Date arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.DateFormat)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.DateFormat._format12570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._format12570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -59,7 +59,7 @@ namespace java.text
 		public virtual global::java.util.Date parse(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.DateFormat)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Date>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.DateFormat._parse12572, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Date>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._parse12572, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -75,7 +75,7 @@ namespace java.text
 		public virtual global::java.util.TimeZone getTimeZone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.DateFormat)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.TimeZone>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.DateFormat._getTimeZone12575)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.TimeZone>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._getTimeZone12575)); 
@@ -84,7 +84,7 @@ namespace java.text
 		public virtual void setTimeZone(java.util.TimeZone arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.DateFormat)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.text.DateFormat._setTimeZone12576, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._setTimeZone12576, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -111,7 +111,7 @@ namespace java.text
 		public virtual void setLenient(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.DateFormat)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.text.DateFormat._setLenient12580, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._setLenient12580, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -120,7 +120,7 @@ namespace java.text
 		public virtual bool isLenient() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.DateFormat)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.text.DateFormat._isLenient12581); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._isLenient12581); 
@@ -129,7 +129,7 @@ namespace java.text
 		public override global::java.lang.Object parseObject(java.lang.String arg0, java.text.ParsePosition arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.DateFormat)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.DateFormat._parseObject12582, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._parseObject12582, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -174,7 +174,7 @@ namespace java.text
 		public virtual void setCalendar(java.util.Calendar arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.DateFormat)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.text.DateFormat._setCalendar12589, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._setCalendar12589, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -183,7 +183,7 @@ namespace java.text
 		public virtual global::java.util.Calendar getCalendar() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.DateFormat)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.DateFormat._getCalendar12590)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Calendar>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._getCalendar12590)); 
@@ -192,7 +192,7 @@ namespace java.text
 		public virtual void setNumberFormat(java.text.NumberFormat arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.DateFormat)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.text.DateFormat._setNumberFormat12591, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._setNumberFormat12591, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -201,7 +201,7 @@ namespace java.text
 		public virtual global::java.text.NumberFormat getNumberFormat() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.text.DateFormat)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.DateFormat._getNumberFormat12592)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.text.NumberFormat>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._getNumberFormat12592)); 

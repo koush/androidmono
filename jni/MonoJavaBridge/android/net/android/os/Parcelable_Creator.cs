@@ -36,7 +36,7 @@ namespace android.os
 		internal static global::net.sf.jni4net.jni.MethodId _newArray5815; 
 		 global::java.lang.Object[] android.os.Parcelable_Creator.newArray(int arg0) 
 		{ 
-			if (GetType() == typeof(android.os.__Parcelable_Creator)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.os.__Parcelable_Creator._newArray5815, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.__Parcelable_Creator.staticClass, global::android.os.__Parcelable_Creator._newArray5815, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -45,7 +45,7 @@ namespace android.os
 		 global::java.lang.Object android.os.Parcelable_Creator.createFromParcel(android.os.Parcel arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.__Parcelable_Creator)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.__Parcelable_Creator._createFromParcel5816, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.__Parcelable_Creator.staticClass, global::android.os.__Parcelable_Creator._createFromParcel5816, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 

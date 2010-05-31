@@ -22,7 +22,7 @@ namespace android.widget
 		protected override bool onSetAlpha(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageButton)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ImageButton._onSetAlpha10347, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ImageButton.staticClass, global::android.widget.ImageButton._onSetAlpha10347, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

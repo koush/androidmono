@@ -65,7 +65,7 @@ namespace android.view
 		 bool android.view.MenuItem.isChecked() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem._isChecked7905); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._isChecked7905); 
@@ -74,7 +74,7 @@ namespace android.view
 		 global::android.view.MenuItem android.view.MenuItem.setChecked(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setChecked7906, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setChecked7906, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -83,7 +83,7 @@ namespace android.view
 		 bool android.view.MenuItem.isEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem._isEnabled7907); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._isEnabled7907); 
@@ -92,7 +92,7 @@ namespace android.view
 		 global::android.view.MenuItem android.view.MenuItem.setEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setEnabled7908, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setEnabled7908, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -101,7 +101,7 @@ namespace android.view
 		 global::android.content.Intent android.view.MenuItem.getIntent() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Intent>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getIntent7909)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Intent>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getIntent7909)); 
@@ -110,7 +110,7 @@ namespace android.view
 		 global::android.view.MenuItem android.view.MenuItem.setVisible(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setVisible7910, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setVisible7910, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -119,7 +119,7 @@ namespace android.view
 		 bool android.view.MenuItem.isVisible() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem._isVisible7911); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._isVisible7911); 
@@ -128,7 +128,7 @@ namespace android.view
 		 global::android.view.MenuItem android.view.MenuItem.setIntent(android.content.Intent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setIntent7912, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setIntent7912, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -137,7 +137,7 @@ namespace android.view
 		 global::android.view.MenuItem android.view.MenuItem.setTitle(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setTitle7913, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setTitle7913, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -146,7 +146,7 @@ namespace android.view
 		 global::android.view.MenuItem android.view.MenuItem.setTitle(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setTitle7914, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setTitle7914, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -155,7 +155,7 @@ namespace android.view
 		 global::java.lang.CharSequence android.view.MenuItem.getTitle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getTitle7915)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getTitle7915)); 
@@ -164,7 +164,7 @@ namespace android.view
 		 int android.view.MenuItem.getItemId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.__MenuItem._getItemId7916); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getItemId7916); 
@@ -173,7 +173,7 @@ namespace android.view
 		 int android.view.MenuItem.getGroupId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.__MenuItem._getGroupId7917); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getGroupId7917); 
@@ -182,7 +182,7 @@ namespace android.view
 		 int android.view.MenuItem.getOrder() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.__MenuItem._getOrder7918); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getOrder7918); 
@@ -191,7 +191,7 @@ namespace android.view
 		 global::android.view.MenuItem android.view.MenuItem.setTitleCondensed(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setTitleCondensed7919, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setTitleCondensed7919, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -200,7 +200,7 @@ namespace android.view
 		 global::java.lang.CharSequence android.view.MenuItem.getTitleCondensed() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getTitleCondensed7920)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getTitleCondensed7920)); 
@@ -209,7 +209,7 @@ namespace android.view
 		 global::android.view.MenuItem android.view.MenuItem.setIcon(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setIcon7921, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setIcon7921, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -218,7 +218,7 @@ namespace android.view
 		 global::android.view.MenuItem android.view.MenuItem.setIcon(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setIcon7922, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setIcon7922, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -227,7 +227,7 @@ namespace android.view
 		 global::android.graphics.drawable.Drawable android.view.MenuItem.getIcon() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getIcon7923)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getIcon7923)); 
@@ -236,7 +236,7 @@ namespace android.view
 		 global::android.view.MenuItem android.view.MenuItem.setShortcut(char arg0, char arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setShortcut7924, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setShortcut7924, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -245,7 +245,7 @@ namespace android.view
 		 global::android.view.MenuItem android.view.MenuItem.setNumericShortcut(char arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setNumericShortcut7925, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setNumericShortcut7925, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -254,7 +254,7 @@ namespace android.view
 		 char android.view.MenuItem.getNumericShortcut() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return @__env.CallCharMethod(this, global::android.view.__MenuItem._getNumericShortcut7926); 
 			else 
 				return @__env.CallNonVirtualCharMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getNumericShortcut7926); 
@@ -263,7 +263,7 @@ namespace android.view
 		 global::android.view.MenuItem android.view.MenuItem.setAlphabeticShortcut(char arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setAlphabeticShortcut7927, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setAlphabeticShortcut7927, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -272,7 +272,7 @@ namespace android.view
 		 char android.view.MenuItem.getAlphabeticShortcut() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return @__env.CallCharMethod(this, global::android.view.__MenuItem._getAlphabeticShortcut7928); 
 			else 
 				return @__env.CallNonVirtualCharMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getAlphabeticShortcut7928); 
@@ -281,7 +281,7 @@ namespace android.view
 		 global::android.view.MenuItem android.view.MenuItem.setCheckable(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setCheckable7929, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setCheckable7929, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -290,7 +290,7 @@ namespace android.view
 		 bool android.view.MenuItem.isCheckable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem._isCheckable7930); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._isCheckable7930); 
@@ -299,7 +299,7 @@ namespace android.view
 		 bool android.view.MenuItem.hasSubMenu() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem._hasSubMenu7931); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._hasSubMenu7931); 
@@ -308,7 +308,7 @@ namespace android.view
 		 global::android.view.SubMenu android.view.MenuItem.getSubMenu() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getSubMenu7932)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getSubMenu7932)); 
@@ -317,7 +317,7 @@ namespace android.view
 		 global::android.view.MenuItem android.view.MenuItem.setOnMenuItemClickListener(android.view.MenuItem_OnMenuItemClickListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setOnMenuItemClickListener7933, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setOnMenuItemClickListener7933, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -326,7 +326,7 @@ namespace android.view
 		 global::android.view.ContextMenu_ContextMenuInfo android.view.MenuItem.getMenuInfo() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__MenuItem)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ContextMenu_ContextMenuInfo>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getMenuInfo7934)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ContextMenu_ContextMenuInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getMenuInfo7934)); 

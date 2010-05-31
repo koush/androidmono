@@ -122,7 +122,7 @@ namespace android.widget
 		public virtual global::android.graphics.drawable.Drawable getDrawable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ImageView._getDrawable10366)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._getDrawable10366)); 
@@ -131,7 +131,7 @@ namespace android.widget
 		public virtual void setAlpha(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._setAlpha10367, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._setAlpha10367, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -140,7 +140,7 @@ namespace android.widget
 		public virtual void setColorFilter(android.graphics.ColorFilter arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._setColorFilter10368, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._setColorFilter10368, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -149,7 +149,7 @@ namespace android.widget
 		public virtual void setColorFilter(int arg0, android.graphics.PorterDuff.Mode arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._setColorFilter10369, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._setColorFilter10369, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -158,7 +158,7 @@ namespace android.widget
 		public virtual void clearColorFilter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._clearColorFilter10370); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._clearColorFilter10370); 
@@ -167,7 +167,7 @@ namespace android.widget
 		protected override void onDraw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._onDraw10371, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._onDraw10371, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -176,7 +176,7 @@ namespace android.widget
 		public override void invalidateDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._invalidateDrawable10372, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._invalidateDrawable10372, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -185,7 +185,7 @@ namespace android.widget
 		protected override bool verifyDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ImageView._verifyDrawable10373, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._verifyDrawable10373, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -194,7 +194,7 @@ namespace android.widget
 		protected override void drawableStateChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._drawableStateChanged10374); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._drawableStateChanged10374); 
@@ -202,7 +202,7 @@ namespace android.widget
 		internal static global::net.sf.jni4net.jni.MethodId _onCreateDrawableState10375; 
 		public virtual new int[] onCreateDrawableState(int arg0) 
 		{ 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ImageView._onCreateDrawableState10375, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._onCreateDrawableState10375, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -211,7 +211,7 @@ namespace android.widget
 		public override void setSelected(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._setSelected10376, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._setSelected10376, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -220,7 +220,7 @@ namespace android.widget
 		public override int getBaseline() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.ImageView._getBaseline10377); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._getBaseline10377); 
@@ -229,7 +229,7 @@ namespace android.widget
 		protected override void onMeasure(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._onMeasure10378, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._onMeasure10378, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -238,7 +238,7 @@ namespace android.widget
 		protected override bool onSetAlpha(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ImageView._onSetAlpha10379, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._onSetAlpha10379, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -247,7 +247,7 @@ namespace android.widget
 		public virtual void setMaxHeight(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._setMaxHeight10380, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._setMaxHeight10380, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -256,7 +256,7 @@ namespace android.widget
 		public virtual void setMaxWidth(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._setMaxWidth10381, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._setMaxWidth10381, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -265,7 +265,7 @@ namespace android.widget
 		protected virtual bool setFrame(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.ImageView._setFrame10382, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._setFrame10382, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -274,7 +274,7 @@ namespace android.widget
 		public virtual void setAdjustViewBounds(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._setAdjustViewBounds10383, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._setAdjustViewBounds10383, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -283,7 +283,7 @@ namespace android.widget
 		public virtual void setImageResource(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._setImageResource10384, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._setImageResource10384, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -292,7 +292,7 @@ namespace android.widget
 		public virtual void setImageURI(android.net.Uri arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._setImageURI10385, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._setImageURI10385, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -301,7 +301,7 @@ namespace android.widget
 		public virtual void setImageDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._setImageDrawable10386, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._setImageDrawable10386, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -310,7 +310,7 @@ namespace android.widget
 		public virtual void setImageBitmap(android.graphics.Bitmap arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._setImageBitmap10387, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._setImageBitmap10387, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -319,7 +319,7 @@ namespace android.widget
 		public virtual void setImageState(int[] arg0, bool arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._setImageState10388, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._setImageState10388, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -328,7 +328,7 @@ namespace android.widget
 		public virtual void setImageLevel(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._setImageLevel10389, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._setImageLevel10389, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -337,7 +337,7 @@ namespace android.widget
 		public virtual void setScaleType(android.widget.ImageView.ScaleType arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._setScaleType10390, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._setScaleType10390, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -346,7 +346,7 @@ namespace android.widget
 		public virtual global::android.widget.ImageView.ScaleType getScaleType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.ImageView.ScaleType>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ImageView._getScaleType10391)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.ImageView.ScaleType>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._getScaleType10391)); 
@@ -355,7 +355,7 @@ namespace android.widget
 		public virtual global::android.graphics.Matrix getImageMatrix() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Matrix>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ImageView._getImageMatrix10392)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Matrix>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._getImageMatrix10392)); 
@@ -364,7 +364,7 @@ namespace android.widget
 		public virtual void setImageMatrix(android.graphics.Matrix arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.ImageView)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.ImageView._setImageMatrix10393, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ImageView.staticClass, global::android.widget.ImageView._setImageMatrix10393, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

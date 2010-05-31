@@ -22,7 +22,7 @@ namespace android.preference
 		protected override void onClick() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.RingtonePreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.RingtonePreference._onClick6111); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._onClick6111); 
@@ -31,7 +31,7 @@ namespace android.preference
 		public virtual bool onActivityResult(int arg0, int arg1, android.content.Intent arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.RingtonePreference)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.preference.RingtonePreference._onActivityResult6112, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._onActivityResult6112, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -40,7 +40,7 @@ namespace android.preference
 		protected override global::java.lang.Object onGetDefaultValue(android.content.res.TypedArray arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.RingtonePreference)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.RingtonePreference._onGetDefaultValue6113, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._onGetDefaultValue6113, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -49,7 +49,7 @@ namespace android.preference
 		protected override void onSetInitialValue(bool arg0, java.lang.Object arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.RingtonePreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.RingtonePreference._onSetInitialValue6114, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._onSetInitialValue6114, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -58,7 +58,7 @@ namespace android.preference
 		protected override void onAttachedToHierarchy(android.preference.PreferenceManager arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.RingtonePreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.RingtonePreference._onAttachedToHierarchy6115, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._onAttachedToHierarchy6115, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.preference
 		public virtual int getRingtoneType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.RingtonePreference)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.preference.RingtonePreference._getRingtoneType6116); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._getRingtoneType6116); 
@@ -76,7 +76,7 @@ namespace android.preference
 		public virtual void setRingtoneType(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.RingtonePreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.RingtonePreference._setRingtoneType6117, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._setRingtoneType6117, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -85,7 +85,7 @@ namespace android.preference
 		public virtual bool getShowDefault() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.RingtonePreference)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.preference.RingtonePreference._getShowDefault6118); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._getShowDefault6118); 
@@ -94,7 +94,7 @@ namespace android.preference
 		public virtual void setShowDefault(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.RingtonePreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.RingtonePreference._setShowDefault6119, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._setShowDefault6119, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -103,7 +103,7 @@ namespace android.preference
 		public virtual bool getShowSilent() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.RingtonePreference)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.preference.RingtonePreference._getShowSilent6120); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._getShowSilent6120); 
@@ -112,7 +112,7 @@ namespace android.preference
 		public virtual void setShowSilent(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.RingtonePreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.RingtonePreference._setShowSilent6121, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._setShowSilent6121, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -121,7 +121,7 @@ namespace android.preference
 		protected virtual void onPrepareRingtonePickerIntent(android.content.Intent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.RingtonePreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.RingtonePreference._onPrepareRingtonePickerIntent6122, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._onPrepareRingtonePickerIntent6122, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -130,7 +130,7 @@ namespace android.preference
 		protected virtual void onSaveRingtone(android.net.Uri arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.RingtonePreference)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.preference.RingtonePreference._onSaveRingtone6123, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._onSaveRingtone6123, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -139,7 +139,7 @@ namespace android.preference
 		protected virtual global::android.net.Uri onRestoreRingtone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.preference.RingtonePreference)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.RingtonePreference._onRestoreRingtone6124)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.RingtonePreference.staticClass, global::android.preference.RingtonePreference._onRestoreRingtone6124)); 

@@ -26,7 +26,7 @@ namespace java.util.concurrent
 		public virtual void sleep(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.concurrent.TimeUnit)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.concurrent.TimeUnit._sleep13035, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._sleep13035, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -35,7 +35,7 @@ namespace java.util.concurrent
 		public virtual long toNanos(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.concurrent.TimeUnit)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.util.concurrent.TimeUnit._toNanos13036, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toNanos13036, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -44,7 +44,7 @@ namespace java.util.concurrent
 		public virtual long convert(long arg0, java.util.concurrent.TimeUnit arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.concurrent.TimeUnit)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.util.concurrent.TimeUnit._convert13037, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._convert13037, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -53,7 +53,7 @@ namespace java.util.concurrent
 		public virtual long toMicros(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.concurrent.TimeUnit)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.util.concurrent.TimeUnit._toMicros13038, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toMicros13038, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -62,7 +62,7 @@ namespace java.util.concurrent
 		public virtual long toMillis(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.concurrent.TimeUnit)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.util.concurrent.TimeUnit._toMillis13039, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toMillis13039, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -71,7 +71,7 @@ namespace java.util.concurrent
 		public virtual long toSeconds(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.concurrent.TimeUnit)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.util.concurrent.TimeUnit._toSeconds13040, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toSeconds13040, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -80,7 +80,7 @@ namespace java.util.concurrent
 		public virtual long toMinutes(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.concurrent.TimeUnit)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.util.concurrent.TimeUnit._toMinutes13041, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toMinutes13041, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -89,7 +89,7 @@ namespace java.util.concurrent
 		public virtual long toHours(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.concurrent.TimeUnit)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.util.concurrent.TimeUnit._toHours13042, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toHours13042, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -98,7 +98,7 @@ namespace java.util.concurrent
 		public virtual long toDays(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.concurrent.TimeUnit)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::java.util.concurrent.TimeUnit._toDays13043, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._toDays13043, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -107,7 +107,7 @@ namespace java.util.concurrent
 		public virtual void timedWait(java.lang.Object arg0, long arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.concurrent.TimeUnit)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.concurrent.TimeUnit._timedWait13044, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._timedWait13044, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -116,7 +116,7 @@ namespace java.util.concurrent
 		public virtual void timedJoin(java.lang.Thread arg0, long arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.concurrent.TimeUnit)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.concurrent.TimeUnit._timedJoin13045, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._timedJoin13045, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 

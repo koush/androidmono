@@ -39,7 +39,7 @@ namespace org.xml.sax
 		 int org.xml.sax.Locator.getLineNumber() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__Locator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::org.xml.sax.__Locator._getLineNumber13320); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::org.xml.sax.__Locator.staticClass, global::org.xml.sax.__Locator._getLineNumber13320); 
@@ -48,7 +48,7 @@ namespace org.xml.sax
 		 global::java.lang.String org.xml.sax.Locator.getPublicId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__Locator)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Locator._getPublicId13321)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Locator.staticClass, global::org.xml.sax.__Locator._getPublicId13321)); 
@@ -57,7 +57,7 @@ namespace org.xml.sax
 		 global::java.lang.String org.xml.sax.Locator.getSystemId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__Locator)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Locator._getSystemId13322)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Locator.staticClass, global::org.xml.sax.__Locator._getSystemId13322)); 
@@ -66,7 +66,7 @@ namespace org.xml.sax
 		 int org.xml.sax.Locator.getColumnNumber() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__Locator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::org.xml.sax.__Locator._getColumnNumber13323); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::org.xml.sax.__Locator.staticClass, global::org.xml.sax.__Locator._getColumnNumber13323); 

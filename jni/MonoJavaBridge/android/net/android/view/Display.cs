@@ -22,7 +22,7 @@ namespace android.view
 		public virtual int getWidth() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Display)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.Display._getWidth7738); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getWidth7738); 
@@ -31,7 +31,7 @@ namespace android.view
 		public virtual int getHeight() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Display)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.Display._getHeight7739); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getHeight7739); 
@@ -40,7 +40,7 @@ namespace android.view
 		public virtual int getOrientation() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Display)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.Display._getOrientation7740); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getOrientation7740); 
@@ -49,7 +49,7 @@ namespace android.view
 		public virtual int getDisplayId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Display)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.Display._getDisplayId7741); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getDisplayId7741); 
@@ -58,7 +58,7 @@ namespace android.view
 		public virtual int getPixelFormat() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Display)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.Display._getPixelFormat7742); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getPixelFormat7742); 
@@ -67,7 +67,7 @@ namespace android.view
 		public virtual float getRefreshRate() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Display)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.Display._getRefreshRate7743); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getRefreshRate7743); 
@@ -76,7 +76,7 @@ namespace android.view
 		public virtual void getMetrics(android.util.DisplayMetrics arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.Display)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.Display._getMetrics7744, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getMetrics7744, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

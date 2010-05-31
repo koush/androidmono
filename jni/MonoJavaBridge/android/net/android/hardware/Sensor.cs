@@ -22,7 +22,7 @@ namespace android.hardware
 		public virtual global::java.lang.String getName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.Sensor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Sensor._getName3930)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getName3930)); 
@@ -31,7 +31,7 @@ namespace android.hardware
 		public virtual int getType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.Sensor)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.hardware.Sensor._getType3931); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getType3931); 
@@ -40,7 +40,7 @@ namespace android.hardware
 		public virtual int getVersion() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.Sensor)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.hardware.Sensor._getVersion3932); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getVersion3932); 
@@ -49,7 +49,7 @@ namespace android.hardware
 		public virtual global::java.lang.String getVendor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.Sensor)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Sensor._getVendor3933)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getVendor3933)); 
@@ -58,7 +58,7 @@ namespace android.hardware
 		public virtual float getMaximumRange() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.Sensor)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.hardware.Sensor._getMaximumRange3934); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getMaximumRange3934); 
@@ -67,7 +67,7 @@ namespace android.hardware
 		public virtual float getResolution() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.Sensor)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.hardware.Sensor._getResolution3935); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getResolution3935); 
@@ -76,7 +76,7 @@ namespace android.hardware
 		public virtual float getPower() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.hardware.Sensor)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.hardware.Sensor._getPower3936); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getPower3936); 

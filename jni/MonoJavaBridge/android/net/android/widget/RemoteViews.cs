@@ -90,7 +90,7 @@ namespace android.widget
 			 int java.lang.annotation.Annotation.hashCode() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.RemoteViews.__RemoteView)) 
+				if (!IsClrObject) 
 					return @__env.CallIntMethod(this, global::android.widget.RemoteViews.__RemoteView._hashCode10689); 
 				else 
 					return @__env.CallNonVirtualIntMethod(this, global::android.widget.RemoteViews.__RemoteView.staticClass, global::android.widget.RemoteViews.__RemoteView._hashCode10689); 
@@ -99,7 +99,7 @@ namespace android.widget
 			 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.RemoteViews.__RemoteView)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.widget.RemoteViews.__RemoteView._equals10690, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.RemoteViews.__RemoteView.staticClass, global::android.widget.RemoteViews.__RemoteView._equals10690, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -108,7 +108,7 @@ namespace android.widget
 			 global::java.lang.String java.lang.annotation.Annotation.toString() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.RemoteViews.__RemoteView)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.RemoteViews.__RemoteView._toString10691)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.RemoteViews.__RemoteView.staticClass, global::android.widget.RemoteViews.__RemoteView._toString10691)); 
@@ -117,7 +117,7 @@ namespace android.widget
 			 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.RemoteViews.__RemoteView)) 
+				if (!IsClrObject) 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Class>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.RemoteViews.__RemoteView._annotationType10692)); 
 				else 
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Class>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.RemoteViews.__RemoteView.staticClass, global::android.widget.RemoteViews.__RemoteView._annotationType10692)); 
@@ -135,7 +135,7 @@ namespace android.widget
 		public virtual global::java.lang.String getPackage() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.RemoteViews._getPackage10693)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._getPackage10693)); 
@@ -144,7 +144,7 @@ namespace android.widget
 		public virtual void setBoolean(int arg0, java.lang.String arg1, bool arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setBoolean10694, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setBoolean10694, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -153,7 +153,7 @@ namespace android.widget
 		public virtual void setByte(int arg0, java.lang.String arg1, byte arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setByte10695, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setByte10695, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -162,7 +162,7 @@ namespace android.widget
 		public virtual void setChar(int arg0, java.lang.String arg1, char arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setChar10696, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setChar10696, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -171,7 +171,7 @@ namespace android.widget
 		public virtual void setShort(int arg0, java.lang.String arg1, short arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setShort10697, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setShort10697, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -180,7 +180,7 @@ namespace android.widget
 		public virtual void setInt(int arg0, java.lang.String arg1, int arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setInt10698, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setInt10698, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -189,7 +189,7 @@ namespace android.widget
 		public virtual void setLong(int arg0, java.lang.String arg1, long arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setLong10699, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setLong10699, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -198,7 +198,7 @@ namespace android.widget
 		public virtual void setFloat(int arg0, java.lang.String arg1, float arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setFloat10700, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setFloat10700, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -207,7 +207,7 @@ namespace android.widget
 		public virtual void setDouble(int arg0, java.lang.String arg1, double arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setDouble10701, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setDouble10701, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -216,7 +216,7 @@ namespace android.widget
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._writeToParcel10702, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._writeToParcel10702, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -225,7 +225,7 @@ namespace android.widget
 		public virtual int describeContents() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.RemoteViews._describeContents10703); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._describeContents10703); 
@@ -234,7 +234,7 @@ namespace android.widget
 		public virtual void addView(int arg0, android.widget.RemoteViews arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._addView10704, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._addView10704, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -243,7 +243,7 @@ namespace android.widget
 		public virtual void setBitmap(int arg0, java.lang.String arg1, android.graphics.Bitmap arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setBitmap10705, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setBitmap10705, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -252,7 +252,7 @@ namespace android.widget
 		public virtual void removeAllViews(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._removeAllViews10706, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._removeAllViews10706, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -261,7 +261,7 @@ namespace android.widget
 		public virtual void setTextColor(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setTextColor10707, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setTextColor10707, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -270,7 +270,7 @@ namespace android.widget
 		public virtual int getLayoutId() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.widget.RemoteViews._getLayoutId10708); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._getLayoutId10708); 
@@ -279,7 +279,7 @@ namespace android.widget
 		public virtual void setViewVisibility(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setViewVisibility10709, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setViewVisibility10709, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -288,7 +288,7 @@ namespace android.widget
 		public virtual void setTextViewText(int arg0, java.lang.CharSequence arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setTextViewText10710, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setTextViewText10710, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -297,7 +297,7 @@ namespace android.widget
 		public virtual void setImageViewResource(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setImageViewResource10711, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setImageViewResource10711, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -306,7 +306,7 @@ namespace android.widget
 		public virtual void setImageViewUri(int arg0, android.net.Uri arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setImageViewUri10712, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setImageViewUri10712, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -315,7 +315,7 @@ namespace android.widget
 		public virtual void setImageViewBitmap(int arg0, android.graphics.Bitmap arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setImageViewBitmap10713, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setImageViewBitmap10713, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -324,7 +324,7 @@ namespace android.widget
 		public virtual void setChronometer(int arg0, long arg1, java.lang.String arg2, bool arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setChronometer10714, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setChronometer10714, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -333,7 +333,7 @@ namespace android.widget
 		public virtual void setProgressBar(int arg0, int arg1, int arg2, bool arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setProgressBar10715, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setProgressBar10715, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -342,7 +342,7 @@ namespace android.widget
 		public virtual void setOnClickPendingIntent(int arg0, android.app.PendingIntent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setOnClickPendingIntent10716, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setOnClickPendingIntent10716, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -351,7 +351,7 @@ namespace android.widget
 		public virtual void setString(int arg0, java.lang.String arg1, java.lang.String arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setString10717, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setString10717, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -360,7 +360,7 @@ namespace android.widget
 		public virtual void setCharSequence(int arg0, java.lang.String arg1, java.lang.CharSequence arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setCharSequence10718, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setCharSequence10718, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)); 
@@ -369,7 +369,7 @@ namespace android.widget
 		public virtual void setUri(int arg0, java.lang.String arg1, android.net.Uri arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setUri10719, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setUri10719, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -378,7 +378,7 @@ namespace android.widget
 		public virtual global::android.view.View apply(android.content.Context arg0, android.view.ViewGroup arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.RemoteViews._apply10720, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._apply10720, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -387,7 +387,7 @@ namespace android.widget
 		public virtual void reapply(android.content.Context arg0, android.view.View arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._reapply10721, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._reapply10721, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -396,7 +396,7 @@ namespace android.widget
 		public virtual bool onLoadClass(java.lang.Class arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.RemoteViews)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.RemoteViews._onLoadClass10722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._onLoadClass10722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

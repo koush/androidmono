@@ -22,7 +22,7 @@ namespace android.telephony.gsm
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.GsmCellLocation)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.gsm.GsmCellLocation._hashCode6624); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._hashCode6624); 
@@ -31,7 +31,7 @@ namespace android.telephony.gsm
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.GsmCellLocation)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.telephony.gsm.GsmCellLocation._equals6625, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._equals6625, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -40,7 +40,7 @@ namespace android.telephony.gsm
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.GsmCellLocation)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.gsm.GsmCellLocation._toString6626)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._toString6626)); 
@@ -49,7 +49,7 @@ namespace android.telephony.gsm
 		public virtual int getLac() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.GsmCellLocation)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.gsm.GsmCellLocation._getLac6627); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._getLac6627); 
@@ -58,7 +58,7 @@ namespace android.telephony.gsm
 		public virtual int getCid() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.GsmCellLocation)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.telephony.gsm.GsmCellLocation._getCid6628); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._getCid6628); 
@@ -67,7 +67,7 @@ namespace android.telephony.gsm
 		public virtual void setStateInvalid() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.GsmCellLocation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.gsm.GsmCellLocation._setStateInvalid6629); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._setStateInvalid6629); 
@@ -76,7 +76,7 @@ namespace android.telephony.gsm
 		public virtual void fillInNotifierBundle(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.GsmCellLocation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.gsm.GsmCellLocation._fillInNotifierBundle6630, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._fillInNotifierBundle6630, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -85,7 +85,7 @@ namespace android.telephony.gsm
 		public virtual void setLacAndCid(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.telephony.gsm.GsmCellLocation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.telephony.gsm.GsmCellLocation._setLacAndCid6631, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._setLacAndCid6631, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 

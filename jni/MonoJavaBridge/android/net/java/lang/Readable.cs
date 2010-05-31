@@ -36,7 +36,7 @@ namespace java.lang
 		 int java.lang.Readable.read(java.nio.CharBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.lang.__Readable)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.lang.__Readable._read11507, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.lang.__Readable.staticClass, global::java.lang.__Readable._read11507, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

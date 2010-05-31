@@ -82,7 +82,7 @@ namespace java.net
 		public virtual global::java.net.Proxy.Type type() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Proxy)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Proxy.Type>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.Proxy._type11787)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.Proxy.Type>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.Proxy.staticClass, global::java.net.Proxy._type11787)); 
@@ -91,7 +91,7 @@ namespace java.net
 		public sealed override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Proxy)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.net.Proxy._hashCode11788); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.net.Proxy.staticClass, global::java.net.Proxy._hashCode11788); 
@@ -100,7 +100,7 @@ namespace java.net
 		public sealed override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Proxy)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.net.Proxy._equals11789, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.net.Proxy.staticClass, global::java.net.Proxy._equals11789, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -109,7 +109,7 @@ namespace java.net
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Proxy)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.Proxy._toString11790)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.Proxy.staticClass, global::java.net.Proxy._toString11790)); 
@@ -118,7 +118,7 @@ namespace java.net
 		public virtual global::java.net.SocketAddress address() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.net.Proxy)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallObjectMethodPtr(this, global::java.net.Proxy._address11791)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.net.SocketAddress>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.net.Proxy.staticClass, global::java.net.Proxy._address11791)); 

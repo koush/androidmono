@@ -44,7 +44,7 @@ namespace java.util
 		 void java.util.ListIterator.add(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__ListIterator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.__ListIterator._add12891, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._add12891, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -53,7 +53,7 @@ namespace java.util
 		 bool java.util.ListIterator.hasNext() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__ListIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.__ListIterator._hasNext12892); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._hasNext12892); 
@@ -62,7 +62,7 @@ namespace java.util
 		 global::java.lang.Object java.util.ListIterator.next() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__ListIterator)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__ListIterator._next12893)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._next12893)); 
@@ -71,7 +71,7 @@ namespace java.util
 		 void java.util.ListIterator.set(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__ListIterator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.__ListIterator._set12894, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._set12894, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -80,7 +80,7 @@ namespace java.util
 		 void java.util.ListIterator.remove() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__ListIterator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.__ListIterator._remove12895); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._remove12895); 
@@ -89,7 +89,7 @@ namespace java.util
 		 int java.util.ListIterator.previousIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__ListIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.__ListIterator._previousIndex12896); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._previousIndex12896); 
@@ -98,7 +98,7 @@ namespace java.util
 		 bool java.util.ListIterator.hasPrevious() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__ListIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.__ListIterator._hasPrevious12897); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._hasPrevious12897); 
@@ -107,7 +107,7 @@ namespace java.util
 		 global::java.lang.Object java.util.ListIterator.previous() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__ListIterator)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__ListIterator._previous12898)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._previous12898)); 
@@ -116,7 +116,7 @@ namespace java.util
 		 int java.util.ListIterator.nextIndex() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__ListIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.__ListIterator._nextIndex12899); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._nextIndex12899); 
@@ -125,7 +125,7 @@ namespace java.util
 		 bool java.util.Iterator.hasNext() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__ListIterator)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.__ListIterator._hasNext12900); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._hasNext12900); 
@@ -134,7 +134,7 @@ namespace java.util
 		 global::java.lang.Object java.util.Iterator.next() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__ListIterator)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__ListIterator._next12901)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._next12901)); 
@@ -143,7 +143,7 @@ namespace java.util
 		 void java.util.Iterator.remove() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.__ListIterator)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.util.__ListIterator._remove12902); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.util.__ListIterator.staticClass, global::java.util.__ListIterator._remove12902); 

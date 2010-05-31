@@ -17,7 +17,7 @@ namespace android.content
 		public virtual global::android.os.IBinder peekService(android.content.Context arg0, android.content.Intent arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.BroadcastReceiver)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.BroadcastReceiver._peekService939, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._peekService939, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -26,7 +26,7 @@ namespace android.content
 		public virtual void setResultCode(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.BroadcastReceiver)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.BroadcastReceiver._setResultCode940, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setResultCode940, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -35,7 +35,7 @@ namespace android.content
 		public virtual int getResultCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.BroadcastReceiver)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.content.BroadcastReceiver._getResultCode941); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getResultCode941); 
@@ -44,7 +44,7 @@ namespace android.content
 		public virtual void setResultData(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.BroadcastReceiver)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.BroadcastReceiver._setResultData942, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setResultData942, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -53,7 +53,7 @@ namespace android.content
 		public virtual global::java.lang.String getResultData() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.BroadcastReceiver)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.BroadcastReceiver._getResultData943)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getResultData943)); 
@@ -62,7 +62,7 @@ namespace android.content
 		public virtual void setResultExtras(android.os.Bundle arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.BroadcastReceiver)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.BroadcastReceiver._setResultExtras944, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setResultExtras944, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -71,7 +71,7 @@ namespace android.content
 		public virtual global::android.os.Bundle getResultExtras(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.BroadcastReceiver)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.BroadcastReceiver._getResultExtras945, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Bundle>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getResultExtras945, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -80,7 +80,7 @@ namespace android.content
 		public virtual void setResult(int arg0, java.lang.String arg1, android.os.Bundle arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.BroadcastReceiver)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.BroadcastReceiver._setResult946, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setResult946, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -89,7 +89,7 @@ namespace android.content
 		public virtual bool getAbortBroadcast() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.BroadcastReceiver)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.BroadcastReceiver._getAbortBroadcast947); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getAbortBroadcast947); 
@@ -98,7 +98,7 @@ namespace android.content
 		public virtual void abortBroadcast() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.BroadcastReceiver)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.BroadcastReceiver._abortBroadcast948); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._abortBroadcast948); 
@@ -107,7 +107,7 @@ namespace android.content
 		public virtual void clearAbortBroadcast() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.BroadcastReceiver)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.BroadcastReceiver._clearAbortBroadcast949); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._clearAbortBroadcast949); 
@@ -116,7 +116,7 @@ namespace android.content
 		public virtual bool isOrderedBroadcast() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.BroadcastReceiver)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.BroadcastReceiver._isOrderedBroadcast950); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._isOrderedBroadcast950); 
@@ -125,7 +125,7 @@ namespace android.content
 		public virtual bool isInitialStickyBroadcast() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.BroadcastReceiver)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.BroadcastReceiver._isInitialStickyBroadcast951); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._isInitialStickyBroadcast951); 
@@ -134,7 +134,7 @@ namespace android.content
 		public virtual void setOrderedHint(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.BroadcastReceiver)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.BroadcastReceiver._setOrderedHint952, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setOrderedHint952, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -143,7 +143,7 @@ namespace android.content
 		public virtual void setDebugUnregister(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.BroadcastReceiver)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.content.BroadcastReceiver._setDebugUnregister953, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._setDebugUnregister953, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -152,7 +152,7 @@ namespace android.content
 		public virtual bool getDebugUnregister() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.content.BroadcastReceiver)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.content.BroadcastReceiver._getDebugUnregister954); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.BroadcastReceiver.staticClass, global::android.content.BroadcastReceiver._getDebugUnregister954); 

@@ -22,7 +22,7 @@ namespace android.util
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.Pair)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.util.Pair._hashCode7587); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.util.Pair.staticClass, global::android.util.Pair._hashCode7587); 
@@ -31,7 +31,7 @@ namespace android.util
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.util.Pair)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.util.Pair._equals7588, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.util.Pair.staticClass, global::android.util.Pair._equals7588, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 

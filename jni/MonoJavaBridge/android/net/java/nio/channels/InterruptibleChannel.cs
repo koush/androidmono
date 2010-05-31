@@ -36,7 +36,7 @@ namespace java.nio.channels
 		 void java.nio.channels.InterruptibleChannel.close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__InterruptibleChannel)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.nio.channels.__InterruptibleChannel._close12211); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__InterruptibleChannel.staticClass, global::java.nio.channels.__InterruptibleChannel._close12211); 
@@ -45,7 +45,7 @@ namespace java.nio.channels
 		 void java.nio.channels.Channel.close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__InterruptibleChannel)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.nio.channels.__InterruptibleChannel._close12212); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__InterruptibleChannel.staticClass, global::java.nio.channels.__InterruptibleChannel._close12212); 
@@ -54,7 +54,7 @@ namespace java.nio.channels
 		 bool java.nio.channels.Channel.isOpen() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__InterruptibleChannel)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.nio.channels.__InterruptibleChannel._isOpen12213); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.__InterruptibleChannel.staticClass, global::java.nio.channels.__InterruptibleChannel._isOpen12213); 
@@ -63,7 +63,7 @@ namespace java.nio.channels
 		 void java.io.Closeable.close() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.nio.channels.__InterruptibleChannel)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::java.nio.channels.__InterruptibleChannel._close12214); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__InterruptibleChannel.staticClass, global::java.nio.channels.__InterruptibleChannel._close12214); 

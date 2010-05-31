@@ -53,7 +53,7 @@ namespace android.view
 		 global::android.view.ViewParent android.view.ViewParent.getParent() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ViewParent>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__ViewParent._getParent8613)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ViewParent>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._getParent8613)); 
@@ -62,7 +62,7 @@ namespace android.view
 		 global::android.view.View android.view.ViewParent.focusSearch(android.view.View arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__ViewParent._focusSearch8614, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._focusSearch8614, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -71,7 +71,7 @@ namespace android.view
 		 void android.view.ViewParent.createContextMenu(android.view.ContextMenu arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__ViewParent._createContextMenu8615, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._createContextMenu8615, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -80,7 +80,7 @@ namespace android.view
 		 bool android.view.ViewParent.isLayoutRequested() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.__ViewParent._isLayoutRequested8616); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._isLayoutRequested8616); 
@@ -89,7 +89,7 @@ namespace android.view
 		 void android.view.ViewParent.requestLayout() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__ViewParent._requestLayout8617); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._requestLayout8617); 
@@ -98,7 +98,7 @@ namespace android.view
 		 void android.view.ViewParent.requestChildFocus(android.view.View arg0, android.view.View arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__ViewParent._requestChildFocus8618, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._requestChildFocus8618, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -107,7 +107,7 @@ namespace android.view
 		 void android.view.ViewParent.focusableViewAvailable(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__ViewParent._focusableViewAvailable8619, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._focusableViewAvailable8619, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -116,7 +116,7 @@ namespace android.view
 		 bool android.view.ViewParent.showContextMenuForChild(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.__ViewParent._showContextMenuForChild8620, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._showContextMenuForChild8620, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -125,7 +125,7 @@ namespace android.view
 		 bool android.view.ViewParent.requestChildRectangleOnScreen(android.view.View arg0, android.graphics.Rect arg1, bool arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.__ViewParent._requestChildRectangleOnScreen8621, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._requestChildRectangleOnScreen8621, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -134,7 +134,7 @@ namespace android.view
 		 void android.view.ViewParent.clearChildFocus(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__ViewParent._clearChildFocus8622, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._clearChildFocus8622, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -143,7 +143,7 @@ namespace android.view
 		 void android.view.ViewParent.recomputeViewAttributes(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__ViewParent._recomputeViewAttributes8623, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._recomputeViewAttributes8623, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -152,7 +152,7 @@ namespace android.view
 		 void android.view.ViewParent.bringChildToFront(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__ViewParent._bringChildToFront8624, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._bringChildToFront8624, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -161,7 +161,7 @@ namespace android.view
 		 void android.view.ViewParent.requestDisallowInterceptTouchEvent(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__ViewParent._requestDisallowInterceptTouchEvent8625, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._requestDisallowInterceptTouchEvent8625, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -170,7 +170,7 @@ namespace android.view
 		 void android.view.ViewParent.invalidateChild(android.view.View arg0, android.graphics.Rect arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__ViewParent._invalidateChild8626, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._invalidateChild8626, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -179,7 +179,7 @@ namespace android.view
 		 global::android.view.ViewParent android.view.ViewParent.invalidateChildInParent(int[] arg0, android.graphics.Rect arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ViewParent>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__ViewParent._invalidateChildInParent8627, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ViewParent>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._invalidateChildInParent8627, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -188,7 +188,7 @@ namespace android.view
 		 bool android.view.ViewParent.getChildVisibleRect(android.view.View arg0, android.graphics.Rect arg1, android.graphics.Point arg2) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.__ViewParent._getChildVisibleRect8628, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._getChildVisibleRect8628, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)); 
@@ -197,7 +197,7 @@ namespace android.view
 		 void android.view.ViewParent.requestTransparentRegion(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__ViewParent._requestTransparentRegion8629, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._requestTransparentRegion8629, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -206,7 +206,7 @@ namespace android.view
 		 void android.view.ViewParent.childDrawableStateChanged(android.view.View arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.__ViewParent)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.__ViewParent._childDrawableStateChanged8630, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.__ViewParent.staticClass, global::android.view.__ViewParent._childDrawableStateChanged8630, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

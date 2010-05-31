@@ -22,7 +22,7 @@ namespace java.util.regex
 		public global::java.lang.String group() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Matcher._group13060)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._group13060)); 
@@ -31,7 +31,7 @@ namespace java.util.regex
 		public global::java.lang.String group(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Matcher._group13061, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._group13061, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -40,7 +40,7 @@ namespace java.util.regex
 		public sealed override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Matcher._toString13062)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._toString13062)); 
@@ -49,7 +49,7 @@ namespace java.util.regex
 		public bool matches() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.regex.Matcher._matches13063); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._matches13063); 
@@ -58,7 +58,7 @@ namespace java.util.regex
 		public global::java.lang.String replaceFirst(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Matcher._replaceFirst13064, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._replaceFirst13064, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -67,7 +67,7 @@ namespace java.util.regex
 		public global::java.lang.String replaceAll(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Matcher._replaceAll13065, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._replaceAll13065, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -82,7 +82,7 @@ namespace java.util.regex
 		public bool find() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.regex.Matcher._find13067); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._find13067); 
@@ -91,7 +91,7 @@ namespace java.util.regex
 		public bool find(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.regex.Matcher._find13068, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._find13068, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -100,7 +100,7 @@ namespace java.util.regex
 		public int start(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.regex.Matcher._start13069, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._start13069, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -109,7 +109,7 @@ namespace java.util.regex
 		public int start() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.regex.Matcher._start13070); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._start13070); 
@@ -118,7 +118,7 @@ namespace java.util.regex
 		public global::java.util.regex.Matcher reset(java.lang.CharSequence arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Matcher._reset13071, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._reset13071, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0))); 
@@ -127,7 +127,7 @@ namespace java.util.regex
 		public global::java.util.regex.Matcher reset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Matcher._reset13072)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._reset13072)); 
@@ -136,7 +136,7 @@ namespace java.util.regex
 		public global::java.util.regex.Matcher appendReplacement(java.lang.StringBuffer arg0, java.lang.String arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Matcher._appendReplacement13073, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._appendReplacement13073, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1))); 
@@ -145,7 +145,7 @@ namespace java.util.regex
 		public global::java.lang.StringBuffer appendTail(java.lang.StringBuffer arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.StringBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Matcher._appendTail13074, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.StringBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._appendTail13074, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -154,7 +154,7 @@ namespace java.util.regex
 		public int end(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.regex.Matcher._end13075, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._end13075, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -163,7 +163,7 @@ namespace java.util.regex
 		public int end() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.regex.Matcher._end13076); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._end13076); 
@@ -172,7 +172,7 @@ namespace java.util.regex
 		public global::java.util.regex.Pattern pattern() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Pattern>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Matcher._pattern13077)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Pattern>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._pattern13077)); 
@@ -181,7 +181,7 @@ namespace java.util.regex
 		public bool hitEnd() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.regex.Matcher._hitEnd13078); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._hitEnd13078); 
@@ -190,7 +190,7 @@ namespace java.util.regex
 		public bool requireEnd() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.regex.Matcher._requireEnd13079); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._requireEnd13079); 
@@ -199,7 +199,7 @@ namespace java.util.regex
 		public global::java.util.regex.MatchResult toMatchResult() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.regex.MatchResult>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Matcher._toMatchResult13080)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.regex.MatchResult>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._toMatchResult13080)); 
@@ -208,7 +208,7 @@ namespace java.util.regex
 		public global::java.util.regex.Matcher usePattern(java.util.regex.Pattern arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Matcher._usePattern13081, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._usePattern13081, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -217,7 +217,7 @@ namespace java.util.regex
 		public int groupCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.regex.Matcher._groupCount13082); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._groupCount13082); 
@@ -226,7 +226,7 @@ namespace java.util.regex
 		public bool lookingAt() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.regex.Matcher._lookingAt13083); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._lookingAt13083); 
@@ -235,7 +235,7 @@ namespace java.util.regex
 		public global::java.util.regex.Matcher region(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Matcher._region13084, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._region13084, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1))); 
@@ -244,7 +244,7 @@ namespace java.util.regex
 		public int regionStart() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.regex.Matcher._regionStart13085); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._regionStart13085); 
@@ -253,7 +253,7 @@ namespace java.util.regex
 		public int regionEnd() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.util.regex.Matcher._regionEnd13086); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._regionEnd13086); 
@@ -262,7 +262,7 @@ namespace java.util.regex
 		public bool hasTransparentBounds() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.regex.Matcher._hasTransparentBounds13087); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._hasTransparentBounds13087); 
@@ -271,7 +271,7 @@ namespace java.util.regex
 		public global::java.util.regex.Matcher useTransparentBounds(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Matcher._useTransparentBounds13088, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._useTransparentBounds13088, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -280,7 +280,7 @@ namespace java.util.regex
 		public bool hasAnchoringBounds() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.util.regex.Matcher._hasAnchoringBounds13089); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._hasAnchoringBounds13089); 
@@ -289,7 +289,7 @@ namespace java.util.regex
 		public global::java.util.regex.Matcher useAnchoringBounds(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.util.regex.Matcher)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Matcher._useAnchoringBounds13090, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._useAnchoringBounds13090, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 

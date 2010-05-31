@@ -36,7 +36,7 @@ namespace android.view.animation
 		 float android.view.animation.Interpolator.getInterpolation(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.__Interpolator)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.animation.__Interpolator._getInterpolation8962, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.animation.__Interpolator.staticClass, global::android.view.animation.__Interpolator._getInterpolation8962, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

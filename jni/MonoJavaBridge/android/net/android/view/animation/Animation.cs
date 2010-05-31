@@ -49,7 +49,7 @@ namespace android.view.animation
 			 void android.view.animation.Animation.AnimationListener.onAnimationStart(android.view.animation.Animation arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.animation.Animation.__AnimationListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.view.animation.Animation.__AnimationListener._onAnimationStart8847, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.__AnimationListener.staticClass, global::android.view.animation.Animation.__AnimationListener._onAnimationStart8847, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -58,7 +58,7 @@ namespace android.view.animation
 			 void android.view.animation.Animation.AnimationListener.onAnimationEnd(android.view.animation.Animation arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.animation.Animation.__AnimationListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.view.animation.Animation.__AnimationListener._onAnimationEnd8848, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.__AnimationListener.staticClass, global::android.view.animation.Animation.__AnimationListener._onAnimationEnd8848, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -67,7 +67,7 @@ namespace android.view.animation
 			 void android.view.animation.Animation.AnimationListener.onAnimationRepeat(android.view.animation.Animation arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.view.animation.Animation.__AnimationListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.view.animation.Animation.__AnimationListener._onAnimationRepeat8849, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.__AnimationListener.staticClass, global::android.view.animation.Animation.__AnimationListener._onAnimationRepeat8849, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -136,7 +136,7 @@ namespace android.view.animation
 		protected virtual global::android.view.animation.Animation clone() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.animation.Animation>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.animation.Animation._clone8853)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.animation.Animation>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._clone8853)); 
@@ -145,7 +145,7 @@ namespace android.view.animation
 		public virtual void start() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._start8854); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._start8854); 
@@ -154,7 +154,7 @@ namespace android.view.animation
 		public virtual void reset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._reset8855); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._reset8855); 
@@ -163,7 +163,7 @@ namespace android.view.animation
 		public virtual void initialize(int arg0, int arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._initialize8856, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._initialize8856, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -172,7 +172,7 @@ namespace android.view.animation
 		protected virtual float resolveSize(int arg0, float arg1, int arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.animation.Animation._resolveSize8857, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._resolveSize8857, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -181,7 +181,7 @@ namespace android.view.animation
 		public virtual int getRepeatCount() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.animation.Animation._getRepeatCount8858); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._getRepeatCount8858); 
@@ -190,7 +190,7 @@ namespace android.view.animation
 		public virtual void setInterpolator(android.view.animation.Interpolator arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._setInterpolator8859, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._setInterpolator8859, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -199,7 +199,7 @@ namespace android.view.animation
 		public virtual void setInterpolator(android.content.Context arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._setInterpolator8860, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._setInterpolator8860, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -208,7 +208,7 @@ namespace android.view.animation
 		public virtual global::android.view.animation.Interpolator getInterpolator() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.animation.Interpolator>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.animation.Animation._getInterpolator8861)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.animation.Interpolator>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._getInterpolator8861)); 
@@ -217,7 +217,7 @@ namespace android.view.animation
 		public virtual bool isInitialized() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.animation.Animation._isInitialized8862); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._isInitialized8862); 
@@ -226,7 +226,7 @@ namespace android.view.animation
 		public virtual void setStartOffset(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._setStartOffset8863, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._setStartOffset8863, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -235,7 +235,7 @@ namespace android.view.animation
 		public virtual void setDuration(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._setDuration8864, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._setDuration8864, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -244,7 +244,7 @@ namespace android.view.animation
 		public virtual void restrictDuration(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._restrictDuration8865, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._restrictDuration8865, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -253,7 +253,7 @@ namespace android.view.animation
 		public virtual void scaleCurrentDuration(float arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._scaleCurrentDuration8866, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._scaleCurrentDuration8866, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -262,7 +262,7 @@ namespace android.view.animation
 		public virtual void setStartTime(long arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._setStartTime8867, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._setStartTime8867, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -271,7 +271,7 @@ namespace android.view.animation
 		public virtual void startNow() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._startNow8868); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._startNow8868); 
@@ -280,7 +280,7 @@ namespace android.view.animation
 		public virtual void setRepeatMode(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._setRepeatMode8869, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._setRepeatMode8869, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -289,7 +289,7 @@ namespace android.view.animation
 		public virtual void setRepeatCount(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._setRepeatCount8870, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._setRepeatCount8870, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -298,7 +298,7 @@ namespace android.view.animation
 		public virtual bool isFillEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.animation.Animation._isFillEnabled8871); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._isFillEnabled8871); 
@@ -307,7 +307,7 @@ namespace android.view.animation
 		public virtual void setFillEnabled(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._setFillEnabled8872, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._setFillEnabled8872, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -316,7 +316,7 @@ namespace android.view.animation
 		public virtual void setFillBefore(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._setFillBefore8873, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._setFillBefore8873, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -325,7 +325,7 @@ namespace android.view.animation
 		public virtual void setFillAfter(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._setFillAfter8874, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._setFillAfter8874, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -334,7 +334,7 @@ namespace android.view.animation
 		public virtual void setZAdjustment(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._setZAdjustment8875, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._setZAdjustment8875, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -343,7 +343,7 @@ namespace android.view.animation
 		public virtual void setDetachWallpaper(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._setDetachWallpaper8876, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._setDetachWallpaper8876, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -352,7 +352,7 @@ namespace android.view.animation
 		public virtual long getStartTime() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.view.animation.Animation._getStartTime8877); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._getStartTime8877); 
@@ -361,7 +361,7 @@ namespace android.view.animation
 		public virtual long getDuration() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.view.animation.Animation._getDuration8878); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._getDuration8878); 
@@ -370,7 +370,7 @@ namespace android.view.animation
 		public virtual long getStartOffset() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.view.animation.Animation._getStartOffset8879); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._getStartOffset8879); 
@@ -379,7 +379,7 @@ namespace android.view.animation
 		public virtual int getRepeatMode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.animation.Animation._getRepeatMode8880); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._getRepeatMode8880); 
@@ -388,7 +388,7 @@ namespace android.view.animation
 		public virtual bool getFillBefore() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.animation.Animation._getFillBefore8881); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._getFillBefore8881); 
@@ -397,7 +397,7 @@ namespace android.view.animation
 		public virtual bool getFillAfter() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.animation.Animation._getFillAfter8882); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._getFillAfter8882); 
@@ -406,7 +406,7 @@ namespace android.view.animation
 		public virtual int getZAdjustment() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.view.animation.Animation._getZAdjustment8883); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._getZAdjustment8883); 
@@ -415,7 +415,7 @@ namespace android.view.animation
 		public virtual bool getDetachWallpaper() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.animation.Animation._getDetachWallpaper8884); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._getDetachWallpaper8884); 
@@ -424,7 +424,7 @@ namespace android.view.animation
 		public virtual bool willChangeTransformationMatrix() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.animation.Animation._willChangeTransformationMatrix8885); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._willChangeTransformationMatrix8885); 
@@ -433,7 +433,7 @@ namespace android.view.animation
 		public virtual bool willChangeBounds() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.animation.Animation._willChangeBounds8886); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._willChangeBounds8886); 
@@ -442,7 +442,7 @@ namespace android.view.animation
 		public virtual void setAnimationListener(android.view.animation.Animation.AnimationListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._setAnimationListener8887, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._setAnimationListener8887, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -451,7 +451,7 @@ namespace android.view.animation
 		protected virtual void ensureInterpolator() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._ensureInterpolator8888); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._ensureInterpolator8888); 
@@ -460,7 +460,7 @@ namespace android.view.animation
 		public virtual long computeDurationHint() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.view.animation.Animation._computeDurationHint8889); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._computeDurationHint8889); 
@@ -469,7 +469,7 @@ namespace android.view.animation
 		public virtual bool getTransformation(long arg0, android.view.animation.Transformation arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.animation.Animation._getTransformation8890, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._getTransformation8890, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
@@ -478,7 +478,7 @@ namespace android.view.animation
 		public virtual bool hasStarted() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.animation.Animation._hasStarted8891); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._hasStarted8891); 
@@ -487,7 +487,7 @@ namespace android.view.animation
 		public virtual bool hasEnded() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.animation.Animation._hasEnded8892); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._hasEnded8892); 
@@ -496,7 +496,7 @@ namespace android.view.animation
 		protected virtual void applyTransformation(float arg0, android.view.animation.Transformation arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.animation.Animation)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.animation.Animation._applyTransformation8893, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Animation.staticClass, global::android.view.animation.Animation._applyTransformation8893, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)); 

@@ -22,7 +22,7 @@ namespace android.view
 		public void clear() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.VelocityTracker)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.VelocityTracker._clear8088); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._clear8088); 
@@ -37,7 +37,7 @@ namespace android.view
 		public void recycle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.VelocityTracker)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.VelocityTracker._recycle8090); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._recycle8090); 
@@ -46,7 +46,7 @@ namespace android.view
 		public void addMovement(android.view.MotionEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.VelocityTracker)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.VelocityTracker._addMovement8091, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._addMovement8091, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -55,7 +55,7 @@ namespace android.view
 		public void computeCurrentVelocity(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.VelocityTracker)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.VelocityTracker._computeCurrentVelocity8092, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._computeCurrentVelocity8092, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -64,7 +64,7 @@ namespace android.view
 		public void computeCurrentVelocity(int arg0, float arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.VelocityTracker)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.VelocityTracker._computeCurrentVelocity8093, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._computeCurrentVelocity8093, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -73,7 +73,7 @@ namespace android.view
 		public float getXVelocity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.VelocityTracker)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.VelocityTracker._getXVelocity8094); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._getXVelocity8094); 
@@ -82,7 +82,7 @@ namespace android.view
 		public float getYVelocity() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.VelocityTracker)) 
+			if (!IsClrObject) 
 				return @__env.CallFloatMethod(this, global::android.view.VelocityTracker._getYVelocity8095); 
 			else 
 				return @__env.CallNonVirtualFloatMethod(this, global::android.view.VelocityTracker.staticClass, global::android.view.VelocityTracker._getYVelocity8095); 

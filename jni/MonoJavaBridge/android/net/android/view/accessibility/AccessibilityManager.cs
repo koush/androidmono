@@ -22,7 +22,7 @@ namespace android.view.accessibility
 		public void interrupt() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.accessibility.AccessibilityManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityManager._interrupt8831); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityManager.staticClass, global::android.view.accessibility.AccessibilityManager._interrupt8831); 
@@ -31,7 +31,7 @@ namespace android.view.accessibility
 		public bool isEnabled() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.accessibility.AccessibilityManager)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.view.accessibility.AccessibilityManager._isEnabled8832); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.accessibility.AccessibilityManager.staticClass, global::android.view.accessibility.AccessibilityManager._isEnabled8832); 
@@ -40,7 +40,7 @@ namespace android.view.accessibility
 		public void sendAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.accessibility.AccessibilityManager)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityManager._sendAccessibilityEvent8833, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityManager.staticClass, global::android.view.accessibility.AccessibilityManager._sendAccessibilityEvent8833, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -49,7 +49,7 @@ namespace android.view.accessibility
 		public global::java.util.List getAccessibilityServiceList() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.accessibility.AccessibilityManager)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.accessibility.AccessibilityManager._getAccessibilityServiceList8834)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.accessibility.AccessibilityManager.staticClass, global::android.view.accessibility.AccessibilityManager._getAccessibilityServiceList8834)); 

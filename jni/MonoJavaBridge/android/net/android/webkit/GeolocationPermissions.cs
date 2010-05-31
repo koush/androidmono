@@ -54,7 +54,7 @@ namespace android.webkit
 			 void android.webkit.GeolocationPermissions.Callback.invoke(java.lang.String arg0, bool arg1, bool arg2) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.webkit.GeolocationPermissions.__Callback)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.webkit.GeolocationPermissions.__Callback._invoke9286, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.webkit.GeolocationPermissions.__Callback.staticClass, global::android.webkit.GeolocationPermissions.__Callback._invoke9286, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)); 
@@ -69,7 +69,7 @@ namespace android.webkit
 		public void clear(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.GeolocationPermissions)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.GeolocationPermissions._clear9287, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.GeolocationPermissions.staticClass, global::android.webkit.GeolocationPermissions._clear9287, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -84,7 +84,7 @@ namespace android.webkit
 		public void allow(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.GeolocationPermissions)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.GeolocationPermissions._allow9289, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.GeolocationPermissions.staticClass, global::android.webkit.GeolocationPermissions._allow9289, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -93,7 +93,7 @@ namespace android.webkit
 		public void getOrigins(android.webkit.ValueCallback arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.GeolocationPermissions)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.GeolocationPermissions._getOrigins9290, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.GeolocationPermissions.staticClass, global::android.webkit.GeolocationPermissions._getOrigins9290, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -102,7 +102,7 @@ namespace android.webkit
 		public void getAllowed(java.lang.String arg0, android.webkit.ValueCallback arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.GeolocationPermissions)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.GeolocationPermissions._getAllowed9291, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.GeolocationPermissions.staticClass, global::android.webkit.GeolocationPermissions._getAllowed9291, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)); 
@@ -111,7 +111,7 @@ namespace android.webkit
 		public void clearAll() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.GeolocationPermissions)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.GeolocationPermissions._clearAll9292); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.GeolocationPermissions.staticClass, global::android.webkit.GeolocationPermissions._clearAll9292); 

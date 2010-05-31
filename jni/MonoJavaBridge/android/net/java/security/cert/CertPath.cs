@@ -15,7 +15,7 @@ namespace java.security.cert
 		public override int hashCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.cert.CertPath)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::java.security.cert.CertPath._hashCode12477); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._hashCode12477); 
@@ -24,7 +24,7 @@ namespace java.security.cert
 		public override bool equals(java.lang.Object arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.cert.CertPath)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::java.security.cert.CertPath._equals12478, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._equals12478, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -33,7 +33,7 @@ namespace java.security.cert
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.cert.CertPath)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.CertPath._toString12479)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._toString12479)); 
@@ -44,7 +44,7 @@ namespace java.security.cert
 		public virtual global::java.lang.String getType() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.cert.CertPath)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.CertPath._getType12481)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._getType12481)); 
@@ -57,7 +57,7 @@ namespace java.security.cert
 		protected virtual global::java.lang.Object writeReplace() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(java.security.cert.CertPath)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.CertPath._writeReplace12484)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._writeReplace12484)); 

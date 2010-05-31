@@ -15,7 +15,7 @@ namespace android.os
 		public virtual global::android.os.CountDownTimer start() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.CountDownTimer)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.CountDownTimer>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.CountDownTimer._start5480)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.CountDownTimer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.CountDownTimer.staticClass, global::android.os.CountDownTimer._start5480)); 
@@ -24,7 +24,7 @@ namespace android.os
 		public virtual void cancel() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.CountDownTimer)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.CountDownTimer._cancel5481); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.CountDownTimer.staticClass, global::android.os.CountDownTimer._cancel5481); 

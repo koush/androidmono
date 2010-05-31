@@ -36,7 +36,7 @@ namespace android.accounts
 		 void android.accounts.OnAccountsUpdateListener.onAccountsUpdated(android.accounts.Account[] arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accounts.__OnAccountsUpdateListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.accounts.__OnAccountsUpdateListener._onAccountsUpdated122, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.__OnAccountsUpdateListener.staticClass, global::android.accounts.__OnAccountsUpdateListener._onAccountsUpdated122, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0)); 

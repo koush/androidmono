@@ -33,7 +33,7 @@ namespace android.text
 			public override bool isAllowed(char arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.text.LoginFilter.PasswordFilterGMail)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.text.LoginFilter.PasswordFilterGMail._isAllowed6843, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.text.LoginFilter.PasswordFilterGMail.staticClass, global::android.text.LoginFilter.PasswordFilterGMail._isAllowed6843, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -80,7 +80,7 @@ namespace android.text
 			public override bool isAllowed(char arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.text.LoginFilter.UsernameFilterGMail)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.text.LoginFilter.UsernameFilterGMail._isAllowed6846, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.text.LoginFilter.UsernameFilterGMail.staticClass, global::android.text.LoginFilter.UsernameFilterGMail._isAllowed6846, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -127,7 +127,7 @@ namespace android.text
 			public override bool isAllowed(char arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.text.LoginFilter.UsernameFilterGeneric)) 
+				if (!IsClrObject) 
 					return @__env.CallBooleanMethod(this, global::android.text.LoginFilter.UsernameFilterGeneric._isAllowed6849, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 				else 
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.text.LoginFilter.UsernameFilterGeneric.staticClass, global::android.text.LoginFilter.UsernameFilterGeneric._isAllowed6849, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -156,7 +156,7 @@ namespace android.text
 		public virtual global::java.lang.CharSequence filter(java.lang.CharSequence arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.LoginFilter)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.LoginFilter._filter6852, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.LoginFilter.staticClass, global::android.text.LoginFilter._filter6852, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5))); 
@@ -165,7 +165,7 @@ namespace android.text
 		public virtual void onStart() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.LoginFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.LoginFilter._onStart6853); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.LoginFilter.staticClass, global::android.text.LoginFilter._onStart6853); 
@@ -174,7 +174,7 @@ namespace android.text
 		public virtual void onStop() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.LoginFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.LoginFilter._onStop6854); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.LoginFilter.staticClass, global::android.text.LoginFilter._onStop6854); 
@@ -185,7 +185,7 @@ namespace android.text
 		public virtual void onInvalidCharacter(char arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.text.LoginFilter)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.text.LoginFilter._onInvalidCharacter6856, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.LoginFilter.staticClass, global::android.text.LoginFilter._onInvalidCharacter6856, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

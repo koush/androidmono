@@ -19,7 +19,7 @@ namespace android.accessibilityservice
 		protected virtual void onServiceConnected() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accessibilityservice.AccessibilityService)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.accessibilityservice.AccessibilityService._onServiceConnected21); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.accessibilityservice.AccessibilityService.staticClass, global::android.accessibilityservice.AccessibilityService._onServiceConnected21); 
@@ -28,7 +28,7 @@ namespace android.accessibilityservice
 		public virtual void setServiceInfo(android.accessibilityservice.AccessibilityServiceInfo arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accessibilityservice.AccessibilityService)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.accessibilityservice.AccessibilityService._setServiceInfo22, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.accessibilityservice.AccessibilityService.staticClass, global::android.accessibilityservice.AccessibilityService._setServiceInfo22, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -37,7 +37,7 @@ namespace android.accessibilityservice
 		public sealed override global::android.os.IBinder onBind(android.content.Intent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.accessibilityservice.AccessibilityService)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.accessibilityservice.AccessibilityService._onBind23, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.accessibilityservice.AccessibilityService.staticClass, global::android.accessibilityservice.AccessibilityService._onBind23, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 

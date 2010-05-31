@@ -43,7 +43,7 @@ namespace android.os
 		 void android.os.IBinder.dump(java.io.FileDescriptor arg0, java.lang.String[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.__IBinder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.__IBinder._dump5619, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.__IBinder.staticClass, global::android.os.__IBinder._dump5619, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)); 
@@ -52,7 +52,7 @@ namespace android.os
 		 global::java.lang.String android.os.IBinder.getInterfaceDescriptor() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.__IBinder)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.__IBinder._getInterfaceDescriptor5620)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.__IBinder.staticClass, global::android.os.__IBinder._getInterfaceDescriptor5620)); 
@@ -61,7 +61,7 @@ namespace android.os
 		 bool android.os.IBinder.pingBinder() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.__IBinder)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.__IBinder._pingBinder5621); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.__IBinder.staticClass, global::android.os.__IBinder._pingBinder5621); 
@@ -70,7 +70,7 @@ namespace android.os
 		 bool android.os.IBinder.isBinderAlive() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.__IBinder)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.__IBinder._isBinderAlive5622); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.__IBinder.staticClass, global::android.os.__IBinder._isBinderAlive5622); 
@@ -79,7 +79,7 @@ namespace android.os
 		 global::android.os.IInterface android.os.IBinder.queryLocalInterface(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.__IBinder)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IInterface>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.__IBinder._queryLocalInterface5623, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IInterface>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.__IBinder.staticClass, global::android.os.__IBinder._queryLocalInterface5623, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0))); 
@@ -88,7 +88,7 @@ namespace android.os
 		 bool android.os.IBinder.transact(int arg0, android.os.Parcel arg1, android.os.Parcel arg2, int arg3) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.__IBinder)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.__IBinder._transact5624, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.__IBinder.staticClass, global::android.os.__IBinder._transact5624, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)); 
@@ -97,7 +97,7 @@ namespace android.os
 		 void android.os.IBinder.linkToDeath(android.os.IBinder_DeathRecipient arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.__IBinder)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.os.__IBinder._linkToDeath5625, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.__IBinder.staticClass, global::android.os.__IBinder._linkToDeath5625, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -106,7 +106,7 @@ namespace android.os
 		 bool android.os.IBinder.unlinkToDeath(android.os.IBinder_DeathRecipient arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.os.__IBinder)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.os.__IBinder._unlinkToDeath5626, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.__IBinder.staticClass, global::android.os.__IBinder._unlinkToDeath5626, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 

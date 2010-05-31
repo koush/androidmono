@@ -54,7 +54,7 @@ namespace android.webkit
 			 void android.webkit.Plugin.PreferencesClickHandler.handleClickEvent(android.content.Context arg0) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.webkit.Plugin.__PreferencesClickHandler)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.webkit.Plugin.__PreferencesClickHandler._handleClickEvent9308, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.webkit.Plugin.__PreferencesClickHandler.staticClass, global::android.webkit.Plugin.__PreferencesClickHandler._handleClickEvent9308, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -69,7 +69,7 @@ namespace android.webkit
 		public override global::java.lang.String toString() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.Plugin)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.Plugin._toString9309)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.Plugin.staticClass, global::android.webkit.Plugin._toString9309)); 
@@ -78,7 +78,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.Plugin)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.Plugin._getName9310)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.Plugin.staticClass, global::android.webkit.Plugin._getName9310)); 
@@ -87,7 +87,7 @@ namespace android.webkit
 		public virtual void setName(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.Plugin)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.Plugin._setName9311, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.Plugin.staticClass, global::android.webkit.Plugin._setName9311, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -96,7 +96,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getFileName() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.Plugin)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.Plugin._getFileName9312)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.Plugin.staticClass, global::android.webkit.Plugin._getFileName9312)); 
@@ -105,7 +105,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getPath() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.Plugin)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.Plugin._getPath9313)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.Plugin.staticClass, global::android.webkit.Plugin._getPath9313)); 
@@ -114,7 +114,7 @@ namespace android.webkit
 		public virtual void setPath(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.Plugin)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.Plugin._setPath9314, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.Plugin.staticClass, global::android.webkit.Plugin._setPath9314, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -123,7 +123,7 @@ namespace android.webkit
 		public virtual global::java.lang.String getDescription() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.Plugin)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.Plugin._getDescription9315)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.Plugin.staticClass, global::android.webkit.Plugin._getDescription9315)); 
@@ -132,7 +132,7 @@ namespace android.webkit
 		public virtual void setFileName(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.Plugin)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.Plugin._setFileName9316, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.Plugin.staticClass, global::android.webkit.Plugin._setFileName9316, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -141,7 +141,7 @@ namespace android.webkit
 		public virtual void setDescription(java.lang.String arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.Plugin)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.Plugin._setDescription9317, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.Plugin.staticClass, global::android.webkit.Plugin._setDescription9317, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -150,7 +150,7 @@ namespace android.webkit
 		public virtual void setClickHandler(android.webkit.Plugin.PreferencesClickHandler arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.Plugin)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.Plugin._setClickHandler9318, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.Plugin.staticClass, global::android.webkit.Plugin._setClickHandler9318, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -159,7 +159,7 @@ namespace android.webkit
 		public virtual void dispatchClickEvent(android.content.Context arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.Plugin)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.webkit.Plugin._dispatchClickEvent9319, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.Plugin.staticClass, global::android.webkit.Plugin._dispatchClickEvent9319, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

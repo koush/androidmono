@@ -22,7 +22,7 @@ namespace android.webkit
 		public global::java.io.InputStream getInputStream() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.PluginData)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.PluginData._getInputStream9321)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.PluginData.staticClass, global::android.webkit.PluginData._getInputStream9321)); 
@@ -31,7 +31,7 @@ namespace android.webkit
 		public long getContentLength() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.PluginData)) 
+			if (!IsClrObject) 
 				return @__env.CallLongMethod(this, global::android.webkit.PluginData._getContentLength9322); 
 			else 
 				return @__env.CallNonVirtualLongMethod(this, global::android.webkit.PluginData.staticClass, global::android.webkit.PluginData._getContentLength9322); 
@@ -40,7 +40,7 @@ namespace android.webkit
 		public global::java.util.Map getHeaders() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.PluginData)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.PluginData._getHeaders9323)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Map>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.PluginData.staticClass, global::android.webkit.PluginData._getHeaders9323)); 
@@ -49,7 +49,7 @@ namespace android.webkit
 		public int getStatusCode() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.webkit.PluginData)) 
+			if (!IsClrObject) 
 				return @__env.CallIntMethod(this, global::android.webkit.PluginData._getStatusCode9324); 
 			else 
 				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.PluginData.staticClass, global::android.webkit.PluginData._getStatusCode9324); 

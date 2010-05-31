@@ -47,7 +47,7 @@ namespace android.widget
 			 void android.widget.CompoundButton.OnCheckedChangeListener.onCheckedChanged(android.widget.CompoundButton arg0, bool arg1) 
 			{ 
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-				if (GetType() == typeof(android.widget.CompoundButton.__OnCheckedChangeListener)) 
+				if (!IsClrObject) 
 					@__env.CallVoidMethod(this, global::android.widget.CompoundButton.__OnCheckedChangeListener._onCheckedChanged10016, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 				else 
 					@__env.CallNonVirtualVoidMethod(this, global::android.widget.CompoundButton.__OnCheckedChangeListener.staticClass, global::android.widget.CompoundButton.__OnCheckedChangeListener._onCheckedChanged10016, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
@@ -62,7 +62,7 @@ namespace android.widget
 		public virtual void toggle() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CompoundButton)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.CompoundButton._toggle10017); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._toggle10017); 
@@ -71,7 +71,7 @@ namespace android.widget
 		public virtual bool isChecked() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CompoundButton)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.CompoundButton._isChecked10018); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._isChecked10018); 
@@ -80,7 +80,7 @@ namespace android.widget
 		public virtual void setChecked(bool arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CompoundButton)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.CompoundButton._setChecked10019, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._setChecked10019, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
@@ -89,7 +89,7 @@ namespace android.widget
 		public override void onRestoreInstanceState(android.os.Parcelable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CompoundButton)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.CompoundButton._onRestoreInstanceState10020, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._onRestoreInstanceState10020, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -98,7 +98,7 @@ namespace android.widget
 		public override global::android.os.Parcelable onSaveInstanceState() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CompoundButton)) 
+			if (!IsClrObject) 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.CompoundButton._onSaveInstanceState10021)); 
 			else 
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.Parcelable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._onSaveInstanceState10021)); 
@@ -107,7 +107,7 @@ namespace android.widget
 		public override bool dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CompoundButton)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.CompoundButton._dispatchPopulateAccessibilityEvent10022, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._dispatchPopulateAccessibilityEvent10022, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -116,7 +116,7 @@ namespace android.widget
 		public override bool performClick() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CompoundButton)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.CompoundButton._performClick10023); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._performClick10023); 
@@ -125,7 +125,7 @@ namespace android.widget
 		protected override void onDraw(android.graphics.Canvas arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CompoundButton)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.CompoundButton._onDraw10024, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._onDraw10024, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -134,7 +134,7 @@ namespace android.widget
 		protected override bool verifyDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CompoundButton)) 
+			if (!IsClrObject) 
 				return @__env.CallBooleanMethod(this, global::android.widget.CompoundButton._verifyDrawable10025, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._verifyDrawable10025, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -143,7 +143,7 @@ namespace android.widget
 		protected override void drawableStateChanged() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CompoundButton)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.CompoundButton._drawableStateChanged10026); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._drawableStateChanged10026); 
@@ -151,7 +151,7 @@ namespace android.widget
 		internal static global::net.sf.jni4net.jni.MethodId _onCreateDrawableState10027; 
 		protected override int[] onCreateDrawableState(int arg0) 
 		{ 
-			if (GetType() == typeof(android.widget.CompoundButton)) 
+			if (!IsClrObject) 
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.CompoundButton._onCreateDrawableState10027, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
 			else 
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._onCreateDrawableState10027, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0))); 
@@ -160,7 +160,7 @@ namespace android.widget
 		public virtual void setOnCheckedChangeListener(android.widget.CompoundButton.OnCheckedChangeListener arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CompoundButton)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.CompoundButton._setOnCheckedChangeListener10028, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._setOnCheckedChangeListener10028, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)); 
@@ -169,7 +169,7 @@ namespace android.widget
 		public virtual void setButtonDrawable(android.graphics.drawable.Drawable arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CompoundButton)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.CompoundButton._setButtonDrawable10029, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._setButtonDrawable10029, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -178,7 +178,7 @@ namespace android.widget
 		public virtual void setButtonDrawable(int arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.widget.CompoundButton)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.widget.CompoundButton._setButtonDrawable10030, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.CompoundButton.staticClass, global::android.widget.CompoundButton._setButtonDrawable10030, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)); 

@@ -38,7 +38,7 @@ namespace org.xml.sax
 		 void org.xml.sax.ErrorHandler.fatalError(org.xml.sax.SAXParseException arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__ErrorHandler)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xml.sax.__ErrorHandler._fatalError13303, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ErrorHandler.staticClass, global::org.xml.sax.__ErrorHandler._fatalError13303, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -47,7 +47,7 @@ namespace org.xml.sax
 		 void org.xml.sax.ErrorHandler.error(org.xml.sax.SAXParseException arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__ErrorHandler)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xml.sax.__ErrorHandler._error13304, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ErrorHandler.staticClass, global::org.xml.sax.__ErrorHandler._error13304, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
@@ -56,7 +56,7 @@ namespace org.xml.sax
 		 void org.xml.sax.ErrorHandler.warning(org.xml.sax.SAXParseException arg0) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(org.xml.sax.__ErrorHandler)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::org.xml.sax.__ErrorHandler._warning13305, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ErrorHandler.staticClass, global::org.xml.sax.__ErrorHandler._warning13305, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)); 

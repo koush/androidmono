@@ -15,7 +15,7 @@ namespace android.view
 		public virtual void enable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.OrientationListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.OrientationListener._enable7987); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.OrientationListener.staticClass, global::android.view.OrientationListener._enable7987); 
@@ -24,7 +24,7 @@ namespace android.view
 		public virtual void disable() 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.OrientationListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.OrientationListener._disable7988); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.OrientationListener.staticClass, global::android.view.OrientationListener._disable7988); 
@@ -33,7 +33,7 @@ namespace android.view
 		public virtual void onSensorChanged(int arg0, float[] arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.OrientationListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.OrientationListener._onSensorChanged7989, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.OrientationListener.staticClass, global::android.view.OrientationListener._onSensorChanged7989, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1)); 
@@ -42,7 +42,7 @@ namespace android.view
 		public virtual void onAccuracyChanged(int arg0, int arg1) 
 		{ 
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv; 
-			if (GetType() == typeof(android.view.OrientationListener)) 
+			if (!IsClrObject) 
 				@__env.CallVoidMethod(this, global::android.view.OrientationListener._onAccuracyChanged7990, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
 			else 
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.OrientationListener.staticClass, global::android.view.OrientationListener._onAccuracyChanged7990, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)); 
