@@ -64,18 +64,24 @@ echo INSTALL_PREFIX=$INSTALL_PREFIX
 popd
 
 pushd ../hostbuild/mono
-if [ ! -f configure ]
-then
-    ./autogen.sh --with-glib=embedded --with-moonlight=no --prefix=$INSTALL_PREFIX
-fi
 UNAME=$(uname -a | grep Darwin | grep x86_64)
 if [ ! -z "$UNAME" ]
 then
     echo Using gcc-4.0 on Darwin x86_64!
     export CC=gcc-4.0
 fi
+if [ ! -f configure ]
+then
+    ./autogen.sh --with-glib=embedded --with-moonlight=no --prefix=$INSTALL_PREFIX
+fi
 make && make install
 popd
+
+if [ ! -f mono.patch ]
+then
+    echo =====NO LOCAL MONO PATCH FOUND=====
+    MONO_SKIP_PATCH=true
+fi
 
 if [ -z $MONO_SKIP_PATCH ]
 then

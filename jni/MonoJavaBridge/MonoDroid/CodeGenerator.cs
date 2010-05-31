@@ -6,21 +6,7 @@ namespace MonoDroid
 {
 	public abstract class CodeGenerator
 	{
-		public CodeGenerator (DirectoryInfo workingDirectory)
-		{
-			myWorkingDirectory = workingDirectory;
-		}
-		
 		StreamWriter myWriter;
-		
-		DirectoryInfo myWorkingDirectory;
-		protected DirectoryInfo WorkingDirectory
-		{
-			get
-			{
-				return myWorkingDirectory;
-			}
-		}
 
 		public void Generate(ObjectModel objectModel)
 		{
@@ -32,7 +18,6 @@ namespace MonoDroid
 					continue;
 				
 				var path = GetFilePath(type);
-				path = Path.Combine(WorkingDirectory.FullName, path);
 				string dir = Directory.GetParent(path).FullName;
 				Directory.CreateDirectory(dir);
 					
@@ -101,7 +86,7 @@ namespace MonoDroid
 		
 		protected void WriteLine(string format, params object[] args)
 		{
-			Write(format, args);
+			Write(format, false, args);
 			myWriter.WriteLine();
 			myIsNewLine = true;
 		}

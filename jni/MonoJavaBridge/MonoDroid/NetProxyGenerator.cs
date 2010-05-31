@@ -14,11 +14,6 @@ namespace MonoDroid
     {
         static Dictionary<string, System.Type> myJniTypes = new Dictionary<string, System.Type>();
         
-        public NetProxyGenerator (DirectoryInfo workingDirectory)
-            : base(workingDirectory)
-        {
-        }
-        
         static readonly string[] myKeywords = new string[] {
             "in",
             "out",
@@ -231,7 +226,8 @@ namespace MonoDroid
         
         protected override string GetFilePath (Type type)
         {
-            return Path.Combine(type.Namespace.Replace('.', Path.DirectorySeparatorChar), type.SimpleName + ".cs");
+            var file = Path.Combine(type.Namespace.Replace('.', Path.DirectorySeparatorChar), type.SimpleName + ".cs").Replace("@", string.Empty);
+            return Path.Combine("generated", file);
         }        
         
         protected override bool BeginType (Type type)

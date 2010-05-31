@@ -1,3 +1,0 @@
-namespace javax.security.cert 
-{ 
-} 

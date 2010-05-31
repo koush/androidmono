@@ -1,3 +1,0 @@
-namespace java.nio.channels 
-{ 
-} 

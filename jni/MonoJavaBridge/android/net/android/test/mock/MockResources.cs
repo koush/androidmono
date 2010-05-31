@@ -1,3 +1,0 @@
-namespace android.test.mock 
-{ 
-} 
