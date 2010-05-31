@@ -45,6 +45,10 @@ namespace android.widget
 				else
 					return @__env.CallNonVirtualIntMethod(this, global::android.widget.MultiAutoCompleteTextView.CommaTokenizer.staticClass, global::android.widget.MultiAutoCompleteTextView.CommaTokenizer._findTokenStart10519, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			}
+			public int findTokenStart(string arg0, int arg1)
+			{
+				return findTokenStart((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
+			}
 			internal static global::net.sf.jni4net.jni.MethodId _findTokenEnd10520;
 			public virtual int findTokenEnd(java.lang.CharSequence arg0, int arg1) 
 			{
@@ -54,6 +58,10 @@ namespace android.widget
 				else
 					return @__env.CallNonVirtualIntMethod(this, global::android.widget.MultiAutoCompleteTextView.CommaTokenizer.staticClass, global::android.widget.MultiAutoCompleteTextView.CommaTokenizer._findTokenEnd10520, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			}
+			public int findTokenEnd(string arg0, int arg1)
+			{
+				return findTokenEnd((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
+			}
 			internal static global::net.sf.jni4net.jni.MethodId _terminateToken10521;
 			public virtual global::java.lang.CharSequence terminateToken(java.lang.CharSequence arg0) 
 			{
@@ -62,6 +70,10 @@ namespace android.widget
 					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.MultiAutoCompleteTextView.CommaTokenizer._terminateToken10521, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 				else
 					return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.MultiAutoCompleteTextView.CommaTokenizer.staticClass, global::android.widget.MultiAutoCompleteTextView.CommaTokenizer._terminateToken10521, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+			}
+			public java.lang.CharSequence terminateToken(string arg0)
+			{
+				return terminateToken((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 			}
 			internal static global::net.sf.jni4net.jni.MethodId _CommaTokenizer10522;
 			public CommaTokenizer()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
@@ -231,21 +243,6 @@ namespace android.widget
 			global::android.widget.MultiAutoCompleteTextView._MultiAutoCompleteTextView10532 = @__env.GetMethodID(global::android.widget.MultiAutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.MultiAutoCompleteTextView._MultiAutoCompleteTextView10533 = @__env.GetMethodID(global::android.widget.MultiAutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.MultiAutoCompleteTextView._MultiAutoCompleteTextView10534 = @__env.GetMethodID(global::android.widget.MultiAutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-		}
-	}
-	public static class MultiAutoCompleteTextViewExtensionMethods
-	{
-		public static int findTokenStart(this global::android.widget.MultiAutoCompleteTextView.CommaTokenizer __this, string arg0, int arg1)
-		{
-			return __this.findTokenStart((global::java.lang.String)arg0, arg1);
-		}
-		public static int findTokenEnd(this global::android.widget.MultiAutoCompleteTextView.CommaTokenizer __this, string arg0, int arg1)
-		{
-			return __this.findTokenEnd((global::java.lang.String)arg0, arg1);
-		}
-		public static java.lang.CharSequence terminateToken(this global::android.widget.MultiAutoCompleteTextView.CommaTokenizer __this, string arg0)
-		{
-			return __this.terminateToken((global::java.lang.String)arg0);
 		}
 	}
 }

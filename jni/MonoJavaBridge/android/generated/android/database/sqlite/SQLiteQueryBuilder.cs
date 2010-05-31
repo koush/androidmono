@@ -72,6 +72,10 @@ namespace android.database.sqlite
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.SQLiteQueryBuilder.staticClass, global::android.database.sqlite.SQLiteQueryBuilder._appendWhere2558, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void appendWhere(string arg0)
+		{
+			appendWhere((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _appendWhereEscapeString2559;
 		public virtual void appendWhereEscapeString(java.lang.String arg0) 
 		{
@@ -162,13 +166,6 @@ namespace android.database.sqlite
 			global::android.database.sqlite.SQLiteQueryBuilder._buildUnionSubQuery2565 = @__env.GetMethodID(global::android.database.sqlite.SQLiteQueryBuilder.staticClass, "buildUnionSubQuery", "(Ljava/lang/String;[Ljava/lang/String;Ljava/util/Set;ILjava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
 			global::android.database.sqlite.SQLiteQueryBuilder._buildUnionQuery2566 = @__env.GetMethodID(global::android.database.sqlite.SQLiteQueryBuilder.staticClass, "buildUnionQuery", "([Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
 			global::android.database.sqlite.SQLiteQueryBuilder._SQLiteQueryBuilder2567 = @__env.GetMethodID(global::android.database.sqlite.SQLiteQueryBuilder.staticClass, "<init>", "()V");
-		}
-	}
-	public static class SQLiteQueryBuilderExtensionMethods
-	{
-		public static void appendWhere(this global::android.database.sqlite.SQLiteQueryBuilder __this, string arg0)
-		{
-			__this.appendWhere((global::java.lang.String)arg0);
 		}
 	}
 }

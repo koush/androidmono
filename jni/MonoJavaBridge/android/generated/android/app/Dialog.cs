@@ -540,6 +540,10 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Dialog.staticClass, global::android.app.Dialog._setTitle500, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setTitle(string arg0)
+		{
+			setTitle((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setVolumeControlStream501;
 		public virtual void setVolumeControlStream(int arg0) 
 		{
@@ -772,13 +776,6 @@ namespace android.app
 			global::android.app.Dialog._Dialog516 = @__env.GetMethodID(global::android.app.Dialog.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.app.Dialog._Dialog517 = @__env.GetMethodID(global::android.app.Dialog.staticClass, "<init>", "(Landroid/content/Context;I)V");
 			global::android.app.Dialog._Dialog518 = @__env.GetMethodID(global::android.app.Dialog.staticClass, "<init>", "(Landroid/content/Context;ZLandroid/content/DialogInterface$OnCancelListener;)V");
-		}
-	}
-	public static class DialogExtensionMethods
-	{
-		public static void setTitle(this global::android.app.Dialog __this, string arg0)
-		{
-			__this.setTitle((global::java.lang.String)arg0);
 		}
 	}
 }

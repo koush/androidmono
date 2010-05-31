@@ -228,6 +228,10 @@ namespace android.preference
 			else
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.PreferenceManager.staticClass, global::android.preference.PreferenceManager._findPreference6103, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
+		public android.preference.Preference findPreference(string arg0)
+		{
+			return findPreference((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setDefaultValues6104;
 		public static void setDefaultValues(android.content.Context arg0, int arg1, bool arg2) 
 		{
@@ -267,13 +271,6 @@ namespace android.preference
 			global::android.preference.PreferenceManager._findPreference6103 = @__env.GetMethodID(global::android.preference.PreferenceManager.staticClass, "findPreference", "(Ljava/lang/CharSequence;)Landroid/preference/Preference;");
 			global::android.preference.PreferenceManager._setDefaultValues6104 = @__env.GetStaticMethodID(global::android.preference.PreferenceManager.staticClass, "setDefaultValues", "(Landroid/content/Context;IZ)V");
 			global::android.preference.PreferenceManager._setDefaultValues6105 = @__env.GetStaticMethodID(global::android.preference.PreferenceManager.staticClass, "setDefaultValues", "(Landroid/content/Context;Ljava/lang/String;IIZ)V");
-		}
-	}
-	public static class PreferenceManagerExtensionMethods
-	{
-		public static android.preference.Preference findPreference(this global::android.preference.PreferenceManager __this, string arg0)
-		{
-			return __this.findPreference((global::java.lang.String)arg0);
 		}
 	}
 }

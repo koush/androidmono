@@ -63,6 +63,10 @@ namespace android.text.style
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.LeadingMarginSpan_Standard.staticClass, global::android.text.style.LeadingMarginSpan_Standard._drawLeadingMargin7358, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg7), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg8), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg9), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg10), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg11));
 		}
+		public void drawLeadingMargin(android.graphics.Canvas arg0, android.graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, string arg7, int arg8, int arg9, bool arg10, android.text.Layout arg11)
+		{
+			drawLeadingMargin(arg0, arg1, arg2, arg3, arg4, arg5, arg6, (global::java.lang.CharSequence)(global::java.lang.String)arg7, arg8, arg9, arg10, arg11);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _LeadingMarginSpan_Standard7359;
 		public LeadingMarginSpan_Standard(int arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
@@ -92,13 +96,6 @@ namespace android.text.style
 			global::android.text.style.LeadingMarginSpan_Standard._LeadingMarginSpan_Standard7359 = @__env.GetMethodID(global::android.text.style.LeadingMarginSpan_Standard.staticClass, "<init>", "(II)V");
 			global::android.text.style.LeadingMarginSpan_Standard._LeadingMarginSpan_Standard7360 = @__env.GetMethodID(global::android.text.style.LeadingMarginSpan_Standard.staticClass, "<init>", "(I)V");
 			global::android.text.style.LeadingMarginSpan_Standard._LeadingMarginSpan_Standard7361 = @__env.GetMethodID(global::android.text.style.LeadingMarginSpan_Standard.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-		}
-	}
-	public static class LeadingMarginSpan_StandardExtensionMethods
-	{
-		public static void drawLeadingMargin(this global::android.text.style.LeadingMarginSpan_Standard __this, android.graphics.Canvas arg0, android.graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, string arg7, int arg8, int arg9, bool arg10, android.text.Layout arg11)
-		{
-			__this.drawLeadingMargin(arg0, arg1, arg2, arg3, arg4, arg5, arg6, (global::java.lang.String)arg7, arg8, arg9, arg10, arg11);
 		}
 	}
 }

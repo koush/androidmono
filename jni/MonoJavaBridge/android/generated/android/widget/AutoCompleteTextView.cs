@@ -292,6 +292,10 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AutoCompleteTextView.staticClass, global::android.widget.AutoCompleteTextView._setCompletionHint9912, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setCompletionHint(string arg0)
+		{
+			setCompletionHint((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _getDropDownWidth9913;
 		public virtual int getDropDownWidth() 
 		{
@@ -610,13 +614,6 @@ namespace android.widget
 			global::android.widget.AutoCompleteTextView._AutoCompleteTextView9940 = @__env.GetMethodID(global::android.widget.AutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.AutoCompleteTextView._AutoCompleteTextView9941 = @__env.GetMethodID(global::android.widget.AutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.AutoCompleteTextView._AutoCompleteTextView9942 = @__env.GetMethodID(global::android.widget.AutoCompleteTextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-		}
-	}
-	public static class AutoCompleteTextViewExtensionMethods
-	{
-		public static void setCompletionHint(this global::android.widget.AutoCompleteTextView __this, string arg0)
-		{
-			__this.setCompletionHint((global::java.lang.String)arg0);
 		}
 	}
 }

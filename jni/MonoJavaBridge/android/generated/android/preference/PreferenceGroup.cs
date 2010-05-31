@@ -74,6 +74,10 @@ namespace android.preference
 			else
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.PreferenceGroup.staticClass, global::android.preference.PreferenceGroup._findPreference6081, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
+		public android.preference.Preference findPreference(string arg0)
+		{
+			return findPreference((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _isOnSameScreenAsChildren6082;
 		protected virtual bool isOnSameScreenAsChildren() 
 		{
@@ -188,13 +192,6 @@ namespace android.preference
 			global::android.preference.PreferenceGroup._onPrepareAddPreference6090 = @__env.GetMethodID(global::android.preference.PreferenceGroup.staticClass, "onPrepareAddPreference", "(Landroid/preference/Preference;)Z");
 			global::android.preference.PreferenceGroup._PreferenceGroup6091 = @__env.GetMethodID(global::android.preference.PreferenceGroup.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.preference.PreferenceGroup._PreferenceGroup6092 = @__env.GetMethodID(global::android.preference.PreferenceGroup.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-		}
-	}
-	public static class PreferenceGroupExtensionMethods
-	{
-		public static android.preference.Preference findPreference(this global::android.preference.PreferenceGroup __this, string arg0)
-		{
-			return __this.findPreference((global::java.lang.String)arg0);
 		}
 	}
 }

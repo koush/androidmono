@@ -54,6 +54,10 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Notification.staticClass, global::android.app.Notification._setLatestEventInfo661, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
 		}
+		public void setLatestEventInfo(android.content.Context arg0, string arg1, string arg2, android.app.PendingIntent arg3)
+		{
+			setLatestEventInfo(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, (global::java.lang.CharSequence)(global::java.lang.String)arg2, arg3);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _Notification662;
 		public Notification()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
@@ -350,13 +354,6 @@ namespace android.app
 			global::android.app.Notification._Notification662 = @__env.GetMethodID(global::android.app.Notification.staticClass, "<init>", "()V");
 			global::android.app.Notification._Notification663 = @__env.GetMethodID(global::android.app.Notification.staticClass, "<init>", "(ILjava/lang/CharSequence;J)V");
 			global::android.app.Notification._Notification664 = @__env.GetMethodID(global::android.app.Notification.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-		}
-	}
-	public static class NotificationExtensionMethods
-	{
-		public static void setLatestEventInfo(this global::android.app.Notification __this, android.content.Context arg0, string arg1, string arg2, android.app.PendingIntent arg3)
-		{
-			__this.setLatestEventInfo(arg0, (global::java.lang.String)arg1, (global::java.lang.String)arg2, arg3);
 		}
 	}
 }

@@ -33,6 +33,10 @@ namespace android.text
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Spannable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.Spannable_Factory.staticClass, global::android.text.Spannable_Factory._newSpannable6886, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
+		public android.text.Spannable newSpannable(string arg0)
+		{
+			return newSpannable((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _Spannable_Factory6887;
 		public Spannable_Factory()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
@@ -45,13 +49,6 @@ namespace android.text
 			global::android.text.Spannable_Factory._getInstance6885 = @__env.GetStaticMethodID(global::android.text.Spannable_Factory.staticClass, "getInstance", "()Landroid/text/Spannable$Factory;");
 			global::android.text.Spannable_Factory._newSpannable6886 = @__env.GetMethodID(global::android.text.Spannable_Factory.staticClass, "newSpannable", "(Ljava/lang/CharSequence;)Landroid/text/Spannable;");
 			global::android.text.Spannable_Factory._Spannable_Factory6887 = @__env.GetMethodID(global::android.text.Spannable_Factory.staticClass, "<init>", "()V");
-		}
-	}
-	public static class Spannable_FactoryExtensionMethods
-	{
-		public static android.text.Spannable newSpannable(this global::android.text.Spannable_Factory __this, string arg0)
-		{
-			return __this.newSpannable((global::java.lang.String)arg0);
 		}
 	}
 }

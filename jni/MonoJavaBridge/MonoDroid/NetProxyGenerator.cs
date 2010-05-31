@@ -178,15 +178,16 @@ namespace MonoDroid
             }
         }
         
-        List<Method> myExtensionMethods = new List<Method>();
+        //List<Method> myExtensionMethods = new List<Method>();
         
         protected override void BeginNamespace (Type type)
         {
-            myExtensionMethods.Clear();
+            //myExtensionMethods.Clear();
             WriteLine("namespace {0}", type.Namespace);
             WriteLine("{");
         }
         
+        /*
         protected override void EndNamespace (Type type)
         {
             if (myExtensionMethods.Count > 0)
@@ -222,7 +223,7 @@ namespace MonoDroid
             }
             base.EndNamespace (type);
         }
-        
+        */
         
         protected override string GetFilePath (Type type)
         {
@@ -749,8 +750,6 @@ namespace MonoDroid
                     parBuilder.Append("global::net.sf.jni4net.utils.Convertor.");
                     parBuilder.Append(string.Format(GetParameterStatement(parType, par), "arg" + i));
                 }
-                if (hasCharSequenceArgument && !method.IsConstructor && method.Scope == "public" && !method.Static)
-                    myExtensionMethods.Add(method);
                 if (method.Static || method.IsConstructor)
                 {
                     WriteLine(statement, method.Static ? "Static" : string.Empty, parBuilder);
@@ -768,7 +767,28 @@ namespace MonoDroid
                 }
                 myIndent--;
                 WriteLine("}");
+                
+                if (hasCharSequenceArgument && !method.IsConstructor && method.Scope == "public" && !method.Static)
+                {
+                    var em = method;
+                    //myExtensionMethods.Add(method);
+                    Write("public {0} {1}(", false, em.Return, em.Name);
+                    //Write("this global::{0} __this", false, em.Type.Name);
+                    WriteDelimited(em.Parameters, (v, i) => string.Format("{0} arg{1}", v == "java.lang.CharSequence" ? "string" : v, i), ",");
+                    WriteLine(")");
+                    WriteLine("{");
+                    myIndent++;
+                    if (em.Return != "void")
+                        Write("return");
+                    
+                    Write("{0}(", false, em.Name);
+                    WriteDelimited(em.Parameters, (v, i) => string.Format("{0}arg{1}", v == "java.lang.CharSequence" ? "(global::java.lang.CharSequence)(global::java.lang.String)" : string.Empty, i), ",");
+                    WriteLine(");");
+                    myIndent--;
+                    WriteLine("}");
+
+                }
             }
-}
+        }
     }
 }

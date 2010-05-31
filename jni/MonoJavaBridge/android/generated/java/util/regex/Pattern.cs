@@ -41,6 +41,10 @@ namespace java.util.regex
 			else
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._split13093, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
 		}
+		public java.lang.String[] split(string arg0, int arg1)
+		{
+			return split((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _split13094;
 		public global::java.lang.String[] split(java.lang.CharSequence arg0) 
 		{
@@ -48,6 +52,10 @@ namespace java.util.regex
 				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Pattern._split13094, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 			else
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._split13094, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+		}
+		public java.lang.String[] split(string arg0)
+		{
+			return split((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _compile13095;
 		public static global::java.util.regex.Pattern compile(java.lang.String arg0) 
@@ -69,6 +77,10 @@ namespace java.util.regex
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.regex.Pattern._matcher13097, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 			else
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Pattern.staticClass, global::java.util.regex.Pattern._matcher13097, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+		}
+		public java.util.regex.Matcher matcher(string arg0)
+		{
+			return matcher((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _quote13098;
 		public static global::java.lang.String quote(java.lang.String arg0) 
@@ -163,21 +175,6 @@ namespace java.util.regex
 			global::java.util.regex.Pattern._quote13098 = @__env.GetStaticMethodID(global::java.util.regex.Pattern.staticClass, "quote", "(Ljava/lang/String;)Ljava/lang/String;");
 			global::java.util.regex.Pattern._pattern13099 = @__env.GetMethodID(global::java.util.regex.Pattern.staticClass, "pattern", "()Ljava/lang/String;");
 			global::java.util.regex.Pattern._flags13100 = @__env.GetMethodID(global::java.util.regex.Pattern.staticClass, "flags", "()I");
-		}
-	}
-	public static class PatternExtensionMethods
-	{
-		public static java.lang.String[] split(this global::java.util.regex.Pattern __this, string arg0, int arg1)
-		{
-			return __this.split((global::java.lang.String)arg0, arg1);
-		}
-		public static java.lang.String[] split(this global::java.util.regex.Pattern __this, string arg0)
-		{
-			return __this.split((global::java.lang.String)arg0);
-		}
-		public static java.util.regex.Matcher matcher(this global::java.util.regex.Pattern __this, string arg0)
-		{
-			return __this.matcher((global::java.lang.String)arg0);
 		}
 	}
 }

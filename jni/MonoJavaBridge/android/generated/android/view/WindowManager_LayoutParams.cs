@@ -63,6 +63,10 @@ namespace android.view
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.WindowManager_LayoutParams.staticClass, global::android.view.WindowManager_LayoutParams._setTitle8752, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setTitle(string arg0)
+		{
+			setTitle((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _getTitle8753;
 		public virtual global::java.lang.CharSequence getTitle() 
 		{
@@ -910,13 +914,6 @@ namespace android.view
 			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8760 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(IIIII)V");
 			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8761 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(IIIIIII)V");
 			global::android.view.WindowManager_LayoutParams._WindowManager_LayoutParams8762 = @__env.GetMethodID(global::android.view.WindowManager_LayoutParams.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-		}
-	}
-	public static class WindowManager_LayoutParamsExtensionMethods
-	{
-		public static void setTitle(this global::android.view.WindowManager_LayoutParams __this, string arg0)
-		{
-			__this.setTitle((global::java.lang.String)arg0);
 		}
 	}
 }

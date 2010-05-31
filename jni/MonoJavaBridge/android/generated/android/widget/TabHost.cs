@@ -148,6 +148,10 @@ namespace android.widget
 				else
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TabHost.TabSpec.staticClass, global::android.widget.TabHost.TabSpec._setIndicator10915, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
 			}
+			public android.widget.TabHost.TabSpec setIndicator(string arg0, android.graphics.drawable.Drawable arg1)
+			{
+				return setIndicator((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
+			}
 			internal static global::net.sf.jni4net.jni.MethodId _setIndicator10916;
 			public virtual global::android.widget.TabHost.TabSpec setIndicator(android.view.View arg0) 
 			{
@@ -165,6 +169,10 @@ namespace android.widget
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.TabHost.TabSpec._setIndicator10917, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 				else
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TabHost.TabSpec>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.TabHost.TabSpec.staticClass, global::android.widget.TabHost.TabSpec._setIndicator10917, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+			}
+			public android.widget.TabHost.TabSpec setIndicator(string arg0)
+			{
+				return setIndicator((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 			}
 			internal static global::net.sf.jni4net.jni.MethodId _setContent10918;
 			public virtual global::android.widget.TabHost.TabSpec setContent(int arg0) 
@@ -412,17 +420,6 @@ namespace android.widget
 			global::android.widget.TabHost._setOnTabChangedListener10939 = @__env.GetMethodID(global::android.widget.TabHost.staticClass, "setOnTabChangedListener", "(Landroid/widget/TabHost$OnTabChangeListener;)V");
 			global::android.widget.TabHost._TabHost10940 = @__env.GetMethodID(global::android.widget.TabHost.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.TabHost._TabHost10941 = @__env.GetMethodID(global::android.widget.TabHost.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-		}
-	}
-	public static class TabHostExtensionMethods
-	{
-		public static android.widget.TabHost.TabSpec setIndicator(this global::android.widget.TabHost.TabSpec __this, string arg0, android.graphics.drawable.Drawable arg1)
-		{
-			return __this.setIndicator((global::java.lang.String)arg0, arg1);
-		}
-		public static android.widget.TabHost.TabSpec setIndicator(this global::android.widget.TabHost.TabSpec __this, string arg0)
-		{
-			return __this.setIndicator((global::java.lang.String)arg0);
 		}
 	}
 }

@@ -1068,6 +1068,10 @@ namespace android.graphics
 			else
 				return @__env.CallNonVirtualFloatMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._measureText3137, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
+		public float measureText(string arg0, int arg1, int arg2)
+		{
+			return measureText((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _measureText3138;
 		public virtual float measureText(char[] arg0, int arg1, int arg2) 
 		{
@@ -1085,6 +1089,10 @@ namespace android.graphics
 				return @__env.CallIntMethod(this, global::android.graphics.Paint._breakText3139, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg5));
 			else
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._breakText3139, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg5));
+		}
+		public int breakText(string arg0, int arg1, int arg2, bool arg3, float arg4, float[] arg5)
+		{
+			return breakText((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _breakText3140;
 		public virtual int breakText(java.lang.String arg0, bool arg1, float arg2, float[] arg3) 
@@ -1112,6 +1120,10 @@ namespace android.graphics
 				return @__env.CallIntMethod(this, global::android.graphics.Paint._getTextWidths3142, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3));
 			else
 				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.Paint.staticClass, global::android.graphics.Paint._getTextWidths3142, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3));
+		}
+		public int getTextWidths(string arg0, int arg1, int arg2, float[] arg3)
+		{
+			return getTextWidths((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getTextWidths3143;
 		public virtual int getTextWidths(java.lang.String arg0, int arg1, int arg2, float[] arg3) 
@@ -1345,21 +1357,6 @@ namespace android.graphics
 			global::android.graphics.Paint._Paint3150 = @__env.GetMethodID(global::android.graphics.Paint.staticClass, "<init>", "()V");
 			global::android.graphics.Paint._Paint3151 = @__env.GetMethodID(global::android.graphics.Paint.staticClass, "<init>", "(I)V");
 			global::android.graphics.Paint._Paint3152 = @__env.GetMethodID(global::android.graphics.Paint.staticClass, "<init>", "(Landroid/graphics/Paint;)V");
-		}
-	}
-	public static class PaintExtensionMethods
-	{
-		public static float measureText(this global::android.graphics.Paint __this, string arg0, int arg1, int arg2)
-		{
-			return __this.measureText((global::java.lang.String)arg0, arg1, arg2);
-		}
-		public static int breakText(this global::android.graphics.Paint __this, string arg0, int arg1, int arg2, bool arg3, float arg4, float[] arg5)
-		{
-			return __this.breakText((global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5);
-		}
-		public static int getTextWidths(this global::android.graphics.Paint __this, string arg0, int arg1, int arg2, float[] arg3)
-		{
-			return __this.getTextWidths((global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
 	}
 }

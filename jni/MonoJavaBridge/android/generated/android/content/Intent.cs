@@ -828,6 +828,10 @@ namespace android.content
 			else
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Intent>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.Intent.staticClass, global::android.content.Intent._putExtra1365, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
 		}
+		public android.content.Intent putExtra(java.lang.String arg0, string arg1)
+		{
+			return putExtra(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _putExtra1366;
 		public virtual global::android.content.Intent putExtra(java.lang.String arg0, android.os.Parcelable arg1) 
 		{
@@ -2400,13 +2404,6 @@ namespace android.content
 			global::android.content.Intent._Intent1401 = @__env.GetMethodID(global::android.content.Intent.staticClass, "<init>", "()V");
 			global::android.content.Intent._Intent1402 = @__env.GetMethodID(global::android.content.Intent.staticClass, "<init>", "(Landroid/content/Context;Ljava/lang/Class;)V");
 			global::android.content.Intent._Intent1403 = @__env.GetMethodID(global::android.content.Intent.staticClass, "<init>", "(Ljava/lang/String;Landroid/net/Uri;Landroid/content/Context;Ljava/lang/Class;)V");
-		}
-	}
-	public static class IntentExtensionMethods
-	{
-		public static android.content.Intent putExtra(this global::android.content.Intent __this, java.lang.String arg0, string arg1)
-		{
-			return __this.putExtra(arg0, (global::java.lang.String)arg1);
 		}
 	}
 }

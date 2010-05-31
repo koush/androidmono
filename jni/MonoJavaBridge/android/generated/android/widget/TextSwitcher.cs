@@ -27,6 +27,10 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextSwitcher.staticClass, global::android.widget.TextSwitcher._setText11010, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setText(string arg0)
+		{
+			setText((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _addView11011;
 		public override void addView(android.view.View arg0, int arg1, android.view.ViewGroup.LayoutParams arg2) 
 		{
@@ -44,6 +48,10 @@ namespace android.widget
 				@__env.CallVoidMethod(this, global::android.widget.TextSwitcher._setCurrentText11012, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextSwitcher.staticClass, global::android.widget.TextSwitcher._setCurrentText11012, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		public void setCurrentText(string arg0)
+		{
+			setCurrentText((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _TextSwitcher11013;
 		public TextSwitcher(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
@@ -65,17 +73,6 @@ namespace android.widget
 			global::android.widget.TextSwitcher._setCurrentText11012 = @__env.GetMethodID(global::android.widget.TextSwitcher.staticClass, "setCurrentText", "(Ljava/lang/CharSequence;)V");
 			global::android.widget.TextSwitcher._TextSwitcher11013 = @__env.GetMethodID(global::android.widget.TextSwitcher.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.TextSwitcher._TextSwitcher11014 = @__env.GetMethodID(global::android.widget.TextSwitcher.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-		}
-	}
-	public static class TextSwitcherExtensionMethods
-	{
-		public static void setText(this global::android.widget.TextSwitcher __this, string arg0)
-		{
-			__this.setText((global::java.lang.String)arg0);
-		}
-		public static void setCurrentText(this global::android.widget.TextSwitcher __this, string arg0)
-		{
-			__this.setCurrentText((global::java.lang.String)arg0);
 		}
 	}
 }

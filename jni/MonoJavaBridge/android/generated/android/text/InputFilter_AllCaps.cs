@@ -27,6 +27,10 @@ namespace android.text
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.InputFilter_AllCaps.staticClass, global::android.text.InputFilter_AllCaps._filter6785, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)));
 		}
+		public java.lang.CharSequence filter(string arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5)
+		{
+			return filter((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _InputFilter_AllCaps6786;
 		public InputFilter_AllCaps()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
@@ -38,13 +42,6 @@ namespace android.text
 			global::android.text.InputFilter_AllCaps.staticClass = @__class;
 			global::android.text.InputFilter_AllCaps._filter6785 = @__env.GetMethodID(global::android.text.InputFilter_AllCaps.staticClass, "filter", "(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;");
 			global::android.text.InputFilter_AllCaps._InputFilter_AllCaps6786 = @__env.GetMethodID(global::android.text.InputFilter_AllCaps.staticClass, "<init>", "()V");
-		}
-	}
-	public static class InputFilter_AllCapsExtensionMethods
-	{
-		public static java.lang.CharSequence filter(this global::android.text.InputFilter_AllCaps __this, string arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5)
-		{
-			return __this.filter((global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5);
 		}
 	}
 }

@@ -421,6 +421,10 @@ namespace android.os
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._putCharSequence5435, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
+		public void putCharSequence(java.lang.String arg0, string arg1)
+		{
+			putCharSequence(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _putParcelable5436;
 		public void putParcelable(java.lang.String arg0, android.os.Parcelable arg1) 
 		{
@@ -825,13 +829,6 @@ namespace android.os
 			global::android.os.Bundle._Bundle5469 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "<init>", "(Ljava/lang/ClassLoader;)V");
 			global::android.os.Bundle._Bundle5470 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "<init>", "(I)V");
 			global::android.os.Bundle._Bundle5471 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "<init>", "(Landroid/os/Bundle;)V");
-		}
-	}
-	public static class BundleExtensionMethods
-	{
-		public static void putCharSequence(this global::android.os.Bundle __this, java.lang.String arg0, string arg1)
-		{
-			__this.putCharSequence(arg0, (global::java.lang.String)arg1);
 		}
 	}
 }

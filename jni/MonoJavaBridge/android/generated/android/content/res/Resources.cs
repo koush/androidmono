@@ -229,6 +229,10 @@ namespace android.content.res
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.Resources.staticClass, global::android.content.res.Resources._getText1968, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
 		}
+		public java.lang.CharSequence getText(int arg0, string arg1)
+		{
+			return getText(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _getText1969;
 		public virtual global::java.lang.CharSequence getText(int arg0) 
 		{
@@ -602,13 +606,6 @@ namespace android.content.res
 			global::android.content.res.Resources._flushLayoutCache2003 = @__env.GetMethodID(global::android.content.res.Resources.staticClass, "flushLayoutCache", "()V");
 			global::android.content.res.Resources._finishPreloading2004 = @__env.GetMethodID(global::android.content.res.Resources.staticClass, "finishPreloading", "()V");
 			global::android.content.res.Resources._Resources2005 = @__env.GetMethodID(global::android.content.res.Resources.staticClass, "<init>", "(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;)V");
-		}
-	}
-	public static class ResourcesExtensionMethods
-	{
-		public static java.lang.CharSequence getText(this global::android.content.res.Resources __this, int arg0, string arg1)
-		{
-			return __this.getText(arg0, (global::java.lang.String)arg1);
 		}
 	}
 }

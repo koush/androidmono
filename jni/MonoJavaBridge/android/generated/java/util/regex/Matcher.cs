@@ -123,6 +123,10 @@ namespace java.util.regex
 			else
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.regex.Matcher>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.regex.Matcher.staticClass, global::java.util.regex.Matcher._reset13071, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
+		public java.util.regex.Matcher reset(string arg0)
+		{
+			return reset((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _reset13072;
 		public global::java.util.regex.Matcher reset() 
 		{
@@ -328,13 +332,6 @@ namespace java.util.regex
 			global::java.util.regex.Matcher._useTransparentBounds13088 = @__env.GetMethodID(global::java.util.regex.Matcher.staticClass, "useTransparentBounds", "(Z)Ljava/util/regex/Matcher;");
 			global::java.util.regex.Matcher._hasAnchoringBounds13089 = @__env.GetMethodID(global::java.util.regex.Matcher.staticClass, "hasAnchoringBounds", "()Z");
 			global::java.util.regex.Matcher._useAnchoringBounds13090 = @__env.GetMethodID(global::java.util.regex.Matcher.staticClass, "useAnchoringBounds", "(Z)Ljava/util/regex/Matcher;");
-		}
-	}
-	public static class MatcherExtensionMethods
-	{
-		public static java.util.regex.Matcher reset(this global::java.util.regex.Matcher __this, string arg0)
-		{
-			return __this.reset((global::java.lang.String)arg0);
 		}
 	}
 }

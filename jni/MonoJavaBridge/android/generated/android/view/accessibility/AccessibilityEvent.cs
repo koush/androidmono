@@ -261,6 +261,10 @@ namespace android.view.accessibility
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setClassName8814, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setClassName(string arg0)
+		{
+			setClassName((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setPackageName8815;
 		public void setPackageName(java.lang.CharSequence arg0) 
 		{
@@ -269,6 +273,10 @@ namespace android.view.accessibility
 				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setPackageName8815, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setPackageName8815, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		public void setPackageName(string arg0)
+		{
+			setPackageName((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getBeforeText8816;
 		public global::java.lang.CharSequence getBeforeText() 
@@ -288,6 +296,10 @@ namespace android.view.accessibility
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setBeforeText8817, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setBeforeText(string arg0)
+		{
+			setBeforeText((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _getContentDescription8818;
 		public global::java.lang.CharSequence getContentDescription() 
 		{
@@ -305,6 +317,10 @@ namespace android.view.accessibility
 				@__env.CallVoidMethod(this, global::android.view.accessibility.AccessibilityEvent._setContentDescription8819, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.AccessibilityEvent.staticClass, global::android.view.accessibility.AccessibilityEvent._setContentDescription8819, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		public void setContentDescription(string arg0)
+		{
+			setContentDescription((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getParcelableData8820;
 		public global::android.os.Parcelable getParcelableData() 
@@ -493,25 +509,6 @@ namespace android.view.accessibility
 			global::android.view.accessibility.AccessibilityEvent._initFromParcel8825 = @__env.GetMethodID(global::android.view.accessibility.AccessibilityEvent.staticClass, "initFromParcel", "(Landroid/os/Parcel;)V");
 			global::android.view.accessibility.AccessibilityEvent._writeToParcel8826 = @__env.GetMethodID(global::android.view.accessibility.AccessibilityEvent.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::android.view.accessibility.AccessibilityEvent._describeContents8827 = @__env.GetMethodID(global::android.view.accessibility.AccessibilityEvent.staticClass, "describeContents", "()I");
-		}
-	}
-	public static class AccessibilityEventExtensionMethods
-	{
-		public static void setClassName(this global::android.view.accessibility.AccessibilityEvent __this, string arg0)
-		{
-			__this.setClassName((global::java.lang.String)arg0);
-		}
-		public static void setPackageName(this global::android.view.accessibility.AccessibilityEvent __this, string arg0)
-		{
-			__this.setPackageName((global::java.lang.String)arg0);
-		}
-		public static void setBeforeText(this global::android.view.accessibility.AccessibilityEvent __this, string arg0)
-		{
-			__this.setBeforeText((global::java.lang.String)arg0);
-		}
-		public static void setContentDescription(this global::android.view.accessibility.AccessibilityEvent __this, string arg0)
-		{
-			__this.setContentDescription((global::java.lang.String)arg0);
 		}
 	}
 }

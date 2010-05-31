@@ -524,6 +524,10 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._onTextChanged9698, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
 		}
+		public void onTextChanged(string arg0, int arg1, int arg2, int arg3)
+		{
+			onTextChanged((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _layoutChildren9699;
 		protected virtual void layoutChildren() 
 		{
@@ -830,6 +834,10 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.AbsListView.staticClass, global::android.widget.AbsListView._beforeTextChanged9732, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
 		}
+		public void beforeTextChanged(string arg0, int arg1, int arg2, int arg3)
+		{
+			beforeTextChanged((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _afterTextChanged9733;
 		public virtual void afterTextChanged(android.text.Editable arg0) 
 		{
@@ -1016,17 +1024,6 @@ namespace android.widget
 			global::android.widget.AbsListView._AbsListView9740 = @__env.GetMethodID(global::android.widget.AbsListView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.AbsListView._AbsListView9741 = @__env.GetMethodID(global::android.widget.AbsListView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.widget.AbsListView._AbsListView9742 = @__env.GetMethodID(global::android.widget.AbsListView.staticClass, "<init>", "(Landroid/content/Context;)V");
-		}
-	}
-	public static class AbsListViewExtensionMethods
-	{
-		public static void onTextChanged(this global::android.widget.AbsListView __this, string arg0, int arg1, int arg2, int arg3)
-		{
-			__this.onTextChanged((global::java.lang.String)arg0, arg1, arg2, arg3);
-		}
-		public static void beforeTextChanged(this global::android.widget.AbsListView __this, string arg0, int arg1, int arg2, int arg3)
-		{
-			__this.beforeTextChanged((global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
 	}
 }

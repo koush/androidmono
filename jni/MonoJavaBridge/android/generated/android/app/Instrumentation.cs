@@ -559,6 +559,10 @@ namespace android.app
 			else
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.Activity>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.Instrumentation.staticClass, global::android.app.Instrumentation._newActivity587, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg6), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg7), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg8), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg9)));
 		}
+		public android.app.Activity newActivity(java.lang.Class arg0, android.content.Context arg1, android.os.IBinder arg2, android.app.Application arg3, android.content.Intent arg4, android.content.pm.ActivityInfo arg5, string arg6, android.app.Activity arg7, java.lang.String arg8, java.lang.Object arg9)
+		{
+			return newActivity(arg0, arg1, arg2, arg3, arg4, arg5, (global::java.lang.CharSequence)(global::java.lang.String)arg6, arg7, arg8, arg9);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _callActivityOnCreate588;
 		public virtual void callActivityOnCreate(android.app.Activity arg0, android.os.Bundle arg1) 
 		{
@@ -766,13 +770,6 @@ namespace android.app
 			global::android.app.Instrumentation._getAllocCounts600 = @__env.GetMethodID(global::android.app.Instrumentation.staticClass, "getAllocCounts", "()Landroid/os/Bundle;");
 			global::android.app.Instrumentation._getBinderCounts601 = @__env.GetMethodID(global::android.app.Instrumentation.staticClass, "getBinderCounts", "()Landroid/os/Bundle;");
 			global::android.app.Instrumentation._Instrumentation602 = @__env.GetMethodID(global::android.app.Instrumentation.staticClass, "<init>", "()V");
-		}
-	}
-	public static class InstrumentationExtensionMethods
-	{
-		public static android.app.Activity newActivity(this global::android.app.Instrumentation __this, java.lang.Class arg0, android.content.Context arg1, android.os.IBinder arg2, android.app.Application arg3, android.content.Intent arg4, android.content.pm.ActivityInfo arg5, string arg6, android.app.Activity arg7, java.lang.String arg8, java.lang.Object arg9)
-		{
-			return __this.newActivity(arg0, arg1, arg2, arg3, arg4, arg5, (global::java.lang.String)arg6, arg7, arg8, arg9);
 		}
 	}
 }

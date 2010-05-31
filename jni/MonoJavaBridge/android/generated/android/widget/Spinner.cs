@@ -81,6 +81,10 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Spinner.staticClass, global::android.widget.Spinner._setPrompt10895, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setPrompt(string arg0)
+		{
+			setPrompt((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setPromptId10896;
 		public virtual void setPromptId(int arg0) 
 		{
@@ -132,13 +136,6 @@ namespace android.widget
 			global::android.widget.Spinner._Spinner10898 = @__env.GetMethodID(global::android.widget.Spinner.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.Spinner._Spinner10899 = @__env.GetMethodID(global::android.widget.Spinner.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.Spinner._Spinner10900 = @__env.GetMethodID(global::android.widget.Spinner.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-		}
-	}
-	public static class SpinnerExtensionMethods
-	{
-		public static void setPrompt(this global::android.widget.Spinner __this, string arg0)
-		{
-			__this.setPrompt((global::java.lang.String)arg0);
 		}
 	}
 }

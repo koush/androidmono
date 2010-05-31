@@ -33,6 +33,10 @@ namespace android.text
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.Editable_Factory.staticClass, global::android.text.Editable_Factory._newEditable6746, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
+		public android.text.Editable newEditable(string arg0)
+		{
+			return newEditable((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _Editable_Factory6747;
 		public Editable_Factory()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
@@ -45,13 +49,6 @@ namespace android.text
 			global::android.text.Editable_Factory._getInstance6745 = @__env.GetStaticMethodID(global::android.text.Editable_Factory.staticClass, "getInstance", "()Landroid/text/Editable$Factory;");
 			global::android.text.Editable_Factory._newEditable6746 = @__env.GetMethodID(global::android.text.Editable_Factory.staticClass, "newEditable", "(Ljava/lang/CharSequence;)Landroid/text/Editable;");
 			global::android.text.Editable_Factory._Editable_Factory6747 = @__env.GetMethodID(global::android.text.Editable_Factory.staticClass, "<init>", "()V");
-		}
-	}
-	public static class Editable_FactoryExtensionMethods
-	{
-		public static android.text.Editable newEditable(this global::android.text.Editable_Factory __this, string arg0)
-		{
-			return __this.newEditable((global::java.lang.String)arg0);
 		}
 	}
 }

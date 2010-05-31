@@ -20,6 +20,10 @@ namespace android.text.method
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.method.ReplacementTransformationMethod.staticClass, global::android.text.method.ReplacementTransformationMethod._onFocusChanged7224, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4));
 		}
+		public void onFocusChanged(android.view.View arg0, string arg1, bool arg2, int arg3, android.graphics.Rect arg4)
+		{
+			onFocusChanged(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, arg2, arg3, arg4);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _getTransformation7225;
 		public virtual global::java.lang.CharSequence getTransformation(java.lang.CharSequence arg0, android.view.View arg1) 
 		{
@@ -28,6 +32,10 @@ namespace android.text.method
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.method.ReplacementTransformationMethod._getTransformation7225, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.method.ReplacementTransformationMethod.staticClass, global::android.text.method.ReplacementTransformationMethod._getTransformation7225, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+		}
+		public java.lang.CharSequence getTransformation(string arg0, android.view.View arg1)
+		{
+			return getTransformation((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getOriginal7226;
 		protected abstract char[] getOriginal();
@@ -47,17 +55,6 @@ namespace android.text.method
 			global::android.text.method.ReplacementTransformationMethod._getOriginal7226 = @__env.GetMethodID(global::android.text.method.ReplacementTransformationMethod.staticClass, "getOriginal", "()[C");
 			global::android.text.method.ReplacementTransformationMethod._getReplacement7227 = @__env.GetMethodID(global::android.text.method.ReplacementTransformationMethod.staticClass, "getReplacement", "()[C");
 			global::android.text.method.ReplacementTransformationMethod._ReplacementTransformationMethod7228 = @__env.GetMethodID(global::android.text.method.ReplacementTransformationMethod.staticClass, "<init>", "()V");
-		}
-	}
-	public static class ReplacementTransformationMethodExtensionMethods
-	{
-		public static void onFocusChanged(this global::android.text.method.ReplacementTransformationMethod __this, android.view.View arg0, string arg1, bool arg2, int arg3, android.graphics.Rect arg4)
-		{
-			__this.onFocusChanged(arg0, (global::java.lang.String)arg1, arg2, arg3, arg4);
-		}
-		public static java.lang.CharSequence getTransformation(this global::android.text.method.ReplacementTransformationMethod __this, string arg0, android.view.View arg1)
-		{
-			return __this.getTransformation((global::java.lang.String)arg0, arg1);
 		}
 	}
 }

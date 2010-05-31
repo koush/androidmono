@@ -99,6 +99,10 @@ namespace android.preference
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._setSummaryOn5899, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setSummaryOn(string arg0)
+		{
+			setSummaryOn((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _getSummaryOn5900;
 		public virtual global::java.lang.CharSequence getSummaryOn() 
 		{
@@ -125,6 +129,10 @@ namespace android.preference
 				@__env.CallVoidMethod(this, global::android.preference.CheckBoxPreference._setSummaryOff5902, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.CheckBoxPreference.staticClass, global::android.preference.CheckBoxPreference._setSummaryOff5902, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		public void setSummaryOff(string arg0)
+		{
+			setSummaryOff((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getSummaryOff5903;
 		public virtual global::java.lang.CharSequence getSummaryOff() 
@@ -212,17 +220,6 @@ namespace android.preference
 			global::android.preference.CheckBoxPreference._CheckBoxPreference5908 = @__env.GetMethodID(global::android.preference.CheckBoxPreference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.preference.CheckBoxPreference._CheckBoxPreference5909 = @__env.GetMethodID(global::android.preference.CheckBoxPreference.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.preference.CheckBoxPreference._CheckBoxPreference5910 = @__env.GetMethodID(global::android.preference.CheckBoxPreference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-		}
-	}
-	public static class CheckBoxPreferenceExtensionMethods
-	{
-		public static void setSummaryOn(this global::android.preference.CheckBoxPreference __this, string arg0)
-		{
-			__this.setSummaryOn((global::java.lang.String)arg0);
-		}
-		public static void setSummaryOff(this global::android.preference.CheckBoxPreference __this, string arg0)
-		{
-			__this.setSummaryOff((global::java.lang.String)arg0);
 		}
 	}
 }

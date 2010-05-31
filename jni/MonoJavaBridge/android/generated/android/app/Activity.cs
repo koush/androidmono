@@ -1158,6 +1158,10 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.Activity.staticClass, global::android.app.Activity._setTitle253, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setTitle(string arg0)
+		{
+			setTitle((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setTitleColor254;
 		public virtual void setTitleColor(int arg0) 
 		{
@@ -1491,13 +1495,6 @@ namespace android.app
 			global::android.app.Activity._runOnUiThread266 = @__env.GetMethodID(global::android.app.Activity.staticClass, "runOnUiThread", "(Ljava/lang/Runnable;)V");
 			global::android.app.Activity._onCreateView267 = @__env.GetMethodID(global::android.app.Activity.staticClass, "onCreateView", "(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;");
 			global::android.app.Activity._Activity268 = @__env.GetMethodID(global::android.app.Activity.staticClass, "<init>", "()V");
-		}
-	}
-	public static class ActivityExtensionMethods
-	{
-		public static void setTitle(this global::android.app.Activity __this, string arg0)
-		{
-			__this.setTitle((global::java.lang.String)arg0);
 		}
 	}
 }

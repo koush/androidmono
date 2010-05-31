@@ -63,6 +63,10 @@ namespace android.text
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.SpannableStringBuilder.staticClass, global::android.text.SpannableStringBuilder._append6908, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
+		public android.text.Editable append(string arg0)
+		{
+			return append((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _append6909;
 		 global::java.lang.Appendable java.lang.Appendable.append(java.lang.CharSequence arg0) 
 		{
@@ -80,6 +84,10 @@ namespace android.text
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.SpannableStringBuilder._append6910, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.SpannableStringBuilder.staticClass, global::android.text.SpannableStringBuilder._append6910, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+		}
+		public android.text.Editable append(string arg0, int arg1, int arg2)
+		{
+			return append((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _append6911;
 		 global::java.lang.Appendable java.lang.Appendable.append(java.lang.CharSequence arg0, int arg1, int arg2) 
@@ -135,6 +143,10 @@ namespace android.text
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.SpannableStringBuilder.staticClass, global::android.text.SpannableStringBuilder._replace6916, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)));
 		}
+		public android.text.Editable replace(int arg0, int arg1, string arg2)
+		{
+			return replace(arg0, arg1, (global::java.lang.CharSequence)(global::java.lang.String)arg2);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _replace6917;
 		public virtual global::android.text.Editable replace(int arg0, int arg1, java.lang.CharSequence arg2, int arg3, int arg4) 
 		{
@@ -143,6 +155,10 @@ namespace android.text
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.SpannableStringBuilder._replace6917, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)));
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.SpannableStringBuilder.staticClass, global::android.text.SpannableStringBuilder._replace6917, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4)));
+		}
+		public android.text.Editable replace(int arg0, int arg1, string arg2, int arg3, int arg4)
+		{
+			return replace(arg0, arg1, (global::java.lang.CharSequence)(global::java.lang.String)arg2, arg3, arg4);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _valueOf6918;
 		public static global::android.text.SpannableStringBuilder valueOf(java.lang.CharSequence arg0) 
@@ -168,6 +184,10 @@ namespace android.text
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.SpannableStringBuilder.staticClass, global::android.text.SpannableStringBuilder._insert6920, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3)));
 		}
+		public android.text.Editable insert(int arg0, string arg1, int arg2, int arg3)
+		{
+			return insert(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, arg2, arg3);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _insert6921;
 		public virtual global::android.text.Editable insert(int arg0, java.lang.CharSequence arg1) 
 		{
@@ -176,6 +196,10 @@ namespace android.text
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.SpannableStringBuilder._insert6921, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.SpannableStringBuilder.staticClass, global::android.text.SpannableStringBuilder._insert6921, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+		}
+		public android.text.Editable insert(int arg0, string arg1)
+		{
+			return insert(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _setFilters6922;
 		public virtual void setFilters(android.text.InputFilter[] arg0) 
@@ -317,33 +341,6 @@ namespace android.text
 			global::android.text.SpannableStringBuilder._SpannableStringBuilder6932 = @__env.GetMethodID(global::android.text.SpannableStringBuilder.staticClass, "<init>", "(Ljava/lang/CharSequence;)V");
 			global::android.text.SpannableStringBuilder._SpannableStringBuilder6933 = @__env.GetMethodID(global::android.text.SpannableStringBuilder.staticClass, "<init>", "(Ljava/lang/CharSequence;II)V");
 			global::android.text.SpannableStringBuilder._SpannableStringBuilder6934 = @__env.GetMethodID(global::android.text.SpannableStringBuilder.staticClass, "<init>", "()V");
-		}
-	}
-	public static class SpannableStringBuilderExtensionMethods
-	{
-		public static android.text.Editable append(this global::android.text.SpannableStringBuilder __this, string arg0)
-		{
-			return __this.append((global::java.lang.String)arg0);
-		}
-		public static android.text.Editable append(this global::android.text.SpannableStringBuilder __this, string arg0, int arg1, int arg2)
-		{
-			return __this.append((global::java.lang.String)arg0, arg1, arg2);
-		}
-		public static android.text.Editable replace(this global::android.text.SpannableStringBuilder __this, int arg0, int arg1, string arg2)
-		{
-			return __this.replace(arg0, arg1, (global::java.lang.String)arg2);
-		}
-		public static android.text.Editable replace(this global::android.text.SpannableStringBuilder __this, int arg0, int arg1, string arg2, int arg3, int arg4)
-		{
-			return __this.replace(arg0, arg1, (global::java.lang.String)arg2, arg3, arg4);
-		}
-		public static android.text.Editable insert(this global::android.text.SpannableStringBuilder __this, int arg0, string arg1, int arg2, int arg3)
-		{
-			return __this.insert(arg0, (global::java.lang.String)arg1, arg2, arg3);
-		}
-		public static android.text.Editable insert(this global::android.text.SpannableStringBuilder __this, int arg0, string arg1)
-		{
-			return __this.insert(arg0, (global::java.lang.String)arg1);
 		}
 	}
 }

@@ -27,6 +27,10 @@ namespace android.text
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.ClipboardManager.staticClass, global::android.text.ClipboardManager._setText6727, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setText(string arg0)
+		{
+			setText((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _getText6728;
 		public virtual global::java.lang.CharSequence getText() 
 		{
@@ -51,13 +55,6 @@ namespace android.text
 			global::android.text.ClipboardManager._setText6727 = @__env.GetMethodID(global::android.text.ClipboardManager.staticClass, "setText", "(Ljava/lang/CharSequence;)V");
 			global::android.text.ClipboardManager._getText6728 = @__env.GetMethodID(global::android.text.ClipboardManager.staticClass, "getText", "()Ljava/lang/CharSequence;");
 			global::android.text.ClipboardManager._hasText6729 = @__env.GetMethodID(global::android.text.ClipboardManager.staticClass, "hasText", "()Z");
-		}
-	}
-	public static class ClipboardManagerExtensionMethods
-	{
-		public static void setText(this global::android.text.ClipboardManager __this, string arg0)
-		{
-			__this.setText((global::java.lang.String)arg0);
 		}
 	}
 }

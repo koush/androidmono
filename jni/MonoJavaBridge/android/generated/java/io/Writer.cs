@@ -20,6 +20,10 @@ namespace java.io
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.io.Writer.staticClass, global::java.io.Writer._append11467, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
+		public java.lang.Appendable append(string arg0)
+		{
+			return append((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _append11468;
 		public virtual global::java.lang.Appendable append(java.lang.CharSequence arg0, int arg1, int arg2) 
 		{
@@ -28,6 +32,10 @@ namespace java.io
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallObjectMethodPtr(this, global::java.io.Writer._append11468, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.io.Writer.staticClass, global::java.io.Writer._append11468, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+		}
+		public java.lang.Appendable append(string arg0, int arg1, int arg2)
+		{
+			return append((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _append11469;
 		public virtual global::java.lang.Appendable append(char arg0) 
@@ -107,17 +115,6 @@ namespace java.io
 			global::java.io.Writer._close11476 = @__env.GetMethodID(global::java.io.Writer.staticClass, "close", "()V");
 			global::java.io.Writer._Writer11477 = @__env.GetMethodID(global::java.io.Writer.staticClass, "<init>", "()V");
 			global::java.io.Writer._Writer11478 = @__env.GetMethodID(global::java.io.Writer.staticClass, "<init>", "(Ljava/lang/Object;)V");
-		}
-	}
-	public static class WriterExtensionMethods
-	{
-		public static java.lang.Appendable append(this global::java.io.Writer __this, string arg0)
-		{
-			return __this.append((global::java.lang.String)arg0);
-		}
-		public static java.lang.Appendable append(this global::java.io.Writer __this, string arg0, int arg1, int arg2)
-		{
-			return __this.append((global::java.lang.String)arg0, arg1, arg2);
 		}
 	}
 }

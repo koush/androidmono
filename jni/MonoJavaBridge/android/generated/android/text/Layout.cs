@@ -385,6 +385,10 @@ namespace android.text
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.Layout.staticClass, global::android.text.Layout._getCursorPath6834, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2));
 		}
+		public void getCursorPath(int arg0, android.graphics.Path arg1, string arg2)
+		{
+			getCursorPath(arg0, arg1, (global::java.lang.CharSequence)(global::java.lang.String)arg2);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _getSelectionPath6835;
 		public virtual void getSelectionPath(int arg0, int arg1, android.graphics.Path arg2) 
 		{
@@ -505,13 +509,6 @@ namespace android.text
 			global::android.text.Layout._getEllipsisStart6840 = @__env.GetMethodID(global::android.text.Layout.staticClass, "getEllipsisStart", "(I)I");
 			global::android.text.Layout._getEllipsisCount6841 = @__env.GetMethodID(global::android.text.Layout.staticClass, "getEllipsisCount", "(I)I");
 			global::android.text.Layout._Layout6842 = @__env.GetMethodID(global::android.text.Layout.staticClass, "<init>", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FF)V");
-		}
-	}
-	public static class LayoutExtensionMethods
-	{
-		public static void getCursorPath(this global::android.text.Layout __this, int arg0, android.graphics.Path arg1, string arg2)
-		{
-			__this.getCursorPath(arg0, arg1, (global::java.lang.String)arg2);
 		}
 	}
 }

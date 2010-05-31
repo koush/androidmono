@@ -793,6 +793,10 @@ namespace android.graphics
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.Canvas.staticClass, global::android.graphics.Canvas._drawText2884, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5));
 		}
+		public void drawText(string arg0, int arg1, int arg2, float arg3, float arg4, android.graphics.Paint arg5)
+		{
+			drawText((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _drawText2885;
 		public virtual void drawText(java.lang.String arg0, float arg1, float arg2, android.graphics.Paint arg3) 
 		{
@@ -1033,13 +1037,6 @@ namespace android.graphics
 			global::android.graphics.Canvas._Canvas2895 = @__env.GetMethodID(global::android.graphics.Canvas.staticClass, "<init>", "(Landroid/graphics/Bitmap;)V");
 			global::android.graphics.Canvas._Canvas2896 = @__env.GetMethodID(global::android.graphics.Canvas.staticClass, "<init>", "(Ljavax/microedition/khronos/opengles/GL;)V");
 			global::android.graphics.Canvas._Canvas2897 = @__env.GetMethodID(global::android.graphics.Canvas.staticClass, "<init>", "()V");
-		}
-	}
-	public static class CanvasExtensionMethods
-	{
-		public static void drawText(this global::android.graphics.Canvas __this, string arg0, int arg1, int arg2, float arg3, float arg4, android.graphics.Paint arg5)
-		{
-			__this.drawText((global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5);
 		}
 	}
 }

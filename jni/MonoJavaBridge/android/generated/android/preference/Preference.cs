@@ -319,6 +319,10 @@ namespace android.preference
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.Preference.staticClass, global::android.preference.Preference._setTitle5997, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setTitle(string arg0)
+		{
+			setTitle((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _getTitle5998;
 		public virtual global::java.lang.CharSequence getTitle() 
 		{
@@ -498,6 +502,10 @@ namespace android.preference
 				@__env.CallVoidMethod(this, global::android.preference.Preference._setSummary6017, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.Preference.staticClass, global::android.preference.Preference._setSummary6017, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		public void setSummary(string arg0)
+		{
+			setSummary((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _setSelectable6018;
 		public virtual void setSelectable(bool arg0) 
@@ -898,17 +906,6 @@ namespace android.preference
 			global::android.preference.Preference._Preference6051 = @__env.GetMethodID(global::android.preference.Preference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.preference.Preference._Preference6052 = @__env.GetMethodID(global::android.preference.Preference.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.preference.Preference._Preference6053 = @__env.GetMethodID(global::android.preference.Preference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-		}
-	}
-	public static class PreferenceExtensionMethods
-	{
-		public static void setTitle(this global::android.preference.Preference __this, string arg0)
-		{
-			__this.setTitle((global::java.lang.String)arg0);
-		}
-		public static void setSummary(this global::android.preference.Preference __this, string arg0)
-		{
-			__this.setSummary((global::java.lang.String)arg0);
 		}
 	}
 }

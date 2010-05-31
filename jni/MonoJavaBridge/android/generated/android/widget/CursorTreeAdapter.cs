@@ -182,6 +182,10 @@ namespace android.widget
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.CursorTreeAdapter.staticClass, global::android.widget.CursorTreeAdapter._runQueryOnBackgroundThread10072, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
+		public android.database.Cursor runQueryOnBackgroundThread(string arg0)
+		{
+			return runQueryOnBackgroundThread((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _getFilterQueryProvider10073;
 		public virtual global::android.widget.FilterQueryProvider getFilterQueryProvider() 
 		{
@@ -273,13 +277,6 @@ namespace android.widget
 			global::android.widget.CursorTreeAdapter._bindChildView10081 = @__env.GetMethodID(global::android.widget.CursorTreeAdapter.staticClass, "bindChildView", "(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;Z)V");
 			global::android.widget.CursorTreeAdapter._CursorTreeAdapter10082 = @__env.GetMethodID(global::android.widget.CursorTreeAdapter.staticClass, "<init>", "(Landroid/database/Cursor;Landroid/content/Context;Z)V");
 			global::android.widget.CursorTreeAdapter._CursorTreeAdapter10083 = @__env.GetMethodID(global::android.widget.CursorTreeAdapter.staticClass, "<init>", "(Landroid/database/Cursor;Landroid/content/Context;)V");
-		}
-	}
-	public static class CursorTreeAdapterExtensionMethods
-	{
-		public static android.database.Cursor runQueryOnBackgroundThread(this global::android.widget.CursorTreeAdapter __this, string arg0)
-		{
-			return __this.runQueryOnBackgroundThread((global::java.lang.String)arg0);
 		}
 	}
 }

@@ -185,6 +185,10 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._append11024, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void append(string arg0)
+		{
+			append((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _append11025;
 		public virtual void append(java.lang.CharSequence arg0, int arg1, int arg2) 
 		{
@@ -193,6 +197,10 @@ namespace android.widget
 				@__env.CallVoidMethod(this, global::android.widget.TextView._append11025, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._append11025, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+		}
+		public void append(string arg0, int arg1, int arg2)
+		{
+			append((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _length11026;
 		public virtual int length() 
@@ -221,6 +229,10 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setError11028, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
+		public void setError(string arg0, android.graphics.drawable.Drawable arg1)
+		{
+			setError((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setError11029;
 		public virtual void setError(java.lang.CharSequence arg0) 
 		{
@@ -229,6 +241,10 @@ namespace android.widget
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setError11029, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setError11029, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		public void setError(string arg0)
+		{
+			setError((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _setText11030;
 		public virtual void setText(int arg0) 
@@ -248,6 +264,10 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setText11031, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setText(string arg0)
+		{
+			setText((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setText11032;
 		public virtual void setText(java.lang.CharSequence arg0, android.widget.TextView.BufferType arg1) 
 		{
@@ -256,6 +276,10 @@ namespace android.widget
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setText11032, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setText11032, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+		}
+		public void setText(string arg0, android.widget.TextView.BufferType arg1)
+		{
+			setText((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _setText11033;
 		public virtual void setText(char[] arg0, int arg1, int arg2) 
@@ -1350,6 +1374,10 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setTextKeepState11154, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
+		public void setTextKeepState(string arg0, android.widget.TextView.BufferType arg1)
+		{
+			setTextKeepState((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setTextKeepState11155;
 		public virtual void setTextKeepState(java.lang.CharSequence arg0) 
 		{
@@ -1359,6 +1387,10 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setTextKeepState11155, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setTextKeepState(string arg0)
+		{
+			setTextKeepState((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setHint11156;
 		public virtual void setHint(java.lang.CharSequence arg0) 
 		{
@@ -1367,6 +1399,10 @@ namespace android.widget
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setHint11156, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setHint11156, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		public void setHint(string arg0)
+		{
+			setHint((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _setHint11157;
 		public virtual void setHint(int arg0) 
@@ -1439,6 +1475,10 @@ namespace android.widget
 				@__env.CallVoidMethod(this, global::android.widget.TextView._setImeActionLabel11164, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.TextView.staticClass, global::android.widget.TextView._setImeActionLabel11164, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+		}
+		public void setImeActionLabel(string arg0, int arg1)
+		{
+			setImeActionLabel((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getImeActionLabel11165;
 		public virtual global::java.lang.CharSequence getImeActionLabel() 
@@ -2061,49 +2101,6 @@ namespace android.widget
 			global::android.widget.TextView._TextView11211 = @__env.GetMethodID(global::android.widget.TextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.TextView._TextView11212 = @__env.GetMethodID(global::android.widget.TextView.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.TextView._TextView11213 = @__env.GetMethodID(global::android.widget.TextView.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-		}
-	}
-	public static class TextViewExtensionMethods
-	{
-		public static void append(this global::android.widget.TextView __this, string arg0)
-		{
-			__this.append((global::java.lang.String)arg0);
-		}
-		public static void append(this global::android.widget.TextView __this, string arg0, int arg1, int arg2)
-		{
-			__this.append((global::java.lang.String)arg0, arg1, arg2);
-		}
-		public static void setError(this global::android.widget.TextView __this, string arg0, android.graphics.drawable.Drawable arg1)
-		{
-			__this.setError((global::java.lang.String)arg0, arg1);
-		}
-		public static void setError(this global::android.widget.TextView __this, string arg0)
-		{
-			__this.setError((global::java.lang.String)arg0);
-		}
-		public static void setText(this global::android.widget.TextView __this, string arg0)
-		{
-			__this.setText((global::java.lang.String)arg0);
-		}
-		public static void setText(this global::android.widget.TextView __this, string arg0, android.widget.TextView.BufferType arg1)
-		{
-			__this.setText((global::java.lang.String)arg0, arg1);
-		}
-		public static void setTextKeepState(this global::android.widget.TextView __this, string arg0, android.widget.TextView.BufferType arg1)
-		{
-			__this.setTextKeepState((global::java.lang.String)arg0, arg1);
-		}
-		public static void setTextKeepState(this global::android.widget.TextView __this, string arg0)
-		{
-			__this.setTextKeepState((global::java.lang.String)arg0);
-		}
-		public static void setHint(this global::android.widget.TextView __this, string arg0)
-		{
-			__this.setHint((global::java.lang.String)arg0);
-		}
-		public static void setImeActionLabel(this global::android.widget.TextView __this, string arg0, int arg1)
-		{
-			__this.setImeActionLabel((global::java.lang.String)arg0, arg1);
 		}
 	}
 }

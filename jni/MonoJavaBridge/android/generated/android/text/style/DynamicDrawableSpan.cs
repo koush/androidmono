@@ -20,6 +20,10 @@ namespace android.text.style
 			else
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.DynamicDrawableSpan.staticClass, global::android.text.style.DynamicDrawableSpan._getSize7322, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4));
 		}
+		public int getSize(android.graphics.Paint arg0, string arg1, int arg2, int arg3, android.graphics.Paint.FontMetricsInt arg4)
+		{
+			return getSize(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, arg2, arg3, arg4);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _getDrawable7323;
 		public abstract global::android.graphics.drawable.Drawable getDrawable();
 		internal static global::net.sf.jni4net.jni.MethodId _draw7324;
@@ -30,6 +34,10 @@ namespace android.text.style
 				@__env.CallVoidMethod(this, global::android.text.style.DynamicDrawableSpan._draw7324, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg8));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.DynamicDrawableSpan.staticClass, global::android.text.style.DynamicDrawableSpan._draw7324, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg8));
+		}
+		public void draw(android.graphics.Canvas arg0, string arg1, int arg2, int arg3, float arg4, int arg5, int arg6, int arg7, android.graphics.Paint arg8)
+		{
+			draw(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getVerticalAlignment7325;
 		public virtual int getVerticalAlignment() 
@@ -75,17 +83,6 @@ namespace android.text.style
 			global::android.text.style.DynamicDrawableSpan._getVerticalAlignment7325 = @__env.GetMethodID(global::android.text.style.DynamicDrawableSpan.staticClass, "getVerticalAlignment", "()I");
 			global::android.text.style.DynamicDrawableSpan._DynamicDrawableSpan7326 = @__env.GetMethodID(global::android.text.style.DynamicDrawableSpan.staticClass, "<init>", "()V");
 			global::android.text.style.DynamicDrawableSpan._DynamicDrawableSpan7327 = @__env.GetMethodID(global::android.text.style.DynamicDrawableSpan.staticClass, "<init>", "(I)V");
-		}
-	}
-	public static class DynamicDrawableSpanExtensionMethods
-	{
-		public static int getSize(this global::android.text.style.DynamicDrawableSpan __this, android.graphics.Paint arg0, string arg1, int arg2, int arg3, android.graphics.Paint.FontMetricsInt arg4)
-		{
-			return __this.getSize(arg0, (global::java.lang.String)arg1, arg2, arg3, arg4);
-		}
-		public static void draw(this global::android.text.style.DynamicDrawableSpan __this, android.graphics.Canvas arg0, string arg1, int arg2, int arg3, float arg4, int arg5, int arg6, int arg7, android.graphics.Paint arg8)
-		{
-			__this.draw(arg0, (global::java.lang.String)arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
 		}
 	}
 }

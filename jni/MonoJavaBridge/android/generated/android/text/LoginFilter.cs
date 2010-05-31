@@ -161,6 +161,10 @@ namespace android.text
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.LoginFilter.staticClass, global::android.text.LoginFilter._filter6852, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)));
 		}
+		public java.lang.CharSequence filter(string arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5)
+		{
+			return filter((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _onStart6853;
 		public virtual void onStart() 
 		{
@@ -198,13 +202,6 @@ namespace android.text
 			global::android.text.LoginFilter._onStop6854 = @__env.GetMethodID(global::android.text.LoginFilter.staticClass, "onStop", "()V");
 			global::android.text.LoginFilter._isAllowed6855 = @__env.GetMethodID(global::android.text.LoginFilter.staticClass, "isAllowed", "(C)Z");
 			global::android.text.LoginFilter._onInvalidCharacter6856 = @__env.GetMethodID(global::android.text.LoginFilter.staticClass, "onInvalidCharacter", "(C)V");
-		}
-	}
-	public static class LoginFilterExtensionMethods
-	{
-		public static java.lang.CharSequence filter(this global::android.text.LoginFilter __this, string arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5)
-		{
-			return __this.filter((global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5);
 		}
 	}
 }

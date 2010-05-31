@@ -63,6 +63,10 @@ namespace android.app
 				else
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setTitle372, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 			}
+			public android.app.AlertDialog.Builder setTitle(string arg0)
+			{
+				return setTitle((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+			}
 			internal static global::net.sf.jni4net.jni.MethodId _setOnKeyListener373;
 			public virtual global::android.app.AlertDialog.Builder setOnKeyListener(android.content.DialogInterface_OnKeyListener arg0) 
 			{
@@ -135,6 +139,10 @@ namespace android.app
 				else
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setMessage380, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 			}
+			public android.app.AlertDialog.Builder setMessage(string arg0)
+			{
+				return setMessage((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+			}
 			internal static global::net.sf.jni4net.jni.MethodId _setMessage381;
 			public virtual global::android.app.AlertDialog.Builder setMessage(int arg0) 
 			{
@@ -152,6 +160,10 @@ namespace android.app
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setPositiveButton382, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
 				else
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setPositiveButton382, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+			}
+			public android.app.AlertDialog.Builder setPositiveButton(string arg0, android.content.DialogInterface_OnClickListener arg1)
+			{
+				return setPositiveButton((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 			}
 			internal static global::net.sf.jni4net.jni.MethodId _setPositiveButton383;
 			public virtual global::android.app.AlertDialog.Builder setPositiveButton(int arg0, android.content.DialogInterface_OnClickListener arg1) 
@@ -171,6 +183,10 @@ namespace android.app
 				else
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setNegativeButton384, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
 			}
+			public android.app.AlertDialog.Builder setNegativeButton(string arg0, android.content.DialogInterface_OnClickListener arg1)
+			{
+				return setNegativeButton((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
+			}
 			internal static global::net.sf.jni4net.jni.MethodId _setNegativeButton385;
 			public virtual global::android.app.AlertDialog.Builder setNegativeButton(int arg0, android.content.DialogInterface_OnClickListener arg1) 
 			{
@@ -188,6 +204,10 @@ namespace android.app
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.AlertDialog.Builder._setNeutralButton386, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
 				else
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.app.AlertDialog.Builder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.AlertDialog.Builder.staticClass, global::android.app.AlertDialog.Builder._setNeutralButton386, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+			}
+			public android.app.AlertDialog.Builder setNeutralButton(string arg0, android.content.DialogInterface_OnClickListener arg1)
+			{
+				return setNeutralButton((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 			}
 			internal static global::net.sf.jni4net.jni.MethodId _setNeutralButton387;
 			public virtual global::android.app.AlertDialog.Builder setNeutralButton(int arg0, android.content.DialogInterface_OnClickListener arg1) 
@@ -404,6 +424,10 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setTitle406, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setTitle(string arg0)
+		{
+			setTitle((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setIcon407;
 		public virtual void setIcon(int arg0) 
 		{
@@ -439,6 +463,10 @@ namespace android.app
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setMessage410, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setMessage410, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		public void setMessage(string arg0)
+		{
+			setMessage((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _setView411;
 		public virtual void setView(android.view.View arg0, int arg1, int arg2, int arg3, int arg4) 
@@ -494,6 +522,10 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setButton416, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
+		public void setButton(string arg0, android.content.DialogInterface_OnClickListener arg1)
+		{
+			setButton((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setButton417;
 		public virtual void setButton(java.lang.CharSequence arg0, android.os.Message arg1) 
 		{
@@ -502,6 +534,10 @@ namespace android.app
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setButton417, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setButton417, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+		}
+		public void setButton(string arg0, android.os.Message arg1)
+		{
+			setButton((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _setButton418;
 		public virtual void setButton(int arg0, java.lang.CharSequence arg1, android.content.DialogInterface_OnClickListener arg2) 
@@ -512,6 +548,10 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setButton418, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2));
 		}
+		public void setButton(int arg0, string arg1, android.content.DialogInterface_OnClickListener arg2)
+		{
+			setButton(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, arg2);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setButton419;
 		public virtual void setButton(int arg0, java.lang.CharSequence arg1, android.os.Message arg2) 
 		{
@@ -520,6 +560,10 @@ namespace android.app
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setButton419, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setButton419, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+		}
+		public void setButton(int arg0, string arg1, android.os.Message arg2)
+		{
+			setButton(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, arg2);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _setButton2420;
 		public virtual void setButton2(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1) 
@@ -530,6 +574,10 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setButton2420, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
+		public void setButton2(string arg0, android.content.DialogInterface_OnClickListener arg1)
+		{
+			setButton2((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setButton2421;
 		public virtual void setButton2(java.lang.CharSequence arg0, android.os.Message arg1) 
 		{
@@ -538,6 +586,10 @@ namespace android.app
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setButton2421, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setButton2421, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+		}
+		public void setButton2(string arg0, android.os.Message arg1)
+		{
+			setButton2((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _setButton3422;
 		public virtual void setButton3(java.lang.CharSequence arg0, android.content.DialogInterface_OnClickListener arg1) 
@@ -548,6 +600,10 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setButton3422, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
+		public void setButton3(string arg0, android.content.DialogInterface_OnClickListener arg1)
+		{
+			setButton3((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setButton3423;
 		public virtual void setButton3(java.lang.CharSequence arg0, android.os.Message arg1) 
 		{
@@ -556,6 +612,10 @@ namespace android.app
 				@__env.CallVoidMethod(this, global::android.app.AlertDialog._setButton3423, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.AlertDialog.staticClass, global::android.app.AlertDialog._setButton3423, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+		}
+		public void setButton3(string arg0, android.os.Message arg1)
+		{
+			setButton3((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _AlertDialog424;
 		protected AlertDialog(android.content.Context arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
@@ -602,69 +662,6 @@ namespace android.app
 			global::android.app.AlertDialog._AlertDialog424 = @__env.GetMethodID(global::android.app.AlertDialog.staticClass, "<init>", "(Landroid/content/Context;I)V");
 			global::android.app.AlertDialog._AlertDialog425 = @__env.GetMethodID(global::android.app.AlertDialog.staticClass, "<init>", "(Landroid/content/Context;ZLandroid/content/DialogInterface$OnCancelListener;)V");
 			global::android.app.AlertDialog._AlertDialog426 = @__env.GetMethodID(global::android.app.AlertDialog.staticClass, "<init>", "(Landroid/content/Context;)V");
-		}
-	}
-	public static class AlertDialogExtensionMethods
-	{
-		public static android.app.AlertDialog.Builder setTitle(this global::android.app.AlertDialog.Builder __this, string arg0)
-		{
-			return __this.setTitle((global::java.lang.String)arg0);
-		}
-		public static android.app.AlertDialog.Builder setMessage(this global::android.app.AlertDialog.Builder __this, string arg0)
-		{
-			return __this.setMessage((global::java.lang.String)arg0);
-		}
-		public static android.app.AlertDialog.Builder setPositiveButton(this global::android.app.AlertDialog.Builder __this, string arg0, android.content.DialogInterface_OnClickListener arg1)
-		{
-			return __this.setPositiveButton((global::java.lang.String)arg0, arg1);
-		}
-		public static android.app.AlertDialog.Builder setNegativeButton(this global::android.app.AlertDialog.Builder __this, string arg0, android.content.DialogInterface_OnClickListener arg1)
-		{
-			return __this.setNegativeButton((global::java.lang.String)arg0, arg1);
-		}
-		public static android.app.AlertDialog.Builder setNeutralButton(this global::android.app.AlertDialog.Builder __this, string arg0, android.content.DialogInterface_OnClickListener arg1)
-		{
-			return __this.setNeutralButton((global::java.lang.String)arg0, arg1);
-		}
-		public static void setTitle(this global::android.app.AlertDialog __this, string arg0)
-		{
-			__this.setTitle((global::java.lang.String)arg0);
-		}
-		public static void setMessage(this global::android.app.AlertDialog __this, string arg0)
-		{
-			__this.setMessage((global::java.lang.String)arg0);
-		}
-		public static void setButton(this global::android.app.AlertDialog __this, string arg0, android.content.DialogInterface_OnClickListener arg1)
-		{
-			__this.setButton((global::java.lang.String)arg0, arg1);
-		}
-		public static void setButton(this global::android.app.AlertDialog __this, string arg0, android.os.Message arg1)
-		{
-			__this.setButton((global::java.lang.String)arg0, arg1);
-		}
-		public static void setButton(this global::android.app.AlertDialog __this, int arg0, string arg1, android.content.DialogInterface_OnClickListener arg2)
-		{
-			__this.setButton(arg0, (global::java.lang.String)arg1, arg2);
-		}
-		public static void setButton(this global::android.app.AlertDialog __this, int arg0, string arg1, android.os.Message arg2)
-		{
-			__this.setButton(arg0, (global::java.lang.String)arg1, arg2);
-		}
-		public static void setButton2(this global::android.app.AlertDialog __this, string arg0, android.content.DialogInterface_OnClickListener arg1)
-		{
-			__this.setButton2((global::java.lang.String)arg0, arg1);
-		}
-		public static void setButton2(this global::android.app.AlertDialog __this, string arg0, android.os.Message arg1)
-		{
-			__this.setButton2((global::java.lang.String)arg0, arg1);
-		}
-		public static void setButton3(this global::android.app.AlertDialog __this, string arg0, android.content.DialogInterface_OnClickListener arg1)
-		{
-			__this.setButton3((global::java.lang.String)arg0, arg1);
-		}
-		public static void setButton3(this global::android.app.AlertDialog __this, string arg0, android.os.Message arg1)
-		{
-			__this.setButton3((global::java.lang.String)arg0, arg1);
 		}
 	}
 }

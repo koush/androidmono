@@ -92,6 +92,10 @@ namespace java.nio.charset
 			else
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CharsetEncoder.staticClass, global::java.nio.charset.CharsetEncoder._canEncode12389, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public bool canEncode(string arg0)
+		{
+			return canEncode((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _canEncode12390;
 		public virtual bool canEncode(char arg0) 
 		{
@@ -240,13 +244,6 @@ namespace java.nio.charset
 			global::java.nio.charset.CharsetEncoder._implReset12402 = @__env.GetMethodID(global::java.nio.charset.CharsetEncoder.staticClass, "implReset", "()V");
 			global::java.nio.charset.CharsetEncoder._CharsetEncoder12403 = @__env.GetMethodID(global::java.nio.charset.CharsetEncoder.staticClass, "<init>", "(Ljava/nio/charset/Charset;FF[B)V");
 			global::java.nio.charset.CharsetEncoder._CharsetEncoder12404 = @__env.GetMethodID(global::java.nio.charset.CharsetEncoder.staticClass, "<init>", "(Ljava/nio/charset/Charset;FF)V");
-		}
-	}
-	public static class CharsetEncoderExtensionMethods
-	{
-		public static bool canEncode(this global::java.nio.charset.CharsetEncoder __this, string arg0)
-		{
-			return __this.canEncode((global::java.lang.String)arg0);
 		}
 	}
 }

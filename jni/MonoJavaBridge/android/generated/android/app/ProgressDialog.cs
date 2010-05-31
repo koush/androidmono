@@ -96,6 +96,10 @@ namespace android.app
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.app.ProgressDialog.staticClass, global::android.app.ProgressDialog._setMessage719, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setMessage(string arg0)
+		{
+			setMessage((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _getProgress720;
 		public virtual int getProgress() 
 		{
@@ -247,13 +251,6 @@ namespace android.app
 			global::android.app.ProgressDialog._setProgressStyle730 = @__env.GetMethodID(global::android.app.ProgressDialog.staticClass, "setProgressStyle", "(I)V");
 			global::android.app.ProgressDialog._ProgressDialog731 = @__env.GetMethodID(global::android.app.ProgressDialog.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.app.ProgressDialog._ProgressDialog732 = @__env.GetMethodID(global::android.app.ProgressDialog.staticClass, "<init>", "(Landroid/content/Context;I)V");
-		}
-	}
-	public static class ProgressDialogExtensionMethods
-	{
-		public static void setMessage(this global::android.app.ProgressDialog __this, string arg0)
-		{
-			__this.setMessage((global::java.lang.String)arg0);
 		}
 	}
 }

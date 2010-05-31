@@ -99,6 +99,10 @@ namespace android.view.inputmethod
 			else
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.BaseInputConnection.staticClass, global::android.view.inputmethod.BaseInputConnection._setComposingText9032, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
+		public bool setComposingText(string arg0, int arg1)
+		{
+			return setComposingText((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _finishComposingText9033;
 		public virtual bool finishComposingText() 
 		{
@@ -116,6 +120,10 @@ namespace android.view.inputmethod
 				return @__env.CallBooleanMethod(this, global::android.view.inputmethod.BaseInputConnection._commitText9034, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.inputmethod.BaseInputConnection.staticClass, global::android.view.inputmethod.BaseInputConnection._commitText9034, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+		}
+		public bool commitText(string arg0, int arg1)
+		{
+			return commitText((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _commitCompletion9035;
 		public virtual bool commitCompletion(android.view.inputmethod.CompletionInfo arg0) 
@@ -246,17 +254,6 @@ namespace android.view.inputmethod
 			global::android.view.inputmethod.BaseInputConnection._getComposingSpanEnd9045 = @__env.GetStaticMethodID(global::android.view.inputmethod.BaseInputConnection.staticClass, "getComposingSpanEnd", "(Landroid/text/Spannable;)I");
 			global::android.view.inputmethod.BaseInputConnection._getEditable9046 = @__env.GetMethodID(global::android.view.inputmethod.BaseInputConnection.staticClass, "getEditable", "()Landroid/text/Editable;");
 			global::android.view.inputmethod.BaseInputConnection._BaseInputConnection9047 = @__env.GetMethodID(global::android.view.inputmethod.BaseInputConnection.staticClass, "<init>", "(Landroid/view/View;Z)V");
-		}
-	}
-	public static class BaseInputConnectionExtensionMethods
-	{
-		public static bool setComposingText(this global::android.view.inputmethod.BaseInputConnection __this, string arg0, int arg1)
-		{
-			return __this.setComposingText((global::java.lang.String)arg0, arg1);
-		}
-		public static bool commitText(this global::android.view.inputmethod.BaseInputConnection __this, string arg0, int arg1)
-		{
-			return __this.commitText((global::java.lang.String)arg0, arg1);
 		}
 	}
 }

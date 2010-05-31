@@ -72,6 +72,10 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._setTextOn11252, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setTextOn(string arg0)
+		{
+			setTextOn((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _getTextOff11253;
 		public virtual global::java.lang.CharSequence getTextOff() 
 		{
@@ -89,6 +93,10 @@ namespace android.widget
 				@__env.CallVoidMethod(this, global::android.widget.ToggleButton._setTextOff11254, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ToggleButton.staticClass, global::android.widget.ToggleButton._setTextOff11254, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		public void setTextOff(string arg0)
+		{
+			setTextOff((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _ToggleButton11255;
 		public ToggleButton(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
@@ -122,17 +130,6 @@ namespace android.widget
 			global::android.widget.ToggleButton._ToggleButton11255 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.ToggleButton._ToggleButton11256 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.ToggleButton._ToggleButton11257 = @__env.GetMethodID(global::android.widget.ToggleButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-		}
-	}
-	public static class ToggleButtonExtensionMethods
-	{
-		public static void setTextOn(this global::android.widget.ToggleButton __this, string arg0)
-		{
-			__this.setTextOn((global::java.lang.String)arg0);
-		}
-		public static void setTextOff(this global::android.widget.ToggleButton __this, string arg0)
-		{
-			__this.setTextOff((global::java.lang.String)arg0);
 		}
 	}
 }

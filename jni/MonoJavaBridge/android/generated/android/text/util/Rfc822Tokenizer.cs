@@ -32,6 +32,10 @@ namespace android.text.util
 			else
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._findTokenStart7499, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
+		public int findTokenStart(string arg0, int arg1)
+		{
+			return findTokenStart((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _findTokenEnd7500;
 		public virtual int findTokenEnd(java.lang.CharSequence arg0, int arg1) 
 		{
@@ -41,6 +45,10 @@ namespace android.text.util
 			else
 				return @__env.CallNonVirtualIntMethod(this, global::android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._findTokenEnd7500, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
+		public int findTokenEnd(string arg0, int arg1)
+		{
+			return findTokenEnd((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _terminateToken7501;
 		public virtual global::java.lang.CharSequence terminateToken(java.lang.CharSequence arg0) 
 		{
@@ -49,6 +57,10 @@ namespace android.text.util
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.util.Rfc822Tokenizer._terminateToken7501, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.util.Rfc822Tokenizer.staticClass, global::android.text.util.Rfc822Tokenizer._terminateToken7501, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+		}
+		public java.lang.CharSequence terminateToken(string arg0)
+		{
+			return terminateToken((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _Rfc822Tokenizer7502;
 		public Rfc822Tokenizer()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
@@ -64,21 +76,6 @@ namespace android.text.util
 			global::android.text.util.Rfc822Tokenizer._findTokenEnd7500 = @__env.GetMethodID(global::android.text.util.Rfc822Tokenizer.staticClass, "findTokenEnd", "(Ljava/lang/CharSequence;I)I");
 			global::android.text.util.Rfc822Tokenizer._terminateToken7501 = @__env.GetMethodID(global::android.text.util.Rfc822Tokenizer.staticClass, "terminateToken", "(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;");
 			global::android.text.util.Rfc822Tokenizer._Rfc822Tokenizer7502 = @__env.GetMethodID(global::android.text.util.Rfc822Tokenizer.staticClass, "<init>", "()V");
-		}
-	}
-	public static class Rfc822TokenizerExtensionMethods
-	{
-		public static int findTokenStart(this global::android.text.util.Rfc822Tokenizer __this, string arg0, int arg1)
-		{
-			return __this.findTokenStart((global::java.lang.String)arg0, arg1);
-		}
-		public static int findTokenEnd(this global::android.text.util.Rfc822Tokenizer __this, string arg0, int arg1)
-		{
-			return __this.findTokenEnd((global::java.lang.String)arg0, arg1);
-		}
-		public static java.lang.CharSequence terminateToken(this global::android.text.util.Rfc822Tokenizer __this, string arg0)
-		{
-			return __this.terminateToken((global::java.lang.String)arg0);
 		}
 	}
 }

@@ -45,6 +45,10 @@ namespace android.text.method
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.method.DigitsKeyListener.staticClass, global::android.text.method.DigitsKeyListener._filter7147, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)));
 		}
+		public java.lang.CharSequence filter(string arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5)
+		{
+			return filter((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _getInputType7148;
 		public override int getInputType() 
 		{
@@ -85,13 +89,6 @@ namespace android.text.method
 			global::android.text.method.DigitsKeyListener._getAcceptedChars7149 = @__env.GetMethodID(global::android.text.method.DigitsKeyListener.staticClass, "getAcceptedChars", "()[C");
 			global::android.text.method.DigitsKeyListener._DigitsKeyListener7150 = @__env.GetMethodID(global::android.text.method.DigitsKeyListener.staticClass, "<init>", "()V");
 			global::android.text.method.DigitsKeyListener._DigitsKeyListener7151 = @__env.GetMethodID(global::android.text.method.DigitsKeyListener.staticClass, "<init>", "(ZZ)V");
-		}
-	}
-	public static class DigitsKeyListenerExtensionMethods
-	{
-		public static java.lang.CharSequence filter(this global::android.text.method.DigitsKeyListener __this, string arg0, int arg1, int arg2, android.text.Spanned arg3, int arg4, int arg5)
-		{
-			return __this.filter((global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5);
 		}
 	}
 }

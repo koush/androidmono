@@ -27,6 +27,10 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setText11229, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setText(string arg0)
+		{
+			setText((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setText11230;
 		public virtual void setText(int arg0) 
 		{
@@ -206,13 +210,6 @@ namespace android.widget
 			global::android.widget.Toast._makeText11244 = @__env.GetStaticMethodID(global::android.widget.Toast.staticClass, "makeText", "(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;");
 			global::android.widget.Toast._makeText11245 = @__env.GetStaticMethodID(global::android.widget.Toast.staticClass, "makeText", "(Landroid/content/Context;II)Landroid/widget/Toast;");
 			global::android.widget.Toast._Toast11246 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "<init>", "(Landroid/content/Context;)V");
-		}
-	}
-	public static class ToastExtensionMethods
-	{
-		public static void setText(this global::android.widget.Toast __this, string arg0)
-		{
-			__this.setText((global::java.lang.String)arg0);
 		}
 	}
 }

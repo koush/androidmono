@@ -225,6 +225,10 @@ namespace android.text
 			else
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.BoringLayout>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.BoringLayout.staticClass, global::android.text.BoringLayout._replaceOrMake6720, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7)));
 		}
+		public android.text.BoringLayout replaceOrMake(string arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, android.text.BoringLayout.Metrics arg6, bool arg7)
+		{
+			return replaceOrMake((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _replaceOrMake6721;
 		public virtual global::android.text.BoringLayout replaceOrMake(java.lang.CharSequence arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, android.text.BoringLayout.Metrics arg6, bool arg7, android.text.TextUtils.TruncateAt arg8, int arg9) 
 		{
@@ -233,6 +237,10 @@ namespace android.text
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.BoringLayout>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.BoringLayout._replaceOrMake6721, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg8), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg9)));
 			else
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.BoringLayout>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.BoringLayout.staticClass, global::android.text.BoringLayout._replaceOrMake6721, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg8), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg9)));
+		}
+		public android.text.BoringLayout replaceOrMake(string arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, android.text.BoringLayout.Metrics arg6, bool arg7, android.text.TextUtils.TruncateAt arg8, int arg9)
+		{
+			return replaceOrMake((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _isBoring6722;
 		public static global::android.text.BoringLayout.Metrics isBoring(java.lang.CharSequence arg0, android.text.TextPaint arg1, android.text.BoringLayout.Metrics arg2) 
@@ -294,17 +302,6 @@ namespace android.text
 			global::android.text.BoringLayout._ellipsized6724 = @__env.GetMethodID(global::android.text.BoringLayout.staticClass, "ellipsized", "(II)V");
 			global::android.text.BoringLayout._BoringLayout6725 = @__env.GetMethodID(global::android.text.BoringLayout.staticClass, "<init>", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;ZLandroid/text/TextUtils$TruncateAt;I)V");
 			global::android.text.BoringLayout._BoringLayout6726 = @__env.GetMethodID(global::android.text.BoringLayout.staticClass, "<init>", "(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;Z)V");
-		}
-	}
-	public static class BoringLayoutExtensionMethods
-	{
-		public static android.text.BoringLayout replaceOrMake(this global::android.text.BoringLayout __this, string arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, android.text.BoringLayout.Metrics arg6, bool arg7)
-		{
-			return __this.replaceOrMake((global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
-		}
-		public static android.text.BoringLayout replaceOrMake(this global::android.text.BoringLayout __this, string arg0, android.text.TextPaint arg1, int arg2, android.text.Layout.Alignment arg3, float arg4, float arg5, android.text.BoringLayout.Metrics arg6, bool arg7, android.text.TextUtils.TruncateAt arg8, int arg9)
-		{
-			return __this.replaceOrMake((global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
 		}
 	}
 }

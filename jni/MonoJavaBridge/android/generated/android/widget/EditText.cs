@@ -27,6 +27,10 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.EditText.staticClass, global::android.widget.EditText._setText10120, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
+		public void setText(string arg0, android.widget.TextView.BufferType arg1)
+		{
+			setText((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _selectAll10121;
 		public virtual void selectAll() 
 		{
@@ -132,13 +136,6 @@ namespace android.widget
 			global::android.widget.EditText._EditText10129 = @__env.GetMethodID(global::android.widget.EditText.staticClass, "<init>", "(Landroid/content/Context;)V");
 			global::android.widget.EditText._EditText10130 = @__env.GetMethodID(global::android.widget.EditText.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.widget.EditText._EditText10131 = @__env.GetMethodID(global::android.widget.EditText.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-		}
-	}
-	public static class EditTextExtensionMethods
-	{
-		public static void setText(this global::android.widget.EditText __this, string arg0, android.widget.TextView.BufferType arg1)
-		{
-			__this.setText((global::java.lang.String)arg0, arg1);
 		}
 	}
 }

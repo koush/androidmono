@@ -136,6 +136,10 @@ namespace java.nio
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._append12012, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
+		public java.lang.Appendable append(string arg0)
+		{
+			return append((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _append12013;
 		public virtual global::java.lang.Appendable append(java.lang.CharSequence arg0, int arg1, int arg2) 
 		{
@@ -144,6 +148,10 @@ namespace java.nio
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.CharBuffer._append12013, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._append12013, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+		}
+		public java.lang.Appendable append(string arg0, int arg1, int arg2)
+		{
+			return append((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _append12014;
 		public virtual global::java.lang.Appendable append(char arg0) 
@@ -262,17 +270,6 @@ namespace java.nio
 			global::java.nio.CharBuffer._asReadOnlyBuffer12027 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "asReadOnlyBuffer", "()Ljava/nio/CharBuffer;");
 			global::java.nio.CharBuffer._compact12028 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "compact", "()Ljava/nio/CharBuffer;");
 			global::java.nio.CharBuffer._order12029 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "order", "()Ljava/nio/ByteOrder;");
-		}
-	}
-	public static class CharBufferExtensionMethods
-	{
-		public static java.lang.Appendable append(this global::java.nio.CharBuffer __this, string arg0)
-		{
-			return __this.append((global::java.lang.String)arg0);
-		}
-		public static java.lang.Appendable append(this global::java.nio.CharBuffer __this, string arg0, int arg1, int arg2)
-		{
-			return __this.append((global::java.lang.String)arg0, arg1, arg2);
 		}
 	}
 }

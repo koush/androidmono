@@ -101,6 +101,10 @@ namespace android.preference
 			else
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._findPreference6063, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
+		public android.preference.Preference findPreference(string arg0)
+		{
+			return findPreference((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setPreferenceScreen6064;
 		public virtual void setPreferenceScreen(android.preference.PreferenceScreen arg0) 
 		{
@@ -171,13 +175,6 @@ namespace android.preference
 			global::android.preference.PreferenceActivity._addPreferencesFromResource6067 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "addPreferencesFromResource", "(I)V");
 			global::android.preference.PreferenceActivity._onPreferenceTreeClick6068 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onPreferenceTreeClick", "(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z");
 			global::android.preference.PreferenceActivity._PreferenceActivity6069 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "<init>", "()V");
-		}
-	}
-	public static class PreferenceActivityExtensionMethods
-	{
-		public static android.preference.Preference findPreference(this global::android.preference.PreferenceActivity __this, string arg0)
-		{
-			return __this.findPreference((global::java.lang.String)arg0);
 		}
 	}
 }

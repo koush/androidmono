@@ -33,6 +33,10 @@ namespace android.text.method
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._onFocusChanged7213, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4));
 		}
+		public void onFocusChanged(android.view.View arg0, string arg1, bool arg2, int arg3, android.graphics.Rect arg4)
+		{
+			onFocusChanged(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1, arg2, arg3, arg4);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _onTextChanged7214;
 		public virtual void onTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
 		{
@@ -42,6 +46,10 @@ namespace android.text.method
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._onTextChanged7214, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
 		}
+		public void onTextChanged(string arg0, int arg1, int arg2, int arg3)
+		{
+			onTextChanged((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _beforeTextChanged7215;
 		public virtual void beforeTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
 		{
@@ -50,6 +58,10 @@ namespace android.text.method
 				@__env.CallVoidMethod(this, global::android.text.method.PasswordTransformationMethod._beforeTextChanged7215, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._beforeTextChanged7215, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+		}
+		public void beforeTextChanged(string arg0, int arg1, int arg2, int arg3)
+		{
+			beforeTextChanged((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _afterTextChanged7216;
 		public virtual void afterTextChanged(android.text.Editable arg0) 
@@ -69,6 +81,10 @@ namespace android.text.method
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.method.PasswordTransformationMethod.staticClass, global::android.text.method.PasswordTransformationMethod._getTransformation7217, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
 		}
+		public java.lang.CharSequence getTransformation(string arg0, android.view.View arg1)
+		{
+			return getTransformation((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _PasswordTransformationMethod7218;
 		public PasswordTransformationMethod()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
@@ -85,25 +101,6 @@ namespace android.text.method
 			global::android.text.method.PasswordTransformationMethod._afterTextChanged7216 = @__env.GetMethodID(global::android.text.method.PasswordTransformationMethod.staticClass, "afterTextChanged", "(Landroid/text/Editable;)V");
 			global::android.text.method.PasswordTransformationMethod._getTransformation7217 = @__env.GetMethodID(global::android.text.method.PasswordTransformationMethod.staticClass, "getTransformation", "(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;");
 			global::android.text.method.PasswordTransformationMethod._PasswordTransformationMethod7218 = @__env.GetMethodID(global::android.text.method.PasswordTransformationMethod.staticClass, "<init>", "()V");
-		}
-	}
-	public static class PasswordTransformationMethodExtensionMethods
-	{
-		public static void onFocusChanged(this global::android.text.method.PasswordTransformationMethod __this, android.view.View arg0, string arg1, bool arg2, int arg3, android.graphics.Rect arg4)
-		{
-			__this.onFocusChanged(arg0, (global::java.lang.String)arg1, arg2, arg3, arg4);
-		}
-		public static void onTextChanged(this global::android.text.method.PasswordTransformationMethod __this, string arg0, int arg1, int arg2, int arg3)
-		{
-			__this.onTextChanged((global::java.lang.String)arg0, arg1, arg2, arg3);
-		}
-		public static void beforeTextChanged(this global::android.text.method.PasswordTransformationMethod __this, string arg0, int arg1, int arg2, int arg3)
-		{
-			__this.beforeTextChanged((global::java.lang.String)arg0, arg1, arg2, arg3);
-		}
-		public static java.lang.CharSequence getTransformation(this global::android.text.method.PasswordTransformationMethod __this, string arg0, android.view.View arg1)
-		{
-			return __this.getTransformation((global::java.lang.String)arg0, arg1);
 		}
 	}
 }

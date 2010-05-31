@@ -574,6 +574,10 @@ namespace android.view
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.view.View.staticClass, global::android.view.View._setContentDescription8126, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setContentDescription(string arg0)
+		{
+			setContentDescription((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _getAnimation8127;
 		public virtual global::android.view.animation.Animation getAnimation() 
 		{
@@ -3337,13 +3341,6 @@ namespace android.view
 			global::android.view.View._View8385 = @__env.GetMethodID(global::android.view.View.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.view.View._View8386 = @__env.GetMethodID(global::android.view.View.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 			global::android.view.View._View8387 = @__env.GetMethodID(global::android.view.View.staticClass, "<init>", "(Landroid/content/Context;)V");
-		}
-	}
-	public static class ViewExtensionMethods
-	{
-		public static void setContentDescription(this global::android.view.View __this, string arg0)
-		{
-			__this.setContentDescription((global::java.lang.String)arg0);
 		}
 	}
 }

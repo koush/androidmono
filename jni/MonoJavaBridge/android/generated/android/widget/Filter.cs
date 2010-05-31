@@ -119,6 +119,10 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Filter.staticClass, global::android.widget.Filter._filter10197, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void filter(string arg0)
+		{
+			filter((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _filter10198;
 		public virtual void filter(java.lang.CharSequence arg0, android.widget.Filter.FilterListener arg1) 
 		{
@@ -127,6 +131,10 @@ namespace android.widget
 				@__env.CallVoidMethod(this, global::android.widget.Filter._filter10198, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Filter.staticClass, global::android.widget.Filter._filter10198, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+		}
+		public void filter(string arg0, android.widget.Filter.FilterListener arg1)
+		{
+			filter((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _performFiltering10199;
 		protected abstract global::android.widget.Filter.FilterResults performFiltering(java.lang.CharSequence arg0);
@@ -156,17 +164,6 @@ namespace android.widget
 			global::android.widget.Filter._publishResults10200 = @__env.GetMethodID(global::android.widget.Filter.staticClass, "publishResults", "(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterResults;)V");
 			global::android.widget.Filter._convertResultToString10201 = @__env.GetMethodID(global::android.widget.Filter.staticClass, "convertResultToString", "(Ljava/lang/Object;)Ljava/lang/CharSequence;");
 			global::android.widget.Filter._Filter10202 = @__env.GetMethodID(global::android.widget.Filter.staticClass, "<init>", "()V");
-		}
-	}
-	public static class FilterExtensionMethods
-	{
-		public static void filter(this global::android.widget.Filter __this, string arg0)
-		{
-			__this.filter((global::java.lang.String)arg0);
-		}
-		public static void filter(this global::android.widget.Filter __this, string arg0, android.widget.Filter.FilterListener arg1)
-		{
-			__this.filter((global::java.lang.String)arg0, arg1);
 		}
 	}
 }

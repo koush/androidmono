@@ -293,6 +293,10 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setTextViewText10710, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
+		public void setTextViewText(int arg0, string arg1)
+		{
+			setTextViewText(arg0, (global::java.lang.CharSequence)(global::java.lang.String)arg1);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setImageViewResource10711;
 		public virtual void setImageViewResource(int arg0, int arg1) 
 		{
@@ -364,6 +368,10 @@ namespace android.widget
 				@__env.CallVoidMethod(this, global::android.widget.RemoteViews._setCharSequence10718, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.RemoteViews.staticClass, global::android.widget.RemoteViews._setCharSequence10718, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2));
+		}
+		public void setCharSequence(int arg0, java.lang.String arg1, string arg2)
+		{
+			setCharSequence(arg0, arg1, (global::java.lang.CharSequence)(global::java.lang.String)arg2);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _setUri10719;
 		public virtual void setUri(int arg0, java.lang.String arg1, android.net.Uri arg2) 
@@ -456,17 +464,6 @@ namespace android.widget
 			global::android.widget.RemoteViews._onLoadClass10722 = @__env.GetMethodID(global::android.widget.RemoteViews.staticClass, "onLoadClass", "(Ljava/lang/Class;)Z");
 			global::android.widget.RemoteViews._RemoteViews10723 = @__env.GetMethodID(global::android.widget.RemoteViews.staticClass, "<init>", "(Ljava/lang/String;I)V");
 			global::android.widget.RemoteViews._RemoteViews10724 = @__env.GetMethodID(global::android.widget.RemoteViews.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-		}
-	}
-	public static class RemoteViewsExtensionMethods
-	{
-		public static void setTextViewText(this global::android.widget.RemoteViews __this, int arg0, string arg1)
-		{
-			__this.setTextViewText(arg0, (global::java.lang.String)arg1);
-		}
-		public static void setCharSequence(this global::android.widget.RemoteViews __this, int arg0, java.lang.String arg1, string arg2)
-		{
-			__this.setCharSequence(arg0, arg1, (global::java.lang.String)arg2);
 		}
 	}
 }

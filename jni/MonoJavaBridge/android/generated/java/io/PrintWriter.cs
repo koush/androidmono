@@ -117,6 +117,10 @@ namespace java.io
 			else
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._append11421, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
+		public java.io.PrintWriter append(string arg0)
+		{
+			return append((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _append11422;
 		public virtual new global::java.io.PrintWriter append(java.lang.CharSequence arg0, int arg1, int arg2) 
 		{
@@ -125,6 +129,10 @@ namespace java.io
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallObjectMethodPtr(this, global::java.io.PrintWriter._append11422, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
 			else
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.PrintWriter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.io.PrintWriter.staticClass, global::java.io.PrintWriter._append11422, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+		}
+		public java.io.PrintWriter append(string arg0, int arg1, int arg2)
+		{
+			return append((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _append11423;
 		public virtual new global::java.io.PrintWriter append(char arg0) 
@@ -437,17 +445,6 @@ namespace java.io
 			global::java.io.PrintWriter._PrintWriter11452 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/io/File;Ljava/lang/String;)V");
 			global::java.io.PrintWriter._PrintWriter11453 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/io/Writer;)V");
 			global::java.io.PrintWriter._PrintWriter11454 = @__env.GetMethodID(global::java.io.PrintWriter.staticClass, "<init>", "(Ljava/io/OutputStream;)V");
-		}
-	}
-	public static class PrintWriterExtensionMethods
-	{
-		public static java.io.PrintWriter append(this global::java.io.PrintWriter __this, string arg0)
-		{
-			return __this.append((global::java.lang.String)arg0);
-		}
-		public static java.io.PrintWriter append(this global::java.io.PrintWriter __this, string arg0, int arg1, int arg2)
-		{
-			return __this.append((global::java.lang.String)arg0, arg1, arg2);
 		}
 	}
 }

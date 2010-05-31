@@ -74,6 +74,10 @@ namespace android.preference
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.DialogPreference.staticClass, global::android.preference.DialogPreference._setDialogTitle5917, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setDialogTitle(string arg0)
+		{
+			setDialogTitle((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _setDialogTitle5918;
 		public virtual void setDialogTitle(int arg0) 
 		{
@@ -100,6 +104,10 @@ namespace android.preference
 				@__env.CallVoidMethod(this, global::android.preference.DialogPreference._setDialogMessage5920, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.DialogPreference.staticClass, global::android.preference.DialogPreference._setDialogMessage5920, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		public void setDialogMessage(string arg0)
+		{
+			setDialogMessage((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _setDialogMessage5921;
 		public virtual void setDialogMessage(int arg0) 
@@ -164,6 +172,10 @@ namespace android.preference
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.DialogPreference.staticClass, global::android.preference.DialogPreference._setPositiveButtonText5927, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
+		public void setPositiveButtonText(string arg0)
+		{
+			setPositiveButtonText((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
 		internal static global::net.sf.jni4net.jni.MethodId _getPositiveButtonText5928;
 		public virtual global::java.lang.CharSequence getPositiveButtonText() 
 		{
@@ -190,6 +202,10 @@ namespace android.preference
 				@__env.CallVoidMethod(this, global::android.preference.DialogPreference._setNegativeButtonText5930, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.preference.DialogPreference.staticClass, global::android.preference.DialogPreference._setNegativeButtonText5930, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		public void setNegativeButtonText(string arg0)
+		{
+			setNegativeButtonText((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getNegativeButtonText5931;
 		public virtual global::java.lang.CharSequence getNegativeButtonText() 
@@ -318,25 +334,6 @@ namespace android.preference
 			global::android.preference.DialogPreference._onActivityDestroy5939 = @__env.GetMethodID(global::android.preference.DialogPreference.staticClass, "onActivityDestroy", "()V");
 			global::android.preference.DialogPreference._DialogPreference5940 = @__env.GetMethodID(global::android.preference.DialogPreference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 			global::android.preference.DialogPreference._DialogPreference5941 = @__env.GetMethodID(global::android.preference.DialogPreference.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-		}
-	}
-	public static class DialogPreferenceExtensionMethods
-	{
-		public static void setDialogTitle(this global::android.preference.DialogPreference __this, string arg0)
-		{
-			__this.setDialogTitle((global::java.lang.String)arg0);
-		}
-		public static void setDialogMessage(this global::android.preference.DialogPreference __this, string arg0)
-		{
-			__this.setDialogMessage((global::java.lang.String)arg0);
-		}
-		public static void setPositiveButtonText(this global::android.preference.DialogPreference __this, string arg0)
-		{
-			__this.setPositiveButtonText((global::java.lang.String)arg0);
-		}
-		public static void setNegativeButtonText(this global::android.preference.DialogPreference __this, string arg0)
-		{
-			__this.setNegativeButtonText((global::java.lang.String)arg0);
 		}
 	}
 }
