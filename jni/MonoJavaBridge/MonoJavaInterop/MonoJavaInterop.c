@@ -91,28 +91,22 @@ JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initi
     {
         LOGI("Debugger enabled...");
         int length = (*env)->GetStringLength(env, debuggerAgentOptions);
-        LOGI("Debugger enabled...1");
         const jbyte *str = (*env)->GetStringUTFChars(env, debuggerAgentOptions, NULL);
-        LOGI("Debugger enabled...2");
         char *copy = (char*)malloc(length + 1);
         copy[length] = NULL;
         memcpy(copy, str, length);
-        LOGI("Debugger enabled...3");
-        LOGI(copy);
-        LOGI("Debugger enabled...4");
         mono_debugger_agent_parse_options(copy);
-        LOGI("Debugger enabled...5");
         free(copy);
-        LOGI("Debugger enabled...6");
         (*env)->ReleaseStringUTFChars(env, debuggerAgentOptions, str);
-        LOGI("Debugger enabled...7");
+        mono_debug_init (MONO_DEBUG_FORMAT_MONO);
     }
 #endif
     
+    //guint32 opt = mono_parse_default_optimizations(NULL);
+	//mono_set_defaults (0, opt);
+    
     setenv("MONO_PATH", "/data/data/com.koushikdutta.mono/", 0);
 	MonoDomain *domain;
-
-	mono_debug_init (MONO_DEBUG_FORMAT_MONO);
 
 #ifdef PLATFORM_ANDROID
     LOGI("mono_jit_init...");
@@ -127,7 +121,7 @@ JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initi
     if (!assembly)
     {
         printf("Unable to load MonoJavaBridge.dll.");
-        return JNI_VERSION_1_4;
+        return FALSE;
     }
 
     mono_add_internal_call("MonoJavaBridge.JavaBridge::mono_object_to_pointer(object)", mono_objectpointer_conversion);

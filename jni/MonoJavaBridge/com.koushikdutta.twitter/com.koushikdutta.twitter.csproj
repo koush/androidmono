@@ -52,11 +52,14 @@
     <None Include="Android\default.properties" />
     <None Include="Android\res\drawable\icon.png" />
     <None Include="Android\src\com\koushikdutta\twitter\MonoActivity.java" />
+    <None Include="Android\src\com\koushikdutta\twitter\MainActivity.java" />
+    <None Include="Android\src\com\koushikdutta\twitter\FooRunnable.java" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="public_timeline.cs" />
+    <Compile Include="R.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -172,6 +172,7 @@ namespace MonoDevelop.Android
                     {
                         if (attrib.GetType().FullName == "net.sf.jni4net.attributes.JavaInterfaceAttribute")
                         {
+                            Console.WriteLine("Match: {0}", sup);
                             return sup;
                         }
                     }
