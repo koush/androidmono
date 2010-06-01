@@ -1,0 +1,12 @@
+Index: eglib/src/goutput.c
+===================================================================
+--- eglib/src/goutput.c	(revision 158233)
++++ eglib/src/goutput.c	(working copy)
+@@ -54,6 +54,7 @@
+ {
+ 	/* TODO: provide a proper app name */
+ 	__android_log_vprint (ANDROID_LOG_ERROR, "mono", format, args);
++	vfprintf (ignore, format, args);
+ }
+ #else
+ static void 
