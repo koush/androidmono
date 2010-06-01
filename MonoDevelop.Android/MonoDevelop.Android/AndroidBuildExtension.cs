@@ -92,6 +92,23 @@ namespace MonoDevelop.Android
             monitor.Log.Write(antProc.StandardOutput.ReadToEnd());
             monitor.EndTask();
             
+            var genPath = Path.Combine(javaProjDir, "gen");
+            var rPath = Path.Combine(genPath, proj.DefaultNamespace.Replace('.', Path.DirectorySeparatorChar));
+            rPath = Path.Combine(rPath, "R.java");
+            if (File.Exists(rPath))
+            {
+                var rText = File.ReadAllText(rPath);
+                rText = rText.Replace("final class", "class").Replace("static final", "static readonly").Replace("class string", "class string_").Replace("class R ", "static class R ");
+                var regex = new System.Text.RegularExpressions.Regex("package (.*?);");
+                rText = regex.Replace(rText, "namespace $1\n{");
+                rText += "\n}";
+                
+                rPath = Path.Combine(proj.BaseDirectory, "R.cs");
+                File.WriteAllText(rPath, rText);
+                if (proj.GetProjectFile(rPath) == null)
+                    proj.AddFile(rPath);
+            }
+            
             return buildResult;
         }
         
