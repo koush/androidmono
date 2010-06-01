@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="statuses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="status" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="created_at" type="xs:string" minOccurs="0" />
+              <xs:element name="id" type="xs:string" minOccurs="0" />
+              <xs:element name="text" type="xs:string" minOccurs="0" />
+              <xs:element name="source" type="xs:string" minOccurs="0" />
+              <xs:element name="truncated" type="xs:string" minOccurs="0" />
+              <xs:element name="in_reply_to_status_id" type="xs:string" minOccurs="0" />
+              <xs:element name="in_reply_to_user_id" type="xs:string" minOccurs="0" />
+              <xs:element name="favorited" type="xs:string" minOccurs="0" />
+              <xs:element name="in_reply_to_screen_name" type="xs:string" minOccurs="0" />
+              <xs:element name="geo" type="xs:string" minOccurs="0" />
+              <xs:element name="coordinates" type="xs:string" minOccurs="0" />
+              <xs:element name="place" type="xs:string" minOccurs="0" />
+              <xs:element name="contributors" type="xs:string" minOccurs="0" />
+              <xs:element name="user" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="id" type="xs:string" minOccurs="0" />
+                    <xs:element name="name" type="xs:string" minOccurs="0" />
+                    <xs:element name="screen_name" type="xs:string" minOccurs="0" />
+                    <xs:element name="location" type="xs:string" minOccurs="0" />
+                    <xs:element name="description" type="xs:string" minOccurs="0" />
+                    <xs:element name="profile_image_url" type="xs:string" minOccurs="0" />
+                    <xs:element name="url" type="xs:string" minOccurs="0" />
+                    <xs:element name="protected" type="xs:string" minOccurs="0" />
+                    <xs:element name="followers_count" type="xs:string" minOccurs="0" />
+                    <xs:element name="profile_background_color" type="xs:string" minOccurs="0" />
+                    <xs:element name="profile_text_color" type="xs:string" minOccurs="0" />
+                    <xs:element name="profile_link_color" type="xs:string" minOccurs="0" />
+                    <xs:element name="profile_sidebar_fill_color" type="xs:string" minOccurs="0" />
+                    <xs:element name="profile_sidebar_border_color" type="xs:string" minOccurs="0" />
+                    <xs:element name="friends_count" type="xs:string" minOccurs="0" />
+                    <xs:element name="created_at" type="xs:string" minOccurs="0" />
+                    <xs:element name="favourites_count" type="xs:string" minOccurs="0" />
+                    <xs:element name="utc_offset" type="xs:string" minOccurs="0" />
+                    <xs:element name="time_zone" type="xs:string" minOccurs="0" />
+                    <xs:element name="profile_background_image_url" type="xs:string" minOccurs="0" />
+                    <xs:element name="profile_background_tile" type="xs:string" minOccurs="0" />
+                    <xs:element name="notifications" type="xs:string" minOccurs="0" />
+                    <xs:element name="geo_enabled" type="xs:string" minOccurs="0" />
+                    <xs:element name="verified" type="xs:string" minOccurs="0" />
+                    <xs:element name="following" type="xs:string" minOccurs="0" />
+                    <xs:element name="statuses_count" type="xs:string" minOccurs="0" />
+                    <xs:element name="lang" type="xs:string" minOccurs="0" />
+                    <xs:element name="contributors_enabled" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="statuses" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

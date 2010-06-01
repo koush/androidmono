@@ -34,11 +34,18 @@ namespace MonoDevelop.Android
                 return base.Build (monitor, item, configuration);
             }
             
+            Console.WriteLine("Building APK.");
             var conf = proj.GetConfiguration(configuration) as AndroidProjectConfiguration;
             
             var buildResult = base.Build (monitor, item, configuration);
-            if (buildResult.Errors.Count > 0)
-                return buildResult;
+            if (buildResult.ErrorCount > 0);
+            {
+                foreach (var err in buildResult.Errors)
+                {
+                    if (!err.IsWarning)
+                        return buildResult;
+                }
+            }
             
             MonoReflectorContext ctx = new MonoReflectorContext();
             var javaProjDir = Path.Combine(proj.ItemDirectory.ToString(), "Android");
@@ -128,13 +135,11 @@ namespace MonoDevelop.Android
         
         protected override BuildResult Compile (IProgressMonitor monitor, SolutionEntityItem item, BuildData buildData)
         {
-            Console.WriteLine("Compiling APK.");
             return base.Compile (monitor, item, buildData);
         }
         
         protected override void Clean (IProgressMonitor monitor, SolutionEntityItem item, ConfigurationSelector configuration)
         {
-            Console.WriteLine("Cleaning APK.");
             base.Clean (monitor, item, configuration);
         }
 

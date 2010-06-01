@@ -64,6 +64,7 @@ namespace MonoDevelop.Android
                 if (!t.IsInterface)
                 {
                     Dictionary<MethodInfo, MethodInfo> methods = new Dictionary<MethodInfo, MethodInfo>();
+                    HashSet<Type> interfaces = new HashSet<Type>();
                     bool isBaseClass = false;
                     foreach (MethodInfo subm in t.GetMethods(BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance).Where(x => x.IsVirtual))
                     {
@@ -79,7 +80,11 @@ namespace MonoDevelop.Android
                             {
                                 androidMethod = FindInterfaceForMethod(subm);
                                 if (androidMethod != null)
+                                {
+                                    if (!interfaces.Contains(androidMethod.DeclaringType))
+                                        interfaces.Add(androidMethod.DeclaringType);
                                     methods.Add(subm, androidMethod);
+                                }
                             }
                         }
                     }
@@ -122,8 +127,16 @@ namespace MonoDevelop.Android
                         Directory.CreateDirectory(basePath);
                         string outputFile = Path.Combine(basePath, t.Name + ".java");
                         ret.Add(outputFile);
+                        StringBuilder interfacesText = new StringBuilder();
+                        if (interfaces.Count > 0)
+                        {
+                            foreach (var iface in interfaces)
+                            {
+                                interfacesText.AppendFormat(", {0}", iface.FullName);
+                            }
+                        }
                         File.WriteAllText(outputFile,
-                            string.Format(mTemplate, t.Namespace, t.Name, isBaseClass ? " extends " : string.Empty, isBaseClass ? first.Value.Value.DeclaringType.FullName : string.Empty, linkMethods, natives));
+                            string.Format(mTemplate, t.Namespace, t.Name, isBaseClass ? " extends " : string.Empty, isBaseClass ? first.Value.Value.DeclaringType.FullName : string.Empty, linkMethods, natives, interfacesText.ToString()));
                     }
                 }
             }
@@ -158,7 +171,9 @@ namespace MonoDevelop.Android
                     foreach (var attrib in t.GetCustomAttributes(false))
                     {
                         if (attrib.GetType().FullName == "net.sf.jni4net.attributes.JavaInterfaceAttribute")
+                        {
                             return sup;
+                        }
                     }
                 }
             }

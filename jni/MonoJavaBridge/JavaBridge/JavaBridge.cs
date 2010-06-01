@@ -251,7 +251,8 @@ namespace MonoJavaBridge
             {
                 delegateType = myActions[genericArguments.Count];
             }
-            delegateType = delegateType.MakeGenericType(genericArguments.ToArray());
+            if (method.ReturnType != typeof(void) || genericArguments.Count > 0)
+                delegateType = delegateType.MakeGenericType(genericArguments.ToArray());
             Console.WriteLine("Constructed delegate type: {0}", delegateType);
             MethodInfo expressionMethodInfo = myExpressionLambda.MakeGenericMethod(delegateType);
             Console.WriteLine("Constructed Expression.Lambda<T>: {0}", expressionMethodInfo);
@@ -303,7 +304,7 @@ namespace MonoJavaBridge
             Console.WriteLine("Found clr type: {0}", type);
             
             Type[] parameterTypes = null;
-            if (methodPars != null)
+            if (!string.IsNullOrEmpty(methodPars))
             {
                 var parameterTypeStrings = methodPars.Split(',');
                 parameterTypes = new Type[parameterTypeStrings.Length];
