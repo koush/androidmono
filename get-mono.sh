@@ -1,4 +1,4 @@
-MONO_SVN_BASE=svn://anonsvn.mono-project.com/source/branches/mono-2-6
+MONO_SVN_BASE=svn://anonsvn.mono-project.com/source/trunk
 echo =====CHECKING OUT MONO FROM $MONO_SVN_BASE=====
 if [ -z $USE_LATEST_MONO ]
 then
