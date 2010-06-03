@@ -98,12 +98,12 @@ JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initi
         mono_debugger_agent_parse_options(copy);
         free(copy);
         (*env)->ReleaseStringUTFChars(env, debuggerAgentOptions, str);
-        mono_debug_init (MONO_DEBUG_FORMAT_MONO);
     }
 #endif
     
-    //guint32 opt = mono_parse_default_optimizations(NULL);
-	//mono_set_defaults (0, opt);
+    guint32 opt = mono_parse_default_optimizations(NULL);
+	mono_set_defaults (1, opt);
+    mono_debug_init (MONO_DEBUG_FORMAT_MONO);
     
     setenv("MONO_PATH", "/data/data/com.koushikdutta.mono/", 0);
 	MonoDomain *domain;

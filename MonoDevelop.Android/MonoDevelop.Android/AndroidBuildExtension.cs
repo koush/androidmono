@@ -23,6 +23,7 @@ namespace MonoDevelop.Android
 		
         protected override BuildResult Build (IProgressMonitor monitor, SolutionEntityItem item, ConfigurationSelector configuration)
         {
+            Console.WriteLine("foosahisd");
             var proj = item as AndroidProject;
             if (proj == null)
                 return base.Build (monitor, item, configuration);
@@ -77,6 +78,8 @@ namespace MonoDevelop.Android
             
             var assetsDir = Path.Combine(javaProjDir, "assets");
             var packagedAssembly = Path.Combine(assetsDir, Path.GetFileName(conf.CompiledOutputName));
+            Console.WriteLine("HERE");
+            Console.WriteLine(conf.CompiledOutputName + ":" + packagedAssembly);
             File.Copy(conf.CompiledOutputName, packagedAssembly, true);
             var mdb = conf.CompiledOutputName + ".mdb";
             var packagedMdb = Path.Combine(assetsDir, Path.GetFileName(mdb));

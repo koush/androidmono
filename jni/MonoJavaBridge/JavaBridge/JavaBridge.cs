@@ -86,8 +86,7 @@ namespace MonoJavaBridge
 
             myStrongJ2CpUntyped = typeof(net.sf.jni4net.utils.Convertor).GetMethod("StrongJ2CpUntyped");
             myCLRHandleToObject = typeof(JavaBridge).GetMethod("CLRHandleToObject");
-            myExpressionLambda = typeof(Expression).GetMethod("Lambda", new Type[] { typeof(Expression), typeof(ParameterExpression[]) });
-
+            myExpressionLambda = typeof(Expression).GetMethod("Lambda", new Type[] { typeof(Expression), typeof(IEnumerable<ParameterExpression>) });
             Console.WriteLine(myExpressionLambda);
             
             myActions.Add(typeof(JniAction));

@@ -106,7 +106,7 @@ namespace com.koushikdutta.twitter
                 */
             });
             thread.Start();
-            thread.Join();
+            //thread.Join();
         }
 
         // This constructor is a requirement for all CLR classes that inherit from java.lang.Object
