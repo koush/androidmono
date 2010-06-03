@@ -215,7 +215,7 @@ namespace MonoJavaBridge
             else
             {
                 ret = net.sf.jni4net.utils.Convertor.StrongJ2CpTyped<TRes>(obj);
-                var handle = GCHandle.Alloc(ret, GCHandleType.WeakTrackResurrection);
+                var handle = GCHandle.Alloc(ret, GCHandleType.Normal);
                 env.CallVoidMethod(obj, mySetGCHandle, Convertor.ParPrimC2J((long)GCHandle.ToIntPtr(handle)));
             }
             return ret;

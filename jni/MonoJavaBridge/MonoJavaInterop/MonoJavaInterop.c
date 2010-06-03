@@ -83,9 +83,13 @@ JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_loadAssem
     mono_runtime_invoke(g_LoadAssembly, NULL, args, NULL);
 }
 
+MonoAssembly* g_Assembly;
+MonoDomain* g_Domain;
+
 JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initializeMono
   (JNIEnv *env, jclass clazz, jstring debuggerAgentOptions)
 {
+    setenv("HOME", "/data/data/com.koushikdutta.twitter/", 1);
 #ifdef PLATFORM_ANDROID
     if (debuggerAgentOptions != NULL)
     {
@@ -103,22 +107,21 @@ JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initi
 #endif
     
     //guint32 opt = mono_parse_default_optimizations(NULL);
-	//mono_set_defaults (0, opt);
+	//mono_set_defaults (1, opt);
+    //mono_trace_parse_options ("");
     
     setenv("MONO_PATH", "/data/data/com.koushikdutta.mono/", 0);
-	MonoDomain *domain;
 
 #ifdef PLATFORM_ANDROID
     LOGI("mono_jit_init...");
 #endif
-	domain = mono_jit_init (MONOJAVABRIDGE_DLL);
-    MonoAssembly *assembly;
+	g_Domain = mono_jit_init (MONOJAVABRIDGE_DLL);
 
 #ifdef PLATFORM_ANDROID
     LOGI("mono_domain_assembly_open...", NULL);
 #endif
-    assembly = mono_domain_assembly_open (domain, MONOJAVABRIDGE_DLL);
-    if (!assembly)
+    g_Assembly = mono_domain_assembly_open (g_Domain, MONOJAVABRIDGE_DLL);
+    if (!g_Assembly)
     {
         printf("Unable to load MonoJavaBridge.dll.");
         return FALSE;
@@ -128,7 +131,7 @@ JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initi
     mono_add_internal_call("MonoJavaBridge.JavaBridge::mono_pointer_to_object(intptr)", mono_objectpointer_conversion);
     mono_add_internal_call("MonoJavaBridge.JavaBridge::log(intptr)", logcat_print);
 
-    MonoImage *image = mono_assembly_get_image(assembly);
+    MonoImage *image = mono_assembly_get_image(g_Assembly);
     MonoMethodDesc* desc = mono_method_desc_new ("MonoJavaBridge.JavaBridge:Initialize(intptr)", 1);
     MonoMethod* method = mono_method_desc_search_in_image (desc, image);
     mono_method_desc_free(desc);

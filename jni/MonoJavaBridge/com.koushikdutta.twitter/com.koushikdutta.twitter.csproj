@@ -53,7 +53,6 @@
     <None Include="Android\res\drawable\icon.png" />
     <None Include="Android\src\com\koushikdutta\twitter\MonoActivity.java" />
     <None Include="Android\src\com\koushikdutta\twitter\MainActivity.java" />
-    <None Include="Android\src\com\koushikdutta\twitter\FooRunnable.java" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />

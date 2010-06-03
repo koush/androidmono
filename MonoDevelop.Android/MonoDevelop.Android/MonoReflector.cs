@@ -65,15 +65,14 @@ namespace MonoDevelop.Android
                 {
                     Dictionary<MethodInfo, MethodInfo> methods = new Dictionary<MethodInfo, MethodInfo>();
                     HashSet<Type> interfaces = new HashSet<Type>();
-                    bool isBaseClass = false;
                     foreach (MethodInfo subm in t.GetMethods(BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance).Where(x => x.IsVirtual))
                     {
+                        Console.WriteLine(subm);
                         if ((subm.MemberType & MemberTypes.Property) == MemberTypes.Property || (subm.MemberType & MemberTypes.Method) == MemberTypes.Method)
                         {
                             MethodInfo androidMethod = FindBaseForMethod(subm, null);
                             if (androidMethod != null)
                             {
-                                isBaseClass |= true;
                                 methods.Add(subm, androidMethod);
                             }
                             else//must be implementing an interface
@@ -132,11 +131,11 @@ namespace MonoDevelop.Android
                         {
                             foreach (var iface in interfaces)
                             {
-                                interfacesText.AppendFormat(", {0}", iface.FullName);
+                                interfacesText.AppendFormat(", {0}", iface.FullName.Replace('+', '.'));
                             }
                         }
                         File.WriteAllText(outputFile,
-                            string.Format(mTemplate, t.Namespace, t.Name, isBaseClass ? " extends " : string.Empty, isBaseClass ? first.Value.Value.DeclaringType.FullName : string.Empty, linkMethods, natives, interfacesText.ToString()));
+                            string.Format(mTemplate, t.Namespace, t.Name, " extends ", t.BaseType, linkMethods, natives, interfacesText.ToString()));
                     }
                 }
             }
