@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.koushikdutta.twitter", "com.koushikdutta.twitter.csproj", "{420B0B4F-063E-49C1-8D77-AC948E024DB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jni4net.n.androidmono", "..\jni4net.n\jni4net.n.androidmono.csproj", "{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoJavaBridge", "..\JavaBridge\MonoJavaBridge.csproj", "{AEDFC761-C0ED-4A82-824F-60C6299A9086}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{420B0B4F-063E-49C1-8D77-AC948E024DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{420B0B4F-063E-49C1-8D77-AC948E024DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{420B0B4F-063E-49C1-8D77-AC948E024DB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEDFC761-C0ED-4A82-824F-60C6299A9086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEDFC761-C0ED-4A82-824F-60C6299A9086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEDFC761-C0ED-4A82-824F-60C6299A9086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEDFC761-C0ED-4A82-824F-60C6299A9086}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = com.koushikdutta.twitter.csproj

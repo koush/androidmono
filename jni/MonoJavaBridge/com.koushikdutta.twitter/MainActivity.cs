@@ -26,15 +26,17 @@ namespace com.koushikdutta.twitter
     public class MainActivity : Activity, java.lang.Runnable
     {        
         Handler mHandler = new Handler();
+        TextView tv;
+        string stuff;
         
         protected override void onCreate (android.os.Bundle arg0)
         {
             base.onCreate (arg0);
-            var tv = new TextView (this);
+            tv = new TextView (this);
             tv.setText ("Hello World!");
             setContentView (tv);
             
-            /*
+            
                       
                 {
                     Console.WriteLine("aa");
@@ -45,7 +47,7 @@ namespace com.koushikdutta.twitter
                     var text = new System.IO.StreamReader(req.GetResponse().GetResponseStream()).ReadToEnd();
                     Console.WriteLine(text);
                 }
-                */
+                
             
             var thread = new Thread(() =>
             {
@@ -53,7 +55,7 @@ namespace com.koushikdutta.twitter
                 {
                    //var env = JNIEnv.ThreadEnv;
                     
-                    /*
+                    
                     {
                         Console.WriteLine("aa");
                         HttpWebRequest req = WebRequest.Create("http://api.twitter.com/1/statuses/home_timeline.json") as HttpWebRequest;
@@ -71,7 +73,7 @@ namespace com.koushikdutta.twitter
                         Console.WriteLine("I read it all");
                         Console.WriteLine(text);
                     }
-                    */
+                    
                 
                 Console.WriteLine("About to create WebClient");
                 using (WebClient client = new WebClient())
@@ -83,6 +85,7 @@ namespace com.koushikdutta.twitter
                     Console.WriteLine("2");
                     var text = new System.IO.StreamReader(stream).ReadToEnd();
                     Console.WriteLine(text);
+                    stuff = text;
                     
                     //var serializer = new XmlSerializer(typeof(statuses));
                     //var stats = serializer.Deserialize(stream) as statuses;
@@ -99,11 +102,11 @@ namespace com.koushikdutta.twitter
                     Console.WriteLine(ex.Message);
                 }
                 
-                /*
+                
                 Registry.RegisterType(typeof(java.lang.Runnable), true, JNIEnv.ThreadEnv);
                 mHandler.post(this);
                 JNIEnv.defaultVM.DetachCurrentThread();
-                */
+                
             });
             thread.Start();
             //thread.Join();
@@ -116,6 +119,7 @@ namespace com.koushikdutta.twitter
         
         public void run ()
         {
+            tv.setText(stuff);
             Console.WriteLine("Foo");
         }
     }

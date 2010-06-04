@@ -35,6 +35,9 @@
     <Reference Include="System" />
     <Reference Include="System.Core">
     </Reference>
+    <Reference Include="jni4net.n-0.8.1.0, Version=0.0.0.0, Culture=neutral">
+      <Package>android</Package>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
