@@ -80,8 +80,8 @@ namespace MonoJavaBridge
         
 		static JavaBridge()
 		{
-            Console.SetOut(LogWriter.Instance);
-            Console.SetError(LogWriter.Instance);
+            //Console.SetOut(LogWriter.Instance);
+            //Console.SetError(LogWriter.Instance);
             Console.WriteLine("Mono initialized.");
 
             myStrongJ2CpUntyped = typeof(net.sf.jni4net.utils.Convertor).GetMethod("StrongJ2CpUntyped");

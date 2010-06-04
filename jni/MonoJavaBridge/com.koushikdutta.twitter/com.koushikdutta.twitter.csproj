@@ -38,6 +38,9 @@
     <Reference Include="jni4net.n-0.8.1.0, Version=0.0.0.0, Culture=neutral">
       <Package>android</Package>
     </Reference>
+    <Reference Include="MonoJavaBridge, Version=1.0.3806.35791, Culture=neutral">
+      <Package>android</Package>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Android\res\drawable\" />
