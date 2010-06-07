@@ -7,7 +7,7 @@ import android.util.Log;
 
 public class MonoBridge {
 	private final static String LOGTAG = "MonoBridge";
-	public static boolean initialize(String debuggerAgentOptions)
+	public static boolean initialize(String homeDir, String debuggerAgentOptions)
 	{
 		Log.i(LOGTAG, "Initializing Mono...");
 		Log.i(LOGTAG, "Debugger Agent Options: " + debuggerAgentOptions);
@@ -40,7 +40,7 @@ public class MonoBridge {
 		
 		try
 		{
-			return mInitialized = initializeMono(debuggerAgentOptions);
+			return mInitialized = initializeMono(homeDir, debuggerAgentOptions);
 		}
 		catch (Exception ex)
 		{
@@ -49,9 +49,21 @@ public class MonoBridge {
 		}
 	}
 
+	public static void main(String[] args)
+	{
+		if (args.length != 1)
+		{
+			System.out.println("Must provide only 1 argument.");
+			return;
+		}
+		System.load("/data/data/com.koushikdutta.mono/libmono.so");
+		run(args[0]);
+	}
 
 	private static boolean mInitialized = false;
-	private static native boolean initializeMono(String debuggerAgentOptions);
+
+    public static native void run(String assembly);
+	private static native boolean initializeMono(String homeDir, String debuggerAgentOptions);
 
 	public static Class getPrimitiveClass(String className)
 	{

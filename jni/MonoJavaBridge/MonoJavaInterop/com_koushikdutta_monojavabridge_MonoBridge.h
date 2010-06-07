@@ -9,11 +9,19 @@ extern "C" {
 #endif
 /*
  * Class:     com_koushikdutta_monojavabridge_MonoBridge
+ * Method:    run
+ * Signature: (Ljava/lang/String;)V
+ */
+JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_run
+  (JNIEnv *, jclass, jstring);
+
+/*
+ * Class:     com_koushikdutta_monojavabridge_MonoBridge
  * Method:    initializeMono
- * Signature: (Ljava/lang/String;)Z
+ * Signature: (Ljava/lang/String;Ljava/lang/String;)Z
  */
 JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initializeMono
-  (JNIEnv *, jclass, jstring);
+  (JNIEnv *, jclass, jstring, jstring);
 
 /*
  * Class:     com_koushikdutta_monojavabridge_MonoBridge

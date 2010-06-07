@@ -36,8 +36,8 @@ namespace com.koushikdutta.twitter
             tv.setText ("Hello World!");
             setContentView (tv);
             
+            /*
             
-                      
                 {
                     Console.WriteLine("aa");
                     HttpWebRequest req = WebRequest.Create("http://api.twitter.com/1/statuses/home_timeline.xml") as HttpWebRequest;
@@ -48,6 +48,7 @@ namespace com.koushikdutta.twitter
                     Console.WriteLine(text);
                 }
                 
+              */  
             
             var thread = new Thread(() =>
             {
@@ -55,7 +56,7 @@ namespace com.koushikdutta.twitter
                 {
                    //var env = JNIEnv.ThreadEnv;
                     
-                    
+                    /*
                     {
                         Console.WriteLine("aa");
                         HttpWebRequest req = WebRequest.Create("http://api.twitter.com/1/statuses/home_timeline.json") as HttpWebRequest;
@@ -73,7 +74,7 @@ namespace com.koushikdutta.twitter
                         Console.WriteLine("I read it all");
                         Console.WriteLine(text);
                     }
-                    
+                    */
                 
                 Console.WriteLine("About to create WebClient");
                 using (WebClient client = new WebClient())
@@ -81,24 +82,27 @@ namespace com.koushikdutta.twitter
                     Console.WriteLine("WebClient created");
                     client.Credentials = new NetworkCredential("herrodere", "foobar");
                     Console.WriteLine("1");
-                    var stream = client.OpenRead("http://api.twitter.com/1/statuses/home_timeline.json");
+                    var stream = client.OpenRead("http://api.twitter.com/1/statuses/home_timeline.xml");
                     Console.WriteLine("2");
-                    var text = new System.IO.StreamReader(stream).ReadToEnd();
-                    Console.WriteLine(text);
-                    stuff = text;
+                    //var text = new System.IO.StreamReader(stream).ReadToEnd();
+                    //Console.WriteLine(text);
+                    //stuff = text;
                     
-                    //var serializer = new XmlSerializer(typeof(statuses));
-                    //var stats = serializer.Deserialize(stream) as statuses;
-                    //Console.WriteLine(stats.status.Length);
-                    //foreach (var s in stats.status)
-                    //{
-                    //    Console.WriteLine("{0}: {1}", s.user, s.text);
-                    //}
+                        stuff = string.Empty;
+                    var serializer = new XmlSerializer(typeof(statuses));
+                    var stats = serializer.Deserialize(stream) as statuses;
+                    Console.WriteLine(stats.status.Length);
+                    foreach (var s in stats.status)
+                    {
+                            if (s.text != null)
+                                stuff += " " + s.text;
+                    }
                 }
                 
                 }
                 catch(Exception ex)
                 {
+                    stuff = ex.Message;
                     Console.WriteLine(ex.Message);
                 }
                 

@@ -37,6 +37,8 @@
 #define LOGI printf
 #endif
 
+typedef void* pointer;
+
 MonoDomain *g_Domain;
 MonoAssembly *g_Assembly;
 MonoImage *g_Image;
@@ -44,25 +46,25 @@ MonoMethod *g_Link;
 MonoMethod *g_LoadAssembly;
 JavaVM *g_JavaVM;
 
-typedef void* pointer;
-
-pointer *mono_objectpointer_conversion(pointer p)
-{
-    return p;
-}
-
-void callfunc(char* ff)//, JNIEnv* env)
-{
-    LOGI("callfunc thread: %d", (int)pthread_self());
-    LOGI(ff);
-    //(*env)->FindClass(env, ff);
-    LOGI("done");
-}
-
 void logcat_print(char* p)
 {
     LOGI(p);
 }
+
+JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_run
+  (JNIEnv *env, jclass clazz, jstring assembly)
+{
+    printf("Running mono assembly...");
+    int length = (*env)->GetStringLength(env, assembly);
+    const jbyte *str = (*env)->GetStringUTFChars(env, assembly, NULL);
+    pointer args[2];
+    args[0] = "thing";
+    args[1] = str;
+    mono_main(2, args);
+    
+    (*env)->ReleaseStringUTFChars(env, assembly, str);
+}
+
 
 JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_link
     (JNIEnv *env, jclass clazz, jclass cls, jstring methodName, jstring methodSignature, jstring methodParameters)
@@ -84,7 +86,7 @@ JNIEXPORT void JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_loadAssem
 }
 
 JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initializeMono
-  (JNIEnv *env, jclass clazz, jstring debuggerAgentOptions)
+  (JNIEnv *env, jclass clazz, jstring homeDir, jstring debuggerAgentOptions)
 {
 #ifdef PLATFORM_ANDROID
     if (debuggerAgentOptions != NULL)
@@ -92,17 +94,22 @@ JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initi
         LOGI("Debugger enabled...");
         int length = (*env)->GetStringLength(env, debuggerAgentOptions);
         const jbyte *str = (*env)->GetStringUTFChars(env, debuggerAgentOptions, NULL);
-        char *copy = (char*)malloc(length + 1);
-        copy[length] = NULL;
-        memcpy(copy, str, length);
-        mono_debugger_agent_parse_options(copy);
-        free(copy);
+        mono_debugger_agent_parse_options(str);
         (*env)->ReleaseStringUTFChars(env, debuggerAgentOptions, str);
     }
 #endif
+
+    if (homeDir != NULL)
+    {
+        LOGI("Debugger enabled...");
+        int length = (*env)->GetStringLength(env, homeDir);
+        const jbyte *str = (*env)->GetStringUTFChars(env, homeDir, NULL);
+        setenv("HOME", str, 1);
+        (*env)->ReleaseStringUTFChars(env, homeDir, str);
+    }
     
     guint32 opt = mono_parse_default_optimizations(NULL);
-	mono_set_defaults (1, opt);
+	mono_set_defaults (0, opt);
     mono_debug_init (MONO_DEBUG_FORMAT_MONO);
     
     setenv("MONO_PATH", "/data/data/com.koushikdutta.mono/", 0);
@@ -124,8 +131,6 @@ JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initi
         return FALSE;
     }
 
-    mono_add_internal_call("MonoJavaBridge.JavaBridge::mono_object_to_pointer(object)", mono_objectpointer_conversion);
-    mono_add_internal_call("MonoJavaBridge.JavaBridge::mono_pointer_to_object(intptr)", mono_objectpointer_conversion);
     mono_add_internal_call("MonoJavaBridge.JavaBridge::log(intptr)", logcat_print);
 
     MonoImage *image = mono_assembly_get_image(assembly);
