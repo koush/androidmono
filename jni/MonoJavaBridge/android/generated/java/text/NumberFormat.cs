@@ -11,48 +11,48 @@ namespace java.text
 		protected NumberFormat(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode12614;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.text.NumberFormat._hashCode12614);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._hashCode12614);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals12615;
+		internal static global::net.sf.jni4net.jni.MethodId _equals12614;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.text.NumberFormat._equals12615, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::java.text.NumberFormat._equals12614, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._equals12615, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._equals12614, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _format12616;
-		public abstract global::java.lang.StringBuffer format(double arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2);
-		internal static global::net.sf.jni4net.jni.MethodId _format12617;
-		public virtual global::java.lang.String format(double arg0) 
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode12615;
+		public override int hashCode() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.NumberFormat._format12617, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return @__env.CallIntMethod(this, global::java.text.NumberFormat._hashCode12615);
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._format12617, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return @__env.CallNonVirtualIntMethod(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._hashCode12615);
 		}
+		internal static global::net.sf.jni4net.jni.MethodId _format12616;
+		public virtual global::java.lang.String format(long arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.NumberFormat._format12616, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+			else
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._format12616, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _format12617;
+		public abstract global::java.lang.StringBuffer format(double arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2);
 		internal static global::net.sf.jni4net.jni.MethodId _format12618;
+		public abstract global::java.lang.StringBuffer format(long arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2);
+		internal static global::net.sf.jni4net.jni.MethodId _format12619;
 		public override global::java.lang.StringBuffer format(java.lang.Object arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.StringBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.NumberFormat._format12618, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.StringBuffer>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.NumberFormat._format12619, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.StringBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._format12618, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.StringBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.NumberFormat.staticClass, global::java.text.NumberFormat._format12619, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _format12619;
-		public abstract global::java.lang.StringBuffer format(long arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2);
 		internal static global::net.sf.jni4net.jni.MethodId _format12620;
-		public virtual global::java.lang.String format(long arg0) 
+		public virtual global::java.lang.String format(double arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -312,13 +312,13 @@ namespace java.text
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.text.NumberFormat.staticClass = @__class;
-			global::java.text.NumberFormat._hashCode12614 = @__env.GetMethodID(global::java.text.NumberFormat.staticClass, "hashCode", "()I");
-			global::java.text.NumberFormat._equals12615 = @__env.GetMethodID(global::java.text.NumberFormat.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.text.NumberFormat._format12616 = @__env.GetMethodID(global::java.text.NumberFormat.staticClass, "format", "(DLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
-			global::java.text.NumberFormat._format12617 = @__env.GetMethodID(global::java.text.NumberFormat.staticClass, "format", "(D)Ljava/lang/String;");
-			global::java.text.NumberFormat._format12618 = @__env.GetMethodID(global::java.text.NumberFormat.staticClass, "format", "(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
-			global::java.text.NumberFormat._format12619 = @__env.GetMethodID(global::java.text.NumberFormat.staticClass, "format", "(JLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
-			global::java.text.NumberFormat._format12620 = @__env.GetMethodID(global::java.text.NumberFormat.staticClass, "format", "(J)Ljava/lang/String;");
+			global::java.text.NumberFormat._equals12614 = @__env.GetMethodID(global::java.text.NumberFormat.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.text.NumberFormat._hashCode12615 = @__env.GetMethodID(global::java.text.NumberFormat.staticClass, "hashCode", "()I");
+			global::java.text.NumberFormat._format12616 = @__env.GetMethodID(global::java.text.NumberFormat.staticClass, "format", "(J)Ljava/lang/String;");
+			global::java.text.NumberFormat._format12617 = @__env.GetMethodID(global::java.text.NumberFormat.staticClass, "format", "(DLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
+			global::java.text.NumberFormat._format12618 = @__env.GetMethodID(global::java.text.NumberFormat.staticClass, "format", "(JLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
+			global::java.text.NumberFormat._format12619 = @__env.GetMethodID(global::java.text.NumberFormat.staticClass, "format", "(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
+			global::java.text.NumberFormat._format12620 = @__env.GetMethodID(global::java.text.NumberFormat.staticClass, "format", "(D)Ljava/lang/String;");
 			global::java.text.NumberFormat._getInstance12621 = @__env.GetStaticMethodID(global::java.text.NumberFormat.staticClass, "getInstance", "()Ljava/text/NumberFormat;");
 			global::java.text.NumberFormat._getInstance12622 = @__env.GetStaticMethodID(global::java.text.NumberFormat.staticClass, "getInstance", "(Ljava/util/Locale;)Ljava/text/NumberFormat;");
 			global::java.text.NumberFormat._parse12623 = @__env.GetMethodID(global::java.text.NumberFormat.staticClass, "parse", "(Ljava/lang/String;)Ljava/lang/Number;");

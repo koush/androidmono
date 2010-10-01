@@ -157,32 +157,32 @@ namespace android.preference
 				global::android.preference.Preference.__OnPreferenceClickListener._onPreferenceClick5979 = @__env.GetMethodID(global::android.preference.Preference.__OnPreferenceClickListener.staticClass, "android.preference.Preference.OnPreferenceClickListener.onPreferenceClick", "(Landroid/preference/Preference;)Z");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo5980;
-		public virtual int compareTo(java.lang.Object arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.preference.Preference._compareTo5980, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.preference.Preference.staticClass, global::android.preference.Preference._compareTo5980, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo5981;
-		public virtual int compareTo(android.preference.Preference arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.preference.Preference._compareTo5981, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.preference.Preference.staticClass, global::android.preference.Preference._compareTo5981, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString5982;
+		internal static global::net.sf.jni4net.jni.MethodId _toString5980;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.Preference._toString5982));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.Preference._toString5980));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.Preference.staticClass, global::android.preference.Preference._toString5982));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.Preference.staticClass, global::android.preference.Preference._toString5980));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo5981;
+		public virtual int compareTo(java.lang.Object arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.preference.Preference._compareTo5981, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.preference.Preference.staticClass, global::android.preference.Preference._compareTo5981, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo5982;
+		public virtual int compareTo(android.preference.Preference arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.preference.Preference._compareTo5982, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.preference.Preference.staticClass, global::android.preference.Preference._compareTo5982, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getKey5983;
 		public virtual global::java.lang.String getKey() 
@@ -832,9 +832,9 @@ namespace android.preference
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.preference.Preference.staticClass = @__class;
-			global::android.preference.Preference._compareTo5980 = @__env.GetMethodID(global::android.preference.Preference.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			global::android.preference.Preference._compareTo5981 = @__env.GetMethodID(global::android.preference.Preference.staticClass, "compareTo", "(Landroid/preference/Preference;)I");
-			global::android.preference.Preference._toString5982 = @__env.GetMethodID(global::android.preference.Preference.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.preference.Preference._toString5980 = @__env.GetMethodID(global::android.preference.Preference.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.preference.Preference._compareTo5981 = @__env.GetMethodID(global::android.preference.Preference.staticClass, "compareTo", "(Ljava/lang/Object;)I");
+			global::android.preference.Preference._compareTo5982 = @__env.GetMethodID(global::android.preference.Preference.staticClass, "compareTo", "(Landroid/preference/Preference;)I");
 			global::android.preference.Preference._getKey5983 = @__env.GetMethodID(global::android.preference.Preference.staticClass, "getKey", "()Ljava/lang/String;");
 			global::android.preference.Preference._getContext5984 = @__env.GetMethodID(global::android.preference.Preference.staticClass, "getContext", "()Landroid/content/Context;");
 			global::android.preference.Preference._setKey5985 = @__env.GetMethodID(global::android.preference.Preference.staticClass, "setKey", "(Ljava/lang/String;)V");

@@ -18,32 +18,32 @@ namespace javax.security.auth.x500
 		internal X500Principal(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode13266;
-		public sealed override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::javax.security.auth.x500.X500Principal._hashCode13266);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::javax.security.auth.x500.X500Principal.staticClass, global::javax.security.auth.x500.X500Principal._hashCode13266);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals13267;
+		internal static global::net.sf.jni4net.jni.MethodId _equals13266;
 		public sealed override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::javax.security.auth.x500.X500Principal._equals13267, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::javax.security.auth.x500.X500Principal._equals13266, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::javax.security.auth.x500.X500Principal.staticClass, global::javax.security.auth.x500.X500Principal._equals13267, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::javax.security.auth.x500.X500Principal.staticClass, global::javax.security.auth.x500.X500Principal._equals13266, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString13268;
+		internal static global::net.sf.jni4net.jni.MethodId _toString13267;
 		public sealed override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::javax.security.auth.x500.X500Principal._toString13268));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::javax.security.auth.x500.X500Principal._toString13267));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::javax.security.auth.x500.X500Principal.staticClass, global::javax.security.auth.x500.X500Principal._toString13268));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::javax.security.auth.x500.X500Principal.staticClass, global::javax.security.auth.x500.X500Principal._toString13267));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode13268;
+		public sealed override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::javax.security.auth.x500.X500Principal._hashCode13268);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::javax.security.auth.x500.X500Principal.staticClass, global::javax.security.auth.x500.X500Principal._hashCode13268);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getName13269;
 		public global::java.lang.String getName(java.lang.String arg0, java.util.Map arg1) 
@@ -128,9 +128,9 @@ namespace javax.security.auth.x500
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::javax.security.auth.x500.X500Principal.staticClass = @__class;
-			global::javax.security.auth.x500.X500Principal._hashCode13266 = @__env.GetMethodID(global::javax.security.auth.x500.X500Principal.staticClass, "hashCode", "()I");
-			global::javax.security.auth.x500.X500Principal._equals13267 = @__env.GetMethodID(global::javax.security.auth.x500.X500Principal.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::javax.security.auth.x500.X500Principal._toString13268 = @__env.GetMethodID(global::javax.security.auth.x500.X500Principal.staticClass, "toString", "()Ljava/lang/String;");
+			global::javax.security.auth.x500.X500Principal._equals13266 = @__env.GetMethodID(global::javax.security.auth.x500.X500Principal.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::javax.security.auth.x500.X500Principal._toString13267 = @__env.GetMethodID(global::javax.security.auth.x500.X500Principal.staticClass, "toString", "()Ljava/lang/String;");
+			global::javax.security.auth.x500.X500Principal._hashCode13268 = @__env.GetMethodID(global::javax.security.auth.x500.X500Principal.staticClass, "hashCode", "()I");
 			global::javax.security.auth.x500.X500Principal._getName13269 = @__env.GetMethodID(global::javax.security.auth.x500.X500Principal.staticClass, "getName", "(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;");
 			global::javax.security.auth.x500.X500Principal._getName13270 = @__env.GetMethodID(global::javax.security.auth.x500.X500Principal.staticClass, "getName", "()Ljava/lang/String;");
 			global::javax.security.auth.x500.X500Principal._getName13271 = @__env.GetMethodID(global::javax.security.auth.x500.X500Principal.staticClass, "getName", "(Ljava/lang/String;)Ljava/lang/String;");

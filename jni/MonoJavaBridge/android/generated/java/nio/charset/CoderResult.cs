@@ -54,53 +54,53 @@ namespace java.nio.charset
 			else
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isUnderflow12408);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isOverflow12409;
-		public virtual bool isOverflow() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.nio.charset.CoderResult._isOverflow12409);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isOverflow12409);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _unmappableForLength12410;
-		public static global::java.nio.charset.CoderResult unmappableForLength(int arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._unmappableForLength12410, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _isError12411;
+		internal static global::net.sf.jni4net.jni.MethodId _isError12409;
 		public virtual bool isError() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.nio.charset.CoderResult._isError12411);
+				return @__env.CallBooleanMethod(this, global::java.nio.charset.CoderResult._isError12409);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isError12411);
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isError12409);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _malformedForLength12412;
+		internal static global::net.sf.jni4net.jni.MethodId _isOverflow12410;
+		public virtual bool isOverflow() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this, global::java.nio.charset.CoderResult._isOverflow12410);
+			else
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isOverflow12410);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _malformedForLength12411;
 		public static global::java.nio.charset.CoderResult malformedForLength(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._malformedForLength12412, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._malformedForLength12411, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isMalformed12413;
+		internal static global::net.sf.jni4net.jni.MethodId _isMalformed12412;
 		public virtual bool isMalformed() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.nio.charset.CoderResult._isMalformed12413);
+				return @__env.CallBooleanMethod(this, global::java.nio.charset.CoderResult._isMalformed12412);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isMalformed12413);
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isMalformed12412);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isUnmappable12414;
+		internal static global::net.sf.jni4net.jni.MethodId _isUnmappable12413;
 		public virtual bool isUnmappable() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.nio.charset.CoderResult._isUnmappable12414);
+				return @__env.CallBooleanMethod(this, global::java.nio.charset.CoderResult._isUnmappable12413);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isUnmappable12414);
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._isUnmappable12413);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _unmappableForLength12414;
+		public static global::java.nio.charset.CoderResult unmappableForLength(int arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.charset.CoderResult>(@__env, @__env.CallStaticObjectMethodPtr(java.nio.charset.CoderResult.staticClass, global::java.nio.charset.CoderResult._unmappableForLength12414, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
 		internal static global::net.sf.jni4net.jni.FieldId _UNDERFLOW12415;
 		public static global::java.nio.charset.CoderResult UNDERFLOW
@@ -125,12 +125,12 @@ namespace java.nio.charset
 			global::java.nio.charset.CoderResult._length12406 = @__env.GetMethodID(global::java.nio.charset.CoderResult.staticClass, "length", "()I");
 			global::java.nio.charset.CoderResult._throwException12407 = @__env.GetMethodID(global::java.nio.charset.CoderResult.staticClass, "throwException", "()V");
 			global::java.nio.charset.CoderResult._isUnderflow12408 = @__env.GetMethodID(global::java.nio.charset.CoderResult.staticClass, "isUnderflow", "()Z");
-			global::java.nio.charset.CoderResult._isOverflow12409 = @__env.GetMethodID(global::java.nio.charset.CoderResult.staticClass, "isOverflow", "()Z");
-			global::java.nio.charset.CoderResult._unmappableForLength12410 = @__env.GetStaticMethodID(global::java.nio.charset.CoderResult.staticClass, "unmappableForLength", "(I)Ljava/nio/charset/CoderResult;");
-			global::java.nio.charset.CoderResult._isError12411 = @__env.GetMethodID(global::java.nio.charset.CoderResult.staticClass, "isError", "()Z");
-			global::java.nio.charset.CoderResult._malformedForLength12412 = @__env.GetStaticMethodID(global::java.nio.charset.CoderResult.staticClass, "malformedForLength", "(I)Ljava/nio/charset/CoderResult;");
-			global::java.nio.charset.CoderResult._isMalformed12413 = @__env.GetMethodID(global::java.nio.charset.CoderResult.staticClass, "isMalformed", "()Z");
-			global::java.nio.charset.CoderResult._isUnmappable12414 = @__env.GetMethodID(global::java.nio.charset.CoderResult.staticClass, "isUnmappable", "()Z");
+			global::java.nio.charset.CoderResult._isError12409 = @__env.GetMethodID(global::java.nio.charset.CoderResult.staticClass, "isError", "()Z");
+			global::java.nio.charset.CoderResult._isOverflow12410 = @__env.GetMethodID(global::java.nio.charset.CoderResult.staticClass, "isOverflow", "()Z");
+			global::java.nio.charset.CoderResult._malformedForLength12411 = @__env.GetStaticMethodID(global::java.nio.charset.CoderResult.staticClass, "malformedForLength", "(I)Ljava/nio/charset/CoderResult;");
+			global::java.nio.charset.CoderResult._isMalformed12412 = @__env.GetMethodID(global::java.nio.charset.CoderResult.staticClass, "isMalformed", "()Z");
+			global::java.nio.charset.CoderResult._isUnmappable12413 = @__env.GetMethodID(global::java.nio.charset.CoderResult.staticClass, "isUnmappable", "()Z");
+			global::java.nio.charset.CoderResult._unmappableForLength12414 = @__env.GetStaticMethodID(global::java.nio.charset.CoderResult.staticClass, "unmappableForLength", "(I)Ljava/nio/charset/CoderResult;");
 		}
 	}
 }

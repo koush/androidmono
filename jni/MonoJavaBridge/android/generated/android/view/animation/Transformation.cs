@@ -18,23 +18,23 @@ namespace android.view.animation
 		protected Transformation(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear9004;
-		public virtual void clear() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.animation.Transformation._clear9004);
-			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._clear9004);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString9005;
+		internal static global::net.sf.jni4net.jni.MethodId _toString9004;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.animation.Transformation._toString9005));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.animation.Transformation._toString9004));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._toString9005));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._toString9004));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _clear9005;
+		public virtual void clear() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this, global::android.view.animation.Transformation._clear9005);
+			else
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.animation.Transformation.staticClass, global::android.view.animation.Transformation._clear9005);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _set9006;
 		public virtual void set(android.view.animation.Transformation arg0) 
@@ -161,8 +161,8 @@ namespace android.view.animation
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.view.animation.Transformation.staticClass = @__class;
-			global::android.view.animation.Transformation._clear9004 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "clear", "()V");
-			global::android.view.animation.Transformation._toString9005 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.view.animation.Transformation._toString9004 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.view.animation.Transformation._clear9005 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "clear", "()V");
 			global::android.view.animation.Transformation._set9006 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "set", "(Landroid/view/animation/Transformation;)V");
 			global::android.view.animation.Transformation._compose9007 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "compose", "(Landroid/view/animation/Transformation;)V");
 			global::android.view.animation.Transformation._setAlpha9008 = @__env.GetMethodID(global::android.view.animation.Transformation.staticClass, "setAlpha", "(F)V");

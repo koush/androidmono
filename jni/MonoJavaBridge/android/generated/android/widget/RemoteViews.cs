@@ -86,32 +86,32 @@ namespace android.widget
 			internal __RemoteView(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _hashCode10689;
-			 int java.lang.annotation.Annotation.hashCode() 
-			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.widget.RemoteViews.__RemoteView._hashCode10689);
-				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.widget.RemoteViews.__RemoteView.staticClass, global::android.widget.RemoteViews.__RemoteView._hashCode10689);
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _equals10690;
+			internal static global::net.sf.jni4net.jni.MethodId _equals10689;
 			 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this, global::android.widget.RemoteViews.__RemoteView._equals10690, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+					return @__env.CallBooleanMethod(this, global::android.widget.RemoteViews.__RemoteView._equals10689, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 				else
-					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.RemoteViews.__RemoteView.staticClass, global::android.widget.RemoteViews.__RemoteView._equals10690, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.RemoteViews.__RemoteView.staticClass, global::android.widget.RemoteViews.__RemoteView._equals10689, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _toString10691;
+			internal static global::net.sf.jni4net.jni.MethodId _toString10690;
 			 global::java.lang.String java.lang.annotation.Annotation.toString() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.RemoteViews.__RemoteView._toString10691));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.RemoteViews.__RemoteView._toString10690));
 				else
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.RemoteViews.__RemoteView.staticClass, global::android.widget.RemoteViews.__RemoteView._toString10691));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.RemoteViews.__RemoteView.staticClass, global::android.widget.RemoteViews.__RemoteView._toString10690));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _hashCode10691;
+			 int java.lang.annotation.Annotation.hashCode() 
+			{
+				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				if (!IsClrObject)
+					return @__env.CallIntMethod(this, global::android.widget.RemoteViews.__RemoteView._hashCode10691);
+				else
+					return @__env.CallNonVirtualIntMethod(this, global::android.widget.RemoteViews.__RemoteView.staticClass, global::android.widget.RemoteViews.__RemoteView._hashCode10691);
 			}
 			internal static global::net.sf.jni4net.jni.MethodId _annotationType10692;
 			 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
@@ -125,9 +125,9 @@ namespace android.widget
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.widget.RemoteViews.__RemoteView.staticClass = @__class;
-				global::android.widget.RemoteViews.__RemoteView._hashCode10689 = @__env.GetMethodID(global::android.widget.RemoteViews.__RemoteView.staticClass, "java.lang.annotation.Annotation.hashCode", "()I");
-				global::android.widget.RemoteViews.__RemoteView._equals10690 = @__env.GetMethodID(global::android.widget.RemoteViews.__RemoteView.staticClass, "java.lang.annotation.Annotation.equals", "(Ljava/lang/Object;)Z");
-				global::android.widget.RemoteViews.__RemoteView._toString10691 = @__env.GetMethodID(global::android.widget.RemoteViews.__RemoteView.staticClass, "java.lang.annotation.Annotation.toString", "()Ljava/lang/String;");
+				global::android.widget.RemoteViews.__RemoteView._equals10689 = @__env.GetMethodID(global::android.widget.RemoteViews.__RemoteView.staticClass, "java.lang.annotation.Annotation.equals", "(Ljava/lang/Object;)Z");
+				global::android.widget.RemoteViews.__RemoteView._toString10690 = @__env.GetMethodID(global::android.widget.RemoteViews.__RemoteView.staticClass, "java.lang.annotation.Annotation.toString", "()Ljava/lang/String;");
+				global::android.widget.RemoteViews.__RemoteView._hashCode10691 = @__env.GetMethodID(global::android.widget.RemoteViews.__RemoteView.staticClass, "java.lang.annotation.Annotation.hashCode", "()I");
 				global::android.widget.RemoteViews.__RemoteView._annotationType10692 = @__env.GetMethodID(global::android.widget.RemoteViews.__RemoteView.staticClass, "java.lang.annotation.Annotation.annotationType", "()Ljava/lang/Class;");
 			}
 		}

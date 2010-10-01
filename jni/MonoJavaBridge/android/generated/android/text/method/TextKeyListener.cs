@@ -36,16 +36,16 @@ namespace android.text.method
 			internal Capitalize(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf7247;
+			internal static global::net.sf.jni4net.jni.MethodId _values7247;
+			public static global::android.text.method.TextKeyListener.Capitalize[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.text.method.TextKeyListener.Capitalize.staticClass, global::android.text.method.TextKeyListener.Capitalize._values7247));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf7248;
 			public static global::android.text.method.TextKeyListener.Capitalize valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.method.TextKeyListener.Capitalize>(@__env, @__env.CallStaticObjectMethodPtr(android.text.method.TextKeyListener.Capitalize.staticClass, global::android.text.method.TextKeyListener.Capitalize._valueOf7247, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values7248;
-			public static global::android.text.method.TextKeyListener.Capitalize[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.text.method.TextKeyListener.Capitalize.staticClass, global::android.text.method.TextKeyListener.Capitalize._values7248));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.method.TextKeyListener.Capitalize>(@__env, @__env.CallStaticObjectMethodPtr(android.text.method.TextKeyListener.Capitalize.staticClass, global::android.text.method.TextKeyListener.Capitalize._valueOf7248, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _CHARACTERS7249;
 			public static global::android.text.method.TextKeyListener.Capitalize CHARACTERS
@@ -82,8 +82,8 @@ namespace android.text.method
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.text.method.TextKeyListener.Capitalize.staticClass = @__class;
-				global::android.text.method.TextKeyListener.Capitalize._valueOf7247 = @__env.GetStaticMethodID(global::android.text.method.TextKeyListener.Capitalize.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/text/method/TextKeyListener$Capitalize;");
-				global::android.text.method.TextKeyListener.Capitalize._values7248 = @__env.GetStaticMethodID(global::android.text.method.TextKeyListener.Capitalize.staticClass, "values", "()[Landroid/text/method/TextKeyListener/Capitalize;");
+				global::android.text.method.TextKeyListener.Capitalize._values7247 = @__env.GetStaticMethodID(global::android.text.method.TextKeyListener.Capitalize.staticClass, "values", "()[Landroid/text/method/TextKeyListener/Capitalize;");
+				global::android.text.method.TextKeyListener.Capitalize._valueOf7248 = @__env.GetStaticMethodID(global::android.text.method.TextKeyListener.Capitalize.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/text/method/TextKeyListener$Capitalize;");
 			}
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _clear7253;

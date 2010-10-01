@@ -27,23 +27,23 @@ namespace android.os
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._get5391, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clone5392;
+		internal static global::net.sf.jni4net.jni.MethodId _toString5392;
+		public sealed override global::java.lang.String toString() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Bundle._toString5392));
+			else
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._toString5392));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _clone5393;
 		public global::java.lang.Object clone() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Bundle._clone5392));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Bundle._clone5393));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._clone5392));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _getBoolean5393;
-		public bool getBoolean(java.lang.String arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.os.Bundle._getBoolean5393, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getBoolean5393, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._clone5393));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getBoolean5394;
 		public bool getBoolean(java.lang.String arg0, bool arg1) 
@@ -54,50 +54,50 @@ namespace android.os
 			else
 				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getBoolean5394, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _putBoolean5395;
+		internal static global::net.sf.jni4net.jni.MethodId _getBoolean5395;
+		public bool getBoolean(java.lang.String arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this, global::android.os.Bundle._getBoolean5395, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			else
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getBoolean5395, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _putBoolean5396;
 		public void putBoolean(java.lang.String arg0, bool arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.Bundle._putBoolean5395, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.os.Bundle._putBoolean5396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._putBoolean5395, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._putBoolean5396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getByte5396;
+		internal static global::net.sf.jni4net.jni.MethodId _getByte5397;
 		public byte getByte(java.lang.String arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallByteMethod(this, global::android.os.Bundle._getByte5396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallByteMethod(this, global::android.os.Bundle._getByte5397, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				return @__env.CallNonVirtualByteMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getByte5396, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualByteMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getByte5397, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getByte5397;
+		internal static global::net.sf.jni4net.jni.MethodId _getByte5398;
 		public global::java.lang.Byte getByte(java.lang.String arg0, byte arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Byte>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Bundle._getByte5397, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Byte>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Bundle._getByte5398, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Byte>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getByte5397, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Byte>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getByte5398, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _putByte5398;
+		internal static global::net.sf.jni4net.jni.MethodId _putByte5399;
 		public void putByte(java.lang.String arg0, byte arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.Bundle._putByte5398, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.os.Bundle._putByte5399, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._putByte5398, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _getShort5399;
-		public short getShort(java.lang.String arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallShortMethod(this, global::android.os.Bundle._getShort5399, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-			else
-				return @__env.CallNonVirtualShortMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getShort5399, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._putByte5399, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getShort5400;
 		public short getShort(java.lang.String arg0, short arg1) 
@@ -108,23 +108,23 @@ namespace android.os
 			else
 				return @__env.CallNonVirtualShortMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getShort5400, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _putShort5401;
+		internal static global::net.sf.jni4net.jni.MethodId _getShort5401;
+		public short getShort(java.lang.String arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallShortMethod(this, global::android.os.Bundle._getShort5401, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			else
+				return @__env.CallNonVirtualShortMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getShort5401, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _putShort5402;
 		public void putShort(java.lang.String arg0, short arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.Bundle._putShort5401, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.os.Bundle._putShort5402, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._putShort5401, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _getChar5402;
-		public char getChar(java.lang.String arg0, char arg1) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::android.os.Bundle._getChar5402, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
-			else
-				return @__env.CallNonVirtualCharMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getChar5402, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._putShort5402, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getChar5403;
 		public char getChar(java.lang.String arg0) 
@@ -135,23 +135,23 @@ namespace android.os
 			else
 				return @__env.CallNonVirtualCharMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getChar5403, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _putChar5404;
+		internal static global::net.sf.jni4net.jni.MethodId _getChar5404;
+		public char getChar(java.lang.String arg0, char arg1) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallCharMethod(this, global::android.os.Bundle._getChar5404, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			else
+				return @__env.CallNonVirtualCharMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getChar5404, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _putChar5405;
 		public void putChar(java.lang.String arg0, char arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.Bundle._putChar5404, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.os.Bundle._putChar5405, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._putChar5404, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInt5405;
-		public int getInt(java.lang.String arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.os.Bundle._getInt5405, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getInt5405, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._putChar5405, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getInt5406;
 		public int getInt(java.lang.String arg0, int arg1) 
@@ -162,23 +162,23 @@ namespace android.os
 			else
 				return @__env.CallNonVirtualIntMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getInt5406, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _putInt5407;
+		internal static global::net.sf.jni4net.jni.MethodId _getInt5407;
+		public int getInt(java.lang.String arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.os.Bundle._getInt5407, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getInt5407, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _putInt5408;
 		public void putInt(java.lang.String arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.Bundle._putInt5407, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.os.Bundle._putInt5408, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._putInt5407, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLong5408;
-		public long getLong(java.lang.String arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::android.os.Bundle._getLong5408, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-			else
-				return @__env.CallNonVirtualLongMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getLong5408, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._putInt5408, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getLong5409;
 		public long getLong(java.lang.String arg0, long arg1) 
@@ -189,50 +189,50 @@ namespace android.os
 			else
 				return @__env.CallNonVirtualLongMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getLong5409, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _putLong5410;
+		internal static global::net.sf.jni4net.jni.MethodId _getLong5410;
+		public long getLong(java.lang.String arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallLongMethod(this, global::android.os.Bundle._getLong5410, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			else
+				return @__env.CallNonVirtualLongMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getLong5410, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _putLong5411;
 		public void putLong(java.lang.String arg0, long arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.Bundle._putLong5410, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.os.Bundle._putLong5411, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._putLong5410, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._putLong5411, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFloat5411;
+		internal static global::net.sf.jni4net.jni.MethodId _getFloat5412;
 		public float getFloat(java.lang.String arg0, float arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.os.Bundle._getFloat5411, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallFloatMethod(this, global::android.os.Bundle._getFloat5412, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getFloat5411, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getFloat5412, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFloat5412;
+		internal static global::net.sf.jni4net.jni.MethodId _getFloat5413;
 		public float getFloat(java.lang.String arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.os.Bundle._getFloat5412, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallFloatMethod(this, global::android.os.Bundle._getFloat5413, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getFloat5412, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getFloat5413, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _putFloat5413;
+		internal static global::net.sf.jni4net.jni.MethodId _putFloat5414;
 		public void putFloat(java.lang.String arg0, float arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.Bundle._putFloat5413, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.os.Bundle._putFloat5414, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._putFloat5413, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDouble5414;
-		public double getDouble(java.lang.String arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallDoubleMethod(this, global::android.os.Bundle._getDouble5414, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-			else
-				return @__env.CallNonVirtualDoubleMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getDouble5414, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._putFloat5414, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getDouble5415;
 		public double getDouble(java.lang.String arg0, double arg1) 
@@ -243,32 +243,32 @@ namespace android.os
 			else
 				return @__env.CallNonVirtualDoubleMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getDouble5415, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _putDouble5416;
+		internal static global::net.sf.jni4net.jni.MethodId _getDouble5416;
+		public double getDouble(java.lang.String arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallDoubleMethod(this, global::android.os.Bundle._getDouble5416, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			else
+				return @__env.CallNonVirtualDoubleMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getDouble5416, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _putDouble5417;
 		public void putDouble(java.lang.String arg0, double arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.Bundle._putDouble5416, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.os.Bundle._putDouble5417, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._putDouble5416, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._putDouble5417, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear5417;
+		internal static global::net.sf.jni4net.jni.MethodId _clear5418;
 		public void clear() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.Bundle._clear5417);
+				@__env.CallVoidMethod(this, global::android.os.Bundle._clear5418);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._clear5417);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString5418;
-		public sealed override global::java.lang.String toString() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Bundle._toString5418));
-			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._toString5418));
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._clear5418);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _isEmpty5419;
 		public bool isEmpty() 
@@ -706,28 +706,28 @@ namespace android.os
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Bundle.staticClass, global::android.os.Bundle._getDoubleArray5467, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _Bundle5468;
-		public Bundle()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.os.Bundle.staticClass, global::android.os.Bundle._Bundle5468, this);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _Bundle5469;
 		public Bundle(java.lang.ClassLoader arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.os.Bundle.staticClass, global::android.os.Bundle._Bundle5469, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.os.Bundle.staticClass, global::android.os.Bundle._Bundle5468, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Bundle5470;
+		internal static global::net.sf.jni4net.jni.MethodId _Bundle5469;
 		public Bundle(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.os.Bundle.staticClass, global::android.os.Bundle._Bundle5470, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			@__env.NewObject(android.os.Bundle.staticClass, global::android.os.Bundle._Bundle5469, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Bundle5471;
+		internal static global::net.sf.jni4net.jni.MethodId _Bundle5470;
 		public Bundle(android.os.Bundle arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.os.Bundle.staticClass, global::android.os.Bundle._Bundle5471, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.os.Bundle.staticClass, global::android.os.Bundle._Bundle5470, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _Bundle5471;
+		public Bundle()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			@__env.NewObject(android.os.Bundle.staticClass, global::android.os.Bundle._Bundle5471, this);
 		}
 		internal static global::net.sf.jni4net.jni.FieldId _EMPTY5472;
 		public static global::android.os.Bundle EMPTY
@@ -749,33 +749,33 @@ namespace android.os
 		{
 			global::android.os.Bundle.staticClass = @__class;
 			global::android.os.Bundle._get5391 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "get", "(Ljava/lang/String;)Ljava/lang/Object;");
-			global::android.os.Bundle._clone5392 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "clone", "()Ljava/lang/Object;");
-			global::android.os.Bundle._getBoolean5393 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getBoolean", "(Ljava/lang/String;)Z");
+			global::android.os.Bundle._toString5392 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.os.Bundle._clone5393 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "clone", "()Ljava/lang/Object;");
 			global::android.os.Bundle._getBoolean5394 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getBoolean", "(Ljava/lang/String;Z)Z");
-			global::android.os.Bundle._putBoolean5395 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "putBoolean", "(Ljava/lang/String;Z)V");
-			global::android.os.Bundle._getByte5396 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getByte", "(Ljava/lang/String;)B");
-			global::android.os.Bundle._getByte5397 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getByte", "(Ljava/lang/String;B)Ljava/lang/Byte;");
-			global::android.os.Bundle._putByte5398 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "putByte", "(Ljava/lang/String;B)V");
-			global::android.os.Bundle._getShort5399 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getShort", "(Ljava/lang/String;)S");
+			global::android.os.Bundle._getBoolean5395 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getBoolean", "(Ljava/lang/String;)Z");
+			global::android.os.Bundle._putBoolean5396 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "putBoolean", "(Ljava/lang/String;Z)V");
+			global::android.os.Bundle._getByte5397 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getByte", "(Ljava/lang/String;)B");
+			global::android.os.Bundle._getByte5398 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getByte", "(Ljava/lang/String;B)Ljava/lang/Byte;");
+			global::android.os.Bundle._putByte5399 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "putByte", "(Ljava/lang/String;B)V");
 			global::android.os.Bundle._getShort5400 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getShort", "(Ljava/lang/String;S)S");
-			global::android.os.Bundle._putShort5401 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "putShort", "(Ljava/lang/String;S)V");
-			global::android.os.Bundle._getChar5402 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getChar", "(Ljava/lang/String;C)C");
+			global::android.os.Bundle._getShort5401 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getShort", "(Ljava/lang/String;)S");
+			global::android.os.Bundle._putShort5402 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "putShort", "(Ljava/lang/String;S)V");
 			global::android.os.Bundle._getChar5403 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getChar", "(Ljava/lang/String;)C");
-			global::android.os.Bundle._putChar5404 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "putChar", "(Ljava/lang/String;C)V");
-			global::android.os.Bundle._getInt5405 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getInt", "(Ljava/lang/String;)I");
+			global::android.os.Bundle._getChar5404 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getChar", "(Ljava/lang/String;C)C");
+			global::android.os.Bundle._putChar5405 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "putChar", "(Ljava/lang/String;C)V");
 			global::android.os.Bundle._getInt5406 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getInt", "(Ljava/lang/String;I)I");
-			global::android.os.Bundle._putInt5407 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "putInt", "(Ljava/lang/String;I)V");
-			global::android.os.Bundle._getLong5408 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getLong", "(Ljava/lang/String;)J");
+			global::android.os.Bundle._getInt5407 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getInt", "(Ljava/lang/String;)I");
+			global::android.os.Bundle._putInt5408 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "putInt", "(Ljava/lang/String;I)V");
 			global::android.os.Bundle._getLong5409 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getLong", "(Ljava/lang/String;J)J");
-			global::android.os.Bundle._putLong5410 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "putLong", "(Ljava/lang/String;J)V");
-			global::android.os.Bundle._getFloat5411 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getFloat", "(Ljava/lang/String;F)F");
-			global::android.os.Bundle._getFloat5412 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getFloat", "(Ljava/lang/String;)F");
-			global::android.os.Bundle._putFloat5413 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "putFloat", "(Ljava/lang/String;F)V");
-			global::android.os.Bundle._getDouble5414 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getDouble", "(Ljava/lang/String;)D");
+			global::android.os.Bundle._getLong5410 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getLong", "(Ljava/lang/String;)J");
+			global::android.os.Bundle._putLong5411 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "putLong", "(Ljava/lang/String;J)V");
+			global::android.os.Bundle._getFloat5412 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getFloat", "(Ljava/lang/String;F)F");
+			global::android.os.Bundle._getFloat5413 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getFloat", "(Ljava/lang/String;)F");
+			global::android.os.Bundle._putFloat5414 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "putFloat", "(Ljava/lang/String;F)V");
 			global::android.os.Bundle._getDouble5415 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getDouble", "(Ljava/lang/String;D)D");
-			global::android.os.Bundle._putDouble5416 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "putDouble", "(Ljava/lang/String;D)V");
-			global::android.os.Bundle._clear5417 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "clear", "()V");
-			global::android.os.Bundle._toString5418 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.os.Bundle._getDouble5416 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getDouble", "(Ljava/lang/String;)D");
+			global::android.os.Bundle._putDouble5417 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "putDouble", "(Ljava/lang/String;D)V");
+			global::android.os.Bundle._clear5418 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "clear", "()V");
 			global::android.os.Bundle._isEmpty5419 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "isEmpty", "()Z");
 			global::android.os.Bundle._size5420 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "size", "()I");
 			global::android.os.Bundle._putAll5421 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "putAll", "(Landroid/os/Bundle;)V");
@@ -825,10 +825,10 @@ namespace android.os
 			global::android.os.Bundle._getLongArray5465 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getLongArray", "(Ljava/lang/String;)[J");
 			global::android.os.Bundle._getFloatArray5466 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getFloatArray", "(Ljava/lang/String;)[F");
 			global::android.os.Bundle._getDoubleArray5467 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "getDoubleArray", "(Ljava/lang/String;)[D");
-			global::android.os.Bundle._Bundle5468 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "<init>", "()V");
-			global::android.os.Bundle._Bundle5469 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "<init>", "(Ljava/lang/ClassLoader;)V");
-			global::android.os.Bundle._Bundle5470 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "<init>", "(I)V");
-			global::android.os.Bundle._Bundle5471 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "<init>", "(Landroid/os/Bundle;)V");
+			global::android.os.Bundle._Bundle5468 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "<init>", "(Ljava/lang/ClassLoader;)V");
+			global::android.os.Bundle._Bundle5469 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "<init>", "(I)V");
+			global::android.os.Bundle._Bundle5470 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "<init>", "(Landroid/os/Bundle;)V");
+			global::android.os.Bundle._Bundle5471 = @__env.GetMethodID(global::android.os.Bundle.staticClass, "<init>", "()V");
 		}
 	}
 }

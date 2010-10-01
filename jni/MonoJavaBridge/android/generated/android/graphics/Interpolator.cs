@@ -36,16 +36,16 @@ namespace android.graphics
 			internal Result(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf2936;
+			internal static global::net.sf.jni4net.jni.MethodId _values2936;
+			public static global::android.graphics.Interpolator.Result[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Interpolator.Result.staticClass, global::android.graphics.Interpolator.Result._values2936));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf2937;
 			public static global::android.graphics.Interpolator.Result valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Interpolator.Result>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Interpolator.Result.staticClass, global::android.graphics.Interpolator.Result._valueOf2936, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values2937;
-			public static global::android.graphics.Interpolator.Result[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Interpolator.Result.staticClass, global::android.graphics.Interpolator.Result._values2937));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Interpolator.Result>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Interpolator.Result.staticClass, global::android.graphics.Interpolator.Result._valueOf2937, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _FREEZE_END2938;
 			public static global::android.graphics.Interpolator.Result FREEZE_END
@@ -74,8 +74,8 @@ namespace android.graphics
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.graphics.Interpolator.Result.staticClass = @__class;
-				global::android.graphics.Interpolator.Result._valueOf2936 = @__env.GetStaticMethodID(global::android.graphics.Interpolator.Result.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Interpolator$Result;");
-				global::android.graphics.Interpolator.Result._values2937 = @__env.GetStaticMethodID(global::android.graphics.Interpolator.Result.staticClass, "values", "()[Landroid/graphics/Interpolator/Result;");
+				global::android.graphics.Interpolator.Result._values2936 = @__env.GetStaticMethodID(global::android.graphics.Interpolator.Result.staticClass, "values", "()[Landroid/graphics/Interpolator/Result;");
+				global::android.graphics.Interpolator.Result._valueOf2937 = @__env.GetStaticMethodID(global::android.graphics.Interpolator.Result.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Interpolator$Result;");
 			}
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _reset2941;

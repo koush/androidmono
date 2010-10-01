@@ -18,23 +18,23 @@ namespace android.content.pm
 		protected Signature(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode1856;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.pm.Signature._hashCode1856);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._hashCode1856);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals1857;
+		internal static global::net.sf.jni4net.jni.MethodId _equals1856;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.content.pm.Signature._equals1857, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.content.pm.Signature._equals1856, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._equals1857, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._equals1856, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode1857;
+		public override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.content.pm.Signature._hashCode1857);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.Signature.staticClass, global::android.content.pm.Signature._hashCode1857);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _toChars1858;
 		public virtual char[] toChars() 
@@ -110,8 +110,8 @@ namespace android.content.pm
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.content.pm.Signature.staticClass = @__class;
-			global::android.content.pm.Signature._hashCode1856 = @__env.GetMethodID(global::android.content.pm.Signature.staticClass, "hashCode", "()I");
-			global::android.content.pm.Signature._equals1857 = @__env.GetMethodID(global::android.content.pm.Signature.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.content.pm.Signature._equals1856 = @__env.GetMethodID(global::android.content.pm.Signature.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.content.pm.Signature._hashCode1857 = @__env.GetMethodID(global::android.content.pm.Signature.staticClass, "hashCode", "()I");
 			global::android.content.pm.Signature._toChars1858 = @__env.GetMethodID(global::android.content.pm.Signature.staticClass, "toChars", "()[C");
 			global::android.content.pm.Signature._toChars1859 = @__env.GetMethodID(global::android.content.pm.Signature.staticClass, "toChars", "([C[I)[C");
 			global::android.content.pm.Signature._toByteArray1860 = @__env.GetMethodID(global::android.content.pm.Signature.staticClass, "toByteArray", "()[B");

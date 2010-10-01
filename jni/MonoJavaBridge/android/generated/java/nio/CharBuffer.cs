@@ -82,85 +82,85 @@ namespace java.nio
 			else
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.CharBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._put12006, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode12007;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.nio.CharBuffer._hashCode12007);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._hashCode12007);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals12008;
+		internal static global::net.sf.jni4net.jni.MethodId _equals12007;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.nio.CharBuffer._equals12008, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::java.nio.CharBuffer._equals12007, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._equals12008, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._equals12007, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo12009;
-		public virtual int compareTo(java.lang.Object arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.nio.CharBuffer._compareTo12009, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._compareTo12009, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo12010;
-		public virtual int compareTo(java.nio.CharBuffer arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.nio.CharBuffer._compareTo12010, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._compareTo12010, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString12011;
+		internal static global::net.sf.jni4net.jni.MethodId _toString12008;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.CharBuffer._toString12011));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.CharBuffer._toString12008));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._toString12011));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._toString12008));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _append12012;
-		public virtual global::java.lang.Appendable append(java.lang.CharSequence arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.CharBuffer._append12012, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
-			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._append12012, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
-		}
-		public java.lang.Appendable append(string arg0)
-		{
-			return append((global::java.lang.CharSequence)(global::java.lang.String)arg0);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _append12013;
+		internal static global::net.sf.jni4net.jni.MethodId _append12009;
 		public virtual global::java.lang.Appendable append(java.lang.CharSequence arg0, int arg1, int arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.CharBuffer._append12013, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.CharBuffer._append12009, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._append12013, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._append12009, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
 		}
 		public java.lang.Appendable append(string arg0, int arg1, int arg2)
 		{
 			return append((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _append12014;
+		internal static global::net.sf.jni4net.jni.MethodId _append12010;
 		public virtual global::java.lang.Appendable append(char arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.CharBuffer._append12014, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.CharBuffer._append12010, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._append12014, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._append12010, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _append12011;
+		public virtual global::java.lang.Appendable append(java.lang.CharSequence arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.CharBuffer._append12011, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+			else
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Appendable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._append12011, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+		}
+		public java.lang.Appendable append(string arg0)
+		{
+			return append((global::java.lang.CharSequence)(global::java.lang.String)arg0);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode12012;
+		public override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.nio.CharBuffer._hashCode12012);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._hashCode12012);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo12013;
+		public virtual int compareTo(java.lang.Object arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.nio.CharBuffer._compareTo12013, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._compareTo12013, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo12014;
+		public virtual int compareTo(java.nio.CharBuffer arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.nio.CharBuffer._compareTo12014, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.nio.CharBuffer.staticClass, global::java.nio.CharBuffer._compareTo12014, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _length12015;
 		public virtual int length() 
@@ -247,14 +247,14 @@ namespace java.nio
 			global::java.nio.CharBuffer._put12004 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "put", "([C)Ljava/nio/CharBuffer;");
 			global::java.nio.CharBuffer._put12005 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "put", "([CII)Ljava/nio/CharBuffer;");
 			global::java.nio.CharBuffer._put12006 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "put", "(Ljava/nio/CharBuffer;)Ljava/nio/CharBuffer;");
-			global::java.nio.CharBuffer._hashCode12007 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "hashCode", "()I");
-			global::java.nio.CharBuffer._equals12008 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.nio.CharBuffer._compareTo12009 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			global::java.nio.CharBuffer._compareTo12010 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "compareTo", "(Ljava/nio/CharBuffer;)I");
-			global::java.nio.CharBuffer._toString12011 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.nio.CharBuffer._append12012 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "append", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;");
-			global::java.nio.CharBuffer._append12013 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "append", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;");
-			global::java.nio.CharBuffer._append12014 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "append", "(C)Ljava/lang/Appendable;");
+			global::java.nio.CharBuffer._equals12007 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.nio.CharBuffer._toString12008 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.nio.CharBuffer._append12009 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "append", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;");
+			global::java.nio.CharBuffer._append12010 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "append", "(C)Ljava/lang/Appendable;");
+			global::java.nio.CharBuffer._append12011 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "append", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;");
+			global::java.nio.CharBuffer._hashCode12012 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "hashCode", "()I");
+			global::java.nio.CharBuffer._compareTo12013 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "compareTo", "(Ljava/lang/Object;)I");
+			global::java.nio.CharBuffer._compareTo12014 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "compareTo", "(Ljava/nio/CharBuffer;)I");
 			global::java.nio.CharBuffer._length12015 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "length", "()I");
 			global::java.nio.CharBuffer._charAt12016 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "charAt", "(I)C");
 			global::java.nio.CharBuffer._subSequence12017 = @__env.GetMethodID(global::java.nio.CharBuffer.staticClass, "subSequence", "(II)Ljava/lang/CharSequence;");

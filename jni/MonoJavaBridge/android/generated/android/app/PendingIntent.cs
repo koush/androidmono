@@ -109,32 +109,32 @@ namespace android.app
 				global::android.app.PendingIntent.__OnFinished._onSendFinished690 = @__env.GetMethodID(global::android.app.PendingIntent.__OnFinished.staticClass, "android.app.PendingIntent.OnFinished.onSendFinished", "(Landroid/app/PendingIntent;Landroid/content/Intent;ILjava/lang/String;Landroid/os/Bundle;)V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode691;
-		public sealed override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.app.PendingIntent._hashCode691);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.app.PendingIntent.staticClass, global::android.app.PendingIntent._hashCode691);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals692;
+		internal static global::net.sf.jni4net.jni.MethodId _equals691;
 		public sealed override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.app.PendingIntent._equals692, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.app.PendingIntent._equals691, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.app.PendingIntent.staticClass, global::android.app.PendingIntent._equals692, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.app.PendingIntent.staticClass, global::android.app.PendingIntent._equals691, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString693;
+		internal static global::net.sf.jni4net.jni.MethodId _toString692;
 		public sealed override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.PendingIntent._toString693));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.app.PendingIntent._toString692));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.PendingIntent.staticClass, global::android.app.PendingIntent._toString693));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.app.PendingIntent.staticClass, global::android.app.PendingIntent._toString692));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode693;
+		public sealed override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.app.PendingIntent._hashCode693);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.app.PendingIntent.staticClass, global::android.app.PendingIntent._hashCode693);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _send694;
 		public void send(android.content.Context arg0, int arg1, android.content.Intent arg2) 
@@ -295,9 +295,9 @@ namespace android.app
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.app.PendingIntent.staticClass = @__class;
-			global::android.app.PendingIntent._hashCode691 = @__env.GetMethodID(global::android.app.PendingIntent.staticClass, "hashCode", "()I");
-			global::android.app.PendingIntent._equals692 = @__env.GetMethodID(global::android.app.PendingIntent.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.app.PendingIntent._toString693 = @__env.GetMethodID(global::android.app.PendingIntent.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.app.PendingIntent._equals691 = @__env.GetMethodID(global::android.app.PendingIntent.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.app.PendingIntent._toString692 = @__env.GetMethodID(global::android.app.PendingIntent.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.app.PendingIntent._hashCode693 = @__env.GetMethodID(global::android.app.PendingIntent.staticClass, "hashCode", "()I");
 			global::android.app.PendingIntent._send694 = @__env.GetMethodID(global::android.app.PendingIntent.staticClass, "send", "(Landroid/content/Context;ILandroid/content/Intent;)V");
 			global::android.app.PendingIntent._send695 = @__env.GetMethodID(global::android.app.PendingIntent.staticClass, "send", "()V");
 			global::android.app.PendingIntent._send696 = @__env.GetMethodID(global::android.app.PendingIntent.staticClass, "send", "(I)V");

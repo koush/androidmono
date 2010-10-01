@@ -36,16 +36,16 @@ namespace android.telephony
 			internal MessageClass(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf6541;
+			internal static global::net.sf.jni4net.jni.MethodId _values6541;
+			public static global::android.telephony.SmsMessage.MessageClass[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.SmsMessage.MessageClass.staticClass, global::android.telephony.SmsMessage.MessageClass._values6541));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf6542;
 			public static global::android.telephony.SmsMessage.MessageClass valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.telephony.SmsMessage.MessageClass>(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.SmsMessage.MessageClass.staticClass, global::android.telephony.SmsMessage.MessageClass._valueOf6541, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values6542;
-			public static global::android.telephony.SmsMessage.MessageClass[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.SmsMessage.MessageClass.staticClass, global::android.telephony.SmsMessage.MessageClass._values6542));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.telephony.SmsMessage.MessageClass>(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.SmsMessage.MessageClass.staticClass, global::android.telephony.SmsMessage.MessageClass._valueOf6542, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _CLASS_06543;
 			public static global::android.telephony.SmsMessage.MessageClass CLASS_0
@@ -90,8 +90,8 @@ namespace android.telephony
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.telephony.SmsMessage.MessageClass.staticClass = @__class;
-				global::android.telephony.SmsMessage.MessageClass._valueOf6541 = @__env.GetStaticMethodID(global::android.telephony.SmsMessage.MessageClass.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/telephony/SmsMessage$MessageClass;");
-				global::android.telephony.SmsMessage.MessageClass._values6542 = @__env.GetStaticMethodID(global::android.telephony.SmsMessage.MessageClass.staticClass, "values", "()[Landroid/telephony/SmsMessage/MessageClass;");
+				global::android.telephony.SmsMessage.MessageClass._values6541 = @__env.GetStaticMethodID(global::android.telephony.SmsMessage.MessageClass.staticClass, "values", "()[Landroid/telephony/SmsMessage/MessageClass;");
+				global::android.telephony.SmsMessage.MessageClass._valueOf6542 = @__env.GetStaticMethodID(global::android.telephony.SmsMessage.MessageClass.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/telephony/SmsMessage$MessageClass;");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()]

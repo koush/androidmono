@@ -18,23 +18,23 @@ namespace android.util
 		protected TypedValue(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFloat7657;
-		public virtual float getFloat() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.util.TypedValue._getFloat7657);
-			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._getFloat7657);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString7658;
+		internal static global::net.sf.jni4net.jni.MethodId _toString7657;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.TypedValue._toString7658));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.TypedValue._toString7657));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._toString7658));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._toString7657));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _getFloat7658;
+		public virtual float getFloat() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallFloatMethod(this, global::android.util.TypedValue._getFloat7658);
+			else
+				return @__env.CallNonVirtualFloatMethod(this, global::android.util.TypedValue.staticClass, global::android.util.TypedValue._getFloat7658);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getDimension7659;
 		public virtual float getDimension(android.util.DisplayMetrics arg0) 
@@ -472,8 +472,8 @@ namespace android.util
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.util.TypedValue.staticClass = @__class;
-			global::android.util.TypedValue._getFloat7657 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "getFloat", "()F");
-			global::android.util.TypedValue._toString7658 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.util.TypedValue._toString7657 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.util.TypedValue._getFloat7658 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "getFloat", "()F");
 			global::android.util.TypedValue._getDimension7659 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "getDimension", "(Landroid/util/DisplayMetrics;)F");
 			global::android.util.TypedValue._getFraction7660 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "getFraction", "(FF)F");
 			global::android.util.TypedValue._setTo7661 = @__env.GetMethodID(global::android.util.TypedValue.staticClass, "setTo", "(Landroid/util/TypedValue;)V");

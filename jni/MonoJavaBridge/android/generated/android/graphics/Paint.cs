@@ -36,16 +36,16 @@ namespace android.graphics
 			internal Align(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf3035;
+			internal static global::net.sf.jni4net.jni.MethodId _values3035;
+			public static global::android.graphics.Paint.Align[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Paint.Align.staticClass, global::android.graphics.Paint.Align._values3035));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf3036;
 			public static global::android.graphics.Paint.Align valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.Align>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Paint.Align.staticClass, global::android.graphics.Paint.Align._valueOf3035, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values3036;
-			public static global::android.graphics.Paint.Align[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Paint.Align.staticClass, global::android.graphics.Paint.Align._values3036));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.Align>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Paint.Align.staticClass, global::android.graphics.Paint.Align._valueOf3036, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _CENTER3037;
 			public static global::android.graphics.Paint.Align CENTER
@@ -74,8 +74,8 @@ namespace android.graphics
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.graphics.Paint.Align.staticClass = @__class;
-				global::android.graphics.Paint.Align._valueOf3035 = @__env.GetStaticMethodID(global::android.graphics.Paint.Align.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Paint$Align;");
-				global::android.graphics.Paint.Align._values3036 = @__env.GetStaticMethodID(global::android.graphics.Paint.Align.staticClass, "values", "()[Landroid/graphics/Paint/Align;");
+				global::android.graphics.Paint.Align._values3035 = @__env.GetStaticMethodID(global::android.graphics.Paint.Align.staticClass, "values", "()[Landroid/graphics/Paint/Align;");
+				global::android.graphics.Paint.Align._valueOf3036 = @__env.GetStaticMethodID(global::android.graphics.Paint.Align.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Paint$Align;");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
@@ -96,16 +96,16 @@ namespace android.graphics
 			internal Cap(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf3040;
+			internal static global::net.sf.jni4net.jni.MethodId _values3040;
+			public static global::android.graphics.Paint.Cap[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Paint.Cap.staticClass, global::android.graphics.Paint.Cap._values3040));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf3041;
 			public static global::android.graphics.Paint.Cap valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.Cap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Paint.Cap.staticClass, global::android.graphics.Paint.Cap._valueOf3040, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values3041;
-			public static global::android.graphics.Paint.Cap[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Paint.Cap.staticClass, global::android.graphics.Paint.Cap._values3041));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.Cap>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Paint.Cap.staticClass, global::android.graphics.Paint.Cap._valueOf3041, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _BUTT3042;
 			public static global::android.graphics.Paint.Cap BUTT
@@ -134,8 +134,8 @@ namespace android.graphics
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.graphics.Paint.Cap.staticClass = @__class;
-				global::android.graphics.Paint.Cap._valueOf3040 = @__env.GetStaticMethodID(global::android.graphics.Paint.Cap.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Paint$Cap;");
-				global::android.graphics.Paint.Cap._values3041 = @__env.GetStaticMethodID(global::android.graphics.Paint.Cap.staticClass, "values", "()[Landroid/graphics/Paint/Cap;");
+				global::android.graphics.Paint.Cap._values3040 = @__env.GetStaticMethodID(global::android.graphics.Paint.Cap.staticClass, "values", "()[Landroid/graphics/Paint/Cap;");
+				global::android.graphics.Paint.Cap._valueOf3041 = @__env.GetStaticMethodID(global::android.graphics.Paint.Cap.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Paint$Cap;");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
@@ -336,16 +336,16 @@ namespace android.graphics
 			internal Join(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf3058;
+			internal static global::net.sf.jni4net.jni.MethodId _values3058;
+			public static global::android.graphics.Paint.Join[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Paint.Join.staticClass, global::android.graphics.Paint.Join._values3058));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf3059;
 			public static global::android.graphics.Paint.Join valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.Join>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Paint.Join.staticClass, global::android.graphics.Paint.Join._valueOf3058, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values3059;
-			public static global::android.graphics.Paint.Join[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Paint.Join.staticClass, global::android.graphics.Paint.Join._values3059));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.Join>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Paint.Join.staticClass, global::android.graphics.Paint.Join._valueOf3059, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _BEVEL3060;
 			public static global::android.graphics.Paint.Join BEVEL
@@ -374,8 +374,8 @@ namespace android.graphics
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.graphics.Paint.Join.staticClass = @__class;
-				global::android.graphics.Paint.Join._valueOf3058 = @__env.GetStaticMethodID(global::android.graphics.Paint.Join.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Paint$Join;");
-				global::android.graphics.Paint.Join._values3059 = @__env.GetStaticMethodID(global::android.graphics.Paint.Join.staticClass, "values", "()[Landroid/graphics/Paint/Join;");
+				global::android.graphics.Paint.Join._values3058 = @__env.GetStaticMethodID(global::android.graphics.Paint.Join.staticClass, "values", "()[Landroid/graphics/Paint/Join;");
+				global::android.graphics.Paint.Join._valueOf3059 = @__env.GetStaticMethodID(global::android.graphics.Paint.Join.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Paint$Join;");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
@@ -396,16 +396,16 @@ namespace android.graphics
 			internal Style(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf3063;
+			internal static global::net.sf.jni4net.jni.MethodId _values3063;
+			public static global::android.graphics.Paint.Style[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Paint.Style.staticClass, global::android.graphics.Paint.Style._values3063));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf3064;
 			public static global::android.graphics.Paint.Style valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.Style>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Paint.Style.staticClass, global::android.graphics.Paint.Style._valueOf3063, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values3064;
-			public static global::android.graphics.Paint.Style[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Paint.Style.staticClass, global::android.graphics.Paint.Style._values3064));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Paint.Style>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Paint.Style.staticClass, global::android.graphics.Paint.Style._valueOf3064, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _FILL3065;
 			public static global::android.graphics.Paint.Style FILL
@@ -434,8 +434,8 @@ namespace android.graphics
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.graphics.Paint.Style.staticClass = @__class;
-				global::android.graphics.Paint.Style._valueOf3063 = @__env.GetStaticMethodID(global::android.graphics.Paint.Style.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Paint$Style;");
-				global::android.graphics.Paint.Style._values3064 = @__env.GetStaticMethodID(global::android.graphics.Paint.Style.staticClass, "values", "()[Landroid/graphics/Paint/Style;");
+				global::android.graphics.Paint.Style._values3063 = @__env.GetStaticMethodID(global::android.graphics.Paint.Style.staticClass, "values", "()[Landroid/graphics/Paint/Style;");
+				global::android.graphics.Paint.Style._valueOf3064 = @__env.GetStaticMethodID(global::android.graphics.Paint.Style.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Paint$Style;");
 			}
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _set3068;

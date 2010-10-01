@@ -188,23 +188,23 @@ namespace android.content.res
 				global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream._AutoCloseOutputStream1879 = @__env.GetMethodID(global::android.content.res.AssetFileDescriptor.AutoCloseOutputStream.staticClass, "<init>", "(Landroid/content/res/AssetFileDescriptor;)V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLength1880;
-		public virtual long getLength() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::android.content.res.AssetFileDescriptor._getLength1880);
-			else
-				return @__env.CallNonVirtualLongMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._getLength1880);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString1881;
+		internal static global::net.sf.jni4net.jni.MethodId _toString1880;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.AssetFileDescriptor._toString1881));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.AssetFileDescriptor._toString1880));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._toString1881));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._toString1880));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _getLength1881;
+		public virtual long getLength() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallLongMethod(this, global::android.content.res.AssetFileDescriptor._getLength1881);
+			else
+				return @__env.CallNonVirtualLongMethod(this, global::android.content.res.AssetFileDescriptor.staticClass, global::android.content.res.AssetFileDescriptor._getLength1881);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _close1882;
 		public virtual void close() 
@@ -311,8 +311,8 @@ namespace android.content.res
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.content.res.AssetFileDescriptor.staticClass = @__class;
-			global::android.content.res.AssetFileDescriptor._getLength1880 = @__env.GetMethodID(global::android.content.res.AssetFileDescriptor.staticClass, "getLength", "()J");
-			global::android.content.res.AssetFileDescriptor._toString1881 = @__env.GetMethodID(global::android.content.res.AssetFileDescriptor.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.res.AssetFileDescriptor._toString1880 = @__env.GetMethodID(global::android.content.res.AssetFileDescriptor.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.res.AssetFileDescriptor._getLength1881 = @__env.GetMethodID(global::android.content.res.AssetFileDescriptor.staticClass, "getLength", "()J");
 			global::android.content.res.AssetFileDescriptor._close1882 = @__env.GetMethodID(global::android.content.res.AssetFileDescriptor.staticClass, "close", "()V");
 			global::android.content.res.AssetFileDescriptor._writeToParcel1883 = @__env.GetMethodID(global::android.content.res.AssetFileDescriptor.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::android.content.res.AssetFileDescriptor._describeContents1884 = @__env.GetMethodID(global::android.content.res.AssetFileDescriptor.staticClass, "describeContents", "()I");

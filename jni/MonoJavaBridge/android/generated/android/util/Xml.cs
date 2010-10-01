@@ -36,16 +36,16 @@ namespace android.util
 			internal Encoding(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf7679;
+			internal static global::net.sf.jni4net.jni.MethodId _values7679;
+			public static global::android.util.Xml.Encoding[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.util.Xml.Encoding.staticClass, global::android.util.Xml.Encoding._values7679));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf7680;
 			public static global::android.util.Xml.Encoding valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.Xml.Encoding>(@__env, @__env.CallStaticObjectMethodPtr(android.util.Xml.Encoding.staticClass, global::android.util.Xml.Encoding._valueOf7679, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values7680;
-			public static global::android.util.Xml.Encoding[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.util.Xml.Encoding.staticClass, global::android.util.Xml.Encoding._values7680));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.util.Xml.Encoding>(@__env, @__env.CallStaticObjectMethodPtr(android.util.Xml.Encoding.staticClass, global::android.util.Xml.Encoding._valueOf7680, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _ISO_8859_17681;
 			public static global::android.util.Xml.Encoding ISO_8859_1
@@ -82,8 +82,8 @@ namespace android.util
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.util.Xml.Encoding.staticClass = @__class;
-				global::android.util.Xml.Encoding._valueOf7679 = @__env.GetStaticMethodID(global::android.util.Xml.Encoding.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/util/Xml$Encoding;");
-				global::android.util.Xml.Encoding._values7680 = @__env.GetStaticMethodID(global::android.util.Xml.Encoding.staticClass, "values", "()[Landroid/util/Xml/Encoding;");
+				global::android.util.Xml.Encoding._values7679 = @__env.GetStaticMethodID(global::android.util.Xml.Encoding.staticClass, "values", "()[Landroid/util/Xml/Encoding;");
+				global::android.util.Xml.Encoding._valueOf7680 = @__env.GetStaticMethodID(global::android.util.Xml.Encoding.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/util/Xml$Encoding;");
 			}
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _parse7685;

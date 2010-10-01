@@ -36,16 +36,16 @@ namespace android.widget
 			internal BufferType(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf11015;
+			internal static global::net.sf.jni4net.jni.MethodId _values11015;
+			public static global::android.widget.TextView.BufferType[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.widget.TextView.BufferType.staticClass, global::android.widget.TextView.BufferType._values11015));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf11016;
 			public static global::android.widget.TextView.BufferType valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TextView.BufferType>(@__env, @__env.CallStaticObjectMethodPtr(android.widget.TextView.BufferType.staticClass, global::android.widget.TextView.BufferType._valueOf11015, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values11016;
-			public static global::android.widget.TextView.BufferType[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.widget.TextView.BufferType.staticClass, global::android.widget.TextView.BufferType._values11016));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.TextView.BufferType>(@__env, @__env.CallStaticObjectMethodPtr(android.widget.TextView.BufferType.staticClass, global::android.widget.TextView.BufferType._valueOf11016, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _EDITABLE11017;
 			public static global::android.widget.TextView.BufferType EDITABLE
@@ -74,8 +74,8 @@ namespace android.widget
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.widget.TextView.BufferType.staticClass = @__class;
-				global::android.widget.TextView.BufferType._valueOf11015 = @__env.GetStaticMethodID(global::android.widget.TextView.BufferType.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/widget/TextView$BufferType;");
-				global::android.widget.TextView.BufferType._values11016 = @__env.GetStaticMethodID(global::android.widget.TextView.BufferType.staticClass, "values", "()[Landroid/widget/TextView/BufferType;");
+				global::android.widget.TextView.BufferType._values11015 = @__env.GetStaticMethodID(global::android.widget.TextView.BufferType.staticClass, "values", "()[Landroid/widget/TextView/BufferType;");
+				global::android.widget.TextView.BufferType._valueOf11016 = @__env.GetStaticMethodID(global::android.widget.TextView.BufferType.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/widget/TextView$BufferType;");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]

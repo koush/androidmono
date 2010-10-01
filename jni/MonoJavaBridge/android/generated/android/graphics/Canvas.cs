@@ -36,16 +36,16 @@ namespace android.graphics
 			internal EdgeType(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf2802;
+			internal static global::net.sf.jni4net.jni.MethodId _values2802;
+			public static global::android.graphics.Canvas.EdgeType[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Canvas.EdgeType.staticClass, global::android.graphics.Canvas.EdgeType._values2802));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf2803;
 			public static global::android.graphics.Canvas.EdgeType valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Canvas.EdgeType>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Canvas.EdgeType.staticClass, global::android.graphics.Canvas.EdgeType._valueOf2802, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values2803;
-			public static global::android.graphics.Canvas.EdgeType[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Canvas.EdgeType.staticClass, global::android.graphics.Canvas.EdgeType._values2803));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Canvas.EdgeType>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Canvas.EdgeType.staticClass, global::android.graphics.Canvas.EdgeType._valueOf2803, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _AA2804;
 			public static global::android.graphics.Canvas.EdgeType AA
@@ -66,8 +66,8 @@ namespace android.graphics
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.graphics.Canvas.EdgeType.staticClass = @__class;
-				global::android.graphics.Canvas.EdgeType._valueOf2802 = @__env.GetStaticMethodID(global::android.graphics.Canvas.EdgeType.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Canvas$EdgeType;");
-				global::android.graphics.Canvas.EdgeType._values2803 = @__env.GetStaticMethodID(global::android.graphics.Canvas.EdgeType.staticClass, "values", "()[Landroid/graphics/Canvas/EdgeType;");
+				global::android.graphics.Canvas.EdgeType._values2802 = @__env.GetStaticMethodID(global::android.graphics.Canvas.EdgeType.staticClass, "values", "()[Landroid/graphics/Canvas/EdgeType;");
+				global::android.graphics.Canvas.EdgeType._valueOf2803 = @__env.GetStaticMethodID(global::android.graphics.Canvas.EdgeType.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Canvas$EdgeType;");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
@@ -88,16 +88,16 @@ namespace android.graphics
 			internal VertexMode(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf2806;
+			internal static global::net.sf.jni4net.jni.MethodId _values2806;
+			public static global::android.graphics.Canvas.VertexMode[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Canvas.VertexMode.staticClass, global::android.graphics.Canvas.VertexMode._values2806));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf2807;
 			public static global::android.graphics.Canvas.VertexMode valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Canvas.VertexMode>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Canvas.VertexMode.staticClass, global::android.graphics.Canvas.VertexMode._valueOf2806, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values2807;
-			public static global::android.graphics.Canvas.VertexMode[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Canvas.VertexMode.staticClass, global::android.graphics.Canvas.VertexMode._values2807));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Canvas.VertexMode>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Canvas.VertexMode.staticClass, global::android.graphics.Canvas.VertexMode._valueOf2807, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _TRIANGLES2808;
 			public static global::android.graphics.Canvas.VertexMode TRIANGLES
@@ -126,8 +126,8 @@ namespace android.graphics
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.graphics.Canvas.VertexMode.staticClass = @__class;
-				global::android.graphics.Canvas.VertexMode._valueOf2806 = @__env.GetStaticMethodID(global::android.graphics.Canvas.VertexMode.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Canvas$VertexMode;");
-				global::android.graphics.Canvas.VertexMode._values2807 = @__env.GetStaticMethodID(global::android.graphics.Canvas.VertexMode.staticClass, "values", "()[Landroid/graphics/Canvas/VertexMode;");
+				global::android.graphics.Canvas.VertexMode._values2806 = @__env.GetStaticMethodID(global::android.graphics.Canvas.VertexMode.staticClass, "values", "()[Landroid/graphics/Canvas/VertexMode;");
+				global::android.graphics.Canvas.VertexMode._valueOf2807 = @__env.GetStaticMethodID(global::android.graphics.Canvas.VertexMode.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Canvas$VertexMode;");
 			}
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _concat2811;

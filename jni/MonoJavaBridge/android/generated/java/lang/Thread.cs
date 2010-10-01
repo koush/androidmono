@@ -36,16 +36,16 @@ namespace java.lang
 			internal State(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf11508;
+			internal static global::net.sf.jni4net.jni.MethodId _values11508;
+			public static global::java.lang.Thread.State[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.lang.Thread.State.staticClass, global::java.lang.Thread.State._values11508));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf11509;
 			public static global::java.lang.Thread.State valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Thread.State>(@__env, @__env.CallStaticObjectMethodPtr(java.lang.Thread.State.staticClass, global::java.lang.Thread.State._valueOf11508, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values11509;
-			public static global::java.lang.Thread.State[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.lang.Thread.State.staticClass, global::java.lang.Thread.State._values11509));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Thread.State>(@__env, @__env.CallStaticObjectMethodPtr(java.lang.Thread.State.staticClass, global::java.lang.Thread.State._valueOf11509, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _NEW11510;
 			public static global::java.lang.Thread.State NEW
@@ -98,8 +98,8 @@ namespace java.lang
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::java.lang.Thread.State.staticClass = @__class;
-				global::java.lang.Thread.State._valueOf11508 = @__env.GetStaticMethodID(global::java.lang.Thread.State.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/lang/Thread$State;");
-				global::java.lang.Thread.State._values11509 = @__env.GetStaticMethodID(global::java.lang.Thread.State.staticClass, "values", "()[Ljava/lang/Thread/State;");
+				global::java.lang.Thread.State._values11508 = @__env.GetStaticMethodID(global::java.lang.Thread.State.staticClass, "values", "()[Ljava/lang/Thread/State;");
+				global::java.lang.Thread.State._valueOf11509 = @__env.GetStaticMethodID(global::java.lang.Thread.State.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/lang/Thread$State;");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
@@ -158,29 +158,29 @@ namespace java.lang
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._run11517);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isInterrupted11518;
-		public virtual bool isInterrupted() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.lang.Thread._isInterrupted11518);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._isInterrupted11518);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _currentThread11519;
-		public static global::java.lang.Thread currentThread() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Thread>(@__env, @__env.CallStaticObjectMethodPtr(java.lang.Thread.staticClass, global::java.lang.Thread._currentThread11519));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString11520;
+		internal static global::net.sf.jni4net.jni.MethodId _toString11518;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Thread._toString11520));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Thread._toString11518));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._toString11520));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._toString11518));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _isInterrupted11519;
+		public virtual bool isInterrupted() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this, global::java.lang.Thread._isInterrupted11519);
+			else
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.lang.Thread.staticClass, global::java.lang.Thread._isInterrupted11519);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _currentThread11520;
+		public static global::java.lang.Thread currentThread() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.Thread>(@__env, @__env.CallStaticObjectMethodPtr(java.lang.Thread.staticClass, global::java.lang.Thread._currentThread11520));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getName11521;
 		public virtual global::java.lang.String getName() 
@@ -563,9 +563,9 @@ namespace java.lang
 		{
 			global::java.lang.Thread.staticClass = @__class;
 			global::java.lang.Thread._run11517 = @__env.GetMethodID(global::java.lang.Thread.staticClass, "run", "()V");
-			global::java.lang.Thread._isInterrupted11518 = @__env.GetMethodID(global::java.lang.Thread.staticClass, "isInterrupted", "()Z");
-			global::java.lang.Thread._currentThread11519 = @__env.GetStaticMethodID(global::java.lang.Thread.staticClass, "currentThread", "()Ljava/lang/Thread;");
-			global::java.lang.Thread._toString11520 = @__env.GetMethodID(global::java.lang.Thread.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.lang.Thread._toString11518 = @__env.GetMethodID(global::java.lang.Thread.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.lang.Thread._isInterrupted11519 = @__env.GetMethodID(global::java.lang.Thread.staticClass, "isInterrupted", "()Z");
+			global::java.lang.Thread._currentThread11520 = @__env.GetStaticMethodID(global::java.lang.Thread.staticClass, "currentThread", "()Ljava/lang/Thread;");
 			global::java.lang.Thread._getName11521 = @__env.GetMethodID(global::java.lang.Thread.staticClass, "getName", "()Ljava/lang/String;");
 			global::java.lang.Thread._getThreadGroup11522 = @__env.GetMethodID(global::java.lang.Thread.staticClass, "getThreadGroup", "()Ljava/lang/ThreadGroup;");
 			global::java.lang.Thread._getStackTrace11523 = @__env.GetMethodID(global::java.lang.Thread.staticClass, "getStackTrace", "()[Ljava/lang/StackTraceElement;");

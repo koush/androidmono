@@ -11,16 +11,16 @@ namespace java.util.concurrent
 		protected TimeUnit(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _valueOf13033;
+		internal static global::net.sf.jni4net.jni.MethodId _values13033;
+		public static global::java.util.concurrent.TimeUnit[] values() 
+		{
+			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._values13033));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _valueOf13034;
 		public static global::java.util.concurrent.TimeUnit valueOf(java.lang.String arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.concurrent.TimeUnit>(@__env, @__env.CallStaticObjectMethodPtr(java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._valueOf13033, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _values13034;
-		public static global::java.util.concurrent.TimeUnit[] values() 
-		{
-			return null;//(@__env, @__env.CallStaticObjectMethodPtr(java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._values13034));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.concurrent.TimeUnit>(@__env, @__env.CallStaticObjectMethodPtr(java.util.concurrent.TimeUnit.staticClass, global::java.util.concurrent.TimeUnit._valueOf13034, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _sleep13035;
 		public virtual void sleep(long arg0) 
@@ -180,8 +180,8 @@ namespace java.util.concurrent
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.util.concurrent.TimeUnit.staticClass = @__class;
-			global::java.util.concurrent.TimeUnit._valueOf13033 = @__env.GetStaticMethodID(global::java.util.concurrent.TimeUnit.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/util/concurrent/TimeUnit;");
-			global::java.util.concurrent.TimeUnit._values13034 = @__env.GetStaticMethodID(global::java.util.concurrent.TimeUnit.staticClass, "values", "()[Ljava/util/concurrent/TimeUnit;");
+			global::java.util.concurrent.TimeUnit._values13033 = @__env.GetStaticMethodID(global::java.util.concurrent.TimeUnit.staticClass, "values", "()[Ljava/util/concurrent/TimeUnit;");
+			global::java.util.concurrent.TimeUnit._valueOf13034 = @__env.GetStaticMethodID(global::java.util.concurrent.TimeUnit.staticClass, "valueOf", "(Ljava/lang/String;)Ljava/util/concurrent/TimeUnit;");
 			global::java.util.concurrent.TimeUnit._sleep13035 = @__env.GetMethodID(global::java.util.concurrent.TimeUnit.staticClass, "sleep", "(J)V");
 			global::java.util.concurrent.TimeUnit._toNanos13036 = @__env.GetMethodID(global::java.util.concurrent.TimeUnit.staticClass, "toNanos", "(J)J");
 			global::java.util.concurrent.TimeUnit._convert13037 = @__env.GetMethodID(global::java.util.concurrent.TimeUnit.staticClass, "convert", "(JLjava/util/concurrent/TimeUnit;)J");

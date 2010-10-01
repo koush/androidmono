@@ -18,32 +18,32 @@ namespace android.accounts
 		protected Account(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode44;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.accounts.Account._hashCode44);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._hashCode44);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals45;
+		internal static global::net.sf.jni4net.jni.MethodId _equals44;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.accounts.Account._equals45, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.accounts.Account._equals44, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._equals45, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._equals44, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString46;
+		internal static global::net.sf.jni4net.jni.MethodId _toString45;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.accounts.Account._toString46));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.accounts.Account._toString45));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._toString46));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._toString45));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode46;
+		public override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.accounts.Account._hashCode46);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.accounts.Account.staticClass, global::android.accounts.Account._hashCode46);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel47;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
@@ -102,9 +102,9 @@ namespace android.accounts
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.accounts.Account.staticClass = @__class;
-			global::android.accounts.Account._hashCode44 = @__env.GetMethodID(global::android.accounts.Account.staticClass, "hashCode", "()I");
-			global::android.accounts.Account._equals45 = @__env.GetMethodID(global::android.accounts.Account.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.accounts.Account._toString46 = @__env.GetMethodID(global::android.accounts.Account.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.accounts.Account._equals44 = @__env.GetMethodID(global::android.accounts.Account.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.accounts.Account._toString45 = @__env.GetMethodID(global::android.accounts.Account.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.accounts.Account._hashCode46 = @__env.GetMethodID(global::android.accounts.Account.staticClass, "hashCode", "()I");
 			global::android.accounts.Account._writeToParcel47 = @__env.GetMethodID(global::android.accounts.Account.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::android.accounts.Account._describeContents48 = @__env.GetMethodID(global::android.accounts.Account.staticClass, "describeContents", "()I");
 			global::android.accounts.Account._Account49 = @__env.GetMethodID(global::android.accounts.Account.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");

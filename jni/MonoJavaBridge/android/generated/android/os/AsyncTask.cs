@@ -29,16 +29,16 @@ namespace android.os
 			internal Status(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf5331;
+			internal static global::net.sf.jni4net.jni.MethodId _values5331;
+			public static global::android.os.AsyncTask.Status[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.os.AsyncTask.Status.staticClass, global::android.os.AsyncTask.Status._values5331));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf5332;
 			public static global::android.os.AsyncTask.Status valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.AsyncTask.Status>(@__env, @__env.CallStaticObjectMethodPtr(android.os.AsyncTask.Status.staticClass, global::android.os.AsyncTask.Status._valueOf5331, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values5332;
-			public static global::android.os.AsyncTask.Status[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.os.AsyncTask.Status.staticClass, global::android.os.AsyncTask.Status._values5332));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.AsyncTask.Status>(@__env, @__env.CallStaticObjectMethodPtr(android.os.AsyncTask.Status.staticClass, global::android.os.AsyncTask.Status._valueOf5332, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _FINISHED5333;
 			public static global::android.os.AsyncTask.Status FINISHED
@@ -67,8 +67,8 @@ namespace android.os
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.os.AsyncTask.Status.staticClass = @__class;
-				global::android.os.AsyncTask.Status._valueOf5331 = @__env.GetStaticMethodID(global::android.os.AsyncTask.Status.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/os/AsyncTask$Status;");
-				global::android.os.AsyncTask.Status._values5332 = @__env.GetStaticMethodID(global::android.os.AsyncTask.Status.staticClass, "values", "()[Landroid/os/AsyncTask/Status;");
+				global::android.os.AsyncTask.Status._values5331 = @__env.GetStaticMethodID(global::android.os.AsyncTask.Status.staticClass, "values", "()[Landroid/os/AsyncTask/Status;");
+				global::android.os.AsyncTask.Status._valueOf5332 = @__env.GetStaticMethodID(global::android.os.AsyncTask.Status.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/os/AsyncTask$Status;");
 			}
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _get5336;

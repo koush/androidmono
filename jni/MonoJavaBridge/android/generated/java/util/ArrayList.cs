@@ -142,32 +142,32 @@ namespace java.util
 			else
 				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._toArray12721));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _set12722;
-		public override global::java.lang.Object set(int arg0, java.lang.Object arg1) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.ArrayList._set12722, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
-			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._set12722, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _remove12723;
+		internal static global::net.sf.jni4net.jni.MethodId _remove12722;
 		public override global::java.lang.Object remove(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.ArrayList._remove12723, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.ArrayList._remove12722, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._remove12723, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._remove12722, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _remove12724;
+		internal static global::net.sf.jni4net.jni.MethodId _remove12723;
 		public override bool remove(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.ArrayList._remove12724, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::java.util.ArrayList._remove12723, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._remove12724, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._remove12723, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _set12724;
+		public override global::java.lang.Object set(int arg0, java.lang.Object arg1) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.ArrayList._set12724, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+			else
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.ArrayList.staticClass, global::java.util.ArrayList._set12724, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _trimToSize12725;
 		public virtual void trimToSize() 
@@ -231,9 +231,9 @@ namespace java.util
 			global::java.util.ArrayList._size12719 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "size", "()I");
 			global::java.util.ArrayList._toArray12720 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;");
 			global::java.util.ArrayList._toArray12721 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "toArray", "()[Ljava/lang/Object;");
-			global::java.util.ArrayList._set12722 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "set", "(ILjava/lang/Object;)Ljava/lang/Object;");
-			global::java.util.ArrayList._remove12723 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "remove", "(I)Ljava/lang/Object;");
-			global::java.util.ArrayList._remove12724 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "remove", "(Ljava/lang/Object;)Z");
+			global::java.util.ArrayList._remove12722 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "remove", "(I)Ljava/lang/Object;");
+			global::java.util.ArrayList._remove12723 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "remove", "(Ljava/lang/Object;)Z");
+			global::java.util.ArrayList._set12724 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "set", "(ILjava/lang/Object;)Ljava/lang/Object;");
 			global::java.util.ArrayList._trimToSize12725 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "trimToSize", "()V");
 			global::java.util.ArrayList._ensureCapacity12726 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "ensureCapacity", "(I)V");
 			global::java.util.ArrayList._removeRange12727 = @__env.GetMethodID(global::java.util.ArrayList.staticClass, "removeRange", "(II)V");

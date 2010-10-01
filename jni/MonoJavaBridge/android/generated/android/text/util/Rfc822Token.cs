@@ -18,41 +18,41 @@ namespace android.text.util
 		protected Rfc822Token(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode7485;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.util.Rfc822Token._hashCode7485);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._hashCode7485);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals7486;
+		internal static global::net.sf.jni4net.jni.MethodId _equals7485;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.text.util.Rfc822Token._equals7486, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.text.util.Rfc822Token._equals7485, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._equals7486, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._equals7485, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAddress7487;
-		public virtual global::java.lang.String getAddress() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.util.Rfc822Token._getAddress7487));
-			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._getAddress7487));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString7488;
+		internal static global::net.sf.jni4net.jni.MethodId _toString7486;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.util.Rfc822Token._toString7488));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.util.Rfc822Token._toString7486));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._toString7488));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._toString7486));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode7487;
+		public override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.text.util.Rfc822Token._hashCode7487);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._hashCode7487);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _getAddress7488;
+		public virtual global::java.lang.String getAddress() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.util.Rfc822Token._getAddress7488));
+			else
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.util.Rfc822Token.staticClass, global::android.text.util.Rfc822Token._getAddress7488));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getName7489;
 		public virtual global::java.lang.String getName() 
@@ -126,10 +126,10 @@ namespace android.text.util
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.text.util.Rfc822Token.staticClass = @__class;
-			global::android.text.util.Rfc822Token._hashCode7485 = @__env.GetMethodID(global::android.text.util.Rfc822Token.staticClass, "hashCode", "()I");
-			global::android.text.util.Rfc822Token._equals7486 = @__env.GetMethodID(global::android.text.util.Rfc822Token.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.text.util.Rfc822Token._getAddress7487 = @__env.GetMethodID(global::android.text.util.Rfc822Token.staticClass, "getAddress", "()Ljava/lang/String;");
-			global::android.text.util.Rfc822Token._toString7488 = @__env.GetMethodID(global::android.text.util.Rfc822Token.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.text.util.Rfc822Token._equals7485 = @__env.GetMethodID(global::android.text.util.Rfc822Token.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.text.util.Rfc822Token._toString7486 = @__env.GetMethodID(global::android.text.util.Rfc822Token.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.text.util.Rfc822Token._hashCode7487 = @__env.GetMethodID(global::android.text.util.Rfc822Token.staticClass, "hashCode", "()I");
+			global::android.text.util.Rfc822Token._getAddress7488 = @__env.GetMethodID(global::android.text.util.Rfc822Token.staticClass, "getAddress", "()Ljava/lang/String;");
 			global::android.text.util.Rfc822Token._getName7489 = @__env.GetMethodID(global::android.text.util.Rfc822Token.staticClass, "getName", "()Ljava/lang/String;");
 			global::android.text.util.Rfc822Token._setName7490 = @__env.GetMethodID(global::android.text.util.Rfc822Token.staticClass, "setName", "(Ljava/lang/String;)V");
 			global::android.text.util.Rfc822Token._setComment7491 = @__env.GetMethodID(global::android.text.util.Rfc822Token.staticClass, "setComment", "(Ljava/lang/String;)V");

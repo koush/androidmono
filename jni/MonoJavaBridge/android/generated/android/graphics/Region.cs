@@ -36,16 +36,16 @@ namespace android.graphics
 			internal Op(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf3362;
+			internal static global::net.sf.jni4net.jni.MethodId _values3362;
+			public static global::android.graphics.Region.Op[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Region.Op.staticClass, global::android.graphics.Region.Op._values3362));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf3363;
 			public static global::android.graphics.Region.Op valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Region.Op>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Region.Op.staticClass, global::android.graphics.Region.Op._valueOf3362, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values3363;
-			public static global::android.graphics.Region.Op[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Region.Op.staticClass, global::android.graphics.Region.Op._values3363));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Region.Op>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Region.Op.staticClass, global::android.graphics.Region.Op._valueOf3363, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _DIFFERENCE3364;
 			public static global::android.graphics.Region.Op DIFFERENCE
@@ -98,8 +98,8 @@ namespace android.graphics
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.graphics.Region.Op.staticClass = @__class;
-				global::android.graphics.Region.Op._valueOf3362 = @__env.GetStaticMethodID(global::android.graphics.Region.Op.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Region$Op;");
-				global::android.graphics.Region.Op._values3363 = @__env.GetStaticMethodID(global::android.graphics.Region.Op.staticClass, "values", "()[Landroid/graphics/Region/Op;");
+				global::android.graphics.Region.Op._values3362 = @__env.GetStaticMethodID(global::android.graphics.Region.Op.staticClass, "values", "()[Landroid/graphics/Region/Op;");
+				global::android.graphics.Region.Op._valueOf3363 = @__env.GetStaticMethodID(global::android.graphics.Region.Op.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Region$Op;");
 			}
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _equals3370;

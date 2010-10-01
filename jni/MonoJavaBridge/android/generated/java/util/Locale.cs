@@ -18,41 +18,41 @@ namespace java.util
 		internal Locale(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode12903;
-		public sealed override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Locale._hashCode12903);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Locale.staticClass, global::java.util.Locale._hashCode12903);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _clone12904;
-		public global::java.lang.Object clone() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._clone12904));
-			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._clone12904));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals12905;
+		internal static global::net.sf.jni4net.jni.MethodId _equals12903;
 		public sealed override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.Locale._equals12905, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::java.util.Locale._equals12903, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Locale.staticClass, global::java.util.Locale._equals12905, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Locale.staticClass, global::java.util.Locale._equals12903, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString12906;
+		internal static global::net.sf.jni4net.jni.MethodId _toString12904;
 		public sealed override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._toString12906));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._toString12904));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._toString12906));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._toString12904));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode12905;
+		public sealed override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.util.Locale._hashCode12905);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.util.Locale.staticClass, global::java.util.Locale._hashCode12905);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _clone12906;
+		public global::java.lang.Object clone() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Locale._clone12906));
+			else
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Locale.staticClass, global::java.util.Locale._clone12906));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getLanguage12907;
 		public global::java.lang.String getLanguage() 
@@ -395,10 +395,10 @@ namespace java.util
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.util.Locale.staticClass = @__class;
-			global::java.util.Locale._hashCode12903 = @__env.GetMethodID(global::java.util.Locale.staticClass, "hashCode", "()I");
-			global::java.util.Locale._clone12904 = @__env.GetMethodID(global::java.util.Locale.staticClass, "clone", "()Ljava/lang/Object;");
-			global::java.util.Locale._equals12905 = @__env.GetMethodID(global::java.util.Locale.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.util.Locale._toString12906 = @__env.GetMethodID(global::java.util.Locale.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.util.Locale._equals12903 = @__env.GetMethodID(global::java.util.Locale.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.util.Locale._toString12904 = @__env.GetMethodID(global::java.util.Locale.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.util.Locale._hashCode12905 = @__env.GetMethodID(global::java.util.Locale.staticClass, "hashCode", "()I");
+			global::java.util.Locale._clone12906 = @__env.GetMethodID(global::java.util.Locale.staticClass, "clone", "()Ljava/lang/Object;");
 			global::java.util.Locale._getLanguage12907 = @__env.GetMethodID(global::java.util.Locale.staticClass, "getLanguage", "()Ljava/lang/String;");
 			global::java.util.Locale._getDefault12908 = @__env.GetStaticMethodID(global::java.util.Locale.staticClass, "getDefault", "()Ljava/util/Locale;");
 			global::java.util.Locale._setDefault12909 = @__env.GetStaticMethodID(global::java.util.Locale.staticClass, "setDefault", "(Ljava/util/Locale;)V");

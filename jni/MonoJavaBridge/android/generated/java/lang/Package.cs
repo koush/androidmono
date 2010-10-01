@@ -18,23 +18,23 @@ namespace java.lang
 		protected Package(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode11489;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.lang.Package._hashCode11489);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.lang.Package.staticClass, global::java.lang.Package._hashCode11489);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString11490;
+		internal static global::net.sf.jni4net.jni.MethodId _toString11489;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._toString11490));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._toString11489));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._toString11490));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._toString11489));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode11490;
+		public override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.lang.Package._hashCode11490);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.lang.Package.staticClass, global::java.lang.Package._hashCode11490);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getName11491;
 		public virtual global::java.lang.String getName() 
@@ -108,74 +108,74 @@ namespace java.lang
 			else
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.lang.Package.staticClass, global::java.lang.Package._isSealed11499, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isCompatibleWith11500;
-		public virtual bool isCompatibleWith(java.lang.String arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.lang.Package._isCompatibleWith11500, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.lang.Package.staticClass, global::java.lang.Package._isCompatibleWith11500, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSpecificationTitle11501;
+		internal static global::net.sf.jni4net.jni.MethodId _getSpecificationTitle11500;
 		public virtual global::java.lang.String getSpecificationTitle() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getSpecificationTitle11501));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getSpecificationTitle11500));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getSpecificationTitle11501));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getSpecificationTitle11500));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSpecificationVersion11502;
+		internal static global::net.sf.jni4net.jni.MethodId _getSpecificationVersion11501;
 		public virtual global::java.lang.String getSpecificationVersion() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getSpecificationVersion11502));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getSpecificationVersion11501));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getSpecificationVersion11502));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getSpecificationVersion11501));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSpecificationVendor11503;
+		internal static global::net.sf.jni4net.jni.MethodId _getSpecificationVendor11502;
 		public virtual global::java.lang.String getSpecificationVendor() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getSpecificationVendor11503));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getSpecificationVendor11502));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getSpecificationVendor11503));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getSpecificationVendor11502));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getImplementationTitle11504;
+		internal static global::net.sf.jni4net.jni.MethodId _getImplementationTitle11503;
 		public virtual global::java.lang.String getImplementationTitle() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getImplementationTitle11504));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getImplementationTitle11503));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getImplementationTitle11504));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getImplementationTitle11503));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getImplementationVersion11505;
+		internal static global::net.sf.jni4net.jni.MethodId _getImplementationVersion11504;
 		public virtual global::java.lang.String getImplementationVersion() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getImplementationVersion11505));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getImplementationVersion11504));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getImplementationVersion11505));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getImplementationVersion11504));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getImplementationVendor11506;
+		internal static global::net.sf.jni4net.jni.MethodId _getImplementationVendor11505;
 		public virtual global::java.lang.String getImplementationVendor() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getImplementationVendor11506));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.lang.Package._getImplementationVendor11505));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getImplementationVendor11506));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.lang.Package.staticClass, global::java.lang.Package._getImplementationVendor11505));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _isCompatibleWith11506;
+		public virtual bool isCompatibleWith(java.lang.String arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this, global::java.lang.Package._isCompatibleWith11506, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			else
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.lang.Package.staticClass, global::java.lang.Package._isCompatibleWith11506, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.lang.Package.staticClass = @__class;
-			global::java.lang.Package._hashCode11489 = @__env.GetMethodID(global::java.lang.Package.staticClass, "hashCode", "()I");
-			global::java.lang.Package._toString11490 = @__env.GetMethodID(global::java.lang.Package.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.lang.Package._toString11489 = @__env.GetMethodID(global::java.lang.Package.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.lang.Package._hashCode11490 = @__env.GetMethodID(global::java.lang.Package.staticClass, "hashCode", "()I");
 			global::java.lang.Package._getName11491 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getName", "()Ljava/lang/String;");
 			global::java.lang.Package._getPackage11492 = @__env.GetStaticMethodID(global::java.lang.Package.staticClass, "getPackage", "(Ljava/lang/String;)Ljava/lang/Package;");
 			global::java.lang.Package._getAnnotation11493 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;");
@@ -185,13 +185,13 @@ namespace java.lang
 			global::java.lang.Package._getPackages11497 = @__env.GetStaticMethodID(global::java.lang.Package.staticClass, "getPackages", "()[Ljava/lang/Package;");
 			global::java.lang.Package._isSealed11498 = @__env.GetMethodID(global::java.lang.Package.staticClass, "isSealed", "()Z");
 			global::java.lang.Package._isSealed11499 = @__env.GetMethodID(global::java.lang.Package.staticClass, "isSealed", "(Ljava/net/URL;)Z");
-			global::java.lang.Package._isCompatibleWith11500 = @__env.GetMethodID(global::java.lang.Package.staticClass, "isCompatibleWith", "(Ljava/lang/String;)Z");
-			global::java.lang.Package._getSpecificationTitle11501 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getSpecificationTitle", "()Ljava/lang/String;");
-			global::java.lang.Package._getSpecificationVersion11502 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getSpecificationVersion", "()Ljava/lang/String;");
-			global::java.lang.Package._getSpecificationVendor11503 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getSpecificationVendor", "()Ljava/lang/String;");
-			global::java.lang.Package._getImplementationTitle11504 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getImplementationTitle", "()Ljava/lang/String;");
-			global::java.lang.Package._getImplementationVersion11505 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getImplementationVersion", "()Ljava/lang/String;");
-			global::java.lang.Package._getImplementationVendor11506 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getImplementationVendor", "()Ljava/lang/String;");
+			global::java.lang.Package._getSpecificationTitle11500 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getSpecificationTitle", "()Ljava/lang/String;");
+			global::java.lang.Package._getSpecificationVersion11501 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getSpecificationVersion", "()Ljava/lang/String;");
+			global::java.lang.Package._getSpecificationVendor11502 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getSpecificationVendor", "()Ljava/lang/String;");
+			global::java.lang.Package._getImplementationTitle11503 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getImplementationTitle", "()Ljava/lang/String;");
+			global::java.lang.Package._getImplementationVersion11504 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getImplementationVersion", "()Ljava/lang/String;");
+			global::java.lang.Package._getImplementationVendor11505 = @__env.GetMethodID(global::java.lang.Package.staticClass, "getImplementationVendor", "()Ljava/lang/String;");
+			global::java.lang.Package._isCompatibleWith11506 = @__env.GetMethodID(global::java.lang.Package.staticClass, "isCompatibleWith", "(Ljava/lang/String;)Z");
 		}
 	}
 }

@@ -59,32 +59,32 @@ namespace android.view
 				else
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__CapturedViewProperty.staticClass, global::android.view.ViewDebug.__CapturedViewProperty._retrieveReturn8417);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _hashCode8418;
-			 int java.lang.annotation.Annotation.hashCode() 
-			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.view.ViewDebug.__CapturedViewProperty._hashCode8418);
-				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewDebug.__CapturedViewProperty.staticClass, global::android.view.ViewDebug.__CapturedViewProperty._hashCode8418);
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _equals8419;
+			internal static global::net.sf.jni4net.jni.MethodId _equals8418;
 			 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this, global::android.view.ViewDebug.__CapturedViewProperty._equals8419, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+					return @__env.CallBooleanMethod(this, global::android.view.ViewDebug.__CapturedViewProperty._equals8418, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 				else
-					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__CapturedViewProperty.staticClass, global::android.view.ViewDebug.__CapturedViewProperty._equals8419, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__CapturedViewProperty.staticClass, global::android.view.ViewDebug.__CapturedViewProperty._equals8418, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _toString8420;
+			internal static global::net.sf.jni4net.jni.MethodId _toString8419;
 			 global::java.lang.String java.lang.annotation.Annotation.toString() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__CapturedViewProperty._toString8420));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__CapturedViewProperty._toString8419));
 				else
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__CapturedViewProperty.staticClass, global::android.view.ViewDebug.__CapturedViewProperty._toString8420));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__CapturedViewProperty.staticClass, global::android.view.ViewDebug.__CapturedViewProperty._toString8419));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _hashCode8420;
+			 int java.lang.annotation.Annotation.hashCode() 
+			{
+				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				if (!IsClrObject)
+					return @__env.CallIntMethod(this, global::android.view.ViewDebug.__CapturedViewProperty._hashCode8420);
+				else
+					return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewDebug.__CapturedViewProperty.staticClass, global::android.view.ViewDebug.__CapturedViewProperty._hashCode8420);
 			}
 			internal static global::net.sf.jni4net.jni.MethodId _annotationType8421;
 			 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
@@ -99,9 +99,9 @@ namespace android.view
 			{
 				global::android.view.ViewDebug.__CapturedViewProperty.staticClass = @__class;
 				global::android.view.ViewDebug.__CapturedViewProperty._retrieveReturn8417 = @__env.GetMethodID(global::android.view.ViewDebug.__CapturedViewProperty.staticClass, "android.view.ViewDebug.CapturedViewProperty.retrieveReturn", "()Z");
-				global::android.view.ViewDebug.__CapturedViewProperty._hashCode8418 = @__env.GetMethodID(global::android.view.ViewDebug.__CapturedViewProperty.staticClass, "java.lang.annotation.Annotation.hashCode", "()I");
-				global::android.view.ViewDebug.__CapturedViewProperty._equals8419 = @__env.GetMethodID(global::android.view.ViewDebug.__CapturedViewProperty.staticClass, "java.lang.annotation.Annotation.equals", "(Ljava/lang/Object;)Z");
-				global::android.view.ViewDebug.__CapturedViewProperty._toString8420 = @__env.GetMethodID(global::android.view.ViewDebug.__CapturedViewProperty.staticClass, "java.lang.annotation.Annotation.toString", "()Ljava/lang/String;");
+				global::android.view.ViewDebug.__CapturedViewProperty._equals8418 = @__env.GetMethodID(global::android.view.ViewDebug.__CapturedViewProperty.staticClass, "java.lang.annotation.Annotation.equals", "(Ljava/lang/Object;)Z");
+				global::android.view.ViewDebug.__CapturedViewProperty._toString8419 = @__env.GetMethodID(global::android.view.ViewDebug.__CapturedViewProperty.staticClass, "java.lang.annotation.Annotation.toString", "()Ljava/lang/String;");
+				global::android.view.ViewDebug.__CapturedViewProperty._hashCode8420 = @__env.GetMethodID(global::android.view.ViewDebug.__CapturedViewProperty.staticClass, "java.lang.annotation.Annotation.hashCode", "()I");
 				global::android.view.ViewDebug.__CapturedViewProperty._annotationType8421 = @__env.GetMethodID(global::android.view.ViewDebug.__CapturedViewProperty.staticClass, "java.lang.annotation.Annotation.annotationType", "()Ljava/lang/Class;");
 			}
 		}
@@ -193,32 +193,32 @@ namespace android.view
 				else
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__ExportedProperty.staticClass, global::android.view.ViewDebug.__ExportedProperty._deepExport8427);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _hashCode8428;
-			 int java.lang.annotation.Annotation.hashCode() 
-			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.view.ViewDebug.__ExportedProperty._hashCode8428);
-				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewDebug.__ExportedProperty.staticClass, global::android.view.ViewDebug.__ExportedProperty._hashCode8428);
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _equals8429;
+			internal static global::net.sf.jni4net.jni.MethodId _equals8428;
 			 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this, global::android.view.ViewDebug.__ExportedProperty._equals8429, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+					return @__env.CallBooleanMethod(this, global::android.view.ViewDebug.__ExportedProperty._equals8428, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 				else
-					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__ExportedProperty.staticClass, global::android.view.ViewDebug.__ExportedProperty._equals8429, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__ExportedProperty.staticClass, global::android.view.ViewDebug.__ExportedProperty._equals8428, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _toString8430;
+			internal static global::net.sf.jni4net.jni.MethodId _toString8429;
 			 global::java.lang.String java.lang.annotation.Annotation.toString() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__ExportedProperty._toString8430));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__ExportedProperty._toString8429));
 				else
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__ExportedProperty.staticClass, global::android.view.ViewDebug.__ExportedProperty._toString8430));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__ExportedProperty.staticClass, global::android.view.ViewDebug.__ExportedProperty._toString8429));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _hashCode8430;
+			 int java.lang.annotation.Annotation.hashCode() 
+			{
+				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				if (!IsClrObject)
+					return @__env.CallIntMethod(this, global::android.view.ViewDebug.__ExportedProperty._hashCode8430);
+				else
+					return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewDebug.__ExportedProperty.staticClass, global::android.view.ViewDebug.__ExportedProperty._hashCode8430);
 			}
 			internal static global::net.sf.jni4net.jni.MethodId _annotationType8431;
 			 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
@@ -238,9 +238,9 @@ namespace android.view
 				global::android.view.ViewDebug.__ExportedProperty._indexMapping8425 = @__env.GetMethodID(global::android.view.ViewDebug.__ExportedProperty.staticClass, "android.view.ViewDebug.ExportedProperty.indexMapping", "()[Landroid/view/ViewDebug/IntToString;");
 				global::android.view.ViewDebug.__ExportedProperty._flagMapping8426 = @__env.GetMethodID(global::android.view.ViewDebug.__ExportedProperty.staticClass, "android.view.ViewDebug.ExportedProperty.flagMapping", "()[Landroid/view/ViewDebug/FlagToString;");
 				global::android.view.ViewDebug.__ExportedProperty._deepExport8427 = @__env.GetMethodID(global::android.view.ViewDebug.__ExportedProperty.staticClass, "android.view.ViewDebug.ExportedProperty.deepExport", "()Z");
-				global::android.view.ViewDebug.__ExportedProperty._hashCode8428 = @__env.GetMethodID(global::android.view.ViewDebug.__ExportedProperty.staticClass, "java.lang.annotation.Annotation.hashCode", "()I");
-				global::android.view.ViewDebug.__ExportedProperty._equals8429 = @__env.GetMethodID(global::android.view.ViewDebug.__ExportedProperty.staticClass, "java.lang.annotation.Annotation.equals", "(Ljava/lang/Object;)Z");
-				global::android.view.ViewDebug.__ExportedProperty._toString8430 = @__env.GetMethodID(global::android.view.ViewDebug.__ExportedProperty.staticClass, "java.lang.annotation.Annotation.toString", "()Ljava/lang/String;");
+				global::android.view.ViewDebug.__ExportedProperty._equals8428 = @__env.GetMethodID(global::android.view.ViewDebug.__ExportedProperty.staticClass, "java.lang.annotation.Annotation.equals", "(Ljava/lang/Object;)Z");
+				global::android.view.ViewDebug.__ExportedProperty._toString8429 = @__env.GetMethodID(global::android.view.ViewDebug.__ExportedProperty.staticClass, "java.lang.annotation.Annotation.toString", "()Ljava/lang/String;");
+				global::android.view.ViewDebug.__ExportedProperty._hashCode8430 = @__env.GetMethodID(global::android.view.ViewDebug.__ExportedProperty.staticClass, "java.lang.annotation.Annotation.hashCode", "()I");
 				global::android.view.ViewDebug.__ExportedProperty._annotationType8431 = @__env.GetMethodID(global::android.view.ViewDebug.__ExportedProperty.staticClass, "java.lang.annotation.Annotation.annotationType", "()Ljava/lang/Class;");
 			}
 		}
@@ -315,32 +315,32 @@ namespace android.view
 				else
 					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__FlagToString.staticClass, global::android.view.ViewDebug.__FlagToString._outputIf8435);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _hashCode8436;
-			 int java.lang.annotation.Annotation.hashCode() 
-			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.view.ViewDebug.__FlagToString._hashCode8436);
-				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewDebug.__FlagToString.staticClass, global::android.view.ViewDebug.__FlagToString._hashCode8436);
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _equals8437;
+			internal static global::net.sf.jni4net.jni.MethodId _equals8436;
 			 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this, global::android.view.ViewDebug.__FlagToString._equals8437, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+					return @__env.CallBooleanMethod(this, global::android.view.ViewDebug.__FlagToString._equals8436, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 				else
-					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__FlagToString.staticClass, global::android.view.ViewDebug.__FlagToString._equals8437, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__FlagToString.staticClass, global::android.view.ViewDebug.__FlagToString._equals8436, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _toString8438;
+			internal static global::net.sf.jni4net.jni.MethodId _toString8437;
 			 global::java.lang.String java.lang.annotation.Annotation.toString() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__FlagToString._toString8438));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__FlagToString._toString8437));
 				else
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__FlagToString.staticClass, global::android.view.ViewDebug.__FlagToString._toString8438));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__FlagToString.staticClass, global::android.view.ViewDebug.__FlagToString._toString8437));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _hashCode8438;
+			 int java.lang.annotation.Annotation.hashCode() 
+			{
+				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				if (!IsClrObject)
+					return @__env.CallIntMethod(this, global::android.view.ViewDebug.__FlagToString._hashCode8438);
+				else
+					return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewDebug.__FlagToString.staticClass, global::android.view.ViewDebug.__FlagToString._hashCode8438);
 			}
 			internal static global::net.sf.jni4net.jni.MethodId _annotationType8439;
 			 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
@@ -358,9 +358,9 @@ namespace android.view
 				global::android.view.ViewDebug.__FlagToString._equals8433 = @__env.GetMethodID(global::android.view.ViewDebug.__FlagToString.staticClass, "android.view.ViewDebug.FlagToString.equals", "()I");
 				global::android.view.ViewDebug.__FlagToString._mask8434 = @__env.GetMethodID(global::android.view.ViewDebug.__FlagToString.staticClass, "android.view.ViewDebug.FlagToString.mask", "()I");
 				global::android.view.ViewDebug.__FlagToString._outputIf8435 = @__env.GetMethodID(global::android.view.ViewDebug.__FlagToString.staticClass, "android.view.ViewDebug.FlagToString.outputIf", "()Z");
-				global::android.view.ViewDebug.__FlagToString._hashCode8436 = @__env.GetMethodID(global::android.view.ViewDebug.__FlagToString.staticClass, "java.lang.annotation.Annotation.hashCode", "()I");
-				global::android.view.ViewDebug.__FlagToString._equals8437 = @__env.GetMethodID(global::android.view.ViewDebug.__FlagToString.staticClass, "java.lang.annotation.Annotation.equals", "(Ljava/lang/Object;)Z");
-				global::android.view.ViewDebug.__FlagToString._toString8438 = @__env.GetMethodID(global::android.view.ViewDebug.__FlagToString.staticClass, "java.lang.annotation.Annotation.toString", "()Ljava/lang/String;");
+				global::android.view.ViewDebug.__FlagToString._equals8436 = @__env.GetMethodID(global::android.view.ViewDebug.__FlagToString.staticClass, "java.lang.annotation.Annotation.equals", "(Ljava/lang/Object;)Z");
+				global::android.view.ViewDebug.__FlagToString._toString8437 = @__env.GetMethodID(global::android.view.ViewDebug.__FlagToString.staticClass, "java.lang.annotation.Annotation.toString", "()Ljava/lang/String;");
+				global::android.view.ViewDebug.__FlagToString._hashCode8438 = @__env.GetMethodID(global::android.view.ViewDebug.__FlagToString.staticClass, "java.lang.annotation.Annotation.hashCode", "()I");
 				global::android.view.ViewDebug.__FlagToString._annotationType8439 = @__env.GetMethodID(global::android.view.ViewDebug.__FlagToString.staticClass, "java.lang.annotation.Annotation.annotationType", "()Ljava/lang/Class;");
 			}
 		}
@@ -382,16 +382,16 @@ namespace android.view
 			internal HierarchyTraceType(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf8440;
+			internal static global::net.sf.jni4net.jni.MethodId _values8440;
+			public static global::android.view.ViewDebug.HierarchyTraceType[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.view.ViewDebug.HierarchyTraceType.staticClass, global::android.view.ViewDebug.HierarchyTraceType._values8440));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf8441;
 			public static global::android.view.ViewDebug.HierarchyTraceType valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewDebug.HierarchyTraceType>(@__env, @__env.CallStaticObjectMethodPtr(android.view.ViewDebug.HierarchyTraceType.staticClass, global::android.view.ViewDebug.HierarchyTraceType._valueOf8440, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values8441;
-			public static global::android.view.ViewDebug.HierarchyTraceType[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.view.ViewDebug.HierarchyTraceType.staticClass, global::android.view.ViewDebug.HierarchyTraceType._values8441));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewDebug.HierarchyTraceType>(@__env, @__env.CallStaticObjectMethodPtr(android.view.ViewDebug.HierarchyTraceType.staticClass, global::android.view.ViewDebug.HierarchyTraceType._valueOf8441, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _BUILD_CACHE8442;
 			public static global::android.view.ViewDebug.HierarchyTraceType BUILD_CACHE
@@ -460,8 +460,8 @@ namespace android.view
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.view.ViewDebug.HierarchyTraceType.staticClass = @__class;
-				global::android.view.ViewDebug.HierarchyTraceType._valueOf8440 = @__env.GetStaticMethodID(global::android.view.ViewDebug.HierarchyTraceType.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/view/ViewDebug$HierarchyTraceType;");
-				global::android.view.ViewDebug.HierarchyTraceType._values8441 = @__env.GetStaticMethodID(global::android.view.ViewDebug.HierarchyTraceType.staticClass, "values", "()[Landroid/view/ViewDebug/HierarchyTraceType;");
+				global::android.view.ViewDebug.HierarchyTraceType._values8440 = @__env.GetStaticMethodID(global::android.view.ViewDebug.HierarchyTraceType.staticClass, "values", "()[Landroid/view/ViewDebug/HierarchyTraceType;");
+				global::android.view.ViewDebug.HierarchyTraceType._valueOf8441 = @__env.GetStaticMethodID(global::android.view.ViewDebug.HierarchyTraceType.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/view/ViewDebug$HierarchyTraceType;");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
@@ -515,32 +515,32 @@ namespace android.view
 				else
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__IntToString.staticClass, global::android.view.ViewDebug.__IntToString._to8451));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _hashCode8452;
-			 int java.lang.annotation.Annotation.hashCode() 
-			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.view.ViewDebug.__IntToString._hashCode8452);
-				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewDebug.__IntToString.staticClass, global::android.view.ViewDebug.__IntToString._hashCode8452);
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _equals8453;
+			internal static global::net.sf.jni4net.jni.MethodId _equals8452;
 			 bool java.lang.annotation.Annotation.equals(java.lang.Object arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this, global::android.view.ViewDebug.__IntToString._equals8453, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+					return @__env.CallBooleanMethod(this, global::android.view.ViewDebug.__IntToString._equals8452, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 				else
-					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__IntToString.staticClass, global::android.view.ViewDebug.__IntToString._equals8453, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.view.ViewDebug.__IntToString.staticClass, global::android.view.ViewDebug.__IntToString._equals8452, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _toString8454;
+			internal static global::net.sf.jni4net.jni.MethodId _toString8453;
 			 global::java.lang.String java.lang.annotation.Annotation.toString() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__IntToString._toString8454));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.ViewDebug.__IntToString._toString8453));
 				else
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__IntToString.staticClass, global::android.view.ViewDebug.__IntToString._toString8454));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.ViewDebug.__IntToString.staticClass, global::android.view.ViewDebug.__IntToString._toString8453));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _hashCode8454;
+			 int java.lang.annotation.Annotation.hashCode() 
+			{
+				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				if (!IsClrObject)
+					return @__env.CallIntMethod(this, global::android.view.ViewDebug.__IntToString._hashCode8454);
+				else
+					return @__env.CallNonVirtualIntMethod(this, global::android.view.ViewDebug.__IntToString.staticClass, global::android.view.ViewDebug.__IntToString._hashCode8454);
 			}
 			internal static global::net.sf.jni4net.jni.MethodId _annotationType8455;
 			 global::java.lang.Class java.lang.annotation.Annotation.annotationType() 
@@ -556,9 +556,9 @@ namespace android.view
 				global::android.view.ViewDebug.__IntToString.staticClass = @__class;
 				global::android.view.ViewDebug.__IntToString._from8450 = @__env.GetMethodID(global::android.view.ViewDebug.__IntToString.staticClass, "android.view.ViewDebug.IntToString.from", "()I");
 				global::android.view.ViewDebug.__IntToString._to8451 = @__env.GetMethodID(global::android.view.ViewDebug.__IntToString.staticClass, "android.view.ViewDebug.IntToString.to", "()Ljava/lang/String;");
-				global::android.view.ViewDebug.__IntToString._hashCode8452 = @__env.GetMethodID(global::android.view.ViewDebug.__IntToString.staticClass, "java.lang.annotation.Annotation.hashCode", "()I");
-				global::android.view.ViewDebug.__IntToString._equals8453 = @__env.GetMethodID(global::android.view.ViewDebug.__IntToString.staticClass, "java.lang.annotation.Annotation.equals", "(Ljava/lang/Object;)Z");
-				global::android.view.ViewDebug.__IntToString._toString8454 = @__env.GetMethodID(global::android.view.ViewDebug.__IntToString.staticClass, "java.lang.annotation.Annotation.toString", "()Ljava/lang/String;");
+				global::android.view.ViewDebug.__IntToString._equals8452 = @__env.GetMethodID(global::android.view.ViewDebug.__IntToString.staticClass, "java.lang.annotation.Annotation.equals", "(Ljava/lang/Object;)Z");
+				global::android.view.ViewDebug.__IntToString._toString8453 = @__env.GetMethodID(global::android.view.ViewDebug.__IntToString.staticClass, "java.lang.annotation.Annotation.toString", "()Ljava/lang/String;");
+				global::android.view.ViewDebug.__IntToString._hashCode8454 = @__env.GetMethodID(global::android.view.ViewDebug.__IntToString.staticClass, "java.lang.annotation.Annotation.hashCode", "()I");
 				global::android.view.ViewDebug.__IntToString._annotationType8455 = @__env.GetMethodID(global::android.view.ViewDebug.__IntToString.staticClass, "java.lang.annotation.Annotation.annotationType", "()Ljava/lang/Class;");
 			}
 		}
@@ -580,16 +580,16 @@ namespace android.view
 			internal RecyclerTraceType(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf8456;
+			internal static global::net.sf.jni4net.jni.MethodId _values8456;
+			public static global::android.view.ViewDebug.RecyclerTraceType[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.view.ViewDebug.RecyclerTraceType.staticClass, global::android.view.ViewDebug.RecyclerTraceType._values8456));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf8457;
 			public static global::android.view.ViewDebug.RecyclerTraceType valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewDebug.RecyclerTraceType>(@__env, @__env.CallStaticObjectMethodPtr(android.view.ViewDebug.RecyclerTraceType.staticClass, global::android.view.ViewDebug.RecyclerTraceType._valueOf8456, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values8457;
-			public static global::android.view.ViewDebug.RecyclerTraceType[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.view.ViewDebug.RecyclerTraceType.staticClass, global::android.view.ViewDebug.RecyclerTraceType._values8457));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.ViewDebug.RecyclerTraceType>(@__env, @__env.CallStaticObjectMethodPtr(android.view.ViewDebug.RecyclerTraceType.staticClass, global::android.view.ViewDebug.RecyclerTraceType._valueOf8457, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _BIND_VIEW8458;
 			public static global::android.view.ViewDebug.RecyclerTraceType BIND_VIEW
@@ -650,8 +650,8 @@ namespace android.view
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.view.ViewDebug.RecyclerTraceType.staticClass = @__class;
-				global::android.view.ViewDebug.RecyclerTraceType._valueOf8456 = @__env.GetStaticMethodID(global::android.view.ViewDebug.RecyclerTraceType.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/view/ViewDebug$RecyclerTraceType;");
-				global::android.view.ViewDebug.RecyclerTraceType._values8457 = @__env.GetStaticMethodID(global::android.view.ViewDebug.RecyclerTraceType.staticClass, "values", "()[Landroid/view/ViewDebug/RecyclerTraceType;");
+				global::android.view.ViewDebug.RecyclerTraceType._values8456 = @__env.GetStaticMethodID(global::android.view.ViewDebug.RecyclerTraceType.staticClass, "values", "()[Landroid/view/ViewDebug/RecyclerTraceType;");
+				global::android.view.ViewDebug.RecyclerTraceType._valueOf8457 = @__env.GetStaticMethodID(global::android.view.ViewDebug.RecyclerTraceType.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/view/ViewDebug$RecyclerTraceType;");
 			}
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _trace8465;

@@ -18,32 +18,32 @@ namespace android.telephony
 		protected ServiceState(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode6501;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.ServiceState._hashCode6501);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._hashCode6501);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals6502;
+		internal static global::net.sf.jni4net.jni.MethodId _equals6501;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.telephony.ServiceState._equals6502, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.telephony.ServiceState._equals6501, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._equals6502, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._equals6501, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString6503;
+		internal static global::net.sf.jni4net.jni.MethodId _toString6502;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.ServiceState._toString6503));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.ServiceState._toString6502));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._toString6503));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._toString6502));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode6503;
+		public override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.telephony.ServiceState._hashCode6503);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.ServiceState.staticClass, global::android.telephony.ServiceState._hashCode6503);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getState6504;
 		public virtual int getState() 
@@ -237,9 +237,9 @@ namespace android.telephony
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.telephony.ServiceState.staticClass = @__class;
-			global::android.telephony.ServiceState._hashCode6501 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "hashCode", "()I");
-			global::android.telephony.ServiceState._equals6502 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.telephony.ServiceState._toString6503 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.telephony.ServiceState._equals6501 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.telephony.ServiceState._toString6502 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.telephony.ServiceState._hashCode6503 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "hashCode", "()I");
 			global::android.telephony.ServiceState._getState6504 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "getState", "()I");
 			global::android.telephony.ServiceState._setState6505 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "setState", "(I)V");
 			global::android.telephony.ServiceState._writeToParcel6506 = @__env.GetMethodID(global::android.telephony.ServiceState.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");

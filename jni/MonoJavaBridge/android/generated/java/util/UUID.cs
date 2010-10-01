@@ -18,50 +18,50 @@ namespace java.util
 		internal UUID(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode13017;
-		public sealed override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.UUID._hashCode13017);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._hashCode13017);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals13018;
+		internal static global::net.sf.jni4net.jni.MethodId _equals13017;
 		public sealed override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.UUID._equals13018, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::java.util.UUID._equals13017, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._equals13018, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._equals13017, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo13019;
-		public int compareTo(java.util.UUID arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.UUID._compareTo13019, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._compareTo13019, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo13020;
-		public int compareTo(java.lang.Object arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.UUID._compareTo13020, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._compareTo13020, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString13021;
+		internal static global::net.sf.jni4net.jni.MethodId _toString13018;
 		public sealed override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.UUID._toString13021));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.UUID._toString13018));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.UUID.staticClass, global::java.util.UUID._toString13021));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.UUID.staticClass, global::java.util.UUID._toString13018));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode13019;
+		public sealed override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.util.UUID._hashCode13019);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._hashCode13019);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo13020;
+		public int compareTo(java.util.UUID arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.util.UUID._compareTo13020, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._compareTo13020, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo13021;
+		public int compareTo(java.lang.Object arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.util.UUID._compareTo13021, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.util.UUID.staticClass, global::java.util.UUID._compareTo13021, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _timestamp13022;
 		public long timestamp() 
@@ -153,11 +153,11 @@ namespace java.util
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.util.UUID.staticClass = @__class;
-			global::java.util.UUID._hashCode13017 = @__env.GetMethodID(global::java.util.UUID.staticClass, "hashCode", "()I");
-			global::java.util.UUID._equals13018 = @__env.GetMethodID(global::java.util.UUID.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.util.UUID._compareTo13019 = @__env.GetMethodID(global::java.util.UUID.staticClass, "compareTo", "(Ljava/util/UUID;)I");
-			global::java.util.UUID._compareTo13020 = @__env.GetMethodID(global::java.util.UUID.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			global::java.util.UUID._toString13021 = @__env.GetMethodID(global::java.util.UUID.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.util.UUID._equals13017 = @__env.GetMethodID(global::java.util.UUID.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.util.UUID._toString13018 = @__env.GetMethodID(global::java.util.UUID.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.util.UUID._hashCode13019 = @__env.GetMethodID(global::java.util.UUID.staticClass, "hashCode", "()I");
+			global::java.util.UUID._compareTo13020 = @__env.GetMethodID(global::java.util.UUID.staticClass, "compareTo", "(Ljava/util/UUID;)I");
+			global::java.util.UUID._compareTo13021 = @__env.GetMethodID(global::java.util.UUID.staticClass, "compareTo", "(Ljava/lang/Object;)I");
 			global::java.util.UUID._timestamp13022 = @__env.GetMethodID(global::java.util.UUID.staticClass, "timestamp", "()J");
 			global::java.util.UUID._variant13023 = @__env.GetMethodID(global::java.util.UUID.staticClass, "variant", "()I");
 			global::java.util.UUID._version13024 = @__env.GetMethodID(global::java.util.UUID.staticClass, "version", "()I");

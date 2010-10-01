@@ -36,16 +36,16 @@ namespace android.graphics
 			internal TileMode(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf3406;
+			internal static global::net.sf.jni4net.jni.MethodId _values3406;
+			public static global::android.graphics.Shader.TileMode[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Shader.TileMode.staticClass, global::android.graphics.Shader.TileMode._values3406));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf3407;
 			public static global::android.graphics.Shader.TileMode valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Shader.TileMode>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Shader.TileMode.staticClass, global::android.graphics.Shader.TileMode._valueOf3406, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values3407;
-			public static global::android.graphics.Shader.TileMode[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Shader.TileMode.staticClass, global::android.graphics.Shader.TileMode._values3407));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Shader.TileMode>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Shader.TileMode.staticClass, global::android.graphics.Shader.TileMode._valueOf3407, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _CLAMP3408;
 			public static global::android.graphics.Shader.TileMode CLAMP
@@ -74,8 +74,8 @@ namespace android.graphics
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.graphics.Shader.TileMode.staticClass = @__class;
-				global::android.graphics.Shader.TileMode._valueOf3406 = @__env.GetStaticMethodID(global::android.graphics.Shader.TileMode.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Shader$TileMode;");
-				global::android.graphics.Shader.TileMode._values3407 = @__env.GetStaticMethodID(global::android.graphics.Shader.TileMode.staticClass, "values", "()[Landroid/graphics/Shader/TileMode;");
+				global::android.graphics.Shader.TileMode._values3406 = @__env.GetStaticMethodID(global::android.graphics.Shader.TileMode.staticClass, "values", "()[Landroid/graphics/Shader/TileMode;");
+				global::android.graphics.Shader.TileMode._valueOf3407 = @__env.GetStaticMethodID(global::android.graphics.Shader.TileMode.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Shader$TileMode;");
 			}
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getLocalMatrix3411;

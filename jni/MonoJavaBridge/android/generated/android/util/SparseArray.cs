@@ -45,23 +45,23 @@ namespace android.util
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.util.SparseArray.staticClass, global::android.util.SparseArray._put7600, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear7601;
-		public virtual void clear() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.SparseArray._clear7601);
-			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.SparseArray.staticClass, global::android.util.SparseArray._clear7601);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _append7602;
+		internal static global::net.sf.jni4net.jni.MethodId _append7601;
 		public virtual void append(int arg0, java.lang.Object arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.SparseArray._append7602, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallVoidMethod(this, global::android.util.SparseArray._append7601, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.SparseArray.staticClass, global::android.util.SparseArray._append7602, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.util.SparseArray.staticClass, global::android.util.SparseArray._append7601, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _clear7602;
+		public virtual void clear() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this, global::android.util.SparseArray._clear7602);
+			else
+				@__env.CallNonVirtualVoidMethod(this, global::android.util.SparseArray.staticClass, global::android.util.SparseArray._clear7602);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _size7603;
 		public virtual int size() 
@@ -153,8 +153,8 @@ namespace android.util
 			global::android.util.SparseArray._get7598 = @__env.GetMethodID(global::android.util.SparseArray.staticClass, "get", "(I)Ljava/lang/Object;");
 			global::android.util.SparseArray._get7599 = @__env.GetMethodID(global::android.util.SparseArray.staticClass, "get", "(ILjava/lang/Object;)Ljava/lang/Object;");
 			global::android.util.SparseArray._put7600 = @__env.GetMethodID(global::android.util.SparseArray.staticClass, "put", "(ILjava/lang/Object;)V");
-			global::android.util.SparseArray._clear7601 = @__env.GetMethodID(global::android.util.SparseArray.staticClass, "clear", "()V");
-			global::android.util.SparseArray._append7602 = @__env.GetMethodID(global::android.util.SparseArray.staticClass, "append", "(ILjava/lang/Object;)V");
+			global::android.util.SparseArray._append7601 = @__env.GetMethodID(global::android.util.SparseArray.staticClass, "append", "(ILjava/lang/Object;)V");
+			global::android.util.SparseArray._clear7602 = @__env.GetMethodID(global::android.util.SparseArray.staticClass, "clear", "()V");
 			global::android.util.SparseArray._size7603 = @__env.GetMethodID(global::android.util.SparseArray.staticClass, "size", "()I");
 			global::android.util.SparseArray._remove7604 = @__env.GetMethodID(global::android.util.SparseArray.staticClass, "remove", "(I)V");
 			global::android.util.SparseArray._delete7605 = @__env.GetMethodID(global::android.util.SparseArray.staticClass, "delete", "(I)V");

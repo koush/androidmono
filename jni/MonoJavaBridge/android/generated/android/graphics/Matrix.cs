@@ -36,16 +36,16 @@ namespace android.graphics
 			internal ScaleToFit(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf2959;
+			internal static global::net.sf.jni4net.jni.MethodId _values2959;
+			public static global::android.graphics.Matrix.ScaleToFit[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Matrix.ScaleToFit.staticClass, global::android.graphics.Matrix.ScaleToFit._values2959));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf2960;
 			public static global::android.graphics.Matrix.ScaleToFit valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Matrix.ScaleToFit>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Matrix.ScaleToFit.staticClass, global::android.graphics.Matrix.ScaleToFit._valueOf2959, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values2960;
-			public static global::android.graphics.Matrix.ScaleToFit[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Matrix.ScaleToFit.staticClass, global::android.graphics.Matrix.ScaleToFit._values2960));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Matrix.ScaleToFit>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.Matrix.ScaleToFit.staticClass, global::android.graphics.Matrix.ScaleToFit._valueOf2960, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _CENTER2961;
 			public static global::android.graphics.Matrix.ScaleToFit CENTER
@@ -82,8 +82,8 @@ namespace android.graphics
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.graphics.Matrix.ScaleToFit.staticClass = @__class;
-				global::android.graphics.Matrix.ScaleToFit._valueOf2959 = @__env.GetStaticMethodID(global::android.graphics.Matrix.ScaleToFit.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Matrix$ScaleToFit;");
-				global::android.graphics.Matrix.ScaleToFit._values2960 = @__env.GetStaticMethodID(global::android.graphics.Matrix.ScaleToFit.staticClass, "values", "()[Landroid/graphics/Matrix/ScaleToFit;");
+				global::android.graphics.Matrix.ScaleToFit._values2959 = @__env.GetStaticMethodID(global::android.graphics.Matrix.ScaleToFit.staticClass, "values", "()[Landroid/graphics/Matrix/ScaleToFit;");
+				global::android.graphics.Matrix.ScaleToFit._valueOf2960 = @__env.GetStaticMethodID(global::android.graphics.Matrix.ScaleToFit.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Matrix$ScaleToFit;");
 			}
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _equals2965;

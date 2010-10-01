@@ -18,32 +18,32 @@ namespace android.accounts
 		protected AuthenticatorDescription(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode100;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.accounts.AuthenticatorDescription._hashCode100);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.accounts.AuthenticatorDescription.staticClass, global::android.accounts.AuthenticatorDescription._hashCode100);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals101;
+		internal static global::net.sf.jni4net.jni.MethodId _equals100;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.accounts.AuthenticatorDescription._equals101, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.accounts.AuthenticatorDescription._equals100, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.accounts.AuthenticatorDescription.staticClass, global::android.accounts.AuthenticatorDescription._equals101, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.accounts.AuthenticatorDescription.staticClass, global::android.accounts.AuthenticatorDescription._equals100, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString102;
+		internal static global::net.sf.jni4net.jni.MethodId _toString101;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.accounts.AuthenticatorDescription._toString102));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.accounts.AuthenticatorDescription._toString101));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.accounts.AuthenticatorDescription.staticClass, global::android.accounts.AuthenticatorDescription._toString102));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.accounts.AuthenticatorDescription.staticClass, global::android.accounts.AuthenticatorDescription._toString101));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode102;
+		public override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.accounts.AuthenticatorDescription._hashCode102);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.accounts.AuthenticatorDescription.staticClass, global::android.accounts.AuthenticatorDescription._hashCode102);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel103;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
@@ -134,9 +134,9 @@ namespace android.accounts
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.accounts.AuthenticatorDescription.staticClass = @__class;
-			global::android.accounts.AuthenticatorDescription._hashCode100 = @__env.GetMethodID(global::android.accounts.AuthenticatorDescription.staticClass, "hashCode", "()I");
-			global::android.accounts.AuthenticatorDescription._equals101 = @__env.GetMethodID(global::android.accounts.AuthenticatorDescription.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.accounts.AuthenticatorDescription._toString102 = @__env.GetMethodID(global::android.accounts.AuthenticatorDescription.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.accounts.AuthenticatorDescription._equals100 = @__env.GetMethodID(global::android.accounts.AuthenticatorDescription.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.accounts.AuthenticatorDescription._toString101 = @__env.GetMethodID(global::android.accounts.AuthenticatorDescription.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.accounts.AuthenticatorDescription._hashCode102 = @__env.GetMethodID(global::android.accounts.AuthenticatorDescription.staticClass, "hashCode", "()I");
 			global::android.accounts.AuthenticatorDescription._writeToParcel103 = @__env.GetMethodID(global::android.accounts.AuthenticatorDescription.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::android.accounts.AuthenticatorDescription._describeContents104 = @__env.GetMethodID(global::android.accounts.AuthenticatorDescription.staticClass, "describeContents", "()I");
 			global::android.accounts.AuthenticatorDescription._newKey105 = @__env.GetStaticMethodID(global::android.accounts.AuthenticatorDescription.staticClass, "newKey", "(Ljava/lang/String;)Landroid/accounts/AuthenticatorDescription;");

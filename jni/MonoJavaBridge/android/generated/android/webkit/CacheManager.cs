@@ -54,23 +54,23 @@ namespace android.webkit
 				else
 					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getLocalPath9208));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getEncoding9209;
-			public virtual global::java.lang.String getEncoding() 
-			{
-				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				if (!IsClrObject)
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.CacheManager.CacheResult._getEncoding9209));
-				else
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getEncoding9209));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _getInputStream9210;
+			internal static global::net.sf.jni4net.jni.MethodId _getInputStream9209;
 			public virtual global::java.io.InputStream getInputStream() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.CacheManager.CacheResult._getInputStream9210));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.CacheManager.CacheResult._getInputStream9209));
 				else
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getInputStream9210));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.io.InputStream>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getInputStream9209));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _getEncoding9210;
+			public virtual global::java.lang.String getEncoding() 
+			{
+				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+				if (!IsClrObject)
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.CacheManager.CacheResult._getEncoding9210));
+				else
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.CacheManager.CacheResult.staticClass, global::android.webkit.CacheManager.CacheResult._getEncoding9210));
 			}
 			internal static global::net.sf.jni4net.jni.MethodId _getContentLength9211;
 			public virtual long getContentLength() 
@@ -182,8 +182,8 @@ namespace android.webkit
 				global::android.webkit.CacheManager.CacheResult.staticClass = @__class;
 				global::android.webkit.CacheManager.CacheResult._getLocation9207 = @__env.GetMethodID(global::android.webkit.CacheManager.CacheResult.staticClass, "getLocation", "()Ljava/lang/String;");
 				global::android.webkit.CacheManager.CacheResult._getLocalPath9208 = @__env.GetMethodID(global::android.webkit.CacheManager.CacheResult.staticClass, "getLocalPath", "()Ljava/lang/String;");
-				global::android.webkit.CacheManager.CacheResult._getEncoding9209 = @__env.GetMethodID(global::android.webkit.CacheManager.CacheResult.staticClass, "getEncoding", "()Ljava/lang/String;");
-				global::android.webkit.CacheManager.CacheResult._getInputStream9210 = @__env.GetMethodID(global::android.webkit.CacheManager.CacheResult.staticClass, "getInputStream", "()Ljava/io/InputStream;");
+				global::android.webkit.CacheManager.CacheResult._getInputStream9209 = @__env.GetMethodID(global::android.webkit.CacheManager.CacheResult.staticClass, "getInputStream", "()Ljava/io/InputStream;");
+				global::android.webkit.CacheManager.CacheResult._getEncoding9210 = @__env.GetMethodID(global::android.webkit.CacheManager.CacheResult.staticClass, "getEncoding", "()Ljava/lang/String;");
 				global::android.webkit.CacheManager.CacheResult._getContentLength9211 = @__env.GetMethodID(global::android.webkit.CacheManager.CacheResult.staticClass, "getContentLength", "()J");
 				global::android.webkit.CacheManager.CacheResult._getLastModified9212 = @__env.GetMethodID(global::android.webkit.CacheManager.CacheResult.staticClass, "getLastModified", "()Ljava/lang/String;");
 				global::android.webkit.CacheManager.CacheResult._getOutputStream9213 = @__env.GetMethodID(global::android.webkit.CacheManager.CacheResult.staticClass, "getOutputStream", "()Ljava/io/OutputStream;");

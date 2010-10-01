@@ -36,16 +36,16 @@ namespace android.widget
 			internal ScaleType(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf10356;
+			internal static global::net.sf.jni4net.jni.MethodId _values10356;
+			public static global::android.widget.ImageView.ScaleType[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.widget.ImageView.ScaleType.staticClass, global::android.widget.ImageView.ScaleType._values10356));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf10357;
 			public static global::android.widget.ImageView.ScaleType valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.ImageView.ScaleType>(@__env, @__env.CallStaticObjectMethodPtr(android.widget.ImageView.ScaleType.staticClass, global::android.widget.ImageView.ScaleType._valueOf10356, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values10357;
-			public static global::android.widget.ImageView.ScaleType[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.widget.ImageView.ScaleType.staticClass, global::android.widget.ImageView.ScaleType._values10357));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.ImageView.ScaleType>(@__env, @__env.CallStaticObjectMethodPtr(android.widget.ImageView.ScaleType.staticClass, global::android.widget.ImageView.ScaleType._valueOf10357, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _CENTER10358;
 			public static global::android.widget.ImageView.ScaleType CENTER
@@ -114,8 +114,8 @@ namespace android.widget
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.widget.ImageView.ScaleType.staticClass = @__class;
-				global::android.widget.ImageView.ScaleType._valueOf10356 = @__env.GetStaticMethodID(global::android.widget.ImageView.ScaleType.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/widget/ImageView$ScaleType;");
-				global::android.widget.ImageView.ScaleType._values10357 = @__env.GetStaticMethodID(global::android.widget.ImageView.ScaleType.staticClass, "values", "()[Landroid/widget/ImageView/ScaleType;");
+				global::android.widget.ImageView.ScaleType._values10356 = @__env.GetStaticMethodID(global::android.widget.ImageView.ScaleType.staticClass, "values", "()[Landroid/widget/ImageView/ScaleType;");
+				global::android.widget.ImageView.ScaleType._valueOf10357 = @__env.GetStaticMethodID(global::android.widget.ImageView.ScaleType.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/widget/ImageView$ScaleType;");
 			}
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getDrawable10366;

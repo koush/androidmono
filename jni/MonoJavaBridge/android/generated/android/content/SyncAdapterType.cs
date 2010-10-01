@@ -18,32 +18,32 @@ namespace android.content
 		protected SyncAdapterType(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode1512;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.SyncAdapterType._hashCode1512);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.SyncAdapterType.staticClass, global::android.content.SyncAdapterType._hashCode1512);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals1513;
+		internal static global::net.sf.jni4net.jni.MethodId _equals1512;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.content.SyncAdapterType._equals1513, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.content.SyncAdapterType._equals1512, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.SyncAdapterType.staticClass, global::android.content.SyncAdapterType._equals1513, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.SyncAdapterType.staticClass, global::android.content.SyncAdapterType._equals1512, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString1514;
+		internal static global::net.sf.jni4net.jni.MethodId _toString1513;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.SyncAdapterType._toString1514));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.SyncAdapterType._toString1513));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.SyncAdapterType.staticClass, global::android.content.SyncAdapterType._toString1514));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.SyncAdapterType.staticClass, global::android.content.SyncAdapterType._toString1513));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode1514;
+		public override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.content.SyncAdapterType._hashCode1514);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.SyncAdapterType.staticClass, global::android.content.SyncAdapterType._hashCode1514);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _supportsUploading1515;
 		public virtual bool supportsUploading() 
@@ -134,9 +134,9 @@ namespace android.content
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.content.SyncAdapterType.staticClass = @__class;
-			global::android.content.SyncAdapterType._hashCode1512 = @__env.GetMethodID(global::android.content.SyncAdapterType.staticClass, "hashCode", "()I");
-			global::android.content.SyncAdapterType._equals1513 = @__env.GetMethodID(global::android.content.SyncAdapterType.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.content.SyncAdapterType._toString1514 = @__env.GetMethodID(global::android.content.SyncAdapterType.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.SyncAdapterType._equals1512 = @__env.GetMethodID(global::android.content.SyncAdapterType.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.content.SyncAdapterType._toString1513 = @__env.GetMethodID(global::android.content.SyncAdapterType.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.SyncAdapterType._hashCode1514 = @__env.GetMethodID(global::android.content.SyncAdapterType.staticClass, "hashCode", "()I");
 			global::android.content.SyncAdapterType._supportsUploading1515 = @__env.GetMethodID(global::android.content.SyncAdapterType.staticClass, "supportsUploading", "()Z");
 			global::android.content.SyncAdapterType._writeToParcel1516 = @__env.GetMethodID(global::android.content.SyncAdapterType.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::android.content.SyncAdapterType._describeContents1517 = @__env.GetMethodID(global::android.content.SyncAdapterType.staticClass, "describeContents", "()I");

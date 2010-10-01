@@ -3,9 +3,9 @@ namespace java.security
 	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
 	public interface Principal 
 	{
-		int hashCode();
 		bool equals(java.lang.Object arg0);
 		global::java.lang.String toString();
+		int hashCode();
 		global::java.lang.String getName();
 	}
 
@@ -35,32 +35,32 @@ namespace java.security
 		internal __Principal(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode12456;
-		 int java.security.Principal.hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.security.__Principal._hashCode12456);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.security.__Principal.staticClass, global::java.security.__Principal._hashCode12456);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals12457;
+		internal static global::net.sf.jni4net.jni.MethodId _equals12456;
 		 bool java.security.Principal.equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.security.__Principal._equals12457, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::java.security.__Principal._equals12456, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.__Principal.staticClass, global::java.security.__Principal._equals12457, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.__Principal.staticClass, global::java.security.__Principal._equals12456, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString12458;
+		internal static global::net.sf.jni4net.jni.MethodId _toString12457;
 		 global::java.lang.String java.security.Principal.toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Principal._toString12458));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Principal._toString12457));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Principal.staticClass, global::java.security.__Principal._toString12458));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Principal.staticClass, global::java.security.__Principal._toString12457));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode12458;
+		 int java.security.Principal.hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.security.__Principal._hashCode12458);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.security.__Principal.staticClass, global::java.security.__Principal._hashCode12458);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getName12459;
 		 global::java.lang.String java.security.Principal.getName() 
@@ -74,9 +74,9 @@ namespace java.security
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.security.__Principal.staticClass = @__class;
-			global::java.security.__Principal._hashCode12456 = @__env.GetMethodID(global::java.security.__Principal.staticClass, "java.security.Principal.hashCode", "()I");
-			global::java.security.__Principal._equals12457 = @__env.GetMethodID(global::java.security.__Principal.staticClass, "java.security.Principal.equals", "(Ljava/lang/Object;)Z");
-			global::java.security.__Principal._toString12458 = @__env.GetMethodID(global::java.security.__Principal.staticClass, "java.security.Principal.toString", "()Ljava/lang/String;");
+			global::java.security.__Principal._equals12456 = @__env.GetMethodID(global::java.security.__Principal.staticClass, "java.security.Principal.equals", "(Ljava/lang/Object;)Z");
+			global::java.security.__Principal._toString12457 = @__env.GetMethodID(global::java.security.__Principal.staticClass, "java.security.Principal.toString", "()Ljava/lang/String;");
+			global::java.security.__Principal._hashCode12458 = @__env.GetMethodID(global::java.security.__Principal.staticClass, "java.security.Principal.hashCode", "()I");
 			global::java.security.__Principal._getName12459 = @__env.GetMethodID(global::java.security.__Principal.staticClass, "java.security.Principal.getName", "()Ljava/lang/String;");
 		}
 	}

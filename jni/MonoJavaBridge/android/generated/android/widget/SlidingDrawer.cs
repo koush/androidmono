@@ -188,23 +188,23 @@ namespace android.widget
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._close10867);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _open10868;
-		public virtual void open() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer._open10868);
-			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._open10868);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _getContent10869;
+		internal static global::net.sf.jni4net.jni.MethodId _getContent10868;
 		public virtual global::android.view.View getContent() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SlidingDrawer._getContent10869));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SlidingDrawer._getContent10868));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._getContent10869));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._getContent10868));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _open10869;
+		public virtual void open() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this, global::android.widget.SlidingDrawer._open10869);
+			else
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SlidingDrawer.staticClass, global::android.widget.SlidingDrawer._open10869);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _unlock10870;
 		public virtual void unlock() 
@@ -390,8 +390,8 @@ namespace android.widget
 			global::android.widget.SlidingDrawer.staticClass = @__class;
 			global::android.widget.SlidingDrawer._lock10866 = @__env.GetMethodID(global::android.widget.SlidingDrawer.staticClass, "@lock", "()V");
 			global::android.widget.SlidingDrawer._close10867 = @__env.GetMethodID(global::android.widget.SlidingDrawer.staticClass, "close", "()V");
-			global::android.widget.SlidingDrawer._open10868 = @__env.GetMethodID(global::android.widget.SlidingDrawer.staticClass, "open", "()V");
-			global::android.widget.SlidingDrawer._getContent10869 = @__env.GetMethodID(global::android.widget.SlidingDrawer.staticClass, "getContent", "()Landroid/view/View;");
+			global::android.widget.SlidingDrawer._getContent10868 = @__env.GetMethodID(global::android.widget.SlidingDrawer.staticClass, "getContent", "()Landroid/view/View;");
+			global::android.widget.SlidingDrawer._open10869 = @__env.GetMethodID(global::android.widget.SlidingDrawer.staticClass, "open", "()V");
 			global::android.widget.SlidingDrawer._unlock10870 = @__env.GetMethodID(global::android.widget.SlidingDrawer.staticClass, "unlock", "()V");
 			global::android.widget.SlidingDrawer._toggle10871 = @__env.GetMethodID(global::android.widget.SlidingDrawer.staticClass, "toggle", "()V");
 			global::android.widget.SlidingDrawer._onTouchEvent10872 = @__env.GetMethodID(global::android.widget.SlidingDrawer.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");

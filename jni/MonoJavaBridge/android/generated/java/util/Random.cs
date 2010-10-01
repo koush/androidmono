@@ -27,14 +27,14 @@ namespace java.util
 			else
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Random.staticClass, global::java.util.Random._next12961, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextInt12962;
-		public virtual int nextInt() 
+		internal static global::net.sf.jni4net.jni.MethodId _nextDouble12962;
+		public virtual double nextDouble() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Random._nextInt12962);
+				return @__env.CallDoubleMethod(this, global::java.util.Random._nextDouble12962);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextInt12962);
+				return @__env.CallNonVirtualDoubleMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextDouble12962);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _nextInt12963;
 		public virtual int nextInt(int arg0) 
@@ -45,23 +45,23 @@ namespace java.util
 			else
 				return @__env.CallNonVirtualIntMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextInt12963, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextLong12964;
+		internal static global::net.sf.jni4net.jni.MethodId _nextInt12964;
+		public virtual int nextInt() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.util.Random._nextInt12964);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextInt12964);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _nextLong12965;
 		public virtual long nextLong() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::java.util.Random._nextLong12964);
+				return @__env.CallLongMethod(this, global::java.util.Random._nextLong12965);
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextLong12964);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _nextDouble12965;
-		public virtual double nextDouble() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallDoubleMethod(this, global::java.util.Random._nextDouble12965);
-			else
-				return @__env.CallNonVirtualDoubleMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextDouble12965);
+				return @__env.CallNonVirtualLongMethod(this, global::java.util.Random.staticClass, global::java.util.Random._nextLong12965);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _nextBytes12966;
 		public virtual void nextBytes(byte[] arg0) 
@@ -124,10 +124,10 @@ namespace java.util
 		{
 			global::java.util.Random.staticClass = @__class;
 			global::java.util.Random._next12961 = @__env.GetMethodID(global::java.util.Random.staticClass, "next", "(I)I");
-			global::java.util.Random._nextInt12962 = @__env.GetMethodID(global::java.util.Random.staticClass, "nextInt", "()I");
+			global::java.util.Random._nextDouble12962 = @__env.GetMethodID(global::java.util.Random.staticClass, "nextDouble", "()D");
 			global::java.util.Random._nextInt12963 = @__env.GetMethodID(global::java.util.Random.staticClass, "nextInt", "(I)I");
-			global::java.util.Random._nextLong12964 = @__env.GetMethodID(global::java.util.Random.staticClass, "nextLong", "()J");
-			global::java.util.Random._nextDouble12965 = @__env.GetMethodID(global::java.util.Random.staticClass, "nextDouble", "()D");
+			global::java.util.Random._nextInt12964 = @__env.GetMethodID(global::java.util.Random.staticClass, "nextInt", "()I");
+			global::java.util.Random._nextLong12965 = @__env.GetMethodID(global::java.util.Random.staticClass, "nextLong", "()J");
 			global::java.util.Random._nextBytes12966 = @__env.GetMethodID(global::java.util.Random.staticClass, "nextBytes", "([B)V");
 			global::java.util.Random._setSeed12967 = @__env.GetMethodID(global::java.util.Random.staticClass, "setSeed", "(J)V");
 			global::java.util.Random._nextBoolean12968 = @__env.GetMethodID(global::java.util.Random.staticClass, "nextBoolean", "()Z");

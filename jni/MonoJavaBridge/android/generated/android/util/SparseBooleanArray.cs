@@ -45,23 +45,23 @@ namespace android.util
 			else
 				@__env.CallNonVirtualVoidMethod(this, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._put7615, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear7616;
-		public virtual void clear() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.SparseBooleanArray._clear7616);
-			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._clear7616);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _append7617;
+		internal static global::net.sf.jni4net.jni.MethodId _append7616;
 		public virtual void append(int arg0, bool arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.SparseBooleanArray._append7617, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.util.SparseBooleanArray._append7616, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._append7617, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._append7616, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _clear7617;
+		public virtual void clear() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this, global::android.util.SparseBooleanArray._clear7617);
+			else
+				@__env.CallNonVirtualVoidMethod(this, global::android.util.SparseBooleanArray.staticClass, global::android.util.SparseBooleanArray._clear7617);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _size7618;
 		public virtual int size() 
@@ -135,8 +135,8 @@ namespace android.util
 			global::android.util.SparseBooleanArray._get7613 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "get", "(I)Z");
 			global::android.util.SparseBooleanArray._get7614 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "get", "(IZ)Z");
 			global::android.util.SparseBooleanArray._put7615 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "put", "(IZ)V");
-			global::android.util.SparseBooleanArray._clear7616 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "clear", "()V");
-			global::android.util.SparseBooleanArray._append7617 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "append", "(IZ)V");
+			global::android.util.SparseBooleanArray._append7616 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "append", "(IZ)V");
+			global::android.util.SparseBooleanArray._clear7617 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "clear", "()V");
 			global::android.util.SparseBooleanArray._size7618 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "size", "()I");
 			global::android.util.SparseBooleanArray._delete7619 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "delete", "(I)V");
 			global::android.util.SparseBooleanArray._keyAt7620 = @__env.GetMethodID(global::android.util.SparseBooleanArray.staticClass, "keyAt", "(I)I");

@@ -18,23 +18,23 @@ namespace android.content
 		protected SyncStats(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear1548;
-		public virtual void clear() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.SyncStats._clear1548);
-			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.SyncStats.staticClass, global::android.content.SyncStats._clear1548);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString1549;
+		internal static global::net.sf.jni4net.jni.MethodId _toString1548;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.SyncStats._toString1549));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.SyncStats._toString1548));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.SyncStats.staticClass, global::android.content.SyncStats._toString1549));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.SyncStats.staticClass, global::android.content.SyncStats._toString1548));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _clear1549;
+		public virtual void clear() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this, global::android.content.SyncStats._clear1549);
+			else
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.SyncStats.staticClass, global::android.content.SyncStats._clear1549);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel1550;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
@@ -176,8 +176,8 @@ namespace android.content
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.content.SyncStats.staticClass = @__class;
-			global::android.content.SyncStats._clear1548 = @__env.GetMethodID(global::android.content.SyncStats.staticClass, "clear", "()V");
-			global::android.content.SyncStats._toString1549 = @__env.GetMethodID(global::android.content.SyncStats.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.SyncStats._toString1548 = @__env.GetMethodID(global::android.content.SyncStats.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.SyncStats._clear1549 = @__env.GetMethodID(global::android.content.SyncStats.staticClass, "clear", "()V");
 			global::android.content.SyncStats._writeToParcel1550 = @__env.GetMethodID(global::android.content.SyncStats.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::android.content.SyncStats._describeContents1551 = @__env.GetMethodID(global::android.content.SyncStats.staticClass, "describeContents", "()I");
 			global::android.content.SyncStats._SyncStats1552 = @__env.GetMethodID(global::android.content.SyncStats.staticClass, "<init>", "()V");

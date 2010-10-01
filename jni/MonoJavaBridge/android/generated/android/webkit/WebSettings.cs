@@ -36,16 +36,16 @@ namespace android.webkit
 			internal LayoutAlgorithm(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf9407;
+			internal static global::net.sf.jni4net.jni.MethodId _values9407;
+			public static global::android.webkit.WebSettings.LayoutAlgorithm[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebSettings.LayoutAlgorithm.staticClass, global::android.webkit.WebSettings.LayoutAlgorithm._values9407));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf9408;
 			public static global::android.webkit.WebSettings.LayoutAlgorithm valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebSettings.LayoutAlgorithm>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebSettings.LayoutAlgorithm.staticClass, global::android.webkit.WebSettings.LayoutAlgorithm._valueOf9407, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values9408;
-			public static global::android.webkit.WebSettings.LayoutAlgorithm[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebSettings.LayoutAlgorithm.staticClass, global::android.webkit.WebSettings.LayoutAlgorithm._values9408));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebSettings.LayoutAlgorithm>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebSettings.LayoutAlgorithm.staticClass, global::android.webkit.WebSettings.LayoutAlgorithm._valueOf9408, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _NARROW_COLUMNS9409;
 			public static global::android.webkit.WebSettings.LayoutAlgorithm NARROW_COLUMNS
@@ -74,8 +74,8 @@ namespace android.webkit
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.webkit.WebSettings.LayoutAlgorithm.staticClass = @__class;
-				global::android.webkit.WebSettings.LayoutAlgorithm._valueOf9407 = @__env.GetStaticMethodID(global::android.webkit.WebSettings.LayoutAlgorithm.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/webkit/WebSettings$LayoutAlgorithm;");
-				global::android.webkit.WebSettings.LayoutAlgorithm._values9408 = @__env.GetStaticMethodID(global::android.webkit.WebSettings.LayoutAlgorithm.staticClass, "values", "()[Landroid/webkit/WebSettings/LayoutAlgorithm;");
+				global::android.webkit.WebSettings.LayoutAlgorithm._values9407 = @__env.GetStaticMethodID(global::android.webkit.WebSettings.LayoutAlgorithm.staticClass, "values", "()[Landroid/webkit/WebSettings/LayoutAlgorithm;");
+				global::android.webkit.WebSettings.LayoutAlgorithm._valueOf9408 = @__env.GetStaticMethodID(global::android.webkit.WebSettings.LayoutAlgorithm.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/webkit/WebSettings$LayoutAlgorithm;");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
@@ -96,16 +96,16 @@ namespace android.webkit
 			internal RenderPriority(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf9412;
+			internal static global::net.sf.jni4net.jni.MethodId _values9412;
+			public static global::android.webkit.WebSettings.RenderPriority[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebSettings.RenderPriority.staticClass, global::android.webkit.WebSettings.RenderPriority._values9412));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf9413;
 			public static global::android.webkit.WebSettings.RenderPriority valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebSettings.RenderPriority>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebSettings.RenderPriority.staticClass, global::android.webkit.WebSettings.RenderPriority._valueOf9412, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values9413;
-			public static global::android.webkit.WebSettings.RenderPriority[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebSettings.RenderPriority.staticClass, global::android.webkit.WebSettings.RenderPriority._values9413));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebSettings.RenderPriority>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebSettings.RenderPriority.staticClass, global::android.webkit.WebSettings.RenderPriority._valueOf9413, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _HIGH9414;
 			public static global::android.webkit.WebSettings.RenderPriority HIGH
@@ -134,8 +134,8 @@ namespace android.webkit
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.webkit.WebSettings.RenderPriority.staticClass = @__class;
-				global::android.webkit.WebSettings.RenderPriority._valueOf9412 = @__env.GetStaticMethodID(global::android.webkit.WebSettings.RenderPriority.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/webkit/WebSettings$RenderPriority;");
-				global::android.webkit.WebSettings.RenderPriority._values9413 = @__env.GetStaticMethodID(global::android.webkit.WebSettings.RenderPriority.staticClass, "values", "()[Landroid/webkit/WebSettings/RenderPriority;");
+				global::android.webkit.WebSettings.RenderPriority._values9412 = @__env.GetStaticMethodID(global::android.webkit.WebSettings.RenderPriority.staticClass, "values", "()[Landroid/webkit/WebSettings/RenderPriority;");
+				global::android.webkit.WebSettings.RenderPriority._valueOf9413 = @__env.GetStaticMethodID(global::android.webkit.WebSettings.RenderPriority.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/webkit/WebSettings$RenderPriority;");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
@@ -156,16 +156,16 @@ namespace android.webkit
 			internal TextSize(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf9417;
+			internal static global::net.sf.jni4net.jni.MethodId _values9417;
+			public static global::android.webkit.WebSettings.TextSize[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebSettings.TextSize.staticClass, global::android.webkit.WebSettings.TextSize._values9417));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf9418;
 			public static global::android.webkit.WebSettings.TextSize valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebSettings.TextSize>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebSettings.TextSize.staticClass, global::android.webkit.WebSettings.TextSize._valueOf9417, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values9418;
-			public static global::android.webkit.WebSettings.TextSize[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebSettings.TextSize.staticClass, global::android.webkit.WebSettings.TextSize._values9418));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebSettings.TextSize>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebSettings.TextSize.staticClass, global::android.webkit.WebSettings.TextSize._valueOf9418, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _LARGER9419;
 			public static global::android.webkit.WebSettings.TextSize LARGER
@@ -210,8 +210,8 @@ namespace android.webkit
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.webkit.WebSettings.TextSize.staticClass = @__class;
-				global::android.webkit.WebSettings.TextSize._valueOf9417 = @__env.GetStaticMethodID(global::android.webkit.WebSettings.TextSize.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/webkit/WebSettings$TextSize;");
-				global::android.webkit.WebSettings.TextSize._values9418 = @__env.GetStaticMethodID(global::android.webkit.WebSettings.TextSize.staticClass, "values", "()[Landroid/webkit/WebSettings/TextSize;");
+				global::android.webkit.WebSettings.TextSize._values9417 = @__env.GetStaticMethodID(global::android.webkit.WebSettings.TextSize.staticClass, "values", "()[Landroid/webkit/WebSettings/TextSize;");
+				global::android.webkit.WebSettings.TextSize._valueOf9418 = @__env.GetStaticMethodID(global::android.webkit.WebSettings.TextSize.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/webkit/WebSettings$TextSize;");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
@@ -232,16 +232,16 @@ namespace android.webkit
 			internal ZoomDensity(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf9424;
+			internal static global::net.sf.jni4net.jni.MethodId _values9424;
+			public static global::android.webkit.WebSettings.ZoomDensity[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebSettings.ZoomDensity.staticClass, global::android.webkit.WebSettings.ZoomDensity._values9424));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf9425;
 			public static global::android.webkit.WebSettings.ZoomDensity valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebSettings.ZoomDensity>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebSettings.ZoomDensity.staticClass, global::android.webkit.WebSettings.ZoomDensity._valueOf9424, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values9425;
-			public static global::android.webkit.WebSettings.ZoomDensity[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebSettings.ZoomDensity.staticClass, global::android.webkit.WebSettings.ZoomDensity._values9425));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.WebSettings.ZoomDensity>(@__env, @__env.CallStaticObjectMethodPtr(android.webkit.WebSettings.ZoomDensity.staticClass, global::android.webkit.WebSettings.ZoomDensity._valueOf9425, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _CLOSE9426;
 			public static global::android.webkit.WebSettings.ZoomDensity CLOSE
@@ -270,8 +270,8 @@ namespace android.webkit
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.webkit.WebSettings.ZoomDensity.staticClass = @__class;
-				global::android.webkit.WebSettings.ZoomDensity._valueOf9424 = @__env.GetStaticMethodID(global::android.webkit.WebSettings.ZoomDensity.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/webkit/WebSettings$ZoomDensity;");
-				global::android.webkit.WebSettings.ZoomDensity._values9425 = @__env.GetStaticMethodID(global::android.webkit.WebSettings.ZoomDensity.staticClass, "values", "()[Landroid/webkit/WebSettings/ZoomDensity;");
+				global::android.webkit.WebSettings.ZoomDensity._values9424 = @__env.GetStaticMethodID(global::android.webkit.WebSettings.ZoomDensity.staticClass, "values", "()[Landroid/webkit/WebSettings/ZoomDensity;");
+				global::android.webkit.WebSettings.ZoomDensity._valueOf9425 = @__env.GetStaticMethodID(global::android.webkit.WebSettings.ZoomDensity.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/webkit/WebSettings$ZoomDensity;");
 			}
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getDatabasePath9429;

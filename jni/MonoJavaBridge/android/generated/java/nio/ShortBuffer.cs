@@ -64,50 +64,50 @@ namespace java.nio
 			else
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.nio.ShortBuffer>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._put12133, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode12134;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.nio.ShortBuffer._hashCode12134);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._hashCode12134);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals12135;
+		internal static global::net.sf.jni4net.jni.MethodId _equals12134;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.nio.ShortBuffer._equals12135, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::java.nio.ShortBuffer._equals12134, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._equals12135, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._equals12134, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo12136;
-		public virtual int compareTo(java.lang.Object arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.nio.ShortBuffer._compareTo12136, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._compareTo12136, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo12137;
-		public virtual int compareTo(java.nio.ShortBuffer arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.nio.ShortBuffer._compareTo12137, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._compareTo12137, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString12138;
+		internal static global::net.sf.jni4net.jni.MethodId _toString12135;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.ShortBuffer._toString12138));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.ShortBuffer._toString12135));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._toString12138));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._toString12135));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode12136;
+		public override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.nio.ShortBuffer._hashCode12136);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._hashCode12136);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo12137;
+		public virtual int compareTo(java.lang.Object arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.nio.ShortBuffer._compareTo12137, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._compareTo12137, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo12138;
+		public virtual int compareTo(java.nio.ShortBuffer arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.nio.ShortBuffer._compareTo12138, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.nio.ShortBuffer.staticClass, global::java.nio.ShortBuffer._compareTo12138, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _isDirect12139;
 		public abstract bool isDirect();
@@ -151,11 +151,11 @@ namespace java.nio
 			global::java.nio.ShortBuffer._put12131 = @__env.GetMethodID(global::java.nio.ShortBuffer.staticClass, "put", "(IS)Ljava/nio/ShortBuffer;");
 			global::java.nio.ShortBuffer._put12132 = @__env.GetMethodID(global::java.nio.ShortBuffer.staticClass, "put", "([SII)Ljava/nio/ShortBuffer;");
 			global::java.nio.ShortBuffer._put12133 = @__env.GetMethodID(global::java.nio.ShortBuffer.staticClass, "put", "([S)Ljava/nio/ShortBuffer;");
-			global::java.nio.ShortBuffer._hashCode12134 = @__env.GetMethodID(global::java.nio.ShortBuffer.staticClass, "hashCode", "()I");
-			global::java.nio.ShortBuffer._equals12135 = @__env.GetMethodID(global::java.nio.ShortBuffer.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.nio.ShortBuffer._compareTo12136 = @__env.GetMethodID(global::java.nio.ShortBuffer.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			global::java.nio.ShortBuffer._compareTo12137 = @__env.GetMethodID(global::java.nio.ShortBuffer.staticClass, "compareTo", "(Ljava/nio/ShortBuffer;)I");
-			global::java.nio.ShortBuffer._toString12138 = @__env.GetMethodID(global::java.nio.ShortBuffer.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.nio.ShortBuffer._equals12134 = @__env.GetMethodID(global::java.nio.ShortBuffer.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.nio.ShortBuffer._toString12135 = @__env.GetMethodID(global::java.nio.ShortBuffer.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.nio.ShortBuffer._hashCode12136 = @__env.GetMethodID(global::java.nio.ShortBuffer.staticClass, "hashCode", "()I");
+			global::java.nio.ShortBuffer._compareTo12137 = @__env.GetMethodID(global::java.nio.ShortBuffer.staticClass, "compareTo", "(Ljava/lang/Object;)I");
+			global::java.nio.ShortBuffer._compareTo12138 = @__env.GetMethodID(global::java.nio.ShortBuffer.staticClass, "compareTo", "(Ljava/nio/ShortBuffer;)I");
 			global::java.nio.ShortBuffer._isDirect12139 = @__env.GetMethodID(global::java.nio.ShortBuffer.staticClass, "isDirect", "()Z");
 			global::java.nio.ShortBuffer._wrap12140 = @__env.GetStaticMethodID(global::java.nio.ShortBuffer.staticClass, "wrap", "([SII)Ljava/nio/ShortBuffer;");
 			global::java.nio.ShortBuffer._wrap12141 = @__env.GetStaticMethodID(global::java.nio.ShortBuffer.staticClass, "wrap", "([S)Ljava/nio/ShortBuffer;");

@@ -73,7 +73,7 @@ namespace android.content
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._put1095, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _put1096;
-		public void put(java.lang.String arg0, java.lang.Float arg1) 
+		public void put(java.lang.String arg0, java.lang.Boolean arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -82,16 +82,16 @@ namespace android.content
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._put1096, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _put1097;
-		public void put(java.lang.String arg0, java.lang.Double arg1) 
+		public void put(java.lang.String arg0, byte[] arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.ContentValues._put1097, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this, global::android.content.ContentValues._put1097, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._put1097, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._put1097, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _put1098;
-		public void put(java.lang.String arg0, java.lang.Boolean arg1) 
+		public void put(java.lang.String arg0, java.lang.Float arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -100,49 +100,49 @@ namespace android.content
 				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._put1098, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _put1099;
-		public void put(java.lang.String arg0, byte[] arg1) 
+		public void put(java.lang.String arg0, java.lang.Double arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.ContentValues._put1099, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1));
+				@__env.CallVoidMethod(this, global::android.content.ContentValues._put1099, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._put1099, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._put1099, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode1100;
-		public sealed override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.ContentValues._hashCode1100);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._hashCode1100);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals1101;
+		internal static global::net.sf.jni4net.jni.MethodId _equals1100;
 		public sealed override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.content.ContentValues._equals1101, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.content.ContentValues._equals1100, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._equals1101, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._equals1100, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear1102;
-		public void clear() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.ContentValues._clear1102);
-			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._clear1102);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString1103;
+		internal static global::net.sf.jni4net.jni.MethodId _toString1101;
 		public sealed override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ContentValues._toString1103));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ContentValues._toString1101));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._toString1103));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._toString1101));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode1102;
+		public sealed override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.content.ContentValues._hashCode1102);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._hashCode1102);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _clear1103;
+		public void clear() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this, global::android.content.ContentValues._clear1103);
+			else
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.ContentValues.staticClass, global::android.content.ContentValues._clear1103);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _size1104;
 		public int size() 
@@ -338,14 +338,14 @@ namespace android.content
 			global::android.content.ContentValues._put1093 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "put", "(Ljava/lang/String;Ljava/lang/Short;)V");
 			global::android.content.ContentValues._put1094 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "put", "(Ljava/lang/String;Ljava/lang/Integer;)V");
 			global::android.content.ContentValues._put1095 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "put", "(Ljava/lang/String;Ljava/lang/Long;)V");
-			global::android.content.ContentValues._put1096 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "put", "(Ljava/lang/String;Ljava/lang/Float;)V");
-			global::android.content.ContentValues._put1097 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "put", "(Ljava/lang/String;Ljava/lang/Double;)V");
-			global::android.content.ContentValues._put1098 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "put", "(Ljava/lang/String;Ljava/lang/Boolean;)V");
-			global::android.content.ContentValues._put1099 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "put", "(Ljava/lang/String;[B)V");
-			global::android.content.ContentValues._hashCode1100 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "hashCode", "()I");
-			global::android.content.ContentValues._equals1101 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.content.ContentValues._clear1102 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "clear", "()V");
-			global::android.content.ContentValues._toString1103 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.ContentValues._put1096 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "put", "(Ljava/lang/String;Ljava/lang/Boolean;)V");
+			global::android.content.ContentValues._put1097 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "put", "(Ljava/lang/String;[B)V");
+			global::android.content.ContentValues._put1098 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "put", "(Ljava/lang/String;Ljava/lang/Float;)V");
+			global::android.content.ContentValues._put1099 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "put", "(Ljava/lang/String;Ljava/lang/Double;)V");
+			global::android.content.ContentValues._equals1100 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.content.ContentValues._toString1101 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.ContentValues._hashCode1102 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "hashCode", "()I");
+			global::android.content.ContentValues._clear1103 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "clear", "()V");
 			global::android.content.ContentValues._size1104 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "size", "()I");
 			global::android.content.ContentValues._putAll1105 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "putAll", "(Landroid/content/ContentValues;)V");
 			global::android.content.ContentValues._remove1106 = @__env.GetMethodID(global::android.content.ContentValues.staticClass, "remove", "(Ljava/lang/String;)V");

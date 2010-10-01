@@ -18,41 +18,41 @@ namespace android.content.res
 		protected TypedArray(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getBoolean2006;
-		public virtual bool getBoolean(int arg0, bool arg1) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.content.res.TypedArray._getBoolean2006, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getBoolean2006, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInt2007;
-		public virtual int getInt(int arg0, int arg1) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getInt2007, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getInt2007, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFloat2008;
-		public virtual float getFloat(int arg0, float arg1) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.content.res.TypedArray._getFloat2008, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
-			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getFloat2008, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString2009;
+		internal static global::net.sf.jni4net.jni.MethodId _toString2006;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._toString2009));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.res.TypedArray._toString2006));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._toString2009));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._toString2006));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _getBoolean2007;
+		public virtual bool getBoolean(int arg0, bool arg1) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this, global::android.content.res.TypedArray._getBoolean2007, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			else
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getBoolean2007, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _getInt2008;
+		public virtual int getInt(int arg0, int arg1) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.content.res.TypedArray._getInt2008, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getInt2008, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _getFloat2009;
+		public virtual float getFloat(int arg0, float arg1) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallFloatMethod(this, global::android.content.res.TypedArray._getFloat2009, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			else
+				return @__env.CallNonVirtualFloatMethod(this, global::android.content.res.TypedArray.staticClass, global::android.content.res.TypedArray._getFloat2009, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _length2010;
 		public virtual int length() 
@@ -272,10 +272,10 @@ namespace android.content.res
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.content.res.TypedArray.staticClass = @__class;
-			global::android.content.res.TypedArray._getBoolean2006 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getBoolean", "(IZ)Z");
-			global::android.content.res.TypedArray._getInt2007 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getInt", "(II)I");
-			global::android.content.res.TypedArray._getFloat2008 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getFloat", "(IF)F");
-			global::android.content.res.TypedArray._toString2009 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.res.TypedArray._toString2006 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.res.TypedArray._getBoolean2007 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getBoolean", "(IZ)Z");
+			global::android.content.res.TypedArray._getInt2008 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getInt", "(II)I");
+			global::android.content.res.TypedArray._getFloat2009 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getFloat", "(IF)F");
 			global::android.content.res.TypedArray._length2010 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "length", "()I");
 			global::android.content.res.TypedArray._getValue2011 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getValue", "(ILandroid/util/TypedValue;)Z");
 			global::android.content.res.TypedArray._getResources2012 = @__env.GetMethodID(global::android.content.res.TypedArray.staticClass, "getResources", "()Landroid/content/res/Resources;");

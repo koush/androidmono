@@ -18,32 +18,32 @@ namespace java.text
 		protected AttributedCharacterIterator_Attribute(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode12528;
-		public sealed override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.text.AttributedCharacterIterator_Attribute._hashCode12528);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.text.AttributedCharacterIterator_Attribute.staticClass, global::java.text.AttributedCharacterIterator_Attribute._hashCode12528);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals12529;
+		internal static global::net.sf.jni4net.jni.MethodId _equals12528;
 		public sealed override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.text.AttributedCharacterIterator_Attribute._equals12529, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::java.text.AttributedCharacterIterator_Attribute._equals12528, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.text.AttributedCharacterIterator_Attribute.staticClass, global::java.text.AttributedCharacterIterator_Attribute._equals12529, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.text.AttributedCharacterIterator_Attribute.staticClass, global::java.text.AttributedCharacterIterator_Attribute._equals12528, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString12530;
+		internal static global::net.sf.jni4net.jni.MethodId _toString12529;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.AttributedCharacterIterator_Attribute._toString12530));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.AttributedCharacterIterator_Attribute._toString12529));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.AttributedCharacterIterator_Attribute.staticClass, global::java.text.AttributedCharacterIterator_Attribute._toString12530));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.AttributedCharacterIterator_Attribute.staticClass, global::java.text.AttributedCharacterIterator_Attribute._toString12529));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode12530;
+		public sealed override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.text.AttributedCharacterIterator_Attribute._hashCode12530);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.text.AttributedCharacterIterator_Attribute.staticClass, global::java.text.AttributedCharacterIterator_Attribute._hashCode12530);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getName12531;
 		protected virtual global::java.lang.String getName() 
@@ -96,9 +96,9 @@ namespace java.text
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.text.AttributedCharacterIterator_Attribute.staticClass = @__class;
-			global::java.text.AttributedCharacterIterator_Attribute._hashCode12528 = @__env.GetMethodID(global::java.text.AttributedCharacterIterator_Attribute.staticClass, "hashCode", "()I");
-			global::java.text.AttributedCharacterIterator_Attribute._equals12529 = @__env.GetMethodID(global::java.text.AttributedCharacterIterator_Attribute.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.text.AttributedCharacterIterator_Attribute._toString12530 = @__env.GetMethodID(global::java.text.AttributedCharacterIterator_Attribute.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.text.AttributedCharacterIterator_Attribute._equals12528 = @__env.GetMethodID(global::java.text.AttributedCharacterIterator_Attribute.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.text.AttributedCharacterIterator_Attribute._toString12529 = @__env.GetMethodID(global::java.text.AttributedCharacterIterator_Attribute.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.text.AttributedCharacterIterator_Attribute._hashCode12530 = @__env.GetMethodID(global::java.text.AttributedCharacterIterator_Attribute.staticClass, "hashCode", "()I");
 			global::java.text.AttributedCharacterIterator_Attribute._getName12531 = @__env.GetMethodID(global::java.text.AttributedCharacterIterator_Attribute.staticClass, "getName", "()Ljava/lang/String;");
 			global::java.text.AttributedCharacterIterator_Attribute._readResolve12532 = @__env.GetMethodID(global::java.text.AttributedCharacterIterator_Attribute.staticClass, "readResolve", "()Ljava/lang/Object;");
 			global::java.text.AttributedCharacterIterator_Attribute._AttributedCharacterIterator_Attribute12533 = @__env.GetMethodID(global::java.text.AttributedCharacterIterator_Attribute.staticClass, "<init>", "(Ljava/lang/String;)V");

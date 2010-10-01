@@ -36,16 +36,16 @@ namespace android.graphics
 			internal Mode(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf2701;
+			internal static global::net.sf.jni4net.jni.MethodId _values2701;
+			public static global::android.graphics.AvoidXfermode.Mode[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.AvoidXfermode.Mode.staticClass, global::android.graphics.AvoidXfermode.Mode._values2701));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf2702;
 			public static global::android.graphics.AvoidXfermode.Mode valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.AvoidXfermode.Mode>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.AvoidXfermode.Mode.staticClass, global::android.graphics.AvoidXfermode.Mode._valueOf2701, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values2702;
-			public static global::android.graphics.AvoidXfermode.Mode[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.AvoidXfermode.Mode.staticClass, global::android.graphics.AvoidXfermode.Mode._values2702));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.AvoidXfermode.Mode>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.AvoidXfermode.Mode.staticClass, global::android.graphics.AvoidXfermode.Mode._valueOf2702, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _AVOID2703;
 			public static global::android.graphics.AvoidXfermode.Mode AVOID
@@ -66,8 +66,8 @@ namespace android.graphics
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.graphics.AvoidXfermode.Mode.staticClass = @__class;
-				global::android.graphics.AvoidXfermode.Mode._valueOf2701 = @__env.GetStaticMethodID(global::android.graphics.AvoidXfermode.Mode.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/AvoidXfermode$Mode;");
-				global::android.graphics.AvoidXfermode.Mode._values2702 = @__env.GetStaticMethodID(global::android.graphics.AvoidXfermode.Mode.staticClass, "values", "()[Landroid/graphics/AvoidXfermode/Mode;");
+				global::android.graphics.AvoidXfermode.Mode._values2701 = @__env.GetStaticMethodID(global::android.graphics.AvoidXfermode.Mode.staticClass, "values", "()[Landroid/graphics/AvoidXfermode/Mode;");
+				global::android.graphics.AvoidXfermode.Mode._valueOf2702 = @__env.GetStaticMethodID(global::android.graphics.AvoidXfermode.Mode.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/AvoidXfermode$Mode;");
 			}
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _AvoidXfermode2705;

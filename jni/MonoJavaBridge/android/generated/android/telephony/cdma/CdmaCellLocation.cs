@@ -18,32 +18,32 @@ namespace android.telephony.cdma
 		protected CdmaCellLocation(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode6610;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.cdma.CdmaCellLocation._hashCode6610);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._hashCode6610);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals6611;
+		internal static global::net.sf.jni4net.jni.MethodId _equals6610;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.telephony.cdma.CdmaCellLocation._equals6611, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.telephony.cdma.CdmaCellLocation._equals6610, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._equals6611, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._equals6610, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString6612;
+		internal static global::net.sf.jni4net.jni.MethodId _toString6611;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.cdma.CdmaCellLocation._toString6612));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.cdma.CdmaCellLocation._toString6611));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._toString6612));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._toString6611));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode6612;
+		public override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.telephony.cdma.CdmaCellLocation._hashCode6612);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.cdma.CdmaCellLocation.staticClass, global::android.telephony.cdma.CdmaCellLocation._hashCode6612);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getSystemId6613;
 		public virtual int getSystemId() 
@@ -141,9 +141,9 @@ namespace android.telephony.cdma
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.telephony.cdma.CdmaCellLocation.staticClass = @__class;
-			global::android.telephony.cdma.CdmaCellLocation._hashCode6610 = @__env.GetMethodID(global::android.telephony.cdma.CdmaCellLocation.staticClass, "hashCode", "()I");
-			global::android.telephony.cdma.CdmaCellLocation._equals6611 = @__env.GetMethodID(global::android.telephony.cdma.CdmaCellLocation.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.telephony.cdma.CdmaCellLocation._toString6612 = @__env.GetMethodID(global::android.telephony.cdma.CdmaCellLocation.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.telephony.cdma.CdmaCellLocation._equals6610 = @__env.GetMethodID(global::android.telephony.cdma.CdmaCellLocation.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.telephony.cdma.CdmaCellLocation._toString6611 = @__env.GetMethodID(global::android.telephony.cdma.CdmaCellLocation.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.telephony.cdma.CdmaCellLocation._hashCode6612 = @__env.GetMethodID(global::android.telephony.cdma.CdmaCellLocation.staticClass, "hashCode", "()I");
 			global::android.telephony.cdma.CdmaCellLocation._getSystemId6613 = @__env.GetMethodID(global::android.telephony.cdma.CdmaCellLocation.staticClass, "getSystemId", "()I");
 			global::android.telephony.cdma.CdmaCellLocation._getNetworkId6614 = @__env.GetMethodID(global::android.telephony.cdma.CdmaCellLocation.staticClass, "getNetworkId", "()I");
 			global::android.telephony.cdma.CdmaCellLocation._getBaseStationId6615 = @__env.GetMethodID(global::android.telephony.cdma.CdmaCellLocation.staticClass, "getBaseStationId", "()I");

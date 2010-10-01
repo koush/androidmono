@@ -3,10 +3,10 @@ namespace android.text
 	[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
 	public interface Editable : java.lang.CharSequence, GetChars, Spannable, java.lang.Appendable
 	{
-		void clear();
 		new global::android.text.Editable append(java.lang.CharSequence arg0, int arg1, int arg2);
 		new global::android.text.Editable append(java.lang.CharSequence arg0);
 		new global::android.text.Editable append(char arg0);
+		void clear();
 		global::android.text.Editable replace(int arg0, int arg1, java.lang.CharSequence arg2, int arg3, int arg4);
 		global::android.text.Editable replace(int arg0, int arg1, java.lang.CharSequence arg2);
 		global::android.text.Editable delete(int arg0, int arg1);
@@ -43,41 +43,41 @@ namespace android.text
 		internal __Editable(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear6748;
-		 void android.text.Editable.clear() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.__Editable._clear6748);
-			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.__Editable.staticClass, global::android.text.__Editable._clear6748);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _append6749;
+		internal static global::net.sf.jni4net.jni.MethodId _append6748;
 		 global::android.text.Editable android.text.Editable.append(java.lang.CharSequence arg0, int arg1, int arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.__Editable._append6749, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.__Editable._append6748, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.__Editable.staticClass, global::android.text.__Editable._append6749, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.__Editable.staticClass, global::android.text.__Editable._append6748, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _append6750;
+		internal static global::net.sf.jni4net.jni.MethodId _append6749;
 		 global::android.text.Editable android.text.Editable.append(java.lang.CharSequence arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.__Editable._append6750, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.__Editable._append6749, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.__Editable.staticClass, global::android.text.__Editable._append6750, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.__Editable.staticClass, global::android.text.__Editable._append6749, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _append6751;
+		internal static global::net.sf.jni4net.jni.MethodId _append6750;
 		 global::android.text.Editable android.text.Editable.append(char arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.__Editable._append6751, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.__Editable._append6750, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.__Editable.staticClass, global::android.text.__Editable._append6751, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.text.Editable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.__Editable.staticClass, global::android.text.__Editable._append6750, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _clear6751;
+		 void android.text.Editable.clear() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this, global::android.text.__Editable._clear6751);
+			else
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.__Editable.staticClass, global::android.text.__Editable._clear6751);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _replace6752;
 		 global::android.text.Editable android.text.Editable.replace(int arg0, int arg1, java.lang.CharSequence arg2, int arg3, int arg4) 
@@ -287,10 +287,10 @@ namespace android.text
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.text.__Editable.staticClass = @__class;
-			global::android.text.__Editable._clear6748 = @__env.GetMethodID(global::android.text.__Editable.staticClass, "android.text.Editable.clear", "()V");
-			global::android.text.__Editable._append6749 = @__env.GetMethodID(global::android.text.__Editable.staticClass, "android.text.Editable.append", "(Ljava/lang/CharSequence;II)Landroid/text/Editable;");
-			global::android.text.__Editable._append6750 = @__env.GetMethodID(global::android.text.__Editable.staticClass, "android.text.Editable.append", "(Ljava/lang/CharSequence;)Landroid/text/Editable;");
-			global::android.text.__Editable._append6751 = @__env.GetMethodID(global::android.text.__Editable.staticClass, "android.text.Editable.append", "(C)Landroid/text/Editable;");
+			global::android.text.__Editable._append6748 = @__env.GetMethodID(global::android.text.__Editable.staticClass, "android.text.Editable.append", "(Ljava/lang/CharSequence;II)Landroid/text/Editable;");
+			global::android.text.__Editable._append6749 = @__env.GetMethodID(global::android.text.__Editable.staticClass, "android.text.Editable.append", "(Ljava/lang/CharSequence;)Landroid/text/Editable;");
+			global::android.text.__Editable._append6750 = @__env.GetMethodID(global::android.text.__Editable.staticClass, "android.text.Editable.append", "(C)Landroid/text/Editable;");
+			global::android.text.__Editable._clear6751 = @__env.GetMethodID(global::android.text.__Editable.staticClass, "android.text.Editable.clear", "()V");
 			global::android.text.__Editable._replace6752 = @__env.GetMethodID(global::android.text.__Editable.staticClass, "android.text.Editable.replace", "(IILjava/lang/CharSequence;II)Landroid/text/Editable;");
 			global::android.text.__Editable._replace6753 = @__env.GetMethodID(global::android.text.__Editable.staticClass, "android.text.Editable.replace", "(IILjava/lang/CharSequence;)Landroid/text/Editable;");
 			global::android.text.__Editable._delete6754 = @__env.GetMethodID(global::android.text.__Editable.staticClass, "android.text.Editable.delete", "(II)Landroid/text/Editable;");

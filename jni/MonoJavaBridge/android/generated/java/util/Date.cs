@@ -18,59 +18,59 @@ namespace java.util
 		protected Date(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode12818;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Date._hashCode12818);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._hashCode12818);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _clone12819;
-		public virtual global::java.lang.Object clone() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Date._clone12819));
-			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Date.staticClass, global::java.util.Date._clone12819));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals12820;
+		internal static global::net.sf.jni4net.jni.MethodId _equals12818;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.Date._equals12820, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::java.util.Date._equals12818, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Date.staticClass, global::java.util.Date._equals12820, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.Date.staticClass, global::java.util.Date._equals12818, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo12821;
-		public virtual int compareTo(java.util.Date arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Date._compareTo12821, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._compareTo12821, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo12822;
-		public virtual int compareTo(java.lang.Object arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.Date._compareTo12822, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._compareTo12822, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString12823;
+		internal static global::net.sf.jni4net.jni.MethodId _toString12819;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Date._toString12823));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Date._toString12819));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Date.staticClass, global::java.util.Date._toString12823));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Date.staticClass, global::java.util.Date._toString12819));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode12820;
+		public override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.util.Date._hashCode12820);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._hashCode12820);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _clone12821;
+		public virtual global::java.lang.Object clone() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.Date._clone12821));
+			else
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.Date.staticClass, global::java.util.Date._clone12821));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo12822;
+		public virtual int compareTo(java.util.Date arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.util.Date._compareTo12822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._compareTo12822, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo12823;
+		public virtual int compareTo(java.lang.Object arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.util.Date._compareTo12823, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.util.Date.staticClass, global::java.util.Date._compareTo12823, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _after12824;
 		public virtual bool after(java.util.Date arg0) 
@@ -303,12 +303,12 @@ namespace java.util
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.util.Date.staticClass = @__class;
-			global::java.util.Date._hashCode12818 = @__env.GetMethodID(global::java.util.Date.staticClass, "hashCode", "()I");
-			global::java.util.Date._clone12819 = @__env.GetMethodID(global::java.util.Date.staticClass, "clone", "()Ljava/lang/Object;");
-			global::java.util.Date._equals12820 = @__env.GetMethodID(global::java.util.Date.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.util.Date._compareTo12821 = @__env.GetMethodID(global::java.util.Date.staticClass, "compareTo", "(Ljava/util/Date;)I");
-			global::java.util.Date._compareTo12822 = @__env.GetMethodID(global::java.util.Date.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			global::java.util.Date._toString12823 = @__env.GetMethodID(global::java.util.Date.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.util.Date._equals12818 = @__env.GetMethodID(global::java.util.Date.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.util.Date._toString12819 = @__env.GetMethodID(global::java.util.Date.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.util.Date._hashCode12820 = @__env.GetMethodID(global::java.util.Date.staticClass, "hashCode", "()I");
+			global::java.util.Date._clone12821 = @__env.GetMethodID(global::java.util.Date.staticClass, "clone", "()Ljava/lang/Object;");
+			global::java.util.Date._compareTo12822 = @__env.GetMethodID(global::java.util.Date.staticClass, "compareTo", "(Ljava/util/Date;)I");
+			global::java.util.Date._compareTo12823 = @__env.GetMethodID(global::java.util.Date.staticClass, "compareTo", "(Ljava/lang/Object;)I");
 			global::java.util.Date._after12824 = @__env.GetMethodID(global::java.util.Date.staticClass, "after", "(Ljava/util/Date;)Z");
 			global::java.util.Date._before12825 = @__env.GetMethodID(global::java.util.Date.staticClass, "before", "(Ljava/util/Date;)Z");
 			global::java.util.Date._parse12826 = @__env.GetStaticMethodID(global::java.util.Date.staticClass, "parse", "(Ljava/lang/String;)J");

@@ -18,50 +18,50 @@ namespace android.content
 		internal ComponentName(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode958;
-		public sealed override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.ComponentName._hashCode958);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._hashCode958);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals959;
+		internal static global::net.sf.jni4net.jni.MethodId _equals958;
 		public sealed override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.content.ComponentName._equals959, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.content.ComponentName._equals958, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._equals959, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._equals958, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo960;
-		public int compareTo(java.lang.Object arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.ComponentName._compareTo960, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._compareTo960, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo961;
-		public int compareTo(android.content.ComponentName arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.ComponentName._compareTo961, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._compareTo961, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString962;
+		internal static global::net.sf.jni4net.jni.MethodId _toString959;
 		public sealed override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ComponentName._toString962));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.ComponentName._toString959));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._toString962));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._toString959));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode960;
+		public sealed override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.content.ComponentName._hashCode960);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._hashCode960);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo961;
+		public int compareTo(java.lang.Object arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.content.ComponentName._compareTo961, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._compareTo961, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo962;
+		public int compareTo(android.content.ComponentName arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.content.ComponentName._compareTo962, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.ComponentName.staticClass, global::android.content.ComponentName._compareTo962, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getClassName963;
 		public global::java.lang.String getClassName() 
@@ -188,11 +188,11 @@ namespace android.content
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.content.ComponentName.staticClass = @__class;
-			global::android.content.ComponentName._hashCode958 = @__env.GetMethodID(global::android.content.ComponentName.staticClass, "hashCode", "()I");
-			global::android.content.ComponentName._equals959 = @__env.GetMethodID(global::android.content.ComponentName.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.content.ComponentName._compareTo960 = @__env.GetMethodID(global::android.content.ComponentName.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			global::android.content.ComponentName._compareTo961 = @__env.GetMethodID(global::android.content.ComponentName.staticClass, "compareTo", "(Landroid/content/ComponentName;)I");
-			global::android.content.ComponentName._toString962 = @__env.GetMethodID(global::android.content.ComponentName.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.ComponentName._equals958 = @__env.GetMethodID(global::android.content.ComponentName.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.content.ComponentName._toString959 = @__env.GetMethodID(global::android.content.ComponentName.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.ComponentName._hashCode960 = @__env.GetMethodID(global::android.content.ComponentName.staticClass, "hashCode", "()I");
+			global::android.content.ComponentName._compareTo961 = @__env.GetMethodID(global::android.content.ComponentName.staticClass, "compareTo", "(Ljava/lang/Object;)I");
+			global::android.content.ComponentName._compareTo962 = @__env.GetMethodID(global::android.content.ComponentName.staticClass, "compareTo", "(Landroid/content/ComponentName;)I");
 			global::android.content.ComponentName._getClassName963 = @__env.GetMethodID(global::android.content.ComponentName.staticClass, "getClassName", "()Ljava/lang/String;");
 			global::android.content.ComponentName._getPackageName964 = @__env.GetMethodID(global::android.content.ComponentName.staticClass, "getPackageName", "()Ljava/lang/String;");
 			global::android.content.ComponentName._writeToParcel965 = @__env.GetMethodID(global::android.content.ComponentName.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");

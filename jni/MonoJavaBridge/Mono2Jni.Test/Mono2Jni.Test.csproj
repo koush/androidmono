@@ -47,7 +47,7 @@
       <Name>android</Name>
     </ProjectReference>
     <ProjectReference Include="..\Mono2Jni\Mono2Jni.csproj">
-      <Project>{2B0BCB6A-139F-4F6E-AD37-F65E5E99C4B2}</Project>
+      <Project>{1276BA20-A085-4D52-8239-220E76524771}</Project>
       <Name>Mono2Jni</Name>
     </ProjectReference>
   </ItemGroup>

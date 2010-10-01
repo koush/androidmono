@@ -139,50 +139,50 @@ namespace java.util
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._put12983, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode12984;
-		 int java.util.Map.hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.__SortedMap._hashCode12984);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._hashCode12984);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals12985;
+		internal static global::net.sf.jni4net.jni.MethodId _equals12984;
 		 bool java.util.Map.equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.__SortedMap._equals12985, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::java.util.__SortedMap._equals12984, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._equals12985, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._equals12984, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear12986;
-		 void java.util.Map.clear() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.__SortedMap._clear12986);
-			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._clear12986);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _isEmpty12987;
-		 bool java.util.Map.isEmpty() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.__SortedMap._isEmpty12987);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._isEmpty12987);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _values12988;
+		internal static global::net.sf.jni4net.jni.MethodId _values12985;
 		 global::java.util.Collection java.util.Map.values() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._values12988));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.__SortedMap._values12985));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._values12988));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._values12985));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode12986;
+		 int java.util.Map.hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.util.__SortedMap._hashCode12986);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._hashCode12986);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _clear12987;
+		 void java.util.Map.clear() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this, global::java.util.__SortedMap._clear12987);
+			else
+				@__env.CallNonVirtualVoidMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._clear12987);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _isEmpty12988;
+		 bool java.util.Map.isEmpty() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this, global::java.util.__SortedMap._isEmpty12988);
+			else
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__SortedMap.staticClass, global::java.util.__SortedMap._isEmpty12988);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _size12989;
 		 int java.util.Map.size() 
@@ -261,11 +261,11 @@ namespace java.util
 			global::java.util.__SortedMap._lastKey12981 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.SortedMap.lastKey", "()Ljava/lang/Object;");
 			global::java.util.__SortedMap._get12982 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.get", "(Ljava/lang/Object;)Ljava/lang/Object;");
 			global::java.util.__SortedMap._put12983 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;");
-			global::java.util.__SortedMap._hashCode12984 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.hashCode", "()I");
-			global::java.util.__SortedMap._equals12985 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.equals", "(Ljava/lang/Object;)Z");
-			global::java.util.__SortedMap._clear12986 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.clear", "()V");
-			global::java.util.__SortedMap._isEmpty12987 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.isEmpty", "()Z");
-			global::java.util.__SortedMap._values12988 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.values", "()Ljava/util/Collection;");
+			global::java.util.__SortedMap._equals12984 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.equals", "(Ljava/lang/Object;)Z");
+			global::java.util.__SortedMap._values12985 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.values", "()Ljava/util/Collection;");
+			global::java.util.__SortedMap._hashCode12986 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.hashCode", "()I");
+			global::java.util.__SortedMap._clear12987 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.clear", "()V");
+			global::java.util.__SortedMap._isEmpty12988 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.isEmpty", "()Z");
 			global::java.util.__SortedMap._size12989 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.size", "()I");
 			global::java.util.__SortedMap._entrySet12990 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.entrySet", "()Ljava/util/Set;");
 			global::java.util.__SortedMap._putAll12991 = @__env.GetMethodID(global::java.util.__SortedMap.staticClass, "java.util.Map.putAll", "(Ljava/util/Map;)V");

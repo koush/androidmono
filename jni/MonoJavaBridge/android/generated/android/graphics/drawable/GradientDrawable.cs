@@ -36,16 +36,16 @@ namespace android.graphics.drawable
 			internal Orientation(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf3608;
+			internal static global::net.sf.jni4net.jni.MethodId _values3608;
+			public static global::android.graphics.drawable.GradientDrawable.Orientation[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.drawable.GradientDrawable.Orientation.staticClass, global::android.graphics.drawable.GradientDrawable.Orientation._values3608));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf3609;
 			public static global::android.graphics.drawable.GradientDrawable.Orientation valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.GradientDrawable.Orientation>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.drawable.GradientDrawable.Orientation.staticClass, global::android.graphics.drawable.GradientDrawable.Orientation._valueOf3608, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values3609;
-			public static global::android.graphics.drawable.GradientDrawable.Orientation[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.drawable.GradientDrawable.Orientation.staticClass, global::android.graphics.drawable.GradientDrawable.Orientation._values3609));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.GradientDrawable.Orientation>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.drawable.GradientDrawable.Orientation.staticClass, global::android.graphics.drawable.GradientDrawable.Orientation._valueOf3609, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _BL_TR3610;
 			public static global::android.graphics.drawable.GradientDrawable.Orientation BL_TR
@@ -114,8 +114,8 @@ namespace android.graphics.drawable
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.graphics.drawable.GradientDrawable.Orientation.staticClass = @__class;
-				global::android.graphics.drawable.GradientDrawable.Orientation._valueOf3608 = @__env.GetStaticMethodID(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/drawable/GradientDrawable$Orientation;");
-				global::android.graphics.drawable.GradientDrawable.Orientation._values3609 = @__env.GetStaticMethodID(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, "values", "()[Landroid/graphics/drawable/GradientDrawable/Orientation;");
+				global::android.graphics.drawable.GradientDrawable.Orientation._values3608 = @__env.GetStaticMethodID(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, "values", "()[Landroid/graphics/drawable/GradientDrawable/Orientation;");
+				global::android.graphics.drawable.GradientDrawable.Orientation._valueOf3609 = @__env.GetStaticMethodID(global::android.graphics.drawable.GradientDrawable.Orientation.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/drawable/GradientDrawable$Orientation;");
 			}
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _setSize3618;

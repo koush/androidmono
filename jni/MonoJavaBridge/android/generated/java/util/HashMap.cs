@@ -36,41 +36,41 @@ namespace java.util
 			else
 				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._put12875, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clone12876;
-		public virtual new global::java.lang.Object clone() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.HashMap._clone12876));
-			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._clone12876));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear12877;
-		public override void clear() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.HashMap._clear12877);
-			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._clear12877);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _isEmpty12878;
-		public override bool isEmpty() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.HashMap._isEmpty12878);
-			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._isEmpty12878);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _values12879;
+		internal static global::net.sf.jni4net.jni.MethodId _values12876;
 		public override global::java.util.Collection values() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.HashMap._values12879));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.HashMap._values12876));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._values12879));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.Collection>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._values12876));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _clone12877;
+		public virtual new global::java.lang.Object clone() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.HashMap._clone12877));
+			else
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._clone12877));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _clear12878;
+		public override void clear() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this, global::java.util.HashMap._clear12878);
+			else
+				@__env.CallNonVirtualVoidMethod(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._clear12878);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _isEmpty12879;
+		public override bool isEmpty() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this, global::java.util.HashMap._isEmpty12879);
+			else
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._isEmpty12879);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _size12880;
 		public override int size() 
@@ -136,10 +136,10 @@ namespace java.util
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.HashMap.staticClass, global::java.util.HashMap._containsKey12886, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _HashMap12887;
-		public HashMap(java.util.Map arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		public HashMap(int arg0, float arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.util.HashMap.staticClass, global::java.util.HashMap._HashMap12887, this, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+			@__env.NewObject(java.util.HashMap.staticClass, global::java.util.HashMap._HashMap12887, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _HashMap12888;
 		public HashMap(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
@@ -154,20 +154,20 @@ namespace java.util
 			@__env.NewObject(java.util.HashMap.staticClass, global::java.util.HashMap._HashMap12889, this);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _HashMap12890;
-		public HashMap(int arg0, float arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		public HashMap(java.util.Map arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.util.HashMap.staticClass, global::java.util.HashMap._HashMap12890, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			@__env.NewObject(java.util.HashMap.staticClass, global::java.util.HashMap._HashMap12890, this, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.util.HashMap.staticClass = @__class;
 			global::java.util.HashMap._get12874 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "get", "(Ljava/lang/Object;)Ljava/lang/Object;");
 			global::java.util.HashMap._put12875 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;");
-			global::java.util.HashMap._clone12876 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "clone", "()Ljava/lang/Object;");
-			global::java.util.HashMap._clear12877 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "clear", "()V");
-			global::java.util.HashMap._isEmpty12878 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "isEmpty", "()Z");
-			global::java.util.HashMap._values12879 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "values", "()Ljava/util/Collection;");
+			global::java.util.HashMap._values12876 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "values", "()Ljava/util/Collection;");
+			global::java.util.HashMap._clone12877 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "clone", "()Ljava/lang/Object;");
+			global::java.util.HashMap._clear12878 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "clear", "()V");
+			global::java.util.HashMap._isEmpty12879 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "isEmpty", "()Z");
 			global::java.util.HashMap._size12880 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "size", "()I");
 			global::java.util.HashMap._entrySet12881 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "entrySet", "()Ljava/util/Set;");
 			global::java.util.HashMap._putAll12882 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "putAll", "(Ljava/util/Map;)V");
@@ -175,10 +175,10 @@ namespace java.util
 			global::java.util.HashMap._keySet12884 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "keySet", "()Ljava/util/Set;");
 			global::java.util.HashMap._containsValue12885 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "containsValue", "(Ljava/lang/Object;)Z");
 			global::java.util.HashMap._containsKey12886 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "containsKey", "(Ljava/lang/Object;)Z");
-			global::java.util.HashMap._HashMap12887 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "<init>", "(Ljava/util/Map;)V");
+			global::java.util.HashMap._HashMap12887 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "<init>", "(IF)V");
 			global::java.util.HashMap._HashMap12888 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "<init>", "(I)V");
 			global::java.util.HashMap._HashMap12889 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "<init>", "()V");
-			global::java.util.HashMap._HashMap12890 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "<init>", "(IF)V");
+			global::java.util.HashMap._HashMap12890 = @__env.GetMethodID(global::java.util.HashMap.staticClass, "<init>", "(Ljava/util/Map;)V");
 		}
 	}
 }

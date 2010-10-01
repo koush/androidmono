@@ -118,7 +118,7 @@ namespace java.lang
 				return @__env.CallNonVirtualIntMethod(this, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._activeCount11577);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _enumerate11578;
-		public virtual int enumerate(java.lang.Thread[] arg0) 
+		public virtual int enumerate(java.lang.ThreadGroup[] arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -127,7 +127,7 @@ namespace java.lang
 				return @__env.CallNonVirtualIntMethod(this, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._enumerate11578, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _enumerate11579;
-		public virtual int enumerate(java.lang.Thread[] arg0, bool arg1) 
+		public virtual int enumerate(java.lang.ThreadGroup[] arg0, bool arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
@@ -136,22 +136,22 @@ namespace java.lang
 				return @__env.CallNonVirtualIntMethod(this, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._enumerate11579, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _enumerate11580;
-		public virtual int enumerate(java.lang.ThreadGroup[] arg0) 
+		public virtual int enumerate(java.lang.Thread[] arg0, bool arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.lang.ThreadGroup._enumerate11580, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0));
+				return @__env.CallIntMethod(this, global::java.lang.ThreadGroup._enumerate11580, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._enumerate11580, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0));
+				return @__env.CallNonVirtualIntMethod(this, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._enumerate11580, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _enumerate11581;
-		public virtual int enumerate(java.lang.ThreadGroup[] arg0, bool arg1) 
+		public virtual int enumerate(java.lang.Thread[] arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.lang.ThreadGroup._enumerate11581, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this, global::java.lang.ThreadGroup._enumerate11581, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._enumerate11581, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this, global::java.lang.ThreadGroup.staticClass, global::java.lang.ThreadGroup._enumerate11581, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _isDaemon11582;
 		public virtual bool isDaemon() 
@@ -260,10 +260,10 @@ namespace java.lang
 			global::java.lang.ThreadGroup._suspend11575 = @__env.GetMethodID(global::java.lang.ThreadGroup.staticClass, "suspend", "()V");
 			global::java.lang.ThreadGroup._resume11576 = @__env.GetMethodID(global::java.lang.ThreadGroup.staticClass, "resume", "()V");
 			global::java.lang.ThreadGroup._activeCount11577 = @__env.GetMethodID(global::java.lang.ThreadGroup.staticClass, "activeCount", "()I");
-			global::java.lang.ThreadGroup._enumerate11578 = @__env.GetMethodID(global::java.lang.ThreadGroup.staticClass, "enumerate", "([Ljava/lang/Thread;)I");
-			global::java.lang.ThreadGroup._enumerate11579 = @__env.GetMethodID(global::java.lang.ThreadGroup.staticClass, "enumerate", "([Ljava/lang/Thread;Z)I");
-			global::java.lang.ThreadGroup._enumerate11580 = @__env.GetMethodID(global::java.lang.ThreadGroup.staticClass, "enumerate", "([Ljava/lang/ThreadGroup;)I");
-			global::java.lang.ThreadGroup._enumerate11581 = @__env.GetMethodID(global::java.lang.ThreadGroup.staticClass, "enumerate", "([Ljava/lang/ThreadGroup;Z)I");
+			global::java.lang.ThreadGroup._enumerate11578 = @__env.GetMethodID(global::java.lang.ThreadGroup.staticClass, "enumerate", "([Ljava/lang/ThreadGroup;)I");
+			global::java.lang.ThreadGroup._enumerate11579 = @__env.GetMethodID(global::java.lang.ThreadGroup.staticClass, "enumerate", "([Ljava/lang/ThreadGroup;Z)I");
+			global::java.lang.ThreadGroup._enumerate11580 = @__env.GetMethodID(global::java.lang.ThreadGroup.staticClass, "enumerate", "([Ljava/lang/Thread;Z)I");
+			global::java.lang.ThreadGroup._enumerate11581 = @__env.GetMethodID(global::java.lang.ThreadGroup.staticClass, "enumerate", "([Ljava/lang/Thread;)I");
 			global::java.lang.ThreadGroup._isDaemon11582 = @__env.GetMethodID(global::java.lang.ThreadGroup.staticClass, "isDaemon", "()Z");
 			global::java.lang.ThreadGroup._checkAccess11583 = @__env.GetMethodID(global::java.lang.ThreadGroup.staticClass, "checkAccess", "()V");
 			global::java.lang.ThreadGroup._getMaxPriority11584 = @__env.GetMethodID(global::java.lang.ThreadGroup.staticClass, "getMaxPriority", "()I");

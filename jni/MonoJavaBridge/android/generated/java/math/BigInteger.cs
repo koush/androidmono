@@ -27,146 +27,146 @@ namespace java.math
 			else
 				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._add11593, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode11594;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.math.BigInteger._hashCode11594);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._hashCode11594);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _abs11595;
-		public virtual global::java.math.BigInteger abs() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallObjectMethodPtr(this, global::java.math.BigInteger._abs11595));
-			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._abs11595));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _pow11596;
-		public virtual global::java.math.BigInteger pow(int arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallObjectMethodPtr(this, global::java.math.BigInteger._pow11596, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
-			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._pow11596, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _min11597;
-		public virtual global::java.math.BigInteger min(java.math.BigInteger arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallObjectMethodPtr(this, global::java.math.BigInteger._min11597, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._min11597, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _max11598;
-		public virtual global::java.math.BigInteger max(java.math.BigInteger arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallObjectMethodPtr(this, global::java.math.BigInteger._max11598, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._max11598, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals11599;
-		public override bool equals(java.lang.Object arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.math.BigInteger._equals11599, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
-			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._equals11599, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo11600;
-		public virtual int compareTo(java.math.BigInteger arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.math.BigInteger._compareTo11600, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._compareTo11600, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _compareTo11601;
-		public virtual int compareTo(java.lang.Object arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.math.BigInteger._compareTo11601, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._compareTo11601, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString11602;
-		public virtual global::java.lang.String toString(int arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.math.BigInteger._toString11602, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
-			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._toString11602, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString11603;
-		public override global::java.lang.String toString() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.math.BigInteger._toString11603));
-			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._toString11603));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _valueOf11604;
-		public static global::java.math.BigInteger valueOf(long arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallStaticObjectMethodPtr(java.math.BigInteger.staticClass, global::java.math.BigInteger._valueOf11604, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _intValue11605;
-		public override int intValue() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.math.BigInteger._intValue11605);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._intValue11605);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _longValue11606;
-		public override long longValue() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::java.math.BigInteger._longValue11606);
-			else
-				return @__env.CallNonVirtualLongMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._longValue11606);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _floatValue11607;
-		public override float floatValue() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::java.math.BigInteger._floatValue11607);
-			else
-				return @__env.CallNonVirtualFloatMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._floatValue11607);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _doubleValue11608;
-		public override double doubleValue() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallDoubleMethod(this, global::java.math.BigInteger._doubleValue11608);
-			else
-				return @__env.CallNonVirtualDoubleMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._doubleValue11608);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _bitCount11609;
+		internal static global::net.sf.jni4net.jni.MethodId _bitCount11594;
 		public virtual int bitCount() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.math.BigInteger._bitCount11609);
+				return @__env.CallIntMethod(this, global::java.math.BigInteger._bitCount11594);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._bitCount11609);
+				return @__env.CallNonVirtualIntMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._bitCount11594);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _equals11595;
+		public override bool equals(java.lang.Object arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this, global::java.math.BigInteger._equals11595, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+			else
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._equals11595, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _toString11596;
+		public virtual global::java.lang.String toString(int arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.math.BigInteger._toString11596, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+			else
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._toString11596, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _toString11597;
+		public override global::java.lang.String toString() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.math.BigInteger._toString11597));
+			else
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._toString11597));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode11598;
+		public override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.math.BigInteger._hashCode11598);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._hashCode11598);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _abs11599;
+		public virtual global::java.math.BigInteger abs() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallObjectMethodPtr(this, global::java.math.BigInteger._abs11599));
+			else
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._abs11599));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _pow11600;
+		public virtual global::java.math.BigInteger pow(int arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallObjectMethodPtr(this, global::java.math.BigInteger._pow11600, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+			else
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._pow11600, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _min11601;
+		public virtual global::java.math.BigInteger min(java.math.BigInteger arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallObjectMethodPtr(this, global::java.math.BigInteger._min11601, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			else
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._min11601, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _max11602;
+		public virtual global::java.math.BigInteger max(java.math.BigInteger arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallObjectMethodPtr(this, global::java.math.BigInteger._max11602, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			else
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._max11602, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo11603;
+		public virtual int compareTo(java.lang.Object arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.math.BigInteger._compareTo11603, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._compareTo11603, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _compareTo11604;
+		public virtual int compareTo(java.math.BigInteger arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.math.BigInteger._compareTo11604, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._compareTo11604, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _valueOf11605;
+		public static global::java.math.BigInteger valueOf(long arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.math.BigInteger>(@__env, @__env.CallStaticObjectMethodPtr(java.math.BigInteger.staticClass, global::java.math.BigInteger._valueOf11605, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _intValue11606;
+		public override int intValue() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.math.BigInteger._intValue11606);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._intValue11606);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _longValue11607;
+		public override long longValue() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallLongMethod(this, global::java.math.BigInteger._longValue11607);
+			else
+				return @__env.CallNonVirtualLongMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._longValue11607);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _floatValue11608;
+		public override float floatValue() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallFloatMethod(this, global::java.math.BigInteger._floatValue11608);
+			else
+				return @__env.CallNonVirtualFloatMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._floatValue11608);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _doubleValue11609;
+		public override double doubleValue() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallDoubleMethod(this, global::java.math.BigInteger._doubleValue11609);
+			else
+				return @__env.CallNonVirtualDoubleMethod(this, global::java.math.BigInteger.staticClass, global::java.math.BigInteger._doubleValue11609);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _signum11610;
 		public virtual int signum() 
@@ -428,28 +428,28 @@ namespace java.math
 			@__env.NewObject(java.math.BigInteger.staticClass, global::java.math.BigInteger._BigInteger11639, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _BigInteger11640;
-		public BigInteger(int arg0, java.util.Random arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.math.BigInteger.staticClass, global::java.math.BigInteger._BigInteger11640, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _BigInteger11641;
 		public BigInteger(byte[] arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.math.BigInteger.staticClass, global::java.math.BigInteger._BigInteger11641, this, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+			@__env.NewObject(java.math.BigInteger.staticClass, global::java.math.BigInteger._BigInteger11640, this, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _BigInteger11642;
-		public BigInteger(int arg0, int arg1, java.util.Random arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.math.BigInteger.staticClass, global::java.math.BigInteger._BigInteger11642, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _BigInteger11643;
+		internal static global::net.sf.jni4net.jni.MethodId _BigInteger11641;
 		public BigInteger(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.math.BigInteger.staticClass, global::java.math.BigInteger._BigInteger11643, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(java.math.BigInteger.staticClass, global::java.math.BigInteger._BigInteger11641, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _BigInteger11642;
+		public BigInteger(int arg0, java.util.Random arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			@__env.NewObject(java.math.BigInteger.staticClass, global::java.math.BigInteger._BigInteger11642, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _BigInteger11643;
+		public BigInteger(int arg0, int arg1, java.util.Random arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			@__env.NewObject(java.math.BigInteger.staticClass, global::java.math.BigInteger._BigInteger11643, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 		}
 		internal static global::net.sf.jni4net.jni.FieldId _ZERO11644;
 		public static global::java.math.BigInteger ZERO
@@ -479,22 +479,22 @@ namespace java.math
 		{
 			global::java.math.BigInteger.staticClass = @__class;
 			global::java.math.BigInteger._add11593 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "add", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;");
-			global::java.math.BigInteger._hashCode11594 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "hashCode", "()I");
-			global::java.math.BigInteger._abs11595 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "abs", "()Ljava/math/BigInteger;");
-			global::java.math.BigInteger._pow11596 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "pow", "(I)Ljava/math/BigInteger;");
-			global::java.math.BigInteger._min11597 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "min", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;");
-			global::java.math.BigInteger._max11598 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "max", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;");
-			global::java.math.BigInteger._equals11599 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.math.BigInteger._compareTo11600 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "compareTo", "(Ljava/math/BigInteger;)I");
-			global::java.math.BigInteger._compareTo11601 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "compareTo", "(Ljava/lang/Object;)I");
-			global::java.math.BigInteger._toString11602 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "toString", "(I)Ljava/lang/String;");
-			global::java.math.BigInteger._toString11603 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "toString", "()Ljava/lang/String;");
-			global::java.math.BigInteger._valueOf11604 = @__env.GetStaticMethodID(global::java.math.BigInteger.staticClass, "valueOf", "(J)Ljava/math/BigInteger;");
-			global::java.math.BigInteger._intValue11605 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "intValue", "()I");
-			global::java.math.BigInteger._longValue11606 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "longValue", "()J");
-			global::java.math.BigInteger._floatValue11607 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "floatValue", "()F");
-			global::java.math.BigInteger._doubleValue11608 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "doubleValue", "()D");
-			global::java.math.BigInteger._bitCount11609 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "bitCount", "()I");
+			global::java.math.BigInteger._bitCount11594 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "bitCount", "()I");
+			global::java.math.BigInteger._equals11595 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.math.BigInteger._toString11596 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "toString", "(I)Ljava/lang/String;");
+			global::java.math.BigInteger._toString11597 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.math.BigInteger._hashCode11598 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "hashCode", "()I");
+			global::java.math.BigInteger._abs11599 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "abs", "()Ljava/math/BigInteger;");
+			global::java.math.BigInteger._pow11600 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "pow", "(I)Ljava/math/BigInteger;");
+			global::java.math.BigInteger._min11601 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "min", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;");
+			global::java.math.BigInteger._max11602 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "max", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;");
+			global::java.math.BigInteger._compareTo11603 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "compareTo", "(Ljava/lang/Object;)I");
+			global::java.math.BigInteger._compareTo11604 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "compareTo", "(Ljava/math/BigInteger;)I");
+			global::java.math.BigInteger._valueOf11605 = @__env.GetStaticMethodID(global::java.math.BigInteger.staticClass, "valueOf", "(J)Ljava/math/BigInteger;");
+			global::java.math.BigInteger._intValue11606 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "intValue", "()I");
+			global::java.math.BigInteger._longValue11607 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "longValue", "()J");
+			global::java.math.BigInteger._floatValue11608 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "floatValue", "()F");
+			global::java.math.BigInteger._doubleValue11609 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "doubleValue", "()D");
 			global::java.math.BigInteger._signum11610 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "signum", "()I");
 			global::java.math.BigInteger._toByteArray11611 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "toByteArray", "()[B");
 			global::java.math.BigInteger._and11612 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "and", "(Ljava/math/BigInteger;)Ljava/math/BigInteger;");
@@ -525,10 +525,10 @@ namespace java.math
 			global::java.math.BigInteger._isProbablePrime11637 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "isProbablePrime", "(I)Z");
 			global::java.math.BigInteger._BigInteger11638 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "<init>", "(I[B)V");
 			global::java.math.BigInteger._BigInteger11639 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "<init>", "(Ljava/lang/String;I)V");
-			global::java.math.BigInteger._BigInteger11640 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "<init>", "(ILjava/util/Random;)V");
-			global::java.math.BigInteger._BigInteger11641 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "<init>", "([B)V");
-			global::java.math.BigInteger._BigInteger11642 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "<init>", "(IILjava/util/Random;)V");
-			global::java.math.BigInteger._BigInteger11643 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.math.BigInteger._BigInteger11640 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "<init>", "([B)V");
+			global::java.math.BigInteger._BigInteger11641 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.math.BigInteger._BigInteger11642 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "<init>", "(ILjava/util/Random;)V");
+			global::java.math.BigInteger._BigInteger11643 = @__env.GetMethodID(global::java.math.BigInteger.staticClass, "<init>", "(IILjava/util/Random;)V");
 		}
 	}
 }

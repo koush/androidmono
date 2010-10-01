@@ -18,23 +18,23 @@ namespace android.os
 		internal Messenger(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode5679;
-		public sealed override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.os.Messenger._hashCode5679);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._hashCode5679);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals5680;
+		internal static global::net.sf.jni4net.jni.MethodId _equals5679;
 		public sealed override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.os.Messenger._equals5680, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.os.Messenger._equals5679, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._equals5680, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._equals5679, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode5680;
+		public sealed override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.os.Messenger._hashCode5680);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._hashCode5680);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _send5681;
 		public void send(android.os.Message arg0) 
@@ -107,8 +107,8 @@ namespace android.os
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.os.Messenger.staticClass = @__class;
-			global::android.os.Messenger._hashCode5679 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "hashCode", "()I");
-			global::android.os.Messenger._equals5680 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.os.Messenger._equals5679 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.os.Messenger._hashCode5680 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "hashCode", "()I");
 			global::android.os.Messenger._send5681 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "send", "(Landroid/os/Message;)V");
 			global::android.os.Messenger._writeToParcel5682 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::android.os.Messenger._describeContents5683 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "describeContents", "()I");

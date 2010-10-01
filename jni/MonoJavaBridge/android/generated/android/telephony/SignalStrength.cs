@@ -18,32 +18,32 @@ namespace android.telephony
 		protected SignalStrength(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode6523;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.SignalStrength._hashCode6523);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.SignalStrength.staticClass, global::android.telephony.SignalStrength._hashCode6523);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals6524;
+		internal static global::net.sf.jni4net.jni.MethodId _equals6523;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.telephony.SignalStrength._equals6524, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.telephony.SignalStrength._equals6523, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.SignalStrength.staticClass, global::android.telephony.SignalStrength._equals6524, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.SignalStrength.staticClass, global::android.telephony.SignalStrength._equals6523, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString6525;
+		internal static global::net.sf.jni4net.jni.MethodId _toString6524;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.SignalStrength._toString6525));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.SignalStrength._toString6524));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.SignalStrength.staticClass, global::android.telephony.SignalStrength._toString6525));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.SignalStrength.staticClass, global::android.telephony.SignalStrength._toString6524));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode6525;
+		public override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.telephony.SignalStrength._hashCode6525);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.SignalStrength.staticClass, global::android.telephony.SignalStrength._hashCode6525);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel6526;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
@@ -138,9 +138,9 @@ namespace android.telephony
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.telephony.SignalStrength.staticClass = @__class;
-			global::android.telephony.SignalStrength._hashCode6523 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "hashCode", "()I");
-			global::android.telephony.SignalStrength._equals6524 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.telephony.SignalStrength._toString6525 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.telephony.SignalStrength._equals6523 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.telephony.SignalStrength._toString6524 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.telephony.SignalStrength._hashCode6525 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "hashCode", "()I");
 			global::android.telephony.SignalStrength._writeToParcel6526 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
 			global::android.telephony.SignalStrength._describeContents6527 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "describeContents", "()I");
 			global::android.telephony.SignalStrength._getGsmSignalStrength6528 = @__env.GetMethodID(global::android.telephony.SignalStrength.staticClass, "getGsmSignalStrength", "()I");

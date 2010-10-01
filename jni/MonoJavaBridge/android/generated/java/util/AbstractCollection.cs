@@ -20,23 +20,23 @@ namespace java.util
 			else
 				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._add12660, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear12661;
-		public virtual void clear() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.util.AbstractCollection._clear12661);
-			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._clear12661);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString12662;
+		internal static global::net.sf.jni4net.jni.MethodId _toString12661;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.AbstractCollection._toString12662));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.util.AbstractCollection._toString12661));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._toString12662));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._toString12661));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _clear12662;
+		public virtual void clear() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this, global::java.util.AbstractCollection._clear12662);
+			else
+				@__env.CallNonVirtualVoidMethod(this, global::java.util.AbstractCollection.staticClass, global::java.util.AbstractCollection._clear12662);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _isEmpty12663;
 		public virtual bool isEmpty() 
@@ -131,8 +131,8 @@ namespace java.util
 		{
 			global::java.util.AbstractCollection.staticClass = @__class;
 			global::java.util.AbstractCollection._add12660 = @__env.GetMethodID(global::java.util.AbstractCollection.staticClass, "add", "(Ljava/lang/Object;)Z");
-			global::java.util.AbstractCollection._clear12661 = @__env.GetMethodID(global::java.util.AbstractCollection.staticClass, "clear", "()V");
-			global::java.util.AbstractCollection._toString12662 = @__env.GetMethodID(global::java.util.AbstractCollection.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.util.AbstractCollection._toString12661 = @__env.GetMethodID(global::java.util.AbstractCollection.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.util.AbstractCollection._clear12662 = @__env.GetMethodID(global::java.util.AbstractCollection.staticClass, "clear", "()V");
 			global::java.util.AbstractCollection._isEmpty12663 = @__env.GetMethodID(global::java.util.AbstractCollection.staticClass, "isEmpty", "()Z");
 			global::java.util.AbstractCollection._contains12664 = @__env.GetMethodID(global::java.util.AbstractCollection.staticClass, "contains", "(Ljava/lang/Object;)Z");
 			global::java.util.AbstractCollection._addAll12665 = @__env.GetMethodID(global::java.util.AbstractCollection.staticClass, "addAll", "(Ljava/util/Collection;)Z");

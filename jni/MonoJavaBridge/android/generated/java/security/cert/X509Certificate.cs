@@ -21,65 +21,65 @@ namespace java.security.cert
 		public abstract byte[] getExtensionValue(java.lang.String arg0);
 		internal static global::net.sf.jni4net.jni.MethodId _getSignature12501;
 		public abstract byte[] getSignature();
-		internal static global::net.sf.jni4net.jni.MethodId _getVersion12502;
+		internal static global::net.sf.jni4net.jni.MethodId _getBasicConstraints12502;
+		public abstract int getBasicConstraints();
+		internal static global::net.sf.jni4net.jni.MethodId _getVersion12503;
 		public abstract int getVersion();
-		internal static global::net.sf.jni4net.jni.MethodId _getSerialNumber12503;
+		internal static global::net.sf.jni4net.jni.MethodId _getSerialNumber12504;
 		public abstract global::java.math.BigInteger getSerialNumber();
-		internal static global::net.sf.jni4net.jni.MethodId _getIssuerDN12504;
+		internal static global::net.sf.jni4net.jni.MethodId _getIssuerDN12505;
 		public abstract global::java.security.Principal getIssuerDN();
-		internal static global::net.sf.jni4net.jni.MethodId _getTBSCertificate12505;
+		internal static global::net.sf.jni4net.jni.MethodId _getTBSCertificate12506;
 		public abstract byte[] getTBSCertificate();
-		internal static global::net.sf.jni4net.jni.MethodId _checkValidity12506;
-		public abstract void checkValidity();
 		internal static global::net.sf.jni4net.jni.MethodId _checkValidity12507;
+		public abstract void checkValidity();
+		internal static global::net.sf.jni4net.jni.MethodId _checkValidity12508;
 		public abstract void checkValidity(java.util.Date arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _getIssuerX500Principal12508;
+		internal static global::net.sf.jni4net.jni.MethodId _getIssuerX500Principal12509;
 		public virtual global::javax.security.auth.x500.X500Principal getIssuerX500Principal() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.security.auth.x500.X500Principal>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.X509Certificate._getIssuerX500Principal12508));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.security.auth.x500.X500Principal>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.X509Certificate._getIssuerX500Principal12509));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.security.auth.x500.X500Principal>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.X509Certificate.staticClass, global::java.security.cert.X509Certificate._getIssuerX500Principal12508));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.security.auth.x500.X500Principal>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.X509Certificate.staticClass, global::java.security.cert.X509Certificate._getIssuerX500Principal12509));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSubjectDN12509;
+		internal static global::net.sf.jni4net.jni.MethodId _getSubjectDN12510;
 		public abstract global::java.security.Principal getSubjectDN();
-		internal static global::net.sf.jni4net.jni.MethodId _getSubjectX500Principal12510;
+		internal static global::net.sf.jni4net.jni.MethodId _getSubjectX500Principal12511;
 		public virtual global::javax.security.auth.x500.X500Principal getSubjectX500Principal() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.security.auth.x500.X500Principal>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.X509Certificate._getSubjectX500Principal12510));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.security.auth.x500.X500Principal>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.X509Certificate._getSubjectX500Principal12511));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.security.auth.x500.X500Principal>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.X509Certificate.staticClass, global::java.security.cert.X509Certificate._getSubjectX500Principal12510));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<javax.security.auth.x500.X500Principal>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.X509Certificate.staticClass, global::java.security.cert.X509Certificate._getSubjectX500Principal12511));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNotBefore12511;
+		internal static global::net.sf.jni4net.jni.MethodId _getNotBefore12512;
 		public abstract global::java.util.Date getNotBefore();
-		internal static global::net.sf.jni4net.jni.MethodId _getNotAfter12512;
+		internal static global::net.sf.jni4net.jni.MethodId _getNotAfter12513;
 		public abstract global::java.util.Date getNotAfter();
-		internal static global::net.sf.jni4net.jni.MethodId _getSigAlgName12513;
+		internal static global::net.sf.jni4net.jni.MethodId _getSigAlgName12514;
 		public abstract global::java.lang.String getSigAlgName();
-		internal static global::net.sf.jni4net.jni.MethodId _getSigAlgOID12514;
+		internal static global::net.sf.jni4net.jni.MethodId _getSigAlgOID12515;
 		public abstract global::java.lang.String getSigAlgOID();
-		internal static global::net.sf.jni4net.jni.MethodId _getSigAlgParams12515;
+		internal static global::net.sf.jni4net.jni.MethodId _getSigAlgParams12516;
 		public abstract byte[] getSigAlgParams();
-		internal static global::net.sf.jni4net.jni.MethodId _getIssuerUniqueID12516;
+		internal static global::net.sf.jni4net.jni.MethodId _getIssuerUniqueID12517;
 		public abstract bool[] getIssuerUniqueID();
-		internal static global::net.sf.jni4net.jni.MethodId _getSubjectUniqueID12517;
+		internal static global::net.sf.jni4net.jni.MethodId _getSubjectUniqueID12518;
 		public abstract bool[] getSubjectUniqueID();
-		internal static global::net.sf.jni4net.jni.MethodId _getKeyUsage12518;
+		internal static global::net.sf.jni4net.jni.MethodId _getKeyUsage12519;
 		public abstract bool[] getKeyUsage();
-		internal static global::net.sf.jni4net.jni.MethodId _getExtendedKeyUsage12519;
+		internal static global::net.sf.jni4net.jni.MethodId _getExtendedKeyUsage12520;
 		public virtual global::java.util.List getExtendedKeyUsage() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.X509Certificate._getExtendedKeyUsage12519));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.X509Certificate._getExtendedKeyUsage12520));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.X509Certificate.staticClass, global::java.security.cert.X509Certificate._getExtendedKeyUsage12519));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.X509Certificate.staticClass, global::java.security.cert.X509Certificate._getExtendedKeyUsage12520));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getBasicConstraints12520;
-		public abstract int getBasicConstraints();
 		internal static global::net.sf.jni4net.jni.MethodId _getSubjectAlternativeNames12521;
 		public virtual global::java.util.Collection getSubjectAlternativeNames() 
 		{
@@ -112,25 +112,25 @@ namespace java.security.cert
 			global::java.security.cert.X509Certificate._getNonCriticalExtensionOIDs12499 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getNonCriticalExtensionOIDs", "()Ljava/util/Set;");
 			global::java.security.cert.X509Certificate._getExtensionValue12500 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getExtensionValue", "(Ljava/lang/String;)[B");
 			global::java.security.cert.X509Certificate._getSignature12501 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getSignature", "()[B");
-			global::java.security.cert.X509Certificate._getVersion12502 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getVersion", "()I");
-			global::java.security.cert.X509Certificate._getSerialNumber12503 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getSerialNumber", "()Ljava/math/BigInteger;");
-			global::java.security.cert.X509Certificate._getIssuerDN12504 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getIssuerDN", "()Ljava/security/Principal;");
-			global::java.security.cert.X509Certificate._getTBSCertificate12505 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getTBSCertificate", "()[B");
-			global::java.security.cert.X509Certificate._checkValidity12506 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "checkValidity", "()V");
-			global::java.security.cert.X509Certificate._checkValidity12507 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "checkValidity", "(Ljava/util/Date;)V");
-			global::java.security.cert.X509Certificate._getIssuerX500Principal12508 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getIssuerX500Principal", "()Ljavax/security/auth/x500/X500Principal;");
-			global::java.security.cert.X509Certificate._getSubjectDN12509 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getSubjectDN", "()Ljava/security/Principal;");
-			global::java.security.cert.X509Certificate._getSubjectX500Principal12510 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getSubjectX500Principal", "()Ljavax/security/auth/x500/X500Principal;");
-			global::java.security.cert.X509Certificate._getNotBefore12511 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getNotBefore", "()Ljava/util/Date;");
-			global::java.security.cert.X509Certificate._getNotAfter12512 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getNotAfter", "()Ljava/util/Date;");
-			global::java.security.cert.X509Certificate._getSigAlgName12513 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getSigAlgName", "()Ljava/lang/String;");
-			global::java.security.cert.X509Certificate._getSigAlgOID12514 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getSigAlgOID", "()Ljava/lang/String;");
-			global::java.security.cert.X509Certificate._getSigAlgParams12515 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getSigAlgParams", "()[B");
-			global::java.security.cert.X509Certificate._getIssuerUniqueID12516 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getIssuerUniqueID", "()[Z");
-			global::java.security.cert.X509Certificate._getSubjectUniqueID12517 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getSubjectUniqueID", "()[Z");
-			global::java.security.cert.X509Certificate._getKeyUsage12518 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getKeyUsage", "()[Z");
-			global::java.security.cert.X509Certificate._getExtendedKeyUsage12519 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getExtendedKeyUsage", "()Ljava/util/List;");
-			global::java.security.cert.X509Certificate._getBasicConstraints12520 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getBasicConstraints", "()I");
+			global::java.security.cert.X509Certificate._getBasicConstraints12502 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getBasicConstraints", "()I");
+			global::java.security.cert.X509Certificate._getVersion12503 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getVersion", "()I");
+			global::java.security.cert.X509Certificate._getSerialNumber12504 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getSerialNumber", "()Ljava/math/BigInteger;");
+			global::java.security.cert.X509Certificate._getIssuerDN12505 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getIssuerDN", "()Ljava/security/Principal;");
+			global::java.security.cert.X509Certificate._getTBSCertificate12506 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getTBSCertificate", "()[B");
+			global::java.security.cert.X509Certificate._checkValidity12507 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "checkValidity", "()V");
+			global::java.security.cert.X509Certificate._checkValidity12508 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "checkValidity", "(Ljava/util/Date;)V");
+			global::java.security.cert.X509Certificate._getIssuerX500Principal12509 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getIssuerX500Principal", "()Ljavax/security/auth/x500/X500Principal;");
+			global::java.security.cert.X509Certificate._getSubjectDN12510 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getSubjectDN", "()Ljava/security/Principal;");
+			global::java.security.cert.X509Certificate._getSubjectX500Principal12511 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getSubjectX500Principal", "()Ljavax/security/auth/x500/X500Principal;");
+			global::java.security.cert.X509Certificate._getNotBefore12512 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getNotBefore", "()Ljava/util/Date;");
+			global::java.security.cert.X509Certificate._getNotAfter12513 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getNotAfter", "()Ljava/util/Date;");
+			global::java.security.cert.X509Certificate._getSigAlgName12514 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getSigAlgName", "()Ljava/lang/String;");
+			global::java.security.cert.X509Certificate._getSigAlgOID12515 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getSigAlgOID", "()Ljava/lang/String;");
+			global::java.security.cert.X509Certificate._getSigAlgParams12516 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getSigAlgParams", "()[B");
+			global::java.security.cert.X509Certificate._getIssuerUniqueID12517 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getIssuerUniqueID", "()[Z");
+			global::java.security.cert.X509Certificate._getSubjectUniqueID12518 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getSubjectUniqueID", "()[Z");
+			global::java.security.cert.X509Certificate._getKeyUsage12519 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getKeyUsage", "()[Z");
+			global::java.security.cert.X509Certificate._getExtendedKeyUsage12520 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getExtendedKeyUsage", "()Ljava/util/List;");
 			global::java.security.cert.X509Certificate._getSubjectAlternativeNames12521 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getSubjectAlternativeNames", "()Ljava/util/Collection;");
 			global::java.security.cert.X509Certificate._getIssuerAlternativeNames12522 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "getIssuerAlternativeNames", "()Ljava/util/Collection;");
 			global::java.security.cert.X509Certificate._X509Certificate12523 = @__env.GetMethodID(global::java.security.cert.X509Certificate.staticClass, "<init>", "()V");

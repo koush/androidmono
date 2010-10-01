@@ -11,23 +11,23 @@ namespace java.text
 		protected DateFormat(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode12566;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.text.DateFormat._hashCode12566);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._hashCode12566);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals12567;
+		internal static global::net.sf.jni4net.jni.MethodId _equals12566;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.text.DateFormat._equals12567, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::java.text.DateFormat._equals12566, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._equals12567, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._equals12566, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode12567;
+		public override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.text.DateFormat._hashCode12567);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.text.DateFormat.staticClass, global::java.text.DateFormat._hashCode12567);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _format12568;
 		public sealed override global::java.lang.StringBuffer format(java.lang.Object arg0, java.lang.StringBuffer arg1, java.text.FieldPosition arg2) 
@@ -376,8 +376,8 @@ namespace java.text
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.text.DateFormat.staticClass = @__class;
-			global::java.text.DateFormat._hashCode12566 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "hashCode", "()I");
-			global::java.text.DateFormat._equals12567 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.text.DateFormat._equals12566 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.text.DateFormat._hashCode12567 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "hashCode", "()I");
 			global::java.text.DateFormat._format12568 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "format", "(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
 			global::java.text.DateFormat._format12569 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "format", "(Ljava/util/Date;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
 			global::java.text.DateFormat._format12570 = @__env.GetMethodID(global::java.text.DateFormat.staticClass, "format", "(Ljava/util/Date;)Ljava/lang/String;");

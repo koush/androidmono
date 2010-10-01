@@ -18,32 +18,32 @@ namespace java.text
 		protected FieldPosition(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode12594;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.text.FieldPosition._hashCode12594);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._hashCode12594);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals12595;
+		internal static global::net.sf.jni4net.jni.MethodId _equals12594;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.text.FieldPosition._equals12595, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::java.text.FieldPosition._equals12594, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._equals12595, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._equals12594, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString12596;
+		internal static global::net.sf.jni4net.jni.MethodId _toString12595;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.FieldPosition._toString12596));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.FieldPosition._toString12595));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._toString12596));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._toString12595));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode12596;
+		public override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.text.FieldPosition._hashCode12596);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.text.FieldPosition.staticClass, global::java.text.FieldPosition._hashCode12596);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getField12597;
 		public virtual int getField() 
@@ -120,9 +120,9 @@ namespace java.text
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.text.FieldPosition.staticClass = @__class;
-			global::java.text.FieldPosition._hashCode12594 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "hashCode", "()I");
-			global::java.text.FieldPosition._equals12595 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.text.FieldPosition._toString12596 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.text.FieldPosition._equals12594 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.text.FieldPosition._toString12595 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.text.FieldPosition._hashCode12596 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "hashCode", "()I");
 			global::java.text.FieldPosition._getField12597 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "getField", "()I");
 			global::java.text.FieldPosition._getBeginIndex12598 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "getBeginIndex", "()I");
 			global::java.text.FieldPosition._getEndIndex12599 = @__env.GetMethodID(global::java.text.FieldPosition.staticClass, "getEndIndex", "()I");

@@ -25,25 +25,25 @@ namespace com.koushikdutta.helloworld
             layout.setOrientation(LinearLayout.VERTICAL);
 
             TextView tv = new TextView(this);
-            tv.setText((java.lang.String)"Hello");
+            tv.setText("Hello");
             tv.setTextSize(20);
             layout.addView(tv);
 
             tv = new TextView(this);
-            tv.setText((java.lang.String)"World!");
+            tv.setText("World!");
             tv.setTextSize(15);
             tv.setTextColor(unchecked((int)0xFF00FFFF));
             layout.addView(tv);
 
             button = new Button(this);
-            button.setText((java.lang.String)"wtf");
+            button.setText("wtf");
             layout.addView(button);
             button.setOnClickListener(new OnClickListener()
             {
                 OnClick = (v) =>
                 {
                     Console.WriteLine(toString());
-                    button.setText((java.lang.String)System.Environment.TickCount.ToString());
+                    button.setText(System.Environment.TickCount.ToString());
                 }
             });
             /* 

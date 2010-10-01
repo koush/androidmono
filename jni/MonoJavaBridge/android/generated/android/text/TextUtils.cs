@@ -220,16 +220,16 @@ namespace android.text
 			internal TruncateAt(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf6990;
+			internal static global::net.sf.jni4net.jni.MethodId _values6990;
+			public static global::android.text.TextUtils.TruncateAt[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.text.TextUtils.TruncateAt.staticClass, global::android.text.TextUtils.TruncateAt._values6990));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf6991;
 			public static global::android.text.TextUtils.TruncateAt valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.TextUtils.TruncateAt>(@__env, @__env.CallStaticObjectMethodPtr(android.text.TextUtils.TruncateAt.staticClass, global::android.text.TextUtils.TruncateAt._valueOf6990, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values6991;
-			public static global::android.text.TextUtils.TruncateAt[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.text.TextUtils.TruncateAt.staticClass, global::android.text.TextUtils.TruncateAt._values6991));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.TextUtils.TruncateAt>(@__env, @__env.CallStaticObjectMethodPtr(android.text.TextUtils.TruncateAt.staticClass, global::android.text.TextUtils.TruncateAt._valueOf6991, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _END6992;
 			public static global::android.text.TextUtils.TruncateAt END
@@ -266,8 +266,8 @@ namespace android.text
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.text.TextUtils.TruncateAt.staticClass = @__class;
-				global::android.text.TextUtils.TruncateAt._valueOf6990 = @__env.GetStaticMethodID(global::android.text.TextUtils.TruncateAt.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/text/TextUtils$TruncateAt;");
-				global::android.text.TextUtils.TruncateAt._values6991 = @__env.GetStaticMethodID(global::android.text.TextUtils.TruncateAt.staticClass, "values", "()[Landroid/text/TextUtils/TruncateAt;");
+				global::android.text.TextUtils.TruncateAt._values6990 = @__env.GetStaticMethodID(global::android.text.TextUtils.TruncateAt.staticClass, "values", "()[Landroid/text/TextUtils/TruncateAt;");
+				global::android.text.TextUtils.TruncateAt._valueOf6991 = @__env.GetStaticMethodID(global::android.text.TextUtils.TruncateAt.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/text/TextUtils$TruncateAt;");
 			}
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _equals6996;

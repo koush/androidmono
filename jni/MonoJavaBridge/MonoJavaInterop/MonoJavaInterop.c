@@ -89,7 +89,7 @@ MonoDomain* g_Domain;
 JNIEXPORT jboolean JNICALL Java_com_koushikdutta_monojavabridge_MonoBridge_initializeMono
   (JNIEnv *env, jclass clazz, jstring debuggerAgentOptions)
 {
-    setenv("HOME", "/data/data/com.koushikdutta.twitter/", 1);
+   // setenv("HOME", "/data/data/com.koushikdutta.twitter/", 1);
 #ifdef PLATFORM_ANDROID
     if (debuggerAgentOptions != NULL)
     {

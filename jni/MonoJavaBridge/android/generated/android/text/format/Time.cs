@@ -18,23 +18,23 @@ namespace android.text.format
 		protected Time(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clear7070;
-		public virtual void clear(java.lang.String arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.format.Time._clear7070, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.format.Time.staticClass, global::android.text.format.Time._clear7070, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString7071;
+		internal static global::net.sf.jni4net.jni.MethodId _toString7070;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.format.Time._toString7071));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.format.Time._toString7070));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.format.Time.staticClass, global::android.text.format.Time._toString7071));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.format.Time.staticClass, global::android.text.format.Time._toString7070));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _clear7071;
+		public virtual void clear(java.lang.String arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this, global::android.text.format.Time._clear7071, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			else
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.format.Time.staticClass, global::android.text.format.Time._clear7071, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _format7072;
 		public virtual global::java.lang.String format(java.lang.String arg0) 
@@ -52,22 +52,22 @@ namespace android.text.format
 			return @__env.CallStaticIntMethod(android.text.format.Time.staticClass, global::android.text.format.Time._compare7073, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _set7074;
-		public virtual void set(long arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.format.Time._set7074, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
-			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.format.Time.staticClass, global::android.text.format.Time._set7074, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _set7075;
 		public virtual void set(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.format.Time._set7075, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+				@__env.CallVoidMethod(this, global::android.text.format.Time._set7074, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.format.Time.staticClass, global::android.text.format.Time._set7075, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.format.Time.staticClass, global::android.text.format.Time._set7074, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _set7075;
+		public virtual void set(int arg0, int arg1, int arg2) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this, global::android.text.format.Time._set7075, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			else
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.format.Time.staticClass, global::android.text.format.Time._set7075, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _set7076;
 		public virtual void set(android.text.format.Time arg0) 
@@ -79,13 +79,13 @@ namespace android.text.format
 				@__env.CallNonVirtualVoidMethod(this, global::android.text.format.Time.staticClass, global::android.text.format.Time._set7076, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _set7077;
-		public virtual void set(int arg0, int arg1, int arg2) 
+		public virtual void set(long arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.format.Time._set7077, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this, global::android.text.format.Time._set7077, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.format.Time.staticClass, global::android.text.format.Time._set7077, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.format.Time.staticClass, global::android.text.format.Time._set7077, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _normalize7078;
 		public virtual long normalize(bool arg0) 
@@ -501,14 +501,14 @@ namespace android.text.format
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.text.format.Time.staticClass = @__class;
-			global::android.text.format.Time._clear7070 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "clear", "(Ljava/lang/String;)V");
-			global::android.text.format.Time._toString7071 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.text.format.Time._toString7070 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.text.format.Time._clear7071 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "clear", "(Ljava/lang/String;)V");
 			global::android.text.format.Time._format7072 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "format", "(Ljava/lang/String;)Ljava/lang/String;");
 			global::android.text.format.Time._compare7073 = @__env.GetStaticMethodID(global::android.text.format.Time.staticClass, "compare", "(Landroid/text/format/Time;Landroid/text/format/Time;)I");
-			global::android.text.format.Time._set7074 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "set", "(J)V");
-			global::android.text.format.Time._set7075 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "set", "(IIIIII)V");
+			global::android.text.format.Time._set7074 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "set", "(IIIIII)V");
+			global::android.text.format.Time._set7075 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "set", "(III)V");
 			global::android.text.format.Time._set7076 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "set", "(Landroid/text/format/Time;)V");
-			global::android.text.format.Time._set7077 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "set", "(III)V");
+			global::android.text.format.Time._set7077 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "set", "(J)V");
 			global::android.text.format.Time._normalize7078 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "normalize", "(Z)J");
 			global::android.text.format.Time._after7079 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "after", "(Landroid/text/format/Time;)Z");
 			global::android.text.format.Time._before7080 = @__env.GetMethodID(global::android.text.format.Time.staticClass, "before", "(Landroid/text/format/Time;)Z");

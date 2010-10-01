@@ -18,32 +18,32 @@ namespace android.telephony.gsm
 		protected GsmCellLocation(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode6624;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.gsm.GsmCellLocation._hashCode6624);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._hashCode6624);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals6625;
+		internal static global::net.sf.jni4net.jni.MethodId _equals6624;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.telephony.gsm.GsmCellLocation._equals6625, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.telephony.gsm.GsmCellLocation._equals6624, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._equals6625, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._equals6624, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString6626;
+		internal static global::net.sf.jni4net.jni.MethodId _toString6625;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.gsm.GsmCellLocation._toString6626));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.gsm.GsmCellLocation._toString6625));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._toString6626));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._toString6625));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode6626;
+		public override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.telephony.gsm.GsmCellLocation._hashCode6626);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.gsm.GsmCellLocation.staticClass, global::android.telephony.gsm.GsmCellLocation._hashCode6626);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getLac6627;
 		public virtual int getLac() 
@@ -105,9 +105,9 @@ namespace android.telephony.gsm
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.telephony.gsm.GsmCellLocation.staticClass = @__class;
-			global::android.telephony.gsm.GsmCellLocation._hashCode6624 = @__env.GetMethodID(global::android.telephony.gsm.GsmCellLocation.staticClass, "hashCode", "()I");
-			global::android.telephony.gsm.GsmCellLocation._equals6625 = @__env.GetMethodID(global::android.telephony.gsm.GsmCellLocation.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.telephony.gsm.GsmCellLocation._toString6626 = @__env.GetMethodID(global::android.telephony.gsm.GsmCellLocation.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.telephony.gsm.GsmCellLocation._equals6624 = @__env.GetMethodID(global::android.telephony.gsm.GsmCellLocation.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.telephony.gsm.GsmCellLocation._toString6625 = @__env.GetMethodID(global::android.telephony.gsm.GsmCellLocation.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.telephony.gsm.GsmCellLocation._hashCode6626 = @__env.GetMethodID(global::android.telephony.gsm.GsmCellLocation.staticClass, "hashCode", "()I");
 			global::android.telephony.gsm.GsmCellLocation._getLac6627 = @__env.GetMethodID(global::android.telephony.gsm.GsmCellLocation.staticClass, "getLac", "()I");
 			global::android.telephony.gsm.GsmCellLocation._getCid6628 = @__env.GetMethodID(global::android.telephony.gsm.GsmCellLocation.staticClass, "getCid", "()I");
 			global::android.telephony.gsm.GsmCellLocation._setStateInvalid6629 = @__env.GetMethodID(global::android.telephony.gsm.GsmCellLocation.staticClass, "setStateInvalid", "()V");

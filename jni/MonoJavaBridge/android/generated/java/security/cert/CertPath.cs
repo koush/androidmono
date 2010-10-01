@@ -11,32 +11,32 @@ namespace java.security.cert
 		protected CertPath(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode12477;
-		public override int hashCode() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.security.cert.CertPath._hashCode12477);
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._hashCode12477);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals12478;
+		internal static global::net.sf.jni4net.jni.MethodId _equals12477;
 		public override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.security.cert.CertPath._equals12478, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::java.security.cert.CertPath._equals12477, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._equals12478, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._equals12477, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString12479;
+		internal static global::net.sf.jni4net.jni.MethodId _toString12478;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.CertPath._toString12479));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.cert.CertPath._toString12478));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._toString12479));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._toString12478));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode12479;
+		public override int hashCode() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::java.security.cert.CertPath._hashCode12479);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::java.security.cert.CertPath.staticClass, global::java.security.cert.CertPath._hashCode12479);
 		}
 		internal static global::net.sf.jni4net.jni.MethodId _getCertificates12480;
 		public abstract global::java.util.List getCertificates();
@@ -73,9 +73,9 @@ namespace java.security.cert
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.security.cert.CertPath.staticClass = @__class;
-			global::java.security.cert.CertPath._hashCode12477 = @__env.GetMethodID(global::java.security.cert.CertPath.staticClass, "hashCode", "()I");
-			global::java.security.cert.CertPath._equals12478 = @__env.GetMethodID(global::java.security.cert.CertPath.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::java.security.cert.CertPath._toString12479 = @__env.GetMethodID(global::java.security.cert.CertPath.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.security.cert.CertPath._equals12477 = @__env.GetMethodID(global::java.security.cert.CertPath.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::java.security.cert.CertPath._toString12478 = @__env.GetMethodID(global::java.security.cert.CertPath.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.security.cert.CertPath._hashCode12479 = @__env.GetMethodID(global::java.security.cert.CertPath.staticClass, "hashCode", "()I");
 			global::java.security.cert.CertPath._getCertificates12480 = @__env.GetMethodID(global::java.security.cert.CertPath.staticClass, "getCertificates", "()Ljava/util/List;");
 			global::java.security.cert.CertPath._getType12481 = @__env.GetMethodID(global::java.security.cert.CertPath.staticClass, "getType", "()Ljava/lang/String;");
 			global::java.security.cert.CertPath._getEncoded12482 = @__env.GetMethodID(global::java.security.cert.CertPath.staticClass, "getEncoded", "()[B");

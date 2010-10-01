@@ -29,16 +29,16 @@ namespace android.text
 			internal Alignment(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf6790;
+			internal static global::net.sf.jni4net.jni.MethodId _values6790;
+			public static global::android.text.Layout.Alignment[] values() 
+			{
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.text.Layout.Alignment.staticClass, global::android.text.Layout.Alignment._values6790));
+			}
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf6791;
 			public static global::android.text.Layout.Alignment valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallStaticObjectMethodPtr(android.text.Layout.Alignment.staticClass, global::android.text.Layout.Alignment._valueOf6790, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-			}
-			internal static global::net.sf.jni4net.jni.MethodId _values6791;
-			public static global::android.text.Layout.Alignment[] values() 
-			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.text.Layout.Alignment.staticClass, global::android.text.Layout.Alignment._values6791));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallStaticObjectMethodPtr(android.text.Layout.Alignment.staticClass, global::android.text.Layout.Alignment._valueOf6791, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
 			internal static global::net.sf.jni4net.jni.FieldId _ALIGN_CENTER6792;
 			public static global::android.text.Layout.Alignment ALIGN_CENTER
@@ -67,8 +67,8 @@ namespace android.text
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.text.Layout.Alignment.staticClass = @__class;
-				global::android.text.Layout.Alignment._valueOf6790 = @__env.GetStaticMethodID(global::android.text.Layout.Alignment.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/text/Layout$Alignment;");
-				global::android.text.Layout.Alignment._values6791 = @__env.GetStaticMethodID(global::android.text.Layout.Alignment.staticClass, "values", "()[Landroid/text/Layout/Alignment;");
+				global::android.text.Layout.Alignment._values6790 = @__env.GetStaticMethodID(global::android.text.Layout.Alignment.staticClass, "values", "()[Landroid/text/Layout/Alignment;");
+				global::android.text.Layout.Alignment._valueOf6791 = @__env.GetStaticMethodID(global::android.text.Layout.Alignment.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/text/Layout$Alignment;");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
