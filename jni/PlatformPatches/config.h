@@ -794,3 +794,5 @@
 
 /* Version number of package */
 #define VERSION "2.6.5"
+
+#define DEFAULT_GC_NAME "Boehm"

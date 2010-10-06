@@ -1,15 +1,3 @@
-MONO_SVN_BASE=svn://anonsvn.mono-project.com/source/branches/mono-2-6
-echo =====CHECKING OUT MONO FROM $MONO_SVN_BASE=====
-if [ -z $USE_LATEST_MONO ]
-then
-    MONO_SVN_REVISION="-r 157341"
-    echo =====USING SUPPORTED REVISION OF MONO: $MONO_SVN_REVISION=====
-else
-    echo =====USING LATEST REVISION OF MONO! THIS MAY NOT BE STABLE!=====
-fi
-
-pushd $(dirname $0)/jni
-
 function checkresult
 {
     RESULT=`echo $?`
@@ -19,6 +7,28 @@ function checkresult
     fi
 }
 
+if [ -z "$1" ]
+then
+    echo No local mono directory supplied. Cloning mono from Github. This may take a while...
+    echo You can provide a local mono checkout using: $0 \<path-to-mono-git-repository\>
+    MONO_GIT=git://github.com/mono/mono.git
+else
+    MONO_GIT=$1/.git
+fi
+
+echo =====CHECKING OUT MONO FROM $MONO_GIT=====
+if [ -z $USE_LATEST_MONO ]
+then
+    MONO_GIT_CHECKOUT=88e76d88ec0c54e89414fee2ea54d776c38e6613
+    echo =====USING SUPPORTED REVISION OF MONO: $MONO_GIT_CHECKOUT=====
+else
+    echo =====USING LATEST REVISION OF MONO! THIS MAY NOT BE STABLE!=====
+    MONO_GIT_CHECKOUT=origin/mono-2-6
+fi
+
+ROOT_DIR=$(basename $0)
+pushd $(dirname $0)/jni
+
 echo
 echo =====CHECKING OUT MONO=====
 if [ -d mono ]
@@ -27,33 +37,40 @@ then
     echo =====If you get errors, you may want to delete mono and hostbuild to force a clean build=====
     pushd mono
     MONO_SKIP_PATCH=true
-    svn up $MONO_SVN_REVISION
+    git fetch origin
+    git checkout $MONO_GIT_CHECKOUT
     popd
     checkresult 'Error while updating ./mono'
     pushd ../hostbuild/mono
-    svn up $MONO_SVN_REVISION
+    git fetch origin
+    git checkout $MONO_GIT_CHECKOUT
     popd
     checkresult 'Error while updating ./hostbuild/mono'
-    pushd ../hostbuild/mcs
-    svn up $MONO_SVN_REVISION
-    popd
-    checkresult 'Error while updating ./hostbuild/mcs'
 else
-    svn co $MONO_SVN_REVISION $MONO_SVN_BASE/mono
+    git clone $MONO_GIT mono
+    pushd mono
+    git checkout $MONO_GIT_CHECKOUT
+    popd
+
+    rm -rf ../hostbuild
     mkdir -p ../hostbuild
-    cp -r mono ../hostbuild/mono
     pushd ../hostbuild
-    svn co $MONO_SVN_REVISION $MONO_SVN_BASE/mcs
+    git clone $MONO_GIT mono
+    pushd mono
+    git checkout $MONO_GIT_CHECKOUT
+    popd
     popd
 fi
 
 echo
 echo =====COMPILING MONO CLASS LIBRARIES FOR MCS BUILD=====
 sleep 2
+export CC=$(which gcc-4.0)
+export CXX=$(which g++-4.0)
 pushd ../hostbuild/mono/eglib
 if [ ! -f configure ]
 then
-    ./autogen.sh
+    ./autogen.sh --prefix=$ROOT_DIR/hostbuild/install
 fi
 popd
 

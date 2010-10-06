@@ -9,7 +9,6 @@ const char arm_cpu_desc [] = {
 	"\x0" "ff\x0" "\xc" "\x0" ""	/* fcompare */
 	"\x0" "ii\x0" "\x4" "\x0" ""	/* icompare */
 	"\x0" "i\x0" "\x0" "\xc" "\x0" ""	/* icompare_imm */
-	"\x0" "i\x0" "\x0" "\xc" "\x0" ""	/* oparglist */
 	"\x0" "f\x0" "\x0" "\xc" "\x0" ""	/* setfret */
 	"\x0" "ii\x0" "\xc" "\x0" ""	/* setlret */
 	"ii\x0" "\x0" "\x3c" "\x0" ""	/* localloc */
@@ -41,6 +40,7 @@ const char arm_cpu_desc [] = {
 	"\x0" "i\x0" "\x0" "\x8" "\x0" ""	/* switch */
 	"\x0" "i\x0" "\x0" "\x18" "\x0" ""	/* throw */
 	"\x0" "i\x0" "\x0" "\x14" "\x0" ""	/* rethrow */
+	"\x0" "i\x0" "\x0" "\xc" "\x0" ""	/* oparglist */
 	"bi\x0" "\x0" "\x14" "\x0" ""	/* store_membase_reg */
 	"bi\x0" "\x0" "\xc" "\x0" ""	/* storei1_membase_reg */
 	"bi\x0" "\x0" "\xc" "\x0" ""	/* storei2_membase_reg */
@@ -224,7 +224,7 @@ const char arm_cpu_desc [] = {
 	"if\x0" "\x0" "\x24" "\x0" ""	/* float_conv_to_u */
 	"ff\x0" "\x0" "\x40" "\x0" ""	/* ckfinite */
 	"i\x0" "\x0" "\x0" "\x10" "\x0" ""	/* aot_const */
-	"\x0" "\x0" "\x0" "\x0" "\xc" "\x0" ""	/* call_handler */
+	"\x0" "\x0" "\x0" "\x0" "\xc" "c"	/* call_handler */
 	"\x0" "\x0" "\x0" "\x0" "\x14" "\x0" ""	/* start_handler */
 	"\x0" "i\x0" "\x0" "\x10" "\x0" ""	/* endfilter */
 	"\x0" "\x0" "\x0" "\x0" "\x14" "\x0" ""	/* endfinally */
@@ -273,51 +273,52 @@ const guint16 arm_cpu_desc_idx [] = {
 	0,	/* lcompare_imm */
 	0,	/* local */
 	0,	/* arg */
-	48,	/* oparglist */
 	0,	/* outarg_vt */
 	0,	/* outarg_vtretaddr */
 	0,	/* setret */
-	54,	/* setfret */
-	60,	/* setlret */
-	66,	/* localloc */
+	48,	/* setfret */
+	54,	/* setlret */
+	60,	/* localloc */
 	0,	/* localloc_imm */
-	72,	/* checkthis */
-	78,	/* seq_point */
-	84,	/* voidcall */
+	66,	/* checkthis */
+	72,	/* seq_point */
+	0,	/* implicit_exception */
+	78,	/* voidcall */
 	0,	/* voidcallvirt */
-	90,	/* voidcall_reg */
-	96,	/* voidcall_membase */
-	102,	/* call */
-	108,	/* call_reg */
-	114,	/* call_membase */
+	84,	/* voidcall_reg */
+	90,	/* voidcall_membase */
+	96,	/* call */
+	102,	/* call_reg */
+	108,	/* call_membase */
 	0,	/* callvirt */
-	120,	/* fcall */
+	114,	/* fcall */
 	0,	/* fcallvirt */
-	126,	/* fcall_reg */
-	132,	/* fcall_membase */
-	138,	/* lcall */
+	120,	/* fcall_reg */
+	126,	/* fcall_membase */
+	132,	/* lcall */
 	0,	/* lcallvirt */
-	144,	/* lcall_reg */
-	150,	/* lcall_membase */
-	156,	/* vcall */
+	138,	/* lcall_reg */
+	144,	/* lcall_membase */
+	150,	/* vcall */
 	0,	/* vcallvirt */
-	162,	/* vcall_reg */
-	168,	/* vcall_membase */
-	174,	/* vcall2 */
-	180,	/* vcall2_reg */
-	186,	/* vcall2_membase */
-	192,	/* dyn_call */
-	198,	/* iconst */
+	156,	/* vcall_reg */
+	162,	/* vcall_membase */
+	168,	/* vcall2 */
+	174,	/* vcall2_reg */
+	180,	/* vcall2_membase */
+	186,	/* dyn_call */
+	192,	/* iconst */
 	0,	/* i8const */
-	204,	/* r4const */
-	210,	/* r8const */
+	198,	/* r4const */
+	204,	/* r8const */
 	0,	/* regvar */
 	0,	/* regoffset */
 	0,	/* vtarg_addr */
-	216,	/* label */
-	222,	/* switch */
-	228,	/* throw */
-	234,	/* rethrow */
+	210,	/* label */
+	216,	/* switch */
+	222,	/* throw */
+	228,	/* rethrow */
+	234,	/* oparglist */
 	240,	/* store_membase_reg */
 	246,	/* storei1_membase_reg */
 	252,	/* storei2_membase_reg */
@@ -724,6 +725,7 @@ const guint16 arm_cpu_desc_idx [] = {
 	0,	/* memset */
 	0,	/* save_lmf */
 	0,	/* restore_lmf */
+	0,	/* card_table_wbarrier */
 	1458,	/* tls_get */
 	0,	/* load_gotaddr */
 	1464,	/* dummy_use */
