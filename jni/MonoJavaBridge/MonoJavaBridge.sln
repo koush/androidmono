@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDroid", "MonoDroid\MonoDroid.csproj", "{A3900426-8A60-473D-A454-3B5C124946D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jni4net.n.androidmono", "jni4net.n\jni4net.n.androidmono.csproj", "{774AED55-B9EC-4C7D-8EEB-1B2481C578B2}"

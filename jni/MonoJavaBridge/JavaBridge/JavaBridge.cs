@@ -78,6 +78,13 @@ namespace MonoJavaBridge
         static MethodInfo myCLRHandleToObject = null;
         static MethodInfo myExpressionLambda = null;
         
+        // this is to prevent an ambiguous method when searching for the wrapped method
+        // even with exact parameters provided, I was getting ambiguous method exceptions
+        public static Expression<TDelegate> LambdaPassthrough<TDelegate>(Expression body, params ParameterExpression[] parameters)
+        {
+            return Expression.Lambda<TDelegate>(body, parameters);
+        }
+        
 		static JavaBridge()
 		{
             Console.SetOut(LogWriter.Instance);
@@ -86,8 +93,7 @@ namespace MonoJavaBridge
 
             myStrongJ2CpUntyped = typeof(net.sf.jni4net.utils.Convertor).GetMethod("StrongJ2CpUntyped");
             myCLRHandleToObject = typeof(JavaBridge).GetMethod("CLRHandleToObject");
-            myExpressionLambda = typeof(Expression).GetMethod("Lambda", new Type[] { typeof(Expression), typeof(IEnumerable<ParameterExpression>) });
-
+            myExpressionLambda = typeof(JavaBridge).GetMethod("LambdaPassthrough");
             Console.WriteLine(myExpressionLambda);
             
             myActions.Add(typeof(JniAction));
