@@ -18,7 +18,7 @@ namespace android.gesture
 		protected OrientedBoundingBox(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _squareness2692;
+		internal static global::net.sf.jni4net.jni.FieldId _squareness2889;
 		public float squareness
 		{
 			get
@@ -26,7 +26,7 @@ namespace android.gesture
 				return default(float);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _width2693;
+		internal static global::net.sf.jni4net.jni.FieldId _width2890;
 		public float width
 		{
 			get
@@ -34,7 +34,7 @@ namespace android.gesture
 				return default(float);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _height2694;
+		internal static global::net.sf.jni4net.jni.FieldId _height2891;
 		public float height
 		{
 			get
@@ -42,7 +42,7 @@ namespace android.gesture
 				return default(float);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _orientation2695;
+		internal static global::net.sf.jni4net.jni.FieldId _orientation2892;
 		public float orientation
 		{
 			get
@@ -50,7 +50,7 @@ namespace android.gesture
 				return default(float);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _centerX2696;
+		internal static global::net.sf.jni4net.jni.FieldId _centerX2893;
 		public float centerX
 		{
 			get
@@ -58,7 +58,7 @@ namespace android.gesture
 				return default(float);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _centerY2697;
+		internal static global::net.sf.jni4net.jni.FieldId _centerY2894;
 		public float centerY
 		{
 			get

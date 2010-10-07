@@ -59,255 +59,255 @@ namespace android.widget
 			internal __MediaPlayerControl(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _start10494;
+			internal static global::net.sf.jni4net.jni.MethodId _start11204;
 			 void android.widget.MediaController.MediaPlayerControl.start() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl._start10494);
+					@__env.CallVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl._start11204);
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._start10494);
+					@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._start11204);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getDuration10495;
+			internal static global::net.sf.jni4net.jni.MethodId _getDuration11205;
 			 int android.widget.MediaController.MediaPlayerControl.getDuration() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl._getDuration10495);
+					return @__env.CallIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl._getDuration11205);
 				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._getDuration10495);
+					return @__env.CallNonVirtualIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._getDuration11205);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _pause10496;
+			internal static global::net.sf.jni4net.jni.MethodId _pause11206;
 			 void android.widget.MediaController.MediaPlayerControl.pause() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl._pause10496);
+					@__env.CallVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl._pause11206);
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._pause10496);
+					@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._pause11206);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _isPlaying10497;
+			internal static global::net.sf.jni4net.jni.MethodId _isPlaying11207;
 			 bool android.widget.MediaController.MediaPlayerControl.isPlaying() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl._isPlaying10497);
+					return @__env.CallBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl._isPlaying11207);
 				else
-					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._isPlaying10497);
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._isPlaying11207);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _seekTo10498;
+			internal static global::net.sf.jni4net.jni.MethodId _seekTo11208;
 			 void android.widget.MediaController.MediaPlayerControl.seekTo(int arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl._seekTo10498, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					@__env.CallVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl._seekTo11208, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._seekTo10498, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._seekTo11208, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getCurrentPosition10499;
+			internal static global::net.sf.jni4net.jni.MethodId _getCurrentPosition11209;
 			 int android.widget.MediaController.MediaPlayerControl.getCurrentPosition() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl._getCurrentPosition10499);
+					return @__env.CallIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl._getCurrentPosition11209);
 				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._getCurrentPosition10499);
+					return @__env.CallNonVirtualIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._getCurrentPosition11209);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getBufferPercentage10500;
+			internal static global::net.sf.jni4net.jni.MethodId _getBufferPercentage11210;
 			 int android.widget.MediaController.MediaPlayerControl.getBufferPercentage() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl._getBufferPercentage10500);
+					return @__env.CallIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl._getBufferPercentage11210);
 				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._getBufferPercentage10500);
+					return @__env.CallNonVirtualIntMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._getBufferPercentage11210);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _canPause10501;
+			internal static global::net.sf.jni4net.jni.MethodId _canPause11211;
 			 bool android.widget.MediaController.MediaPlayerControl.canPause() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl._canPause10501);
+					return @__env.CallBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl._canPause11211);
 				else
-					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._canPause10501);
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._canPause11211);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _canSeekBackward10502;
+			internal static global::net.sf.jni4net.jni.MethodId _canSeekBackward11212;
 			 bool android.widget.MediaController.MediaPlayerControl.canSeekBackward() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl._canSeekBackward10502);
+					return @__env.CallBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl._canSeekBackward11212);
 				else
-					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._canSeekBackward10502);
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._canSeekBackward11212);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _canSeekForward10503;
+			internal static global::net.sf.jni4net.jni.MethodId _canSeekForward11213;
 			 bool android.widget.MediaController.MediaPlayerControl.canSeekForward() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl._canSeekForward10503);
+					return @__env.CallBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl._canSeekForward11213);
 				else
-					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._canSeekForward10503);
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.__MediaPlayerControl.staticClass, global::android.widget.MediaController.__MediaPlayerControl._canSeekForward11213);
 			}
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.widget.MediaController.__MediaPlayerControl.staticClass = @__class;
-				global::android.widget.MediaController.__MediaPlayerControl._start10494 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.start", "()V");
-				global::android.widget.MediaController.__MediaPlayerControl._getDuration10495 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.getDuration", "()I");
-				global::android.widget.MediaController.__MediaPlayerControl._pause10496 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.pause", "()V");
-				global::android.widget.MediaController.__MediaPlayerControl._isPlaying10497 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.isPlaying", "()Z");
-				global::android.widget.MediaController.__MediaPlayerControl._seekTo10498 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.seekTo", "(I)V");
-				global::android.widget.MediaController.__MediaPlayerControl._getCurrentPosition10499 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.getCurrentPosition", "()I");
-				global::android.widget.MediaController.__MediaPlayerControl._getBufferPercentage10500 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.getBufferPercentage", "()I");
-				global::android.widget.MediaController.__MediaPlayerControl._canPause10501 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.canPause", "()Z");
-				global::android.widget.MediaController.__MediaPlayerControl._canSeekBackward10502 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.canSeekBackward", "()Z");
-				global::android.widget.MediaController.__MediaPlayerControl._canSeekForward10503 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.canSeekForward", "()Z");
+				global::android.widget.MediaController.__MediaPlayerControl._start11204 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.start", "()V");
+				global::android.widget.MediaController.__MediaPlayerControl._getDuration11205 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.getDuration", "()I");
+				global::android.widget.MediaController.__MediaPlayerControl._pause11206 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.pause", "()V");
+				global::android.widget.MediaController.__MediaPlayerControl._isPlaying11207 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.isPlaying", "()Z");
+				global::android.widget.MediaController.__MediaPlayerControl._seekTo11208 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.seekTo", "(I)V");
+				global::android.widget.MediaController.__MediaPlayerControl._getCurrentPosition11209 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.getCurrentPosition", "()I");
+				global::android.widget.MediaController.__MediaPlayerControl._getBufferPercentage11210 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.getBufferPercentage", "()I");
+				global::android.widget.MediaController.__MediaPlayerControl._canPause11211 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.canPause", "()Z");
+				global::android.widget.MediaController.__MediaPlayerControl._canSeekBackward11212 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.canSeekBackward", "()Z");
+				global::android.widget.MediaController.__MediaPlayerControl._canSeekForward11213 = @__env.GetMethodID(global::android.widget.MediaController.__MediaPlayerControl.staticClass, "android.widget.MediaController.MediaPlayerControl.canSeekForward", "()Z");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setEnabled10504;
+		internal static global::net.sf.jni4net.jni.MethodId _setEnabled11214;
 		public override void setEnabled(bool arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.MediaController._setEnabled10504, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.widget.MediaController._setEnabled11214, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._setEnabled10504, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._setEnabled11214, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onTouchEvent10505;
+		internal static global::net.sf.jni4net.jni.MethodId _onTouchEvent11215;
 		public override bool onTouchEvent(android.view.MotionEvent arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.MediaController._onTouchEvent10505, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this, global::android.widget.MediaController._onTouchEvent11215, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._onTouchEvent10505, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._onTouchEvent11215, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onTrackballEvent10506;
+		internal static global::net.sf.jni4net.jni.MethodId _onTrackballEvent11216;
 		public override bool onTrackballEvent(android.view.MotionEvent arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.MediaController._onTrackballEvent10506, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this, global::android.widget.MediaController._onTrackballEvent11216, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._onTrackballEvent10506, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._onTrackballEvent11216, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dispatchKeyEvent10507;
+		internal static global::net.sf.jni4net.jni.MethodId _dispatchKeyEvent11217;
 		public override bool dispatchKeyEvent(android.view.KeyEvent arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.MediaController._dispatchKeyEvent10507, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this, global::android.widget.MediaController._dispatchKeyEvent11217, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._dispatchKeyEvent10507, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._dispatchKeyEvent11217, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onFinishInflate10508;
+		internal static global::net.sf.jni4net.jni.MethodId _onFinishInflate11218;
 		public virtual new void onFinishInflate() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.MediaController._onFinishInflate10508);
+				@__env.CallVoidMethod(this, global::android.widget.MediaController._onFinishInflate11218);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._onFinishInflate10508);
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._onFinishInflate11218);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isShowing10509;
+		internal static global::net.sf.jni4net.jni.MethodId _isShowing11219;
 		public virtual bool isShowing() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.MediaController._isShowing10509);
+				return @__env.CallBooleanMethod(this, global::android.widget.MediaController._isShowing11219);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._isShowing10509);
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._isShowing11219);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _show10510;
+		internal static global::net.sf.jni4net.jni.MethodId _show11220;
 		public virtual void show(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.MediaController._show10510, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.widget.MediaController._show11220, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._show10510, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._show11220, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _show10511;
+		internal static global::net.sf.jni4net.jni.MethodId _show11221;
 		public virtual void show() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.MediaController._show10511);
+				@__env.CallVoidMethod(this, global::android.widget.MediaController._show11221);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._show10511);
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._show11221);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hide10512;
+		internal static global::net.sf.jni4net.jni.MethodId _hide11222;
 		public virtual void hide() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.MediaController._hide10512);
+				@__env.CallVoidMethod(this, global::android.widget.MediaController._hide11222);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._hide10512);
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._hide11222);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setMediaPlayer10513;
+		internal static global::net.sf.jni4net.jni.MethodId _setMediaPlayer11223;
 		public virtual void setMediaPlayer(android.widget.MediaController.MediaPlayerControl arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.MediaController._setMediaPlayer10513, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.widget.MediaController._setMediaPlayer11223, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._setMediaPlayer10513, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._setMediaPlayer11223, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setAnchorView10514;
+		internal static global::net.sf.jni4net.jni.MethodId _setAnchorView11224;
 		public virtual void setAnchorView(android.view.View arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.MediaController._setAnchorView10514, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.widget.MediaController._setAnchorView11224, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._setAnchorView10514, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._setAnchorView11224, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setPrevNextListeners10515;
+		internal static global::net.sf.jni4net.jni.MethodId _setPrevNextListeners11225;
 		public virtual void setPrevNextListeners(android.view.View.OnClickListener arg0, android.view.View.OnClickListener arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.MediaController._setPrevNextListeners10515, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallVoidMethod(this, global::android.widget.MediaController._setPrevNextListeners11225, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._setPrevNextListeners10515, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.MediaController.staticClass, global::android.widget.MediaController._setPrevNextListeners11225, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _MediaController10516;
+		internal static global::net.sf.jni4net.jni.MethodId _MediaController11226;
 		public MediaController(android.content.Context arg0, bool arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.MediaController.staticClass, global::android.widget.MediaController._MediaController10516, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			@__env.NewObject(android.widget.MediaController.staticClass, global::android.widget.MediaController._MediaController11226, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _MediaController10517;
+		internal static global::net.sf.jni4net.jni.MethodId _MediaController11227;
 		public MediaController(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.MediaController.staticClass, global::android.widget.MediaController._MediaController10517, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.widget.MediaController.staticClass, global::android.widget.MediaController._MediaController11227, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _MediaController10518;
+		internal static global::net.sf.jni4net.jni.MethodId _MediaController11228;
 		public MediaController(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.MediaController.staticClass, global::android.widget.MediaController._MediaController10518, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			@__env.NewObject(android.widget.MediaController.staticClass, global::android.widget.MediaController._MediaController11228, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.widget.MediaController.staticClass = @__class;
-			global::android.widget.MediaController._setEnabled10504 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "setEnabled", "(Z)V");
-			global::android.widget.MediaController._onTouchEvent10505 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
-			global::android.widget.MediaController._onTrackballEvent10506 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "onTrackballEvent", "(Landroid/view/MotionEvent;)Z");
-			global::android.widget.MediaController._dispatchKeyEvent10507 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "dispatchKeyEvent", "(Landroid/view/KeyEvent;)Z");
-			global::android.widget.MediaController._onFinishInflate10508 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "onFinishInflate", "()V");
-			global::android.widget.MediaController._isShowing10509 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "isShowing", "()Z");
-			global::android.widget.MediaController._show10510 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "show", "(I)V");
-			global::android.widget.MediaController._show10511 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "show", "()V");
-			global::android.widget.MediaController._hide10512 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "hide", "()V");
-			global::android.widget.MediaController._setMediaPlayer10513 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "setMediaPlayer", "(Landroid/widget/MediaController$MediaPlayerControl;)V");
-			global::android.widget.MediaController._setAnchorView10514 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "setAnchorView", "(Landroid/view/View;)V");
-			global::android.widget.MediaController._setPrevNextListeners10515 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "setPrevNextListeners", "(Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;)V");
-			global::android.widget.MediaController._MediaController10516 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "<init>", "(Landroid/content/Context;Z)V");
-			global::android.widget.MediaController._MediaController10517 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::android.widget.MediaController._MediaController10518 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.widget.MediaController._setEnabled11214 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "setEnabled", "(Z)V");
+			global::android.widget.MediaController._onTouchEvent11215 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
+			global::android.widget.MediaController._onTrackballEvent11216 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "onTrackballEvent", "(Landroid/view/MotionEvent;)Z");
+			global::android.widget.MediaController._dispatchKeyEvent11217 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "dispatchKeyEvent", "(Landroid/view/KeyEvent;)Z");
+			global::android.widget.MediaController._onFinishInflate11218 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "onFinishInflate", "()V");
+			global::android.widget.MediaController._isShowing11219 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "isShowing", "()Z");
+			global::android.widget.MediaController._show11220 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "show", "(I)V");
+			global::android.widget.MediaController._show11221 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "show", "()V");
+			global::android.widget.MediaController._hide11222 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "hide", "()V");
+			global::android.widget.MediaController._setMediaPlayer11223 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "setMediaPlayer", "(Landroid/widget/MediaController$MediaPlayerControl;)V");
+			global::android.widget.MediaController._setAnchorView11224 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "setAnchorView", "(Landroid/view/View;)V");
+			global::android.widget.MediaController._setPrevNextListeners11225 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "setPrevNextListeners", "(Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;)V");
+			global::android.widget.MediaController._MediaController11226 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "<init>", "(Landroid/content/Context;Z)V");
+			global::android.widget.MediaController._MediaController11227 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.widget.MediaController._MediaController11228 = @__env.GetMethodID(global::android.widget.MediaController.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 		}
 	}
 }

@@ -32,19 +32,19 @@ namespace java.io
 		internal __FilenameFilter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _accept11406;
+		internal static global::net.sf.jni4net.jni.MethodId _accept12125;
 		 bool java.io.FilenameFilter.accept(java.io.File arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.io.__FilenameFilter._accept11406, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallBooleanMethod(this, global::java.io.__FilenameFilter._accept12125, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.io.__FilenameFilter.staticClass, global::java.io.__FilenameFilter._accept11406, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.io.__FilenameFilter.staticClass, global::java.io.__FilenameFilter._accept12125, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.io.__FilenameFilter.staticClass = @__class;
-			global::java.io.__FilenameFilter._accept11406 = @__env.GetMethodID(global::java.io.__FilenameFilter.staticClass, "java.io.FilenameFilter.accept", "(Ljava/io/File;Ljava/lang/String;)Z");
+			global::java.io.__FilenameFilter._accept12125 = @__env.GetMethodID(global::java.io.__FilenameFilter.staticClass, "java.io.FilenameFilter.accept", "(Ljava/io/File;Ljava/lang/String;)Z");
 		}
 	}
 }

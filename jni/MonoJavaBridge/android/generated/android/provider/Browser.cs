@@ -36,11 +36,11 @@ namespace android.provider
 			protected BookmarkColumns(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _BookmarkColumns6128;
+			internal static global::net.sf.jni4net.jni.MethodId _BookmarkColumns6707;
 			public BookmarkColumns()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.provider.Browser.BookmarkColumns.staticClass, global::android.provider.Browser.BookmarkColumns._BookmarkColumns6128, this);
+				@__env.NewObject(android.provider.Browser.BookmarkColumns.staticClass, global::android.provider.Browser.BookmarkColumns._BookmarkColumns6707, this);
 			}
 			public static global::java.lang.String URL
 			{
@@ -94,7 +94,7 @@ namespace android.provider
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.provider.Browser.BookmarkColumns.staticClass = @__class;
-				global::android.provider.Browser.BookmarkColumns._BookmarkColumns6128 = @__env.GetMethodID(global::android.provider.Browser.BookmarkColumns.staticClass, "<init>", "()V");
+				global::android.provider.Browser.BookmarkColumns._BookmarkColumns6707 = @__env.GetMethodID(global::android.provider.Browser.BookmarkColumns.staticClass, "<init>", "()V");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
@@ -115,11 +115,11 @@ namespace android.provider
 			protected SearchColumns(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _SearchColumns6129;
+			internal static global::net.sf.jni4net.jni.MethodId _SearchColumns6708;
 			public SearchColumns()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.provider.Browser.SearchColumns.staticClass, global::android.provider.Browser.SearchColumns._SearchColumns6129, this);
+				@__env.NewObject(android.provider.Browser.SearchColumns.staticClass, global::android.provider.Browser.SearchColumns._SearchColumns6708, this);
 			}
 			public static global::java.lang.String URL
 			{
@@ -145,94 +145,94 @@ namespace android.provider
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.provider.Browser.SearchColumns.staticClass = @__class;
-				global::android.provider.Browser.SearchColumns._SearchColumns6129 = @__env.GetMethodID(global::android.provider.Browser.SearchColumns.staticClass, "<init>", "()V");
+				global::android.provider.Browser.SearchColumns._SearchColumns6708 = @__env.GetMethodID(global::android.provider.Browser.SearchColumns.staticClass, "<init>", "()V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _saveBookmark6130;
+		internal static global::net.sf.jni4net.jni.MethodId _saveBookmark6709;
 		public static void saveBookmark(android.content.Context arg0, java.lang.String arg1, java.lang.String arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._saveBookmark6130, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._saveBookmark6709, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _sendString6131;
+		internal static global::net.sf.jni4net.jni.MethodId _sendString6710;
 		public static void sendString(android.content.Context arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._sendString6131, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._sendString6710, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAllBookmarks6132;
+		internal static global::net.sf.jni4net.jni.MethodId _getAllBookmarks6711;
 		public static global::android.database.Cursor getAllBookmarks(android.content.ContentResolver arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Browser.staticClass, global::android.provider.Browser._getAllBookmarks6132, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Browser.staticClass, global::android.provider.Browser._getAllBookmarks6711, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAllVisitedUrls6133;
+		internal static global::net.sf.jni4net.jni.MethodId _getAllVisitedUrls6712;
 		public static global::android.database.Cursor getAllVisitedUrls(android.content.ContentResolver arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Browser.staticClass, global::android.provider.Browser._getAllVisitedUrls6133, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.Browser.staticClass, global::android.provider.Browser._getAllVisitedUrls6712, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _updateVisitedHistory6134;
+		internal static global::net.sf.jni4net.jni.MethodId _updateVisitedHistory6713;
 		public static void updateVisitedHistory(android.content.ContentResolver arg0, java.lang.String arg1, bool arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._updateVisitedHistory6134, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._updateVisitedHistory6713, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _truncateHistory6135;
+		internal static global::net.sf.jni4net.jni.MethodId _truncateHistory6714;
 		public static void truncateHistory(android.content.ContentResolver arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._truncateHistory6135, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._truncateHistory6714, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _canClearHistory6136;
+		internal static global::net.sf.jni4net.jni.MethodId _canClearHistory6715;
 		public static bool canClearHistory(android.content.ContentResolver arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.provider.Browser.staticClass, global::android.provider.Browser._canClearHistory6136, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			return @__env.CallStaticBooleanMethod(android.provider.Browser.staticClass, global::android.provider.Browser._canClearHistory6715, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clearHistory6137;
+		internal static global::net.sf.jni4net.jni.MethodId _clearHistory6716;
 		public static void clearHistory(android.content.ContentResolver arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._clearHistory6137, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._clearHistory6716, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _deleteHistoryTimeFrame6138;
+		internal static global::net.sf.jni4net.jni.MethodId _deleteHistoryTimeFrame6717;
 		public static void deleteHistoryTimeFrame(android.content.ContentResolver arg0, long arg1, long arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._deleteHistoryTimeFrame6138, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._deleteHistoryTimeFrame6717, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _deleteFromHistory6139;
+		internal static global::net.sf.jni4net.jni.MethodId _deleteFromHistory6718;
 		public static void deleteFromHistory(android.content.ContentResolver arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._deleteFromHistory6139, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._deleteFromHistory6718, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addSearchUrl6140;
+		internal static global::net.sf.jni4net.jni.MethodId _addSearchUrl6719;
 		public static void addSearchUrl(android.content.ContentResolver arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._addSearchUrl6140, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._addSearchUrl6719, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clearSearches6141;
+		internal static global::net.sf.jni4net.jni.MethodId _clearSearches6720;
 		public static void clearSearches(android.content.ContentResolver arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._clearSearches6141, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._clearSearches6720, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _requestAllIcons6142;
+		internal static global::net.sf.jni4net.jni.MethodId _requestAllIcons6721;
 		public static void requestAllIcons(android.content.ContentResolver arg0, java.lang.String arg1, android.webkit.WebIconDatabase.IconListener arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._requestAllIcons6142, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2));
+			@__env.CallStaticVoidMethod(android.provider.Browser.staticClass, global::android.provider.Browser._requestAllIcons6721, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Browser6143;
+		internal static global::net.sf.jni4net.jni.MethodId _Browser6722;
 		public Browser()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.provider.Browser.staticClass, global::android.provider.Browser._Browser6143, this);
+			@__env.NewObject(android.provider.Browser.staticClass, global::android.provider.Browser._Browser6722, this);
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _BOOKMARKS_URI6144;
+		internal static global::net.sf.jni4net.jni.FieldId _BOOKMARKS_URI6723;
 		public static global::android.net.Uri BOOKMARKS_URI
 		{
 			get
@@ -254,7 +254,14 @@ namespace android.provider
 				return "com.android.browser.application_id";
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _HISTORY_PROJECTION6145;
+		public static global::java.lang.String EXTRA_HEADERS
+		{
+			get
+			{
+				return "com.android.browser.headers";
+			}
+		}
+		internal static global::net.sf.jni4net.jni.FieldId _HISTORY_PROJECTION6724;
 		public static global::java.lang.String[] HISTORY_PROJECTION
 		{
 			get
@@ -311,7 +318,7 @@ namespace android.provider
 				return 6;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _TRUNCATE_HISTORY_PROJECTION6146;
+		internal static global::net.sf.jni4net.jni.FieldId _TRUNCATE_HISTORY_PROJECTION6725;
 		public static global::java.lang.String[] TRUNCATE_HISTORY_PROJECTION
 		{
 			get
@@ -333,7 +340,7 @@ namespace android.provider
 				return 5;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _SEARCHES_URI6147;
+		internal static global::net.sf.jni4net.jni.FieldId _SEARCHES_URI6726;
 		public static global::android.net.Uri SEARCHES_URI
 		{
 			get
@@ -341,7 +348,7 @@ namespace android.provider
 				return default(global::android.net.Uri);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _SEARCHES_PROJECTION6148;
+		internal static global::net.sf.jni4net.jni.FieldId _SEARCHES_PROJECTION6727;
 		public static global::java.lang.String[] SEARCHES_PROJECTION
 		{
 			get
@@ -366,20 +373,20 @@ namespace android.provider
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.provider.Browser.staticClass = @__class;
-			global::android.provider.Browser._saveBookmark6130 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "saveBookmark", "(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V");
-			global::android.provider.Browser._sendString6131 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "sendString", "(Landroid/content/Context;Ljava/lang/String;)V");
-			global::android.provider.Browser._getAllBookmarks6132 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "getAllBookmarks", "(Landroid/content/ContentResolver;)Landroid/database/Cursor;");
-			global::android.provider.Browser._getAllVisitedUrls6133 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "getAllVisitedUrls", "(Landroid/content/ContentResolver;)Landroid/database/Cursor;");
-			global::android.provider.Browser._updateVisitedHistory6134 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "updateVisitedHistory", "(Landroid/content/ContentResolver;Ljava/lang/String;Z)V");
-			global::android.provider.Browser._truncateHistory6135 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "truncateHistory", "(Landroid/content/ContentResolver;)V");
-			global::android.provider.Browser._canClearHistory6136 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "canClearHistory", "(Landroid/content/ContentResolver;)Z");
-			global::android.provider.Browser._clearHistory6137 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "clearHistory", "(Landroid/content/ContentResolver;)V");
-			global::android.provider.Browser._deleteHistoryTimeFrame6138 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "deleteHistoryTimeFrame", "(Landroid/content/ContentResolver;JJ)V");
-			global::android.provider.Browser._deleteFromHistory6139 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "deleteFromHistory", "(Landroid/content/ContentResolver;Ljava/lang/String;)V");
-			global::android.provider.Browser._addSearchUrl6140 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "addSearchUrl", "(Landroid/content/ContentResolver;Ljava/lang/String;)V");
-			global::android.provider.Browser._clearSearches6141 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "clearSearches", "(Landroid/content/ContentResolver;)V");
-			global::android.provider.Browser._requestAllIcons6142 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "requestAllIcons", "(Landroid/content/ContentResolver;Ljava/lang/String;Landroid/webkit/WebIconDatabase$IconListener;)V");
-			global::android.provider.Browser._Browser6143 = @__env.GetMethodID(global::android.provider.Browser.staticClass, "<init>", "()V");
+			global::android.provider.Browser._saveBookmark6709 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "saveBookmark", "(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V");
+			global::android.provider.Browser._sendString6710 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "sendString", "(Landroid/content/Context;Ljava/lang/String;)V");
+			global::android.provider.Browser._getAllBookmarks6711 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "getAllBookmarks", "(Landroid/content/ContentResolver;)Landroid/database/Cursor;");
+			global::android.provider.Browser._getAllVisitedUrls6712 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "getAllVisitedUrls", "(Landroid/content/ContentResolver;)Landroid/database/Cursor;");
+			global::android.provider.Browser._updateVisitedHistory6713 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "updateVisitedHistory", "(Landroid/content/ContentResolver;Ljava/lang/String;Z)V");
+			global::android.provider.Browser._truncateHistory6714 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "truncateHistory", "(Landroid/content/ContentResolver;)V");
+			global::android.provider.Browser._canClearHistory6715 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "canClearHistory", "(Landroid/content/ContentResolver;)Z");
+			global::android.provider.Browser._clearHistory6716 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "clearHistory", "(Landroid/content/ContentResolver;)V");
+			global::android.provider.Browser._deleteHistoryTimeFrame6717 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "deleteHistoryTimeFrame", "(Landroid/content/ContentResolver;JJ)V");
+			global::android.provider.Browser._deleteFromHistory6718 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "deleteFromHistory", "(Landroid/content/ContentResolver;Ljava/lang/String;)V");
+			global::android.provider.Browser._addSearchUrl6719 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "addSearchUrl", "(Landroid/content/ContentResolver;Ljava/lang/String;)V");
+			global::android.provider.Browser._clearSearches6720 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "clearSearches", "(Landroid/content/ContentResolver;)V");
+			global::android.provider.Browser._requestAllIcons6721 = @__env.GetStaticMethodID(global::android.provider.Browser.staticClass, "requestAllIcons", "(Landroid/content/ContentResolver;Ljava/lang/String;Landroid/webkit/WebIconDatabase$IconListener;)V");
+			global::android.provider.Browser._Browser6722 = @__env.GetMethodID(global::android.provider.Browser.staticClass, "<init>", "()V");
 		}
 	}
 }

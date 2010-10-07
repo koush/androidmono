@@ -50,44 +50,44 @@ namespace android.os
 			internal __IdleHandler(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _queueIdle5676;
+			internal static global::net.sf.jni4net.jni.MethodId _queueIdle6249;
 			 bool android.os.MessageQueue.IdleHandler.queueIdle() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this, global::android.os.MessageQueue.__IdleHandler._queueIdle5676);
+					return @__env.CallBooleanMethod(this, global::android.os.MessageQueue.__IdleHandler._queueIdle6249);
 				else
-					return @__env.CallNonVirtualBooleanMethod(this, global::android.os.MessageQueue.__IdleHandler.staticClass, global::android.os.MessageQueue.__IdleHandler._queueIdle5676);
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.os.MessageQueue.__IdleHandler.staticClass, global::android.os.MessageQueue.__IdleHandler._queueIdle6249);
 			}
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.os.MessageQueue.__IdleHandler.staticClass = @__class;
-				global::android.os.MessageQueue.__IdleHandler._queueIdle5676 = @__env.GetMethodID(global::android.os.MessageQueue.__IdleHandler.staticClass, "android.os.MessageQueue.IdleHandler.queueIdle", "()Z");
+				global::android.os.MessageQueue.__IdleHandler._queueIdle6249 = @__env.GetMethodID(global::android.os.MessageQueue.__IdleHandler.staticClass, "android.os.MessageQueue.IdleHandler.queueIdle", "()Z");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addIdleHandler5677;
+		internal static global::net.sf.jni4net.jni.MethodId _addIdleHandler6250;
 		public virtual void addIdleHandler(android.os.MessageQueue.IdleHandler arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.MessageQueue._addIdleHandler5677, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.os.MessageQueue._addIdleHandler6250, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.MessageQueue.staticClass, global::android.os.MessageQueue._addIdleHandler5677, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.MessageQueue.staticClass, global::android.os.MessageQueue._addIdleHandler6250, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _removeIdleHandler5678;
+		internal static global::net.sf.jni4net.jni.MethodId _removeIdleHandler6251;
 		public virtual void removeIdleHandler(android.os.MessageQueue.IdleHandler arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.MessageQueue._removeIdleHandler5678, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.os.MessageQueue._removeIdleHandler6251, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.MessageQueue.staticClass, global::android.os.MessageQueue._removeIdleHandler5678, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.MessageQueue.staticClass, global::android.os.MessageQueue._removeIdleHandler6251, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.os.MessageQueue.staticClass = @__class;
-			global::android.os.MessageQueue._addIdleHandler5677 = @__env.GetMethodID(global::android.os.MessageQueue.staticClass, "addIdleHandler", "(Landroid/os/MessageQueue$IdleHandler;)V");
-			global::android.os.MessageQueue._removeIdleHandler5678 = @__env.GetMethodID(global::android.os.MessageQueue.staticClass, "removeIdleHandler", "(Landroid/os/MessageQueue$IdleHandler;)V");
+			global::android.os.MessageQueue._addIdleHandler6250 = @__env.GetMethodID(global::android.os.MessageQueue.staticClass, "addIdleHandler", "(Landroid/os/MessageQueue$IdleHandler;)V");
+			global::android.os.MessageQueue._removeIdleHandler6251 = @__env.GetMethodID(global::android.os.MessageQueue.staticClass, "removeIdleHandler", "(Landroid/os/MessageQueue$IdleHandler;)V");
 		}
 	}
 }

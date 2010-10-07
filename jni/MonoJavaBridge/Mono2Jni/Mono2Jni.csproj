@@ -35,15 +35,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="..\..\..\MonoDevelop.Android\MonoDevelop.Android\MonoReflector.cs">
-      <Link>MonoReflector.cs</Link>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="..\..\..\MonoDevelop.Android\MonoDevelop.Android\Templates\JavaClassTemplate.java">
-      <Link>JavaClassTemplate.java</Link>
-      <LogicalName>JavaClassTemplate.java</LogicalName>
-    </EmbeddedResource>
+    <Compile Include="MonoReflector.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\jni4net.n\jni4net.n.androidmono.csproj">
@@ -52,4 +44,7 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="JavaClassTemplate.java" />
+  </ItemGroup>
 </Project>

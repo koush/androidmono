@@ -32,19 +32,19 @@ namespace java.lang
 		internal __Readable(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _read11507;
+		internal static global::net.sf.jni4net.jni.MethodId _read12236;
 		 int java.lang.Readable.read(java.nio.CharBuffer arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.lang.__Readable._read11507, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallIntMethod(this, global::java.lang.__Readable._read12236, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.lang.__Readable.staticClass, global::java.lang.__Readable._read11507, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this, global::java.lang.__Readable.staticClass, global::java.lang.__Readable._read12236, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.lang.__Readable.staticClass = @__class;
-			global::java.lang.__Readable._read11507 = @__env.GetMethodID(global::java.lang.__Readable.staticClass, "java.lang.Readable.read", "(Ljava/nio/CharBuffer;)I");
+			global::java.lang.__Readable._read12236 = @__env.GetMethodID(global::java.lang.__Readable.staticClass, "java.lang.Readable.read", "(Ljava/nio/CharBuffer;)I");
 		}
 	}
 }

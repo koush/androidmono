@@ -11,30 +11,30 @@ namespace android.telephony
 		protected CellLocation(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _requestLocationUpdate6437;
+		internal static global::net.sf.jni4net.jni.MethodId _requestLocationUpdate7061;
 		public static void requestLocationUpdate() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.telephony.CellLocation.staticClass, global::android.telephony.CellLocation._requestLocationUpdate6437);
+			@__env.CallStaticVoidMethod(android.telephony.CellLocation.staticClass, global::android.telephony.CellLocation._requestLocationUpdate7061);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getEmpty6438;
+		internal static global::net.sf.jni4net.jni.MethodId _getEmpty7062;
 		public static global::android.telephony.CellLocation getEmpty() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.telephony.CellLocation>(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.CellLocation.staticClass, global::android.telephony.CellLocation._getEmpty6438));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.telephony.CellLocation>(@__env, @__env.CallStaticObjectMethodPtr(android.telephony.CellLocation.staticClass, global::android.telephony.CellLocation._getEmpty7062));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _CellLocation6439;
+		internal static global::net.sf.jni4net.jni.MethodId _CellLocation7063;
 		public CellLocation()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.telephony.CellLocation.staticClass, global::android.telephony.CellLocation._CellLocation6439, this);
+			@__env.NewObject(android.telephony.CellLocation.staticClass, global::android.telephony.CellLocation._CellLocation7063, this);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.telephony.CellLocation.staticClass = @__class;
-			global::android.telephony.CellLocation._requestLocationUpdate6437 = @__env.GetStaticMethodID(global::android.telephony.CellLocation.staticClass, "requestLocationUpdate", "()V");
-			global::android.telephony.CellLocation._getEmpty6438 = @__env.GetStaticMethodID(global::android.telephony.CellLocation.staticClass, "getEmpty", "()Landroid/telephony/CellLocation;");
-			global::android.telephony.CellLocation._CellLocation6439 = @__env.GetMethodID(global::android.telephony.CellLocation.staticClass, "<init>", "()V");
+			global::android.telephony.CellLocation._requestLocationUpdate7061 = @__env.GetStaticMethodID(global::android.telephony.CellLocation.staticClass, "requestLocationUpdate", "()V");
+			global::android.telephony.CellLocation._getEmpty7062 = @__env.GetStaticMethodID(global::android.telephony.CellLocation.staticClass, "getEmpty", "()Landroid/telephony/CellLocation;");
+			global::android.telephony.CellLocation._CellLocation7063 = @__env.GetMethodID(global::android.telephony.CellLocation.staticClass, "<init>", "()V");
 		}
 	}
 }

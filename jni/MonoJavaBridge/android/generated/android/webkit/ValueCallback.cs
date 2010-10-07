@@ -32,19 +32,19 @@ namespace android.webkit
 		internal __ValueCallback(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onReceiveValue9363;
+		internal static global::net.sf.jni4net.jni.MethodId _onReceiveValue10042;
 		 void android.webkit.ValueCallback.onReceiveValue(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.webkit.__ValueCallback._onReceiveValue9363, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.webkit.__ValueCallback._onReceiveValue10042, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.__ValueCallback.staticClass, global::android.webkit.__ValueCallback._onReceiveValue9363, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.__ValueCallback.staticClass, global::android.webkit.__ValueCallback._onReceiveValue10042, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.webkit.__ValueCallback.staticClass = @__class;
-			global::android.webkit.__ValueCallback._onReceiveValue9363 = @__env.GetMethodID(global::android.webkit.__ValueCallback.staticClass, "android.webkit.ValueCallback.onReceiveValue", "(Ljava/lang/Object;)V");
+			global::android.webkit.__ValueCallback._onReceiveValue10042 = @__env.GetMethodID(global::android.webkit.__ValueCallback.staticClass, "android.webkit.ValueCallback.onReceiveValue", "(Ljava/lang/Object;)V");
 		}
 	}
 }

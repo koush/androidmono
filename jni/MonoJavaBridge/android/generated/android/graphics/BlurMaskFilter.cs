@@ -36,18 +36,18 @@ namespace android.graphics
 			internal Blur(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _values2785;
+			internal static global::net.sf.jni4net.jni.MethodId _values2982;
 			public static global::android.graphics.BlurMaskFilter.Blur[] values() 
 			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BlurMaskFilter.Blur.staticClass, global::android.graphics.BlurMaskFilter.Blur._values2785));
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BlurMaskFilter.Blur.staticClass, global::android.graphics.BlurMaskFilter.Blur._values2982));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf2786;
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf2983;
 			public static global::android.graphics.BlurMaskFilter.Blur valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.BlurMaskFilter.Blur>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BlurMaskFilter.Blur.staticClass, global::android.graphics.BlurMaskFilter.Blur._valueOf2786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.BlurMaskFilter.Blur>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.BlurMaskFilter.Blur.staticClass, global::android.graphics.BlurMaskFilter.Blur._valueOf2983, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _INNER2787;
+			internal static global::net.sf.jni4net.jni.FieldId _INNER2984;
 			public static global::android.graphics.BlurMaskFilter.Blur INNER
 			{
 				get
@@ -55,7 +55,7 @@ namespace android.graphics
 					return default(global::android.graphics.BlurMaskFilter.Blur);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _NORMAL2788;
+			internal static global::net.sf.jni4net.jni.FieldId _NORMAL2985;
 			public static global::android.graphics.BlurMaskFilter.Blur NORMAL
 			{
 				get
@@ -63,7 +63,7 @@ namespace android.graphics
 					return default(global::android.graphics.BlurMaskFilter.Blur);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _OUTER2789;
+			internal static global::net.sf.jni4net.jni.FieldId _OUTER2986;
 			public static global::android.graphics.BlurMaskFilter.Blur OUTER
 			{
 				get
@@ -71,7 +71,7 @@ namespace android.graphics
 					return default(global::android.graphics.BlurMaskFilter.Blur);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _SOLID2790;
+			internal static global::net.sf.jni4net.jni.FieldId _SOLID2987;
 			public static global::android.graphics.BlurMaskFilter.Blur SOLID
 			{
 				get
@@ -82,20 +82,20 @@ namespace android.graphics
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.graphics.BlurMaskFilter.Blur.staticClass = @__class;
-				global::android.graphics.BlurMaskFilter.Blur._values2785 = @__env.GetStaticMethodID(global::android.graphics.BlurMaskFilter.Blur.staticClass, "values", "()[Landroid/graphics/BlurMaskFilter/Blur;");
-				global::android.graphics.BlurMaskFilter.Blur._valueOf2786 = @__env.GetStaticMethodID(global::android.graphics.BlurMaskFilter.Blur.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/BlurMaskFilter$Blur;");
+				global::android.graphics.BlurMaskFilter.Blur._values2982 = @__env.GetStaticMethodID(global::android.graphics.BlurMaskFilter.Blur.staticClass, "values", "()[Landroid/graphics/BlurMaskFilter/Blur;");
+				global::android.graphics.BlurMaskFilter.Blur._valueOf2983 = @__env.GetStaticMethodID(global::android.graphics.BlurMaskFilter.Blur.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/BlurMaskFilter$Blur;");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _BlurMaskFilter2791;
+		internal static global::net.sf.jni4net.jni.MethodId _BlurMaskFilter2988;
 		public BlurMaskFilter(float arg0, android.graphics.BlurMaskFilter.Blur arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.BlurMaskFilter.staticClass, global::android.graphics.BlurMaskFilter._BlurMaskFilter2791, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			@__env.NewObject(android.graphics.BlurMaskFilter.staticClass, global::android.graphics.BlurMaskFilter._BlurMaskFilter2988, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.graphics.BlurMaskFilter.staticClass = @__class;
-			global::android.graphics.BlurMaskFilter._BlurMaskFilter2791 = @__env.GetMethodID(global::android.graphics.BlurMaskFilter.staticClass, "<init>", "(FLandroid/graphics/BlurMaskFilter$Blur;)V");
+			global::android.graphics.BlurMaskFilter._BlurMaskFilter2988 = @__env.GetMethodID(global::android.graphics.BlurMaskFilter.staticClass, "<init>", "(FLandroid/graphics/BlurMaskFilter$Blur;)V");
 		}
 	}
 }

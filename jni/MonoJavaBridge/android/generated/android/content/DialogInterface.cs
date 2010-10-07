@@ -33,29 +33,29 @@ namespace android.content
 		internal __DialogInterface(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cancel1277;
+		internal static global::net.sf.jni4net.jni.MethodId _cancel1421;
 		 void android.content.DialogInterface.cancel() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.__DialogInterface._cancel1277);
+				@__env.CallVoidMethod(this, global::android.content.__DialogInterface._cancel1421);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface.staticClass, global::android.content.__DialogInterface._cancel1277);
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface.staticClass, global::android.content.__DialogInterface._cancel1421);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dismiss1278;
+		internal static global::net.sf.jni4net.jni.MethodId _dismiss1422;
 		 void android.content.DialogInterface.dismiss() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.__DialogInterface._dismiss1278);
+				@__env.CallVoidMethod(this, global::android.content.__DialogInterface._dismiss1422);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface.staticClass, global::android.content.__DialogInterface._dismiss1278);
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface.staticClass, global::android.content.__DialogInterface._dismiss1422);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.content.__DialogInterface.staticClass = @__class;
-			global::android.content.__DialogInterface._cancel1277 = @__env.GetMethodID(global::android.content.__DialogInterface.staticClass, "android.content.DialogInterface.cancel", "()V");
-			global::android.content.__DialogInterface._dismiss1278 = @__env.GetMethodID(global::android.content.__DialogInterface.staticClass, "android.content.DialogInterface.dismiss", "()V");
+			global::android.content.__DialogInterface._cancel1421 = @__env.GetMethodID(global::android.content.__DialogInterface.staticClass, "android.content.DialogInterface.cancel", "()V");
+			global::android.content.__DialogInterface._dismiss1422 = @__env.GetMethodID(global::android.content.__DialogInterface.staticClass, "android.content.DialogInterface.dismiss", "()V");
 		}
 	}
 }

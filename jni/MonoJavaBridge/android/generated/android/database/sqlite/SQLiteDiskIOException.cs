@@ -18,23 +18,23 @@ namespace android.database.sqlite
 		protected SQLiteDiskIOException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SQLiteDiskIOException2512;
+		internal static global::net.sf.jni4net.jni.MethodId _SQLiteDiskIOException2701;
 		public SQLiteDiskIOException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.database.sqlite.SQLiteDiskIOException.staticClass, global::android.database.sqlite.SQLiteDiskIOException._SQLiteDiskIOException2512, this);
+			@__env.NewObject(android.database.sqlite.SQLiteDiskIOException.staticClass, global::android.database.sqlite.SQLiteDiskIOException._SQLiteDiskIOException2701, this);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SQLiteDiskIOException2513;
+		internal static global::net.sf.jni4net.jni.MethodId _SQLiteDiskIOException2702;
 		public SQLiteDiskIOException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.database.sqlite.SQLiteDiskIOException.staticClass, global::android.database.sqlite.SQLiteDiskIOException._SQLiteDiskIOException2513, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.database.sqlite.SQLiteDiskIOException.staticClass, global::android.database.sqlite.SQLiteDiskIOException._SQLiteDiskIOException2702, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.database.sqlite.SQLiteDiskIOException.staticClass = @__class;
-			global::android.database.sqlite.SQLiteDiskIOException._SQLiteDiskIOException2512 = @__env.GetMethodID(global::android.database.sqlite.SQLiteDiskIOException.staticClass, "<init>", "()V");
-			global::android.database.sqlite.SQLiteDiskIOException._SQLiteDiskIOException2513 = @__env.GetMethodID(global::android.database.sqlite.SQLiteDiskIOException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::android.database.sqlite.SQLiteDiskIOException._SQLiteDiskIOException2701 = @__env.GetMethodID(global::android.database.sqlite.SQLiteDiskIOException.staticClass, "<init>", "()V");
+			global::android.database.sqlite.SQLiteDiskIOException._SQLiteDiskIOException2702 = @__env.GetMethodID(global::android.database.sqlite.SQLiteDiskIOException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

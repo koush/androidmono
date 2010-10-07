@@ -18,68 +18,77 @@ namespace android.view
 		protected Display(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getWidth7738;
+		internal static global::net.sf.jni4net.jni.MethodId _getWidth8412;
 		public virtual int getWidth() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.Display._getWidth7738);
+				return @__env.CallIntMethod(this, global::android.view.Display._getWidth8412);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getWidth7738);
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getWidth8412);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getHeight7739;
+		internal static global::net.sf.jni4net.jni.MethodId _getHeight8413;
 		public virtual int getHeight() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.Display._getHeight7739);
+				return @__env.CallIntMethod(this, global::android.view.Display._getHeight8413);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getHeight7739);
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getHeight8413);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getOrientation7740;
+		internal static global::net.sf.jni4net.jni.MethodId _getOrientation8414;
 		public virtual int getOrientation() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.Display._getOrientation7740);
+				return @__env.CallIntMethod(this, global::android.view.Display._getOrientation8414);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getOrientation7740);
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getOrientation8414);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDisplayId7741;
+		internal static global::net.sf.jni4net.jni.MethodId _getDisplayId8415;
 		public virtual int getDisplayId() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.Display._getDisplayId7741);
+				return @__env.CallIntMethod(this, global::android.view.Display._getDisplayId8415);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getDisplayId7741);
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getDisplayId8415);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPixelFormat7742;
+		internal static global::net.sf.jni4net.jni.MethodId _getRotation8416;
+		public virtual int getRotation() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.view.Display._getRotation8416);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getRotation8416);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _getPixelFormat8417;
 		public virtual int getPixelFormat() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.Display._getPixelFormat7742);
+				return @__env.CallIntMethod(this, global::android.view.Display._getPixelFormat8417);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getPixelFormat7742);
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getPixelFormat8417);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getRefreshRate7743;
+		internal static global::net.sf.jni4net.jni.MethodId _getRefreshRate8418;
 		public virtual float getRefreshRate() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.Display._getRefreshRate7743);
+				return @__env.CallFloatMethod(this, global::android.view.Display._getRefreshRate8418);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getRefreshRate7743);
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getRefreshRate8418);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMetrics7744;
+		internal static global::net.sf.jni4net.jni.MethodId _getMetrics8419;
 		public virtual void getMetrics(android.util.DisplayMetrics arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.Display._getMetrics7744, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.view.Display._getMetrics8419, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getMetrics7744, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.Display.staticClass, global::android.view.Display._getMetrics8419, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		public static int DEFAULT_DISPLAY
 		{
@@ -91,13 +100,14 @@ namespace android.view
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.view.Display.staticClass = @__class;
-			global::android.view.Display._getWidth7738 = @__env.GetMethodID(global::android.view.Display.staticClass, "getWidth", "()I");
-			global::android.view.Display._getHeight7739 = @__env.GetMethodID(global::android.view.Display.staticClass, "getHeight", "()I");
-			global::android.view.Display._getOrientation7740 = @__env.GetMethodID(global::android.view.Display.staticClass, "getOrientation", "()I");
-			global::android.view.Display._getDisplayId7741 = @__env.GetMethodID(global::android.view.Display.staticClass, "getDisplayId", "()I");
-			global::android.view.Display._getPixelFormat7742 = @__env.GetMethodID(global::android.view.Display.staticClass, "getPixelFormat", "()I");
-			global::android.view.Display._getRefreshRate7743 = @__env.GetMethodID(global::android.view.Display.staticClass, "getRefreshRate", "()F");
-			global::android.view.Display._getMetrics7744 = @__env.GetMethodID(global::android.view.Display.staticClass, "getMetrics", "(Landroid/util/DisplayMetrics;)V");
+			global::android.view.Display._getWidth8412 = @__env.GetMethodID(global::android.view.Display.staticClass, "getWidth", "()I");
+			global::android.view.Display._getHeight8413 = @__env.GetMethodID(global::android.view.Display.staticClass, "getHeight", "()I");
+			global::android.view.Display._getOrientation8414 = @__env.GetMethodID(global::android.view.Display.staticClass, "getOrientation", "()I");
+			global::android.view.Display._getDisplayId8415 = @__env.GetMethodID(global::android.view.Display.staticClass, "getDisplayId", "()I");
+			global::android.view.Display._getRotation8416 = @__env.GetMethodID(global::android.view.Display.staticClass, "getRotation", "()I");
+			global::android.view.Display._getPixelFormat8417 = @__env.GetMethodID(global::android.view.Display.staticClass, "getPixelFormat", "()I");
+			global::android.view.Display._getRefreshRate8418 = @__env.GetMethodID(global::android.view.Display.staticClass, "getRefreshRate", "()F");
+			global::android.view.Display._getMetrics8419 = @__env.GetMethodID(global::android.view.Display.staticClass, "getMetrics", "(Landroid/util/DisplayMetrics;)V");
 		}
 	}
 }

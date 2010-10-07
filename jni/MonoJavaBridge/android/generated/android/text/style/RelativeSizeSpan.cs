@@ -18,83 +18,83 @@ namespace android.text.style
 		protected RelativeSizeSpan(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel7386;
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel8015;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.style.RelativeSizeSpan._writeToParcel7386, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.text.style.RelativeSizeSpan._writeToParcel8015, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.RelativeSizeSpan.staticClass, global::android.text.style.RelativeSizeSpan._writeToParcel7386, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.RelativeSizeSpan.staticClass, global::android.text.style.RelativeSizeSpan._writeToParcel8015, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents7387;
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents8016;
 		public virtual int describeContents() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.style.RelativeSizeSpan._describeContents7387);
+				return @__env.CallIntMethod(this, global::android.text.style.RelativeSizeSpan._describeContents8016);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.RelativeSizeSpan.staticClass, global::android.text.style.RelativeSizeSpan._describeContents7387);
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.RelativeSizeSpan.staticClass, global::android.text.style.RelativeSizeSpan._describeContents8016);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSpanTypeId7388;
+		internal static global::net.sf.jni4net.jni.MethodId _getSpanTypeId8017;
 		public virtual int getSpanTypeId() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.style.RelativeSizeSpan._getSpanTypeId7388);
+				return @__env.CallIntMethod(this, global::android.text.style.RelativeSizeSpan._getSpanTypeId8017);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.RelativeSizeSpan.staticClass, global::android.text.style.RelativeSizeSpan._getSpanTypeId7388);
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.RelativeSizeSpan.staticClass, global::android.text.style.RelativeSizeSpan._getSpanTypeId8017);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _updateDrawState7389;
+		internal static global::net.sf.jni4net.jni.MethodId _updateDrawState8018;
 		public override void updateDrawState(android.text.TextPaint arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.style.RelativeSizeSpan._updateDrawState7389, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.text.style.RelativeSizeSpan._updateDrawState8018, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.RelativeSizeSpan.staticClass, global::android.text.style.RelativeSizeSpan._updateDrawState7389, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.RelativeSizeSpan.staticClass, global::android.text.style.RelativeSizeSpan._updateDrawState8018, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _updateMeasureState7390;
+		internal static global::net.sf.jni4net.jni.MethodId _updateMeasureState8019;
 		public override void updateMeasureState(android.text.TextPaint arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.style.RelativeSizeSpan._updateMeasureState7390, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.text.style.RelativeSizeSpan._updateMeasureState8019, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.RelativeSizeSpan.staticClass, global::android.text.style.RelativeSizeSpan._updateMeasureState7390, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.RelativeSizeSpan.staticClass, global::android.text.style.RelativeSizeSpan._updateMeasureState8019, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSizeChange7391;
+		internal static global::net.sf.jni4net.jni.MethodId _getSizeChange8020;
 		public virtual float getSizeChange() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.text.style.RelativeSizeSpan._getSizeChange7391);
+				return @__env.CallFloatMethod(this, global::android.text.style.RelativeSizeSpan._getSizeChange8020);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.text.style.RelativeSizeSpan.staticClass, global::android.text.style.RelativeSizeSpan._getSizeChange7391);
+				return @__env.CallNonVirtualFloatMethod(this, global::android.text.style.RelativeSizeSpan.staticClass, global::android.text.style.RelativeSizeSpan._getSizeChange8020);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _RelativeSizeSpan7392;
+		internal static global::net.sf.jni4net.jni.MethodId _RelativeSizeSpan8021;
 		public RelativeSizeSpan(float arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.style.RelativeSizeSpan.staticClass, global::android.text.style.RelativeSizeSpan._RelativeSizeSpan7392, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			@__env.NewObject(android.text.style.RelativeSizeSpan.staticClass, global::android.text.style.RelativeSizeSpan._RelativeSizeSpan8021, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _RelativeSizeSpan7393;
+		internal static global::net.sf.jni4net.jni.MethodId _RelativeSizeSpan8022;
 		public RelativeSizeSpan(android.os.Parcel arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.style.RelativeSizeSpan.staticClass, global::android.text.style.RelativeSizeSpan._RelativeSizeSpan7393, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.text.style.RelativeSizeSpan.staticClass, global::android.text.style.RelativeSizeSpan._RelativeSizeSpan8022, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.text.style.RelativeSizeSpan.staticClass = @__class;
-			global::android.text.style.RelativeSizeSpan._writeToParcel7386 = @__env.GetMethodID(global::android.text.style.RelativeSizeSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.text.style.RelativeSizeSpan._describeContents7387 = @__env.GetMethodID(global::android.text.style.RelativeSizeSpan.staticClass, "describeContents", "()I");
-			global::android.text.style.RelativeSizeSpan._getSpanTypeId7388 = @__env.GetMethodID(global::android.text.style.RelativeSizeSpan.staticClass, "getSpanTypeId", "()I");
-			global::android.text.style.RelativeSizeSpan._updateDrawState7389 = @__env.GetMethodID(global::android.text.style.RelativeSizeSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
-			global::android.text.style.RelativeSizeSpan._updateMeasureState7390 = @__env.GetMethodID(global::android.text.style.RelativeSizeSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V");
-			global::android.text.style.RelativeSizeSpan._getSizeChange7391 = @__env.GetMethodID(global::android.text.style.RelativeSizeSpan.staticClass, "getSizeChange", "()F");
-			global::android.text.style.RelativeSizeSpan._RelativeSizeSpan7392 = @__env.GetMethodID(global::android.text.style.RelativeSizeSpan.staticClass, "<init>", "(F)V");
-			global::android.text.style.RelativeSizeSpan._RelativeSizeSpan7393 = @__env.GetMethodID(global::android.text.style.RelativeSizeSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::android.text.style.RelativeSizeSpan._writeToParcel8015 = @__env.GetMethodID(global::android.text.style.RelativeSizeSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.text.style.RelativeSizeSpan._describeContents8016 = @__env.GetMethodID(global::android.text.style.RelativeSizeSpan.staticClass, "describeContents", "()I");
+			global::android.text.style.RelativeSizeSpan._getSpanTypeId8017 = @__env.GetMethodID(global::android.text.style.RelativeSizeSpan.staticClass, "getSpanTypeId", "()I");
+			global::android.text.style.RelativeSizeSpan._updateDrawState8018 = @__env.GetMethodID(global::android.text.style.RelativeSizeSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
+			global::android.text.style.RelativeSizeSpan._updateMeasureState8019 = @__env.GetMethodID(global::android.text.style.RelativeSizeSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V");
+			global::android.text.style.RelativeSizeSpan._getSizeChange8020 = @__env.GetMethodID(global::android.text.style.RelativeSizeSpan.staticClass, "getSizeChange", "()F");
+			global::android.text.style.RelativeSizeSpan._RelativeSizeSpan8021 = @__env.GetMethodID(global::android.text.style.RelativeSizeSpan.staticClass, "<init>", "(F)V");
+			global::android.text.style.RelativeSizeSpan._RelativeSizeSpan8022 = @__env.GetMethodID(global::android.text.style.RelativeSizeSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 		}
 	}
 }

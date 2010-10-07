@@ -18,46 +18,46 @@ namespace android.content.pm
 		internal ProviderInfo(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString1809;
+		internal static global::net.sf.jni4net.jni.MethodId _toString1987;
 		public sealed override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.ProviderInfo._toString1809));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.ProviderInfo._toString1987));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.ProviderInfo.staticClass, global::android.content.pm.ProviderInfo._toString1809));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.ProviderInfo.staticClass, global::android.content.pm.ProviderInfo._toString1987));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel1810;
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel1988;
 		public sealed override void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.pm.ProviderInfo._writeToParcel1810, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.content.pm.ProviderInfo._writeToParcel1988, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.pm.ProviderInfo.staticClass, global::android.content.pm.ProviderInfo._writeToParcel1810, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.pm.ProviderInfo.staticClass, global::android.content.pm.ProviderInfo._writeToParcel1988, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents1811;
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents1989;
 		public int describeContents() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.pm.ProviderInfo._describeContents1811);
+				return @__env.CallIntMethod(this, global::android.content.pm.ProviderInfo._describeContents1989);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.ProviderInfo.staticClass, global::android.content.pm.ProviderInfo._describeContents1811);
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.ProviderInfo.staticClass, global::android.content.pm.ProviderInfo._describeContents1989);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ProviderInfo1812;
+		internal static global::net.sf.jni4net.jni.MethodId _ProviderInfo1990;
 		public ProviderInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.pm.ProviderInfo.staticClass, global::android.content.pm.ProviderInfo._ProviderInfo1812, this);
+			@__env.NewObject(android.content.pm.ProviderInfo.staticClass, global::android.content.pm.ProviderInfo._ProviderInfo1990, this);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ProviderInfo1813;
+		internal static global::net.sf.jni4net.jni.MethodId _ProviderInfo1991;
 		public ProviderInfo(android.content.pm.ProviderInfo arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.pm.ProviderInfo.staticClass, global::android.content.pm.ProviderInfo._ProviderInfo1813, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.content.pm.ProviderInfo.staticClass, global::android.content.pm.ProviderInfo._ProviderInfo1991, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _authority1814;
+		internal static global::net.sf.jni4net.jni.FieldId _authority1992;
 		public global::java.lang.String authority
 		{
 			get
@@ -68,7 +68,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _readPermission1815;
+		internal static global::net.sf.jni4net.jni.FieldId _readPermission1993;
 		public global::java.lang.String readPermission
 		{
 			get
@@ -79,7 +79,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _writePermission1816;
+		internal static global::net.sf.jni4net.jni.FieldId _writePermission1994;
 		public global::java.lang.String writePermission
 		{
 			get
@@ -90,7 +90,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _grantUriPermissions1817;
+		internal static global::net.sf.jni4net.jni.FieldId _grantUriPermissions1995;
 		public bool grantUriPermissions
 		{
 			get
@@ -101,7 +101,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _uriPermissionPatterns1818;
+		internal static global::net.sf.jni4net.jni.FieldId _uriPermissionPatterns1996;
 		public global::android.os.PatternMatcher[] uriPermissionPatterns
 		{
 			get
@@ -112,7 +112,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _pathPermissions1819;
+		internal static global::net.sf.jni4net.jni.FieldId _pathPermissions1997;
 		public global::android.content.pm.PathPermission[] pathPermissions
 		{
 			get
@@ -123,7 +123,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _multiprocess1820;
+		internal static global::net.sf.jni4net.jni.FieldId _multiprocess1998;
 		public bool multiprocess
 		{
 			get
@@ -134,7 +134,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _initOrder1821;
+		internal static global::net.sf.jni4net.jni.FieldId _initOrder1999;
 		public int initOrder
 		{
 			get
@@ -145,7 +145,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _isSyncable1822;
+		internal static global::net.sf.jni4net.jni.FieldId _isSyncable2000;
 		public bool isSyncable
 		{
 			get
@@ -156,7 +156,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR1823;
+		internal static global::net.sf.jni4net.jni.FieldId _CREATOR2001;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -167,11 +167,11 @@ namespace android.content.pm
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.content.pm.ProviderInfo.staticClass = @__class;
-			global::android.content.pm.ProviderInfo._toString1809 = @__env.GetMethodID(global::android.content.pm.ProviderInfo.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.pm.ProviderInfo._writeToParcel1810 = @__env.GetMethodID(global::android.content.pm.ProviderInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.pm.ProviderInfo._describeContents1811 = @__env.GetMethodID(global::android.content.pm.ProviderInfo.staticClass, "describeContents", "()I");
-			global::android.content.pm.ProviderInfo._ProviderInfo1812 = @__env.GetMethodID(global::android.content.pm.ProviderInfo.staticClass, "<init>", "()V");
-			global::android.content.pm.ProviderInfo._ProviderInfo1813 = @__env.GetMethodID(global::android.content.pm.ProviderInfo.staticClass, "<init>", "(Landroid/content/pm/ProviderInfo;)V");
+			global::android.content.pm.ProviderInfo._toString1987 = @__env.GetMethodID(global::android.content.pm.ProviderInfo.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.pm.ProviderInfo._writeToParcel1988 = @__env.GetMethodID(global::android.content.pm.ProviderInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.content.pm.ProviderInfo._describeContents1989 = @__env.GetMethodID(global::android.content.pm.ProviderInfo.staticClass, "describeContents", "()I");
+			global::android.content.pm.ProviderInfo._ProviderInfo1990 = @__env.GetMethodID(global::android.content.pm.ProviderInfo.staticClass, "<init>", "()V");
+			global::android.content.pm.ProviderInfo._ProviderInfo1991 = @__env.GetMethodID(global::android.content.pm.ProviderInfo.staticClass, "<init>", "(Landroid/content/pm/ProviderInfo;)V");
 		}
 	}
 }

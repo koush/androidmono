@@ -18,40 +18,40 @@ namespace android.view.animation
 		protected AccelerateInterpolator(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInterpolation8838;
+		internal static global::net.sf.jni4net.jni.MethodId _getInterpolation9544;
 		public virtual float getInterpolation(float arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.animation.AccelerateInterpolator._getInterpolation8838, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallFloatMethod(this, global::android.view.animation.AccelerateInterpolator._getInterpolation9544, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.animation.AccelerateInterpolator.staticClass, global::android.view.animation.AccelerateInterpolator._getInterpolation8838, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.animation.AccelerateInterpolator.staticClass, global::android.view.animation.AccelerateInterpolator._getInterpolation9544, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AccelerateInterpolator8839;
+		internal static global::net.sf.jni4net.jni.MethodId _AccelerateInterpolator9545;
 		public AccelerateInterpolator()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.AccelerateInterpolator.staticClass, global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator8839, this);
+			@__env.NewObject(android.view.animation.AccelerateInterpolator.staticClass, global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator9545, this);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AccelerateInterpolator8840;
+		internal static global::net.sf.jni4net.jni.MethodId _AccelerateInterpolator9546;
 		public AccelerateInterpolator(float arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.AccelerateInterpolator.staticClass, global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator8840, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			@__env.NewObject(android.view.animation.AccelerateInterpolator.staticClass, global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator9546, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AccelerateInterpolator8841;
+		internal static global::net.sf.jni4net.jni.MethodId _AccelerateInterpolator9547;
 		public AccelerateInterpolator(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.AccelerateInterpolator.staticClass, global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator8841, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			@__env.NewObject(android.view.animation.AccelerateInterpolator.staticClass, global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator9547, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.view.animation.AccelerateInterpolator.staticClass = @__class;
-			global::android.view.animation.AccelerateInterpolator._getInterpolation8838 = @__env.GetMethodID(global::android.view.animation.AccelerateInterpolator.staticClass, "getInterpolation", "(F)F");
-			global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator8839 = @__env.GetMethodID(global::android.view.animation.AccelerateInterpolator.staticClass, "<init>", "()V");
-			global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator8840 = @__env.GetMethodID(global::android.view.animation.AccelerateInterpolator.staticClass, "<init>", "(F)V");
-			global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator8841 = @__env.GetMethodID(global::android.view.animation.AccelerateInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.view.animation.AccelerateInterpolator._getInterpolation9544 = @__env.GetMethodID(global::android.view.animation.AccelerateInterpolator.staticClass, "getInterpolation", "(F)F");
+			global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator9545 = @__env.GetMethodID(global::android.view.animation.AccelerateInterpolator.staticClass, "<init>", "()V");
+			global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator9546 = @__env.GetMethodID(global::android.view.animation.AccelerateInterpolator.staticClass, "<init>", "(F)V");
+			global::android.view.animation.AccelerateInterpolator._AccelerateInterpolator9547 = @__env.GetMethodID(global::android.view.animation.AccelerateInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 		}
 	}
 }

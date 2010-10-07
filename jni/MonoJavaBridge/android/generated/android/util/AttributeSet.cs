@@ -53,229 +53,229 @@ namespace android.util
 		internal __AttributeSet(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeValue7509;
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeValue8139;
 		 global::java.lang.String android.util.AttributeSet.getAttributeValue(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.__AttributeSet._getAttributeValue7509, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.__AttributeSet._getAttributeValue8139, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeValue7509, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeValue8139, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeValue7510;
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeValue8140;
 		 global::java.lang.String android.util.AttributeSet.getAttributeValue(java.lang.String arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.__AttributeSet._getAttributeValue7510, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.__AttributeSet._getAttributeValue8140, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeValue7510, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeValue8140, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeCount7511;
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeCount8141;
 		 int android.util.AttributeSet.getAttributeCount() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeCount7511);
+				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeCount8141);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeCount7511);
+				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeCount8141);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeName7512;
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeName8142;
 		 global::java.lang.String android.util.AttributeSet.getAttributeName(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.__AttributeSet._getAttributeName7512, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.__AttributeSet._getAttributeName8142, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeName7512, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeName8142, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPositionDescription7513;
+		internal static global::net.sf.jni4net.jni.MethodId _getPositionDescription8143;
 		 global::java.lang.String android.util.AttributeSet.getPositionDescription() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.__AttributeSet._getPositionDescription7513));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.__AttributeSet._getPositionDescription8143));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getPositionDescription7513));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getPositionDescription8143));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeNameResource7514;
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeNameResource8144;
 		 int android.util.AttributeSet.getAttributeNameResource(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeNameResource7514, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeNameResource8144, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeNameResource7514, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeNameResource8144, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeListValue7515;
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeListValue8145;
 		 int android.util.AttributeSet.getAttributeListValue(java.lang.String arg0, java.lang.String arg1, java.lang.String[] arg2, int arg3) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeListValue7515, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeListValue8145, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeListValue7515, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeListValue8145, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeListValue7516;
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeListValue8146;
 		 int android.util.AttributeSet.getAttributeListValue(int arg0, java.lang.String[] arg1, int arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeListValue7516, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeListValue8146, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeListValue7516, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeListValue8146, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeBooleanValue7517;
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeBooleanValue8147;
 		 bool android.util.AttributeSet.getAttributeBooleanValue(java.lang.String arg0, java.lang.String arg1, bool arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.util.__AttributeSet._getAttributeBooleanValue7517, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallBooleanMethod(this, global::android.util.__AttributeSet._getAttributeBooleanValue8147, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeBooleanValue7517, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeBooleanValue8147, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeBooleanValue7518;
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeBooleanValue8148;
 		 bool android.util.AttributeSet.getAttributeBooleanValue(int arg0, bool arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.util.__AttributeSet._getAttributeBooleanValue7518, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallBooleanMethod(this, global::android.util.__AttributeSet._getAttributeBooleanValue8148, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeBooleanValue7518, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeBooleanValue8148, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeResourceValue7519;
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeResourceValue8149;
 		 int android.util.AttributeSet.getAttributeResourceValue(java.lang.String arg0, java.lang.String arg1, int arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeResourceValue7519, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeResourceValue8149, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeResourceValue7519, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeResourceValue8149, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeResourceValue7520;
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeResourceValue8150;
 		 int android.util.AttributeSet.getAttributeResourceValue(int arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeResourceValue7520, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeResourceValue8150, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeResourceValue7520, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeResourceValue8150, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeIntValue7521;
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeIntValue8151;
 		 int android.util.AttributeSet.getAttributeIntValue(int arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeIntValue7521, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeIntValue8151, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeIntValue7521, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeIntValue8151, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeIntValue7522;
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeIntValue8152;
 		 int android.util.AttributeSet.getAttributeIntValue(java.lang.String arg0, java.lang.String arg1, int arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeIntValue7522, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeIntValue8152, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeIntValue7522, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeIntValue8152, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeUnsignedIntValue7523;
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeUnsignedIntValue8153;
 		 int android.util.AttributeSet.getAttributeUnsignedIntValue(java.lang.String arg0, java.lang.String arg1, int arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeUnsignedIntValue7523, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeUnsignedIntValue8153, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeUnsignedIntValue7523, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeUnsignedIntValue8153, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeUnsignedIntValue7524;
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeUnsignedIntValue8154;
 		 int android.util.AttributeSet.getAttributeUnsignedIntValue(int arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeUnsignedIntValue7524, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getAttributeUnsignedIntValue8154, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeUnsignedIntValue7524, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeUnsignedIntValue8154, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeFloatValue7525;
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeFloatValue8155;
 		 float android.util.AttributeSet.getAttributeFloatValue(java.lang.String arg0, java.lang.String arg1, float arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.util.__AttributeSet._getAttributeFloatValue7525, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallFloatMethod(this, global::android.util.__AttributeSet._getAttributeFloatValue8155, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeFloatValue7525, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeFloatValue8155, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAttributeFloatValue7526;
+		internal static global::net.sf.jni4net.jni.MethodId _getAttributeFloatValue8156;
 		 float android.util.AttributeSet.getAttributeFloatValue(int arg0, float arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.util.__AttributeSet._getAttributeFloatValue7526, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallFloatMethod(this, global::android.util.__AttributeSet._getAttributeFloatValue8156, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeFloatValue7526, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getAttributeFloatValue8156, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getIdAttribute7527;
+		internal static global::net.sf.jni4net.jni.MethodId _getIdAttribute8157;
 		 global::java.lang.String android.util.AttributeSet.getIdAttribute() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.__AttributeSet._getIdAttribute7527));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.__AttributeSet._getIdAttribute8157));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getIdAttribute7527));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getIdAttribute8157));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getClassAttribute7528;
+		internal static global::net.sf.jni4net.jni.MethodId _getClassAttribute8158;
 		 global::java.lang.String android.util.AttributeSet.getClassAttribute() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.__AttributeSet._getClassAttribute7528));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.__AttributeSet._getClassAttribute8158));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getClassAttribute7528));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getClassAttribute8158));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getIdAttributeResourceValue7529;
+		internal static global::net.sf.jni4net.jni.MethodId _getIdAttributeResourceValue8159;
 		 int android.util.AttributeSet.getIdAttributeResourceValue(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getIdAttributeResourceValue7529, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getIdAttributeResourceValue8159, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getIdAttributeResourceValue7529, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getIdAttributeResourceValue8159, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getStyleAttribute7530;
+		internal static global::net.sf.jni4net.jni.MethodId _getStyleAttribute8160;
 		 int android.util.AttributeSet.getStyleAttribute() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getStyleAttribute7530);
+				return @__env.CallIntMethod(this, global::android.util.__AttributeSet._getStyleAttribute8160);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getStyleAttribute7530);
+				return @__env.CallNonVirtualIntMethod(this, global::android.util.__AttributeSet.staticClass, global::android.util.__AttributeSet._getStyleAttribute8160);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.util.__AttributeSet.staticClass = @__class;
-			global::android.util.__AttributeSet._getAttributeValue7509 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeValue", "(I)Ljava/lang/String;");
-			global::android.util.__AttributeSet._getAttributeValue7510 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
-			global::android.util.__AttributeSet._getAttributeCount7511 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeCount", "()I");
-			global::android.util.__AttributeSet._getAttributeName7512 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeName", "(I)Ljava/lang/String;");
-			global::android.util.__AttributeSet._getPositionDescription7513 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getPositionDescription", "()Ljava/lang/String;");
-			global::android.util.__AttributeSet._getAttributeNameResource7514 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeNameResource", "(I)I");
-			global::android.util.__AttributeSet._getAttributeListValue7515 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeListValue", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;I)I");
-			global::android.util.__AttributeSet._getAttributeListValue7516 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeListValue", "(I[Ljava/lang/String;I)I");
-			global::android.util.__AttributeSet._getAttributeBooleanValue7517 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeBooleanValue", "(Ljava/lang/String;Ljava/lang/String;Z)Z");
-			global::android.util.__AttributeSet._getAttributeBooleanValue7518 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeBooleanValue", "(IZ)Z");
-			global::android.util.__AttributeSet._getAttributeResourceValue7519 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeResourceValue", "(Ljava/lang/String;Ljava/lang/String;I)I");
-			global::android.util.__AttributeSet._getAttributeResourceValue7520 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeResourceValue", "(II)I");
-			global::android.util.__AttributeSet._getAttributeIntValue7521 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeIntValue", "(II)I");
-			global::android.util.__AttributeSet._getAttributeIntValue7522 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeIntValue", "(Ljava/lang/String;Ljava/lang/String;I)I");
-			global::android.util.__AttributeSet._getAttributeUnsignedIntValue7523 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeUnsignedIntValue", "(Ljava/lang/String;Ljava/lang/String;I)I");
-			global::android.util.__AttributeSet._getAttributeUnsignedIntValue7524 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeUnsignedIntValue", "(II)I");
-			global::android.util.__AttributeSet._getAttributeFloatValue7525 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeFloatValue", "(Ljava/lang/String;Ljava/lang/String;F)F");
-			global::android.util.__AttributeSet._getAttributeFloatValue7526 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeFloatValue", "(IF)F");
-			global::android.util.__AttributeSet._getIdAttribute7527 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getIdAttribute", "()Ljava/lang/String;");
-			global::android.util.__AttributeSet._getClassAttribute7528 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getClassAttribute", "()Ljava/lang/String;");
-			global::android.util.__AttributeSet._getIdAttributeResourceValue7529 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getIdAttributeResourceValue", "(I)I");
-			global::android.util.__AttributeSet._getStyleAttribute7530 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getStyleAttribute", "()I");
+			global::android.util.__AttributeSet._getAttributeValue8139 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeValue", "(I)Ljava/lang/String;");
+			global::android.util.__AttributeSet._getAttributeValue8140 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
+			global::android.util.__AttributeSet._getAttributeCount8141 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeCount", "()I");
+			global::android.util.__AttributeSet._getAttributeName8142 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeName", "(I)Ljava/lang/String;");
+			global::android.util.__AttributeSet._getPositionDescription8143 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getPositionDescription", "()Ljava/lang/String;");
+			global::android.util.__AttributeSet._getAttributeNameResource8144 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeNameResource", "(I)I");
+			global::android.util.__AttributeSet._getAttributeListValue8145 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeListValue", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;I)I");
+			global::android.util.__AttributeSet._getAttributeListValue8146 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeListValue", "(I[Ljava/lang/String;I)I");
+			global::android.util.__AttributeSet._getAttributeBooleanValue8147 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeBooleanValue", "(Ljava/lang/String;Ljava/lang/String;Z)Z");
+			global::android.util.__AttributeSet._getAttributeBooleanValue8148 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeBooleanValue", "(IZ)Z");
+			global::android.util.__AttributeSet._getAttributeResourceValue8149 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeResourceValue", "(Ljava/lang/String;Ljava/lang/String;I)I");
+			global::android.util.__AttributeSet._getAttributeResourceValue8150 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeResourceValue", "(II)I");
+			global::android.util.__AttributeSet._getAttributeIntValue8151 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeIntValue", "(II)I");
+			global::android.util.__AttributeSet._getAttributeIntValue8152 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeIntValue", "(Ljava/lang/String;Ljava/lang/String;I)I");
+			global::android.util.__AttributeSet._getAttributeUnsignedIntValue8153 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeUnsignedIntValue", "(Ljava/lang/String;Ljava/lang/String;I)I");
+			global::android.util.__AttributeSet._getAttributeUnsignedIntValue8154 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeUnsignedIntValue", "(II)I");
+			global::android.util.__AttributeSet._getAttributeFloatValue8155 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeFloatValue", "(Ljava/lang/String;Ljava/lang/String;F)F");
+			global::android.util.__AttributeSet._getAttributeFloatValue8156 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getAttributeFloatValue", "(IF)F");
+			global::android.util.__AttributeSet._getIdAttribute8157 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getIdAttribute", "()Ljava/lang/String;");
+			global::android.util.__AttributeSet._getClassAttribute8158 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getClassAttribute", "()Ljava/lang/String;");
+			global::android.util.__AttributeSet._getIdAttributeResourceValue8159 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getIdAttributeResourceValue", "(I)I");
+			global::android.util.__AttributeSet._getStyleAttribute8160 = @__env.GetMethodID(global::android.util.__AttributeSet.staticClass, "android.util.AttributeSet.getStyleAttribute", "()I");
 		}
 	}
 }

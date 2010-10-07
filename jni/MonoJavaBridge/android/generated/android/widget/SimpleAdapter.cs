@@ -50,151 +50,151 @@ namespace android.widget
 			internal __ViewBinder(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _setViewValue10806;
+			internal static global::net.sf.jni4net.jni.MethodId _setViewValue11519;
 			 bool android.widget.SimpleAdapter.ViewBinder.setViewValue(android.view.View arg0, java.lang.Object arg1, java.lang.String arg2) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallBooleanMethod(this, global::android.widget.SimpleAdapter.__ViewBinder._setViewValue10806, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+					return @__env.CallBooleanMethod(this, global::android.widget.SimpleAdapter.__ViewBinder._setViewValue11519, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 				else
-					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.SimpleAdapter.__ViewBinder.staticClass, global::android.widget.SimpleAdapter.__ViewBinder._setViewValue10806, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+					return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.SimpleAdapter.__ViewBinder.staticClass, global::android.widget.SimpleAdapter.__ViewBinder._setViewValue11519, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 			}
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.widget.SimpleAdapter.__ViewBinder.staticClass = @__class;
-				global::android.widget.SimpleAdapter.__ViewBinder._setViewValue10806 = @__env.GetMethodID(global::android.widget.SimpleAdapter.__ViewBinder.staticClass, "android.widget.SimpleAdapter.ViewBinder.setViewValue", "(Landroid/view/View;Ljava/lang/Object;Ljava/lang/String;)Z");
+				global::android.widget.SimpleAdapter.__ViewBinder._setViewValue11519 = @__env.GetMethodID(global::android.widget.SimpleAdapter.__ViewBinder.staticClass, "android.widget.SimpleAdapter.ViewBinder.setViewValue", "(Landroid/view/View;Ljava/lang/Object;Ljava/lang/String;)Z");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCount10807;
+		internal static global::net.sf.jni4net.jni.MethodId _getCount11520;
 		public override int getCount() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.SimpleAdapter._getCount10807);
+				return @__env.CallIntMethod(this, global::android.widget.SimpleAdapter._getCount11520);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._getCount10807);
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._getCount11520);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getItem10808;
+		internal static global::net.sf.jni4net.jni.MethodId _getItem11521;
 		public override global::java.lang.Object getItem(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SimpleAdapter._getItem10808, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SimpleAdapter._getItem11521, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._getItem10808, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._getItem11521, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getItemId10809;
+		internal static global::net.sf.jni4net.jni.MethodId _getItemId11522;
 		public override long getItemId(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::android.widget.SimpleAdapter._getItemId10809, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallLongMethod(this, global::android.widget.SimpleAdapter._getItemId11522, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._getItemId10809, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualLongMethod(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._getItemId11522, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFilter10810;
+		internal static global::net.sf.jni4net.jni.MethodId _getFilter11523;
 		public virtual global::android.widget.Filter getFilter() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Filter>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SimpleAdapter._getFilter10810));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Filter>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SimpleAdapter._getFilter11523));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Filter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._getFilter10810));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Filter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._getFilter11523));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getView10811;
+		internal static global::net.sf.jni4net.jni.MethodId _getView11524;
 		public override global::android.view.View getView(int arg0, android.view.View arg1, android.view.ViewGroup arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SimpleAdapter._getView10811, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SimpleAdapter._getView11524, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._getView10811, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._getView11524, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDropDownView10812;
+		internal static global::net.sf.jni4net.jni.MethodId _getDropDownView11525;
 		public override global::android.view.View getDropDownView(int arg0, android.view.View arg1, android.view.ViewGroup arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SimpleAdapter._getDropDownView10812, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SimpleAdapter._getDropDownView11525, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._getDropDownView10812, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._getDropDownView11525, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setDropDownViewResource10813;
+		internal static global::net.sf.jni4net.jni.MethodId _setDropDownViewResource11526;
 		public virtual void setDropDownViewResource(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.SimpleAdapter._setDropDownViewResource10813, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.widget.SimpleAdapter._setDropDownViewResource11526, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._setDropDownViewResource10813, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._setDropDownViewResource11526, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getViewBinder10814;
+		internal static global::net.sf.jni4net.jni.MethodId _getViewBinder11527;
 		public virtual global::android.widget.SimpleAdapter.ViewBinder getViewBinder() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.SimpleAdapter.ViewBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SimpleAdapter._getViewBinder10814));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.SimpleAdapter.ViewBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.SimpleAdapter._getViewBinder11527));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.SimpleAdapter.ViewBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._getViewBinder10814));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.widget.SimpleAdapter.ViewBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._getViewBinder11527));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setViewBinder10815;
+		internal static global::net.sf.jni4net.jni.MethodId _setViewBinder11528;
 		public virtual void setViewBinder(android.widget.SimpleAdapter.ViewBinder arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.SimpleAdapter._setViewBinder10815, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.widget.SimpleAdapter._setViewBinder11528, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._setViewBinder10815, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._setViewBinder11528, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setViewImage10816;
+		internal static global::net.sf.jni4net.jni.MethodId _setViewImage11529;
 		public virtual void setViewImage(android.widget.ImageView arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.SimpleAdapter._setViewImage10816, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.widget.SimpleAdapter._setViewImage11529, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._setViewImage10816, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._setViewImage11529, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setViewImage10817;
+		internal static global::net.sf.jni4net.jni.MethodId _setViewImage11530;
 		public virtual void setViewImage(android.widget.ImageView arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.SimpleAdapter._setViewImage10817, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this, global::android.widget.SimpleAdapter._setViewImage11530, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._setViewImage10817, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._setViewImage11530, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setViewText10818;
+		internal static global::net.sf.jni4net.jni.MethodId _setViewText11531;
 		public virtual void setViewText(android.widget.TextView arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.SimpleAdapter._setViewText10818, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this, global::android.widget.SimpleAdapter._setViewText11531, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._setViewText10818, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._setViewText11531, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SimpleAdapter10819;
+		internal static global::net.sf.jni4net.jni.MethodId _SimpleAdapter11532;
 		public SimpleAdapter(android.content.Context arg0, java.util.List arg1, int arg2, java.lang.String[] arg3, int[] arg4)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._SimpleAdapter10819, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg4));
+			@__env.NewObject(android.widget.SimpleAdapter.staticClass, global::android.widget.SimpleAdapter._SimpleAdapter11532, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg3), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg4));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.widget.SimpleAdapter.staticClass = @__class;
-			global::android.widget.SimpleAdapter._getCount10807 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "getCount", "()I");
-			global::android.widget.SimpleAdapter._getItem10808 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "getItem", "(I)Ljava/lang/Object;");
-			global::android.widget.SimpleAdapter._getItemId10809 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "getItemId", "(I)J");
-			global::android.widget.SimpleAdapter._getFilter10810 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "getFilter", "()Landroid/widget/Filter;");
-			global::android.widget.SimpleAdapter._getView10811 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;");
-			global::android.widget.SimpleAdapter._getDropDownView10812 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "getDropDownView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;");
-			global::android.widget.SimpleAdapter._setDropDownViewResource10813 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "setDropDownViewResource", "(I)V");
-			global::android.widget.SimpleAdapter._getViewBinder10814 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "getViewBinder", "()Landroid/widget/SimpleAdapter$ViewBinder;");
-			global::android.widget.SimpleAdapter._setViewBinder10815 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "setViewBinder", "(Landroid/widget/SimpleAdapter$ViewBinder;)V");
-			global::android.widget.SimpleAdapter._setViewImage10816 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "setViewImage", "(Landroid/widget/ImageView;I)V");
-			global::android.widget.SimpleAdapter._setViewImage10817 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "setViewImage", "(Landroid/widget/ImageView;Ljava/lang/String;)V");
-			global::android.widget.SimpleAdapter._setViewText10818 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "setViewText", "(Landroid/widget/TextView;Ljava/lang/String;)V");
-			global::android.widget.SimpleAdapter._SimpleAdapter10819 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "<init>", "(Landroid/content/Context;Ljava/util/List;I[Ljava/lang/String;[I)V");
+			global::android.widget.SimpleAdapter._getCount11520 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "getCount", "()I");
+			global::android.widget.SimpleAdapter._getItem11521 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "getItem", "(I)Ljava/lang/Object;");
+			global::android.widget.SimpleAdapter._getItemId11522 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "getItemId", "(I)J");
+			global::android.widget.SimpleAdapter._getFilter11523 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "getFilter", "()Landroid/widget/Filter;");
+			global::android.widget.SimpleAdapter._getView11524 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "getView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;");
+			global::android.widget.SimpleAdapter._getDropDownView11525 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "getDropDownView", "(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;");
+			global::android.widget.SimpleAdapter._setDropDownViewResource11526 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "setDropDownViewResource", "(I)V");
+			global::android.widget.SimpleAdapter._getViewBinder11527 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "getViewBinder", "()Landroid/widget/SimpleAdapter$ViewBinder;");
+			global::android.widget.SimpleAdapter._setViewBinder11528 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "setViewBinder", "(Landroid/widget/SimpleAdapter$ViewBinder;)V");
+			global::android.widget.SimpleAdapter._setViewImage11529 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "setViewImage", "(Landroid/widget/ImageView;I)V");
+			global::android.widget.SimpleAdapter._setViewImage11530 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "setViewImage", "(Landroid/widget/ImageView;Ljava/lang/String;)V");
+			global::android.widget.SimpleAdapter._setViewText11531 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "setViewText", "(Landroid/widget/TextView;Ljava/lang/String;)V");
+			global::android.widget.SimpleAdapter._SimpleAdapter11532 = @__env.GetMethodID(global::android.widget.SimpleAdapter.staticClass, "<init>", "(Landroid/content/Context;Ljava/util/List;I[Ljava/lang/String;[I)V");
 		}
 	}
 }

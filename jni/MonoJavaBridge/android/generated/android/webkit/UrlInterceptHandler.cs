@@ -33,29 +33,29 @@ namespace android.webkit
 		internal __UrlInterceptHandler(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _service9354;
+		internal static global::net.sf.jni4net.jni.MethodId _service10033;
 		 global::android.webkit.CacheManager.CacheResult android.webkit.UrlInterceptHandler.service(java.lang.String arg0, java.util.Map arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.CacheManager.CacheResult>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.__UrlInterceptHandler._service9354, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.CacheManager.CacheResult>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.__UrlInterceptHandler._service10033, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.CacheManager.CacheResult>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.__UrlInterceptHandler.staticClass, global::android.webkit.__UrlInterceptHandler._service9354, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.CacheManager.CacheResult>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.__UrlInterceptHandler.staticClass, global::android.webkit.__UrlInterceptHandler._service10033, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPluginData9355;
+		internal static global::net.sf.jni4net.jni.MethodId _getPluginData10034;
 		 global::android.webkit.PluginData android.webkit.UrlInterceptHandler.getPluginData(java.lang.String arg0, java.util.Map arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.PluginData>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.__UrlInterceptHandler._getPluginData9355, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.PluginData>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.__UrlInterceptHandler._getPluginData10034, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.PluginData>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.__UrlInterceptHandler.staticClass, global::android.webkit.__UrlInterceptHandler._getPluginData9355, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.webkit.PluginData>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.__UrlInterceptHandler.staticClass, global::android.webkit.__UrlInterceptHandler._getPluginData10034, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.webkit.__UrlInterceptHandler.staticClass = @__class;
-			global::android.webkit.__UrlInterceptHandler._service9354 = @__env.GetMethodID(global::android.webkit.__UrlInterceptHandler.staticClass, "android.webkit.UrlInterceptHandler.service", "(Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/CacheManager$CacheResult;");
-			global::android.webkit.__UrlInterceptHandler._getPluginData9355 = @__env.GetMethodID(global::android.webkit.__UrlInterceptHandler.staticClass, "android.webkit.UrlInterceptHandler.getPluginData", "(Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/PluginData;");
+			global::android.webkit.__UrlInterceptHandler._service10033 = @__env.GetMethodID(global::android.webkit.__UrlInterceptHandler.staticClass, "android.webkit.UrlInterceptHandler.service", "(Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/CacheManager$CacheResult;");
+			global::android.webkit.__UrlInterceptHandler._getPluginData10034 = @__env.GetMethodID(global::android.webkit.__UrlInterceptHandler.staticClass, "android.webkit.UrlInterceptHandler.getPluginData", "(Ljava/lang/String;Ljava/util/Map;)Landroid/webkit/PluginData;");
 		}
 	}
 }

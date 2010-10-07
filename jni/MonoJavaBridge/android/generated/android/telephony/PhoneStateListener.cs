@@ -18,101 +18,101 @@ namespace android.telephony
 		protected PhoneStateListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onServiceStateChanged6490;
+		internal static global::net.sf.jni4net.jni.MethodId _onServiceStateChanged7114;
 		public virtual void onServiceStateChanged(android.telephony.ServiceState arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onServiceStateChanged6490, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onServiceStateChanged7114, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onServiceStateChanged6490, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onServiceStateChanged7114, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onSignalStrengthChanged6491;
+		internal static global::net.sf.jni4net.jni.MethodId _onSignalStrengthChanged7115;
 		public virtual void onSignalStrengthChanged(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onSignalStrengthChanged6491, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onSignalStrengthChanged7115, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onSignalStrengthChanged6491, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onSignalStrengthChanged7115, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onMessageWaitingIndicatorChanged6492;
+		internal static global::net.sf.jni4net.jni.MethodId _onMessageWaitingIndicatorChanged7116;
 		public virtual void onMessageWaitingIndicatorChanged(bool arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onMessageWaitingIndicatorChanged6492, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onMessageWaitingIndicatorChanged7116, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onMessageWaitingIndicatorChanged6492, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onMessageWaitingIndicatorChanged7116, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onCallForwardingIndicatorChanged6493;
+		internal static global::net.sf.jni4net.jni.MethodId _onCallForwardingIndicatorChanged7117;
 		public virtual void onCallForwardingIndicatorChanged(bool arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onCallForwardingIndicatorChanged6493, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onCallForwardingIndicatorChanged7117, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onCallForwardingIndicatorChanged6493, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onCallForwardingIndicatorChanged7117, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onCellLocationChanged6494;
+		internal static global::net.sf.jni4net.jni.MethodId _onCellLocationChanged7118;
 		public virtual void onCellLocationChanged(android.telephony.CellLocation arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onCellLocationChanged6494, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onCellLocationChanged7118, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onCellLocationChanged6494, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onCellLocationChanged7118, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onCallStateChanged6495;
+		internal static global::net.sf.jni4net.jni.MethodId _onCallStateChanged7119;
 		public virtual void onCallStateChanged(int arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onCallStateChanged6495, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onCallStateChanged7119, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onCallStateChanged6495, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onCallStateChanged7119, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onDataConnectionStateChanged6496;
+		internal static global::net.sf.jni4net.jni.MethodId _onDataConnectionStateChanged7120;
 		public virtual void onDataConnectionStateChanged(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onDataConnectionStateChanged6496, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onDataConnectionStateChanged7120, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onDataConnectionStateChanged6496, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onDataConnectionStateChanged7120, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onDataConnectionStateChanged6497;
+		internal static global::net.sf.jni4net.jni.MethodId _onDataConnectionStateChanged7121;
 		public virtual void onDataConnectionStateChanged(int arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onDataConnectionStateChanged6497, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onDataConnectionStateChanged7121, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onDataConnectionStateChanged6497, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onDataConnectionStateChanged7121, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onDataActivity6498;
+		internal static global::net.sf.jni4net.jni.MethodId _onDataActivity7122;
 		public virtual void onDataActivity(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onDataActivity6498, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onDataActivity7122, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onDataActivity6498, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onDataActivity7122, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onSignalStrengthsChanged6499;
+		internal static global::net.sf.jni4net.jni.MethodId _onSignalStrengthsChanged7123;
 		public virtual void onSignalStrengthsChanged(android.telephony.SignalStrength arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onSignalStrengthsChanged6499, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.telephony.PhoneStateListener._onSignalStrengthsChanged7123, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onSignalStrengthsChanged6499, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._onSignalStrengthsChanged7123, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PhoneStateListener6500;
+		internal static global::net.sf.jni4net.jni.MethodId _PhoneStateListener7124;
 		public PhoneStateListener()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._PhoneStateListener6500, this);
+			@__env.NewObject(android.telephony.PhoneStateListener.staticClass, global::android.telephony.PhoneStateListener._PhoneStateListener7124, this);
 		}
 		public static int LISTEN_NONE
 		{
@@ -187,17 +187,17 @@ namespace android.telephony
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.telephony.PhoneStateListener.staticClass = @__class;
-			global::android.telephony.PhoneStateListener._onServiceStateChanged6490 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onServiceStateChanged", "(Landroid/telephony/ServiceState;)V");
-			global::android.telephony.PhoneStateListener._onSignalStrengthChanged6491 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onSignalStrengthChanged", "(I)V");
-			global::android.telephony.PhoneStateListener._onMessageWaitingIndicatorChanged6492 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onMessageWaitingIndicatorChanged", "(Z)V");
-			global::android.telephony.PhoneStateListener._onCallForwardingIndicatorChanged6493 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onCallForwardingIndicatorChanged", "(Z)V");
-			global::android.telephony.PhoneStateListener._onCellLocationChanged6494 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onCellLocationChanged", "(Landroid/telephony/CellLocation;)V");
-			global::android.telephony.PhoneStateListener._onCallStateChanged6495 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onCallStateChanged", "(ILjava/lang/String;)V");
-			global::android.telephony.PhoneStateListener._onDataConnectionStateChanged6496 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onDataConnectionStateChanged", "(I)V");
-			global::android.telephony.PhoneStateListener._onDataConnectionStateChanged6497 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onDataConnectionStateChanged", "(II)V");
-			global::android.telephony.PhoneStateListener._onDataActivity6498 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onDataActivity", "(I)V");
-			global::android.telephony.PhoneStateListener._onSignalStrengthsChanged6499 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onSignalStrengthsChanged", "(Landroid/telephony/SignalStrength;)V");
-			global::android.telephony.PhoneStateListener._PhoneStateListener6500 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "<init>", "()V");
+			global::android.telephony.PhoneStateListener._onServiceStateChanged7114 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onServiceStateChanged", "(Landroid/telephony/ServiceState;)V");
+			global::android.telephony.PhoneStateListener._onSignalStrengthChanged7115 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onSignalStrengthChanged", "(I)V");
+			global::android.telephony.PhoneStateListener._onMessageWaitingIndicatorChanged7116 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onMessageWaitingIndicatorChanged", "(Z)V");
+			global::android.telephony.PhoneStateListener._onCallForwardingIndicatorChanged7117 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onCallForwardingIndicatorChanged", "(Z)V");
+			global::android.telephony.PhoneStateListener._onCellLocationChanged7118 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onCellLocationChanged", "(Landroid/telephony/CellLocation;)V");
+			global::android.telephony.PhoneStateListener._onCallStateChanged7119 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onCallStateChanged", "(ILjava/lang/String;)V");
+			global::android.telephony.PhoneStateListener._onDataConnectionStateChanged7120 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onDataConnectionStateChanged", "(I)V");
+			global::android.telephony.PhoneStateListener._onDataConnectionStateChanged7121 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onDataConnectionStateChanged", "(II)V");
+			global::android.telephony.PhoneStateListener._onDataActivity7122 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onDataActivity", "(I)V");
+			global::android.telephony.PhoneStateListener._onSignalStrengthsChanged7123 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "onSignalStrengthsChanged", "(Landroid/telephony/SignalStrength;)V");
+			global::android.telephony.PhoneStateListener._PhoneStateListener7124 = @__env.GetMethodID(global::android.telephony.PhoneStateListener.staticClass, "<init>", "()V");
 		}
 	}
 }

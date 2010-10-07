@@ -18,16 +18,16 @@ namespace android.graphics
 		protected DrawFilter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _DrawFilter2934;
+		internal static global::net.sf.jni4net.jni.MethodId _DrawFilter3131;
 		public DrawFilter()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.DrawFilter.staticClass, global::android.graphics.DrawFilter._DrawFilter2934, this);
+			@__env.NewObject(android.graphics.DrawFilter.staticClass, global::android.graphics.DrawFilter._DrawFilter3131, this);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.graphics.DrawFilter.staticClass = @__class;
-			global::android.graphics.DrawFilter._DrawFilter2934 = @__env.GetMethodID(global::android.graphics.DrawFilter.staticClass, "<init>", "()V");
+			global::android.graphics.DrawFilter._DrawFilter3131 = @__env.GetMethodID(global::android.graphics.DrawFilter.staticClass, "<init>", "()V");
 		}
 	}
 }

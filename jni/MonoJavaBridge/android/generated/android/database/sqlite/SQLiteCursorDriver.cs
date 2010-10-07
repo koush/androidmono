@@ -36,59 +36,59 @@ namespace android.database.sqlite
 		internal __SQLiteCursorDriver(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _query2456;
+		internal static global::net.sf.jni4net.jni.MethodId _query2643;
 		 global::android.database.Cursor android.database.sqlite.SQLiteCursorDriver.query(android.database.sqlite.SQLiteDatabase.CursorFactory arg0, java.lang.String[] arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.sqlite.__SQLiteCursorDriver._query2456, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallObjectMethodPtr(this, global::android.database.sqlite.__SQLiteCursorDriver._query2643, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.sqlite.__SQLiteCursorDriver.staticClass, global::android.database.sqlite.__SQLiteCursorDriver._query2456, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.database.sqlite.__SQLiteCursorDriver.staticClass, global::android.database.sqlite.__SQLiteCursorDriver._query2643, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cursorDeactivated2457;
+		internal static global::net.sf.jni4net.jni.MethodId _cursorDeactivated2644;
 		 void android.database.sqlite.SQLiteCursorDriver.cursorDeactivated() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.sqlite.__SQLiteCursorDriver._cursorDeactivated2457);
+				@__env.CallVoidMethod(this, global::android.database.sqlite.__SQLiteCursorDriver._cursorDeactivated2644);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.__SQLiteCursorDriver.staticClass, global::android.database.sqlite.__SQLiteCursorDriver._cursorDeactivated2457);
+				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.__SQLiteCursorDriver.staticClass, global::android.database.sqlite.__SQLiteCursorDriver._cursorDeactivated2644);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cursorRequeried2458;
+		internal static global::net.sf.jni4net.jni.MethodId _cursorRequeried2645;
 		 void android.database.sqlite.SQLiteCursorDriver.cursorRequeried(android.database.Cursor arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.sqlite.__SQLiteCursorDriver._cursorRequeried2458, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.database.sqlite.__SQLiteCursorDriver._cursorRequeried2645, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.__SQLiteCursorDriver.staticClass, global::android.database.sqlite.__SQLiteCursorDriver._cursorRequeried2458, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.__SQLiteCursorDriver.staticClass, global::android.database.sqlite.__SQLiteCursorDriver._cursorRequeried2645, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cursorClosed2459;
+		internal static global::net.sf.jni4net.jni.MethodId _cursorClosed2646;
 		 void android.database.sqlite.SQLiteCursorDriver.cursorClosed() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.sqlite.__SQLiteCursorDriver._cursorClosed2459);
+				@__env.CallVoidMethod(this, global::android.database.sqlite.__SQLiteCursorDriver._cursorClosed2646);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.__SQLiteCursorDriver.staticClass, global::android.database.sqlite.__SQLiteCursorDriver._cursorClosed2459);
+				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.__SQLiteCursorDriver.staticClass, global::android.database.sqlite.__SQLiteCursorDriver._cursorClosed2646);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setBindArguments2460;
+		internal static global::net.sf.jni4net.jni.MethodId _setBindArguments2647;
 		 void android.database.sqlite.SQLiteCursorDriver.setBindArguments(java.lang.String[] arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.database.sqlite.__SQLiteCursorDriver._setBindArguments2460, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.database.sqlite.__SQLiteCursorDriver._setBindArguments2647, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.__SQLiteCursorDriver.staticClass, global::android.database.sqlite.__SQLiteCursorDriver._setBindArguments2460, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.database.sqlite.__SQLiteCursorDriver.staticClass, global::android.database.sqlite.__SQLiteCursorDriver._setBindArguments2647, global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.database.sqlite.__SQLiteCursorDriver.staticClass = @__class;
-			global::android.database.sqlite.__SQLiteCursorDriver._query2456 = @__env.GetMethodID(global::android.database.sqlite.__SQLiteCursorDriver.staticClass, "android.database.sqlite.SQLiteCursorDriver.query", "(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;[Ljava/lang/String;)Landroid/database/Cursor;");
-			global::android.database.sqlite.__SQLiteCursorDriver._cursorDeactivated2457 = @__env.GetMethodID(global::android.database.sqlite.__SQLiteCursorDriver.staticClass, "android.database.sqlite.SQLiteCursorDriver.cursorDeactivated", "()V");
-			global::android.database.sqlite.__SQLiteCursorDriver._cursorRequeried2458 = @__env.GetMethodID(global::android.database.sqlite.__SQLiteCursorDriver.staticClass, "android.database.sqlite.SQLiteCursorDriver.cursorRequeried", "(Landroid/database/Cursor;)V");
-			global::android.database.sqlite.__SQLiteCursorDriver._cursorClosed2459 = @__env.GetMethodID(global::android.database.sqlite.__SQLiteCursorDriver.staticClass, "android.database.sqlite.SQLiteCursorDriver.cursorClosed", "()V");
-			global::android.database.sqlite.__SQLiteCursorDriver._setBindArguments2460 = @__env.GetMethodID(global::android.database.sqlite.__SQLiteCursorDriver.staticClass, "android.database.sqlite.SQLiteCursorDriver.setBindArguments", "([Ljava/lang/String;)V");
+			global::android.database.sqlite.__SQLiteCursorDriver._query2643 = @__env.GetMethodID(global::android.database.sqlite.__SQLiteCursorDriver.staticClass, "android.database.sqlite.SQLiteCursorDriver.query", "(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;[Ljava/lang/String;)Landroid/database/Cursor;");
+			global::android.database.sqlite.__SQLiteCursorDriver._cursorDeactivated2644 = @__env.GetMethodID(global::android.database.sqlite.__SQLiteCursorDriver.staticClass, "android.database.sqlite.SQLiteCursorDriver.cursorDeactivated", "()V");
+			global::android.database.sqlite.__SQLiteCursorDriver._cursorRequeried2645 = @__env.GetMethodID(global::android.database.sqlite.__SQLiteCursorDriver.staticClass, "android.database.sqlite.SQLiteCursorDriver.cursorRequeried", "(Landroid/database/Cursor;)V");
+			global::android.database.sqlite.__SQLiteCursorDriver._cursorClosed2646 = @__env.GetMethodID(global::android.database.sqlite.__SQLiteCursorDriver.staticClass, "android.database.sqlite.SQLiteCursorDriver.cursorClosed", "()V");
+			global::android.database.sqlite.__SQLiteCursorDriver._setBindArguments2647 = @__env.GetMethodID(global::android.database.sqlite.__SQLiteCursorDriver.staticClass, "android.database.sqlite.SQLiteCursorDriver.setBindArguments", "([Ljava/lang/String;)V");
 		}
 	}
 }

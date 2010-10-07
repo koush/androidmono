@@ -35,49 +35,49 @@ namespace android.location
 		internal __LocationListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onStatusChanged4314;
+		internal static global::net.sf.jni4net.jni.MethodId _onStatusChanged4546;
 		 void android.location.LocationListener.onStatusChanged(java.lang.String arg0, int arg1, android.os.Bundle arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.__LocationListener._onStatusChanged4314, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallVoidMethod(this, global::android.location.__LocationListener._onStatusChanged4546, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.__LocationListener.staticClass, global::android.location.__LocationListener._onStatusChanged4314, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this, global::android.location.__LocationListener.staticClass, global::android.location.__LocationListener._onStatusChanged4546, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onLocationChanged4315;
+		internal static global::net.sf.jni4net.jni.MethodId _onLocationChanged4547;
 		 void android.location.LocationListener.onLocationChanged(android.location.Location arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.__LocationListener._onLocationChanged4315, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.location.__LocationListener._onLocationChanged4547, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.__LocationListener.staticClass, global::android.location.__LocationListener._onLocationChanged4315, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.location.__LocationListener.staticClass, global::android.location.__LocationListener._onLocationChanged4547, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onProviderEnabled4316;
+		internal static global::net.sf.jni4net.jni.MethodId _onProviderEnabled4548;
 		 void android.location.LocationListener.onProviderEnabled(java.lang.String arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.__LocationListener._onProviderEnabled4316, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.location.__LocationListener._onProviderEnabled4548, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.__LocationListener.staticClass, global::android.location.__LocationListener._onProviderEnabled4316, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.location.__LocationListener.staticClass, global::android.location.__LocationListener._onProviderEnabled4548, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onProviderDisabled4317;
+		internal static global::net.sf.jni4net.jni.MethodId _onProviderDisabled4549;
 		 void android.location.LocationListener.onProviderDisabled(java.lang.String arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.location.__LocationListener._onProviderDisabled4317, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.location.__LocationListener._onProviderDisabled4549, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.location.__LocationListener.staticClass, global::android.location.__LocationListener._onProviderDisabled4317, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.location.__LocationListener.staticClass, global::android.location.__LocationListener._onProviderDisabled4549, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.location.__LocationListener.staticClass = @__class;
-			global::android.location.__LocationListener._onStatusChanged4314 = @__env.GetMethodID(global::android.location.__LocationListener.staticClass, "android.location.LocationListener.onStatusChanged", "(Ljava/lang/String;ILandroid/os/Bundle;)V");
-			global::android.location.__LocationListener._onLocationChanged4315 = @__env.GetMethodID(global::android.location.__LocationListener.staticClass, "android.location.LocationListener.onLocationChanged", "(Landroid/location/Location;)V");
-			global::android.location.__LocationListener._onProviderEnabled4316 = @__env.GetMethodID(global::android.location.__LocationListener.staticClass, "android.location.LocationListener.onProviderEnabled", "(Ljava/lang/String;)V");
-			global::android.location.__LocationListener._onProviderDisabled4317 = @__env.GetMethodID(global::android.location.__LocationListener.staticClass, "android.location.LocationListener.onProviderDisabled", "(Ljava/lang/String;)V");
+			global::android.location.__LocationListener._onStatusChanged4546 = @__env.GetMethodID(global::android.location.__LocationListener.staticClass, "android.location.LocationListener.onStatusChanged", "(Ljava/lang/String;ILandroid/os/Bundle;)V");
+			global::android.location.__LocationListener._onLocationChanged4547 = @__env.GetMethodID(global::android.location.__LocationListener.staticClass, "android.location.LocationListener.onLocationChanged", "(Landroid/location/Location;)V");
+			global::android.location.__LocationListener._onProviderEnabled4548 = @__env.GetMethodID(global::android.location.__LocationListener.staticClass, "android.location.LocationListener.onProviderEnabled", "(Ljava/lang/String;)V");
+			global::android.location.__LocationListener._onProviderDisabled4549 = @__env.GetMethodID(global::android.location.__LocationListener.staticClass, "android.location.LocationListener.onProviderDisabled", "(Ljava/lang/String;)V");
 		}
 	}
 }

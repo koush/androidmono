@@ -18,85 +18,85 @@ namespace android.os
 		internal Messenger(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals5679;
+		internal static global::net.sf.jni4net.jni.MethodId _equals6252;
 		public sealed override bool equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.os.Messenger._equals5679, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.os.Messenger._equals6252, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._equals5679, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._equals6252, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hashCode5680;
+		internal static global::net.sf.jni4net.jni.MethodId _hashCode6253;
 		public sealed override int hashCode() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.os.Messenger._hashCode5680);
+				return @__env.CallIntMethod(this, global::android.os.Messenger._hashCode6253);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._hashCode5680);
+				return @__env.CallNonVirtualIntMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._hashCode6253);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _send5681;
+		internal static global::net.sf.jni4net.jni.MethodId _send6254;
 		public void send(android.os.Message arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.Messenger._send5681, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.os.Messenger._send6254, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._send5681, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._send6254, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel5682;
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel6255;
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.Messenger._writeToParcel5682, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.os.Messenger._writeToParcel6255, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._writeToParcel5682, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._writeToParcel6255, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents5683;
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents6256;
 		public int describeContents() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.os.Messenger._describeContents5683);
+				return @__env.CallIntMethod(this, global::android.os.Messenger._describeContents6256);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._describeContents5683);
+				return @__env.CallNonVirtualIntMethod(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._describeContents6256);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getBinder5684;
+		internal static global::net.sf.jni4net.jni.MethodId _getBinder6257;
 		public global::android.os.IBinder getBinder() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Messenger._getBinder5684));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.Messenger._getBinder6257));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._getBinder5684));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.Messenger.staticClass, global::android.os.Messenger._getBinder6257));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeMessengerOrNullToParcel5685;
+		internal static global::net.sf.jni4net.jni.MethodId _writeMessengerOrNullToParcel6258;
 		public static void writeMessengerOrNullToParcel(android.os.Messenger arg0, android.os.Parcel arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.os.Messenger.staticClass, global::android.os.Messenger._writeMessengerOrNullToParcel5685, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			@__env.CallStaticVoidMethod(android.os.Messenger.staticClass, global::android.os.Messenger._writeMessengerOrNullToParcel6258, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _readMessengerOrNullFromParcel5686;
+		internal static global::net.sf.jni4net.jni.MethodId _readMessengerOrNullFromParcel6259;
 		public static global::android.os.Messenger readMessengerOrNullFromParcel(android.os.Parcel arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Messenger>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Messenger.staticClass, global::android.os.Messenger._readMessengerOrNullFromParcel5686, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.os.Messenger>(@__env, @__env.CallStaticObjectMethodPtr(android.os.Messenger.staticClass, global::android.os.Messenger._readMessengerOrNullFromParcel6259, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Messenger5687;
+		internal static global::net.sf.jni4net.jni.MethodId _Messenger6260;
 		public Messenger(android.os.Handler arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.os.Messenger.staticClass, global::android.os.Messenger._Messenger5687, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.os.Messenger.staticClass, global::android.os.Messenger._Messenger6260, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Messenger5688;
+		internal static global::net.sf.jni4net.jni.MethodId _Messenger6261;
 		public Messenger(android.os.IBinder arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.os.Messenger.staticClass, global::android.os.Messenger._Messenger5688, this, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+			@__env.NewObject(android.os.Messenger.staticClass, global::android.os.Messenger._Messenger6261, this, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR5689;
+		internal static global::net.sf.jni4net.jni.FieldId _CREATOR6262;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -107,16 +107,16 @@ namespace android.os
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.os.Messenger.staticClass = @__class;
-			global::android.os.Messenger._equals5679 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "equals", "(Ljava/lang/Object;)Z");
-			global::android.os.Messenger._hashCode5680 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "hashCode", "()I");
-			global::android.os.Messenger._send5681 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "send", "(Landroid/os/Message;)V");
-			global::android.os.Messenger._writeToParcel5682 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.os.Messenger._describeContents5683 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "describeContents", "()I");
-			global::android.os.Messenger._getBinder5684 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "getBinder", "()Landroid/os/IBinder;");
-			global::android.os.Messenger._writeMessengerOrNullToParcel5685 = @__env.GetStaticMethodID(global::android.os.Messenger.staticClass, "writeMessengerOrNullToParcel", "(Landroid/os/Messenger;Landroid/os/Parcel;)V");
-			global::android.os.Messenger._readMessengerOrNullFromParcel5686 = @__env.GetStaticMethodID(global::android.os.Messenger.staticClass, "readMessengerOrNullFromParcel", "(Landroid/os/Parcel;)Landroid/os/Messenger;");
-			global::android.os.Messenger._Messenger5687 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "<init>", "(Landroid/os/Handler;)V");
-			global::android.os.Messenger._Messenger5688 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "<init>", "(Landroid/os/IBinder;)V");
+			global::android.os.Messenger._equals6252 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "equals", "(Ljava/lang/Object;)Z");
+			global::android.os.Messenger._hashCode6253 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "hashCode", "()I");
+			global::android.os.Messenger._send6254 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "send", "(Landroid/os/Message;)V");
+			global::android.os.Messenger._writeToParcel6255 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.os.Messenger._describeContents6256 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "describeContents", "()I");
+			global::android.os.Messenger._getBinder6257 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "getBinder", "()Landroid/os/IBinder;");
+			global::android.os.Messenger._writeMessengerOrNullToParcel6258 = @__env.GetStaticMethodID(global::android.os.Messenger.staticClass, "writeMessengerOrNullToParcel", "(Landroid/os/Messenger;Landroid/os/Parcel;)V");
+			global::android.os.Messenger._readMessengerOrNullFromParcel6259 = @__env.GetStaticMethodID(global::android.os.Messenger.staticClass, "readMessengerOrNullFromParcel", "(Landroid/os/Parcel;)Landroid/os/Messenger;");
+			global::android.os.Messenger._Messenger6260 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "<init>", "(Landroid/os/Handler;)V");
+			global::android.os.Messenger._Messenger6261 = @__env.GetMethodID(global::android.os.Messenger.staticClass, "<init>", "(Landroid/os/IBinder;)V");
 		}
 	}
 }

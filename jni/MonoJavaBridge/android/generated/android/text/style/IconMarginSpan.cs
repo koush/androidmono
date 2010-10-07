@@ -18,61 +18,61 @@ namespace android.text.style
 		protected IconMarginSpan(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLeadingMargin7335;
+		internal static global::net.sf.jni4net.jni.MethodId _getLeadingMargin7961;
 		public virtual int getLeadingMargin(bool arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.style.IconMarginSpan._getLeadingMargin7335, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this, global::android.text.style.IconMarginSpan._getLeadingMargin7961, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.IconMarginSpan.staticClass, global::android.text.style.IconMarginSpan._getLeadingMargin7335, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.IconMarginSpan.staticClass, global::android.text.style.IconMarginSpan._getLeadingMargin7961, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _drawLeadingMargin7336;
+		internal static global::net.sf.jni4net.jni.MethodId _drawLeadingMargin7962;
 		public virtual void drawLeadingMargin(android.graphics.Canvas arg0, android.graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, java.lang.CharSequence arg7, int arg8, int arg9, bool arg10, android.text.Layout arg11) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.style.IconMarginSpan._drawLeadingMargin7336, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg7), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg8), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg9), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg10), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg11));
+				@__env.CallVoidMethod(this, global::android.text.style.IconMarginSpan._drawLeadingMargin7962, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg7), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg8), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg9), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg10), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg11));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.IconMarginSpan.staticClass, global::android.text.style.IconMarginSpan._drawLeadingMargin7336, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg7), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg8), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg9), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg10), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg11));
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.IconMarginSpan.staticClass, global::android.text.style.IconMarginSpan._drawLeadingMargin7962, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg7), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg8), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg9), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg10), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg11));
 		}
 		public void drawLeadingMargin(android.graphics.Canvas arg0, android.graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, string arg7, int arg8, int arg9, bool arg10, android.text.Layout arg11)
 		{
 			drawLeadingMargin(arg0, arg1, arg2, arg3, arg4, arg5, arg6, (global::java.lang.CharSequence)(global::java.lang.String)arg7, arg8, arg9, arg10, arg11);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _chooseHeight7337;
+		internal static global::net.sf.jni4net.jni.MethodId _chooseHeight7963;
 		public virtual void chooseHeight(java.lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, android.graphics.Paint.FontMetricsInt arg5) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.style.IconMarginSpan._chooseHeight7337, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5));
+				@__env.CallVoidMethod(this, global::android.text.style.IconMarginSpan._chooseHeight7963, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.IconMarginSpan.staticClass, global::android.text.style.IconMarginSpan._chooseHeight7337, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5));
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.IconMarginSpan.staticClass, global::android.text.style.IconMarginSpan._chooseHeight7963, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5));
 		}
 		public void chooseHeight(string arg0, int arg1, int arg2, int arg3, int arg4, android.graphics.Paint.FontMetricsInt arg5)
 		{
 			chooseHeight((global::java.lang.CharSequence)(global::java.lang.String)arg0, arg1, arg2, arg3, arg4, arg5);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _IconMarginSpan7338;
+		internal static global::net.sf.jni4net.jni.MethodId _IconMarginSpan7964;
 		public IconMarginSpan(android.graphics.Bitmap arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.style.IconMarginSpan.staticClass, global::android.text.style.IconMarginSpan._IconMarginSpan7338, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.text.style.IconMarginSpan.staticClass, global::android.text.style.IconMarginSpan._IconMarginSpan7964, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _IconMarginSpan7339;
+		internal static global::net.sf.jni4net.jni.MethodId _IconMarginSpan7965;
 		public IconMarginSpan(android.graphics.Bitmap arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.style.IconMarginSpan.staticClass, global::android.text.style.IconMarginSpan._IconMarginSpan7339, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			@__env.NewObject(android.text.style.IconMarginSpan.staticClass, global::android.text.style.IconMarginSpan._IconMarginSpan7965, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.text.style.IconMarginSpan.staticClass = @__class;
-			global::android.text.style.IconMarginSpan._getLeadingMargin7335 = @__env.GetMethodID(global::android.text.style.IconMarginSpan.staticClass, "getLeadingMargin", "(Z)I");
-			global::android.text.style.IconMarginSpan._drawLeadingMargin7336 = @__env.GetMethodID(global::android.text.style.IconMarginSpan.staticClass, "drawLeadingMargin", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;IIZLandroid/text/Layout;)V");
-			global::android.text.style.IconMarginSpan._chooseHeight7337 = @__env.GetMethodID(global::android.text.style.IconMarginSpan.staticClass, "chooseHeight", "(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V");
-			global::android.text.style.IconMarginSpan._IconMarginSpan7338 = @__env.GetMethodID(global::android.text.style.IconMarginSpan.staticClass, "<init>", "(Landroid/graphics/Bitmap;)V");
-			global::android.text.style.IconMarginSpan._IconMarginSpan7339 = @__env.GetMethodID(global::android.text.style.IconMarginSpan.staticClass, "<init>", "(Landroid/graphics/Bitmap;I)V");
+			global::android.text.style.IconMarginSpan._getLeadingMargin7961 = @__env.GetMethodID(global::android.text.style.IconMarginSpan.staticClass, "getLeadingMargin", "(Z)I");
+			global::android.text.style.IconMarginSpan._drawLeadingMargin7962 = @__env.GetMethodID(global::android.text.style.IconMarginSpan.staticClass, "drawLeadingMargin", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;IIZLandroid/text/Layout;)V");
+			global::android.text.style.IconMarginSpan._chooseHeight7963 = @__env.GetMethodID(global::android.text.style.IconMarginSpan.staticClass, "chooseHeight", "(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V");
+			global::android.text.style.IconMarginSpan._IconMarginSpan7964 = @__env.GetMethodID(global::android.text.style.IconMarginSpan.staticClass, "<init>", "(Landroid/graphics/Bitmap;)V");
+			global::android.text.style.IconMarginSpan._IconMarginSpan7965 = @__env.GetMethodID(global::android.text.style.IconMarginSpan.staticClass, "<init>", "(Landroid/graphics/Bitmap;I)V");
 		}
 	}
 }

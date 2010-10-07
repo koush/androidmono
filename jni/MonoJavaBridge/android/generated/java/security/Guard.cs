@@ -32,19 +32,19 @@ namespace java.security
 		internal __Guard(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _checkGuard12436;
+		internal static global::net.sf.jni4net.jni.MethodId _checkGuard13165;
 		 void java.security.Guard.checkGuard(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.security.__Guard._checkGuard12436, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::java.security.__Guard._checkGuard13165, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.security.__Guard.staticClass, global::java.security.__Guard._checkGuard12436, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::java.security.__Guard.staticClass, global::java.security.__Guard._checkGuard13165, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.security.__Guard.staticClass = @__class;
-			global::java.security.__Guard._checkGuard12436 = @__env.GetMethodID(global::java.security.__Guard.staticClass, "java.security.Guard.checkGuard", "(Ljava/lang/Object;)V");
+			global::java.security.__Guard._checkGuard13165 = @__env.GetMethodID(global::java.security.__Guard.staticClass, "java.security.Guard.checkGuard", "(Ljava/lang/Object;)V");
 		}
 	}
 }

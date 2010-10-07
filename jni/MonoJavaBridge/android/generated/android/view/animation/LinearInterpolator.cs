@@ -18,33 +18,33 @@ namespace android.view.animation
 		protected LinearInterpolator(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInterpolation8985;
+		internal static global::net.sf.jni4net.jni.MethodId _getInterpolation9692;
 		public virtual float getInterpolation(float arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.animation.LinearInterpolator._getInterpolation8985, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallFloatMethod(this, global::android.view.animation.LinearInterpolator._getInterpolation9692, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.animation.LinearInterpolator.staticClass, global::android.view.animation.LinearInterpolator._getInterpolation8985, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.animation.LinearInterpolator.staticClass, global::android.view.animation.LinearInterpolator._getInterpolation9692, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _LinearInterpolator8986;
+		internal static global::net.sf.jni4net.jni.MethodId _LinearInterpolator9693;
 		public LinearInterpolator()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.LinearInterpolator.staticClass, global::android.view.animation.LinearInterpolator._LinearInterpolator8986, this);
+			@__env.NewObject(android.view.animation.LinearInterpolator.staticClass, global::android.view.animation.LinearInterpolator._LinearInterpolator9693, this);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _LinearInterpolator8987;
+		internal static global::net.sf.jni4net.jni.MethodId _LinearInterpolator9694;
 		public LinearInterpolator(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.animation.LinearInterpolator.staticClass, global::android.view.animation.LinearInterpolator._LinearInterpolator8987, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			@__env.NewObject(android.view.animation.LinearInterpolator.staticClass, global::android.view.animation.LinearInterpolator._LinearInterpolator9694, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.view.animation.LinearInterpolator.staticClass = @__class;
-			global::android.view.animation.LinearInterpolator._getInterpolation8985 = @__env.GetMethodID(global::android.view.animation.LinearInterpolator.staticClass, "getInterpolation", "(F)F");
-			global::android.view.animation.LinearInterpolator._LinearInterpolator8986 = @__env.GetMethodID(global::android.view.animation.LinearInterpolator.staticClass, "<init>", "()V");
-			global::android.view.animation.LinearInterpolator._LinearInterpolator8987 = @__env.GetMethodID(global::android.view.animation.LinearInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.view.animation.LinearInterpolator._getInterpolation9692 = @__env.GetMethodID(global::android.view.animation.LinearInterpolator.staticClass, "getInterpolation", "(F)F");
+			global::android.view.animation.LinearInterpolator._LinearInterpolator9693 = @__env.GetMethodID(global::android.view.animation.LinearInterpolator.staticClass, "<init>", "()V");
+			global::android.view.animation.LinearInterpolator._LinearInterpolator9694 = @__env.GetMethodID(global::android.view.animation.LinearInterpolator.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 		}
 	}
 }

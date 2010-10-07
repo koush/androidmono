@@ -32,19 +32,19 @@ namespace android.view
 		internal __MenuItem_OnMenuItemClickListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onMenuItemClick7904;
+		internal static global::net.sf.jni4net.jni.MethodId _onMenuItemClick8580;
 		 bool android.view.MenuItem_OnMenuItemClickListener.onMenuItemClick(android.view.MenuItem arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem_OnMenuItemClickListener._onMenuItemClick7904, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem_OnMenuItemClickListener._onMenuItemClick8580, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem_OnMenuItemClickListener.staticClass, global::android.view.__MenuItem_OnMenuItemClickListener._onMenuItemClick7904, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem_OnMenuItemClickListener.staticClass, global::android.view.__MenuItem_OnMenuItemClickListener._onMenuItemClick8580, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.view.__MenuItem_OnMenuItemClickListener.staticClass = @__class;
-			global::android.view.__MenuItem_OnMenuItemClickListener._onMenuItemClick7904 = @__env.GetMethodID(global::android.view.__MenuItem_OnMenuItemClickListener.staticClass, "android.view.MenuItem_OnMenuItemClickListener.onMenuItemClick", "(Landroid/view/MenuItem;)Z");
+			global::android.view.__MenuItem_OnMenuItemClickListener._onMenuItemClick8580 = @__env.GetMethodID(global::android.view.__MenuItem_OnMenuItemClickListener.staticClass, "android.view.MenuItem_OnMenuItemClickListener.onMenuItemClick", "(Landroid/view/MenuItem;)Z");
 		}
 	}
 }

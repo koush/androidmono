@@ -18,33 +18,33 @@ namespace android.sax
 		protected RootElement(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getContentHandler6388;
+		internal static global::net.sf.jni4net.jni.MethodId _getContentHandler6977;
 		public virtual global::org.xml.sax.ContentHandler getContentHandler() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.ContentHandler>(@__env, @__env.CallObjectMethodPtr(this, global::android.sax.RootElement._getContentHandler6388));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.ContentHandler>(@__env, @__env.CallObjectMethodPtr(this, global::android.sax.RootElement._getContentHandler6977));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.ContentHandler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.sax.RootElement.staticClass, global::android.sax.RootElement._getContentHandler6388));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<org.xml.sax.ContentHandler>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.sax.RootElement.staticClass, global::android.sax.RootElement._getContentHandler6977));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _RootElement6389;
+		internal static global::net.sf.jni4net.jni.MethodId _RootElement6978;
 		public RootElement(java.lang.String arg0, java.lang.String arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.sax.RootElement.staticClass, global::android.sax.RootElement._RootElement6389, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			@__env.NewObject(android.sax.RootElement.staticClass, global::android.sax.RootElement._RootElement6978, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _RootElement6390;
+		internal static global::net.sf.jni4net.jni.MethodId _RootElement6979;
 		public RootElement(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.sax.RootElement.staticClass, global::android.sax.RootElement._RootElement6390, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.sax.RootElement.staticClass, global::android.sax.RootElement._RootElement6979, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.sax.RootElement.staticClass = @__class;
-			global::android.sax.RootElement._getContentHandler6388 = @__env.GetMethodID(global::android.sax.RootElement.staticClass, "getContentHandler", "()Lorg/xml/sax/ContentHandler;");
-			global::android.sax.RootElement._RootElement6389 = @__env.GetMethodID(global::android.sax.RootElement.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::android.sax.RootElement._RootElement6390 = @__env.GetMethodID(global::android.sax.RootElement.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::android.sax.RootElement._getContentHandler6977 = @__env.GetMethodID(global::android.sax.RootElement.staticClass, "getContentHandler", "()Lorg/xml/sax/ContentHandler;");
+			global::android.sax.RootElement._RootElement6978 = @__env.GetMethodID(global::android.sax.RootElement.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::android.sax.RootElement._RootElement6979 = @__env.GetMethodID(global::android.sax.RootElement.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

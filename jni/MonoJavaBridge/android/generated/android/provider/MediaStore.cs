@@ -157,19 +157,19 @@ namespace android.provider
 				internal Albums(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 				{
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6249;
+				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6831;
 				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Albums.staticClass, global::android.provider.MediaStore.Audio.Albums._getContentUri6249, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Albums.staticClass, global::android.provider.MediaStore.Audio.Albums._getContentUri6831, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _Albums6250;
+				internal static global::net.sf.jni4net.jni.MethodId _Albums6832;
 				public Albums()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					@__env.NewObject(android.provider.MediaStore.Audio.Albums.staticClass, global::android.provider.MediaStore.Audio.Albums._Albums6250, this);
+					@__env.NewObject(android.provider.MediaStore.Audio.Albums.staticClass, global::android.provider.MediaStore.Audio.Albums._Albums6832, this);
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6251;
+				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6833;
 				public static global::android.net.Uri INTERNAL_CONTENT_URI
 				{
 					get
@@ -177,7 +177,7 @@ namespace android.provider
 						return default(global::android.net.Uri);
 					}
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6252;
+				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6834;
 				public static global::android.net.Uri EXTERNAL_CONTENT_URI
 				{
 					get
@@ -209,8 +209,8 @@ namespace android.provider
 				private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 				{
 					global::android.provider.MediaStore.Audio.Albums.staticClass = @__class;
-					global::android.provider.MediaStore.Audio.Albums._getContentUri6249 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Albums.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
-					global::android.provider.MediaStore.Audio.Albums._Albums6250 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.Albums.staticClass, "<init>", "()V");
+					global::android.provider.MediaStore.Audio.Albums._getContentUri6831 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Albums.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
+					global::android.provider.MediaStore.Audio.Albums._Albums6832 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.Albums.staticClass, "<init>", "()V");
 				}
 			}
 			[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
@@ -317,38 +317,38 @@ namespace android.provider
 					internal Albums(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 					{
 					}
-					internal static global::net.sf.jni4net.jni.MethodId _getContentUri6253;
+					internal static global::net.sf.jni4net.jni.MethodId _getContentUri6835;
 					public static global::android.net.Uri getContentUri(java.lang.String arg0, long arg1) 
 					{
 						global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-						return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Artists.Albums.staticClass, global::android.provider.MediaStore.Audio.Artists.Albums._getContentUri6253, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+						return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Artists.Albums.staticClass, global::android.provider.MediaStore.Audio.Artists.Albums._getContentUri6835, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
 					}
-					internal static global::net.sf.jni4net.jni.MethodId _Albums6254;
+					internal static global::net.sf.jni4net.jni.MethodId _Albums6836;
 					public Albums()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 					{
 						global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-						@__env.NewObject(android.provider.MediaStore.Audio.Artists.Albums.staticClass, global::android.provider.MediaStore.Audio.Artists.Albums._Albums6254, this);
+						@__env.NewObject(android.provider.MediaStore.Audio.Artists.Albums.staticClass, global::android.provider.MediaStore.Audio.Artists.Albums._Albums6836, this);
 					}
 					private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 					{
 						global::android.provider.MediaStore.Audio.Artists.Albums.staticClass = @__class;
-						global::android.provider.MediaStore.Audio.Artists.Albums._getContentUri6253 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Artists.Albums.staticClass, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;");
-						global::android.provider.MediaStore.Audio.Artists.Albums._Albums6254 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.Artists.Albums.staticClass, "<init>", "()V");
+						global::android.provider.MediaStore.Audio.Artists.Albums._getContentUri6835 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Artists.Albums.staticClass, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;");
+						global::android.provider.MediaStore.Audio.Artists.Albums._Albums6836 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.Artists.Albums.staticClass, "<init>", "()V");
 					}
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6255;
+				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6837;
 				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Artists.staticClass, global::android.provider.MediaStore.Audio.Artists._getContentUri6255, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Artists.staticClass, global::android.provider.MediaStore.Audio.Artists._getContentUri6837, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _Artists6256;
+				internal static global::net.sf.jni4net.jni.MethodId _Artists6838;
 				public Artists()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					@__env.NewObject(android.provider.MediaStore.Audio.Artists.staticClass, global::android.provider.MediaStore.Audio.Artists._Artists6256, this);
+					@__env.NewObject(android.provider.MediaStore.Audio.Artists.staticClass, global::android.provider.MediaStore.Audio.Artists._Artists6838, this);
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6257;
+				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6839;
 				public static global::android.net.Uri INTERNAL_CONTENT_URI
 				{
 					get
@@ -356,7 +356,7 @@ namespace android.provider
 						return default(global::android.net.Uri);
 					}
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6258;
+				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6840;
 				public static global::android.net.Uri EXTERNAL_CONTENT_URI
 				{
 					get
@@ -388,8 +388,8 @@ namespace android.provider
 				private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 				{
 					global::android.provider.MediaStore.Audio.Artists.staticClass = @__class;
-					global::android.provider.MediaStore.Audio.Artists._getContentUri6255 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Artists.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
-					global::android.provider.MediaStore.Audio.Artists._Artists6256 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.Artists.staticClass, "<init>", "()V");
+					global::android.provider.MediaStore.Audio.Artists._getContentUri6837 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Artists.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
+					global::android.provider.MediaStore.Audio.Artists._Artists6838 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.Artists.staticClass, "<init>", "()V");
 				}
 			}
 			[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
@@ -443,6 +443,13 @@ namespace android.provider
 					get
 					{
 						return "duration";
+					}
+				}
+				public static global::java.lang.String BOOKMARK
+				{
+					get
+					{
+						return "bookmark";
 					}
 				}
 				public static global::java.lang.String ARTIST_ID
@@ -522,6 +529,13 @@ namespace android.provider
 						return "is_music";
 					}
 				}
+				public static global::java.lang.String IS_PODCAST
+				{
+					get
+					{
+						return "is_podcast";
+					}
+				}
 				public static global::java.lang.String IS_RINGTONE
 				{
 					get
@@ -580,17 +594,17 @@ namespace android.provider
 					internal Members(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 					{
 					}
-					internal static global::net.sf.jni4net.jni.MethodId _getContentUri6259;
+					internal static global::net.sf.jni4net.jni.MethodId _getContentUri6841;
 					public static global::android.net.Uri getContentUri(java.lang.String arg0, long arg1) 
 					{
 						global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-						return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Genres.Members.staticClass, global::android.provider.MediaStore.Audio.Genres.Members._getContentUri6259, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+						return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Genres.Members.staticClass, global::android.provider.MediaStore.Audio.Genres.Members._getContentUri6841, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
 					}
-					internal static global::net.sf.jni4net.jni.MethodId _Members6260;
+					internal static global::net.sf.jni4net.jni.MethodId _Members6842;
 					public Members()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 					{
 						global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-						@__env.NewObject(android.provider.MediaStore.Audio.Genres.Members.staticClass, global::android.provider.MediaStore.Audio.Genres.Members._Members6260, this);
+						@__env.NewObject(android.provider.MediaStore.Audio.Genres.Members.staticClass, global::android.provider.MediaStore.Audio.Genres.Members._Members6842, this);
 					}
 					public static global::java.lang.String CONTENT_DIRECTORY
 					{
@@ -623,23 +637,23 @@ namespace android.provider
 					private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 					{
 						global::android.provider.MediaStore.Audio.Genres.Members.staticClass = @__class;
-						global::android.provider.MediaStore.Audio.Genres.Members._getContentUri6259 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Genres.Members.staticClass, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;");
-						global::android.provider.MediaStore.Audio.Genres.Members._Members6260 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.Genres.Members.staticClass, "<init>", "()V");
+						global::android.provider.MediaStore.Audio.Genres.Members._getContentUri6841 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Genres.Members.staticClass, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;");
+						global::android.provider.MediaStore.Audio.Genres.Members._Members6842 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.Genres.Members.staticClass, "<init>", "()V");
 					}
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6261;
+				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6843;
 				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Genres.staticClass, global::android.provider.MediaStore.Audio.Genres._getContentUri6261, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Genres.staticClass, global::android.provider.MediaStore.Audio.Genres._getContentUri6843, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _Genres6262;
+				internal static global::net.sf.jni4net.jni.MethodId _Genres6844;
 				public Genres()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					@__env.NewObject(android.provider.MediaStore.Audio.Genres.staticClass, global::android.provider.MediaStore.Audio.Genres._Genres6262, this);
+					@__env.NewObject(android.provider.MediaStore.Audio.Genres.staticClass, global::android.provider.MediaStore.Audio.Genres._Genres6844, this);
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6263;
+				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6845;
 				public static global::android.net.Uri INTERNAL_CONTENT_URI
 				{
 					get
@@ -647,7 +661,7 @@ namespace android.provider
 						return default(global::android.net.Uri);
 					}
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6264;
+				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6846;
 				public static global::android.net.Uri EXTERNAL_CONTENT_URI
 				{
 					get
@@ -679,8 +693,8 @@ namespace android.provider
 				private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 				{
 					global::android.provider.MediaStore.Audio.Genres.staticClass = @__class;
-					global::android.provider.MediaStore.Audio.Genres._getContentUri6261 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Genres.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
-					global::android.provider.MediaStore.Audio.Genres._Genres6262 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.Genres.staticClass, "<init>", "()V");
+					global::android.provider.MediaStore.Audio.Genres._getContentUri6843 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Genres.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
+					global::android.provider.MediaStore.Audio.Genres._Genres6844 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.Genres.staticClass, "<init>", "()V");
 				}
 			}
 			[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
@@ -748,25 +762,25 @@ namespace android.provider
 				internal Media(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 				{
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6265;
+				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6847;
 				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Media.staticClass, global::android.provider.MediaStore.Audio.Media._getContentUri6265, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Media.staticClass, global::android.provider.MediaStore.Audio.Media._getContentUri6847, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _getContentUriForPath6266;
+				internal static global::net.sf.jni4net.jni.MethodId _getContentUriForPath6848;
 				public static global::android.net.Uri getContentUriForPath(java.lang.String arg0) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Media.staticClass, global::android.provider.MediaStore.Audio.Media._getContentUriForPath6266, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Media.staticClass, global::android.provider.MediaStore.Audio.Media._getContentUriForPath6848, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _Media6267;
+				internal static global::net.sf.jni4net.jni.MethodId _Media6849;
 				public Media()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					@__env.NewObject(android.provider.MediaStore.Audio.Media.staticClass, global::android.provider.MediaStore.Audio.Media._Media6267, this);
+					@__env.NewObject(android.provider.MediaStore.Audio.Media.staticClass, global::android.provider.MediaStore.Audio.Media._Media6849, this);
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6268;
+				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6850;
 				public static global::android.net.Uri INTERNAL_CONTENT_URI
 				{
 					get
@@ -774,7 +788,7 @@ namespace android.provider
 						return default(global::android.net.Uri);
 					}
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6269;
+				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6851;
 				public static global::android.net.Uri EXTERNAL_CONTENT_URI
 				{
 					get
@@ -813,9 +827,9 @@ namespace android.provider
 				private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 				{
 					global::android.provider.MediaStore.Audio.Media.staticClass = @__class;
-					global::android.provider.MediaStore.Audio.Media._getContentUri6265 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Media.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
-					global::android.provider.MediaStore.Audio.Media._getContentUriForPath6266 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Media.staticClass, "getContentUriForPath", "(Ljava/lang/String;)Landroid/net/Uri;");
-					global::android.provider.MediaStore.Audio.Media._Media6267 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.Media.staticClass, "<init>", "()V");
+					global::android.provider.MediaStore.Audio.Media._getContentUri6847 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Media.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
+					global::android.provider.MediaStore.Audio.Media._getContentUriForPath6848 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Media.staticClass, "getContentUriForPath", "(Ljava/lang/String;)Landroid/net/Uri;");
+					global::android.provider.MediaStore.Audio.Media._Media6849 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.Media.staticClass, "<init>", "()V");
 				}
 			}
 			[global::net.sf.jni4net.attributes.JavaClassAttribute()]
@@ -854,17 +868,23 @@ namespace android.provider
 					internal Members(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 					{
 					}
-					internal static global::net.sf.jni4net.jni.MethodId _getContentUri6270;
+					internal static global::net.sf.jni4net.jni.MethodId _getContentUri6852;
 					public static global::android.net.Uri getContentUri(java.lang.String arg0, long arg1) 
 					{
 						global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-						return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Playlists.Members.staticClass, global::android.provider.MediaStore.Audio.Playlists.Members._getContentUri6270, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+						return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Playlists.Members.staticClass, global::android.provider.MediaStore.Audio.Playlists.Members._getContentUri6852, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
 					}
-					internal static global::net.sf.jni4net.jni.MethodId _Members6271;
+					internal static global::net.sf.jni4net.jni.MethodId _moveItem6853;
+					public static bool moveItem(android.content.ContentResolver arg0, long arg1, int arg2, int arg3) 
+					{
+						global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+						return @__env.CallStaticBooleanMethod(android.provider.MediaStore.Audio.Playlists.Members.staticClass, global::android.provider.MediaStore.Audio.Playlists.Members._moveItem6853, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+					}
+					internal static global::net.sf.jni4net.jni.MethodId _Members6854;
 					public Members()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 					{
 						global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-						@__env.NewObject(android.provider.MediaStore.Audio.Playlists.Members.staticClass, global::android.provider.MediaStore.Audio.Playlists.Members._Members6271, this);
+						@__env.NewObject(android.provider.MediaStore.Audio.Playlists.Members.staticClass, global::android.provider.MediaStore.Audio.Playlists.Members._Members6854, this);
 					}
 					public static global::java.lang.String _ID
 					{
@@ -911,23 +931,24 @@ namespace android.provider
 					private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 					{
 						global::android.provider.MediaStore.Audio.Playlists.Members.staticClass = @__class;
-						global::android.provider.MediaStore.Audio.Playlists.Members._getContentUri6270 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Playlists.Members.staticClass, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;");
-						global::android.provider.MediaStore.Audio.Playlists.Members._Members6271 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.Playlists.Members.staticClass, "<init>", "()V");
+						global::android.provider.MediaStore.Audio.Playlists.Members._getContentUri6852 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Playlists.Members.staticClass, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;");
+						global::android.provider.MediaStore.Audio.Playlists.Members._moveItem6853 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Playlists.Members.staticClass, "moveItem", "(Landroid/content/ContentResolver;JII)Z");
+						global::android.provider.MediaStore.Audio.Playlists.Members._Members6854 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.Playlists.Members.staticClass, "<init>", "()V");
 					}
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6272;
+				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6855;
 				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Playlists.staticClass, global::android.provider.MediaStore.Audio.Playlists._getContentUri6272, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.Playlists.staticClass, global::android.provider.MediaStore.Audio.Playlists._getContentUri6855, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _Playlists6273;
+				internal static global::net.sf.jni4net.jni.MethodId _Playlists6856;
 				public Playlists()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					@__env.NewObject(android.provider.MediaStore.Audio.Playlists.staticClass, global::android.provider.MediaStore.Audio.Playlists._Playlists6273, this);
+					@__env.NewObject(android.provider.MediaStore.Audio.Playlists.staticClass, global::android.provider.MediaStore.Audio.Playlists._Playlists6856, this);
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6274;
+				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6857;
 				public static global::android.net.Uri INTERNAL_CONTENT_URI
 				{
 					get
@@ -935,7 +956,7 @@ namespace android.provider
 						return default(global::android.net.Uri);
 					}
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6275;
+				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6858;
 				public static global::android.net.Uri EXTERNAL_CONTENT_URI
 				{
 					get
@@ -967,8 +988,8 @@ namespace android.provider
 				private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 				{
 					global::android.provider.MediaStore.Audio.Playlists.staticClass = @__class;
-					global::android.provider.MediaStore.Audio.Playlists._getContentUri6272 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Playlists.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
-					global::android.provider.MediaStore.Audio.Playlists._Playlists6273 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.Playlists.staticClass, "<init>", "()V");
+					global::android.provider.MediaStore.Audio.Playlists._getContentUri6855 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.Playlists.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
+					global::android.provider.MediaStore.Audio.Playlists._Playlists6856 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.Playlists.staticClass, "<init>", "()V");
 				}
 			}
 			[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
@@ -1039,23 +1060,23 @@ namespace android.provider
 					}
 				}
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _keyFor6276;
+			internal static global::net.sf.jni4net.jni.MethodId _keyFor6859;
 			public static global::java.lang.String keyFor(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.staticClass, global::android.provider.MediaStore.Audio._keyFor6276, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Audio.staticClass, global::android.provider.MediaStore.Audio._keyFor6859, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _Audio6277;
+			internal static global::net.sf.jni4net.jni.MethodId _Audio6860;
 			public Audio()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.provider.MediaStore.Audio.staticClass, global::android.provider.MediaStore.Audio._Audio6277, this);
+				@__env.NewObject(android.provider.MediaStore.Audio.staticClass, global::android.provider.MediaStore.Audio._Audio6860, this);
 			}
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.provider.MediaStore.Audio.staticClass = @__class;
-				global::android.provider.MediaStore.Audio._keyFor6276 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.staticClass, "keyFor", "(Ljava/lang/String;)Ljava/lang/String;");
-				global::android.provider.MediaStore.Audio._Audio6277 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.staticClass, "<init>", "()V");
+				global::android.provider.MediaStore.Audio._keyFor6859 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Audio.staticClass, "keyFor", "(Ljava/lang/String;)Ljava/lang/String;");
+				global::android.provider.MediaStore.Audio._Audio6860 = @__env.GetMethodID(global::android.provider.MediaStore.Audio.staticClass, "<init>", "()V");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
@@ -1204,55 +1225,55 @@ namespace android.provider
 				internal Media(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 				{
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _query6278;
+				internal static global::net.sf.jni4net.jni.MethodId _query6861;
 				public static global::android.database.Cursor query(android.content.ContentResolver arg0, android.net.Uri arg1, java.lang.String[] arg2) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._query6278, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)));
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._query6861, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _query6279;
+				internal static global::net.sf.jni4net.jni.MethodId _query6862;
 				public static global::android.database.Cursor query(android.content.ContentResolver arg0, android.net.Uri arg1, java.lang.String[] arg2, java.lang.String arg3, java.lang.String arg4) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._query6279, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)));
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._query6862, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _query6280;
+				internal static global::net.sf.jni4net.jni.MethodId _query6863;
 				public static global::android.database.Cursor query(android.content.ContentResolver arg0, android.net.Uri arg1, java.lang.String[] arg2, java.lang.String arg3, java.lang.String[] arg4, java.lang.String arg5) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._query6280, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5)));
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._query6863, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _getBitmap6281;
+				internal static global::net.sf.jni4net.jni.MethodId _getBitmap6864;
 				public static global::android.graphics.Bitmap getBitmap(android.content.ContentResolver arg0, android.net.Uri arg1) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._getBitmap6281, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._getBitmap6864, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6282;
+				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6865;
 				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._getContentUri6282, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._getContentUri6865, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _insertImage6283;
+				internal static global::net.sf.jni4net.jni.MethodId _insertImage6866;
 				public static global::java.lang.String insertImage(android.content.ContentResolver arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._insertImage6283, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._insertImage6866, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _insertImage6284;
+				internal static global::net.sf.jni4net.jni.MethodId _insertImage6867;
 				public static global::java.lang.String insertImage(android.content.ContentResolver arg0, android.graphics.Bitmap arg1, java.lang.String arg2, java.lang.String arg3) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._insertImage6284, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._insertImage6867, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _Media6285;
+				internal static global::net.sf.jni4net.jni.MethodId _Media6868;
 				public Media()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					@__env.NewObject(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._Media6285, this);
+					@__env.NewObject(android.provider.MediaStore.Images.Media.staticClass, global::android.provider.MediaStore.Images.Media._Media6868, this);
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6286;
+				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6869;
 				public static global::android.net.Uri INTERNAL_CONTENT_URI
 				{
 					get
@@ -1260,7 +1281,7 @@ namespace android.provider
 						return default(global::android.net.Uri);
 					}
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6287;
+				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6870;
 				public static global::android.net.Uri EXTERNAL_CONTENT_URI
 				{
 					get
@@ -1285,14 +1306,14 @@ namespace android.provider
 				private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 				{
 					global::android.provider.MediaStore.Images.Media.staticClass = @__class;
-					global::android.provider.MediaStore.Images.Media._query6278 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Media.staticClass, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;)Landroid/database/Cursor;");
-					global::android.provider.MediaStore.Images.Media._query6279 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Media.staticClass, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;");
-					global::android.provider.MediaStore.Images.Media._query6280 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Media.staticClass, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;");
-					global::android.provider.MediaStore.Images.Media._getBitmap6281 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Media.staticClass, "getBitmap", "(Landroid/content/ContentResolver;Landroid/net/Uri;)Landroid/graphics/Bitmap;");
-					global::android.provider.MediaStore.Images.Media._getContentUri6282 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Media.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
-					global::android.provider.MediaStore.Images.Media._insertImage6283 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Media.staticClass, "insertImage", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
-					global::android.provider.MediaStore.Images.Media._insertImage6284 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Media.staticClass, "insertImage", "(Landroid/content/ContentResolver;Landroid/graphics/Bitmap;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
-					global::android.provider.MediaStore.Images.Media._Media6285 = @__env.GetMethodID(global::android.provider.MediaStore.Images.Media.staticClass, "<init>", "()V");
+					global::android.provider.MediaStore.Images.Media._query6861 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Media.staticClass, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;)Landroid/database/Cursor;");
+					global::android.provider.MediaStore.Images.Media._query6862 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Media.staticClass, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;");
+					global::android.provider.MediaStore.Images.Media._query6863 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Media.staticClass, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;");
+					global::android.provider.MediaStore.Images.Media._getBitmap6864 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Media.staticClass, "getBitmap", "(Landroid/content/ContentResolver;Landroid/net/Uri;)Landroid/graphics/Bitmap;");
+					global::android.provider.MediaStore.Images.Media._getContentUri6865 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Media.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
+					global::android.provider.MediaStore.Images.Media._insertImage6866 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Media.staticClass, "insertImage", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
+					global::android.provider.MediaStore.Images.Media._insertImage6867 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Media.staticClass, "insertImage", "(Landroid/content/ContentResolver;Landroid/graphics/Bitmap;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
+					global::android.provider.MediaStore.Images.Media._Media6868 = @__env.GetMethodID(global::android.provider.MediaStore.Images.Media.staticClass, "<init>", "()V");
 				}
 			}
 			[global::net.sf.jni4net.attributes.JavaClassAttribute()]
@@ -1313,49 +1334,61 @@ namespace android.provider
 				protected Thumbnails(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 				{
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _query6288;
+				internal static global::net.sf.jni4net.jni.MethodId _query6871;
 				public static global::android.database.Cursor query(android.content.ContentResolver arg0, android.net.Uri arg1, java.lang.String[] arg2) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._query6288, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)));
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._query6871, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _getThumbnail6289;
+				internal static global::net.sf.jni4net.jni.MethodId _getThumbnail6872;
+				public static global::android.graphics.Bitmap getThumbnail(android.content.ContentResolver arg0, long arg1, long arg2, int arg3, android.graphics.BitmapFactory.Options arg4) 
+				{
+					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._getThumbnail6872, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)));
+				}
+				internal static global::net.sf.jni4net.jni.MethodId _getThumbnail6873;
 				public static global::android.graphics.Bitmap getThumbnail(android.content.ContentResolver arg0, long arg1, int arg2, android.graphics.BitmapFactory.Options arg3) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._getThumbnail6289, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._getThumbnail6873, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6290;
+				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6874;
 				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._getContentUri6290, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._getContentUri6874, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _queryMiniThumbnails6291;
+				internal static global::net.sf.jni4net.jni.MethodId _queryMiniThumbnails6875;
 				public static global::android.database.Cursor queryMiniThumbnails(android.content.ContentResolver arg0, android.net.Uri arg1, int arg2, java.lang.String[] arg3) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._queryMiniThumbnails6291, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg3)));
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._queryMiniThumbnails6875, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg3)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _queryMiniThumbnail6292;
+				internal static global::net.sf.jni4net.jni.MethodId _queryMiniThumbnail6876;
 				public static global::android.database.Cursor queryMiniThumbnail(android.content.ContentResolver arg0, long arg1, int arg2, java.lang.String[] arg3) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._queryMiniThumbnail6292, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg3)));
+					return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._queryMiniThumbnail6876, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg3)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _cancelThumbnailRequest6293;
+				internal static global::net.sf.jni4net.jni.MethodId _cancelThumbnailRequest6877;
+				public static void cancelThumbnailRequest(android.content.ContentResolver arg0, long arg1, long arg2) 
+				{
+					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+					@__env.CallStaticVoidMethod(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._cancelThumbnailRequest6877, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				}
+				internal static global::net.sf.jni4net.jni.MethodId _cancelThumbnailRequest6878;
 				public static void cancelThumbnailRequest(android.content.ContentResolver arg0, long arg1) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					@__env.CallStaticVoidMethod(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._cancelThumbnailRequest6293, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallStaticVoidMethod(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._cancelThumbnailRequest6878, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _Thumbnails6294;
+				internal static global::net.sf.jni4net.jni.MethodId _Thumbnails6879;
 				public Thumbnails()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					@__env.NewObject(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._Thumbnails6294, this);
+					@__env.NewObject(android.provider.MediaStore.Images.Thumbnails.staticClass, global::android.provider.MediaStore.Images.Thumbnails._Thumbnails6879, this);
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6295;
+				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6880;
 				public static global::android.net.Uri INTERNAL_CONTENT_URI
 				{
 					get
@@ -1363,7 +1396,7 @@ namespace android.provider
 						return default(global::android.net.Uri);
 					}
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6296;
+				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6881;
 				public static global::android.net.Uri EXTERNAL_CONTENT_URI
 				{
 					get
@@ -1444,25 +1477,27 @@ namespace android.provider
 				private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 				{
 					global::android.provider.MediaStore.Images.Thumbnails.staticClass = @__class;
-					global::android.provider.MediaStore.Images.Thumbnails._query6288 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;)Landroid/database/Cursor;");
-					global::android.provider.MediaStore.Images.Thumbnails._getThumbnail6289 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "getThumbnail", "(Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;");
-					global::android.provider.MediaStore.Images.Thumbnails._getContentUri6290 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
-					global::android.provider.MediaStore.Images.Thumbnails._queryMiniThumbnails6291 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "queryMiniThumbnails", "(Landroid/content/ContentResolver;Landroid/net/Uri;I[Ljava/lang/String;)Landroid/database/Cursor;");
-					global::android.provider.MediaStore.Images.Thumbnails._queryMiniThumbnail6292 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "queryMiniThumbnail", "(Landroid/content/ContentResolver;JI[Ljava/lang/String;)Landroid/database/Cursor;");
-					global::android.provider.MediaStore.Images.Thumbnails._cancelThumbnailRequest6293 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "cancelThumbnailRequest", "(Landroid/content/ContentResolver;J)V");
-					global::android.provider.MediaStore.Images.Thumbnails._Thumbnails6294 = @__env.GetMethodID(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "<init>", "()V");
+					global::android.provider.MediaStore.Images.Thumbnails._query6871 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;)Landroid/database/Cursor;");
+					global::android.provider.MediaStore.Images.Thumbnails._getThumbnail6872 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "getThumbnail", "(Landroid/content/ContentResolver;JJILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;");
+					global::android.provider.MediaStore.Images.Thumbnails._getThumbnail6873 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "getThumbnail", "(Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;");
+					global::android.provider.MediaStore.Images.Thumbnails._getContentUri6874 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
+					global::android.provider.MediaStore.Images.Thumbnails._queryMiniThumbnails6875 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "queryMiniThumbnails", "(Landroid/content/ContentResolver;Landroid/net/Uri;I[Ljava/lang/String;)Landroid/database/Cursor;");
+					global::android.provider.MediaStore.Images.Thumbnails._queryMiniThumbnail6876 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "queryMiniThumbnail", "(Landroid/content/ContentResolver;JI[Ljava/lang/String;)Landroid/database/Cursor;");
+					global::android.provider.MediaStore.Images.Thumbnails._cancelThumbnailRequest6877 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "cancelThumbnailRequest", "(Landroid/content/ContentResolver;JJ)V");
+					global::android.provider.MediaStore.Images.Thumbnails._cancelThumbnailRequest6878 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "cancelThumbnailRequest", "(Landroid/content/ContentResolver;J)V");
+					global::android.provider.MediaStore.Images.Thumbnails._Thumbnails6879 = @__env.GetMethodID(global::android.provider.MediaStore.Images.Thumbnails.staticClass, "<init>", "()V");
 				}
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _Images6297;
+			internal static global::net.sf.jni4net.jni.MethodId _Images6882;
 			public Images()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.provider.MediaStore.Images.staticClass, global::android.provider.MediaStore.Images._Images6297, this);
+				@__env.NewObject(android.provider.MediaStore.Images.staticClass, global::android.provider.MediaStore.Images._Images6882, this);
 			}
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.provider.MediaStore.Images.staticClass = @__class;
-				global::android.provider.MediaStore.Images._Images6297 = @__env.GetMethodID(global::android.provider.MediaStore.Images.staticClass, "<init>", "()V");
+				global::android.provider.MediaStore.Images._Images6882 = @__env.GetMethodID(global::android.provider.MediaStore.Images.staticClass, "<init>", "()V");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
@@ -1590,19 +1625,19 @@ namespace android.provider
 				internal Media(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 				{
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6298;
+				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6883;
 				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Video.Media.staticClass, global::android.provider.MediaStore.Video.Media._getContentUri6298, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Video.Media.staticClass, global::android.provider.MediaStore.Video.Media._getContentUri6883, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _Media6299;
+				internal static global::net.sf.jni4net.jni.MethodId _Media6884;
 				public Media()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					@__env.NewObject(android.provider.MediaStore.Video.Media.staticClass, global::android.provider.MediaStore.Video.Media._Media6299, this);
+					@__env.NewObject(android.provider.MediaStore.Video.Media.staticClass, global::android.provider.MediaStore.Video.Media._Media6884, this);
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6300;
+				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6885;
 				public static global::android.net.Uri INTERNAL_CONTENT_URI
 				{
 					get
@@ -1610,7 +1645,7 @@ namespace android.provider
 						return default(global::android.net.Uri);
 					}
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6301;
+				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6886;
 				public static global::android.net.Uri EXTERNAL_CONTENT_URI
 				{
 					get
@@ -1635,8 +1670,8 @@ namespace android.provider
 				private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 				{
 					global::android.provider.MediaStore.Video.Media.staticClass = @__class;
-					global::android.provider.MediaStore.Video.Media._getContentUri6298 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Video.Media.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
-					global::android.provider.MediaStore.Video.Media._Media6299 = @__env.GetMethodID(global::android.provider.MediaStore.Video.Media.staticClass, "<init>", "()V");
+					global::android.provider.MediaStore.Video.Media._getContentUri6883 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Video.Media.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
+					global::android.provider.MediaStore.Video.Media._Media6884 = @__env.GetMethodID(global::android.provider.MediaStore.Video.Media.staticClass, "<init>", "()V");
 				}
 			}
 			[global::net.sf.jni4net.attributes.JavaClassAttribute()]
@@ -1657,31 +1692,43 @@ namespace android.provider
 				protected Thumbnails(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 				{
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _getThumbnail6302;
+				internal static global::net.sf.jni4net.jni.MethodId _getThumbnail6887;
 				public static global::android.graphics.Bitmap getThumbnail(android.content.ContentResolver arg0, long arg1, int arg2, android.graphics.BitmapFactory.Options arg3) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Video.Thumbnails.staticClass, global::android.provider.MediaStore.Video.Thumbnails._getThumbnail6302, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Video.Thumbnails.staticClass, global::android.provider.MediaStore.Video.Thumbnails._getThumbnail6887, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6303;
+				internal static global::net.sf.jni4net.jni.MethodId _getThumbnail6888;
+				public static global::android.graphics.Bitmap getThumbnail(android.content.ContentResolver arg0, long arg1, long arg2, int arg3, android.graphics.BitmapFactory.Options arg4) 
+				{
+					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Bitmap>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Video.Thumbnails.staticClass, global::android.provider.MediaStore.Video.Thumbnails._getThumbnail6888, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)));
+				}
+				internal static global::net.sf.jni4net.jni.MethodId _getContentUri6889;
 				public static global::android.net.Uri getContentUri(java.lang.String arg0) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Video.Thumbnails.staticClass, global::android.provider.MediaStore.Video.Thumbnails._getContentUri6303, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Video.Thumbnails.staticClass, global::android.provider.MediaStore.Video.Thumbnails._getContentUri6889, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _cancelThumbnailRequest6304;
+				internal static global::net.sf.jni4net.jni.MethodId _cancelThumbnailRequest6890;
 				public static void cancelThumbnailRequest(android.content.ContentResolver arg0, long arg1) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					@__env.CallStaticVoidMethod(android.provider.MediaStore.Video.Thumbnails.staticClass, global::android.provider.MediaStore.Video.Thumbnails._cancelThumbnailRequest6304, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallStaticVoidMethod(android.provider.MediaStore.Video.Thumbnails.staticClass, global::android.provider.MediaStore.Video.Thumbnails._cancelThumbnailRequest6890, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 				}
-				internal static global::net.sf.jni4net.jni.MethodId _Thumbnails6305;
+				internal static global::net.sf.jni4net.jni.MethodId _cancelThumbnailRequest6891;
+				public static void cancelThumbnailRequest(android.content.ContentResolver arg0, long arg1, long arg2) 
+				{
+					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+					@__env.CallStaticVoidMethod(android.provider.MediaStore.Video.Thumbnails.staticClass, global::android.provider.MediaStore.Video.Thumbnails._cancelThumbnailRequest6891, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				}
+				internal static global::net.sf.jni4net.jni.MethodId _Thumbnails6892;
 				public Thumbnails()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 				{
 					global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-					@__env.NewObject(android.provider.MediaStore.Video.Thumbnails.staticClass, global::android.provider.MediaStore.Video.Thumbnails._Thumbnails6305, this);
+					@__env.NewObject(android.provider.MediaStore.Video.Thumbnails.staticClass, global::android.provider.MediaStore.Video.Thumbnails._Thumbnails6892, this);
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6306;
+				internal static global::net.sf.jni4net.jni.FieldId _INTERNAL_CONTENT_URI6893;
 				public static global::android.net.Uri INTERNAL_CONTENT_URI
 				{
 					get
@@ -1689,7 +1736,7 @@ namespace android.provider
 						return default(global::android.net.Uri);
 					}
 				}
-				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6307;
+				internal static global::net.sf.jni4net.jni.FieldId _EXTERNAL_CONTENT_URI6894;
 				public static global::android.net.Uri EXTERNAL_CONTENT_URI
 				{
 					get
@@ -1763,10 +1810,12 @@ namespace android.provider
 				private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 				{
 					global::android.provider.MediaStore.Video.Thumbnails.staticClass = @__class;
-					global::android.provider.MediaStore.Video.Thumbnails._getThumbnail6302 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Video.Thumbnails.staticClass, "getThumbnail", "(Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;");
-					global::android.provider.MediaStore.Video.Thumbnails._getContentUri6303 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Video.Thumbnails.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
-					global::android.provider.MediaStore.Video.Thumbnails._cancelThumbnailRequest6304 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Video.Thumbnails.staticClass, "cancelThumbnailRequest", "(Landroid/content/ContentResolver;J)V");
-					global::android.provider.MediaStore.Video.Thumbnails._Thumbnails6305 = @__env.GetMethodID(global::android.provider.MediaStore.Video.Thumbnails.staticClass, "<init>", "()V");
+					global::android.provider.MediaStore.Video.Thumbnails._getThumbnail6887 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Video.Thumbnails.staticClass, "getThumbnail", "(Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;");
+					global::android.provider.MediaStore.Video.Thumbnails._getThumbnail6888 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Video.Thumbnails.staticClass, "getThumbnail", "(Landroid/content/ContentResolver;JJILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;");
+					global::android.provider.MediaStore.Video.Thumbnails._getContentUri6889 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Video.Thumbnails.staticClass, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;");
+					global::android.provider.MediaStore.Video.Thumbnails._cancelThumbnailRequest6890 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Video.Thumbnails.staticClass, "cancelThumbnailRequest", "(Landroid/content/ContentResolver;J)V");
+					global::android.provider.MediaStore.Video.Thumbnails._cancelThumbnailRequest6891 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Video.Thumbnails.staticClass, "cancelThumbnailRequest", "(Landroid/content/ContentResolver;JJ)V");
+					global::android.provider.MediaStore.Video.Thumbnails._Thumbnails6892 = @__env.GetMethodID(global::android.provider.MediaStore.Video.Thumbnails.staticClass, "<init>", "()V");
 				}
 			}
 			[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
@@ -1921,17 +1970,17 @@ namespace android.provider
 					}
 				}
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _query6308;
+			internal static global::net.sf.jni4net.jni.MethodId _query6895;
 			public static global::android.database.Cursor query(android.content.ContentResolver arg0, android.net.Uri arg1, java.lang.String[] arg2) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Video.staticClass, global::android.provider.MediaStore.Video._query6308, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.database.Cursor>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.Video.staticClass, global::android.provider.MediaStore.Video._query6895, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _Video6309;
+			internal static global::net.sf.jni4net.jni.MethodId _Video6896;
 			public Video()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.provider.MediaStore.Video.staticClass, global::android.provider.MediaStore.Video._Video6309, this);
+				@__env.NewObject(android.provider.MediaStore.Video.staticClass, global::android.provider.MediaStore.Video._Video6896, this);
 			}
 			public static global::java.lang.String DEFAULT_SORT_ORDER
 			{
@@ -1943,27 +1992,34 @@ namespace android.provider
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.provider.MediaStore.Video.staticClass = @__class;
-				global::android.provider.MediaStore.Video._query6308 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Video.staticClass, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;)Landroid/database/Cursor;");
-				global::android.provider.MediaStore.Video._Video6309 = @__env.GetMethodID(global::android.provider.MediaStore.Video.staticClass, "<init>", "()V");
+				global::android.provider.MediaStore.Video._query6895 = @__env.GetStaticMethodID(global::android.provider.MediaStore.Video.staticClass, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;)Landroid/database/Cursor;");
+				global::android.provider.MediaStore.Video._Video6896 = @__env.GetMethodID(global::android.provider.MediaStore.Video.staticClass, "<init>", "()V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMediaScannerUri6310;
+		internal static global::net.sf.jni4net.jni.MethodId _getMediaScannerUri6897;
 		public static global::android.net.Uri getMediaScannerUri() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.staticClass, global::android.provider.MediaStore._getMediaScannerUri6310));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.net.Uri>(@__env, @__env.CallStaticObjectMethodPtr(android.provider.MediaStore.staticClass, global::android.provider.MediaStore._getMediaScannerUri6897));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _MediaStore6311;
+		internal static global::net.sf.jni4net.jni.MethodId _MediaStore6898;
 		public MediaStore()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.provider.MediaStore.staticClass, global::android.provider.MediaStore._MediaStore6311, this);
+			@__env.NewObject(android.provider.MediaStore.staticClass, global::android.provider.MediaStore._MediaStore6898, this);
 		}
 		public static global::java.lang.String AUTHORITY
 		{
 			get
 			{
 				return "media";
+			}
+		}
+		public static global::java.lang.String INTENT_ACTION_MUSIC_PLAYER
+		{
+			get
+			{
+				return "android.intent.action.MUSIC_PLAYER";
 			}
 		}
 		public static global::java.lang.String INTENT_ACTION_MEDIA_SEARCH
@@ -2008,6 +2064,20 @@ namespace android.provider
 				return "android.intent.extra.screenOrientation";
 			}
 		}
+		public static global::java.lang.String EXTRA_FULL_SCREEN
+		{
+			get
+			{
+				return "android.intent.extra.fullScreen";
+			}
+		}
+		public static global::java.lang.String EXTRA_SHOW_ACTION_ICONS
+		{
+			get
+			{
+				return "android.intent.extra.showActionIcons";
+			}
+		}
 		public static global::java.lang.String EXTRA_FINISH_ON_COMPLETION
 		{
 			get
@@ -2050,11 +2120,32 @@ namespace android.provider
 				return "android.intent.extra.videoQuality";
 			}
 		}
+		public static global::java.lang.String EXTRA_SIZE_LIMIT
+		{
+			get
+			{
+				return "android.intent.extra.sizeLimit";
+			}
+		}
+		public static global::java.lang.String EXTRA_DURATION_LIMIT
+		{
+			get
+			{
+				return "android.intent.extra.durationLimit";
+			}
+		}
 		public static global::java.lang.String EXTRA_OUTPUT
 		{
 			get
 			{
 				return "output";
+			}
+		}
+		public static global::java.lang.String UNKNOWN_STRING
+		{
+			get
+			{
+				return "<unknown>";
 			}
 		}
 		public static global::java.lang.String MEDIA_SCANNER_VOLUME
@@ -2067,8 +2158,8 @@ namespace android.provider
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.provider.MediaStore.staticClass = @__class;
-			global::android.provider.MediaStore._getMediaScannerUri6310 = @__env.GetStaticMethodID(global::android.provider.MediaStore.staticClass, "getMediaScannerUri", "()Landroid/net/Uri;");
-			global::android.provider.MediaStore._MediaStore6311 = @__env.GetMethodID(global::android.provider.MediaStore.staticClass, "<init>", "()V");
+			global::android.provider.MediaStore._getMediaScannerUri6897 = @__env.GetStaticMethodID(global::android.provider.MediaStore.staticClass, "getMediaScannerUri", "()Landroid/net/Uri;");
+			global::android.provider.MediaStore._MediaStore6898 = @__env.GetMethodID(global::android.provider.MediaStore.staticClass, "<init>", "()V");
 		}
 	}
 }

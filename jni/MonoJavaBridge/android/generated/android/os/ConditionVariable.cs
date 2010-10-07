@@ -18,63 +18,63 @@ namespace android.os
 		protected ConditionVariable(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _close5474;
+		internal static global::net.sf.jni4net.jni.MethodId _close6012;
 		public virtual void close() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.ConditionVariable._close5474);
+				@__env.CallVoidMethod(this, global::android.os.ConditionVariable._close6012);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._close5474);
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._close6012);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _open5475;
+		internal static global::net.sf.jni4net.jni.MethodId _open6013;
 		public virtual void open() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.ConditionVariable._open5475);
+				@__env.CallVoidMethod(this, global::android.os.ConditionVariable._open6013);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._open5475);
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._open6013);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _block5476;
+		internal static global::net.sf.jni4net.jni.MethodId _block6014;
 		public virtual void block() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.ConditionVariable._block5476);
+				@__env.CallVoidMethod(this, global::android.os.ConditionVariable._block6014);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._block5476);
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._block6014);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _block5477;
+		internal static global::net.sf.jni4net.jni.MethodId _block6015;
 		public virtual bool block(long arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.os.ConditionVariable._block5477, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this, global::android.os.ConditionVariable._block6015, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._block5477, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._block6015, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ConditionVariable5478;
+		internal static global::net.sf.jni4net.jni.MethodId _ConditionVariable6016;
 		public ConditionVariable()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._ConditionVariable5478, this);
+			@__env.NewObject(android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._ConditionVariable6016, this);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ConditionVariable5479;
+		internal static global::net.sf.jni4net.jni.MethodId _ConditionVariable6017;
 		public ConditionVariable(bool arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._ConditionVariable5479, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			@__env.NewObject(android.os.ConditionVariable.staticClass, global::android.os.ConditionVariable._ConditionVariable6017, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.os.ConditionVariable.staticClass = @__class;
-			global::android.os.ConditionVariable._close5474 = @__env.GetMethodID(global::android.os.ConditionVariable.staticClass, "close", "()V");
-			global::android.os.ConditionVariable._open5475 = @__env.GetMethodID(global::android.os.ConditionVariable.staticClass, "open", "()V");
-			global::android.os.ConditionVariable._block5476 = @__env.GetMethodID(global::android.os.ConditionVariable.staticClass, "block", "()V");
-			global::android.os.ConditionVariable._block5477 = @__env.GetMethodID(global::android.os.ConditionVariable.staticClass, "block", "(J)Z");
-			global::android.os.ConditionVariable._ConditionVariable5478 = @__env.GetMethodID(global::android.os.ConditionVariable.staticClass, "<init>", "()V");
-			global::android.os.ConditionVariable._ConditionVariable5479 = @__env.GetMethodID(global::android.os.ConditionVariable.staticClass, "<init>", "(Z)V");
+			global::android.os.ConditionVariable._close6012 = @__env.GetMethodID(global::android.os.ConditionVariable.staticClass, "close", "()V");
+			global::android.os.ConditionVariable._open6013 = @__env.GetMethodID(global::android.os.ConditionVariable.staticClass, "open", "()V");
+			global::android.os.ConditionVariable._block6014 = @__env.GetMethodID(global::android.os.ConditionVariable.staticClass, "block", "()V");
+			global::android.os.ConditionVariable._block6015 = @__env.GetMethodID(global::android.os.ConditionVariable.staticClass, "block", "(J)Z");
+			global::android.os.ConditionVariable._ConditionVariable6016 = @__env.GetMethodID(global::android.os.ConditionVariable.staticClass, "<init>", "()V");
+			global::android.os.ConditionVariable._ConditionVariable6017 = @__env.GetMethodID(global::android.os.ConditionVariable.staticClass, "<init>", "(Z)V");
 		}
 	}
 }

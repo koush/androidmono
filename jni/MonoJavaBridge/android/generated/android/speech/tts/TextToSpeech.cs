@@ -36,11 +36,11 @@ namespace android.speech.tts
 			protected Engine(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _Engine6416;
+			internal static global::net.sf.jni4net.jni.MethodId _Engine7037;
 			public Engine(android.speech.tts.TextToSpeech arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.speech.tts.TextToSpeech.Engine.staticClass, global::android.speech.tts.TextToSpeech.Engine._Engine6416, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.NewObject(android.speech.tts.TextToSpeech.Engine.staticClass, global::android.speech.tts.TextToSpeech.Engine._Engine7037, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			}
 			public static int DEFAULT_STREAM
 			{
@@ -126,6 +126,27 @@ namespace android.speech.tts
 					return "dataFilesInfo";
 				}
 			}
+			public static global::java.lang.String EXTRA_AVAILABLE_VOICES
+			{
+				get
+				{
+					return "availableVoices";
+				}
+			}
+			public static global::java.lang.String EXTRA_UNAVAILABLE_VOICES
+			{
+				get
+				{
+					return "unavailableVoices";
+				}
+			}
+			public static global::java.lang.String EXTRA_CHECK_VOICE_DATA_FOR
+			{
+				get
+				{
+					return "checkVoiceDataFor";
+				}
+			}
 			public static global::java.lang.String EXTRA_TTS_DATA_INSTALLED
 			{
 				get
@@ -150,7 +171,7 @@ namespace android.speech.tts
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.speech.tts.TextToSpeech.Engine.staticClass = @__class;
-				global::android.speech.tts.TextToSpeech.Engine._Engine6416 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.Engine.staticClass, "<init>", "(Landroid/speech/tts/TextToSpeech;)V");
+				global::android.speech.tts.TextToSpeech.Engine._Engine7037 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.Engine.staticClass, "<init>", "(Landroid/speech/tts/TextToSpeech;)V");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
@@ -185,19 +206,19 @@ namespace android.speech.tts
 			internal __OnInitListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onInit6417;
+			internal static global::net.sf.jni4net.jni.MethodId _onInit7038;
 			 void android.speech.tts.TextToSpeech.OnInitListener.onInit(int arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.speech.tts.TextToSpeech.__OnInitListener._onInit6417, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					@__env.CallVoidMethod(this, global::android.speech.tts.TextToSpeech.__OnInitListener._onInit7038, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.speech.tts.TextToSpeech.__OnInitListener.staticClass, global::android.speech.tts.TextToSpeech.__OnInitListener._onInit6417, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					@__env.CallNonVirtualVoidMethod(this, global::android.speech.tts.TextToSpeech.__OnInitListener.staticClass, global::android.speech.tts.TextToSpeech.__OnInitListener._onInit7038, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			}
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.speech.tts.TextToSpeech.__OnInitListener.staticClass = @__class;
-				global::android.speech.tts.TextToSpeech.__OnInitListener._onInit6417 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.__OnInitListener.staticClass, "android.speech.tts.TextToSpeech.OnInitListener.onInit", "(I)V");
+				global::android.speech.tts.TextToSpeech.__OnInitListener._onInit7038 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.__OnInitListener.staticClass, "android.speech.tts.TextToSpeech.OnInitListener.onInit", "(I)V");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaInterfaceAttribute()]
@@ -232,179 +253,206 @@ namespace android.speech.tts
 			internal __OnUtteranceCompletedListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _onUtteranceCompleted6418;
+			internal static global::net.sf.jni4net.jni.MethodId _onUtteranceCompleted7039;
 			 void android.speech.tts.TextToSpeech.OnUtteranceCompletedListener.onUtteranceCompleted(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.speech.tts.TextToSpeech.__OnUtteranceCompletedListener._onUtteranceCompleted6418, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					@__env.CallVoidMethod(this, global::android.speech.tts.TextToSpeech.__OnUtteranceCompletedListener._onUtteranceCompleted7039, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.speech.tts.TextToSpeech.__OnUtteranceCompletedListener.staticClass, global::android.speech.tts.TextToSpeech.__OnUtteranceCompletedListener._onUtteranceCompleted6418, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					@__env.CallNonVirtualVoidMethod(this, global::android.speech.tts.TextToSpeech.__OnUtteranceCompletedListener.staticClass, global::android.speech.tts.TextToSpeech.__OnUtteranceCompletedListener._onUtteranceCompleted7039, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			}
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.speech.tts.TextToSpeech.__OnUtteranceCompletedListener.staticClass = @__class;
-				global::android.speech.tts.TextToSpeech.__OnUtteranceCompletedListener._onUtteranceCompleted6418 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.__OnUtteranceCompletedListener.staticClass, "android.speech.tts.TextToSpeech.OnUtteranceCompletedListener.onUtteranceCompleted", "(Ljava/lang/String;)V");
+				global::android.speech.tts.TextToSpeech.__OnUtteranceCompletedListener._onUtteranceCompleted7039 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.__OnUtteranceCompletedListener.staticClass, "android.speech.tts.TextToSpeech.OnUtteranceCompletedListener.onUtteranceCompleted", "(Ljava/lang/String;)V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _shutdown6419;
+		internal static global::net.sf.jni4net.jni.MethodId _shutdown7040;
 		public virtual void shutdown() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.speech.tts.TextToSpeech._shutdown6419);
+				@__env.CallVoidMethod(this, global::android.speech.tts.TextToSpeech._shutdown7040);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._shutdown6419);
+				@__env.CallNonVirtualVoidMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._shutdown7040);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLanguage6420;
+		internal static global::net.sf.jni4net.jni.MethodId _getLanguage7041;
 		public virtual global::java.util.Locale getLanguage() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Locale>(@__env, @__env.CallObjectMethodPtr(this, global::android.speech.tts.TextToSpeech._getLanguage6420));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Locale>(@__env, @__env.CallObjectMethodPtr(this, global::android.speech.tts.TextToSpeech._getLanguage7041));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Locale>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._getLanguage6420));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.util.Locale>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._getLanguage7041));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _stop6421;
+		internal static global::net.sf.jni4net.jni.MethodId _stop7042;
 		public virtual int stop() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._stop6421);
+				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._stop7042);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._stop6421);
+				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._stop7042);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addSpeech6422;
-		public virtual int addSpeech(java.lang.String arg0, java.lang.String arg1) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._addSpeech6422, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
-			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._addSpeech6422, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _addSpeech6423;
+		internal static global::net.sf.jni4net.jni.MethodId _addSpeech7043;
 		public virtual int addSpeech(java.lang.String arg0, java.lang.String arg1, int arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._addSpeech6423, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._addSpeech7043, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._addSpeech6423, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._addSpeech7043, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addEarcon6424;
-		public virtual int addEarcon(java.lang.String arg0, java.lang.String arg1) 
+		internal static global::net.sf.jni4net.jni.MethodId _addSpeech7044;
+		public virtual int addSpeech(java.lang.String arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._addEarcon6424, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._addSpeech7044, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._addEarcon6424, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._addSpeech7044, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addEarcon6425;
+		internal static global::net.sf.jni4net.jni.MethodId _addEarcon7045;
 		public virtual int addEarcon(java.lang.String arg0, java.lang.String arg1, int arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._addEarcon6425, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._addEarcon7045, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._addEarcon6425, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._addEarcon7045, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _speak6426;
+		internal static global::net.sf.jni4net.jni.MethodId _addEarcon7046;
+		public virtual int addEarcon(java.lang.String arg0, java.lang.String arg1) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._addEarcon7046, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._addEarcon7046, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _speak7047;
 		public virtual int speak(java.lang.String arg0, int arg1, java.util.HashMap arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._speak6426, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._speak7047, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._speak6426, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._speak7047, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _playEarcon6427;
+		internal static global::net.sf.jni4net.jni.MethodId _playEarcon7048;
 		public virtual int playEarcon(java.lang.String arg0, int arg1, java.util.HashMap arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._playEarcon6427, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._playEarcon7048, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._playEarcon6427, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._playEarcon7048, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _playSilence6428;
+		internal static global::net.sf.jni4net.jni.MethodId _playSilence7049;
 		public virtual int playSilence(long arg0, int arg1, java.util.HashMap arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._playSilence6428, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._playSilence7049, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._playSilence6428, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._playSilence7049, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isSpeaking6429;
+		internal static global::net.sf.jni4net.jni.MethodId _isSpeaking7050;
 		public virtual bool isSpeaking() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.speech.tts.TextToSpeech._isSpeaking6429);
+				return @__env.CallBooleanMethod(this, global::android.speech.tts.TextToSpeech._isSpeaking7050);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._isSpeaking6429);
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._isSpeaking7050);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setSpeechRate6430;
+		internal static global::net.sf.jni4net.jni.MethodId _setSpeechRate7051;
 		public virtual int setSpeechRate(float arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._setSpeechRate6430, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._setSpeechRate7051, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._setSpeechRate6430, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._setSpeechRate7051, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setPitch6431;
+		internal static global::net.sf.jni4net.jni.MethodId _setPitch7052;
 		public virtual int setPitch(float arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._setPitch6431, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._setPitch7052, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._setPitch6431, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._setPitch7052, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setLanguage6432;
+		internal static global::net.sf.jni4net.jni.MethodId _setLanguage7053;
 		public virtual int setLanguage(java.util.Locale arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._setLanguage6432, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._setLanguage7053, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._setLanguage6432, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._setLanguage7053, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isLanguageAvailable6433;
+		internal static global::net.sf.jni4net.jni.MethodId _isLanguageAvailable7054;
 		public virtual int isLanguageAvailable(java.util.Locale arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._isLanguageAvailable6433, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._isLanguageAvailable7054, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._isLanguageAvailable6433, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._isLanguageAvailable7054, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _synthesizeToFile6434;
+		internal static global::net.sf.jni4net.jni.MethodId _synthesizeToFile7055;
 		public virtual int synthesizeToFile(java.lang.String arg0, java.util.HashMap arg1, java.lang.String arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._synthesizeToFile6434, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._synthesizeToFile7055, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._synthesizeToFile6434, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._synthesizeToFile7055, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setOnUtteranceCompletedListener6435;
+		internal static global::net.sf.jni4net.jni.MethodId _setOnUtteranceCompletedListener7056;
 		public virtual int setOnUtteranceCompletedListener(android.speech.tts.TextToSpeech.OnUtteranceCompletedListener arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._setOnUtteranceCompletedListener6435, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._setOnUtteranceCompletedListener7056, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._setOnUtteranceCompletedListener6435, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._setOnUtteranceCompletedListener7056, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _TextToSpeech6436;
+		internal static global::net.sf.jni4net.jni.MethodId _setEngineByPackageName7057;
+		public virtual int setEngineByPackageName(java.lang.String arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.speech.tts.TextToSpeech._setEngineByPackageName7057, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._setEngineByPackageName7057, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _getDefaultEngine7058;
+		public virtual global::java.lang.String getDefaultEngine() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.speech.tts.TextToSpeech._getDefaultEngine7058));
+			else
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._getDefaultEngine7058));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _areDefaultsEnforced7059;
+		public virtual bool areDefaultsEnforced() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallBooleanMethod(this, global::android.speech.tts.TextToSpeech._areDefaultsEnforced7059);
+			else
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._areDefaultsEnforced7059);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _TextToSpeech7060;
 		public TextToSpeech(android.content.Context arg0, android.speech.tts.TextToSpeech.OnInitListener arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._TextToSpeech6436, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			@__env.NewObject(android.speech.tts.TextToSpeech.staticClass, global::android.speech.tts.TextToSpeech._TextToSpeech7060, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
 		public static int SUCCESS
 		{
@@ -479,24 +527,27 @@ namespace android.speech.tts
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.speech.tts.TextToSpeech.staticClass = @__class;
-			global::android.speech.tts.TextToSpeech._shutdown6419 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "shutdown", "()V");
-			global::android.speech.tts.TextToSpeech._getLanguage6420 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "getLanguage", "()Ljava/util/Locale;");
-			global::android.speech.tts.TextToSpeech._stop6421 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "stop", "()I");
-			global::android.speech.tts.TextToSpeech._addSpeech6422 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "addSpeech", "(Ljava/lang/String;Ljava/lang/String;)I");
-			global::android.speech.tts.TextToSpeech._addSpeech6423 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "addSpeech", "(Ljava/lang/String;Ljava/lang/String;I)I");
-			global::android.speech.tts.TextToSpeech._addEarcon6424 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "addEarcon", "(Ljava/lang/String;Ljava/lang/String;)I");
-			global::android.speech.tts.TextToSpeech._addEarcon6425 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "addEarcon", "(Ljava/lang/String;Ljava/lang/String;I)I");
-			global::android.speech.tts.TextToSpeech._speak6426 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "speak", "(Ljava/lang/String;ILjava/util/HashMap;)I");
-			global::android.speech.tts.TextToSpeech._playEarcon6427 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "playEarcon", "(Ljava/lang/String;ILjava/util/HashMap;)I");
-			global::android.speech.tts.TextToSpeech._playSilence6428 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "playSilence", "(JILjava/util/HashMap;)I");
-			global::android.speech.tts.TextToSpeech._isSpeaking6429 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "isSpeaking", "()Z");
-			global::android.speech.tts.TextToSpeech._setSpeechRate6430 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "setSpeechRate", "(F)I");
-			global::android.speech.tts.TextToSpeech._setPitch6431 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "setPitch", "(F)I");
-			global::android.speech.tts.TextToSpeech._setLanguage6432 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "setLanguage", "(Ljava/util/Locale;)I");
-			global::android.speech.tts.TextToSpeech._isLanguageAvailable6433 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "isLanguageAvailable", "(Ljava/util/Locale;)I");
-			global::android.speech.tts.TextToSpeech._synthesizeToFile6434 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "synthesizeToFile", "(Ljava/lang/String;Ljava/util/HashMap;Ljava/lang/String;)I");
-			global::android.speech.tts.TextToSpeech._setOnUtteranceCompletedListener6435 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "setOnUtteranceCompletedListener", "(Landroid/speech/tts/TextToSpeech$OnUtteranceCompletedListener;)I");
-			global::android.speech.tts.TextToSpeech._TextToSpeech6436 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "<init>", "(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;)V");
+			global::android.speech.tts.TextToSpeech._shutdown7040 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "shutdown", "()V");
+			global::android.speech.tts.TextToSpeech._getLanguage7041 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "getLanguage", "()Ljava/util/Locale;");
+			global::android.speech.tts.TextToSpeech._stop7042 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "stop", "()I");
+			global::android.speech.tts.TextToSpeech._addSpeech7043 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "addSpeech", "(Ljava/lang/String;Ljava/lang/String;I)I");
+			global::android.speech.tts.TextToSpeech._addSpeech7044 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "addSpeech", "(Ljava/lang/String;Ljava/lang/String;)I");
+			global::android.speech.tts.TextToSpeech._addEarcon7045 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "addEarcon", "(Ljava/lang/String;Ljava/lang/String;I)I");
+			global::android.speech.tts.TextToSpeech._addEarcon7046 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "addEarcon", "(Ljava/lang/String;Ljava/lang/String;)I");
+			global::android.speech.tts.TextToSpeech._speak7047 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "speak", "(Ljava/lang/String;ILjava/util/HashMap;)I");
+			global::android.speech.tts.TextToSpeech._playEarcon7048 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "playEarcon", "(Ljava/lang/String;ILjava/util/HashMap;)I");
+			global::android.speech.tts.TextToSpeech._playSilence7049 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "playSilence", "(JILjava/util/HashMap;)I");
+			global::android.speech.tts.TextToSpeech._isSpeaking7050 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "isSpeaking", "()Z");
+			global::android.speech.tts.TextToSpeech._setSpeechRate7051 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "setSpeechRate", "(F)I");
+			global::android.speech.tts.TextToSpeech._setPitch7052 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "setPitch", "(F)I");
+			global::android.speech.tts.TextToSpeech._setLanguage7053 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "setLanguage", "(Ljava/util/Locale;)I");
+			global::android.speech.tts.TextToSpeech._isLanguageAvailable7054 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "isLanguageAvailable", "(Ljava/util/Locale;)I");
+			global::android.speech.tts.TextToSpeech._synthesizeToFile7055 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "synthesizeToFile", "(Ljava/lang/String;Ljava/util/HashMap;Ljava/lang/String;)I");
+			global::android.speech.tts.TextToSpeech._setOnUtteranceCompletedListener7056 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "setOnUtteranceCompletedListener", "(Landroid/speech/tts/TextToSpeech$OnUtteranceCompletedListener;)I");
+			global::android.speech.tts.TextToSpeech._setEngineByPackageName7057 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "setEngineByPackageName", "(Ljava/lang/String;)I");
+			global::android.speech.tts.TextToSpeech._getDefaultEngine7058 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "getDefaultEngine", "()Ljava/lang/String;");
+			global::android.speech.tts.TextToSpeech._areDefaultsEnforced7059 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "areDefaultsEnforced", "()Z");
+			global::android.speech.tts.TextToSpeech._TextToSpeech7060 = @__env.GetMethodID(global::android.speech.tts.TextToSpeech.staticClass, "<init>", "(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;)V");
 		}
 	}
 }

@@ -18,11 +18,11 @@ namespace android.view
 		protected SoundEffectConstants(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getContantForFocusDirection7994;
+		internal static global::net.sf.jni4net.jni.MethodId _getContantForFocusDirection8689;
 		public static int getContantForFocusDirection(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.view.SoundEffectConstants.staticClass, global::android.view.SoundEffectConstants._getContantForFocusDirection7994, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			return @__env.CallStaticIntMethod(android.view.SoundEffectConstants.staticClass, global::android.view.SoundEffectConstants._getContantForFocusDirection8689, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
 		public static int CLICK
 		{
@@ -62,7 +62,7 @@ namespace android.view
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.view.SoundEffectConstants.staticClass = @__class;
-			global::android.view.SoundEffectConstants._getContantForFocusDirection7994 = @__env.GetStaticMethodID(global::android.view.SoundEffectConstants.staticClass, "getContantForFocusDirection", "(I)I");
+			global::android.view.SoundEffectConstants._getContantForFocusDirection8689 = @__env.GetStaticMethodID(global::android.view.SoundEffectConstants.staticClass, "getContantForFocusDirection", "(I)I");
 		}
 	}
 }

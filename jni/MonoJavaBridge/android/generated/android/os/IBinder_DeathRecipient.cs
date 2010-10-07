@@ -32,19 +32,19 @@ namespace android.os
 		internal __IBinder_DeathRecipient(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _binderDied5618;
+		internal static global::net.sf.jni4net.jni.MethodId _binderDied6191;
 		 void android.os.IBinder_DeathRecipient.binderDied() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.__IBinder_DeathRecipient._binderDied5618);
+				@__env.CallVoidMethod(this, global::android.os.__IBinder_DeathRecipient._binderDied6191);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.__IBinder_DeathRecipient.staticClass, global::android.os.__IBinder_DeathRecipient._binderDied5618);
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.__IBinder_DeathRecipient.staticClass, global::android.os.__IBinder_DeathRecipient._binderDied6191);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.os.__IBinder_DeathRecipient.staticClass = @__class;
-			global::android.os.__IBinder_DeathRecipient._binderDied5618 = @__env.GetMethodID(global::android.os.__IBinder_DeathRecipient.staticClass, "android.os.IBinder_DeathRecipient.binderDied", "()V");
+			global::android.os.__IBinder_DeathRecipient._binderDied6191 = @__env.GetMethodID(global::android.os.__IBinder_DeathRecipient.staticClass, "android.os.IBinder_DeathRecipient.binderDied", "()V");
 		}
 	}
 }

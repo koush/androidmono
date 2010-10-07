@@ -18,40 +18,40 @@ namespace android.view.inputmethod
 		protected EditorInfo(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dump9058;
+		internal static global::net.sf.jni4net.jni.MethodId _dump9765;
 		public virtual void dump(android.util.Printer arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.inputmethod.EditorInfo._dump9058, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this, global::android.view.inputmethod.EditorInfo._dump9765, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, global::android.view.inputmethod.EditorInfo._dump9058, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, global::android.view.inputmethod.EditorInfo._dump9765, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel9059;
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel9766;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.inputmethod.EditorInfo._writeToParcel9059, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.view.inputmethod.EditorInfo._writeToParcel9766, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, global::android.view.inputmethod.EditorInfo._writeToParcel9059, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, global::android.view.inputmethod.EditorInfo._writeToParcel9766, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents9060;
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents9767;
 		public virtual int describeContents() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.inputmethod.EditorInfo._describeContents9060);
+				return @__env.CallIntMethod(this, global::android.view.inputmethod.EditorInfo._describeContents9767);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, global::android.view.inputmethod.EditorInfo._describeContents9060);
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.inputmethod.EditorInfo.staticClass, global::android.view.inputmethod.EditorInfo._describeContents9767);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _EditorInfo9061;
+		internal static global::net.sf.jni4net.jni.MethodId _EditorInfo9768;
 		public EditorInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.inputmethod.EditorInfo.staticClass, global::android.view.inputmethod.EditorInfo._EditorInfo9061, this);
+			@__env.NewObject(android.view.inputmethod.EditorInfo.staticClass, global::android.view.inputmethod.EditorInfo._EditorInfo9768, this);
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _inputType9062;
+		internal static global::net.sf.jni4net.jni.FieldId _inputType9769;
 		public int inputType
 		{
 			get
@@ -146,7 +146,7 @@ namespace android.view.inputmethod
 				return 0;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _imeOptions9063;
+		internal static global::net.sf.jni4net.jni.FieldId _imeOptions9770;
 		public int imeOptions
 		{
 			get
@@ -157,7 +157,7 @@ namespace android.view.inputmethod
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _privateImeOptions9064;
+		internal static global::net.sf.jni4net.jni.FieldId _privateImeOptions9771;
 		public global::java.lang.String privateImeOptions
 		{
 			get
@@ -168,7 +168,7 @@ namespace android.view.inputmethod
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _actionLabel9065;
+		internal static global::net.sf.jni4net.jni.FieldId _actionLabel9772;
 		public global::java.lang.CharSequence actionLabel
 		{
 			get
@@ -179,7 +179,7 @@ namespace android.view.inputmethod
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _actionId9066;
+		internal static global::net.sf.jni4net.jni.FieldId _actionId9773;
 		public int actionId
 		{
 			get
@@ -190,7 +190,7 @@ namespace android.view.inputmethod
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _initialSelStart9067;
+		internal static global::net.sf.jni4net.jni.FieldId _initialSelStart9774;
 		public int initialSelStart
 		{
 			get
@@ -201,7 +201,7 @@ namespace android.view.inputmethod
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _initialSelEnd9068;
+		internal static global::net.sf.jni4net.jni.FieldId _initialSelEnd9775;
 		public int initialSelEnd
 		{
 			get
@@ -212,7 +212,7 @@ namespace android.view.inputmethod
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _initialCapsMode9069;
+		internal static global::net.sf.jni4net.jni.FieldId _initialCapsMode9776;
 		public int initialCapsMode
 		{
 			get
@@ -223,7 +223,7 @@ namespace android.view.inputmethod
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _hintText9070;
+		internal static global::net.sf.jni4net.jni.FieldId _hintText9777;
 		public global::java.lang.CharSequence hintText
 		{
 			get
@@ -234,7 +234,7 @@ namespace android.view.inputmethod
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _label9071;
+		internal static global::net.sf.jni4net.jni.FieldId _label9778;
 		public global::java.lang.CharSequence label
 		{
 			get
@@ -245,7 +245,7 @@ namespace android.view.inputmethod
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _packageName9072;
+		internal static global::net.sf.jni4net.jni.FieldId _packageName9779;
 		public global::java.lang.String packageName
 		{
 			get
@@ -256,7 +256,7 @@ namespace android.view.inputmethod
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _fieldId9073;
+		internal static global::net.sf.jni4net.jni.FieldId _fieldId9780;
 		public int fieldId
 		{
 			get
@@ -267,7 +267,7 @@ namespace android.view.inputmethod
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _fieldName9074;
+		internal static global::net.sf.jni4net.jni.FieldId _fieldName9781;
 		public global::java.lang.String fieldName
 		{
 			get
@@ -278,7 +278,7 @@ namespace android.view.inputmethod
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _extras9075;
+		internal static global::net.sf.jni4net.jni.FieldId _extras9782;
 		public global::android.os.Bundle extras
 		{
 			get
@@ -289,7 +289,7 @@ namespace android.view.inputmethod
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR9076;
+		internal static global::net.sf.jni4net.jni.FieldId _CREATOR9783;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -300,10 +300,10 @@ namespace android.view.inputmethod
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.view.inputmethod.EditorInfo.staticClass = @__class;
-			global::android.view.inputmethod.EditorInfo._dump9058 = @__env.GetMethodID(global::android.view.inputmethod.EditorInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V");
-			global::android.view.inputmethod.EditorInfo._writeToParcel9059 = @__env.GetMethodID(global::android.view.inputmethod.EditorInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.view.inputmethod.EditorInfo._describeContents9060 = @__env.GetMethodID(global::android.view.inputmethod.EditorInfo.staticClass, "describeContents", "()I");
-			global::android.view.inputmethod.EditorInfo._EditorInfo9061 = @__env.GetMethodID(global::android.view.inputmethod.EditorInfo.staticClass, "<init>", "()V");
+			global::android.view.inputmethod.EditorInfo._dump9765 = @__env.GetMethodID(global::android.view.inputmethod.EditorInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V");
+			global::android.view.inputmethod.EditorInfo._writeToParcel9766 = @__env.GetMethodID(global::android.view.inputmethod.EditorInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.view.inputmethod.EditorInfo._describeContents9767 = @__env.GetMethodID(global::android.view.inputmethod.EditorInfo.staticClass, "describeContents", "()I");
+			global::android.view.inputmethod.EditorInfo._EditorInfo9768 = @__env.GetMethodID(global::android.view.inputmethod.EditorInfo.staticClass, "<init>", "()V");
 		}
 	}
 }

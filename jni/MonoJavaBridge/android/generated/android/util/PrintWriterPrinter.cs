@@ -18,26 +18,26 @@ namespace android.util
 		protected PrintWriterPrinter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _println7595;
+		internal static global::net.sf.jni4net.jni.MethodId _println8269;
 		public virtual void println(java.lang.String arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.PrintWriterPrinter._println7595, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.util.PrintWriterPrinter._println8269, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.PrintWriterPrinter.staticClass, global::android.util.PrintWriterPrinter._println7595, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.util.PrintWriterPrinter.staticClass, global::android.util.PrintWriterPrinter._println8269, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PrintWriterPrinter7596;
+		internal static global::net.sf.jni4net.jni.MethodId _PrintWriterPrinter8270;
 		public PrintWriterPrinter(java.io.PrintWriter arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.util.PrintWriterPrinter.staticClass, global::android.util.PrintWriterPrinter._PrintWriterPrinter7596, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.util.PrintWriterPrinter.staticClass, global::android.util.PrintWriterPrinter._PrintWriterPrinter8270, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.util.PrintWriterPrinter.staticClass = @__class;
-			global::android.util.PrintWriterPrinter._println7595 = @__env.GetMethodID(global::android.util.PrintWriterPrinter.staticClass, "println", "(Ljava/lang/String;)V");
-			global::android.util.PrintWriterPrinter._PrintWriterPrinter7596 = @__env.GetMethodID(global::android.util.PrintWriterPrinter.staticClass, "<init>", "(Ljava/io/PrintWriter;)V");
+			global::android.util.PrintWriterPrinter._println8269 = @__env.GetMethodID(global::android.util.PrintWriterPrinter.staticClass, "println", "(Ljava/lang/String;)V");
+			global::android.util.PrintWriterPrinter._PrintWriterPrinter8270 = @__env.GetMethodID(global::android.util.PrintWriterPrinter.staticClass, "<init>", "(Ljava/io/PrintWriter;)V");
 		}
 	}
 }

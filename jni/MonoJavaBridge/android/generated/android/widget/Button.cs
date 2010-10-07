@@ -18,30 +18,30 @@ namespace android.widget
 		protected Button(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Button9980;
+		internal static global::net.sf.jni4net.jni.MethodId _Button10682;
 		public Button(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.Button.staticClass, global::android.widget.Button._Button9980, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.widget.Button.staticClass, global::android.widget.Button._Button10682, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Button9981;
+		internal static global::net.sf.jni4net.jni.MethodId _Button10683;
 		public Button(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.Button.staticClass, global::android.widget.Button._Button9981, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			@__env.NewObject(android.widget.Button.staticClass, global::android.widget.Button._Button10683, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Button9982;
+		internal static global::net.sf.jni4net.jni.MethodId _Button10684;
 		public Button(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.Button.staticClass, global::android.widget.Button._Button9982, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			@__env.NewObject(android.widget.Button.staticClass, global::android.widget.Button._Button10684, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.widget.Button.staticClass = @__class;
-			global::android.widget.Button._Button9980 = @__env.GetMethodID(global::android.widget.Button.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::android.widget.Button._Button9981 = @__env.GetMethodID(global::android.widget.Button.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::android.widget.Button._Button9982 = @__env.GetMethodID(global::android.widget.Button.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::android.widget.Button._Button10682 = @__env.GetMethodID(global::android.widget.Button.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.widget.Button._Button10683 = @__env.GetMethodID(global::android.widget.Button.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.widget.Button._Button10684 = @__env.GetMethodID(global::android.widget.Button.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 		}
 	}
 }

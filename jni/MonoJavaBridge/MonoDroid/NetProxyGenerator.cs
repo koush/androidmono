@@ -15,6 +15,7 @@ namespace MonoDroid
         static Dictionary<string, System.Type> myJniTypes = new Dictionary<string, System.Type>();
         
         static readonly string[] myKeywords = new string[] {
+            "namespace",
             "in",
             "out",
             "checked",

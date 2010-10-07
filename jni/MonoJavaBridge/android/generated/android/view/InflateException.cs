@@ -18,37 +18,37 @@ namespace android.view
 		protected InflateException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _InflateException7782;
+		internal static global::net.sf.jni4net.jni.MethodId _InflateException8458;
 		public InflateException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.InflateException.staticClass, global::android.view.InflateException._InflateException7782, this);
+			@__env.NewObject(android.view.InflateException.staticClass, global::android.view.InflateException._InflateException8458, this);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _InflateException7783;
+		internal static global::net.sf.jni4net.jni.MethodId _InflateException8459;
 		public InflateException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.InflateException.staticClass, global::android.view.InflateException._InflateException7783, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			@__env.NewObject(android.view.InflateException.staticClass, global::android.view.InflateException._InflateException8459, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _InflateException7784;
+		internal static global::net.sf.jni4net.jni.MethodId _InflateException8460;
 		public InflateException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.InflateException.staticClass, global::android.view.InflateException._InflateException7784, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.view.InflateException.staticClass, global::android.view.InflateException._InflateException8460, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _InflateException7785;
+		internal static global::net.sf.jni4net.jni.MethodId _InflateException8461;
 		public InflateException(java.lang.Throwable arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.InflateException.staticClass, global::android.view.InflateException._InflateException7785, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.view.InflateException.staticClass, global::android.view.InflateException._InflateException8461, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.view.InflateException.staticClass = @__class;
-			global::android.view.InflateException._InflateException7782 = @__env.GetMethodID(global::android.view.InflateException.staticClass, "<init>", "()V");
-			global::android.view.InflateException._InflateException7783 = @__env.GetMethodID(global::android.view.InflateException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::android.view.InflateException._InflateException7784 = @__env.GetMethodID(global::android.view.InflateException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::android.view.InflateException._InflateException7785 = @__env.GetMethodID(global::android.view.InflateException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+			global::android.view.InflateException._InflateException8458 = @__env.GetMethodID(global::android.view.InflateException.staticClass, "<init>", "()V");
+			global::android.view.InflateException._InflateException8459 = @__env.GetMethodID(global::android.view.InflateException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+			global::android.view.InflateException._InflateException8460 = @__env.GetMethodID(global::android.view.InflateException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::android.view.InflateException._InflateException8461 = @__env.GetMethodID(global::android.view.InflateException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 		}
 	}
 }

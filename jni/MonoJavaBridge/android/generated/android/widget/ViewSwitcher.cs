@@ -50,78 +50,78 @@ namespace android.widget
 			internal __ViewFactory(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _makeView11322;
+			internal static global::net.sf.jni4net.jni.MethodId _makeView12041;
 			 global::android.view.View android.widget.ViewSwitcher.ViewFactory.makeView() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ViewSwitcher.__ViewFactory._makeView11322));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ViewSwitcher.__ViewFactory._makeView12041));
 				else
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ViewSwitcher.__ViewFactory.staticClass, global::android.widget.ViewSwitcher.__ViewFactory._makeView11322));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ViewSwitcher.__ViewFactory.staticClass, global::android.widget.ViewSwitcher.__ViewFactory._makeView12041));
 			}
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.widget.ViewSwitcher.__ViewFactory.staticClass = @__class;
-				global::android.widget.ViewSwitcher.__ViewFactory._makeView11322 = @__env.GetMethodID(global::android.widget.ViewSwitcher.__ViewFactory.staticClass, "android.widget.ViewSwitcher.ViewFactory.makeView", "()Landroid/view/View;");
+				global::android.widget.ViewSwitcher.__ViewFactory._makeView12041 = @__env.GetMethodID(global::android.widget.ViewSwitcher.__ViewFactory.staticClass, "android.widget.ViewSwitcher.ViewFactory.makeView", "()Landroid/view/View;");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _reset11323;
+		internal static global::net.sf.jni4net.jni.MethodId _reset12042;
 		public virtual void reset() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.ViewSwitcher._reset11323);
+				@__env.CallVoidMethod(this, global::android.widget.ViewSwitcher._reset12042);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._reset11323);
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._reset12042);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addView11324;
+		internal static global::net.sf.jni4net.jni.MethodId _addView12043;
 		public override void addView(android.view.View arg0, int arg1, android.view.ViewGroup.LayoutParams arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.ViewSwitcher._addView11324, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallVoidMethod(this, global::android.widget.ViewSwitcher._addView12043, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._addView11324, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._addView12043, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setFactory11325;
+		internal static global::net.sf.jni4net.jni.MethodId _setFactory12044;
 		public virtual void setFactory(android.widget.ViewSwitcher.ViewFactory arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.ViewSwitcher._setFactory11325, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.widget.ViewSwitcher._setFactory12044, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._setFactory11325, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._setFactory12044, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNextView11326;
+		internal static global::net.sf.jni4net.jni.MethodId _getNextView12045;
 		public virtual global::android.view.View getNextView() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ViewSwitcher._getNextView11326));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.ViewSwitcher._getNextView12045));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._getNextView11326));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._getNextView12045));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ViewSwitcher11327;
+		internal static global::net.sf.jni4net.jni.MethodId _ViewSwitcher12046;
 		public ViewSwitcher(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._ViewSwitcher11327, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._ViewSwitcher12046, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ViewSwitcher11328;
+		internal static global::net.sf.jni4net.jni.MethodId _ViewSwitcher12047;
 		public ViewSwitcher(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._ViewSwitcher11328, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			@__env.NewObject(android.widget.ViewSwitcher.staticClass, global::android.widget.ViewSwitcher._ViewSwitcher12047, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.widget.ViewSwitcher.staticClass = @__class;
-			global::android.widget.ViewSwitcher._reset11323 = @__env.GetMethodID(global::android.widget.ViewSwitcher.staticClass, "reset", "()V");
-			global::android.widget.ViewSwitcher._addView11324 = @__env.GetMethodID(global::android.widget.ViewSwitcher.staticClass, "addView", "(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V");
-			global::android.widget.ViewSwitcher._setFactory11325 = @__env.GetMethodID(global::android.widget.ViewSwitcher.staticClass, "setFactory", "(Landroid/widget/ViewSwitcher$ViewFactory;)V");
-			global::android.widget.ViewSwitcher._getNextView11326 = @__env.GetMethodID(global::android.widget.ViewSwitcher.staticClass, "getNextView", "()Landroid/view/View;");
-			global::android.widget.ViewSwitcher._ViewSwitcher11327 = @__env.GetMethodID(global::android.widget.ViewSwitcher.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::android.widget.ViewSwitcher._ViewSwitcher11328 = @__env.GetMethodID(global::android.widget.ViewSwitcher.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.widget.ViewSwitcher._reset12042 = @__env.GetMethodID(global::android.widget.ViewSwitcher.staticClass, "reset", "()V");
+			global::android.widget.ViewSwitcher._addView12043 = @__env.GetMethodID(global::android.widget.ViewSwitcher.staticClass, "addView", "(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V");
+			global::android.widget.ViewSwitcher._setFactory12044 = @__env.GetMethodID(global::android.widget.ViewSwitcher.staticClass, "setFactory", "(Landroid/widget/ViewSwitcher$ViewFactory;)V");
+			global::android.widget.ViewSwitcher._getNextView12045 = @__env.GetMethodID(global::android.widget.ViewSwitcher.staticClass, "getNextView", "()Landroid/view/View;");
+			global::android.widget.ViewSwitcher._ViewSwitcher12046 = @__env.GetMethodID(global::android.widget.ViewSwitcher.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.widget.ViewSwitcher._ViewSwitcher12047 = @__env.GetMethodID(global::android.widget.ViewSwitcher.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
 		}
 	}
 }

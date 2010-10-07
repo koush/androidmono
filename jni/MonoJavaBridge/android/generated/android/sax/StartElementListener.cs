@@ -32,19 +32,19 @@ namespace android.sax
 		internal __StartElementListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _start6391;
+		internal static global::net.sf.jni4net.jni.MethodId _start6980;
 		 void android.sax.StartElementListener.start(org.xml.sax.Attributes arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.sax.__StartElementListener._start6391, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.sax.__StartElementListener._start6980, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.sax.__StartElementListener.staticClass, global::android.sax.__StartElementListener._start6391, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.sax.__StartElementListener.staticClass, global::android.sax.__StartElementListener._start6980, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.sax.__StartElementListener.staticClass = @__class;
-			global::android.sax.__StartElementListener._start6391 = @__env.GetMethodID(global::android.sax.__StartElementListener.staticClass, "android.sax.StartElementListener.start", "(Lorg/xml/sax/Attributes;)V");
+			global::android.sax.__StartElementListener._start6980 = @__env.GetMethodID(global::android.sax.__StartElementListener.staticClass, "android.sax.StartElementListener.start", "(Lorg/xml/sax/Attributes;)V");
 		}
 	}
 }

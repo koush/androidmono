@@ -18,40 +18,40 @@ namespace android.widget
 		protected ImageButton(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onSetAlpha10347;
+		internal static global::net.sf.jni4net.jni.MethodId _onSetAlpha11054;
 		protected override bool onSetAlpha(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.ImageButton._onSetAlpha10347, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this, global::android.widget.ImageButton._onSetAlpha11054, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ImageButton.staticClass, global::android.widget.ImageButton._onSetAlpha10347, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ImageButton.staticClass, global::android.widget.ImageButton._onSetAlpha11054, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ImageButton10348;
+		internal static global::net.sf.jni4net.jni.MethodId _ImageButton11055;
 		public ImageButton(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.ImageButton.staticClass, global::android.widget.ImageButton._ImageButton10348, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.widget.ImageButton.staticClass, global::android.widget.ImageButton._ImageButton11055, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ImageButton10349;
+		internal static global::net.sf.jni4net.jni.MethodId _ImageButton11056;
 		public ImageButton(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.ImageButton.staticClass, global::android.widget.ImageButton._ImageButton10349, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			@__env.NewObject(android.widget.ImageButton.staticClass, global::android.widget.ImageButton._ImageButton11056, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ImageButton10350;
+		internal static global::net.sf.jni4net.jni.MethodId _ImageButton11057;
 		public ImageButton(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.ImageButton.staticClass, global::android.widget.ImageButton._ImageButton10350, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			@__env.NewObject(android.widget.ImageButton.staticClass, global::android.widget.ImageButton._ImageButton11057, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.widget.ImageButton.staticClass = @__class;
-			global::android.widget.ImageButton._onSetAlpha10347 = @__env.GetMethodID(global::android.widget.ImageButton.staticClass, "onSetAlpha", "(I)Z");
-			global::android.widget.ImageButton._ImageButton10348 = @__env.GetMethodID(global::android.widget.ImageButton.staticClass, "<init>", "(Landroid/content/Context;)V");
-			global::android.widget.ImageButton._ImageButton10349 = @__env.GetMethodID(global::android.widget.ImageButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::android.widget.ImageButton._ImageButton10350 = @__env.GetMethodID(global::android.widget.ImageButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::android.widget.ImageButton._onSetAlpha11054 = @__env.GetMethodID(global::android.widget.ImageButton.staticClass, "onSetAlpha", "(I)Z");
+			global::android.widget.ImageButton._ImageButton11055 = @__env.GetMethodID(global::android.widget.ImageButton.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.widget.ImageButton._ImageButton11056 = @__env.GetMethodID(global::android.widget.ImageButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.widget.ImageButton._ImageButton11057 = @__env.GetMethodID(global::android.widget.ImageButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
 		}
 	}
 }

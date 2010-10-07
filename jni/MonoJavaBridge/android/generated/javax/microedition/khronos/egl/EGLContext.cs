@@ -11,26 +11,26 @@ namespace javax.microedition.khronos.egl
 		protected EGLContext(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getGL13126;
+		internal static global::net.sf.jni4net.jni.MethodId _getGL13957;
 		public abstract global::javax.microedition.khronos.opengles.GL getGL();
-		internal static global::net.sf.jni4net.jni.MethodId _getEGL13127;
+		internal static global::net.sf.jni4net.jni.MethodId _getEGL13958;
 		public static global::javax.microedition.khronos.egl.EGL getEGL() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.FullJ2C<javax.microedition.khronos.egl.EGL>(@__env, @__env.CallStaticObjectMethodPtr(javax.microedition.khronos.egl.EGLContext.staticClass, global::javax.microedition.khronos.egl.EGLContext._getEGL13127));
+			return global::net.sf.jni4net.utils.Convertor.FullJ2C<javax.microedition.khronos.egl.EGL>(@__env, @__env.CallStaticObjectMethodPtr(javax.microedition.khronos.egl.EGLContext.staticClass, global::javax.microedition.khronos.egl.EGLContext._getEGL13958));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _EGLContext13128;
+		internal static global::net.sf.jni4net.jni.MethodId _EGLContext13959;
 		public EGLContext()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(javax.microedition.khronos.egl.EGLContext.staticClass, global::javax.microedition.khronos.egl.EGLContext._EGLContext13128, this);
+			@__env.NewObject(javax.microedition.khronos.egl.EGLContext.staticClass, global::javax.microedition.khronos.egl.EGLContext._EGLContext13959, this);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::javax.microedition.khronos.egl.EGLContext.staticClass = @__class;
-			global::javax.microedition.khronos.egl.EGLContext._getGL13126 = @__env.GetMethodID(global::javax.microedition.khronos.egl.EGLContext.staticClass, "getGL", "()Ljavax/microedition/khronos/opengles/GL;");
-			global::javax.microedition.khronos.egl.EGLContext._getEGL13127 = @__env.GetStaticMethodID(global::javax.microedition.khronos.egl.EGLContext.staticClass, "getEGL", "()Ljavax/microedition/khronos/egl/EGL;");
-			global::javax.microedition.khronos.egl.EGLContext._EGLContext13128 = @__env.GetMethodID(global::javax.microedition.khronos.egl.EGLContext.staticClass, "<init>", "()V");
+			global::javax.microedition.khronos.egl.EGLContext._getGL13957 = @__env.GetMethodID(global::javax.microedition.khronos.egl.EGLContext.staticClass, "getGL", "()Ljavax/microedition/khronos/opengles/GL;");
+			global::javax.microedition.khronos.egl.EGLContext._getEGL13958 = @__env.GetStaticMethodID(global::javax.microedition.khronos.egl.EGLContext.staticClass, "getEGL", "()Ljavax/microedition/khronos/egl/EGL;");
+			global::javax.microedition.khronos.egl.EGLContext._EGLContext13959 = @__env.GetMethodID(global::javax.microedition.khronos.egl.EGLContext.staticClass, "<init>", "()V");
 		}
 	}
 }

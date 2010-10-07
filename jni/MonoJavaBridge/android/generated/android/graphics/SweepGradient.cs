@@ -18,23 +18,23 @@ namespace android.graphics
 		protected SweepGradient(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SweepGradient3415;
+		internal static global::net.sf.jni4net.jni.MethodId _SweepGradient3614;
 		public SweepGradient(float arg0, float arg1, int[] arg2, float[] arg3)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.SweepGradient.staticClass, global::android.graphics.SweepGradient._SweepGradient3415, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3));
+			@__env.NewObject(android.graphics.SweepGradient.staticClass, global::android.graphics.SweepGradient._SweepGradient3614, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg2), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SweepGradient3416;
+		internal static global::net.sf.jni4net.jni.MethodId _SweepGradient3615;
 		public SweepGradient(float arg0, float arg1, int arg2, int arg3)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.SweepGradient.staticClass, global::android.graphics.SweepGradient._SweepGradient3416, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+			@__env.NewObject(android.graphics.SweepGradient.staticClass, global::android.graphics.SweepGradient._SweepGradient3615, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.graphics.SweepGradient.staticClass = @__class;
-			global::android.graphics.SweepGradient._SweepGradient3415 = @__env.GetMethodID(global::android.graphics.SweepGradient.staticClass, "<init>", "(FF[I[F)V");
-			global::android.graphics.SweepGradient._SweepGradient3416 = @__env.GetMethodID(global::android.graphics.SweepGradient.staticClass, "<init>", "(FFII)V");
+			global::android.graphics.SweepGradient._SweepGradient3614 = @__env.GetMethodID(global::android.graphics.SweepGradient.staticClass, "<init>", "(FF[I[F)V");
+			global::android.graphics.SweepGradient._SweepGradient3615 = @__env.GetMethodID(global::android.graphics.SweepGradient.staticClass, "<init>", "(FFII)V");
 		}
 	}
 }

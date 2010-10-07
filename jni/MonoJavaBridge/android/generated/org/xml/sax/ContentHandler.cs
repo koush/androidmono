@@ -42,119 +42,119 @@ namespace org.xml.sax
 		internal __ContentHandler(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _startElement13289;
+		internal static global::net.sf.jni4net.jni.MethodId _startElement14568;
 		 void org.xml.sax.ContentHandler.startElement(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, org.xml.sax.Attributes arg3) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._startElement13289, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3));
+				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._startElement14568, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._startElement13289, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3));
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._startElement14568, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _characters13290;
+		internal static global::net.sf.jni4net.jni.MethodId _characters14569;
 		 void org.xml.sax.ContentHandler.characters(char[] arg0, int arg1, int arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._characters13290, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._characters14569, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._characters13290, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._characters14569, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _endElement13291;
+		internal static global::net.sf.jni4net.jni.MethodId _endElement14570;
 		 void org.xml.sax.ContentHandler.endElement(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._endElement13291, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._endElement14570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._endElement13291, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._endElement14570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _startDocument13292;
+		internal static global::net.sf.jni4net.jni.MethodId _startDocument14571;
 		 void org.xml.sax.ContentHandler.startDocument() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._startDocument13292);
+				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._startDocument14571);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._startDocument13292);
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._startDocument14571);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _endDocument13293;
+		internal static global::net.sf.jni4net.jni.MethodId _endDocument14572;
 		 void org.xml.sax.ContentHandler.endDocument() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._endDocument13293);
+				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._endDocument14572);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._endDocument13293);
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._endDocument14572);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _startPrefixMapping13294;
+		internal static global::net.sf.jni4net.jni.MethodId _startPrefixMapping14573;
 		 void org.xml.sax.ContentHandler.startPrefixMapping(java.lang.String arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._startPrefixMapping13294, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._startPrefixMapping14573, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._startPrefixMapping13294, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._startPrefixMapping14573, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ignorableWhitespace13295;
+		internal static global::net.sf.jni4net.jni.MethodId _ignorableWhitespace14574;
 		 void org.xml.sax.ContentHandler.ignorableWhitespace(char[] arg0, int arg1, int arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._ignorableWhitespace13295, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._ignorableWhitespace14574, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._ignorableWhitespace13295, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._ignorableWhitespace14574, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _processingInstruction13296;
+		internal static global::net.sf.jni4net.jni.MethodId _processingInstruction14575;
 		 void org.xml.sax.ContentHandler.processingInstruction(java.lang.String arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._processingInstruction13296, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._processingInstruction14575, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._processingInstruction13296, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._processingInstruction14575, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setDocumentLocator13297;
+		internal static global::net.sf.jni4net.jni.MethodId _setDocumentLocator14576;
 		 void org.xml.sax.ContentHandler.setDocumentLocator(org.xml.sax.Locator arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._setDocumentLocator13297, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._setDocumentLocator14576, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._setDocumentLocator13297, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._setDocumentLocator14576, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _skippedEntity13298;
+		internal static global::net.sf.jni4net.jni.MethodId _skippedEntity14577;
 		 void org.xml.sax.ContentHandler.skippedEntity(java.lang.String arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._skippedEntity13298, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._skippedEntity14577, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._skippedEntity13298, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._skippedEntity14577, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _endPrefixMapping13299;
+		internal static global::net.sf.jni4net.jni.MethodId _endPrefixMapping14578;
 		 void org.xml.sax.ContentHandler.endPrefixMapping(java.lang.String arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._endPrefixMapping13299, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::org.xml.sax.__ContentHandler._endPrefixMapping14578, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._endPrefixMapping13299, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ContentHandler.staticClass, global::org.xml.sax.__ContentHandler._endPrefixMapping14578, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::org.xml.sax.__ContentHandler.staticClass = @__class;
-			global::org.xml.sax.__ContentHandler._startElement13289 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.startElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/xml/sax/Attributes;)V");
-			global::org.xml.sax.__ContentHandler._characters13290 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.characters", "([CII)V");
-			global::org.xml.sax.__ContentHandler._endElement13291 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.endElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.xml.sax.__ContentHandler._startDocument13292 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.startDocument", "()V");
-			global::org.xml.sax.__ContentHandler._endDocument13293 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.endDocument", "()V");
-			global::org.xml.sax.__ContentHandler._startPrefixMapping13294 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.startPrefixMapping", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.xml.sax.__ContentHandler._ignorableWhitespace13295 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.ignorableWhitespace", "([CII)V");
-			global::org.xml.sax.__ContentHandler._processingInstruction13296 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.processingInstruction", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.xml.sax.__ContentHandler._setDocumentLocator13297 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.setDocumentLocator", "(Lorg/xml/sax/Locator;)V");
-			global::org.xml.sax.__ContentHandler._skippedEntity13298 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.skippedEntity", "(Ljava/lang/String;)V");
-			global::org.xml.sax.__ContentHandler._endPrefixMapping13299 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.endPrefixMapping", "(Ljava/lang/String;)V");
+			global::org.xml.sax.__ContentHandler._startElement14568 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.startElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/xml/sax/Attributes;)V");
+			global::org.xml.sax.__ContentHandler._characters14569 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.characters", "([CII)V");
+			global::org.xml.sax.__ContentHandler._endElement14570 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.endElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+			global::org.xml.sax.__ContentHandler._startDocument14571 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.startDocument", "()V");
+			global::org.xml.sax.__ContentHandler._endDocument14572 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.endDocument", "()V");
+			global::org.xml.sax.__ContentHandler._startPrefixMapping14573 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.startPrefixMapping", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::org.xml.sax.__ContentHandler._ignorableWhitespace14574 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.ignorableWhitespace", "([CII)V");
+			global::org.xml.sax.__ContentHandler._processingInstruction14575 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.processingInstruction", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::org.xml.sax.__ContentHandler._setDocumentLocator14576 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.setDocumentLocator", "(Lorg/xml/sax/Locator;)V");
+			global::org.xml.sax.__ContentHandler._skippedEntity14577 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.skippedEntity", "(Ljava/lang/String;)V");
+			global::org.xml.sax.__ContentHandler._endPrefixMapping14578 = @__env.GetMethodID(global::org.xml.sax.__ContentHandler.staticClass, "org.xml.sax.ContentHandler.endPrefixMapping", "(Ljava/lang/String;)V");
 		}
 	}
 }

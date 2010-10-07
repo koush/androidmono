@@ -41,109 +41,109 @@ namespace java.text
 		internal __CharacterIterator(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clone12556;
+		internal static global::net.sf.jni4net.jni.MethodId _clone13384;
 		 global::java.lang.Object java.text.CharacterIterator.clone() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.__CharacterIterator._clone12556));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::java.text.__CharacterIterator._clone13384));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._clone12556));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._clone13384));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _next12557;
+		internal static global::net.sf.jni4net.jni.MethodId _next13385;
 		 char java.text.CharacterIterator.next() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._next12557);
+				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._next13385);
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._next12557);
+				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._next13385);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _previous12558;
+		internal static global::net.sf.jni4net.jni.MethodId _previous13386;
 		 char java.text.CharacterIterator.previous() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._previous12558);
+				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._previous13386);
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._previous12558);
+				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._previous13386);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getIndex12559;
+		internal static global::net.sf.jni4net.jni.MethodId _getIndex13387;
 		 int java.text.CharacterIterator.getIndex() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.text.__CharacterIterator._getIndex12559);
+				return @__env.CallIntMethod(this, global::java.text.__CharacterIterator._getIndex13387);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._getIndex12559);
+				return @__env.CallNonVirtualIntMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._getIndex13387);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _current12560;
+		internal static global::net.sf.jni4net.jni.MethodId _current13388;
 		 char java.text.CharacterIterator.current() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._current12560);
+				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._current13388);
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._current12560);
+				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._current13388);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setIndex12561;
+		internal static global::net.sf.jni4net.jni.MethodId _setIndex13389;
 		 char java.text.CharacterIterator.setIndex(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._setIndex12561, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._setIndex13389, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._setIndex12561, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._setIndex13389, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getBeginIndex12562;
+		internal static global::net.sf.jni4net.jni.MethodId _getBeginIndex13390;
 		 int java.text.CharacterIterator.getBeginIndex() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.text.__CharacterIterator._getBeginIndex12562);
+				return @__env.CallIntMethod(this, global::java.text.__CharacterIterator._getBeginIndex13390);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._getBeginIndex12562);
+				return @__env.CallNonVirtualIntMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._getBeginIndex13390);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getEndIndex12563;
+		internal static global::net.sf.jni4net.jni.MethodId _getEndIndex13391;
 		 int java.text.CharacterIterator.getEndIndex() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.text.__CharacterIterator._getEndIndex12563);
+				return @__env.CallIntMethod(this, global::java.text.__CharacterIterator._getEndIndex13391);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._getEndIndex12563);
+				return @__env.CallNonVirtualIntMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._getEndIndex13391);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _last12564;
+		internal static global::net.sf.jni4net.jni.MethodId _last13392;
 		 char java.text.CharacterIterator.last() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._last12564);
+				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._last13392);
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._last12564);
+				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._last13392);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _first12565;
+		internal static global::net.sf.jni4net.jni.MethodId _first13393;
 		 char java.text.CharacterIterator.first() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._first12565);
+				return @__env.CallCharMethod(this, global::java.text.__CharacterIterator._first13393);
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._first12565);
+				return @__env.CallNonVirtualCharMethod(this, global::java.text.__CharacterIterator.staticClass, global::java.text.__CharacterIterator._first13393);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.text.__CharacterIterator.staticClass = @__class;
-			global::java.text.__CharacterIterator._clone12556 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.clone", "()Ljava/lang/Object;");
-			global::java.text.__CharacterIterator._next12557 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.next", "()C");
-			global::java.text.__CharacterIterator._previous12558 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.previous", "()C");
-			global::java.text.__CharacterIterator._getIndex12559 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.getIndex", "()I");
-			global::java.text.__CharacterIterator._current12560 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.current", "()C");
-			global::java.text.__CharacterIterator._setIndex12561 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.setIndex", "(I)C");
-			global::java.text.__CharacterIterator._getBeginIndex12562 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.getBeginIndex", "()I");
-			global::java.text.__CharacterIterator._getEndIndex12563 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.getEndIndex", "()I");
-			global::java.text.__CharacterIterator._last12564 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.last", "()C");
-			global::java.text.__CharacterIterator._first12565 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.first", "()C");
+			global::java.text.__CharacterIterator._clone13384 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.clone", "()Ljava/lang/Object;");
+			global::java.text.__CharacterIterator._next13385 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.next", "()C");
+			global::java.text.__CharacterIterator._previous13386 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.previous", "()C");
+			global::java.text.__CharacterIterator._getIndex13387 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.getIndex", "()I");
+			global::java.text.__CharacterIterator._current13388 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.current", "()C");
+			global::java.text.__CharacterIterator._setIndex13389 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.setIndex", "(I)C");
+			global::java.text.__CharacterIterator._getBeginIndex13390 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.getBeginIndex", "()I");
+			global::java.text.__CharacterIterator._getEndIndex13391 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.getEndIndex", "()I");
+			global::java.text.__CharacterIterator._last13392 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.last", "()C");
+			global::java.text.__CharacterIterator._first13393 = @__env.GetMethodID(global::java.text.__CharacterIterator.staticClass, "java.text.CharacterIterator.first", "()C");
 		}
 	}
 }

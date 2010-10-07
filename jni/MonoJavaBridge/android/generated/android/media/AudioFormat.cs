@@ -18,11 +18,11 @@ namespace android.media
 		protected AudioFormat(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AudioFormat4360;
+		internal static global::net.sf.jni4net.jni.MethodId _AudioFormat4592;
 		public AudioFormat()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.media.AudioFormat.staticClass, global::android.media.AudioFormat._AudioFormat4360, this);
+			@__env.NewObject(android.media.AudioFormat.staticClass, global::android.media.AudioFormat._AudioFormat4592, this);
 		}
 		public static int ENCODING_INVALID
 		{
@@ -321,7 +321,7 @@ namespace android.media
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.media.AudioFormat.staticClass = @__class;
-			global::android.media.AudioFormat._AudioFormat4360 = @__env.GetMethodID(global::android.media.AudioFormat.staticClass, "<init>", "()V");
+			global::android.media.AudioFormat._AudioFormat4592 = @__env.GetMethodID(global::android.media.AudioFormat.staticClass, "<init>", "()V");
 		}
 	}
 }

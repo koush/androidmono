@@ -11,41 +11,41 @@ namespace android.location
 		protected LocationProvider(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getName4346;
+		internal static global::net.sf.jni4net.jni.MethodId _getName4578;
 		public virtual global::java.lang.String getName() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationProvider._getName4346));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.location.LocationProvider._getName4578));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationProvider.staticClass, global::android.location.LocationProvider._getName4346));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.location.LocationProvider.staticClass, global::android.location.LocationProvider._getName4578));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAccuracy4347;
+		internal static global::net.sf.jni4net.jni.MethodId _getAccuracy4579;
 		public abstract int getAccuracy();
-		internal static global::net.sf.jni4net.jni.MethodId _getPowerRequirement4348;
+		internal static global::net.sf.jni4net.jni.MethodId _getPowerRequirement4580;
 		public abstract int getPowerRequirement();
-		internal static global::net.sf.jni4net.jni.MethodId _requiresNetwork4349;
+		internal static global::net.sf.jni4net.jni.MethodId _requiresNetwork4581;
 		public abstract bool requiresNetwork();
-		internal static global::net.sf.jni4net.jni.MethodId _requiresSatellite4350;
+		internal static global::net.sf.jni4net.jni.MethodId _requiresSatellite4582;
 		public abstract bool requiresSatellite();
-		internal static global::net.sf.jni4net.jni.MethodId _requiresCell4351;
+		internal static global::net.sf.jni4net.jni.MethodId _requiresCell4583;
 		public abstract bool requiresCell();
-		internal static global::net.sf.jni4net.jni.MethodId _hasMonetaryCost4352;
+		internal static global::net.sf.jni4net.jni.MethodId _hasMonetaryCost4584;
 		public abstract bool hasMonetaryCost();
-		internal static global::net.sf.jni4net.jni.MethodId _supportsAltitude4353;
+		internal static global::net.sf.jni4net.jni.MethodId _supportsAltitude4585;
 		public abstract bool supportsAltitude();
-		internal static global::net.sf.jni4net.jni.MethodId _supportsSpeed4354;
+		internal static global::net.sf.jni4net.jni.MethodId _supportsSpeed4586;
 		public abstract bool supportsSpeed();
-		internal static global::net.sf.jni4net.jni.MethodId _supportsBearing4355;
+		internal static global::net.sf.jni4net.jni.MethodId _supportsBearing4587;
 		public abstract bool supportsBearing();
-		internal static global::net.sf.jni4net.jni.MethodId _meetsCriteria4356;
+		internal static global::net.sf.jni4net.jni.MethodId _meetsCriteria4588;
 		public virtual bool meetsCriteria(android.location.Criteria arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.location.LocationProvider._meetsCriteria4356, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this, global::android.location.LocationProvider._meetsCriteria4588, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.LocationProvider.staticClass, global::android.location.LocationProvider._meetsCriteria4356, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.location.LocationProvider.staticClass, global::android.location.LocationProvider._meetsCriteria4588, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		public static int OUT_OF_SERVICE
 		{
@@ -71,17 +71,17 @@ namespace android.location
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.location.LocationProvider.staticClass = @__class;
-			global::android.location.LocationProvider._getName4346 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "getName", "()Ljava/lang/String;");
-			global::android.location.LocationProvider._getAccuracy4347 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "getAccuracy", "()I");
-			global::android.location.LocationProvider._getPowerRequirement4348 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "getPowerRequirement", "()I");
-			global::android.location.LocationProvider._requiresNetwork4349 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "requiresNetwork", "()Z");
-			global::android.location.LocationProvider._requiresSatellite4350 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "requiresSatellite", "()Z");
-			global::android.location.LocationProvider._requiresCell4351 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "requiresCell", "()Z");
-			global::android.location.LocationProvider._hasMonetaryCost4352 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "hasMonetaryCost", "()Z");
-			global::android.location.LocationProvider._supportsAltitude4353 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "supportsAltitude", "()Z");
-			global::android.location.LocationProvider._supportsSpeed4354 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "supportsSpeed", "()Z");
-			global::android.location.LocationProvider._supportsBearing4355 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "supportsBearing", "()Z");
-			global::android.location.LocationProvider._meetsCriteria4356 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "meetsCriteria", "(Landroid/location/Criteria;)Z");
+			global::android.location.LocationProvider._getName4578 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "getName", "()Ljava/lang/String;");
+			global::android.location.LocationProvider._getAccuracy4579 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "getAccuracy", "()I");
+			global::android.location.LocationProvider._getPowerRequirement4580 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "getPowerRequirement", "()I");
+			global::android.location.LocationProvider._requiresNetwork4581 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "requiresNetwork", "()Z");
+			global::android.location.LocationProvider._requiresSatellite4582 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "requiresSatellite", "()Z");
+			global::android.location.LocationProvider._requiresCell4583 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "requiresCell", "()Z");
+			global::android.location.LocationProvider._hasMonetaryCost4584 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "hasMonetaryCost", "()Z");
+			global::android.location.LocationProvider._supportsAltitude4585 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "supportsAltitude", "()Z");
+			global::android.location.LocationProvider._supportsSpeed4586 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "supportsSpeed", "()Z");
+			global::android.location.LocationProvider._supportsBearing4587 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "supportsBearing", "()Z");
+			global::android.location.LocationProvider._meetsCriteria4588 = @__env.GetMethodID(global::android.location.LocationProvider.staticClass, "meetsCriteria", "(Landroid/location/Criteria;)Z");
 		}
 	}
 }

@@ -32,19 +32,19 @@ namespace android.content
 		internal __DialogInterface_OnClickListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onClick1273;
+		internal static global::net.sf.jni4net.jni.MethodId _onClick1416;
 		 void android.content.DialogInterface_OnClickListener.onClick(android.content.DialogInterface arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.__DialogInterface_OnClickListener._onClick1273, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.content.__DialogInterface_OnClickListener._onClick1416, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface_OnClickListener.staticClass, global::android.content.__DialogInterface_OnClickListener._onClick1273, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface_OnClickListener.staticClass, global::android.content.__DialogInterface_OnClickListener._onClick1416, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.content.__DialogInterface_OnClickListener.staticClass = @__class;
-			global::android.content.__DialogInterface_OnClickListener._onClick1273 = @__env.GetMethodID(global::android.content.__DialogInterface_OnClickListener.staticClass, "android.content.DialogInterface_OnClickListener.onClick", "(Landroid/content/DialogInterface;I)V");
+			global::android.content.__DialogInterface_OnClickListener._onClick1416 = @__env.GetMethodID(global::android.content.__DialogInterface_OnClickListener.staticClass, "android.content.DialogInterface_OnClickListener.onClick", "(Landroid/content/DialogInterface;I)V");
 		}
 	}
 }

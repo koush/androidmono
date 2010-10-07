@@ -32,6 +32,13 @@ namespace android.view
 				return 1;
 			}
 		}
+		public static int KEYBOARD_TAP
+		{
+			get
+			{
+				return 3;
+			}
+		}
 		public static int FLAG_IGNORE_VIEW_SETTING
 		{
 			get

@@ -36,13 +36,13 @@ namespace android.os
 			protected VERSION(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _VERSION5370;
+			internal static global::net.sf.jni4net.jni.MethodId _VERSION5900;
 			public VERSION()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.os.Build.VERSION.staticClass, global::android.os.Build.VERSION._VERSION5370, this);
+				@__env.NewObject(android.os.Build.VERSION.staticClass, global::android.os.Build.VERSION._VERSION5900, this);
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _INCREMENTAL5371;
+			internal static global::net.sf.jni4net.jni.FieldId _INCREMENTAL5901;
 			public static global::java.lang.String INCREMENTAL
 			{
 				get
@@ -50,7 +50,7 @@ namespace android.os
 					return default(global::java.lang.String);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _RELEASE5372;
+			internal static global::net.sf.jni4net.jni.FieldId _RELEASE5902;
 			public static global::java.lang.String RELEASE
 			{
 				get
@@ -58,7 +58,7 @@ namespace android.os
 					return default(global::java.lang.String);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _SDK5373;
+			internal static global::net.sf.jni4net.jni.FieldId _SDK5903;
 			public static global::java.lang.String SDK
 			{
 				get
@@ -73,7 +73,7 @@ namespace android.os
 					return 0;
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _CODENAME5374;
+			internal static global::net.sf.jni4net.jni.FieldId _CODENAME5904;
 			public static global::java.lang.String CODENAME
 			{
 				get
@@ -84,7 +84,7 @@ namespace android.os
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.os.Build.VERSION.staticClass = @__class;
-				global::android.os.Build.VERSION._VERSION5370 = @__env.GetMethodID(global::android.os.Build.VERSION.staticClass, "<init>", "()V");
+				global::android.os.Build.VERSION._VERSION5900 = @__env.GetMethodID(global::android.os.Build.VERSION.staticClass, "<init>", "()V");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
@@ -105,11 +105,11 @@ namespace android.os
 			protected VERSION_CODES(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _VERSION_CODES5375;
+			internal static global::net.sf.jni4net.jni.MethodId _VERSION_CODES5905;
 			public VERSION_CODES()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.os.Build.VERSION_CODES.staticClass, global::android.os.Build.VERSION_CODES._VERSION_CODES5375, this);
+				@__env.NewObject(android.os.Build.VERSION_CODES.staticClass, global::android.os.Build.VERSION_CODES._VERSION_CODES5905, this);
 			}
 			public static int CUR_DEVELOPMENT
 			{
@@ -167,19 +167,33 @@ namespace android.os
 					return 7;
 				}
 			}
+			public static int FROYO
+			{
+				get
+				{
+					return 8;
+				}
+			}
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.os.Build.VERSION_CODES.staticClass = @__class;
-				global::android.os.Build.VERSION_CODES._VERSION_CODES5375 = @__env.GetMethodID(global::android.os.Build.VERSION_CODES.staticClass, "<init>", "()V");
+				global::android.os.Build.VERSION_CODES._VERSION_CODES5905 = @__env.GetMethodID(global::android.os.Build.VERSION_CODES.staticClass, "<init>", "()V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Build5376;
+		internal static global::net.sf.jni4net.jni.MethodId _Build5906;
 		public Build()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.os.Build.staticClass, global::android.os.Build._Build5376, this);
+			@__env.NewObject(android.os.Build.staticClass, global::android.os.Build._Build5906, this);
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _ID5377;
+		public static global::java.lang.String UNKNOWN
+		{
+			get
+			{
+				return "unknown";
+			}
+		}
+		internal static global::net.sf.jni4net.jni.FieldId _ID5907;
 		public static global::java.lang.String ID
 		{
 			get
@@ -187,7 +201,7 @@ namespace android.os
 				return default(global::java.lang.String);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _DISPLAY5378;
+		internal static global::net.sf.jni4net.jni.FieldId _DISPLAY5908;
 		public static global::java.lang.String DISPLAY
 		{
 			get
@@ -195,7 +209,7 @@ namespace android.os
 				return default(global::java.lang.String);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _PRODUCT5379;
+		internal static global::net.sf.jni4net.jni.FieldId _PRODUCT5909;
 		public static global::java.lang.String PRODUCT
 		{
 			get
@@ -203,7 +217,7 @@ namespace android.os
 				return default(global::java.lang.String);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _DEVICE5380;
+		internal static global::net.sf.jni4net.jni.FieldId _DEVICE5910;
 		public static global::java.lang.String DEVICE
 		{
 			get
@@ -211,7 +225,7 @@ namespace android.os
 				return default(global::java.lang.String);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _BOARD5381;
+		internal static global::net.sf.jni4net.jni.FieldId _BOARD5911;
 		public static global::java.lang.String BOARD
 		{
 			get
@@ -219,7 +233,7 @@ namespace android.os
 				return default(global::java.lang.String);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CPU_ABI5382;
+		internal static global::net.sf.jni4net.jni.FieldId _CPU_ABI5912;
 		public static global::java.lang.String CPU_ABI
 		{
 			get
@@ -227,7 +241,15 @@ namespace android.os
 				return default(global::java.lang.String);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _MANUFACTURER5383;
+		internal static global::net.sf.jni4net.jni.FieldId _CPU_ABI25913;
+		public static global::java.lang.String CPU_ABI2
+		{
+			get
+			{
+				return default(global::java.lang.String);
+			}
+		}
+		internal static global::net.sf.jni4net.jni.FieldId _MANUFACTURER5914;
 		public static global::java.lang.String MANUFACTURER
 		{
 			get
@@ -235,7 +257,7 @@ namespace android.os
 				return default(global::java.lang.String);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _BRAND5384;
+		internal static global::net.sf.jni4net.jni.FieldId _BRAND5915;
 		public static global::java.lang.String BRAND
 		{
 			get
@@ -243,7 +265,7 @@ namespace android.os
 				return default(global::java.lang.String);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _MODEL5385;
+		internal static global::net.sf.jni4net.jni.FieldId _MODEL5916;
 		public static global::java.lang.String MODEL
 		{
 			get
@@ -251,7 +273,31 @@ namespace android.os
 				return default(global::java.lang.String);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _TYPE5386;
+		internal static global::net.sf.jni4net.jni.FieldId _BOOTLOADER5917;
+		public static global::java.lang.String BOOTLOADER
+		{
+			get
+			{
+				return default(global::java.lang.String);
+			}
+		}
+		internal static global::net.sf.jni4net.jni.FieldId _RADIO5918;
+		public static global::java.lang.String RADIO
+		{
+			get
+			{
+				return default(global::java.lang.String);
+			}
+		}
+		internal static global::net.sf.jni4net.jni.FieldId _HARDWARE5919;
+		public static global::java.lang.String HARDWARE
+		{
+			get
+			{
+				return default(global::java.lang.String);
+			}
+		}
+		internal static global::net.sf.jni4net.jni.FieldId _TYPE5920;
 		public static global::java.lang.String TYPE
 		{
 			get
@@ -259,7 +305,7 @@ namespace android.os
 				return default(global::java.lang.String);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _TAGS5387;
+		internal static global::net.sf.jni4net.jni.FieldId _TAGS5921;
 		public static global::java.lang.String TAGS
 		{
 			get
@@ -267,7 +313,7 @@ namespace android.os
 				return default(global::java.lang.String);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _FINGERPRINT5388;
+		internal static global::net.sf.jni4net.jni.FieldId _FINGERPRINT5922;
 		public static global::java.lang.String FINGERPRINT
 		{
 			get
@@ -282,7 +328,7 @@ namespace android.os
 				return 0L;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _USER5389;
+		internal static global::net.sf.jni4net.jni.FieldId _USER5923;
 		public static global::java.lang.String USER
 		{
 			get
@@ -290,7 +336,7 @@ namespace android.os
 				return default(global::java.lang.String);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _HOST5390;
+		internal static global::net.sf.jni4net.jni.FieldId _HOST5924;
 		public static global::java.lang.String HOST
 		{
 			get
@@ -301,7 +347,7 @@ namespace android.os
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.os.Build.staticClass = @__class;
-			global::android.os.Build._Build5376 = @__env.GetMethodID(global::android.os.Build.staticClass, "<init>", "()V");
+			global::android.os.Build._Build5906 = @__env.GetMethodID(global::android.os.Build.staticClass, "<init>", "()V");
 		}
 	}
 }

@@ -33,39 +33,39 @@ namespace java.nio.channels
 		internal __Channel(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _close12153;
+		internal static global::net.sf.jni4net.jni.MethodId _close12882;
 		 void java.nio.channels.Channel.close() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.nio.channels.__Channel._close12153);
+				@__env.CallVoidMethod(this, global::java.nio.channels.__Channel._close12882);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__Channel.staticClass, global::java.nio.channels.__Channel._close12153);
+				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__Channel.staticClass, global::java.nio.channels.__Channel._close12882);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isOpen12154;
+		internal static global::net.sf.jni4net.jni.MethodId _isOpen12883;
 		 bool java.nio.channels.Channel.isOpen() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.nio.channels.__Channel._isOpen12154);
+				return @__env.CallBooleanMethod(this, global::java.nio.channels.__Channel._isOpen12883);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.__Channel.staticClass, global::java.nio.channels.__Channel._isOpen12154);
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.__Channel.staticClass, global::java.nio.channels.__Channel._isOpen12883);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _close12155;
+		internal static global::net.sf.jni4net.jni.MethodId _close12884;
 		 void java.io.Closeable.close() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.nio.channels.__Channel._close12155);
+				@__env.CallVoidMethod(this, global::java.nio.channels.__Channel._close12884);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__Channel.staticClass, global::java.nio.channels.__Channel._close12155);
+				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__Channel.staticClass, global::java.nio.channels.__Channel._close12884);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.nio.channels.__Channel.staticClass = @__class;
-			global::java.nio.channels.__Channel._close12153 = @__env.GetMethodID(global::java.nio.channels.__Channel.staticClass, "java.nio.channels.Channel.close", "()V");
-			global::java.nio.channels.__Channel._isOpen12154 = @__env.GetMethodID(global::java.nio.channels.__Channel.staticClass, "java.nio.channels.Channel.isOpen", "()Z");
-			global::java.nio.channels.__Channel._close12155 = @__env.GetMethodID(global::java.nio.channels.__Channel.staticClass, "java.io.Closeable.close", "()V");
+			global::java.nio.channels.__Channel._close12882 = @__env.GetMethodID(global::java.nio.channels.__Channel.staticClass, "java.nio.channels.Channel.close", "()V");
+			global::java.nio.channels.__Channel._isOpen12883 = @__env.GetMethodID(global::java.nio.channels.__Channel.staticClass, "java.nio.channels.Channel.isOpen", "()Z");
+			global::java.nio.channels.__Channel._close12884 = @__env.GetMethodID(global::java.nio.channels.__Channel.staticClass, "java.io.Closeable.close", "()V");
 		}
 	}
 }

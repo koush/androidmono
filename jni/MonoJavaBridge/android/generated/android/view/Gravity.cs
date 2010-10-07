@@ -18,41 +18,41 @@ namespace android.view
 		protected Gravity(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _apply7776;
+		internal static global::net.sf.jni4net.jni.MethodId _apply8452;
 		public static void apply(int arg0, int arg1, int arg2, android.graphics.Rect arg3, android.graphics.Rect arg4) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.view.Gravity.staticClass, global::android.view.Gravity._apply7776, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4));
+			@__env.CallStaticVoidMethod(android.view.Gravity.staticClass, global::android.view.Gravity._apply8452, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _apply7777;
+		internal static global::net.sf.jni4net.jni.MethodId _apply8453;
 		public static void apply(int arg0, int arg1, int arg2, android.graphics.Rect arg3, int arg4, int arg5, android.graphics.Rect arg6) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.view.Gravity.staticClass, global::android.view.Gravity._apply7777, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6));
+			@__env.CallStaticVoidMethod(android.view.Gravity.staticClass, global::android.view.Gravity._apply8453, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _applyDisplay7778;
+		internal static global::net.sf.jni4net.jni.MethodId _applyDisplay8454;
 		public static void applyDisplay(int arg0, android.graphics.Rect arg1, android.graphics.Rect arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.view.Gravity.staticClass, global::android.view.Gravity._applyDisplay7778, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+			@__env.CallStaticVoidMethod(android.view.Gravity.staticClass, global::android.view.Gravity._applyDisplay8454, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isVertical7779;
+		internal static global::net.sf.jni4net.jni.MethodId _isVertical8455;
 		public static bool isVertical(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.view.Gravity.staticClass, global::android.view.Gravity._isVertical7779, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			return @__env.CallStaticBooleanMethod(android.view.Gravity.staticClass, global::android.view.Gravity._isVertical8455, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isHorizontal7780;
+		internal static global::net.sf.jni4net.jni.MethodId _isHorizontal8456;
 		public static bool isHorizontal(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticBooleanMethod(android.view.Gravity.staticClass, global::android.view.Gravity._isHorizontal7780, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			return @__env.CallStaticBooleanMethod(android.view.Gravity.staticClass, global::android.view.Gravity._isHorizontal8456, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Gravity7781;
+		internal static global::net.sf.jni4net.jni.MethodId _Gravity8457;
 		public Gravity()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.view.Gravity.staticClass, global::android.view.Gravity._Gravity7781, this);
+			@__env.NewObject(android.view.Gravity.staticClass, global::android.view.Gravity._Gravity8457, this);
 		}
 		public static int NO_GRAVITY
 		{
@@ -218,12 +218,12 @@ namespace android.view
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.view.Gravity.staticClass = @__class;
-			global::android.view.Gravity._apply7776 = @__env.GetStaticMethodID(global::android.view.Gravity.staticClass, "apply", "(IIILandroid/graphics/Rect;Landroid/graphics/Rect;)V");
-			global::android.view.Gravity._apply7777 = @__env.GetStaticMethodID(global::android.view.Gravity.staticClass, "apply", "(IIILandroid/graphics/Rect;IILandroid/graphics/Rect;)V");
-			global::android.view.Gravity._applyDisplay7778 = @__env.GetStaticMethodID(global::android.view.Gravity.staticClass, "applyDisplay", "(ILandroid/graphics/Rect;Landroid/graphics/Rect;)V");
-			global::android.view.Gravity._isVertical7779 = @__env.GetStaticMethodID(global::android.view.Gravity.staticClass, "isVertical", "(I)Z");
-			global::android.view.Gravity._isHorizontal7780 = @__env.GetStaticMethodID(global::android.view.Gravity.staticClass, "isHorizontal", "(I)Z");
-			global::android.view.Gravity._Gravity7781 = @__env.GetMethodID(global::android.view.Gravity.staticClass, "<init>", "()V");
+			global::android.view.Gravity._apply8452 = @__env.GetStaticMethodID(global::android.view.Gravity.staticClass, "apply", "(IIILandroid/graphics/Rect;Landroid/graphics/Rect;)V");
+			global::android.view.Gravity._apply8453 = @__env.GetStaticMethodID(global::android.view.Gravity.staticClass, "apply", "(IIILandroid/graphics/Rect;IILandroid/graphics/Rect;)V");
+			global::android.view.Gravity._applyDisplay8454 = @__env.GetStaticMethodID(global::android.view.Gravity.staticClass, "applyDisplay", "(ILandroid/graphics/Rect;Landroid/graphics/Rect;)V");
+			global::android.view.Gravity._isVertical8455 = @__env.GetStaticMethodID(global::android.view.Gravity.staticClass, "isVertical", "(I)Z");
+			global::android.view.Gravity._isHorizontal8456 = @__env.GetStaticMethodID(global::android.view.Gravity.staticClass, "isHorizontal", "(I)Z");
+			global::android.view.Gravity._Gravity8457 = @__env.GetMethodID(global::android.view.Gravity.staticClass, "<init>", "()V");
 		}
 	}
 }

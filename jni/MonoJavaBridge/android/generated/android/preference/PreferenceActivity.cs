@@ -11,170 +11,170 @@ namespace android.preference
 		protected PreferenceActivity(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onCreate6054;
+		internal static global::net.sf.jni4net.jni.MethodId _onCreate6633;
 		protected override void onCreate(android.os.Bundle arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._onCreate6054, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._onCreate6633, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onCreate6054, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onCreate6633, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onDestroy6055;
+		internal static global::net.sf.jni4net.jni.MethodId _onDestroy6634;
 		protected override void onDestroy() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._onDestroy6055);
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._onDestroy6634);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onDestroy6055);
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onDestroy6634);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onRestoreInstanceState6056;
+		internal static global::net.sf.jni4net.jni.MethodId _onRestoreInstanceState6635;
 		protected override void onRestoreInstanceState(android.os.Bundle arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._onRestoreInstanceState6056, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._onRestoreInstanceState6635, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onRestoreInstanceState6056, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onRestoreInstanceState6635, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onNewIntent6057;
+		internal static global::net.sf.jni4net.jni.MethodId _onNewIntent6636;
 		protected override void onNewIntent(android.content.Intent arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._onNewIntent6057, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._onNewIntent6636, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onNewIntent6057, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onNewIntent6636, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onSaveInstanceState6058;
+		internal static global::net.sf.jni4net.jni.MethodId _onSaveInstanceState6637;
 		protected override void onSaveInstanceState(android.os.Bundle arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._onSaveInstanceState6058, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._onSaveInstanceState6637, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onSaveInstanceState6058, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onSaveInstanceState6637, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onStop6059;
+		internal static global::net.sf.jni4net.jni.MethodId _onStop6638;
 		protected override void onStop() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._onStop6059);
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._onStop6638);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onStop6059);
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onStop6638);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onContentChanged6060;
+		internal static global::net.sf.jni4net.jni.MethodId _onContentChanged6639;
 		public override void onContentChanged() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._onContentChanged6060);
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._onContentChanged6639);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onContentChanged6060);
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onContentChanged6639);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onActivityResult6061;
+		internal static global::net.sf.jni4net.jni.MethodId _onActivityResult6640;
 		protected override void onActivityResult(int arg0, int arg1, android.content.Intent arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._onActivityResult6061, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._onActivityResult6640, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onActivityResult6061, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onActivityResult6640, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPreferenceManager6062;
+		internal static global::net.sf.jni4net.jni.MethodId _getPreferenceManager6641;
 		public virtual global::android.preference.PreferenceManager getPreferenceManager() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.PreferenceManager>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.PreferenceActivity._getPreferenceManager6062));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.PreferenceManager>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.PreferenceActivity._getPreferenceManager6641));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.PreferenceManager>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._getPreferenceManager6062));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.PreferenceManager>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._getPreferenceManager6641));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _findPreference6063;
+		internal static global::net.sf.jni4net.jni.MethodId _findPreference6642;
 		public virtual global::android.preference.Preference findPreference(java.lang.CharSequence arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.PreferenceActivity._findPreference6063, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.PreferenceActivity._findPreference6642, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._findPreference6063, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.Preference>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._findPreference6642, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
 		public android.preference.Preference findPreference(string arg0)
 		{
 			return findPreference((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setPreferenceScreen6064;
+		internal static global::net.sf.jni4net.jni.MethodId _setPreferenceScreen6643;
 		public virtual void setPreferenceScreen(android.preference.PreferenceScreen arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._setPreferenceScreen6064, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._setPreferenceScreen6643, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._setPreferenceScreen6064, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._setPreferenceScreen6643, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPreferenceScreen6065;
+		internal static global::net.sf.jni4net.jni.MethodId _getPreferenceScreen6644;
 		public virtual global::android.preference.PreferenceScreen getPreferenceScreen() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.PreferenceScreen>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.PreferenceActivity._getPreferenceScreen6065));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.PreferenceScreen>(@__env, @__env.CallObjectMethodPtr(this, global::android.preference.PreferenceActivity._getPreferenceScreen6644));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.PreferenceScreen>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._getPreferenceScreen6065));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.preference.PreferenceScreen>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._getPreferenceScreen6644));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addPreferencesFromIntent6066;
+		internal static global::net.sf.jni4net.jni.MethodId _addPreferencesFromIntent6645;
 		public virtual void addPreferencesFromIntent(android.content.Intent arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._addPreferencesFromIntent6066, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._addPreferencesFromIntent6645, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._addPreferencesFromIntent6066, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._addPreferencesFromIntent6645, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addPreferencesFromResource6067;
+		internal static global::net.sf.jni4net.jni.MethodId _addPreferencesFromResource6646;
 		public virtual void addPreferencesFromResource(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._addPreferencesFromResource6067, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.preference.PreferenceActivity._addPreferencesFromResource6646, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._addPreferencesFromResource6067, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._addPreferencesFromResource6646, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onPreferenceTreeClick6068;
+		internal static global::net.sf.jni4net.jni.MethodId _onPreferenceTreeClick6647;
 		public virtual bool onPreferenceTreeClick(android.preference.PreferenceScreen arg0, android.preference.Preference arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.preference.PreferenceActivity._onPreferenceTreeClick6068, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallBooleanMethod(this, global::android.preference.PreferenceActivity._onPreferenceTreeClick6647, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onPreferenceTreeClick6068, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._onPreferenceTreeClick6647, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PreferenceActivity6069;
+		internal static global::net.sf.jni4net.jni.MethodId _PreferenceActivity6648;
 		public PreferenceActivity()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._PreferenceActivity6069, this);
+			@__env.NewObject(android.preference.PreferenceActivity.staticClass, global::android.preference.PreferenceActivity._PreferenceActivity6648, this);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.preference.PreferenceActivity.staticClass = @__class;
-			global::android.preference.PreferenceActivity._onCreate6054 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onCreate", "(Landroid/os/Bundle;)V");
-			global::android.preference.PreferenceActivity._onDestroy6055 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onDestroy", "()V");
-			global::android.preference.PreferenceActivity._onRestoreInstanceState6056 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onRestoreInstanceState", "(Landroid/os/Bundle;)V");
-			global::android.preference.PreferenceActivity._onNewIntent6057 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onNewIntent", "(Landroid/content/Intent;)V");
-			global::android.preference.PreferenceActivity._onSaveInstanceState6058 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onSaveInstanceState", "(Landroid/os/Bundle;)V");
-			global::android.preference.PreferenceActivity._onStop6059 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onStop", "()V");
-			global::android.preference.PreferenceActivity._onContentChanged6060 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onContentChanged", "()V");
-			global::android.preference.PreferenceActivity._onActivityResult6061 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onActivityResult", "(IILandroid/content/Intent;)V");
-			global::android.preference.PreferenceActivity._getPreferenceManager6062 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "getPreferenceManager", "()Landroid/preference/PreferenceManager;");
-			global::android.preference.PreferenceActivity._findPreference6063 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "findPreference", "(Ljava/lang/CharSequence;)Landroid/preference/Preference;");
-			global::android.preference.PreferenceActivity._setPreferenceScreen6064 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "setPreferenceScreen", "(Landroid/preference/PreferenceScreen;)V");
-			global::android.preference.PreferenceActivity._getPreferenceScreen6065 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "getPreferenceScreen", "()Landroid/preference/PreferenceScreen;");
-			global::android.preference.PreferenceActivity._addPreferencesFromIntent6066 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "addPreferencesFromIntent", "(Landroid/content/Intent;)V");
-			global::android.preference.PreferenceActivity._addPreferencesFromResource6067 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "addPreferencesFromResource", "(I)V");
-			global::android.preference.PreferenceActivity._onPreferenceTreeClick6068 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onPreferenceTreeClick", "(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z");
-			global::android.preference.PreferenceActivity._PreferenceActivity6069 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "<init>", "()V");
+			global::android.preference.PreferenceActivity._onCreate6633 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onCreate", "(Landroid/os/Bundle;)V");
+			global::android.preference.PreferenceActivity._onDestroy6634 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onDestroy", "()V");
+			global::android.preference.PreferenceActivity._onRestoreInstanceState6635 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onRestoreInstanceState", "(Landroid/os/Bundle;)V");
+			global::android.preference.PreferenceActivity._onNewIntent6636 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onNewIntent", "(Landroid/content/Intent;)V");
+			global::android.preference.PreferenceActivity._onSaveInstanceState6637 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onSaveInstanceState", "(Landroid/os/Bundle;)V");
+			global::android.preference.PreferenceActivity._onStop6638 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onStop", "()V");
+			global::android.preference.PreferenceActivity._onContentChanged6639 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onContentChanged", "()V");
+			global::android.preference.PreferenceActivity._onActivityResult6640 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onActivityResult", "(IILandroid/content/Intent;)V");
+			global::android.preference.PreferenceActivity._getPreferenceManager6641 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "getPreferenceManager", "()Landroid/preference/PreferenceManager;");
+			global::android.preference.PreferenceActivity._findPreference6642 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "findPreference", "(Ljava/lang/CharSequence;)Landroid/preference/Preference;");
+			global::android.preference.PreferenceActivity._setPreferenceScreen6643 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "setPreferenceScreen", "(Landroid/preference/PreferenceScreen;)V");
+			global::android.preference.PreferenceActivity._getPreferenceScreen6644 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "getPreferenceScreen", "()Landroid/preference/PreferenceScreen;");
+			global::android.preference.PreferenceActivity._addPreferencesFromIntent6645 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "addPreferencesFromIntent", "(Landroid/content/Intent;)V");
+			global::android.preference.PreferenceActivity._addPreferencesFromResource6646 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "addPreferencesFromResource", "(I)V");
+			global::android.preference.PreferenceActivity._onPreferenceTreeClick6647 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "onPreferenceTreeClick", "(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z");
+			global::android.preference.PreferenceActivity._PreferenceActivity6648 = @__env.GetMethodID(global::android.preference.PreferenceActivity.staticClass, "<init>", "()V");
 		}
 	}
 }

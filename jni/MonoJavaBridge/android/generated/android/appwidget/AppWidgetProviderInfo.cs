@@ -18,46 +18,46 @@ namespace android.appwidget
 		protected AppWidgetProviderInfo(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString848;
+		internal static global::net.sf.jni4net.jni.MethodId _toString978;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.appwidget.AppWidgetProviderInfo._toString848));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.appwidget.AppWidgetProviderInfo._toString978));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._toString848));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._toString978));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel849;
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel979;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.appwidget.AppWidgetProviderInfo._writeToParcel849, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.appwidget.AppWidgetProviderInfo._writeToParcel979, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._writeToParcel849, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._writeToParcel979, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents850;
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents980;
 		public virtual int describeContents() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.appwidget.AppWidgetProviderInfo._describeContents850);
+				return @__env.CallIntMethod(this, global::android.appwidget.AppWidgetProviderInfo._describeContents980);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._describeContents850);
+				return @__env.CallNonVirtualIntMethod(this, global::android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._describeContents980);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AppWidgetProviderInfo851;
+		internal static global::net.sf.jni4net.jni.MethodId _AppWidgetProviderInfo981;
 		public AppWidgetProviderInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._AppWidgetProviderInfo851, this);
+			@__env.NewObject(android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._AppWidgetProviderInfo981, this);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _AppWidgetProviderInfo852;
+		internal static global::net.sf.jni4net.jni.MethodId _AppWidgetProviderInfo982;
 		public AppWidgetProviderInfo(android.os.Parcel arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._AppWidgetProviderInfo852, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.appwidget.AppWidgetProviderInfo.staticClass, global::android.appwidget.AppWidgetProviderInfo._AppWidgetProviderInfo982, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _provider853;
+		internal static global::net.sf.jni4net.jni.FieldId _provider983;
 		public global::android.content.ComponentName provider
 		{
 			get
@@ -68,7 +68,7 @@ namespace android.appwidget
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _minWidth854;
+		internal static global::net.sf.jni4net.jni.FieldId _minWidth984;
 		public int minWidth
 		{
 			get
@@ -79,7 +79,7 @@ namespace android.appwidget
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _minHeight855;
+		internal static global::net.sf.jni4net.jni.FieldId _minHeight985;
 		public int minHeight
 		{
 			get
@@ -90,7 +90,7 @@ namespace android.appwidget
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _updatePeriodMillis856;
+		internal static global::net.sf.jni4net.jni.FieldId _updatePeriodMillis986;
 		public int updatePeriodMillis
 		{
 			get
@@ -101,7 +101,7 @@ namespace android.appwidget
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _initialLayout857;
+		internal static global::net.sf.jni4net.jni.FieldId _initialLayout987;
 		public int initialLayout
 		{
 			get
@@ -112,7 +112,7 @@ namespace android.appwidget
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _configure858;
+		internal static global::net.sf.jni4net.jni.FieldId _configure988;
 		public global::android.content.ComponentName configure
 		{
 			get
@@ -123,7 +123,7 @@ namespace android.appwidget
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _label859;
+		internal static global::net.sf.jni4net.jni.FieldId _label989;
 		public global::java.lang.String label
 		{
 			get
@@ -134,7 +134,7 @@ namespace android.appwidget
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _icon860;
+		internal static global::net.sf.jni4net.jni.FieldId _icon990;
 		public int icon
 		{
 			get
@@ -145,7 +145,7 @@ namespace android.appwidget
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR861;
+		internal static global::net.sf.jni4net.jni.FieldId _CREATOR991;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -156,11 +156,11 @@ namespace android.appwidget
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.appwidget.AppWidgetProviderInfo.staticClass = @__class;
-			global::android.appwidget.AppWidgetProviderInfo._toString848 = @__env.GetMethodID(global::android.appwidget.AppWidgetProviderInfo.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.appwidget.AppWidgetProviderInfo._writeToParcel849 = @__env.GetMethodID(global::android.appwidget.AppWidgetProviderInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.appwidget.AppWidgetProviderInfo._describeContents850 = @__env.GetMethodID(global::android.appwidget.AppWidgetProviderInfo.staticClass, "describeContents", "()I");
-			global::android.appwidget.AppWidgetProviderInfo._AppWidgetProviderInfo851 = @__env.GetMethodID(global::android.appwidget.AppWidgetProviderInfo.staticClass, "<init>", "()V");
-			global::android.appwidget.AppWidgetProviderInfo._AppWidgetProviderInfo852 = @__env.GetMethodID(global::android.appwidget.AppWidgetProviderInfo.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::android.appwidget.AppWidgetProviderInfo._toString978 = @__env.GetMethodID(global::android.appwidget.AppWidgetProviderInfo.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.appwidget.AppWidgetProviderInfo._writeToParcel979 = @__env.GetMethodID(global::android.appwidget.AppWidgetProviderInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.appwidget.AppWidgetProviderInfo._describeContents980 = @__env.GetMethodID(global::android.appwidget.AppWidgetProviderInfo.staticClass, "describeContents", "()I");
+			global::android.appwidget.AppWidgetProviderInfo._AppWidgetProviderInfo981 = @__env.GetMethodID(global::android.appwidget.AppWidgetProviderInfo.staticClass, "<init>", "()V");
+			global::android.appwidget.AppWidgetProviderInfo._AppWidgetProviderInfo982 = @__env.GetMethodID(global::android.appwidget.AppWidgetProviderInfo.staticClass, "<init>", "(Landroid/os/Parcel;)V");
 		}
 	}
 }

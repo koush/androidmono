@@ -18,137 +18,137 @@ namespace android.text.style
 		protected TextAppearanceSpan(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel7438;
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel8067;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.style.TextAppearanceSpan._writeToParcel7438, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.text.style.TextAppearanceSpan._writeToParcel8067, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._writeToParcel7438, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._writeToParcel8067, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents7439;
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents8068;
 		public virtual int describeContents() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.style.TextAppearanceSpan._describeContents7439);
+				return @__env.CallIntMethod(this, global::android.text.style.TextAppearanceSpan._describeContents8068);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._describeContents7439);
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._describeContents8068);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTextSize7440;
+		internal static global::net.sf.jni4net.jni.MethodId _getTextSize8069;
 		public virtual int getTextSize() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.style.TextAppearanceSpan._getTextSize7440);
+				return @__env.CallIntMethod(this, global::android.text.style.TextAppearanceSpan._getTextSize8069);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._getTextSize7440);
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._getTextSize8069);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTextColor7441;
+		internal static global::net.sf.jni4net.jni.MethodId _getTextColor8070;
 		public virtual global::android.content.res.ColorStateList getTextColor() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.style.TextAppearanceSpan._getTextColor7441));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.style.TextAppearanceSpan._getTextColor8070));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._getTextColor7441));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._getTextColor8070));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSpanTypeId7442;
+		internal static global::net.sf.jni4net.jni.MethodId _getSpanTypeId8071;
 		public virtual int getSpanTypeId() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.style.TextAppearanceSpan._getSpanTypeId7442);
+				return @__env.CallIntMethod(this, global::android.text.style.TextAppearanceSpan._getSpanTypeId8071);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._getSpanTypeId7442);
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._getSpanTypeId8071);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _updateDrawState7443;
+		internal static global::net.sf.jni4net.jni.MethodId _updateDrawState8072;
 		public override void updateDrawState(android.text.TextPaint arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.style.TextAppearanceSpan._updateDrawState7443, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.text.style.TextAppearanceSpan._updateDrawState8072, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._updateDrawState7443, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._updateDrawState8072, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _updateMeasureState7444;
+		internal static global::net.sf.jni4net.jni.MethodId _updateMeasureState8073;
 		public override void updateMeasureState(android.text.TextPaint arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.style.TextAppearanceSpan._updateMeasureState7444, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.text.style.TextAppearanceSpan._updateMeasureState8073, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._updateMeasureState7444, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._updateMeasureState8073, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFamily7445;
+		internal static global::net.sf.jni4net.jni.MethodId _getFamily8074;
 		public virtual global::java.lang.String getFamily() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.style.TextAppearanceSpan._getFamily7445));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.style.TextAppearanceSpan._getFamily8074));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._getFamily7445));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._getFamily8074));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLinkTextColor7446;
+		internal static global::net.sf.jni4net.jni.MethodId _getLinkTextColor8075;
 		public virtual global::android.content.res.ColorStateList getLinkTextColor() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.style.TextAppearanceSpan._getLinkTextColor7446));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.style.TextAppearanceSpan._getLinkTextColor8075));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._getLinkTextColor7446));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.res.ColorStateList>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._getLinkTextColor8075));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTextStyle7447;
+		internal static global::net.sf.jni4net.jni.MethodId _getTextStyle8076;
 		public virtual int getTextStyle() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.style.TextAppearanceSpan._getTextStyle7447);
+				return @__env.CallIntMethod(this, global::android.text.style.TextAppearanceSpan._getTextStyle8076);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._getTextStyle7447);
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._getTextStyle8076);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _TextAppearanceSpan7448;
+		internal static global::net.sf.jni4net.jni.MethodId _TextAppearanceSpan8077;
 		public TextAppearanceSpan(android.content.Context arg0, int arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._TextAppearanceSpan7448, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			@__env.NewObject(android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._TextAppearanceSpan8077, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _TextAppearanceSpan7449;
+		internal static global::net.sf.jni4net.jni.MethodId _TextAppearanceSpan8078;
 		public TextAppearanceSpan(java.lang.String arg0, int arg1, int arg2, android.content.res.ColorStateList arg3, android.content.res.ColorStateList arg4)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._TextAppearanceSpan7449, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4));
+			@__env.NewObject(android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._TextAppearanceSpan8078, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _TextAppearanceSpan7450;
+		internal static global::net.sf.jni4net.jni.MethodId _TextAppearanceSpan8079;
 		public TextAppearanceSpan(android.os.Parcel arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._TextAppearanceSpan7450, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._TextAppearanceSpan8079, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _TextAppearanceSpan7451;
+		internal static global::net.sf.jni4net.jni.MethodId _TextAppearanceSpan8080;
 		public TextAppearanceSpan(android.content.Context arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._TextAppearanceSpan7451, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			@__env.NewObject(android.text.style.TextAppearanceSpan.staticClass, global::android.text.style.TextAppearanceSpan._TextAppearanceSpan8080, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.text.style.TextAppearanceSpan.staticClass = @__class;
-			global::android.text.style.TextAppearanceSpan._writeToParcel7438 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.text.style.TextAppearanceSpan._describeContents7439 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "describeContents", "()I");
-			global::android.text.style.TextAppearanceSpan._getTextSize7440 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "getTextSize", "()I");
-			global::android.text.style.TextAppearanceSpan._getTextColor7441 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "getTextColor", "()Landroid/content/res/ColorStateList;");
-			global::android.text.style.TextAppearanceSpan._getSpanTypeId7442 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "getSpanTypeId", "()I");
-			global::android.text.style.TextAppearanceSpan._updateDrawState7443 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
-			global::android.text.style.TextAppearanceSpan._updateMeasureState7444 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V");
-			global::android.text.style.TextAppearanceSpan._getFamily7445 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "getFamily", "()Ljava/lang/String;");
-			global::android.text.style.TextAppearanceSpan._getLinkTextColor7446 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "getLinkTextColor", "()Landroid/content/res/ColorStateList;");
-			global::android.text.style.TextAppearanceSpan._getTextStyle7447 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "getTextStyle", "()I");
-			global::android.text.style.TextAppearanceSpan._TextAppearanceSpan7448 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "<init>", "(Landroid/content/Context;II)V");
-			global::android.text.style.TextAppearanceSpan._TextAppearanceSpan7449 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "<init>", "(Ljava/lang/String;IILandroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;)V");
-			global::android.text.style.TextAppearanceSpan._TextAppearanceSpan7450 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
-			global::android.text.style.TextAppearanceSpan._TextAppearanceSpan7451 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "<init>", "(Landroid/content/Context;I)V");
+			global::android.text.style.TextAppearanceSpan._writeToParcel8067 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.text.style.TextAppearanceSpan._describeContents8068 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "describeContents", "()I");
+			global::android.text.style.TextAppearanceSpan._getTextSize8069 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "getTextSize", "()I");
+			global::android.text.style.TextAppearanceSpan._getTextColor8070 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "getTextColor", "()Landroid/content/res/ColorStateList;");
+			global::android.text.style.TextAppearanceSpan._getSpanTypeId8071 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "getSpanTypeId", "()I");
+			global::android.text.style.TextAppearanceSpan._updateDrawState8072 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "updateDrawState", "(Landroid/text/TextPaint;)V");
+			global::android.text.style.TextAppearanceSpan._updateMeasureState8073 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "updateMeasureState", "(Landroid/text/TextPaint;)V");
+			global::android.text.style.TextAppearanceSpan._getFamily8074 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "getFamily", "()Ljava/lang/String;");
+			global::android.text.style.TextAppearanceSpan._getLinkTextColor8075 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "getLinkTextColor", "()Landroid/content/res/ColorStateList;");
+			global::android.text.style.TextAppearanceSpan._getTextStyle8076 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "getTextStyle", "()I");
+			global::android.text.style.TextAppearanceSpan._TextAppearanceSpan8077 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "<init>", "(Landroid/content/Context;II)V");
+			global::android.text.style.TextAppearanceSpan._TextAppearanceSpan8078 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "<init>", "(Ljava/lang/String;IILandroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;)V");
+			global::android.text.style.TextAppearanceSpan._TextAppearanceSpan8079 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "<init>", "(Landroid/os/Parcel;)V");
+			global::android.text.style.TextAppearanceSpan._TextAppearanceSpan8080 = @__env.GetMethodID(global::android.text.style.TextAppearanceSpan.staticClass, "<init>", "(Landroid/content/Context;I)V");
 		}
 	}
 }

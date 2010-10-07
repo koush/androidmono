@@ -32,49 +32,49 @@ namespace java.nio.channels
 		internal __InterruptibleChannel(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _close12211;
+		internal static global::net.sf.jni4net.jni.MethodId _close12940;
 		 void java.nio.channels.InterruptibleChannel.close() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.nio.channels.__InterruptibleChannel._close12211);
+				@__env.CallVoidMethod(this, global::java.nio.channels.__InterruptibleChannel._close12940);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__InterruptibleChannel.staticClass, global::java.nio.channels.__InterruptibleChannel._close12211);
+				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__InterruptibleChannel.staticClass, global::java.nio.channels.__InterruptibleChannel._close12940);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _close12212;
+		internal static global::net.sf.jni4net.jni.MethodId _close12941;
 		 void java.nio.channels.Channel.close() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.nio.channels.__InterruptibleChannel._close12212);
+				@__env.CallVoidMethod(this, global::java.nio.channels.__InterruptibleChannel._close12941);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__InterruptibleChannel.staticClass, global::java.nio.channels.__InterruptibleChannel._close12212);
+				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__InterruptibleChannel.staticClass, global::java.nio.channels.__InterruptibleChannel._close12941);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isOpen12213;
+		internal static global::net.sf.jni4net.jni.MethodId _isOpen12942;
 		 bool java.nio.channels.Channel.isOpen() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.nio.channels.__InterruptibleChannel._isOpen12213);
+				return @__env.CallBooleanMethod(this, global::java.nio.channels.__InterruptibleChannel._isOpen12942);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.__InterruptibleChannel.staticClass, global::java.nio.channels.__InterruptibleChannel._isOpen12213);
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.nio.channels.__InterruptibleChannel.staticClass, global::java.nio.channels.__InterruptibleChannel._isOpen12942);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _close12214;
+		internal static global::net.sf.jni4net.jni.MethodId _close12943;
 		 void java.io.Closeable.close() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::java.nio.channels.__InterruptibleChannel._close12214);
+				@__env.CallVoidMethod(this, global::java.nio.channels.__InterruptibleChannel._close12943);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__InterruptibleChannel.staticClass, global::java.nio.channels.__InterruptibleChannel._close12214);
+				@__env.CallNonVirtualVoidMethod(this, global::java.nio.channels.__InterruptibleChannel.staticClass, global::java.nio.channels.__InterruptibleChannel._close12943);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.nio.channels.__InterruptibleChannel.staticClass = @__class;
-			global::java.nio.channels.__InterruptibleChannel._close12211 = @__env.GetMethodID(global::java.nio.channels.__InterruptibleChannel.staticClass, "java.nio.channels.InterruptibleChannel.close", "()V");
-			global::java.nio.channels.__InterruptibleChannel._close12212 = @__env.GetMethodID(global::java.nio.channels.__InterruptibleChannel.staticClass, "java.nio.channels.Channel.close", "()V");
-			global::java.nio.channels.__InterruptibleChannel._isOpen12213 = @__env.GetMethodID(global::java.nio.channels.__InterruptibleChannel.staticClass, "java.nio.channels.Channel.isOpen", "()Z");
-			global::java.nio.channels.__InterruptibleChannel._close12214 = @__env.GetMethodID(global::java.nio.channels.__InterruptibleChannel.staticClass, "java.io.Closeable.close", "()V");
+			global::java.nio.channels.__InterruptibleChannel._close12940 = @__env.GetMethodID(global::java.nio.channels.__InterruptibleChannel.staticClass, "java.nio.channels.InterruptibleChannel.close", "()V");
+			global::java.nio.channels.__InterruptibleChannel._close12941 = @__env.GetMethodID(global::java.nio.channels.__InterruptibleChannel.staticClass, "java.nio.channels.Channel.close", "()V");
+			global::java.nio.channels.__InterruptibleChannel._isOpen12942 = @__env.GetMethodID(global::java.nio.channels.__InterruptibleChannel.staticClass, "java.nio.channels.Channel.isOpen", "()Z");
+			global::java.nio.channels.__InterruptibleChannel._close12943 = @__env.GetMethodID(global::java.nio.channels.__InterruptibleChannel.staticClass, "java.io.Closeable.close", "()V");
 		}
 	}
 }

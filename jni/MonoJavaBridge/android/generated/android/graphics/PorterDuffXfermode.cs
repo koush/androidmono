@@ -18,16 +18,16 @@ namespace android.graphics
 		protected PorterDuffXfermode(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PorterDuffXfermode3278;
+		internal static global::net.sf.jni4net.jni.MethodId _PorterDuffXfermode3477;
 		public PorterDuffXfermode(android.graphics.PorterDuff.Mode arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.PorterDuffXfermode.staticClass, global::android.graphics.PorterDuffXfermode._PorterDuffXfermode3278, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.graphics.PorterDuffXfermode.staticClass, global::android.graphics.PorterDuffXfermode._PorterDuffXfermode3477, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.graphics.PorterDuffXfermode.staticClass = @__class;
-			global::android.graphics.PorterDuffXfermode._PorterDuffXfermode3278 = @__env.GetMethodID(global::android.graphics.PorterDuffXfermode.staticClass, "<init>", "(Landroid/graphics/PorterDuff$Mode;)V");
+			global::android.graphics.PorterDuffXfermode._PorterDuffXfermode3477 = @__env.GetMethodID(global::android.graphics.PorterDuffXfermode.staticClass, "<init>", "(Landroid/graphics/PorterDuff$Mode;)V");
 		}
 	}
 }

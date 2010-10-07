@@ -32,19 +32,19 @@ namespace org.xml.sax
 		internal __EntityResolver(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _resolveEntity13302;
+		internal static global::net.sf.jni4net.jni.MethodId _resolveEntity14581;
 		 global::org.xml.sax.InputSource org.xml.sax.EntityResolver.resolveEntity(java.lang.String arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.xml.sax.InputSource>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__EntityResolver._resolveEntity13302, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.xml.sax.InputSource>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__EntityResolver._resolveEntity14581, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.xml.sax.InputSource>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__EntityResolver.staticClass, global::org.xml.sax.__EntityResolver._resolveEntity13302, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<org.xml.sax.InputSource>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__EntityResolver.staticClass, global::org.xml.sax.__EntityResolver._resolveEntity14581, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::org.xml.sax.__EntityResolver.staticClass = @__class;
-			global::org.xml.sax.__EntityResolver._resolveEntity13302 = @__env.GetMethodID(global::org.xml.sax.__EntityResolver.staticClass, "org.xml.sax.EntityResolver.resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
+			global::org.xml.sax.__EntityResolver._resolveEntity14581 = @__env.GetMethodID(global::org.xml.sax.__EntityResolver.staticClass, "org.xml.sax.EntityResolver.resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;");
 		}
 	}
 }

@@ -32,19 +32,19 @@ namespace android.view.inputmethod
 		internal __InputMethod_SessionCallback(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _sessionCreated9144;
+		internal static global::net.sf.jni4net.jni.MethodId _sessionCreated9851;
 		 void android.view.inputmethod.InputMethod_SessionCallback.sessionCreated(android.view.inputmethod.InputMethodSession arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod_SessionCallback._sessionCreated9144, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod_SessionCallback._sessionCreated9851, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod_SessionCallback.staticClass, global::android.view.inputmethod.__InputMethod_SessionCallback._sessionCreated9144, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod_SessionCallback.staticClass, global::android.view.inputmethod.__InputMethod_SessionCallback._sessionCreated9851, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.view.inputmethod.__InputMethod_SessionCallback.staticClass = @__class;
-			global::android.view.inputmethod.__InputMethod_SessionCallback._sessionCreated9144 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod_SessionCallback.staticClass, "android.view.inputmethod.InputMethod_SessionCallback.sessionCreated", "(Landroid/view/inputmethod/InputMethodSession;)V");
+			global::android.view.inputmethod.__InputMethod_SessionCallback._sessionCreated9851 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod_SessionCallback.staticClass, "android.view.inputmethod.InputMethod_SessionCallback.sessionCreated", "(Landroid/view/inputmethod/InputMethodSession;)V");
 		}
 	}
 }

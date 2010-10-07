@@ -18,162 +18,162 @@ namespace android.widget
 		protected Toast(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setText11229;
+		internal static global::net.sf.jni4net.jni.MethodId _setText11946;
 		public virtual void setText(java.lang.CharSequence arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Toast._setText11229, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.widget.Toast._setText11946, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setText11229, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setText11946, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
 		public void setText(string arg0)
 		{
 			setText((global::java.lang.CharSequence)(global::java.lang.String)arg0);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setText11230;
+		internal static global::net.sf.jni4net.jni.MethodId _setText11947;
 		public virtual void setText(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Toast._setText11230, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.widget.Toast._setText11947, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setText11230, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setText11947, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cancel11231;
+		internal static global::net.sf.jni4net.jni.MethodId _cancel11948;
 		public virtual void cancel() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Toast._cancel11231);
+				@__env.CallVoidMethod(this, global::android.widget.Toast._cancel11948);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._cancel11231);
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._cancel11948);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setGravity11232;
+		internal static global::net.sf.jni4net.jni.MethodId _setGravity11949;
 		public virtual void setGravity(int arg0, int arg1, int arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Toast._setGravity11232, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this, global::android.widget.Toast._setGravity11949, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setGravity11232, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setGravity11949, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _show11233;
+		internal static global::net.sf.jni4net.jni.MethodId _show11950;
 		public virtual void show() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Toast._show11233);
+				@__env.CallVoidMethod(this, global::android.widget.Toast._show11950);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._show11233);
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._show11950);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setView11234;
+		internal static global::net.sf.jni4net.jni.MethodId _setView11951;
 		public virtual void setView(android.view.View arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Toast._setView11234, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.widget.Toast._setView11951, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setView11234, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setView11951, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getView11235;
+		internal static global::net.sf.jni4net.jni.MethodId _getView11952;
 		public virtual global::android.view.View getView() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.Toast._getView11235));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.Toast._getView11952));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getView11235));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.View>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getView11952));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getGravity11236;
+		internal static global::net.sf.jni4net.jni.MethodId _getGravity11953;
 		public virtual int getGravity() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.Toast._getGravity11236);
+				return @__env.CallIntMethod(this, global::android.widget.Toast._getGravity11953);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getGravity11236);
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getGravity11953);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setDuration11237;
+		internal static global::net.sf.jni4net.jni.MethodId _setDuration11954;
 		public virtual void setDuration(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Toast._setDuration11237, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.widget.Toast._setDuration11954, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setDuration11237, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setDuration11954, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDuration11238;
+		internal static global::net.sf.jni4net.jni.MethodId _getDuration11955;
 		public virtual int getDuration() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.Toast._getDuration11238);
+				return @__env.CallIntMethod(this, global::android.widget.Toast._getDuration11955);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getDuration11238);
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getDuration11955);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setMargin11239;
+		internal static global::net.sf.jni4net.jni.MethodId _setMargin11956;
 		public virtual void setMargin(float arg0, float arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.Toast._setMargin11239, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.widget.Toast._setMargin11956, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setMargin11239, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._setMargin11956, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getHorizontalMargin11240;
+		internal static global::net.sf.jni4net.jni.MethodId _getHorizontalMargin11957;
 		public virtual float getHorizontalMargin() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.widget.Toast._getHorizontalMargin11240);
+				return @__env.CallFloatMethod(this, global::android.widget.Toast._getHorizontalMargin11957);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getHorizontalMargin11240);
+				return @__env.CallNonVirtualFloatMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getHorizontalMargin11957);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getVerticalMargin11241;
+		internal static global::net.sf.jni4net.jni.MethodId _getVerticalMargin11958;
 		public virtual float getVerticalMargin() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.widget.Toast._getVerticalMargin11241);
+				return @__env.CallFloatMethod(this, global::android.widget.Toast._getVerticalMargin11958);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getVerticalMargin11241);
+				return @__env.CallNonVirtualFloatMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getVerticalMargin11958);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getXOffset11242;
+		internal static global::net.sf.jni4net.jni.MethodId _getXOffset11959;
 		public virtual int getXOffset() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.Toast._getXOffset11242);
+				return @__env.CallIntMethod(this, global::android.widget.Toast._getXOffset11959);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getXOffset11242);
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getXOffset11959);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getYOffset11243;
+		internal static global::net.sf.jni4net.jni.MethodId _getYOffset11960;
 		public virtual int getYOffset() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.widget.Toast._getYOffset11243);
+				return @__env.CallIntMethod(this, global::android.widget.Toast._getYOffset11960);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getYOffset11243);
+				return @__env.CallNonVirtualIntMethod(this, global::android.widget.Toast.staticClass, global::android.widget.Toast._getYOffset11960);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _makeText11244;
+		internal static global::net.sf.jni4net.jni.MethodId _makeText11961;
 		public static global::android.widget.Toast makeText(android.content.Context arg0, java.lang.CharSequence arg1, int arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Toast>(@__env, @__env.CallStaticObjectMethodPtr(android.widget.Toast.staticClass, global::android.widget.Toast._makeText11244, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Toast>(@__env, @__env.CallStaticObjectMethodPtr(android.widget.Toast.staticClass, global::android.widget.Toast._makeText11961, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _makeText11245;
+		internal static global::net.sf.jni4net.jni.MethodId _makeText11962;
 		public static global::android.widget.Toast makeText(android.content.Context arg0, int arg1, int arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Toast>(@__env, @__env.CallStaticObjectMethodPtr(android.widget.Toast.staticClass, global::android.widget.Toast._makeText11245, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Toast>(@__env, @__env.CallStaticObjectMethodPtr(android.widget.Toast.staticClass, global::android.widget.Toast._makeText11962, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Toast11246;
+		internal static global::net.sf.jni4net.jni.MethodId _Toast11963;
 		public Toast(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.Toast.staticClass, global::android.widget.Toast._Toast11246, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.widget.Toast.staticClass, global::android.widget.Toast._Toast11963, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		public static int LENGTH_SHORT
 		{
@@ -192,24 +192,24 @@ namespace android.widget
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.widget.Toast.staticClass = @__class;
-			global::android.widget.Toast._setText11229 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "setText", "(Ljava/lang/CharSequence;)V");
-			global::android.widget.Toast._setText11230 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "setText", "(I)V");
-			global::android.widget.Toast._cancel11231 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "cancel", "()V");
-			global::android.widget.Toast._setGravity11232 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "setGravity", "(III)V");
-			global::android.widget.Toast._show11233 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "show", "()V");
-			global::android.widget.Toast._setView11234 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "setView", "(Landroid/view/View;)V");
-			global::android.widget.Toast._getView11235 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "getView", "()Landroid/view/View;");
-			global::android.widget.Toast._getGravity11236 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "getGravity", "()I");
-			global::android.widget.Toast._setDuration11237 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "setDuration", "(I)V");
-			global::android.widget.Toast._getDuration11238 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "getDuration", "()I");
-			global::android.widget.Toast._setMargin11239 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "setMargin", "(FF)V");
-			global::android.widget.Toast._getHorizontalMargin11240 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "getHorizontalMargin", "()F");
-			global::android.widget.Toast._getVerticalMargin11241 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "getVerticalMargin", "()F");
-			global::android.widget.Toast._getXOffset11242 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "getXOffset", "()I");
-			global::android.widget.Toast._getYOffset11243 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "getYOffset", "()I");
-			global::android.widget.Toast._makeText11244 = @__env.GetStaticMethodID(global::android.widget.Toast.staticClass, "makeText", "(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;");
-			global::android.widget.Toast._makeText11245 = @__env.GetStaticMethodID(global::android.widget.Toast.staticClass, "makeText", "(Landroid/content/Context;II)Landroid/widget/Toast;");
-			global::android.widget.Toast._Toast11246 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.widget.Toast._setText11946 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "setText", "(Ljava/lang/CharSequence;)V");
+			global::android.widget.Toast._setText11947 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "setText", "(I)V");
+			global::android.widget.Toast._cancel11948 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "cancel", "()V");
+			global::android.widget.Toast._setGravity11949 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "setGravity", "(III)V");
+			global::android.widget.Toast._show11950 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "show", "()V");
+			global::android.widget.Toast._setView11951 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "setView", "(Landroid/view/View;)V");
+			global::android.widget.Toast._getView11952 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "getView", "()Landroid/view/View;");
+			global::android.widget.Toast._getGravity11953 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "getGravity", "()I");
+			global::android.widget.Toast._setDuration11954 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "setDuration", "(I)V");
+			global::android.widget.Toast._getDuration11955 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "getDuration", "()I");
+			global::android.widget.Toast._setMargin11956 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "setMargin", "(FF)V");
+			global::android.widget.Toast._getHorizontalMargin11957 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "getHorizontalMargin", "()F");
+			global::android.widget.Toast._getVerticalMargin11958 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "getVerticalMargin", "()F");
+			global::android.widget.Toast._getXOffset11959 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "getXOffset", "()I");
+			global::android.widget.Toast._getYOffset11960 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "getYOffset", "()I");
+			global::android.widget.Toast._makeText11961 = @__env.GetStaticMethodID(global::android.widget.Toast.staticClass, "makeText", "(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;");
+			global::android.widget.Toast._makeText11962 = @__env.GetStaticMethodID(global::android.widget.Toast.staticClass, "makeText", "(Landroid/content/Context;II)Landroid/widget/Toast;");
+			global::android.widget.Toast._Toast11963 = @__env.GetMethodID(global::android.widget.Toast.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
 	}
 }

@@ -18,6 +18,19 @@ namespace android.speech
 		protected RecognizerIntent(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
+		internal static global::net.sf.jni4net.jni.MethodId _getVoiceDetailsIntent7028;
+		public static global::android.content.Intent getVoiceDetailsIntent(android.content.Context arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Intent>(@__env, @__env.CallStaticObjectMethodPtr(android.speech.RecognizerIntent.staticClass, global::android.speech.RecognizerIntent._getVoiceDetailsIntent7028, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+		}
+		public static global::java.lang.String EXTRA_CALLING_PACKAGE
+		{
+			get
+			{
+				return "calling_package";
+			}
+		}
 		public static global::java.lang.String ACTION_RECOGNIZE_SPEECH
 		{
 			get
@@ -30,6 +43,27 @@ namespace android.speech
 			get
 			{
 				return "android.speech.action.WEB_SEARCH";
+			}
+		}
+		public static global::java.lang.String EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS
+		{
+			get
+			{
+				return "android.speech.extras.SPEECH_INPUT_MINIMUM_LENGTH_MILLIS";
+			}
+		}
+		public static global::java.lang.String EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS
+		{
+			get
+			{
+				return "android.speech.extras.SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS";
+			}
+		}
+		public static global::java.lang.String EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS
+		{
+			get
+			{
+				return "android.speech.extras.SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS";
 			}
 		}
 		public static global::java.lang.String EXTRA_LANGUAGE_MODEL
@@ -72,6 +106,13 @@ namespace android.speech
 			get
 			{
 				return "android.speech.extra.MAX_RESULTS";
+			}
+		}
+		public static global::java.lang.String EXTRA_PARTIAL_RESULTS
+		{
+			get
+			{
+				return "android.speech.extra.PARTIAL_RESULTS";
 			}
 		}
 		public static global::java.lang.String EXTRA_RESULTS_PENDINGINTENT
@@ -130,9 +171,45 @@ namespace android.speech
 				return "android.speech.extra.RESULTS";
 			}
 		}
+		public static global::java.lang.String DETAILS_META_DATA
+		{
+			get
+			{
+				return "android.speech.DETAILS";
+			}
+		}
+		public static global::java.lang.String ACTION_GET_LANGUAGE_DETAILS
+		{
+			get
+			{
+				return "android.speech.action.GET_LANGUAGE_DETAILS";
+			}
+		}
+		public static global::java.lang.String EXTRA_ONLY_RETURN_LANGUAGE_PREFERENCE
+		{
+			get
+			{
+				return "android.speech.extra.ONLY_RETURN_LANGUAGE_PREFERENCE";
+			}
+		}
+		public static global::java.lang.String EXTRA_LANGUAGE_PREFERENCE
+		{
+			get
+			{
+				return "android.speech.extra.LANGUAGE_PREFERENCE";
+			}
+		}
+		public static global::java.lang.String EXTRA_SUPPORTED_LANGUAGES
+		{
+			get
+			{
+				return "android.speech.extra.SUPPORTED_LANGUAGES";
+			}
+		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.speech.RecognizerIntent.staticClass = @__class;
+			global::android.speech.RecognizerIntent._getVoiceDetailsIntent7028 = @__env.GetStaticMethodID(global::android.speech.RecognizerIntent.staticClass, "getVoiceDetailsIntent", "(Landroid/content/Context;)Landroid/content/Intent;");
 		}
 	}
 }

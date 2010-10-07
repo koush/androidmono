@@ -45,39 +45,39 @@ namespace android.graphics.drawable
 			internal __Callback(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _invalidateDrawable3513;
+			internal static global::net.sf.jni4net.jni.MethodId _invalidateDrawable3719;
 			 void android.graphics.drawable.Drawable.Callback.invalidateDrawable(android.graphics.drawable.Drawable arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable.__Callback._invalidateDrawable3513, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable.__Callback._invalidateDrawable3719, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.__Callback.staticClass, global::android.graphics.drawable.Drawable.__Callback._invalidateDrawable3513, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.__Callback.staticClass, global::android.graphics.drawable.Drawable.__Callback._invalidateDrawable3719, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _scheduleDrawable3514;
+			internal static global::net.sf.jni4net.jni.MethodId _scheduleDrawable3720;
 			 void android.graphics.drawable.Drawable.Callback.scheduleDrawable(android.graphics.drawable.Drawable arg0, java.lang.Runnable arg1, long arg2) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable.__Callback._scheduleDrawable3514, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+					@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable.__Callback._scheduleDrawable3720, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.__Callback.staticClass, global::android.graphics.drawable.Drawable.__Callback._scheduleDrawable3514, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+					@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.__Callback.staticClass, global::android.graphics.drawable.Drawable.__Callback._scheduleDrawable3720, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _unscheduleDrawable3515;
+			internal static global::net.sf.jni4net.jni.MethodId _unscheduleDrawable3721;
 			 void android.graphics.drawable.Drawable.Callback.unscheduleDrawable(android.graphics.drawable.Drawable arg0, java.lang.Runnable arg1) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable.__Callback._unscheduleDrawable3515, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+					@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable.__Callback._unscheduleDrawable3721, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.__Callback.staticClass, global::android.graphics.drawable.Drawable.__Callback._unscheduleDrawable3515, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+					@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.__Callback.staticClass, global::android.graphics.drawable.Drawable.__Callback._unscheduleDrawable3721, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 			}
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.graphics.drawable.Drawable.__Callback.staticClass = @__class;
-				global::android.graphics.drawable.Drawable.__Callback._invalidateDrawable3513 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.__Callback.staticClass, "android.graphics.drawable.Drawable.Callback.invalidateDrawable", "(Landroid/graphics/drawable/Drawable;)V");
-				global::android.graphics.drawable.Drawable.__Callback._scheduleDrawable3514 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.__Callback.staticClass, "android.graphics.drawable.Drawable.Callback.scheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V");
-				global::android.graphics.drawable.Drawable.__Callback._unscheduleDrawable3515 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.__Callback.staticClass, "android.graphics.drawable.Drawable.Callback.unscheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V");
+				global::android.graphics.drawable.Drawable.__Callback._invalidateDrawable3719 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.__Callback.staticClass, "android.graphics.drawable.Drawable.Callback.invalidateDrawable", "(Landroid/graphics/drawable/Drawable;)V");
+				global::android.graphics.drawable.Drawable.__Callback._scheduleDrawable3720 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.__Callback.staticClass, "android.graphics.drawable.Drawable.Callback.scheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V");
+				global::android.graphics.drawable.Drawable.__Callback._unscheduleDrawable3721 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.__Callback.staticClass, "android.graphics.drawable.Drawable.Callback.unscheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V");
 			}
 		}
 		[global::net.sf.jni4net.attributes.JavaClassAttribute()]
@@ -91,454 +91,454 @@ namespace android.graphics.drawable
 			protected ConstantState(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getChangingConfigurations3516;
+			internal static global::net.sf.jni4net.jni.MethodId _getChangingConfigurations3722;
 			public abstract int getChangingConfigurations();
-			internal static global::net.sf.jni4net.jni.MethodId _newDrawable3517;
+			internal static global::net.sf.jni4net.jni.MethodId _newDrawable3723;
 			public abstract global::android.graphics.drawable.Drawable newDrawable();
-			internal static global::net.sf.jni4net.jni.MethodId _newDrawable3518;
+			internal static global::net.sf.jni4net.jni.MethodId _newDrawable3724;
 			public virtual global::android.graphics.drawable.Drawable newDrawable(android.content.res.Resources arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.Drawable.ConstantState._newDrawable3518, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.Drawable.ConstantState._newDrawable3724, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 				else
-					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.Drawable.ConstantState.staticClass, global::android.graphics.drawable.Drawable.ConstantState._newDrawable3518, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+					return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.Drawable.ConstantState.staticClass, global::android.graphics.drawable.Drawable.ConstantState._newDrawable3724, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _ConstantState3519;
+			internal static global::net.sf.jni4net.jni.MethodId _ConstantState3725;
 			public ConstantState()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.graphics.drawable.Drawable.ConstantState.staticClass, global::android.graphics.drawable.Drawable.ConstantState._ConstantState3519, this);
+				@__env.NewObject(android.graphics.drawable.Drawable.ConstantState.staticClass, global::android.graphics.drawable.Drawable.ConstantState._ConstantState3725, this);
 			}
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.graphics.drawable.Drawable.ConstantState.staticClass = @__class;
-				global::android.graphics.drawable.Drawable.ConstantState._getChangingConfigurations3516 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.ConstantState.staticClass, "getChangingConfigurations", "()I");
-				global::android.graphics.drawable.Drawable.ConstantState._newDrawable3517 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.ConstantState.staticClass, "newDrawable", "()Landroid/graphics/drawable/Drawable;");
-				global::android.graphics.drawable.Drawable.ConstantState._newDrawable3518 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.ConstantState.staticClass, "newDrawable", "(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;");
-				global::android.graphics.drawable.Drawable.ConstantState._ConstantState3519 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.ConstantState.staticClass, "<init>", "()V");
+				global::android.graphics.drawable.Drawable.ConstantState._getChangingConfigurations3722 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.ConstantState.staticClass, "getChangingConfigurations", "()I");
+				global::android.graphics.drawable.Drawable.ConstantState._newDrawable3723 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.ConstantState.staticClass, "newDrawable", "()Landroid/graphics/drawable/Drawable;");
+				global::android.graphics.drawable.Drawable.ConstantState._newDrawable3724 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.ConstantState.staticClass, "newDrawable", "(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;");
+				global::android.graphics.drawable.Drawable.ConstantState._ConstantState3725 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.ConstantState.staticClass, "<init>", "()V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getState3520;
+		internal static global::net.sf.jni4net.jni.MethodId _getState3726;
 		public virtual int[] getState() 
 		{
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.Drawable._getState3520));
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.Drawable._getState3726));
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getState3520));
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getState3726));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setState3521;
+		internal static global::net.sf.jni4net.jni.MethodId _setState3727;
 		public virtual bool setState(int[] arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.Drawable._setState3521, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.Drawable._setState3727, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setState3521, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setState3727, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _inflate3522;
+		internal static global::net.sf.jni4net.jni.MethodId _inflate3728;
 		public virtual void inflate(android.content.res.Resources arg0, org.xmlpull.v1.XmlPullParser arg1, android.util.AttributeSet arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._inflate3522, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2));
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._inflate3728, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._inflate3522, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2));
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._inflate3728, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _draw3523;
+		internal static global::net.sf.jni4net.jni.MethodId _draw3729;
 		public abstract void draw(android.graphics.Canvas arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _setBounds3524;
+		internal static global::net.sf.jni4net.jni.MethodId _setBounds3730;
 		public virtual void setBounds(int arg0, int arg1, int arg2, int arg3) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._setBounds3524, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._setBounds3730, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setBounds3524, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setBounds3730, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setBounds3525;
+		internal static global::net.sf.jni4net.jni.MethodId _setBounds3731;
 		public virtual void setBounds(android.graphics.Rect arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._setBounds3525, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._setBounds3731, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setBounds3525, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setBounds3731, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _copyBounds3526;
+		internal static global::net.sf.jni4net.jni.MethodId _copyBounds3732;
 		public virtual void copyBounds(android.graphics.Rect arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._copyBounds3526, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._copyBounds3732, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._copyBounds3526, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._copyBounds3732, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _copyBounds3527;
+		internal static global::net.sf.jni4net.jni.MethodId _copyBounds3733;
 		public virtual global::android.graphics.Rect copyBounds() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.Drawable._copyBounds3527));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.Drawable._copyBounds3733));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._copyBounds3527));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._copyBounds3733));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getBounds3528;
+		internal static global::net.sf.jni4net.jni.MethodId _getBounds3734;
 		public virtual global::android.graphics.Rect getBounds() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.Drawable._getBounds3528));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.Drawable._getBounds3734));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getBounds3528));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Rect>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getBounds3734));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setChangingConfigurations3529;
+		internal static global::net.sf.jni4net.jni.MethodId _setChangingConfigurations3735;
 		public virtual void setChangingConfigurations(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._setChangingConfigurations3529, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._setChangingConfigurations3735, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setChangingConfigurations3529, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setChangingConfigurations3735, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getChangingConfigurations3530;
+		internal static global::net.sf.jni4net.jni.MethodId _getChangingConfigurations3736;
 		public virtual int getChangingConfigurations() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.drawable.Drawable._getChangingConfigurations3530);
+				return @__env.CallIntMethod(this, global::android.graphics.drawable.Drawable._getChangingConfigurations3736);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getChangingConfigurations3530);
+				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getChangingConfigurations3736);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setDither3531;
+		internal static global::net.sf.jni4net.jni.MethodId _setDither3737;
 		public virtual void setDither(bool arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._setDither3531, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._setDither3737, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setDither3531, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setDither3737, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setFilterBitmap3532;
+		internal static global::net.sf.jni4net.jni.MethodId _setFilterBitmap3738;
 		public virtual void setFilterBitmap(bool arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._setFilterBitmap3532, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._setFilterBitmap3738, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setFilterBitmap3532, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setFilterBitmap3738, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setCallback3533;
+		internal static global::net.sf.jni4net.jni.MethodId _setCallback3739;
 		public virtual void setCallback(android.graphics.drawable.Drawable.Callback arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._setCallback3533, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._setCallback3739, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setCallback3533, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setCallback3739, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _invalidateSelf3534;
+		internal static global::net.sf.jni4net.jni.MethodId _invalidateSelf3740;
 		public virtual void invalidateSelf() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._invalidateSelf3534);
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._invalidateSelf3740);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._invalidateSelf3534);
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._invalidateSelf3740);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _scheduleSelf3535;
+		internal static global::net.sf.jni4net.jni.MethodId _scheduleSelf3741;
 		public virtual void scheduleSelf(java.lang.Runnable arg0, long arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._scheduleSelf3535, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._scheduleSelf3741, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._scheduleSelf3535, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._scheduleSelf3741, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _unscheduleSelf3536;
+		internal static global::net.sf.jni4net.jni.MethodId _unscheduleSelf3742;
 		public virtual void unscheduleSelf(java.lang.Runnable arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._unscheduleSelf3536, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._unscheduleSelf3742, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._unscheduleSelf3536, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._unscheduleSelf3742, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setAlpha3537;
+		internal static global::net.sf.jni4net.jni.MethodId _setAlpha3743;
 		public abstract void setAlpha(int arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _setColorFilter3538;
+		internal static global::net.sf.jni4net.jni.MethodId _setColorFilter3744;
 		public abstract void setColorFilter(android.graphics.ColorFilter arg0);
-		internal static global::net.sf.jni4net.jni.MethodId _setColorFilter3539;
+		internal static global::net.sf.jni4net.jni.MethodId _setColorFilter3745;
 		public virtual void setColorFilter(int arg0, android.graphics.PorterDuff.Mode arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._setColorFilter3539, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._setColorFilter3745, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setColorFilter3539, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setColorFilter3745, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clearColorFilter3540;
+		internal static global::net.sf.jni4net.jni.MethodId _clearColorFilter3746;
 		public virtual void clearColorFilter() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._clearColorFilter3540);
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._clearColorFilter3746);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._clearColorFilter3540);
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._clearColorFilter3746);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isStateful3541;
+		internal static global::net.sf.jni4net.jni.MethodId _isStateful3747;
 		public virtual bool isStateful() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.Drawable._isStateful3541);
+				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.Drawable._isStateful3747);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._isStateful3541);
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._isStateful3747);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCurrent3542;
+		internal static global::net.sf.jni4net.jni.MethodId _getCurrent3748;
 		public virtual global::android.graphics.drawable.Drawable getCurrent() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.Drawable._getCurrent3542));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.Drawable._getCurrent3748));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getCurrent3542));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getCurrent3748));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setLevel3543;
+		internal static global::net.sf.jni4net.jni.MethodId _setLevel3749;
 		public virtual bool setLevel(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.Drawable._setLevel3543, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.Drawable._setLevel3749, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setLevel3543, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setLevel3749, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLevel3544;
+		internal static global::net.sf.jni4net.jni.MethodId _getLevel3750;
 		public virtual int getLevel() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.drawable.Drawable._getLevel3544);
+				return @__env.CallIntMethod(this, global::android.graphics.drawable.Drawable._getLevel3750);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getLevel3544);
+				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getLevel3750);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setVisible3545;
+		internal static global::net.sf.jni4net.jni.MethodId _setVisible3751;
 		public virtual bool setVisible(bool arg0, bool arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.Drawable._setVisible3545, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.Drawable._setVisible3751, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setVisible3545, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._setVisible3751, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isVisible3546;
+		internal static global::net.sf.jni4net.jni.MethodId _isVisible3752;
 		public virtual bool isVisible() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.Drawable._isVisible3546);
+				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.Drawable._isVisible3752);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._isVisible3546);
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._isVisible3752);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getOpacity3547;
+		internal static global::net.sf.jni4net.jni.MethodId _getOpacity3753;
 		public abstract int getOpacity();
-		internal static global::net.sf.jni4net.jni.MethodId _resolveOpacity3548;
+		internal static global::net.sf.jni4net.jni.MethodId _resolveOpacity3754;
 		public static int resolveOpacity(int arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticIntMethod(android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._resolveOpacity3548, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			return @__env.CallStaticIntMethod(android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._resolveOpacity3754, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTransparentRegion3549;
+		internal static global::net.sf.jni4net.jni.MethodId _getTransparentRegion3755;
 		public virtual global::android.graphics.Region getTransparentRegion() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Region>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.Drawable._getTransparentRegion3549));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Region>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.Drawable._getTransparentRegion3755));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Region>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getTransparentRegion3549));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.Region>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getTransparentRegion3755));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onStateChange3550;
+		internal static global::net.sf.jni4net.jni.MethodId _onStateChange3756;
 		protected virtual bool onStateChange(int[] arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.Drawable._onStateChange3550, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.Drawable._onStateChange3756, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._onStateChange3550, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._onStateChange3756, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onLevelChange3551;
+		internal static global::net.sf.jni4net.jni.MethodId _onLevelChange3757;
 		protected virtual bool onLevelChange(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.Drawable._onLevelChange3551, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.Drawable._onLevelChange3757, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._onLevelChange3551, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._onLevelChange3757, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onBoundsChange3552;
+		internal static global::net.sf.jni4net.jni.MethodId _onBoundsChange3758;
 		protected virtual void onBoundsChange(android.graphics.Rect arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._onBoundsChange3552, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.Drawable._onBoundsChange3758, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._onBoundsChange3552, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._onBoundsChange3758, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getIntrinsicWidth3553;
+		internal static global::net.sf.jni4net.jni.MethodId _getIntrinsicWidth3759;
 		public virtual int getIntrinsicWidth() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.drawable.Drawable._getIntrinsicWidth3553);
+				return @__env.CallIntMethod(this, global::android.graphics.drawable.Drawable._getIntrinsicWidth3759);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getIntrinsicWidth3553);
+				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getIntrinsicWidth3759);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getIntrinsicHeight3554;
+		internal static global::net.sf.jni4net.jni.MethodId _getIntrinsicHeight3760;
 		public virtual int getIntrinsicHeight() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.drawable.Drawable._getIntrinsicHeight3554);
+				return @__env.CallIntMethod(this, global::android.graphics.drawable.Drawable._getIntrinsicHeight3760);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getIntrinsicHeight3554);
+				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getIntrinsicHeight3760);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMinimumWidth3555;
+		internal static global::net.sf.jni4net.jni.MethodId _getMinimumWidth3761;
 		public virtual int getMinimumWidth() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.drawable.Drawable._getMinimumWidth3555);
+				return @__env.CallIntMethod(this, global::android.graphics.drawable.Drawable._getMinimumWidth3761);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getMinimumWidth3555);
+				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getMinimumWidth3761);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMinimumHeight3556;
+		internal static global::net.sf.jni4net.jni.MethodId _getMinimumHeight3762;
 		public virtual int getMinimumHeight() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.graphics.drawable.Drawable._getMinimumHeight3556);
+				return @__env.CallIntMethod(this, global::android.graphics.drawable.Drawable._getMinimumHeight3762);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getMinimumHeight3556);
+				return @__env.CallNonVirtualIntMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getMinimumHeight3762);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPadding3557;
+		internal static global::net.sf.jni4net.jni.MethodId _getPadding3763;
 		public virtual bool getPadding(android.graphics.Rect arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.Drawable._getPadding3557, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this, global::android.graphics.drawable.Drawable._getPadding3763, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getPadding3557, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getPadding3763, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _mutate3558;
+		internal static global::net.sf.jni4net.jni.MethodId _mutate3764;
 		public virtual global::android.graphics.drawable.Drawable mutate() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.Drawable._mutate3558));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.Drawable._mutate3764));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._mutate3558));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._mutate3764));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _createFromStream3559;
+		internal static global::net.sf.jni4net.jni.MethodId _createFromStream3765;
 		public static global::android.graphics.drawable.Drawable createFromStream(java.io.InputStream arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._createFromStream3559, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._createFromStream3765, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _createFromResourceStream3560;
+		internal static global::net.sf.jni4net.jni.MethodId _createFromResourceStream3766;
 		public static global::android.graphics.drawable.Drawable createFromResourceStream(android.content.res.Resources arg0, android.util.TypedValue arg1, java.io.InputStream arg2, java.lang.String arg3) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._createFromResourceStream3560, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._createFromResourceStream3766, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _createFromResourceStream3561;
+		internal static global::net.sf.jni4net.jni.MethodId _createFromResourceStream3767;
 		public static global::android.graphics.drawable.Drawable createFromResourceStream(android.content.res.Resources arg0, android.util.TypedValue arg1, java.io.InputStream arg2, java.lang.String arg3, android.graphics.BitmapFactory.Options arg4) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._createFromResourceStream3561, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._createFromResourceStream3767, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg4)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _createFromXml3562;
+		internal static global::net.sf.jni4net.jni.MethodId _createFromXml3768;
 		public static global::android.graphics.drawable.Drawable createFromXml(android.content.res.Resources arg0, org.xmlpull.v1.XmlPullParser arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._createFromXml3562, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._createFromXml3768, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _createFromXmlInner3563;
+		internal static global::net.sf.jni4net.jni.MethodId _createFromXmlInner3769;
 		public static global::android.graphics.drawable.Drawable createFromXmlInner(android.content.res.Resources arg0, org.xmlpull.v1.XmlPullParser arg1, android.util.AttributeSet arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._createFromXmlInner3563, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._createFromXmlInner3769, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _createFromPath3564;
+		internal static global::net.sf.jni4net.jni.MethodId _createFromPath3770;
 		public static global::android.graphics.drawable.Drawable createFromPath(java.lang.String arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._createFromPath3564, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._createFromPath3770, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getConstantState3565;
+		internal static global::net.sf.jni4net.jni.MethodId _getConstantState3771;
 		public virtual global::android.graphics.drawable.Drawable.ConstantState getConstantState() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.Drawable._getConstantState3565));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallObjectMethodPtr(this, global::android.graphics.drawable.Drawable._getConstantState3771));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getConstantState3565));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable.ConstantState>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._getConstantState3771));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Drawable3566;
+		internal static global::net.sf.jni4net.jni.MethodId _Drawable3772;
 		public Drawable()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._Drawable3566, this);
+			@__env.NewObject(android.graphics.drawable.Drawable.staticClass, global::android.graphics.drawable.Drawable._Drawable3772, this);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.graphics.drawable.Drawable.staticClass = @__class;
-			global::android.graphics.drawable.Drawable._getState3520 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getState", "()[I");
-			global::android.graphics.drawable.Drawable._setState3521 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setState", "([I)Z");
-			global::android.graphics.drawable.Drawable._inflate3522 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "inflate", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V");
-			global::android.graphics.drawable.Drawable._draw3523 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
-			global::android.graphics.drawable.Drawable._setBounds3524 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setBounds", "(IIII)V");
-			global::android.graphics.drawable.Drawable._setBounds3525 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setBounds", "(Landroid/graphics/Rect;)V");
-			global::android.graphics.drawable.Drawable._copyBounds3526 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "copyBounds", "(Landroid/graphics/Rect;)V");
-			global::android.graphics.drawable.Drawable._copyBounds3527 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "copyBounds", "()Landroid/graphics/Rect;");
-			global::android.graphics.drawable.Drawable._getBounds3528 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getBounds", "()Landroid/graphics/Rect;");
-			global::android.graphics.drawable.Drawable._setChangingConfigurations3529 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setChangingConfigurations", "(I)V");
-			global::android.graphics.drawable.Drawable._getChangingConfigurations3530 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getChangingConfigurations", "()I");
-			global::android.graphics.drawable.Drawable._setDither3531 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setDither", "(Z)V");
-			global::android.graphics.drawable.Drawable._setFilterBitmap3532 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setFilterBitmap", "(Z)V");
-			global::android.graphics.drawable.Drawable._setCallback3533 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setCallback", "(Landroid/graphics/drawable/Drawable$Callback;)V");
-			global::android.graphics.drawable.Drawable._invalidateSelf3534 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "invalidateSelf", "()V");
-			global::android.graphics.drawable.Drawable._scheduleSelf3535 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "scheduleSelf", "(Ljava/lang/Runnable;J)V");
-			global::android.graphics.drawable.Drawable._unscheduleSelf3536 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "unscheduleSelf", "(Ljava/lang/Runnable;)V");
-			global::android.graphics.drawable.Drawable._setAlpha3537 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setAlpha", "(I)V");
-			global::android.graphics.drawable.Drawable._setColorFilter3538 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setColorFilter", "(Landroid/graphics/ColorFilter;)V");
-			global::android.graphics.drawable.Drawable._setColorFilter3539 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setColorFilter", "(ILandroid/graphics/PorterDuff$Mode;)V");
-			global::android.graphics.drawable.Drawable._clearColorFilter3540 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "clearColorFilter", "()V");
-			global::android.graphics.drawable.Drawable._isStateful3541 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "isStateful", "()Z");
-			global::android.graphics.drawable.Drawable._getCurrent3542 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getCurrent", "()Landroid/graphics/drawable/Drawable;");
-			global::android.graphics.drawable.Drawable._setLevel3543 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setLevel", "(I)Z");
-			global::android.graphics.drawable.Drawable._getLevel3544 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getLevel", "()I");
-			global::android.graphics.drawable.Drawable._setVisible3545 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setVisible", "(ZZ)Z");
-			global::android.graphics.drawable.Drawable._isVisible3546 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "isVisible", "()Z");
-			global::android.graphics.drawable.Drawable._getOpacity3547 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getOpacity", "()I");
-			global::android.graphics.drawable.Drawable._resolveOpacity3548 = @__env.GetStaticMethodID(global::android.graphics.drawable.Drawable.staticClass, "resolveOpacity", "(II)I");
-			global::android.graphics.drawable.Drawable._getTransparentRegion3549 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getTransparentRegion", "()Landroid/graphics/Region;");
-			global::android.graphics.drawable.Drawable._onStateChange3550 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "onStateChange", "([I)Z");
-			global::android.graphics.drawable.Drawable._onLevelChange3551 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "onLevelChange", "(I)Z");
-			global::android.graphics.drawable.Drawable._onBoundsChange3552 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "onBoundsChange", "(Landroid/graphics/Rect;)V");
-			global::android.graphics.drawable.Drawable._getIntrinsicWidth3553 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getIntrinsicWidth", "()I");
-			global::android.graphics.drawable.Drawable._getIntrinsicHeight3554 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getIntrinsicHeight", "()I");
-			global::android.graphics.drawable.Drawable._getMinimumWidth3555 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getMinimumWidth", "()I");
-			global::android.graphics.drawable.Drawable._getMinimumHeight3556 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getMinimumHeight", "()I");
-			global::android.graphics.drawable.Drawable._getPadding3557 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getPadding", "(Landroid/graphics/Rect;)Z");
-			global::android.graphics.drawable.Drawable._mutate3558 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "mutate", "()Landroid/graphics/drawable/Drawable;");
-			global::android.graphics.drawable.Drawable._createFromStream3559 = @__env.GetStaticMethodID(global::android.graphics.drawable.Drawable.staticClass, "createFromStream", "(Ljava/io/InputStream;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;");
-			global::android.graphics.drawable.Drawable._createFromResourceStream3560 = @__env.GetStaticMethodID(global::android.graphics.drawable.Drawable.staticClass, "createFromResourceStream", "(Landroid/content/res/Resources;Landroid/util/TypedValue;Ljava/io/InputStream;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;");
-			global::android.graphics.drawable.Drawable._createFromResourceStream3561 = @__env.GetStaticMethodID(global::android.graphics.drawable.Drawable.staticClass, "createFromResourceStream", "(Landroid/content/res/Resources;Landroid/util/TypedValue;Ljava/io/InputStream;Ljava/lang/String;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/drawable/Drawable;");
-			global::android.graphics.drawable.Drawable._createFromXml3562 = @__env.GetStaticMethodID(global::android.graphics.drawable.Drawable.staticClass, "createFromXml", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;)Landroid/graphics/drawable/Drawable;");
-			global::android.graphics.drawable.Drawable._createFromXmlInner3563 = @__env.GetStaticMethodID(global::android.graphics.drawable.Drawable.staticClass, "createFromXmlInner", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)Landroid/graphics/drawable/Drawable;");
-			global::android.graphics.drawable.Drawable._createFromPath3564 = @__env.GetStaticMethodID(global::android.graphics.drawable.Drawable.staticClass, "createFromPath", "(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;");
-			global::android.graphics.drawable.Drawable._getConstantState3565 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getConstantState", "()Landroid/graphics/drawable/Drawable$ConstantState;");
-			global::android.graphics.drawable.Drawable._Drawable3566 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "<init>", "()V");
+			global::android.graphics.drawable.Drawable._getState3726 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getState", "()[I");
+			global::android.graphics.drawable.Drawable._setState3727 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setState", "([I)Z");
+			global::android.graphics.drawable.Drawable._inflate3728 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "inflate", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V");
+			global::android.graphics.drawable.Drawable._draw3729 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "draw", "(Landroid/graphics/Canvas;)V");
+			global::android.graphics.drawable.Drawable._setBounds3730 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setBounds", "(IIII)V");
+			global::android.graphics.drawable.Drawable._setBounds3731 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setBounds", "(Landroid/graphics/Rect;)V");
+			global::android.graphics.drawable.Drawable._copyBounds3732 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "copyBounds", "(Landroid/graphics/Rect;)V");
+			global::android.graphics.drawable.Drawable._copyBounds3733 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "copyBounds", "()Landroid/graphics/Rect;");
+			global::android.graphics.drawable.Drawable._getBounds3734 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getBounds", "()Landroid/graphics/Rect;");
+			global::android.graphics.drawable.Drawable._setChangingConfigurations3735 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setChangingConfigurations", "(I)V");
+			global::android.graphics.drawable.Drawable._getChangingConfigurations3736 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getChangingConfigurations", "()I");
+			global::android.graphics.drawable.Drawable._setDither3737 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setDither", "(Z)V");
+			global::android.graphics.drawable.Drawable._setFilterBitmap3738 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setFilterBitmap", "(Z)V");
+			global::android.graphics.drawable.Drawable._setCallback3739 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setCallback", "(Landroid/graphics/drawable/Drawable$Callback;)V");
+			global::android.graphics.drawable.Drawable._invalidateSelf3740 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "invalidateSelf", "()V");
+			global::android.graphics.drawable.Drawable._scheduleSelf3741 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "scheduleSelf", "(Ljava/lang/Runnable;J)V");
+			global::android.graphics.drawable.Drawable._unscheduleSelf3742 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "unscheduleSelf", "(Ljava/lang/Runnable;)V");
+			global::android.graphics.drawable.Drawable._setAlpha3743 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setAlpha", "(I)V");
+			global::android.graphics.drawable.Drawable._setColorFilter3744 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setColorFilter", "(Landroid/graphics/ColorFilter;)V");
+			global::android.graphics.drawable.Drawable._setColorFilter3745 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setColorFilter", "(ILandroid/graphics/PorterDuff$Mode;)V");
+			global::android.graphics.drawable.Drawable._clearColorFilter3746 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "clearColorFilter", "()V");
+			global::android.graphics.drawable.Drawable._isStateful3747 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "isStateful", "()Z");
+			global::android.graphics.drawable.Drawable._getCurrent3748 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getCurrent", "()Landroid/graphics/drawable/Drawable;");
+			global::android.graphics.drawable.Drawable._setLevel3749 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setLevel", "(I)Z");
+			global::android.graphics.drawable.Drawable._getLevel3750 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getLevel", "()I");
+			global::android.graphics.drawable.Drawable._setVisible3751 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "setVisible", "(ZZ)Z");
+			global::android.graphics.drawable.Drawable._isVisible3752 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "isVisible", "()Z");
+			global::android.graphics.drawable.Drawable._getOpacity3753 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getOpacity", "()I");
+			global::android.graphics.drawable.Drawable._resolveOpacity3754 = @__env.GetStaticMethodID(global::android.graphics.drawable.Drawable.staticClass, "resolveOpacity", "(II)I");
+			global::android.graphics.drawable.Drawable._getTransparentRegion3755 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getTransparentRegion", "()Landroid/graphics/Region;");
+			global::android.graphics.drawable.Drawable._onStateChange3756 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "onStateChange", "([I)Z");
+			global::android.graphics.drawable.Drawable._onLevelChange3757 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "onLevelChange", "(I)Z");
+			global::android.graphics.drawable.Drawable._onBoundsChange3758 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "onBoundsChange", "(Landroid/graphics/Rect;)V");
+			global::android.graphics.drawable.Drawable._getIntrinsicWidth3759 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getIntrinsicWidth", "()I");
+			global::android.graphics.drawable.Drawable._getIntrinsicHeight3760 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getIntrinsicHeight", "()I");
+			global::android.graphics.drawable.Drawable._getMinimumWidth3761 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getMinimumWidth", "()I");
+			global::android.graphics.drawable.Drawable._getMinimumHeight3762 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getMinimumHeight", "()I");
+			global::android.graphics.drawable.Drawable._getPadding3763 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getPadding", "(Landroid/graphics/Rect;)Z");
+			global::android.graphics.drawable.Drawable._mutate3764 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "mutate", "()Landroid/graphics/drawable/Drawable;");
+			global::android.graphics.drawable.Drawable._createFromStream3765 = @__env.GetStaticMethodID(global::android.graphics.drawable.Drawable.staticClass, "createFromStream", "(Ljava/io/InputStream;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;");
+			global::android.graphics.drawable.Drawable._createFromResourceStream3766 = @__env.GetStaticMethodID(global::android.graphics.drawable.Drawable.staticClass, "createFromResourceStream", "(Landroid/content/res/Resources;Landroid/util/TypedValue;Ljava/io/InputStream;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;");
+			global::android.graphics.drawable.Drawable._createFromResourceStream3767 = @__env.GetStaticMethodID(global::android.graphics.drawable.Drawable.staticClass, "createFromResourceStream", "(Landroid/content/res/Resources;Landroid/util/TypedValue;Ljava/io/InputStream;Ljava/lang/String;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/drawable/Drawable;");
+			global::android.graphics.drawable.Drawable._createFromXml3768 = @__env.GetStaticMethodID(global::android.graphics.drawable.Drawable.staticClass, "createFromXml", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;)Landroid/graphics/drawable/Drawable;");
+			global::android.graphics.drawable.Drawable._createFromXmlInner3769 = @__env.GetStaticMethodID(global::android.graphics.drawable.Drawable.staticClass, "createFromXmlInner", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)Landroid/graphics/drawable/Drawable;");
+			global::android.graphics.drawable.Drawable._createFromPath3770 = @__env.GetStaticMethodID(global::android.graphics.drawable.Drawable.staticClass, "createFromPath", "(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;");
+			global::android.graphics.drawable.Drawable._getConstantState3771 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "getConstantState", "()Landroid/graphics/drawable/Drawable$ConstantState;");
+			global::android.graphics.drawable.Drawable._Drawable3772 = @__env.GetMethodID(global::android.graphics.drawable.Drawable.staticClass, "<init>", "()V");
 		}
 	}
 }

@@ -18,16 +18,16 @@ namespace android.graphics
 		protected Xfermode(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _Xfermode3431;
+		internal static global::net.sf.jni4net.jni.MethodId _Xfermode3630;
 		public Xfermode()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.Xfermode.staticClass, global::android.graphics.Xfermode._Xfermode3431, this);
+			@__env.NewObject(android.graphics.Xfermode.staticClass, global::android.graphics.Xfermode._Xfermode3630, this);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.graphics.Xfermode.staticClass = @__class;
-			global::android.graphics.Xfermode._Xfermode3431 = @__env.GetMethodID(global::android.graphics.Xfermode.staticClass, "<init>", "()V");
+			global::android.graphics.Xfermode._Xfermode3630 = @__env.GetMethodID(global::android.graphics.Xfermode.staticClass, "<init>", "()V");
 		}
 	}
 }

@@ -32,19 +32,19 @@ namespace android.content
 		internal __DialogInterface_OnCancelListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onCancel1272;
+		internal static global::net.sf.jni4net.jni.MethodId _onCancel1415;
 		 void android.content.DialogInterface_OnCancelListener.onCancel(android.content.DialogInterface arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.__DialogInterface_OnCancelListener._onCancel1272, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.content.__DialogInterface_OnCancelListener._onCancel1415, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface_OnCancelListener.staticClass, global::android.content.__DialogInterface_OnCancelListener._onCancel1272, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface_OnCancelListener.staticClass, global::android.content.__DialogInterface_OnCancelListener._onCancel1415, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.content.__DialogInterface_OnCancelListener.staticClass = @__class;
-			global::android.content.__DialogInterface_OnCancelListener._onCancel1272 = @__env.GetMethodID(global::android.content.__DialogInterface_OnCancelListener.staticClass, "android.content.DialogInterface_OnCancelListener.onCancel", "(Landroid/content/DialogInterface;)V");
+			global::android.content.__DialogInterface_OnCancelListener._onCancel1415 = @__env.GetMethodID(global::android.content.__DialogInterface_OnCancelListener.staticClass, "android.content.DialogInterface_OnCancelListener.onCancel", "(Landroid/content/DialogInterface;)V");
 		}
 	}
 }

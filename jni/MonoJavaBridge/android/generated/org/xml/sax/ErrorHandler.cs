@@ -34,39 +34,39 @@ namespace org.xml.sax
 		internal __ErrorHandler(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _fatalError13303;
+		internal static global::net.sf.jni4net.jni.MethodId _fatalError14582;
 		 void org.xml.sax.ErrorHandler.fatalError(org.xml.sax.SAXParseException arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ErrorHandler._fatalError13303, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::org.xml.sax.__ErrorHandler._fatalError14582, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ErrorHandler.staticClass, global::org.xml.sax.__ErrorHandler._fatalError13303, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ErrorHandler.staticClass, global::org.xml.sax.__ErrorHandler._fatalError14582, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _error13304;
+		internal static global::net.sf.jni4net.jni.MethodId _error14583;
 		 void org.xml.sax.ErrorHandler.error(org.xml.sax.SAXParseException arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ErrorHandler._error13304, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::org.xml.sax.__ErrorHandler._error14583, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ErrorHandler.staticClass, global::org.xml.sax.__ErrorHandler._error13304, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ErrorHandler.staticClass, global::org.xml.sax.__ErrorHandler._error14583, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _warning13305;
+		internal static global::net.sf.jni4net.jni.MethodId _warning14584;
 		 void org.xml.sax.ErrorHandler.warning(org.xml.sax.SAXParseException arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__ErrorHandler._warning13305, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::org.xml.sax.__ErrorHandler._warning14584, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ErrorHandler.staticClass, global::org.xml.sax.__ErrorHandler._warning13305, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__ErrorHandler.staticClass, global::org.xml.sax.__ErrorHandler._warning14584, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::org.xml.sax.__ErrorHandler.staticClass = @__class;
-			global::org.xml.sax.__ErrorHandler._fatalError13303 = @__env.GetMethodID(global::org.xml.sax.__ErrorHandler.staticClass, "org.xml.sax.ErrorHandler.fatalError", "(Lorg/xml/sax/SAXParseException;)V");
-			global::org.xml.sax.__ErrorHandler._error13304 = @__env.GetMethodID(global::org.xml.sax.__ErrorHandler.staticClass, "org.xml.sax.ErrorHandler.error", "(Lorg/xml/sax/SAXParseException;)V");
-			global::org.xml.sax.__ErrorHandler._warning13305 = @__env.GetMethodID(global::org.xml.sax.__ErrorHandler.staticClass, "org.xml.sax.ErrorHandler.warning", "(Lorg/xml/sax/SAXParseException;)V");
+			global::org.xml.sax.__ErrorHandler._fatalError14582 = @__env.GetMethodID(global::org.xml.sax.__ErrorHandler.staticClass, "org.xml.sax.ErrorHandler.fatalError", "(Lorg/xml/sax/SAXParseException;)V");
+			global::org.xml.sax.__ErrorHandler._error14583 = @__env.GetMethodID(global::org.xml.sax.__ErrorHandler.staticClass, "org.xml.sax.ErrorHandler.error", "(Lorg/xml/sax/SAXParseException;)V");
+			global::org.xml.sax.__ErrorHandler._warning14584 = @__env.GetMethodID(global::org.xml.sax.__ErrorHandler.staticClass, "org.xml.sax.ErrorHandler.warning", "(Lorg/xml/sax/SAXParseException;)V");
 		}
 	}
 }

@@ -18,68 +18,68 @@ namespace android.hardware
 		protected Sensor(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getName3930;
+		internal static global::net.sf.jni4net.jni.MethodId _getName4162;
 		public virtual global::java.lang.String getName() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Sensor._getName3930));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Sensor._getName4162));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getName3930));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getName4162));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getType3931;
+		internal static global::net.sf.jni4net.jni.MethodId _getType4163;
 		public virtual int getType() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.hardware.Sensor._getType3931);
+				return @__env.CallIntMethod(this, global::android.hardware.Sensor._getType4163);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getType3931);
+				return @__env.CallNonVirtualIntMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getType4163);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getVersion3932;
+		internal static global::net.sf.jni4net.jni.MethodId _getVersion4164;
 		public virtual int getVersion() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.hardware.Sensor._getVersion3932);
+				return @__env.CallIntMethod(this, global::android.hardware.Sensor._getVersion4164);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getVersion3932);
+				return @__env.CallNonVirtualIntMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getVersion4164);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getVendor3933;
+		internal static global::net.sf.jni4net.jni.MethodId _getVendor4165;
 		public virtual global::java.lang.String getVendor() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Sensor._getVendor3933));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.hardware.Sensor._getVendor4165));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getVendor3933));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getVendor4165));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMaximumRange3934;
+		internal static global::net.sf.jni4net.jni.MethodId _getMaximumRange4166;
 		public virtual float getMaximumRange() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.hardware.Sensor._getMaximumRange3934);
+				return @__env.CallFloatMethod(this, global::android.hardware.Sensor._getMaximumRange4166);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getMaximumRange3934);
+				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getMaximumRange4166);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getResolution3935;
+		internal static global::net.sf.jni4net.jni.MethodId _getResolution4167;
 		public virtual float getResolution() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.hardware.Sensor._getResolution3935);
+				return @__env.CallFloatMethod(this, global::android.hardware.Sensor._getResolution4167);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getResolution3935);
+				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getResolution4167);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPower3936;
+		internal static global::net.sf.jni4net.jni.MethodId _getPower4168;
 		public virtual float getPower() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.hardware.Sensor._getPower3936);
+				return @__env.CallFloatMethod(this, global::android.hardware.Sensor._getPower4168);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getPower3936);
+				return @__env.CallNonVirtualFloatMethod(this, global::android.hardware.Sensor.staticClass, global::android.hardware.Sensor._getPower4168);
 		}
 		public static int TYPE_ACCELEROMETER
 		{
@@ -147,13 +147,13 @@ namespace android.hardware
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.hardware.Sensor.staticClass = @__class;
-			global::android.hardware.Sensor._getName3930 = @__env.GetMethodID(global::android.hardware.Sensor.staticClass, "getName", "()Ljava/lang/String;");
-			global::android.hardware.Sensor._getType3931 = @__env.GetMethodID(global::android.hardware.Sensor.staticClass, "getType", "()I");
-			global::android.hardware.Sensor._getVersion3932 = @__env.GetMethodID(global::android.hardware.Sensor.staticClass, "getVersion", "()I");
-			global::android.hardware.Sensor._getVendor3933 = @__env.GetMethodID(global::android.hardware.Sensor.staticClass, "getVendor", "()Ljava/lang/String;");
-			global::android.hardware.Sensor._getMaximumRange3934 = @__env.GetMethodID(global::android.hardware.Sensor.staticClass, "getMaximumRange", "()F");
-			global::android.hardware.Sensor._getResolution3935 = @__env.GetMethodID(global::android.hardware.Sensor.staticClass, "getResolution", "()F");
-			global::android.hardware.Sensor._getPower3936 = @__env.GetMethodID(global::android.hardware.Sensor.staticClass, "getPower", "()F");
+			global::android.hardware.Sensor._getName4162 = @__env.GetMethodID(global::android.hardware.Sensor.staticClass, "getName", "()Ljava/lang/String;");
+			global::android.hardware.Sensor._getType4163 = @__env.GetMethodID(global::android.hardware.Sensor.staticClass, "getType", "()I");
+			global::android.hardware.Sensor._getVersion4164 = @__env.GetMethodID(global::android.hardware.Sensor.staticClass, "getVersion", "()I");
+			global::android.hardware.Sensor._getVendor4165 = @__env.GetMethodID(global::android.hardware.Sensor.staticClass, "getVendor", "()Ljava/lang/String;");
+			global::android.hardware.Sensor._getMaximumRange4166 = @__env.GetMethodID(global::android.hardware.Sensor.staticClass, "getMaximumRange", "()F");
+			global::android.hardware.Sensor._getResolution4167 = @__env.GetMethodID(global::android.hardware.Sensor.staticClass, "getResolution", "()F");
+			global::android.hardware.Sensor._getPower4168 = @__env.GetMethodID(global::android.hardware.Sensor.staticClass, "getPower", "()F");
 		}
 	}
 }

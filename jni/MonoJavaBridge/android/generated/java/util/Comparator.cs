@@ -33,29 +33,29 @@ namespace java.util
 		internal __Comparator(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _equals12809;
+		internal static global::net.sf.jni4net.jni.MethodId _equals13637;
 		 bool java.util.Comparator.equals(java.lang.Object arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::java.util.__Comparator._equals12809, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::java.util.__Comparator._equals13637, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__Comparator.staticClass, global::java.util.__Comparator._equals12809, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::java.util.__Comparator.staticClass, global::java.util.__Comparator._equals13637, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _compare12810;
+		internal static global::net.sf.jni4net.jni.MethodId _compare13638;
 		 int java.util.Comparator.compare(java.lang.Object arg0, java.lang.Object arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::java.util.__Comparator._compare12810, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				return @__env.CallIntMethod(this, global::java.util.__Comparator._compare13638, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::java.util.__Comparator.staticClass, global::java.util.__Comparator._compare12810, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				return @__env.CallNonVirtualIntMethod(this, global::java.util.__Comparator.staticClass, global::java.util.__Comparator._compare13638, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.util.__Comparator.staticClass = @__class;
-			global::java.util.__Comparator._equals12809 = @__env.GetMethodID(global::java.util.__Comparator.staticClass, "java.util.Comparator.equals", "(Ljava/lang/Object;)Z");
-			global::java.util.__Comparator._compare12810 = @__env.GetMethodID(global::java.util.__Comparator.staticClass, "java.util.Comparator.compare", "(Ljava/lang/Object;Ljava/lang/Object;)I");
+			global::java.util.__Comparator._equals13637 = @__env.GetMethodID(global::java.util.__Comparator.staticClass, "java.util.Comparator.equals", "(Ljava/lang/Object;)Z");
+			global::java.util.__Comparator._compare13638 = @__env.GetMethodID(global::java.util.__Comparator.staticClass, "java.util.Comparator.compare", "(Ljava/lang/Object;Ljava/lang/Object;)I");
 		}
 	}
 }

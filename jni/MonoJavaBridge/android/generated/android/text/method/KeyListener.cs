@@ -36,59 +36,59 @@ namespace android.text.method
 		internal __KeyListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onKeyDown7156;
+		internal static global::net.sf.jni4net.jni.MethodId _onKeyDown7782;
 		 bool android.text.method.KeyListener.onKeyDown(android.view.View arg0, android.text.Editable arg1, int arg2, android.view.KeyEvent arg3) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.text.method.__KeyListener._onKeyDown7156, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+				return @__env.CallBooleanMethod(this, global::android.text.method.__KeyListener._onKeyDown7782, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.method.__KeyListener.staticClass, global::android.text.method.__KeyListener._onKeyDown7156, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.method.__KeyListener.staticClass, global::android.text.method.__KeyListener._onKeyDown7782, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onKeyUp7157;
+		internal static global::net.sf.jni4net.jni.MethodId _onKeyUp7783;
 		 bool android.text.method.KeyListener.onKeyUp(android.view.View arg0, android.text.Editable arg1, int arg2, android.view.KeyEvent arg3) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.text.method.__KeyListener._onKeyUp7157, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+				return @__env.CallBooleanMethod(this, global::android.text.method.__KeyListener._onKeyUp7783, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.method.__KeyListener.staticClass, global::android.text.method.__KeyListener._onKeyUp7157, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.method.__KeyListener.staticClass, global::android.text.method.__KeyListener._onKeyUp7783, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInputType7158;
+		internal static global::net.sf.jni4net.jni.MethodId _getInputType7784;
 		 int android.text.method.KeyListener.getInputType() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.text.method.__KeyListener._getInputType7158);
+				return @__env.CallIntMethod(this, global::android.text.method.__KeyListener._getInputType7784);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.text.method.__KeyListener.staticClass, global::android.text.method.__KeyListener._getInputType7158);
+				return @__env.CallNonVirtualIntMethod(this, global::android.text.method.__KeyListener.staticClass, global::android.text.method.__KeyListener._getInputType7784);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onKeyOther7159;
+		internal static global::net.sf.jni4net.jni.MethodId _onKeyOther7785;
 		 bool android.text.method.KeyListener.onKeyOther(android.view.View arg0, android.text.Editable arg1, android.view.KeyEvent arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.text.method.__KeyListener._onKeyOther7159, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallBooleanMethod(this, global::android.text.method.__KeyListener._onKeyOther7785, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.method.__KeyListener.staticClass, global::android.text.method.__KeyListener._onKeyOther7159, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.text.method.__KeyListener.staticClass, global::android.text.method.__KeyListener._onKeyOther7785, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _clearMetaKeyState7160;
+		internal static global::net.sf.jni4net.jni.MethodId _clearMetaKeyState7786;
 		 void android.text.method.KeyListener.clearMetaKeyState(android.view.View arg0, android.text.Editable arg1, int arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.method.__KeyListener._clearMetaKeyState7160, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallVoidMethod(this, global::android.text.method.__KeyListener._clearMetaKeyState7786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.method.__KeyListener.staticClass, global::android.text.method.__KeyListener._clearMetaKeyState7160, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.method.__KeyListener.staticClass, global::android.text.method.__KeyListener._clearMetaKeyState7786, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.text.method.__KeyListener.staticClass = @__class;
-			global::android.text.method.__KeyListener._onKeyDown7156 = @__env.GetMethodID(global::android.text.method.__KeyListener.staticClass, "android.text.method.KeyListener.onKeyDown", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z");
-			global::android.text.method.__KeyListener._onKeyUp7157 = @__env.GetMethodID(global::android.text.method.__KeyListener.staticClass, "android.text.method.KeyListener.onKeyUp", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z");
-			global::android.text.method.__KeyListener._getInputType7158 = @__env.GetMethodID(global::android.text.method.__KeyListener.staticClass, "android.text.method.KeyListener.getInputType", "()I");
-			global::android.text.method.__KeyListener._onKeyOther7159 = @__env.GetMethodID(global::android.text.method.__KeyListener.staticClass, "android.text.method.KeyListener.onKeyOther", "(Landroid/view/View;Landroid/text/Editable;Landroid/view/KeyEvent;)Z");
-			global::android.text.method.__KeyListener._clearMetaKeyState7160 = @__env.GetMethodID(global::android.text.method.__KeyListener.staticClass, "android.text.method.KeyListener.clearMetaKeyState", "(Landroid/view/View;Landroid/text/Editable;I)V");
+			global::android.text.method.__KeyListener._onKeyDown7782 = @__env.GetMethodID(global::android.text.method.__KeyListener.staticClass, "android.text.method.KeyListener.onKeyDown", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z");
+			global::android.text.method.__KeyListener._onKeyUp7783 = @__env.GetMethodID(global::android.text.method.__KeyListener.staticClass, "android.text.method.KeyListener.onKeyUp", "(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z");
+			global::android.text.method.__KeyListener._getInputType7784 = @__env.GetMethodID(global::android.text.method.__KeyListener.staticClass, "android.text.method.KeyListener.getInputType", "()I");
+			global::android.text.method.__KeyListener._onKeyOther7785 = @__env.GetMethodID(global::android.text.method.__KeyListener.staticClass, "android.text.method.KeyListener.onKeyOther", "(Landroid/view/View;Landroid/text/Editable;Landroid/view/KeyEvent;)Z");
+			global::android.text.method.__KeyListener._clearMetaKeyState7786 = @__env.GetMethodID(global::android.text.method.__KeyListener.staticClass, "android.text.method.KeyListener.clearMetaKeyState", "(Landroid/view/View;Landroid/text/Editable;I)V");
 		}
 	}
 }

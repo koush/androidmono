@@ -36,146 +36,146 @@ namespace android.database
 			protected InsertHelper(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _replace2341;
+			internal static global::net.sf.jni4net.jni.MethodId _replace2522;
 			public virtual long replace(android.content.ContentValues arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallLongMethod(this, global::android.database.DatabaseUtils.InsertHelper._replace2341, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					return @__env.CallLongMethod(this, global::android.database.DatabaseUtils.InsertHelper._replace2522, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 				else
-					return @__env.CallNonVirtualLongMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._replace2341, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					return @__env.CallNonVirtualLongMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._replace2522, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _close2342;
+			internal static global::net.sf.jni4net.jni.MethodId _close2523;
 			public virtual void close() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._close2342);
+					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._close2523);
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._close2342);
+					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._close2523);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _insert2343;
+			internal static global::net.sf.jni4net.jni.MethodId _insert2524;
 			public virtual long insert(android.content.ContentValues arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallLongMethod(this, global::android.database.DatabaseUtils.InsertHelper._insert2343, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					return @__env.CallLongMethod(this, global::android.database.DatabaseUtils.InsertHelper._insert2524, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 				else
-					return @__env.CallNonVirtualLongMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._insert2343, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					return @__env.CallNonVirtualLongMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._insert2524, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _execute2344;
+			internal static global::net.sf.jni4net.jni.MethodId _execute2525;
 			public virtual long execute() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallLongMethod(this, global::android.database.DatabaseUtils.InsertHelper._execute2344);
+					return @__env.CallLongMethod(this, global::android.database.DatabaseUtils.InsertHelper._execute2525);
 				else
-					return @__env.CallNonVirtualLongMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._execute2344);
+					return @__env.CallNonVirtualLongMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._execute2525);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getColumnIndex2345;
+			internal static global::net.sf.jni4net.jni.MethodId _getColumnIndex2526;
 			public virtual int getColumnIndex(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallIntMethod(this, global::android.database.DatabaseUtils.InsertHelper._getColumnIndex2345, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					return @__env.CallIntMethod(this, global::android.database.DatabaseUtils.InsertHelper._getColumnIndex2526, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 				else
-					return @__env.CallNonVirtualIntMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._getColumnIndex2345, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					return @__env.CallNonVirtualIntMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._getColumnIndex2526, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _bind2346;
+			internal static global::net.sf.jni4net.jni.MethodId _bind2527;
 			public virtual void bind(int arg0, bool arg1) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2346, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2527, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2346, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2527, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _bind2347;
+			internal static global::net.sf.jni4net.jni.MethodId _bind2528;
 			public virtual void bind(int arg0, byte[] arg1) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2347, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1));
+					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2528, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2347, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1));
+					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2528, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _bind2348;
+			internal static global::net.sf.jni4net.jni.MethodId _bind2529;
 			public virtual void bind(int arg0, float arg1) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2348, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2529, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2348, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2529, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _bind2349;
+			internal static global::net.sf.jni4net.jni.MethodId _bind2530;
 			public virtual void bind(int arg0, java.lang.String arg1) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2349, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2530, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2349, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2530, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _bind2350;
+			internal static global::net.sf.jni4net.jni.MethodId _bind2531;
 			public virtual void bind(int arg0, long arg1) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2350, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2531, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2350, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2531, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _bind2351;
+			internal static global::net.sf.jni4net.jni.MethodId _bind2532;
 			public virtual void bind(int arg0, int arg1) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2351, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2532, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2351, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2532, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _bind2352;
+			internal static global::net.sf.jni4net.jni.MethodId _bind2533;
 			public virtual void bind(int arg0, double arg1) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2352, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bind2533, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2352, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bind2533, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _bindNull2353;
+			internal static global::net.sf.jni4net.jni.MethodId _bindNull2534;
 			public virtual void bindNull(int arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bindNull2353, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._bindNull2534, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bindNull2353, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._bindNull2534, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _prepareForInsert2354;
+			internal static global::net.sf.jni4net.jni.MethodId _prepareForInsert2535;
 			public virtual void prepareForInsert() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._prepareForInsert2354);
+					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._prepareForInsert2535);
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._prepareForInsert2354);
+					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._prepareForInsert2535);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _prepareForReplace2355;
+			internal static global::net.sf.jni4net.jni.MethodId _prepareForReplace2536;
 			public virtual void prepareForReplace() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._prepareForReplace2355);
+					@__env.CallVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper._prepareForReplace2536);
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._prepareForReplace2355);
+					@__env.CallNonVirtualVoidMethod(this, global::android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._prepareForReplace2536);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _InsertHelper2356;
+			internal static global::net.sf.jni4net.jni.MethodId _InsertHelper2537;
 			public InsertHelper(android.database.sqlite.SQLiteDatabase arg0, java.lang.String arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._InsertHelper2356, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.NewObject(android.database.DatabaseUtils.InsertHelper.staticClass, global::android.database.DatabaseUtils.InsertHelper._InsertHelper2537, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			}
 			public static int TABLE_INFO_PRAGMA_DEFAULT_INDEX
 			{
@@ -187,272 +187,314 @@ namespace android.database
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.database.DatabaseUtils.InsertHelper.staticClass = @__class;
-				global::android.database.DatabaseUtils.InsertHelper._replace2341 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "replace", "(Landroid/content/ContentValues;)J");
-				global::android.database.DatabaseUtils.InsertHelper._close2342 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "close", "()V");
-				global::android.database.DatabaseUtils.InsertHelper._insert2343 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "insert", "(Landroid/content/ContentValues;)J");
-				global::android.database.DatabaseUtils.InsertHelper._execute2344 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "execute", "()J");
-				global::android.database.DatabaseUtils.InsertHelper._getColumnIndex2345 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "getColumnIndex", "(Ljava/lang/String;)I");
-				global::android.database.DatabaseUtils.InsertHelper._bind2346 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(IZ)V");
-				global::android.database.DatabaseUtils.InsertHelper._bind2347 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(I[B)V");
-				global::android.database.DatabaseUtils.InsertHelper._bind2348 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(IF)V");
-				global::android.database.DatabaseUtils.InsertHelper._bind2349 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(ILjava/lang/String;)V");
-				global::android.database.DatabaseUtils.InsertHelper._bind2350 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(IJ)V");
-				global::android.database.DatabaseUtils.InsertHelper._bind2351 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(II)V");
-				global::android.database.DatabaseUtils.InsertHelper._bind2352 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(ID)V");
-				global::android.database.DatabaseUtils.InsertHelper._bindNull2353 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bindNull", "(I)V");
-				global::android.database.DatabaseUtils.InsertHelper._prepareForInsert2354 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "prepareForInsert", "()V");
-				global::android.database.DatabaseUtils.InsertHelper._prepareForReplace2355 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "prepareForReplace", "()V");
-				global::android.database.DatabaseUtils.InsertHelper._InsertHelper2356 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "<init>", "(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)V");
+				global::android.database.DatabaseUtils.InsertHelper._replace2522 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "replace", "(Landroid/content/ContentValues;)J");
+				global::android.database.DatabaseUtils.InsertHelper._close2523 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "close", "()V");
+				global::android.database.DatabaseUtils.InsertHelper._insert2524 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "insert", "(Landroid/content/ContentValues;)J");
+				global::android.database.DatabaseUtils.InsertHelper._execute2525 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "execute", "()J");
+				global::android.database.DatabaseUtils.InsertHelper._getColumnIndex2526 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "getColumnIndex", "(Ljava/lang/String;)I");
+				global::android.database.DatabaseUtils.InsertHelper._bind2527 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(IZ)V");
+				global::android.database.DatabaseUtils.InsertHelper._bind2528 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(I[B)V");
+				global::android.database.DatabaseUtils.InsertHelper._bind2529 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(IF)V");
+				global::android.database.DatabaseUtils.InsertHelper._bind2530 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(ILjava/lang/String;)V");
+				global::android.database.DatabaseUtils.InsertHelper._bind2531 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(IJ)V");
+				global::android.database.DatabaseUtils.InsertHelper._bind2532 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(II)V");
+				global::android.database.DatabaseUtils.InsertHelper._bind2533 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bind", "(ID)V");
+				global::android.database.DatabaseUtils.InsertHelper._bindNull2534 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "bindNull", "(I)V");
+				global::android.database.DatabaseUtils.InsertHelper._prepareForInsert2535 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "prepareForInsert", "()V");
+				global::android.database.DatabaseUtils.InsertHelper._prepareForReplace2536 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "prepareForReplace", "()V");
+				global::android.database.DatabaseUtils.InsertHelper._InsertHelper2537 = @__env.GetMethodID(global::android.database.DatabaseUtils.InsertHelper.staticClass, "<init>", "(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeExceptionToParcel2357;
+		internal static global::net.sf.jni4net.jni.MethodId _writeExceptionToParcel2538;
 		public static void writeExceptionToParcel(android.os.Parcel arg0, java.lang.Exception arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._writeExceptionToParcel2357, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._writeExceptionToParcel2538, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _readExceptionFromParcel2358;
+		internal static global::net.sf.jni4net.jni.MethodId _readExceptionFromParcel2539;
 		public static void readExceptionFromParcel(android.os.Parcel arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._readExceptionFromParcel2358, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._readExceptionFromParcel2539, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _readExceptionWithFileNotFoundExceptionFromParcel2359;
+		internal static global::net.sf.jni4net.jni.MethodId _readExceptionWithFileNotFoundExceptionFromParcel2540;
 		public static void readExceptionWithFileNotFoundExceptionFromParcel(android.os.Parcel arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._readExceptionWithFileNotFoundExceptionFromParcel2359, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._readExceptionWithFileNotFoundExceptionFromParcel2540, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _readExceptionWithOperationApplicationExceptionFromParcel2360;
+		internal static global::net.sf.jni4net.jni.MethodId _readExceptionWithOperationApplicationExceptionFromParcel2541;
 		public static void readExceptionWithOperationApplicationExceptionFromParcel(android.os.Parcel arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._readExceptionWithOperationApplicationExceptionFromParcel2360, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._readExceptionWithOperationApplicationExceptionFromParcel2541, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _bindObjectToProgram2361;
+		internal static global::net.sf.jni4net.jni.MethodId _bindObjectToProgram2542;
 		public static void bindObjectToProgram(android.database.sqlite.SQLiteProgram arg0, int arg1, java.lang.Object arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._bindObjectToProgram2361, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._bindObjectToProgram2542, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _appendEscapedSQLString2362;
+		internal static global::net.sf.jni4net.jni.MethodId _appendEscapedSQLString2543;
 		public static void appendEscapedSQLString(java.lang.StringBuilder arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._appendEscapedSQLString2362, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._appendEscapedSQLString2543, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _sqlEscapeString2363;
+		internal static global::net.sf.jni4net.jni.MethodId _sqlEscapeString2544;
 		public static global::java.lang.String sqlEscapeString(java.lang.String arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._sqlEscapeString2363, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._sqlEscapeString2544, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _appendValueToSql2364;
+		internal static global::net.sf.jni4net.jni.MethodId _appendValueToSql2545;
 		public static void appendValueToSql(java.lang.StringBuilder arg0, java.lang.Object arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._appendValueToSql2364, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._appendValueToSql2545, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCollationKey2365;
+		internal static global::net.sf.jni4net.jni.MethodId _getCollationKey2546;
 		public static global::java.lang.String getCollationKey(java.lang.String arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._getCollationKey2365, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._getCollationKey2546, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getHexCollationKey2366;
+		internal static global::net.sf.jni4net.jni.MethodId _getHexCollationKey2547;
 		public static global::java.lang.String getHexCollationKey(java.lang.String arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._getHexCollationKey2366, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._getHexCollationKey2547, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dumpCursor2367;
-		public static void dumpCursor(android.database.Cursor arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._dumpCursor2367, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _dumpCursor2368;
+		internal static global::net.sf.jni4net.jni.MethodId _dumpCursor2548;
 		public static void dumpCursor(android.database.Cursor arg0, java.io.PrintStream arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._dumpCursor2368, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._dumpCursor2548, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dumpCursor2369;
+		internal static global::net.sf.jni4net.jni.MethodId _dumpCursor2549;
 		public static void dumpCursor(android.database.Cursor arg0, java.lang.StringBuilder arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._dumpCursor2369, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._dumpCursor2549, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dumpCursorToString2370;
+		internal static global::net.sf.jni4net.jni.MethodId _dumpCursor2550;
+		public static void dumpCursor(android.database.Cursor arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._dumpCursor2550, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _dumpCursorToString2551;
 		public static global::java.lang.String dumpCursorToString(android.database.Cursor arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._dumpCursorToString2370, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._dumpCursorToString2551, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dumpCurrentRow2371;
-		public static void dumpCurrentRow(android.database.Cursor arg0, java.lang.StringBuilder arg1) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._dumpCurrentRow2371, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _dumpCurrentRow2372;
+		internal static global::net.sf.jni4net.jni.MethodId _dumpCurrentRow2552;
 		public static void dumpCurrentRow(android.database.Cursor arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._dumpCurrentRow2372, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._dumpCurrentRow2552, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dumpCurrentRow2373;
+		internal static global::net.sf.jni4net.jni.MethodId _dumpCurrentRow2553;
 		public static void dumpCurrentRow(android.database.Cursor arg0, java.io.PrintStream arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._dumpCurrentRow2373, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._dumpCurrentRow2553, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dumpCurrentRowToString2374;
+		internal static global::net.sf.jni4net.jni.MethodId _dumpCurrentRow2554;
+		public static void dumpCurrentRow(android.database.Cursor arg0, java.lang.StringBuilder arg1) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._dumpCurrentRow2554, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _dumpCurrentRowToString2555;
 		public static global::java.lang.String dumpCurrentRowToString(android.database.Cursor arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._dumpCurrentRowToString2374, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._dumpCurrentRowToString2555, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cursorStringToContentValues2375;
+		internal static global::net.sf.jni4net.jni.MethodId _cursorStringToContentValues2556;
 		public static void cursorStringToContentValues(android.database.Cursor arg0, java.lang.String arg1, android.content.ContentValues arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorStringToContentValues2375, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorStringToContentValues2556, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cursorStringToContentValues2376;
+		internal static global::net.sf.jni4net.jni.MethodId _cursorStringToContentValues2557;
 		public static void cursorStringToContentValues(android.database.Cursor arg0, java.lang.String arg1, android.content.ContentValues arg2, java.lang.String arg3) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorStringToContentValues2376, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorStringToContentValues2557, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cursorStringToInsertHelper2377;
+		internal static global::net.sf.jni4net.jni.MethodId _cursorStringToInsertHelper2558;
 		public static void cursorStringToInsertHelper(android.database.Cursor arg0, java.lang.String arg1, android.database.DatabaseUtils.InsertHelper arg2, int arg3) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorStringToInsertHelper2377, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorStringToInsertHelper2558, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cursorIntToContentValues2378;
-		public static void cursorIntToContentValues(android.database.Cursor arg0, java.lang.String arg1, android.content.ContentValues arg2) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorIntToContentValues2378, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _cursorIntToContentValues2379;
+		internal static global::net.sf.jni4net.jni.MethodId _cursorIntToContentValues2559;
 		public static void cursorIntToContentValues(android.database.Cursor arg0, java.lang.String arg1, android.content.ContentValues arg2, java.lang.String arg3) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorIntToContentValues2379, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorIntToContentValues2559, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cursorLongToContentValues2380;
+		internal static global::net.sf.jni4net.jni.MethodId _cursorIntToContentValues2560;
+		public static void cursorIntToContentValues(android.database.Cursor arg0, java.lang.String arg1, android.content.ContentValues arg2) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorIntToContentValues2560, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _cursorLongToContentValues2561;
 		public static void cursorLongToContentValues(android.database.Cursor arg0, java.lang.String arg1, android.content.ContentValues arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorLongToContentValues2380, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorLongToContentValues2561, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cursorLongToContentValues2381;
+		internal static global::net.sf.jni4net.jni.MethodId _cursorLongToContentValues2562;
 		public static void cursorLongToContentValues(android.database.Cursor arg0, java.lang.String arg1, android.content.ContentValues arg2, java.lang.String arg3) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorLongToContentValues2381, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorLongToContentValues2562, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cursorDoubleToCursorValues2382;
+		internal static global::net.sf.jni4net.jni.MethodId _cursorDoubleToCursorValues2563;
 		public static void cursorDoubleToCursorValues(android.database.Cursor arg0, java.lang.String arg1, android.content.ContentValues arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorDoubleToCursorValues2382, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorDoubleToCursorValues2563, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cursorDoubleToContentValues2383;
+		internal static global::net.sf.jni4net.jni.MethodId _cursorDoubleToContentValues2564;
 		public static void cursorDoubleToContentValues(android.database.Cursor arg0, java.lang.String arg1, android.content.ContentValues arg2, java.lang.String arg3) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorDoubleToContentValues2383, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorDoubleToContentValues2564, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cursorRowToContentValues2384;
+		internal static global::net.sf.jni4net.jni.MethodId _cursorRowToContentValues2565;
 		public static void cursorRowToContentValues(android.database.Cursor arg0, android.content.ContentValues arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorRowToContentValues2384, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorRowToContentValues2565, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _queryNumEntries2385;
+		internal static global::net.sf.jni4net.jni.MethodId _queryNumEntries2566;
 		public static long queryNumEntries(android.database.sqlite.SQLiteDatabase arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._queryNumEntries2385, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			return @__env.CallStaticLongMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._queryNumEntries2566, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _longForQuery2386;
-		public static long longForQuery(android.database.sqlite.SQLiteDatabase arg0, java.lang.String arg1, java.lang.String[] arg2) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._longForQuery2386, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _longForQuery2387;
+		internal static global::net.sf.jni4net.jni.MethodId _longForQuery2567;
 		public static long longForQuery(android.database.sqlite.SQLiteStatement arg0, java.lang.String[] arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return @__env.CallStaticLongMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._longForQuery2387, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1));
+			return @__env.CallStaticLongMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._longForQuery2567, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _stringForQuery2388;
+		internal static global::net.sf.jni4net.jni.MethodId _longForQuery2568;
+		public static long longForQuery(android.database.sqlite.SQLiteDatabase arg0, java.lang.String arg1, java.lang.String[] arg2) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			return @__env.CallStaticLongMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._longForQuery2568, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _stringForQuery2569;
 		public static global::java.lang.String stringForQuery(android.database.sqlite.SQLiteDatabase arg0, java.lang.String arg1, java.lang.String[] arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._stringForQuery2388, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._stringForQuery2569, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg2)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _stringForQuery2389;
+		internal static global::net.sf.jni4net.jni.MethodId _stringForQuery2570;
 		public static global::java.lang.String stringForQuery(android.database.sqlite.SQLiteStatement arg0, java.lang.String[] arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._stringForQuery2389, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallStaticObjectMethodPtr(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._stringForQuery2570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _createDbFromSqlStatements2390;
+		internal static global::net.sf.jni4net.jni.MethodId _cursorStringToContentValuesIfPresent2571;
+		public static void cursorStringToContentValuesIfPresent(android.database.Cursor arg0, android.content.ContentValues arg1, java.lang.String arg2) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorStringToContentValuesIfPresent2571, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _cursorLongToContentValuesIfPresent2572;
+		public static void cursorLongToContentValuesIfPresent(android.database.Cursor arg0, android.content.ContentValues arg1, java.lang.String arg2) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorLongToContentValuesIfPresent2572, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _cursorShortToContentValuesIfPresent2573;
+		public static void cursorShortToContentValuesIfPresent(android.database.Cursor arg0, android.content.ContentValues arg1, java.lang.String arg2) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorShortToContentValuesIfPresent2573, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _cursorIntToContentValuesIfPresent2574;
+		public static void cursorIntToContentValuesIfPresent(android.database.Cursor arg0, android.content.ContentValues arg1, java.lang.String arg2) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorIntToContentValuesIfPresent2574, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _cursorFloatToContentValuesIfPresent2575;
+		public static void cursorFloatToContentValuesIfPresent(android.database.Cursor arg0, android.content.ContentValues arg1, java.lang.String arg2) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorFloatToContentValuesIfPresent2575, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _cursorDoubleToContentValuesIfPresent2576;
+		public static void cursorDoubleToContentValuesIfPresent(android.database.Cursor arg0, android.content.ContentValues arg1, java.lang.String arg2) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._cursorDoubleToContentValuesIfPresent2576, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _createDbFromSqlStatements2577;
 		public static void createDbFromSqlStatements(android.content.Context arg0, java.lang.String arg1, int arg2, java.lang.String arg3) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._createDbFromSqlStatements2390, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+			@__env.CallStaticVoidMethod(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._createDbFromSqlStatements2577, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _DatabaseUtils2391;
+		internal static global::net.sf.jni4net.jni.MethodId _DatabaseUtils2578;
 		public DatabaseUtils()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._DatabaseUtils2391, this);
+			@__env.NewObject(android.database.DatabaseUtils.staticClass, global::android.database.DatabaseUtils._DatabaseUtils2578, this);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.database.DatabaseUtils.staticClass = @__class;
-			global::android.database.DatabaseUtils._writeExceptionToParcel2357 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "writeExceptionToParcel", "(Landroid/os/Parcel;Ljava/lang/Exception;)V");
-			global::android.database.DatabaseUtils._readExceptionFromParcel2358 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "readExceptionFromParcel", "(Landroid/os/Parcel;)V");
-			global::android.database.DatabaseUtils._readExceptionWithFileNotFoundExceptionFromParcel2359 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "readExceptionWithFileNotFoundExceptionFromParcel", "(Landroid/os/Parcel;)V");
-			global::android.database.DatabaseUtils._readExceptionWithOperationApplicationExceptionFromParcel2360 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "readExceptionWithOperationApplicationExceptionFromParcel", "(Landroid/os/Parcel;)V");
-			global::android.database.DatabaseUtils._bindObjectToProgram2361 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "bindObjectToProgram", "(Landroid/database/sqlite/SQLiteProgram;ILjava/lang/Object;)V");
-			global::android.database.DatabaseUtils._appendEscapedSQLString2362 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "appendEscapedSQLString", "(Ljava/lang/StringBuilder;Ljava/lang/String;)V");
-			global::android.database.DatabaseUtils._sqlEscapeString2363 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "sqlEscapeString", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::android.database.DatabaseUtils._appendValueToSql2364 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "appendValueToSql", "(Ljava/lang/StringBuilder;Ljava/lang/Object;)V");
-			global::android.database.DatabaseUtils._getCollationKey2365 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "getCollationKey", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::android.database.DatabaseUtils._getHexCollationKey2366 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "getHexCollationKey", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::android.database.DatabaseUtils._dumpCursor2367 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "dumpCursor", "(Landroid/database/Cursor;)V");
-			global::android.database.DatabaseUtils._dumpCursor2368 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "dumpCursor", "(Landroid/database/Cursor;Ljava/io/PrintStream;)V");
-			global::android.database.DatabaseUtils._dumpCursor2369 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "dumpCursor", "(Landroid/database/Cursor;Ljava/lang/StringBuilder;)V");
-			global::android.database.DatabaseUtils._dumpCursorToString2370 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "dumpCursorToString", "(Landroid/database/Cursor;)Ljava/lang/String;");
-			global::android.database.DatabaseUtils._dumpCurrentRow2371 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "dumpCurrentRow", "(Landroid/database/Cursor;Ljava/lang/StringBuilder;)V");
-			global::android.database.DatabaseUtils._dumpCurrentRow2372 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "dumpCurrentRow", "(Landroid/database/Cursor;)V");
-			global::android.database.DatabaseUtils._dumpCurrentRow2373 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "dumpCurrentRow", "(Landroid/database/Cursor;Ljava/io/PrintStream;)V");
-			global::android.database.DatabaseUtils._dumpCurrentRowToString2374 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "dumpCurrentRowToString", "(Landroid/database/Cursor;)Ljava/lang/String;");
-			global::android.database.DatabaseUtils._cursorStringToContentValues2375 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorStringToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;)V");
-			global::android.database.DatabaseUtils._cursorStringToContentValues2376 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorStringToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V");
-			global::android.database.DatabaseUtils._cursorStringToInsertHelper2377 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorStringToInsertHelper", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/database/DatabaseUtils$InsertHelper;I)V");
-			global::android.database.DatabaseUtils._cursorIntToContentValues2378 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorIntToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;)V");
-			global::android.database.DatabaseUtils._cursorIntToContentValues2379 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorIntToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V");
-			global::android.database.DatabaseUtils._cursorLongToContentValues2380 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorLongToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;)V");
-			global::android.database.DatabaseUtils._cursorLongToContentValues2381 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorLongToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V");
-			global::android.database.DatabaseUtils._cursorDoubleToCursorValues2382 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorDoubleToCursorValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;)V");
-			global::android.database.DatabaseUtils._cursorDoubleToContentValues2383 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorDoubleToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V");
-			global::android.database.DatabaseUtils._cursorRowToContentValues2384 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorRowToContentValues", "(Landroid/database/Cursor;Landroid/content/ContentValues;)V");
-			global::android.database.DatabaseUtils._queryNumEntries2385 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "queryNumEntries", "(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)J");
-			global::android.database.DatabaseUtils._longForQuery2386 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "longForQuery", "(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;[Ljava/lang/String;)J");
-			global::android.database.DatabaseUtils._longForQuery2387 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "longForQuery", "(Landroid/database/sqlite/SQLiteStatement;[Ljava/lang/String;)J");
-			global::android.database.DatabaseUtils._stringForQuery2388 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "stringForQuery", "(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;");
-			global::android.database.DatabaseUtils._stringForQuery2389 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "stringForQuery", "(Landroid/database/sqlite/SQLiteStatement;[Ljava/lang/String;)Ljava/lang/String;");
-			global::android.database.DatabaseUtils._createDbFromSqlStatements2390 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "createDbFromSqlStatements", "(Landroid/content/Context;Ljava/lang/String;ILjava/lang/String;)V");
-			global::android.database.DatabaseUtils._DatabaseUtils2391 = @__env.GetMethodID(global::android.database.DatabaseUtils.staticClass, "<init>", "()V");
+			global::android.database.DatabaseUtils._writeExceptionToParcel2538 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "writeExceptionToParcel", "(Landroid/os/Parcel;Ljava/lang/Exception;)V");
+			global::android.database.DatabaseUtils._readExceptionFromParcel2539 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "readExceptionFromParcel", "(Landroid/os/Parcel;)V");
+			global::android.database.DatabaseUtils._readExceptionWithFileNotFoundExceptionFromParcel2540 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "readExceptionWithFileNotFoundExceptionFromParcel", "(Landroid/os/Parcel;)V");
+			global::android.database.DatabaseUtils._readExceptionWithOperationApplicationExceptionFromParcel2541 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "readExceptionWithOperationApplicationExceptionFromParcel", "(Landroid/os/Parcel;)V");
+			global::android.database.DatabaseUtils._bindObjectToProgram2542 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "bindObjectToProgram", "(Landroid/database/sqlite/SQLiteProgram;ILjava/lang/Object;)V");
+			global::android.database.DatabaseUtils._appendEscapedSQLString2543 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "appendEscapedSQLString", "(Ljava/lang/StringBuilder;Ljava/lang/String;)V");
+			global::android.database.DatabaseUtils._sqlEscapeString2544 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "sqlEscapeString", "(Ljava/lang/String;)Ljava/lang/String;");
+			global::android.database.DatabaseUtils._appendValueToSql2545 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "appendValueToSql", "(Ljava/lang/StringBuilder;Ljava/lang/Object;)V");
+			global::android.database.DatabaseUtils._getCollationKey2546 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "getCollationKey", "(Ljava/lang/String;)Ljava/lang/String;");
+			global::android.database.DatabaseUtils._getHexCollationKey2547 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "getHexCollationKey", "(Ljava/lang/String;)Ljava/lang/String;");
+			global::android.database.DatabaseUtils._dumpCursor2548 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "dumpCursor", "(Landroid/database/Cursor;Ljava/io/PrintStream;)V");
+			global::android.database.DatabaseUtils._dumpCursor2549 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "dumpCursor", "(Landroid/database/Cursor;Ljava/lang/StringBuilder;)V");
+			global::android.database.DatabaseUtils._dumpCursor2550 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "dumpCursor", "(Landroid/database/Cursor;)V");
+			global::android.database.DatabaseUtils._dumpCursorToString2551 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "dumpCursorToString", "(Landroid/database/Cursor;)Ljava/lang/String;");
+			global::android.database.DatabaseUtils._dumpCurrentRow2552 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "dumpCurrentRow", "(Landroid/database/Cursor;)V");
+			global::android.database.DatabaseUtils._dumpCurrentRow2553 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "dumpCurrentRow", "(Landroid/database/Cursor;Ljava/io/PrintStream;)V");
+			global::android.database.DatabaseUtils._dumpCurrentRow2554 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "dumpCurrentRow", "(Landroid/database/Cursor;Ljava/lang/StringBuilder;)V");
+			global::android.database.DatabaseUtils._dumpCurrentRowToString2555 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "dumpCurrentRowToString", "(Landroid/database/Cursor;)Ljava/lang/String;");
+			global::android.database.DatabaseUtils._cursorStringToContentValues2556 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorStringToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;)V");
+			global::android.database.DatabaseUtils._cursorStringToContentValues2557 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorStringToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V");
+			global::android.database.DatabaseUtils._cursorStringToInsertHelper2558 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorStringToInsertHelper", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/database/DatabaseUtils$InsertHelper;I)V");
+			global::android.database.DatabaseUtils._cursorIntToContentValues2559 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorIntToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V");
+			global::android.database.DatabaseUtils._cursorIntToContentValues2560 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorIntToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;)V");
+			global::android.database.DatabaseUtils._cursorLongToContentValues2561 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorLongToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;)V");
+			global::android.database.DatabaseUtils._cursorLongToContentValues2562 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorLongToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V");
+			global::android.database.DatabaseUtils._cursorDoubleToCursorValues2563 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorDoubleToCursorValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;)V");
+			global::android.database.DatabaseUtils._cursorDoubleToContentValues2564 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorDoubleToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V");
+			global::android.database.DatabaseUtils._cursorRowToContentValues2565 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorRowToContentValues", "(Landroid/database/Cursor;Landroid/content/ContentValues;)V");
+			global::android.database.DatabaseUtils._queryNumEntries2566 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "queryNumEntries", "(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)J");
+			global::android.database.DatabaseUtils._longForQuery2567 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "longForQuery", "(Landroid/database/sqlite/SQLiteStatement;[Ljava/lang/String;)J");
+			global::android.database.DatabaseUtils._longForQuery2568 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "longForQuery", "(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;[Ljava/lang/String;)J");
+			global::android.database.DatabaseUtils._stringForQuery2569 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "stringForQuery", "(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;");
+			global::android.database.DatabaseUtils._stringForQuery2570 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "stringForQuery", "(Landroid/database/sqlite/SQLiteStatement;[Ljava/lang/String;)Ljava/lang/String;");
+			global::android.database.DatabaseUtils._cursorStringToContentValuesIfPresent2571 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorStringToContentValuesIfPresent", "(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V");
+			global::android.database.DatabaseUtils._cursorLongToContentValuesIfPresent2572 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorLongToContentValuesIfPresent", "(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V");
+			global::android.database.DatabaseUtils._cursorShortToContentValuesIfPresent2573 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorShortToContentValuesIfPresent", "(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V");
+			global::android.database.DatabaseUtils._cursorIntToContentValuesIfPresent2574 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorIntToContentValuesIfPresent", "(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V");
+			global::android.database.DatabaseUtils._cursorFloatToContentValuesIfPresent2575 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorFloatToContentValuesIfPresent", "(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V");
+			global::android.database.DatabaseUtils._cursorDoubleToContentValuesIfPresent2576 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "cursorDoubleToContentValuesIfPresent", "(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V");
+			global::android.database.DatabaseUtils._createDbFromSqlStatements2577 = @__env.GetStaticMethodID(global::android.database.DatabaseUtils.staticClass, "createDbFromSqlStatements", "(Landroid/content/Context;Ljava/lang/String;ILjava/lang/String;)V");
+			global::android.database.DatabaseUtils._DatabaseUtils2578 = @__env.GetMethodID(global::android.database.DatabaseUtils.staticClass, "<init>", "()V");
 		}
 	}
 }

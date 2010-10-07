@@ -33,29 +33,29 @@ namespace android.hardware
 		internal __SensorEventListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onSensorChanged3941;
+		internal static global::net.sf.jni4net.jni.MethodId _onSensorChanged4173;
 		 void android.hardware.SensorEventListener.onSensorChanged(android.hardware.SensorEvent arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.hardware.__SensorEventListener._onSensorChanged3941, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.hardware.__SensorEventListener._onSensorChanged4173, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.__SensorEventListener.staticClass, global::android.hardware.__SensorEventListener._onSensorChanged3941, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.__SensorEventListener.staticClass, global::android.hardware.__SensorEventListener._onSensorChanged4173, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onAccuracyChanged3942;
+		internal static global::net.sf.jni4net.jni.MethodId _onAccuracyChanged4174;
 		 void android.hardware.SensorEventListener.onAccuracyChanged(android.hardware.Sensor arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.hardware.__SensorEventListener._onAccuracyChanged3942, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.hardware.__SensorEventListener._onAccuracyChanged4174, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.__SensorEventListener.staticClass, global::android.hardware.__SensorEventListener._onAccuracyChanged3942, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.hardware.__SensorEventListener.staticClass, global::android.hardware.__SensorEventListener._onAccuracyChanged4174, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.hardware.__SensorEventListener.staticClass = @__class;
-			global::android.hardware.__SensorEventListener._onSensorChanged3941 = @__env.GetMethodID(global::android.hardware.__SensorEventListener.staticClass, "android.hardware.SensorEventListener.onSensorChanged", "(Landroid/hardware/SensorEvent;)V");
-			global::android.hardware.__SensorEventListener._onAccuracyChanged3942 = @__env.GetMethodID(global::android.hardware.__SensorEventListener.staticClass, "android.hardware.SensorEventListener.onAccuracyChanged", "(Landroid/hardware/Sensor;I)V");
+			global::android.hardware.__SensorEventListener._onSensorChanged4173 = @__env.GetMethodID(global::android.hardware.__SensorEventListener.staticClass, "android.hardware.SensorEventListener.onSensorChanged", "(Landroid/hardware/SensorEvent;)V");
+			global::android.hardware.__SensorEventListener._onAccuracyChanged4174 = @__env.GetMethodID(global::android.hardware.__SensorEventListener.staticClass, "android.hardware.SensorEventListener.onAccuracyChanged", "(Landroid/hardware/Sensor;I)V");
 		}
 	}
 }

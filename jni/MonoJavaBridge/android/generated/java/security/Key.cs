@@ -34,38 +34,38 @@ namespace java.security
 		internal __Key(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getEncoded12437;
+		internal static global::net.sf.jni4net.jni.MethodId _getEncoded13166;
 		 byte[] java.security.Key.getEncoded() 
 		{
 			if (!IsClrObject)
-				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Key._getEncoded12437));
+				return null;//(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Key._getEncoded13166));
 			else
-				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Key.staticClass, global::java.security.__Key._getEncoded12437));
+				return null;//(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Key.staticClass, global::java.security.__Key._getEncoded13166));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAlgorithm12438;
+		internal static global::net.sf.jni4net.jni.MethodId _getAlgorithm13167;
 		 global::java.lang.String java.security.Key.getAlgorithm() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Key._getAlgorithm12438));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Key._getAlgorithm13167));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Key.staticClass, global::java.security.__Key._getAlgorithm12438));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Key.staticClass, global::java.security.__Key._getAlgorithm13167));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFormat12439;
+		internal static global::net.sf.jni4net.jni.MethodId _getFormat13168;
 		 global::java.lang.String java.security.Key.getFormat() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Key._getFormat12439));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.security.__Key._getFormat13168));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Key.staticClass, global::java.security.__Key._getFormat12439));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.security.__Key.staticClass, global::java.security.__Key._getFormat13168));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.security.__Key.staticClass = @__class;
-			global::java.security.__Key._getEncoded12437 = @__env.GetMethodID(global::java.security.__Key.staticClass, "java.security.Key.getEncoded", "()[B");
-			global::java.security.__Key._getAlgorithm12438 = @__env.GetMethodID(global::java.security.__Key.staticClass, "java.security.Key.getAlgorithm", "()Ljava/lang/String;");
-			global::java.security.__Key._getFormat12439 = @__env.GetMethodID(global::java.security.__Key.staticClass, "java.security.Key.getFormat", "()Ljava/lang/String;");
+			global::java.security.__Key._getEncoded13166 = @__env.GetMethodID(global::java.security.__Key.staticClass, "java.security.Key.getEncoded", "()[B");
+			global::java.security.__Key._getAlgorithm13167 = @__env.GetMethodID(global::java.security.__Key.staticClass, "java.security.Key.getAlgorithm", "()Ljava/lang/String;");
+			global::java.security.__Key._getFormat13168 = @__env.GetMethodID(global::java.security.__Key.staticClass, "java.security.Key.getFormat", "()Ljava/lang/String;");
 		}
 	}
 }

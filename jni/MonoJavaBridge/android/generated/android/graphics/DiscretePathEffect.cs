@@ -18,16 +18,16 @@ namespace android.graphics
 		protected DiscretePathEffect(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _DiscretePathEffect2933;
+		internal static global::net.sf.jni4net.jni.MethodId _DiscretePathEffect3130;
 		public DiscretePathEffect(float arg0, float arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.DiscretePathEffect.staticClass, global::android.graphics.DiscretePathEffect._DiscretePathEffect2933, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			@__env.NewObject(android.graphics.DiscretePathEffect.staticClass, global::android.graphics.DiscretePathEffect._DiscretePathEffect3130, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.graphics.DiscretePathEffect.staticClass = @__class;
-			global::android.graphics.DiscretePathEffect._DiscretePathEffect2933 = @__env.GetMethodID(global::android.graphics.DiscretePathEffect.staticClass, "<init>", "(FF)V");
+			global::android.graphics.DiscretePathEffect._DiscretePathEffect3130 = @__env.GetMethodID(global::android.graphics.DiscretePathEffect.staticClass, "<init>", "(FF)V");
 		}
 	}
 }

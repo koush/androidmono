@@ -18,16 +18,16 @@ namespace java.nio.charset
 		protected CodingErrorAction(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString12417;
+		internal static global::net.sf.jni4net.jni.MethodId _toString13146;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CodingErrorAction._toString12417));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::java.nio.charset.CodingErrorAction._toString13146));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CodingErrorAction.staticClass, global::java.nio.charset.CodingErrorAction._toString12417));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::java.nio.charset.CodingErrorAction.staticClass, global::java.nio.charset.CodingErrorAction._toString13146));
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _IGNORE12418;
+		internal static global::net.sf.jni4net.jni.FieldId _IGNORE13147;
 		public static global::java.nio.charset.CodingErrorAction IGNORE
 		{
 			get
@@ -35,7 +35,7 @@ namespace java.nio.charset
 				return default(global::java.nio.charset.CodingErrorAction);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _REPLACE12419;
+		internal static global::net.sf.jni4net.jni.FieldId _REPLACE13148;
 		public static global::java.nio.charset.CodingErrorAction REPLACE
 		{
 			get
@@ -43,7 +43,7 @@ namespace java.nio.charset
 				return default(global::java.nio.charset.CodingErrorAction);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _REPORT12420;
+		internal static global::net.sf.jni4net.jni.FieldId _REPORT13149;
 		public static global::java.nio.charset.CodingErrorAction REPORT
 		{
 			get
@@ -54,7 +54,7 @@ namespace java.nio.charset
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.nio.charset.CodingErrorAction.staticClass = @__class;
-			global::java.nio.charset.CodingErrorAction._toString12417 = @__env.GetMethodID(global::java.nio.charset.CodingErrorAction.staticClass, "toString", "()Ljava/lang/String;");
+			global::java.nio.charset.CodingErrorAction._toString13146 = @__env.GetMethodID(global::java.nio.charset.CodingErrorAction.staticClass, "toString", "()Ljava/lang/String;");
 		}
 	}
 }

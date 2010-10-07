@@ -18,23 +18,23 @@ namespace android.database
 		protected SQLException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SQLException2430;
+		internal static global::net.sf.jni4net.jni.MethodId _SQLException2617;
 		public SQLException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.database.SQLException.staticClass, global::android.database.SQLException._SQLException2430, this);
+			@__env.NewObject(android.database.SQLException.staticClass, global::android.database.SQLException._SQLException2617, this);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _SQLException2431;
+		internal static global::net.sf.jni4net.jni.MethodId _SQLException2618;
 		public SQLException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.database.SQLException.staticClass, global::android.database.SQLException._SQLException2431, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.database.SQLException.staticClass, global::android.database.SQLException._SQLException2618, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.database.SQLException.staticClass = @__class;
-			global::android.database.SQLException._SQLException2430 = @__env.GetMethodID(global::android.database.SQLException.staticClass, "<init>", "()V");
-			global::android.database.SQLException._SQLException2431 = @__env.GetMethodID(global::android.database.SQLException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::android.database.SQLException._SQLException2617 = @__env.GetMethodID(global::android.database.SQLException.staticClass, "<init>", "()V");
+			global::android.database.SQLException._SQLException2618 = @__env.GetMethodID(global::android.database.SQLException.staticClass, "<init>", "(Ljava/lang/String;)V");
 		}
 	}
 }

@@ -33,29 +33,29 @@ namespace android.view.accessibility
 		internal __AccessibilityEventSource(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _sendAccessibilityEvent8829;
+		internal static global::net.sf.jni4net.jni.MethodId _sendAccessibilityEvent9535;
 		 void android.view.accessibility.AccessibilityEventSource.sendAccessibilityEvent(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.accessibility.__AccessibilityEventSource._sendAccessibilityEvent8829, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.view.accessibility.__AccessibilityEventSource._sendAccessibilityEvent9535, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.__AccessibilityEventSource.staticClass, global::android.view.accessibility.__AccessibilityEventSource._sendAccessibilityEvent8829, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.__AccessibilityEventSource.staticClass, global::android.view.accessibility.__AccessibilityEventSource._sendAccessibilityEvent9535, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _sendAccessibilityEventUnchecked8830;
+		internal static global::net.sf.jni4net.jni.MethodId _sendAccessibilityEventUnchecked9536;
 		 void android.view.accessibility.AccessibilityEventSource.sendAccessibilityEventUnchecked(android.view.accessibility.AccessibilityEvent arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.accessibility.__AccessibilityEventSource._sendAccessibilityEventUnchecked8830, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.view.accessibility.__AccessibilityEventSource._sendAccessibilityEventUnchecked9536, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.__AccessibilityEventSource.staticClass, global::android.view.accessibility.__AccessibilityEventSource._sendAccessibilityEventUnchecked8830, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.accessibility.__AccessibilityEventSource.staticClass, global::android.view.accessibility.__AccessibilityEventSource._sendAccessibilityEventUnchecked9536, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.view.accessibility.__AccessibilityEventSource.staticClass = @__class;
-			global::android.view.accessibility.__AccessibilityEventSource._sendAccessibilityEvent8829 = @__env.GetMethodID(global::android.view.accessibility.__AccessibilityEventSource.staticClass, "android.view.accessibility.AccessibilityEventSource.sendAccessibilityEvent", "(I)V");
-			global::android.view.accessibility.__AccessibilityEventSource._sendAccessibilityEventUnchecked8830 = @__env.GetMethodID(global::android.view.accessibility.__AccessibilityEventSource.staticClass, "android.view.accessibility.AccessibilityEventSource.sendAccessibilityEventUnchecked", "(Landroid/view/accessibility/AccessibilityEvent;)V");
+			global::android.view.accessibility.__AccessibilityEventSource._sendAccessibilityEvent9535 = @__env.GetMethodID(global::android.view.accessibility.__AccessibilityEventSource.staticClass, "android.view.accessibility.AccessibilityEventSource.sendAccessibilityEvent", "(I)V");
+			global::android.view.accessibility.__AccessibilityEventSource._sendAccessibilityEventUnchecked9536 = @__env.GetMethodID(global::android.view.accessibility.__AccessibilityEventSource.staticClass, "android.view.accessibility.AccessibilityEventSource.sendAccessibilityEventUnchecked", "(Landroid/view/accessibility/AccessibilityEvent;)V");
 		}
 	}
 }

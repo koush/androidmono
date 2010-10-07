@@ -32,19 +32,19 @@ namespace android.view.inputmethod
 		internal __InputMethodSession_EventCallback(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _finishedEvent9197;
+		internal static global::net.sf.jni4net.jni.MethodId _finishedEvent9904;
 		 void android.view.inputmethod.InputMethodSession_EventCallback.finishedEvent(int arg0, bool arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethodSession_EventCallback._finishedEvent9197, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethodSession_EventCallback._finishedEvent9904, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethodSession_EventCallback.staticClass, global::android.view.inputmethod.__InputMethodSession_EventCallback._finishedEvent9197, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethodSession_EventCallback.staticClass, global::android.view.inputmethod.__InputMethodSession_EventCallback._finishedEvent9904, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.view.inputmethod.__InputMethodSession_EventCallback.staticClass = @__class;
-			global::android.view.inputmethod.__InputMethodSession_EventCallback._finishedEvent9197 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethodSession_EventCallback.staticClass, "android.view.inputmethod.InputMethodSession_EventCallback.finishedEvent", "(IZ)V");
+			global::android.view.inputmethod.__InputMethodSession_EventCallback._finishedEvent9904 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethodSession_EventCallback.staticClass, "android.view.inputmethod.InputMethodSession_EventCallback.finishedEvent", "(IZ)V");
 		}
 	}
 }

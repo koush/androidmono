@@ -18,90 +18,90 @@ namespace android.widget
 		protected ZoomButton(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setEnabled11342;
+		internal static global::net.sf.jni4net.jni.MethodId _setEnabled12061;
 		public override void setEnabled(bool arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.ZoomButton._setEnabled11342, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.widget.ZoomButton._setEnabled12061, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._setEnabled11342, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._setEnabled12061, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onKeyUp11343;
+		internal static global::net.sf.jni4net.jni.MethodId _onKeyUp12062;
 		public override bool onKeyUp(int arg0, android.view.KeyEvent arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.ZoomButton._onKeyUp11343, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallBooleanMethod(this, global::android.widget.ZoomButton._onKeyUp12062, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._onKeyUp11343, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._onKeyUp12062, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onTouchEvent11344;
+		internal static global::net.sf.jni4net.jni.MethodId _onTouchEvent12063;
 		public override bool onTouchEvent(android.view.MotionEvent arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.ZoomButton._onTouchEvent11344, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this, global::android.widget.ZoomButton._onTouchEvent12063, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._onTouchEvent11344, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._onTouchEvent12063, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dispatchUnhandledMove11345;
+		internal static global::net.sf.jni4net.jni.MethodId _dispatchUnhandledMove12064;
 		public override bool dispatchUnhandledMove(android.view.View arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.ZoomButton._dispatchUnhandledMove11345, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallBooleanMethod(this, global::android.widget.ZoomButton._dispatchUnhandledMove12064, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._dispatchUnhandledMove11345, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._dispatchUnhandledMove12064, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onLongClick11346;
+		internal static global::net.sf.jni4net.jni.MethodId _onLongClick12065;
 		public virtual bool onLongClick(android.view.View arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.widget.ZoomButton._onLongClick11346, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallBooleanMethod(this, global::android.widget.ZoomButton._onLongClick12065, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._onLongClick11346, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._onLongClick12065, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setZoomSpeed11347;
+		internal static global::net.sf.jni4net.jni.MethodId _setZoomSpeed12066;
 		public virtual void setZoomSpeed(long arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.widget.ZoomButton._setZoomSpeed11347, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.widget.ZoomButton._setZoomSpeed12066, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._setZoomSpeed11347, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._setZoomSpeed12066, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ZoomButton11348;
+		internal static global::net.sf.jni4net.jni.MethodId _ZoomButton12067;
 		public ZoomButton(android.content.Context arg0, android.util.AttributeSet arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._ZoomButton11348, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+			@__env.NewObject(android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._ZoomButton12067, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ZoomButton11349;
+		internal static global::net.sf.jni4net.jni.MethodId _ZoomButton12068;
 		public ZoomButton(android.content.Context arg0, android.util.AttributeSet arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._ZoomButton11349, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			@__env.NewObject(android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._ZoomButton12068, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ZoomButton11350;
+		internal static global::net.sf.jni4net.jni.MethodId _ZoomButton12069;
 		public ZoomButton(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._ZoomButton11350, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.widget.ZoomButton.staticClass, global::android.widget.ZoomButton._ZoomButton12069, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.widget.ZoomButton.staticClass = @__class;
-			global::android.widget.ZoomButton._setEnabled11342 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "setEnabled", "(Z)V");
-			global::android.widget.ZoomButton._onKeyUp11343 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "onKeyUp", "(ILandroid/view/KeyEvent;)Z");
-			global::android.widget.ZoomButton._onTouchEvent11344 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
-			global::android.widget.ZoomButton._dispatchUnhandledMove11345 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "dispatchUnhandledMove", "(Landroid/view/View;I)Z");
-			global::android.widget.ZoomButton._onLongClick11346 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "onLongClick", "(Landroid/view/View;)Z");
-			global::android.widget.ZoomButton._setZoomSpeed11347 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "setZoomSpeed", "(J)V");
-			global::android.widget.ZoomButton._ZoomButton11348 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
-			global::android.widget.ZoomButton._ZoomButton11349 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
-			global::android.widget.ZoomButton._ZoomButton11350 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.widget.ZoomButton._setEnabled12061 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "setEnabled", "(Z)V");
+			global::android.widget.ZoomButton._onKeyUp12062 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "onKeyUp", "(ILandroid/view/KeyEvent;)Z");
+			global::android.widget.ZoomButton._onTouchEvent12063 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "onTouchEvent", "(Landroid/view/MotionEvent;)Z");
+			global::android.widget.ZoomButton._dispatchUnhandledMove12064 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "dispatchUnhandledMove", "(Landroid/view/View;I)Z");
+			global::android.widget.ZoomButton._onLongClick12065 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "onLongClick", "(Landroid/view/View;)Z");
+			global::android.widget.ZoomButton._setZoomSpeed12066 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "setZoomSpeed", "(J)V");
+			global::android.widget.ZoomButton._ZoomButton12067 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;)V");
+			global::android.widget.ZoomButton._ZoomButton12068 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V");
+			global::android.widget.ZoomButton._ZoomButton12069 = @__env.GetMethodID(global::android.widget.ZoomButton.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
 	}
 }

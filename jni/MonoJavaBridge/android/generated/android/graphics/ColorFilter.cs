@@ -18,16 +18,16 @@ namespace android.graphics
 		protected ColorFilter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ColorFilter2910;
+		internal static global::net.sf.jni4net.jni.MethodId _ColorFilter3107;
 		public ColorFilter()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.ColorFilter.staticClass, global::android.graphics.ColorFilter._ColorFilter2910, this);
+			@__env.NewObject(android.graphics.ColorFilter.staticClass, global::android.graphics.ColorFilter._ColorFilter3107, this);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.graphics.ColorFilter.staticClass = @__class;
-			global::android.graphics.ColorFilter._ColorFilter2910 = @__env.GetMethodID(global::android.graphics.ColorFilter.staticClass, "<init>", "()V");
+			global::android.graphics.ColorFilter._ColorFilter3107 = @__env.GetMethodID(global::android.graphics.ColorFilter.staticClass, "<init>", "()V");
 		}
 	}
 }

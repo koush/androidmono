@@ -32,19 +32,19 @@ namespace android.sax
 		internal __EndTextElementListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _end6387;
+		internal static global::net.sf.jni4net.jni.MethodId _end6976;
 		 void android.sax.EndTextElementListener.end(java.lang.String arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.sax.__EndTextElementListener._end6387, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.sax.__EndTextElementListener._end6976, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.sax.__EndTextElementListener.staticClass, global::android.sax.__EndTextElementListener._end6387, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.sax.__EndTextElementListener.staticClass, global::android.sax.__EndTextElementListener._end6976, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.sax.__EndTextElementListener.staticClass = @__class;
-			global::android.sax.__EndTextElementListener._end6387 = @__env.GetMethodID(global::android.sax.__EndTextElementListener.staticClass, "android.sax.EndTextElementListener.end", "(Ljava/lang/String;)V");
+			global::android.sax.__EndTextElementListener._end6976 = @__env.GetMethodID(global::android.sax.__EndTextElementListener.staticClass, "android.sax.EndTextElementListener.end", "(Ljava/lang/String;)V");
 		}
 	}
 }

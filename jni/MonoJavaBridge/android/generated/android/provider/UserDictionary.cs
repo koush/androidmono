@@ -36,19 +36,19 @@ namespace android.provider
 			protected Words(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _addWord6369;
+			internal static global::net.sf.jni4net.jni.MethodId _addWord6958;
 			public static void addWord(android.content.Context arg0, java.lang.String arg1, int arg2, int arg3) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.CallStaticVoidMethod(android.provider.UserDictionary.Words.staticClass, global::android.provider.UserDictionary.Words._addWord6369, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallStaticVoidMethod(android.provider.UserDictionary.Words.staticClass, global::android.provider.UserDictionary.Words._addWord6958, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _Words6370;
+			internal static global::net.sf.jni4net.jni.MethodId _Words6959;
 			public Words()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				@__env.NewObject(android.provider.UserDictionary.Words.staticClass, global::android.provider.UserDictionary.Words._Words6370, this);
+				@__env.NewObject(android.provider.UserDictionary.Words.staticClass, global::android.provider.UserDictionary.Words._Words6959, this);
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6371;
+			internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6960;
 			public static global::android.net.Uri CONTENT_URI
 			{
 				get
@@ -129,15 +129,15 @@ namespace android.provider
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.provider.UserDictionary.Words.staticClass = @__class;
-				global::android.provider.UserDictionary.Words._addWord6369 = @__env.GetStaticMethodID(global::android.provider.UserDictionary.Words.staticClass, "addWord", "(Landroid/content/Context;Ljava/lang/String;II)V");
-				global::android.provider.UserDictionary.Words._Words6370 = @__env.GetMethodID(global::android.provider.UserDictionary.Words.staticClass, "<init>", "()V");
+				global::android.provider.UserDictionary.Words._addWord6958 = @__env.GetStaticMethodID(global::android.provider.UserDictionary.Words.staticClass, "addWord", "(Landroid/content/Context;Ljava/lang/String;II)V");
+				global::android.provider.UserDictionary.Words._Words6959 = @__env.GetMethodID(global::android.provider.UserDictionary.Words.staticClass, "<init>", "()V");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _UserDictionary6372;
+		internal static global::net.sf.jni4net.jni.MethodId _UserDictionary6961;
 		public UserDictionary()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.provider.UserDictionary.staticClass, global::android.provider.UserDictionary._UserDictionary6372, this);
+			@__env.NewObject(android.provider.UserDictionary.staticClass, global::android.provider.UserDictionary._UserDictionary6961, this);
 		}
 		public static global::java.lang.String AUTHORITY
 		{
@@ -146,7 +146,7 @@ namespace android.provider
 				return "user_dictionary";
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6373;
+		internal static global::net.sf.jni4net.jni.FieldId _CONTENT_URI6962;
 		public static global::android.net.Uri CONTENT_URI
 		{
 			get
@@ -157,7 +157,7 @@ namespace android.provider
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.provider.UserDictionary.staticClass = @__class;
-			global::android.provider.UserDictionary._UserDictionary6372 = @__env.GetMethodID(global::android.provider.UserDictionary.staticClass, "<init>", "()V");
+			global::android.provider.UserDictionary._UserDictionary6961 = @__env.GetMethodID(global::android.provider.UserDictionary.staticClass, "<init>", "()V");
 		}
 	}
 }

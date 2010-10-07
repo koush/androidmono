@@ -43,129 +43,129 @@ namespace org.xml.sax
 		internal __Attributes(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLength13277;
+		internal static global::net.sf.jni4net.jni.MethodId _getLength14556;
 		 int org.xml.sax.Attributes.getLength() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.xml.sax.__Attributes._getLength13277);
+				return @__env.CallIntMethod(this, global::org.xml.sax.__Attributes._getLength14556);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getLength13277);
+				return @__env.CallNonVirtualIntMethod(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getLength14556);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getValue13278;
+		internal static global::net.sf.jni4net.jni.MethodId _getValue14557;
 		 global::java.lang.String org.xml.sax.Attributes.getValue(java.lang.String arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getValue13278, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getValue14557, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getValue13278, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getValue14557, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getValue13279;
+		internal static global::net.sf.jni4net.jni.MethodId _getValue14558;
 		 global::java.lang.String org.xml.sax.Attributes.getValue(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getValue13279, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getValue14558, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getValue13279, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getValue14558, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getValue13280;
+		internal static global::net.sf.jni4net.jni.MethodId _getValue14559;
 		 global::java.lang.String org.xml.sax.Attributes.getValue(java.lang.String arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getValue13280, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getValue14559, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getValue13280, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getValue14559, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getType13281;
+		internal static global::net.sf.jni4net.jni.MethodId _getType14560;
 		 global::java.lang.String org.xml.sax.Attributes.getType(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getType13281, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getType14560, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getType13281, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getType14560, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getType13282;
+		internal static global::net.sf.jni4net.jni.MethodId _getType14561;
 		 global::java.lang.String org.xml.sax.Attributes.getType(java.lang.String arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getType13282, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getType14561, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getType13282, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getType14561, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getType13283;
+		internal static global::net.sf.jni4net.jni.MethodId _getType14562;
 		 global::java.lang.String org.xml.sax.Attributes.getType(java.lang.String arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getType13283, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getType14562, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getType13283, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getType14562, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getIndex13284;
+		internal static global::net.sf.jni4net.jni.MethodId _getIndex14563;
 		 int org.xml.sax.Attributes.getIndex(java.lang.String arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.xml.sax.__Attributes._getIndex13284, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallIntMethod(this, global::org.xml.sax.__Attributes._getIndex14563, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getIndex13284, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getIndex14563, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getIndex13285;
+		internal static global::net.sf.jni4net.jni.MethodId _getIndex14564;
 		 int org.xml.sax.Attributes.getIndex(java.lang.String arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::org.xml.sax.__Attributes._getIndex13285, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallIntMethod(this, global::org.xml.sax.__Attributes._getIndex14564, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getIndex13285, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				return @__env.CallNonVirtualIntMethod(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getIndex14564, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getQName13286;
+		internal static global::net.sf.jni4net.jni.MethodId _getQName14565;
 		 global::java.lang.String org.xml.sax.Attributes.getQName(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getQName13286, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getQName14565, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getQName13286, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getQName14565, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLocalName13287;
+		internal static global::net.sf.jni4net.jni.MethodId _getLocalName14566;
 		 global::java.lang.String org.xml.sax.Attributes.getLocalName(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getLocalName13287, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getLocalName14566, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getLocalName13287, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getLocalName14566, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getURI13288;
+		internal static global::net.sf.jni4net.jni.MethodId _getURI14567;
 		 global::java.lang.String org.xml.sax.Attributes.getURI(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getURI13288, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::org.xml.sax.__Attributes._getURI14567, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getURI13288, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::org.xml.sax.__Attributes.staticClass, global::org.xml.sax.__Attributes._getURI14567, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::org.xml.sax.__Attributes.staticClass = @__class;
-			global::org.xml.sax.__Attributes._getLength13277 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getLength", "()I");
-			global::org.xml.sax.__Attributes._getValue13278 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getValue", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::org.xml.sax.__Attributes._getValue13279 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getValue", "(I)Ljava/lang/String;");
-			global::org.xml.sax.__Attributes._getValue13280 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
-			global::org.xml.sax.__Attributes._getType13281 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getType", "(I)Ljava/lang/String;");
-			global::org.xml.sax.__Attributes._getType13282 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getType", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
-			global::org.xml.sax.__Attributes._getType13283 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getType", "(Ljava/lang/String;)Ljava/lang/String;");
-			global::org.xml.sax.__Attributes._getIndex13284 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getIndex", "(Ljava/lang/String;)I");
-			global::org.xml.sax.__Attributes._getIndex13285 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getIndex", "(Ljava/lang/String;Ljava/lang/String;)I");
-			global::org.xml.sax.__Attributes._getQName13286 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getQName", "(I)Ljava/lang/String;");
-			global::org.xml.sax.__Attributes._getLocalName13287 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getLocalName", "(I)Ljava/lang/String;");
-			global::org.xml.sax.__Attributes._getURI13288 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getURI", "(I)Ljava/lang/String;");
+			global::org.xml.sax.__Attributes._getLength14556 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getLength", "()I");
+			global::org.xml.sax.__Attributes._getValue14557 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getValue", "(Ljava/lang/String;)Ljava/lang/String;");
+			global::org.xml.sax.__Attributes._getValue14558 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getValue", "(I)Ljava/lang/String;");
+			global::org.xml.sax.__Attributes._getValue14559 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
+			global::org.xml.sax.__Attributes._getType14560 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getType", "(I)Ljava/lang/String;");
+			global::org.xml.sax.__Attributes._getType14561 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getType", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;");
+			global::org.xml.sax.__Attributes._getType14562 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getType", "(Ljava/lang/String;)Ljava/lang/String;");
+			global::org.xml.sax.__Attributes._getIndex14563 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getIndex", "(Ljava/lang/String;)I");
+			global::org.xml.sax.__Attributes._getIndex14564 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getIndex", "(Ljava/lang/String;Ljava/lang/String;)I");
+			global::org.xml.sax.__Attributes._getQName14565 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getQName", "(I)Ljava/lang/String;");
+			global::org.xml.sax.__Attributes._getLocalName14566 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getLocalName", "(I)Ljava/lang/String;");
+			global::org.xml.sax.__Attributes._getURI14567 = @__env.GetMethodID(global::org.xml.sax.__Attributes.staticClass, "org.xml.sax.Attributes.getURI", "(I)Ljava/lang/String;");
 		}
 	}
 }

@@ -18,221 +18,221 @@ namespace android.telephony
 		protected TelephonyManager(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDeviceId6583;
+		internal static global::net.sf.jni4net.jni.MethodId _getDeviceId7207;
 		public virtual global::java.lang.String getDeviceId() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getDeviceId6583));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getDeviceId7207));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getDeviceId6583));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getDeviceId7207));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _listen6584;
+		internal static global::net.sf.jni4net.jni.MethodId _listen7208;
 		public virtual void listen(android.telephony.PhoneStateListener arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.telephony.TelephonyManager._listen6584, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.telephony.TelephonyManager._listen7208, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._listen6584, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._listen7208, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNetworkType6585;
+		internal static global::net.sf.jni4net.jni.MethodId _getNetworkType7209;
 		public virtual int getNetworkType() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.TelephonyManager._getNetworkType6585);
+				return @__env.CallIntMethod(this, global::android.telephony.TelephonyManager._getNetworkType7209);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getNetworkType6585);
+				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getNetworkType7209);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDeviceSoftwareVersion6586;
+		internal static global::net.sf.jni4net.jni.MethodId _getDeviceSoftwareVersion7210;
 		public virtual global::java.lang.String getDeviceSoftwareVersion() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getDeviceSoftwareVersion6586));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getDeviceSoftwareVersion7210));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getDeviceSoftwareVersion6586));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getDeviceSoftwareVersion7210));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCellLocation6587;
+		internal static global::net.sf.jni4net.jni.MethodId _getCellLocation7211;
 		public virtual global::android.telephony.CellLocation getCellLocation() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.telephony.CellLocation>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getCellLocation6587));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.telephony.CellLocation>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getCellLocation7211));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.telephony.CellLocation>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getCellLocation6587));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.telephony.CellLocation>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getCellLocation7211));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNeighboringCellInfo6588;
+		internal static global::net.sf.jni4net.jni.MethodId _getNeighboringCellInfo7212;
 		public virtual global::java.util.List getNeighboringCellInfo() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getNeighboringCellInfo6588));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getNeighboringCellInfo7212));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getNeighboringCellInfo6588));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.util.List>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getNeighboringCellInfo7212));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPhoneType6589;
+		internal static global::net.sf.jni4net.jni.MethodId _getPhoneType7213;
 		public virtual int getPhoneType() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.TelephonyManager._getPhoneType6589);
+				return @__env.CallIntMethod(this, global::android.telephony.TelephonyManager._getPhoneType7213);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getPhoneType6589);
+				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getPhoneType7213);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNetworkOperatorName6590;
+		internal static global::net.sf.jni4net.jni.MethodId _getNetworkOperatorName7214;
 		public virtual global::java.lang.String getNetworkOperatorName() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getNetworkOperatorName6590));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getNetworkOperatorName7214));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getNetworkOperatorName6590));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getNetworkOperatorName7214));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNetworkOperator6591;
+		internal static global::net.sf.jni4net.jni.MethodId _getNetworkOperator7215;
 		public virtual global::java.lang.String getNetworkOperator() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getNetworkOperator6591));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getNetworkOperator7215));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getNetworkOperator6591));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getNetworkOperator7215));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isNetworkRoaming6592;
+		internal static global::net.sf.jni4net.jni.MethodId _isNetworkRoaming7216;
 		public virtual bool isNetworkRoaming() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.telephony.TelephonyManager._isNetworkRoaming6592);
+				return @__env.CallBooleanMethod(this, global::android.telephony.TelephonyManager._isNetworkRoaming7216);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._isNetworkRoaming6592);
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._isNetworkRoaming7216);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNetworkCountryIso6593;
+		internal static global::net.sf.jni4net.jni.MethodId _getNetworkCountryIso7217;
 		public virtual global::java.lang.String getNetworkCountryIso() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getNetworkCountryIso6593));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getNetworkCountryIso7217));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getNetworkCountryIso6593));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getNetworkCountryIso7217));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hasIccCard6594;
+		internal static global::net.sf.jni4net.jni.MethodId _hasIccCard7218;
 		public virtual bool hasIccCard() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.telephony.TelephonyManager._hasIccCard6594);
+				return @__env.CallBooleanMethod(this, global::android.telephony.TelephonyManager._hasIccCard7218);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._hasIccCard6594);
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._hasIccCard7218);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSimState6595;
+		internal static global::net.sf.jni4net.jni.MethodId _getSimState7219;
 		public virtual int getSimState() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.TelephonyManager._getSimState6595);
+				return @__env.CallIntMethod(this, global::android.telephony.TelephonyManager._getSimState7219);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getSimState6595);
+				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getSimState7219);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSimOperator6596;
+		internal static global::net.sf.jni4net.jni.MethodId _getSimOperator7220;
 		public virtual global::java.lang.String getSimOperator() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getSimOperator6596));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getSimOperator7220));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getSimOperator6596));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getSimOperator7220));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSimOperatorName6597;
+		internal static global::net.sf.jni4net.jni.MethodId _getSimOperatorName7221;
 		public virtual global::java.lang.String getSimOperatorName() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getSimOperatorName6597));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getSimOperatorName7221));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getSimOperatorName6597));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getSimOperatorName7221));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSimCountryIso6598;
+		internal static global::net.sf.jni4net.jni.MethodId _getSimCountryIso7222;
 		public virtual global::java.lang.String getSimCountryIso() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getSimCountryIso6598));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getSimCountryIso7222));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getSimCountryIso6598));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getSimCountryIso7222));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSimSerialNumber6599;
+		internal static global::net.sf.jni4net.jni.MethodId _getSimSerialNumber7223;
 		public virtual global::java.lang.String getSimSerialNumber() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getSimSerialNumber6599));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getSimSerialNumber7223));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getSimSerialNumber6599));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getSimSerialNumber7223));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSubscriberId6600;
+		internal static global::net.sf.jni4net.jni.MethodId _getSubscriberId7224;
 		public virtual global::java.lang.String getSubscriberId() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getSubscriberId6600));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getSubscriberId7224));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getSubscriberId6600));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getSubscriberId7224));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLine1Number6601;
+		internal static global::net.sf.jni4net.jni.MethodId _getLine1Number7225;
 		public virtual global::java.lang.String getLine1Number() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getLine1Number6601));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getLine1Number7225));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getLine1Number6601));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getLine1Number7225));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getVoiceMailNumber6602;
+		internal static global::net.sf.jni4net.jni.MethodId _getVoiceMailNumber7226;
 		public virtual global::java.lang.String getVoiceMailNumber() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getVoiceMailNumber6602));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getVoiceMailNumber7226));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getVoiceMailNumber6602));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getVoiceMailNumber7226));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getVoiceMailAlphaTag6603;
+		internal static global::net.sf.jni4net.jni.MethodId _getVoiceMailAlphaTag7227;
 		public virtual global::java.lang.String getVoiceMailAlphaTag() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getVoiceMailAlphaTag6603));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.telephony.TelephonyManager._getVoiceMailAlphaTag7227));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getVoiceMailAlphaTag6603));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getVoiceMailAlphaTag7227));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getCallState6604;
+		internal static global::net.sf.jni4net.jni.MethodId _getCallState7228;
 		public virtual int getCallState() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.TelephonyManager._getCallState6604);
+				return @__env.CallIntMethod(this, global::android.telephony.TelephonyManager._getCallState7228);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getCallState6604);
+				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getCallState7228);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDataActivity6605;
+		internal static global::net.sf.jni4net.jni.MethodId _getDataActivity7229;
 		public virtual int getDataActivity() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.TelephonyManager._getDataActivity6605);
+				return @__env.CallIntMethod(this, global::android.telephony.TelephonyManager._getDataActivity7229);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getDataActivity6605);
+				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getDataActivity7229);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDataState6606;
+		internal static global::net.sf.jni4net.jni.MethodId _getDataState7230;
 		public virtual int getDataState() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.telephony.TelephonyManager._getDataState6606);
+				return @__env.CallIntMethod(this, global::android.telephony.TelephonyManager._getDataState7230);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getDataState6606);
+				return @__env.CallNonVirtualIntMethod(this, global::android.telephony.TelephonyManager.staticClass, global::android.telephony.TelephonyManager._getDataState7230);
 		}
 		public static global::java.lang.String ACTION_PHONE_STATE_CHANGED
 		{
@@ -248,7 +248,7 @@ namespace android.telephony
 				return "state";
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _EXTRA_STATE_IDLE6607;
+		internal static global::net.sf.jni4net.jni.FieldId _EXTRA_STATE_IDLE7231;
 		public static global::java.lang.String EXTRA_STATE_IDLE
 		{
 			get
@@ -256,7 +256,7 @@ namespace android.telephony
 				return default(global::java.lang.String);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _EXTRA_STATE_RINGING6608;
+		internal static global::net.sf.jni4net.jni.FieldId _EXTRA_STATE_RINGING7232;
 		public static global::java.lang.String EXTRA_STATE_RINGING
 		{
 			get
@@ -264,7 +264,7 @@ namespace android.telephony
 				return default(global::java.lang.String);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _EXTRA_STATE_OFFHOOK6609;
+		internal static global::net.sf.jni4net.jni.FieldId _EXTRA_STATE_OFFHOOK7233;
 		public static global::java.lang.String EXTRA_STATE_OFFHOOK
 		{
 			get
@@ -375,6 +375,13 @@ namespace android.telephony
 			get
 			{
 				return 10;
+			}
+		}
+		public static int NETWORK_TYPE_IDEN
+		{
+			get
+			{
+				return 11;
 			}
 		}
 		public static int SIM_STATE_UNKNOWN
@@ -506,30 +513,30 @@ namespace android.telephony
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.telephony.TelephonyManager.staticClass = @__class;
-			global::android.telephony.TelephonyManager._getDeviceId6583 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getDeviceId", "()Ljava/lang/String;");
-			global::android.telephony.TelephonyManager._listen6584 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "listen", "(Landroid/telephony/PhoneStateListener;I)V");
-			global::android.telephony.TelephonyManager._getNetworkType6585 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getNetworkType", "()I");
-			global::android.telephony.TelephonyManager._getDeviceSoftwareVersion6586 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getDeviceSoftwareVersion", "()Ljava/lang/String;");
-			global::android.telephony.TelephonyManager._getCellLocation6587 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getCellLocation", "()Landroid/telephony/CellLocation;");
-			global::android.telephony.TelephonyManager._getNeighboringCellInfo6588 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getNeighboringCellInfo", "()Ljava/util/List;");
-			global::android.telephony.TelephonyManager._getPhoneType6589 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getPhoneType", "()I");
-			global::android.telephony.TelephonyManager._getNetworkOperatorName6590 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getNetworkOperatorName", "()Ljava/lang/String;");
-			global::android.telephony.TelephonyManager._getNetworkOperator6591 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getNetworkOperator", "()Ljava/lang/String;");
-			global::android.telephony.TelephonyManager._isNetworkRoaming6592 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "isNetworkRoaming", "()Z");
-			global::android.telephony.TelephonyManager._getNetworkCountryIso6593 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getNetworkCountryIso", "()Ljava/lang/String;");
-			global::android.telephony.TelephonyManager._hasIccCard6594 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "hasIccCard", "()Z");
-			global::android.telephony.TelephonyManager._getSimState6595 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getSimState", "()I");
-			global::android.telephony.TelephonyManager._getSimOperator6596 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getSimOperator", "()Ljava/lang/String;");
-			global::android.telephony.TelephonyManager._getSimOperatorName6597 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getSimOperatorName", "()Ljava/lang/String;");
-			global::android.telephony.TelephonyManager._getSimCountryIso6598 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getSimCountryIso", "()Ljava/lang/String;");
-			global::android.telephony.TelephonyManager._getSimSerialNumber6599 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getSimSerialNumber", "()Ljava/lang/String;");
-			global::android.telephony.TelephonyManager._getSubscriberId6600 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getSubscriberId", "()Ljava/lang/String;");
-			global::android.telephony.TelephonyManager._getLine1Number6601 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getLine1Number", "()Ljava/lang/String;");
-			global::android.telephony.TelephonyManager._getVoiceMailNumber6602 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getVoiceMailNumber", "()Ljava/lang/String;");
-			global::android.telephony.TelephonyManager._getVoiceMailAlphaTag6603 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getVoiceMailAlphaTag", "()Ljava/lang/String;");
-			global::android.telephony.TelephonyManager._getCallState6604 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getCallState", "()I");
-			global::android.telephony.TelephonyManager._getDataActivity6605 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getDataActivity", "()I");
-			global::android.telephony.TelephonyManager._getDataState6606 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getDataState", "()I");
+			global::android.telephony.TelephonyManager._getDeviceId7207 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getDeviceId", "()Ljava/lang/String;");
+			global::android.telephony.TelephonyManager._listen7208 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "listen", "(Landroid/telephony/PhoneStateListener;I)V");
+			global::android.telephony.TelephonyManager._getNetworkType7209 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getNetworkType", "()I");
+			global::android.telephony.TelephonyManager._getDeviceSoftwareVersion7210 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getDeviceSoftwareVersion", "()Ljava/lang/String;");
+			global::android.telephony.TelephonyManager._getCellLocation7211 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getCellLocation", "()Landroid/telephony/CellLocation;");
+			global::android.telephony.TelephonyManager._getNeighboringCellInfo7212 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getNeighboringCellInfo", "()Ljava/util/List;");
+			global::android.telephony.TelephonyManager._getPhoneType7213 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getPhoneType", "()I");
+			global::android.telephony.TelephonyManager._getNetworkOperatorName7214 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getNetworkOperatorName", "()Ljava/lang/String;");
+			global::android.telephony.TelephonyManager._getNetworkOperator7215 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getNetworkOperator", "()Ljava/lang/String;");
+			global::android.telephony.TelephonyManager._isNetworkRoaming7216 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "isNetworkRoaming", "()Z");
+			global::android.telephony.TelephonyManager._getNetworkCountryIso7217 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getNetworkCountryIso", "()Ljava/lang/String;");
+			global::android.telephony.TelephonyManager._hasIccCard7218 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "hasIccCard", "()Z");
+			global::android.telephony.TelephonyManager._getSimState7219 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getSimState", "()I");
+			global::android.telephony.TelephonyManager._getSimOperator7220 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getSimOperator", "()Ljava/lang/String;");
+			global::android.telephony.TelephonyManager._getSimOperatorName7221 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getSimOperatorName", "()Ljava/lang/String;");
+			global::android.telephony.TelephonyManager._getSimCountryIso7222 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getSimCountryIso", "()Ljava/lang/String;");
+			global::android.telephony.TelephonyManager._getSimSerialNumber7223 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getSimSerialNumber", "()Ljava/lang/String;");
+			global::android.telephony.TelephonyManager._getSubscriberId7224 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getSubscriberId", "()Ljava/lang/String;");
+			global::android.telephony.TelephonyManager._getLine1Number7225 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getLine1Number", "()Ljava/lang/String;");
+			global::android.telephony.TelephonyManager._getVoiceMailNumber7226 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getVoiceMailNumber", "()Ljava/lang/String;");
+			global::android.telephony.TelephonyManager._getVoiceMailAlphaTag7227 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getVoiceMailAlphaTag", "()Ljava/lang/String;");
+			global::android.telephony.TelephonyManager._getCallState7228 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getCallState", "()I");
+			global::android.telephony.TelephonyManager._getDataActivity7229 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getDataActivity", "()I");
+			global::android.telephony.TelephonyManager._getDataState7230 = @__env.GetMethodID(global::android.telephony.TelephonyManager.staticClass, "getDataState", "()I");
 		}
 	}
 }

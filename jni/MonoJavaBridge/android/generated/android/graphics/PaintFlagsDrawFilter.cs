@@ -18,16 +18,16 @@ namespace android.graphics
 		protected PaintFlagsDrawFilter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PaintFlagsDrawFilter3153;
+		internal static global::net.sf.jni4net.jni.MethodId _PaintFlagsDrawFilter3352;
 		public PaintFlagsDrawFilter(int arg0, int arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.PaintFlagsDrawFilter.staticClass, global::android.graphics.PaintFlagsDrawFilter._PaintFlagsDrawFilter3153, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+			@__env.NewObject(android.graphics.PaintFlagsDrawFilter.staticClass, global::android.graphics.PaintFlagsDrawFilter._PaintFlagsDrawFilter3352, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.graphics.PaintFlagsDrawFilter.staticClass = @__class;
-			global::android.graphics.PaintFlagsDrawFilter._PaintFlagsDrawFilter3153 = @__env.GetMethodID(global::android.graphics.PaintFlagsDrawFilter.staticClass, "<init>", "(II)V");
+			global::android.graphics.PaintFlagsDrawFilter._PaintFlagsDrawFilter3352 = @__env.GetMethodID(global::android.graphics.PaintFlagsDrawFilter.staticClass, "<init>", "(II)V");
 		}
 	}
 }

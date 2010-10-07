@@ -18,16 +18,16 @@ namespace android.gesture
 		protected Prediction(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString2698;
+		internal static global::net.sf.jni4net.jni.MethodId _toString2895;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.gesture.Prediction._toString2698));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.gesture.Prediction._toString2895));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.gesture.Prediction.staticClass, global::android.gesture.Prediction._toString2698));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.gesture.Prediction.staticClass, global::android.gesture.Prediction._toString2895));
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _name2699;
+		internal static global::net.sf.jni4net.jni.FieldId _name2896;
 		public global::java.lang.String name
 		{
 			get
@@ -35,7 +35,7 @@ namespace android.gesture
 				return default(global::java.lang.String);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _score2700;
+		internal static global::net.sf.jni4net.jni.FieldId _score2897;
 		public double score
 		{
 			get
@@ -49,7 +49,7 @@ namespace android.gesture
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.gesture.Prediction.staticClass = @__class;
-			global::android.gesture.Prediction._toString2698 = @__env.GetMethodID(global::android.gesture.Prediction.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.gesture.Prediction._toString2895 = @__env.GetMethodID(global::android.gesture.Prediction.staticClass, "toString", "()Ljava/lang/String;");
 		}
 	}
 }

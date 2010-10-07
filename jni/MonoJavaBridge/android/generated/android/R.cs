@@ -77,6 +77,13 @@ namespace android
 					return 17432586;
 				}
 			}
+			public static int cycle_interpolator
+			{
+				get
+				{
+					return 17432588;
+				}
+			}
 			public static int decelerate_interpolator
 			{
 				get
@@ -1383,6 +1390,13 @@ namespace android
 					return 16842863;
 				}
 			}
+			public static int expandableListViewWhiteStyle
+			{
+				get
+				{
+					return 16843446;
+				}
+			}
 			public static int exported
 			{
 				get
@@ -2053,6 +2067,13 @@ namespace android
 				get
 				{
 					return 16843193;
+				}
+			}
+			public static int installLocation
+			{
+				get
+				{
+					return 16843447;
 				}
 			}
 			public static int interpolator
@@ -3420,6 +3441,13 @@ namespace android
 					return 16842789;
 				}
 			}
+			public static int restoreAnyVersion
+			{
+				get
+				{
+					return 16843450;
+				}
+			}
 			public static int restoreNeedsApplication
 			{
 				get
@@ -4120,6 +4148,27 @@ namespace android
 					return 16842777;
 				}
 			}
+			public static int tabStripEnabled
+			{
+				get
+				{
+					return 16843453;
+				}
+			}
+			public static int tabStripLeft
+			{
+				get
+				{
+					return 16843451;
+				}
+			}
+			public static int tabStripRight
+			{
+				get
+				{
+					return 16843452;
+				}
+			}
 			public static int tabWidgetStyle
 			{
 				get
@@ -4785,6 +4834,13 @@ namespace android
 					return 16843156;
 				}
 			}
+			public static int vmSafeMode
+			{
+				get
+				{
+					return 16843448;
+				}
+			}
 			public static int voiceLanguage
 			{
 				get
@@ -4874,6 +4930,13 @@ namespace android
 				get
 				{
 					return 16843412;
+				}
+			}
+			public static int webTextViewStyle
+			{
+				get
+				{
+					return 16843449;
 				}
 			}
 			public static int webViewStyle
@@ -6606,6 +6669,13 @@ namespace android
 				get
 				{
 					return 16908323;
+				}
+			}
+			public static int custom
+			{
+				get
+				{
+					return 16908331;
 				}
 			}
 			public static int cut

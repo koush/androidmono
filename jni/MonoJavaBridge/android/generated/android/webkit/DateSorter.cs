@@ -18,38 +18,38 @@ namespace android.webkit
 		protected DateSorter(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getIndex9281;
+		internal static global::net.sf.jni4net.jni.MethodId _getIndex9960;
 		public virtual int getIndex(long arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.webkit.DateSorter._getIndex9281, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this, global::android.webkit.DateSorter._getIndex9960, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._getIndex9281, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this, global::android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._getIndex9960, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getLabel9282;
+		internal static global::net.sf.jni4net.jni.MethodId _getLabel9961;
 		public virtual global::java.lang.String getLabel(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.DateSorter._getLabel9282, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.webkit.DateSorter._getLabel9961, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._getLabel9282, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._getLabel9961, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getBoundary9283;
+		internal static global::net.sf.jni4net.jni.MethodId _getBoundary9962;
 		public virtual long getBoundary(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::android.webkit.DateSorter._getBoundary9283, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallLongMethod(this, global::android.webkit.DateSorter._getBoundary9962, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._getBoundary9283, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualLongMethod(this, global::android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._getBoundary9962, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _DateSorter9284;
+		internal static global::net.sf.jni4net.jni.MethodId _DateSorter9963;
 		public DateSorter(android.content.Context arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._DateSorter9284, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.webkit.DateSorter.staticClass, global::android.webkit.DateSorter._DateSorter9963, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		public static int DAY_COUNT
 		{
@@ -61,10 +61,10 @@ namespace android.webkit
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.webkit.DateSorter.staticClass = @__class;
-			global::android.webkit.DateSorter._getIndex9281 = @__env.GetMethodID(global::android.webkit.DateSorter.staticClass, "getIndex", "(J)I");
-			global::android.webkit.DateSorter._getLabel9282 = @__env.GetMethodID(global::android.webkit.DateSorter.staticClass, "getLabel", "(I)Ljava/lang/String;");
-			global::android.webkit.DateSorter._getBoundary9283 = @__env.GetMethodID(global::android.webkit.DateSorter.staticClass, "getBoundary", "(I)J");
-			global::android.webkit.DateSorter._DateSorter9284 = @__env.GetMethodID(global::android.webkit.DateSorter.staticClass, "<init>", "(Landroid/content/Context;)V");
+			global::android.webkit.DateSorter._getIndex9960 = @__env.GetMethodID(global::android.webkit.DateSorter.staticClass, "getIndex", "(J)I");
+			global::android.webkit.DateSorter._getLabel9961 = @__env.GetMethodID(global::android.webkit.DateSorter.staticClass, "getLabel", "(I)Ljava/lang/String;");
+			global::android.webkit.DateSorter._getBoundary9962 = @__env.GetMethodID(global::android.webkit.DateSorter.staticClass, "getBoundary", "(I)J");
+			global::android.webkit.DateSorter._DateSorter9963 = @__env.GetMethodID(global::android.webkit.DateSorter.staticClass, "<init>", "(Landroid/content/Context;)V");
 		}
 	}
 }

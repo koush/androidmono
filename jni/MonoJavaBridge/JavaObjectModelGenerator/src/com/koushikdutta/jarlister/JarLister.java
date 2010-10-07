@@ -135,7 +135,7 @@ public class JarLister {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String androidSdk = "/Users/koush/src/android-sdk/platforms/android-7/android.jar";
+		String androidSdk = "/Users/koush/src/android-sdk/platforms/android-8/android.jar";
 		//String androidSdk = "/Users/koush/eclair/out/target/common/obj/JAVA_LIBRARIES/core_intermediates/classes.jar";
 		try {
 			JarInputStream input = new JarInputStream(new FileInputStream(androidSdk));

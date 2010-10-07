@@ -34,39 +34,39 @@ namespace android.text
 		internal __TextWatcher(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onTextChanged7034;
+		internal static global::net.sf.jni4net.jni.MethodId _onTextChanged7660;
 		 void android.text.TextWatcher.onTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.__TextWatcher._onTextChanged7034, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallVoidMethod(this, global::android.text.__TextWatcher._onTextChanged7660, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.__TextWatcher.staticClass, global::android.text.__TextWatcher._onTextChanged7034, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.__TextWatcher.staticClass, global::android.text.__TextWatcher._onTextChanged7660, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _beforeTextChanged7035;
+		internal static global::net.sf.jni4net.jni.MethodId _beforeTextChanged7661;
 		 void android.text.TextWatcher.beforeTextChanged(java.lang.CharSequence arg0, int arg1, int arg2, int arg3) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.__TextWatcher._beforeTextChanged7035, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallVoidMethod(this, global::android.text.__TextWatcher._beforeTextChanged7661, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.__TextWatcher.staticClass, global::android.text.__TextWatcher._beforeTextChanged7035, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.__TextWatcher.staticClass, global::android.text.__TextWatcher._beforeTextChanged7661, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _afterTextChanged7036;
+		internal static global::net.sf.jni4net.jni.MethodId _afterTextChanged7662;
 		 void android.text.TextWatcher.afterTextChanged(android.text.Editable arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.__TextWatcher._afterTextChanged7036, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.text.__TextWatcher._afterTextChanged7662, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.__TextWatcher.staticClass, global::android.text.__TextWatcher._afterTextChanged7036, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.__TextWatcher.staticClass, global::android.text.__TextWatcher._afterTextChanged7662, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.text.__TextWatcher.staticClass = @__class;
-			global::android.text.__TextWatcher._onTextChanged7034 = @__env.GetMethodID(global::android.text.__TextWatcher.staticClass, "android.text.TextWatcher.onTextChanged", "(Ljava/lang/CharSequence;III)V");
-			global::android.text.__TextWatcher._beforeTextChanged7035 = @__env.GetMethodID(global::android.text.__TextWatcher.staticClass, "android.text.TextWatcher.beforeTextChanged", "(Ljava/lang/CharSequence;III)V");
-			global::android.text.__TextWatcher._afterTextChanged7036 = @__env.GetMethodID(global::android.text.__TextWatcher.staticClass, "android.text.TextWatcher.afterTextChanged", "(Landroid/text/Editable;)V");
+			global::android.text.__TextWatcher._onTextChanged7660 = @__env.GetMethodID(global::android.text.__TextWatcher.staticClass, "android.text.TextWatcher.onTextChanged", "(Ljava/lang/CharSequence;III)V");
+			global::android.text.__TextWatcher._beforeTextChanged7661 = @__env.GetMethodID(global::android.text.__TextWatcher.staticClass, "android.text.TextWatcher.beforeTextChanged", "(Ljava/lang/CharSequence;III)V");
+			global::android.text.__TextWatcher._afterTextChanged7662 = @__env.GetMethodID(global::android.text.__TextWatcher.staticClass, "android.text.TextWatcher.afterTextChanged", "(Landroid/text/Editable;)V");
 		}
 	}
 }

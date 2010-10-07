@@ -18,395 +18,413 @@ namespace android.view
 		internal MotionEvent(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString7935;
+		internal static global::net.sf.jni4net.jni.MethodId _toString8611;
 		public sealed override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.MotionEvent._toString7935));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.MotionEvent._toString8611));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._toString7935));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._toString8611));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSize7936;
+		internal static global::net.sf.jni4net.jni.MethodId _getSize8612;
 		public float getSize() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getSize7936);
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getSize8612);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getSize7936);
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getSize8612);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSize7937;
+		internal static global::net.sf.jni4net.jni.MethodId _getSize8613;
 		public float getSize(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getSize7937, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getSize8613, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getSize7937, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getSize8613, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getY7938;
+		internal static global::net.sf.jni4net.jni.MethodId _getY8614;
 		public float getY(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getY7938, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getY8614, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getY7938, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getY8614, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getY7939;
+		internal static global::net.sf.jni4net.jni.MethodId _getY8615;
 		public float getY() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getY7939);
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getY8615);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getY7939);
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getY8615);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getX7940;
-		public float getX() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getX7940);
-			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getX7940);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _getX7941;
+		internal static global::net.sf.jni4net.jni.MethodId _getX8616;
 		public float getX(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getX7941, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getX8616, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getX7941, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getX8616, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getEventTime7942;
+		internal static global::net.sf.jni4net.jni.MethodId _getX8617;
+		public float getX() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getX8617);
+			else
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getX8617);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _getEventTime8618;
 		public long getEventTime() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::android.view.MotionEvent._getEventTime7942);
+				return @__env.CallLongMethod(this, global::android.view.MotionEvent._getEventTime8618);
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getEventTime7942);
+				return @__env.CallNonVirtualLongMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getEventTime8618);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _obtain7943;
-		public static global::android.view.MotionEvent obtain(android.view.MotionEvent arg0) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.MotionEvent>(@__env, @__env.CallStaticObjectMethodPtr(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._obtain7943, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _obtain7944;
-		public static global::android.view.MotionEvent obtain(long arg0, long arg1, int arg2, float arg3, float arg4, float arg5, float arg6, int arg7, float arg8, float arg9, int arg10, int arg11) 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.MotionEvent>(@__env, @__env.CallStaticObjectMethodPtr(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._obtain7944, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg8), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg9), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg10), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg11)));
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _obtain7945;
+		internal static global::net.sf.jni4net.jni.MethodId _obtain8619;
 		public static global::android.view.MotionEvent obtain(long arg0, long arg1, int arg2, float arg3, float arg4, int arg5) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.MotionEvent>(@__env, @__env.CallStaticObjectMethodPtr(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._obtain7945, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.MotionEvent>(@__env, @__env.CallStaticObjectMethodPtr(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._obtain8619, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _obtain7946;
+		internal static global::net.sf.jni4net.jni.MethodId _obtain8620;
 		public static global::android.view.MotionEvent obtain(long arg0, long arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7, int arg8, float arg9, float arg10, int arg11, int arg12) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.MotionEvent>(@__env, @__env.CallStaticObjectMethodPtr(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._obtain7946, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg8), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg9), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg10), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg11), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg12)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.MotionEvent>(@__env, @__env.CallStaticObjectMethodPtr(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._obtain8620, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg8), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg9), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg10), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg11), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg12)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _recycle7947;
+		internal static global::net.sf.jni4net.jni.MethodId _obtain8621;
+		public static global::android.view.MotionEvent obtain(long arg0, long arg1, int arg2, float arg3, float arg4, float arg5, float arg6, int arg7, float arg8, float arg9, int arg10, int arg11) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.MotionEvent>(@__env, @__env.CallStaticObjectMethodPtr(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._obtain8621, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg6), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg7), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg8), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg9), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg10), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg11)));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _obtain8622;
+		public static global::android.view.MotionEvent obtain(android.view.MotionEvent arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.MotionEvent>(@__env, @__env.CallStaticObjectMethodPtr(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._obtain8622, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _recycle8623;
 		public void recycle() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.MotionEvent._recycle7947);
+				@__env.CallVoidMethod(this, global::android.view.MotionEvent._recycle8623);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._recycle7947);
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._recycle8623);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel7948;
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel8624;
 		public void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.MotionEvent._writeToParcel7948, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.view.MotionEvent._writeToParcel8624, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._writeToParcel7948, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._writeToParcel8624, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents7949;
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents8625;
 		public int describeContents() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.MotionEvent._describeContents7949);
+				return @__env.CallIntMethod(this, global::android.view.MotionEvent._describeContents8625);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._describeContents7949);
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._describeContents8625);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAction7950;
+		internal static global::net.sf.jni4net.jni.MethodId _getAction8626;
 		public int getAction() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getAction7950);
+				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getAction8626);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getAction7950);
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getAction8626);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setAction7951;
+		internal static global::net.sf.jni4net.jni.MethodId _setAction8627;
 		public void setAction(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.MotionEvent._setAction7951, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.view.MotionEvent._setAction8627, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._setAction7951, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._setAction8627, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMetaState7952;
+		internal static global::net.sf.jni4net.jni.MethodId _getMetaState8628;
 		public int getMetaState() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getMetaState7952);
+				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getMetaState8628);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getMetaState7952);
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getMetaState8628);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDownTime7953;
+		internal static global::net.sf.jni4net.jni.MethodId _getDownTime8629;
 		public long getDownTime() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::android.view.MotionEvent._getDownTime7953);
+				return @__env.CallLongMethod(this, global::android.view.MotionEvent._getDownTime8629);
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getDownTime7953);
+				return @__env.CallNonVirtualLongMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getDownTime8629);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getDeviceId7954;
+		internal static global::net.sf.jni4net.jni.MethodId _getDeviceId8630;
 		public int getDeviceId() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getDeviceId7954);
+				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getDeviceId8630);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getDeviceId7954);
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getDeviceId8630);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _obtainNoHistory7955;
+		internal static global::net.sf.jni4net.jni.MethodId _obtainNoHistory8631;
 		public static global::android.view.MotionEvent obtainNoHistory(android.view.MotionEvent arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.MotionEvent>(@__env, @__env.CallStaticObjectMethodPtr(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._obtainNoHistory7955, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+			return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.view.MotionEvent>(@__env, @__env.CallStaticObjectMethodPtr(android.view.MotionEvent.staticClass, global::android.view.MotionEvent._obtainNoHistory8631, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPressure7956;
-		public float getPressure(int arg0) 
+		internal static global::net.sf.jni4net.jni.MethodId _getActionMasked8632;
+		public int getActionMasked() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getPressure7956, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getActionMasked8632);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getPressure7956, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getActionMasked8632);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPressure7957;
+		internal static global::net.sf.jni4net.jni.MethodId _getActionIndex8633;
+		public int getActionIndex() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getActionIndex8633);
+			else
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getActionIndex8633);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _getPressure8634;
 		public float getPressure() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getPressure7957);
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getPressure8634);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getPressure7957);
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getPressure8634);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPointerCount7958;
+		internal static global::net.sf.jni4net.jni.MethodId _getPressure8635;
+		public float getPressure(int arg0) 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getPressure8635, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			else
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getPressure8635, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _getPointerCount8636;
 		public int getPointerCount() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getPointerCount7958);
+				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getPointerCount8636);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getPointerCount7958);
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getPointerCount8636);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getPointerId7959;
+		internal static global::net.sf.jni4net.jni.MethodId _getPointerId8637;
 		public int getPointerId(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getPointerId7959, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getPointerId8637, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getPointerId7959, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getPointerId8637, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _findPointerIndex7960;
+		internal static global::net.sf.jni4net.jni.MethodId _findPointerIndex8638;
 		public int findPointerIndex(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.MotionEvent._findPointerIndex7960, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallIntMethod(this, global::android.view.MotionEvent._findPointerIndex8638, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._findPointerIndex7960, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._findPointerIndex8638, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getRawX7961;
+		internal static global::net.sf.jni4net.jni.MethodId _getRawX8639;
 		public float getRawX() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getRawX7961);
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getRawX8639);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getRawX7961);
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getRawX8639);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getRawY7962;
+		internal static global::net.sf.jni4net.jni.MethodId _getRawY8640;
 		public float getRawY() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getRawY7962);
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getRawY8640);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getRawY7962);
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getRawY8640);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getXPrecision7963;
+		internal static global::net.sf.jni4net.jni.MethodId _getXPrecision8641;
 		public float getXPrecision() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getXPrecision7963);
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getXPrecision8641);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getXPrecision7963);
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getXPrecision8641);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getYPrecision7964;
+		internal static global::net.sf.jni4net.jni.MethodId _getYPrecision8642;
 		public float getYPrecision() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getYPrecision7964);
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getYPrecision8642);
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getYPrecision7964);
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getYPrecision8642);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getHistorySize7965;
+		internal static global::net.sf.jni4net.jni.MethodId _getHistorySize8643;
 		public int getHistorySize() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getHistorySize7965);
+				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getHistorySize8643);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistorySize7965);
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistorySize8643);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalEventTime7966;
+		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalEventTime8644;
 		public long getHistoricalEventTime(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallLongMethod(this, global::android.view.MotionEvent._getHistoricalEventTime7966, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallLongMethod(this, global::android.view.MotionEvent._getHistoricalEventTime8644, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualLongMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalEventTime7966, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualLongMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalEventTime8644, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalX7967;
+		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalX8645;
 		public float getHistoricalX(int arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalX7967, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalX8645, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalX7967, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalX8645, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalX7968;
+		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalX8646;
 		public float getHistoricalX(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalX7968, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalX8646, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalX7968, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalX8646, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalY7969;
+		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalY8647;
 		public float getHistoricalY(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalY7969, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalY8647, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalY7969, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalY8647, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalY7970;
+		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalY8648;
 		public float getHistoricalY(int arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalY7970, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalY8648, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalY7970, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalY8648, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalPressure7971;
+		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalPressure8649;
 		public float getHistoricalPressure(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalPressure7971, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalPressure8649, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalPressure7971, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalPressure8649, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalPressure7972;
+		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalPressure8650;
 		public float getHistoricalPressure(int arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalPressure7972, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalPressure8650, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalPressure7972, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalPressure8650, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalSize7973;
+		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalSize8651;
 		public float getHistoricalSize(int arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalSize7973, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalSize8651, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalSize7973, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalSize8651, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalSize7974;
+		internal static global::net.sf.jni4net.jni.MethodId _getHistoricalSize8652;
 		public float getHistoricalSize(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalSize7974, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallFloatMethod(this, global::android.view.MotionEvent._getHistoricalSize8652, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalSize7974, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getHistoricalSize8652, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getEdgeFlags7975;
+		internal static global::net.sf.jni4net.jni.MethodId _getEdgeFlags8653;
 		public int getEdgeFlags() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getEdgeFlags7975);
+				return @__env.CallIntMethod(this, global::android.view.MotionEvent._getEdgeFlags8653);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getEdgeFlags7975);
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._getEdgeFlags8653);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setEdgeFlags7976;
+		internal static global::net.sf.jni4net.jni.MethodId _setEdgeFlags8654;
 		public void setEdgeFlags(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.MotionEvent._setEdgeFlags7976, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.view.MotionEvent._setEdgeFlags8654, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._setEdgeFlags7976, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._setEdgeFlags8654, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _offsetLocation7977;
+		internal static global::net.sf.jni4net.jni.MethodId _offsetLocation8655;
 		public void offsetLocation(float arg0, float arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.MotionEvent._offsetLocation7977, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.view.MotionEvent._offsetLocation8655, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._offsetLocation7977, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._offsetLocation8655, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setLocation7978;
+		internal static global::net.sf.jni4net.jni.MethodId _setLocation8656;
 		public void setLocation(float arg0, float arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.MotionEvent._setLocation7978, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.view.MotionEvent._setLocation8656, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._setLocation7978, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._setLocation8656, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _addBatch7979;
+		internal static global::net.sf.jni4net.jni.MethodId _addBatch8657;
 		public void addBatch(long arg0, float arg1, float arg2, float arg3, float arg4, int arg5) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.MotionEvent._addBatch7979, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+				@__env.CallVoidMethod(this, global::android.view.MotionEvent._addBatch8657, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._addBatch7979, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.MotionEvent.staticClass, global::android.view.MotionEvent._addBatch8657, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg5));
 		}
 		public static int ACTION_MASK
 		{
@@ -457,6 +475,27 @@ namespace android.view
 				return 5;
 			}
 		}
+		public static int ACTION_POINTER_UP
+		{
+			get
+			{
+				return 6;
+			}
+		}
+		public static int ACTION_POINTER_INDEX_MASK
+		{
+			get
+			{
+				return 65280;
+			}
+		}
+		public static int ACTION_POINTER_INDEX_SHIFT
+		{
+			get
+			{
+				return 8;
+			}
+		}
 		public static int ACTION_POINTER_1_DOWN
 		{
 			get
@@ -476,13 +515,6 @@ namespace android.view
 			get
 			{
 				return 517;
-			}
-		}
-		public static int ACTION_POINTER_UP
-		{
-			get
-			{
-				return 6;
 			}
 		}
 		public static int ACTION_POINTER_1_UP
@@ -548,7 +580,7 @@ namespace android.view
 				return 8;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR7980;
+		internal static global::net.sf.jni4net.jni.FieldId _CREATOR8658;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -559,51 +591,53 @@ namespace android.view
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.view.MotionEvent.staticClass = @__class;
-			global::android.view.MotionEvent._toString7935 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.view.MotionEvent._getSize7936 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getSize", "()F");
-			global::android.view.MotionEvent._getSize7937 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getSize", "(I)F");
-			global::android.view.MotionEvent._getY7938 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getY", "(I)F");
-			global::android.view.MotionEvent._getY7939 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getY", "()F");
-			global::android.view.MotionEvent._getX7940 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getX", "()F");
-			global::android.view.MotionEvent._getX7941 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getX", "(I)F");
-			global::android.view.MotionEvent._getEventTime7942 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getEventTime", "()J");
-			global::android.view.MotionEvent._obtain7943 = @__env.GetStaticMethodID(global::android.view.MotionEvent.staticClass, "obtain", "(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;");
-			global::android.view.MotionEvent._obtain7944 = @__env.GetStaticMethodID(global::android.view.MotionEvent.staticClass, "obtain", "(JJIFFFFIFFII)Landroid/view/MotionEvent;");
-			global::android.view.MotionEvent._obtain7945 = @__env.GetStaticMethodID(global::android.view.MotionEvent.staticClass, "obtain", "(JJIFFI)Landroid/view/MotionEvent;");
-			global::android.view.MotionEvent._obtain7946 = @__env.GetStaticMethodID(global::android.view.MotionEvent.staticClass, "obtain", "(JJIIFFFFIFFII)Landroid/view/MotionEvent;");
-			global::android.view.MotionEvent._recycle7947 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "recycle", "()V");
-			global::android.view.MotionEvent._writeToParcel7948 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.view.MotionEvent._describeContents7949 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "describeContents", "()I");
-			global::android.view.MotionEvent._getAction7950 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getAction", "()I");
-			global::android.view.MotionEvent._setAction7951 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "setAction", "(I)V");
-			global::android.view.MotionEvent._getMetaState7952 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getMetaState", "()I");
-			global::android.view.MotionEvent._getDownTime7953 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getDownTime", "()J");
-			global::android.view.MotionEvent._getDeviceId7954 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getDeviceId", "()I");
-			global::android.view.MotionEvent._obtainNoHistory7955 = @__env.GetStaticMethodID(global::android.view.MotionEvent.staticClass, "obtainNoHistory", "(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;");
-			global::android.view.MotionEvent._getPressure7956 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getPressure", "(I)F");
-			global::android.view.MotionEvent._getPressure7957 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getPressure", "()F");
-			global::android.view.MotionEvent._getPointerCount7958 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getPointerCount", "()I");
-			global::android.view.MotionEvent._getPointerId7959 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getPointerId", "(I)I");
-			global::android.view.MotionEvent._findPointerIndex7960 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "findPointerIndex", "(I)I");
-			global::android.view.MotionEvent._getRawX7961 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getRawX", "()F");
-			global::android.view.MotionEvent._getRawY7962 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getRawY", "()F");
-			global::android.view.MotionEvent._getXPrecision7963 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getXPrecision", "()F");
-			global::android.view.MotionEvent._getYPrecision7964 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getYPrecision", "()F");
-			global::android.view.MotionEvent._getHistorySize7965 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistorySize", "()I");
-			global::android.view.MotionEvent._getHistoricalEventTime7966 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalEventTime", "(I)J");
-			global::android.view.MotionEvent._getHistoricalX7967 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalX", "(II)F");
-			global::android.view.MotionEvent._getHistoricalX7968 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalX", "(I)F");
-			global::android.view.MotionEvent._getHistoricalY7969 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalY", "(I)F");
-			global::android.view.MotionEvent._getHistoricalY7970 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalY", "(II)F");
-			global::android.view.MotionEvent._getHistoricalPressure7971 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalPressure", "(I)F");
-			global::android.view.MotionEvent._getHistoricalPressure7972 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalPressure", "(II)F");
-			global::android.view.MotionEvent._getHistoricalSize7973 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalSize", "(II)F");
-			global::android.view.MotionEvent._getHistoricalSize7974 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalSize", "(I)F");
-			global::android.view.MotionEvent._getEdgeFlags7975 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getEdgeFlags", "()I");
-			global::android.view.MotionEvent._setEdgeFlags7976 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "setEdgeFlags", "(I)V");
-			global::android.view.MotionEvent._offsetLocation7977 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "offsetLocation", "(FF)V");
-			global::android.view.MotionEvent._setLocation7978 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "setLocation", "(FF)V");
-			global::android.view.MotionEvent._addBatch7979 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "addBatch", "(JFFFFI)V");
+			global::android.view.MotionEvent._toString8611 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.view.MotionEvent._getSize8612 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getSize", "()F");
+			global::android.view.MotionEvent._getSize8613 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getSize", "(I)F");
+			global::android.view.MotionEvent._getY8614 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getY", "(I)F");
+			global::android.view.MotionEvent._getY8615 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getY", "()F");
+			global::android.view.MotionEvent._getX8616 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getX", "(I)F");
+			global::android.view.MotionEvent._getX8617 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getX", "()F");
+			global::android.view.MotionEvent._getEventTime8618 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getEventTime", "()J");
+			global::android.view.MotionEvent._obtain8619 = @__env.GetStaticMethodID(global::android.view.MotionEvent.staticClass, "obtain", "(JJIFFI)Landroid/view/MotionEvent;");
+			global::android.view.MotionEvent._obtain8620 = @__env.GetStaticMethodID(global::android.view.MotionEvent.staticClass, "obtain", "(JJIIFFFFIFFII)Landroid/view/MotionEvent;");
+			global::android.view.MotionEvent._obtain8621 = @__env.GetStaticMethodID(global::android.view.MotionEvent.staticClass, "obtain", "(JJIFFFFIFFII)Landroid/view/MotionEvent;");
+			global::android.view.MotionEvent._obtain8622 = @__env.GetStaticMethodID(global::android.view.MotionEvent.staticClass, "obtain", "(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;");
+			global::android.view.MotionEvent._recycle8623 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "recycle", "()V");
+			global::android.view.MotionEvent._writeToParcel8624 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.view.MotionEvent._describeContents8625 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "describeContents", "()I");
+			global::android.view.MotionEvent._getAction8626 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getAction", "()I");
+			global::android.view.MotionEvent._setAction8627 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "setAction", "(I)V");
+			global::android.view.MotionEvent._getMetaState8628 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getMetaState", "()I");
+			global::android.view.MotionEvent._getDownTime8629 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getDownTime", "()J");
+			global::android.view.MotionEvent._getDeviceId8630 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getDeviceId", "()I");
+			global::android.view.MotionEvent._obtainNoHistory8631 = @__env.GetStaticMethodID(global::android.view.MotionEvent.staticClass, "obtainNoHistory", "(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;");
+			global::android.view.MotionEvent._getActionMasked8632 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getActionMasked", "()I");
+			global::android.view.MotionEvent._getActionIndex8633 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getActionIndex", "()I");
+			global::android.view.MotionEvent._getPressure8634 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getPressure", "()F");
+			global::android.view.MotionEvent._getPressure8635 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getPressure", "(I)F");
+			global::android.view.MotionEvent._getPointerCount8636 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getPointerCount", "()I");
+			global::android.view.MotionEvent._getPointerId8637 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getPointerId", "(I)I");
+			global::android.view.MotionEvent._findPointerIndex8638 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "findPointerIndex", "(I)I");
+			global::android.view.MotionEvent._getRawX8639 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getRawX", "()F");
+			global::android.view.MotionEvent._getRawY8640 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getRawY", "()F");
+			global::android.view.MotionEvent._getXPrecision8641 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getXPrecision", "()F");
+			global::android.view.MotionEvent._getYPrecision8642 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getYPrecision", "()F");
+			global::android.view.MotionEvent._getHistorySize8643 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistorySize", "()I");
+			global::android.view.MotionEvent._getHistoricalEventTime8644 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalEventTime", "(I)J");
+			global::android.view.MotionEvent._getHistoricalX8645 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalX", "(II)F");
+			global::android.view.MotionEvent._getHistoricalX8646 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalX", "(I)F");
+			global::android.view.MotionEvent._getHistoricalY8647 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalY", "(I)F");
+			global::android.view.MotionEvent._getHistoricalY8648 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalY", "(II)F");
+			global::android.view.MotionEvent._getHistoricalPressure8649 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalPressure", "(I)F");
+			global::android.view.MotionEvent._getHistoricalPressure8650 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalPressure", "(II)F");
+			global::android.view.MotionEvent._getHistoricalSize8651 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalSize", "(II)F");
+			global::android.view.MotionEvent._getHistoricalSize8652 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getHistoricalSize", "(I)F");
+			global::android.view.MotionEvent._getEdgeFlags8653 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "getEdgeFlags", "()I");
+			global::android.view.MotionEvent._setEdgeFlags8654 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "setEdgeFlags", "(I)V");
+			global::android.view.MotionEvent._offsetLocation8655 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "offsetLocation", "(FF)V");
+			global::android.view.MotionEvent._setLocation8656 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "setLocation", "(FF)V");
+			global::android.view.MotionEvent._addBatch8657 = @__env.GetMethodID(global::android.view.MotionEvent.staticClass, "addBatch", "(JFFFFI)V");
 		}
 	}
 }

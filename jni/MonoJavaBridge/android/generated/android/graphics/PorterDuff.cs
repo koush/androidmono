@@ -36,18 +36,18 @@ namespace android.graphics
 			internal Mode(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _values3258;
+			internal static global::net.sf.jni4net.jni.MethodId _values3457;
 			public static global::android.graphics.PorterDuff.Mode[] values() 
 			{
-				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.PorterDuff.Mode.staticClass, global::android.graphics.PorterDuff.Mode._values3258));
+				return null;//(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.PorterDuff.Mode.staticClass, global::android.graphics.PorterDuff.Mode._values3457));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _valueOf3259;
+			internal static global::net.sf.jni4net.jni.MethodId _valueOf3458;
 			public static global::android.graphics.PorterDuff.Mode valueOf(java.lang.String arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.PorterDuff.Mode>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.PorterDuff.Mode.staticClass, global::android.graphics.PorterDuff.Mode._valueOf3259, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.PorterDuff.Mode>(@__env, @__env.CallStaticObjectMethodPtr(android.graphics.PorterDuff.Mode.staticClass, global::android.graphics.PorterDuff.Mode._valueOf3458, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _CLEAR3260;
+			internal static global::net.sf.jni4net.jni.FieldId _CLEAR3459;
 			public static global::android.graphics.PorterDuff.Mode CLEAR
 			{
 				get
@@ -55,7 +55,7 @@ namespace android.graphics
 					return default(global::android.graphics.PorterDuff.Mode);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _DARKEN3261;
+			internal static global::net.sf.jni4net.jni.FieldId _DARKEN3460;
 			public static global::android.graphics.PorterDuff.Mode DARKEN
 			{
 				get
@@ -63,7 +63,7 @@ namespace android.graphics
 					return default(global::android.graphics.PorterDuff.Mode);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _DST3262;
+			internal static global::net.sf.jni4net.jni.FieldId _DST3461;
 			public static global::android.graphics.PorterDuff.Mode DST
 			{
 				get
@@ -71,7 +71,7 @@ namespace android.graphics
 					return default(global::android.graphics.PorterDuff.Mode);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _DST_ATOP3263;
+			internal static global::net.sf.jni4net.jni.FieldId _DST_ATOP3462;
 			public static global::android.graphics.PorterDuff.Mode DST_ATOP
 			{
 				get
@@ -79,7 +79,7 @@ namespace android.graphics
 					return default(global::android.graphics.PorterDuff.Mode);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _DST_IN3264;
+			internal static global::net.sf.jni4net.jni.FieldId _DST_IN3463;
 			public static global::android.graphics.PorterDuff.Mode DST_IN
 			{
 				get
@@ -87,7 +87,7 @@ namespace android.graphics
 					return default(global::android.graphics.PorterDuff.Mode);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _DST_OUT3265;
+			internal static global::net.sf.jni4net.jni.FieldId _DST_OUT3464;
 			public static global::android.graphics.PorterDuff.Mode DST_OUT
 			{
 				get
@@ -95,7 +95,7 @@ namespace android.graphics
 					return default(global::android.graphics.PorterDuff.Mode);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _DST_OVER3266;
+			internal static global::net.sf.jni4net.jni.FieldId _DST_OVER3465;
 			public static global::android.graphics.PorterDuff.Mode DST_OVER
 			{
 				get
@@ -103,7 +103,7 @@ namespace android.graphics
 					return default(global::android.graphics.PorterDuff.Mode);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _LIGHTEN3267;
+			internal static global::net.sf.jni4net.jni.FieldId _LIGHTEN3466;
 			public static global::android.graphics.PorterDuff.Mode LIGHTEN
 			{
 				get
@@ -111,7 +111,7 @@ namespace android.graphics
 					return default(global::android.graphics.PorterDuff.Mode);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _MULTIPLY3268;
+			internal static global::net.sf.jni4net.jni.FieldId _MULTIPLY3467;
 			public static global::android.graphics.PorterDuff.Mode MULTIPLY
 			{
 				get
@@ -119,7 +119,7 @@ namespace android.graphics
 					return default(global::android.graphics.PorterDuff.Mode);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _SCREEN3269;
+			internal static global::net.sf.jni4net.jni.FieldId _SCREEN3468;
 			public static global::android.graphics.PorterDuff.Mode SCREEN
 			{
 				get
@@ -127,7 +127,7 @@ namespace android.graphics
 					return default(global::android.graphics.PorterDuff.Mode);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _SRC3270;
+			internal static global::net.sf.jni4net.jni.FieldId _SRC3469;
 			public static global::android.graphics.PorterDuff.Mode SRC
 			{
 				get
@@ -135,7 +135,7 @@ namespace android.graphics
 					return default(global::android.graphics.PorterDuff.Mode);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _SRC_ATOP3271;
+			internal static global::net.sf.jni4net.jni.FieldId _SRC_ATOP3470;
 			public static global::android.graphics.PorterDuff.Mode SRC_ATOP
 			{
 				get
@@ -143,7 +143,7 @@ namespace android.graphics
 					return default(global::android.graphics.PorterDuff.Mode);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _SRC_IN3272;
+			internal static global::net.sf.jni4net.jni.FieldId _SRC_IN3471;
 			public static global::android.graphics.PorterDuff.Mode SRC_IN
 			{
 				get
@@ -151,7 +151,7 @@ namespace android.graphics
 					return default(global::android.graphics.PorterDuff.Mode);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _SRC_OUT3273;
+			internal static global::net.sf.jni4net.jni.FieldId _SRC_OUT3472;
 			public static global::android.graphics.PorterDuff.Mode SRC_OUT
 			{
 				get
@@ -159,7 +159,7 @@ namespace android.graphics
 					return default(global::android.graphics.PorterDuff.Mode);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _SRC_OVER3274;
+			internal static global::net.sf.jni4net.jni.FieldId _SRC_OVER3473;
 			public static global::android.graphics.PorterDuff.Mode SRC_OVER
 			{
 				get
@@ -167,7 +167,7 @@ namespace android.graphics
 					return default(global::android.graphics.PorterDuff.Mode);
 				}
 			}
-			internal static global::net.sf.jni4net.jni.FieldId _XOR3275;
+			internal static global::net.sf.jni4net.jni.FieldId _XOR3474;
 			public static global::android.graphics.PorterDuff.Mode XOR
 			{
 				get
@@ -178,20 +178,20 @@ namespace android.graphics
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.graphics.PorterDuff.Mode.staticClass = @__class;
-				global::android.graphics.PorterDuff.Mode._values3258 = @__env.GetStaticMethodID(global::android.graphics.PorterDuff.Mode.staticClass, "values", "()[Landroid/graphics/PorterDuff/Mode;");
-				global::android.graphics.PorterDuff.Mode._valueOf3259 = @__env.GetStaticMethodID(global::android.graphics.PorterDuff.Mode.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/PorterDuff$Mode;");
+				global::android.graphics.PorterDuff.Mode._values3457 = @__env.GetStaticMethodID(global::android.graphics.PorterDuff.Mode.staticClass, "values", "()[Landroid/graphics/PorterDuff/Mode;");
+				global::android.graphics.PorterDuff.Mode._valueOf3458 = @__env.GetStaticMethodID(global::android.graphics.PorterDuff.Mode.staticClass, "valueOf", "(Ljava/lang/String;)Landroid/graphics/PorterDuff$Mode;");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PorterDuff3276;
+		internal static global::net.sf.jni4net.jni.MethodId _PorterDuff3475;
 		public PorterDuff()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.PorterDuff.staticClass, global::android.graphics.PorterDuff._PorterDuff3276, this);
+			@__env.NewObject(android.graphics.PorterDuff.staticClass, global::android.graphics.PorterDuff._PorterDuff3475, this);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.graphics.PorterDuff.staticClass = @__class;
-			global::android.graphics.PorterDuff._PorterDuff3276 = @__env.GetMethodID(global::android.graphics.PorterDuff.staticClass, "<init>", "()V");
+			global::android.graphics.PorterDuff._PorterDuff3475 = @__env.GetMethodID(global::android.graphics.PorterDuff.staticClass, "<init>", "()V");
 		}
 	}
 }

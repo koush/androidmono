@@ -32,19 +32,19 @@ namespace android.content
 		internal __DialogInterface_OnDismissListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onDismiss1274;
+		internal static global::net.sf.jni4net.jni.MethodId _onDismiss1417;
 		 void android.content.DialogInterface_OnDismissListener.onDismiss(android.content.DialogInterface arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.__DialogInterface_OnDismissListener._onDismiss1274, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.content.__DialogInterface_OnDismissListener._onDismiss1417, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface_OnDismissListener.staticClass, global::android.content.__DialogInterface_OnDismissListener._onDismiss1274, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.__DialogInterface_OnDismissListener.staticClass, global::android.content.__DialogInterface_OnDismissListener._onDismiss1417, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.content.__DialogInterface_OnDismissListener.staticClass = @__class;
-			global::android.content.__DialogInterface_OnDismissListener._onDismiss1274 = @__env.GetMethodID(global::android.content.__DialogInterface_OnDismissListener.staticClass, "android.content.DialogInterface_OnDismissListener.onDismiss", "(Landroid/content/DialogInterface;)V");
+			global::android.content.__DialogInterface_OnDismissListener._onDismiss1417 = @__env.GetMethodID(global::android.content.__DialogInterface_OnDismissListener.staticClass, "android.content.DialogInterface_OnDismissListener.onDismiss", "(Landroid/content/DialogInterface;)V");
 		}
 	}
 }

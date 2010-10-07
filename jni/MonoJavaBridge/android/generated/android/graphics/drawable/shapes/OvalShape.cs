@@ -18,26 +18,26 @@ namespace android.graphics.drawable.shapes
 		protected OvalShape(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _draw3823;
+		internal static global::net.sf.jni4net.jni.MethodId _draw4029;
 		public override void draw(android.graphics.Canvas arg0, android.graphics.Paint arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.graphics.drawable.shapes.OvalShape._draw3823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this, global::android.graphics.drawable.shapes.OvalShape._draw4029, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.shapes.OvalShape.staticClass, global::android.graphics.drawable.shapes.OvalShape._draw3823, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.graphics.drawable.shapes.OvalShape.staticClass, global::android.graphics.drawable.shapes.OvalShape._draw4029, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _OvalShape3824;
+		internal static global::net.sf.jni4net.jni.MethodId _OvalShape4030;
 		public OvalShape()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.drawable.shapes.OvalShape.staticClass, global::android.graphics.drawable.shapes.OvalShape._OvalShape3824, this);
+			@__env.NewObject(android.graphics.drawable.shapes.OvalShape.staticClass, global::android.graphics.drawable.shapes.OvalShape._OvalShape4030, this);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.graphics.drawable.shapes.OvalShape.staticClass = @__class;
-			global::android.graphics.drawable.shapes.OvalShape._draw3823 = @__env.GetMethodID(global::android.graphics.drawable.shapes.OvalShape.staticClass, "draw", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V");
-			global::android.graphics.drawable.shapes.OvalShape._OvalShape3824 = @__env.GetMethodID(global::android.graphics.drawable.shapes.OvalShape.staticClass, "<init>", "()V");
+			global::android.graphics.drawable.shapes.OvalShape._draw4029 = @__env.GetMethodID(global::android.graphics.drawable.shapes.OvalShape.staticClass, "draw", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V");
+			global::android.graphics.drawable.shapes.OvalShape._OvalShape4030 = @__env.GetMethodID(global::android.graphics.drawable.shapes.OvalShape.staticClass, "<init>", "()V");
 		}
 	}
 }

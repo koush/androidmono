@@ -32,19 +32,19 @@ namespace android.widget
 		internal __Filterable(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getFilter10204;
+		internal static global::net.sf.jni4net.jni.MethodId _getFilter10906;
 		 global::android.widget.Filter android.widget.Filterable.getFilter() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Filter>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.__Filterable._getFilter10204));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Filter>(@__env, @__env.CallObjectMethodPtr(this, global::android.widget.__Filterable._getFilter10906));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Filter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.__Filterable.staticClass, global::android.widget.__Filterable._getFilter10204));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.widget.Filter>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.widget.__Filterable.staticClass, global::android.widget.__Filterable._getFilter10906));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.widget.__Filterable.staticClass = @__class;
-			global::android.widget.__Filterable._getFilter10204 = @__env.GetMethodID(global::android.widget.__Filterable.staticClass, "android.widget.Filterable.getFilter", "()Landroid/widget/Filter;");
+			global::android.widget.__Filterable._getFilter10906 = @__env.GetMethodID(global::android.widget.__Filterable.staticClass, "android.widget.Filterable.getFilter", "()Landroid/widget/Filter;");
 		}
 	}
 }

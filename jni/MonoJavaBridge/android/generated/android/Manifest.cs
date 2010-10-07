@@ -126,11 +126,25 @@ namespace android
 					return "android.permission.BIND_APPWIDGET";
 				}
 			}
+			public static global::java.lang.String BIND_DEVICE_ADMIN
+			{
+				get
+				{
+					return "android.permission.BIND_DEVICE_ADMIN";
+				}
+			}
 			public static global::java.lang.String BIND_INPUT_METHOD
 			{
 				get
 				{
 					return "android.permission.BIND_INPUT_METHOD";
+				}
+			}
+			public static global::java.lang.String BIND_WALLPAPER
+			{
+				get
+				{
+					return "android.permission.BIND_WALLPAPER";
 				}
 			}
 			public static global::java.lang.String BLUETOOTH
@@ -399,6 +413,13 @@ namespace android
 					return "android.permission.INTERNET";
 				}
 			}
+			public static global::java.lang.String KILL_BACKGROUND_PROCESSES
+			{
+				get
+				{
+					return "android.permission.KILL_BACKGROUND_PROCESSES";
+				}
+			}
 			public static global::java.lang.String MANAGE_ACCOUNTS
 			{
 				get
@@ -649,6 +670,13 @@ namespace android
 				get
 				{
 					return "android.permission.SET_PROCESS_LIMIT";
+				}
+			}
+			public static global::java.lang.String SET_TIME
+			{
+				get
+				{
+					return "android.permission.SET_TIME";
 				}
 			}
 			public static global::java.lang.String SET_TIME_ZONE

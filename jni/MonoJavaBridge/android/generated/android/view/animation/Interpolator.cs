@@ -32,19 +32,19 @@ namespace android.view.animation
 		internal __Interpolator(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getInterpolation8962;
+		internal static global::net.sf.jni4net.jni.MethodId _getInterpolation9669;
 		 float android.view.animation.Interpolator.getInterpolation(float arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallFloatMethod(this, global::android.view.animation.__Interpolator._getInterpolation8962, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallFloatMethod(this, global::android.view.animation.__Interpolator._getInterpolation9669, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				return @__env.CallNonVirtualFloatMethod(this, global::android.view.animation.__Interpolator.staticClass, global::android.view.animation.__Interpolator._getInterpolation8962, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				return @__env.CallNonVirtualFloatMethod(this, global::android.view.animation.__Interpolator.staticClass, global::android.view.animation.__Interpolator._getInterpolation9669, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.view.animation.__Interpolator.staticClass = @__class;
-			global::android.view.animation.__Interpolator._getInterpolation8962 = @__env.GetMethodID(global::android.view.animation.__Interpolator.staticClass, "android.view.animation.Interpolator.getInterpolation", "(F)F");
+			global::android.view.animation.__Interpolator._getInterpolation9669 = @__env.GetMethodID(global::android.view.animation.__Interpolator.staticClass, "android.view.animation.Interpolator.getInterpolation", "(F)F");
 		}
 	}
 }

@@ -41,109 +41,109 @@ namespace android.view.inputmethod
 		internal __InputMethod(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _createSession9145;
+		internal static global::net.sf.jni4net.jni.MethodId _createSession9852;
 		 void android.view.inputmethod.InputMethod.createSession(android.view.inputmethod.InputMethod_SessionCallback arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._createSession9145, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._createSession9852, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._createSession9145, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._createSession9852, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setSessionEnabled9146;
+		internal static global::net.sf.jni4net.jni.MethodId _setSessionEnabled9853;
 		 void android.view.inputmethod.InputMethod.setSessionEnabled(android.view.inputmethod.InputMethodSession arg0, bool arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._setSessionEnabled9146, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._setSessionEnabled9853, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._setSessionEnabled9146, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._setSessionEnabled9853, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _revokeSession9147;
+		internal static global::net.sf.jni4net.jni.MethodId _revokeSession9854;
 		 void android.view.inputmethod.InputMethod.revokeSession(android.view.inputmethod.InputMethodSession arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._revokeSession9147, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._revokeSession9854, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._revokeSession9147, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._revokeSession9854, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _attachToken9148;
+		internal static global::net.sf.jni4net.jni.MethodId _attachToken9855;
 		 void android.view.inputmethod.InputMethod.attachToken(android.os.IBinder arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._attachToken9148, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._attachToken9855, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._attachToken9148, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._attachToken9855, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _bindInput9149;
+		internal static global::net.sf.jni4net.jni.MethodId _bindInput9856;
 		 void android.view.inputmethod.InputMethod.bindInput(android.view.inputmethod.InputBinding arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._bindInput9149, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._bindInput9856, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._bindInput9149, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._bindInput9856, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _unbindInput9150;
+		internal static global::net.sf.jni4net.jni.MethodId _unbindInput9857;
 		 void android.view.inputmethod.InputMethod.unbindInput() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._unbindInput9150);
+				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._unbindInput9857);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._unbindInput9150);
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._unbindInput9857);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _startInput9151;
+		internal static global::net.sf.jni4net.jni.MethodId _startInput9858;
 		 void android.view.inputmethod.InputMethod.startInput(android.view.inputmethod.InputConnection arg0, android.view.inputmethod.EditorInfo arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._startInput9151, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._startInput9858, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._startInput9151, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._startInput9858, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _restartInput9152;
+		internal static global::net.sf.jni4net.jni.MethodId _restartInput9859;
 		 void android.view.inputmethod.InputMethod.restartInput(android.view.inputmethod.InputConnection arg0, android.view.inputmethod.EditorInfo arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._restartInput9152, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._restartInput9859, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._restartInput9152, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._restartInput9859, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _showSoftInput9153;
+		internal static global::net.sf.jni4net.jni.MethodId _showSoftInput9860;
 		 void android.view.inputmethod.InputMethod.showSoftInput(int arg0, android.os.ResultReceiver arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._showSoftInput9153, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._showSoftInput9860, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._showSoftInput9153, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._showSoftInput9860, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hideSoftInput9154;
+		internal static global::net.sf.jni4net.jni.MethodId _hideSoftInput9861;
 		 void android.view.inputmethod.InputMethod.hideSoftInput(int arg0, android.os.ResultReceiver arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._hideSoftInput9154, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this, global::android.view.inputmethod.__InputMethod._hideSoftInput9861, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._hideSoftInput9154, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.view.inputmethod.__InputMethod.staticClass, global::android.view.inputmethod.__InputMethod._hideSoftInput9861, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.view.inputmethod.__InputMethod.staticClass = @__class;
-			global::android.view.inputmethod.__InputMethod._createSession9145 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.createSession", "(Landroid/view/inputmethod/InputMethod$SessionCallback;)V");
-			global::android.view.inputmethod.__InputMethod._setSessionEnabled9146 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.setSessionEnabled", "(Landroid/view/inputmethod/InputMethodSession;Z)V");
-			global::android.view.inputmethod.__InputMethod._revokeSession9147 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.revokeSession", "(Landroid/view/inputmethod/InputMethodSession;)V");
-			global::android.view.inputmethod.__InputMethod._attachToken9148 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.attachToken", "(Landroid/os/IBinder;)V");
-			global::android.view.inputmethod.__InputMethod._bindInput9149 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.bindInput", "(Landroid/view/inputmethod/InputBinding;)V");
-			global::android.view.inputmethod.__InputMethod._unbindInput9150 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.unbindInput", "()V");
-			global::android.view.inputmethod.__InputMethod._startInput9151 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.startInput", "(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;)V");
-			global::android.view.inputmethod.__InputMethod._restartInput9152 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.restartInput", "(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;)V");
-			global::android.view.inputmethod.__InputMethod._showSoftInput9153 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.showSoftInput", "(ILandroid/os/ResultReceiver;)V");
-			global::android.view.inputmethod.__InputMethod._hideSoftInput9154 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.hideSoftInput", "(ILandroid/os/ResultReceiver;)V");
+			global::android.view.inputmethod.__InputMethod._createSession9852 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.createSession", "(Landroid/view/inputmethod/InputMethod$SessionCallback;)V");
+			global::android.view.inputmethod.__InputMethod._setSessionEnabled9853 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.setSessionEnabled", "(Landroid/view/inputmethod/InputMethodSession;Z)V");
+			global::android.view.inputmethod.__InputMethod._revokeSession9854 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.revokeSession", "(Landroid/view/inputmethod/InputMethodSession;)V");
+			global::android.view.inputmethod.__InputMethod._attachToken9855 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.attachToken", "(Landroid/os/IBinder;)V");
+			global::android.view.inputmethod.__InputMethod._bindInput9856 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.bindInput", "(Landroid/view/inputmethod/InputBinding;)V");
+			global::android.view.inputmethod.__InputMethod._unbindInput9857 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.unbindInput", "()V");
+			global::android.view.inputmethod.__InputMethod._startInput9858 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.startInput", "(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;)V");
+			global::android.view.inputmethod.__InputMethod._restartInput9859 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.restartInput", "(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;)V");
+			global::android.view.inputmethod.__InputMethod._showSoftInput9860 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.showSoftInput", "(ILandroid/os/ResultReceiver;)V");
+			global::android.view.inputmethod.__InputMethod._hideSoftInput9861 = @__env.GetMethodID(global::android.view.inputmethod.__InputMethod.staticClass, "android.view.inputmethod.InputMethod.hideSoftInput", "(ILandroid/os/ResultReceiver;)V");
 		}
 	}
 }

@@ -18,116 +18,116 @@ namespace android.os
 		protected RemoteCallbackList(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _register5851;
+		internal static global::net.sf.jni4net.jni.MethodId _register6430;
 		public virtual bool register(android.os.IInterface arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.os.RemoteCallbackList._register5851, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.os.RemoteCallbackList._register6430, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._register5851, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._register6430, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _register5852;
+		internal static global::net.sf.jni4net.jni.MethodId _register6431;
 		public virtual bool register(android.os.IInterface arg0, java.lang.Object arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.os.RemoteCallbackList._register5852, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				return @__env.CallBooleanMethod(this, global::android.os.RemoteCallbackList._register6431, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._register5852, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._register6431, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _unregister5853;
+		internal static global::net.sf.jni4net.jni.MethodId _unregister6432;
 		public virtual bool unregister(android.os.IInterface arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.os.RemoteCallbackList._unregister5853, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallBooleanMethod(this, global::android.os.RemoteCallbackList._unregister6432, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._unregister5853, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._unregister6432, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _kill5854;
+		internal static global::net.sf.jni4net.jni.MethodId _kill6433;
 		public virtual void kill() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.RemoteCallbackList._kill5854);
+				@__env.CallVoidMethod(this, global::android.os.RemoteCallbackList._kill6433);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._kill5854);
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._kill6433);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onCallbackDied5855;
+		internal static global::net.sf.jni4net.jni.MethodId _onCallbackDied6434;
 		public virtual void onCallbackDied(android.os.IInterface arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.RemoteCallbackList._onCallbackDied5855, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.os.RemoteCallbackList._onCallbackDied6434, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._onCallbackDied5855, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._onCallbackDied6434, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onCallbackDied5856;
+		internal static global::net.sf.jni4net.jni.MethodId _onCallbackDied6435;
 		public virtual void onCallbackDied(android.os.IInterface arg0, java.lang.Object arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.RemoteCallbackList._onCallbackDied5856, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallVoidMethod(this, global::android.os.RemoteCallbackList._onCallbackDied6435, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._onCallbackDied5856, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._onCallbackDied6435, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _beginBroadcast5857;
+		internal static global::net.sf.jni4net.jni.MethodId _beginBroadcast6436;
 		public virtual int beginBroadcast() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.os.RemoteCallbackList._beginBroadcast5857);
+				return @__env.CallIntMethod(this, global::android.os.RemoteCallbackList._beginBroadcast6436);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._beginBroadcast5857);
+				return @__env.CallNonVirtualIntMethod(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._beginBroadcast6436);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getBroadcastItem5858;
+		internal static global::net.sf.jni4net.jni.MethodId _getBroadcastItem6437;
 		public virtual global::android.os.IInterface getBroadcastItem(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IInterface>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.RemoteCallbackList._getBroadcastItem5858, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IInterface>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.RemoteCallbackList._getBroadcastItem6437, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IInterface>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._getBroadcastItem5858, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IInterface>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._getBroadcastItem6437, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getBroadcastCookie5859;
+		internal static global::net.sf.jni4net.jni.MethodId _getBroadcastCookie6438;
 		public virtual global::java.lang.Object getBroadcastCookie(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.RemoteCallbackList._getBroadcastCookie5859, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.RemoteCallbackList._getBroadcastCookie6438, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._getBroadcastCookie5859, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._getBroadcastCookie6438, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _finishBroadcast5860;
+		internal static global::net.sf.jni4net.jni.MethodId _finishBroadcast6439;
 		public virtual void finishBroadcast() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.RemoteCallbackList._finishBroadcast5860);
+				@__env.CallVoidMethod(this, global::android.os.RemoteCallbackList._finishBroadcast6439);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._finishBroadcast5860);
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._finishBroadcast6439);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _RemoteCallbackList5861;
+		internal static global::net.sf.jni4net.jni.MethodId _RemoteCallbackList6440;
 		public RemoteCallbackList()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._RemoteCallbackList5861, this);
+			@__env.NewObject(android.os.RemoteCallbackList.staticClass, global::android.os.RemoteCallbackList._RemoteCallbackList6440, this);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.os.RemoteCallbackList.staticClass = @__class;
-			global::android.os.RemoteCallbackList._register5851 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "register", "(Landroid/os/IInterface;)Z");
-			global::android.os.RemoteCallbackList._register5852 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "register", "(Landroid/os/IInterface;Ljava/lang/Object;)Z");
-			global::android.os.RemoteCallbackList._unregister5853 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "unregister", "(Landroid/os/IInterface;)Z");
-			global::android.os.RemoteCallbackList._kill5854 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "kill", "()V");
-			global::android.os.RemoteCallbackList._onCallbackDied5855 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "onCallbackDied", "(Landroid/os/IInterface;)V");
-			global::android.os.RemoteCallbackList._onCallbackDied5856 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "onCallbackDied", "(Landroid/os/IInterface;Ljava/lang/Object;)V");
-			global::android.os.RemoteCallbackList._beginBroadcast5857 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "beginBroadcast", "()I");
-			global::android.os.RemoteCallbackList._getBroadcastItem5858 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "getBroadcastItem", "(I)Landroid/os/IInterface;");
-			global::android.os.RemoteCallbackList._getBroadcastCookie5859 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "getBroadcastCookie", "(I)Ljava/lang/Object;");
-			global::android.os.RemoteCallbackList._finishBroadcast5860 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "finishBroadcast", "()V");
-			global::android.os.RemoteCallbackList._RemoteCallbackList5861 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "<init>", "()V");
+			global::android.os.RemoteCallbackList._register6430 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "register", "(Landroid/os/IInterface;)Z");
+			global::android.os.RemoteCallbackList._register6431 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "register", "(Landroid/os/IInterface;Ljava/lang/Object;)Z");
+			global::android.os.RemoteCallbackList._unregister6432 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "unregister", "(Landroid/os/IInterface;)Z");
+			global::android.os.RemoteCallbackList._kill6433 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "kill", "()V");
+			global::android.os.RemoteCallbackList._onCallbackDied6434 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "onCallbackDied", "(Landroid/os/IInterface;)V");
+			global::android.os.RemoteCallbackList._onCallbackDied6435 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "onCallbackDied", "(Landroid/os/IInterface;Ljava/lang/Object;)V");
+			global::android.os.RemoteCallbackList._beginBroadcast6436 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "beginBroadcast", "()I");
+			global::android.os.RemoteCallbackList._getBroadcastItem6437 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "getBroadcastItem", "(I)Landroid/os/IInterface;");
+			global::android.os.RemoteCallbackList._getBroadcastCookie6438 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "getBroadcastCookie", "(I)Ljava/lang/Object;");
+			global::android.os.RemoteCallbackList._finishBroadcast6439 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "finishBroadcast", "()V");
+			global::android.os.RemoteCallbackList._RemoteCallbackList6440 = @__env.GetMethodID(global::android.os.RemoteCallbackList.staticClass, "<init>", "()V");
 		}
 	}
 }

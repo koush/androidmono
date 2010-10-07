@@ -33,29 +33,29 @@ namespace org.xml.sax
 		internal __DTDHandler(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _unparsedEntityDecl13300;
+		internal static global::net.sf.jni4net.jni.MethodId _unparsedEntityDecl14579;
 		 void org.xml.sax.DTDHandler.unparsedEntityDecl(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__DTDHandler._unparsedEntityDecl13300, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+				@__env.CallVoidMethod(this, global::org.xml.sax.__DTDHandler._unparsedEntityDecl14579, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__DTDHandler.staticClass, global::org.xml.sax.__DTDHandler._unparsedEntityDecl13300, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__DTDHandler.staticClass, global::org.xml.sax.__DTDHandler._unparsedEntityDecl14579, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg3));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _notationDecl13301;
+		internal static global::net.sf.jni4net.jni.MethodId _notationDecl14580;
 		 void org.xml.sax.DTDHandler.notationDecl(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::org.xml.sax.__DTDHandler._notationDecl13301, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallVoidMethod(this, global::org.xml.sax.__DTDHandler._notationDecl14580, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__DTDHandler.staticClass, global::org.xml.sax.__DTDHandler._notationDecl13301, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
+				@__env.CallNonVirtualVoidMethod(this, global::org.xml.sax.__DTDHandler.staticClass, global::org.xml.sax.__DTDHandler._notationDecl14580, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg2));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::org.xml.sax.__DTDHandler.staticClass = @__class;
-			global::org.xml.sax.__DTDHandler._unparsedEntityDecl13300 = @__env.GetMethodID(global::org.xml.sax.__DTDHandler.staticClass, "org.xml.sax.DTDHandler.unparsedEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
-			global::org.xml.sax.__DTDHandler._notationDecl13301 = @__env.GetMethodID(global::org.xml.sax.__DTDHandler.staticClass, "org.xml.sax.DTDHandler.notationDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+			global::org.xml.sax.__DTDHandler._unparsedEntityDecl14579 = @__env.GetMethodID(global::org.xml.sax.__DTDHandler.staticClass, "org.xml.sax.DTDHandler.unparsedEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+			global::org.xml.sax.__DTDHandler._notationDecl14580 = @__env.GetMethodID(global::org.xml.sax.__DTDHandler.staticClass, "org.xml.sax.DTDHandler.notationDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
 		}
 	}
 }

@@ -18,40 +18,40 @@ namespace android.content.pm
 		protected PackageInfo(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString1671;
+		internal static global::net.sf.jni4net.jni.MethodId _toString1846;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.PackageInfo._toString1671));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.PackageInfo._toString1846));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._toString1671));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._toString1846));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel1672;
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel1847;
 		public virtual void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.pm.PackageInfo._writeToParcel1672, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.content.pm.PackageInfo._writeToParcel1847, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._writeToParcel1672, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._writeToParcel1847, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents1673;
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents1848;
 		public virtual int describeContents() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.pm.PackageInfo._describeContents1673);
+				return @__env.CallIntMethod(this, global::android.content.pm.PackageInfo._describeContents1848);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._describeContents1673);
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._describeContents1848);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PackageInfo1674;
+		internal static global::net.sf.jni4net.jni.MethodId _PackageInfo1849;
 		public PackageInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._PackageInfo1674, this);
+			@__env.NewObject(android.content.pm.PackageInfo.staticClass, global::android.content.pm.PackageInfo._PackageInfo1849, this);
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _packageName1675;
+		internal static global::net.sf.jni4net.jni.FieldId _packageName1850;
 		public global::java.lang.String packageName
 		{
 			get
@@ -62,7 +62,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _versionCode1676;
+		internal static global::net.sf.jni4net.jni.FieldId _versionCode1851;
 		public int versionCode
 		{
 			get
@@ -73,7 +73,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _versionName1677;
+		internal static global::net.sf.jni4net.jni.FieldId _versionName1852;
 		public global::java.lang.String versionName
 		{
 			get
@@ -84,7 +84,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _sharedUserId1678;
+		internal static global::net.sf.jni4net.jni.FieldId _sharedUserId1853;
 		public global::java.lang.String sharedUserId
 		{
 			get
@@ -95,7 +95,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _sharedUserLabel1679;
+		internal static global::net.sf.jni4net.jni.FieldId _sharedUserLabel1854;
 		public int sharedUserLabel
 		{
 			get
@@ -106,7 +106,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _applicationInfo1680;
+		internal static global::net.sf.jni4net.jni.FieldId _applicationInfo1855;
 		public global::android.content.pm.ApplicationInfo applicationInfo
 		{
 			get
@@ -117,7 +117,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _gids1681;
+		internal static global::net.sf.jni4net.jni.FieldId _gids1856;
 		public int[] gids
 		{
 			get
@@ -128,7 +128,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _activities1682;
+		internal static global::net.sf.jni4net.jni.FieldId _activities1857;
 		public global::android.content.pm.ActivityInfo[] activities
 		{
 			get
@@ -139,7 +139,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _receivers1683;
+		internal static global::net.sf.jni4net.jni.FieldId _receivers1858;
 		public global::android.content.pm.ActivityInfo[] receivers
 		{
 			get
@@ -150,7 +150,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _services1684;
+		internal static global::net.sf.jni4net.jni.FieldId _services1859;
 		public global::android.content.pm.ServiceInfo[] services
 		{
 			get
@@ -161,7 +161,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _providers1685;
+		internal static global::net.sf.jni4net.jni.FieldId _providers1860;
 		public global::android.content.pm.ProviderInfo[] providers
 		{
 			get
@@ -172,7 +172,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _instrumentation1686;
+		internal static global::net.sf.jni4net.jni.FieldId _instrumentation1861;
 		public global::android.content.pm.InstrumentationInfo[] instrumentation
 		{
 			get
@@ -183,7 +183,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _permissions1687;
+		internal static global::net.sf.jni4net.jni.FieldId _permissions1862;
 		public global::android.content.pm.PermissionInfo[] permissions
 		{
 			get
@@ -194,7 +194,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _requestedPermissions1688;
+		internal static global::net.sf.jni4net.jni.FieldId _requestedPermissions1863;
 		public global::java.lang.String[] requestedPermissions
 		{
 			get
@@ -205,7 +205,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _signatures1689;
+		internal static global::net.sf.jni4net.jni.FieldId _signatures1864;
 		public global::android.content.pm.Signature[] signatures
 		{
 			get
@@ -216,7 +216,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _configPreferences1690;
+		internal static global::net.sf.jni4net.jni.FieldId _configPreferences1865;
 		public global::android.content.pm.ConfigurationInfo[] configPreferences
 		{
 			get
@@ -227,7 +227,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _reqFeatures1691;
+		internal static global::net.sf.jni4net.jni.FieldId _reqFeatures1866;
 		public global::android.content.pm.FeatureInfo[] reqFeatures
 		{
 			get
@@ -238,7 +238,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR1692;
+		internal static global::net.sf.jni4net.jni.FieldId _CREATOR1867;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -249,10 +249,10 @@ namespace android.content.pm
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.content.pm.PackageInfo.staticClass = @__class;
-			global::android.content.pm.PackageInfo._toString1671 = @__env.GetMethodID(global::android.content.pm.PackageInfo.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.pm.PackageInfo._writeToParcel1672 = @__env.GetMethodID(global::android.content.pm.PackageInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.pm.PackageInfo._describeContents1673 = @__env.GetMethodID(global::android.content.pm.PackageInfo.staticClass, "describeContents", "()I");
-			global::android.content.pm.PackageInfo._PackageInfo1674 = @__env.GetMethodID(global::android.content.pm.PackageInfo.staticClass, "<init>", "()V");
+			global::android.content.pm.PackageInfo._toString1846 = @__env.GetMethodID(global::android.content.pm.PackageInfo.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.pm.PackageInfo._writeToParcel1847 = @__env.GetMethodID(global::android.content.pm.PackageInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.content.pm.PackageInfo._describeContents1848 = @__env.GetMethodID(global::android.content.pm.PackageInfo.staticClass, "describeContents", "()I");
+			global::android.content.pm.PackageInfo._PackageInfo1849 = @__env.GetMethodID(global::android.content.pm.PackageInfo.staticClass, "<init>", "()V");
 		}
 	}
 }

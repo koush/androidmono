@@ -31,29 +31,29 @@ namespace android.sax
 		internal __ElementListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _start6384;
+		internal static global::net.sf.jni4net.jni.MethodId _start6973;
 		 void android.sax.StartElementListener.start(org.xml.sax.Attributes arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.sax.__ElementListener._start6384, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.sax.__ElementListener._start6973, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.sax.__ElementListener.staticClass, global::android.sax.__ElementListener._start6384, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.sax.__ElementListener.staticClass, global::android.sax.__ElementListener._start6973, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _end6385;
+		internal static global::net.sf.jni4net.jni.MethodId _end6974;
 		 void android.sax.EndElementListener.end() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.sax.__ElementListener._end6385);
+				@__env.CallVoidMethod(this, global::android.sax.__ElementListener._end6974);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.sax.__ElementListener.staticClass, global::android.sax.__ElementListener._end6385);
+				@__env.CallNonVirtualVoidMethod(this, global::android.sax.__ElementListener.staticClass, global::android.sax.__ElementListener._end6974);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.sax.__ElementListener.staticClass = @__class;
-			global::android.sax.__ElementListener._start6384 = @__env.GetMethodID(global::android.sax.__ElementListener.staticClass, "android.sax.StartElementListener.start", "(Lorg/xml/sax/Attributes;)V");
-			global::android.sax.__ElementListener._end6385 = @__env.GetMethodID(global::android.sax.__ElementListener.staticClass, "android.sax.EndElementListener.end", "()V");
+			global::android.sax.__ElementListener._start6973 = @__env.GetMethodID(global::android.sax.__ElementListener.staticClass, "android.sax.StartElementListener.start", "(Lorg/xml/sax/Attributes;)V");
+			global::android.sax.__ElementListener._end6974 = @__env.GetMethodID(global::android.sax.__ElementListener.staticClass, "android.sax.EndElementListener.end", "()V");
 		}
 	}
 }

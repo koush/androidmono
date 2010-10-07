@@ -18,39 +18,39 @@ namespace android.os
 		protected Vibrator(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cancel5888;
+		internal static global::net.sf.jni4net.jni.MethodId _cancel6467;
 		public virtual void cancel() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.Vibrator._cancel5888);
+				@__env.CallVoidMethod(this, global::android.os.Vibrator._cancel6467);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.Vibrator.staticClass, global::android.os.Vibrator._cancel5888);
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Vibrator.staticClass, global::android.os.Vibrator._cancel6467);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _vibrate5889;
+		internal static global::net.sf.jni4net.jni.MethodId _vibrate6468;
 		public virtual void vibrate(long arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.Vibrator._vibrate5889, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallVoidMethod(this, global::android.os.Vibrator._vibrate6468, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.Vibrator.staticClass, global::android.os.Vibrator._vibrate5889, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Vibrator.staticClass, global::android.os.Vibrator._vibrate6468, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _vibrate5890;
+		internal static global::net.sf.jni4net.jni.MethodId _vibrate6469;
 		public virtual void vibrate(long[] arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.os.Vibrator._vibrate5890, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.os.Vibrator._vibrate6469, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.os.Vibrator.staticClass, global::android.os.Vibrator._vibrate5890, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.os.Vibrator.staticClass, global::android.os.Vibrator._vibrate6469, global::net.sf.jni4net.utils.Convertor.ParArrayPrimC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.os.Vibrator.staticClass = @__class;
-			global::android.os.Vibrator._cancel5888 = @__env.GetMethodID(global::android.os.Vibrator.staticClass, "cancel", "()V");
-			global::android.os.Vibrator._vibrate5889 = @__env.GetMethodID(global::android.os.Vibrator.staticClass, "vibrate", "(J)V");
-			global::android.os.Vibrator._vibrate5890 = @__env.GetMethodID(global::android.os.Vibrator.staticClass, "vibrate", "([JI)V");
+			global::android.os.Vibrator._cancel6467 = @__env.GetMethodID(global::android.os.Vibrator.staticClass, "cancel", "()V");
+			global::android.os.Vibrator._vibrate6468 = @__env.GetMethodID(global::android.os.Vibrator.staticClass, "vibrate", "(J)V");
+			global::android.os.Vibrator._vibrate6469 = @__env.GetMethodID(global::android.os.Vibrator.staticClass, "vibrate", "([JI)V");
 		}
 	}
 }

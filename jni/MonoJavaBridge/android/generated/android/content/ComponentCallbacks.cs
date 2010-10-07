@@ -33,29 +33,29 @@ namespace android.content
 		internal __ComponentCallbacks(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onConfigurationChanged956;
+		internal static global::net.sf.jni4net.jni.MethodId _onConfigurationChanged1087;
 		 void android.content.ComponentCallbacks.onConfigurationChanged(android.content.res.Configuration arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.__ComponentCallbacks._onConfigurationChanged956, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.content.__ComponentCallbacks._onConfigurationChanged1087, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.__ComponentCallbacks.staticClass, global::android.content.__ComponentCallbacks._onConfigurationChanged956, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.__ComponentCallbacks.staticClass, global::android.content.__ComponentCallbacks._onConfigurationChanged1087, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onLowMemory957;
+		internal static global::net.sf.jni4net.jni.MethodId _onLowMemory1088;
 		 void android.content.ComponentCallbacks.onLowMemory() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.__ComponentCallbacks._onLowMemory957);
+				@__env.CallVoidMethod(this, global::android.content.__ComponentCallbacks._onLowMemory1088);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.__ComponentCallbacks.staticClass, global::android.content.__ComponentCallbacks._onLowMemory957);
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.__ComponentCallbacks.staticClass, global::android.content.__ComponentCallbacks._onLowMemory1088);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.content.__ComponentCallbacks.staticClass = @__class;
-			global::android.content.__ComponentCallbacks._onConfigurationChanged956 = @__env.GetMethodID(global::android.content.__ComponentCallbacks.staticClass, "android.content.ComponentCallbacks.onConfigurationChanged", "(Landroid/content/res/Configuration;)V");
-			global::android.content.__ComponentCallbacks._onLowMemory957 = @__env.GetMethodID(global::android.content.__ComponentCallbacks.staticClass, "android.content.ComponentCallbacks.onLowMemory", "()V");
+			global::android.content.__ComponentCallbacks._onConfigurationChanged1087 = @__env.GetMethodID(global::android.content.__ComponentCallbacks.staticClass, "android.content.ComponentCallbacks.onConfigurationChanged", "(Landroid/content/res/Configuration;)V");
+			global::android.content.__ComponentCallbacks._onLowMemory1088 = @__env.GetMethodID(global::android.content.__ComponentCallbacks.staticClass, "android.content.ComponentCallbacks.onLowMemory", "()V");
 		}
 	}
 }

@@ -18,16 +18,16 @@ namespace android.graphics
 		protected PixelXorXfermode(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _PixelXorXfermode3233;
+		internal static global::net.sf.jni4net.jni.MethodId _PixelXorXfermode3432;
 		public PixelXorXfermode(int arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.graphics.PixelXorXfermode.staticClass, global::android.graphics.PixelXorXfermode._PixelXorXfermode3233, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+			@__env.NewObject(android.graphics.PixelXorXfermode.staticClass, global::android.graphics.PixelXorXfermode._PixelXorXfermode3432, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.graphics.PixelXorXfermode.staticClass = @__class;
-			global::android.graphics.PixelXorXfermode._PixelXorXfermode3233 = @__env.GetMethodID(global::android.graphics.PixelXorXfermode.staticClass, "<init>", "(I)V");
+			global::android.graphics.PixelXorXfermode._PixelXorXfermode3432 = @__env.GetMethodID(global::android.graphics.PixelXorXfermode.staticClass, "<init>", "(I)V");
 		}
 	}
 }

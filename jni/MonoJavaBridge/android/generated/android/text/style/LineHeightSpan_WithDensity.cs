@@ -32,29 +32,29 @@ namespace android.text.style
 		internal __LineHeightSpan_WithDensity(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _chooseHeight7365;
+		internal static global::net.sf.jni4net.jni.MethodId _chooseHeight7994;
 		 void android.text.style.LineHeightSpan_WithDensity.chooseHeight(java.lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, android.graphics.Paint.FontMetricsInt arg5, android.text.TextPaint arg6) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.style.__LineHeightSpan_WithDensity._chooseHeight7365, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6));
+				@__env.CallVoidMethod(this, global::android.text.style.__LineHeightSpan_WithDensity._chooseHeight7994, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.__LineHeightSpan_WithDensity.staticClass, global::android.text.style.__LineHeightSpan_WithDensity._chooseHeight7365, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6));
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.__LineHeightSpan_WithDensity.staticClass, global::android.text.style.__LineHeightSpan_WithDensity._chooseHeight7994, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg6));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _chooseHeight7366;
+		internal static global::net.sf.jni4net.jni.MethodId _chooseHeight7995;
 		 void android.text.style.LineHeightSpan.chooseHeight(java.lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, android.graphics.Paint.FontMetricsInt arg5) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.text.style.__LineHeightSpan_WithDensity._chooseHeight7366, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5));
+				@__env.CallVoidMethod(this, global::android.text.style.__LineHeightSpan_WithDensity._chooseHeight7995, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.__LineHeightSpan_WithDensity.staticClass, global::android.text.style.__LineHeightSpan_WithDensity._chooseHeight7366, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5));
+				@__env.CallNonVirtualVoidMethod(this, global::android.text.style.__LineHeightSpan_WithDensity.staticClass, global::android.text.style.__LineHeightSpan_WithDensity._chooseHeight7995, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg3), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg4), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg5));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.text.style.__LineHeightSpan_WithDensity.staticClass = @__class;
-			global::android.text.style.__LineHeightSpan_WithDensity._chooseHeight7365 = @__env.GetMethodID(global::android.text.style.__LineHeightSpan_WithDensity.staticClass, "android.text.style.LineHeightSpan_WithDensity.chooseHeight", "(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;Landroid/text/TextPaint;)V");
-			global::android.text.style.__LineHeightSpan_WithDensity._chooseHeight7366 = @__env.GetMethodID(global::android.text.style.__LineHeightSpan_WithDensity.staticClass, "android.text.style.LineHeightSpan.chooseHeight", "(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V");
+			global::android.text.style.__LineHeightSpan_WithDensity._chooseHeight7994 = @__env.GetMethodID(global::android.text.style.__LineHeightSpan_WithDensity.staticClass, "android.text.style.LineHeightSpan_WithDensity.chooseHeight", "(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;Landroid/text/TextPaint;)V");
+			global::android.text.style.__LineHeightSpan_WithDensity._chooseHeight7995 = @__env.GetMethodID(global::android.text.style.__LineHeightSpan_WithDensity.staticClass, "android.text.style.LineHeightSpan.chooseHeight", "(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V");
 		}
 	}
 }

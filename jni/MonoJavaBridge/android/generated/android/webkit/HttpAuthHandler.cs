@@ -18,49 +18,49 @@ namespace android.webkit
 		protected HttpAuthHandler(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _cancel9294;
+		internal static global::net.sf.jni4net.jni.MethodId _cancel9973;
 		public virtual void cancel() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.webkit.HttpAuthHandler._cancel9294);
+				@__env.CallVoidMethod(this, global::android.webkit.HttpAuthHandler._cancel9973);
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.HttpAuthHandler.staticClass, global::android.webkit.HttpAuthHandler._cancel9294);
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.HttpAuthHandler.staticClass, global::android.webkit.HttpAuthHandler._cancel9973);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _handleMessage9295;
+		internal static global::net.sf.jni4net.jni.MethodId _handleMessage9974;
 		public override void handleMessage(android.os.Message arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.webkit.HttpAuthHandler._handleMessage9295, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.webkit.HttpAuthHandler._handleMessage9974, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.HttpAuthHandler.staticClass, global::android.webkit.HttpAuthHandler._handleMessage9295, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.HttpAuthHandler.staticClass, global::android.webkit.HttpAuthHandler._handleMessage9974, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _proceed9296;
+		internal static global::net.sf.jni4net.jni.MethodId _proceed9975;
 		public virtual void proceed(java.lang.String arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.webkit.HttpAuthHandler._proceed9296, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this, global::android.webkit.HttpAuthHandler._proceed9975, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.HttpAuthHandler.staticClass, global::android.webkit.HttpAuthHandler._proceed9296, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.webkit.HttpAuthHandler.staticClass, global::android.webkit.HttpAuthHandler._proceed9975, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _useHttpAuthUsernamePassword9297;
+		internal static global::net.sf.jni4net.jni.MethodId _useHttpAuthUsernamePassword9976;
 		public virtual bool useHttpAuthUsernamePassword() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.webkit.HttpAuthHandler._useHttpAuthUsernamePassword9297);
+				return @__env.CallBooleanMethod(this, global::android.webkit.HttpAuthHandler._useHttpAuthUsernamePassword9976);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.HttpAuthHandler.staticClass, global::android.webkit.HttpAuthHandler._useHttpAuthUsernamePassword9297);
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.webkit.HttpAuthHandler.staticClass, global::android.webkit.HttpAuthHandler._useHttpAuthUsernamePassword9976);
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.webkit.HttpAuthHandler.staticClass = @__class;
-			global::android.webkit.HttpAuthHandler._cancel9294 = @__env.GetMethodID(global::android.webkit.HttpAuthHandler.staticClass, "cancel", "()V");
-			global::android.webkit.HttpAuthHandler._handleMessage9295 = @__env.GetMethodID(global::android.webkit.HttpAuthHandler.staticClass, "handleMessage", "(Landroid/os/Message;)V");
-			global::android.webkit.HttpAuthHandler._proceed9296 = @__env.GetMethodID(global::android.webkit.HttpAuthHandler.staticClass, "proceed", "(Ljava/lang/String;Ljava/lang/String;)V");
-			global::android.webkit.HttpAuthHandler._useHttpAuthUsernamePassword9297 = @__env.GetMethodID(global::android.webkit.HttpAuthHandler.staticClass, "useHttpAuthUsernamePassword", "()Z");
+			global::android.webkit.HttpAuthHandler._cancel9973 = @__env.GetMethodID(global::android.webkit.HttpAuthHandler.staticClass, "cancel", "()V");
+			global::android.webkit.HttpAuthHandler._handleMessage9974 = @__env.GetMethodID(global::android.webkit.HttpAuthHandler.staticClass, "handleMessage", "(Landroid/os/Message;)V");
+			global::android.webkit.HttpAuthHandler._proceed9975 = @__env.GetMethodID(global::android.webkit.HttpAuthHandler.staticClass, "proceed", "(Ljava/lang/String;Ljava/lang/String;)V");
+			global::android.webkit.HttpAuthHandler._useHttpAuthUsernamePassword9976 = @__env.GetMethodID(global::android.webkit.HttpAuthHandler.staticClass, "useHttpAuthUsernamePassword", "()Z");
 		}
 	}
 }

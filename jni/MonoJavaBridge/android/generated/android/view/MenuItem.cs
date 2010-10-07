@@ -61,309 +61,309 @@ namespace android.view
 		internal __MenuItem(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isChecked7905;
+		internal static global::net.sf.jni4net.jni.MethodId _isChecked8581;
 		 bool android.view.MenuItem.isChecked() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem._isChecked7905);
+				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem._isChecked8581);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._isChecked7905);
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._isChecked8581);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setChecked7906;
+		internal static global::net.sf.jni4net.jni.MethodId _setChecked8582;
 		 global::android.view.MenuItem android.view.MenuItem.setChecked(bool arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setChecked7906, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setChecked8582, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setChecked7906, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setChecked8582, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isEnabled7907;
+		internal static global::net.sf.jni4net.jni.MethodId _isEnabled8583;
 		 bool android.view.MenuItem.isEnabled() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem._isEnabled7907);
+				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem._isEnabled8583);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._isEnabled7907);
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._isEnabled8583);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setEnabled7908;
+		internal static global::net.sf.jni4net.jni.MethodId _setEnabled8584;
 		 global::android.view.MenuItem android.view.MenuItem.setEnabled(bool arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setEnabled7908, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setEnabled8584, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setEnabled7908, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setEnabled8584, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getIntent7909;
+		internal static global::net.sf.jni4net.jni.MethodId _getIntent8585;
 		 global::android.content.Intent android.view.MenuItem.getIntent() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Intent>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getIntent7909));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Intent>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getIntent8585));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Intent>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getIntent7909));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.content.Intent>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getIntent8585));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setVisible7910;
+		internal static global::net.sf.jni4net.jni.MethodId _setVisible8586;
 		 global::android.view.MenuItem android.view.MenuItem.setVisible(bool arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setVisible7910, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setVisible8586, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setVisible7910, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setVisible8586, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isVisible7911;
+		internal static global::net.sf.jni4net.jni.MethodId _isVisible8587;
 		 bool android.view.MenuItem.isVisible() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem._isVisible7911);
+				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem._isVisible8587);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._isVisible7911);
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._isVisible8587);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setIntent7912;
+		internal static global::net.sf.jni4net.jni.MethodId _setIntent8588;
 		 global::android.view.MenuItem android.view.MenuItem.setIntent(android.content.Intent arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setIntent7912, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setIntent8588, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setIntent7912, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setIntent8588, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setTitle7913;
+		internal static global::net.sf.jni4net.jni.MethodId _setTitle8589;
 		 global::android.view.MenuItem android.view.MenuItem.setTitle(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setTitle7913, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setTitle8589, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setTitle7913, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setTitle8589, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setTitle7914;
+		internal static global::net.sf.jni4net.jni.MethodId _setTitle8590;
 		 global::android.view.MenuItem android.view.MenuItem.setTitle(java.lang.CharSequence arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setTitle7914, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setTitle8590, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setTitle7914, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setTitle8590, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTitle7915;
+		internal static global::net.sf.jni4net.jni.MethodId _getTitle8591;
 		 global::java.lang.CharSequence android.view.MenuItem.getTitle() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getTitle7915));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getTitle8591));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getTitle7915));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getTitle8591));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getItemId7916;
+		internal static global::net.sf.jni4net.jni.MethodId _getItemId8592;
 		 int android.view.MenuItem.getItemId() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.__MenuItem._getItemId7916);
+				return @__env.CallIntMethod(this, global::android.view.__MenuItem._getItemId8592);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getItemId7916);
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getItemId8592);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getGroupId7917;
+		internal static global::net.sf.jni4net.jni.MethodId _getGroupId8593;
 		 int android.view.MenuItem.getGroupId() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.__MenuItem._getGroupId7917);
+				return @__env.CallIntMethod(this, global::android.view.__MenuItem._getGroupId8593);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getGroupId7917);
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getGroupId8593);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getOrder7918;
+		internal static global::net.sf.jni4net.jni.MethodId _getOrder8594;
 		 int android.view.MenuItem.getOrder() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.view.__MenuItem._getOrder7918);
+				return @__env.CallIntMethod(this, global::android.view.__MenuItem._getOrder8594);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getOrder7918);
+				return @__env.CallNonVirtualIntMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getOrder8594);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setTitleCondensed7919;
+		internal static global::net.sf.jni4net.jni.MethodId _setTitleCondensed8595;
 		 global::android.view.MenuItem android.view.MenuItem.setTitleCondensed(java.lang.CharSequence arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setTitleCondensed7919, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setTitleCondensed8595, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setTitleCondensed7919, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setTitleCondensed8595, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getTitleCondensed7920;
+		internal static global::net.sf.jni4net.jni.MethodId _getTitleCondensed8596;
 		 global::java.lang.CharSequence android.view.MenuItem.getTitleCondensed() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getTitleCondensed7920));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getTitleCondensed8596));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getTitleCondensed7920));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.CharSequence>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getTitleCondensed8596));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setIcon7921;
+		internal static global::net.sf.jni4net.jni.MethodId _setIcon8597;
 		 global::android.view.MenuItem android.view.MenuItem.setIcon(android.graphics.drawable.Drawable arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setIcon7921, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setIcon8597, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setIcon7921, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setIcon8597, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setIcon7922;
+		internal static global::net.sf.jni4net.jni.MethodId _setIcon8598;
 		 global::android.view.MenuItem android.view.MenuItem.setIcon(int arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setIcon7922, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setIcon8598, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setIcon7922, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setIcon8598, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getIcon7923;
+		internal static global::net.sf.jni4net.jni.MethodId _getIcon8599;
 		 global::android.graphics.drawable.Drawable android.view.MenuItem.getIcon() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getIcon7923));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getIcon8599));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getIcon7923));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.graphics.drawable.Drawable>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getIcon8599));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setShortcut7924;
+		internal static global::net.sf.jni4net.jni.MethodId _setShortcut8600;
 		 global::android.view.MenuItem android.view.MenuItem.setShortcut(char arg0, char arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setShortcut7924, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setShortcut8600, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setShortcut7924, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setShortcut8600, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setNumericShortcut7925;
+		internal static global::net.sf.jni4net.jni.MethodId _setNumericShortcut8601;
 		 global::android.view.MenuItem android.view.MenuItem.setNumericShortcut(char arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setNumericShortcut7925, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setNumericShortcut8601, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setNumericShortcut7925, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setNumericShortcut8601, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getNumericShortcut7926;
+		internal static global::net.sf.jni4net.jni.MethodId _getNumericShortcut8602;
 		 char android.view.MenuItem.getNumericShortcut() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::android.view.__MenuItem._getNumericShortcut7926);
+				return @__env.CallCharMethod(this, global::android.view.__MenuItem._getNumericShortcut8602);
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getNumericShortcut7926);
+				return @__env.CallNonVirtualCharMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getNumericShortcut8602);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setAlphabeticShortcut7927;
+		internal static global::net.sf.jni4net.jni.MethodId _setAlphabeticShortcut8603;
 		 global::android.view.MenuItem android.view.MenuItem.setAlphabeticShortcut(char arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setAlphabeticShortcut7927, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setAlphabeticShortcut8603, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setAlphabeticShortcut7927, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setAlphabeticShortcut8603, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAlphabeticShortcut7928;
+		internal static global::net.sf.jni4net.jni.MethodId _getAlphabeticShortcut8604;
 		 char android.view.MenuItem.getAlphabeticShortcut() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallCharMethod(this, global::android.view.__MenuItem._getAlphabeticShortcut7928);
+				return @__env.CallCharMethod(this, global::android.view.__MenuItem._getAlphabeticShortcut8604);
 			else
-				return @__env.CallNonVirtualCharMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getAlphabeticShortcut7928);
+				return @__env.CallNonVirtualCharMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getAlphabeticShortcut8604);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setCheckable7929;
+		internal static global::net.sf.jni4net.jni.MethodId _setCheckable8605;
 		 global::android.view.MenuItem android.view.MenuItem.setCheckable(bool arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setCheckable7929, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setCheckable8605, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setCheckable7929, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setCheckable8605, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _isCheckable7930;
+		internal static global::net.sf.jni4net.jni.MethodId _isCheckable8606;
 		 bool android.view.MenuItem.isCheckable() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem._isCheckable7930);
+				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem._isCheckable8606);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._isCheckable7930);
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._isCheckable8606);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _hasSubMenu7931;
+		internal static global::net.sf.jni4net.jni.MethodId _hasSubMenu8607;
 		 bool android.view.MenuItem.hasSubMenu() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem._hasSubMenu7931);
+				return @__env.CallBooleanMethod(this, global::android.view.__MenuItem._hasSubMenu8607);
 			else
-				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._hasSubMenu7931);
+				return @__env.CallNonVirtualBooleanMethod(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._hasSubMenu8607);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getSubMenu7932;
+		internal static global::net.sf.jni4net.jni.MethodId _getSubMenu8608;
 		 global::android.view.SubMenu android.view.MenuItem.getSubMenu() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getSubMenu7932));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getSubMenu8608));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getSubMenu7932));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.SubMenu>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getSubMenu8608));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setOnMenuItemClickListener7933;
+		internal static global::net.sf.jni4net.jni.MethodId _setOnMenuItemClickListener8609;
 		 global::android.view.MenuItem android.view.MenuItem.setOnMenuItemClickListener(android.view.MenuItem_OnMenuItemClickListener arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setOnMenuItemClickListener7933, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._setOnMenuItemClickListener8609, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setOnMenuItemClickListener7933, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.MenuItem>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._setOnMenuItemClickListener8609, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0)));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getMenuInfo7934;
+		internal static global::net.sf.jni4net.jni.MethodId _getMenuInfo8610;
 		 global::android.view.ContextMenu_ContextMenuInfo android.view.MenuItem.getMenuInfo() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ContextMenu_ContextMenuInfo>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getMenuInfo7934));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ContextMenu_ContextMenuInfo>(@__env, @__env.CallObjectMethodPtr(this, global::android.view.__MenuItem._getMenuInfo8610));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ContextMenu_ContextMenuInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getMenuInfo7934));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.view.ContextMenu_ContextMenuInfo>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.view.__MenuItem.staticClass, global::android.view.__MenuItem._getMenuInfo8610));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.view.__MenuItem.staticClass = @__class;
-			global::android.view.__MenuItem._isChecked7905 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.isChecked", "()Z");
-			global::android.view.__MenuItem._setChecked7906 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setChecked", "(Z)Landroid/view/MenuItem;");
-			global::android.view.__MenuItem._isEnabled7907 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.isEnabled", "()Z");
-			global::android.view.__MenuItem._setEnabled7908 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setEnabled", "(Z)Landroid/view/MenuItem;");
-			global::android.view.__MenuItem._getIntent7909 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getIntent", "()Landroid/content/Intent;");
-			global::android.view.__MenuItem._setVisible7910 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setVisible", "(Z)Landroid/view/MenuItem;");
-			global::android.view.__MenuItem._isVisible7911 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.isVisible", "()Z");
-			global::android.view.__MenuItem._setIntent7912 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setIntent", "(Landroid/content/Intent;)Landroid/view/MenuItem;");
-			global::android.view.__MenuItem._setTitle7913 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setTitle", "(I)Landroid/view/MenuItem;");
-			global::android.view.__MenuItem._setTitle7914 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setTitle", "(Ljava/lang/CharSequence;)Landroid/view/MenuItem;");
-			global::android.view.__MenuItem._getTitle7915 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getTitle", "()Ljava/lang/CharSequence;");
-			global::android.view.__MenuItem._getItemId7916 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getItemId", "()I");
-			global::android.view.__MenuItem._getGroupId7917 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getGroupId", "()I");
-			global::android.view.__MenuItem._getOrder7918 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getOrder", "()I");
-			global::android.view.__MenuItem._setTitleCondensed7919 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setTitleCondensed", "(Ljava/lang/CharSequence;)Landroid/view/MenuItem;");
-			global::android.view.__MenuItem._getTitleCondensed7920 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getTitleCondensed", "()Ljava/lang/CharSequence;");
-			global::android.view.__MenuItem._setIcon7921 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setIcon", "(Landroid/graphics/drawable/Drawable;)Landroid/view/MenuItem;");
-			global::android.view.__MenuItem._setIcon7922 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setIcon", "(I)Landroid/view/MenuItem;");
-			global::android.view.__MenuItem._getIcon7923 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getIcon", "()Landroid/graphics/drawable/Drawable;");
-			global::android.view.__MenuItem._setShortcut7924 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setShortcut", "(CC)Landroid/view/MenuItem;");
-			global::android.view.__MenuItem._setNumericShortcut7925 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setNumericShortcut", "(C)Landroid/view/MenuItem;");
-			global::android.view.__MenuItem._getNumericShortcut7926 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getNumericShortcut", "()C");
-			global::android.view.__MenuItem._setAlphabeticShortcut7927 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setAlphabeticShortcut", "(C)Landroid/view/MenuItem;");
-			global::android.view.__MenuItem._getAlphabeticShortcut7928 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getAlphabeticShortcut", "()C");
-			global::android.view.__MenuItem._setCheckable7929 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setCheckable", "(Z)Landroid/view/MenuItem;");
-			global::android.view.__MenuItem._isCheckable7930 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.isCheckable", "()Z");
-			global::android.view.__MenuItem._hasSubMenu7931 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.hasSubMenu", "()Z");
-			global::android.view.__MenuItem._getSubMenu7932 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getSubMenu", "()Landroid/view/SubMenu;");
-			global::android.view.__MenuItem._setOnMenuItemClickListener7933 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setOnMenuItemClickListener", "(Landroid/view/MenuItem$OnMenuItemClickListener;)Landroid/view/MenuItem;");
-			global::android.view.__MenuItem._getMenuInfo7934 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getMenuInfo", "()Landroid/view/ContextMenu$ContextMenuInfo;");
+			global::android.view.__MenuItem._isChecked8581 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.isChecked", "()Z");
+			global::android.view.__MenuItem._setChecked8582 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setChecked", "(Z)Landroid/view/MenuItem;");
+			global::android.view.__MenuItem._isEnabled8583 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.isEnabled", "()Z");
+			global::android.view.__MenuItem._setEnabled8584 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setEnabled", "(Z)Landroid/view/MenuItem;");
+			global::android.view.__MenuItem._getIntent8585 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getIntent", "()Landroid/content/Intent;");
+			global::android.view.__MenuItem._setVisible8586 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setVisible", "(Z)Landroid/view/MenuItem;");
+			global::android.view.__MenuItem._isVisible8587 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.isVisible", "()Z");
+			global::android.view.__MenuItem._setIntent8588 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setIntent", "(Landroid/content/Intent;)Landroid/view/MenuItem;");
+			global::android.view.__MenuItem._setTitle8589 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setTitle", "(I)Landroid/view/MenuItem;");
+			global::android.view.__MenuItem._setTitle8590 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setTitle", "(Ljava/lang/CharSequence;)Landroid/view/MenuItem;");
+			global::android.view.__MenuItem._getTitle8591 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getTitle", "()Ljava/lang/CharSequence;");
+			global::android.view.__MenuItem._getItemId8592 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getItemId", "()I");
+			global::android.view.__MenuItem._getGroupId8593 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getGroupId", "()I");
+			global::android.view.__MenuItem._getOrder8594 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getOrder", "()I");
+			global::android.view.__MenuItem._setTitleCondensed8595 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setTitleCondensed", "(Ljava/lang/CharSequence;)Landroid/view/MenuItem;");
+			global::android.view.__MenuItem._getTitleCondensed8596 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getTitleCondensed", "()Ljava/lang/CharSequence;");
+			global::android.view.__MenuItem._setIcon8597 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setIcon", "(Landroid/graphics/drawable/Drawable;)Landroid/view/MenuItem;");
+			global::android.view.__MenuItem._setIcon8598 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setIcon", "(I)Landroid/view/MenuItem;");
+			global::android.view.__MenuItem._getIcon8599 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getIcon", "()Landroid/graphics/drawable/Drawable;");
+			global::android.view.__MenuItem._setShortcut8600 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setShortcut", "(CC)Landroid/view/MenuItem;");
+			global::android.view.__MenuItem._setNumericShortcut8601 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setNumericShortcut", "(C)Landroid/view/MenuItem;");
+			global::android.view.__MenuItem._getNumericShortcut8602 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getNumericShortcut", "()C");
+			global::android.view.__MenuItem._setAlphabeticShortcut8603 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setAlphabeticShortcut", "(C)Landroid/view/MenuItem;");
+			global::android.view.__MenuItem._getAlphabeticShortcut8604 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getAlphabeticShortcut", "()C");
+			global::android.view.__MenuItem._setCheckable8605 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setCheckable", "(Z)Landroid/view/MenuItem;");
+			global::android.view.__MenuItem._isCheckable8606 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.isCheckable", "()Z");
+			global::android.view.__MenuItem._hasSubMenu8607 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.hasSubMenu", "()Z");
+			global::android.view.__MenuItem._getSubMenu8608 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getSubMenu", "()Landroid/view/SubMenu;");
+			global::android.view.__MenuItem._setOnMenuItemClickListener8609 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.setOnMenuItemClickListener", "(Landroid/view/MenuItem$OnMenuItemClickListener;)Landroid/view/MenuItem;");
+			global::android.view.__MenuItem._getMenuInfo8610 = @__env.GetMethodID(global::android.view.__MenuItem.staticClass, "android.view.MenuItem.getMenuInfo", "()Landroid/view/ContextMenu$ContextMenuInfo;");
 		}
 	}
 }

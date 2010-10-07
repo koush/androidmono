@@ -32,19 +32,19 @@ namespace android.os
 		internal __IInterface(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _asBinder5627;
+		internal static global::net.sf.jni4net.jni.MethodId _asBinder6200;
 		 global::android.os.IBinder android.os.IInterface.asBinder() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.__IInterface._asBinder5627));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallObjectMethodPtr(this, global::android.os.__IInterface._asBinder6200));
 			else
-				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.__IInterface.staticClass, global::android.os.__IInterface._asBinder5627));
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<android.os.IBinder>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.os.__IInterface.staticClass, global::android.os.__IInterface._asBinder6200));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.os.__IInterface.staticClass = @__class;
-			global::android.os.__IInterface._asBinder5627 = @__env.GetMethodID(global::android.os.__IInterface.staticClass, "android.os.IInterface.asBinder", "()Landroid/os/IBinder;");
+			global::android.os.__IInterface._asBinder6200 = @__env.GetMethodID(global::android.os.__IInterface.staticClass, "android.os.IInterface.asBinder", "()Landroid/os/IBinder;");
 		}
 	}
 }

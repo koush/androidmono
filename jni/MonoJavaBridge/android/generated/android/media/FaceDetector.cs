@@ -36,41 +36,41 @@ namespace android.media
 			protected Face(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 			{
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _confidence4462;
+			internal static global::net.sf.jni4net.jni.MethodId _confidence4718;
 			public virtual float confidence() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallFloatMethod(this, global::android.media.FaceDetector.Face._confidence4462);
+					return @__env.CallFloatMethod(this, global::android.media.FaceDetector.Face._confidence4718);
 				else
-					return @__env.CallNonVirtualFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._confidence4462);
+					return @__env.CallNonVirtualFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._confidence4718);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _getMidPoint4463;
+			internal static global::net.sf.jni4net.jni.MethodId _getMidPoint4719;
 			public virtual void getMidPoint(android.graphics.PointF arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					@__env.CallVoidMethod(this, global::android.media.FaceDetector.Face._getMidPoint4463, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					@__env.CallVoidMethod(this, global::android.media.FaceDetector.Face._getMidPoint4719, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 				else
-					@__env.CallNonVirtualVoidMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._getMidPoint4463, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+					@__env.CallNonVirtualVoidMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._getMidPoint4719, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _eyesDistance4464;
+			internal static global::net.sf.jni4net.jni.MethodId _eyesDistance4720;
 			public virtual float eyesDistance() 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallFloatMethod(this, global::android.media.FaceDetector.Face._eyesDistance4464);
+					return @__env.CallFloatMethod(this, global::android.media.FaceDetector.Face._eyesDistance4720);
 				else
-					return @__env.CallNonVirtualFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._eyesDistance4464);
+					return @__env.CallNonVirtualFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._eyesDistance4720);
 			}
-			internal static global::net.sf.jni4net.jni.MethodId _pose4465;
+			internal static global::net.sf.jni4net.jni.MethodId _pose4721;
 			public virtual float pose(int arg0) 
 			{
 				global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 				if (!IsClrObject)
-					return @__env.CallFloatMethod(this, global::android.media.FaceDetector.Face._pose4465, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					return @__env.CallFloatMethod(this, global::android.media.FaceDetector.Face._pose4721, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 				else
-					return @__env.CallNonVirtualFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._pose4465, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
+					return @__env.CallNonVirtualFloatMethod(this, global::android.media.FaceDetector.Face.staticClass, global::android.media.FaceDetector.Face._pose4721, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0));
 			}
 			public static float CONFIDENCE_THRESHOLD
 			{
@@ -103,32 +103,32 @@ namespace android.media
 			private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 			{
 				global::android.media.FaceDetector.Face.staticClass = @__class;
-				global::android.media.FaceDetector.Face._confidence4462 = @__env.GetMethodID(global::android.media.FaceDetector.Face.staticClass, "confidence", "()F");
-				global::android.media.FaceDetector.Face._getMidPoint4463 = @__env.GetMethodID(global::android.media.FaceDetector.Face.staticClass, "getMidPoint", "(Landroid/graphics/PointF;)V");
-				global::android.media.FaceDetector.Face._eyesDistance4464 = @__env.GetMethodID(global::android.media.FaceDetector.Face.staticClass, "eyesDistance", "()F");
-				global::android.media.FaceDetector.Face._pose4465 = @__env.GetMethodID(global::android.media.FaceDetector.Face.staticClass, "pose", "(I)F");
+				global::android.media.FaceDetector.Face._confidence4718 = @__env.GetMethodID(global::android.media.FaceDetector.Face.staticClass, "confidence", "()F");
+				global::android.media.FaceDetector.Face._getMidPoint4719 = @__env.GetMethodID(global::android.media.FaceDetector.Face.staticClass, "getMidPoint", "(Landroid/graphics/PointF;)V");
+				global::android.media.FaceDetector.Face._eyesDistance4720 = @__env.GetMethodID(global::android.media.FaceDetector.Face.staticClass, "eyesDistance", "()F");
+				global::android.media.FaceDetector.Face._pose4721 = @__env.GetMethodID(global::android.media.FaceDetector.Face.staticClass, "pose", "(I)F");
 			}
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _findFaces4466;
+		internal static global::net.sf.jni4net.jni.MethodId _findFaces4722;
 		public virtual int findFaces(android.graphics.Bitmap arg0, android.media.FaceDetector.Face[] arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.media.FaceDetector._findFaces4466, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1));
+				return @__env.CallIntMethod(this, global::android.media.FaceDetector._findFaces4722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1));
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.media.FaceDetector.staticClass, global::android.media.FaceDetector._findFaces4466, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1));
+				return @__env.CallNonVirtualIntMethod(this, global::android.media.FaceDetector.staticClass, global::android.media.FaceDetector._findFaces4722, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParArrayStrongCp2J(@__env, arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _FaceDetector4467;
+		internal static global::net.sf.jni4net.jni.MethodId _FaceDetector4723;
 		public FaceDetector(int arg0, int arg1, int arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.media.FaceDetector.staticClass, global::android.media.FaceDetector._FaceDetector4467, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			@__env.NewObject(android.media.FaceDetector.staticClass, global::android.media.FaceDetector._FaceDetector4723, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.media.FaceDetector.staticClass = @__class;
-			global::android.media.FaceDetector._findFaces4466 = @__env.GetMethodID(global::android.media.FaceDetector.staticClass, "findFaces", "(Landroid/graphics/Bitmap;[Landroid/media/FaceDetector/Face;)I");
-			global::android.media.FaceDetector._FaceDetector4467 = @__env.GetMethodID(global::android.media.FaceDetector.staticClass, "<init>", "(III)V");
+			global::android.media.FaceDetector._findFaces4722 = @__env.GetMethodID(global::android.media.FaceDetector.staticClass, "findFaces", "(Landroid/graphics/Bitmap;[Landroid/media/FaceDetector/Face;)I");
+			global::android.media.FaceDetector._FaceDetector4723 = @__env.GetMethodID(global::android.media.FaceDetector.staticClass, "<init>", "(III)V");
 		}
 	}
 }

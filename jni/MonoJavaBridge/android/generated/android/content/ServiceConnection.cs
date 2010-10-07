@@ -33,29 +33,29 @@ namespace android.content
 		internal __ServiceConnection(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onServiceConnected1491;
+		internal static global::net.sf.jni4net.jni.MethodId _onServiceConnected1661;
 		 void android.content.ServiceConnection.onServiceConnected(android.content.ComponentName arg0, android.os.IBinder arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.__ServiceConnection._onServiceConnected1491, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallVoidMethod(this, global::android.content.__ServiceConnection._onServiceConnected1661, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.__ServiceConnection.staticClass, global::android.content.__ServiceConnection._onServiceConnected1491, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.__ServiceConnection.staticClass, global::android.content.__ServiceConnection._onServiceConnected1661, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onServiceDisconnected1492;
+		internal static global::net.sf.jni4net.jni.MethodId _onServiceDisconnected1662;
 		 void android.content.ServiceConnection.onServiceDisconnected(android.content.ComponentName arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.__ServiceConnection._onServiceDisconnected1492, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.content.__ServiceConnection._onServiceDisconnected1662, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.__ServiceConnection.staticClass, global::android.content.__ServiceConnection._onServiceDisconnected1492, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.__ServiceConnection.staticClass, global::android.content.__ServiceConnection._onServiceDisconnected1662, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.content.__ServiceConnection.staticClass = @__class;
-			global::android.content.__ServiceConnection._onServiceConnected1491 = @__env.GetMethodID(global::android.content.__ServiceConnection.staticClass, "android.content.ServiceConnection.onServiceConnected", "(Landroid/content/ComponentName;Landroid/os/IBinder;)V");
-			global::android.content.__ServiceConnection._onServiceDisconnected1492 = @__env.GetMethodID(global::android.content.__ServiceConnection.staticClass, "android.content.ServiceConnection.onServiceDisconnected", "(Landroid/content/ComponentName;)V");
+			global::android.content.__ServiceConnection._onServiceConnected1661 = @__env.GetMethodID(global::android.content.__ServiceConnection.staticClass, "android.content.ServiceConnection.onServiceConnected", "(Landroid/content/ComponentName;Landroid/os/IBinder;)V");
+			global::android.content.__ServiceConnection._onServiceDisconnected1662 = @__env.GetMethodID(global::android.content.__ServiceConnection.staticClass, "android.content.ServiceConnection.onServiceDisconnected", "(Landroid/content/ComponentName;)V");
 		}
 	}
 }

@@ -18,64 +18,64 @@ namespace android.content.pm
 		protected ActivityInfo(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString1568;
+		internal static global::net.sf.jni4net.jni.MethodId _toString1742;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.ActivityInfo._toString1568));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.content.pm.ActivityInfo._toString1742));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.ActivityInfo.staticClass, global::android.content.pm.ActivityInfo._toString1568));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.content.pm.ActivityInfo.staticClass, global::android.content.pm.ActivityInfo._toString1742));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _dump1569;
+		internal static global::net.sf.jni4net.jni.MethodId _dump1743;
 		public virtual void dump(android.util.Printer arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.pm.ActivityInfo._dump1569, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this, global::android.content.pm.ActivityInfo._dump1743, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.pm.ActivityInfo.staticClass, global::android.content.pm.ActivityInfo._dump1569, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.pm.ActivityInfo.staticClass, global::android.content.pm.ActivityInfo._dump1743, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel1570;
+		internal static global::net.sf.jni4net.jni.MethodId _writeToParcel1744;
 		public override void writeToParcel(android.os.Parcel arg0, int arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.pm.ActivityInfo._writeToParcel1570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallVoidMethod(this, global::android.content.pm.ActivityInfo._writeToParcel1744, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.pm.ActivityInfo.staticClass, global::android.content.pm.ActivityInfo._writeToParcel1570, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.pm.ActivityInfo.staticClass, global::android.content.pm.ActivityInfo._writeToParcel1744, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _describeContents1571;
+		internal static global::net.sf.jni4net.jni.MethodId _describeContents1745;
 		public virtual int describeContents() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.pm.ActivityInfo._describeContents1571);
+				return @__env.CallIntMethod(this, global::android.content.pm.ActivityInfo._describeContents1745);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.ActivityInfo.staticClass, global::android.content.pm.ActivityInfo._describeContents1571);
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.ActivityInfo.staticClass, global::android.content.pm.ActivityInfo._describeContents1745);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getThemeResource1572;
+		internal static global::net.sf.jni4net.jni.MethodId _getThemeResource1746;
 		public virtual int getThemeResource() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return @__env.CallIntMethod(this, global::android.content.pm.ActivityInfo._getThemeResource1572);
+				return @__env.CallIntMethod(this, global::android.content.pm.ActivityInfo._getThemeResource1746);
 			else
-				return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.ActivityInfo.staticClass, global::android.content.pm.ActivityInfo._getThemeResource1572);
+				return @__env.CallNonVirtualIntMethod(this, global::android.content.pm.ActivityInfo.staticClass, global::android.content.pm.ActivityInfo._getThemeResource1746);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ActivityInfo1573;
+		internal static global::net.sf.jni4net.jni.MethodId _ActivityInfo1747;
 		public ActivityInfo()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.pm.ActivityInfo.staticClass, global::android.content.pm.ActivityInfo._ActivityInfo1573, this);
+			@__env.NewObject(android.content.pm.ActivityInfo.staticClass, global::android.content.pm.ActivityInfo._ActivityInfo1747, this);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _ActivityInfo1574;
+		internal static global::net.sf.jni4net.jni.MethodId _ActivityInfo1748;
 		public ActivityInfo(android.content.pm.ActivityInfo arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.content.pm.ActivityInfo.staticClass, global::android.content.pm.ActivityInfo._ActivityInfo1574, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(android.content.pm.ActivityInfo.staticClass, global::android.content.pm.ActivityInfo._ActivityInfo1748, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _theme1575;
+		internal static global::net.sf.jni4net.jni.FieldId _theme1749;
 		public int theme
 		{
 			get
@@ -114,7 +114,7 @@ namespace android.content.pm
 				return 3;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _launchMode1576;
+		internal static global::net.sf.jni4net.jni.FieldId _launchMode1750;
 		public int launchMode
 		{
 			get
@@ -125,7 +125,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _permission1577;
+		internal static global::net.sf.jni4net.jni.FieldId _permission1751;
 		public global::java.lang.String permission
 		{
 			get
@@ -136,7 +136,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _taskAffinity1578;
+		internal static global::net.sf.jni4net.jni.FieldId _taskAffinity1752;
 		public global::java.lang.String taskAffinity
 		{
 			get
@@ -147,7 +147,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _targetActivity1579;
+		internal static global::net.sf.jni4net.jni.FieldId _targetActivity1753;
 		public global::java.lang.String targetActivity
 		{
 			get
@@ -221,7 +221,7 @@ namespace android.content.pm
 				return 256;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _flags1580;
+		internal static global::net.sf.jni4net.jni.FieldId _flags1754;
 		public int flags
 		{
 			get
@@ -281,7 +281,7 @@ namespace android.content.pm
 				return 5;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _screenOrientation1581;
+		internal static global::net.sf.jni4net.jni.FieldId _screenOrientation1755;
 		public int screenOrientation
 		{
 			get
@@ -355,6 +355,13 @@ namespace android.content.pm
 				return 256;
 			}
 		}
+		public static int CONFIG_UI_MODE
+		{
+			get
+			{
+				return 512;
+			}
+		}
 		public static int CONFIG_FONT_SCALE
 		{
 			get
@@ -362,7 +369,7 @@ namespace android.content.pm
 				return 1073741824;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _configChanges1582;
+		internal static global::net.sf.jni4net.jni.FieldId _configChanges1756;
 		public int configChanges
 		{
 			get
@@ -373,7 +380,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _softInputMode1583;
+		internal static global::net.sf.jni4net.jni.FieldId _softInputMode1757;
 		public int softInputMode
 		{
 			get
@@ -384,7 +391,7 @@ namespace android.content.pm
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _CREATOR1584;
+		internal static global::net.sf.jni4net.jni.FieldId _CREATOR1758;
 		public static global::android.os.Parcelable_Creator CREATOR
 		{
 			get
@@ -395,13 +402,13 @@ namespace android.content.pm
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.content.pm.ActivityInfo.staticClass = @__class;
-			global::android.content.pm.ActivityInfo._toString1568 = @__env.GetMethodID(global::android.content.pm.ActivityInfo.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.content.pm.ActivityInfo._dump1569 = @__env.GetMethodID(global::android.content.pm.ActivityInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V");
-			global::android.content.pm.ActivityInfo._writeToParcel1570 = @__env.GetMethodID(global::android.content.pm.ActivityInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
-			global::android.content.pm.ActivityInfo._describeContents1571 = @__env.GetMethodID(global::android.content.pm.ActivityInfo.staticClass, "describeContents", "()I");
-			global::android.content.pm.ActivityInfo._getThemeResource1572 = @__env.GetMethodID(global::android.content.pm.ActivityInfo.staticClass, "getThemeResource", "()I");
-			global::android.content.pm.ActivityInfo._ActivityInfo1573 = @__env.GetMethodID(global::android.content.pm.ActivityInfo.staticClass, "<init>", "()V");
-			global::android.content.pm.ActivityInfo._ActivityInfo1574 = @__env.GetMethodID(global::android.content.pm.ActivityInfo.staticClass, "<init>", "(Landroid/content/pm/ActivityInfo;)V");
+			global::android.content.pm.ActivityInfo._toString1742 = @__env.GetMethodID(global::android.content.pm.ActivityInfo.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.content.pm.ActivityInfo._dump1743 = @__env.GetMethodID(global::android.content.pm.ActivityInfo.staticClass, "dump", "(Landroid/util/Printer;Ljava/lang/String;)V");
+			global::android.content.pm.ActivityInfo._writeToParcel1744 = @__env.GetMethodID(global::android.content.pm.ActivityInfo.staticClass, "writeToParcel", "(Landroid/os/Parcel;I)V");
+			global::android.content.pm.ActivityInfo._describeContents1745 = @__env.GetMethodID(global::android.content.pm.ActivityInfo.staticClass, "describeContents", "()I");
+			global::android.content.pm.ActivityInfo._getThemeResource1746 = @__env.GetMethodID(global::android.content.pm.ActivityInfo.staticClass, "getThemeResource", "()I");
+			global::android.content.pm.ActivityInfo._ActivityInfo1747 = @__env.GetMethodID(global::android.content.pm.ActivityInfo.staticClass, "<init>", "()V");
+			global::android.content.pm.ActivityInfo._ActivityInfo1748 = @__env.GetMethodID(global::android.content.pm.ActivityInfo.staticClass, "<init>", "(Landroid/content/pm/ActivityInfo;)V");
 		}
 	}
 }

@@ -18,38 +18,38 @@ namespace android.util
 		protected DisplayMetrics(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _toString7534;
+		internal static global::net.sf.jni4net.jni.MethodId _toString8184;
 		public override global::java.lang.String toString() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.DisplayMetrics._toString7534));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallObjectMethodPtr(this, global::android.util.DisplayMetrics._toString8184));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._toString7534));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<java.lang.String>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._toString8184));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _setToDefaults7535;
-		public virtual void setToDefaults() 
-		{
-			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.DisplayMetrics._setToDefaults7535);
-			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._setToDefaults7535);
-		}
-		internal static global::net.sf.jni4net.jni.MethodId _setTo7536;
+		internal static global::net.sf.jni4net.jni.MethodId _setTo8185;
 		public virtual void setTo(android.util.DisplayMetrics arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.util.DisplayMetrics._setTo7536, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallVoidMethod(this, global::android.util.DisplayMetrics._setTo8185, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._setTo7536, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._setTo8185, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _DisplayMetrics7537;
+		internal static global::net.sf.jni4net.jni.MethodId _setToDefaults8186;
+		public virtual void setToDefaults() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				@__env.CallVoidMethod(this, global::android.util.DisplayMetrics._setToDefaults8186);
+			else
+				@__env.CallNonVirtualVoidMethod(this, global::android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._setToDefaults8186);
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _DisplayMetrics8187;
 		public DisplayMetrics()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._DisplayMetrics7537, this);
+			@__env.NewObject(android.util.DisplayMetrics.staticClass, global::android.util.DisplayMetrics._DisplayMetrics8187, this);
 		}
 		public static int DENSITY_LOW
 		{
@@ -79,7 +79,7 @@ namespace android.util
 				return 160;
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _widthPixels7538;
+		internal static global::net.sf.jni4net.jni.FieldId _widthPixels8188;
 		public int widthPixels
 		{
 			get
@@ -90,7 +90,7 @@ namespace android.util
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _heightPixels7539;
+		internal static global::net.sf.jni4net.jni.FieldId _heightPixels8189;
 		public int heightPixels
 		{
 			get
@@ -101,7 +101,7 @@ namespace android.util
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _density7540;
+		internal static global::net.sf.jni4net.jni.FieldId _density8190;
 		public float density
 		{
 			get
@@ -112,7 +112,7 @@ namespace android.util
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _densityDpi7541;
+		internal static global::net.sf.jni4net.jni.FieldId _densityDpi8191;
 		public int densityDpi
 		{
 			get
@@ -123,7 +123,7 @@ namespace android.util
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _scaledDensity7542;
+		internal static global::net.sf.jni4net.jni.FieldId _scaledDensity8192;
 		public float scaledDensity
 		{
 			get
@@ -134,7 +134,7 @@ namespace android.util
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _xdpi7543;
+		internal static global::net.sf.jni4net.jni.FieldId _xdpi8193;
 		public float xdpi
 		{
 			get
@@ -145,7 +145,7 @@ namespace android.util
 			{
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _ydpi7544;
+		internal static global::net.sf.jni4net.jni.FieldId _ydpi8194;
 		public float ydpi
 		{
 			get
@@ -159,10 +159,10 @@ namespace android.util
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.util.DisplayMetrics.staticClass = @__class;
-			global::android.util.DisplayMetrics._toString7534 = @__env.GetMethodID(global::android.util.DisplayMetrics.staticClass, "toString", "()Ljava/lang/String;");
-			global::android.util.DisplayMetrics._setToDefaults7535 = @__env.GetMethodID(global::android.util.DisplayMetrics.staticClass, "setToDefaults", "()V");
-			global::android.util.DisplayMetrics._setTo7536 = @__env.GetMethodID(global::android.util.DisplayMetrics.staticClass, "setTo", "(Landroid/util/DisplayMetrics;)V");
-			global::android.util.DisplayMetrics._DisplayMetrics7537 = @__env.GetMethodID(global::android.util.DisplayMetrics.staticClass, "<init>", "()V");
+			global::android.util.DisplayMetrics._toString8184 = @__env.GetMethodID(global::android.util.DisplayMetrics.staticClass, "toString", "()Ljava/lang/String;");
+			global::android.util.DisplayMetrics._setTo8185 = @__env.GetMethodID(global::android.util.DisplayMetrics.staticClass, "setTo", "(Landroid/util/DisplayMetrics;)V");
+			global::android.util.DisplayMetrics._setToDefaults8186 = @__env.GetMethodID(global::android.util.DisplayMetrics.staticClass, "setToDefaults", "()V");
+			global::android.util.DisplayMetrics._DisplayMetrics8187 = @__env.GetMethodID(global::android.util.DisplayMetrics.staticClass, "<init>", "()V");
 		}
 	}
 }

@@ -32,19 +32,19 @@ namespace android.accounts
 		internal __AccountManagerCallback(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _run90;
+		internal static global::net.sf.jni4net.jni.MethodId _run91;
 		 void android.accounts.AccountManagerCallback.run(android.accounts.AccountManagerFuture arg0) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.accounts.__AccountManagerCallback._run90, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallVoidMethod(this, global::android.accounts.__AccountManagerCallback._run91, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.__AccountManagerCallback.staticClass, global::android.accounts.__AccountManagerCallback._run90, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
+				@__env.CallNonVirtualVoidMethod(this, global::android.accounts.__AccountManagerCallback.staticClass, global::android.accounts.__AccountManagerCallback._run91, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.accounts.__AccountManagerCallback.staticClass = @__class;
-			global::android.accounts.__AccountManagerCallback._run90 = @__env.GetMethodID(global::android.accounts.__AccountManagerCallback.staticClass, "android.accounts.AccountManagerCallback.run", "(Landroid/accounts/AccountManagerFuture;)V");
+			global::android.accounts.__AccountManagerCallback._run91 = @__env.GetMethodID(global::android.accounts.__AccountManagerCallback.staticClass, "android.accounts.AccountManagerCallback.run", "(Landroid/accounts/AccountManagerFuture;)V");
 		}
 	}
 }

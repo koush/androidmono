@@ -32,19 +32,19 @@ namespace android.text.style
 		internal __AlignmentSpan(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _getAlignment7293;
+		internal static global::net.sf.jni4net.jni.MethodId _getAlignment7919;
 		 global::android.text.Layout.Alignment android.text.style.AlignmentSpan.getAlignment() 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.style.__AlignmentSpan._getAlignment7293));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallObjectMethodPtr(this, global::android.text.style.__AlignmentSpan._getAlignment7919));
 			else
-				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.style.__AlignmentSpan.staticClass, global::android.text.style.__AlignmentSpan._getAlignment7293));
+				return global::net.sf.jni4net.utils.Convertor.StrongJ2Cp<android.text.Layout.Alignment>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.text.style.__AlignmentSpan.staticClass, global::android.text.style.__AlignmentSpan._getAlignment7919));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.text.style.__AlignmentSpan.staticClass = @__class;
-			global::android.text.style.__AlignmentSpan._getAlignment7293 = @__env.GetMethodID(global::android.text.style.__AlignmentSpan.staticClass, "android.text.style.AlignmentSpan.getAlignment", "()Landroid/text/Layout$Alignment;");
+			global::android.text.style.__AlignmentSpan._getAlignment7919 = @__env.GetMethodID(global::android.text.style.__AlignmentSpan.staticClass, "android.text.style.AlignmentSpan.getAlignment", "()Landroid/text/Layout$Alignment;");
 		}
 	}
 }

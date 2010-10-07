@@ -18,37 +18,37 @@ namespace java.io
 		protected IOException(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _IOException11407;
+		internal static global::net.sf.jni4net.jni.MethodId _IOException12136;
 		public IOException()  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.io.IOException.staticClass, global::java.io.IOException._IOException11407, this);
+			@__env.NewObject(java.io.IOException.staticClass, global::java.io.IOException._IOException12136, this);
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _IOException11408;
+		internal static global::net.sf.jni4net.jni.MethodId _IOException12137;
 		public IOException(java.lang.String arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.io.IOException.staticClass, global::java.io.IOException._IOException11408, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(java.io.IOException.staticClass, global::java.io.IOException._IOException12137, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _IOException11409;
+		internal static global::net.sf.jni4net.jni.MethodId _IOException12138;
 		public IOException(java.lang.String arg0, java.lang.Throwable arg1)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.io.IOException.staticClass, global::java.io.IOException._IOException11409, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+			@__env.NewObject(java.io.IOException.staticClass, global::java.io.IOException._IOException12138, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _IOException11410;
+		internal static global::net.sf.jni4net.jni.MethodId _IOException12139;
 		public IOException(java.lang.Throwable arg0)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(java.io.IOException.staticClass, global::java.io.IOException._IOException11410, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
+			@__env.NewObject(java.io.IOException.staticClass, global::java.io.IOException._IOException12139, this, global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg0));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::java.io.IOException.staticClass = @__class;
-			global::java.io.IOException._IOException11407 = @__env.GetMethodID(global::java.io.IOException.staticClass, "<init>", "()V");
-			global::java.io.IOException._IOException11408 = @__env.GetMethodID(global::java.io.IOException.staticClass, "<init>", "(Ljava/lang/String;)V");
-			global::java.io.IOException._IOException11409 = @__env.GetMethodID(global::java.io.IOException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
-			global::java.io.IOException._IOException11410 = @__env.GetMethodID(global::java.io.IOException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
+			global::java.io.IOException._IOException12136 = @__env.GetMethodID(global::java.io.IOException.staticClass, "<init>", "()V");
+			global::java.io.IOException._IOException12137 = @__env.GetMethodID(global::java.io.IOException.staticClass, "<init>", "(Ljava/lang/String;)V");
+			global::java.io.IOException._IOException12138 = @__env.GetMethodID(global::java.io.IOException.staticClass, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+			global::java.io.IOException._IOException12139 = @__env.GetMethodID(global::java.io.IOException.staticClass, "<init>", "(Ljava/lang/Throwable;)V");
 		}
 	}
 }

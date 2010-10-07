@@ -32,19 +32,19 @@ namespace android.content
 		internal __SharedPreferences_OnSharedPreferenceChangeListener(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _onSharedPreferenceChanged1501;
+		internal static global::net.sf.jni4net.jni.MethodId _onSharedPreferenceChanged1671;
 		 void android.content.SharedPreferences_OnSharedPreferenceChangeListener.onSharedPreferenceChanged(android.content.SharedPreferences arg0, java.lang.String arg1) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
 			if (!IsClrObject)
-				@__env.CallVoidMethod(this, global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener._onSharedPreferenceChanged1501, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallVoidMethod(this, global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener._onSharedPreferenceChanged1671, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 			else
-				@__env.CallNonVirtualVoidMethod(this, global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener.staticClass, global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener._onSharedPreferenceChanged1501, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
+				@__env.CallNonVirtualVoidMethod(this, global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener.staticClass, global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener._onSharedPreferenceChanged1671, global::net.sf.jni4net.utils.Convertor.ParFullC2J(@__env, arg0), global::net.sf.jni4net.utils.Convertor.ParStrongCp2J(arg1));
 		}
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener.staticClass = @__class;
-			global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener._onSharedPreferenceChanged1501 = @__env.GetMethodID(global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener.staticClass, "android.content.SharedPreferences_OnSharedPreferenceChangeListener.onSharedPreferenceChanged", "(Landroid/content/SharedPreferences;Ljava/lang/String;)V");
+			global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener._onSharedPreferenceChanged1671 = @__env.GetMethodID(global::android.content.__SharedPreferences_OnSharedPreferenceChangeListener.staticClass, "android.content.SharedPreferences_OnSharedPreferenceChangeListener.onSharedPreferenceChanged", "(Landroid/content/SharedPreferences;Ljava/lang/String;)V");
 		}
 	}
 }

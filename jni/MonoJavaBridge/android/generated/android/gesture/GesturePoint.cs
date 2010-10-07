@@ -18,13 +18,22 @@ namespace android.gesture
 		protected GesturePoint(global::net.sf.jni4net.jni.JNIEnv @__env) : base(@__env)
 		{
 		}
-		internal static global::net.sf.jni4net.jni.MethodId _GesturePoint2664;
+		internal static global::net.sf.jni4net.jni.MethodId _clone2854;
+		public virtual global::java.lang.Object clone() 
+		{
+			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
+			if (!IsClrObject)
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallObjectMethodPtr(this, global::android.gesture.GesturePoint._clone2854));
+			else
+				return global::net.sf.jni4net.utils.Convertor.FullJ2C<java.lang.Object>(@__env, @__env.CallNonVirtualObjectMethodPtr(this, global::android.gesture.GesturePoint.staticClass, global::android.gesture.GesturePoint._clone2854));
+		}
+		internal static global::net.sf.jni4net.jni.MethodId _GesturePoint2855;
 		public GesturePoint(float arg0, float arg1, long arg2)  : base(global::net.sf.jni4net.jni.JNIEnv.ThreadEnv) 
 		{
 			global::net.sf.jni4net.jni.JNIEnv @__env = global::net.sf.jni4net.jni.JNIEnv.ThreadEnv;
-			@__env.NewObject(android.gesture.GesturePoint.staticClass, global::android.gesture.GesturePoint._GesturePoint2664, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
+			@__env.NewObject(android.gesture.GesturePoint.staticClass, global::android.gesture.GesturePoint._GesturePoint2855, this, global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg0), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg1), global::net.sf.jni4net.utils.Convertor.ParPrimC2J(arg2));
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _x2665;
+		internal static global::net.sf.jni4net.jni.FieldId _x2856;
 		public float x
 		{
 			get
@@ -32,7 +41,7 @@ namespace android.gesture
 				return default(float);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _y2666;
+		internal static global::net.sf.jni4net.jni.FieldId _y2857;
 		public float y
 		{
 			get
@@ -40,7 +49,7 @@ namespace android.gesture
 				return default(float);
 			}
 		}
-		internal static global::net.sf.jni4net.jni.FieldId _timestamp2667;
+		internal static global::net.sf.jni4net.jni.FieldId _timestamp2858;
 		public long timestamp
 		{
 			get
@@ -51,7 +60,8 @@ namespace android.gesture
 		private static void InitJNI(global::net.sf.jni4net.jni.JNIEnv @__env, java.lang.Class @__class)
 		{
 			global::android.gesture.GesturePoint.staticClass = @__class;
-			global::android.gesture.GesturePoint._GesturePoint2664 = @__env.GetMethodID(global::android.gesture.GesturePoint.staticClass, "<init>", "(FFJ)V");
+			global::android.gesture.GesturePoint._clone2854 = @__env.GetMethodID(global::android.gesture.GesturePoint.staticClass, "clone", "()Ljava/lang/Object;");
+			global::android.gesture.GesturePoint._GesturePoint2855 = @__env.GetMethodID(global::android.gesture.GesturePoint.staticClass, "<init>", "(FFJ)V");
 		}
 	}
 }
